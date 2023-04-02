@@ -1,0 +1,1631 @@
+##########################
+# Beyond the Cape Events #
+##########################
+
+namespace = btc_por
+normal_or_historical_nations = yes
+
+###############################
+# 1755 Earthquake Event Chain #
+###############################
+
+# The Earthquake of 1755
+
+country_event = {
+	id = btc_por.1
+	title = btc_por.1_t
+	desc = btc_por.1_d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		owns = 227	# Lisboa
+		is_year = 1700
+	}
+	
+	mean_time_to_happen = {
+		months = 660	# 55 years
+	}
+	
+	immediate = {
+		hidden_effect = {
+			norte_area = {
+				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			beieras_area = {
+				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			macaronesia_area = {
+				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			alentejo_area = {
+				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			northern_morocco_area = {
+				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			estremadura_area = {
+				add_devastation = 60
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			add_stability = -1
+		}
+		227 = {
+			add_province_modifier = {
+				name = massive_earthquake
+				duration = -1
+			}
+		}
+		custom_tooltip = lisbon_earthquake
+	}
+	
+	option = {	# Immediately evacuate Lisboa
+		name = btc_por.1A
+		
+		set_country_flag = earthquake1A
+		add_prestige = -20
+		country_event = {
+			id = btc_por.2
+			days = 7
+		}
+	}
+	
+	option = {	# Lead the people to the open spaces of the central plaza
+		name = btc_por.1B
+		
+		set_country_flag = earthquake1B
+		add_adm_power = -15
+		country_event = {
+			id = btc_por.2
+			days = 7
+		}
+	}
+	
+	option = { 	# The safety of the royal family is of the utmost priority
+		name = btc_por.1C
+		
+		set_country_flag = earthquake1C
+		add_legitimacy = -15
+		country_event = {
+			id = btc_por.2
+			days = 7
+		}
+	}
+}
+
+# The Wrath of the Ocean
+
+country_event = {
+	id = btc_por.2
+	title = btc_por.2_t
+	desc = btc_por.2_d
+	picture = CHURCH_ESTATE_UPSET_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				area = estremadura_area
+			}
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+		227 = {
+			add_devastation = 20
+		}
+	}
+	
+	option = {	# Why did God allow this to happen?
+		name = btc_por.2A
+		
+		if = {
+			limit = {
+				has_country_flag = earthquake1A
+			}
+			227 = {
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			clr_country_flag = earthquake1A
+		}
+		if = {
+			limit = {
+				has_country_flag = earthquake1B
+			}
+			227 = {
+				add_base_tax = -3
+				add_base_production = -3
+				add_base_manpower = -3
+			}
+			clr_country_flag = earthquake1B
+		}
+		if = {
+			limit = {
+				has_country_flag = earthquake1C
+			}
+			227 = {
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			clr_country_flag = earthquake1C
+		}
+		country_event = {
+			id = btc_por.3
+			days = 7
+		}
+	}
+}
+
+# The Ensuing Fires
+
+country_event = {
+	id = btc_por.3
+	title = btc_por.3_t
+	desc = btc_por.3_d
+	picture = VILLAGE_BURNING_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		227 = {
+			add_devastation = 20
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+	}
+	
+	option = {	# Evacuate all the remaining people
+		name = btc_por.3A
+		
+		add_prestige = -20
+		add_splendor = -100
+		country_event = {
+			id = btc_por.4
+			days = 15
+		}
+	}
+	
+	option = {	# Make efforts to put down the fires
+		name = btc_por.3B
+		
+		add_years_of_income = -0.33
+		227 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+		add_prestige = -10
+		country_event = {
+			id = btc_por.4
+			days = 15
+		}
+	}
+	
+	option = {	# Focus on salvaging our artistic heritage
+		name = btc_por.3C
+		
+		227 = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+		}
+		country_event = {
+			id = btc_por.4
+			days = 15
+		}
+	}
+	
+	option = {	# Focus on salvaging our valuable goods
+		name = btc_por.3D
+		
+		add_years_of_income = 0.33
+		227 = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+		}
+		add_prestige = -20
+		add_splendor = -100
+		country_event = {
+			id = btc_por.4
+			days = 15
+		}
+	}
+}
+
+# Marquês de Pombal
+
+country_event = {
+	id = btc_por.4
+	title = btc_por.4_t
+	desc = btc_por.4_d
+	picture = ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# An excellent minister
+		name = btc_por.4A
+		
+		define_advisor = {
+			type = statesman
+			name = "Marquês de Pombal"
+			skill = 3
+			cost_multiplier = 0.25
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		country_event = {
+			id = btc_por.5
+			days = 90
+		}
+	}
+}
+
+# The Aftermath
+
+country_event = {
+	id = btc_por.5
+	title = btc_por.5_t
+	desc = btc_por.5_d
+	picture = STREET_SPEECH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# We cannot affort to look weak to our enemies
+		name = btc_por.5A
+		
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 15
+		}
+		change_innovativeness = -20
+		country_event = {
+			id = btc_por.6
+			days = 90
+		}
+		227 = {
+			province_event = {
+				id = random_event.23	# Influenza
+				days = 30
+			}
+		}
+	}
+	
+	option = {	# Organize a mass for the lost
+		name = btc_por.5B
+
+		add_country_modifier = {
+			name = mourning_the_dead	# -1 global unrest
+			duration = 18250
+		}
+		country_event = {
+			id = btc_por.6
+			days = 90
+		}
+		227 = {
+			province_event = {
+				id = random_event.23	# Influenza
+				days = 30
+			}
+		}
+	}
+	
+	option = {	# Levy a special tax for the reconstruction efforts
+		name = btc_por.5C
+		
+		add_country_modifier = {
+			name = reconstruction_efforts	# +2 global unrest, +15% tax
+			duration = 1825
+		}
+		country_event = {
+			id = btc_por.6
+			days = 90
+		}
+		227 = {
+			province_event = {
+				id = random_event.23	# Influenza
+				days = 30
+			}
+		}
+	}
+	
+	option = {	# Bury the dead, heal the living
+		name = btc_por.5D
+		
+		highlight = yes
+		trigger = {
+			statesman = 3
+		}
+		
+		add_years_of_income = -0.25
+		227 = {
+			add_devastation = -20
+		}
+		country_event = {
+			id = btc_por.6
+			days = 90
+		}
+
+		set_country_flag = pombal_1
+	}
+	
+	option = {	# Relocate the court
+		name = btc_por.5E
+		
+		set_capital = 1851
+		country_event = {
+			id = btc_por.6
+			days = 90
+		}
+		227 = {
+			province_event = {
+				id = random_event.23	# Influenza
+				days = 30
+			}
+			add_province_modifier = {
+				name = relocated_capital	# +5 unrest
+				duration = 1825
+			}
+		}
+	}
+}
+
+# The Looting
+
+country_event = {
+	id = btc_por.6
+	title = btc_por.6_t
+	desc = btc_por.6_d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# There is barely anything to loot anyway
+		name = btc_por.6A
+		
+		add_absolutism = -10
+			227 = {
+				add_devastation = 10
+			}
+		country_event = {
+			id = btc_por.7
+			days = 90
+		}
+	}
+	
+	option = {	# Make a show of force
+		name = btc_por.6B
+		
+		227 = {
+			add_province_modifier = {
+				name = show_of_force	# +5 unrest
+				duration = 18250
+			}
+		}
+		country_event = {
+			id = btc_por.7
+			days = 90
+		}
+	}
+	
+	option = {	# The situation changes nothing on proper procedure
+		name = btc_por.6C
+		
+		add_adm_power = -100
+		country_event = {
+			id = btc_por.7
+			days = 90
+		}
+	}
+}
+
+# Recovery Efforts
+
+country_event = {
+	id = btc_por.7
+	title = btc_por.7_t
+	desc = btc_por.7_d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# The Crown will personally handle the situation
+		name = btc_por.7A
+		
+		add_adm_power = -200
+		add_country_modifier = {
+			name = recovery_efforts	# -1 yearly devastation
+			duration = 1500
+		}
+		country_event = {
+			id = btc_por.8
+			days = 90
+		}
+	}
+	
+	option = {	# The Nobility will handle the recovery efforts
+		name = btc_por.7B
+		
+		add_corruption = 1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = recovery_efforts	# -1 yearly devastation
+			duration = 1500
+		}
+		country_event = {
+			id = btc_por.8
+			days = 90
+		}
+	}
+	
+	option = {	# Only God can guide us to the light
+		name = btc_por.7C
+		
+		add_corruption = 1
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = recovery_efforts	# -1 yearly devastation
+			duration = 1500
+		}
+		country_event = {
+			id = btc_por.8
+			days = 90
+		}
+	}
+	
+	option = {	# Let us consult with the merchants of Lisbon
+		name = btc_por.7D
+		
+		add_corruption = 1
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = recovery_efforts	# -1 yearly devastation
+			duration = 1500
+		}
+		country_event = {
+			id = btc_por.8
+			days = 90
+		}
+	}
+	
+	option = {	# The Marquês has the situation under control
+		name = btc_por.7E
+		
+		highlight = yes
+		trigger = {
+			statesman = 3
+		}
+		
+		add_legitimacy = -25
+		add_country_modifier = {
+			name = increased_recovery_efforts	# -2 yearly devastation
+			duration = 1500
+		}
+		country_event = {
+			id = btc_por.8
+			days = 90
+		}
+
+		set_country_flag = pombal_2
+	}
+}
+
+# The Reconstruction of Lisbon
+
+country_event = {
+	id = btc_por.8
+	title = btc_por.8_t
+	desc = btc_por.8_d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Build a new capital
+		name = btc_por.8A
+		
+		add_stability = -2
+		add_years_of_income = -1.5
+		add_manpower = -10
+		227 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+			add_province_modifier = {
+				name = building_new_capital	# +2 unrest
+				duration = -1
+			}
+			# tier 1
+			remove_building = marketplace
+			remove_building = workshop
+			remove_building = temple
+			remove_building = barracks
+			remove_building = shipyard
+			remove_building = fort_15th
+			remove_building = coastal_defence
+			# tier 2
+			remove_building = courthouse
+			remove_building = dock
+			remove_building = regimental_camp
+			remove_building = fort_16th
+			remove_building = naval_battery
+			# tier 3
+			remove_building = cathedral
+			remove_building = university
+			remove_building = trade_depot
+			remove_building = grand_shipyard
+			remove_building = training_fields
+			remove_building = fort_17th
+			# tier 4
+			remove_building = stock_exchange
+			remove_building = counting_house
+			remove_building = town_hall
+			remove_building = drydock
+			remove_building = conscription_center
+			remove_building = fort_18th
+			# manufactories
+			remove_building = wharf
+			remove_building = weapons
+			remove_building = textile
+			remove_building = plantations
+			remove_building = tradecompany
+			remove_building = farm_estate
+			remove_building = mills
+			remove_building = furnace
+			remove_building = ramparts
+			remove_building = soldier_households
+			remove_building = impressment_offices
+			remove_building = state_house
+		}
+		country_event = {
+			id = btc_por.91
+			days = 1825
+		}
+	}
+	
+	option = {	# Rebuild the old city
+		name = btc_por.8B
+		
+		add_years_of_income = -0.5
+		227 = {
+			add_province_modifier = {
+				name = rebuilding_lisbon	# -1 unrest
+				duration = -1
+			}
+		}
+		country_event = {
+			id = btc_por.92
+			days = 1825
+		}
+	}
+	
+	option = {	# Widen the streets
+		name = btc_por.8C
+		
+		add_years_of_income = -1
+		country_event = {
+			id = btc_por.93
+			days = 1825
+		}
+	}
+	
+	option = {	# Demolish and modernize the Baixa
+		name = btc_por.8D
+		
+		highlight = yes
+		trigger = {
+			statesman = 3
+		}
+		add_years_of_income = -2
+		227 = {
+			add_province_modifier = {
+				name = demolishing_baixa	# +1 unrest
+				duration = -1
+			}
+		}
+		country_event = {
+			id = btc_por.94
+			days = 1825
+		}
+
+		set_country_flag = pombal_3
+	}
+}
+
+# A New Capital
+
+country_event = {
+	id = btc_por.91
+	title = btc_por.91_t
+	desc = btc_por.91_d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Build a new capital
+		name = btc_por.91A
+		
+		set_capital = 227
+		227 = {
+			change_province_name = "Belém"
+			rename_capital = "Belém"
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = modern_city	# -20% development cost
+				duration = -1
+			}
+			remove_province_modifier = building_new_capital
+			remove_province_modifier = massive_earthquake
+		}
+	}
+}
+
+# Lisbon Rebuilt
+
+country_event = {
+	id = btc_por.92
+	title = btc_por.92_t
+	desc = btc_por.92_d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = btc_por.92A
+		
+		add_stability = 1
+		227 = {
+			add_base_tax = 8
+			add_base_production = 8
+			add_base_manpower = 8
+			add_province_modifier = {
+				name = from_the_ashes	# +1 yearly prestige
+				duration = -1
+			}
+			remove_province_modifier = rebuilding_lisbon
+			remove_province_modifier = massive_earthquake
+		}
+	}
+}
+
+# A Modern Capital
+
+country_event = {
+	id = btc_por.93
+	title = btc_por.93_t
+	desc = btc_por.93_d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = btc_por.93A
+		
+		227 = {
+			add_base_tax = 4
+			add_base_production = 4
+			add_base_manpower = 4
+			
+			add_province_modifier = {
+				name = modern_streets	# -10% development cost
+				duration = -1
+			}	
+			remove_province_modifier = massive_earthquake
+		}
+	}
+}
+
+# Baixa Pombalina
+
+country_event = {
+	id = btc_por.94
+	title = btc_por.94_t
+	desc = btc_por.94_d
+	picture = BORDER_TENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = btc_por.94A
+		
+		227 = {
+			add_base_tax = 6
+			add_base_production = 6
+			add_base_manpower = 6
+			add_province_modifier = {
+				name = baixa_pombalina	# -15% development cost
+				duration = -1
+			}	
+			remove_province_modifier = demolishing_baixa
+			remove_province_modifier = massive_earthquake
+		}
+	}
+}
+
+### Other Portuguese Events ###
+
+# Epistola de victoria contra infideles habita #
+country_event = {
+	id = btc_por.100
+	title = btc_por.100_t
+	desc = btc_por.100_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		is_year = 1495
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {	# Expel the Mouriscos
+		name = btc_por.100a
+
+		add_stability = 1
+		add_legitimacy = 5
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+
+		add_country_modifier = {	# -1 tolerance heathens, -0.01% month innovative, +5% admin tech cost
+			name = anti_islamic_society
+			duration = 99999
+		}
+	}
+
+	option = {	# Expel the Jews
+		name = btc_por.100b
+
+		add_stability = 1
+		add_legitimacy = 5
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+
+		add_country_modifier = {	# -1 tolerance heathens, -0.01 month innovative, +2% interest rate
+			name = anti_semitic_society
+			duration = 99999
+		}
+	}
+
+	option = {	# Expel the Mouriscos and Jews
+		name = btc_por.100c
+
+		add_stability = 2
+		add_legitimacy = 10
+
+		add_country_modifier = {	# -1 tolerance heathens, -0.01% month innovative, +5% admin tech cost
+			name = anti_islamic_society
+			duration = 99999
+		}
+		add_country_modifier = {	# -1 tolerance heathens, -0.01 month innovative, +2% interest rate
+			name = anti_semitic_society
+			duration = 99999
+		}
+	}
+
+	option = {	# These are all subjects of Portugal
+		name = btc_por.100d
+
+		add_stability = -1
+		add_legitimacy = -20
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+}
+
+# The matter of the overseas policy #
+
+country_event = {
+	id = btc_por.101
+	title = btc_por.101_t
+	desc = btc_por.101_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		exploration_ideas = 1
+		num_of_trade_companies = 3
+	}
+
+	option = {	# We must prioritize the building of trust and repiration between our partners
+		name = btc_por.101a
+
+		add_mercantilism = -4
+
+		add_country_modifier = {	# +3 merchant power, +5% trade power abroad, +1 diplomatic rep
+			name = respected_merchants
+			duration = 99999
+		}
+	}
+
+	option = {	# We must protect our interests, by force if necessary
+		name = btc_por.101b
+
+		add_mercantilism = 4
+
+		add_country_modifier = {	# +25% privateering eff, +20% blockade eff, +15% embargo eff, -10% trade eff 
+			name = aggressive_mercantilism
+			duration = 99999
+		}
+	}
+}
+
+# Atlantic Slave Trade #
+
+country_event = {
+	id = btc_por.103
+	title = btc_por.103_t
+	desc = btc_por.103_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		south_america_superregion = {
+			owned_by = ROOT
+			is_city = yes
+		}
+		south_africa_region = {
+			owned_by = ROOT
+			is_city = yes
+		}
+	}
+
+	option = {	# Encourage slave trade  from Africa
+		name = btc_por.103a
+
+		add_country_modifier = {	
+			name = atlantic_slave_trade	# +15% tariffs, +5% global trade power, +10 settler growth, -0.02 moth innovative, +10% admin tech cost, -10% production eff
+			duration = 99999
+		}
+	}
+
+	option = {	# We should regulate these practices
+		name = btc_por.103b
+
+		add_country_modifier = {
+			name = regulated_slave_trade	# -15% tariffs, -5% global trade power, -10 settler growth, -0.05 corruption
+			duration = 99999
+		}
+	}
+}
+
+# Captains acting independently from the crown #
+
+country_event = {
+	id = btc_por.104
+	title = btc_por.104_t
+	desc = btc_por.104_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		current_age = age_of_reformation
+		OR = {
+			NOT = { crown_land_share = 60 }
+			estate_influence = {
+				estate = estate_nobles
+				influence = 70
+			}
+			NOT = { 
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 25
+				}
+			}
+		}
+	}
+
+	option = {	# Our subjects must act strictly according to the crown's wishes
+		name = btc_por.104a
+
+		add_adm_power = -300
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -15
+		}
+	}
+
+	option = {	# What can one do?
+		name = btc_por.104b
+
+		add_country_modifier = {
+			name = weak_control	# +0.5 yearly corruption
+			duration = 99999
+		}
+	}
+}
+
+# Security of the Empire #
+
+country_event = {
+	id = btc_por.105
+	title = btc_por.105_t
+	desc = btc_por.105_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		num_of_trade_companies = 5
+	}
+
+	option = {	# Increase our garrisons
+		name = btc_por.105a
+
+		add_country_modifier = {
+			name = strong_feitorias	# -10% forcelimit, +25% garrison size, +10% fort defensiveness
+			duration = 99999
+		}
+	}
+
+	option = {	# Invest in strong fleets
+		name = btc_por.105b
+
+		add_country_modifier = {
+			name = patrol_fleets	# -5% marine forcelimit, -10% light ship cost, +15% light ship combat ability
+			duration = 99999
+		}
+	}
+
+	option = {	# It's going to be fine!
+		name = btc_por.105c
+
+		add_country_modifier = {
+			name = overstretched_empire	# +1 global unrest, -10% trade steering
+			duration = 99999
+		}
+	}
+}
+
+# Bankrupcy of the Antwerpen Factory #
+
+country_event = {
+	id = btc_por.106
+	title = btc_por.106_t
+	desc = btc_por.106_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		is_year = 1544
+		NOT = { dip_tech = 11 }
+	}
+
+	option = {	# It's not worth salvaging
+		name = btc_por.106a
+
+		add_prestige = -15
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = -5
+		}
+
+		add_country_modifier = {
+			name = collapse_of_european_trade	# -15% global trade power
+			duration = 99999
+		}
+	}
+
+	option = {	# The factory is too big to fail
+		name = btc_por.106b
+
+		add_years_of_income = -1
+
+		add_country_modifier = {
+			name = decrepid_trade_infrastructure	# -5% trade efficiency
+			duration = 99999
+		}
+	}
+}
+
+# Crusade against Infidels in Africa #
+
+country_event = {
+	id = btc_por.107
+	title = btc_por.107_t
+	desc = btc_por.107_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		is_year = 1560
+		exists = MOR
+	}
+
+	option = {	# By the grace of God!
+		name = btc_por.107a
+
+		add_estate_influence_modifier = {
+			estate = estate_church
+			influence = 10
+			duration = 60
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = 10
+			duration = 60
+		}
+		
+		OR = {
+			convert_ruler_to_general = yes
+			convert_female_ruler_to_general = yes
+		}
+		OR = {
+			convert_heir_to_general = 30
+			convert_female_heir_to_general = 30
+		}
+
+		add_country_modifier = {
+			name = crusading_spirit	# -10% regiment cost, -15% recruiting time, -85% heir chance
+			duration = 99999
+		}
+	}
+
+	option = {	# Crusades are a thing of the past
+		name = btc_por.107b
+
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = -10
+		}
+		add_legitimacy = -5
+
+		add_country_modifier = {
+			name = decadent_fervor	# -5% morale, -5% clergy loyalty equilibrium
+			duration = 99999
+		}
+	}
+}
+
+# Casa da India can't cover its expenses #
+
+country_event = {
+	id = btc_por.108
+	title = btc_por.108_t
+	desc = btc_por.108_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		is_year = 1596
+		NOT = { dip_tech = 15 }
+		OR = {
+			trade_company_coromandel = { 
+				owned_by = ROOT
+				is_city = yes
+			}
+			trade_company_deccan = {
+				owned_by = ROOT
+				is_city = yes
+			}
+			trade_company_east_india = {
+				owned_by = ROOT
+				is_city = yes
+			}
+			trade_company_west_india = {
+				owned_by = ROOT
+				is_city = yes
+			}
+		}
+	}
+
+	option = {	# The state cannot afford to lose its most valuable asset
+		name = btc_por.108a
+
+		add_country_modifier = {
+			name = inefficient_indian_trade	# -15% trade eff, +0.1 yearly corruption
+			duration = 99999
+		}
+	}
+
+	option = {	# perhaps it's time to sell it to the highest bidder
+		name = btc_por.108b
+
+		add_years_of_income = 2
+		add_prestige = -20
+
+		add_country_modifier = {
+			name = privatization_of_the_indian_trade	# -20% global trade power
+			duration = 99999
+		}
+	}
+}
+
+# A matter of national defense #
+
+country_event = {
+	id = btc_por.109
+	title = btc_por.109_t
+	desc = btc_por.109_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		current_age = age_of_absolutism
+		any_known_country = {
+			offensive_war_with = ROOT
+		}
+		war_score = -15
+	}
+
+	option = {	# Victory, or death!
+		name = btc_por.109a
+
+		add_war_exhaustion = -5
+
+		add_country_modifier = {
+			name = war_of_survival	# +15% morale, +30% fort defensiveness, +0.02 war exhaustion, +0.1 monthly devastation, +0.1 monthly autonomy, +0.5 yearly corruption
+			duration = 99999
+		}
+	}
+
+	option = {	# It's not worth gambling our future away
+		name = btc_por.109b
+
+		add_country_modifier = {
+			name = damage_control	# -0.1 month devastation, -10% army maintenance
+			duration = 99999
+		}
+	}
+}
+
+# The reliance on Brazilian gold #
+
+create_event = {
+	id = btc_por.110
+	title = btc_por.110_t
+	desc = btc_por.110_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		south_america_superregion = {
+			owned_by = ROOT
+			is_city = yes
+			trade_goods = gold
+		}
+	}
+
+	option = {	# This is God's reward for our unshakable faith
+		name = btc_por.110a
+
+		add_stability = 1
+
+		add_country_modifier = {
+			name = reliance_on_brazilian_gold	# +25% treasure fleet size, 15% gold monthly inflation modifier
+			duration = 99999
+		}
+	}
+
+	option = {	# We should not be fooled by shiny metals
+		name = btc_por.110b
+
+		add_adm_power = 15
+	}
+}
+
+# A golden age for our culture #
+
+country_event = {
+	id = btc_por.111
+	title = btc_por.111_t
+	desc = btc_por.111_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		has_country_modifier = reliance_on_brazilian_gold
+		absolutism = 50
+	}
+
+	option = {	# We should keep this newfound wealth safe in our treasury
+		name = btc_por.111a
+
+		add_years_of_income = 1
+		add_inflation = 5
+	}
+
+	option = {	# We should use this gold to display our wealth
+		name = btc_por.111b
+
+		add_splendor = 100
+		add_prestige = 15
+
+		add_country_modifier = {
+			name = lavish_court_life	# +20% advisors cost, +1 possible advisors
+			duration = 99999
+		}
+		add_country_modifier = {
+			name = ostentatious_public_works	# +20% building costs
+			duration = 99999
+		}
+	}
+
+	option = {	# We should use this wealth to send embassiers to our friends
+		name = btc_por.111c
+
+		add_years_of_income = -1
+
+		add_country_modifier = {
+			name = impressive_embassies	# +1 diplocatic reputation, +25% relation improvement
+			duration = 99999
+		}
+	}
+
+	after = {
+		POR = { country_event = { id = btc_por.112 days = 30 } }
+	}
+}
+
+# Over reliance on Brazilian gold #
+
+country_event = {
+	id = btc_por.112
+	title = btc_por.112_t
+	desc = btc_por.112_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# The writing was on the wall
+		name = btc_por.112a
+
+		add_inflation = 10
+		add_stability = -1
+	}
+}
+
+# The Methuen Agreement #
+
+country_event = {
+	id = btc_por.113
+	title = btc_por.113_t
+	desc = btc_por.113_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		is_year = 1690
+	}
+
+	option = {	# Signed the treaty
+		name = btc_por.113a
+
+		231 = {
+			add_base_production = 2
+			change_trade_goods = wine
+		}
+		232 = { change_trade_goods = wine }
+
+		if = {
+			limit = {
+				exists = ENG
+			}
+			ENG = {
+				add_opinion = {
+					who = ROOT
+					modifier = accepted_meuthen_agreement	# 50 relations
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = GBR
+			}
+			GBR = {
+				add_opinion = {
+					who = ROOT
+					modifier = accepted_meuthen_agreement	# 50 relations
+				}
+			}
+		}
+	}
+
+	option = {	# Denounce the treaty
+		name = btc_por.113b
+
+		add_stability = -1
+		if = {
+			limit = {
+				exists = ENG
+			}
+			ENG = {
+				add_opinion = {
+					who = ROOT
+					modifier = denounced_meuthen_agreement	# 50 relations
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = GBR
+			}
+			GBR = {
+				add_opinion = {
+					who = ROOT
+					modifier = denounced_meuthen_agreement	# 50 relations
+				}
+			}
+		}
+
+		add_country_modifier = {
+			name = trade_deficit	# -15% global trade power
+			duration = 99999
+		}
+	}
+}
+
+# Expulsion of the Jesuits #
+
+country_event = {
+	id = btc_por.114
+	title = btc_por.114_t
+	desc = btc_por.114_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		OR = {
+			has_country_flag = pombal_1
+			has_country_flag = pombal_2
+			has_country_flag = pombal_3
+		}
+		227 = { NOT = { has_province_modifier = massive_earthquake }}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {	# Expel the Jesuits
+		name = btc_por.114a
+
+		add_absolutism = 10
+
+		add_country_modifier = {
+			name = intelectual_persecution	# -30% institution spread, +10% tech cost
+			duration = 99999
+		}
+
+		set_country_flag = expelled_jesuits
+	}
+
+	option = {	# Do not expel them
+		name = btc_por.114b
+
+		add_country_modifier = {
+			name = jesuit_intelectual_domination	# +20 clergy influence, +0.1 yearly corruption, -0.5 yearly absolutism, +1% yearly prestige decay
+			duration = 99999
+		}
+	}
+}
+
+# The ban on slavery #
+
+country_event = {
+	id = btc_por.115
+	title = btc_por.115_t
+	desc = btc_por.115_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		has_institution = enlightenment
+	}
+
+	option = {	# It is simply too profitable
+		name = btc_por.115a
+
+		add_country_modifier = {
+			name = slaver_economy	# +30% global tariffs, +15% admin tech cost, -15% production eff
+			duration = 99999
+		}
+	}
+
+	option = {	# Ban slaver trade on the metropole
+		name = btc_por.115b
+
+		add_adm_power = -200
+		add_dip_power = -50
+		add_years_of_income = -1
+		
+		add_country_modifier = {
+			name = colonial_slave_trade	# +30% global tariffs, +5% admin tech cost, -5% production eff
+			duration = 99999
+		}
+	}
+
+	option = {	# Ban all slave trade
+		name = btc_por.115c
+
+		add_adm_power = -400
+		add_dip_power = -300
+		add_years_of_income = -2
+
+		add_country_modifier = {
+			name = production_innovation	# -5% Admin Tech Cost, +15% Institution Spread, +5% Production efficiency
+			duration = 99999
+		}
+	}
+}
+
+# Viradeira #
+
+country_event = {
+	id = btc_por.116
+	title = btc_por.116_t
+	desc = btc_por.116_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		had_country_flag = {
+			flag = expelled_jesuits
+			days = 3650
+		}
+	}
+
+	option = {	# What is done is done
+		name = btc_por.116a
+
+		add_country_modifier = {
+			name = decadent_society	# +10% all power costs, +50% stability cost, +1 army tradition decay
+			duration = 99999
+		}
+	}
+
+	option = {	# We have to go back
+		name = btc_por.116b
+
+		add_stability = -2
+
+		add_country_modifier = {
+			name = conservative_policies # THIS HAS TO REPLACE THE OLD MODIFIER # -0.2 monthly innovativeness
+			duration = 99999
+		}
+	}
+}
+
+# Enemies closing in on Lisbon #
+
+country_event = {
+	id = btc_por.117
+	title = btc_por.117_t
+	desc = btc_por.117_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		current_age = age_of_revolutions
+		any_known_country = {
+			offensive_war_with = ROOT
+		}
+		war_score = -15
+	}
+
+	option = {	# Stand and fight!
+		name = btc_por.117a
+
+		add_country_modifier = {
+			name = stand_and_fight	# +10% morale, +20% recruitment speed, +20% morale recovery speed
+			duration = 99999
+		}
+
+		set_country_flag = stand_and_fight
+	}
+
+	option = {	# We must secure the safety of the Royal Family
+		name = btc_por.117b
+
+		add_prestige = -20
+
+		add_country_modifier = {
+			name = exiled_royal_family	# -1 monthly legitimacy, +20% liberty desire all subjects
+			duration = 99999
+		}
+	}
+}
+
+# Royal Family Captured #
+
+country_event = {
+	id = btc_por.118
+	title = btc_por.118_t
+	desc = btc_por.118_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		has_country_flag = stand_and_fight
+		227 = { NOT = { controlled_by = ROOT }}
+	}
+
+	option = {	# It's a disaster!
+		name = btc_por.118a
+
+		add_stability = -3
+		add_prestige = -50
+		add_war_exhaustion = 15
+	}
+}
+
+# Decree of open ports to friendly nations #
+
+country_event = {
+	id = btc_por.119
+	title = btc_por.119_t
+	desc = btc_por.119_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		current_age = age_of_revolutions
+		any_subject_country = {
+			liberty_desire = 50
+		}
+	}
+
+	option = {	# Never!
+		name = btc_por.119a
+
+		add_country_modifier = {
+			name = colonial_unrest	# +35% liberty desire in subjects
+			duration = 99999
+		}
+	}
+
+	option = {	# We have no alternative
+		name = btc_por.119b
+
+		add_country_modifier = {
+			name = emancipated_colonies	# -75% global tariffs
+			duration = 99999
+		}
+	}
+}
