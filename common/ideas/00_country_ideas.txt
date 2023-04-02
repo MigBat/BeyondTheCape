@@ -4,8 +4,6 @@
 
 # This one is the first for the case that some country manages to become fully Norse.
 
-###TEST###
-
 norse_ideas = {
 	start = {
 		land_morale = 0.15	
