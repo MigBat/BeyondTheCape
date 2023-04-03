@@ -254,3 +254,7 @@ colonial_unrest = {
 emancipated_colonies = {
 	global_tariffs = -0.75
 }
+
+port_wine = {
+	trade_goods_size = 2
+}

@@ -68,10 +68,10 @@
 
  portuguese_mass_load_cannons:0 "Portuguese Mass Load Cannons"
  portuguese_mass_load_cannons_desc:0 "However many cannons the enemy puts on their flagship, we must have twice as many. No ship has ever sunk from having too many cannons."
- spanish_hull_sheating:0 "Spanish Hull Sheating"
+ spanish_hull_sheating:0 "Spanish Hull Sheathing"
  spanish_hull_sheating_desc:0 "A Spanish ship is so great that neither war nor ocean can sink it."
  spanish_improved_crows_nest:0 "Spanish Improved Crow's Nest"
- spanish_improved_crows_nest_desc:0 "With a flagship like ours, the enemy will see us coming. It won't do them any good, since we will see them first too."
+ spanish_improved_crows_nest_desc:0 "With a flagship like ours, the enemy will see us coming. By then, it will already be too late for them."
 
 ## Events ##
 
@@ -171,7 +171,7 @@
  btc_por.100d:0 "These are all subjects of Portugal"
  btc_por.101_t:0 "The matter of overseas policy"
  btc_por.101_d:0 ""
- btc_por.101a:0 "We must prioritize the building of trust and repiration between our partners"
+ btc_por.101a:0 "We must prioritize the building of trust and reputation between our partners"
  btc_por.101b:0 "We must protect our interests, by force if necessary"
  #btc_por.102_t:0 ""
  #btc_por.102_d:0 ""
@@ -327,6 +327,13 @@
  btc_events.2a:0 "Stand strong!"
  resist_reconquista:0 "Resist Reconquista"
  desc_resist_reconquista:0 "We will double our efforts to keep the christians at bay."
+
+## Modifiers ##
+
+ port_wine:0 "Port Wine"
+ desc_port_wine:0 "The famous Port wine is produced here, in the valleys of the Douro river."
+ methuen_treaty:0 "Methuen Treaty"
+ desc_methuen_treaty:0 "This treaty gives increased cooperation with english merchants"
 
 ## Disasters ##
 
