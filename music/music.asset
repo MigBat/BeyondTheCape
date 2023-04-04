@@ -101,3 +101,57 @@ music = {
 	name = "maintheme"
 	file = "maintheme.ogg"
 }
+music = {
+	name = "autumninbragança"
+	file = "autumninbragança.ogg"
+}
+music = {
+	name = "carracksarrive"
+	file = "carracksarrive.ogg"
+}
+music = {
+	name = "edgeoftheworld"
+	file = "edgeoftheworld.ogg"
+}
+music = {
+	name = "fandango"
+	file = "fandango.ogg"
+}
+music = {
+	name = "greenpines"
+	file = "greenpines.ogg"
+}
+music = {
+	name = "highervalor"
+	file = "highervalor.ogg"
+}
+music = {
+	name = "indomitablelusa"
+	file = "indomitablelusa.ogg"
+}
+music = {
+	name = "inlisbon"
+	file = "inlisbon.ogg"
+}
+music = {
+	name = "lakesofazores"
+	file = "lakesofazores.ogg"
+}
+music = {
+	name = "maintheme"
+	file = "maintheme.ogg"
+}
+music = {
+	name = "saudade"
+	file = "saudade.ogg"
+}
+music = {
+	name = "windsfromspain"
+	file = "windsfromspain.ogg"
+}
+music = {
+	name = "maintheme(civ)"
+	file = "maintheme(civ).ogg"
+}
+
+

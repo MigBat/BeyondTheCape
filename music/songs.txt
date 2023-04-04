@@ -1,0 +1,507 @@
+song = {
+	name = "maintheme"
+	
+	chance = {
+		modifier = {
+			factor = 0			#only played in mainscreen.
+		}		
+	}
+}
+
+
+song = {
+	name = "amongthepoor"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}		
+	}
+}
+
+
+song = {
+	name = "battleoflepanto"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}		
+	}
+}
+
+song = {
+	name = "commerceinthepeninsula"
+	
+	chance = {
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}		
+	}
+}
+
+song = {
+	name = "dehominisdignitate"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "eire"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = no
+		}		
+	}
+}
+
+
+song = {
+	name = "event_war_battleofbreitenfeld"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}			
+	}
+}
+
+song = {
+	name = "inthestreets"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			is_at_war = no
+		}		
+	}
+}
+
+song = {
+	name = "kingscourt"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "kingsinthenorth"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "machiavelli"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "mood_discovery"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			num_of_colonists = 1
+		}		
+	}
+}
+
+song = {
+	name = "mood_landinsight"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}		
+	}
+}
+
+song = {
+	name = "moodevent_thesnowiscoming"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "mykingdom"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}		
+	}
+}
+
+
+song = {
+	name = "nighttime"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+
+song = {
+	name = "openseas"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}			
+	}
+}
+
+song = {
+	name = "rideforthvictoriously"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}		
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}		
+	}
+}
+
+song = {
+	name = "theageofdiscovery"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}	
+		modifier = {
+			factor = 1.5
+			num_of_colonists = 1
+		}			
+	}
+}
+
+
+song = {
+	name = "theendofanera_endcredits"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}				
+	}
+}
+
+
+song = {
+	name = "thesoundofsummer"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}			
+	}
+}
+
+song = {
+	name = "thestageisset"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}		
+	}
+}
+
+song = {
+	name = "thestonemasons"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+
+song = {
+	name = "war_offtowar"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}		
+	}
+}
+song = {
+	name = "fandango"
+	
+	chance = {
+		modifier = {
+			factor = 0.5
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 1.25
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "highervalor"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 1.50
+			num_of_colonists = 1
+		}
+		modifier = {
+			factor = 1.50
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "edgeoftheworld"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 1.25
+			num_of_colonists = 1
+		}
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}		
+	}
+}
+song = {
+	name = "autumninbragança"
+	
+	chance = {
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "greenpines"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 0.75
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 0.25
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "inlisbon"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 0.75
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 0.25
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 1.5
+			navy_size = 90
+		}			
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}		
+	}
+}
+song = {
+	name = "indomitablelusa"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			infantry_fraction = 0.80
+		}		
+	}		
+}
+song = {
+	name = "saudade"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1.75
+			manpower_percentage = 0.1
+		}
+	}
+}
+song = {
+	name = "lakesofazores"
+	
+	chance = {
+		modifier = {
+			factor = 0.75
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1.5
+			num_of_colonists = 1
+		}		
+	}
+}
+song = {
+	name = "windsfromspain"
+	
+	chance = {
+		modifier = {
+			factor = 0.20
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 0.75
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 1.25
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 1.75
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}		
+	}
+}
+song = {
+	name = "carracksarrive"
+	
+	chance = {
+		modifier = {
+			factor = 1.50
+			is_at_war = yes
+		}
+	modifier = {
+			factor = 1.25
+			artillery_fraction = 0.35
+		}		
+	}
+	modifier = {
+			factor = 1.25
+			navy_size = 90
+	}	
+}
+
+
+############
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
