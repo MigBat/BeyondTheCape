@@ -98,12 +98,8 @@ music = {
 ### BEYOND THE CAPE ###
 
 music = {
-	name = "maintheme"
-	file = "maintheme.ogg"
-}
-music = {
-	name = "autumninbragança"
-	file = "autumninbragança.ogg"
+	name = "autumninbraganca"
+	file = "autumninbraganca.ogg"
 }
 music = {
 	name = "carracksarrive"

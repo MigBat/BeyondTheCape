@@ -269,6 +269,9 @@ song = {
 		}		
 	}
 }
+
+# BEYOND THE CAPE #
+
 song = {
 	name = "fandango"
 	
@@ -324,7 +327,7 @@ song = {
 	}
 }
 song = {
-	name = "autumninbragança"
+	name = "autumninbraganca"
 	
 	chance = {
 		modifier = {

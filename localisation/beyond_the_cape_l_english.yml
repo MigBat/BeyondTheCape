@@ -411,8 +411,10 @@
  chose_other_candidate:0 "other candidate was chosen"
  chose_our_candidate:0 "our candidate was chosen"
  supported_us:0 "supported us"
+
+# Songs #
  
- autumninbragança:0 "Brigantine Autumn"
+ autumninbraganca:0 "Brigantine Autumn"
  edgeoftheworld:0 "At the Western Edge of the World"
  greenpines:0 "Flores do Verde Pino"
  highervalor:0 "As Armas e os Barões Assinalados"
@@ -422,3 +424,4 @@
  saudade:0 "Saudade"
  windsfromspain:0 "Ill winds from Spain"
  carracksarrive:0 "Carracks on the Horizon"
+ fandango:0 "Fandango"
