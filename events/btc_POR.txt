@@ -787,6 +787,8 @@ country_event = {
 	desc = btc_por.100_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		is_year = 1495
@@ -806,7 +808,7 @@ country_event = {
 			loyalty = 10
 		}
 
-		add_country_modifier = {	# -1 tolerance heathens, -0.01% month innovative, +5% admin tech cost
+		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +5% admin tech cost
 			name = anti_islamic_society
 			duration = 7300
 		}
@@ -822,7 +824,7 @@ country_event = {
 			loyalty = 10
 		}
 
-		add_country_modifier = {	# -1 tolerance heathens, -0.01 month innovative, +2% interest rate
+		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +0.2 interest rate
 			name = anti_semitic_society
 			duration = 7300
 		}
@@ -834,11 +836,11 @@ country_event = {
 		add_stability = 2
 		add_legitimacy = 10
 
-		add_country_modifier = {	# -1 tolerance heathens, -0.01% month innovative, +5% admin tech cost
+		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +5% admin tech cost
 			name = anti_islamic_society
 			duration = 7300
 		}
-		add_country_modifier = {	# -1 tolerance heathens, -0.01 month innovative, +2% interest rate
+		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +0.2 interest rate
 			name = anti_semitic_society
 			duration = 7300
 		}
@@ -867,6 +869,8 @@ country_event = {
 	title = btc_por.101_t
 	desc = btc_por.101_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -905,6 +909,8 @@ country_event = {
 	desc = btc_por.103_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		south_america_superregion = {
@@ -921,7 +927,7 @@ country_event = {
 		name = btc_por.103a
 
 		add_country_modifier = {	
-			name = atlantic_slave_trade	# +15% tariffs, +5% global trade power, +10 settler growth, -0.02 moth innovative, +10% admin tech cost, -10% production eff
+			name = atlantic_slave_trade	# +15% tariffs, +5% global trade power, +10 settler growth, -0.2 month innovative, +10% admin tech cost, -10% production eff
 			duration = 18250
 		}
 	}
@@ -943,6 +949,8 @@ country_event = {
 	title = btc_por.104_t
 	desc = btc_por.104_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -990,6 +998,8 @@ country_event = {
 	desc = btc_por.105_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		num_of_trade_companies = 5
@@ -1030,6 +1040,8 @@ country_event = {
 	title = btc_por.106_t
 	desc = btc_por.106_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -1072,6 +1084,8 @@ country_event = {
 	desc = btc_por.107_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		is_year = 1560
@@ -1092,8 +1106,10 @@ country_event = {
 			duration = 60
 		}
 		
-		convert_ruler_to_general = yes
+		convert_ruler_to_general = 70
+		convert_female_ruler_to_general = 60
 		convert_heir_to_general = 50
+		convert_female_heir_to_general = 40
 
 		add_country_modifier = {
 			name = crusading_spirit	# -10% regiment cost, -15% recruiting time, -85% heir chance
@@ -1124,6 +1140,8 @@ country_event = {
 	title = btc_por.108_t
 	desc = btc_por.108_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -1179,13 +1197,15 @@ country_event = {
 	desc = btc_por.109_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		current_age = age_of_absolutism
 		any_known_country = {
 			offensive_war_with = ROOT
 		}
-		war_score = -15
+		NOT = { war_score = -15 }
 	}
 
 	option = {	# Victory, or death!
@@ -1195,7 +1215,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = war_of_survival	# +15% morale, +30% fort defensiveness, +0.02 war exhaustion, +0.1 monthly devastation, +0.1 monthly autonomy, +0.5 yearly corruption
-			duration = 99999
+			duration = 1825
 		}
 	}
 
@@ -1204,18 +1224,20 @@ country_event = {
 
 		add_country_modifier = {
 			name = damage_control	# -0.1 month devastation, -10% army maintenance
-			duration = 99999
+			duration = 1825
 		}
 	}
 }
 
 # The reliance on Brazilian gold #
 
-create_event = {
+country_event = {
 	id = btc_por.110
 	title = btc_por.110_t
 	desc = btc_por.110_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -1233,7 +1255,7 @@ create_event = {
 
 		add_country_modifier = {
 			name = reliance_on_brazilian_gold	# +25% treasure fleet size, 15% gold monthly inflation modifier
-			duration = 99999
+			duration = 3650
 		}
 	}
 
@@ -1251,6 +1273,8 @@ country_event = {
 	title = btc_por.111_t
 	desc = btc_por.111_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -1273,11 +1297,11 @@ country_event = {
 
 		add_country_modifier = {
 			name = lavish_court_life	# +20% advisors cost, +1 possible advisors
-			duration = 99999
+			duration = 3650
 		}
 		add_country_modifier = {
 			name = ostentatious_public_works	# +20% building costs
-			duration = 99999
+			duration = 3650
 		}
 	}
 
@@ -1288,7 +1312,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = impressive_embassies	# +1 diplocatic reputation, +25% relation improvement
-			duration = 99999
+			duration = 3650
 		}
 	}
 
@@ -1304,6 +1328,8 @@ country_event = {
 	title = btc_por.112_t
 	desc = btc_por.112_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	is_triggered_only = yes
 
@@ -1322,6 +1348,8 @@ country_event = {
 	title = btc_por.113_t
 	desc = btc_por.113_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -1371,7 +1399,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = trade_deficit	# -15% global trade power
-			duration = 99999
+			duration = 3650
 		}
 	}
 
@@ -1412,6 +1440,8 @@ country_event = {
 	desc = btc_por.114_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		OR = {
@@ -1433,7 +1463,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = intelectual_persecution	# -30% institution spread, +10% tech cost
-			duration = 99999
+			duration = 5475
 		}
 
 		set_country_flag = expelled_jesuits
@@ -1444,7 +1474,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = jesuit_intelectual_domination	# +20 clergy influence, +0.1 yearly corruption, -0.5 yearly absolutism, +1% yearly prestige decay
-			duration = 99999
+			duration = 5475
 		}
 	}
 }
@@ -1457,6 +1487,8 @@ country_event = {
 	desc = btc_por.115_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		has_institution = enlightenment
@@ -1467,33 +1499,33 @@ country_event = {
 
 		add_country_modifier = {
 			name = slaver_economy	# +30% global tariffs, +15% admin tech cost, -15% production eff
-			duration = 99999
+			duration = 7300
 		}
 	}
 
 	option = {	# Ban slaver trade on the metropole
 		name = btc_por.115b
 
-		add_adm_power = -200
+		add_adm_power = -50
 		add_dip_power = -50
 		add_years_of_income = -1
 		
 		add_country_modifier = {
 			name = colonial_slave_trade	# +30% global tariffs, +5% admin tech cost, -5% production eff
-			duration = 99999
+			duration = 7300
 		}
 	}
 
 	option = {	# Ban all slave trade
 		name = btc_por.115c
 
-		add_adm_power = -400
-		add_dip_power = -300
+		add_adm_power = -100
+		add_dip_power = -100
 		add_years_of_income = -2
 
 		add_country_modifier = {
 			name = production_innovation	# -5% Admin Tech Cost, +15% Institution Spread, +5% Production efficiency
-			duration = 99999
+			duration = 7300
 		}
 	}
 }
@@ -1505,6 +1537,8 @@ country_event = {
 	title = btc_por.116_t
 	desc = btc_por.116_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -1519,7 +1553,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = decadent_society	# +10% all power costs, +50% stability cost, +1 army tradition decay
-			duration = 99999
+			duration = 3650
 		}
 	}
 
@@ -1530,7 +1564,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = conservative_policies # THIS HAS TO REPLACE THE OLD MODIFIER # -0.2 monthly innovativeness
-			duration = 99999
+			duration = 3650
 		}
 	}
 }
@@ -1543,13 +1577,15 @@ country_event = {
 	desc = btc_por.117_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		current_age = age_of_revolutions
 		any_known_country = {
 			offensive_war_with = ROOT
 		}
-		war_score = -15
+		NOT = { war_score = -15 }
 	}
 
 	option = {	# Stand and fight!
@@ -1557,7 +1593,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = stand_and_fight	# +10% morale, +20% recruitment speed, +20% morale recovery speed
-			duration = 99999
+			duration = 1825
 		}
 
 		set_country_flag = stand_and_fight
@@ -1570,7 +1606,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = exiled_royal_family	# -1 monthly legitimacy, +20% liberty desire all subjects
-			duration = 99999
+			duration = 1825
 		}
 	}
 }
@@ -1582,6 +1618,8 @@ country_event = {
 	title = btc_por.118_t
 	desc = btc_por.118_d
 	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -1606,6 +1644,8 @@ country_event = {
 	desc = btc_por.119_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		current_age = age_of_revolutions
@@ -1619,7 +1659,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = colonial_unrest	# +35% liberty desire in subjects
-			duration = 99999
+			duration = 3650
 		}
 	}
 
@@ -1628,7 +1668,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = emancipated_colonies	# -75% global tariffs
-			duration = 99999
+			duration = 3650
 		}
 	}
 }
