@@ -8433,12 +8433,12 @@ MAZ_ideas = {
 
 GAL_ideas = {
     start = {
-		light_ship_cost = -0.15
-		navy_tradition = 1
+		fort_maintenance_modifier = -0.25
+		morale_damage_received = -0.25
     }
 
     bonus = {
-		merchants = 1
+		ship_durability = 0.1
     }
 
     trigger = {
@@ -8450,23 +8450,27 @@ GAL_ideas = {
     gal_way_of_st_james = {
 		global_tax_modifier = 0.1
     }
-    gal_la_bella = {
-		defensiveness = 0.2
+	gal_irmandinos = {
+		siege_ability = 0.1
     }
-    gal_rein_in_the_cities = {
-		stability_cost_modifier = -0.1
+    gal_xunta_xeral_de_galiza = {
+		burghers_loyalty_modifier = 0.05
+		legitimacy = 0.5
     }
-    gal_shipyards = {
-		ship_durability = 0.05
+	gal_costa_da_morte = {
+		own_coast_naval_combat_bonus = 1
     }
-	gal_santiago_y_cierra = {
-		land_morale = 0.1
+	gal_of_corn_and_potato = {
+		development_cost = -0.075
+		global_trade_goods_size_modifier = 0.05
     }
-    gal_sailors_of_the_cantabrian_sea = {
-		sunk_ship_morale_hit_recieved = -0.2
+	gal_galician_enlightenment = {
+		adm_tech_cost_modifier = -0.05
+		idea_cost = -0.1
     }
-    gal_irmandinos = {
-		infantry_power = 0.1
+    gal_rexurdimento = {
+		same_culture_advisor_cost = -0.25
+		manpower_in_own_culture_provinces = 0.15
     }
 }
 

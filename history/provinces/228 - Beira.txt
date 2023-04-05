@@ -21,7 +21,6 @@ discovered_by = ottoman
 discovered_by = eastern
 
 
-fort_15th = yes
 1580.1.1 = { fort_16th = yes }
 1580.8.25 = { controller = SPA }
 1580.8.26 = { controller = POR }
