@@ -46,7 +46,7 @@ demolishing_baixa = {
 }
 
 modern_city = {
-	development_cost_modifier = -0.2
+	development_cost_modifier = -0.3
 }
 
 from_the_ashes = {
@@ -58,7 +58,7 @@ modern_streets = {
 }
 
 baixa_pombalina = {
-	development_cost_modifier = -0.15
+	development_cost_modifier = -0.2
 }
 
 quest_for_the_new_world = {
@@ -111,7 +111,7 @@ regulated_slave_trade = {
 }
 
 weak_control = {
-	yearly_corruption = 0.5
+	yearly_corruption = 0.3
 }
 
 strong_feitorias = {
@@ -127,7 +127,7 @@ patrol_fleets = {
 }
 
 overstretched_empire = {
-	global_unrest = -1
+	global_unrest = 1
 	trade_steering = -0.1
 }
 
@@ -160,7 +160,8 @@ privatization_of_the_indian_trade = {
 }
 
 war_of_survival = {
-	land_morale = 0.15
+	own_territory_dice_roll_bonus = 1
+	land_morale = 0.05
 	defensiveness = 0.3
 	war_exhaustion = 0.02
 	global_monthly_devastation = 0.1
@@ -197,15 +198,14 @@ trade_deficit = {
 }
 
 intelectual_persecution = {
-	church_influence_modifier = 0.2
-	yearly_corruption = 0.1
-	yearly_absolutism = -0.5
-	prestige_decay = 0.01
+	global_institution_spread = -0.3
+	technology_cost = 0.1church_influence_modifier = 0.2
 }
 
 jesuit_intelectual_domination = {
-	global_institution_spread = -0.3
-	technology_cost = 0.1
+	yearly_corruption = 0.1
+	yearly_absolutism = -0.5
+	prestige_decay = 0.01
 }
 
 slaver_economy = {
@@ -237,8 +237,9 @@ conservative_policies = {
 }
 
 stand_and_fight = {
-	land_morale = 0.1
-	regiment_recruit_speed = 0.2
+	own_territory_dice_roll_bonus = 1
+	defensiveness = 0.2
+	regiment_recruit_speed = -0.2
 	recover_army_morale_speed = 0.2
 }
 

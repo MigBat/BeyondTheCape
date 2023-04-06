@@ -146,6 +146,10 @@ music = {
 	file = "windsfromspain.ogg"
 }
 music = {
+	name = "cliffsofgalicia"
+	file = "cliffsofgalicia.ogg"
+}
+music = {
 	name = "maintheme(civ)"
 	file = "maintheme(civ).ogg"
 }

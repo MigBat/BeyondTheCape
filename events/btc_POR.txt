@@ -62,13 +62,43 @@ country_event = {
 				add_base_manpower = -1
 			}
 			estremadura_area = {
-				add_devastation = 60
+				add_devastation = 40
 				add_base_tax = -2
 				add_base_production = -2
 				add_base_manpower = -2
 			}
+			231 = {
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			northern_morocco_area = {
+				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			western_morocco_area = {
+				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			lower_andalucia_area = {
+				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			extremadura_area = {
+				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
 			add_stability = -1
 		}
+		
 		227 = {
 			add_province_modifier = {
 				name = massive_earthquake
@@ -93,7 +123,7 @@ country_event = {
 		name = btc_por.1B
 		
 		set_country_flag = earthquake1B
-		add_adm_power = -15
+		add_adm_power = -10
 		country_event = {
 			id = btc_por.2
 			days = 7
@@ -123,6 +153,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		add_stability = -1
 		every_owned_province = {
 			limit = {
 				area = estremadura_area
@@ -130,9 +161,30 @@ country_event = {
 			add_base_tax = -1
 			add_base_production = -1
 			add_base_manpower = -1
+			add_devastation = 15
 		}
-		227 = {
-			add_devastation = 20
+		231 = {
+			add_base_production = -1
+			add_base_manpower = -1
+			add_devastation = 10
+		}
+		1851 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_devastation = 10
+		}
+		229 = {
+			add_base_production = -1
+			add_base_manpower = -1
+			add_devastation = 10
+		}
+		230 = {
+			add_base_manpower = -1
+			add_devastation = 5
+		}
+		4556 = {
+			add_base_production = -1
+			add_devastation = 5
 		}
 	}
 	
@@ -144,9 +196,7 @@ country_event = {
 				has_country_flag = earthquake1A
 			}
 			227 = {
-				add_base_tax = -1
-				add_base_production = -1
-				add_base_manpower = -1
+			add_devastation = 5
 			}
 			clr_country_flag = earthquake1A
 		}
@@ -155,9 +205,12 @@ country_event = {
 				has_country_flag = earthquake1B
 			}
 			227 = {
-				add_base_tax = -3
-				add_base_production = -3
-				add_base_manpower = -3
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			227 = {
+			add_devastation = 5
 			}
 			clr_country_flag = earthquake1B
 		}
@@ -166,9 +219,12 @@ country_event = {
 				has_country_flag = earthquake1C
 			}
 			227 = {
-				add_base_tax = -2
-				add_base_production = -2
-				add_base_manpower = -2
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			227 = {
+			add_devastation = 5
 			}
 			clr_country_flag = earthquake1C
 		}
@@ -191,18 +247,27 @@ country_event = {
 	
 	immediate = {
 		227 = {
-			add_devastation = 20
+			add_devastation = 10
 			add_base_tax = -1
 			add_base_production = -1
 			add_base_manpower = -1
 		}
+		add_stability = -1
 	}
 	
 	option = {	# Evacuate all the remaining people
 		name = btc_por.3A
 		
-		add_prestige = -20
-		add_splendor = -100
+		227 = {
+			add_base_tax = -2
+			add_base_production = -1
+			add_devastation = 5
+		}
+		add_adm_power = -25
+		add_dip_power = -25
+		add_prestige = -35
+		add_splendor = -500
+		
 		country_event = {
 			id = btc_por.4
 			days = 15
@@ -212,13 +277,15 @@ country_event = {
 	option = {	# Make efforts to put down the fires
 		name = btc_por.3B
 		
-		add_years_of_income = -0.33
 		227 = {
-			add_base_tax = -1
-			add_base_production = -1
 			add_base_manpower = -1
+			add_devastation = -10
 		}
-		add_prestige = -10
+		add_mil_power = -50
+		add_years_of_income = -1.5
+		add_years_of_manpower = -0.33
+		add_prestige = -25
+		add_splendor = -500
 		country_event = {
 			id = btc_por.4
 			days = 15
@@ -229,10 +296,13 @@ country_event = {
 		name = btc_por.3C
 		
 		227 = {
-			add_base_tax = -2
+			add_base_tax = -1
 			add_base_production = -2
 			add_base_manpower = -2
+			add_devastation = 5
 		}
+		add_dip_power = -50
+		add_years_of_income = -1
 		country_event = {
 			id = btc_por.4
 			days = 15
@@ -242,14 +312,15 @@ country_event = {
 	option = {	# Focus on salvaging our valuable goods
 		name = btc_por.3D
 		
-		add_years_of_income = 0.33
 		227 = {
 			add_base_tax = -2
-			add_base_production = -2
+			add_base_production = -1
 			add_base_manpower = -2
+			add_devastation = 5
 		}
-		add_prestige = -20
-		add_splendor = -100
+		add_admin_power = -50
+		add_prestige = -25
+		add_splendor = -500
 		country_event = {
 			id = btc_por.4
 			days = 15
@@ -292,7 +363,7 @@ country_event = {
 	id = btc_por.5
 	title = btc_por.5_t
 	desc = btc_por.5_d
-	picture = STREET_SPEECH_eventPicture
+	picture = PLAGUE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -301,7 +372,7 @@ country_event = {
 		
 		add_power_projection = {
 			type = mission_rewards_power_projection
-			amount = 15
+			amount = 5
 		}
 		change_innovativeness = -20
 		country_event = {
@@ -318,7 +389,11 @@ country_event = {
 	
 	option = {	# Organize a mass for the lost
 		name = btc_por.5B
-
+		
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = -15
+		}
 		add_country_modifier = {
 			name = mourning_the_dead	# -1 global unrest
 			duration = 18250
@@ -338,6 +413,10 @@ country_event = {
 	option = {	# Levy a special tax for the reconstruction efforts
 		name = btc_por.5C
 		
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = -15
+		}
 		add_country_modifier = {
 			name = reconstruction_efforts	# +2 global unrest, +15% tax
 			duration = 1825
@@ -351,6 +430,7 @@ country_event = {
 				id = random_event.23	# Influenza
 				days = 30
 			}
+			add_devastation = -10
 		}
 	}
 	
@@ -361,7 +441,11 @@ country_event = {
 		trigger = {
 			statesman = 3
 		}
-		
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = -15
+		}
+		add_stability = 1
 		add_years_of_income = -0.25
 		227 = {
 			add_devastation = -20
@@ -381,6 +465,10 @@ country_event = {
 		country_event = {
 			id = btc_por.6
 			days = 90
+		}
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = -15
 		}
 		227 = {
 			province_event = {
@@ -408,7 +496,7 @@ country_event = {
 	option = {	# There is barely anything to loot anyway
 		name = btc_por.6A
 		
-		add_absolutism = -10
+		add_absolutism = -15
 			227 = {
 				add_devastation = 10
 			}
@@ -421,10 +509,11 @@ country_event = {
 	option = {	# Make a show of force
 		name = btc_por.6B
 		
+		add_absolutism = 5
 		227 = {
 			add_province_modifier = {
 				name = show_of_force	# +5 unrest
-				duration = 18250
+				duration = 1825
 			}
 		}
 		country_event = {
@@ -450,7 +539,7 @@ country_event = {
 	id = btc_por.7
 	title = btc_por.7_t
 	desc = btc_por.7_d
-	picture = BORDER_TENSION_eventPicture
+	picture = WOUNDED_SOLDIERS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -460,7 +549,7 @@ country_event = {
 		add_adm_power = -200
 		add_country_modifier = {
 			name = recovery_efforts	# -1 yearly devastation
-			duration = 1500
+			duration = 1825
 		}
 		country_event = {
 			id = btc_por.8
@@ -471,14 +560,15 @@ country_event = {
 	option = {	# The Nobility will handle the recovery efforts
 		name = btc_por.7B
 		
-		add_corruption = 1
+		add_corruption = 4
+		add_mil_power = 25
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 10
 		}
 		add_country_modifier = {
 			name = recovery_efforts	# -1 yearly devastation
-			duration = 1500
+			duration = 1825
 		}
 		country_event = {
 			id = btc_por.8
@@ -489,14 +579,15 @@ country_event = {
 	option = {	# Only God can guide us to the light
 		name = btc_por.7C
 		
-		add_corruption = 1
+		add_corruption = 4
+		add_adm_power = 25
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 10
 		}
 		add_country_modifier = {
 			name = recovery_efforts	# -1 yearly devastation
-			duration = 1500
+			duration = 1825
 		}
 		country_event = {
 			id = btc_por.8
@@ -507,7 +598,8 @@ country_event = {
 	option = {	# Let us consult with the merchants of Lisbon
 		name = btc_por.7D
 		
-		add_corruption = 1
+		add_corruption = 4
+		add_dip_power = 25
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 10
@@ -530,10 +622,11 @@ country_event = {
 			statesman = 3
 		}
 		
+		add_corruption = 1
 		add_legitimacy = -25
 		add_country_modifier = {
 			name = increased_recovery_efforts	# -2 yearly devastation
-			duration = 1500
+			duration = 1825
 		}
 		country_event = {
 			id = btc_por.8
@@ -550,15 +643,15 @@ country_event = {
 	id = btc_por.8
 	title = btc_por.8_t
 	desc = btc_por.8_d
-	picture = BORDER_TENSION_eventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {	# Build a new capital
 		name = btc_por.8A
 		
-		add_stability = -2
-		add_years_of_income = -1.5
+		add_stability = -1
+		add_years_of_income = -2
 		add_manpower = -10
 		227 = {
 			spawn_rebels = {
@@ -567,7 +660,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = building_new_capital	# +2 unrest
-				duration = -1
+				duration = 9125
 			}
 			# tier 1
 			remove_building = marketplace
@@ -624,7 +717,7 @@ country_event = {
 		227 = {
 			add_province_modifier = {
 				name = rebuilding_lisbon	# -1 unrest
-				duration = -1
+				duration = 9125
 			}
 		}
 		country_event = {
@@ -650,11 +743,11 @@ country_event = {
 		trigger = {
 			statesman = 3
 		}
-		add_years_of_income = -2
+		add_years_of_income = -1.5
 		227 = {
 			add_province_modifier = {
 				name = demolishing_baixa	# +1 unrest
-				duration = -1
+				duration = 9125
 			}
 		}
 		country_event = {
@@ -687,8 +780,8 @@ country_event = {
 			add_base_production = 2
 			add_base_manpower = 2
 			add_province_modifier = {
-				name = modern_city	# -20% development cost
-				duration = -1
+				name = modern_city	# -30% development cost
+				duration = 9125
 			}
 			remove_province_modifier = building_new_capital
 			remove_province_modifier = massive_earthquake
@@ -702,7 +795,7 @@ country_event = {
 	id = btc_por.92
 	title = btc_por.92_t
 	desc = btc_por.92_d
-	picture = BORDER_TENSION_eventPicture
+	picture = CITY_VIEW_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -711,12 +804,12 @@ country_event = {
 		
 		add_stability = 1
 		227 = {
-			add_base_tax = 8
-			add_base_production = 8
-			add_base_manpower = 8
+			add_base_tax = 5
+			add_base_production = 5
+			add_base_manpower = 5
 			add_province_modifier = {
 				name = from_the_ashes	# +1 yearly prestige
-				duration = -1
+				duration = 9125
 			}
 			remove_province_modifier = rebuilding_lisbon
 			remove_province_modifier = massive_earthquake
@@ -730,13 +823,13 @@ country_event = {
 	id = btc_por.93
 	title = btc_por.93_t
 	desc = btc_por.93_d
-	picture = BORDER_TENSION_eventPicture
+	picture = CITY_VIEW_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = btc_por.93A
-		
+		add_stability = 1
 		227 = {
 			add_base_tax = 4
 			add_base_production = 4
@@ -744,7 +837,7 @@ country_event = {
 			
 			add_province_modifier = {
 				name = modern_streets	# -10% development cost
-				duration = -1
+				duration = 9125
 			}	
 			remove_province_modifier = massive_earthquake
 		}
@@ -757,20 +850,20 @@ country_event = {
 	id = btc_por.94
 	title = btc_por.94_t
 	desc = btc_por.94_d
-	picture = BORDER_TENSION_eventPicture
+	picture = CITY_VIEW_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = btc_por.94A
-		
+		add_stability = 1
 		227 = {
-			add_base_tax = 6
-			add_base_production = 6
-			add_base_manpower = 6
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
 			add_province_modifier = {
-				name = baixa_pombalina	# -15% development cost
-				duration = -1
+				name = baixa_pombalina	# -20% development cost
+				duration = 9125
 			}	
 			remove_province_modifier = demolishing_baixa
 			remove_province_modifier = massive_earthquake
@@ -785,7 +878,7 @@ country_event = {
 	id = btc_por.100
 	title = btc_por.100_t
 	desc = btc_por.100_d
-	picture = BORDER_TENSION_eventPicture
+	picture = POPE_PREACHING_eventPicture
 
 	fire_only_once = yes
 
@@ -810,7 +903,7 @@ country_event = {
 
 		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +5% admin tech cost
 			name = anti_islamic_society
-			duration = 7300
+			duration = 73000
 		}
 	}
 
@@ -826,7 +919,7 @@ country_event = {
 
 		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +0.2 interest rate
 			name = anti_semitic_society
-			duration = 7300
+			duration = 73000
 		}
 	}
 
@@ -835,14 +928,22 @@ country_event = {
 
 		add_stability = 2
 		add_legitimacy = 10
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
 
 		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +5% admin tech cost
 			name = anti_islamic_society
-			duration = 7300
+			duration = 73000
 		}
 		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +0.2 interest rate
 			name = anti_semitic_society
-			duration = 7300
+			duration = 73000
 		}
 	}
 
@@ -868,7 +969,7 @@ country_event = {
 	id = btc_por.101
 	title = btc_por.101_t
 	desc = btc_por.101_d
-	picture = BORDER_TENSION_eventPicture
+	picture = PORTUGUESE_MERCHANTS_eventPicture
 
 	fire_only_once = yes
 
@@ -885,7 +986,7 @@ country_event = {
 
 		add_country_modifier = {	# +3 merchant power, +5% trade power abroad, +1 diplomatic rep
 			name = respected_merchants
-			duration = 7300
+			duration = -1
 		}
 	}
 
@@ -896,7 +997,7 @@ country_event = {
 
 		add_country_modifier = {	# +25% privateering eff, +20% blockade eff, +15% embargo eff, -10% trade eff 
 			name = aggressive_mercantilism
-			duration = 7300
+			duration = -1
 		}
 	}
 }
@@ -907,7 +1008,7 @@ country_event = {
 	id = btc_por.103
 	title = btc_por.103_t
 	desc = btc_por.103_d
-	picture = BORDER_TENSION_eventPicture
+	picture = JESUTIS_IN_BRAZIL_eventPicture
 
 	fire_only_once = yes
 
@@ -928,7 +1029,7 @@ country_event = {
 
 		add_country_modifier = {	
 			name = atlantic_slave_trade	# +15% tariffs, +5% global trade power, +10 settler growth, -0.2 month innovative, +10% admin tech cost, -10% production eff
-			duration = 18250
+			duration = 73000
 		}
 	}
 
@@ -937,7 +1038,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = regulated_slave_trade	# -15% tariffs, -5% global trade power, -10 settler growth, -0.05 corruption
-			duration = 18250
+			duration = 73000
 		}
 	}
 }
@@ -948,7 +1049,7 @@ country_event = {
 	id = btc_por.104
 	title = btc_por.104_t
 	desc = btc_por.104_d
-	picture = BORDER_TENSION_eventPicture
+	picture = BUCCANEERS_eventPicture
 
 	fire_only_once = yes
 
@@ -974,6 +1075,7 @@ country_event = {
 		name = btc_por.104a
 
 		add_adm_power = -100
+		add_years_of_income = -1
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -15
@@ -985,7 +1087,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = weak_control	# +0.5 yearly corruption
-			duration = 5475
+			duration = 54750
 		}
 	}
 }
@@ -996,7 +1098,7 @@ country_event = {
 	id = btc_por.105
 	title = btc_por.105_t
 	desc = btc_por.105_d
-	picture = BORDER_TENSION_eventPicture
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
 
 	fire_only_once = yes
 
@@ -1010,7 +1112,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = strong_feitorias	# -10% forcelimit, +25% garrison size, +10% fort defensiveness
-			duration = 18250
+			duration = -1
 		}
 	}
 
@@ -1019,7 +1121,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = patrol_fleets	# -5% marine forcelimit, -10% light ship cost, +15% light ship combat ability
-			duration = 18250
+			duration = -1
 		}
 	}
 
@@ -1028,7 +1130,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = overstretched_empire	# +1 global unrest, -10% trade steering
-			duration = 18250
+			duration = -1
 		}
 	}
 }
@@ -1039,7 +1141,7 @@ country_event = {
 	id = btc_por.106
 	title = btc_por.106_t
 	desc = btc_por.106_d
-	picture = BORDER_TENSION_eventPicture
+	picture = HOUSE_OF_TRADE_eventPicture
 
 	fire_only_once = yes
 
@@ -1071,7 +1173,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = decrepid_trade_infrastructure	# -5% trade efficiency
-			duration = 7300
+			duration = 36500
 		}
 	}
 }
@@ -1082,7 +1184,7 @@ country_event = {
 	id = btc_por.107
 	title = btc_por.107_t
 	desc = btc_por.107_d
-	picture = BORDER_TENSION_eventPicture
+	picture = RELIGIOUS_WARS_eventPicture
 
 	fire_only_once = yes
 
@@ -1139,7 +1241,7 @@ country_event = {
 	id = btc_por.108
 	title = btc_por.108_t
 	desc = btc_por.108_d
-	picture = BORDER_TENSION_eventPicture
+	picture = HOUSE_OF_TRADE_eventPicture
 
 	fire_only_once = yes
 
@@ -1172,7 +1274,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = inefficient_indian_trade	# -15% trade eff, +0.1 yearly corruption
-			duration = 7300
+			duration = 36500
 		}
 	}
 
@@ -1195,7 +1297,7 @@ country_event = {
 	id = btc_por.109
 	title = btc_por.109_t
 	desc = btc_por.109_d
-	picture = BORDER_TENSION_eventPicture
+	picture = SIEGE_eventPicture
 
 	fire_only_once = yes
 
@@ -1235,7 +1337,7 @@ country_event = {
 	id = btc_por.110
 	title = btc_por.110_t
 	desc = btc_por.110_d
-	picture = BORDER_TENSION_eventPicture
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 
 	fire_only_once = yes
 
@@ -1252,7 +1354,8 @@ country_event = {
 		name = btc_por.110a
 
 		add_stability = 1
-
+		add_inflation = 1
+		
 		add_country_modifier = {
 			name = reliance_on_brazilian_gold	# +25% treasure fleet size, 15% gold monthly inflation modifier
 			duration = 3650
@@ -1272,7 +1375,7 @@ country_event = {
 	id = btc_por.111
 	title = btc_por.111_t
 	desc = btc_por.111_d
-	picture = BORDER_TENSION_eventPicture
+	picture = IMPORTANT_STATUE_eventPicture
 
 	fire_only_once = yes
 
@@ -1327,7 +1430,7 @@ country_event = {
 	id = btc_por.112
 	title = btc_por.112_t
 	desc = btc_por.112_d
-	picture = BORDER_TENSION_eventPicture
+	picture = BANKRUPTCY_eventPicture
 
 	fire_only_once = yes
 
@@ -1347,7 +1450,7 @@ country_event = {
 	id = btc_por.113
 	title = btc_por.113_t
 	desc = btc_por.113_d
-	picture = BORDER_TENSION_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
 
@@ -1364,7 +1467,7 @@ country_event = {
 		name = btc_por.113a
 
 		231 = {
-			add_base_production = 2
+			add_base_production = 1
 			change_trade_goods = wine
 
 			add_permanent_province_modifier = {
@@ -1399,7 +1502,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = trade_deficit	# -15% global trade power
-			duration = 3650
+			duration = 27375
 		}
 	}
 
@@ -1438,7 +1541,7 @@ country_event = {
 	id = btc_por.114
 	title = btc_por.114_t
 	desc = btc_por.114_d
-	picture = BORDER_TENSION_eventPicture
+	picture = BIG_BOOK_eventPicture
 
 	fire_only_once = yes
 
@@ -1463,7 +1566,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = intelectual_persecution	# -30% institution spread, +10% tech cost
-			duration = 5475
+			duration = 18250
 		}
 
 		set_country_flag = expelled_jesuits
@@ -1474,7 +1577,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = jesuit_intelectual_domination	# +20 clergy influence, +0.1 yearly corruption, -0.5 yearly absolutism, +1% yearly prestige decay
-			duration = 5475
+			duration = 18250
 		}
 	}
 }
@@ -1485,7 +1588,7 @@ country_event = {
 	id = btc_por.115
 	title = btc_por.115_t
 	desc = btc_por.115_d
-	picture = BORDER_TENSION_eventPicture
+	picture = REFORM_eventPicture
 
 	fire_only_once = yes
 
@@ -1499,7 +1602,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = slaver_economy	# +30% global tariffs, +15% admin tech cost, -15% production eff
-			duration = 7300
+			duration = -1
 		}
 	}
 
@@ -1512,7 +1615,7 @@ country_event = {
 		
 		add_country_modifier = {
 			name = colonial_slave_trade	# +30% global tariffs, +5% admin tech cost, -5% production eff
-			duration = 7300
+			duration = -1
 		}
 	}
 
@@ -1525,7 +1628,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = production_innovation	# -5% Admin Tech Cost, +15% Institution Spread, +5% Production efficiency
-			duration = 7300
+			duration = -1
 		}
 	}
 }
@@ -1536,8 +1639,7 @@ country_event = {
 	id = btc_por.116
 	title = btc_por.116_t
 	desc = btc_por.116_d
-	picture = BORDER_TENSION_eventPicture
-
+	picture = ACCUSATION_eventPicture
 	fire_only_once = yes
 
 	trigger = {
@@ -1553,7 +1655,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = decadent_society	# +10% all power costs, +50% stability cost, +1 army tradition decay
-			duration = 3650
+			duration = 18250
 		}
 	}
 
@@ -1564,7 +1666,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = conservative_policies # THIS HAS TO REPLACE THE OLD MODIFIER # -0.2 monthly innovativeness
-			duration = 3650
+			duration = 18250
 		}
 	}
 }
@@ -1575,7 +1677,7 @@ country_event = {
 	id = btc_por.117
 	title = btc_por.117_t
 	desc = btc_por.117_d
-	picture = BORDER_TENSION_eventPicture
+	picture = REVOLT_HUNGARIAN_eventPicture
 
 	fire_only_once = yes
 
@@ -1617,7 +1719,7 @@ country_event = {
 	id = btc_por.118
 	title = btc_por.118_t
 	desc = btc_por.118_d
-	picture = BORDER_TENSION_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 
@@ -1642,7 +1744,7 @@ country_event = {
 	id = btc_por.119
 	title = btc_por.119_t
 	desc = btc_por.119_d
-	picture = BORDER_TENSION_eventPicture
+	picture = ENCOMIENDA_eventPicture
 
 	fire_only_once = yes
 
@@ -1659,7 +1761,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = colonial_unrest	# +35% liberty desire in subjects
-			duration = 3650
+			duration = 9125
 		}
 	}
 
@@ -1668,7 +1770,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = emancipated_colonies	# -75% global tariffs
-			duration = 3650
+			duration = 9125
 		}
 	}
 }

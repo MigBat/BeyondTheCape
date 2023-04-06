@@ -8434,7 +8434,7 @@ MAZ_ideas = {
 GAL_ideas = {
     start = {
 		fort_maintenance_modifier = -0.25
-		morale_damage_received = -0.25
+		morale_damage_received = -0.2
     }
 
     bonus = {
