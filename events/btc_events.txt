@@ -159,6 +159,7 @@ country_event = {
 		4554 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
+				leader = 
 				friend = CAS
 				size = 3
 				win = yes
@@ -224,6 +225,14 @@ country_event = {
 		add_opinion = {
 			who = POR
 			modifier = came_to_our_aid	# 100 opinion
+		}
+
+		define_general = {
+			name = "Pedro Madruga"
+			shock = 3
+			fire = 3
+			manuever = 2
+			siege = 0
 		}
 
 		4555 = {
