@@ -78,6 +78,8 @@ country_event = {
 	desc = btc_events.3_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = CAS
 	}
@@ -114,6 +116,7 @@ country_event = {
 		create_vassal = GAL
 		GAL = { 
 			add_liberty_desire = 100
+			add_manpower = 10
 			country_event = {
 				id = btc_events.4
 				days = 30
