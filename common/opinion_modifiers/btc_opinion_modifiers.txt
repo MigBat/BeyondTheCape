@@ -1,0 +1,36 @@
+### BEYOND THE CAPE ###
+
+chose_other_candidate = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+chose_our_candidate = {
+	opinion = 100
+	yearly_decay = 1
+}
+
+supported_us = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+helped_peasant_rebellion = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+non_interference = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+came_to_our_aid = {
+	opinion = 100
+	yearly_decay = 2
+}
+
+forsaken_us = {
+	opinion = -100
+	yearly_decay = 2
+}

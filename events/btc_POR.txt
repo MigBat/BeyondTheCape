@@ -61,23 +61,6 @@ country_event = {
 				add_base_production = -1
 				add_base_manpower = -1
 			}
-			estremadura_area = {
-				add_devastation = 40
-				add_base_tax = -2
-				add_base_production = -2
-				add_base_manpower = -2
-			}
-			231 = {
-				add_base_tax = -1
-				add_base_production = -1
-				add_base_manpower = -1
-			}
-			northern_morocco_area = {
-				add_devastation = 30
-				add_base_tax = -1
-				add_base_production = -1
-				add_base_manpower = -1
-			}
 			western_morocco_area = {
 				add_devastation = 30
 				add_base_tax = -1
@@ -92,6 +75,17 @@ country_event = {
 			}
 			extremadura_area = {
 				add_devastation = 30
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			estremadura_area = {
+				add_devastation = 50
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			231 = {
 				add_base_tax = -1
 				add_base_production = -1
 				add_base_manpower = -1
@@ -196,7 +190,7 @@ country_event = {
 				has_country_flag = earthquake1A
 			}
 			227 = {
-			add_devastation = 5
+			add_devastation = 10
 			}
 			clr_country_flag = earthquake1A
 		}
@@ -210,7 +204,7 @@ country_event = {
 				add_base_manpower = -2
 			}
 			227 = {
-			add_devastation = 5
+			add_devastation = 10
 			}
 			clr_country_flag = earthquake1B
 		}
@@ -224,7 +218,7 @@ country_event = {
 				add_base_manpower = -1
 			}
 			227 = {
-			add_devastation = 5
+			add_devastation = 10
 			}
 			clr_country_flag = earthquake1C
 		}
@@ -282,7 +276,7 @@ country_event = {
 			add_devastation = -10
 		}
 		add_mil_power = -50
-		add_years_of_income = -1.5
+		add_years_of_income = -0.33
 		add_years_of_manpower = -0.33
 		add_prestige = -25
 		add_splendor = -500
@@ -328,7 +322,7 @@ country_event = {
 	}
 }
 
-# Marquês de Pombal
+# Marquï¿½s de Pombal
 
 country_event = {
 	id = btc_por.4
@@ -343,7 +337,7 @@ country_event = {
 		
 		define_advisor = {
 			type = statesman
-			name = "Marquês de Pombal"
+			name = "Marquï¿½s de Pombal"
 			skill = 3
 			cost_multiplier = 0.25
 		}
@@ -430,7 +424,7 @@ country_event = {
 				id = random_event.23	# Influenza
 				days = 30
 			}
-			add_devastation = -10
+			add_devastation = -5
 		}
 	}
 	
@@ -448,7 +442,7 @@ country_event = {
 		add_stability = 1
 		add_years_of_income = -0.25
 		227 = {
-			add_devastation = -20
+			add_devastation = -10
 		}
 		country_event = {
 			id = btc_por.6
@@ -614,7 +608,7 @@ country_event = {
 		}
 	}
 	
-	option = {	# The Marquês has the situation under control
+	option = {	# The Marquï¿½s has the situation under control
 		name = btc_por.7E
 		
 		highlight = yes
@@ -660,7 +654,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = building_new_capital	# +2 unrest
-				duration = 9125
+				duration = -1
 			}
 			# tier 1
 			remove_building = marketplace
@@ -717,7 +711,7 @@ country_event = {
 		227 = {
 			add_province_modifier = {
 				name = rebuilding_lisbon	# -1 unrest
-				duration = 9125
+				duration = -1
 			}
 		}
 		country_event = {
@@ -747,7 +741,7 @@ country_event = {
 		227 = {
 			add_province_modifier = {
 				name = demolishing_baixa	# +1 unrest
-				duration = 9125
+				duration = -1
 			}
 		}
 		country_event = {
@@ -774,14 +768,14 @@ country_event = {
 		
 		set_capital = 227
 		227 = {
-			change_province_name = "Belém"
-			rename_capital = "Belém"
+			change_province_name = "Belï¿½m"
+			rename_capital = "Belï¿½m"
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
 			add_province_modifier = {
 				name = modern_city	# -30% development cost
-				duration = 9125
+				duration = -1
 			}
 			remove_province_modifier = building_new_capital
 			remove_province_modifier = massive_earthquake
@@ -809,7 +803,7 @@ country_event = {
 			add_base_manpower = 5
 			add_province_modifier = {
 				name = from_the_ashes	# +1 yearly prestige
-				duration = 9125
+				duration = -1
 			}
 			remove_province_modifier = rebuilding_lisbon
 			remove_province_modifier = massive_earthquake
@@ -837,7 +831,7 @@ country_event = {
 			
 			add_province_modifier = {
 				name = modern_streets	# -10% development cost
-				duration = 9125
+				duration = -1
 			}	
 			remove_province_modifier = massive_earthquake
 		}
@@ -863,7 +857,7 @@ country_event = {
 			add_base_manpower = 3
 			add_province_modifier = {
 				name = baixa_pombalina	# -20% development cost
-				duration = 9125
+				duration = -1
 			}	
 			remove_province_modifier = demolishing_baixa
 			remove_province_modifier = massive_earthquake
@@ -903,7 +897,7 @@ country_event = {
 
 		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +5% admin tech cost
 			name = anti_islamic_society
-			duration = 73000
+			duration = 7300
 		}
 	}
 
@@ -919,7 +913,7 @@ country_event = {
 
 		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +0.2 interest rate
 			name = anti_semitic_society
-			duration = 73000
+			duration = 7300
 		}
 	}
 
@@ -1029,7 +1023,7 @@ country_event = {
 
 		add_country_modifier = {	
 			name = atlantic_slave_trade	# +15% tariffs, +5% global trade power, +10 settler growth, -0.2 month innovative, +10% admin tech cost, -10% production eff
-			duration = 73000
+			duration = 7300
 		}
 	}
 
@@ -1038,7 +1032,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = regulated_slave_trade	# -15% tariffs, -5% global trade power, -10 settler growth, -0.05 corruption
-			duration = 73000
+			duration = 7300
 		}
 	}
 }

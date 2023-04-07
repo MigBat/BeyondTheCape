@@ -259,3 +259,11 @@ emancipated_colonies = {
 port_wine = {
 	trade_goods_size = 2
 }
+
+galician_revolts = {
+	global_unrest = 5
+}
+
+strong_nobility = {
+	min_local_autonomy = 50
+}

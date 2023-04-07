@@ -69,3 +69,188 @@ country_event = {
 		}
 	}
 }
+
+# Irmandinos Revolt #
+
+country_event = {
+	id = btc_events.3
+	title = btc_events.3_t
+	desc = btc_events.3_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = CAS
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {	# Help the local nobility fight the peasantry
+		name = btc_events.3a
+
+		add_years_of_income = -0.5
+		add_manpower = -10
+		add_country_modifier = {
+			name = galician_revolts	# +5 global unrest
+			duration = 1825
+		}
+		
+		every_owned_province = {
+			limit = {
+				area = galicia_area
+			}
+			add_devastation = 50
+		}
+	}
+
+	option = {	# Let the nobles fight the peasants
+		name = btc_events.3b
+
+		every_owned_province = {
+			limit = { has_province_modifier = strong_nobility }
+			remove_province_modifier = strong_nobility
+		}
+		create_vassal = GAL
+		GAL = { 
+			add_liberty_desire = 100
+			country_event = {
+				id = btc_events.4
+				days = 30
+			}
+		}
+	}
+}
+
+# Galician peasant uprising #
+
+country_event = {
+	id = btc_events.4
+	title = btc_events.4_t
+	desc = btc_events.4_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# We will suppress them by ourselves
+		name = btc_events.4a
+
+		4554 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				friend = CAS
+				size = 3
+				win = yes
+			}
+		}
+	}
+
+	option = {	# Castile has abandoned us, let us turn to Portugal
+		name = btc_events.4a
+
+		4554 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				friend = CAS
+				size = 3
+				win = yes
+			}
+		}
+
+		POR = {
+			country_event = {
+				id = btc_events.5
+				days = 15
+			}
+		}
+	}
+}
+
+# Galicia calls for aid #
+
+country_event = {
+	id = btc_events.5
+	title = btc_events.5_t
+	desc = btc_events.5_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# And Portugal will answer
+		name = btc_events.5a
+
+		add_manpower = -10
+		GAL = {
+			country_event = {
+				id = btc_events.6
+				days = 15
+			}
+		}
+	}
+
+	option = {	# Let us not get involved
+		name = btc_events.5b
+
+		GAL = {
+			country_event = {
+				id = btc_events.7
+				days = 15
+			}
+		}
+	}
+}
+
+# Help from Portugal #
+
+country_event = {
+	id = btc_events.6
+	title = btc_events.6_t
+	desc = btc_events.6_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Help has arrived!
+		name = btc_events.6a
+
+		add_opinion = {
+			who = POR
+			modifier = came_to_our_aid	# 100 opinion
+		}
+
+		4555 = {
+			cavalry = ROOT
+			cavalry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+		}
+	}
+}
+
+# We stand alone #
+
+country_event = {
+	id = btc_events.7
+	title = btc_events.7_t
+	desc = btc_events.7_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_events.7a
+
+		GAL = {
+			add_opinion = {
+				who = POR
+				modifier = forsaken_us	# -100 opinion
+			}
+		}
+	}
+}
