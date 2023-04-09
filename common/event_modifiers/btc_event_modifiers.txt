@@ -267,3 +267,7 @@ galician_revolts = {
 strong_nobility = {
 	min_local_autonomy = 50
 }
+
+european_sugar  = {
+	trade_goods_size = 2
+}

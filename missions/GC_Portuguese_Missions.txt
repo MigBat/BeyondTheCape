@@ -212,11 +212,19 @@ gc_por_1_b = {
 		position = 6
 
 		trigger = {
-			owns = 227
+			368 =  {
+				has_building = workshop
+				base_production = 8
+			}
 		}
 
 		effect = {
-			add_core = 231
+			368 = {
+				add_province_modifier = {
+					name = european_sugar	# +2 production
+					duration = 7300
+				}
+			}
 		}
 	}
 
@@ -239,6 +247,7 @@ gc_por_1_b = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
+					has_building = marketplace
 					has_building = trade_depot
 					has_building = stock_exchange
 				
@@ -259,11 +268,13 @@ gc_por_1_b = {
 		position = 8
 
 		trigger = {
-			owns = 227
+			1851 = { development = 20 }
 		}
 
 		effect = {
-			add_core = 231
+			1851 = {
+				add_building = university
+			}
 		}
 	}
 

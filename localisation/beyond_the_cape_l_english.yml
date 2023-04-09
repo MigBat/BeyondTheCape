@@ -334,6 +334,8 @@
  desc_port_wine:0 "The famous Port wine is produced here, in the valleys of the Douro river."
  methuen_treaty:0 "Methuen Treaty"
  desc_methuen_treaty:0 "This treaty gives increased cooperation with english merchants"
+ european_sugar:0 "European Sugar"
+ desc_european_sugar:0 "This is one of the largest european sugar production sites."
 
 ## Disasters ##
 
