@@ -1805,7 +1805,6 @@ country_event = {
 	option = {
 		name = btc_por.121a
 
-		add_treasury = -300
 		1851 = {
 			add_building_construction = {
 				building = university
@@ -1827,10 +1826,54 @@ country_event = {
 	option = {
 		name = btc_por.122a
 
-		add_years_of_income = -1.5
+		add_years_of_income = -1
 		227 = {
 			add_province_modifier = {
 				name = mafra_palace
+				duration = -1
+			}
+		}
+	}
+}
+
+# Tower of Belem #
+
+country_event = {
+	id = btc_por.123
+	title = btc_por.123_t
+	desc = btc_por.123_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.123a
+		
+		227 = {
+			add_province_modifier = {
+				name = tower_of_belem
+				duration = -1
+			}
+		}
+	}
+}
+
+# Jeronimos Monastery #
+
+country_event = {
+	id = btc_por.124
+	title = btc_por.124_t
+	desc = btc_por.124_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.124a
+
+		227 = {
+			add_province_modifier = {
+				name = jeronimos_monastery
 				duration = -1
 			}
 		}

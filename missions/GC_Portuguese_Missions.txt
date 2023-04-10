@@ -47,8 +47,15 @@ gc_por_1 = {
 				name = "por_brazil_colonial"
 				duration = 5475
 			}
+			define_explorer = {
+				name = "Pedro Álvares Cabral"
+				shock = 2
+				fire = 2
+				manuever = 4
+			}
 		}
 	}
+
 	gc_por_establishes_foothold_brazil = {
 		icon = mission_iberian_conquistador
 		required_missions = { gc_por_portugal_discovers_south_america }
@@ -75,6 +82,7 @@ gc_por_1 = {
 			}
 		}
 	}
+
 	gc_por_bandeirantes = {
 		icon = mission_brazilian_bandeirantes
 		required_missions = { gc_por_establishes_foothold_brazil }
@@ -142,6 +150,7 @@ gc_por_1 = {
 			custom_tooltip = por_bandeirantes_tooltip
 		}
 	}
+
 	gc_por_jesuits = {
 		icon = mission_establish_jesuit_missions
 		required_missions = { gc_por_bandeirantes }
@@ -307,34 +316,40 @@ gc_por_1_b = {
 		position = 10
 		
 		provinces_to_highlight = {
-			province_id = 227
-			province_id = 231
-			province_id = 1851
-			province_id = 4150
-			NOT AND = { 
+			OR = {
+				province_id = 227
+				province_id = 231
+				province_id = 1851
+				province_id = 4150
+			}
+			NOT = { 
 				has_building = university 
 				owned_by = ROOT
 			}			
 		}
 		
 		trigger = {
-			227 = {
-				has_building = university
-				owned_by = ROOT
-			}
-			231 = {
-				has_building = university
-				owned_by = ROOT
-			}
-			1851 = {
-				has_building = university
-				owned_by = ROOT
-			}
-			4150 = {
-				has_building = university
-				owned_by = ROOT
+			university = 4
+			AND = {
+				227 = {
+					has_building = university
+					owned_by = ROOT
+				}
+				231 = {
+					has_building = university
+					owned_by = ROOT
+				}
+				1851 = {
+					has_building = university
+					owned_by = ROOT
+				}
+				4150 = {
+					has_building = university
+					owned_by = ROOT
+				}
 			}
 		}
+
 		effect = {
 			add_country_modifier = {
 				name = "por_arts_and_letters"
@@ -345,7 +360,7 @@ gc_por_1_b = {
 
 	gc_por_wine_monopolies = {
 		icon = mission_wine_monopolies
-		required_missions = { gc_por_ribeira_palace }
+		required_missions = { gc_por_universities }
 		position = 11
 		
 		provinces_to_highlight = {
@@ -395,7 +410,6 @@ gc_por_1_b = {
 		trigger = {
 			owns = 227
 			absolutism = 50
-			treasury = 500
 		}
 
 		effect = {
@@ -436,10 +450,9 @@ gc_por_2 = {
 		}
 		
 		effect = {
-			add_prestige = 10
 			add_country_modifier = {
-				name = "the_unknown_frontier"
-				duration = 5475
+				name = portuguese_exploration
+				duration = 18250
 			}
 		}
 	}
@@ -469,10 +482,12 @@ gc_por_2 = {
 		}
 	
 		effect = {
-			create_explorer = {
-				tradition = 60
+			define_explorer = {
+				name = "Bartolomeu Dias"
+				shock = 2
+				fire = 2
+				manuever = 4
 			}
-			add_dip_power = 60
 		}
 	}
 
@@ -634,11 +649,14 @@ gc_por_2 = {
 		position = 9
 
 		trigger = {
-			owns = 227
+			navigator = 3
 		}
 
 		effect = {
-			add_core = 231
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 5475
+			}
 		}
 	}
 
@@ -648,11 +666,17 @@ gc_por_2 = {
 		position = 10
 
 		trigger = {
-			owns = 227
+			#num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+			#	holy_order = order_of_christ
+			#	value = 1
+			#}
 		}
 
 		effect = {
-			add_core = 231
+			add_country_modifier = {
+				name = sponsored_shipbuilding	# global_ship_cost = -0.25
+				duration = 7300
+			}
 		}
 	}
 
@@ -662,11 +686,16 @@ gc_por_2 = {
 		position = 10
 
 		trigger = {
-			owns = 227
+			227 = {
+				has_building = coastal_defence
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-			add_core = 231
+			country_event = {
+				id = btc_por.123
+			}
 		}
 	}
 
@@ -676,11 +705,16 @@ gc_por_2 = {
 		position = 11
 
 		trigger = {
-			owns = 227
+			227 = {
+				has_building = temple
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-			add_core = 231
+			country_event = {
+				id = btc_por.124
+			}
 		}
 	}
 }
@@ -919,6 +953,7 @@ gc_por_3 = {
 			}
 		}
 	}
+
 	gc_por_surat = {
 		icon = mission_control_surat
 		required_missions = { gc_por_malabar }
@@ -973,6 +1008,7 @@ gc_por_3 = {
 			}
 		}
 	}
+
 	gc_por_indian_investment = {
 		icon = mission_indian_trade_company
 		required_missions = { gc_por_surat }
@@ -1016,34 +1052,13 @@ gc_por_3 = {
 	gc_por_flagship = {
 		icon = mission_launch_a_flagship
 		required_missions = {  }
-		position = 10
+		position = 9
 		
 		trigger = {
 			has_flagship = yes
 		}
 		effect = {
 			add_navy_tradition = 20
-			leon_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			extremadura_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			lower_andalucia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 
@@ -1067,11 +1082,14 @@ gc_por_3 = {
 		position = 12
 
 		trigger = {
-			owns = 227
+			num_of_marines = 10
 		}
 
 		effect = {
-			add_core = 231
+			add_country_modifier = {
+				name = black_swords
+				duration = -1
+			}
 		}
 	}
 }	
@@ -1109,13 +1127,6 @@ gc_por_4 = {
 		effect = {
 			add_prestige = 10
 			add_yearly_sailors = 3
-			cape_of_good_hope_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			mozambique_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1128,6 +1139,16 @@ gc_por_4 = {
 			}
 			1192 = {
 				add_permanent_claim = ROOT
+			}
+			define_explorer = {
+				name = "Vasco da Gama"
+				shock = 2
+				fire = 2
+				manuever = 6
+			}
+			add_country_modifier = {
+				name = way_to_india
+				duration = 7300
 			}
 		}
 	}
@@ -1158,6 +1179,9 @@ gc_por_4 = {
 					duration = -1
 				}
 			}
+			2999 = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -1186,8 +1210,17 @@ gc_por_4 = {
 					key = horn_africa_ambition
 				}
 			}
-			2999 = {
+			1099 = {
 				add_permanent_claim = ROOT
+			}
+			388 = {
+				add_permanent_claim = ROOT
+			}
+			define_explorer = {
+				name = "Francisco de Almeida"
+				shock = 2
+				fire = 2
+				manuever = 4
 			}
 		}
 	}
@@ -1210,7 +1243,7 @@ gc_por_4 = {
 		}
 		
 		effect = {
-			define_explorer = {
+			define_general = {
 				name = "Afonso de Albuquerque"
 				fire = 5
 				shock = 5
@@ -1522,11 +1555,15 @@ gc_por_5 = {
 		position = 2
 
 		trigger = {
-			owns = 227
+			num_of_explorers = 1
+			navigator = 1
 		}
 
 		effect = {
-			add_core = 231
+			add_country_modifier = {
+				name = mariners_astrolabe
+				duration = -1
+			}
 		}
 	}
 
@@ -1577,6 +1614,8 @@ gc_por_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			395 = {	add_permanent_claim = ROOT }
+			396 = {	add_permanent_claim = ROOT }
 		}
 	}
 
@@ -1727,9 +1766,10 @@ gc_por_5 = {
 				OR = {
 					AND = {
 						alliance_with = ENG
+						marriage_with = ENG
 						reverse_has_opinion = {
 							who = ENG
-							value = 100
+							value = 150
 						}
 					}
 					is_rival = ENG
@@ -1740,48 +1780,55 @@ gc_por_5 = {
 				OR = {
 					AND = {
 						alliance_with = GBR
+						marriage_with = GBR
 						reverse_has_opinion = {
 							who = GBR
-							value = 100
+							value = 150
 						}
 					}
 					is_rival = GBR
 				}
 			}
 		}
+
 		effect = {
 			if = {
 				limit = {
 					alliance_with = ENG
 				}
 				ENG = {
+					add_historical_friend = POR
 					add_opinion = {
-						who = root
+						who = ROOT
 						modifier = anglo_portuguese_alliance
 					}
 				}
-				hidden_effect = {
-					root = {
-						add_opinion = {
-							who = ENG
-							modifier = anglo_portuguese_alliance
-						}
+				ROOT = {
+					add_historical_friend = ENG
+					add_opinion = {
+						who = ENG
+						modifier = anglo_portuguese_alliance
 					}
 				}
 			}
-			galicia_area = {
+			if = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					alliance_with = GBR
 				}
-				add_permanent_claim = ROOT
-			}
-			asturias_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				GBR = {
+					add_historical_friend = POR
+					add_opinion = {
+						who = ROOT
+						modifier = anglo_portuguese_alliance
+					}
 				}
-				add_permanent_claim = ROOT
+				ROOT = {
+					add_historical_friend = ENG
+					add_opinion = {
+						who = ENG
+						modifier = anglo_portuguese_alliance
+					}
+				}
 			}
 		}
 	}
@@ -1791,46 +1838,28 @@ gc_por_5 = {
 		required_missions = { gc_por_build_the_navy gc_por_english_alliance }
 		position = 10
 		
-		provinces_to_highlight = {
-			OR = {
-				area = leon_area
-				area = extremadura_area
-				area = lower_andalucia_area
-				area = galicia_area
-				area = asturias_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
 		trigger = {
-			leon_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			extremadura_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			lower_andalucia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			galicia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			asturias_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				has_country_flag = won_castilian_civil_war
+				current_age = age_of_reformation
 			}
 		}
 		effect = {
-			iberia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+			if = {
+				limit = { has_country_flag = won_castilian_civil_war }
+				iberia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
+			}
+			else = {
+				add_country_modifier = {
+					name = proudly_alone
+					duration = -1
+				}
 			}
 		}
 	}
@@ -1846,10 +1875,31 @@ gc_por_5 = {
 		}
 		
 		trigger = {
-			iberia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				iberia_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				AND = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 10
+						continent = europe
+					}
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 30
+						continent = africa
+					}
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 20
+						continent = asia
+					}
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 20
+						continent = south_america
+					}
+				}
 			}
+			
 		}
 		effect = {
 			if = {
