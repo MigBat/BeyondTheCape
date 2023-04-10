@@ -92,16 +92,17 @@ country_event = {
 			}
 			add_stability = -1
 		}
-		
 		227 = {
 			add_province_modifier = {
 				name = massive_earthquake
 				duration = -1
 			}
+			remove_province_modifier = ribeira_palace
 		}
+		set_country_flag = lisbon_earthquake_happened
 		custom_tooltip = lisbon_earthquake
 	}
-	
+
 	option = {	# Immediately evacuate Lisboa
 		name = btc_por.1A
 		
@@ -277,7 +278,7 @@ country_event = {
 		}
 		add_mil_power = -50
 		add_years_of_income = -0.33
-		add_years_of_manpower = -0.33
+		add_manpower = -5
 		add_prestige = -25
 		add_splendor = -500
 		country_event = {
@@ -312,7 +313,7 @@ country_event = {
 			add_base_manpower = -2
 			add_devastation = 5
 		}
-		add_admin_power = -50
+		add_adm_power = -50
 		add_prestige = -25
 		add_splendor = -500
 		country_event = {
@@ -923,7 +924,7 @@ country_event = {
 		add_stability = 2
 		add_legitimacy = 10
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = 10
 		}
 		add_estate_loyalty = {
@@ -1135,7 +1136,7 @@ country_event = {
 	id = btc_por.106
 	title = btc_por.106_t
 	desc = btc_por.106_d
-	picture = HOUSE_OF_TRADE_eventPicture
+	picture = great_building_picture
 
 	fire_only_once = yes
 
@@ -1765,6 +1766,117 @@ country_event = {
 		add_country_modifier = {
 			name = emancipated_colonies	# -75% global tariffs
 			duration = 9125
+		}
+	}
+}
+
+# Ribeira Palace #
+
+country_event = {
+	id = btc_por.120
+	title = btc_por.120_t
+	desc = btc_por.120_d
+	picture = HOUSE_OF_TRADE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.120a
+
+		add_years_of_income = -1
+		227 = {
+			add_province_modifier = {
+				name = ribeira_palace
+				duration = -1
+			}
+		}
+	}
+}
+
+# Coimbra University #
+
+country_event = {
+	id = btc_por.121
+	title = btc_por.121_t
+	desc = btc_por.121_d
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.121a
+
+		1851 = {
+			add_building_construction = {
+				building = university
+			}
+		}
+	}
+}
+
+# Mafra Palace #
+
+country_event = {
+	id = btc_por.122
+	title = btc_por.122_t
+	desc = btc_por.122_d
+	picture = great_building_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.122a
+
+		add_years_of_income = -1
+		227 = {
+			add_province_modifier = {
+				name = mafra_palace
+				duration = -1
+			}
+		}
+	}
+}
+
+# Tower of Belem #
+
+country_event = {
+	id = btc_por.123
+	title = btc_por.123_t
+	desc = btc_por.123_d
+	picture = FORT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.123a
+		
+		227 = {
+			add_province_modifier = {
+				name = tower_of_belem
+				duration = -1
+			}
+		}
+	}
+}
+
+# Jeronimos Monastery #
+
+country_event = {
+	id = btc_por.124
+	title = btc_por.124_t
+	desc = btc_por.124_d
+	picture = ST_PETERS_CHURCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.124a
+
+		227 = {
+			add_province_modifier = {
+				name = jeronimos_monastery
+				duration = -1
+			}
 		}
 	}
 }
