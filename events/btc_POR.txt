@@ -1136,7 +1136,7 @@ country_event = {
 	id = btc_por.106
 	title = btc_por.106_t
 	desc = btc_por.106_d
-	picture = HOUSE_OF_TRADE_eventPicture
+	picture = great_building_picture
 
 	fire_only_once = yes
 
@@ -1776,7 +1776,7 @@ country_event = {
 	id = btc_por.120
 	title = btc_por.120_t
 	desc = btc_por.120_d
-	picture = BORDER_TENSION_eventPicture
+	picture = HOUSE_OF_TRADE_eventPicture
 
 	is_triggered_only = yes
 
@@ -1799,7 +1799,7 @@ country_event = {
 	id = btc_por.121
 	title = btc_por.121_t
 	desc = btc_por.121_d
-	picture = BORDER_TENSION_eventPicture
+	picture = UNIVERSITY_eventPicture
 
 	is_triggered_only = yes
 
@@ -1820,7 +1820,7 @@ country_event = {
 	id = btc_por.122
 	title = btc_por.122_t
 	desc = btc_por.122_d
-	picture = BORDER_TENSION_eventPicture
+	picture = great_building_picture
 
 	is_triggered_only = yes
 
@@ -1843,7 +1843,7 @@ country_event = {
 	id = btc_por.123
 	title = btc_por.123_t
 	desc = btc_por.123_d
-	picture = BORDER_TENSION_eventPicture
+	picture = FORT_eventPicture
 
 	is_triggered_only = yes
 
@@ -1865,7 +1865,7 @@ country_event = {
 	id = btc_por.124
 	title = btc_por.124_t
 	desc = btc_por.124_d
-	picture = BORDER_TENSION_eventPicture
+	picture = ST_PETERS_CHURCH_eventPicture
 
 	is_triggered_only = yes
 
