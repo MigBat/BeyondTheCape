@@ -92,16 +92,17 @@ country_event = {
 			}
 			add_stability = -1
 		}
-		
 		227 = {
 			add_province_modifier = {
 				name = massive_earthquake
 				duration = -1
 			}
+			remove_province_modifier = ribeira_palace
 		}
+		set_country_flag = lisbon_earthquake_happened
 		custom_tooltip = lisbon_earthquake
 	}
-	
+
 	option = {	# Immediately evacuate Lisboa
 		name = btc_por.1A
 		

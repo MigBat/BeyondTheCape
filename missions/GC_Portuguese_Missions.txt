@@ -304,8 +304,16 @@ gc_por_1_b = {
 		}
 
 		effect = {
-			country_event = {
-				id = btc_por.120
+			if = {
+				limit = {
+					has_country_flag = lisbon_earthquake_happened
+				}
+				add_prestige = 10
+			}
+			else = {
+				country_event = {
+					id = btc_por.120
+				}
 			}
 		}
 	}
