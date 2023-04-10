@@ -38,6 +38,7 @@
 # added many new portuguese events, including a much improved Lisbon Earthquake event chain, and reworked existing ones.
 # reworked Columbus event (more under "exploration").
 # removed the Iberian Wedding event since it has been integrated into the castilian civil war disaster event chain.
+# added Irmandinos Revolt event chain that focuses on Castile, Galicia and Portugal.
 
 ### MISSIONS ###
 
@@ -66,11 +67,13 @@ famous explorers, so they can continue their journey around Africa into India.
 ### FLAGSHIPS ###
 
 # replaced spanish 100% more cannnons with 100% more durability (spanish galleons were sturdier than most to endure their long journeys, and to resist piracy attempts)
+# added spanish +6 engagement width.
 # replaced portuguese 125% exploration range with 100% more cannons (see the Galleon S. João Baptista, aka Botafogo)
 
 ### OTHER CHANGES ###
 
+# added many new songs when you play as Portugal, including the main theme.
 # reworked Portugal's borders, terrain and rivers.
 # slightly changed Gulf of Valencia so Aragon can no longer claim Granada's provinces.
 # added new trade winds in South Atlantic, Indian and Pacific oceans.
-# Henrique o Navegador advisor is no longer a naval reformer. He is now a navigator.
+# Henrique o Navegador advisor is no longer a naval reformer. He is now a navigator, as the name suggests.
