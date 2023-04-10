@@ -215,6 +215,7 @@ gc_por_1_b = {
 			368 =  {
 				has_building = workshop
 				base_production = 8
+				owned_by = ROOT
 			}
 		}
 
@@ -268,34 +269,70 @@ gc_por_1_b = {
 		position = 8
 
 		trigger = {
-			1851 = { development = 20 }
+			1851 = { 
+				development = 20 
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-			1851 = {
-				add_building = university
+			country_event = {
+				id = btc_por.121
+			}
+		}
+	}
+
+	gc_por_ribeira_palace = {
+		icon = mission_ribeira_palace
+		required_missions = { gc_por_coimbra_university }
+		position = 9
+
+		trigger = {
+			227 = {
+				development = 50
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = btc_por.120
 			}
 		}
 	}
 
 	gc_por_universities = {
 		icon = mission_arts_and_letters
-		required_missions = { gc_por_coimbra_university }
-		position = 9
+		required_missions = { gc_por_ribeira_palace }
+		position = 10
 		
 		provinces_to_highlight = {
 			province_id = 227
-			NOT = { 
+			province_id = 231
+			province_id = 1851
+			province_id = 4150
+			NOT AND = { 
 				has_building = university 
 				owned_by = ROOT
 			}			
 		}
 		
 		trigger = {
-			university = 8
 			227 = {
 				has_building = university
-				owned_by = ROOt
+				owned_by = ROOT
+			}
+			231 = {
+				has_building = university
+				owned_by = ROOT
+			}
+			1851 = {
+				has_building = university
+				owned_by = ROOT
+			}
+			4150 = {
+				has_building = university
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -303,20 +340,6 @@ gc_por_1_b = {
 				name = "por_arts_and_letters"
 				duration = 7300
 			}
-		}
-	}
-
-	gc_por_ribeira_palace = {
-		icon = mission_ribeira_palace
-		required_missions = { gc_por_universities }
-		position = 10
-
-		trigger = {
-			owns = 227
-		}
-
-		effect = {
-			add_core = 231
 		}
 	}
 
@@ -340,7 +363,7 @@ gc_por_1_b = {
 		trigger = {
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
+					value = 4
 					trade_goods = wine
 					OR = {
 						has_building = workshop
@@ -371,10 +394,14 @@ gc_por_1_b = {
 
 		trigger = {
 			owns = 227
+			absolutism = 50
+			treasury = 500
 		}
 
 		effect = {
-			add_core = 231
+			country_event = {
+				id = btc_por.122
+			}
 		}
 	}
 }

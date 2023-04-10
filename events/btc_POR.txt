@@ -277,7 +277,7 @@ country_event = {
 		}
 		add_mil_power = -50
 		add_years_of_income = -0.33
-		add_years_of_manpower = -0.33
+		add_manpower = -5
 		add_prestige = -25
 		add_splendor = -500
 		country_event = {
@@ -312,7 +312,7 @@ country_event = {
 			add_base_manpower = -2
 			add_devastation = 5
 		}
-		add_admin_power = -50
+		add_adm_power = -50
 		add_prestige = -25
 		add_splendor = -500
 		country_event = {
@@ -923,7 +923,7 @@ country_event = {
 		add_stability = 2
 		add_legitimacy = 10
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = 10
 		}
 		add_estate_loyalty = {
@@ -1765,6 +1765,74 @@ country_event = {
 		add_country_modifier = {
 			name = emancipated_colonies	# -75% global tariffs
 			duration = 9125
+		}
+	}
+}
+
+# Ribeira Palace #
+
+country_event = {
+	id = btc_por.120
+	title = btc_por.120_t
+	desc = btc_por.120_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.120a
+
+		add_years_of_income = -1
+		227 = {
+			add_province_modifier = {
+				name = ribeira_palace
+				duration = -1
+			}
+		}
+	}
+}
+
+# Coimbra University #
+
+country_event = {
+	id = btc_por.121
+	title = btc_por.121_t
+	desc = btc_por.121_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.121a
+
+		add_treasury = -300
+		1851 = {
+			add_building_construction = {
+				building = university
+			}
+		}
+	}
+}
+
+# Mafra Palace #
+
+country_event = {
+	id = btc_por.122
+	title = btc_por.122_t
+	desc = btc_por.122_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.122a
+
+		add_years_of_income = -1.5
+		227 = {
+			add_province_modifier = {
+				name = mafra_palace
+				duration = -1
+			}
 		}
 	}
 }
