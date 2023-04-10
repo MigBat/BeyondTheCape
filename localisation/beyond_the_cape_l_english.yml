@@ -242,7 +242,37 @@
  btc_por.119_t:0 "Decree of open ports to friendly nations"
  btc_por.119_d:0 "It has become unsustainable that in a global world, our colonial subjects remain hindered but artificial limitations to trading with other nations, we will not be able to limit their potential in this way forever, it is better to act benevolently than to have our hand forced at a later date."
  btc_por.119a:0 "Never!"
- btc_por.119b:0 "We have no alternative"
+ btc_por.119b:0 "We have no alternative" 
+ btc_por.120_t:0 "Ribeira Palace"
+ btc_por.120_d:0 ""
+ btc_por.120a:0 "A grand palace!"
+ btc_por.121_t:0 "Coimbra University"
+ btc_por.121_d:0 ""
+ btc_por.121a:0 "A place of culture"
+ btc_por.122_t:0 "Mafra Palace"
+ btc_por.122_d:0 ""
+ btc_por.122a:0 "My power is absolute!"
+ btc_por.123_t:0 "Tower of Belém"
+ btc_por.123_d:0 ""
+ btc_por.123a:0 "It must be built."
+ btc_por.124_t:0 "Jerónimos Monastery"
+ btc_por.124_d:0 ""
+ btc_por.124a:0 "It will show our faith."
+
+# Other events #
+
+ btc_events.1_t:0 "Quest for the New World"
+ btc_events.1_d:0 "We now have the technology and funding to undertake the greatest adventures of 10 generations. Let us sail west in search of new lands and riches!"
+ btc_events.1a:0 "A new horizon"
+ quest_for_the_new_world:0 "Quest for the New World"
+ desc_quest_for_the_new_world:0 "We have developed the technology required to explore the uncharted deep waters of the ocean."
+ btc_events.2_t:0 "Resisting the Reconquista"
+ btc_events.2_d:0 "We are surrounded on all sides by faithless christians. If we ever hope to reclaim our rightful land, all of Granada must stand united and strong against this common enemy."
+ btc_events.2a:0 "Stand strong!"
+ resist_reconquista:0 "Resist Reconquista"
+ desc_resist_reconquista:0 "We will double our efforts to keep the christians at bay."
+
+## Modifiers ##
 
  anti_islamic_society:0 "Anti-Islamic Society"
  desc_anti_islamic_society:0 "We have expelled the Mouriscos"
@@ -312,6 +342,7 @@
  desc_colonial_unrest:0 "There is trouble brewing in the colonies"
  emancipated_colonies:0 "Emancipated Colonies"
  desc_emancipated_colonies:0 "We've accepted their demands"
+<<<<<<< HEAD
 
 # Other events #
 
@@ -357,6 +388,28 @@
  desc_methuen_treaty:0 "This treaty gives increased cooperation with english merchants"
  came_to_our_aid:0 "Came to our aid"
  forsaken_us:0 "Forsaken us"
+ european_sugar:0 "European Sugar"
+ desc_european_sugar:0 "This is one of the largest european sugar production sites."
+ portuguese_exploration:0 "Portuguese Exploration"
+ desc_portuguese_exploration:0 ""
+ sponsored_shipbuilding:0 "Sponsored Shipbuilding"
+ desc_sponsored_shipbuilding:0 ""
+ black_swords:0 "Black Swords"
+ desc_black_swords:0 ""
+ way_to_india:0 "Way to India"
+ desc_way_to_india:0 ""
+ mariners_astrolabe:0 "Mariner's Astrolabe"
+ desc_mariners_astrolabe:0 ""
+ proudly_alone:0 "Proudly Alone"
+ desc_proudly_alone:0 ""
+ ribeira_palace:0 "Ribeira Palace"
+ desc_ribeira_palace:0 ""
+ mafra_palace:0 "Mafra Palace"
+ desc_mafra_palace:0 ""
+ tower_of_belem:0 "Tower of Belém"
+ desc_tower_of_belem:0 ""
+ jeronimos_monastery:0 "Jerónimos Monastery"
+ desc_jeronimos_monastery:0 ""
 
 ## Disasters ##
 

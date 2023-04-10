@@ -818,6 +818,7 @@ country_event = {
 	option = {
 		name = "castilian_civil_war.12a"
 
+		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		CAS = { clr_country_flag = at_war }
 
@@ -899,6 +900,7 @@ country_event = {
 	option = {
 		name = "castilian_civil_war.13a"
 
+		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		CAS = { clr_country_flag = at_war }
 
@@ -983,6 +985,7 @@ country_event = {
 	option = {
 		name = "castilian_civil_war.14a"
 
+		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 
 		if = { 
@@ -1026,6 +1029,7 @@ country_event = {
 
 		trigger = { tag = POR }
 
+		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		ARA = { clr_country_flag = at_war }
 	}
@@ -1035,6 +1039,7 @@ country_event = {
 
 		trigger = { tag = CAS }
 
+		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		set_country_flag = won_war
 
@@ -1070,6 +1075,7 @@ country_event = {
 
 		trigger = { tag = ARA }
 
+		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		POR = { clr_country_flag = at_war }
 	}
@@ -1079,6 +1085,7 @@ country_event = {
 
 		trigger = { tag = CAS }
 
+		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		set_country_flag = won_war
 
