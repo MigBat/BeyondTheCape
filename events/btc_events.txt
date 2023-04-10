@@ -118,7 +118,10 @@ country_event = {
 			limit = { has_province_modifier = strong_nobility }
 			remove_province_modifier = strong_nobility
 		}
-		create_vassal = GAL
+		hidden_effect = {
+			create_vassal = GAL
+		}
+		custom_tooltip = galicia_vassal
 		GAL = { 
 			add_liberty_desire = 100
 			add_manpower = 10
@@ -159,7 +162,6 @@ country_event = {
 		4554 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
-				leader = 
 				friend = CAS
 				size = 3
 				win = yes

@@ -332,7 +332,7 @@
  btc_events.4_t:0 "Galician Peasant Uprising"
  btc_events.4_d:0 ""
  btc_events.4a:0 "We will suppress them by ourselves"
- btc_events.4b:0 "Castile has abandones us, let us turn to Portugal"
+ btc_events.4b:0 "Castile has abandoned us, let us turn to Portugal"
  btc_events.5_t:0 "Galicia Calls for Aid"
  btc_events.5_d:0 ""
  btc_events.5a:0 "And Portugal will answer!"
@@ -347,6 +347,7 @@
  desc_galician_revolts:0 "We are aiding the local nobles."
  strong_nobility:0 "Strong Nobility"
  desc_strong_nobility:0 "The nobility has a great say in local matters."
+ galicia_vassal:0 "Castile releases Galicia as a vassal."
 
 ## Modifiers ##
 
@@ -354,6 +355,8 @@
  desc_port_wine:0 "The famous Port wine is produced here, in the valleys of the Douro river."
  methuen_treaty:0 "Methuen Treaty"
  desc_methuen_treaty:0 "This treaty gives increased cooperation with english merchants"
+ came_to_our_aid:0 "Came to our aid"
+ forsaken_us:0 "Forsaken us"
 
 ## Disasters ##
 

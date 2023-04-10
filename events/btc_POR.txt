@@ -277,7 +277,7 @@ country_event = {
 		}
 		add_mil_power = -50
 		add_years_of_income = -0.33
-		add_years_of_manpower = -0.33
+		add_manpower = -5
 		add_prestige = -25
 		add_splendor = -500
 		country_event = {
@@ -312,7 +312,7 @@ country_event = {
 			add_base_manpower = -2
 			add_devastation = 5
 		}
-		add_admin_power = -50
+		add_adm_power = -50
 		add_prestige = -25
 		add_splendor = -500
 		country_event = {
@@ -923,7 +923,7 @@ country_event = {
 		add_stability = 2
 		add_legitimacy = 10
 		add_estate_loyalty = {
-			estate = estate_clergy
+			estate = estate_church
 			loyalty = 10
 		}
 		add_estate_loyalty = {
