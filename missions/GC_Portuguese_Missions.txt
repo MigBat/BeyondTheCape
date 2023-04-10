@@ -1076,11 +1076,9 @@ gc_por_3 = {
 		position = 11
 
 		trigger = {
-			owns = 227
 		}
 
 		effect = {
-			add_core = 231
 		}
 	}
 
@@ -1549,11 +1547,9 @@ gc_por_5 = {
 		position = 1
 
 		trigger = {
-			owns = 227
 		}
 
 		effect = {
-			add_core = 231
 		}
 	}
 
@@ -1581,11 +1577,9 @@ gc_por_5 = {
 		position = 3
 
 		trigger = {
-			owns = 227
 		}
 
 		effect = {
-			add_core = 231
 		}
 	}
 
@@ -1681,11 +1675,9 @@ gc_por_5 = {
 		position = 6
 
 		trigger = {
-			owns = 227
 		}
 
 		effect = {
-			add_core = 231
 		}
 	}
 

@@ -342,7 +342,9 @@
  desc_colonial_unrest:0 "There is trouble brewing in the colonies"
  emancipated_colonies:0 "Emancipated Colonies"
  desc_emancipated_colonies:0 "We've accepted their demands"
-<<<<<<< HEAD
+ portuguese_exploration:0 "Portuguese Exploration"
+ desc_portuguese_exploration:0 ""
+ 
 
 # Other events #
 

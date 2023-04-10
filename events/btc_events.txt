@@ -91,6 +91,10 @@ country_event = {
 	option = {	# Help the local nobility fight the peasantry
 		name = btc_events.3a
 
+		ai_chance = {
+			factor = 0.1
+		}
+
 		add_years_of_income = -0.5
 		add_manpower = -10
 		every_owned_province = {
@@ -113,6 +117,10 @@ country_event = {
 
 	option = {	# Let the nobles fight the peasants
 		name = btc_events.3b
+
+		ai_chance = {
+			factor = 0.9
+		}
 
 		every_owned_province = {
 			limit = { has_province_modifier = strong_nobility }
@@ -146,6 +154,10 @@ country_event = {
 	option = {	# We will suppress them by ourselves
 		name = btc_events.4a
 
+		ai_chance = {
+			factor = 0.1
+		}
+
 		4554 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
@@ -158,6 +170,10 @@ country_event = {
 
 	option = {	# Castile has abandoned us, let us turn to Portugal
 		name = btc_events.4b
+
+		ai_chance = {
+			factor = 0.9
+		}
 
 		4554 = {
 			spawn_rebels = {
@@ -190,6 +206,10 @@ country_event = {
 	option = {	# And Portugal will answer
 		name = btc_events.5a
 
+		ai_chance = {
+			factor = 0.9
+		}
+
 		add_manpower = -10
 		GAL = {
 			country_event = {
@@ -201,6 +221,10 @@ country_event = {
 
 	option = {	# Let us not get involved
 		name = btc_events.5b
+
+		ai_chance = {
+			factor = 0.1
+		}
 
 		GAL = {
 			country_event = {
