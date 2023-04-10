@@ -78,6 +78,8 @@ country_event = {
 	desc = btc_events.3_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = CAS
 	}
@@ -91,10 +93,15 @@ country_event = {
 
 		add_years_of_income = -0.5
 		add_manpower = -10
-		add_country_modifier = {
+		every_owned_province = {
+			limit = {
+				area = galicia_area
+			}
+			add_province_modifier = {
 			name = galician_revolts	# +5 global unrest
 			duration = 1825
 		}
+		}		
 		
 		every_owned_province = {
 			limit = {
@@ -111,9 +118,13 @@ country_event = {
 			limit = { has_province_modifier = strong_nobility }
 			remove_province_modifier = strong_nobility
 		}
-		create_vassal = GAL
+		hidden_effect = {
+			create_vassal = GAL
+		}
+		custom_tooltip = galicia_vassal
 		GAL = { 
 			add_liberty_desire = 100
+			add_manpower = 10
 			country_event = {
 				id = btc_events.4
 				days = 30
@@ -146,7 +157,7 @@ country_event = {
 	}
 
 	option = {	# Castile has abandoned us, let us turn to Portugal
-		name = btc_events.4a
+		name = btc_events.4b
 
 		4554 = {
 			spawn_rebels = {
@@ -218,6 +229,14 @@ country_event = {
 			modifier = came_to_our_aid	# 100 opinion
 		}
 
+		define_general = {
+			name = "Pedro Madruga"
+			shock = 3
+			fire = 3
+			manuever = 2
+			siege = 0
+		}
+
 		4555 = {
 			cavalry = ROOT
 			cavalry = ROOT
@@ -243,7 +262,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {
+	option = {	# We have been forsaken
 		name = btc_events.7a
 
 		GAL = {

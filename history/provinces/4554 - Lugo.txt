@@ -13,15 +13,21 @@ trade_goods = grain
 base_manpower = 2
 capital = "Lugo" 
 is_city = yes
+fort_15th = yes
  # Santiago de Compostela pilgrimage
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+add_permanent_province_modifier = {
+	name = strong_nobility
+	duration = -1
+}
 
-1467.1.1 = { unrest = 4 } # Second war of the "irmandiños"
-1470.1.1 = { unrest = 0 } # End of the Second war of the "irmandiños"
+
+1467.1.1 = { unrest = 4 } # Second war of the "irmandiï¿½os"
+1470.1.1 = { unrest = 0 } # End of the Second war of the "irmandiï¿½os"
 1475.6.2 = { controller = POR }
 1476.3.2 = { controller = CAS }
 1479.1.1 = { remove_core = GAL }
