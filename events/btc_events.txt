@@ -238,6 +238,8 @@ country_event = {
 	option = {	# Help has arrived!
 		name = btc_events.6a
 
+		set_country_flag = portugal_helped
+
 		add_liberty_desire = 50
 
 		add_opinion = {

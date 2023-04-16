@@ -14,6 +14,8 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
+
+	major = yes
 	
 	mean_time_to_happen = {
 		days = 1
@@ -75,6 +77,8 @@ country_event = {
 			}
 		}
 
+		CAS = { remove_rival = POR }
+
 		ARA = {
 			add_opinion = {
 				who = CAS
@@ -121,6 +125,8 @@ country_event = {
 			}
 		}
 
+		CAS = { remove_rival = ARA }
+
 		POR = {
 			add_opinion = {
 				who = CAS
@@ -163,10 +169,12 @@ country_event = {
 			factor = 1
 		}
 
+		POR = { remove_rival = CAS }
+
 		define_consort = {
 			country_of_origin = CAS
 			name = "Joanna"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 15
 			culture = castillian
 			adm = 3
@@ -218,11 +226,13 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
+
+		ARA = { remove_rival = CAS }
 		
 		define_consort = {
 			country_of_origin = CAS
 			name = "Isabella"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 24
 			culture = castillian
 			adm = 3
@@ -271,7 +281,7 @@ country_event = {
 
 		define_ruler = {
 			name = "Joanna"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 15
 			culture = castillian
 			adm = 3
@@ -349,7 +359,7 @@ country_event = {
 
 		define_ruler = {
 			name = "Joanna"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 15
 			culture = castillian
 			adm = 3
@@ -365,7 +375,7 @@ country_event = {
 	}
 }
 
-# Isabella de Trastámara
+# Isabella de Trastï¿½mara
 country_event = {
 	id = castilian_civil_war.6
 	title = "castilian_civil_war.6.t"
@@ -379,7 +389,7 @@ country_event = {
 
 		define_ruler = {
 			name = "Isabella"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 24
 			culture = castillian
 			adm = 3
@@ -393,14 +403,14 @@ country_event = {
 
 		define_consort = {
 			name = "Ruler of Aragon"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 15
 			male = yes
 		}
 
 		define_heir = {
 			name = "Joanna"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 0
 			culture = aragonese
 			adm = 3
@@ -415,7 +425,7 @@ country_event = {
 		ARA = {
 			define_heir = {
 				name = "Joanna"
-				dynasty = "de Trastámara"
+				dynasty = "de Trastï¿½mara"
 				age = 0
 				culture = aragonese
 				adm = 3
@@ -456,7 +466,7 @@ country_event = {
 		name = "castilian_civil_war.7a"
 		define_ruler = {
 			name = "Isabella"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 24
 			culture = castillian
 			adm = 3
@@ -496,7 +506,7 @@ country_event = {
 		define_consort = {
 			country_of_origin = CAS
 			name = "Isabella"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 24
 			culture = castillian
 			adm = 3
@@ -572,7 +582,7 @@ country_event = {
 					type = pretender_rebels
 					size = 3
 					leader = "Isabella"
-					leader_dynasty = "de Trastámara"
+					leader_dynasty = "de Trastï¿½mara"
 					female = yes
 					win = yes
 				}
@@ -617,7 +627,7 @@ country_event = {
 		define_consort = {
 			country_of_origin = CAS
 			name = "Joanna"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 15
 			culture = castillian
 			adm = 3
@@ -686,7 +696,7 @@ country_event = {
 					type = pretender_rebels
 					size = 3
 					leader = "Joanna"
-					leader_dynasty = "de Trastámara"
+					leader_dynasty = "de Trastï¿½mara"
 					female = yes
 					win = yes
 				}
@@ -721,7 +731,11 @@ country_event = {
 		name = "castilian_civil_war.10a"
 
 		ai_chance = {
-			factor = 1
+			factor = 0.8
+			modifier = {
+				factor = 0
+				war_with = POR
+			}
 		}
 
 		add_manpower = -10
@@ -737,7 +751,7 @@ country_event = {
 		name = "castilian_civil_war.10b"
 
 		ai_chance = {
-			factor = 1
+			factor = 0.2
 		}
 
 		add_prestige = -10
@@ -806,6 +820,43 @@ country_event = {
 	}
 }
 
+# Galicia joins Portugal #
+
+country_event = {
+	id = castilian_civil_war.17
+	title = castilian_civil_war.17_t
+	desc = castilian_civil_war.17_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = GAL
+		is_subject_of = CAS
+		has_country_flag = portugal_helped
+		CAS = { has_disaster = castilian_civil_war }
+		POR = { war_with = CAS }
+	}
+
+	option = {	# join Portugal
+		name = castilian_civil_war.17a
+		
+		ai_chance = {
+			factor = 0.8
+		}
+
+		POR = { vassalize = GAL }
+	}
+
+	option = {	# stay with Castile
+		name = castilian_civil_war.17b
+
+		ai_chance = {
+			factor = 0.2
+		}
+
+		add_prestige = 5
+	}
+}
+
 # Portugal wins War of Castilian Succession
 
 country_event = {
@@ -845,7 +896,7 @@ country_event = {
 		CAS = {
 			define_ruler = {
 				name = "Joanna"
-				dynasty = "de Trastámara"
+				dynasty = "de Trastï¿½mara"
 				age = 15
 				culture = castillian
 				adm = 3
@@ -876,11 +927,21 @@ country_event = {
 			set_heir_flag = isabella
 		}
 
-		end_disaster = castilian_civil_war
-
-		CAS = {
-			country_event = { id = castilian_civil_war.100 days = 20 }
+		POR = {
+			remove_rival = CAS
+			create_alliance = CAS
+			create_marriage = CAS
 		}
+
+		CAS = { remove_rival = POR }
+
+		CAS = { set_country_flag = civil_war_ended }
+
+		#end_disaster = castilian_civil_war
+
+		#CAS = {
+		#	country_event = { id = castilian_civil_war.100 days = 20 }
+		#}
 	}
 }
 
@@ -908,7 +969,7 @@ country_event = {
 
 		define_heir = {
 			name = "Joanna"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 0
 			culture = aragonese
 			adm = 3
@@ -923,7 +984,7 @@ country_event = {
 		CAS = {
 			define_ruler = {
 				name = "Isabella"
-				dynasty = "de Trastámara"
+				dynasty = "de Trastï¿½mara"
 				age = 15
 				culture = castillian
 				adm = 3
@@ -936,13 +997,13 @@ country_event = {
 			set_ruler_flag = isabella
 			define_consort = {
 				name = "Ruler of Aragon"
-				dynasty = "de Trastámara"
+				dynasty = "de Trastï¿½mara"
 				age = 15
 				male = yes
 			}
 			define_heir = {
-				name = "Joanna de Trastámara"
-				dynasty = "de Trastámara"
+				name = "Joanna de Trastï¿½mara"
+				dynasty = "de Trastï¿½mara"
 				age = 0
 				culture = aragonese
 				adm = 3
@@ -954,11 +1015,21 @@ country_event = {
 			set_heir_flag = joanna
 		}
 
-		end_disaster = castilian_civil_war
-
-		CAS = {
-			country_event = { id = castilian_civil_war.100 days = 20 }
+		ARA = {
+			remove_rival = CAS
+			create_alliance = CAS
+			create_marriage = CAS
 		}
+
+		CAS = { remove_rival = ARA }
+
+		CAS = { set_country_flag = civil_war_ended }
+
+		#end_disaster = castilian_civil_war
+
+		#CAS = {
+		#	country_event = { id = castilian_civil_war.100 days = 20 }
+		#}
 	}
 }
 
@@ -977,6 +1048,7 @@ country_event = {
 
 		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
+		set_country_flag = civil_war_ended
 
 		if = { 
 			limit = { ARA = { has_country_flag = at_war } }
@@ -987,11 +1059,11 @@ country_event = {
 			POR = { clr_country_flag = at_war }
 		}
 
-		end_disaster = castilian_civil_war
+		#end_disaster = castilian_civil_war
 
-		CAS = {
-			country_event = { id = castilian_civil_war.100 days = 20 }
-		}
+		#CAS = {
+		#	country_event = { id = castilian_civil_war.100 days = 20 }
+		#}
 	}
 }
 
@@ -1023,12 +1095,13 @@ country_event = {
 		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		set_country_flag = won_war
+		set_country_flag = civil_war_ended
 
-		end_disaster = castilian_civil_war
+		#end_disaster = castilian_civil_war
 
-		CAS = {
-			country_event = { id = castilian_civil_war.100 days = 20 }
-		}
+		#CAS = {
+		#	country_event = { id = castilian_civil_war.100 days = 20 }
+		#}
 	}
 }
 
@@ -1060,12 +1133,13 @@ country_event = {
 		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		set_country_flag = won_war
+		set_country_flag = civil_war_ended
 
-		end_disaster = castilian_civil_war
+		#end_disaster = castilian_civil_war
 
-		CAS = {
-			country_event = { id = castilian_civil_war.100 days = 20 }
-		}
+		#CAS = {
+		#	country_event = { id = castilian_civil_war.100 days = 20 }
+		#}
 	}
 }
 

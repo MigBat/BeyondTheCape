@@ -77,18 +77,14 @@ castilian_civil_war = {
 
 	can_end = {
 		hidden_trigger = { has_country_flag = civil_war_in_castile }
-		stability = 1
-		NOT = { num_of_rebel_controlled_provinces = 1 }
-		NOT = {
-			has_spawned_rebels = pretender_rebels
-		}
+		has_country_flag = civil_war_ended
 	}
 	
 	modifier = {
 		global_unrest = 7
 		land_forcelimit_modifier = -0.5
 		global_manpower_modifier = -0.5
-		land_morale = -0.2
+		land_morale = -0.5
 	}	
 	
 	on_start = castilian_civil_war.1
