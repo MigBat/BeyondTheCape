@@ -974,6 +974,10 @@ country_event = {
 		num_of_trade_companies = 3
 	}
 
+	mean_time_to_happen = {
+		months = 60
+	}
+
 	option = {	# We must prioritize the building of trust and reputation between our partners
 		name = btc_por.101a
 
@@ -1017,6 +1021,10 @@ country_event = {
 			owned_by = ROOT
 			is_city = yes
 		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
 	}
 
 	option = {	# Encourage slave trade  from Africa
@@ -1066,6 +1074,10 @@ country_event = {
 		}
 	}
 
+	mean_time_to_happen = {
+		months = 60
+	}
+
 	option = {	# Our subjects must act strictly according to the crown's wishes
 		name = btc_por.104a
 
@@ -1100,6 +1112,10 @@ country_event = {
 	trigger = {
 		tag = POR
 		num_of_trade_companies = 5
+	}
+
+	mean_time_to_happen = {
+		months = 60
 	}
 
 	option = {	# Increase our garrisons
@@ -1146,6 +1162,10 @@ country_event = {
 		NOT = { dip_tech = 11 }
 	}
 
+	mean_time_to_happen = {
+		months = 60
+	}
+
 	option = {	# It's not worth salvaging
 		name = btc_por.106a
 
@@ -1186,11 +1206,39 @@ country_event = {
 	trigger = {
 		tag = POR
 		is_year = 1560
-		exists = MOR
+		MOR = {
+			exists = yes
+			religion_group = muslim
+			is_free_or_tributary_trigger = yes
+			NOT = { war_with = POR }
+			NOT = { truce_with = POR }
+			NOT = { alliance_with = POR }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
 	}
 
 	option = {	# By the grace of God!
 		name = btc_por.107a
+
+		add_papal_influence = 10
+		MOR = {
+			every_owned_province = {
+				limit = {
+					is_in_capital_area = yes
+				}
+				add_claim = POR
+			}
+		}
+
+		MOR = {
+			add_opinion = {
+				who = ROOT
+				modifier = prepares_crusade
+			}
+		}
 
 		add_estate_influence_modifier = {
 			estate = estate_church
@@ -1264,6 +1312,10 @@ country_event = {
 		}
 	}
 
+	mean_time_to_happen = {
+		months = 60
+	}
+
 	option = {	# The state cannot afford to lose its most valuable asset
 		name = btc_por.108a
 
@@ -1303,6 +1355,10 @@ country_event = {
 			offensive_war_with = ROOT
 		}
 		NOT = { war_score = -15 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
 	}
 
 	option = {	# Victory, or death!
@@ -1345,6 +1401,10 @@ country_event = {
 		}
 	}
 
+	mean_time_to_happen = {
+		months = 60
+	}
+
 	option = {	# This is God's reward for our unshakable faith
 		name = btc_por.110a
 
@@ -1378,6 +1438,10 @@ country_event = {
 		tag = POR
 		has_country_modifier = reliance_on_brazilian_gold
 		absolutism = 50
+	}
+
+	mean_time_to_happen = {
+		months = 60
 	}
 
 	option = {	# We should keep this newfound wealth safe in our treasury
@@ -1415,7 +1479,7 @@ country_event = {
 	}
 
 	after = {
-		POR = { country_event = { id = btc_por.112 days = 30 } }
+		POR = { country_event = { id = btc_por.112 days = 1000 } }
 	}
 }
 
@@ -1426,8 +1490,6 @@ country_event = {
 	title = btc_por.112_t
 	desc = btc_por.112_d
 	picture = BANKRUPTCY_eventPicture
-
-	fire_only_once = yes
 
 	is_triggered_only = yes
 
@@ -1451,11 +1513,19 @@ country_event = {
 
 	trigger = {
 		tag = POR
+		AND = {
+			231 = { owned_by = POR }
+			232 = { owned_by = POR }
+		}
 		is_year = 1690
 		OR = {
 			exists = ENG
 			exists = GBR
 		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
 	}
 
 	option = {	# Signed the treaty
@@ -1590,6 +1660,10 @@ country_event = {
 	trigger = {
 		tag = POR
 		has_institution = enlightenment
+	}
+
+	mean_time_to_happen = {
+		months = 60
 	}
 
 	option = {	# It is simply too profitable
@@ -1810,6 +1884,10 @@ country_event = {
 			add_building_construction = {
 				building = university
 			}
+			add_province_modifier = {
+				name = coimbra_university
+				duration = -1
+			}
 		}
 	}
 }
@@ -1877,6 +1955,32 @@ country_event = {
 				name = jeronimos_monastery
 				duration = -1
 			}
+		}
+	}
+}
+
+# Cape of Good Hope #
+
+country_event = {
+	id = btc_por.125
+	title = btc_por.125_t
+	desc = btc_por.125_d
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		has_discovered = 1460
+	}
+
+	option = {
+		name = btc_por.125a
+
+		add_prestige = 10
+		add_navy_tradition = 5
+		1460 = {
+			change_province_name = "Cape of Good Hope"
 		}
 	}
 }

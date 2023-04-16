@@ -20,11 +20,6 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-add_permanent_province_modifier = {
-	name = strong_nobility
-	duration = -1
-}
-
 
 1467.1.1 = { unrest = 4 } # Second war of the "irmandi�os"
 1470.1.1 = { unrest = 0 } # End of the Second war of the "irmandi�os"

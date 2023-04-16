@@ -316,3 +316,7 @@ proudly_alone = {
 portuguese_exploration = {
 	free_navy_leader_pool = 2
 }
+
+coimbra_university = {
+	global_institution_spread = 0.1
+}

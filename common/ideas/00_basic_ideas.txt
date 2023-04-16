@@ -621,7 +621,7 @@ exploration_ideas = {
 		global_colonial_growth = 10
 	}
 
-	quest_for_the_new_world	= {
+	experienced_sailors	= {
 		movement_speed_in_fleet_modifier = 1
 	}
 

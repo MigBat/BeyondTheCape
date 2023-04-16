@@ -451,7 +451,7 @@ alentejo_area = { #5
 }
 
 macaronesia_area = { #3
-	366 367 368 4565
+	366 367 368 4565 4944
 }
 
 estremadura_area = {

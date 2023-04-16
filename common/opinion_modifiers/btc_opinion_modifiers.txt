@@ -34,3 +34,8 @@ forsaken_us = {
 	opinion = -100
 	yearly_decay = 2
 }
+
+ignored_our_affairs = {
+	opinion = -200
+	yearly_decay = 5
+}

@@ -7,7 +7,7 @@ country_event = {
 	id = btc_events.1
 	title = btc_events.1_t
 	desc = btc_events.1_t
-	picture = BORDER_TENSION_eventPicture
+	picture = EXPLORERS_eventPicture
 
 	trigger = {
 		NOT = { has_country_flag = quest_for_the_new_world }
@@ -32,7 +32,7 @@ country_event = {
 	id = btc_events.2
 	title = btc_events.2_t
 	desc = btc_events.2_d
-	picture = BORDER_TENSION_eventPicture
+	picture = RELIGIOUS_WARS_eventPicture
 
 	fire_only_once = yes
 
@@ -43,25 +43,7 @@ country_event = {
 	option = {
 		name = btc_events.2a
 
-		222 = {
-			add_province_modifier = {
-				name = resist_reconquista
-				duration = 10950
-			}
-		}
-		223 = {
-			add_province_modifier = {
-				name = resist_reconquista
-				duration = 10950
-			}
-		}
-		226 = {
-			add_province_modifier = {
-				name = resist_reconquista
-				duration = 10950
-			}
-		}
-		4546 = {
+		upper_andalucia_area = {
 			add_province_modifier = {
 				name = resist_reconquista
 				duration = 10950
@@ -76,12 +58,17 @@ country_event = {
 	id = btc_events.3
 	title = btc_events.3_t
 	desc = btc_events.3_d
-	picture = BORDER_TENSION_eventPicture
+	picture = ANGRY_MOB_eventPicture
 
 	fire_only_once = yes
 
+	major = yes
+
 	trigger = {
 		tag = CAS
+		any_owned_province = {
+			has_province_modifier = strong_nobility
+		}
 	}
 
 	mean_time_to_happen = {
@@ -130,8 +117,11 @@ country_event = {
 			create_vassal = GAL
 		}
 		custom_tooltip = galicia_vassal
-		GAL = { 
-			add_liberty_desire = 100
+		GAL = {
+			add_opinion = {
+				who = CAS
+				modifier = ignored_our_affairs	# -200 opinion
+			}
 			add_manpower = 10
 			country_event = {
 				id = btc_events.4
@@ -147,7 +137,7 @@ country_event = {
 	id = btc_events.4
 	title = btc_events.4_t
 	desc = btc_events.4_d
-	picture = BORDER_TENSION_eventPicture
+	picture = SIEGE_eventPicture
 
 	is_triggered_only = yes
 
@@ -199,7 +189,7 @@ country_event = {
 	id = btc_events.5
 	title = btc_events.5_t
 	desc = btc_events.5_d
-	picture = BORDER_TENSION_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -241,12 +231,14 @@ country_event = {
 	id = btc_events.6
 	title = btc_events.6_t
 	desc = btc_events.6_d
-	picture = BORDER_TENSION_eventPicture
+	picture = HORDE_ON_HORSEBACK_eventPicture
 
 	is_triggered_only = yes
 
 	option = {	# Help has arrived!
 		name = btc_events.6a
+
+		add_liberty_desire = 50
 
 		add_opinion = {
 			who = POR
@@ -282,7 +274,7 @@ country_event = {
 	id = btc_events.7
 	title = btc_events.7_t
 	desc = btc_events.7_d
-	picture = BORDER_TENSION_eventPicture
+	picture = BANKRUPTCY_eventPicture
 
 	is_triggered_only = yes
 
@@ -293,6 +285,58 @@ country_event = {
 			add_opinion = {
 				who = POR
 				modifier = forsaken_us	# -100 opinion
+			}
+		}
+	}
+}
+
+# Morocco defend against Iberians #
+
+country_event = {
+	id = btc_events.8
+	title = btc_events.8_t
+	desc = btc_events.8_d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MOR
+	}
+
+	option = {
+		name = btc_events.8a
+
+		marrekesh_area = {
+			add_province_modifier = {
+				name = resist_reconquista
+				duration = 36500
+			}
+		}
+	}
+}
+
+# Galician Nobles rule the region #
+
+country_event = {
+	id = btc_events.9
+	title = btc_events.9_t
+	desc = btc_events.9_d
+	picture = CORRUPTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CAS
+	}
+
+	option = {
+		name = btc_events.9a
+
+		galicia_area = {
+			add_province_modifier = {
+				name = strong_nobility
+				duration = -1
 			}
 		}
 	}

@@ -337,7 +337,6 @@ gc_por_1_b = {
 		}
 		
 		trigger = {
-			university = 4
 			AND = {
 				227 = {
 					has_building = university
@@ -461,6 +460,10 @@ gc_por_2 = {
 			add_country_modifier = {
 				name = portuguese_exploration
 				duration = 18250
+			}
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 5475
 			}
 		}
 	}
@@ -661,10 +664,7 @@ gc_por_2 = {
 		}
 
 		effect = {
-			add_country_modifier = {
-				name = "the_unknown_frontier"
-				duration = 5475
-			}
+			# enable caravels
 		}
 	}
 
@@ -697,6 +697,9 @@ gc_por_2 = {
 			227 = {
 				has_building = coastal_defence
 				owned_by = ROOT
+			}
+			coromandel_region = {
+				has_discovered = ROOT
 			}
 		}
 
@@ -1417,111 +1420,168 @@ gc_por_4 = {
 		}
 	}
 
-	gc_por_build_the_navy = {
-		icon = mission_sea_battles
-		required_missions = {}
+	gc_por_english_alliance = {
+		icon = mission_anglo_portuguese_alliance
+		required_missions = {  }
 		position = 9
 		
 		trigger = {
-			navy_size_percentage = 1
-		}
-		
-		effect = {
-			add_dip_power = 50
-			add_navy_tradition = 15
-			334 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
+			if = {
+				limit = {
+					NOT = {
+						exists = GBR
+					}
+				}
+				OR = {
+					AND = {
+						alliance_with = ENG
+						marriage_with = ENG
+						reverse_has_opinion = {
+							who = ENG
+							value = 150
 						}
 					}
-					add_permanent_claim = ROOT
+					is_rival = ENG
+					NOT = { exists = ENG }
+				}
+			}
+			else = {
+				OR = {
+					AND = {
+						alliance_with = GBR
+						marriage_with = GBR
+						reverse_has_opinion = {
+							who = GBR
+							value = 150
+						}
+					}
+					is_rival = GBR
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					alliance_with = ENG
+				}
+				ENG = {
+					add_historical_friend = POR
+					add_opinion = {
+						who = ROOT
+						modifier = anglo_portuguese_alliance
+					}
+				}
+				ROOT = {
+					add_historical_friend = ENG
+					add_opinion = {
+						who = ENG
+						modifier = anglo_portuguese_alliance
+					}
+				}
+			}
+			if = {
+				limit = {
+					alliance_with = GBR
+				}
+				GBR = {
+					add_historical_friend = POR
+					add_opinion = {
+						who = ROOT
+						modifier = anglo_portuguese_alliance
+					}
+				}
+				ROOT = {
+					add_historical_friend = ENG
+					add_opinion = {
+						who = ENG
+						modifier = anglo_portuguese_alliance
+					}
 				}
 			}
 		}
 	}
 
-	gc_por_conquer_tangiers = {
-		icon = mission_unite_home_region
-		required_missions = { gc_por_build_the_navy }
+	gc_por_intervene_in_castile = {
+		icon = mission_intervene_in_castile
+		required_missions = { gc_por_build_the_navy gc_por_english_alliance }
 		position = 10
 		
-		provinces_to_highlight = {
-			province_id = 334
-			NOT = { owned_by = ROOT }
-		}
-		
 		trigger = {
-			owns = 334
-		}
-		
-		effect = {
-			add_adm_power = 150
-			add_prestige = 5
-			western_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+			custom_trigger_tooltip = {
+				tooltip = intervene_in_castile_tooltip
+				OR = {
+					has_country_flag = won_castilian_civil_war
+					current_age = age_of_reformation
 				}
-				add_permanent_claim = ROOT
 			}
-			southern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
+		}
+		effect = {
+			if = {
+				limit = { has_country_flag = won_castilian_civil_war }
+				iberia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_claim = ROOT
+			}
+			else = {
+				add_country_modifier = {
+					name = proudly_alone
+					duration = -1
+				}
 			}
 		}
 	}
-	
-	gc_conquer_the_north_african_coast = {
-		icon = mission_arabian_fort
-		required_missions = { gc_por_conquer_tangiers }
-		position = 11
+
+	gc_por_lusitanian_empire = {
+		icon = mission_lusitanian_empire
+		required_missions = { gc_por_intervene_in_castile gc_por_reform_navy gc_conquer_the_north_african_coast }
+		position = 12
 		
 		provinces_to_highlight = {
-			area = western_morocco_area
-			NOT = { owned_by = ROOT }
+			region = iberia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			western_morocco_area = {
-				type = all
-				owned_by = ROOT
+			OR = {
+				iberia_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				AND = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 10
+						continent = europe
+					}
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 30
+						continent = africa
+					}
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 20
+						continent = asia
+					}
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 20
+						continent = south_america
+					}
+				}
 			}
 		}
-		
 		effect = {
-			western_morocco_area = {
-				limit = { 
-					owned_by = ROOT
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
 				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
+				set_government_rank = 3
 			}
-			northern_morocco_area = {
-				limit = { 
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
-			}
-			southern_morocco_area = {
-				limit = { 
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
-			}
+			add_prestige = 25
 		}
 	}
 }
@@ -1751,166 +1811,122 @@ gc_por_5 = {
 		}
 	}
 
-	gc_por_english_alliance = {
-		icon = mission_anglo_portuguese_alliance
-		required_missions = {  }
+	gc_por_build_the_navy = {
+		icon = mission_sea_battles
+		required_missions = {}
 		position = 9
 		
 		trigger = {
-			if = {
-				limit = {
-					NOT = {
-						exists = GBR
-					}
-				}
-				OR = {
-					AND = {
-						alliance_with = ENG
-						marriage_with = ENG
-						reverse_has_opinion = {
-							who = ENG
-							value = 150
-						}
-					}
-					is_rival = ENG
-					NOT = { exists = ENG }
-				}
-			}
-			else = {
-				OR = {
-					AND = {
-						alliance_with = GBR
-						marriage_with = GBR
-						reverse_has_opinion = {
-							who = GBR
-							value = 150
-						}
-					}
-					is_rival = GBR
-				}
-			}
+			navy_size_percentage = 1
 		}
-
-		effect = {
-			if = {
-				limit = {
-					alliance_with = ENG
-				}
-				ENG = {
-					add_historical_friend = POR
-					add_opinion = {
-						who = ROOT
-						modifier = anglo_portuguese_alliance
-					}
-				}
-				ROOT = {
-					add_historical_friend = ENG
-					add_opinion = {
-						who = ENG
-						modifier = anglo_portuguese_alliance
-					}
-				}
-			}
-			if = {
-				limit = {
-					alliance_with = GBR
-				}
-				GBR = {
-					add_historical_friend = POR
-					add_opinion = {
-						who = ROOT
-						modifier = anglo_portuguese_alliance
-					}
-				}
-				ROOT = {
-					add_historical_friend = ENG
-					add_opinion = {
-						who = ENG
-						modifier = anglo_portuguese_alliance
-					}
-				}
-			}
-		}
-	}
-
-	gc_por_intervene_in_castile = {
-		icon = mission_intervene_in_castile
-		required_missions = { gc_por_build_the_navy gc_por_english_alliance }
-		position = 10
 		
-		trigger = {
-			OR = {
-				has_country_flag = won_castilian_civil_war
-				current_age = age_of_reformation
-			}
-		}
 		effect = {
-			if = {
-				limit = { has_country_flag = won_castilian_civil_war }
-				iberia_region = {
+			add_dip_power = 50
+			add_navy_tradition = 15
+			334 = {
+				if = {
 					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
 					}
 					add_permanent_claim = ROOT
 				}
 			}
-			else = {
-				add_country_modifier = {
-					name = proudly_alone
-					duration = -1
-				}
-			}
 		}
 	}
 
-	gc_por_lusitanian_empire = {
-		icon = mission_lusitanian_empire
-		required_missions = { gc_por_intervene_in_castile gc_por_reform_navy }
-		position = 12
+	gc_por_conquer_tangiers = {
+		icon = mission_unite_home_region
+		required_missions = { gc_por_build_the_navy }
+		position = 10
 		
 		provinces_to_highlight = {
-			region = iberia_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			province_id = 334
+			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			OR = {
-				iberia_region = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				AND = {
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 10
-						continent = europe
-					}
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 30
-						continent = africa
-					}
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 20
-						continent = asia
-					}
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 20
-						continent = south_america
-					}
-				}
-			}
-			
+			owns = 334
 		}
+		
 		effect = {
-			if = {
-				limit = {
-					NOT = {
-						government_rank = 3
+			add_adm_power = 150
+			add_prestige = 5
+			4563 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
 					}
+					add_permanent_claim = ROOT
 				}
-				set_government_rank = 3
 			}
-			add_prestige = 25
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	
+	gc_conquer_the_north_african_coast = {
+		icon = mission_arabian_fort
+		required_missions = { gc_por_conquer_tangiers }
+		position = 11
+		
+		provinces_to_highlight = {
+			area = western_morocco_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			western_morocco_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			western_morocco_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+			northern_morocco_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+			southern_morocco_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
 		}
 	}
 }
