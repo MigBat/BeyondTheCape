@@ -292,6 +292,10 @@ song = {
 			factor = 3
 			culture = portuguese
 		}
+		modifier = {
+			factor = 0
+			NOT = { culture = portuguese }
+		}
 	}
 }
 song = {
@@ -317,6 +321,13 @@ song = {
 		modifier = {
 			factor = 2
 			culture = galician
+		}
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
 		}
 	}
 }
@@ -344,6 +355,13 @@ song = {
 			factor = 2
 			culture = galician
 		}
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
+		}
 	}
 }
 song = {
@@ -361,6 +379,13 @@ song = {
 		modifier = {
 			factor = 4
 			culture = galician
+		}
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
 		}
 	}
 }
@@ -395,6 +420,13 @@ song = {
 		modifier = {
 			factor = 2
 			culture = galician
+		}
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
 		}
 	}
 }
@@ -434,6 +466,13 @@ song = {
 			factor = 2
 			culture = galician
 		}
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
+		}
 	}
 }
 song = {
@@ -456,6 +495,13 @@ song = {
 			factor = 4
 			culture = galician
 		}
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
+		}
 	}		
 }
 song = {
@@ -477,6 +523,13 @@ song = {
 		modifier = {
 			factor = 2
 			culture = galician
+		}
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
 		}
 	}
 }
@@ -503,7 +556,14 @@ song = {
 		modifier = {
 			factor = 2
 			culture = galician
-		}		
+		}
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
+		}	
 	}
 }
 song = {
@@ -533,7 +593,11 @@ song = {
 		modifier = {
 			factor = 3
 			culture = portuguese
-		}		
+		}	
+		modifier = {
+			factor = 0
+			NOT = { culture = portuguese }
+		}	
 	}
 }
 song = {
@@ -560,8 +624,14 @@ song = {
 			factor = 2
 			culture = galician
 		}
-	}
-		
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
+		}
+	}	
 }
 song = {
 	name = "cliffsofgalicia"
@@ -587,32 +657,12 @@ song = {
 			factor = 4
 			culture = galician
 		}
-	}
-		
+		modifier = {
+			factor = 0
+			NOT OR = { 
+				culture = portuguese
+				culture = galician
+			}
+		}
+	}	
 }
-
-
-############
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
