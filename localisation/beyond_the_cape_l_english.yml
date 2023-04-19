@@ -72,6 +72,11 @@
 
  batalha_monastery:0 "Batalha Monastery"
 
+## Holy Orders ##
+
+ christ_order:0 "Order of Christ"
+ christ_order_desc:0 "The Order of Christ was founded in 1319, with the protection of King Denis of Portugal, after the Templars were abolished. It accumulated great riches and power during the Age of Discoveries."
+
 ## Flagships ##
 
  portuguese_mass_load_cannons:0 "Portuguese Mass Load Cannons"
@@ -271,6 +276,9 @@
  btc_por.125_t:0 "The Cape of Storms"
  btc_por.125_d:0 "After years of preparation and brave exploration, we have finally achieved a great milestone in our quest for a sea route to India. Our explorers have successfully passed the treacherous waters of the Cape of Storms, located at the southernmost tip of Africa."
  btc_por.125a:0 "We shall name this place as..."
+ btc_por.126_t:0 "End of the Anglo-Portuguese Alliance"
+ btc_por.126_d:0 "Our alliance with the english has run its course, and so do the benefits that came with it."
+ btc_por.126a:0 "A pity..."
 
 ## Modifiers ##
 
@@ -343,8 +351,14 @@
  emancipated_colonies:0 "Emancipated Colonies"
  desc_emancipated_colonies:0 "We've accepted their demands"
  portuguese_exploration:0 "Portuguese Exploration"
- desc_portuguese_exploration:0 ""
- 
+ desc_portuguese_exploration:0 "We are raising many talented explorers who will chart the seas for us."
+ por_caravels:0 "The Caravel"
+ desc_por_caravels:0 "The caravel is a small maneuverable sailing ship whose lateen sails give it speed and the capacity for sailing windward."
+ por_galleons:0 "A Rising Naval Power"
+ desc_por_galleons:0 "The constant promotion and investment in the Portuguese Navy since the times of Henry the Navigator have paid off, and we now have the most technologically advanced fleet in the world."
+ por_english_alliance:0 "English Military Alliance"
+ desc_por_english_alliance:0 "It is cordially agreed that if, in time to come, one of the kings or his heir shall need the support of the other, or his help, and in order to get such assistance applies to his ally in lawful manner, the ally shall be bound to give aid and succour to the other, so far as he is able (without any deceit, fraud, or pretence) to the extent required by the danger to his ally's realms, lands, domains, and subjects; and he shall be firmly bound by these present alliances to do this." 
+ por_english_alliance_tt:0 "\nIf the alliance with @ENG/@GBR is ended, we will lose this reward."
 
 # Other events #
 

@@ -1984,3 +1984,27 @@ country_event = {
 		}
 	}
 }
+
+# End of Anglo-Portuguese Alliance #
+
+country_event = {
+	id = btc_por.126
+	title = btc_por.126_t
+	desc = btc_por.126_d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = POR
+		has_country_modifier = por_english_alliance
+		NOT OR = {
+			alliance_with = ENG
+			alliance_with = GBR
+		}
+	}
+
+	option = {
+		name = btc_por.126a
+
+		remove_country_modifier = por_english_alliance
+	}
+}

@@ -254,10 +254,14 @@ bri_2 = {
 			has_discovered = root
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					region = carribeans_region
+			custom_trigger_tooltip = {
+				tooltip = has_colony_in_colonial_caribbean
+				carribeans_region = {
+					owner = {
+						is_colonial_nation_of = root
+					}
 				}
+			}
 		}
 		effect = {
 			1516 = {

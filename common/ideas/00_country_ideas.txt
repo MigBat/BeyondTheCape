@@ -1387,7 +1387,7 @@ BRA_ideas = {
 # Beyond the Cape rework #
 POR_ideas = {
 	start = {
-		morale_damage = 0.15
+		morale_damage = 0.2
 		infantry_power = 0.1
 	}
 	

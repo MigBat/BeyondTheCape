@@ -299,6 +299,7 @@ jeronimos_monastery = {
 
 black_swords = {
 	shock_damage = 0.15
+	is_marine_modifier = yes 
 }
 
 way_to_india = {
@@ -319,4 +320,24 @@ portuguese_exploration = {
 
 coimbra_university = {
 	global_institution_spread = 0.1
+}
+
+por_caravels = {
+	allowed_caravel_fraction = 0.1
+	has_caravel = yes 
+	navy_tradition = 0.5
+}
+
+por_galleons = {
+	allowed_galleon_fraction = 0.1
+	has_galleon = yes
+	heavy_ship_power = 0.1
+	light_ship_number_of_cannons_modifier = 0.5
+	transport_attrition = -0.25
+}
+
+por_english_alliance = {
+	leader_land_fire = 1
+	drill_gain_modifier = 0.25
+	land_morale = 0.05
 }

@@ -515,41 +515,19 @@ granada_slot_2_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			if = {
+			valencia_area = {
 				limit = {
-					218 = {
-						NOT = {
-							owned_by = ROOT
-						}
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				218 = {
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
-			if = {
+			extremadura_area = {
 				limit = {
-					1747 = {
-						NOT = {
-							owned_by = ROOT
-						}
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				1747 = {
-					add_permanent_claim = ROOT
-				}
-			}
-			if = {
-				limit = {
-					216 = {
-						NOT = {
-							owned_by = ROOT
-						}
-					}
-				}
-				216 = {
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 		
@@ -1081,9 +1059,12 @@ andalusia_slot_3_missions_b = {
 				limit = {
 					is_random_new_world = no
 				}
-				carribeans_region = {
+				custom_trigger_tooltip = {
+					tooltip = miss_discover_caribbean
+					carribeans_region = {
 						has_discovered = ROOT
 					}
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_west_africa

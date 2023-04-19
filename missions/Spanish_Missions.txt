@@ -10,6 +10,7 @@ spa_colonial_group = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -24,9 +25,12 @@ spa_colonial_group = {
 				limit = {
 					is_random_new_world = yes
 				}
-				carribeans_region = {
+				custom_trigger_tooltip = {
+					tooltip = miss_discover_caribbean
+					carribeans_region = {
 						has_discovered = ROOT
 					}
+				}
 				else = {
 					490 = {
 						has_discovered = ROOT
@@ -56,11 +60,14 @@ spa_colonial_group = {
 		}
 		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_caribbean
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
 					region = carribeans_region
 					is_city = yes
 				}
+			}
 		}
 		
 		effect = {
@@ -112,6 +119,7 @@ spa_colonial_group_rnw_off = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	
 	has_country_shield = yes
@@ -288,6 +296,7 @@ spa_colonial_group_two = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -467,6 +476,7 @@ spa_colonial_group_two_rnw_off = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -512,6 +522,7 @@ spa_iberia_convert = {
 		}
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -563,6 +574,7 @@ spa_colonial_group_three_rnw_off = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -608,6 +620,7 @@ spa_reconquista = {
 		}
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -784,6 +797,7 @@ spa_reconquista_por = {
 		}
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	

@@ -1553,7 +1553,29 @@ got_pirate_slot_1_new_world = {
 			}
 		}
 		effect = {
-			country_event = { id = flavor_got.40 }
+			if = {
+				limit = {
+					any_subject_country = {
+						capital_scope = {
+							region = carribeans_region
+						}
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = self_governing_colony
+							is_subject_of_type = private_enterprise
+						}
+					}
+				}
+				country_event = {
+					id = flavor_got.39
+				}
+			}
+			else = {
+				country_event = {
+					id = flavor_got.40
+				}
+			}
 		}
 	}
 
@@ -2505,7 +2527,7 @@ got_pirate_slot_5 = {
 					limit = {
 						25 = { is_core = RUG }
 					}
-					25 = { add_core = RUT }
+					25 = { add_core = RUG }
 				}
 				release = RUG
 				RUG = {

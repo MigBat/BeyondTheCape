@@ -381,7 +381,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GREAT_BUILDING_eventPicture"
-		texturefile = "gfx/event_pictures/btc_event_pictures/testGREAT_BUILDING_eventPicture.dds"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/GREAT_BUILDING_eventPicture.dds"
 		alwaystransparent = yes
 	}
 	
@@ -772,4 +772,5 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/btc_event_pictures/great_building_picture.dds"
 		alwaystransparent = yes
 	}
+
 }
