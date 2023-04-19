@@ -66,7 +66,7 @@ quest_for_the_new_world = {
 }
 
 resist_reconquista = {
-	local_warscore_cost_modifier = 1
+	local_warscore_cost_modifier = 2
 }
 
 anti_islamic_society = {
@@ -339,5 +339,9 @@ por_galleons = {
 por_english_alliance = {
 	leader_land_fire = 1
 	drill_gain_modifier = 0.25
-	land_morale = 0.05
+	land_morale = 0.1
+}
+
+por_henry_cheaper = {
+	dip_advisor_cost = -0.5
 }

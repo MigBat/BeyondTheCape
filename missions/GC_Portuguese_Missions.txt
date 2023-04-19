@@ -712,6 +712,10 @@ gc_por_2 = {
 				name = por_caravels
 				duration = -1 
 			}
+			add_country_modifier = {
+				name = por_henry_cheaper
+				duration = 3650
+			}
 		}
 	}
 
@@ -1607,11 +1611,11 @@ gc_por_4 = {
 					}
 				}
 			}
-			custom_tooltip = port_english_alliance_tt
 			add_country_modifier = {
 				name = por_english_alliance
 				duration = -1
 			}
+			custom_tooltip = port_english_alliance_tt
 		}
 	}
 
