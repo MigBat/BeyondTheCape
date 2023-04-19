@@ -328,7 +328,7 @@ avis_order = {
         add_base_manpower = -1
     }
     modifier = {
-        own_territory_dice_roll_bonus = 1
+        local_defender_dice_roll_bonus = 1
     }
     ai_priority = {
         factor = 2
