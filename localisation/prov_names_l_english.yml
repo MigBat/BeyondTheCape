@@ -226,7 +226,6 @@
  PROV225:0 "Córdoba"
  PROV226:0 "Gibraltar"
  PROV227:0 "Lisboa"
- PROV228:0 "Beira"
  PROV229:0 "Beja"
  PROV230:0 "Algarve"
  PROV231:0 "Porto"
@@ -3730,3 +3729,4 @@
  #PROV1292:0 "Gulf of Cadiz"
  #PROV367:0 "The Azores"
  #PROV1460:0 "Cape of Good Hope"
+ #PROV228:0 "Beira"

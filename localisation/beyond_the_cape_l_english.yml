@@ -15,6 +15,7 @@
  PROV1292:0 "Cape St. Vincent"
  PROV367:0 "São Miguel"
  PROV1460:0 "Cape of Storms"
+ PROV228:0 "Beira Alta"
 
 ## Province Adjectives ##
 
@@ -71,6 +72,12 @@
  gc_por_terra_nova_desc:0 "Explorers speak of a bountiful new land in the far west. It would be unwise to leave the exploitation of it to others."
  gc_por_go_west_title:0 "Go Westward"
  gc_por_go_west_desc:0 "The Winds and currents favor Westward expansion. Our explorers believe that rich lands lie just over the Horizon."
+ gc_por_pinhal_leiria_title:0 "Leiria Woods"
+ gc_por_pinhal_leiria_desc:0 "These woods exist since the 13th century, helping the local populace thrive. Now they will serve an even more important role for the country and its shipbuilding capacities. However, we must make sure the woods are kept by replanting trees regularly, assuring the region's prosperity continues."
+ por_tercios_system_title:0 "Portuguese Terços"
+ por_tercios_system_desc:0 "Portugal adopted the Spanish model of tercio in the 16th century, calling it terço. In 1578, under the reorganization of the Portuguese Army conducted by King Sebastian, four terços were established. Each had about 2,000 men, formed into eight companies."
+ por_reform_tercios_title:0 "Reformed Terços"
+ por_reform_tercios_desc:0 "The Terços system has been a great success since its implementation. However, new styles of warfare have been developed to defeat them on the battlefield, so a reform in their organization is needed to keep them as unbeatable as they are considered to be."
 
 ## Monuments ##
 
@@ -357,13 +364,15 @@
  desc_emancipated_colonies:0 "We've accepted their demands"
  portuguese_exploration:0 "Portuguese Exploration"
  desc_portuguese_exploration:0 "We are raising many talented explorers who will chart the seas for us."
- por_caravels:0 "The Caravel"
- desc_por_caravels:0 "The caravel is a small maneuverable sailing ship whose lateen sails give it speed and the capacity for sailing windward."
+ por_caravels:0 "Sagres School of Navigation"
+ desc_por_caravels:0 "The first caravels were developed here. It is a small maneuverable sailing ship whose lateen sails give it speed and the capacity for sailing windward."
  por_galleons:0 "A Rising Naval Power"
  desc_por_galleons:0 "The constant promotion and investment in the Portuguese Navy since the times of Henry the Navigator have paid off, and we now have the most technologically advanced fleet in the world."
  por_english_alliance:0 "English Military Alliance"
  desc_por_english_alliance:0 "It is cordially agreed that if, in time to come, one of the kings or his heir shall need the support of the other, or his help, and in order to get such assistance applies to his ally in lawful manner, the ally shall be bound to give aid and succour to the other, so far as he is able (without any deceit, fraud, or pretence) to the extent required by the danger to his ally's realms, lands, domains, and subjects; and he shall be firmly bound by these present alliances to do this." 
  por_english_alliance_tt:0 "\nIf the alliance with @ENG/@GBR is ended, we will lose this reward."
+ pinhal_leiria:0 "Leiria Woods"
+ desc_pinhal_leiria:0 "These woods are paramount to our shipbuilding ability."
 
 # Other events #
 

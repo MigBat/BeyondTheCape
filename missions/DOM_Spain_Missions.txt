@@ -3021,7 +3021,7 @@ dom_cas_missions_4_b = {
 			sailors_percentage = 0.5
 			num_of_galley = 20 
 			if = {
-				limit = { has_dlc = "Golden Century" }
+				limit = { has_dlc = "Rule Britannia" }
 				has_naval_doctrine = any 
 			}
 		}
@@ -4504,4 +4504,5 @@ dom_cas_missions_5_c = {
 			}
 		}
 	}
-}
+	
+	

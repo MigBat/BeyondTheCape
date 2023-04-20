@@ -12,4 +12,4 @@ tags={
 	"Loading Screen"
 }
 name="Beyond the Cape"
-supported_version="1.35.0"
+supported_version="1.35.1"
