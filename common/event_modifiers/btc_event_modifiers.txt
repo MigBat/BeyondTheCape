@@ -325,14 +325,14 @@ coimbra_university = {
 por_caravels = {
 	allowed_caravel_fraction = 0.1
 	has_caravel = yes 
-	navy_tradition = 0.5
+	light_ship_number_of_cannons_modifier = 0.25
+	light_ship_hull_size = 0.25
 }
 
 por_galleons = {
 	allowed_galleon_fraction = 0.1
 	has_galleon = yes
 	heavy_ship_power = 0.1
-	light_ship_number_of_cannons_modifier = 0.5
 	transport_attrition = -0.25
 }
 

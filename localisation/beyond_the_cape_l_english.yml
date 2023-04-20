@@ -67,6 +67,10 @@
  gc_por_mariners_astrolabe_title:0 "Mariner's Astrolabe"
  gc_por_mariners_astrolabe_desc:0 "It is imperial that our men at sea can find and map their way through uncharted waters. This small instrument would fit in any pocket, and allows navigators to determine the latitude of a ship at sea."
  intervene_in_castile_tooltip:0 "Was the winner of the Castilian War of Succession, or it is currently the Age of Reformation."
+ gc_por_terra_nova_title:0 "Terra Nova"
+ gc_por_terra_nova_desc:0 "Explorers speak of a bountiful new land in the far west. It would be unwise to leave the exploitation of it to others."
+ gc_por_go_west_title:0 "Go Westward"
+ gc_por_go_west_desc:0 "The Winds and currents favor Westward expansion. Our explorers believe that rich lands lie just over the Horizon."
 
 ## Monuments ##
 
@@ -446,7 +450,7 @@
  coimbra_university:0 "Coimbra University"
  desc_coimbra_university:0 "This is one of the oldest learning institutions in Western Europe, and a renowned center of learning."
  ignored_our_affairs:0 "Ignored our affairs"
- por_henry_cheaper:0 "Cheaper Navigator"
+ por_henry_cheaper:0 "Infante of Portugal"
  desc_por_henry_cheaper:0 "Henrique is not interested in monetary returns, but rather in establishing his legacy, and Portugal's."
 
 ## Disasters ##
