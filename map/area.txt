@@ -409,8 +409,8 @@ upper_andalucia_area = { #4
 }
 
 castille_area = { #5
-	color = { 58 58 207 }
-	215 217 2755 4551 4789
+	color = { 243 235 28 }
+	217 2755 4551 4789
 }
 
 toledo_area = { #5
@@ -418,7 +418,7 @@ toledo_area = { #5
 }
 
 asturias_area = { #4
-	 207 1745 4552 1746
+	215 1745 4552 1746
 }
 
 galicia_area = { #4
@@ -434,8 +434,8 @@ basque_country = { #3
 }
 
 leon_area = { #3
-	color = { 243 235 28 }
-	208 216 4553 
+	color = { 58 58 207 }
+	207 208 216 4553 
 }
 
 extremadura_area = {

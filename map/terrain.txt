@@ -320,7 +320,7 @@ categories =  {
 		supply_limit = 4
 		
 		terrain_override = {
-			207 1745 4551 2987 2989 # Spain
+			207 208 1745 4551 2987 2989 # Spain
 			139 1831 143 138 4175  #Balkans
 			158 1952 #Hungary
 			4236 #Slovakia

@@ -148,7 +148,7 @@ country_event = {
 			factor = 0.1
 		}
 
-		4554 = {
+		206 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
 				friend = CAS
@@ -165,7 +165,7 @@ country_event = {
 			factor = 0.9
 		}
 
-		4554 = {
+		206 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
 				friend = CAS
@@ -255,14 +255,8 @@ country_event = {
 			siege = 0
 		}
 
-		4555 = {
+		4558 = {
 			cavalry = ROOT
-			cavalry = ROOT
-			infantry = ROOT
-			infantry = ROOT
-			infantry = ROOT
-			infantry = ROOT
-			infantry = ROOT
 			infantry = ROOT
 			infantry = ROOT
 			infantry = ROOT
