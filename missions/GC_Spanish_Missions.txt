@@ -410,6 +410,20 @@ gc_spain_2 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				norte_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				estremadura_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			else = {
 				custom_tooltip = gc_cas_spa_navarra_bt
@@ -431,6 +445,8 @@ gc_spain_2 = {
 			OR = {
 				area = beieras_area
 				area = alentejo_area
+				area = norte_area
+				area = estremadura_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -441,6 +457,14 @@ gc_spain_2 = {
 				owned_by = ROOT
 			}
 			alentejo_area = {
+				type = all
+				owned_by = ROOT
+			}
+			norte_area = {
+				type = all
+				owned_by = ROOT
+			}
+			estremadura_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -896,6 +920,20 @@ gc_spain_3 = {
 					add_permanent_claim = ROOT
 				}
 				beieras_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				norte_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				estremadura_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT	}

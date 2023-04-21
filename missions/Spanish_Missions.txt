@@ -685,6 +685,20 @@ spa_reconquista = {
 				}
 				add_permanent_claim = ROOT
 			}
+			norte_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			estremadura_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			aragon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -810,6 +824,8 @@ spa_reconquista_por = {
 			OR = {
 				area = beieras_area
 				area = alentejo_area
+				area = norte_area
+				area = estremadura_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -820,6 +836,14 @@ spa_reconquista_por = {
 				owned_by = ROOT
 			}
 			alentejo_area = {
+				type = all
+				owned_by = ROOT
+			}
+			norte_area = {
+				type = all
+				owned_by = ROOT
+			}
+			estremadura_area = {
 				type = all
 				owned_by = ROOT
 			}
