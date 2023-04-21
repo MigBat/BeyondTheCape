@@ -341,7 +341,6 @@ por_english_alliance = {
 
 por_henry_cheaper = {
 	dip_advisor_cost = -0.5
-	dip_tech_cost_modifier = -0.1
 }
 
 pinhal_leiria = {
@@ -362,4 +361,9 @@ adopting_tercios = {
 portuguese_tercios = {
 	fire_damage = 0.1
 	morale_damage = 0.1
+}
+
+por_sagres = {
+	dip_tech_cost_modifier = -0.1
+	navy_tradition = 0.25
 }
