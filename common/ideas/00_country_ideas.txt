@@ -1612,7 +1612,7 @@ POR_ideas = {
 	}
 	por_cacadores = {
 		fire_damage_received = -0.15
-		hostile_attrition = 0.5
+		hostile_attrition = 1
 	}
 	por_royal_absolutism = {
 		build_cost = -0.15
