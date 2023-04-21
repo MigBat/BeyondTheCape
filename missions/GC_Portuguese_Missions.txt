@@ -751,7 +751,7 @@ gc_por_2_b = {
 		
 		trigger = { 
 			custom_trigger_tooltip = {
-				tooltip = miss_discover_brazil
+				tooltip = miss_discover_canada
 				colonial_canada = {
 					has_discovered = ROOT
 				}
