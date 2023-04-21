@@ -1596,7 +1596,10 @@ gc_por_4_a = {
 		position = 1
 
 		trigger = {
-			navigator = 3
+			OR = {
+				navigator = 3
+				has_idea_group = exploration_ideas
+			}
 		}
 
 		effect = {
