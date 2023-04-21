@@ -1614,7 +1614,7 @@ POR_ideas = {
 		hostile_attrition = 0.5
 	}
 	por_royal_absolutism = {
-		loyalty_change_on_revoked = 0.05
+		build_cost = -0.15
 		yearly_absolutism = 0.5
 	}
 }

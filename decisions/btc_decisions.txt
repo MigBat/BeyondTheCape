@@ -1,0 +1,49 @@
+country_decisions = {
+	square_rigged_caravel_decision = {
+		color = { 255 69 0 }
+		major = yes
+		potential = {
+			any_owned_province = {
+				has_province_modifier = por_sagres
+			}
+			tag = POR
+		}
+
+		allow = {
+			has_country_modifier = por_caravels
+			num_of_caravel = 5
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = square_rigged_caravel
+				duration = -1
+			}
+		}
+	}
+}
+
+country_decisions = {
+	nau_decision = {
+		color = { 255 69 0 }
+		major = yes
+		potential = {
+			any_owned_province = {
+				has_province_modifier = por_sagres
+			}
+			tag = POR
+		}
+
+		allow = {
+			has_country_modifier = por_galleons
+			num_of_galleon = 5
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = nau
+				duration = -1
+			}
+		}
+	}
+}

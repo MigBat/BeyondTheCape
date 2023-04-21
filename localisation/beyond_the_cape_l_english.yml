@@ -97,6 +97,13 @@
  spanish_improved_crows_nest:0 "Spanish Improved Crow's Nest"
  spanish_improved_crows_nest_desc:0 "With a flagship like ours, the enemy will see us coming. By then, it will already be too late for them."
 
+## Decisions ##
+
+ square_rigged_caravel_decision_title:0 "Develop the Square-Rigged Caravel"
+ square_rigged_caravel_decision_desc:0 "The square-rigged caravel is a design notable for its exceptional maneuverability and combat capabilities, although it comes at a higher cost."
+ nau_decision_title:0 "Develop the Nau"
+ nau_decision_desc:0 "By increasing the size of our galleons, we can fulfill both the responsibilities of transporting troops and naval engagement with a single ship, although its fighting capabilities will be diminished."
+
 ## Events ##
 
 # Lisbon Earthquake #
@@ -364,15 +371,21 @@
  desc_emancipated_colonies:0 "We've accepted their demands"
  portuguese_exploration:0 "Portuguese Exploration"
  desc_portuguese_exploration:0 "We are raising many talented explorers who will chart the seas for us."
- por_caravels:0 "Sagres School of Navigation"
- desc_por_caravels:0 "The first caravels were developed here. It is a small maneuverable sailing ship whose lateen sails give it speed and the capacity for sailing windward."
+ por_sagres:0 "Sagres School of Navigation"
+ desc_por_sagres:0 "The first caravels were developed here. It is a small maneuverable sailing ship whose lateen sails give it speed and the capacity for sailing windward."
+ por_caravels:0 "Navigation Techniques"
+ desc_por_caravels:0 "The Infante has overseen revolutionary advancements in the nautical area, developing a vessel that can sail against the wind, the caravel. We shall make use of it to achieve our ambitions."
  por_galleons:0 "A Rising Naval Power"
  desc_por_galleons:0 "The constant promotion and investment in the Portuguese Navy since the times of Henry the Navigator have paid off, and we now have the most technologically advanced fleet in the world."
  por_english_alliance:0 "English Military Alliance"
  desc_por_english_alliance:0 "It is cordially agreed that if, in time to come, one of the kings or his heir shall need the support of the other, or his help, and in order to get such assistance applies to his ally in lawful manner, the ally shall be bound to give aid and succour to the other, so far as he is able (without any deceit, fraud, or pretence) to the extent required by the danger to his ally's realms, lands, domains, and subjects; and he shall be firmly bound by these present alliances to do this." 
- por_english_alliance_tt:0 "\nIf the alliance with @ENG/@GBR is ended, we will lose this reward."
+ por_english_alliance_tt:0 "\nIf the alliance with @ENG is ended, we will lose this reward."
  pinhal_leiria:0 "Leiria Woods"
  desc_pinhal_leiria:0 "These woods are paramount to our shipbuilding ability."
+ square_rigged_caravel:0 "Square-Rigged Caravel"
+ desc_square_rigged_caravel:0 "A more combat oriented version of the caravel."
+ nau:0 "Nau"
+ desc_nau:0 "A version of the galleon that sacrifices combat ability for transporting troops."
 
 # Other events #
 
@@ -461,6 +474,12 @@
  ignored_our_affairs:0 "Ignored our affairs"
  por_henry_cheaper:0 "Infante of Portugal"
  desc_por_henry_cheaper:0 "Henrique is not interested in monetary returns, but rather in establishing his legacy, and Portugal's."
+ tercios:0 "Terços"
+ desc_tercios:0 ""
+ adopting_tercios:0 "Adopting Terços"
+ desc_adopting_tercios:0 ""
+ portuguese_tercios:0 "Portuguese Terços"
+ desc_portuguese_tercios:0 ""
 
 ## Disasters ##
 
@@ -551,6 +570,20 @@
 
  experienced_sailors:0 "Experienced Sailors"
  experienced_sailors_desc:0 "Every finger is a fishhook. That's how you tell a true sailor!"
+ por_india_armadas:0 "India Armadas"
+ por_india_armadas_desc:0 "The India Armadas were dispatched on an annual basis from Portugal to India. Armed with state of the art naval artillery, these fleets were prepared to defend their cargo from any possible threat, as well as enforce the Portuguese will overseas by any means necessary."
+ legacy_of_the_navigator:0 "Legacy of the Navigator"
+ legacy_of_the_navigator_desc:1 "Henry the Navigator was the third son of John I of Portugal. Knowing he would never be King, he spent his life promoting exploration and sea craft, funding expeditions, gathering knowledge about naval matters, and encouraging advances in naval technology. This legacy is still with us today and continues to inspire our sailors and admirals to push themselves to greater deeds."
+ por_feitoria_system:0 "Feitoria System"
+ por_feitoria_system_desc:0 "A well established network of trade ports across the African continent allowed the Portuguese to protect their world-spanning trade routes from India and the Far-East to Europe and the Americas."
+ por_bandeirantes:0 "Encourage the Bandeirantes"
+ por_bandeirantes_desc:0 "Some members of expeditions into the interior of the South American rainforests for slave raiding would stumble across finds of gold and other precious metals and stones. These rumors would encourage hardy souls to journey to our colonies."
+ por_royal_absolutism:0 "Royal Absolutism"
+ por_royal_absolutism_desc:0 "Since the Lord himself appeared and spoke to Dom Afonso Henriques, it has become self evidently clear that the Portuguese royal bloodline has been ordained by God to lead Portugal to greatness."
+ por_cacadores:0 "Elite Caçadores"
+ por_cacadores_desc:0 "Caçadores, or "Hunters", were elite regiments of light infantry. Trained in sharpshooting and assymetrical warfare and equiped in uniforms of natural colours, as opposed to the bright blue Portuguese regular uniforms, to properly camouflage with the landscape."
+ por_casa_da_india:0 "Casa da Índia"
+ por_casa_da_india_desc:0 "The Casa da Índia was a Portuguese state-run commercial organization. It regulated international trade and the Portuguese Empire's territories, colonies, and factories across Asia and Africa."
 
 # Songs #
  
