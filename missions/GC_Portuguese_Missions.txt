@@ -140,10 +140,22 @@ gc_por_1_a = {
 		required_missions = { gc_por_intervene_in_castile }
 		position = 3
 		trigger = {
-			
+			num_of_owned_provinces_with = {
+				value = 5
+				province_has_current_tech_fort_trigger = yes
+			}
+			mil_tech = 12
+			army_professionalism = 0.15
 		}
 		effect = {
-
+			add_country_modifier = {
+				name = tercios
+				duration = -1
+			}
+			add_country_modifier = {
+				name = adopting_tercios
+				duration = 18250
+			}
 		}
 	}
 	
@@ -152,10 +164,19 @@ gc_por_1_a = {
 		required_missions = { por_tercios_system gc_conquer_the_north_african_coast }
 		position = 4
 		trigger = {
-			
+			army_tradition = 40
+			army_professionalism = 0.3
+			employed_advisor = {
+				type = army_reformer
+			}
+			mil = 3
 		}
 		effect = {
-			
+			remove_country_modifier = adopting_tercios
+			add_country_modifier = {
+				name = portuguese_tercios
+				duration = -1
+			}
 		}
 	}
 }	
@@ -386,70 +407,149 @@ gc_por_1_b = {
 	}
 	has_country_shield = yes
 
-	gc_por_african_gold = {
-		icon = mission_african_gold
+	gc_por_conquers_zanzibar = {
+		icon = mission_cannons_firing
 		required_missions = { gc_por_discovers_east_africa }
 		position = 11
 		
 		provinces_to_highlight = {
-			OR = {
-				area = zimbabwe_area
-				area = butua_area
+			province_id = 1201
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			1201 = {
+				owned_by = ROOT
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+	
+		effect = {
+			1201 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "por_makeshift_defenses"
+					duration = -1
+				}
+			}
+			2999 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	gc_por_conquers_hormuz = {
+		icon = mission_persian_soldiers
+		required_missions = { gc_por_conquers_zanzibar }
+		position = 12
+		
+		provinces_to_highlight = {
+			province_id = 2999
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			2999 = {
+				owned_by = ROOT
+			}
+		}
+	
+		effect = {
+			2999 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "por_makeshift_defenses"
+					duration = -1
+				}
+			}
+			mascat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			395 = {	add_permanent_claim = ROOT }
+			396 = {	add_permanent_claim = ROOT }
+		}
+	}
+
+	gc_por_oman = {
+		icon = mission_portuguese_oman
+		required_missions = { gc_por_conquers_hormuz }
+		position = 13
+		
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = mascat_area
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					province_id = 400
+					NOT = { owned_by = ROOT }
+				}
+			}
 		}
 		
 		trigger = {
-			zimbabwe_area = {
+			mascat_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			butua_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			400 = { owned_by = ROOT }
+		}
+		effect = {
+			if = {
+				limit = {
+					2999 = {
+						owned_by = ROOT
+					}
+				}
+				2999 = {
+					add_province_modifier = {
+						name = "persian_gulf_trade_por"
+						duration = -1
+					}
+				}
+			}
+			400 = {
+				add_province_modifier = {
+					name = "persian_gulf_trade_por"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	dom_por_clash_ottomans = {
+		icon = mission_the_bospborus
+		required_missions = { gc_por_oman }
+		position = 15
+		provinces_to_highlight = {
+			is_capital = yes 
+			owner = { tag = TUR }
+		}
+		trigger = {
+			OR = {
+				navy_size = TUR 
+				total_development = TUR 
+				TUR = { exists = no }
+			}
+			OR = {
+				army_tradition = 70
+				army_professionalism = 0.35
 			}
 		}
 		effect = {
-			1188 = {
-				if = {
-					limit = { trade_goods = gold }
-					add_base_production = 2
-					add_province_modifier = {
-						name = "por_african_gold_modifier"
-						duration = 7300
-					}
-				}
+			add_country_modifier = {
+				name = por_elite_marines_modifier
+				duration = -1 
 			}
-			1185 = {
-				if = {
-					limit = { trade_goods = gold }
-					add_base_production = 2
-					add_province_modifier = {
-						name = "por_african_gold_modifier"
-						duration = 7300
-					}
-				}
-			}
-			1184 = {
-				if = {
-					limit = { trade_goods = gold }
-					add_base_production = 2
-					add_province_modifier = {
-						name = "por_african_gold_modifier"
-						duration = 7300
-					}
-				}
-			}
-			1186 = {
-				if = {
-					limit = { trade_goods = gold }
-					add_base_production = 2
-					add_province_modifier = {
-						name = "por_african_gold_modifier"
-						duration = 7300
-					}
-				}
-			}
+			add_army_tradition = 15
 		}
 	}
 }
@@ -668,6 +768,13 @@ gc_por_2_b = {
 
 		effect = {
 			add_navy_tradition = 5
+			add_mercantilism = 2
+			change_price = {
+				trade_goods = fish 
+				key = cod_fishing_key
+				value = 0.5
+				duration = 9125
+			}
 		}
 	}
 	
@@ -846,151 +953,69 @@ gc_por_2_c = {
 		}
 	}
 
-	gc_por_conquers_zanzibar = {
-		icon = mission_cannons_firing
+	gc_por_african_gold = {
+		icon = mission_african_gold
 		required_missions = { gc_por_discovers_east_africa }
 		position = 11
 		
 		provinces_to_highlight = {
-			province_id = 1201
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		
-		trigger = { 
-			1201 = {
-				owned_by = ROOT
-			}
-		}
-	
-		effect = {
-			1201 = {
-				add_base_production = 3
-				add_base_manpower = 3
-				add_province_modifier = {
-					name = "por_makeshift_defenses"
-					duration = -1
-				}
-			}
-			2999 = {
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	gc_por_conquers_hormuz = {
-		icon = mission_persian_soldiers
-		required_missions = { gc_por_conquers_zanzibar }
-		position = 12
-		
-		provinces_to_highlight = {
-			province_id = 2999
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		
-		trigger = { 
-			2999 = {
-				owned_by = ROOT
-			}
-		}
-	
-		effect = {
-			2999 = {
-				add_base_production = 3
-				add_base_manpower = 3
-				add_province_modifier = {
-					name = "por_makeshift_defenses"
-					duration = -1
-				}
-			}
-			mascat_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			395 = {	add_permanent_claim = ROOT }
-			396 = {	add_permanent_claim = ROOT }
-		}
-	}
-
-	gc_por_oman = {
-		icon = mission_portuguese_oman
-		required_missions = { gc_por_conquers_hormuz }
-		position = 13
-		
-		provinces_to_highlight = {
 			OR = {
-				AND = {
-					area = mascat_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					province_id = 400
-					NOT = { owned_by = ROOT }
-				}
+				area = zimbabwe_area
+				area = butua_area
 			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			mascat_area = {
+			zimbabwe_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			400 = { owned_by = ROOT }
+			butua_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			if = {
-				limit = {
-					2999 = {
-						owned_by = ROOT
-					}
-				}
-				2999 = {
+			1188 = {
+				if = {
+					limit = { trade_goods = gold }
+					add_base_production = 2
 					add_province_modifier = {
-						name = "persian_gulf_trade_por"
-						duration = -1
+						name = "por_african_gold_modifier"
+						duration = 7300
 					}
 				}
 			}
-			400 = {
-				add_province_modifier = {
-					name = "persian_gulf_trade_por"
-					duration = -1
+			1185 = {
+				if = {
+					limit = { trade_goods = gold }
+					add_base_production = 2
+					add_province_modifier = {
+						name = "por_african_gold_modifier"
+						duration = 7300
+					}
 				}
 			}
-		}
-	}
-
-	dom_por_clash_ottomans = {
-		icon = mission_the_bospborus
-		required_missions = { gc_por_oman gc_portugal_discovers_india }
-		position = 14
-		provinces_to_highlight = {
-			is_capital = yes 
-			owner = { tag = TUR }
-		}
-		trigger = {
-			OR = {
-				navy_size = TUR 
-				total_development = TUR 
-				TUR = { exists = no }
+			1184 = {
+				if = {
+					limit = { trade_goods = gold }
+					add_base_production = 2
+					add_province_modifier = {
+						name = "por_african_gold_modifier"
+						duration = 7300
+					}
+				}
 			}
-			OR = {
-				army_tradition = 70
-				army_professionalism = 0.35
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = por_elite_marines_modifier
-				duration = -1 
-			}
-			add_power_projection = {
-				type = 25_permanent_power_projection
-				amount = 10
+			1186 = {
+				if = {
+					limit = { trade_goods = gold }
+					add_base_production = 2
+					add_province_modifier = {
+						name = "por_african_gold_modifier"
+						duration = 7300
+					}
+				}
 			}
 		}
 	}
@@ -1013,7 +1038,7 @@ gc_por_2_d = {
 	gc_por_discovers_indonesia = {
 		icon = mission_junk_boat
 		required_missions = { gc_por_malacca }
-		position = 15
+		position = 14
 		
 		provinces_to_highlight = {
 			region = moluccas_region
@@ -1040,7 +1065,7 @@ gc_por_2_d = {
 	gc_por_indonesia_dominance = {
 		icon = indonesian_trade
 		required_missions = { gc_por_discovers_indonesia }
-		position = 16
+		position = 15
 		
 		provinces_to_highlight = {
 			province_id = 1361
@@ -1311,7 +1336,7 @@ gc_por_3 = {
 	gc_portugal_discovers_india = {
 		icon = mission_trade_company_region_abroad
 		required_missions = { gc_por_discovers_horn_africa }
-		position = 13
+		position = 12
 		
 		trigger = {
 			custom_trigger_tooltip = {
@@ -1355,7 +1380,7 @@ gc_por_3 = {
 	gc_por_malacca = {
 		icon = mission_portuguese_malacca
 		required_missions = { gc_portugal_discovers_india }
-		position = 14
+		position = 13
 		
 		provinces_to_highlight = {
 			province_id = 596
@@ -1385,7 +1410,7 @@ gc_por_3 = {
 	gc_por_trade_with_china = {
 		icon = mission_trade_with_cathay
 		required_missions = { gc_por_malacca }
-		position = 15
+		position = 14
 		
 		provinces_to_highlight = {
 			province_id = 1371
@@ -1442,7 +1467,7 @@ gc_por_3 = {
 	gc_por_japanese_trade = {
 		icon = mission_trade_with_japan
 		required_missions = { gc_por_trade_with_china }
-		position = 16
+		position = 15
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1502,8 +1527,8 @@ gc_por_3 = {
 	
 	gc_por_lusitanian_empire = {
 		icon = mission_lusitanian_empire
-		required_missions = { gc_por_indian_investment gc_por_japanese_trade gc_por_indonesia_dominance }
-		position = 17
+		required_missions = { gc_por_indian_investment gc_por_japanese_trade gc_por_indonesia_dominance gc_por_burma dom_por_clash_ottomans }
+		position = 16
 		
 		provinces_to_highlight = {
 			region = iberia_region
@@ -1581,7 +1606,10 @@ gc_por_4_a = {
 		position = 1
 
 		trigger = {
-			navigator = 3
+			OR = {
+				navigator = 3
+				has_idea_group = exploration_ideas
+			}
 		}
 
 		effect = {
@@ -1763,7 +1791,7 @@ gc_por_4_c = {
 	gc_por_malabar = {
 		icon = mission_portuguese_malabar
 		required_missions = { gc_portugal_discovers_india }
-		position = 14
+		position = 13
 		
 		provinces_to_highlight = {
 			area = malabar_area
@@ -1830,7 +1858,7 @@ gc_por_4_c = {
 	gc_por_surat = {
 		icon = mission_control_surat
 		required_missions = { gc_por_malabar }
-		position = 15
+		position = 14
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1884,8 +1912,8 @@ gc_por_4_c = {
 
 	gc_por_indian_investment = {
 		icon = mission_indian_trade_company
-		required_missions = { gc_por_surat }
-		position = 16
+		required_missions = { gc_por_surat gc_por_ceylon }
+		position = 15
 		
 		trigger = {
 			if = {
@@ -1981,22 +2009,15 @@ gc_por_5_a = {
 		}
 
 		effect = {
-			add_navy_tradition = 20
 			230 = {
-				if = {
-					limit = { has_building = grand_shipyard }
-					add_base_production = 2 
-				}
-				else_if = {
-					limit = { has_building = shipyard }
-					remove_building = shipyard 
-					add_building = grand_shipyard 
-				}
-				else = { add_building = shipyard }
 				add_province_modifier = {
-					name = por_caravels
+					name = por_sagres
 					duration = -1 
 				}
+			}
+			add_country_modifier = {
+				name = por_caravels
+				duration = -1 
 			}
 		}
 	}
@@ -2277,6 +2298,102 @@ gc_por_5_b = {
 		effect = {
 			country_event = {
 				id = btc_por.122
+			}
+		}
+	}
+}
+
+gc_por_5_c = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+		tag = POR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gc_por_ceylon = {
+		icon = mission_portuguese_ceylon
+		required_missions = { gc_por_malabar }
+		position = 14
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism = 3
+			
+			if = { 
+				limit = { has_dlc = "Domination" }
+				add_country_modifier = {
+					name = por_presence_in_india_modifier
+					duration = 5475
+				}
+			}
+		}
+	}
+
+	gc_por_burma = {
+		icon = mission_portuguese_burma
+		required_missions = { gc_por_ceylon }
+		position = 15
+		provinces_to_highlight = {
+			OR = {
+				area = arakan_area
+				area = lower_burma_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			arakan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_burma_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1343 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 50
+					key = burmese_trade
+				}
+			}
+			if = { 
+				limit = { has_dlc = "Domination" }
+				586 = { 
+					add_province_modifier = {
+						name = por_center_of_portuguese_trade_modifier
+						duration = -1 
+					}
+					add_base_production = 2 
+				}
 			}
 		}
 	}

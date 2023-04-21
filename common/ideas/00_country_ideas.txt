@@ -1598,10 +1598,11 @@ POR_ideas = {
 	
 	legacy_of_the_navigator = {
 		naval_morale = 0.1
+		range = 0.25
 	}
 	por_india_armadas = {
 		artillery_fire = 1
-		range = 0.25
+		global_ship_trade_power = 0.1
 	}
 	por_feitoria_system = {
 		trade_steering = 0.15
@@ -1615,7 +1616,7 @@ POR_ideas = {
 	}
 	por_cacadores = {
 		fire_damage_received = -0.15
-		hostile_attrition = 0.5
+		hostile_attrition = 1
 	}
 	por_royal_absolutism = {
 		build_cost = -0.15

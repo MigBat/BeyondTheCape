@@ -332,15 +332,13 @@ coimbra_university = {
 
 por_caravels = {
 	allowed_caravel_fraction = 0.1
-	has_caravel = yes 
+	has_caravel = yes
 	light_ship_power = 0.15
-	light_ship_hull_size = 0.25
 }
 
 por_galleons = {
 	allowed_galleon_fraction = 0.1
 	has_galleon = yes
-	heavy_ship_power = 0.1
 	transport_attrition = -0.25
 }
 
@@ -352,9 +350,29 @@ por_english_alliance = {
 
 por_henry_cheaper = {
 	dip_advisor_cost = -0.5
-	dip_tech_cost_modifier = -0.1
 }
 
 pinhal_leiria = {
 	global_ship_recruit_speed = -0.1
+}
+
+tercios = {
+	allowed_tercio_fraction = 0.15
+	has_tercio = yes
+}
+
+adopting_tercios = {
+	reinforce_speed = -0.2
+	morale_damage_received = 0.05
+	is_tercio_modifier = yes
+}
+
+portuguese_tercios = {
+	fire_damage = 0.1
+	morale_damage = 0.1
+}
+
+por_sagres = {
+	dip_tech_cost_modifier = -0.05
+	navy_tradition = 0.25
 }
