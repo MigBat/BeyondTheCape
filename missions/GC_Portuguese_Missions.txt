@@ -442,7 +442,7 @@ gc_por_1_b = {
 	gc_por_conquers_hormuz = {
 		icon = mission_persian_soldiers
 		required_missions = { gc_por_conquers_zanzibar }
-		position = 13
+		position = 12
 		
 		provinces_to_highlight = {
 			province_id = 2999
@@ -480,7 +480,7 @@ gc_por_1_b = {
 	gc_por_oman = {
 		icon = mission_portuguese_oman
 		required_missions = { gc_por_conquers_hormuz }
-		position = 14
+		position = 13
 		
 		provinces_to_highlight = {
 			OR = {
@@ -528,7 +528,7 @@ gc_por_1_b = {
 	dom_por_clash_ottomans = {
 		icon = mission_the_bospborus
 		required_missions = { gc_por_oman }
-		position = 16
+		position = 15
 		provinces_to_highlight = {
 			is_capital = yes 
 			owner = { tag = TUR }
@@ -767,7 +767,13 @@ gc_por_2_b = {
 		}
 
 		effect = {
-
+			add_mercantilism = 2
+			change_price = {
+				trade_goods = fish 
+				key = cod_fishing_key
+				value = 0.5
+				duration = 9125
+			}
 		}
 	}
 	
@@ -1029,7 +1035,7 @@ gc_por_2_d = {
 	gc_por_discovers_indonesia = {
 		icon = mission_junk_boat
 		required_missions = { gc_por_malacca }
-		position = 15
+		position = 14
 		
 		provinces_to_highlight = {
 			region = moluccas_region
@@ -1056,7 +1062,7 @@ gc_por_2_d = {
 	gc_por_indonesia_dominance = {
 		icon = indonesian_trade
 		required_missions = { gc_por_discovers_indonesia }
-		position = 16
+		position = 15
 		
 		provinces_to_highlight = {
 			province_id = 1361
@@ -1320,7 +1326,7 @@ gc_por_3 = {
 	gc_portugal_discovers_india = {
 		icon = mission_trade_company_region_abroad
 		required_missions = { gc_por_discovers_horn_africa }
-		position = 13
+		position = 12
 		
 		trigger = {
 			custom_trigger_tooltip = {
@@ -1364,7 +1370,7 @@ gc_por_3 = {
 	gc_por_malacca = {
 		icon = mission_portuguese_malacca
 		required_missions = { gc_portugal_discovers_india }
-		position = 14
+		position = 13
 		
 		provinces_to_highlight = {
 			province_id = 596
@@ -1394,7 +1400,7 @@ gc_por_3 = {
 	gc_por_trade_with_china = {
 		icon = mission_trade_with_cathay
 		required_missions = { gc_por_malacca }
-		position = 15
+		position = 14
 		
 		provinces_to_highlight = {
 			province_id = 1371
@@ -1451,7 +1457,7 @@ gc_por_3 = {
 	gc_por_japanese_trade = {
 		icon = mission_trade_with_japan
 		required_missions = { gc_por_trade_with_china }
-		position = 16
+		position = 15
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1512,7 +1518,7 @@ gc_por_3 = {
 	gc_por_lusitanian_empire = {
 		icon = mission_lusitanian_empire
 		required_missions = { gc_por_indian_investment gc_por_japanese_trade gc_por_indonesia_dominance gc_por_burma dom_por_clash_ottomans }
-		position = 17
+		position = 16
 		
 		provinces_to_highlight = {
 			region = iberia_region
@@ -1772,7 +1778,7 @@ gc_por_4_c = {
 	gc_por_malabar = {
 		icon = mission_portuguese_malabar
 		required_missions = { gc_portugal_discovers_india }
-		position = 14
+		position = 13
 		
 		provinces_to_highlight = {
 			area = malabar_area
@@ -1839,7 +1845,7 @@ gc_por_4_c = {
 	gc_por_surat = {
 		icon = mission_control_surat
 		required_missions = { gc_por_malabar }
-		position = 15
+		position = 14
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1894,7 +1900,7 @@ gc_por_4_c = {
 	gc_por_indian_investment = {
 		icon = mission_indian_trade_company
 		required_missions = { gc_por_surat gc_por_ceylon }
-		position = 16
+		position = 15
 		
 		trigger = {
 			if = {
@@ -2303,7 +2309,7 @@ gc_por_5_c = {
 	gc_por_ceylon = {
 		icon = mission_portuguese_ceylon
 		required_missions = { gc_por_malabar }
-		position = 15
+		position = 14
 		provinces_to_highlight = {
 			OR = {
 				area = lanka_area
@@ -2338,7 +2344,7 @@ gc_por_5_c = {
 	gc_por_burma = {
 		icon = mission_portuguese_burma
 		required_missions = { gc_por_ceylon }
-		position = 16
+		position = 15
 		provinces_to_highlight = {
 			OR = {
 				area = arakan_area
