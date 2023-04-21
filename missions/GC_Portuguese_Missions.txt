@@ -590,7 +590,7 @@ gc_por_2_a = {
 		
 		effect = {
 			add_dip_power = 50
-			add_navy_tradition = 15
+			add_navy_tradition = 5
 			northern_morocco_area = {
 				limit = { 
 					NOT = { owned_by = ROOT } 
@@ -767,6 +767,7 @@ gc_por_2_b = {
 		}
 
 		effect = {
+			add_navy_tradition = 5
 			add_mercantilism = 2
 			change_price = {
 				trade_goods = fish 
@@ -921,6 +922,8 @@ gc_por_2_c = {
 		}
 	
 		effect = {
+			add_prestige = 5
+			add_navy_tradition = 5
 			add_prestige_or_monarch_power = { amount = 15 }
 			add_years_of_income = 1 
 			majarteen_area = {
@@ -1135,7 +1138,8 @@ gc_por_3 = {
 		}
 		
 		effect = {
-			add_navy_tradition = 10
+			add_prestige = 5
+			add_navy_tradition = 5
 			add_country_modifier = {
 				name = "the_unknown_frontier"
 				duration = 5475
@@ -1169,6 +1173,8 @@ gc_por_3 = {
 		}
 	
 		effect = {
+			add_prestige = 5
+			add_navy_tradition = 5
 			add_country_modifier = {
 				name = portuguese_exploration
 				duration = 18250
@@ -1213,6 +1219,8 @@ gc_por_3 = {
 		}
 	
 		effect = {
+			add_prestige = 5
+			add_navy_tradition = 5
 			hidden_effect = {
 				4097 = {
 					discover_country = ROOT
@@ -1252,7 +1260,7 @@ gc_por_3 = {
 	
 		effect = {
 			add_prestige = 10
-			add_yearly_sailors = 3
+			add_navy_tradition = 5
 			mozambique_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1267,15 +1275,15 @@ gc_por_3 = {
 				add_permanent_claim = ROOT
 			}
 			define_explorer = {
-				name = "Vasco da Gama"
-				shock = 3
+				name = "Francisco de Almeida"
+				shock = 5
 				fire = 4
-				manuever = 6
+				manuever = 2
 				siege = 4
-				trait = great_explorer_personality
+				trait = naval_gunner_personality
 			}
 			add_country_modifier = {
-				name = way_to_india
+				name = mare_clausum
 				duration = 7300
 			}
 		}
@@ -1298,6 +1306,8 @@ gc_por_3 = {
 		}
 	
 		effect = {
+			add_prestige = 5
+			add_navy_tradition = 5
 			1201 = {
 				add_trade_modifier = {
 					who = root
@@ -1313,12 +1323,12 @@ gc_por_3 = {
 				add_permanent_claim = ROOT
 			}
 			define_explorer = {
-				name = "Francisco de Almeida"
-				shock = 5
+				name = "Vasco da Gama"
+				shock = 3
 				fire = 4
-				manuever = 2
+				manuever = 6
 				siege = 4
-				trait = naval_gunner_personality
+				trait = great_explorer_personality
 			}
 		}
 	}
