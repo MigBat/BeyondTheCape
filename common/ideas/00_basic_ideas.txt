@@ -929,13 +929,13 @@ exploration_ideas = {
 		cb_on_primitives = yes
 	}
 
+	colonial_ventures = {
+		colonists = 1
+	}
+
 	overseas_exploration = {
 		range = 0.5
 		naval_attrition = -0.1
-	}
-
-	colonial_ventures = {
-		colonists = 1
 	}
 
 	land_of_opportunity = {

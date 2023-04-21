@@ -1594,10 +1594,11 @@ POR_ideas = {
 	
 	legacy_of_the_navigator = {
 		naval_morale = 0.1
+		range = 0.25
 	}
 	por_india_armadas = {
 		artillery_fire = 1
-		range = 0.25
+		global_ship_trade_power = 0.1
 	}
 	por_feitoria_system = {
 		trade_steering = 0.15
