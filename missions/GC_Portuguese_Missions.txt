@@ -1275,15 +1275,15 @@ gc_por_3 = {
 				add_permanent_claim = ROOT
 			}
 			define_explorer = {
-				name = "Vasco da Gama"
-				shock = 3
+				name = "Francisco de Almeida"
+				shock = 5
 				fire = 4
-				manuever = 6
+				manuever = 2
 				siege = 4
-				trait = great_explorer_personality
+				trait = naval_gunner_personality
 			}
 			add_country_modifier = {
-				name = way_to_india
+				name = mare_clausum
 				duration = 7300
 			}
 		}
@@ -1322,10 +1322,14 @@ gc_por_3 = {
 			388 = {
 				add_permanent_claim = ROOT
 			}
-			#add_country_modifier = {
-			#	name = mare_clausum
-			#	duration = 7300
-			#}
+			define_explorer = {
+				name = "Vasco da Gama"
+				shock = 3
+				fire = 4
+				manuever = 6
+				siege = 4
+				trait = great_explorer_personality
+			}
 		}
 	}
 
