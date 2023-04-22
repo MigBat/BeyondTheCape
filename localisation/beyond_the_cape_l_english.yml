@@ -80,6 +80,17 @@
  por_reform_tercios_desc:0 "The Terços system has been a great success since its implementation. However, new styles of warfare have been developed to defeat them on the battlefield, so a reform in their organization is needed to keep them as unbeatable as they are considered to be."
  cod_fishing_key:0 "Cod Fishing"
 
+ integrated_highland_regiments:0 "Integrated Highland Regiments"
+ integrated_highland_regiments_desc:0 "The northern rabble may be simple in their ways, but one cannot deny their ferocity in the battlefield. If introduced to proper British discipline, they could prove to be a formidable force."
+ the_british_parliament:0 "Parliament of Great Britain"
+ the_british_parliament_desc:0 "We have a long history of parliamentarism in our country, and with the creation of the Parliament of Great Britain it is only natural that we continue the traditions of the English and Scottish parliaments."
+ resist_the_english:0 "Resist The English"
+ resist_the_english_desc:0 "Scotland has been subjugated by the cruel rule of the English in the past, never again shall a proud sctosman shine the boots of a pompous English overlord."
+ comets:0 "Scottish Enlightenment"
+ comets_desc:0 "Sharing the humanist and rational outlook of the Western Enlightenment of the same time period, the thinkers of the Scottish Enlightenment asserted the importance of human reason combined with a rejection of any authority that could not be justified by reason."
+ mor_colaborate_with_the_tribes:0 "Collaborate with the tribes."
+ mor_colaborate_with_the_tribes_desc:0 "The nomadic tribes that travel across our lands are our nominal subjects, but no matter our efforts we cannot dissassociate them from their own people and traditions. We could plunge our country into chaos and strife trying to force these people into our way of life, or we could work with our differences and use their strenghts to our advantage. "
+
 ## Monuments ##
 
  batalha_monastery:0 "Batalha Monastery"
@@ -299,6 +310,14 @@
  btc_por.126_d:0 "Our alliance with the english has run its course, and so do the benefits that came with it."
  btc_por.126a:0 "A pity..."
  port_english_alliance_tt:0 "If the alliance is broken, we will lose this modifier."
+ btc_por.127_t:0 "The Portuguese in Goa"
+ btc_por.127_d:0 "Foreign ships are spotted in the horizon, vessels larger than any we'd seen before. They set port and its sailors are brought to us by local fishermen they traded with. They claim to be Portuguese explorers who sailed around Africa in search of indian riches. Surely they jest, but what caught our attention was their offer to establish a trading post in Goa to initiate mercantile activities with us. Should we take them up on that offer?"
+ btc_por.127a:0 "Allow them to establish a base in Goa."
+ btc_por.127b:0 "These charlatans cannot be trusted."
+ btc_por.128_t:0 "The Purchase of Goa"
+ btc_por.128_d:0 "We have secured a meeting with the local Zamorin. We presented an offer to purchase land and establish a trading post, in the hopes of building a fruitful - or rather, spiceful - relationship with the locals. After very careful considerations by the Zamorin and his advisors, they come to us with an answer."
+ btc_por.128a:0 "Bargaining successful! Goa is ours!"
+ btc_por.128b:0 "If they won't sell it to us, then we shall take it by force!"
 
 ## Modifiers ##
 

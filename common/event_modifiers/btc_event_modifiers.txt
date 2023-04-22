@@ -140,8 +140,8 @@ decrepid_trade_infrastructure = {
 }
 
 crusading_spirit = {
-	global_regiment_cost = -0.1
 	global_regiment_recruit_speed = -0.15
+	manpower_in_true_faith_provinces = 0.05
 	heir_chance = -0.85	
 }
 
@@ -306,6 +306,14 @@ way_to_india = {
 	range = 0.5
 }
 
+mare_clausum = {
+	transport_attrition = -0.15
+	naval_morale = 0.1
+	siege_ability = 0.1
+	land_morale = 0.1
+	warscore_cost_vs_other_religion = -0.15
+}
+
 mariners_astrolabe = {
 	movement_speed_in_fleet_modifier = 1
 }
@@ -337,6 +345,7 @@ por_galleons = {
 por_english_alliance = {
 	leader_land_fire = 1
 	drill_gain_modifier = 0.25
+	army_tradition = 0.25
 }
 
 por_henry_cheaper = {
@@ -361,6 +370,7 @@ adopting_tercios = {
 portuguese_tercios = {
 	fire_damage = 0.1
 	morale_damage = 0.1
+	is_tercio_modifier = yes
 }
 
 por_sagres = {
