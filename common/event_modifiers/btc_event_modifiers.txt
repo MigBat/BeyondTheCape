@@ -370,6 +370,7 @@ adopting_tercios = {
 portuguese_tercios = {
 	fire_damage = 0.1
 	morale_damage = 0.1
+	is_tercio_modifier = yes
 }
 
 por_sagres = {

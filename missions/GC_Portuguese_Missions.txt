@@ -1359,6 +1359,14 @@ gc_por_3 = {
 				siege = 2
 				trait = master_of_arms_personality
 			}
+			define_explorer = {
+				name = "Francisco de Almeida"
+				shock = 5
+				fire = 4
+				manuever = 2
+				siege = 4
+				trait = naval_gunner_personality
+			}
 			country_event = {
 				id = flavor_por.11
 			}
@@ -1855,57 +1863,37 @@ gc_por_4_c = {
 		}
 	}
 
-	gc_por_surat = {
-		icon = mission_control_surat
+	gc_por_ceylon = {
+		icon = mission_portuguese_ceylon
 		required_missions = { gc_por_malabar }
 		position = 14
-		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 529
-				province_id = 4430
-				province_id = 517
+				area = lanka_area
+				area = south_lanka_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			529 = {
+			lanka_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			4430 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			517 = {
+			south_lanka_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					has_dlc = "Dharma"
-				}
+			add_mercantilism = 3
+			
+			if = { 
+				limit = { has_dlc = "Domination" }
 				add_country_modifier = {
-					name = "portuguese_surat_modifier"
-					duration = 7300
+					name = por_presence_in_india_modifier
+					duration = 5475
 				}
-			}
-			else = {
-				add_mercantilism = 2
-			}
-			arakan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lower_burma_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -2319,44 +2307,64 @@ gc_por_5_c = {
 	}
 	has_country_shield = yes
 
-	gc_por_ceylon = {
-		icon = mission_portuguese_ceylon
+	gc_por_surat = {
+		icon = mission_control_surat
 		required_missions = { gc_por_malabar }
 		position = 14
+		
 		provinces_to_highlight = {
 			OR = {
-				area = lanka_area
-				area = south_lanka_area
+				province_id = 529
+				province_id = 4430
+				province_id = 517
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			lanka_area = {
-				type = all
+			529 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			south_lanka_area = {
-				type = all
+			4430 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			517 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			add_mercantilism = 3
-			
-			if = { 
-				limit = { has_dlc = "Domination" }
-				add_country_modifier = {
-					name = por_presence_in_india_modifier
-					duration = 5475
+			if = {
+				limit = {
+					has_dlc = "Dharma"
 				}
+				add_country_modifier = {
+					name = "portuguese_surat_modifier"
+					duration = 7300
+				}
+			}
+			else = {
+				add_mercantilism = 2
+			}
+			arakan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
 
 	gc_por_burma = {
 		icon = mission_portuguese_burma
-		required_missions = { gc_por_ceylon }
+		required_missions = { gc_por_surat }
 		position = 15
 		provinces_to_highlight = {
 			OR = {
