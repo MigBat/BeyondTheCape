@@ -374,6 +374,16 @@ portuguese_tercios = {
 }
 
 por_sagres = {
-	dip_tech_cost_modifier = -0.05
-	navy_tradition = 0.25
+	dip_tech_cost_modifier = -0.15
+	navy_tradition = 1
+}
+
+por_brazil_colonial = {
+	colonist_placement_chancem = 0.15
+	native_uprising_chance = -0.25
+}
+
+por_brazil_tariffs = {
+	global_colonial_growth = 15
+	native_assimilation = 0.5
 }
