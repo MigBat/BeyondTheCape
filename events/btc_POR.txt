@@ -2027,7 +2027,7 @@ country_event = {
 	option = {
 		name = btc_por.127a
 
-		ai_chance = { factor = 0.9 }
+		ai_chance = { factor = 0.15 }
 		trigger = {
 			2030 = {
 				is_capital = no
@@ -2052,7 +2052,7 @@ country_event = {
 	option = {
 		name = btc_por.127b
 
-		ai_chance = { factor = 0.1 }
+		ai_chance = { factor = 0.85 }
 		add_prestige = 5
 		hidden_effect = {
 			FROM = {
