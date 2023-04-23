@@ -905,11 +905,11 @@ gc_por_2_c = {
 					has_discovered = ROOT
 				}
 			}
-			1204 = {
-				owned_by = ROOT
+			1202 = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			1203 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 	
@@ -917,14 +917,11 @@ gc_por_2_c = {
 			add_mercantilism = 4
 			add_prestige_or_monarch_power = { amount = 15 }
 			add_years_of_income = 1 
-			majarteen_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_claim = ROOT
+
+			1201 = {
+				add_permanent_claim = ROOT
 			}
-			zimbabwe_area = {
+			quelimane_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -938,16 +935,18 @@ gc_por_2_c = {
 				}
 				add_permanent_claim = ROOT
 			}
-			1186 = {
+			zimbabwe_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
-			1192 = {
-				add_permanent_claim = ROOT
-			}
-			1201 = {
-				add_permanent_claim = ROOT
-			}
-			1099 = {
+			butua_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -1261,20 +1260,10 @@ gc_por_3 = {
 		effect = {
 			add_prestige = 10
 			add_navy_tradition = 5
-			mozambique_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			1202 = {
 				add_permanent_claim = ROOT
 			}
 			1203 = {
-				add_permanent_claim = ROOT
-			}
-			1196 = {
 				add_permanent_claim = ROOT
 			}
 			define_explorer = {
@@ -1285,10 +1274,10 @@ gc_por_3 = {
 				siege = 4
 				trait = great_explorer_personality
 			}
-			add_country_modifier = {
-				name = way_to_india
-				duration = 7300
-			}
+			#add_country_modifier = {
+			#	name = way_to_india
+			#	duration = 7300
+			#}
 		}
 	}
 
@@ -1324,6 +1313,13 @@ gc_por_3 = {
 			}
 			388 = {
 				add_permanent_claim = ROOT
+			}
+			majarteen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
 			}
 			define_explorer = {
 				name = "Francisco de Almeida"
@@ -1379,10 +1375,10 @@ gc_por_3 = {
 				limit = { has_dlc = "Rule Britannia" }
 				change_innovativeness = 2
 			}
-			add_country_modifier = {
-				name = mare_clausum
-				duration = 7300
-			}
+			#add_country_modifier = {
+			#	name = mare_clausum
+			#	duration = 7300
+			#}
 		}
 	}
 

@@ -972,7 +972,7 @@ country_event = {
 		add_prestige = 10
 		add_country_modifier = {
 			name = mare_clausum
-			duration = 18250
+			duration = 7300
 		}
 	}
 }
