@@ -3,9 +3,7 @@ country_decisions = {
 		color = { 255 69 0 }
 		major = yes
 		potential = {
-			any_owned_province = {
-				has_province_modifier = por_sagres
-			}
+			has_country_modifier = por_caravels
 			tag = POR
 		}
 
@@ -28,9 +26,7 @@ country_decisions = {
 		color = { 255 69 0 }
 		major = yes
 		potential = {
-			any_owned_province = {
-				has_province_modifier = por_sagres
-			}
+			has_country_modifier = por_galleons
 			tag = POR
 		}
 
