@@ -1997,11 +1997,19 @@ country_event = {
 		tag = POR
 		has_country_modifier = por_english_alliance
 		OR = {
-			NOT = {
-				alliance_with = ENG
+			AND = {
+				exists = ENG
+				NOT = { alliance_with = ENG }
+				NOT = { exists = GBR }
 			}
-			NOT = {
-				alliance_with = GBR
+			AND = {
+				exists = GBR
+				NOT = { alliance_with = GBR }
+				NOT = { exists = ENG }
+			}
+			AND = {
+				NOT = { exists = ENG }
+				NOT = { exists = GBR }
 			}
 		}
 	}

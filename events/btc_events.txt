@@ -200,7 +200,7 @@ country_event = {
 			factor = 0.9
 		}
 
-		add_manpower = -10
+		add_manpower = -4
 		GAL = {
 			country_event = {
 				id = btc_events.6
