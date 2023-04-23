@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 ## Bookmarks ##
 
@@ -204,6 +204,7 @@
  baixa_pombalina:0 "Baixa Pombalina"
  desc_baixa_pombalina:0 "The whole Baixa district has been entirely rebuilt from the ground."
 
+
 # More portuguese events #
 
  btc_por.100_t:0 "Epistola de Victoria Contra Infideles Habita"
@@ -406,6 +407,8 @@
  desc_square_rigged_caravel:0 "A more combat oriented version of the caravel."
  nau:0 "Nau"
  desc_nau:0 "A version of the galleon that sacrifices combat ability for transporting troops."
+ mare_clausum:0 "Mare Clausum"
+ desc_mare_clausum:0 "The Pope as decreed that the Indian Ocean is righfully the property of the Kingdom of Portugal. Naturally, it's up to the Portuguese to enforce their borders from the disrespectful infidels."
 
 # Other events #
 
@@ -500,6 +503,10 @@
  desc_adopting_tercios:0 ""
  portuguese_tercios:0 "Portuguese Terços"
  desc_portuguese_tercios:0 ""
+ por_caravels:0 "Square-Rigged Caravels"
+ desc_caravels:0 "A much larger version of the caravel, with exceptional maneuverability and combat capabilities."
+ por_galleons:0 "High-Seas Navy"
+ desc_galleons:0 "One of the most significat developments of the first half of the 16th centurty, was the Galleon, an effective compromise between the size and firepower of the Nau, with the speed and maneuverability of the Caravel."
 
 ## Disasters ##
 
