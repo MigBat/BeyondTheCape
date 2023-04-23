@@ -1285,6 +1285,10 @@ gc_por_3 = {
 				siege = 4
 				trait = great_explorer_personality
 			}
+			add_country_modifier = {
+				name = way_to_india
+				duration = 7300
+			}
 		}
 	}
 
