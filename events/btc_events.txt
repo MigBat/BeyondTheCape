@@ -82,8 +82,6 @@ country_event = {
 			factor = 0.1
 		}
 
-		add_years_of_income = -0.5
-		add_manpower = -10
 		every_owned_province = {
 			limit = {
 				area = galicia_area
@@ -91,9 +89,34 @@ country_event = {
 			add_province_modifier = {
 			name = galician_revolts	# +5 global unrest
 			duration = 1825
+			}
 		}
-		}		
-		
+
+		206 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 1
+			}
+		}
+		4555 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 1
+			}
+		}
+		4554 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 1
+			}
+		}
+		4558 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 1
+			}
+		}
+
 		every_owned_province = {
 			limit = {
 				area = galicia_area
@@ -113,169 +136,211 @@ country_event = {
 			limit = { has_province_modifier = strong_nobility }
 			remove_province_modifier = strong_nobility
 		}
-		hidden_effect = {
-			create_vassal = GAL
-		}
-		custom_tooltip = galicia_vassal
-		GAL = {
-			add_opinion = {
-				who = CAS
-				modifier = ignored_our_affairs	# -200 opinion
-			}
-			add_manpower = 10
-			country_event = {
-				id = btc_events.4
-				days = 30
-			}
-		}
-	}
-}
-
-# Galician peasant uprising 1 #
-
-country_event = {
-	id = btc_events.4
-	title = btc_events.4_t
-	desc = btc_events.4_d
-	picture = SIEGE_eventPicture
-
-	is_triggered_only = yes
-
-	option = {	# We will suppress them by ourselves
-		name = btc_events.4a
 
 		206 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
-				friend = CAS
-				size = 2
-				#win = yes
+				size = 1
+				win = yes
 			}
 		}
-		GAL = { set_country_flag = rebel1 }
-	}
-}
-
-# Galician peasant uprising 2 #
-
-country_event = {
-	id = btc_events.10
-	title = btc_events.10_t
-	desc = btc_events.10_d
-	picture = SIEGE_eventPicture
-
-	trigger = {
-		tag = GAL
-		has_country_flag = rebel1
-		num_of_rebel_armies = 0
-	}
-
-	option = {	# We will suppress them by ourselves
-		name = btc_events.10a
-
-		ai_chance = {
-			factor = 0.5
-		}
-
 		4555 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
-				friend = CAS
-				size = 3
-				#win = yes
+				size = 1
+				win = yes
 			}
 		}
-		GAL = { set_country_flag = rebel2 }
-	}
-
-	option = {	# Castile has abandoned us, let us turn to Portugal
-		name = btc_events.10b
-
-		ai_chance = {
-			factor = 0.5
-		}
-
-		4555 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				friend = CAS
-				size = 3
-				#win = yes
-			}
-		}
-		GAL = { set_country_flag = rebel2 }
-
-		POR = {
-			country_event = {
-				id = btc_events.5
-				days = 15
-			}
-		}
-		GAL = { set_country_flag = ask_for_help }
-	}
-}
-
-# Galician peasant uprising 3 #
-
-country_event = {
-	id = btc_events.11
-	title = btc_events.11_t
-	desc = btc_events.11_d
-	picture = SIEGE_eventPicture
-
-	trigger = {
-		tag = GAL
-		has_country_flag = rebel2
-		num_of_rebel_armies = 0
-	}
-
-	option = {	# We will suppress them by ourselves
-		name = btc_events.11a
-
-		ai_chance = {
-			factor = 0.1
-		}
-
 		4554 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
-				friend = CAS
-				size = 3
-				#win = yes
+				size = 1
+				win = yes
 			}
 		}
-		GAL = { set_country_flag = rebel3 }
-	}
-
-	option = {	# Castile has abandoned us, let us turn to Portugal
-		name = btc_events.11b
-
-		trigger = {
-			NOT = { has_country_flag = ask_for_help }
-		}
-
-		ai_chance = {
-			factor = 0.9
-		}
-
-		4554 = {
+		4558 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
-				friend = CAS
-				size = 3
-				#win = yes
+				size = 1
+				win = yes
 			}
 		}
-		GAL = { set_country_flag = rebel3 }
 
-		POR = {
-			country_event = {
-				id = btc_events.5
-				days = 15
-			}
+		hidden_effect = {
+			POR = {
+				country_event = {
+					id = btc_events.5
+					days = 15
+				}
+			}			
 		}
 	}
 }
+
+# # Galician peasant uprising #
+
+# country_event = {
+# 	id = btc_events.4
+# 	title = btc_events.4_t
+# 	desc = btc_events.4_d
+# 	picture = SIEGE_eventPicture
+
+# 	is_triggered_only = yes
+
+# 	option = {	# We will suppress them by ourselves
+# 		name = btc_events.4a
+
+# 		ai_chance = {
+# 			factor = 0.1
+# 		}
+# 	}
+
+# 	option = {	# Castile has abandoned us, let us turn to Portugal
+# 		name = btc_events.10b
+
+# 		ai_chance = {
+# 			factor = 0.9
+# 		}
+
+# 		POR = {
+# 			country_event = {
+# 				id = btc_events.5
+# 				days = 15
+# 			}
+# 		}
+# 	}
+# }
+
+# # Galician peasant uprising 2 #
+
+# country_event = {
+# 	id = btc_events.10
+# 	title = btc_events.10_t
+# 	desc = btc_events.10_d
+# 	picture = SIEGE_eventPicture
+
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		AND = {
+# 			tag = GAL
+# 			has_country_flag = rebel1
+# 			NOT = { num_of_rebel_armies = 0 }
+# 			NOT = { num_of_rebel_controlled_provinces = 0 }
+# 		}
+# 	}
+
+# 	option = {	# We will suppress them by ourselves
+# 		name = btc_events.10a
+
+# 		ai_chance = {
+# 			factor = 0.5
+# 		}
+
+# 		4555 = {
+# 			spawn_rebels = {
+# 				type = leadered_peasant_rebels
+# 				friend = CAS
+# 				size = 3
+# 				#win = yes
+# 			}
+# 		}
+# 		GAL = { set_country_flag = rebel2 }
+# 	}
+
+# 	option = {	# Castile has abandoned us, let us turn to Portugal
+# 		name = btc_events.10b
+
+# 		ai_chance = {
+# 			factor = 0.5
+# 		}
+
+# 		4555 = {
+# 			spawn_rebels = {
+# 				type = leadered_peasant_rebels
+# 				friend = CAS
+# 				size = 3
+# 				#win = yes
+# 			}
+# 		}
+# 		GAL = { set_country_flag = rebel2 }
+
+# 		POR = {
+# 			country_event = {
+# 				id = btc_events.5
+# 				days = 15
+# 			}
+# 		}
+# 		GAL = { set_country_flag = ask_for_help }
+# 	}
+# }
+
+# # Galician peasant uprising 3 #
+
+# country_event = {
+# 	id = btc_events.11
+# 	title = btc_events.11_t
+# 	desc = btc_events.11_d
+# 	picture = SIEGE_eventPicture
+
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		AND = {
+# 			tag = GAL
+# 			has_country_flag = rebel2
+# 			NOT = { num_of_rebel_armies = 0 }
+# 			NOT = { num_of_rebel_controlled_provinces = 0 }
+# 		}
+# 	}
+
+# 	option = {	# We will suppress them by ourselves
+# 		name = btc_events.11a
+
+# 		ai_chance = {
+# 			factor = 0.1
+# 		}
+
+# 		4554 = {
+# 			spawn_rebels = {
+# 				type = leadered_peasant_rebels
+# 				friend = CAS
+# 				size = 3
+# 				#win = yes
+# 			}
+# 		}
+# 		GAL = { set_country_flag = rebel3 }
+# 	}
+
+# 	option = {	# Castile has abandoned us, let us turn to Portugal
+# 		name = btc_events.11b
+
+# 		trigger = {
+# 			NOT = { has_country_flag = ask_for_help }
+# 		}
+
+# 		ai_chance = {
+# 			factor = 0.9
+# 		}
+
+# 		4554 = {
+# 			spawn_rebels = {
+# 				type = leadered_peasant_rebels
+# 				friend = CAS
+# 				size = 3
+# 				#win = yes
+# 			}
+# 		}
+# 		GAL = { set_country_flag = rebel3 }
+
+# 		POR = {
+# 			country_event = {
+# 				id = btc_events.5
+# 				days = 15
+# 			}
+# 		}
+# 	}
+# }
 
 # Pontevedra Destroyed #
 
@@ -285,13 +350,16 @@ country_event = {
 	desc = btc_events.12_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
-		tag = GAL
-		4555 = { controlled_by = leadered_peasant_rebels }
-		OR = {
-			has_country_flag = rebel1
-			has_country_flag = rebel2
-			has_country_flag = rebel3
+		tag = CAS
+		4555 = {
+			owned_by = CAS
+			controlled_by = leadered_peasant_rebels
+		}
+		any_owned_province = {
+			has_province_modifier = strong_nobility
 		}
 	}
 
@@ -310,13 +378,16 @@ country_event = {
 	desc = btc_events.13_d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
-		tag = GAL
-		4554 = { controlled_by = leadered_peasant_rebels }
-		OR = {
-			has_country_flag = rebel1
-			has_country_flag = rebel2
-			has_country_flag = rebel3
+		tag = CAS
+		4554 = {
+			owned_by = CAS
+			controlled_by = leadered_peasant_rebels
+		}
+		any_owned_province = {
+			has_province_modifier = strong_nobility
 		}
 	}
 
@@ -344,13 +415,9 @@ country_event = {
 			factor = 0.9
 		}
 
-		add_manpower = -4
-		GAL = {
-			country_event = {
-				id = btc_events.6
-				days = 15
-			}
-		}
+		add_manpower = -5
+		add_army_tradition = 5
+		set_country_flag = helped_galicia
 	}
 
 	option = {	# Let us not get involved
@@ -360,75 +427,72 @@ country_event = {
 			factor = 0.1
 		}
 
-		GAL = {
-			country_event = {
-				id = btc_events.7
-				days = 15
-			}
-		}
+		add_prestige = -10
 	}
 }
 
-# Help from Portugal #
+# # Help from Portugal #
 
-country_event = {
-	id = btc_events.6
-	title = btc_events.6_t
-	desc = btc_events.6_d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+# country_event = {
+# 	id = btc_events.6
+# 	title = btc_events.6_t
+# 	desc = btc_events.6_d
+# 	picture = HORDE_ON_HORSEBACK_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Help has arrived!
-		name = btc_events.6a
+# 	option = {	# Help has arrived!
+# 		name = btc_events.6a
 
-		set_country_flag = portugal_helped
+# 		set_country_flag = portugal_helped
 
-		add_liberty_desire = 50
+# 		add_liberty_desire = 50
 
-		add_opinion = {
-			who = POR
-			modifier = came_to_our_aid	# 100 opinion
-		}
+# 		add_opinion = {
+# 			who = POR
+# 			modifier = came_to_our_aid	# 100 opinion
+# 		}
 
-		define_general = {
-			name = "Pedro Madruga"
-			shock = 3
-			fire = 3
-			manuever = 2
-			siege = 0
-		}
+# 		add_manpower = 6
 
-		4558 = {
-			cavalry = ROOT
-			infantry = ROOT
-			infantry = ROOT
-			infantry = ROOT
-		}
-	}
-}
+# 		define_general = {
+# 			name = "Pedro Madruga"
+# 			shock = 3
+# 			fire = 3
+# 			manuever = 2
+# 			siege = 0
+# 		}
 
-# We stand alone #
+# 		4558 = {
+# 			cavalry = ROOT
+# 			infantry = ROOT
+# 			infantry = ROOT
+# 			infantry = ROOT
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = btc_events.7
-	title = btc_events.7_t
-	desc = btc_events.7_d
-	picture = BANKRUPTCY_eventPicture
+# # We stand alone #
 
-	is_triggered_only = yes
+# country_event = {
+# 	id = btc_events.7
+# 	title = btc_events.7_t
+# 	desc = btc_events.7_d
+# 	picture = BANKRUPTCY_eventPicture
 
-	option = {	# We have been forsaken
-		name = btc_events.7a
+# 	is_triggered_only = yes
 
-		GAL = {
-			add_opinion = {
-				who = POR
-				modifier = forsaken_us	# -100 opinion
-			}
-		}
-	}
-}
+# 	option = {	# We have been forsaken
+# 		name = btc_events.7a
+
+# 		GAL = {
+# 			add_opinion = {
+# 				who = POR
+# 				modifier = forsaken_us	# -100 opinion
+# 			}
+# 		}
+# 	}
+# }
 
 # Morocco defend against Iberians #
 

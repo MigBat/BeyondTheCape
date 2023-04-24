@@ -316,7 +316,18 @@ alcantara_order = {
 avis_order = {
     icon = GFX_holy_order_avis
     trigger = {
-    	tag = POR
+    	OR = { 
+			AND = { 
+				culture_group = iberian
+				religion = catholic
+			}
+			has_country_flag = enable_holy_orders_flag 
+		}
+		religion_group = christian
+		OR = { 
+			primary_culture = portugese
+			primary_culture = brazilian
+		}
     }
     color = { 65 77 86 }
     cost = 50
@@ -758,7 +769,18 @@ du_si = {
 christ_order = {
     icon = GFX_holy_order_christ
     trigger = {
-    	tag = POR
+    	OR = { 
+			AND = { 
+				culture_group = iberian
+				religion = catholic
+			}
+			has_country_flag = enable_holy_orders_flag 
+		}
+		religion_group = christian
+		OR = { 
+			primary_culture = portugese
+			primary_culture = brazilian
+		}
     }
     color = { 230 9 20 }
     cost = 50

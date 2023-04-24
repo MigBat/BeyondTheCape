@@ -379,7 +379,7 @@ por_sagres = {
 }
 
 por_brazil_colonial = {
-	colonist_placement_chancem = 0.15
+	colonist_placement_chance = 0.15
 	native_uprising_chance = -0.25
 }
 
