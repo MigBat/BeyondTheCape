@@ -167,6 +167,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			CAS = { set_country_flag = abandon_galicia }
 			POR = {
 				country_event = {
 					id = btc_events.5
@@ -176,171 +177,6 @@ country_event = {
 		}
 	}
 }
-
-# # Galician peasant uprising #
-
-# country_event = {
-# 	id = btc_events.4
-# 	title = btc_events.4_t
-# 	desc = btc_events.4_d
-# 	picture = SIEGE_eventPicture
-
-# 	is_triggered_only = yes
-
-# 	option = {	# We will suppress them by ourselves
-# 		name = btc_events.4a
-
-# 		ai_chance = {
-# 			factor = 0.1
-# 		}
-# 	}
-
-# 	option = {	# Castile has abandoned us, let us turn to Portugal
-# 		name = btc_events.10b
-
-# 		ai_chance = {
-# 			factor = 0.9
-# 		}
-
-# 		POR = {
-# 			country_event = {
-# 				id = btc_events.5
-# 				days = 15
-# 			}
-# 		}
-# 	}
-# }
-
-# # Galician peasant uprising 2 #
-
-# country_event = {
-# 	id = btc_events.10
-# 	title = btc_events.10_t
-# 	desc = btc_events.10_d
-# 	picture = SIEGE_eventPicture
-
-# 	fire_only_once = yes
-
-# 	trigger = {
-# 		AND = {
-# 			tag = GAL
-# 			has_country_flag = rebel1
-# 			NOT = { num_of_rebel_armies = 0 }
-# 			NOT = { num_of_rebel_controlled_provinces = 0 }
-# 		}
-# 	}
-
-# 	option = {	# We will suppress them by ourselves
-# 		name = btc_events.10a
-
-# 		ai_chance = {
-# 			factor = 0.5
-# 		}
-
-# 		4555 = {
-# 			spawn_rebels = {
-# 				type = leadered_peasant_rebels
-# 				friend = CAS
-# 				size = 3
-# 				#win = yes
-# 			}
-# 		}
-# 		GAL = { set_country_flag = rebel2 }
-# 	}
-
-# 	option = {	# Castile has abandoned us, let us turn to Portugal
-# 		name = btc_events.10b
-
-# 		ai_chance = {
-# 			factor = 0.5
-# 		}
-
-# 		4555 = {
-# 			spawn_rebels = {
-# 				type = leadered_peasant_rebels
-# 				friend = CAS
-# 				size = 3
-# 				#win = yes
-# 			}
-# 		}
-# 		GAL = { set_country_flag = rebel2 }
-
-# 		POR = {
-# 			country_event = {
-# 				id = btc_events.5
-# 				days = 15
-# 			}
-# 		}
-# 		GAL = { set_country_flag = ask_for_help }
-# 	}
-# }
-
-# # Galician peasant uprising 3 #
-
-# country_event = {
-# 	id = btc_events.11
-# 	title = btc_events.11_t
-# 	desc = btc_events.11_d
-# 	picture = SIEGE_eventPicture
-
-# 	fire_only_once = yes
-
-# 	trigger = {
-# 		AND = {
-# 			tag = GAL
-# 			has_country_flag = rebel2
-# 			NOT = { num_of_rebel_armies = 0 }
-# 			NOT = { num_of_rebel_controlled_provinces = 0 }
-# 		}
-# 	}
-
-# 	option = {	# We will suppress them by ourselves
-# 		name = btc_events.11a
-
-# 		ai_chance = {
-# 			factor = 0.1
-# 		}
-
-# 		4554 = {
-# 			spawn_rebels = {
-# 				type = leadered_peasant_rebels
-# 				friend = CAS
-# 				size = 3
-# 				#win = yes
-# 			}
-# 		}
-# 		GAL = { set_country_flag = rebel3 }
-# 	}
-
-# 	option = {	# Castile has abandoned us, let us turn to Portugal
-# 		name = btc_events.11b
-
-# 		trigger = {
-# 			NOT = { has_country_flag = ask_for_help }
-# 		}
-
-# 		ai_chance = {
-# 			factor = 0.9
-# 		}
-
-# 		4554 = {
-# 			spawn_rebels = {
-# 				type = leadered_peasant_rebels
-# 				friend = CAS
-# 				size = 3
-# 				#win = yes
-# 			}
-# 		}
-# 		GAL = { set_country_flag = rebel3 }
-
-# 		POR = {
-# 			country_event = {
-# 				id = btc_events.5
-# 				days = 15
-# 			}
-# 		}
-# 	}
-# }
 
 # Pontevedra Destroyed #
 
@@ -356,15 +192,19 @@ country_event = {
 		tag = CAS
 		4555 = {
 			owned_by = CAS
+			has_building = fort_15th
 			controlled_by = leadered_peasant_rebels
 		}
-		any_owned_province = {
-			has_province_modifier = strong_nobility
+		OR = {
+			CAS = { has_country_flag = abandon_galicia }
+			any_owned_province = {
+				has_province_modifier = strong_nobility
+			}
 		}
 	}
 
 	option = {
-		name = btc_por.12a
+		name = btc_events.12a
 
 		4555 = { remove_building = fort_15th }
 	}
@@ -384,15 +224,19 @@ country_event = {
 		tag = CAS
 		4554 = {
 			owned_by = CAS
+			has_building = fort_15th
 			controlled_by = leadered_peasant_rebels
 		}
-		any_owned_province = {
-			has_province_modifier = strong_nobility
+		OR = {
+			CAS = { has_country_flag = abandon_galicia }
+			any_owned_province = {
+				has_province_modifier = strong_nobility
+			}
 		}
 	}
 
 	option = {
-		name = btc_por.13a
+		name = btc_events.13a
 
 		4554 = { remove_building = fort_15th }
 	}
