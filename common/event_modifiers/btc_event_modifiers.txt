@@ -267,6 +267,7 @@ galician_revolts = {
 
 strong_nobility = {
 	min_local_autonomy = 50
+	local_defensiveness = -0.5
 }
 
 european_sugar = {
