@@ -830,32 +830,42 @@ country_event = {
 	desc = castilian_civil_war.17_d
 	picture = BORDER_TENSION_eventPicture
 
+	major = yes
+
 	trigger = {
-		tag = GAL
-		is_subject_of = CAS
-		has_country_flag = portugal_helped
+		tag = POR
+		has_country_flag = helped_galicia
+		galicia_area = {
+			owned_by = CAS
+			controlled_by = POR
+		}
 		CAS = { has_disaster = castilian_civil_war }
 		POR = { war_with = CAS }
 	}
 
-	option = {	# join Portugal
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {	# accept them
 		name = castilian_civil_war.17a
 		
 		ai_chance = {
-			factor = 0.8
+			factor = 0.5
 		}
 
+		CAS = { release = GAL }
 		POR = { vassalize = GAL }
 	}
 
-	option = {	# stay with Castile
+	option = {	# let them be
 		name = castilian_civil_war.17b
 
 		ai_chance = {
-			factor = 0.2
+			factor = 0.5
 		}
 
-		add_prestige = 5
+		add_prestige = 1
 	}
 }
 
@@ -1183,8 +1193,8 @@ country_event = {
 			CAS = { 
 				AND = {
 					has_country_flag = no_contest 
-					num_of_rebel_controlled_provinces = 0
-					num_of_rebel_armies = 0
+					NOT = { num_of_rebel_controlled_provinces = 0 }
+					NOT = { num_of_rebel_armies = 0 }
 				}
 			}
 		}
