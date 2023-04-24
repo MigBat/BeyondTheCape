@@ -12,4 +12,6 @@ tags={
 	"Loading Screen"
 }
 name="Beyond the Cape"
+picture="thumbnail.png"
 supported_version="1.35.1"
+remote_file_id="2966858781"
