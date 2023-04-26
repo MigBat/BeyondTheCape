@@ -72,7 +72,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 240
 	}
 
 	option = {	# Help the local nobility fight the peasantry

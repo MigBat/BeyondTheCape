@@ -1,0 +1,592 @@
+song = {
+	name = "autumninbraganca"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 4
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+			OR = { 
+				NOT = { culture = portuguese }
+				NOT = { culture = galician }
+			}
+		}
+	}
+}
+song = {
+	name = "fandango"
+	
+	chance = {
+		modifier = {
+			factor = 0.5
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 1.25
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = portuguese }
+		}
+	}
+}
+song = {
+	name = "highervalor"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 1.50
+			num_of_colonists = 1
+		}
+		modifier = {
+			factor = 1.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 2
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+			OR = { 
+				NOT = { culture = portuguese }
+				NOT = { culture = galician }
+			}
+		}
+	}
+}
+song = {
+	name = "edgeoftheworld"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 1.25
+			num_of_colonists = 1
+		}
+		modifier = {
+			factor = 1.25
+			is_at_war = no
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 2
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+			OR = { 
+				NOT = { culture = portuguese }
+				NOT = { culture = galician }
+			}
+		}
+	}
+}
+song = {
+	name = "greenpines"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 0.75
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 0.25
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 2
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+			OR = { 
+				NOT = { culture = portuguese }
+				NOT = { culture = galician }
+			}
+		}
+	}
+}
+song = {
+	name = "inlisbon"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 0.75
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 0.25
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 1.5
+			navy_size = 90
+		}			
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 2
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+			OR = { 
+				NOT = { culture = portuguese }
+				NOT = { culture = galician }
+			}
+		}
+	}
+}
+song = {
+	name = "saudade"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1.75
+			manpower_percentage = 0.1
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 2
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+			OR = { 
+				NOT = { culture = portuguese }
+				NOT = { culture = galician }
+			}
+		}
+	}
+}
+song = {
+	name = "lakesofazores"
+	
+	chance = {
+		modifier = {
+			factor = 0.75
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1.5
+			num_of_colonists = 1
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 2
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+			OR = { 
+				NOT = { culture = portuguese }
+				NOT = { culture = galician }
+			}
+		}	
+	}
+}
+song = {
+	name = "windsfromspain"
+	
+	chance = {
+		modifier = {
+			factor = 0.20
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 0.75
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 1.25
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 1.75
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}	
+		modifier = {
+			factor = 0
+			NOT = { culture = portuguese }
+		}	
+	}
+}
+song = {
+	name = "carracksarrive"
+	
+	chance = {
+		modifier = {
+			factor = 1.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.25
+			artillery_fraction = 0.35
+		}
+		modifier = {
+			factor = 1.25
+			navy_size = 90
+		}
+		modifier = {
+			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 2
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+			OR = { 
+				NOT = { culture = portuguese }
+				NOT = { culture = galician }
+			}
+		}
+	}	
+}
+song = {
+	name = "cliffsofgalicia"
+	
+	chance = {
+		modifier = {
+			factor = 1.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.25
+			artillery_fraction = 0.35
+		}
+		modifier = {
+			factor = 1.25
+			navy_size = 90
+		}
+		modifier = {
+			factor = 2
+			culture = portuguese
+		}
+		modifier = {
+			factor = 4
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+			OR = { 
+				NOT = { culture = portuguese }
+				NOT = { culture = galician }
+			}
+		}
+	}	
+}
+song = {
+ 	name = "enchantedmoura"
+	
+ 	chance = {
+ 		modifier = {
+ 			factor = 1.25
+ 			is_at_war = no
+ 		}
+		modifier = {
+ 			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 4
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+ 			OR = { 
+ 				NOT = { culture = portuguese }
+ 				NOT = { culture = galician }
+ 			}
+ 		}
+ 	}		
+}
+song = {
+ 	name = "indietribulationis"
+	
+ 	chance = {
+ 		modifier = {
+ 			factor = 1.25
+ 			is_at_war = yes
+ 		}
+ 		modifier = {
+			factor = 3
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 2
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 1
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.75
+			current_age = age_of_revolutions
+		}
+		modifier = {
+ 			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 1.25
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+ 			OR = { 
+ 				NOT = { culture = portuguese }
+ 				NOT = { culture = galician }
+ 			}
+ 		}
+ 	}		
+}
+song = {
+ 	name = "memoriadanoite"
+	
+ 	chance = {
+ 		modifier = {
+ 			factor = 1
+ 			is_at_war = no
+ 		}
+		modifier = {
+ 			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 4
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+ 			OR = { 
+ 				NOT = { culture = portuguese }
+ 				NOT = { culture = galician }
+ 			}
+ 		}
+ 	}		
+}
+song = {
+ 	name = "nymphofthetagus"
+	
+ 	chance = {
+ 		modifier = {
+ 			factor = 1
+ 			is_at_war = no
+ 		}
+		modifier = {
+			factor = 0.75
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 1.25
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 1.50
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 2
+			current_age = age_of_revolutions
+		}
+		modifier = {
+ 			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 1.25
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+ 			OR = { 
+ 				NOT = { culture = portuguese }
+ 				NOT = { culture = galician }
+ 			}
+ 		}
+ 	}		
+}
+song = {
+ 	name = "greenyears"
+	
+ 	chance = {
+ 		modifier = {
+ 			factor = 0.25
+ 			is_at_war = yes
+ 		}
+		modifier = {
+			factor = 0.50
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 0.75
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 1.25
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 1.75
+			current_age = age_of_revolutions
+		}
+		modifier = {
+ 			factor = 2
+			culture = portuguese
+		}
+		modifier = {
+			factor = 1
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+ 			OR = { 
+ 				NOT = { culture = portuguese }
+ 				NOT = { culture = galician }
+ 			}
+ 		}
+ 	}		
+}
+song = {
+ 	name = "songoftherain"
+	
+ 	chance = {
+ 		modifier = {
+ 			factor = 1
+ 			is_at_war = no
+ 		}
+		modifier = {
+ 			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 4
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+ 			OR = { 
+ 				NOT = { culture = portuguese }
+ 				NOT = { culture = galician }
+ 			}
+ 		}
+ 	}		
+}
+song = {
+ 	name = "throughmistandfoliage"
+	
+ 	chance = {
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+ 		modifier = {
+			factor = 1.5
+			num_of_colonists = 1
+		}
+		modifier = {
+ 			factor = 3
+			culture = portuguese
+		}
+		modifier = {
+			factor = 4
+			culture = galician
+		}
+		modifier = {
+			factor = 0
+ 			OR = { 
+ 				NOT = { culture = portuguese }
+ 				NOT = { culture = galician }
+ 			}
+ 		}
+ 	}		
+}

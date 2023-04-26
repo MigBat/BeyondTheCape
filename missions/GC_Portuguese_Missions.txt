@@ -549,7 +549,7 @@ gc_por_1_b = {
 				name = por_elite_marines_modifier
 				duration = -1 
 			}
-			add_army_tradition = 15
+			add_army_tradition = 10
 		}
 	}
 }
@@ -623,13 +623,13 @@ gc_por_2_a = {
 		}
 		
 		effect = {
-			add_adm_power = 150
+			add_mil_power = 100
 			if = { 
 				limit = { has_dlc = "Domination" }
 				define_advisor = {
 					type = inquisitor 
-					skill = 3 
-					cost_multiplier = 0.25
+					skill = 2
+					cost_multiplier = 0.50
 				}
 			}
 			else = { add_prestige = 5 }
@@ -668,6 +668,10 @@ gc_por_2_a = {
 		}
 		
 		effect = {
+			change_ruler_stat = {
+					stat = mil
+					amount = 1
+				}
 			western_morocco_area = {
 				limit = { 
 					owned_by = ROOT
@@ -678,15 +682,6 @@ gc_por_2_a = {
 				}
 			}
 			northern_morocco_area = {
-				limit = { 
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
-			}
-			southern_morocco_area = {
 				limit = { 
 					owned_by = ROOT
 				}
@@ -1141,8 +1136,8 @@ gc_por_3 = {
 			add_prestige = 5
 			add_navy_tradition = 5
 			add_country_modifier = {
-				name = "the_unknown_frontier"
-				duration = 5475
+				name = portuguese_exploration
+				duration = 18250
 			}
 		}
 	}
@@ -1175,10 +1170,6 @@ gc_por_3 = {
 		effect = {
 			add_prestige = 5
 			add_navy_tradition = 5
-			add_country_modifier = {
-				name = portuguese_exploration
-				duration = 18250
-			}
 			define_explorer = {
 				name = "Bartolomeu Dias"
 				shock = 2

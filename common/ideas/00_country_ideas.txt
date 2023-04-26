@@ -1584,7 +1584,7 @@ BRA_ideas = {
 POR_ideas = {
 	start = {
 		defensiveness = 0.20
-		military_tactics = 0.05
+		military_tactics = 0.1
 	}
 	
 	bonus = {
