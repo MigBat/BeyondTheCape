@@ -782,7 +782,7 @@ gc_por_2_b = {
 		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
+				value = 1
 				region = carribeans_region
 				is_city = yes
 			}
@@ -1135,8 +1135,8 @@ gc_por_3 = {
 			add_prestige = 5
 			add_navy_tradition = 5
 			add_country_modifier = {
-				name = "the_unknown_frontier"
-				duration = 5475
+				name = portuguese_exploration
+				duration = 18250
 			}
 		}
 	}
@@ -1169,10 +1169,6 @@ gc_por_3 = {
 		effect = {
 			add_prestige = 5
 			add_navy_tradition = 5
-			add_country_modifier = {
-				name = portuguese_exploration
-				duration = 18250
-			}
 			define_explorer = {
 				name = "Bartolomeu Dias"
 				shock = 2

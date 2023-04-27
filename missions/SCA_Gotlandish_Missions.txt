@@ -1549,7 +1549,7 @@ got_pirate_slot_1_new_world = {
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = carribeans_region
-				value = 5
+				value = 1
 			}
 		}
 		effect = {

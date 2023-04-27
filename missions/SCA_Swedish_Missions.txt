@@ -668,7 +668,7 @@ swe_north_america_mission_slot = {
 					has_trade_building_trigger = yes 
 					province_has_center_of_trade_of_level = 1
 				}
-				value = 5
+				value = 1
 			}
 			any_subject_country = {
 				num_of_cities = 10

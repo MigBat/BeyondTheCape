@@ -1152,7 +1152,7 @@ andalusia_slot_3_missions_c = {
 		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
+				value = 1
 				region = carribeans_region
 				is_city = yes
 			}
