@@ -1,4 +1,4 @@
-#208 - Le�n
+#208 - León
 latent_trade_goods = {
 	coal
 }
@@ -13,7 +13,7 @@ base_tax = 5
 base_production = 4
 trade_goods = livestock
 base_manpower = 3
-capital = "Le�n"
+capital = "León"
 is_city = yes
 discovered_by = eastern
 discovered_by = western

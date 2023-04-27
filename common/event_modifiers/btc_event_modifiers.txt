@@ -340,7 +340,7 @@ por_caravels = {
 por_galleons = {
 	allowed_galleon_fraction = 0.1
 	has_galleon = yes
-	transport_attrition = -0.25
+	heavy_ship_cannons = 0.1
 }
 
 por_english_alliance = {
@@ -387,6 +387,21 @@ por_brazil_colonial = {
 por_brazil_tariffs = {
 	colonist_placement_chance = 0.15
 	global_tariffs = 0.15
+}
+
+square_rigged_caravel = {
+	number_of_cannons_modifier = 1
+	hull_size_modifier = 1
+	sailor_maintenance_modifer = 1
+	light_ship_cost = 1
+	is_caravel_modifier = yes
+}
+
+nau = {
+	hull_size_modifier = 0.1
+	heavy_ship_power = -0.1
+	can_transport_units = yes
+	is_galleon_modifier = yes
 }
 
 extra_flagship = {
