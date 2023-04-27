@@ -388,3 +388,7 @@ por_brazil_tariffs = {
 	global_colonial_growth = 15
 	native_assimilation = 0.5
 }
+
+extra_flagship = {
+	max_flagships = 1
+}
