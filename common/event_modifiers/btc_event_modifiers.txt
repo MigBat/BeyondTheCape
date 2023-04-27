@@ -385,7 +385,7 @@ por_brazil_colonial = {
 }
 
 por_brazil_tariffs = {
-	global_colonial_growth = 10
+	colonist_placement_chance = 0.15
 	global_tariffs = 0.15
 }
 
