@@ -719,7 +719,7 @@ dan_trade_and_colonial_mission_slot = {
 		trigger = {
 			OR = {
 				has_institution = new_world_i
-				has_idea = quest_for_the_new_world
+				has_country_modifier = quest_for_the_new_world
 			}
 			share_of_starting_income = 2
 			is_in_deficit = no

@@ -26,6 +26,10 @@ music = {
  	name = "enchantedmoura"
  	file = "enchantedmoura.ogg"
 }
+# music = {
+# 	name = "indomitablelusa"
+# 	file = "indomitablelusa.ogg"
+# }
 music = {
 	name = "inlisbon"
 	file = "inlisbon.ogg"

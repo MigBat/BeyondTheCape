@@ -2002,9 +2002,21 @@ country_event = {
 	trigger = {
 		tag = POR
 		has_country_modifier = por_english_alliance
-		NOT OR = {
-			alliance_with = ENG
-			alliance_with = GBR
+		OR = {
+			AND = {
+				exists = ENG
+				NOT = { alliance_with = ENG }
+				NOT = { exists = GBR }
+			}
+			AND = {
+				exists = GBR
+				NOT = { alliance_with = GBR }
+				NOT = { exists = ENG }
+			}
+			AND = {
+				NOT = { exists = ENG }
+				NOT = { exists = GBR }
+			}
 		}
 	}
 
@@ -2012,5 +2024,95 @@ country_event = {
 		name = btc_por.126a
 
 		remove_country_modifier = por_english_alliance
+	}
+}
+
+# Portuguese purchase of Goa (owner) #
+
+country_event = {
+	id = btc_por.127
+	title = btc_por.127_t
+	desc = btc_por.127_d
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.127a
+
+		ai_chance = { factor = 0.15 }
+		trigger = {
+			2030 = {
+				is_capital = no
+			}
+		}
+		
+		tooltip = {
+			2030 = {
+				cede_province = FROM
+				add_core = FROM
+			}
+		}
+		add_years_of_income = 1
+		hidden_effect = {
+			FROM = {
+				country_event = { id = btc_por.128 days = 1 }
+				set_country_flag = deal_accepted
+			}
+		}
+	}
+
+	option = {
+		name = btc_por.127b
+
+		ai_chance = { factor = 0.85 }
+		add_prestige = 5
+		hidden_effect = {
+			FROM = {
+				country_event = { id = btc_por.128 days = 1 }
+				set_country_flag = deal_rejected
+			}
+		}
+	}
+}
+
+# Portuguese purchase of Goa (POR) #
+
+country_event = {
+	id = btc_por.128
+	title = btc_por.128_t
+	desc = btc_por.128_d
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.128a
+		trigger = {
+			has_country_flag = deal_accepted
+		}
+		
+		clr_country_flag = deal_accepted
+		2030 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+
+	option = {
+		name = btc_por.128b
+		trigger = {
+			has_country_flag = deal_rejected
+		}
+		
+		clr_country_flag = deal_rejected
+		add_years_of_income = 1
+		add_permanent_claim = 2030
+		add_country_modifier = {
+			name = mare_clausum
+			duration = 7300
+		}
 	}
 }

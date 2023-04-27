@@ -669,7 +669,7 @@ liv_lva_colonialism_mission_slot = {
 		trigger = {
 			OR = {
 				has_institution = new_world_i
-				has_idea = quest_for_the_new_world
+				has_country_modifier = quest_for_the_new_world
 			}
 		}
 		effect = {
@@ -3157,7 +3157,7 @@ liv_dummy_mission_slot_1 = {
 					}
 					OR = {
 						has_institution = new_world_i
-						has_idea = quest_for_the_new_world
+						has_country_modifier = quest_for_the_new_world
 					}
 				}
 				AND = {

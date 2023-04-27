@@ -1583,8 +1583,8 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		defensiveness = 0.20
-		military_tactics = 0.1
+		naval_morale = 0.1
+		morale_damage = 0.15
 	}
 	
 	bonus = {
@@ -1597,26 +1597,25 @@ POR_ideas = {
 	free = yes		#will be added at load.
 	
 	legacy_of_the_navigator = {
-		naval_morale = 0.1
 		range = 0.25
+		navy_tradition = 1
 	}
 	por_india_armadas = {
+		global_ship_trade_power = 0.15
 		artillery_fire = 1
-		global_ship_trade_power = 0.1
 	}
 	por_feitoria_system = {
 		trade_steering = 0.15
+		defensiveness = 0.1
 	}
 	por_casa_da_india = {
 		global_trade_power = 0.1
-		trade_company_investment_cost = -0.15
 	}
 	por_bandeirantes = {
 		global_colonial_growth = 15
 	}
 	por_cacadores = {
 		fire_damage_received = -0.15
-		hostile_attrition = 1
 	}
 	por_royal_absolutism = {
 		build_cost = -0.15

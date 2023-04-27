@@ -1537,42 +1537,6 @@ portuguese_monarchy_reform = {
 		factor = 1
 	}
 }
-ordennancas_reform = {
-	icon = "ordenancas"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination"
-		NOT = { religion_group = muslim }
-		OR = {
-			primary_culture = portugese
-			primary_culture = brazilian
-		}
-	}
-	trigger = {
-		if = {
-			limit = { has_modifier_locking_military_tier = yes }
-			OR = {
-				has_reform = ordennancas_reform
-				has_not_modifier_locking_military_tier = yes
-			}
-		}
-	}
-	modifiers = {
-		land_forcelimit_modifier = -0.15
-		reinforce_speed = 0.20
-		garrison_size = 0.25
-		global_garrison_growth = 0.2
-		garrison_damage 0.5
-		defensiveness = 0.1
-	}
-	custom_attributes = {
-		has_ordenancas_raised = yes	#Can enact raise ordenancas
-	}
-	
-	ai = {
-		factor = 1000
-	}
-}
 
 holy_imperial_monarchy_reform = {
 	icon = "holy_roman_emperor"
