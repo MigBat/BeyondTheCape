@@ -22,6 +22,10 @@ music = {
 	name = "highervalor"
 	file = "highervalor.ogg"
 }
+music = {
+ 	name = "enchantedmoura"
+ 	file = "enchantedmoura.ogg"
+}
 # music = {
 # 	name = "indomitablelusa"
 # 	file = "indomitablelusa.ogg"
@@ -45,4 +49,24 @@ music = {
 music = {
 	name = "cliffsofgalicia"
 	file = "cliffsofgalicia.ogg"
+}
+music = {
+ 	name = "indietribulationis"
+ 	file = "indietribulationis.ogg"
+}
+music = {
+ 	name = "nymphsofthetagus"
+ 	file = "nymphsofthetagus.ogg"
+}
+music = {
+ 	name = "greenyears"
+ 	file = "greenyears.ogg"
+}
+music = {
+ 	name = "songofrain"
+ 	file = "songofrain.ogg"
+}
+music = {
+ 	name = "throughmistandfoliage"
+ 	file = "throughmistandfoliage.ogg"
 }

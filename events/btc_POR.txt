@@ -338,7 +338,7 @@ country_event = {
 		
 		define_advisor = {
 			type = statesman
-			name = "Marqu�s de Pombal"
+			name = "Marquês of Pombal"
 			skill = 3
 			cost_multiplier = 0.25
 		}
@@ -1121,6 +1121,9 @@ country_event = {
 	option = {	# Increase our garrisons
 		name = btc_por.105a
 
+		add_adm_power = -50
+		add_mil_power = -100
+		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = strong_feitorias	# -10% forcelimit, +25% garrison size, +10% fort defensiveness
 			duration = -1
@@ -1130,6 +1133,9 @@ country_event = {
 	option = {	# Invest in strong fleets
 		name = btc_por.105b
 
+		add_adm_power = -50
+		add_dip_power = -100
+		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = patrol_fleets	# -5% marine forcelimit, -10% light ship cost, +15% light ship combat ability
 			duration = -1
