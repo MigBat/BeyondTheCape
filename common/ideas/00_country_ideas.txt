@@ -1606,7 +1606,7 @@ POR_ideas = {
 	}
 	por_feitoria_system = {
 		trade_steering = 0.15
-		defensiveness = 0.1
+		defensiveness = 0.15
 	}
 	por_casa_da_india = {
 		global_trade_power = 0.1
