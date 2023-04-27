@@ -339,7 +339,8 @@ avis_order = {
         add_base_manpower = -1
     }
     modifier = {
-        local_defender_dice_roll_bonus = 1
+		local_defensiveness = 0.15
+		local_hostile_attrition = 1
     }
     ai_priority = {
         factor = 2
@@ -375,8 +376,7 @@ calatrava_order = {
         add_base_manpower = -1
     }
     modifier = {
-		local_manpower_modifier = 0.05
-		local_hostile_movement_speed = -0.1
+		local_defender_dice_roll_bonus = 1 
     }
     ai_priority = {
         factor = 2
@@ -485,8 +485,8 @@ santiago_order = {
         add_base_manpower = -1
     }
     modifier = {
-		local_defensiveness = 0.15
-		local_hostile_attrition = 1
+		local_manpower_modifier = 0.05
+		local_hostile_movement_speed = -0.1
     }
     ai_priority = {
         factor = 2

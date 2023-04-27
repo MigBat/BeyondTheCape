@@ -935,7 +935,6 @@ exploration_ideas = {
 
 	overseas_exploration = {
 		range = 0.5
-		naval_attrition = -0.1
 	}
 
 	land_of_opportunity = {
@@ -943,7 +942,7 @@ exploration_ideas = {
 	}
 
 	experienced_sailors	= {
-		movement_speed_in_fleet_modifier = 1
+		naval_attrition = -0.1
 	}
 
 	factories = {
