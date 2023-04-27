@@ -1600,13 +1600,13 @@ POR_ideas = {
 		range = 0.25
 		transport_attrition = -0.2
 	}
-	por_india_armadas = {
-		global_ship_trade_power = 0.15
-		artillery_fire = 1
-	}
 	por_feitoria_system = {
 		trade_steering = 0.15
 		defensiveness = 0.15
+	}
+	por_india_armadas = {
+		global_ship_trade_power = 0.15
+		artillery_fire = 1
 	}
 	por_casa_da_india = {
 		global_trade_power = 0.1
