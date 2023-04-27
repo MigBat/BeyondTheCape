@@ -2,11 +2,7 @@
 
 graphical_culture = westerngfx
 
-<<<<<<< Updated upstream
-color = {  40 30 140 }
-=======
-color = { 65 85 165 }
->>>>>>> Stashed changes
+color = { 72 61 139 }
 
 revolutionary_colors = { 8 0 12 }
 

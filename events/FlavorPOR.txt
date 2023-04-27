@@ -527,8 +527,6 @@ country_event = {
 		months = 120
 	}
 	
-
-	
 	option = {		# 
 		name = "flavor_por.EVTOPTA3269"
 		ai_chance = { factor = 75 }
@@ -579,7 +577,6 @@ country_event = {
 	mean_time_to_happen = {
 		months = 100
 	}
-
 	
 	option = {		# Crusade against the Heretics in Africa
 		name = "flavor_por.EVTOPTA3272"
@@ -595,7 +592,6 @@ country_event = {
 				add_claim = POR
 			}
 		}
-	
 		
 		MOR = {
 			add_opinion = {
@@ -957,17 +953,27 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {		# Glorious!
-		name = "flavor_por.EVTOPTB11"
-		trigger = {
-			2030 = {
-				owner = {
-					ai = no
-				}
+	option = {		# Broker a deal with the local ruler
+		name = "flavor_por.EVTOPTA11"
+
+		2030 = {
+			owner = {
+				country_event = { id = btc_por.127 days = 3 }
 			}
 		}
+		add_years_of_income = -1
+		add_prestige = 10
+	}
+
+	option = {		# Forcefully establish our presence
+		name = "flavor_por.EVTOPTB11"
+		
 		add_permanent_claim = 2030
 		add_prestige = 10
+		add_country_modifier = {
+			name = mare_clausum
+			duration = 7300
+		}
 	}
 }
 

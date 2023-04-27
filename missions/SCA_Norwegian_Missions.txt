@@ -757,7 +757,7 @@ nor_conquest_mission_slot = {
 		provinces_to_highlight = {}
 		trigger = {
 			OR = {
-				has_idea = quest_for_the_new_world
+				has_country_modifier = quest_for_the_new_world
 				has_idea = call_of_our_forefathers
 			}
 			share_of_starting_income = 1.5

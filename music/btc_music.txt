@@ -201,6 +201,35 @@ song = {
 		}
 	}
 }
+# song = {
+# 	name = "indomitablelusa"
+	
+# 	chance = {
+# 		modifier = {
+# 			factor = 1.25
+# 			is_at_war = yes
+# 		}
+# 		modifier = {
+# 			factor = 1.5
+# 			infantry_fraction = 0.80
+# 		}
+# 		modifier = {
+# 			factor = 3
+# 			culture = portuguese
+# 		}
+# 		modifier = {
+# 			factor = 4
+# 			culture = galician
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			OR = { 
+# 				NOT = { culture = portuguese }
+# 				NOT = { culture = galician }
+# 			}
+# 		}
+# 	}		
+# }
 song = {
 	name = "saudade"
 	
