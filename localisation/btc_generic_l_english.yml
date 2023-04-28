@@ -35,6 +35,8 @@
  trade_company_lisboa:0 "Portuguese Charter"
  TRADE_COMPANY_LISBOA_Root_Culture_GetName:0 "[Root.Culture.GetName] Portuguese Company"
  TRADE_COMPANY_LISBOA_European_Trade_Company:0 "Portuguese Trade Company"
+
+# Changes from vanilla localisation #
  trade_company_sevilla:0 "Castilian Charter"
  TRADE_COMPANY_SEVILLA_Root_Culture_GetName:0 "[Root.Culture.GetName] Castilian Company"
  TRADE_COMPANY_SEVILLA_European_Trade_Company:0 "Castilian Trade Company"
