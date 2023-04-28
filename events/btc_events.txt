@@ -6,7 +6,7 @@ normal_or_historical_nations = yes
 country_event = {
 	id = btc_events.1
 	title = btc_events.1_t
-	desc = btc_events.1_t
+	desc = btc_events.1_d
 	picture = EXPLORERS_eventPicture
 
 	trigger = {
@@ -26,7 +26,7 @@ country_event = {
 	}
 }
 
-# Granada defend against Castile #
+# Morocco defend against Iberians #
 
 country_event = {
 	id = btc_events.2
@@ -37,323 +37,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = GRA
-	}
-
-	option = {
-		name = btc_events.2a
-
-		upper_andalucia_area = {
-			add_province_modifier = {
-				name = resist_reconquista
-				duration = 10950
-			}
-		}
-	}
-}
-
-# Irmandinos Revolt #
-
-country_event = {
-	id = btc_events.3
-	title = btc_events.3_t
-	desc = btc_events.3_d
-	picture = ANGRY_MOB_eventPicture
-
-	fire_only_once = yes
-
-	major = yes
-
-	trigger = {
-		tag = CAS
-		any_owned_province = {
-			has_province_modifier = strong_nobility
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
-
-	option = {	# Help the local nobility fight the peasantry
-		name = btc_events.3a
-
-		ai_chance = {
-			factor = 0.1
-		}
-
-		every_owned_province = {
-			limit = {
-				area = galicia_area
-			}
-			add_province_modifier = {
-			name = galician_revolts	# +5 global unrest
-			duration = 1825
-			}
-		}
-
-		206 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-			}
-		}
-		4555 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-			}
-		}
-		4554 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-			}
-		}
-		4558 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-			}
-		}
-
-		every_owned_province = {
-			limit = {
-				area = galicia_area
-			}
-			add_devastation = 50
-		}
-	}
-
-	option = {	# Let the nobles fight the peasants
-		name = btc_events.3b
-
-		ai_chance = {
-			factor = 0.9
-		}
-
-		every_owned_province = {
-			limit = { has_province_modifier = strong_nobility }
-			remove_province_modifier = strong_nobility
-		}
-
-		206 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-				win = yes
-			}
-		}
-		4555 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-				win = yes
-			}
-		}
-		4554 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-				win = yes
-			}
-		}
-		4558 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-				win = yes
-			}
-		}
-
-		hidden_effect = {
-			CAS = { set_country_flag = abandon_galicia }
-			POR = {
-				country_event = {
-					id = btc_events.5
-					days = 15
-				}
-			}			
-		}
-	}
-}
-
-# Pontevedra Destroyed #
-
-country_event = {
-	id = btc_events.12
-	title = btc_events.12_t
-	desc = btc_events.12_d
-	picture = BORDER_TENSION_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = CAS
-		4555 = {
-			owned_by = CAS
-			has_building = fort_15th
-			controlled_by = leadered_peasant_rebels
-		}
-		OR = {
-			CAS = { has_country_flag = abandon_galicia }
-			any_owned_province = {
-				has_province_modifier = strong_nobility
-			}
-		}
-	}
-
-	option = {
-		name = btc_events.12a
-
-		4555 = { remove_building = fort_15th }
-	}
-}
-
-# Lugo Destroyed #
-
-country_event = {
-	id = btc_events.13
-	title = btc_events.13_t
-	desc = btc_events.13_d
-	picture = BORDER_TENSION_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = CAS
-		4554 = {
-			owned_by = CAS
-			has_building = fort_15th
-			controlled_by = leadered_peasant_rebels
-		}
-		OR = {
-			CAS = { has_country_flag = abandon_galicia }
-			any_owned_province = {
-				has_province_modifier = strong_nobility
-			}
-		}
-	}
-
-	option = {
-		name = btc_events.13a
-
-		4554 = { remove_building = fort_15th }
-	}
-}
-
-# Galicia calls for aid #
-
-country_event = {
-	id = btc_events.5
-	title = btc_events.5_t
-	desc = btc_events.5_d
-	picture = DIPLOMACY_eventPicture
-
-	is_triggered_only = yes
-
-	option = {	# And Portugal will answer
-		name = btc_events.5a
-
-		ai_chance = {
-			factor = 0.9
-		}
-
-		add_manpower = -5
-		add_army_tradition = 5
-		set_country_flag = helped_galicia
-	}
-
-	option = {	# Let us not get involved
-		name = btc_events.5b
-
-		ai_chance = {
-			factor = 0.1
-		}
-
-		add_prestige = -10
-	}
-}
-
-# # Help from Portugal #
-
-# country_event = {
-# 	id = btc_events.6
-# 	title = btc_events.6_t
-# 	desc = btc_events.6_d
-# 	picture = HORDE_ON_HORSEBACK_eventPicture
-
-# 	is_triggered_only = yes
-
-# 	option = {	# Help has arrived!
-# 		name = btc_events.6a
-
-# 		set_country_flag = portugal_helped
-
-# 		add_liberty_desire = 50
-
-# 		add_opinion = {
-# 			who = POR
-# 			modifier = came_to_our_aid	# 100 opinion
-# 		}
-
-# 		add_manpower = 6
-
-# 		define_general = {
-# 			name = "Pedro Madruga"
-# 			shock = 3
-# 			fire = 3
-# 			manuever = 2
-# 			siege = 0
-# 		}
-
-# 		4558 = {
-# 			cavalry = ROOT
-# 			infantry = ROOT
-# 			infantry = ROOT
-# 			infantry = ROOT
-# 		}
-# 	}
-# }
-
-# # We stand alone #
-
-# country_event = {
-# 	id = btc_events.7
-# 	title = btc_events.7_t
-# 	desc = btc_events.7_d
-# 	picture = BANKRUPTCY_eventPicture
-
-# 	is_triggered_only = yes
-
-# 	option = {	# We have been forsaken
-# 		name = btc_events.7a
-
-# 		GAL = {
-# 			add_opinion = {
-# 				who = POR
-# 				modifier = forsaken_us	# -100 opinion
-# 			}
-# 		}
-# 	}
-# }
-
-# Morocco defend against Iberians #
-
-country_event = {
-	id = btc_events.8
-	title = btc_events.8_t
-	desc = btc_events.8_d
-	picture = RELIGIOUS_WARS_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
 		tag = MOR
 	}
 
 	option = {
-		name = btc_events.8a
+		name = btc_events.2a
 
 		marrekesh_area = {
 			add_province_modifier = {
@@ -364,12 +52,38 @@ country_event = {
 	}
 }
 
+# Granada defend against Castile #
+
+country_event = {
+	id = btc_events.3
+	title = btc_events.3_t
+	desc = btc_events.3_d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GRA
+	}
+
+	option = {
+		name = btc_events.3a
+
+		upper_andalucia_area = {
+			add_province_modifier = {
+				name = resist_reconquista
+				duration = 10950
+			}
+		}
+	}
+}
+
 # Galician Nobles rule the region #
 
 country_event = {
-	id = btc_events.9
-	title = btc_events.9_t
-	desc = btc_events.9_d
+	id = btc_events.4
+	title = btc_events.4_t
+	desc = btc_events.4_d
 	picture = CORRUPTION_eventPicture
 
 	fire_only_once = yes
@@ -379,7 +93,7 @@ country_event = {
 	}
 
 	option = {
-		name = btc_events.9a
+		name = btc_events.4a
 
 		galicia_area = {
 			add_province_modifier = {
