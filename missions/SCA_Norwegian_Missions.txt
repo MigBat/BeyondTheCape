@@ -1432,7 +1432,7 @@ nor_dominate_colonialism_slot = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = carribeans_region
 				is_city = yes
-				value = 15
+				value = 10
 			}
 		}
 		effect = {

@@ -1846,84 +1846,16 @@ french_missions_2_Continuation_b = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
-			any_subject_country = {
-				custom_trigger_tooltip = {
-					tooltip = any_type_colony_tt
-					OR = {
-						is_subject_of_type = colony 
-						is_subject_of_type = crown_colony
-						is_subject_of_type = private_enterprise
-						is_subject_of_type = self_governing_colony
-					}
-				}
-				capital_scope = {
-					region = carribeans_region
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				region = carribeans_region
+				is_city = yes
 			}
 		}
 		effect = {
-			if = {
-				limit = { 
-					any_subject_country = {
-						OR = {
-							is_subject_of_type = colony 
-							is_subject_of_type = crown_colony
-							is_subject_of_type = private_enterprise
-							is_subject_of_type = self_governing_colony
-						}
-						capital_scope = {
-							region = carribeans_region
-						}
-					}
-				}
-				random_province = { 
-					limit = { 
-						owner = { 
-							is_subject_of = ROOT 
-							OR = {
-								is_subject_of_type = colony 
-								is_subject_of_type = crown_colony
-								is_subject_of_type = private_enterprise
-								is_subject_of_type = self_governing_colony
-							}
-						}
-						is_capital = yes 
-					}
-					add_base_tax = 2 
-					add_base_production = 2 
-					add_base_manpower = 2 
-				}
-				random_subject_country = {
-					limit = { 
-						OR = {
-							is_subject_of_type = colony 
-							is_subject_of_type = crown_colony
-							is_subject_of_type = private_enterprise
-							is_subject_of_type = self_governing_colony
-						}
-						capital_scope = {
-							region = carribeans_region
-						}
-					}
-					add_country_modifier = {
-						name = fra_colonial_rush_modifier 
-						duration = 7300 
-					}
-				}
-			}
-			else = { 
-				custom_tooltip = fra_subject_haiti_gains_following_tt
-				tooltip = {
-					capital_scope = { 
-						add_base_tax = 2 
-						add_base_production = 2 
-						add_base_manpower = 2 
-					}
-					add_country_modifier = {
-						name = fra_colonial_rush_modifier 
-						duration = 7300 
-					}
-				}
+			add_country_modifier = {
+				name = fra_colonial_rush_modifier 
+				duration = 7300 
 			}
 		}
 	}

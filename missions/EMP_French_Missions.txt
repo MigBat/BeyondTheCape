@@ -339,12 +339,9 @@ emp_france_missions_1_b = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = fra_carib_colony.tooltip
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					region = carribeans_region
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				region = carribeans_region
 			}
 			OR = {
 				custom_trigger_tooltip = {

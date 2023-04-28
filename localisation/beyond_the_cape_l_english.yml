@@ -115,6 +115,8 @@
  square_rigged_caravel_decision_desc:0 "The square-rigged caravel is a design notable for its exceptional maneuverability and combat capabilities, although it comes at a higher cost."
  nau_decision_title:0 "Develop the Nau"
  nau_decision_desc:0 "By increasing the size of our galleons, we can fulfill both the responsibilities of transporting troops and naval engagement with a single ship, although its fighting capabilities will be diminished."
+ extra_flagship_decision_title:0 "Launch a Second Flagship"
+ extra_flagship_decision_desc:0 "Flagships are expensive and powerful ships. Only a strong navy is worthy of fitting one, but ours is amongst the greatest navies in the world. Let us build a second flagship to strike fear into our enemies and awe all who see our mighty vessels!"
 
 ## Events ##
 
@@ -397,7 +399,7 @@
  por_caravels:0 "Navigation Techniques"
  desc_por_caravels:0 "The Infante has overseen revolutionary advancements in the nautical area, developing a vessel that can sail against the wind, the caravel. We shall make use of it to achieve our ambitions."
  por_galleons:0 "High-Seas Navy"
- desc_galleons:0 "One of the most significant developments of the first half of the 16th century was the Galleon, an effective compromise between the size and firepower of the Nau with the speed and maneuverability of the Caravel."
+ desc_por_galleons:0 "One of the most significant developments of the first half of the 16th century was the Galleon, an effective compromise between the size and firepower of the Nau with the speed and maneuverability of the Caravel."
  por_english_alliance:0 "English Military Alliance"
  desc_por_english_alliance:0 "It is cordially agreed that if, in time to come, one of the kings or his heir shall need the support of the other, or his help, and in order to get such assistance applies to his ally in lawful manner, the ally shall be bound to give aid and succour to the other, so far as he is able (without any deceit, fraud, or pretence) to the extent required by the danger to his ally's realms, lands, domains, and subjects; and he shall be firmly bound by these present alliances to do this." 
  por_english_alliance_tt:0 "\nIf the alliance with @ENG is ended, we will lose this reward."
@@ -407,6 +409,8 @@
  desc_square_rigged_caravel:0 "A more combat oriented version of the caravel."
  nau:0 "Nau"
  desc_nau:0 "A version of the galleon that sacrifices combat ability for transporting troops."
+ extra_flagship:0 "Extra Flagship"
+ desc_extra_flagship:0 "The pride of our navy now has a rival."
  mare_clausum:0 "Mare Clausum"
  desc_mare_clausum:0 "The Pope has decreed that the Indian Ocean is righfully the property of the Kingdom of Portugal. Naturally, it's up to the Portuguese to enforce their borders from the disrespectful infidels."
  port_wine:0 "Port Wine"
@@ -683,4 +687,5 @@
  enchantedmoura:0 "Enchanted Moura"
  songofrain:0 "Song of the Rain"
  throughmistandfoliage:0 "Through Mist and Foliage"
+ memoriadanoite:0 "Memória da Noite"
  CHANNEL_music_btc_music:0 "Beyond the Cape"

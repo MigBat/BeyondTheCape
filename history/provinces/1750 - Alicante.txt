@@ -1,6 +1,6 @@
-#1750 - Alï¿½cant
+#1750 - Alàcant
 
-owner = ARA		#Martï¿½ I of Aragon
+owner = ARA		#Martí I of Aragon
 controller = ARA
 add_core = ARA
 add_core = VAL
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 3
 trade_goods = salt
 base_manpower = 2 
-capital = "Alï¿½cant" 
+capital = Alàcant
 is_city = yes
 
 

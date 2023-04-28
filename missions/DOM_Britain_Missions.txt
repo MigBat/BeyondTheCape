@@ -2530,7 +2530,7 @@ gbr_row_4 = {
 				custom_trigger_tooltip = {
 					tooltip = english_colony_in_the_carribean.tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 5
+						value = 1
 						region = carribeans_region
 						is_city = yes
 					}

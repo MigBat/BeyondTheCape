@@ -1,6 +1,6 @@
 #1750 - Xativa
 
-owner = ARA		#Mart� I of Aragon
+owner = ARA		#Mart? I of Aragon
 controller = ARA
 add_core = ARA
 add_core = VAL
