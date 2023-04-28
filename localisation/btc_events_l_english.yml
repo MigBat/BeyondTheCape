@@ -1,5 +1,8 @@
 ﻿l_english:
 
+ henry_the_navigator_tt:0 "This modifer will last until the death of the navigator advisor."
+ port_english_alliance_tt:0 "If the alliance is broken, we will lose this modifier."
+
  btc_events.1_t:0 "Quest for the New World"
  btc_events.1_d:0 "We now have the technology and funding to undertake the greatest adventures of 10 generations. Let us sail west in search of new lands and riches!"
  btc_events.1a:0 "A new horizon"
@@ -99,6 +102,9 @@
  btc_por.101_d:0 "It has become evidently clear that the future of Portugal lies on the deck of its ships, overseas. However, such endevour requires an organized and methodical approach. We need a single and cohesive voice abroad in order to be truly respected, or feared."
  btc_por.101a:0 "We must prioritize the building of trust and reputation between our partners"
  btc_por.101b:0 "We must protect our interests, by force if necessary"
+ btc_por.102_t:0 "The Death of the Infante"
+ btc_por.102_d:0 "The great Infante D. Henrique has passed away. Your genius will never be seen again, and we will carry your legacy until the end of our days."
+ btc_por.102a:0 "A great loss"
  btc_por.103_t:0 "Atlantic Slave Trade"
  btc_por.103_d:0 "For many centuries, the islamic powers have profited a great deal in slave labour across the Sahara. With the discovery of new lands and new resources, we are in dire need of human resources to explore this untapped wealth, and if we are ambitious enough, we can serve as the middle-man for other christians who might follow our trail."
  btc_por.103a:0 "Encourage slave trade from Africa"
@@ -189,7 +195,6 @@
  btc_por.126_t:0 "End of the Anglo-Portuguese Alliance"
  btc_por.126_d:0 "Our alliance with the english has run its course, and so do the benefits that came with it."
  btc_por.126a:0 "A pity..."
- port_english_alliance_tt:0 "If the alliance is broken, we will lose this modifier."
  btc_por.127_t:0 "The Portuguese in Goa"
  btc_por.127_d:0 "Foreign ships are spotted in the horizon, vessels larger than any we'd seen before. They set port and its sailors are brought to us by local fishermen they traded with. They claim to be Portuguese explorers who sailed around Africa in search of indian riches. Surely they jest, but what caught our attention was their offer to establish a trading post in Goa to initiate mercantile activities with us. Should we take them up on that offer?"
  btc_por.127a:0 "Allow them to establish a base in Goa."
@@ -198,3 +203,8 @@
  btc_por.128_d:0 "We have secured a meeting with the local Zamorin. We presented an offer to purchase land and establish a trading post, in the hopes of building a fruitful - or rather, spiceful - relationship with the locals. After very careful considerations by the Zamorin and his advisors, they come to us with an answer."
  btc_por.128a:0 "Bargaining successful! Goa is ours!"
  btc_por.128b:0 "If they won't sell it to us, then we shall take it by force!"
+
+# Changes from vanilla localisation #
+
+ flavor_por.EVTOPTA11:0 "Broker a deal with the local ruler"
+ flavor_por.EVTOPTB11:0 "Forcefully establish our presence"
