@@ -1,6 +1,6 @@
 #1750 - Castellon
 
-owner = ARA		#Martï¿½ I of Aragon
+owner = ARA		#Martí I of Aragon
 controller = ARA
 add_core = ARA
 add_core = VAL

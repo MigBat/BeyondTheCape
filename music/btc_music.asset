@@ -26,10 +26,6 @@ music = {
  	name = "enchantedmoura"
  	file = "enchantedmoura.ogg"
 }
-# music = {
-# 	name = "indomitablelusa"
-# 	file = "indomitablelusa.ogg"
-# }
 music = {
 	name = "inlisbon"
 	file = "inlisbon.ogg"
@@ -58,10 +54,10 @@ music = {
  	name = "nymphsofthetagus"
  	file = "nymphsofthetagus.ogg"
 }
-music = {
- 	name = "greenyears"
- 	file = "greenyears.ogg"
-}
+# music = {
+#  	name = "greenyears"
+#  	file = "greenyears.ogg"
+# }
 music = {
  	name = "songofrain"
  	file = "songofrain.ogg"
@@ -69,4 +65,8 @@ music = {
 music = {
  	name = "throughmistandfoliage"
  	file = "throughmistandfoliage.ogg"
+}
+music = {
+	name = "memoriadanoite"
+	file = "memoriadanoite.ogg"
 }

@@ -1,4 +1,4 @@
-#367 - SÃ£o Miguel
+#367 - São Miguel
 
 culture = berber
 religion = animism
