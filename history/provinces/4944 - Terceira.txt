@@ -2,7 +2,7 @@
 
 culture = berber
 religion = animism
-capital = "Angra do Heroismo"
+capital = "Angra do Heroísmo"
 trade_goods = fish
 hre = no
 base_tax = 1
