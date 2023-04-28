@@ -156,8 +156,8 @@ ENG_ideas = {
 		diplomatic_upkeep = 1
 	}
 	royal_navy = {
-		navy_tradition = 0.25
-		naval_morale = 0.1
+		navy_tradition = 0.5
+		naval_morale = 0.15
 	}
 	navigation_acts = {
 		trade_efficiency = 0.15
@@ -179,11 +179,11 @@ ENG_ideas = {
 GBR_ideas = {
 	start = {
 		navy_tradition = 1
-		development_cost = -0.2
+		naval_morale = 0.20
 	}
 
 	bonus = {
-		naval_morale = 0.20
+		administrative_efficiency = 0.05
 	}
 	
 	trigger = {
@@ -192,12 +192,13 @@ GBR_ideas = {
 	free = yes		#will be added at load.
 
 	the_british_parliament = {
-		global_unrest = -1
-		num_of_parliament_issues = 1
+		legitimacy = 1
+		devotion = 1
+		horde_unity = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		num_of_parliament_issues = 2
 	}
-	#british_merchant_navy = {
-	#	global_tariffs = 0.15
-	#}
 	gbr_the_royal_society = {
 		technology_cost = -0.15
 	}
@@ -205,20 +206,19 @@ GBR_ideas = {
 		morale_damage_received = -0.1
 	}
 	british_bill_of_rights = {
-		years_of_nationalism = -5
-		num_of_parliament_issues = 1
+		global_unrest = -2
 	}
 	reform_of_comission_buying = {
 		discipline = 0.05
-		leader_land_fire = 1
+		allowed_marine_fraction = 0.25
 	}
 	british_industrialization = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.20
+		development_cost = -0.15
 	}
 	britanna_rules_the_waves = {
-		leader_naval_manuever = 1
+		leader_naval_fire = 2
 		blockade_efficiency = 0.33
-		allowed_marine_fraction = 0.50
 	}
 }
 
@@ -729,12 +729,12 @@ RUS_ideas = {
 
 SPA_ideas = {
 	start = {
-		global_colonial_growth = 25
+		colonists = 1
 		land_morale = 0.15
 	}
 	
 	bonus = {
-		infantry_power = 0.1
+		infantry_power = 0.15
 	}
 	
 	trigger = {
@@ -749,7 +749,7 @@ SPA_ideas = {
 	}
 	conquest_of_paradise = {
 		idea_claim_colonies = yes
-		colonists = 1
+		global_colonial_growth = 15
 	}
 	spa_casa_de_contracion = {
 		envoy_travel_time = -0.33
@@ -761,7 +761,7 @@ SPA_ideas = {
 	}
 	spanish_armada = {
 		sunk_ship_morale_hit_recieved = -0.33
-		heavy_ship_power = 0.15
+		naval_morale = 0.10
 	}
 	siglo_de_oro = {
 		prestige = 1
@@ -774,8 +774,8 @@ SPA_ideas = {
 
 CAS_ideas = {
 	start = {
-		warscore_cost_vs_other_religion = -0.15
-		cavalry_power = 0.2
+		army_tradition_decay = -0.01
+		cavalry_power = 0.25
 	}
 	bonus = {
 		naval_forcelimit_modifier = 0.25
@@ -785,15 +785,15 @@ CAS_ideas = {
 	}
 	free = yes		#will be added at load.
 	the_reconquista = {
-		army_tradition_decay = -0.01
+		warscore_cost_vs_other_religion = -0.1
 		land_morale = 0.1
 	}
 	conquest_of_paradise = {
 		idea_claim_colonies = yes
-		colonists = 1
+		global_colonial_growth = 20
 	}
 	inter_caetera = {
-		global_colonial_growth = 25
+		colonists = 1
 	}
 	devout_catholisism = {
 		papal_influence = 2
@@ -832,23 +832,22 @@ NED_ideas = {
 	
 	dutch_trading_spirit = {
 		merchants = 1
-		trade_range_modifier = 0.10
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 2
 		allowed_marine_fraction = 0.25
 	}
-	platoon_fire = {
-		infantry_fire = 1
-		discipline = 0.05
+	amsterdam_wisselbank = {
+		inflation_reduction = 0.1
+		interest = -0.25
 	}
 	army_sappers = {
 		siege_ability = 0.10
 		defensiveness = 0.15
 	}
-	amsterdam_wisselbank = {
-		inflation_reduction = 0.1
-		interest = -0.25
+	platoon_fire = {
+		infantry_fire = 0.5
+		infantry_power = 0.1
 	}
 	polders = {
 		development_cost = -0.1
@@ -883,7 +882,7 @@ FRA_ideas = {
 		war_taxes_cost_modifier = -0.5
 	}
 	lessons_hundred_years_war = {
-		army_tradition = 0.5
+		cavalry_shock = 1
 		land_morale = 0.15
 	}
 	estates_general = {
@@ -1597,6 +1596,7 @@ POR_ideas = {
 	free = yes		#will be added at load.
 	
 	legacy_of_the_navigator = {
+		transport_attrition = -0.15
 		range = 0.25
 		transport_attrition = -0.2
 	}
@@ -1615,7 +1615,7 @@ POR_ideas = {
 		global_colonial_growth = 15
 	}
 	por_cacadores = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.2
 	}
 	por_royal_absolutism = {
 		build_cost = -0.15
@@ -2077,7 +2077,7 @@ SCO_Ideas = {
 	royal_revenue = {
 		global_tax_modifier = 0.15
 	}
-	scottish_enlightenment = {
+	comets = {
 		idea_cost = -0.1
 		global_institution_spread = 0.15
 	}
@@ -2293,12 +2293,12 @@ SIC_ideas = {
 
 ARA_ideas = {
 	start = {
-		galley_power = 0.2
-		trade_efficiency = 0.1
+		galley_power = 0.20
+		land_morale = 0.10
 	}
 	
 	bonus = {
-		artillery_fire = 1
+		naval_forcelimit_modifier = 0.15
 	}
 	
 	trigger = {
@@ -2306,27 +2306,30 @@ ARA_ideas = {
 	}
 	free = yes
 	
+	protection_of_the_little_folk = {
+		infantry_shock = 0.5
+		infantry_cost = -0.1
+	}
+	protection_of_coastlines = {
+		naval_maintenance_modifier = -0.10
+		sailor_maintenance_modifer = -0.10
+	}
 	mercenary_princes = {
 		merc_maintenance_modifier = -0.15
 	}
-	protection_of_coastlines = {
-		naval_forcelimit_modifier = 0.10
-		global_sailors_modifier = 0.25
-	}
 	ara_mediterranean_trade = {
-		trade_steering = 0.20
+		trade_efficiency = 0.15
 	}
 	consolidation_of_the_estates = {
 		stability_cost_modifier = -0.1
 	}
 	chartered_merchant_companies = {
-		global_trade_power = 0.20
+		global_trade_power = 0.10
+		trade_steering = 0.10
 	}
 	ara_reformed_admin = {
-		global_autonomy = -0.05
-	}
-	protection_of_the_little_folk = {
-		land_morale = 0.10
+		possible_admin_policy = 1
+		reform_progress_growth = 0.1
 	}
 }
 
@@ -8693,8 +8696,8 @@ LUX_ideas = {
 
 LON_ideas = {
 	start = {
-		cavalry_power = 0.2
-		global_tax_modifier = 0.1
+		cavalry_shock = 1
+		morale_damage = 0.15
 	}
 
 	bonus = {
@@ -8707,10 +8710,12 @@ LON_ideas = {
 	free = yes
 	
 	lon_heritage_of_the_reconquista = {
-		army_tradition = 1
+		prestige_from_land = 0.5
+		army_tradition_from_battle = 0.5
 	}
 	lon_leonese_cortes = {
 		global_unrest = -1
+		free_adm_policy = 1
 	}
 	lon_conquistadores = {
 		colonists = 1
@@ -8723,11 +8728,11 @@ LON_ideas = {
 		naval_forcelimit_modifier = 0.25
 	}
 	lon_patronize_leonese_language = {
-		prestige = 1
+		same_culture_advisor_cost = -0.2
 		culture_conversion_cost = -0.1
 	}
 	lon_nationalism = {
-		land_morale = 0.1
+		manpower_in_own_culture_provinces = 0.25
 	}
 }
 
@@ -15445,7 +15450,7 @@ ASU_ideas = {
 		manpower_in_true_faith_provinces = 0.2
 	}
 	bonus = {
-		global_manpower_modifier = 0.15
+		warscore_cost_vs_other_religion = -0.15
 	}
 	trigger = {
 		tag = ASU
@@ -15461,7 +15466,7 @@ ASU_ideas = {
 		leader_land_shock = 1
 	}
 	asu_unify_the_provinces = {
-		province_warscore_cost = -0.15
+		core_creation = -0.1
 	}
 	asu_millenarian_revival = {
 		global_missionary_strength = 0.02
