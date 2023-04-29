@@ -59,6 +59,8 @@ country_event = {
 	option = {		# Support Joanna
 		name = "castilian_civil_war.1a"
 
+		set_country_flag = civil_war_in_castile
+
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -97,7 +99,7 @@ country_event = {
 			spawn_rebels = {
 				type = noble_rebels
 				friend = ARA
-				size = 2
+				size = 1
 				win = yes
 			}
 			clr_province_flag = cas_civil_war_start
@@ -106,6 +108,8 @@ country_event = {
 
 	option = {		# Support Isabella
 		name = "castilian_civil_war.1b"
+
+		set_country_flag = civil_war_in_castile
 
 		ai_chance = {
 			factor = 1
@@ -145,7 +149,7 @@ country_event = {
 			spawn_rebels = {
 				type = noble_rebels
 				friend = POR
-				size = 2
+				size = 1
 				win = yes
 			}
 			clr_province_flag = cas_civil_war_start
@@ -301,7 +305,7 @@ country_event = {
 		}
 
 		define_heir = {
-			name = "Isabella"
+			name = "Isabel"
 			dynasty = "de Avis"
 			age = 0
 			culture = portugese
@@ -312,11 +316,11 @@ country_event = {
 			female = yes
 		}
 
-		set_heir_flag = isabella
+		set_heir_flag = isabel
 
 		POR = {
 			define_heir = {
-				name = "Isabella"
+				name = "Isabel"
 				dynasty = "de Avis"
 				age = 0
 				culture = portugese
@@ -326,7 +330,7 @@ country_event = {
 				claim = 70
 				female = yes
 			}
-			set_heir_flag = isabella
+			set_heir_flag = isabel
 		}
 		
 		add_opinion = {
@@ -340,7 +344,7 @@ country_event = {
 		POR = { add_historical_friend = CAS }
 
 		ARA = {
-			country_event = { id = castilian_civil_war.8 days = 30 } # Contest Joanna's claim
+			country_event = { id = castilian_civil_war.9 days = 30 } # Contest Joanna's claim
 		}
 	}
 }
@@ -370,7 +374,7 @@ country_event = {
 		}
 
 		ARA = {
-			country_event = { id = castilian_civil_war.8 days = 30 } # Contest Joanna's claim
+			country_event = { id = castilian_civil_war.9 days = 30 } # Contest Joanna's claim
 		}
 	}
 }
@@ -399,7 +403,7 @@ country_event = {
 			female = yes
 		}
 
-		set_ruler_flag = joanna
+		set_ruler_flag = isabella
 
 		define_consort = {
 			name = "Ruler of Aragon"
@@ -448,7 +452,7 @@ country_event = {
 		ARA = { add_historical_friend = CAS }
 
 		POR = {
-			country_event = { id = castilian_civil_war.9 days = 30 } # Contest Isabella's claim
+			country_event = { id = castilian_civil_war.8 days = 30 } # Contest Isabella's claim
 		}
 	}
 }
@@ -477,12 +481,12 @@ country_event = {
 		}
 
 		POR = {
-			country_event = { id = castilian_civil_war.9 days = 30 } # Contest Isabella's claim
+			country_event = { id = castilian_civil_war.8 days = 30 } # Contest Isabella's claim
 		}
 	}
 }
 
-# Contest Joanna's claim (ARA)
+# Contest Isabella's claim (POR)
 country_event = {
 	id = castilian_civil_war.8
 	title = "castilian_civil_war.8.t"
@@ -491,7 +495,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # We will fight for Isabella's right
+	option = { # We will fight for Joanna's right
 		name = "castilian_civil_war.8a"
 
 		ai_chance = {
@@ -505,15 +509,17 @@ country_event = {
 
 		define_consort = {
 			country_of_origin = CAS
-			name = "Isabella"
+			name = "Joanna"
 			dynasty = "de Trastámara"
-			age = 24
+			age = 15
 			culture = castillian
 			adm = 3
 			dip = 3
 			mil = 3
 			female = yes
 		}
+
+		set_ruler_flag = joanna
 
 		declare_war_with_cb = {
 			who = CAS
@@ -525,42 +531,8 @@ country_event = {
 			set_country_flag = at_war
 		}
 
-		if = {
-			limit = {
-				POR = {
-					has_consort_flag = joanna
-				}
-			}
-			FRA = {
-				country_event = { id = castilian_civil_war.10 days = 90 } # Support Portugal in the war
-			}
-		}
-		
-		CAS = {
-			random_owned_province = {
-				limit = {
-					has_province_flag = cas_civil_war_2
-				}
-				spawn_rebels = {
-					type = noble_rebels
-					friend = ARA
-					size = 2
-					win = yes
-				}
-				clr_province_flag = cas_civil_war_2
-			}
-			random_owned_province = {
-				limit = {
-					has_province_flag = cas_civil_war_3
-				}
-				spawn_rebels = {
-					type = noble_rebels
-					friend = ARA
-					size = 2
-					win = yes
-				}
-				clr_province_flag = cas_civil_war_3
-			}
+		FRA = {
+			country_event = { id = castilian_civil_war.10 days = 90 } # Support Portugal in the war
 		}
 	}
 
@@ -595,7 +567,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3
+					size = 2
 					win = yes
 				}
 				clr_province_flag = cas_civil_war_3
@@ -604,7 +576,7 @@ country_event = {
 	}
 }
 
-# Contest Isabella's claim (POR)
+# Contest Joanna's claim (ARA)
 country_event = {
 	id = castilian_civil_war.9
 	title = "castilian_civil_war.9.t"
@@ -613,7 +585,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # We will fight for Joanna's right
+	option = { # We will fight for Isabella's right
 		name = "castilian_civil_war.9a"
 
 		ai_chance = {
@@ -627,15 +599,17 @@ country_event = {
 		
 		define_consort = {
 			country_of_origin = CAS
-			name = "Joanna"
+			name = "Isabella"
 			dynasty = "de Trastámara"
-			age = 15
+			age = 24
 			culture = castillian
 			adm = 3
 			dip = 3
 			mil = 3
 			female = yes
 		}
+
+		set_ruler_flag = isabella
 
 		declare_war_with_cb = {
 			who = CAS
@@ -647,34 +621,14 @@ country_event = {
 			set_country_flag = at_war
 		}
 
-		FRA = {
-			country_event = { id = castilian_civil_war.10 days = 90 } # Support Portugal in the war
-		}
-
-		CAS = {
-			random_owned_province = {
-				limit = {
-					has_province_flag = cas_civil_war_2
+		if = {
+			limit = {
+				POR = {
+					has_consort_flag = joanna
 				}
-				spawn_rebels = {
-					type = noble_rebels
-					friend = POR
-					size = 2
-					win = yes
-				}
-				clr_province_flag = cas_civil_war_2
 			}
-			random_owned_province = {
-				limit = {
-					has_province_flag = cas_civil_war_3
-				}
-				spawn_rebels = {
-					type = noble_rebels
-					friend = POR
-					size = 2
-					win = yes
-				}
-				clr_province_flag = cas_civil_war_3
+			FRA = {
+				country_event = { id = castilian_civil_war.10 days = 90 } # Support Portugal in the war
 			}
 		}
 	}
@@ -710,7 +664,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3
+					size = 2
 					win = yes
 				}
 				clr_province_flag = cas_civil_war_3
@@ -741,8 +695,8 @@ country_event = {
 		}
 
 		add_manpower = -10
-		add_years_of_income = -0.25
-		add_claim = 197
+		add_years_of_income = -0.2
+		add_permanent_claim = 197
 
 		POR = {
 			country_event = { id = castilian_civil_war.11 days = 20 } # Support from France
@@ -869,7 +823,7 @@ country_event = {
 	}
 }
 
-# Portugal wins War of Castilian Succession
+# Portugal wins War of Castilian Succession (POR)
 
 country_event = {
 	id = castilian_civil_war.12
@@ -882,7 +836,6 @@ country_event = {
 	option = {
 		name = "castilian_civil_war.12a"
 
-		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		CAS = { clr_country_flag = at_war }
 
@@ -892,7 +845,7 @@ country_event = {
 		}
 
 		define_heir = {
-			name = "Isabella"
+			name = "Isabel"
 			dynasty = "de Avis"
 			age = 0
 			culture = portugese
@@ -903,7 +856,7 @@ country_event = {
 			female = yes
 		}
 
-		set_heir_flag = isabella
+		set_heir_flag = isabel
 
 		CAS = {
 			define_ruler = {
@@ -926,7 +879,7 @@ country_event = {
 				male = yes
 			}
 			define_heir = {
-				name = "Isabella"
+				name = "Isabel"
 				dynasty = "de Avis"
 				age = 0
 				culture = portugese
@@ -936,28 +889,38 @@ country_event = {
 				claim = 70
 				female = yes
 			}
-			set_heir_flag = isabella
+			set_heir_flag = isabel
 		}
 
 		POR = {
 			remove_rival = CAS
 			create_alliance = CAS
 			create_marriage = CAS
+			add_historical_friend = CAS
+			add_opinion = {
+				who = CAS
+				modifier = iberian_wedding # 200 relation
+			}
 		}
 
-		CAS = { remove_rival = POR }
+		CAS = { 
+			remove_rival = POR
+			add_historical_friend = POR
+			set_country_flag = civil_war_ended
+			add_opinion = {
+				who = POR
+				modifier = iberian_wedding # 200 relation
+			}
+		}
 
-		CAS = { set_country_flag = civil_war_ended }
-
-		#end_disaster = castilian_civil_war
-
-		#CAS = {
-		#	country_event = { id = castilian_civil_war.100 days = 20 }
-		#}
+		ARA = { 
+			kill_consort = yes 
+			kill_heir = { allow_new_heir = yes }
+		}
 	}
 }
 
-# Aragon wins War of Castilian Succession
+# Aragon wins War of Castilian Succession (ARA)
 
 country_event = {
 	id = castilian_civil_war.13
@@ -970,7 +933,6 @@ country_event = {
 	option = {
 		name = "castilian_civil_war.13a"
 
-		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		CAS = { clr_country_flag = at_war }
 
@@ -1031,17 +993,27 @@ country_event = {
 			remove_rival = CAS
 			create_alliance = CAS
 			create_marriage = CAS
+			add_historical_friend = CAS
+			add_opinion = {
+				who = CAS
+				modifier = iberian_wedding # 200 relation
+			}
 		}
 
-		CAS = { remove_rival = ARA }
+		CAS = { 
+			remove_rival = ARA
+			add_historical_friend = ARA
+			set_country_flag = civil_war_ended
+			add_opinion = {
+				who = ARA
+				modifier = iberian_wedding # 200 relation
+			}
+		}
 
-		CAS = { set_country_flag = civil_war_ended }
-
-		#end_disaster = castilian_civil_war
-
-		#CAS = {
-		#	country_event = { id = castilian_civil_war.100 days = 20 }
-		#}
+		POR = { 
+			kill_consort = yes 
+			kill_heir = { allow_new_heir = yes }
+		}
 	}
 }
 
@@ -1058,24 +1030,26 @@ country_event = {
 	option = {
 		name = "castilian_civil_war.14a"
 
-		set_country_flag = won_castilian_civil_war
+		set_country_flag = won_war
 		clr_country_flag = at_war
 		set_country_flag = civil_war_ended
 
 		if = { 
 			limit = { ARA = { has_country_flag = at_war } }
-			ARA = { clr_country_flag = at_war }
+			ARA = { 
+				kill_consort = yes 
+				kill_heir = { allow_new_heir = yes }
+			}
 		}
 		if = { 
 			limit = { POR = { has_country_flag = at_war } }
-			POR = { clr_country_flag = at_war }
+			POR = { 
+				kill_consort = yes 
+				kill_heir = { allow_new_heir = yes }
+			}
 		}
 
-		#end_disaster = castilian_civil_war
-
-		#CAS = {
-		#	country_event = { id = castilian_civil_war.100 days = 20 }
-		#}
+		CAS = { set_country_flag = civil_war_ended }
 	}
 }
 
@@ -1094,9 +1068,11 @@ country_event = {
 
 		trigger = { tag = POR }
 
-		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
-		ARA = { clr_country_flag = at_war }
+		ARA = { 
+			clr_country_flag = at_war 
+			clr_ruler_flag = isabella
+		}
 	}
 
 	option = {
@@ -1104,16 +1080,9 @@ country_event = {
 
 		trigger = { tag = CAS }
 
-		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		set_country_flag = won_war
 		set_country_flag = civil_war_ended
-
-		#end_disaster = castilian_civil_war
-
-		#CAS = {
-		#	country_event = { id = castilian_civil_war.100 days = 20 }
-		#}
 	}
 }
 
@@ -1132,9 +1101,11 @@ country_event = {
 
 		trigger = { tag = ARA }
 
-		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
-		POR = { clr_country_flag = at_war }
+		POR = { 
+			clr_country_flag = at_war 
+			clr_ruler_flag = joanna
+		}
 	}
 
 	option = {
@@ -1142,16 +1113,9 @@ country_event = {
 
 		trigger = { tag = CAS }
 
-		set_country_flag = won_castilian_civil_war
 		clr_country_flag = at_war
 		set_country_flag = won_war
 		set_country_flag = civil_war_ended
-
-		#end_disaster = castilian_civil_war
-
-		#CAS = {
-		#	country_event = { id = castilian_civil_war.100 days = 20 }
-		#}
 	}
 }
 
@@ -1169,10 +1133,12 @@ country_event = {
 	option = {
 		name = "castilian_civil_war.100a" # Long Live the Queen!
 
-		trigger = { CAS = { has_country_flag = won_war }}
-
+		trigger = { 
+			CAS = { has_country_flag = won_war }
+		}
 		add_stability = 1
 	}
+
 	option = {
 		name = "castilian_civil_war.100b" # Long Live the Queen...
 
@@ -1186,19 +1152,17 @@ country_event = {
 		}
 		add_stability = -1		
 	}
+
 	option = {
 		name = "castilian_civil_war.100c" # Long Live the Queen!
 
 		trigger = { 
 			CAS = { 
-				AND = {
-					has_country_flag = no_contest 
-					NOT = { num_of_rebel_controlled_provinces = 0 }
-					NOT = { num_of_rebel_armies = 0 }
-				}
+				has_country_flag = no_contest 
+				NOT = { num_of_rebel_controlled_provinces = 0 }
+				NOT = { num_of_rebel_armies = 0 }
 			}
 		}
-
 		add_stability = 1
 	}
 }
@@ -1211,9 +1175,15 @@ country_event = {
 	desc = castilian_civil_war.28.d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = CAS
-		has_country_flag = won_war
+		NOT = { has_disaster = castilian_civil_war }
+		OR = {
+			has_ruler_flag = joanna
+			has_ruler_flag = isabella
+		}
 	}
 
 	option = { name = castilian_civil_war.28a }
@@ -1227,9 +1197,15 @@ country_event = {
 	desc = castilian_civil_war.29.d
 	picture = BORDER_TENSION_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		NOT = { tag = CAS }
-		has_country_flag = won_war
+		CAS = { NOT = { has_disaster = castilian_civil_war } }
+		OR = {
+			has_ruler_flag = joanna
+			has_ruler_flag = isabella
+		}
 	}
 
 	option = { name = castilian_civil_war.29a }
@@ -1248,32 +1224,82 @@ country_event = {
 	trigger = {
 		tag = CAS
 		NOT = { has_disaster = castilian_civil_war }
+		# Castile ruler died, Isabel became queen
 		OR = {
 			AND = {
-				POR = { has_ruler_flag = joanna }
-				CAS = { NOT = { has_ruler_flag = joanna }}
+				POR = {
+					had_heir_flag = {
+						flag = isabel
+						days = 1
+					}
+					has_heir_flag = isabel
+					has_ruler_flag = joanna
+				}
+				CAS = {
+					had_heir_flag = {
+						flag = isabel
+						days = 1
+					}
+					NOT = { has_heir_flag = isabel }
+					NOT = { has_ruler_flag = joanna }
+				}
 			}
+			# Portugal ruler died, Isabel became queen
 			AND = {
-				CAS = { has_ruler_flag = joanna }
-				POR = { NOT = { has_ruler_flag = joanna }}
+				POR = {
+					had_heir_flag = {
+						flag = isabel
+						days = 1
+					}
+					NOT = { has_heir_flag = isabel }
+					NOT = { has_ruler_flag = joanna }
+				}
+				CAS = {
+					had_heir_flag = {
+						flag = isabel
+						days = 1
+					}
+					has_heir_flag = isabel
+					has_ruler_flag = joanna
+				}
 			}
+			# Castile ruler died, Joanna became queen
 			AND = {
-				ARA = { has_ruler_flag = isabella }
-				CAS = { NOT = { has_ruler_flag = isabella }}
+				ARA = {
+					had_heir_flag = {
+						flag = joanna
+						days = 1
+					}
+					has_heir_flag = joanna
+					has_ruler_flag = isabella
+				}
+				CAS = {
+					had_heir_flag = {
+						flag = joanna
+						days = 1
+					}
+					NOT = { has_heir_flag = joanna }
+					NOT = { has_ruler_flag = isabella }
+				}
 			}
+			# Aragon ruler died, Joanna became queen
 			AND = {
-				CAS = { has_ruler_flag = isabella }
-				ARA = { NOT = { has_ruler_flag = isabella }}
-			}
-		}
-		OR = {
-			OR = {
-				POR = { has_heir_flag = isabella }
-				CAS = { has_heir_flag = isabella }
-			}
-			OR = {
-				ARA = { has_heir_flag = joanna }
-				CAS = { has_heir_flag = joanna }
+				ARA = {
+					had_heir_flag = {
+						flag = joanna
+						days = 1
+					}
+					NOT = { has_heir_flag = joanna }
+					NOT = { has_ruler_flag = isabella }
+				}
+				CAS = {
+					had_heir_flag = {
+						flag = joanna
+						days = 1
+					}
+					has_heir_flag = joanna 
+					has_ruler_flag = isabella
+				}
 			}
 		}
 	}
@@ -1282,11 +1308,19 @@ country_event = {
 		name = "castilian_civil_war.30a"
 
 		trigger = {
-			AND = {
-				prestige = POR
-				legitimacy = POR
-				total_development = POR
+			POR = {
+				had_heir_flag = {
+					flag = isabel
+					days = 1
+				}
 			}
+			had_heir_flag = {
+				flag = isabel
+				days = 1
+			}
+			prestige = POR
+			legitimacy = POR
+			total_development = POR
 		}
 		if = {
 			limit = {
@@ -1307,11 +1341,19 @@ country_event = {
 		name = "castilian_civil_war.30b"
 
 		trigger = {
-			AND = {
-				prestige = ARA
-				legitimacy = ARA
-				total_development = ARA
+			ARA = {
+				had_heir_flag = {
+					flag = joanna
+					days = 1
+				}
 			}
+			had_heir_flag = {
+				flag = joanna
+				days = 1
+			}
+			prestige = ARA
+			legitimacy = ARA
+			total_development = ARA
 		}
 		if = {
 			limit = {
@@ -1332,25 +1374,20 @@ country_event = {
 		name = "castilian_civil_war.30c"
 
 		trigger = {
-			OR = {
-				POR = {
-					AND = {
-						prestige = CAS
-						legitimacy = CAS
-					}
+			POR = {
+				had_heir_flag = {
+					flag = isabel
+					days = 1
 				}
-				POR = {
-					AND = {
-						legitimacy = CAS
-						total_development = CAS
-					}
-				}
-				POR = {
-					AND = {
-						total_development = CAS
-						prestige = CAS
-					}
-				}
+			}
+			had_heir_flag = {
+				flag = isabel
+				days = 1
+			}
+			OR = { 
+				NOT = { prestige = POR }
+				NOT = { legitimacy = POR }
+				NOT = { total_development = POR }
 			}
 		}
 		if = {
@@ -1372,25 +1409,20 @@ country_event = {
 		name = "castilian_civil_war.30d"
 
 		trigger = {
+			ARA = {
+				had_heir_flag = {
+					flag = isabel
+					days = 1
+				}
+			}
+			had_heir_flag = {
+				flag = isabel
+				days = 1
+			}
 			OR = {
-				ARA = {
-					AND = {
-						prestige = CAS
-						legitimacy = CAS
-					}
-				}
-				ARA = {
-					AND = {
-						legitimacy = CAS
-						total_development = CAS
-					}
-				}
-				ARA = {
-					AND = {
-						total_development = CAS
-						prestige = CAS
-					}
-				}
+				NOT = { prestige = ARA }
+				NOT = { legitimacy = ARA }
+				NOT = { total_development = ARA }
 			}
 		}
 		if = {
