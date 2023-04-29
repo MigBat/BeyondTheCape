@@ -1203,6 +1203,38 @@ country_event = {
 	}
 }
 
+# Informing of Iberian Inheritance (CAS) #
+
+country_event = {
+	id = castilian_civil_war.28
+	title = castilian_civil_war.28.t
+	desc = castilian_civil_war.28.d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		tag = CAS
+		has_country_flag = won_war
+	}
+
+	option = { name = castilian_civil_war.28a }
+}
+
+# Informing of Iberian Inheritance (POR/ARA) #
+
+country_event = {
+	id = castilian_civil_war.29
+	title = castilian_civil_war.29.t
+	desc = castilian_civil_war.29.d
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		NOT = { tag = CAS }
+		has_country_flag = won_war
+	}
+
+	option = { name = castilian_civil_war.29a }
+}
+
 # Iberian Inheritance
 
 country_event = {
