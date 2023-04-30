@@ -1366,10 +1366,6 @@ gc_por_3 = {
 				limit = { has_dlc = "Rule Britannia" }
 				change_innovativeness = 2
 			}
-			#add_country_modifier = {
-			#	name = mare_clausum
-			#	duration = 7300
-			#}
 		}
 	}
 
