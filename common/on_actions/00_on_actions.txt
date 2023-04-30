@@ -167,6 +167,14 @@ on_startup = {
 			desc = until_end_of_age_desc
 		}
 	}
+	# Beyond the cape #
+	if = {
+		limit = {
+			was_player = yes
+			NOT = { has_country_flag = tutorial_done }
+		}
+		country_event = { id = btc_startscreen.1 }
+	}
 }
 
 # country

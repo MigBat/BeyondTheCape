@@ -773,4 +773,10 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
+	spriteType = {
+		name = "tutorial_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/tutorial_picture.dds"
+		alwaystransparent = yes
+	}
+
 }
