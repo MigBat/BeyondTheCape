@@ -945,13 +945,13 @@ exploration_ideas = {
 		naval_attrition = -0.1
 	}
 
+	free_colonies = {
+		colonist_placement_chance = 0.1
+	}
+
 	factories = {
 		trade_company_governing_cost = -0.1
 		trade_company_investment_cost = -0.1
-	}
-
-	free_colonies = {
-		colonist_placement_chance = 0.1
 	}
 	
 	global_empire = {
