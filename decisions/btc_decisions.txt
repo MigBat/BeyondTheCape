@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_country_modifier = por_caravels
+			NOT = { has_country_modifier = square_rigged_caravel }
 			tag = POR
 		}
 
@@ -27,6 +28,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_country_modifier = por_galleons
+			NOT = { has_country_modifier = nau }
 			tag = POR
 		}
 
@@ -51,6 +53,7 @@ country_decisions = {
 				has_idea_group = maritime_ideas
 				has_idea_group = naval_ideas
 			}
+			NOT = { has_country_modifier = extra_flagship }
 			tag = POR
 		}
 

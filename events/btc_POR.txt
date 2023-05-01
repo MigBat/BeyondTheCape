@@ -1884,7 +1884,7 @@ country_event = {
 	option = {
 		name = btc_por.120a
 
-		add_years_of_income = -1
+		add_treasury = -500
 		227 = {
 			add_province_modifier = {
 				name = ribeira_palace
@@ -1907,9 +1907,11 @@ country_event = {
 	option = {
 		name = btc_por.121a
 
+		add_treasury = -200
 		1851 = {
 			add_building_construction = {
 				building = university
+				cost = 0
 			}
 			add_province_modifier = {
 				name = coimbra_university
@@ -1932,7 +1934,7 @@ country_event = {
 	option = {
 		name = btc_por.122a
 
-		add_years_of_income = -1
+		add_treasury = -500
 		227 = {
 			add_province_modifier = {
 				name = mafra_palace
@@ -1955,6 +1957,7 @@ country_event = {
 	option = {
 		name = btc_por.123a
 		
+		add_treasury = -200
 		227 = {
 			add_province_modifier = {
 				name = tower_of_belem
@@ -1977,6 +1980,7 @@ country_event = {
 	option = {
 		name = btc_por.124a
 
+		add_treasury = -500
 		227 = {
 			add_province_modifier = {
 				name = jeronimos_monastery
