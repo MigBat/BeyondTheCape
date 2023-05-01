@@ -387,7 +387,7 @@ gc_por_1_b = {
 	}
 }
 
-gc_por_1_b = {
+gc_por_1_c = {
 	slot = 1
 	generic = no
 	ai = yes
