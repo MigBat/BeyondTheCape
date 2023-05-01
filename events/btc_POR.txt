@@ -1884,7 +1884,7 @@ country_event = {
 	option = {
 		name = btc_por.120a
 
-		add_treasury = -500
+		add_treasury = -400
 		227 = {
 			add_province_modifier = {
 				name = ribeira_palace
@@ -1957,7 +1957,7 @@ country_event = {
 	option = {
 		name = btc_por.123a
 		
-		add_treasury = -200
+		add_treasury = -100
 		227 = {
 			add_province_modifier = {
 				name = tower_of_belem
@@ -1980,7 +1980,7 @@ country_event = {
 	option = {
 		name = btc_por.124a
 
-		add_treasury = -500
+		add_treasury = -300
 		227 = {
 			add_province_modifier = {
 				name = jeronimos_monastery

@@ -1640,7 +1640,7 @@ gc_por_4_a = {
 			coromandel_region = {
 				has_discovered = ROOT
 			}
-			treasury = 200
+			treasury = 100
 		}
 
 		effect = {
@@ -1660,7 +1660,7 @@ gc_por_4_a = {
 				has_building = temple
 				owned_by = ROOT
 			}
-			treasury = 500
+			treasury = 300
 		}
 
 		effect = {
@@ -2162,7 +2162,7 @@ gc_por_5_b = {
 				development = 50
 				owned_by = ROOT
 			}
-			treasury = 200
+			treasury = 400
 		}
 
 		effect = {
