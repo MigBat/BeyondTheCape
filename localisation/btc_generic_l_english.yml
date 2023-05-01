@@ -64,3 +64,7 @@
  extra_flagship_decision_title:0 "Launch a Second Flagship"
  extra_flagship_decision_desc:0 "Flagships are expensive and powerful ships. Only a strong navy is worthy of fitting one, but ours is amongst the greatest navies in the world. Let us build a second flagship to strike fear into our enemies and awe all who see our mighty vessels!"
 
+# Other #
+
+ colonial_region_restriction: "You cannot colonize outside of your capital's colonial region."
+

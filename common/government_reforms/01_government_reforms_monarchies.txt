@@ -1527,11 +1527,14 @@ portuguese_monarchy_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		naval_forcelimit_modifier = 0.2
-		global_tax_modifier = 0.1
-		sailors_recovery_speed = 0.2
+		unrest_catholic_provinces = -1
+		church_loyalty_modifier = 0.05
 	}
 	conditional = {
 		can_use_trade_post = yes
+		government_abilities = {
+			portuguese_saudade_mechanic
+		}
 	}
 	ai = {
 		factor = 1

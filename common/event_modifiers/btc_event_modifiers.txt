@@ -407,3 +407,27 @@ nau = {
 extra_flagship = {
 	max_flagships = 1
 }
+
+homeland_focus = {
+	monthly_portuguese_saudade = -0.2
+}
+
+ultramarine_focus = {
+	monthly_portuguese_saudade = 0.2
+}
+
+no_focus = {
+	monthly_portuguese_saudade = 0
+}
+
+boost_focus = {
+	portuguese_saudade_gain_modifier = -0.25
+}
+
+reduce_focus = {
+	portuguese_saudade_gain_modifier = 0.25
+}
+
+normal_focus = {
+	portuguese_saudade_gain_modifier = 0
+}
