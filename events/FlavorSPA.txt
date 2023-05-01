@@ -3014,6 +3014,8 @@ country_event = {
 	picture = SHIP_SAILING_eventPicture
 	
 	trigger = {
+		tag = CAS
+		POR = { has_country_flag = turned_down_columbus }
 		NOT = { has_global_flag = columbus_happened }
 		lower_andalucia_area = {
 			owned_by = ROOT

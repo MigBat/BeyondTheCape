@@ -1366,10 +1366,6 @@ gc_por_3 = {
 				limit = { has_dlc = "Rule Britannia" }
 				change_innovativeness = 2
 			}
-			#add_country_modifier = {
-			#	name = mare_clausum
-			#	duration = 7300
-			#}
 		}
 	}
 
@@ -1644,6 +1640,7 @@ gc_por_4_a = {
 			coromandel_region = {
 				has_discovered = ROOT
 			}
+			treasury = 100
 		}
 
 		effect = {
@@ -1663,6 +1660,7 @@ gc_por_4_a = {
 				has_building = temple
 				owned_by = ROOT
 			}
+			treasury = 300
 		}
 
 		effect = {
@@ -2115,12 +2113,7 @@ gc_por_5_b = {
 		}
 		
 		trigger = {
-			OR = {
-				num_of_merchants = 6
-				1293 = {
-					is_strongest_trade_power = ROOT
-				}
-			}
+			num_of_merchants = 6
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
@@ -2149,6 +2142,7 @@ gc_por_5_b = {
 				development = 20 
 				owned_by = ROOT
 			}
+			treasury = 200
 		}
 
 		effect = {
@@ -2168,6 +2162,7 @@ gc_por_5_b = {
 				development = 50
 				owned_by = ROOT
 			}
+			treasury = 400
 		}
 
 		effect = {
@@ -2284,6 +2279,7 @@ gc_por_5_b = {
 		trigger = {
 			owns = 227
 			absolutism = 50
+			treasury = 500
 		}
 
 		effect = {

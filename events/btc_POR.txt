@@ -1884,7 +1884,7 @@ country_event = {
 	option = {
 		name = btc_por.120a
 
-		add_years_of_income = -1
+		add_treasury = -400
 		227 = {
 			add_province_modifier = {
 				name = ribeira_palace
@@ -1907,9 +1907,11 @@ country_event = {
 	option = {
 		name = btc_por.121a
 
+		add_treasury = -200
 		1851 = {
 			add_building_construction = {
 				building = university
+				cost = 0
 			}
 			add_province_modifier = {
 				name = coimbra_university
@@ -1932,7 +1934,7 @@ country_event = {
 	option = {
 		name = btc_por.122a
 
-		add_years_of_income = -1
+		add_treasury = -500
 		227 = {
 			add_province_modifier = {
 				name = mafra_palace
@@ -1955,6 +1957,7 @@ country_event = {
 	option = {
 		name = btc_por.123a
 		
+		add_treasury = -100
 		227 = {
 			add_province_modifier = {
 				name = tower_of_belem
@@ -1977,6 +1980,7 @@ country_event = {
 	option = {
 		name = btc_por.124a
 
+		add_treasury = -300
 		227 = {
 			add_province_modifier = {
 				name = jeronimos_monastery
@@ -2134,6 +2138,129 @@ country_event = {
 		add_country_modifier = {
 			name = mare_clausum
 			duration = 7300
+		}
+	}
+}
+
+# Portuguese Saudade Focus #
+
+country_event = {
+	id = btc_por.130
+	title = btc_por.130_t
+	desc = btc_por.130_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Choose focus
+		name = btc_por.130a
+
+		country_event = {
+			id = btc_por.131
+		}
+	}
+
+	option = {	# Focus boost
+		name = btc_por.130b
+
+		country_event = {
+			id = btc_por.132
+		}
+	}
+
+	option = {	# Changed my mind
+		name = btc_por.130c
+	}
+}
+
+# Choose focus #
+
+country_event = {
+	id = btc_por.131
+	title = btc_por.131_t
+	desc = btc_por.131_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Homeland focus
+		name = btc_por.131a
+
+		add_country_modifier = {
+			name = homeland_focus
+			duration = 1875
+		}
+	}
+
+	option = {	# Ultramarine focus
+		name = btc_por.131b
+
+		add_country_modifier = {
+			name = ultramarine_focus
+			duration = 1875
+		}
+	}
+
+	option = {	# No focus
+		name = btc_por.131c
+
+		add_country_modifier = {
+			name = no_focus
+			duration = 1875
+		}
+	}
+
+	option = {	# Go back
+		name = btc_por.131d
+
+		country_event = {
+			id = btc_por.130
+		}
+	}
+}
+
+# Focus Boost #
+
+country_event = {
+	id = btc_por.132
+	title = btc_por.132_t
+	desc = btc_por.132_d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Boost focus
+		name = btc_por.132a
+
+		add_country_modifier = {
+			name = boost_focus
+			duration = 1875
+		}
+	}
+
+	option = {	# Reduce focus
+		name = btc_por.132b
+
+		add_country_modifier = {
+			name = reduce_focus
+			duration = 1875
+		}
+	}
+
+	option = {	# Normal focus
+		name = btc_por.132c
+
+		add_country_modifier = {
+			name = no_focus
+			duration = 1875
+		}
+	}
+
+	option = {	# Go back
+		name = btc_por.132d
+
+		country_event = {
+			id = btc_por.130
 		}
 	}
 }

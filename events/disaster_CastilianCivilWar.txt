@@ -65,21 +65,21 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				OR = {
-					war_with = POR
-					POR = { has_regency = yes }
-				}
+				war_with = POR
+			}
+			modifier = {
+				factor = 0
+				POR = { has_regency = yes }
 			}
 			modifier = {
 				factor = 2
-				OR = {
-					is_rival = ARA
-					alliance_with = POR
-				}
+				is_rival = ARA
+			}
+			modifier = {
+				factor = 2
+				alliance_with = POR
 			}
 		}
-
-		CAS = { remove_rival = POR }
 
 		ARA = {
 			add_opinion = {
@@ -115,21 +115,21 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				OR = {
-					war_with = ARA
-					ARA = { has_regency = yes }
-				}
+				war_with = ARA
+			}
+			modifier = {
+				factor = 0
+				ARA = { has_regency = yes }
 			}
 			modifier = {
 				factor = 2
-				OR = {
-					is_rival = POR
-					alliance_with = ARA
-				}
+				is_rival = POR
+			}
+			modifier = {
+				factor = 2
+				alliance_with = ARA
 			}
 		}
-
-		CAS = { remove_rival = ARA }
 
 		POR = {
 			add_opinion = {
@@ -168,12 +168,14 @@ country_event = {
 	
 	option = { # Press the claim
 		name = "castilian_civil_war.2a"
+
+		trigger = {
+			NOT = { has_regency = yes }
+		}
 		
 		ai_chance = {
-			factor = 1
+			factor = 0.9
 		}
-
-		POR = { remove_rival = CAS }
 
 		define_consort = {
 			country_of_origin = CAS
@@ -204,7 +206,7 @@ country_event = {
 		name = "castilian_civil_war.2b"
 
 		ai_chance = {
-			factor = 1
+			factor = 0.1
 		}
 
 		add_prestige = -10
@@ -227,11 +229,13 @@ country_event = {
 	option = { # Press the claim
 		name = "castilian_civil_war.3a"
 
-		ai_chance = {
-			factor = 1
+		trigger = {
+			NOT = { has_regency = yes }
 		}
 
-		ARA = { remove_rival = CAS }
+		ai_chance = {
+			factor = 0.9
+		}
 		
 		define_consort = {
 			country_of_origin = CAS
@@ -260,7 +264,7 @@ country_event = {
 		name = "castilian_civil_war.3b"
 
 		ai_chance = {
-			factor = 1
+			factor = 0.1
 		}
 
 		add_prestige = -10
@@ -341,7 +345,19 @@ country_event = {
 		create_marriage = POR
 		create_alliance = POR
 		add_historical_friend = POR
-		POR = { add_historical_friend = CAS }
+		remove_rival = POR
+		add_trust = {
+			who = POR
+			value = 30
+		}
+		POR = { 
+			add_historical_friend = CAS 
+			remove_rival = CAS
+			add_trust = {
+				who = CAS
+				value = 30
+			}
+		}
 
 		ARA = {
 			country_event = { id = castilian_civil_war.9 days = 30 } # Contest Joanna's claim
@@ -449,7 +465,19 @@ country_event = {
 		create_marriage = ARA
 		create_alliance = ARA
 		add_historical_friend = ARA
-		ARA = { add_historical_friend = CAS }
+		remove_rival = ARA
+		add_trust = {
+			who = ARA
+			value = 30
+		}
+		ARA = { 
+			add_historical_friend = CAS 
+			remove_rival = CAS
+			add_trust = {
+				who = CAS
+				value = 30
+			}
+		}
 
 		POR = {
 			country_event = { id = castilian_civil_war.8 days = 30 } # Contest Isabella's claim
@@ -894,6 +922,10 @@ country_event = {
 
 		POR = {
 			remove_rival = CAS
+			add_trust = {
+				who = CAS
+				value = 30
+			}
 			create_alliance = CAS
 			create_marriage = CAS
 			add_historical_friend = CAS
@@ -905,6 +937,10 @@ country_event = {
 
 		CAS = { 
 			remove_rival = POR
+			add_trust = {
+				who = POR
+				value = 30
+			}
 			add_historical_friend = POR
 			set_country_flag = civil_war_ended
 			add_opinion = {
@@ -959,7 +995,7 @@ country_event = {
 			define_ruler = {
 				name = "Isabella"
 				dynasty = "de Trastámara"
-				age = 15
+				age = 24
 				culture = castillian
 				adm = 3
 				dip = 3
@@ -991,6 +1027,10 @@ country_event = {
 
 		ARA = {
 			remove_rival = CAS
+			add_trust = {
+				who = CAS
+				value = 30
+			}
 			create_alliance = CAS
 			create_marriage = CAS
 			add_historical_friend = CAS
@@ -1002,6 +1042,10 @@ country_event = {
 
 		CAS = { 
 			remove_rival = ARA
+			add_trust = {
+				who = ARA
+				value = 30
+			}
 			add_historical_friend = ARA
 			set_country_flag = civil_war_ended
 			add_opinion = {

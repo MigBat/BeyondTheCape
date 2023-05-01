@@ -15,6 +15,7 @@ aristocracy_ideas = {
 		nobles_loyalty_modifier = 0.1
 		rajput_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = -0.15
 	}
 
 	trigger = {
@@ -91,6 +92,7 @@ plutocracy_ideas = {
 		global_prov_trade_power_modifier = 0.25
 		burghers_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = -0.15
 	}
 
 	trigger = {
@@ -153,6 +155,7 @@ horde_gov_ideas = {
 	bonus = {
 		cavalry_power = 0.25
 		nomadic_tribes_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = -0.15
 	}
 	
 	trigger = {
@@ -200,6 +203,7 @@ theocracy_gov_ideas = {
 		church_loyalty_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.1
 		brahmins_muslim_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = -0.15
 	}
 	
 	trigger = {
@@ -265,6 +269,7 @@ indigenous_ideas = {
 
 	bonus = {
 		global_institution_spread = 0.25
+		monthly_portuguese_saudade = -0.15
 	}
 
 	trigger = {
@@ -304,6 +309,7 @@ innovativeness_ideas = {
 
 	bonus = {
 		advisor_cost = -0.2
+		monthly_portuguese_saudade = -0.15
 	}
 
 	patron_of_art  = {
@@ -383,6 +389,7 @@ religious_ideas = {
 		culture_conversion_cost = -0.25
 		brahmins_hindu_loyalty_modifier = 0.1
 		church_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = 0.25
 	}
 
 	missionary_schools = {
@@ -464,6 +471,7 @@ spy_ideas = {
 	bonus = {
 		rebel_support_efficiency = 1
 		spy_action_cost_modifier = -0.2
+		monthly_portuguese_saudade = 0.15
 	}
 	
 	claim_fabrication = {
@@ -522,6 +530,7 @@ diplomatic_ideas = {
 	category = DIP
 	bonus = {
 		reduced_stab_impacts = yes
+		monthly_portuguese_saudade = 0.15
 	}
 	
 	grand_banquets = {
@@ -571,6 +580,7 @@ offensive_ideas = {
 
 	bonus = {
 		recover_army_morale_speed = 0.1
+		monthly_portuguese_saudade = 0.15
 	}
 
 	bayonet_leaders = {
@@ -673,6 +683,7 @@ defensive_ideas = {
 	bonus = {
 		hostile_attrition = 1
 		max_hostile_attrition = 1 
+		monthly_portuguese_saudade = -0.25
 	}
 
 	battlefield_commisions = {
@@ -782,6 +793,7 @@ trade_ideas = {
 		burghers_loyalty_modifier = 0.1
 		jains_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = 0.15
 	}
 
 	shrewd_commerce_practise = {
@@ -850,6 +862,7 @@ economic_ideas = {
 
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
+		monthly_portuguese_saudade = -0.25
 	}
 
 	bureaucracy = { 
@@ -927,6 +940,7 @@ exploration_ideas = {
 
 	bonus = {
 		cb_on_primitives = yes
+		monthly_portuguese_saudade = 0.25
 	}
 
 	colonial_ventures = {
@@ -945,13 +959,13 @@ exploration_ideas = {
 		naval_attrition = -0.1
 	}
 
+	free_colonies = {
+		colonist_placement_chance = 0.1
+	}
+
 	factories = {
 		trade_company_governing_cost = -0.1
 		trade_company_investment_cost = -0.1
-	}
-
-	free_colonies = {
-		colonist_placement_chance = 0.1
 	}
 	
 	global_empire = {
@@ -1124,6 +1138,7 @@ maritime_ideas = {
 	bonus = {
 		sea_repair = yes
 		movement_speed_in_fleet_modifier = 1 
+		monthly_portuguese_saudade = 0.25
 	}
 
 	merchant_traditions = {
@@ -1223,6 +1238,7 @@ quality_ideas = {
 	bonus = {
 		discipline = 0.05
 		janissaries_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = -0.15
 	}
 
 	private_to_marshal = {
@@ -1316,6 +1332,7 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
+		monthly_portuguese_saudade = -0.15
 	}
 	mass_army = {
 		global_manpower_modifier = 0.33
@@ -1391,6 +1408,7 @@ expansion_ideas = {
 
 	bonus = {
  		min_autonomy_in_territories = -0.1
+		monthly_portuguese_saudade = 0.25
 	}
 
 	additional_colonists = {
@@ -1472,6 +1490,7 @@ administrative_ideas = {
 	bonus = {
 		governing_capacity_modifier = 0.2
 		eunuchs_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = -0.25
 	}
 
 	administrative_council = {
@@ -1544,6 +1563,7 @@ humanist_ideas = {
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
 		brahmins_muslim_loyalty_modifier = 0.1
 		dhimmi_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = -0.15
 	}
 
 	local_traditions = {
@@ -1611,6 +1631,7 @@ influence_ideas = {
 
 	bonus = {
 		unjustified_demands = -0.5
+		monthly_portuguese_saudade = 0.25
 	}
 
 	tribute_system = {
@@ -1670,6 +1691,7 @@ naval_ideas = {
 	bonus = {
 		global_naval_barrage_cost = -1
 		disengagement_chance = 0.15
+		monthly_portuguese_saudade = 0.15
 	}
 
 	boarding_parties = {
@@ -1743,6 +1765,7 @@ court_ideas = {
 		meritocracy = 0.25 
 		imperial_mandate = 0.1
 		imperial_authority = 0.05
+		monthly_portuguese_saudade = -0.25
 	}
 	
 	long_echo = {
@@ -1797,6 +1820,7 @@ mercenary_ideas = {
 	bonus = {
 		mercenary_discipline = 0.05
 		possible_condottieri = 1 
+		monthly_portuguese_saudade = -0.15
 	}
 
 	organised_mercenary_payment = {
@@ -1835,6 +1859,7 @@ infrastructure_ideas = {
 
 	bonus = {
 		development_cost = -0.1
+		monthly_portuguese_saudade = -0.25
 	}
 
 	state_efficiency = {

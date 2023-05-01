@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_country_modifier = por_caravels
+			NOT = { has_country_modifier = square_rigged_caravel }
 			tag = POR
 		}
 
@@ -27,6 +28,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_country_modifier = por_galleons
+			NOT = { has_country_modifier = nau }
 			tag = POR
 		}
 
@@ -45,12 +47,39 @@ country_decisions = {
 }
 
 country_decisions = {
+	portuguese_focus_decision = {
+		color = { 125 35 47 }
+		potential = {
+			has_government_mechanic = portuguese_saudade_mechanic
+		}
+
+		allow = {
+			NOT = { 
+				has_country_modifier = homeland_focus
+				has_country_modifier = ultramarine_focus
+				has_country_modifier = no_focus
+				has_country_modifier = boost_focus
+				has_country_modifier = reduce_focus
+				has_country_modifier = normal_focus
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = btc_por.130
+			}
+		}
+	}
+}
+
+country_decisions = {
 	extra_flagship_decision = {
 		potential = {
 			OR = {
 				has_idea_group = maritime_ideas
 				has_idea_group = naval_ideas
 			}
+			NOT = { has_country_modifier = extra_flagship }
 			tag = POR
 		}
 
