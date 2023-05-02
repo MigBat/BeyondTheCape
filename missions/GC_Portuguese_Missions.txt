@@ -797,7 +797,7 @@ gc_por_2_b = {
 	}
 }
 
-gc_por_2_b = {
+gc_por_2_c = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -863,7 +863,7 @@ gc_por_2_b = {
 	}
 }
 
-gc_por_2_c = {
+gc_por_2_d = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1015,7 +1015,7 @@ gc_por_2_c = {
 	}
 }
 
-gc_por_2_d = {
+gc_por_2_e = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1955,31 +1955,6 @@ gc_por_5_a = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
-	#gc_por_pinhal_leiria = {
-	#	icon = mission_expand_into_the_forest
-	#	required_missions = {  }
-	#	position = 1
-
-	#	provinces_to_highlight = {
-	#		province_id = 1851
-	#		NOT = { owned_by = ROOT }
-	#	}
-
-	#	trigger = {
-	#		1851 = { owned_by = ROOT }
-	#		has_estate_privilege = estate_burghers_private_trade_fleets
-	#	}
-
-	#	effect = {
-	#		1851 = {
-	#			add_province_modifier = {
-	#				name = pinhal_leiria
-	#				duration = -1
-	#			}
-	#		}
-	#	}
-	#}
 
 	gc_por_sagres = {
 		icon = mission_launch_a_flagship
