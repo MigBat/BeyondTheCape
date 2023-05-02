@@ -82,9 +82,9 @@ castilian_civil_war = {
 	
 	modifier = {
 		global_unrest = 7
-		land_forcelimit_modifier = -0.5
-		global_manpower_modifier = -0.5
-		land_morale = -0.5
+		land_forcelimit_modifier = -0.65
+		global_manpower_modifier = -0.65
+		discipline = -0.05
 	}	
 	
 	on_start = castilian_civil_war.1
