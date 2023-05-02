@@ -2142,80 +2142,71 @@ country_event = {
 	}
 }
 
-# Portuguese Saudade Focus #
-
-country_event = {
-	id = btc_por.130
-	title = btc_por.130_t
-	desc = btc_por.130_d
-	picture = BORDER_TENSION_eventPicture
-
-	is_triggered_only = yes
-
-	option = {	# Choose focus
-		name = btc_por.130a
-
-		country_event = {
-			id = btc_por.131
-		}
-	}
-
-	option = {	# Focus boost
-		name = btc_por.130b
-
-		country_event = {
-			id = btc_por.132
-		}
-	}
-
-	option = {	# Changed my mind
-		name = btc_por.130c
-	}
-}
-
 # Choose focus #
 
 country_event = {
 	id = btc_por.131
 	title = btc_por.131_t
 	desc = btc_por.131_d
-	picture = BORDER_TENSION_eventPicture
+	picture = saudade_decision_picture
 
 	is_triggered_only = yes
 
 	option = {	# Homeland focus
 		name = btc_por.131a
 
+		trigger = {
+			NOT = {
+				has_country_flag = homeland
+			}
+		}
+
+		add_adm_power = -40
+
+		remove_country_modifier = overseas_focus
 		add_country_modifier = {
 			name = homeland_focus
-			duration = 1875
+			duration = -1
 		}
+		set_country_flag = homeland
 	}
 
-	option = {	# Ultramarine focus
+	option = {	# Overseas focus
 		name = btc_por.131b
 
-		add_country_modifier = {
-			name = ultramarine_focus
-			duration = 1875
+		trigger = {
+			NOT = {
+				has_country_flag = overseas
+			}
 		}
+
+		add_mil_power = -20
+		add_dip_power = -30
+
+		remove_country_modifier = homeland_focus
+		add_country_modifier = {
+			name = overseas_focus
+			duration = -1
+		}
+		set_country_flag = overseas
 	}
 
 	option = {	# No focus
 		name = btc_por.131c
 
-		add_country_modifier = {
-			name = no_focus
-			duration = 1875
+		trigger = {
+			OR = {
+				has_country_flag = overseas
+				has_country_flag = homeland
+			}
 		}
+
+		remove_country_modifier = homeland_focus
+		remove_country_modifier = overseas_focus
 	}
 
 	option = {	# Go back
 		name = btc_por.131d
-
-		country_event = {
-			id = btc_por.130
-		}
 	}
 }
 
@@ -2225,16 +2216,22 @@ country_event = {
 	id = btc_por.132
 	title = btc_por.132_t
 	desc = btc_por.132_d
-	picture = BORDER_TENSION_eventPicture
+	picture = saudade_decision_picture
 
 	is_triggered_only = yes
 
 	option = {	# Boost focus
 		name = btc_por.132a
 
+		trigger = {
+			stability = -2
+		}
+
+		add_stability = -1
+
 		add_country_modifier = {
 			name = boost_focus
-			duration = 1875
+			duration = 730
 		}
 	}
 
@@ -2243,24 +2240,11 @@ country_event = {
 
 		add_country_modifier = {
 			name = reduce_focus
-			duration = 1875
-		}
-	}
-
-	option = {	# Normal focus
-		name = btc_por.132c
-
-		add_country_modifier = {
-			name = no_focus
-			duration = 1875
+			duration = 1460
 		}
 	}
 
 	option = {	# Go back
-		name = btc_por.132d
-
-		country_event = {
-			id = btc_por.130
-		}
+		name = btc_por.132c
 	}
 }

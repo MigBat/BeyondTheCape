@@ -409,25 +409,18 @@ extra_flagship = {
 }
 
 homeland_focus = {
-	monthly_portuguese_saudade = -0.2
+	monthly_portuguese_saudade = -0.1
 }
 
-ultramarine_focus = {
-	monthly_portuguese_saudade = 0.2
-}
-
-no_focus = {
-	monthly_portuguese_saudade = 0
+overseas_focus = {
+	monthly_portuguese_saudade = 0.1
 }
 
 boost_focus = {
-	portuguese_saudade_gain_modifier = -0.25
+	portuguese_saudade_gain_modifier = 2.00
 }
 
 reduce_focus = {
-	portuguese_saudade_gain_modifier = 0.25
-}
-
-normal_focus = {
-	portuguese_saudade_gain_modifier = 0
+	portuguese_saudade_gain_modifier = -0.75
+	monarch_admin_power = -1
 }

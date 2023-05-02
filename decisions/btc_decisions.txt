@@ -47,26 +47,53 @@ country_decisions = {
 }
 
 country_decisions = {
+	show_tutorial_decision = {
+		potential = { }
+
+		allow = { }
+
+		effect = {
+			country_event = {
+				id = btc_startscreen.1
+			}
+		}
+	}
+}
+
+country_decisions = {
 	portuguese_focus_decision = {
 		color = { 125 35 47 }
 		potential = {
 			has_government_mechanic = portuguese_saudade_mechanic
 		}
 
+		allow = { }
+
+		effect = {
+			country_event = {
+				id = btc_por.131
+			}
+		}
+	}
+}
+
+country_decisions = {
+	overseas_policy_decision = {
+		color = { 125 35 47 }
+		potential = {
+			has_government_mechanic = portuguese_saudade_mechanic
+		}
+
 		allow = {
-			NOT = { 
-				has_country_modifier = homeland_focus
-				has_country_modifier = ultramarine_focus
-				has_country_modifier = no_focus
+			NOT = {
 				has_country_modifier = boost_focus
 				has_country_modifier = reduce_focus
-				has_country_modifier = normal_focus
 			}
 		}
 
 		effect = {
 			country_event = {
-				id = btc_por.130
+				id = btc_por.132
 			}
 		}
 	}
