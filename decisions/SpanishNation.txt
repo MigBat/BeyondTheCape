@@ -14,6 +14,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
+			NOT = { tag = POR }
 			NOT = { tag = SPA }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
