@@ -64,6 +64,14 @@
  extra_flagship_decision_title:0 "Launch a Second Flagship"
  extra_flagship_decision_desc:0 "Flagships are expensive and powerful ships. Only a strong navy is worthy of fitting one, but ours is amongst the greatest navies in the world. Let us build a second flagship to strike fear into our enemies and awe all who see our mighty vessels!"
 
+# Technology #
+
+ portuguese:0 "Portuguese"
+ portuguese_desc:0 "With the Portuguese technology group, technology levels are standard cost (100%)."
+ nauDESCR:0 "The nau is a type of ship that was commonly used by the Portuguese during the Age of Discovery in the 15th and 16th centuries. It was a large, heavy, and sturdy sailing vessel that was designed for long-distance voyages."
+ caravela_redonda:0 "Caravela Redonda"
+ caravela_redondaDESCR:0 "The square-rigged caravel held a notable role in the Portuguese expansion during the age of discovery, especially in the first half of the sixteenth century, for its exceptional maneuverability and combat capabilities."
+
 # Other #
 
  colonial_region_restriction: "You cannot colonize outside of your capital's colonial region."

@@ -35,6 +35,10 @@ gc_por_1_a = {
 							value = 150
 						}
 					}
+					OR = {
+						junior_union_with = ENG
+						senior_union_with = ENG
+					}
 					is_rival = ENG
 					NOT = { exists = ENG }
 				}
@@ -49,6 +53,10 @@ gc_por_1_a = {
 							value = 150
 						}
 					}
+					OR = {
+						junior_union_with = GBR
+						senior_union_with = GBR
+					}
 					is_rival = GBR
 				}
 			}
@@ -57,7 +65,11 @@ gc_por_1_a = {
 		effect = {
 			if = {
 				limit = {
-					alliance_with = ENG
+					OR = {
+						alliance_with = ENG
+						junior_union_with = ENG
+						senior_union_with = ENG
+					}
 				}
 				ENG = {
 					add_historical_friend = POR
@@ -76,7 +88,11 @@ gc_por_1_a = {
 			}
 			if = {
 				limit = {
-					alliance_with = GBR
+					OR = {
+						alliance_with = GBR
+						junior_union_with = GBR
+						senior_union_with = GBR
+					}
 				}
 				GBR = {
 					add_historical_friend = POR

@@ -157,6 +157,10 @@ technology = { #Carracks & Caravel
 	enable = carrack
 	enable = caravel
 	may_study_technology = yes
+
+	# for Portugal
+	enable = nau
+	enable = caravela_redonda
 	
 }
 

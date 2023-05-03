@@ -40,13 +40,13 @@ country_decisions = {
 					NOT = { exists = SPA }
 				}
 			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					NOT = { tag = POR }
-				}
-			}
+			# OR = {
+			# 	ai = no
+			# 	AND = {
+			# 		ai = yes
+			# 		NOT = { tag = POR }
+			# 	}
+			# }
 			OR = {
 				culture_group = iberian
 				primary_culture = basque

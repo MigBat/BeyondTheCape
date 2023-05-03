@@ -1,0 +1,14 @@
+#Caravela Redonda
+type = light_ship
+unit_type = portuguese
+
+hull_size = 12
+base_cannons = 14
+blockade = 10
+
+sail_speed = 11
+trade_power = 3.0
+
+sailors = 75
+
+sprite_level = 2
