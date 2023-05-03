@@ -2212,39 +2212,39 @@ country_event = {
 
 # Focus Boost #
 
-country_event = {
-	id = btc_por.132
-	title = btc_por.132_t
-	desc = btc_por.132_d
-	picture = saudade_decision_picture
+# country_event = {
+# 	id = btc_por.132
+# 	title = btc_por.132_t
+# 	desc = btc_por.132_d
+# 	picture = saudade_decision_picture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Boost focus
-		name = btc_por.132a
+# 	option = {	# Boost focus
+# 		name = btc_por.132a
 
-		trigger = {
-			stability = -2
-		}
+# 		trigger = {
+# 			stability = -2
+# 		}
 
-		add_stability = -1
+# 		add_stability = -1
 
-		add_country_modifier = {
-			name = boost_focus
-			duration = 730
-		}
-	}
+# 		add_country_modifier = {
+# 			name = boost_focus
+# 			duration = 730
+# 		}
+# 	}
 
-	option = {	# Reduce focus
-		name = btc_por.132b
+# 	option = {	# Reduce focus
+# 		name = btc_por.132b
 
-		add_country_modifier = {
-			name = reduce_focus
-			duration = 1460
-		}
-	}
+# 		add_country_modifier = {
+# 			name = reduce_focus
+# 			duration = 1460
+# 		}
+# 	}
 
-	option = {	# Go back
-		name = btc_por.132c
-	}
-}
+# 	option = {	# Go back
+# 		name = btc_por.132c
+# 	}
+# }

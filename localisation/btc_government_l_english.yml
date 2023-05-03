@@ -2,10 +2,12 @@
  
  ability_portuguese_saudade_mechanic:0 "Saudade Meter"
  portuguese_saudade:0 "Saudade"
- portuguese_saudade_desc:0 "Saudade is a Portuguese word often described as a feeling of longing, nostalgia, or melancholy. It's a complex emotion that encompasses a sense of loss, a desire for something that has been missed, and a deep yearning for a past or a person that is no longer present.\n\nSaudade increases as our focus is turned towards the sea rather than home. It is modified in two ways:\n\n - Each idea group has an associated Saudade value. Those who shift the focus outwards will increase it, and those with an inwards focus will decrease it. You can see what each idea group provides by seeing its bonus.\n\n - There is a decision called Portuguese Saudade. Once you click on it, you can choose to increase or decrease Saudade, as well as boost or reduce its growth rate."
+ portuguese_saudade_desc:0 "Saudade is a Portuguese word often described as a feeling of longing, nostalgia, or melancholy. It's a complex emotion that encompasses a sense of loss, a desire for something that has been missed, and a deep yearning for a past or a person that is no longer present.\n\nSaudade increases as our focus is turned towards the sea rather than home. It is modified in two ways:\n\n - Each idea group has an associated Saudade value. Those who shift the focus outwards will increase it, and those with an inwards focus will decrease it. You can see what each idea group provides by seeing its bonus.\n\n - There is a decision called Portuguese Saudade. Once you click on it, you can choose to increase or decrease Saudade, for a cost."
  monthly_portuguese_saudade:0 "Monthly Saudade"
  portuguese_saudade_gain_modifier:0 "Saudade Gain Modifier"
  mechanic_portuguese_saudade_yes:0 "Enables Saudade"
+
+ saudade_tt:0 "Government has Saudade mechanic."
 
  portuguese_focus_decision_title:0 "Portuguese Focus"
  portuguese_focus_decision_desc:0 "We can manage our Saudade by focusing on our homeland or overseas. The effects of this decision are permanent, but you can change this focus after 1 year has passed."

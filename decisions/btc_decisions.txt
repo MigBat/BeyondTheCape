@@ -48,7 +48,9 @@ country_decisions = {
 
 country_decisions = {
 	show_tutorial_decision = {
-		potential = { }
+		potential = { 
+			ai = no
+		}
 
 		allow = { }
 
@@ -65,9 +67,15 @@ country_decisions = {
 		color = { 125 35 47 }
 		potential = {
 			has_government_mechanic = portuguese_saudade_mechanic
+			ai = no
 		}
 
-		allow = { }
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = saudade_tt
+				has_government_mechanic = portuguese_saudade_mechanic
+			}
+		}
 
 		effect = {
 			country_event = {
@@ -77,27 +85,27 @@ country_decisions = {
 	}
 }
 
-country_decisions = {
-	overseas_policy_decision = {
-		color = { 125 35 47 }
-		potential = {
-			has_government_mechanic = portuguese_saudade_mechanic
-		}
+# country_decisions = {
+# 	overseas_policy_decision = {
+# 		color = { 125 35 47 }
+# 		potential = {
+# 			has_government_mechanic = portuguese_saudade_mechanic
+# 		}
 
-		allow = {
-			NOT = {
-				has_country_modifier = boost_focus
-				has_country_modifier = reduce_focus
-			}
-		}
+# 		allow = {
+# 			NOT = {
+# 				has_country_modifier = boost_focus
+# 				has_country_modifier = reduce_focus
+# 			}
+# 		}
 
-		effect = {
-			country_event = {
-				id = btc_por.132
-			}
-		}
-	}
-}
+# 		effect = {
+# 			country_event = {
+# 				id = btc_por.132
+# 			}
+# 		}
+# 	}
+# }
 
 country_decisions = {
 	extra_flagship_decision = {
