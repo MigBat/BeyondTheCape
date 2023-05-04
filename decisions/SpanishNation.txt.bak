@@ -224,11 +224,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			OR = {
-				legitimacy = 100
-				devotion = 100 
-				republican_tradition = 90 
-			}
+			legitimacy = 100
 			iberia_region = {
 				type = all
 				NOT = { owner = { religion_group = muslim } }
