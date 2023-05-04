@@ -1,3 +1,0 @@
-80 = "Tréier"
-93 = "Léck"
-94 = "Lëtzebuerg"

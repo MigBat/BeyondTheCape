@@ -90,7 +90,7 @@ advisor = {
 	name = "João Gonçalves Zarco" #disovered Madeira
 	location = 230 #Algarve 
 	discount = yes
-	skill = 3
+	skill = 2
 	type = colonial_governor
 	date = 1420.1.1 #30 years old
 	death_date = 1467.1.1 #death
@@ -102,7 +102,7 @@ advisor = {
 	location = 230 #Algarve 
 	discount = yes
 	skill = 3
-	type = naval_reformer 
+	type = navigator
 	date = 1424.3.4 #30 years old
 	death_date = 1460.11.13 #death
 }

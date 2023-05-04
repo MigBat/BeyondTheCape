@@ -112,6 +112,7 @@ port = {
 
 in_state = {
 	local_institution_spread = 0.10
+	monthly_portuguese_saudade = -0.01
 }
 
 in_capital_state = {
@@ -311,7 +312,7 @@ patriarch_authority_global = {
 pasha_state = {
 	local_governing_cost = -0.2
 	min_local_autonomy = 20
-	local_state_maintenance_modifier = -0.33
+	state_maintenance_modifier = -0.33
 	local_autonomy = -0.1
 	local_tolerance_of_heathens = 10
 }
@@ -551,6 +552,7 @@ in_trade_company = {
 	local_missionary_strength = -0.2
 	local_institution_spread = 0.10
 	local_governing_cost = 0.25
+	monthly_portuguese_saudade = 0.01
 }
 
 left_trade_company = {
@@ -1390,18 +1392,21 @@ gbr_colonial_investment = {
 crown_colony_overlord = {
 	merchants = 1
 	global_trade_power = 0.05
+	monthly_portuguese_saudade = 0.1
 }
 
 private_enterprise_overlord = {
 	merchants = 1
 	global_trade_power = 0.05
 	global_tariffs = -0.05
+	monthly_portuguese_saudade = 0.1
 }
 
 self_governing_colony_overlord = {
 	merchants = 1
 	global_trade_power = 0.05
 	global_tariffs = -0.10
+	monthly_portuguese_saudade = 0.1
 }
 
 crown_colony_subject = {
@@ -1480,11 +1485,6 @@ same_religion_subject_bonus_mod = {
 	manpower_in_true_faith_provinces = 0.25
 	global_sailors_modifier = 0.25
 	production_efficiency = 0.15
-}
-
-eyalet_modifier = {
-	global_manpower = -5
-	land_forcelimit	= -5
 }
 
 #scales to amount of up-to-date forts compared to total development
@@ -2026,7 +2026,7 @@ galleass_ship = {
 caravel_ship = {
 	movement_speed_in_fleet_modifier = 1 
 	naval_attrition = -0.25
-	ship_trade_power_modifier = 0.33
+	global_ship_trade_power = 0.33
 }
 
 voc_indiamen_ship = {

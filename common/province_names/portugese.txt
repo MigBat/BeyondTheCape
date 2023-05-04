@@ -67,7 +67,7 @@
 1165 = "Gabão"
 1118 = "Serra Leoa"
 1139 = "Costa do Ouro"
-1177 = { "Cabo da Boa Esperança" "Cidade do Cabo" }
+1177 = "Cidade do Cabo"
 1179 = "Angra dos Vaqueiros"
 1195 = "Moçambique"
 1196 = "Quíloa" 
@@ -105,6 +105,6 @@
 2025 = "Geórgia do Sul"
 1095 = "Malvinas"
 782 = "Terra do Fogo"
-367 = "Açores"
+#367 = "Açores"
 1995 = "Micronésia"
 4720 = "Genebra"

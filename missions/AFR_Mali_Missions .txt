@@ -278,7 +278,7 @@ mali_colonization_slot = {
 		required_missions = { mal_create_navy }
 		position = 4
 		trigger = {
-			has_idea = quest_for_the_new_world
+			has_country_modifier = quest_for_the_new_world
 		}
 		effect = {
 			country_event = {

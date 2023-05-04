@@ -77,7 +77,7 @@ gc_spain_1 = {
 			else = {
 				custom_trigger_tooltip = {
 					tooltip = miss_discover_caribbean
-					colonial_the_carribean = { has_discovered = ROOT }
+					carribeans_region = { has_discovered = ROOT }
 				}
 			}
 		}
@@ -131,7 +131,7 @@ gc_spain_1_b = {
 		# free mission
 
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			region = carribeans_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -141,7 +141,7 @@ gc_spain_1_b = {
 				tooltip = miss_colonize_caribbean
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
-					colonial_region = colonial_the_carribean
+					region = carribeans_region
 					is_city = yes
 				}
 			}
@@ -410,10 +410,69 @@ gc_spain_2 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				norte_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				estremadura_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			else = {
 				custom_tooltip = gc_cas_spa_navarra_bt
 			}
+		}
+	}
+
+	gc_cas_spa_reconquista_two = {
+		icon = mission_cannons_firing
+		required_missions = {
+			gc_cas_spa_navarra
+			gc_cas_spa_reconquista_one
+		}
+		position = 3
+
+		# free mission
+
+		provinces_to_highlight = {
+			OR = {
+				area = beieras_area
+				area = alentejo_area
+				area = norte_area
+				area = estremadura_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			beieras_area = {
+				type = all
+				owned_by = ROOT
+			}
+			alentejo_area = {
+				type = all
+				owned_by = ROOT
+			}
+			norte_area = {
+				type = all
+				owned_by = ROOT
+			}
+			estremadura_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+			add_adm_power = 100
 		}
 	}
 
@@ -861,6 +920,20 @@ gc_spain_3 = {
 					add_permanent_claim = ROOT
 				}
 				beieras_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				norte_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				estremadura_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT	}
@@ -2144,65 +2217,6 @@ gc_spain_4_d = {
 		}
 	}
 }
-
-gc_castile_spain_5 = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Golden Century"
-		NOT = { has_dlc = "Domination" }
-	}
-	potential = {
-		has_dlc = "Golden Century"
-		NOT = { has_dlc = "Domination" }
-		OR = {
-			tag = CAS
-			AND = {
-				tag = SPA
-				NOT = { primary_culture = aragonese }
-				NOT = { primary_culture = catalan }
-			}
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	
-	gc_cas_spa_reconquista_two = {
-		icon = mission_cannons_firing
-		required_missions = {
-			gc_cas_spa_reconquista_three
-		}
-		position = 2
-
-		# free mission
-
-		provinces_to_highlight = {
-			OR = {
-				area = beieras_area
-				area = alentejo_area
-			}
-			NOT = { owned_by = ROOT }
-		}
-
-		trigger = {
-			beieras_area = {
-				type = all
-				owned_by = ROOT
-			}
-			alentejo_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-
-		effect = {
-			add_prestige = 25
-			add_adm_power = 100
-		}
-	}
-}
-
 
 gc_spain_5_a = {
 	slot = 5

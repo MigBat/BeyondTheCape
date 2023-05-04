@@ -6,10 +6,10 @@ add_core = CAS
 culture = castillian
 religion = catholic
 hre = no
-base_tax = 3 
-base_production = 3
-trade_goods = gold #Almadén
-base_manpower = 3
+base_tax = 2 
+base_production = 4
+trade_goods = gold
+base_manpower = 1
 capital = "Ciudad Real" 
 is_city = yes
 

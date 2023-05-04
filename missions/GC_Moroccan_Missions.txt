@@ -1095,7 +1095,7 @@ gc_morocco_5 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				colonial_region = colonial_the_carribean
+				region = carribeans_region
 				colonial_region = colonial_colombia
 			}
 			OR = {
@@ -1111,8 +1111,8 @@ gc_morocco_5 = {
 					is_random_new_world = no
 				}
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_the_carribean
+					value = 5
+					region = carribeans_region
 					is_city = yes
 				}
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {

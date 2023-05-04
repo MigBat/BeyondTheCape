@@ -144,15 +144,27 @@ can_burn_colony = {
 }
 
 can_colonize_province = {
+	condition = {
+		tooltip = "colonial_region_restriction"
+		potential = {
+			FROM = {
+				is_colonial_nation = yes
+			}
+		}
+		allow = {
+			FROM = {
+				capital_scope = {
+					colonial_region = ROOT
+				}
+			}
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {
 }
 
 can_add_seat_in_parliament = {
-}
-
-can_remove_seat_in_parliament = {
 }
 
 can_add_estate = {

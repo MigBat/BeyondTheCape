@@ -1,5 +1,0 @@
-government = republic
-technology_group = western
-religion = protestant
-primary_culture = american
-capital = 888

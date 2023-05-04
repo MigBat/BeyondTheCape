@@ -1273,7 +1273,7 @@ sca_colonialism_slot_4 = {
 		required_missions = { sca_a_grand_fleet }
 		position = 6
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			region = carribeans_region
 			OR = {
 				has_river_estuary_trigger = yes
 				province_has_center_of_trade_of_level = 1
@@ -1282,7 +1282,7 @@ sca_colonialism_slot_4 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_the_carribean
+				region = carribeans_region
 				OR = {
 					has_river_estuary_trigger = yes
 					province_has_center_of_trade_of_level = 1

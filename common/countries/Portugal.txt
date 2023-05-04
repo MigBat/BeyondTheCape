@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = { 40 110 140 }
+color = { 90 140 190 }
 revolutionary_colors = { 9 8 5 }
 
 historical_score = 4700
@@ -36,23 +36,23 @@ historical_units = {
 
 monarch_names = {
 	"João #0" = 120
-	"Filipe #0" = 60
-	"Afonso #4" = 40
+	"Filipe #0" = 5
+	"Afonso #4" = 60
 	"Pedro #1" = 40
-	"MONARCH_NAME_ANTONIO" = 20
-	"Duarte #0" = 20
-	"Henrique #0" = 20
-	"José #0" = 20
+	"MONARCH_NAME_ANTONIO" = 5
+	"Duarte #0" = 10
+	"Henrique #0" = 10
+	"José #0" = 10
 	"Manuel #0" = 20
-	"Sebastião #0" = 20
+	"Sebastião #0" = 10
 	"Miguel #0" = 10
-	"MONARCH_NAME_TEODOSIO" = 10
+	"MONARCH_NAME_TEODOSIO" = 0
 	"Dinis #1" = 5
 	"Fernando #1" = 5
-	"Alexandre #0" = 5
+	"Alexandre #0" = 0
 	"Carlos #0" = 5
-	"Diego #0" = 5
-	"Jaime #0" = 5
+	"Diego #0" = 0
+	"Jaime #0" = 0
 	"Luís #0" = 5
 	"Álvaro #0" = 0
 	"André #0" = 0
@@ -84,7 +84,7 @@ monarch_names = {
 	"Simão #0" = 0
 	"Uriel #0" = 0
 	"Vicente #0" = 0
-	"Maria #0" = -10
+	"Maria #0" = -20
 	"Isabel #0" = -5
 	"Joana #0" = -1
 	"Beatriz #0" = -1
@@ -93,7 +93,7 @@ monarch_names = {
 	"Luísa #0" = -1
 	"Catarina #0" = -1
 	"Ana #0" = -1
-	"Barbara #0" = -1
+	"Bárbara #0" = -1
 }
 
 leader_names = {

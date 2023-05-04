@@ -23,12 +23,12 @@ country_decisions = {
 						}
 					}
 					capital_scope = {
-						colonial_region = colonial_the_carribean
+						region = carribeans_region
 						is_core = ROOT
 					}
 				}
 			}
-			colonial_the_carribean = {
+			carribeans_region = {
 				owned_by = ROOT
 			}
 			OR = {
@@ -44,7 +44,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
-				colonial_region = colonial_the_carribean
+				region = carribeans_region
 				is_core = ROOT
 			}
 			num_of_owned_provinces_with = {

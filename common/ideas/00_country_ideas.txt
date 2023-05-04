@@ -135,12 +135,12 @@ GER_ideas = {
 
 ENG_ideas = {
 	start = {
-		infantry_power = 0.10 # agincourt
+		infantry_power = 0.15 # agincourt
 		global_unrest = -1 # magna carta, parliament
 	}
 
 	bonus = {
-		naval_morale = 0.1
+		heavy_ship_power = 0.20
 	}
 	
 	trigger = {
@@ -148,41 +148,42 @@ ENG_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	royal_navy = {
-		navy_tradition = 0.25
-		heavy_ship_power = 0.10
-	}
 	eltham_ordinance = {
 		production_efficiency = 0.1
+		development_cost_in_primary_culture = -0.1
 	}
 	secretaries_of_state = {
 		diplomatic_upkeep = 1
 	}
+	royal_navy = {
+		navy_tradition = 0.5
+		naval_morale = 0.15
+	}
 	navigation_acts = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.15
+	}
+	city_upon_a_hill = {
+		global_colonial_growth = 20
+		global_tariffs = 0.15
 	}
 	eng_red_coats = {
-		fire_damage = 0.1
+		discipline = 0.05
 		allowed_marine_fraction = 0.25
 	}
-	sick_and_hurt_board = {
-		sailors_recovery_speed = 0.10
-		sailor_maintenance_modifer = -0.1
-	}
-	british_bill_of_rights = {
-		years_of_nationalism = -5
-		num_of_parliament_issues = 1
+	gbr_acts_of_union = {
+		diplomatic_annexation_cost = -0.15
+		governing_capacity_modifier = 0.1
 	}
 }
 
 GBR_ideas = {
 	start = {
+		navy_tradition = 1
 		naval_morale = 0.20
-		heavy_ship_power = 0.15
 	}
 
 	bonus = {
-		navy_tradition = 1
+		administrative_efficiency = 0.05
 	}
 	
 	trigger = {
@@ -190,34 +191,34 @@ GBR_ideas = {
 	}
 	free = yes		#will be added at load.
 
-	gbr_acts_of_union = {
-		diplomatic_annexation_cost = -0.15
-		governing_capacity_modifier = 0.1
-	}
-	city_upon_a_hill = {
-		global_colonial_growth = 20
-		global_tariffs = 0.15
-	}
 	the_british_parliament = {
-		global_unrest = -1
-		num_of_parliament_issues = 1
+		legitimacy = 1
+		devotion = 1
+		horde_unity = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		num_of_parliament_issues = 2
 	}
-	#british_merchant_navy = {
-	#	global_tariffs = 0.15
-	#}
 	gbr_the_royal_society = {
-		technology_cost = -0.05
+		technology_cost = -0.15
+	}
+	integrated_highland_regiments = {
+		morale_damage_received = -0.1
+	}
+	british_bill_of_rights = {
+		global_unrest = -2
 	}
 	reform_of_comission_buying = {
 		discipline = 0.05
+		allowed_marine_fraction = 0.25
 	}
 	british_industrialization = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.20
+		development_cost = -0.15
 	}
 	britanna_rules_the_waves = {
-		leader_naval_manuever = 1
+		leader_naval_fire = 2
 		blockade_efficiency = 0.33
-		allowed_marine_fraction = 0.50
 	}
 }
 
@@ -728,12 +729,12 @@ RUS_ideas = {
 
 SPA_ideas = {
 	start = {
+		colonists = 1
 		land_morale = 0.15
-		artillery_fire = 1
 	}
 	
 	bonus = {
-		discipline = 0.05
+		infantry_power = 0.15
 	}
 	
 	trigger = {
@@ -746,68 +747,68 @@ SPA_ideas = {
 		church_power_modifier = 0.25
 		monthly_fervor_increase = 0.5
 	}
-	inter_caetera = {
+	conquest_of_paradise = {
 		idea_claim_colonies = yes
-		colonists = 1
-	}
-	salamanca_scholars = {
-		global_institution_spread = 0.1
-		reform_progress_growth = 0.1
-	}
-	spanish_armada = {
-		heavy_ship_power = 0.1
-		naval_forcelimit_modifier = 0.25
+		global_colonial_growth = 15
 	}
 	spa_casa_de_contracion = {
 		envoy_travel_time = -0.33
 		global_tariffs = 0.15
 	}
+	spanish_inquisition = {
+		global_missionary_strength = 0.02
+		missionaries = 1
+	}
+	spanish_armada = {
+		sunk_ship_morale_hit_recieved = -0.33
+		naval_morale = 0.10
+	}
 	siglo_de_oro = {
 		prestige = 1
 	}
-	spa_cortes = { 
+	spa_cortes = {
 		possible_dip_policy = 1
-		loyalty_change_on_revoked = 0.05
+		reform_progress_growth = 0.05
 	}
-	
 }
 
 CAS_ideas = {
 	start = {
-		land_morale = 0.15
-		naval_forcelimit_modifier = 0.25
+		army_tradition_decay = -0.01
+		cavalry_power = 0.25
 	}
 	bonus = {
-		global_colonial_growth = 25
+		naval_forcelimit_modifier = 0.25
 	}
 	trigger = {
 		tag = CAS
 	}
 	free = yes		#will be added at load.
 	the_reconquista = {
-		army_tradition_decay = -0.01
+		warscore_cost_vs_other_religion = -0.1
+		land_morale = 0.1
 	}
-	spanish_inquisition = {
-		global_missionary_strength = 0.02
-		missionaries = 1
+	conquest_of_paradise = {
+		idea_claim_colonies = yes
+		global_colonial_growth = 20
+	}
+	inter_caetera = {
+		colonists = 1
+	}
+	devout_catholisism = {
+		papal_influence = 2
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.5
+	}
+	infantas = {
+		diplomatic_reputation = 2
 	}
 	cabildos = {
 		production_efficiency = 0.1
 	}
-	inter_caetera = {
-		idea_claim_colonies = yes
-		colonists = 1
-	}
-	infantas = {
-		diplomatic_reputation = 1
-		heir_chance = 0.33
-	}
-	salamanca_scholars = {
-		global_institution_spread = 0.1
-		reform_progress_growth = 0.1
-	}
 	nueva_planta = {
-		global_autonomy = -0.05
+		reduced_liberty_desire_on_same_continent = 0.15
+		diplomatic_annexation_cost = -0.15
 	}
 }
 
@@ -818,7 +819,7 @@ NED_ideas = {
 	}
 	
 	bonus = {
-		trade_efficiency = 0.15
+		trade_efficiency = 0.2
 	}
 
 	trigger = {
@@ -829,28 +830,30 @@ NED_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	amsterdam_wisselbank = {
-		inflation_reduction = 0.1
-	}
 	dutch_trading_spirit = {
 		merchants = 1
-		trade_range_modifier = 0.10
-	}
-	polders = {
-		development_cost = -0.1
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 2
 		allowed_marine_fraction = 0.25
 	}
-	embrace_humanism = {
-		tolerance_heretic = 3
+	amsterdam_wisselbank = {
+		inflation_reduction = 0.1
+		interest = -0.25
 	}
 	army_sappers = {
 		siege_ability = 0.10
+		defensiveness = 0.15
 	}
 	platoon_fire = {
-		fire_damage = 0.1
+		infantry_fire = 0.5
+		infantry_power = 0.1
+	}
+	polders = {
+		development_cost = -0.1
+	}
+	embrace_humanism = {
+		tolerance_heretic = 3
 	}
 }
 
@@ -879,7 +882,7 @@ FRA_ideas = {
 		war_taxes_cost_modifier = -0.5
 	}
 	lessons_hundred_years_war = {
-		army_tradition = 0.5
+		cavalry_shock = 1
 		land_morale = 0.15
 	}
 	estates_general = {
@@ -1498,11 +1501,11 @@ DAL_ideas = {
 PRU_ideas = {
 	start = {
 		army_tradition = 0.5
-		ae_impact = -0.10
+		ae_impact = -0.15
 	}
 	
 	bonus = {
-		discipline = 0.05
+		land_forcelimit_modifier = 0.33
 	}
 	
 	trigger = {
@@ -1517,18 +1520,19 @@ PRU_ideas = {
 	soldier_king = {
 		army_tradition_decay = -0.01
 	}
+	noble_cadets = {
+		nobles_loyalty_modifier = 0.10
+		land_maintenance_modifier = -0.15
+	}
 	army_professionalism = {
 		land_morale = 0.20
 	}	
-	noble_cadets = {
-		nobles_loyalty_modifier = 0.10
-	}
-	goose_step = {
-		infantry_power = 0.20
-	}
 	regimental_cantons = {
 		global_manpower_modifier = 0.25
 		global_regiment_recruit_speed = -0.10
+	}
+	goose_step = {
+		discipline = 0.05
 	}
 	religious_toleration = {
 		development_cost = -0.05
@@ -1578,8 +1582,8 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		movement_speed_in_fleet_modifier = 1
-		infantry_power = 0.1
+		heavy_ship_power = 0.15
+		morale_damage = 0.15
 	}
 	
 	bonus = {
@@ -1592,28 +1596,30 @@ POR_ideas = {
 	free = yes		#will be added at load.
 	
 	legacy_of_the_navigator = {
-		naval_morale = 0.1
-		range = 0.20
+		transport_attrition = -0.15
+		range = 0.25
+		transport_attrition = -0.2
 	}
-	afonsine_ordinances = {
-		global_trade_goods_size_modifier = 0.1
+	por_feitoria_system = {
+		trade_steering = 0.15
+		defensiveness = 0.15
 	}
-	case_de_india = {
+	por_india_armadas = {
+		global_ship_trade_power = 0.15
+		artillery_fire = 1
+	}
+	por_casa_da_india = {
 		global_trade_power = 0.1
 	}
-	land_before_faith = {
+	por_bandeirantes = {
 		global_colonial_growth = 15
 	}
-	the_bandeirantes = {
-		trade_efficiency = 0.15
+	por_cacadores = {
+		fire_damage_received = -0.2
 	}
-	royal_absolutism = {
+	por_royal_absolutism = {
 		build_cost = -0.15
 		yearly_absolutism = 0.5
-	}
-	por_royal_military_academy = {
-		defensiveness = 0.1
-		artillery_fire = 1
 	}
 }
 
@@ -2035,11 +2041,11 @@ GEN_Ideas = {
 SCO_Ideas = {
 	start = {
 		leader_land_shock = 1
-		land_forcelimit_modifier = 0.25
+		global_manpower_modifier = 0.2
 	}
 	
 	bonus = {
-		land_maintenance_modifier = -0.05
+		global_unrest = -1 #whiskey
 	}
 	
 	trigger = {
@@ -2047,20 +2053,19 @@ SCO_Ideas = {
 	}
 	free = yes
 	
-	break_the_black_douglas = {
-		global_unrest = -1
+	resist_the_english = {
+		morale_damage_received = -0.15
+		defensiveness = 0.15
+	}
+	reign_in_the_clans = {
+		land_forcelimit_modifier = 0.25
 	}
 	modernised_royal_scots_navy = {
 		global_ship_cost = -0.1
 	}
-	reign_in_the_clans = {
-		global_manpower_modifier = 0.2
-	}
-	comets = {
-		stability_cost_modifier = -0.10
-	}
-	royal_revenue = {
-		global_tax_modifier = 0.1
+	act_of_revocation = {
+		loyalty_change_on_revoked = +0.05
+		autonomy_change_time = -0.25
 	}
 	basilikon_doron = {
 		legitimacy = 1
@@ -2069,8 +2074,12 @@ SCO_Ideas = {
 		meritocracy = 1	#For completion's sake
 		horde_unity = 1
 	}
-	act_of_revocation = {
-		ae_impact = -0.15
+	royal_revenue = {
+		global_tax_modifier = 0.15
+	}
+	comets = {
+		idea_cost = -0.1
+		global_institution_spread = 0.15
 	}
 }
 
@@ -2284,12 +2293,12 @@ SIC_ideas = {
 
 ARA_ideas = {
 	start = {
-		galley_power = 0.2
-		trade_efficiency = 0.1
+		galley_power = 0.20
+		land_morale = 0.10
 	}
 	
 	bonus = {
-		artillery_fire = 1
+		naval_forcelimit_modifier = 0.15
 	}
 	
 	trigger = {
@@ -2297,27 +2306,30 @@ ARA_ideas = {
 	}
 	free = yes
 	
+	protection_of_the_little_folk = {
+		infantry_shock = 0.5
+		infantry_cost = -0.1
+	}
+	protection_of_coastlines = {
+		naval_maintenance_modifier = -0.10
+		sailor_maintenance_modifer = -0.10
+	}
 	mercenary_princes = {
 		merc_maintenance_modifier = -0.15
 	}
-	protection_of_coastlines = {
-		naval_forcelimit_modifier = 0.10
-		global_sailors_modifier = 0.25
-	}
 	ara_mediterranean_trade = {
-		trade_steering = 0.20
+		trade_efficiency = 0.15
 	}
 	consolidation_of_the_estates = {
 		stability_cost_modifier = -0.1
 	}
 	chartered_merchant_companies = {
-		global_trade_power = 0.20
+		global_trade_power = 0.10
+		trade_steering = 0.10
 	}
 	ara_reformed_admin = {
-		global_autonomy = -0.05
-	}
-	protection_of_the_little_folk = {
-		land_morale = 0.10
+		possible_admin_policy = 1
+		reform_progress_growth = 0.1
 	}
 }
 
@@ -4839,16 +4851,12 @@ NAV_ideas = {
 		tag = NAV
 	}
 	free = yes
-
-	fearless_seamen = {
-		ship_durability = 0.05
-		naval_morale = 0.15
-	}
-	shipbuiling_experts = {
-		naval_forcelimit_modifier = 0.33
-	}
 	basque_ferocity = {
 		discipline = 0.05
+	}
+	an_industrious_folk = {
+		culture_conversion_cost = -0.1
+		development_cost_in_primary_culture = -0.15
 	}
 	camara_de_comptos = {
 		free_adm_policy = 1
@@ -4858,12 +4866,15 @@ NAV_ideas = {
 		allowed_marine_fraction = 0.2
 		global_sailors_modifier = 0.25
 	}
+	fearless_seamen = {
+		ship_durability = 0.05
+		naval_morale = 0.15
+	}
+	shipbuiling_experts = {
+		naval_forcelimit_modifier = 0.33
+	}
 	royal_basque_society = {
 		technology_cost = -0.1
-	}
-	an_industrious_folk = {
-		culture_conversion_cost = -0.1
-		development_cost_in_primary_culture = -0.15
 	}
 }
 
@@ -7547,7 +7558,7 @@ CND_ideas = {
 BRZ_ideas = {
 	start = {
 		hostile_attrition = 1
-		envoy_travel_time = -0.25
+		global_manpower_modifier = 0.25
 	}
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
@@ -7558,22 +7569,24 @@ BRZ_ideas = {
 	free = yes
 
 	governorate_general = {
-		global_tax_modifier = 0.1
+		governing_capacity_modifier = 0.15
+	}
+	entradas_and_bandeiras = {
+		colonists = 1
+	}
+	mines_of_minas_gerais = {
+		gold_depletion_chance_modifier = -0.2
+	}
+	halting_foreign_incursions = {
+		land_morale = 0.1
+		own_coast_naval_combat_bonus = 1
 	}
 	research_of_nassau = {
 		global_institution_spread = 0.1
 	}
-	mines_of_minas_gerais = {
-		inflation_reduction = 0.1
-	}
-	halting_foreign_incursions = {
-		infantry_power = 0.1
-	}
-	entradas_and_bandeiras = {
-		core_creation = -0.15
-	}
 	inconfidencia_mineira = {
 		stability_cost_modifier = -0.1
+		harsh_treatment_cost = -0.5
 	}
 	old_seat_of_the_empire = {
 		legitimacy = 1
@@ -8518,7 +8531,7 @@ ORL_ideas = {
 		idea_cost = -0.1
 	}
 	french_language_in_all_courts = {
-		diplomatic_upkeep = 1
+		#See French Ideas
 	}
 }
 
@@ -8683,8 +8696,8 @@ LUX_ideas = {
 
 LON_ideas = {
 	start = {
-		tolerance_own = 2
-		global_tax_modifier = 0.1
+		cavalry_shock = 1
+		morale_damage = 0.15
 	}
 
 	bonus = {
@@ -8697,25 +8710,29 @@ LON_ideas = {
 	free = yes
 	
 	lon_heritage_of_the_reconquista = {
-		army_tradition = 0.5
+		prestige_from_land = 0.5
+		army_tradition_from_battle = 0.5
 	}
 	lon_leonese_cortes = {
 		global_unrest = -1
+		free_adm_policy = 1
 	}
 	lon_conquistadores = {
 		colonists = 1
+		shock_damage = 0.1
 	}
 	lon_school_of_salamanca = {
-		idea_cost = -0.10
+		idea_cost = -0.1
 	}
 	lon_expand_navy = {
 		naval_forcelimit_modifier = 0.25
 	}
 	lon_patronize_leonese_language = {
-		prestige = 1
+		same_culture_advisor_cost = -0.2
+		culture_conversion_cost = -0.1
 	}
 	lon_nationalism = {
-		infantry_power = 0.1
+		manpower_in_own_culture_provinces = 0.25
 	}
 }
 
@@ -8882,12 +8899,12 @@ MAZ_ideas = {
 
 GAL_ideas = {
     start = {
-		light_ship_cost = -0.15
-		navy_tradition = 1
+		fort_maintenance_modifier = -0.25
+		morale_damage_received = -0.2
     }
 
     bonus = {
-		merchants = 1
+		ship_durability = 0.1
     }
 
     trigger = {
@@ -8899,23 +8916,27 @@ GAL_ideas = {
     gal_way_of_st_james = {
 		global_tax_modifier = 0.1
     }
-    gal_la_bella = {
-		defensiveness = 0.2
+	gal_irmandinos = {
+		siege_ability = 0.1
     }
-    gal_rein_in_the_cities = {
-		stability_cost_modifier = -0.1
+    gal_xunta_xeral_de_galiza = {
+		burghers_loyalty_modifier = 0.05
+		legitimacy = 0.5
     }
-    gal_shipyards = {
-		ship_durability = 0.05
+	gal_costa_da_morte = {
+		own_coast_naval_combat_bonus = 1
     }
-	gal_santiago_y_cierra = {
-		land_morale = 0.1
+	gal_of_corn_and_potato = {
+		development_cost = -0.075
+		global_trade_goods_size_modifier = 0.05
     }
-    gal_sailors_of_the_cantabrian_sea = {
-		sunk_ship_morale_hit_recieved = -0.2
+	gal_galician_enlightenment = {
+		adm_tech_cost_modifier = -0.05
+		idea_cost = -0.1
     }
-    gal_irmandinos = {
-		infantry_power = 0.1
+    gal_rexurdimento = {
+		same_culture_advisor_cost = -0.25
+		manpower_in_own_culture_provinces = 0.15
     }
 }
 
@@ -11396,7 +11417,7 @@ TKD_ideas = {
 	}
 	tkd_twentyfour_generals = {
 		free_leader_pool = 1
-		yearly_army_professionalism = 0.0025
+		yearly_army_professionalism = 0.02
 	}
 	tkd_koyo_gunkan = {
 		army_tradition = 0.5
@@ -13740,7 +13761,7 @@ ORD_ideas = {
 
 irish_ideas = {
 	start = {
-		land_morale = 0.1
+		fire_damage_received = -0.1
 		trade_efficiency = 0.1
 	}
 	
@@ -13757,8 +13778,8 @@ irish_ideas = {
 	}
 	free = yes
 	
-	irish_endurance = {
-		shock_damage_received = -0.1
+	ire_gallowglasses = {
+		shock_damage = +0.15
 	}
 	the_clanns = {
 		same_culture_advisor_cost = -0.2
@@ -13776,8 +13797,8 @@ irish_ideas = {
 	unconquerable_ireland = {
 		war_exhaustion = -0.02
  	}
-	ire_gallowglasses = {
-		discipline = 0.05
+	irish_endurance = {
+		morale_damage_received = -0.15
 	}
 }
 
@@ -15045,39 +15066,41 @@ SYN_ideas = {
 
 MOR_ideas = {
 	start = {
-		naval_attrition = -0.25
 		naval_forcelimit_modifier = 0.25
+		attack_bonus_in_capital_terrain = 1
 	}
 	bonus = {
-		hostile_attrition = 1
+		cavalry_fire = 1
 	}
 	trigger = {
 		tag = MOR
 	}
 	free = yes
+	mor_pirate_republics = {
+		sailor_maintenance_modifer = -0.1
+		privateer_efficiency = 0.25
+	}
 	mor_powerful_viziers = {
 		same_culture_advisor_cost = -0.2
-	}
-	mor_marabouts = {
-		idea_cost = -0.1
-		monthly_piety = -0.001
 	}
 	trans_saharan_trade = {
 		trade_efficiency = 0.1
 		caravan_power = 0.2
 	}
+	mor_slave_soldiers = {
+		land_maintenance_modifier = -0.15
+		land_forcelimit_modifier = 0.1
+	}
+	mor_marabouts = {
+		land_morale = 0.1
+		manpower_in_true_faith_provinces = 0.15
+	}
 	mor_fleet = {
 		galley_power = 0.2
 	}
-	mor_pirate_republics = {
-		privateer_efficiency = 0.15
-	}
-	mor_slave_soldiers = {
-		land_maintenance_modifier = -0.05
-		cavalry_power = 0.1
-	}
-	mor_curb_power_of_the_tribes = {
-		global_autonomy = -0.05
+	mor_colaborate_with_the_tribes = {
+		cav_to_inf_ratio = 0.33
+		cavalry_flanking = 0.25
 	}
 }
 
@@ -15423,33 +15446,34 @@ VRM_ideas = {
 
 ASU_ideas = {
 	start = {
-		missionaries = 1
-		merchants = 1
+		manpower_in_own_culture_provinces = 0.2
+		manpower_in_true_faith_provinces = 0.2
 	}
 	bonus = {
-		global_manpower_modifier = 0.15
+		warscore_cost_vs_other_religion = -0.15
 	}
 	trigger = {
 		tag = ASU
 	}
 	free = yes
 	asu_reconquista = {
-		province_warscore_cost = -0.15
+		land_morale = 0.2
 	}
 	asu_camino_de_santiago = {
-		tolerance_own = 2
+		global_tax_modifier = 0.1
 	}
 	asu_aristocracy = {
-		diplomats = 1
+		leader_land_shock = 1
 	}
-	asu_colonialism = {
-		colonists = 1
+	asu_unify_the_provinces = {
+		core_creation = -0.1
 	}
 	asu_millenarian_revival = {
 		global_missionary_strength = 0.02
+		culture_conversion_cost = -0.15
 	}
-	asu_unify_the_provinces = {
-		global_autonomy = -0.05
+	asu_colonialism = {
+		colonists = 1
 	}
 	asu_early_industrialism = {
 		global_trade_goods_size_modifier = 0.1

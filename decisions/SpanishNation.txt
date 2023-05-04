@@ -14,6 +14,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
+			NOT = { tag = POR }
 			NOT = { tag = SPA }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -135,6 +136,8 @@ country_decisions = {
 					limit = {
 						NOT = { area = alentejo_area }
 						NOT = { area = beieras_area }
+						NOT = { area = norte_area }
+						NOT = { area = estremadura_area }
 					}
 					add_permanent_claim = SPA
 				}
@@ -221,11 +224,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			OR = {
-				legitimacy = 100
-				devotion = 100 
-				republican_tradition = 90 
-			}
+			legitimacy = 100
 			iberia_region = {
 				type = all
 				NOT = { owner = { religion_group = muslim } }
@@ -308,6 +307,8 @@ country_decisions = {
 					limit = {
 						NOT = { area = alentejo_area }
 						NOT = { area = beieras_area }
+						NOT = { area = norte_area }
+						NOT = { area = estremadura_area }
 					}
 					add_permanent_claim = SPA
 				}

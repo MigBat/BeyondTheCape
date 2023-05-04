@@ -255,10 +255,10 @@ franciscan_order = {
     cost = 50
     cost_type = dip_power
     per_province_effect = {
-        add_base_production = 1
+        add_base_manpower = 1
     }
     per_province_abandon_effect = {
-        add_base_production = -1
+        add_base_manpower = -1
     }
     modifier = {
         local_unrest = -1
@@ -324,10 +324,9 @@ avis_order = {
 			has_country_flag = enable_holy_orders_flag 
 		}
 		religion_group = christian
-		OR = {
-			has_country_flag = enable_holy_orders_flag 
-			is_or_was_tag = { tag = POR }
-			accepted_culture = portugese
+		OR = { 
+			primary_culture = portugese
+			primary_culture = brazilian
 		}
     }
     color = { 65 77 86 }
@@ -763,6 +762,43 @@ du_si = {
         }
     }
     localization = coordinator_office
+}
+
+# BEYOND THE CAPE #
+
+christ_order = {
+    icon = GFX_holy_order_christ
+    trigger = {
+    	OR = { 
+			AND = { 
+				culture_group = iberian
+				religion = catholic
+			}
+			has_country_flag = enable_holy_orders_flag 
+		}
+		religion_group = christian
+		OR = { 
+			primary_culture = portugese
+			primary_culture = brazilian
+		}
+    }
+    color = { 230 9 20 }
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+        add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+    }
+    modifier = {
+        local_sailors_modifier = 0.1
+		ship_recruit_speed = -0.15
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
 }
 
 

@@ -593,4 +593,61 @@ spriteTypes = {
 		name = "mission_unknown_mission"
 		texturefile = "gfx/interface/missions/mission_unknown_mission.dds"
 	}
+
+	# Beyond the Cape #
+
+	spriteType = {
+		name = "mission_black_carrack_sword"
+		texturefile = "gfx/interface/missions/mission_black_carrack_sword.dds"
+	}
+
+	spriteType = {
+		name = "mission_coimbra_university"
+		texturefile = "gfx/interface/missions/mission_coimbra_university.dds"
+	}
+
+	spriteType = {
+		name = "mission_henry_the_navigator"
+		texturefile = "gfx/interface/missions/mission_henry_the_navigator.dds"
+	}
+
+	spriteType = {
+		name = "mission_madeira_sugar"
+		texturefile = "gfx/interface/missions/mission_madeira_sugar.dds"
+	}
+
+	spriteType = {
+		name = "mission_mafra_palace"
+		texturefile = "gfx/interface/missions/mission_mafra_palace.dds"
+	}
+
+	spriteType = {
+		name = "mission_mariners_astrolabe"
+		texturefile = "gfx/interface/missions/mission_mariners_astrolabe.dds"
+	}
+
+	spriteType = {
+		name = "mission_order_of_christ"
+		texturefile = "gfx/interface/missions/mission_order_of_christ.dds"
+	}
+
+	spriteType = {
+		name = "mission_ramo_grande"
+		texturefile = "gfx/interface/missions/mission_ramo_grande.dds"
+	}
+
+	spriteType = {
+		name = "mission_ribeira_palace"
+		texturefile = "gfx/interface/missions/mission_ribeira_palace.dds"
+	}
+
+	spriteType = {
+		name = "mission_tower_of_belem"
+		texturefile = "gfx/interface/missions/mission_tower_of_belem.dds"
+	}
+
+	spriteType = {
+		name = "mission_jeronimos_monastery"
+		texturefile = "gfx/interface/missions/mission_jeronimos_monastery.dds"
+	}
 }

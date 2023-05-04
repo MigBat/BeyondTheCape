@@ -1,0 +1,105 @@
+namespace = btc_events
+normal_or_historical_nations = yes
+
+# Quest for the New World #
+
+country_event = {
+	id = btc_events.1
+	title = btc_events.1_t
+	desc = btc_events.1_d
+	picture = EXPLORERS_eventPicture
+
+	trigger = {
+		NOT = { has_country_flag = quest_for_the_new_world }
+		has_idea_group = exploration_ideas
+		dip_tech = 7
+	}
+
+	option = {
+		name = btc_events.1a
+
+		add_country_modifier = {
+			name = quest_for_the_new_world	# may hire explorers, conquistadors and discover ocean tiles
+			duration = -1
+		}
+		set_country_flag = quest_for_the_new_world
+	}
+}
+
+# Morocco defend against Iberians #
+
+country_event = {
+	id = btc_events.2
+	title = btc_events.2_t
+	desc = btc_events.2_d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MOR
+	}
+
+	option = {
+		name = btc_events.2a
+
+		marrekesh_area = {
+			add_province_modifier = {
+				name = resist_reconquista
+				duration = 36500
+			}
+		}
+	}
+}
+
+# Granada defend against Castile #
+
+country_event = {
+	id = btc_events.3
+	title = btc_events.3_t
+	desc = btc_events.3_d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GRA
+	}
+
+	option = {
+		name = btc_events.3a
+
+		upper_andalucia_area = {
+			add_province_modifier = {
+				name = resist_reconquista
+				duration = 10950
+			}
+		}
+	}
+}
+
+# Galician Nobles rule the region #
+
+country_event = {
+	id = btc_events.4
+	title = btc_events.4_t
+	desc = btc_events.4_d
+	picture = CORRUPTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CAS
+	}
+
+	option = {
+		name = btc_events.4a
+
+		galicia_area = {
+			add_province_modifier = {
+				name = strong_nobility
+				duration = -1
+			}
+		}
+	}
+}

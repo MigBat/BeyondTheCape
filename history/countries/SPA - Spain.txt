@@ -7,7 +7,6 @@ add_accepted_culture = neapolitan
 add_accepted_culture = wallonian
 religion = catholic
 technology_group = western
-historical_friend = POR
 capital = 219 # Toledo
 
 national_focus = MIL

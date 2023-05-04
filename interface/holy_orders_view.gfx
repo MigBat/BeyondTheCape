@@ -138,4 +138,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/holy_orders/dlc/golden_century/alcantara.dds"
 		noOfFrames = 4
 	}
+
+	# BEYOND THE CAPE #
+
+	spriteType = {
+		name = "GFX_holy_order_christ"
+		texturefile = "gfx/interface/holy_orders/dlc/golden_century/christ.dds"
+		noOfFrames = 4
+	}
 }

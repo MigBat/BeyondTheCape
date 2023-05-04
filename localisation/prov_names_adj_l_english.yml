@@ -3506,7 +3506,6 @@
  PROV_ADJ4553:0 "Zamoran"
  PROV_ADJ4554:0 "Lugoan"
  PROV_ADJ4555:0 "Vigoan"
- PROV_ADJ4556:0 "Avieroan"
  PROV_ADJ4557:0 "Calatayud"
  PROV_ADJ4558:0 "Orense"
  PROV_ADJ4559:0 "Minorcan"
@@ -3601,5 +3600,9 @@
  PROV_ADJ4648:0 "Acaxee"
  PROV_ADJ4649:0 "Mayo"
  PROV_ADJ4650:0 "Opata"
+
+ # Beyond the Cape #
+
+ # PROV_ADJ4556:0 "Avieroan"
  
  

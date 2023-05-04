@@ -961,7 +961,7 @@ country_event = {
 			random_subject_country = {
 				limit = {
 					capital_scope = {
-						colonial_region = colonial_the_carribean
+						region = carribeans_region
 					}
 					OR = {
 						is_subject_of_type = colony
