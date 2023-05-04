@@ -826,7 +826,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 365
+		days = 30
 	}
 
 	option = {	# accept them
@@ -933,6 +933,7 @@ country_event = {
 				who = CAS
 				modifier = iberian_wedding # 200 relation
 			}
+			set_country_flag = won_castilian_civil_war
 		}
 
 		CAS = { 
@@ -1038,6 +1039,7 @@ country_event = {
 				who = CAS
 				modifier = iberian_wedding # 200 relation
 			}
+			set_country_flag = won_castilian_civil_war
 		}
 
 		CAS = { 
@@ -1077,6 +1079,7 @@ country_event = {
 		set_country_flag = won_war
 		clr_country_flag = at_war
 		set_country_flag = civil_war_ended
+		set_country_flag = won_castilian_civil_war
 
 		if = { 
 			limit = { ARA = { has_country_flag = at_war } }
@@ -1092,8 +1095,6 @@ country_event = {
 				kill_heir = { allow_new_heir = yes }
 			}
 		}
-
-		CAS = { set_country_flag = civil_war_ended }
 	}
 }
 
@@ -1113,6 +1114,7 @@ country_event = {
 		trigger = { tag = POR }
 
 		clr_country_flag = at_war
+		set_country_flag = won_castilian_civil_war
 		ARA = { 
 			clr_country_flag = at_war 
 			clr_ruler_flag = isabella
@@ -1126,6 +1128,7 @@ country_event = {
 
 		clr_country_flag = at_war
 		set_country_flag = won_war
+		set_country_flag = won_castilian_civil_war
 		set_country_flag = civil_war_ended
 	}
 }
@@ -1146,6 +1149,7 @@ country_event = {
 		trigger = { tag = ARA }
 
 		clr_country_flag = at_war
+		set_country_flag = won_castilian_civil_war
 		POR = { 
 			clr_country_flag = at_war 
 			clr_ruler_flag = joanna
@@ -1159,6 +1163,7 @@ country_event = {
 
 		clr_country_flag = at_war
 		set_country_flag = won_war
+		set_country_flag = won_castilian_civil_war
 		set_country_flag = civil_war_ended
 	}
 }
