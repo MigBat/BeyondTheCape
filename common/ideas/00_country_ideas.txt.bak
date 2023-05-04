@@ -8531,7 +8531,7 @@ ORL_ideas = {
 		idea_cost = -0.1
 	}
 	french_language_in_all_courts = {
-		diplomatic_upkeep = 1
+		#See French Ideas
 	}
 }
 
@@ -11417,7 +11417,7 @@ TKD_ideas = {
 	}
 	tkd_twentyfour_generals = {
 		free_leader_pool = 1
-		yearly_army_professionalism = 0.0025
+		yearly_army_professionalism = 0.02
 	}
 	tkd_koyo_gunkan = {
 		army_tradition = 0.5

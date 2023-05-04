@@ -96,10 +96,7 @@ change_estate_land_share = {
 	add_ruler_personality = naive_personality
 	add_ruler_personality = zealot_personality
 	add_ruler_personality = well_advised_personality
-	if = { 
-		limit = { has_dlc = "Domination" }
-		set_estate_privilege = estate_nobles_factionalist_nobility
-	}
+	set_estate_privilege = estate_nobles_factionalist_nobility
 }
 
 1447.8.17 = {
