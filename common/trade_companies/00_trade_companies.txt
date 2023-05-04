@@ -524,6 +524,43 @@ trade_company_bordeaux = {
 	}
 }
 
+trade_company_sevilla = {
+	color = { 57 160 101 }
+	
+	provinces = {
+		206 207 208 1746 215 216 231 232 217 218 219 221 222 223 224 225 226 227 228 229 230 334 335 367 1745 1747 1748 1749 1751 1851 2754 2755 2751 4150 
+		4546 4547 4548 4551 4552 4553 4554 4555 4556 4558
+		4561 4563 368 366 4565 4787 4788 4789
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_SEVILLA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_SEVILLA_European_Trade_Company"
+	}
+}
+
+trade_company_safi = {
+	color = { 191 110 62 }
+	
+	provinces = {
+		344 345 346 347 348 1110 2460 2464 2466 2467 2468 2469 2470 342 343 349 2459 2462 2463 336 337 338 2461 2465
+		4564 4562 4568
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_SAFI_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_SAFI_African_Trade_Company"
+	}
+}
+
 trade_company_timbuktu = {
 	color = { 108 152 84 }
 	
@@ -1342,77 +1379,3 @@ trade_company_polynesia = {
 	}
 }
 
-trade_company_the_caribbean = {
-	color = { 78 202 78 }
-	
-	provinces = {
-		482 483 484 485 486 487 
-		488 489 490 491 492 493 
-		494 495 496 497 498 499 
-		500 501 502 1572 1881 2654 2655 
-		2656 2658 2659 4624 4622 
-		4623 4619 4618 4620 4621 
-	}
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_THE_CARIBBEAN_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_THE_CARIBBEAN_Caribbean_Trade_Company"
-	}
-}
-
-### BEYOND THE CAPE ###
-
-trade_company_sevilla = {
-	color = { 157 60 101 }
-	
-	provinces = {
-		215 1293 217 218 219 221 222 223 224 225 226 1747 1748 1749 2754 2755 2751 4546 4547 4548 4551 4788 4789 4552 1745 1746
-	}
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_SEVILLA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_SEVILLA_European_Trade_Company"
-	}
-}
-
-trade_company_safi = {
-	color = { 191 110 62 }
-	
-	provinces = {
-		344 345 346 347 348 1110 2460 2464 2466 2467 2468 2469 2470 342 343 349 2459 2462 2463 336 337 338 2461 2465 4564 4562 4568 335 4561 1751 334 4563
-	}
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_SAFI_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_SAFI_African_Trade_Company"
-	}
-}
-
-trade_company_lisboa = {
-	color = { 57 160 101 }
-	
-	provinces = {
-		227 4787 4942 230 229 4150 1851 4943 228 231 4556 232 4555 206 4554 4558 368 367 4944 216 4553 208 207 366 4565
-	}
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_LISBOA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_LISBOA_European_Trade_Company"
-	}
-}

@@ -11,12 +11,12 @@ war_goal = {
 	add_defender = GRA
 }
 
-1442.1.1 = {
+1443.1.1 = {
 	rem_attacker = CAS
 }
 
 #Peace and end of war
-1443.1.1 = {
+1444.1.1 = {
 	rem_attacker = ARA
 	rem_attacker = POR
 	rem_defender = GRA

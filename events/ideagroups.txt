@@ -5137,7 +5137,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_country_modifier = quest_for_the_new_world
+		has_idea = quest_for_the_new_world
 		num_of_colonies = 1
 		NOT = { has_country_modifier = colonial_enthusiasm }
 	}

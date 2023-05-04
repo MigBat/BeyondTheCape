@@ -29,7 +29,6 @@ philosopher = {
 	
 	# Bonus
 	prestige = 1
-	#monthly_portuguese_saudade = -0.05
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -116,7 +115,6 @@ natural_scientist = {
 	
 	# Bonus
 	production_efficiency = 0.10
-	#monthly_portuguese_saudade = 0.05
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -203,7 +201,6 @@ artist = {
 	
 	# Bonus
 	stability_cost_modifier = -0.10
-	#monthly_portuguese_saudade = -0.05
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -298,7 +295,6 @@ treasurer = {
 	
 	# Bonus
 	global_tax_modifier = 0.1
-	#monthly_portuguese_saudade = -0.05
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -385,7 +381,6 @@ theologian = {
 	
 	# Bonus
 	global_unrest = -2
-	#monthly_portuguese_saudade = 0.05
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -481,7 +476,6 @@ master_of_mint = {
 	
 	# Bonus
 	inflation_reduction = 0.10
-	#monthly_portuguese_saudade = -0.05
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -573,7 +567,6 @@ inquisitor = {
 	
 	# Bonus
 	global_missionary_strength = 0.02
-	#monthly_portuguese_saudade = -0.05
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -688,7 +681,6 @@ statesman = {
 	
 	# Bonus
 	diplomatic_reputation = 1
-	#monthly_portuguese_saudade = -0.05
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -756,7 +748,6 @@ naval_reformer = {
 	# Bonus
 	
 	naval_morale = 0.1 
-	#monthly_portuguese_saudade = 0.05
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -830,7 +821,6 @@ trader = {
 	
 	# Bonus
 	trade_efficiency = 0.10
-	#monthly_portuguese_saudade = 0.05
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -911,7 +901,6 @@ spymaster = {
 	
 	# Bonus
 	spy_offence = 0.25
-	#monthly_portuguese_saudade = 0.05
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -978,7 +967,6 @@ colonial_governor = {
 	
 	# Bonus
 	global_tariffs = 0.10
-	#monthly_portuguese_saudade = 0.05
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1053,7 +1041,6 @@ diplomat = {
 	
 	# Bonus
 	improve_relation_modifier = 0.2
-	#monthly_portuguese_saudade = 0.05
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1120,7 +1107,6 @@ navigator = {
 	
 	# Bonus
 	range = 0.20
-	#monthly_portuguese_saudade = 0.05
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1196,7 +1182,6 @@ army_reformer = {
 	
 	# Bonus
 	land_morale = 0.10
-	#monthly_portuguese_saudade = -0.05
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1244,7 +1229,6 @@ army_organiser = {
 	
 	# Bonus
 	land_forcelimit_modifier = 0.10
-	#monthly_portuguese_saudade = 0.05
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1292,7 +1276,6 @@ commandant = {
 	
 	# Bonus
 	discipline = 0.05
-	#monthly_portuguese_saudade = -0.05
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1340,7 +1323,6 @@ quartermaster = {
 	
 	# Bonus
 	reinforce_speed = 0.33
-	#monthly_portuguese_saudade = 0.05
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1392,7 +1374,6 @@ recruitmaster = {
 	
 	# Bonus
 	global_manpower_modifier = 0.10
-	#monthly_portuguese_saudade = 0.05
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1444,7 +1425,6 @@ fortification_expert = {
 	
 	# Bonus
 	defensiveness = 0.2
-	#monthly_portuguese_saudade = -0.05
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1493,7 +1473,6 @@ grand_captain = {
 	
 	# Bonus
 	land_maintenance_modifier = -0.10
-	#monthly_portuguese_saudade = -0.05
 
 	skill_scaled_modifier = {
 		trigger = {

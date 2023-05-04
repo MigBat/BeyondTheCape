@@ -669,7 +669,7 @@ liv_lva_colonialism_mission_slot = {
 		trigger = {
 			OR = {
 				has_institution = new_world_i
-				has_country_modifier = quest_for_the_new_world
+				has_idea = quest_for_the_new_world
 			}
 		}
 		effect = {
@@ -774,7 +774,7 @@ liv_lva_colonize_north_america_mission_slot = {
 			}
 			custom_tooltip = swe_colonize_delaware_tt
 			hidden_effect = {
-				carribeans_region = {
+				colonial_the_carribean = {
 					limit = {
 						OR = {
 							has_river_estuary_trigger = yes
@@ -804,15 +804,15 @@ liv_lva_colonize_north_america_mission_slot = {
 		position = 6
 		required_missions = { liv_lva_colonize_north_america }
 		provinces_to_highlight = {
-			region = carribeans_region
+			colonial_region = colonial_the_carribean
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		trigger = {
 			owns_or_non_sovereign_subject_of = 502
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = carribeans_region
-				value = 1
+				colonial_region = colonial_the_carribean
+				value = 5
 			}
 		}
 		effect = {
@@ -3157,7 +3157,7 @@ liv_dummy_mission_slot_1 = {
 					}
 					OR = {
 						has_institution = new_world_i
-						has_country_modifier = quest_for_the_new_world
+						has_idea = quest_for_the_new_world
 					}
 				}
 				AND = {
@@ -3374,8 +3374,8 @@ liv_dummy_mission_slot_1 = {
 					}
 					owns_or_non_sovereign_subject_of = 502
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						region = carribeans_region
-						value = 1
+						colonial_region = colonial_the_carribean
+						value = 5
 					}
 				}
 				AND = {

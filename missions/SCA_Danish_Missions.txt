@@ -444,7 +444,7 @@ dan_north_america_mission_slot = {
 			}
 			custom_tooltip = swe_colonize_delaware_tt
 			hidden_effect = {
-				carribeans_region = {
+				colonial_the_carribean = {
 					limit = {
 						OR = {
 							has_river_estuary_trigger = yes
@@ -719,7 +719,7 @@ dan_trade_and_colonial_mission_slot = {
 		trigger = {
 			OR = {
 				has_institution = new_world_i
-				has_country_modifier = quest_for_the_new_world
+				has_idea = quest_for_the_new_world
 			}
 			share_of_starting_income = 2
 			is_in_deficit = no
@@ -904,15 +904,15 @@ dan_caribbeans_mission_slot = {
 		position = 11
 		required_missions = { dan_colonize_north_america }
 		provinces_to_highlight = {
-			region = carribeans_region
+			colonial_region = colonial_the_carribean
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		trigger = {
 			owns_or_non_sovereign_subject_of = 493
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = carribeans_region
-				value = 1
+				colonial_region = colonial_the_carribean
+				value = 5
 			}
 		}
 		effect = {

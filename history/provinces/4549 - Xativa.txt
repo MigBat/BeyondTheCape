@@ -1,14 +1,14 @@
 #1750 - Xativa
 
-owner = ARA		#Mart? I of Aragon
+owner = ARA		#Martí I of Aragon
 controller = ARA
 add_core = ARA
 add_core = VAL
 culture = catalan
 religion = catholic
 hre = no
-base_tax = 3
-base_production = 3
+base_tax = 4
+base_production = 4
 trade_goods = paper
 base_manpower = 2
 capital = "Xativa" 

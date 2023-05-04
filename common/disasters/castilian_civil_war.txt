@@ -19,6 +19,7 @@ castilian_civil_war = {
 		uses_doom = no
 	}
 
+
 	can_start = {
 		current_age = age_of_discovery
 		is_at_war = no
@@ -32,6 +33,7 @@ castilian_civil_war = {
 		is_lesser_in_union = no
 	}
 	
+	
 	can_stop = {
 		OR = {
 			has_any_disaster = yes
@@ -39,6 +41,9 @@ castilian_civil_war = {
 			NOT = { government = monarchy }
 		}
 	}
+	
+	
+	
 	
 	progress = {
 		modifier = {
@@ -75,19 +80,38 @@ castilian_civil_war = {
 		}
 	}
 
+
+
+
+	
 	can_end = {
 		hidden_trigger = { has_country_flag = civil_war_in_castile }
-		has_country_flag = civil_war_ended
+		stability = 1
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = {
+			has_spawned_rebels = pretender_rebels
+		}
 	}
 	
+
+
+
 	modifier = {
 		global_unrest = 7
-		land_forcelimit_modifier = -0.65
-		global_manpower_modifier = -0.65
-		discipline = -0.05
 	}	
+	
 	
 	on_start = castilian_civil_war.1
 	on_end = castilian_civil_war.100
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			120 = 0
+			1 = castilian_civil_war.2 #Civil War Spreads to Province
+			#Events 3 - 8 related to foreign intervention
+		}
+	}
 }
 

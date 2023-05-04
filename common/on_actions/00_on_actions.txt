@@ -167,14 +167,6 @@ on_startup = {
 			desc = until_end_of_age_desc
 		}
 	}
-	# Beyond the cape #
-	if = {
-		limit = {
-			was_player = yes
-			NOT = { has_country_flag = tutorial_done }
-		}
-		country_event = { id = btc_startscreen.1 }
-	}
 }
 
 # country
@@ -604,96 +596,6 @@ on_war_won = {
 			id = flavor_swe.121
 		}
 	}
-	# BEYOND THE CAPE #
-	if = {
-		limit = {
-			ROOT = {
-				tag = POR
-				has_country_flag = at_war
-			}
-			FROM = { tag = CAS }
-		}
-		country_event = {
-			id = castilian_civil_war.12	# Portugal wins civil war
-		}
-	}
-	if = {
-		limit = {
-			ROOT = {
-				tag = ARA
-				has_country_flag = at_war
-			}
-			FROM = { tag = CAS }
-		}
-		country_event = {
-			id = castilian_civil_war.13	# Aragon wins civil war
-		}
-	}
-	if = {
-		limit = {
-			ROOT = {
-				tag = CAS
-				has_country_flag = at_war
-			}
-			FROM = { 
-				OR = {
-					tag = POR
-					tag = ARA 
-				}
-			}
-		}
-		country_event = {
-			id = castilian_civil_war.14	# Castile wins civil war
-		}
-	}
-	if = {
-		limit = {
-			ROOT = {
-				tag = CAS
-				AND = {
-					POR = { has_country_flag = at_war }
-					CAS = { has_country_flag = at_war }
-				}
-				AND = {
-					POR = { has_heir_flag = isabella }
-					CAS = { has_heir_flag = isabella }
-				}
-			}
-			FROM = { tag = ARA }
-		}
-		country_event = {
-			id = castilian_civil_war.15	# Castile and Portugal win civil war
-		}
-		POR = {
-			country_event = {
-				id = castilian_civil_war.15	# Castile and Portugal win civil war
-			}
-		}
-	}
-	if = {
-		limit = {
-			ROOT = {
-				tag = CAS
-				AND = {
-					ARA = { has_country_flag = at_war }
-					CAS = { has_country_flag = at_war }
-				}
-				AND = {
-					ARA = { has_heir_flag = joanna }
-					CAS = { has_heir_flag = joanna }
-				}
-			}
-			FROM = { tag = POR }
-		}
-		country_event = {
-			id = castilian_civil_war.16	# Castile and Aragon win civil war
-		}
-		ARA = {
-			country_event = {
-				id = castilian_civil_war.16	# Castile and Aragon win civil war
-			}
-		}
-	}
 }
 
 # country
@@ -775,7 +677,7 @@ on_separate_war_lost = {
 # country
 # root = winning country, from = loser country
 on_battle_won_country = {
-	#on_battle_ended_effect = yes
+	on_battle_ended_effect = yes
 	on_battle_won_country_effect = yes
 	if = {
 		limit = {
@@ -808,7 +710,7 @@ on_battle_won_country = {
 # country
 # root = loser country, from = winner country
 on_battle_lost_country = {
-	#on_battle_ended_effect = yes
+	on_battle_ended_effect = yes
 	battle_cult_spreading_effect = yes #Scripted effect for fetishist cult mechanics.
 	random_events = {
 		90 = 0
@@ -879,6 +781,9 @@ on_battle_won_unit = {
 	if = {
 		limit = {
 			general_with_name = "Damarwulan"
+			unit_owner = {
+				has_country_flag = maj_damarwulan
+			}
 		}
 		unit_owner = {
 			change_variable = {
@@ -1637,6 +1542,12 @@ on_heir_needed_theocracy = {
 on_successive_emperor = {
 	emperor = {
 		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			has_government_attribute = has_ruler_election
+		}
+		set_country_flag = has_internal_election_first
 	}
 	events = {
 		900
@@ -4924,7 +4835,7 @@ on_banner_raised = {
 	owner = { 
 		if = { 
 			limit = { has_country_flag = refund_partial_corruption_on_banner_recruited_flag }
-			add_corruption = -0.1
+			add_corruption = -0.04
 		}
 	}
 }

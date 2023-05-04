@@ -803,7 +803,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			has_country_modifier = quest_for_the_new_world
+			has_idea = quest_for_the_new_world
 		}
 		modifier = {
 			factor = 0.9

@@ -249,15 +249,18 @@ bri_2 = {
 		icon = mission_iberian_conquistador
 		required_missions = { bri_new_brittany }
 		provinces_to_highlight = {
-			region = carribeans_region
+			colonial_region = colonial_the_carribean
 			NOT = { country_or_non_sovereign_subject_holds = root }
 			has_discovered = root
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				region = carribeans_region
-				is_city = yes
+			custom_trigger_tooltip = {
+				tooltip = has_colony_in_colonial_caribbean
+				colonial_the_carribean = {
+					owner = {
+						is_colonial_nation_of = root
+					}
+				}
 			}
 		}
 		effect = {

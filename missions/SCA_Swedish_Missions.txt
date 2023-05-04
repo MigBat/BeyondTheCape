@@ -632,7 +632,7 @@ swe_north_america_mission_slot = {
 			}
 			custom_tooltip = swe_colonize_delaware_tt
 			hidden_effect = {
-				carribeans_region = {
+				colonial_the_carribean = {
 					limit = {
 						OR = {
 							has_river_estuary_trigger = yes
@@ -654,7 +654,7 @@ swe_north_america_mission_slot = {
 		position = 12
 		required_missions = { swe_colonize_delaware }
 		provinces_to_highlight = {
-			region = carribeans_region
+			colonial_region = colonial_the_carribean
 			OR = {
 				has_trade_building_trigger = yes
 				province_has_center_of_trade_of_level = 1
@@ -663,12 +663,12 @@ swe_north_america_mission_slot = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = carribeans_region
+				colonial_region = colonial_the_carribean
 				OR = {
 					has_trade_building_trigger = yes 
 					province_has_center_of_trade_of_level = 1
 				}
-				value = 1
+				value = 5
 			}
 			any_subject_country = {
 				num_of_cities = 10
@@ -2159,26 +2159,26 @@ swe_internal_slot = {
 			310 = {
 				change_province_name = "Hólmgarðr"
 				rename_capital = "Hólmgarðr"
-				if = {
-					limit = {
-						NOT = { province_has_center_of_trade_of_level = 2 }
+				custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
+				hidden_effect = {
+					if = {
+						limit = {
+							NOT = { province_has_center_of_trade_of_level = 2 }
+						}
+						add_center_of_trade_level = 1
 					}
-					add_center_of_trade_level = 1
-				}
-				else = {
-					custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
 				}
 				change_religion = ROOT
 			}
 			33 = {
-				if = {
-					limit = {
-						NOT = { province_has_center_of_trade_of_level = 2 }
+				custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
+				hidden_effect = {
+					if = {
+						limit = {
+							NOT = { province_has_center_of_trade_of_level = 2 }
+						}
+						add_center_of_trade_level = 1
 					}
-					add_center_of_trade_level = 1
-				}
-				else = {
-					custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
 				}
 				change_religion = ROOT
 				if = {

@@ -3,17 +3,15 @@
 owner = CAS		#Juan II of Castille
 controller = CAS
 add_core = CAS
-add_core = LON
 culture = andalucian
 religion = catholic
 hre = no
 base_tax = 3
-base_production = 4
+base_production = 3
 trade_goods = grain 
 base_manpower = 2
 capital = "Badajoz" 
 is_city = yes
-fort_15th = yes
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -25,7 +23,7 @@ discovered_by = ottoman
 1470.1.1 = { unrest = 3 } # Isabel marries with Fernando of Aragon, breaking the Pacts of Guisando. King Enrique choses his daughter Juana ("La Beltraneja") as new heiress and a succession War erupts.
 1475.6.2 = { controller = POR }
 1479.2.25 = { controller = CAS }
-1479.9.4 = { unrest = 0 } # Peace of Alca?ovas, between Queen Isabel and King Alfonso of Portugal who had entered the war supporting her wife Juana
+1479.9.4 = { unrest = 0 } # Peace of Alcaçovas, between Queen Isabel and King Alfonso of Portugal who had entered the war supporting her wife Juana
 1516.1.23 = {	controller = SPA
 	owner = SPA
 	add_core = SPA

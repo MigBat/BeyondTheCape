@@ -125,22 +125,4 @@ spriteTypes = {
 		texturefile = "gfx//interface//spare_jolly_roger.tga"
 		loadType = "INGAME"
 	}
-
-	# BEYOND THE CAPE #
-
-	spriteType = {
-		name = "GFX_flagship_portuguese_mass_load_cannons"
-		texturefile = "gfx//interface//portuguese_mass_load_cannons.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_flagship_spanish_hull_sheating"
-		texturefile = "gfx//interface//spanish_hull_sheating.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_flagship_spanish_improved_crows_nest"
-		texturefile = "gfx//interface//spanish_improved_crows_nest.tga"
-		loadType = "INGAME"
-	}
 }

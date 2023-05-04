@@ -9,10 +9,10 @@ add_core = LON
 culture = leonese
 religion = catholic
 hre = no
-base_tax = 5 
+base_tax = 4 
 base_production = 4
 trade_goods = livestock
-base_manpower = 3
+base_manpower = 2
 capital = "León"
 is_city = yes
 discovered_by = eastern
@@ -27,7 +27,7 @@ center_of_trade = 1
 1470.1.1 = { unrest = 3 } #Isabel marries with Fernando of Aragon, breaking the Pacts of Guisando. King Enrique choses his daughter Juana ("La Beltraneja") as new heiress and a succession War erupts.
 1475.6.2 = { controller = POR }
 1476.3.2 = { controller = CAS }
-1479.9.4 = { unrest = 0 } #Peace of Alca?ovas, between Queen Isabel and King Alfonso of Portugal who had entered the war supporting her wife Juana
+1479.9.4 = { unrest = 0 } #Peace of Alcaçovas, between Queen Isabel and King Alfonso of Portugal who had entered the war supporting her wife Juana
 1516.1.23 = {
 	controller = SPA
 	owner = SPA

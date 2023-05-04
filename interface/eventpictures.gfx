@@ -759,42 +759,4 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_pictures_leviathan/SHWEDAGON_PAGON_eventPicture.dds"
 	}
 
-	# BEYOND THE CAPE #
-
-	spriteType = {
-		name = "HOUSE_OF_TRADE_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/HOUSE_OF_TRADE_eventPicture.dds"
-		alwaystransparent = yes
-	}
-
-	spriteType = {
-		name = "great_building_picture"
-		texturefile = "gfx/event_pictures/btc_event_pictures/great_building_picture.dds"
-		alwaystransparent = yes
-	}
-
-	spriteType = {
-		name = "tutorial_picture"
-		texturefile = "gfx/event_pictures/btc_event_pictures/tutorial_picture.dds"
-		alwaystransparent = yes
-	}
-
-	spriteType = {
-		name = "saudade_decision_picture"
-		texturefile = "gfx/event_pictures/btc_event_pictures/saudade_decision_picture.dds"
-		alwaystransparent = yes
-	}
-
-	spriteType = {
-		name = "saudade_army_picture"
-		texturefile = "gfx/event_pictures/btc_event_pictures/saudade_army_picture.dds"
-		alwaystransparent = yes
-	}
-
-	spriteType = {
-		name = "saudade_navy_picture_picture"
-		texturefile = "gfx/event_pictures/btc_event_pictures/saudade_navy_picture.dds"
-		alwaystransparent = yes
-	}
-
 }

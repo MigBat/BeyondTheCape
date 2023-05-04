@@ -1604,7 +1604,7 @@ country_event = {
 		is_institution_enabled = new_world_i
 		NOT = { has_institution = new_world_i }
 		OR = {
-			has_country_modifier = quest_for_the_new_world
+			has_idea = quest_for_the_new_world
 			current_age = age_of_reformation
 		}
 		NOT = { colony = 1 }

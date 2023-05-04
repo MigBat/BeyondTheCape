@@ -814,7 +814,7 @@ gbr_row_slot_2 = {
 				limit = { is_random_new_world = no }
 				OR = {
 					colonial_region = colonial_eastern_america
-					region = carribeans_region
+					colonial_region = colonial_the_carribean
 				}
 			}
 			else = {
@@ -831,7 +831,7 @@ gbr_row_slot_2 = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = miss_discover_caribbean
-					carribeans_region = { has_discovered = ROOT }
+					colonial_the_carribean = { has_discovered = ROOT }
 				}
 			}
 			else = {
@@ -1569,6 +1569,10 @@ gbr_row_3 = {
 			create_explorer = {
 				tradition = 50
 			}
+			add_country_modifier = {
+				name = gbr_exploration_spirit
+				duration = 9125
+			}
 			unlock_issue = {
 				issue = act_of_exploration
 			}
@@ -1905,6 +1909,51 @@ ave_row_3 = {
 				name = "eng_french_recovery"
 				duration = 9125
 			}
+			brittany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			picardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lorraine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_burgundy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bourgogne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			provence_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_permanent_claim_province = {
+				province = 178
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -2022,43 +2071,6 @@ ave_row_3 = {
 					duration = -1
 				}
 			}
-			if = {
-				limit = { has_government_attribute = english_parliament }
-				unlock_issue = {
-					issue = english_french_act_of_union
-				}
-			}
-			else = {
-				set_parliament_action_flag = {
-					parliament_action = english_french_act_of_union
-				}
-				custom_tooltip = english_french_act_of_union_at
-				hidden_effect = {
-					FRA = {
-						every_subject_country = {
-							limit = {
-								capital_scope = {
-									region = france_region
-								}
-							}
-							FRA = {
-								inherit = PREV
-							}
-						}
-					}
-					inherit = FRA
-					change_tag = AVE
-					on_change_tag_effect = yes
-					if = {
-						limit = { NOT = { has_idea_group = AVE_ideas } }
-						country_event = {
-							id = ideagroups.1
-						}
-					}
-				}
-				add_prestige = 25
-			}
-			custom_tooltip = english_french_act_of_union_bt	#claim tooltip
 			hidden_effect = {
 				catalonia_area = {
 					limit = {
@@ -2152,6 +2164,50 @@ ave_row_3 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			if = {
+				limit = { has_government_attribute = english_parliament }
+				unlock_issue = {
+					issue = english_french_act_of_union
+				}
+			}
+			else = {
+				set_parliament_action_flag = {
+					parliament_action = english_french_act_of_union
+				}
+				custom_tooltip = english_french_act_of_union_at
+				add_prestige = 25
+				hidden_effect = {
+					FRA = {
+						every_subject_country = {
+							limit = {
+								capital_scope = {
+									region = france_region
+								}
+							}
+							FRA = {
+								inherit = PREV
+							}
+						}
+					}
+					inherit = FRA
+					change_tag = AVE
+					if = {
+						limit = {
+							NOT = { government_rank = 2 }
+						}
+						set_government_rank = 2
+					}
+					on_change_tag_effect = yes
+					if = {
+						limit = { NOT = { has_idea_group = AVE_ideas } }
+						country_event = {
+							id = ideagroups.1
+						}
+					}
+					complete_mission = ave_the_angevin_empire
+				}
+			}
+			custom_tooltip = english_french_act_of_union_bt	#claim tooltip
 		}
 		ai_weight = {
 			factor = 250
@@ -2282,8 +2338,8 @@ ave_row_3 = {
 				crown_land_share = 75
 			}
 			check_variable = {
-				which = land_units_killed
-				value = 20000	#Counts units killed in a SINGLE battle. Not from ALL battles combined.
+				which = total_land_units_killed
+				value = 100000
 			}
 		}
 		effect = {
@@ -2516,7 +2572,7 @@ gbr_row_4 = {
 		provinces_to_highlight = {
 			if = {
 				limit = { is_random_new_world = no }
-				region = carribeans_region
+				colonial_region = colonial_the_carribean
 			}
 			else = {
 				continent = new_world
@@ -2530,8 +2586,8 @@ gbr_row_4 = {
 				custom_trigger_tooltip = {
 					tooltip = english_colony_in_the_carribean.tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 1
-						region = carribeans_region
+						value = 5
+						colonial_region = colonial_the_carribean
 						is_city = yes
 					}
 				}
@@ -3318,16 +3374,19 @@ gbr_row_5 = {
 			num_of_allies = 3
 			calc_true_if = {
 				all_ally = {
-					OR = {
-						tag = POR
-						total_development = 200
-					}
-					capital_scope = {
-						same_continent = ROOT
-					}
-					has_opinion = {
-						who = ROOT
-						value = 150
+					custom_trigger_tooltip = {
+						tooltip = gbr_allies_on_the_mainland_tt
+						capital_scope = {
+							same_continent = ROOT
+						}
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+						OR = {
+							tag = POR
+							total_development = 200
+						}
 					}
 				}
 				amount = 3
@@ -3802,25 +3861,12 @@ ave_row_5 = {
 				is_city = no
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			}
+			is_sea = no
 			has_discovered = ROOT
 		}
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = miss_discover_canada
-				OR = {
-					north_america = {
-						has_discovered = ROOT
-					}
-					south_america = {
-						has_discovered = ROOT
-					}
-					new_world = {
-						has_discovered = ROOT
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = gbr_colonize_canada_ct
+				tooltip = ave_colonize_america_tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 10
 					OR = {

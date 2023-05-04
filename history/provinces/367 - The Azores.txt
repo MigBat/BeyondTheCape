@@ -1,12 +1,12 @@
-#367 - São Miguel
+#367 - The Azores
 
 culture = berber
 religion = animism
-capital = "Ponta Delgada"
+capital = "The Azores"
 trade_goods = fish
 hre = no
-base_tax = 1
-base_production = 1
+base_tax = 3 
+base_production = 3
 base_manpower = 1
 native_size = 0
 native_ferocity = 0

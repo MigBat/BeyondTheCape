@@ -1,0 +1,10 @@
+﻿l_french:
+ SUBSCRIPTION:0 "Souscription aux DLC"
+ SUB_MESSAGE_subscription_TITLE:0 "Souscription désormais disponible sur Steam"
+ SUB_MESSAGE_subscription_DESC:0 "La souscription à Europa Universalis IV donne accès à toutes les expansions et à du contenu supplémentaire pour un faible prix mensuel. Cette souscription est désormais uniquement disponible sur la page du magasin Steam d'Europa Universalis IV."
+ SUB_MESSAGE_NO_ACTION:0 "D'accord"
+ GOTO_STEAM:0 "Aller sur Steam"
+ SUB_BANNER_NEW_SUB_INACTIVE:0 "Souscrivez à l'ensemble des DLC !"
+ SUB_BANNER_NEW_SUB_ACTIVE:0 "Souscription activée !"
+ SUB_BANNER_BUTTON_VIEW_NEW_SUB_INACTIVE:0 "Aller sur Steam"
+ SUB_BANNER_BUTTON_VIEW_NEW_SUB_ACTIVE:0 "Gérer"

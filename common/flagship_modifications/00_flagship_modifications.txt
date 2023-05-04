@@ -14,8 +14,8 @@ mass_load_cannons = {
         OR = {
             NOT = {
                 OR = {
-                    tag = POR
-                    tag = BRZ
+                    tag = CAS
+                    tag = SPA
                 }
             }
             normal_or_historical_nations = no
@@ -90,17 +90,6 @@ command_aftercastle = {
 }
 
 improved_crows_nest = {
-    trigger = {
-        OR = {
-            NOT = {
-                OR = {
-                    tag = CAS
-                    tag = SPA
-                }
-            }
-            normal_or_historical_nations = yes
-        }
-    }
 	modifier = {
         flagship_naval_engagement_modifier = 3
         naval_maintenance_flagship_modifier = 0.5
@@ -110,31 +99,6 @@ improved_crows_nest = {
     }
     ai_war_score = {
         factor = 1
-    }
-}
-
-spanish_improved_crows_nest = {
-    trigger = {
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-        normal_or_historical_nations = yes
-    }
-	modifier = {
-        flagship_naval_engagement_modifier = 6
-        naval_maintenance_flagship_modifier = 0.5
-	}
-    ai_trade_score = {
-        factor = 0
-    }
-    ai_war_score = {
-        factor = 1
-        modifier = {
-            factor = 10
-            tag = CAS
-            tag = SPA
-        }
     }
 }
 
@@ -185,55 +149,30 @@ hull_sheating = {
     }
 }
 
-spanish_hull_sheating = {
+
+portuguese_navigators = {
     trigger = {
 		OR = {
-			tag = CAS
-			tag = SPA
+			tag = POR
+			tag = BRZ
 		}
         normal_or_historical_nations = yes
     }
 	modifier = {
-        flagship_durability = 1
+        exploration_mission_range_in_fleet_modifier = 1.25
         naval_maintenance_flagship_modifier = 0.5
 	}
     ai_trade_score = {
-        factor = 0
-    }
-    ai_war_score = {
         factor = 1
         modifier = {
             factor = 10
-            tag = CAS
-            tag = SPA
+            tag = POR
         }
     }
+    ai_war_score = {
+        factor = 0
+    }
 }
-
-
-#portuguese_navigators = {
-#    trigger = {
-#		OR = {
-#			tag = POR
-#			tag = BRZ
-#		}
-#        normal_or_historical_nations = yes
-#    }
-#	modifier = {
-#        exploration_mission_range_in_fleet_modifier = 1.25
-#        naval_maintenance_flagship_modifier = 0.5
-#	}
-#    ai_trade_score = {
-#        factor = 1
-#        modifier = {
-#            factor = 10
-#            tag = POR
-#        }
-#    }
-#    ai_war_score = {
-#        factor = 0
-#    }
-#}
 
 portuguese_bombardier = {
     trigger = {
@@ -337,11 +276,11 @@ spanish_treasure_fleet = {
     }
 }
 
-portuguese_mass_load_cannons = {
+spanish_mass_load_cannons = {
     trigger = {
         OR = {
-            tag = POR
-            tag = BRZ
+            tag = SPA
+            tag = CAS
         }
         normal_or_historical_nations = yes
     }
@@ -357,8 +296,8 @@ portuguese_mass_load_cannons = {
         modifier = {
             factor = 10
             OR = {
-                tag = POR
-                tag = BRZ
+                tag = SPA
+                tag = CAS
             }
         }
     }

@@ -496,7 +496,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-		has_country_modifier = quest_for_the_new_world
+		has_idea = quest_for_the_new_world
 		num_of_ports = 4
 		NOT = {
 			capital_scope = {

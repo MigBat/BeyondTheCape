@@ -1,0 +1,67 @@
+country_decisions = {
+	restore_name_decision = {
+		major = yes
+		potential = {
+			has_country_flag = has_overriden_name_flag
+			OR = {
+				has_country_flag = has_eyalet_country_name
+				NOT = { 
+					had_country_flag = { 
+						flag = has_overriden_name_flag
+						days = 3650
+					}
+				}
+			}
+		}
+		
+		allow = {
+			OR = {
+				ai = no
+				is_subject = no
+			}
+			is_at_war = no 
+		}
+		effect = {
+			restore_country_name = yes
+			clr_country_flag = has_overriden_name_flag
+			clr_country_flag = has_eyalet_country_name
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = has_eyalet_country_name }
+			}
+		}
+	}
+	
+	restore_color_decision = {
+		major = yes
+		potential = {
+			has_country_flag = has_overriden_color_flag
+			OR = {
+				NOT = { 
+					had_country_flag = { 
+						flag = has_overriden_color_flag
+						days = 3650
+					}
+				}
+				has_country_flag = has_eyalet_color
+			}
+		}
+		
+		allow = {
+			is_subject = no 
+			is_at_war = no 
+		}
+		effect = {
+			restore_country_color = yes 
+			clr_country_flag = has_overriden_color_flag
+			clr_country_flag = has_eyalet_color
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+}

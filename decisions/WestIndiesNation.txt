@@ -23,12 +23,12 @@ country_decisions = {
 						}
 					}
 					capital_scope = {
-						region = carribeans_region
+						colonial_region = colonial_the_carribean
 						is_core = ROOT
 					}
 				}
 			}
-			carribeans_region = {
+			colonial_the_carribean = {
 				owned_by = ROOT
 			}
 			OR = {
@@ -44,19 +44,19 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
-				region = carribeans_region
+				colonial_region = colonial_the_carribean
 				is_core = ROOT
 			}
 			num_of_owned_provinces_with = {
 				value = 10
-				region = carribeans_region
+				colonial_region = colonial_the_carribean
 				is_core = root
 				is_city = yes
 			}
 			NOT = { exists = WSI }
 		}
 		provinces_to_highlight = {
-			region = carribeans_region
+			colonial_region = colonial_the_carribean
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -88,7 +88,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			carribeans_region = {
+			colonial_the_carribean = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

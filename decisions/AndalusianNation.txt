@@ -214,15 +214,6 @@ country_decisions = {
 					}
 					add_permanent_claim = ROOT
 				}
-				estremadura_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 			if = {
 				limit = {

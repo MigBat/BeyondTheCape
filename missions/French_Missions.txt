@@ -295,7 +295,7 @@ french_missions_colonial = {
 		completed_by = 1535.1.1
 		trigger = {
 			has_idea_group = exploration_ideas
-			has_country_modifier = quest_for_the_new_world
+			has_idea = quest_for_the_new_world
 			custom_trigger_tooltip = {
 				tooltip = fra_canada_discovery.tooltip
 				colonial_canada = {
@@ -304,7 +304,7 @@ french_missions_colonial = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = fra_carib_discovery.tooltip
-				carribeans_region = {
+				colonial_the_carribean = {
 					has_discovered = ROOT
 				}
 			}
@@ -330,7 +330,7 @@ french_missions_colonial = {
 			OR = {
 				colonial_region = colonial_canada
 				colonial_region = colonial_louisiana
-				region = carribeans_region
+				colonial_region = colonial_the_carribean
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -338,8 +338,8 @@ french_missions_colonial = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				region = carribeans_region
+				value = 5
+				colonial_region = colonial_the_carribean
 			}
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {

@@ -1495,13 +1495,13 @@ got_pirate_slot_1_new_world = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 481
-				region = carribeans_region
+				colonial_region = colonial_the_carribean
 			}
 			NOT = { has_discovered = ROOT }
 		}
 		trigger = {
 			has_discovered = 481
-			carribeans_region = {
+			colonial_the_carribean = {
 				has_discovered = ROOT
 			}
 		}
@@ -1511,7 +1511,7 @@ got_pirate_slot_1_new_world = {
 			}
 			custom_tooltip = swe_colonize_delaware_tt
 			hidden_effect = {
-				carribeans_region = {
+				colonial_the_carribean = {
 					limit = {
 						OR = {
 							has_river_estuary_trigger = yes
@@ -1535,7 +1535,7 @@ got_pirate_slot_1_new_world = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 481
-				region = carribeans_region
+				colonial_region = colonial_the_carribean
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1548,8 +1548,8 @@ got_pirate_slot_1_new_world = {
 				is_city = yes
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = carribeans_region
-				value = 1
+				colonial_region = colonial_the_carribean
+				value = 5
 			}
 		}
 		effect = {
@@ -1557,7 +1557,7 @@ got_pirate_slot_1_new_world = {
 				limit = {
 					any_subject_country = {
 						capital_scope = {
-							region = carribeans_region
+							colonial_region = colonial_the_carribean
 						}
 						OR = {
 							is_subject_of_type = colony

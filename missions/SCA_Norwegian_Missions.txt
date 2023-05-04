@@ -309,7 +309,7 @@ nor_colonialism_mission_slot = {
 						}
 						add_permanent_claim = ROOT
 					}
-					carribeans_region = {
+					colonial_the_carribean = {
 						limit = {
 							NOT = { is_core = ROOT }
 							NOT = { is_permanent_claim = ROOT }
@@ -757,7 +757,7 @@ nor_conquest_mission_slot = {
 		provinces_to_highlight = {}
 		trigger = {
 			OR = {
-				has_country_modifier = quest_for_the_new_world
+				has_idea = quest_for_the_new_world
 				has_idea = call_of_our_forefathers
 			}
 			share_of_starting_income = 1.5
@@ -1421,7 +1421,7 @@ nor_dominate_colonialism_slot = {
 		position = 6
 		required_missions = { nor_discover_new_world }
 		provinces_to_highlight = {
-			region = carribeans_region
+			colonial_region = colonial_the_carribean
 			has_discovered = ROOT
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1430,9 +1430,9 @@ nor_dominate_colonialism_slot = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = carribeans_region
+				colonial_region = colonial_the_carribean
 				is_city = yes
-				value = 10
+				value = 15
 			}
 		}
 		effect = {

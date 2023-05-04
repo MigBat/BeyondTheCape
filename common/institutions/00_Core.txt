@@ -555,7 +555,7 @@ new_world_i = {
 				is_year = 1500
 				continent = europe
 				OR = {
-					owner = { has_country_modifier = quest_for_the_new_world }
+					owner = { has_idea = quest_for_the_new_world }
 					owner = { colony = 1 }
 				}
 			}

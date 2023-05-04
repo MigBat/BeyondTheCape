@@ -655,8 +655,6 @@ adu_slot_2_missions = {
 				area = catalonia_area
 				area = alentejo_area
 				area = beieras_area
-				area = norte_area
-				area = estremadura_area
 			}
 			NOT = {
 				owned_by = ROOT
@@ -700,16 +698,6 @@ adu_slot_2_missions = {
 				is_core = ROOT
 			}
 			beieras_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			norte_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			estremadura_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -975,20 +963,6 @@ granada_slot_3_missions = {
 					}
 					add_permanent_claim = ROOT
 				}
-				norte_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				estremadura_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 		}
 		
@@ -1019,8 +993,6 @@ andalusia_slot_3_missions = {
 			OR = {
 				area = alentejo_area
 				area = beieras_area
-				area = norte_area
-				area = estremadura_area
 			}
 			NOT = {
 				owned_by = ROOT
@@ -1034,16 +1006,6 @@ andalusia_slot_3_missions = {
 				is_core = ROOT
 			}
 			beieras_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			norte_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			estremadura_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -1099,7 +1061,7 @@ andalusia_slot_3_missions_b = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = miss_discover_caribbean
-					carribeans_region = {
+					colonial_the_carribean = {
 						has_discovered = ROOT
 					}
 				}
@@ -1145,15 +1107,15 @@ andalusia_slot_3_missions_c = {
 		position = 8
 
 		provinces_to_highlight = {
-			region = carribeans_region
+			colonial_region = colonial_the_carribean
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				region = carribeans_region
+				value = 5
+				colonial_region = colonial_the_carribean
 				is_city = yes
 			}
 		}

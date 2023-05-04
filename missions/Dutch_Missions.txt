@@ -151,7 +151,7 @@ ned_colonial_group = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_caribbean
-				carribeans_region = {
+				colonial_the_carribean = {
 					has_discovered = ROOT
 				}
 			}

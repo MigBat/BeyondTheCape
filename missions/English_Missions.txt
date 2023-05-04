@@ -544,7 +544,7 @@ eng_exploration_americas = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_caribbean
-				carribeans_region = { has_discovered = ROOT }
+				colonial_the_carribean = { has_discovered = ROOT }
 			}
 		}
 		
@@ -598,7 +598,7 @@ eng_exploration_americas = {
 		completed_by = 1610.1.1
 		
 		provinces_to_highlight = {
-			region = carribeans_region
+			colonial_region = colonial_the_carribean
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -607,8 +607,8 @@ eng_exploration_americas = {
 			custom_trigger_tooltip = {
 			tooltip = english_colony_in_the_carribean.tooltip
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 1
-					region = carribeans_region
+					value = 5
+					colonial_region = colonial_the_carribean
 					is_city = yes
 				}
 			}

@@ -27,7 +27,7 @@ spa_colonial_group = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = miss_discover_caribbean
-					carribeans_region = {
+					colonial_the_carribean = {
 						has_discovered = ROOT
 					}
 				}
@@ -54,16 +54,19 @@ spa_colonial_group = {
 		completed_by = 1493.1.1
 		
 		provinces_to_highlight = {
-			region = carribeans_region
+			colonial_region = colonial_the_carribean
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = yes
 		}
 		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				region = carribeans_region
-				is_city = yes
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_caribbean
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_the_carribean
+					is_city = yes
+				}
 			}
 		}
 		
@@ -682,20 +685,6 @@ spa_reconquista = {
 				}
 				add_permanent_claim = ROOT
 			}
-			norte_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			estremadura_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			aragon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -821,8 +810,6 @@ spa_reconquista_por = {
 			OR = {
 				area = beieras_area
 				area = alentejo_area
-				area = norte_area
-				area = estremadura_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -833,14 +820,6 @@ spa_reconquista_por = {
 				owned_by = ROOT
 			}
 			alentejo_area = {
-				type = all
-				owned_by = ROOT
-			}
-			norte_area = {
-				type = all
-				owned_by = ROOT
-			}
-			estremadura_area = {
 				type = all
 				owned_by = ROOT
 			}
