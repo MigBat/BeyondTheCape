@@ -2,7 +2,7 @@
  
  ability_portuguese_saudade_mechanic:0 "Saudade Meter"
  portuguese_saudade:0 "Saudade"
- portuguese_saudade_desc:0 "Saudade is a Portuguese word often described as a feeling of longing, nostalgia, or melancholy. It's a complex emotion that encompasses a sense of loss, a desire for something that has been missed, and a deep yearning for a past or a person that is no longer present.\n\nSaudade increases as our focus is turned towards the sea rather than home. It is modified in two ways:\n\n - Each idea group has an associated Saudade value. Those who shift the focus outwards will increase it, and those with an inwards focus will decrease it. You can see what each idea group provides by seeing its bonus.\n\n - There is a decision called Portuguese Saudade. Once you click on it, you can choose to increase or decrease Saudade, for a cost."
+ portuguese_saudade_desc:0 "Saudade is a Portuguese word often described as a feeling of longing, nostalgia, or melancholy. It's a complex emotion that encompasses a sense of loss, a desire for something that has been missed, and a deep yearning for a past or a person that is no longer present.\n\nSaudade increases as our focus is turned towards the sea rather than home. It is modified in the following ways:\n\n - Each idea group has an associated Saudade value. Those who shift the focus overseas will increase it, and those with an homeland focus will decrease it. You can see what each idea group provides by seeing its bonus.\n\n - There are 7 levels of Saudade, represented by the difference between state provinces and territory provinces. The more provinces in territories you have in comparison to provinces in states, the more Saudade will increase, and vice-versa. You can see the current level as a modifier.\n\n - There is a decision called Portuguese Saudade. Once you click on it, you can choose to increase or decrease Saudade, for a cost."
  monthly_portuguese_saudade:0 "Monthly Saudade"
  portuguese_saudade_gain_modifier:0 "Saudade Gain Modifier"
  mechanic_portuguese_saudade_yes:0 "Enables Saudade"
@@ -22,6 +22,19 @@
  desc_boost_focus:0 "The current Saudade meter rate is being boosted"
  reduce_focus:0 "Reduce Focus"
  desc_reduce_focus:0 "The current Saudade meter rate is being reduced"
+
+ high_saudade_1:0 "Some Saudade"
+ desc_high_saudade_1:0 "The people in the country are feeling some saudade towards those who have gone overseas."
+ high_saudade_2:0 "A Lot of Saudade"
+ desc_high_saudade_2:0 "The people in the country are feeling a lot of saudade towards those who have gone overseas."
+ high_saudade_3:0 "Too Much Saudade"
+ desc_high_saudade_3:0 "The people in the country are feeling too much saudade towards those who have gone overseas."
+ low_saudade_1:0 "Little Saudade"
+ desc_low_saudade_1:0 "The people in the country are feeling little saudade towards those who have gone overseas."
+ low_saudade_2:0 "Very Little Saudade"
+ desc_low_saudade_2:0 "The people in the country are feeling very little saudade towards those who have gone overseas."
+ low_saudade_3:0 "Almost No Saudade"
+ desc_low_saudade_3:0 "The people in the country are feeling almost no saudade towards those who have gone overseas."
 
  btc_por.131_t:0 "Choose focus"
  btc_por.131_d:0 "Shall we focus on our homeland, overseas, or procceed with no focus?"

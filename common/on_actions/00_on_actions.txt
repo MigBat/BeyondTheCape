@@ -2279,6 +2279,9 @@ on_siberian_pulse = {
 
 # country random events
 on_monthly_pulse = {
+	events = {
+		btc_por.133	#Monthly saudade calculation
+	}
 }
 on_yearly_pulse = {
 	events = {

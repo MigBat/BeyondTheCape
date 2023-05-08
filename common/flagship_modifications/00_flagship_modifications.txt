@@ -113,31 +113,6 @@ improved_crows_nest = {
     }
 }
 
-spanish_improved_crows_nest = {
-    trigger = {
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-        normal_or_historical_nations = yes
-    }
-	modifier = {
-        flagship_naval_engagement_modifier = 6
-        naval_maintenance_flagship_modifier = 0.5
-	}
-    ai_trade_score = {
-        factor = 0
-    }
-    ai_war_score = {
-        factor = 1
-        modifier = {
-            factor = 10
-            tag = CAS
-            tag = SPA
-        }
-    }
-}
-
 mortars = {
 	modifier = {
         blockade_impact_on_siege_in_fleet_modifier = 1
@@ -389,7 +364,7 @@ dutch_courage = {
             }
         }
     }
- }
+}
 
 portuguese_corps_of_fusiliers = {
     trigger = {

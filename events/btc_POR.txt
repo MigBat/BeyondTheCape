@@ -2248,3 +2248,244 @@ country_event = {
 # 		name = btc_por.132c
 # 	}
 # }
+
+# Saudade calculation monthly pulse
+country_event = {
+	id = btc_por.133
+	title = btc_por.133_t
+	desc = btc_por.133_d
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		has_government_mechanic = portuguese_saudade_mechanic
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		export_to_variable = {
+			which = provincesInStates
+			value = trigger_value:num_of_provinces_in_states
+		}
+		export_to_variable = {
+			which = provincesInTerritories
+			value = trigger_value:num_of_provinces_in_territories
+		}
+		subtract_variable = {
+			which = provincesInStates
+			which = provincesInTerritories
+		}
+		set_variable = {
+			which = saudadeValue
+			which = provincesInStates
+		}
+	}
+
+	option = {
+		name = btc_por.133a
+
+		trigger = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = saudadeValue
+						value = -5
+					}
+				}
+				check_variable = {
+					which = saudadeValue
+					value = -9
+				}
+			}
+		}
+
+		if = { 
+			limit = { NOT = { has_country_modifier = high_saudade_1 } }
+			add_country_modifier = {
+				name = high_saudade_1
+				duration = -1
+			}
+			remove_country_modifier = high_saudade_2
+			remove_country_modifier = high_saudade_3
+			remove_country_modifier = low_saudade_1
+			remove_country_modifier = low_saudade_2
+			remove_country_modifier = low_saudade_3
+		}
+	}
+
+	option = {
+		name = btc_por.133b
+
+		trigger = {
+			AND = {
+				NOT = {
+					check_variable = {
+						which = saudadeValue
+						value = -10
+					}
+				}
+				check_variable = {
+					which = saudadeValue
+					value = -14
+				}
+			}
+		}
+
+		if = { 
+			limit = { NOT = { has_country_modifier = high_saudade_2 } }
+			add_country_modifier = {
+				name = high_saudade_2
+				duration = -1
+			}
+			remove_country_modifier = high_saudade_1
+			remove_country_modifier = high_saudade_3
+			remove_country_modifier = low_saudade_1
+			remove_country_modifier = low_saudade_2
+			remove_country_modifier = low_saudade_3
+		}
+	}
+
+	option = {
+		name = btc_por.133c
+
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = saudadeValue
+					value = -15
+				}
+			}
+		}
+
+		if = { 
+			limit = { NOT = { has_country_modifier = high_saudade_3 } }
+			add_country_modifier = {
+				name = high_saudade_3
+				duration = -1
+			}
+			remove_country_modifier = high_saudade_1
+			remove_country_modifier = high_saudade_2
+			remove_country_modifier = low_saudade_1
+			remove_country_modifier = low_saudade_2
+			remove_country_modifier = low_saudade_3
+		}
+	}
+
+	option = {
+		name = btc_por.133d
+
+		trigger = {
+			AND = {
+				check_variable = {
+					which = saudadeValue
+					value = 5
+				}
+				NOT = {
+					check_variable = {
+						which = saudadeValue
+						value = 9
+					}
+				}
+			}
+		}
+
+		if = { 
+			limit = { NOT = { has_country_modifier = low_saudade_1 } }
+			add_country_modifier = {
+				name = low_saudade_1
+				duration = -1
+			}
+			remove_country_modifier = high_saudade_1
+			remove_country_modifier = high_saudade_2
+			remove_country_modifier = high_saudade_3
+			remove_country_modifier = low_saudade_2
+			remove_country_modifier = low_saudade_3
+		}
+	}
+
+	option = {
+		name = btc_por.133e
+
+		trigger = {
+			AND = {
+				check_variable = {
+					which = saudadeValue
+					value = 10
+				}
+				NOT = {
+					check_variable = {
+						which = saudadeValue
+						value = 14
+					}
+				}
+			}
+		}
+
+		if = { 
+			limit = { NOT = { has_country_modifier = low_saudade_2 } }
+			add_country_modifier = {
+				name = low_saudade_2
+				duration = -1
+			}
+			remove_country_modifier = high_saudade_1
+			remove_country_modifier = high_saudade_2
+			remove_country_modifier = high_saudade_3
+			remove_country_modifier = low_saudade_1
+			remove_country_modifier = low_saudade_3
+		}
+	}
+
+	option = {
+		name = btc_por.133f
+
+		trigger = {
+			check_variable = {
+				which = saudadeValue
+				value = 15
+			}
+		}
+
+		if = { 
+			limit = { NOT = { has_country_modifier = low_saudade_3 } }
+			add_country_modifier = {
+				name = low_saudade_3
+				duration = -1
+			}
+			remove_country_modifier = high_saudade_1
+			remove_country_modifier = high_saudade_2
+			remove_country_modifier = high_saudade_3
+			remove_country_modifier = low_saudade_1
+			remove_country_modifier = low_saudade_2
+		}
+	}
+
+	option = {
+		name = btc_por.133g
+
+		trigger = {
+			AND = {
+				check_variable = {
+					which = saudadeValue
+					value = -4
+				}
+				NOT = {
+					check_variable = {
+						which = saudadeValue
+						value = 4
+					}
+				}
+			}
+		}
+
+		remove_country_modifier = high_saudade_1
+		remove_country_modifier = high_saudade_2
+		remove_country_modifier = high_saudade_3
+		remove_country_modifier = low_saudade_1
+		remove_country_modifier = low_saudade_2
+		remove_country_modifier = low_saudade_3
+	}
+}

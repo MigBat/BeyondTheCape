@@ -27,6 +27,8 @@
 
 # Trade Nodes #
  lisboa:0 "Lisboa"
+ london:0 "London"
+ english_channel:0 "Antwerp"
 
 # Trade Companies #
  trade_company_the_caribbean:0 "Caribbean Charter"
@@ -35,6 +37,9 @@
  trade_company_lisboa:0 "Portuguese Charter"
  TRADE_COMPANY_LISBOA_Root_Culture_GetName:0 "[Root.Culture.GetName] Portuguese Company"
  TRADE_COMPANY_LISBOA_European_Trade_Company:0 "Portuguese Trade Company"
+ trade_company_london:0 "English Charter"
+ TRADE_COMPANY_LONDON_Root_Culture_GetName:0 "[Root.Culture.GetName] English Company"
+ TRADE_COMPANY_LONDON_European_Trade_Company:0 "English Trade Company"
 
 # Changes from vanilla localisation #
  trade_company_sevilla:0 "Castilian Charter"
