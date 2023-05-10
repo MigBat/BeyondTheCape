@@ -27,6 +27,8 @@
 
 # Trade Nodes #
  lisboa:0 "Lisboa"
+ london:0 "London"
+ english_channel:0 "Antwerp"
 
 # Trade Companies #
  trade_company_the_caribbean:0 "Caribbean Charter"
@@ -35,6 +37,9 @@
  trade_company_lisboa:0 "Portuguese Charter"
  TRADE_COMPANY_LISBOA_Root_Culture_GetName:0 "[Root.Culture.GetName] Portuguese Company"
  TRADE_COMPANY_LISBOA_European_Trade_Company:0 "Portuguese Trade Company"
+ trade_company_london:0 "English Charter"
+ TRADE_COMPANY_LONDON_Root_Culture_GetName:0 "[Root.Culture.GetName] English Company"
+ TRADE_COMPANY_LONDON_European_Trade_Company:0 "English Trade Company"
 
 # Changes from vanilla localisation #
  trade_company_sevilla:0 "Castilian Charter"
@@ -43,6 +48,10 @@
 
 # Monuments #
  batalha_monastery:0 "Batalha Monastery"
+
+# Age Bonus #
+
+ ab_portugal_professional_navy:0 "Portuguese Professional Navy"
 
 # Holy Orders #
  christ_order:0 "Order of Christ"
@@ -55,6 +64,8 @@
  spanish_hull_sheating_desc:0 "A Spanish ship is so great that neither war nor ocean can sink it."
  spanish_improved_crows_nest:0 "Spanish Improved Crow's Nest"
  spanish_improved_crows_nest_desc:0 "With a flagship like ours, the enemy will see us coming. By then, it will already be too late for them."
+ spanish_navigators:0 "Spanish Navigators"
+ spanish_navigators_desc:0 "A Spanish navigator will not only get you to the most distant undiscovered shore, but also, if the winds will it, get you back."
 
 # Decisions #
  square_rigged_caravel_decision_title:0 "Develop the Square-Rigged Caravel"

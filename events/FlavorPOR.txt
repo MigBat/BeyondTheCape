@@ -990,6 +990,7 @@ country_event = {
 		tag = POR
 		NOT = { has_global_flag = columbus_happened }
 		is_year = 1480
+		has_idea_group = exploration_ideas
 	}
 
 	mean_time_to_happen = {

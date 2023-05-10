@@ -2328,7 +2328,7 @@ ARA_ideas = {
 		trade_steering = 0.10
 	}
 	ara_reformed_admin = {
-		possible_admin_policy = 1
+		possible_adm_policy = 1
 		reform_progress_growth = 0.1
 	}
 }

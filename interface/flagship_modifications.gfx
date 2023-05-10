@@ -143,4 +143,9 @@ spriteTypes = {
 		texturefile = "gfx//interface//spanish_improved_crows_nest.tga"
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_flagship_spanish_navigators"
+		texturefile = "gfx//interface//spanish_navigators.tga"
+		loadType = "INGAME"
+	}
 }

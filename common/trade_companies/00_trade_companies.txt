@@ -389,7 +389,7 @@ trade_company_north_sea = {
 	
 	provinces = {
 		248 249 251 #lowlands_area
-		246 247 4361 4362 244 4375 #scottish_marches_area
+		4361 4362 #scottish_marches_area
 		253 4364 4365 #kingdom_of_the_isles_area
 		250 252 369 4110 4363 #highlands_area
 		375 376 4119 #connacht_area
@@ -400,6 +400,7 @@ trade_company_north_sea = {
 		1978 1979 #subarctic_islands_area
 		370 371 #iceland_area
 		23 24 2752 4145 #western_norway
+		4144 17 22 4143
 	}
 	
 	# Specific
@@ -438,7 +439,7 @@ trade_company_lubeck = {
 	color = { 190 70 70 }
 	
 	provinces = {
-		6 12 13 14 15 16 17 22 26 44 45 46 47 48 53 54 55 1775 1857 1874 1858 1981 1982 1983 1984 7 2994 2995 2996 4141 4142 4143 4144 4149 4163 4164 4165 
+		6 12 13 14 15 16 26 44 45 46 47 48 53 54 55 1775 1857 1874 1858 1981 1982 1983 1984 7 2994 2995 2996 4141 4142 4149 4163 4164 4165 
 		4749 4745 4746 4771 4772 4786
 	}
 	
@@ -476,12 +477,6 @@ trade_company_english_channel = {
 	provinces = {
 		167 168 1879 4385 #normandy_area
 		87 88 89 1743 #picardy_area
-		241 242 4366 4369 #wales_area
-		245 4367 4368 4785 #yorkshire_area
-		239 240 4372 #west_midlands_area
-		243 1860 1861 4370 4376 #east_midlands_area
-		233 234 4130 4373 4374 #wessex_area
-		235 236 237 238 4371 #home_counties_area
 		92 95 98 99 2974 #netherlands & brabant_area
 		96 97 4383 #holland_area
 		100 1931 4381 4382 #frisia_area
@@ -563,7 +558,7 @@ trade_company_valencia = {
 }
 
 trade_company_champagne = {
-	color = { 193 26 14 }
+	color = { 148 30 70 }
 	
 	provinces = {
 		182 183 185 4388 #ile_de_france_area
@@ -1367,7 +1362,7 @@ trade_company_the_caribbean = {
 ### BEYOND THE CAPE ###
 
 trade_company_sevilla = {
-	color = { 157 60 101 }
+	color = { 193 171 8 }
 	
 	provinces = {
 		215 1293 217 218 219 221 222 223 224 225 226 1747 1748 1749 2754 2755 2751 4546 4547 4548 4551 4788 4789 4552 1745 1746
@@ -1414,5 +1409,27 @@ trade_company_lisboa = {
 	}
 	names = {
 		name = "TRADE_COMPANY_LISBOA_European_Trade_Company"
+	}
+}
+
+trade_company_london = {
+	color = { 193 26 14 }
+
+	provinces = {
+		241 242 4366 4369 #wales_area
+		245 4367 4368 4785 #yorkshire_area
+		239 240 4372 #west_midlands_area
+		243 1860 1861 4370 4376 #east_midlands_area
+		233 234 4130 4373 4374 #wessex_area
+		235 236 237 238 4371 #home_counties_area
+		244 246 247 4375
+	}
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_LONDON_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_LONDON_European_Trade_Company"
 	}
 }

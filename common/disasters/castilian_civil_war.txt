@@ -77,7 +77,16 @@ castilian_civil_war = {
 
 	can_end = {
 		hidden_trigger = { has_country_flag = civil_war_in_castile }
-		has_country_flag = civil_war_ended
+		custom_trigger_tooltip = {
+			tooltip = cas_civil_war_end_tt
+			OR = {
+				has_country_flag = civil_war_ended
+				has_country_flag = no_contest
+				has_country_flag = cas_civil_war_rebels_won
+			}
+		}
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { num_of_rebel_armies = 1 }
 	}
 	
 	modifier = {
