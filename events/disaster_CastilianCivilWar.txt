@@ -1180,39 +1180,37 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "castilian_civil_war.100a" # Long Live the Queen!
+		name = "castilian_civil_war.100a" # Castile Wins War
 
 		trigger = { 
-			CAS = { has_country_flag = won_war }
+			CAS = { 
+				OR = {
+					has_country_flag = won_war
+					AND = {
+						has_country_flag = no_contest
+						NOT = { has_country_flag = cas_civil_war_rebels_won }
+					}
+				}
+			}
 		}
 		add_stability = 1
 	}
 
 	option = {
-		name = "castilian_civil_war.100b" # Long Live the Queen...
+		name = "castilian_civil_war.100b" # Castile Loses War
 
 		trigger = { 
 			CAS = {
 				OR = {
 					NOT = { has_country_flag = won_war }
-					has_country_flag = cas_civil_war_rebels_won
+					AND = {
+						has_country_flag = no_contest
+						has_country_flag = cas_civil_war_rebels_won
+					}
 				}
 			}
 		}
 		add_stability = -1		
-	}
-
-	option = {
-		name = "castilian_civil_war.100c" # Long Live the Queen!
-
-		trigger = { 
-			CAS = { 
-				has_country_flag = no_contest 
-				NOT = { num_of_rebel_controlled_provinces = 0 }
-				NOT = { num_of_rebel_armies = 0 }
-			}
-		}
-		add_stability = 1
 	}
 }
 

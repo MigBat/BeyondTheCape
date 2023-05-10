@@ -332,7 +332,7 @@ coimbra_university = {
 }
 
 por_caravels = {
-	allowed_caravel_fraction = 0.1
+	allowed_caravel_fraction = 0.2
 	has_caravel = yes
 	light_ship_power = 0.15
 }

@@ -185,30 +185,30 @@ spanish_hull_sheating = {
     }
 }
 
-
-#portuguese_navigators = {
-#    trigger = {
-#		OR = {
-#			tag = POR
-#			tag = BRZ
-#		}
-#        normal_or_historical_nations = yes
-#    }
-#	modifier = {
-#        exploration_mission_range_in_fleet_modifier = 1.25
-#        naval_maintenance_flagship_modifier = 0.5
-#	}
-#    ai_trade_score = {
-#        factor = 1
-#        modifier = {
-#            factor = 10
-#            tag = POR
-#        }
-#    }
-#    ai_war_score = {
-#        factor = 0
-#    }
-#}
+spanish_navigators = {
+   trigger = {
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+       normal_or_historical_nations = yes
+   }
+	modifier = {
+       exploration_mission_range_in_fleet_modifier = 1.25
+       naval_maintenance_flagship_modifier = 0.5
+	}
+   ai_trade_score = {
+       factor = 1
+       modifier = {
+           factor = 10
+           tag = CAS
+           tag = SPA
+       }
+   }
+   ai_war_score = {
+       factor = 0
+   }
+}
 
 portuguese_bombardier = {
     trigger = {
