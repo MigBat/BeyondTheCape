@@ -957,6 +957,7 @@ exploration_ideas = {
 
 	experienced_sailors	= {
 		naval_attrition = -0.1
+		transport_attrition = -0.1
 	}
 
 	free_colonies = {
