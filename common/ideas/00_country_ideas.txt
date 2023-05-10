@@ -1596,7 +1596,6 @@ POR_ideas = {
 	free = yes		#will be added at load.
 	
 	legacy_of_the_navigator = {
-		transport_attrition = -0.15
 		range = 0.25
 		transport_attrition = -0.2
 	}
