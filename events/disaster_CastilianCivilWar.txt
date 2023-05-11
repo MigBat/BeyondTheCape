@@ -81,6 +81,9 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
+				POR = {
+					NOT = { government = monarchy }
+				}
 			}
 		}
 
@@ -131,6 +134,12 @@ country_event = {
 			modifier = {
 				factor = 2
 				alliance_with = ARA
+			}
+			modifier = {
+				factor = 0
+				ARA = {
+					NOT = { government = monarchy }
+				}
 			}
 		}
 
@@ -186,9 +195,9 @@ country_event = {
 			dynasty = "de Trastámara"
 			age = 15
 			culture = castillian
-			adm = 3
-			dip = 3
-			mil = 3
+			adm = 5
+			dip = 5
+			mil = 4
 			female = yes
 		}
 		set_ruler_flag = joanna
@@ -246,8 +255,8 @@ country_event = {
 			dynasty = "de Trastámara"
 			age = 24
 			culture = castillian
-			adm = 3
-			dip = 3
+			adm = 5
+			dip = 6
 			mil = 3
 			female = yes
 		}
@@ -295,9 +304,9 @@ country_event = {
 			dynasty = "de Trastámara"
 			age = 15
 			culture = castillian
-			adm = 3
-			dip = 3
-			mil = 3
+			adm = 5
+			dip = 5
+			mil = 4
 			claim = 50
 			female = yes
 		}
@@ -317,8 +326,8 @@ country_event = {
 			age = 0
 			culture = portugese
 			adm = 3
-			dip = 3
-			mil = 3
+			dip = 4
+			mil = 5
 			claim = 70
 			female = yes
 		}
@@ -332,8 +341,8 @@ country_event = {
 				age = 0
 				culture = portugese
 				adm = 3
-				dip = 3
-				mil = 3
+				dip = 4
+				mil = 5
 				claim = 70
 				female = yes
 			}
@@ -385,9 +394,9 @@ country_event = {
 			dynasty = "de Trastámara"
 			age = 15
 			culture = castillian
-			adm = 3
-			dip = 3
-			mil = 3
+			adm = 5
+			dip = 5
+			mil = 4
 			claim = 50
 			female = yes
 		}
@@ -415,8 +424,8 @@ country_event = {
 			dynasty = "de Trastámara"
 			age = 24
 			culture = castillian
-			adm = 3
-			dip = 3
+			adm = 5
+			dip = 6
 			mil = 3
 			claim = 50
 			female = yes
@@ -437,7 +446,7 @@ country_event = {
 			age = 0
 			culture = aragonese
 			adm = 3
-			dip = 3
+			dip = 6
 			mil = 3
 			claim = 70
 			female = yes
@@ -452,7 +461,7 @@ country_event = {
 				age = 0
 				culture = aragonese
 				adm = 3
-				dip = 3
+				dip = 6
 				mil = 3
 				claim = 70
 				female = yes
@@ -504,8 +513,8 @@ country_event = {
 			dynasty = "de Trastámara"
 			age = 24
 			culture = castillian
-			adm = 3
-			dip = 3
+			adm = 5
+			dip = 6
 			mil = 3
 			claim = 50
 			female = yes
@@ -544,9 +553,9 @@ country_event = {
 			dynasty = "de Trastámara"
 			age = 15
 			culture = castillian
-			adm = 3
-			dip = 3
-			mil = 3
+			adm = 5
+			dip = 5
+			mil = 4
 			female = yes
 		}
 
@@ -634,8 +643,8 @@ country_event = {
 			dynasty = "de Trastámara"
 			age = 24
 			culture = castillian
-			adm = 3
-			dip = 3
+			adm = 5
+			dip = 6
 			mil = 3
 			female = yes
 		}
@@ -884,8 +893,8 @@ country_event = {
 			age = 0
 			culture = portugese
 			adm = 3
-			dip = 3
-			mil = 3
+			dip = 4
+			mil = 5
 			claim = 70
 			female = yes
 		}
@@ -898,9 +907,9 @@ country_event = {
 				dynasty = "de Trastámara"
 				age = 15
 				culture = castillian
-				adm = 3
-				dip = 3
-				mil = 3
+				adm = 5
+				dip = 5
+				mil = 4
 				claim = 50
 				female = yes
 			}
@@ -918,8 +927,8 @@ country_event = {
 				age = 0
 				culture = portugese
 				adm = 3
-				dip = 3
-				mil = 3
+				dip = 4
+				mil = 5
 				claim = 70
 				female = yes
 			}
@@ -998,7 +1007,7 @@ country_event = {
 			age = 0
 			culture = aragonese
 			adm = 3
-			dip = 3
+			dip = 6
 			mil = 3
 			claim = 70
 			female = yes
@@ -1012,8 +1021,8 @@ country_event = {
 				dynasty = "de Trastámara"
 				age = 24
 				culture = castillian
-				adm = 3
-				dip = 3
+				adm = 5
+				dip = 6
 				mil = 3
 				claim = 50
 				female = yes
@@ -1032,7 +1041,7 @@ country_event = {
 				age = 0
 				culture = aragonese
 				adm = 3
-				dip = 3
+				dip = 6
 				mil = 3
 				claim = 70
 				female = yes
