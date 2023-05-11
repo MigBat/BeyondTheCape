@@ -865,7 +865,10 @@ country_event = {
 		name = "castilian_civil_war.12a"
 
 		clr_country_flag = at_war
-		CAS = { clr_country_flag = at_war }
+		CAS = { 
+			clr_country_flag = at_war 
+			set_country_flag = lost_war
+		}
 
 		if = { 
 			limit = { ARA = { has_country_flag = at_war } }
@@ -950,9 +953,14 @@ country_event = {
 			}
 		}
 
-		ARA = { 
-			kill_consort = yes 
-			kill_heir = { allow_new_heir = yes }
+		if = {
+			limit = {
+				ARA = { has_ruler_flag = isabella }
+			}
+			ARA = { 
+				kill_consort = yes 
+				kill_heir = { allow_new_heir = yes }
+			}
 		}
 	}
 }
@@ -971,7 +979,10 @@ country_event = {
 		name = "castilian_civil_war.13a"
 
 		clr_country_flag = at_war
-		CAS = { clr_country_flag = at_war }
+		CAS = { 
+			clr_country_flag = at_war 
+			set_country_flag = lost_war
+		}
 
 		if = { 
 			limit = { POR = { has_country_flag = at_war } }
@@ -1013,7 +1024,7 @@ country_event = {
 				male = yes
 			}
 			define_heir = {
-				name = "Joanna de Trastámara"
+				name = "Joanna"
 				dynasty = "de Trastámara"
 				age = 0
 				culture = aragonese
@@ -1056,9 +1067,14 @@ country_event = {
 			}
 		}
 
-		POR = { 
-			kill_consort = yes 
-			kill_heir = { allow_new_heir = yes }
+		if = {
+			limit = {
+				POR = { has_ruler_flag = joanna }
+			}
+			POR = { 
+				kill_consort = yes 
+				kill_heir = { allow_new_heir = yes }
+			}
 		}
 	}
 }
@@ -1084,15 +1100,15 @@ country_event = {
 		if = { 
 			limit = { ARA = { has_country_flag = at_war } }
 			ARA = { 
-				kill_consort = yes 
-				kill_heir = { allow_new_heir = yes }
+				kill_consort = yes
+				set_country_flag = lost_war
 			}
 		}
 		if = { 
 			limit = { POR = { has_country_flag = at_war } }
 			POR = { 
-				kill_consort = yes 
-				kill_heir = { allow_new_heir = yes }
+				kill_consort = yes
+				set_country_flag = lost_war
 			}
 		}
 	}
@@ -1118,6 +1134,7 @@ country_event = {
 		ARA = { 
 			clr_country_flag = at_war 
 			clr_ruler_flag = isabella
+			set_country_flag = lost_war
 		}
 	}
 
@@ -1153,6 +1170,7 @@ country_event = {
 		POR = { 
 			clr_country_flag = at_war 
 			clr_ruler_flag = joanna
+			set_country_flag = lost_war
 		}
 	}
 
@@ -1202,7 +1220,7 @@ country_event = {
 		trigger = { 
 			CAS = {
 				OR = {
-					NOT = { has_country_flag = won_war }
+					has_country_flag = lost_war
 					AND = {
 						has_country_flag = no_contest
 						has_country_flag = cas_civil_war_rebels_won
