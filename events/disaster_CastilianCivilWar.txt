@@ -79,6 +79,9 @@ country_event = {
 				factor = 2
 				alliance_with = POR
 			}
+			modifier = {
+				factor = 0
+			}
 		}
 
 		ARA = {
@@ -162,7 +165,7 @@ country_event = {
 	id = castilian_civil_war.2
 	title = "castilian_civil_war.2.t"
 	desc = "castilian_civil_war.2.d"
-	picture = ACCUSATION_eventPicture
+	picture = REFORM_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -222,7 +225,7 @@ country_event = {
 	id = castilian_civil_war.3
 	title = "castilian_civil_war.3.t"
 	desc = "castilian_civil_war.3.d"
-	picture = ACCUSATION_eventPicture
+	picture = REFORM_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -280,7 +283,7 @@ country_event = {
 	id = castilian_civil_war.4
 	title = "castilian_civil_war.4.t"
 	desc = "castilian_civil_war.4.d"
-	picture = ACCUSATION_eventPicture
+	picture = NEW_HEIR_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -370,7 +373,7 @@ country_event = {
 	id = castilian_civil_war.5
 	title = "castilian_civil_war.5.t"
 	desc = "castilian_civil_war.5.d"
-	picture = ACCUSATION_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -400,7 +403,7 @@ country_event = {
 	id = castilian_civil_war.6
 	title = "castilian_civil_war.6.t"
 	desc = "castilian_civil_war.6.d"
-	picture = ACCUSATION_eventPicture
+	picture = NEW_HEIR_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -490,7 +493,7 @@ country_event = {
 	id = castilian_civil_war.7
 	title = "castilian_civil_war.7.t"
 	desc = "castilian_civil_war.7.d"
-	picture = ACCUSATION_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -519,7 +522,7 @@ country_event = {
 	id = castilian_civil_war.8
 	title = "castilian_civil_war.8.t"
 	desc = "castilian_civil_war.8.d"
-	picture = ACCUSATION_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -609,7 +612,7 @@ country_event = {
 	id = castilian_civil_war.9
 	title = "castilian_civil_war.9.t"
 	desc = "castilian_civil_war.9.d"
-	picture = ACCUSATION_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -810,7 +813,7 @@ country_event = {
 	id = castilian_civil_war.17
 	title = castilian_civil_war.17_t
 	desc = castilian_civil_war.17_d
-	picture = BORDER_TENSION_eventPicture
+	picture = ANGRY_MOB_eventPicture
 
 	major = yes
 
@@ -857,7 +860,7 @@ country_event = {
 	id = castilian_civil_war.12
 	title = "castilian_civil_war.12.t"
 	desc = "castilian_civil_war.12.d"
-	picture = FLAGSHIP_CAPTURED_eventPicture
+	picture = CONQUEST_eventPicture
 	
 	is_triggered_only = yes
 
@@ -1120,7 +1123,7 @@ country_event = {
 	id = castilian_civil_war.15
 	title = "castilian_civil_war.15.t"
 	desc = "castilian_civil_war.15.d"
-	picture = FLAGSHIP_CAPTURED_eventPicture
+	picture = CONQUEST_eventPicture
 	
 	is_triggered_only = yes
 
@@ -1238,7 +1241,7 @@ country_event = {
 	id = castilian_civil_war.28
 	title = castilian_civil_war.28.t
 	desc = castilian_civil_war.28.d
-	picture = BORDER_TENSION_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 
@@ -1260,7 +1263,7 @@ country_event = {
 	id = castilian_civil_war.29
 	title = castilian_civil_war.29.t
 	desc = castilian_civil_war.29.d
-	picture = BORDER_TENSION_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 
