@@ -393,7 +393,7 @@ square_rigged_caravel = {
 	number_of_cannons_modifier = 1
 	hull_size_modifier = 1
 	sailor_maintenance_modifer = 1
-	light_ship_cost = 1
+	light_ship_cost = 0.5
 	is_caravel_modifier = yes
 }
 

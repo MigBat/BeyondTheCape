@@ -4083,21 +4083,21 @@ on_five_year_pulse_4 = {
 # FROM = country doing the exploring, ROOT = province discovered
 on_explore_coast = {
 	random_events = {
-		50 = exploration_events.1
-		50 = exploration_events.2
-		50 = exploration_events.3
-		50 = exploration_events.4
-		50 = exploration_events.5
-		50 = exploration_events.6
-		50 = exploration_events.7
-		50 = exploration_events.8
-		50 = exploration_events.9
-		50 = exploration_events.10
-		10 = exploration_events.11
-		30 = exploration_events.12
-		100 = exploration_events.13
+		10 = exploration_events.1
+		10 = exploration_events.2
+		10 = exploration_events.3
+		10 = exploration_events.4
+		10 = exploration_events.5
+		10 = exploration_events.6
+		10 = exploration_events.7
+		10 = exploration_events.8
+		10 = exploration_events.9
+		10 = exploration_events.10
+		5 = exploration_events.11
+		10 = exploration_events.12
+		10 = exploration_events.13
 		10 = exploration_events.14
-		10 = exploration_events.15
+		5 = exploration_events.15
 	}
 }
 on_conquistador_empty = {
@@ -4160,7 +4160,7 @@ on_conquistador_empty = {
 		10 = seven_cities_events.413
 		10 = seven_cities_events.414
 
-		2000 = 0
+		1000 = 0
 	}
 }
 
@@ -4177,7 +4177,7 @@ on_conquistador_native = {
 		10 = seven_cities_events.309
 		10 = seven_cities_events.310
 
-		250 = 0
+		100 = 0
 	}
 }
 
