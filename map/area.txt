@@ -1927,6 +1927,16 @@ south_african_plateau_area = { #5
 	1176 1178 2856 2880 2864
 }
 
+# BEYOND THE CAPE #
+
+angola1_area = {
+	4947 4948 4949
+}
+
+angola2_area = {
+	4950 4951 4952
+}
+
 
 ########################################
 # Greater Persia		               #

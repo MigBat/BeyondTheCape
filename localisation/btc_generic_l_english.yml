@@ -14,12 +14,28 @@
  PROV367:0 "São Miguel"
  PROV1460:0 "Cape of Storms"
  PROV228:0 "Beira Alta"
+ PROV4945:0 "Coastal Guinea"
+ PROV4946:0 "Gulf of Guinea"
+ PROV4947:0 "Angola1"
+ PROV4948:0 "Angola2"
+ PROV4949:0 "Angola3"
+ PROV4950:0 "Angola4"
+ PROV4951:0 "Angola5"
+ PROV4952:0 "Angola6"
 
 # Province Adjectives #
  PROV_ADJ4556:0 "Minhoto"
  PROV_ADJ4942:0 "Setubaler"
  PROV_ADJ4943:0 "Beixa Baixan" 
  PROV_ADJ4944:0 "Terceiran"
+ PROV_ADJ4945:0 "Coastal Guinean"
+ PROV_ADJ4946:0 "Gulf of Guinean"
+ PROV_ADJ4947:0 "Angola1"
+ PROV_ADJ4948:0 "Angola2"
+ PROV_ADJ4949:0 "Angola3"
+ PROV_ADJ4950:0 "Angola4"
+ PROV_ADJ4951:0 "Angola5"
+ PROV_ADJ4952:0 "Angola6"
 
 # Areas #
  norte_area:0 "Norte"

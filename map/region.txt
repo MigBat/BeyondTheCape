@@ -572,6 +572,8 @@ kongo_region = {
 		matamba_area
 		lower_kasai
 		kasai_area
+		angola1_area
+		angola2_area
 	}
 	monsoon = {
 		00.02.01
