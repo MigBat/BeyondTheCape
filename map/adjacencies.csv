@@ -107,4 +107,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1087;4869;sea;1414;-1;-1;-1;-1;Wurundjeri-Peerapper
 631;627;sea;1354;-1;-1;-1;-1;Bali-Blambangan
 227;4942;sea;1292;-1;-1;-1;-1;Lisboa-Set�bal
+2241;1118;;4945;-1;-1;-1;-1;Beafada-Sierra Leone
+2241;1114;;4945;-1;-1;-1;-1;Beafada-Gabu
+2241;1117;;4945;-1;-1;-1;-1;Beafada-Futa Jallon
+2242;1118;;4945;-1;-1;-1;-1;Karou-Sierra Leone
+2242;1119;;4945;-1;-1;-1;-1;Karou-Grain Coast
+1126;1119;;4945;-1;-1;-1;-1;Ivory Coast-Grain Coast
+1126;2258;;4945;-1;-1;-1;-1;Ivory Coast-Cape Coast
+1139;2258;;4945;-1;-1;-1;-1;Gold Coast-Cape Coast
+1139;2257;;4945;-1;-1;-1;-1;Gold Coast-Denkyira
+2258;2257;;4945;-1;-1;-1;-1;Cape Coast-Denkyira
+4945;1140;;4945;-1;-1;-1;-1;Whydah-Abomey
+4945;2290;;4945;-1;-1;-1;-1;Whydah-Ijebu
+2294;1151;;4946;-1;-1;-1;-1;Warri-Bonny
+1151;1163;;4946;-1;-1;-1;-1;Bonny-Calabar
+1163;1164;;4946;-1;-1;-1;-1;Calabar-Cameroon
 -1;-1;;-1;-1;-1;-1;-1;-1
