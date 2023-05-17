@@ -901,9 +901,8 @@ gc_por_2_d = {
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1186
-				province_id = 1192
-				area = mozambique_area
+				province_id = 1202
+				province_id = 1203
 			}
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
@@ -932,6 +931,12 @@ gc_por_2_d = {
 			1201 = {
 				add_permanent_claim = ROOT
 			}
+			1187 = {
+				add_permanent_claim = ROOT
+			}
+			1191 = {
+				add_permanent_claim = ROOT
+			}
 			quelimane_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -946,6 +951,33 @@ gc_por_2_d = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+	}
+
+	gc_por_search_for_gold = {
+		icon = mission_african_gold
+		required_missions = { gc_por_discovers_east_africa }
+		position = 11
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1187
+				province_id = 1191
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			1187 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1191 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			
 			zimbabwe_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -960,13 +992,16 @@ gc_por_2_d = {
 				}
 				add_permanent_claim = ROOT
 			}
+			1190 = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
 	gc_por_african_gold = {
 		icon = mission_african_gold
-		required_missions = { gc_por_discovers_east_africa }
-		position = 11
+		required_missions = { gc_por_search_for_gold }
+		position = 12
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1192,6 +1227,10 @@ gc_por_3 = {
 				manuever = 4
 				siege = 1
 				trait = level_headed_personality
+			}
+			add_country_modifier = {
+				name = around_africa
+				duration = 1825
 			}
 		}
 	}

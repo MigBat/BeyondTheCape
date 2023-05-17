@@ -189,6 +189,7 @@ iberia_region = {
 		extremadura_area
 		norte_area
 		estremadura_area
+		cantabria_area
 	}
 }
 
@@ -568,12 +569,12 @@ kongo_region = {
 	areas = {
 		coastal_kongo
 		kongo_area
-		angola_namibia_area
+		angola_area
 		matamba_area
 		lower_kasai
 		kasai_area
-		angola1_area
-		angola2_area
+		namibia_area
+		inner_angola_area
 	}
 	monsoon = {
 		00.02.01

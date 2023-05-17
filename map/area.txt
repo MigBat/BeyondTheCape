@@ -435,11 +435,11 @@ basque_country = { #3
 
 leon_area = { #3
 	color = { 58 58 207 }
-	207 208 216 4553 
+	208 216 4553 4954
 }
 
 extremadura_area = {
-	4788 218 1747
+	4788 218 1747 4955
 }
 
 beieras_area = { #4
@@ -1792,7 +1792,7 @@ cap_verde_area = { #2
 }
 
 jolof_area = { #4
-	1112 1113 1116 2239
+	1112 1113 1116 2242 1151
 }
 
 tekrur_area = { #4
@@ -1808,7 +1808,7 @@ manding_area = { #4
 }
 
 futa_jallon_area = { #3
-    1114 1117 2238
+    1114 1117 2238 2241 2239
 }
 
 massina_area = { #4
@@ -1828,11 +1828,11 @@ upper_volta_area = { #5
 }
 
 kong_area = { #4
-    1122 1125 2252 2253
+    1122 1125 2252 2253 2255
 }
 
 lower_volta_area = { #5
-    1138 2254 2255 2256 2267
+    1138 2254 2256 2267 2257
 }
 
 lower_niger_area = { #5
@@ -1880,11 +1880,11 @@ atacora_oueme_area = { #5
 }
 
 gulf_of_guinea_area = { #4
-    1151 1163 1164 1165
+    1163 1164 1165
 }
 
 benin_area = { #4
-	1147 2289 2290 2294 
+	1147 2289 2290 2294 1141
 }
 
 sao_tome_area = { #2
@@ -1892,11 +1892,11 @@ sao_tome_area = { #2
 }
 
 west_africa_coast_area = { #5
-    1126 1139 1141 2257 2258 
+    1126 1139 2258 1118 1119
 }
 
 guinea_coast_area = { #4
-    1118 1119 2241 2242
+    
 }
 
 south_atlantic_islands_area = { #2
@@ -1904,7 +1904,7 @@ south_atlantic_islands_area = { #2
 }
 
 matamba_area = { #3
-	2948 4082 4084
+	2948 4082 4084 1171
 }
 
 coastal_kongo = { #5
@@ -1915,8 +1915,8 @@ kongo_area = { #5
 	798 1169 1170 1901 2949
 }
 
-angola_namibia_area = { #5
-	1098 1167 1171 1172 1174 
+angola_area = { #5
+	1167 1172 4949
 }
 
 cape_of_good_hope_area = { #5
@@ -1929,12 +1929,16 @@ south_african_plateau_area = { #5
 
 # BEYOND THE CAPE #
 
-angola1_area = {
-	4947 4948 4949
+namibia_area = {
+	1098 1174
 }
 
-angola2_area = {
-	4950 4951 4952
+inner_angola_area = {
+	4950 4951 4952 4947 4948
+}
+
+cantabria_area = {
+	207 1745 4953
 }
 
 

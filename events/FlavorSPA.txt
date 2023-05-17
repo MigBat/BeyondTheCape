@@ -3015,32 +3015,19 @@ country_event = {
 	
 	trigger = {
 		tag = CAS
-		POR = { has_country_flag = turned_down_columbus }
 		NOT = { has_global_flag = columbus_happened }
-		lower_andalucia_area = {
-			owned_by = ROOT
+		iberia_region = {
+			type = all
+			NOT = { owned_by = GRA }
 		}
-		upper_andalucia_area = {
-			owned_by = ROOT
-		}
-		OR = {
-			NOT = {
-				north_america = {
-					has_discovered = ROOT
-				}
-			}
-			NOT = {
-				south_america = {
-					has_discovered = ROOT
-				}
-			}
-		}
+		has_idea_group = exploration_ideas
 	}
 
 	option = {		# Reject his proposal
 		name = "flavor_spa.EVTOPTA1"
 		ai_chance = { factor = 10 }
 		set_country_flag = turned_down_columbus
+		add_prestige = 5
 	}
 	
 	option = {		# Hire Columbus

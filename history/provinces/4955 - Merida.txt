@@ -1,0 +1,19 @@
+#Merida
+
+owner = CAS		#Juan II of Castille
+controller = CAS
+add_core = CAS
+add_core = LON
+culture = leonese
+religion = catholic
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = iron
+base_manpower = 4
+capital = "Mérida" 
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

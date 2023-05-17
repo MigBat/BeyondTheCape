@@ -1059,6 +1059,7 @@ exploration_ideas = {
 					region = iberia_region
 					region = british_isles_region
 					region = low_countries_region
+					region = scandinavia_region
 				}
 			}
 			NOT = { technology_group = high_american }
@@ -1069,7 +1070,7 @@ exploration_ideas = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { is_year = 1490 }
+			NOT = { dip_tech = 7 }
 			capital_scope = {
 				NOT = {
 					region = iberia_region
@@ -1098,25 +1099,13 @@ exploration_ideas = {
 		}
 		modifier = {
 			factor = 1000
-			tag = POR
-		}
-		modifier = {
-			factor = 1000
-			tag = CAS
-			tag = SPA
-			has_country_modifier = quest_for_the_new_world
-		}
-		modifier = {
-			factor = 0
-			tag = CAS
-			tag = SPA
-			NOT = {
-				has_country_modifier = quest_for_the_new_world
-				is_year = 1490
+			OR = {
+				tag = POR
+				tag = CAS
 			}
 		}
 		modifier = {
-			factor = 10
+			factor = 100
 			OR = {
 				tag = GBR
 				tag = NED
@@ -1445,6 +1434,15 @@ expansion_ideas = {
 				has_idea_group = exploration_ideas
 				is_colonial_nation = yes
 			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				tag = CAS
+				tag = POR
+				tag = SPA
+			}
+			NOT = { has_idea_group = exploration_ideas }
 		}
 		modifier = {
 			factor = 5
