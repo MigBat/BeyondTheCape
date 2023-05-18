@@ -250,7 +250,7 @@ categories =  {
 		
 		terrain_override = {
 			231 # Portugal
-			206 1851 # Spain
+			206 1851 4953 # Spain
 			374 375 376 4118 4119 4120 4121 #Ireland
 			129 4755 4757 4703 # Balkans
 			968 970

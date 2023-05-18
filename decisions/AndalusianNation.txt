@@ -355,6 +355,28 @@ country_decisions = {
 					}
 					add_permanent_claim = ROOT
 				}
+				tangier_area = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				fez_area = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			if = {
 				limit = { has_custom_ideas = no }
