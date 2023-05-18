@@ -1622,6 +1622,49 @@ POR_ideas = {
 	}
 }
 
+# BEYOND THE CAPE #
+
+IBE_ideas = {
+	start = {
+		heavy_ship_power = 0.15
+		morale_damage = 0.15
+	}
+	
+	bonus = {
+		global_tariffs = 0.20
+	}
+	
+	trigger = {
+		tag = IBE
+	}
+	free = yes		#will be added at load.
+	
+	legacy_of_the_navigator = {
+		range = 0.25
+		transport_attrition = -0.2
+	}
+	por_feitoria_system = {
+		trade_steering = 0.15
+		defensiveness = 0.15
+	}
+	por_india_armadas = {
+		global_ship_trade_power = 0.15
+		artillery_fire = 1
+	}
+	por_casa_da_india = {
+		global_trade_power = 0.1
+	}
+	por_bandeirantes = {
+		global_colonial_growth = 15
+	}
+	por_cacadores = {
+		fire_damage_received = -0.2
+	}
+	por_royal_absolutism = {
+		build_cost = -0.15
+		yearly_absolutism = 0.5
+	}
+}
 
 POL_ideas = {
 	start = {
