@@ -416,15 +416,6 @@ overseas_focus = {
 	monthly_portuguese_saudade = 0.1
 }
 
-# boost_focus = {
-# 	portuguese_saudade_gain_modifier = 2.00
-# }
-
-# reduce_focus = {
-# 	portuguese_saudade_gain_modifier = -0.75
-# 	monarch_admin_power = -1
-# }
-
 high_saudade_1 = {
 	monthly_portuguese_saudade = 0.05
 }
@@ -442,4 +433,8 @@ low_saudade_2 = {
 }
 low_saudade_3 = {
 	monthly_portuguese_saudade = -0.15
+}
+
+around_africa = {
+	range = 0.25
 }

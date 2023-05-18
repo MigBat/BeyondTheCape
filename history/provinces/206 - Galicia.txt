@@ -13,6 +13,7 @@ trade_goods = fish
 base_manpower = 4
 capital = "Corunna" 
 is_city = yes
+center_of_trade = 1
  # Santiago de Compostela pilgrimage
 discovered_by = eastern
 discovered_by = western

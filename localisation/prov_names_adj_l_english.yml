@@ -1149,7 +1149,6 @@
  PROV_ADJ1148:0 "Gobirian"
  PROV_ADJ1149:0 "Katsinan"
  PROV_ADJ1150:0 "Zamfaran"
- PROV_ADJ1151:0 "Bonnian"
  PROV_ADJ1152:0 "Idahian"
  PROV_ADJ1153:0 "Pindingan"
  PROV_ADJ1154:0 "Zazzauian"
@@ -2249,8 +2248,6 @@
  PROV_ADJ2238:0 "Kantorian"
  PROV_ADJ2239:0 "Siinean"
  PROV_ADJ2240:0 "Galamian"
- PROV_ADJ2241:0 "Beafadan"
- PROV_ADJ2242:0 "Karouan"
  PROV_ADJ2243:0 "Termese"
  PROV_ADJ2244:0 "Tagantian"
  PROV_ADJ2245:0 "Wagadian"
@@ -3603,6 +3600,9 @@
 
  # Beyond the Cape #
 
- # PROV_ADJ4556:0 "Avieroan"
+ #PROV_ADJ4556:0 "Avieroan"
+ #PROV_ADJ2241:0 "Beafadan"
+ #PROV_ADJ2242:0 "Karouan"
+ #PROV_ADJ1151:0 "Bonnian"
  
  

@@ -2293,7 +2293,7 @@ country_event = {
 				NOT = {
 					check_variable = {
 						which = saudadeValue
-						value = -5
+						value = -4
 					}
 				}
 				check_variable = {
@@ -2325,7 +2325,7 @@ country_event = {
 				NOT = {
 					check_variable = {
 						which = saudadeValue
-						value = -10
+						value = -9
 					}
 				}
 				check_variable = {
@@ -2356,7 +2356,7 @@ country_event = {
 			NOT = {
 				check_variable = {
 					which = saudadeValue
-					value = -15
+					value = -14
 				}
 			}
 		}
@@ -2387,7 +2387,7 @@ country_event = {
 				NOT = {
 					check_variable = {
 						which = saudadeValue
-						value = 9
+						value = 10
 					}
 				}
 			}
@@ -2419,7 +2419,7 @@ country_event = {
 				NOT = {
 					check_variable = {
 						which = saudadeValue
-						value = 14
+						value = 15
 					}
 				}
 			}

@@ -788,12 +788,12 @@ CAS_ideas = {
 		warscore_cost_vs_other_religion = -0.1
 		land_morale = 0.1
 	}
+	inter_caetera = {
+		colonists = 1
+	}
 	conquest_of_paradise = {
 		idea_claim_colonies = yes
 		global_colonial_growth = 20
-	}
-	inter_caetera = {
-		colonists = 1
 	}
 	devout_catholisism = {
 		papal_influence = 2

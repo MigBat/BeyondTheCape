@@ -870,6 +870,13 @@ emp_france_missions_2 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				cantabria_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
 				leon_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -905,6 +912,7 @@ emp_france_missions_2 = {
 				area = castille_area
 				area = toledo_area
 				area = asturias_area
+				area = cantabria_area
 				area = leon_area
 				area = extremadura_area
 				area = basque_country
@@ -921,6 +929,10 @@ emp_france_missions_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			asturias_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cantabria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

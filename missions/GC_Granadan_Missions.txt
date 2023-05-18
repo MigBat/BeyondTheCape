@@ -608,6 +608,13 @@ adu_slot_2_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			cantabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			leon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -649,6 +656,7 @@ adu_slot_2_missions = {
 			OR = {
 				area = galicia_area
 				area = asturias_area
+				area = cantabria_area
 				area = leon_area
 				area = extremadura_area
 				area = basque_country
@@ -670,6 +678,11 @@ adu_slot_2_missions = {
 				is_core = ROOT
 			}
 			asturias_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			cantabria_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT

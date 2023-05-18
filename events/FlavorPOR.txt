@@ -989,7 +989,7 @@ country_event = {
 	trigger = {
 		tag = POR
 		NOT = { has_global_flag = columbus_happened }
-		is_year = 1480
+		is_year = 1485
 		has_idea_group = exploration_ideas
 	}
 
@@ -999,8 +999,8 @@ country_event = {
 	
 	option = {		# Reject his proposal
 		name = "flavor_por.EVTOPTA1"
-		ai_chance = { factor = 75 }
-		set_country_flag = turned_down_columbus
+		ai_chance = { factor = 90 }
+		add_prestige = 5
 	}
 	
 	option = {		# Hire Columbus
@@ -1022,7 +1022,7 @@ country_event = {
 			}
 		}
 
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 10 }
 		set_global_flag = columbus_happened
 		add_years_of_income = -0.10
 		define_explorer = {

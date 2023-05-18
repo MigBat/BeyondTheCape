@@ -29,6 +29,8 @@
  desc_black_swords:0 "Our marines are armed with the best swords to fight at sea."
  way_to_india:0 "Way to India"
  desc_way_to_india:0 "India is just a step away."
+ around_africa:0 "Around Africa"
+ desc_around_africa:0 "Africa goes down further than we thought. We must be getting closer to India."
  mariners_astrolabe:0 "Mariner's Astrolabe"
  desc_mariners_astrolabe:0 "No one can find their way at sea better than a portuguese sailor."
  proudly_alone:0 "Proudly Alone"

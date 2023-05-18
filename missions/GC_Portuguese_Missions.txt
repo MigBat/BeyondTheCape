@@ -603,7 +603,7 @@ gc_por_2_a = {
 		effect = {
 			add_dip_power = 50
 			add_navy_tradition = 5
-			northern_morocco_area = {
+			tangier_area = {
 				limit = { 
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT } 
@@ -693,7 +693,7 @@ gc_por_2_a = {
 					duration = 5475
 				}
 			}
-			northern_morocco_area = {
+			tangier_area = {
 				limit = { 
 					owned_by = ROOT
 				}
@@ -901,9 +901,8 @@ gc_por_2_d = {
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1186
-				province_id = 1192
-				area = mozambique_area
+				province_id = 1202
+				province_id = 1203
 			}
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
@@ -932,6 +931,12 @@ gc_por_2_d = {
 			1201 = {
 				add_permanent_claim = ROOT
 			}
+			1187 = {
+				add_permanent_claim = ROOT
+			}
+			1191 = {
+				add_permanent_claim = ROOT
+			}
 			quelimane_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -946,6 +951,33 @@ gc_por_2_d = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+	}
+
+	gc_por_search_for_gold = {
+		icon = mission_african_gold
+		required_missions = { gc_por_discovers_east_africa }
+		position = 11
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1187
+				province_id = 1191
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			1187 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1191 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_dip_power = 100
 			zimbabwe_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -960,13 +992,16 @@ gc_por_2_d = {
 				}
 				add_permanent_claim = ROOT
 			}
+			1190 = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
 	gc_por_african_gold = {
-		icon = mission_african_gold
-		required_missions = { gc_por_discovers_east_africa }
-		position = 11
+		icon = mission_war_chest
+		required_missions = { gc_por_search_for_gold }
+		position = 12
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1117,9 +1152,15 @@ gc_por_3 = {
 		position = 2
 
 		trigger = {
-			num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
-				holy_order = christ_order
-				value = 1
+			if = {
+				limit = { ai = no }
+				num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+					holy_order = christ_order
+					value = 1
+				}
+			}
+			else = {
+				navy_size_percentage = 0.95
 			}
 		}
 
@@ -1192,6 +1233,10 @@ gc_por_3 = {
 				manuever = 4
 				siege = 1
 				trait = level_headed_personality
+			}
+			add_country_modifier = {
+				name = around_africa
+				duration = 1825
 			}
 		}
 	}
@@ -1618,6 +1663,7 @@ gc_por_4_a = {
 		icon = mission_henry_the_navigator
 		required_missions = {  }
 		position = 1
+		completed_by = 1445.1.1
 
 		trigger = {
 			OR = {
@@ -1983,9 +2029,16 @@ gc_por_5_a = {
 		}
 
 		trigger = {
-			has_flagship = yes
-			has_estate_privilege = estate_burghers_naval_school_right
-			230 = { owned_by = ROOT }
+			if = {
+				limit = { ai = no }
+				has_estate_privilege = estate_burghers_naval_school_right
+				has_flagship = yes
+				230 = { owned_by = ROOT }
+			}
+			else = {
+				has_flagship = yes
+				230 = { owned_by = ROOT }
+			}
 		}
 
 		effect = {

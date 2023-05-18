@@ -1478,7 +1478,7 @@ province;red;green;blue;x;x
 1477;100;251;251;Western Coast of Iceland;x
 1478;101;201;201;Northeastern Atlantic;x
 1479;102;201;251;Rockall;x
-1480;103;221;251;Denmark Strait;x
+1480;23;118;145;Denmark Strait;x
 1481;104;251;251;Eastern Coast of Greenland;x
 1482;105;201;201;Western Coast of Greenland;x
 1483;106;201;251;Labrador Strait;x
@@ -4945,9 +4945,18 @@ province;red;green;blue;x;x
 4944;36;110;7;Terceira;x
 4945;57;248;0;Coastal Guinea;x
 4946;188;109;227;Gulf of Guinea;x
-4947;147;220;138;Angola1;x
-4948;79;105;230;Angola2;x
-4949;204;200;24;Angola3;x
-4950;184;116;27;Angola4;x
-4951;252;170;77;Angola5;x
-4952;172;246;167;Angola6;x
+4947;147;220;138;Ambriz;x
+4948;79;105;230;Golungo Alto;x
+4949;204;200;24;Moçâmedes;x
+4950;184;116;27;Moxico;x
+4951;252;170;77;Cubango;x
+4952;172;246;167;Cunene;x
+4953;255;99;40;Navia;x
+4954;206;187;81;Cabreira;x
+4955;86;132;159;Mérida;x
+4956;0;192;76;Arzila;x
+4957;53;18;173;Ksar El-Kebir;x
+4958;211;98;93;Chefchaouen;x
+4959;170;95;155;Majjouja;x
+4960;143;93;95;Taza;x
+4961;93;201;116;Debdou;x

@@ -1303,81 +1303,41 @@ country_event = {
 	trigger = {
 		tag = CAS
 		NOT = { has_disaster = castilian_civil_war }
-		# Castile ruler died, Isabel became queen
 		OR = {
+			# Castile ruler died, Isabel became queen
 			AND = {
 				POR = {
-					had_heir_flag = {
-						flag = isabel
-						days = 1
-					}
 					has_heir_flag = isabel
-					has_ruler_flag = joanna
 				}
 				CAS = {
-					had_heir_flag = {
-						flag = isabel
-						days = 1
-					}
-					NOT = { has_heir_flag = isabel }
-					NOT = { has_ruler_flag = joanna }
+					has_ruler_flag = isabel
 				}
 			}
 			# Portugal ruler died, Isabel became queen
 			AND = {
 				POR = {
-					had_heir_flag = {
-						flag = isabel
-						days = 1
-					}
-					NOT = { has_heir_flag = isabel }
-					NOT = { has_ruler_flag = joanna }
+					has_ruler_flag = isabel
 				}
 				CAS = {
-					had_heir_flag = {
-						flag = isabel
-						days = 1
-					}
 					has_heir_flag = isabel
-					has_ruler_flag = joanna
 				}
 			}
 			# Castile ruler died, Joanna became queen
 			AND = {
 				ARA = {
-					had_heir_flag = {
-						flag = joanna
-						days = 1
-					}
 					has_heir_flag = joanna
-					has_ruler_flag = isabella
 				}
 				CAS = {
-					had_heir_flag = {
-						flag = joanna
-						days = 1
-					}
-					NOT = { has_heir_flag = joanna }
-					NOT = { has_ruler_flag = isabella }
+					has_ruler_flag = joanna
 				}
 			}
 			# Aragon ruler died, Joanna became queen
 			AND = {
 				ARA = {
-					had_heir_flag = {
-						flag = joanna
-						days = 1
-					}
-					NOT = { has_heir_flag = joanna }
-					NOT = { has_ruler_flag = isabella }
+					has_ruler_flag = joanna
 				}
 				CAS = {
-					had_heir_flag = {
-						flag = joanna
-						days = 1
-					}
 					has_heir_flag = joanna 
-					has_ruler_flag = isabella
 				}
 			}
 		}
@@ -1387,20 +1347,21 @@ country_event = {
 		name = "castilian_civil_war.30a"
 
 		trigger = {
-			POR = {
-				had_heir_flag = {
-					flag = isabel
-					days = 1
+			OR = {
+				AND = {
+					POR = { has_heir_flag = isabel }
+					CAS = { has_ruler_flag = isabel }
 				}
-			}
-			had_heir_flag = {
-				flag = isabel
-				days = 1
+				AND = {
+					CAS = { has_heir_flag = isabel }
+					POR = { has_ruler_flag = isabel }
+				}
 			}
 			prestige = POR
 			legitimacy = POR
 			total_development = POR
 		}
+
 		if = {
 			limit = {
 				POR = { has_ruler_flag = joanna }
@@ -1420,20 +1381,21 @@ country_event = {
 		name = "castilian_civil_war.30b"
 
 		trigger = {
-			ARA = {
-				had_heir_flag = {
-					flag = joanna
-					days = 1
+			OR = {
+				AND = {
+					ARA = { has_heir_flag = joanna }
+					CAS = { has_ruler_flag = joanna }
 				}
-			}
-			had_heir_flag = {
-				flag = joanna
-				days = 1
+				AND = {
+					CAS = { has_heir_flag = joanna }
+					ARA = { has_ruler_flag = joanna }
+				}
 			}
 			prestige = ARA
 			legitimacy = ARA
 			total_development = ARA
 		}
+
 		if = {
 			limit = {
 				ARA = { has_ruler_flag = isabella }
@@ -1453,15 +1415,15 @@ country_event = {
 		name = "castilian_civil_war.30c"
 
 		trigger = {
-			POR = {
-				had_heir_flag = {
-					flag = isabel
-					days = 1
+			OR = {
+				AND = {
+					POR = { has_heir_flag = isabel }
+					CAS = { has_ruler_flag = isabel }
 				}
-			}
-			had_heir_flag = {
-				flag = isabel
-				days = 1
+				AND = {
+					CAS = { has_heir_flag = isabel }
+					POR = { has_ruler_flag = isabel }
+				}
 			}
 			OR = { 
 				NOT = { prestige = POR }
@@ -1469,6 +1431,7 @@ country_event = {
 				NOT = { total_development = POR }
 			}
 		}
+
 		if = {
 			limit = {
 				POR = { has_ruler_flag = joanna }
@@ -1488,15 +1451,15 @@ country_event = {
 		name = "castilian_civil_war.30d"
 
 		trigger = {
-			ARA = {
-				had_heir_flag = {
-					flag = isabel
-					days = 1
+			OR = {
+				AND = {
+					ARA = { has_heir_flag = joanna }
+					CAS = { has_ruler_flag = joanna }
 				}
-			}
-			had_heir_flag = {
-				flag = isabel
-				days = 1
+				AND = {
+					CAS = { has_heir_flag = joanna }
+					ARA = { has_ruler_flag = joanna }
+				}
 			}
 			OR = {
 				NOT = { prestige = ARA }
@@ -1504,6 +1467,7 @@ country_event = {
 				NOT = { total_development = ARA }
 			}
 		}
+
 		if = {
 			limit = {
 				ARA = { has_ruler_flag = isabella }

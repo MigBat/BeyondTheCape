@@ -22,6 +22,18 @@
  PROV4950:0 "Moxico"
  PROV4951:0 "Cubango"
  PROV4952:0 "Cunene"
+ PROV2241:0 "Bissau"
+ PROV2242:0 "Gorée"
+ PROV4953:0 "Návia"
+ PROV4954:0 "Cabreira"
+ PROV4955:0 "Mérida"
+ PROV1151:0 "Ndar"
+ PROV4956:0 "Arzila"
+ PROV4957:0 "Ksar El-Kebir"
+ PROV4958:0 "Chefchaouen"
+ PROV4959:0 "Majjoouja"
+ PROV4960:0 "Taza"
+ PROV4961:0 "Debdou"
 
 # Province Adjectives #
  PROV_ADJ4556:0 "Minhoto"
@@ -33,13 +45,31 @@
  PROV_ADJ4947:0 "Ambrizan"
  PROV_ADJ4948:0 "Golungo Altan"
  PROV_ADJ4949:0 "Moçâmedan"
- PROV_ADJ4950:0 "Angola4"
- PROV_ADJ4951:0 "Moxican"
+ PROV_ADJ4950:0 "Moxican"
+ PROV_ADJ4951:0 "Cubangan"
  PROV_ADJ4952:0 "Cunenan"
+ PROV_ADJ2241:0 "Bissauan"
+ PROV_ADJ2242:0 "Goréean"
+ PROV_ADJ4953:0 "Návian"
+ PROV_ADJ4954:0 "Cabreiran"
+ PROV_ADJ4955:0 "Méridan"
+ PROV_ADJ1151:0 "Ndaran"
+ PROV_ADJ4956:0 "Arzilan"
+ PROV_ADJ4957:0 "Ksar El-Kebiran"
+ PROV_ADJ4958:0 "Chefchaouen"
+ PROV_ADJ4959:0 "Majjooujan"
+ PROV_ADJ4960:0 "Tazan"
+ PROV_ADJ4961:0 "Debdouan"
 
 # Areas #
  norte_area:0 "Norte"
  estremadura_area:0 "Estremadura"
+ angola_area:0 "Angola"
+ namibia_area:0 "Namibia"
+ inner_angola_area:0 "Inner Angola"
+ cantabria_area:0 "Asturias"
+ tangier_area:0 "Tangier"
+ fez_area:0 "Fez"
 
 # Trade Nodes #
  lisboa:0 "Lisboa"
@@ -66,7 +96,6 @@
  batalha_monastery:0 "Batalha Monastery"
 
 # Age Bonus #
-
  ab_portugal_professional_navy:0 "Portuguese Professional Navy"
 
 # Holy Orders #
@@ -88,7 +117,7 @@
  square_rigged_caravel_decision_desc:0 "The square-rigged caravel is a design notable for its exceptional maneuverability and combat capabilities, although it comes at a higher cost."
  nau_decision_title:0 "Develop the Nau"
  nau_decision_desc:0 "By increasing the size of our galleons, we can fulfill both the responsibilities of transporting troops and naval engagement with a single ship, although its fighting capabilities will be diminished."
- extra_flagship_decision_title:0 "Launch a Second Flagship"
+ extra_flagship_decision_title:0 "Launch a New Flagship"
  extra_flagship_decision_desc:0 "Flagships are expensive and powerful ships. Only a strong navy is worthy of fitting one, but ours is amongst the greatest navies in the world. Let us build a second flagship to strike fear into our enemies and awe all who see our mighty vessels!"
 
 # Other #

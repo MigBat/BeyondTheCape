@@ -309,6 +309,10 @@ alcantara_order = {
     }
     ai_priority = {
         factor = 2
+        modifier = {
+            factor = 5
+            has_fort_building_trigger = yes
+        }
     }
     localization = holy_order
 }
@@ -345,6 +349,10 @@ avis_order = {
     }
     ai_priority = {
         factor = 2
+        modifier = {
+            factor = 5
+            has_fort_building_trigger = yes
+        }
     }
     localization = holy_order
 }
@@ -380,7 +388,7 @@ calatrava_order = {
 		local_defender_dice_roll_bonus = 1 
     }
     ai_priority = {
-        factor = 2
+        factor = 5
     }
     localization = holy_order
 }
@@ -417,6 +425,10 @@ montesa_order = {
     }
     ai_priority = {
         factor = 2
+        modifier = {
+            factor = 5
+            has_fort_building_trigger = yes
+        }
     }
     localization = holy_order
 }
@@ -460,6 +472,14 @@ san_juan_order = {
     }
     ai_priority = {
         factor = 2
+        modifier = {
+            factor = 5
+            has_port = yes
+        }
+        modifier = {
+            factor = 5
+            devastation = 50
+        }
     }
     localization = holy_order
 }
@@ -490,7 +510,7 @@ santiago_order = {
 		local_hostile_movement_speed = -0.1
     }
     ai_priority = {
-        factor = 2
+        factor = 5
     }
     localization = holy_order
 }
@@ -797,7 +817,15 @@ christ_order = {
 		ship_recruit_speed = -0.15
     }
     ai_priority = {
-        factor = 2
+        factor = 5
+        modifier = {
+            factor = 0
+            has_port = no
+        }
+        modifier = {
+            factor = 5
+            is_in_capital_area = yes
+        }
     }
     localization = holy_order
 }
