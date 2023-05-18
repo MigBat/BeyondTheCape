@@ -1409,6 +1409,8 @@ andalusia_slot_4_missions = {
 				area = northern_morocco_area
 				area = marrekesh_area
 				area = western_morocco_area
+				area = tangier_area
+				area = fez_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1423,6 +1425,14 @@ andalusia_slot_4_missions = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			western_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tangier_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			fez_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1791,6 +1801,28 @@ granada_slot_5_missions = {
 					add_permanent_claim = ROOT
 				}
 				western_morocco_area = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				tangier_area = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				fez_area = {
 					limit = {
 						NOT = {
 							owned_by = ROOT
