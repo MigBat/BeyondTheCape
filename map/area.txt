@@ -1430,7 +1430,7 @@ north_saharan_area = { #5
 }
 
 tafilalt_area = { #3
-	346 349 2460
+	346 349 2460 4961
 }
 
 sus_area = { #4
@@ -1442,15 +1442,25 @@ southern_morocco_area = { #3
 }
 
 western_morocco_area = { #3
-	342 345 2469 4564
+	342 345 2469 4564 4563
 }
 
 marrekesh_area = { #3
-	343 344 2467 2468
+	344 2467 2468
 }
 
 northern_morocco_area = { #5
-	334 335 1751 4563 4561
+	335 4561 4958 4959
+}
+
+#BEYOND THE CAPE#
+
+tangier_area = {
+	4956 334 1751
+}
+
+fez_area = {
+	343 4957 4960
 }
 
 ########################################

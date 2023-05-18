@@ -2,7 +2,7 @@
  
  ability_portuguese_saudade_mechanic:0 "Saudade Meter"
  portuguese_saudade:0 "Saudade"
- portuguese_saudade_desc:0 "Saudade is a Portuguese word often described as a feeling of longing, nostalgia, or melancholy. It's a complex emotion that encompasses a sense of loss, a desire for something that has been missed, and a deep yearning for a past or a person that is no longer present.\n\nSaudade increases as our focus is turned towards the sea rather than home. It is modified in the following ways:\n\n - Each idea group has an associated Saudade value. Those who shift the focus overseas will increase it, and those with an homeland focus will decrease it. You can see what each idea group provides by seeing its bonus.\n\n - There are 7 levels of Saudade, represented by the difference between state provinces and territory provinces. The more provinces in territories you have in comparison to provinces in states, the more Saudade will increase, and vice-versa. You can see the current level as a modifier.\n\n - There is a decision called Portuguese Saudade. Once you click on it, you can choose to increase or decrease Saudade, for a cost."
+ portuguese_saudade_desc:0 "Saudade is a Portuguese word often described as a feeling of longing, nostalgia, or melancholy. It's a complex emotion that encompasses a sense of loss, a desire for something that has been missed, and a deep yearning for a past or a person that is no longer present.\n\nSaudade increases as our focus is turned towards the sea rather than home. Check the tutorial decision to see more about how to modify Saudade."
  monthly_portuguese_saudade:0 "Monthly Saudade"
  portuguese_saudade_gain_modifier:0 "Saudade Gain Modifier"
  mechanic_portuguese_saudade_yes:0 "Enables Saudade"

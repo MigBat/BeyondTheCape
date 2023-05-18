@@ -1478,7 +1478,7 @@ province;red;green;blue;x;x
 1477;100;251;251;Western Coast of Iceland;x
 1478;101;201;201;Northeastern Atlantic;x
 1479;102;201;251;Rockall;x
-1480;103;221;251;Denmark Strait;x
+1480;23;118;145;Denmark Strait;x
 1481;104;251;251;Eastern Coast of Greenland;x
 1482;105;201;201;Western Coast of Greenland;x
 1483;106;201;251;Labrador Strait;x
@@ -4954,3 +4954,9 @@ province;red;green;blue;x;x
 4953;255;99;40;Navia;x
 4954;206;187;81;Cabreira;x
 4955;86;132;159;Mérida;x
+4956;0;192;76;Arzila;x
+4957;53;18;173;Ksar El-Kebir;x
+4958;211;98;93;Chefchaouen;x
+4959;170;95;155;Majjouja;x
+4960;143;93;95;Taza;x
+4961;93;201;116;Debdou;x

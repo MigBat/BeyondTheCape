@@ -1,8 +1,8 @@
-#4947- Angola2
+#4947- Golungo Alto
 
 culture = mbundu
 religion = shamanism #Fetishism
-capital = "Angola2"
+capital = "Golungo Alto"
 trade_goods = unknown
 hre = no
 base_tax = 4 

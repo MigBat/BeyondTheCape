@@ -28,6 +28,12 @@
  PROV4954:0 "Cabreira"
  PROV4955:0 "Mérida"
  PROV1151:0 "Ndar"
+ PROV4956:0 "Arzila"
+ PROV4957:0 "Ksar El-Kebir"
+ PROV4958:0 "Chefchaouen"
+ PROV4959:0 "Majjoouja"
+ PROV4960:0 "Taza"
+ PROV4961:0 "Debdou"
 
 # Province Adjectives #
  PROV_ADJ4556:0 "Minhoto"
@@ -48,6 +54,12 @@
  PROV_ADJ4954:0 "Cabreiran"
  PROV_ADJ4955:0 "Méridan"
  PROV_ADJ1151:0 "Ndaran"
+ PROV_ADJ4956:0 "Arzilan"
+ PROV_ADJ4957:0 "Ksar El-Kebiran"
+ PROV_ADJ4958:0 "Chefchaouen"
+ PROV_ADJ4959:0 "Majjooujan"
+ PROV_ADJ4960:0 "Tazan"
+ PROV_ADJ4961:0 "Debdouan"
 
 # Areas #
  norte_area:0 "Norte"
@@ -56,6 +68,8 @@
  namibia_area:0 "Namibia"
  inner_angola_area:0 "Inner Angola"
  cantabria_area:0 "Asturias"
+ tangier_area:0 "Tangier"
+ fez_area:0 "Fez"
 
 # Trade Nodes #
  lisboa:0 "Lisboa"
