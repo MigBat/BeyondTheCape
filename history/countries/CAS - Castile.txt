@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = castillian
-add_accepted_culture = andalucian
+add_accepted_culture = galician
 add_accepted_culture = leonese
 religion = catholic
 technology_group = western
@@ -24,7 +24,7 @@ change_estate_land_share = {
 1390.10.9 = {
 	monarch = {
 		name = "Enrique III"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		adm = 3
 		dip = 2
 		mil = 2
@@ -35,7 +35,7 @@ change_estate_land_share = {
 	heir = {
 		name = "Juan"
 		monarch_name = "Juan II"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1405.3.6
 		death_date = 1454.7.20
 		claim = 95
@@ -57,7 +57,7 @@ change_estate_land_share = {
 1418.6.2 = {
 	monarch = {
 		name = "Juan II"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1405.3.6
 		adm = 1
 		dip = 1
@@ -66,7 +66,7 @@ change_estate_land_share = {
 	queen = {
 		country_of_origin = ARA
 		name = "Maria"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1396.1.1
 		death_date = 1445.2.18
 		female = yes
@@ -83,7 +83,7 @@ change_estate_land_share = {
 	heir = {
 		name = "Enrique"
 		monarch_name = "Enrique IV"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1425.1.5
 		death_date = 1474.12.11
 		claim = 95
@@ -121,7 +121,7 @@ change_estate_land_share = {
 1454.7.20 = {
 	monarch = {
 		name = "Enrique IV"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1425.1.5
 		adm = 0
 		dip = 0
@@ -146,7 +146,7 @@ change_estate_land_share = {
 	heir = {
 		name = "Isabel"
 		monarch_name = "Isabel I"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1451.4.22
 		death_date = 1504.11.26
 		claim = 95
@@ -162,7 +162,7 @@ change_estate_land_share = {
 1474.12.11 = {
 	monarch = {
 		name = "Isabel I"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1451.4.22
 		adm = 5
 		dip = 6
@@ -172,7 +172,7 @@ change_estate_land_share = {
 	queen = {
 		country_of_origin = ARA
 		name = "Ferran"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1439.3.20
 		death_date = 1516.1.23
 		female = no
@@ -190,7 +190,7 @@ change_estate_land_share = {
 	heir = {
 		name = "Juana"
 		monarch_name = "Juana I"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1479.11.6
 		death_date = 1555.4.12
 		claim = 95
@@ -201,10 +201,10 @@ change_estate_land_share = {
 	}
 }
 
-1491.1.1 = { leader = {	name = "Fadrique Álv. de Toledo"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
+1491.1.1 = { leader = {	name = "Fadrique ï¿½lv. de Toledo"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
 
 1492.1.1 = {
-	leader = {	name = "Cristóbal Colón"       	type = explorer	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1506.5.20 }
+	leader = {	name = "Cristï¿½bal Colï¿½n"       	type = explorer	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1506.5.20 }
 	set_global_flag = columbus_happened
 }
 
@@ -214,22 +214,22 @@ change_estate_land_share = {
 
 #1493.1.1 = { decision = colonial_expansion }
 
-1495.1.1 = { leader = {	name = "El Gran Capitán"       	type = general	fire = 6	shock = 5	manuever = 5	siege = 0	death_date = 1515.12.2 } }
+1495.1.1 = { leader = {	name = "El Gran Capitï¿½n"       	type = general	fire = 6	shock = 5	manuever = 5	siege = 0	death_date = 1515.12.2 } }
 
-#1499.1.1 = { leader = {	name = "Vicente Yáñez Pinzón"	type = explorer	fire = 2	shock = 3	manuever = 6	siege = 0	death_date = 1516.1.23 } } # Removed /SWÖ
+#1499.1.1 = { leader = {	name = "Vicente Yï¿½ï¿½ez Pinzï¿½n"	type = explorer	fire = 2	shock = 3	manuever = 6	siege = 0	death_date = 1516.1.23 } } # Removed /SWï¿½
 
 1499.1.1 = { leader = {	name = "Alonso de Ojeda"       	type = conquistador	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1515.1.1 } }
 
 1499.1.1 = { leader = {	name = "Amerigo Vespucci"      	type = explorer	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1500.12.30 } }
 
-#1499.1.1 = { leader = {	name = "Juan de la Cosa"       	type = explorer	fire = 1	shock = 2	manuever = 4	siege = 0	death_date = 1510.2.28 } } # Removed /SWÖ
+#1499.1.1 = { leader = {	name = "Juan de la Cosa"       	type = explorer	fire = 1	shock = 2	manuever = 4	siege = 0	death_date = 1510.2.28 } } # Removed /SWï¿½
 
 #1503.1.1 = { decision = house_of_trade }
 
 1504.11.26 = {
 	monarch = {
 		name = "Juana I"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1479.11.6
 		adm = 0
 		dip = 0
@@ -239,7 +239,7 @@ change_estate_land_share = {
 	queen = {
 		country_of_origin = HAB
 		name = "Felipe I"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1478.7.22
 		death_date = 1506.9.25
 		female = no
@@ -263,7 +263,7 @@ change_estate_land_share = {
 	queen = {
 		country_of_origin = CAS
 		name = "Juana I"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1479.11.6
 		death_date = 1555.4.12
 		female = yes
@@ -275,14 +275,14 @@ change_estate_land_share = {
 	add_ruler_personality = loose_lips_personality
 }
 
-#1506.1.1 = { leader = {	name = "Juan Díaz de Solís"    	type = explorer	fire = 3	shock = 2	manuever = 5	siege = 0	death_date = 1516.1.23 } } # Removed /SWÖ
+#1506.1.1 = { leader = {	name = "Juan Dï¿½az de Solï¿½s"    	type = explorer	fire = 3	shock = 2	manuever = 5	siege = 0	death_date = 1516.1.23 } } # Removed /SWï¿½
 
 1506.9.25 = { capital = 219 } # Toledo
 
 1506.9.25 = {
 	monarch = {
 		name = "Fernando V"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1452.3.10
 		adm = 4
 		dip = 6
@@ -294,11 +294,11 @@ change_estate_land_share = {
 	add_ruler_personality = martial_educator_personality
 }
 
-1509.1.1 = { leader = {	name = "Pánfilo de Narváez"    	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
+1509.1.1 = { leader = {	name = "Pï¿½nfilo de Narvï¿½ez"    	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
 
-1510.1.1 = { leader = {	name = "Vasco Núñez de Balboa"	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
+1510.1.1 = { leader = {	name = "Vasco Nï¿½ï¿½ez de Balboa"	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
 
-1512.3.4 = { leader = {	name = "Juan Ponce de León"	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
+1512.3.4 = { leader = {	name = "Juan Ponce de Leï¿½n"	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
 
 1516.1.23 = { government = monarchy
 add_government_reform = autocracy_reform }
