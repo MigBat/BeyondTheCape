@@ -49,6 +49,12 @@ country_event = {
 				duration = 36500
 			}
 		}
+		fez_area = {
+			add_province_modifier = {
+				name = resist_reconquista
+				duration = 36500
+			}
+		}
 	}
 }
 

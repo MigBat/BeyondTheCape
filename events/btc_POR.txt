@@ -323,7 +323,7 @@ country_event = {
 	}
 }
 
-# MarquÃªs de Pombal
+# Marquês de Pombal
 
 country_event = {
 	id = btc_por.4
@@ -338,7 +338,7 @@ country_event = {
 		
 		define_advisor = {
 			type = statesman
-			name = "MarquÃªs of Pombal"
+			name = "Marquês of Pombal"
 			skill = 3
 			cost_multiplier = 0.25
 		}
@@ -561,9 +561,11 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 10
 		}
-		add_country_modifier = {
-			name = recovery_efforts	# -1 yearly devastation
-			duration = 1825
+		227 = {
+			add_province_modifier = {
+				name = recovery_efforts	# -0.5 monthly devastation
+				duration = 1825
+			}
 		}
 		country_event = {
 			id = btc_por.8
@@ -580,9 +582,11 @@ country_event = {
 			estate = estate_church
 			loyalty = 10
 		}
-		add_country_modifier = {
-			name = recovery_efforts	# -1 yearly devastation
-			duration = 1825
+		227 = {
+			add_province_modifier = {
+				name = recovery_efforts	# -0.5 monthly devastation
+				duration = 1825
+			}
 		}
 		country_event = {
 			id = btc_por.8
@@ -599,9 +603,11 @@ country_event = {
 			estate = estate_burghers
 			loyalty = 10
 		}
-		add_country_modifier = {
-			name = recovery_efforts	# -1 yearly devastation
-			duration = 1500
+		227 = {
+			add_province_modifier = {
+				name = recovery_efforts	# -0.5 monthly devastation
+				duration = 1825
+			}
 		}
 		country_event = {
 			id = btc_por.8
@@ -609,7 +615,7 @@ country_event = {
 		}
 	}
 	
-	option = {	# The MarquÃªs has the situation under control
+	option = {	# The Marquês has the situation under control
 		name = btc_por.7E
 		
 		highlight = yes
@@ -619,10 +625,13 @@ country_event = {
 		
 		add_corruption = 1
 		add_legitimacy = -25
-		add_country_modifier = {
-			name = increased_recovery_efforts	# -2 yearly devastation
-			duration = 1825
+		227 = {
+			add_province_modifier = {
+				name = increased_recovery_efforts	# -1 monthly devastation
+				duration = 1825
+			}
 		}
+		
 		country_event = {
 			id = btc_por.8
 			days = 90
@@ -760,7 +769,7 @@ country_event = {
 	id = btc_por.91
 	title = btc_por.91_t
 	desc = btc_por.91_d
-	picture = BORDER_TENSION_eventPicture
+	picture = CITY_VIEW_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -769,8 +778,8 @@ country_event = {
 		
 		set_capital = 227
 		227 = {
-			change_province_name = "BelÃ©m"
-			rename_capital = "BelÃ©m"
+			change_province_name = "Belém"
+			rename_capital = "Belém"
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
