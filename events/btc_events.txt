@@ -60,29 +60,29 @@ country_event = {
 
 # Granada defend against Castile #
 
-country_event = {
-	id = btc_events.3
-	title = btc_events.3_t
-	desc = btc_events.3_d
-	picture = RELIGIOUS_WARS_eventPicture
+# country_event = {
+# 	id = btc_events.3
+# 	title = btc_events.3_t
+# 	desc = btc_events.3_d
+# 	picture = RELIGIOUS_WARS_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		tag = GRA
-	}
+# 	trigger = {
+# 		tag = GRA
+# 	}
 
-	option = {
-		name = btc_events.3a
+# 	option = {
+# 		name = btc_events.3a
 
-		upper_andalucia_area = {
-			add_province_modifier = {
-				name = resist_reconquista
-				duration = 10950
-			}
-		}
-	}
-}
+# 		upper_andalucia_area = {
+# 			add_province_modifier = {
+# 				name = resist_reconquista
+# 				duration = 10950
+# 			}
+# 		}
+# 	}
+# }
 
 # Galician Nobles rule the region #
 

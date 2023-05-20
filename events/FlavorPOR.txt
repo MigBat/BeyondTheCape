@@ -989,6 +989,8 @@ country_event = {
 	trigger = {
 		tag = POR
 		NOT = { has_global_flag = columbus_happened }
+		NOT = { has_country_flag = turned_down_columbus }
+		NOT = { has_discovered = 1177 }
 		is_year = 1485
 		has_idea_group = exploration_ideas
 	}
@@ -1001,26 +1003,12 @@ country_event = {
 		name = "flavor_por.EVTOPTA1"
 		ai_chance = { factor = 90 }
 		add_prestige = 5
+
+		set_country_flag = turned_down_columbus
 	}
 	
 	option = {		# Hire Columbus
 		name = "flavor_por.EVTOPTB1"
-
-		trigger = {
-			NOT = { has_discovered = 1177 }
-			OR = {
-				NOT = {
-					north_america = {
-						has_discovered = ROOT
-					}
-				}
-				NOT = {
-					south_america = {
-						has_discovered = ROOT
-					}
-				}
-			}
-		}
 
 		ai_chance = { factor = 10 }
 		set_global_flag = columbus_happened

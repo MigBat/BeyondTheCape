@@ -141,6 +141,20 @@ gc_por_1_a = {
 					}
 					add_permanent_claim = ROOT
 				}
+				if = {
+					limit = {
+						exists = ARA
+						valid_for_personal_unions_trigger = yes
+						ARA = {
+							valid_for_personal_unions_trigger = yes
+						}
+					}
+					add_casus_belli = {
+						type = cb_restore_personal_union
+						months = 300
+						target = ARA
+					}
+				}
 			}
 			else = {
 				add_country_modifier = {

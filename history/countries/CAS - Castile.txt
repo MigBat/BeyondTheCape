@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = castillian
-add_accepted_culture = andalucian
+add_accepted_culture = galician
 add_accepted_culture = leonese
 religion = catholic
 technology_group = western

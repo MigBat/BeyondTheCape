@@ -107,6 +107,10 @@
  christ_order:0 "Order of Christ"
  christ_order_desc:0 "The Order of Christ was founded in 1319, with the protection of King Denis of Portugal, after the Templars were abolished. It accumulated great riches and power during the Age of Discoveries."
 
+# Policies #
+
+ recognition_of_local_hierarchies:0 "Recognition of Local Hierarchies"
+
 # Flagships #
  portuguese_mass_load_cannons:0 "Portuguese Mass Load Cannons"
  portuguese_mass_load_cannons_desc:0 "However many cannons the enemy puts on their flagship, we must have twice as many. No ship has ever sunk from having too many cannons."
