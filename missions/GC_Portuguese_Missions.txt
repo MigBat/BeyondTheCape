@@ -1248,10 +1248,10 @@ gc_por_3 = {
 				siege = 1
 				trait = level_headed_personality
 			}
-			add_country_modifier = {
-				name = around_africa
-				duration = 1825
-			}
+			# add_country_modifier = {
+			# 	name = around_africa
+			# 	duration = 1825
+			# }
 		}
 	}
 
@@ -1314,13 +1314,13 @@ gc_por_3 = {
 		
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = miss_discover_south_africa
-				south_africa_region = {
+				tooltip = miss_discover_cape_of_storms
+				cape_of_storms_area = {
 					has_discovered = ROOT
 				}
 			}
-			light_ship_fraction = 0.25
-			navy_size_percentage = 1
+			light_ship_fraction = 0.5
+			has_naval_doctrine = any 
 		}
 	
 		effect = {
