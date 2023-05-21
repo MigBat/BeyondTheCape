@@ -155,6 +155,20 @@ gc_por_1_a = {
 						target = ARA
 					}
 				}
+				if = {
+					limit = {
+						exists = CAS
+						valid_for_personal_unions_trigger = yes
+						CAS = {
+							valid_for_personal_unions_trigger = yes
+						}
+					}
+					add_casus_belli = {
+						type = cb_restore_personal_union
+						months = 300
+						target = CAS
+					}
+				}
 			}
 			else = {
 				add_country_modifier = {

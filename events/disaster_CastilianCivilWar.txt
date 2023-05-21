@@ -1483,3 +1483,132 @@ country_event = {
 		ARA = { create_union = CAS }
 	}
 }
+
+# Heir Dies #
+country_event = {
+	id = castilian_civil_war.31
+	title = "castilian_civil_war.31.t"
+	desc = "castilian_civil_war.31.d"
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CAS
+		NOT = { has_disaster = castilian_civil_war }
+		OR = {
+			# Castile Isabel died
+			AND = {
+				POR = {
+					has_heir_flag = isabel
+				}
+				CAS = {
+					NOT = { has_heir_flag = isabel }
+					NOT = { has_ruler_flag = isabel }
+				}
+			}
+			# Portugal Isabel died
+			AND = {
+				CAS = {
+					has_heir_flag = isabel
+				}
+				POR = {
+					NOT = { has_heir_flag = isabel }
+					NOT = { has_ruler_flag = isabel }
+				}
+			}
+			# Castile Joanna died
+			AND = {
+				ARA = {
+					has_heir_flag = joanna
+				}
+				CAS = {
+					NOT = { has_heir_flag = joanna }
+					NOT = { has_ruler_flag = joanna }
+				}
+			}
+			# Aragon Joanna died
+			AND = {
+				CAS = {
+					has_heir_flag = joanna
+				}
+				ARA = {
+					NOT = { has_heir_flag = joanna }
+					NOT = { has_ruler_flag = joanna }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "castilian_civil_war.30a"
+
+		trigger = {
+			POR = {
+				has_heir_flag = isabel
+			}
+			CAS = {
+				NOT = { has_heir_flag = isabel }
+				NOT = { has_ruler_flag = isabel }
+			}
+		}
+
+		POR = {
+			kill_heir = { allow_new_heir = yes }
+		}
+	}
+
+	option = {
+		name = "castilian_civil_war.30a"
+
+		trigger = {
+			CAS = {
+				has_heir_flag = isabel
+			}
+			ARA = {
+				NOT = { has_heir_flag = isabel }
+				NOT = { has_ruler_flag = isabel }
+			}
+		}
+
+		CAS = {
+			kill_heir = { allow_new_heir = yes }
+		}
+	}
+
+	option = {
+		name = "castilian_civil_war.30a"
+
+		trigger = {
+			ARA = {
+				has_heir_flag = joanna
+			}
+			CAS = {
+				NOT = { has_heir_flag = joanna }
+				NOT = { has_ruler_flag = joanna }
+			}
+		}
+
+		ARA = {
+			kill_heir = { allow_new_heir = yes }
+		}
+	}
+
+	option = {
+		name = "castilian_civil_war.30a"
+
+		trigger = {
+			CAS = {
+				has_heir_flag = joanna
+			}
+			ARA = {
+				NOT = { has_heir_flag = joanna }
+				NOT = { has_ruler_flag = joanna }
+			}
+		}
+
+		CAS = {
+			kill_heir = { allow_new_heir = yes }
+		}
+	}
+}
