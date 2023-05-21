@@ -2172,8 +2172,8 @@ country_event = {
 		# 	}
 		# }
 
-		add_adm_power = -50
-		add_mil_power = -50
+		add_adm_power = -100
+		add_mil_power = -100
 
 		# remove_country_modifier = overseas_focus
 		add_country_modifier = {
@@ -2192,8 +2192,8 @@ country_event = {
 		# 	}
 		# }
 
-		add_adm_power = -50
-		add_dip_power = -50
+		add_adm_power = -100
+		add_dip_power = -100
 
 		# remove_country_modifier = homeland_focus
 		add_country_modifier = {
