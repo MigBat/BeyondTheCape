@@ -10,7 +10,7 @@
  saudade_tt:0 "Government has Saudade mechanic."
 
  portuguese_focus_decision_title:0 "Portuguese Focus"
- portuguese_focus_decision_desc:0 "We can manage our Saudade by focusing on our homeland or overseas. The effects of this decision are permanent, but you can change this focus after 1 year has passed."
+ portuguese_focus_decision_desc:0 "We can manage our Saudade by focusing on our homeland or overseas. The effects of this decision last for 5 years."
  overseas_policy_decision_title:0 "Overseas Policy"
  overseas_policy_decision_desc:0 "We can manage our Saudade by boosting or reducing its growth rate. The effects of this decision will last for 5 years, and you can only take this decision after that time has passed."
  
