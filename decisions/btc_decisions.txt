@@ -16,6 +16,7 @@ country_decisions = {
 		}
 
 		effect = {
+			add_years_of_income = -0.25
 			add_country_modifier = {
 				name = square_rigged_caravel
 				duration = -1
@@ -42,6 +43,7 @@ country_decisions = {
 		}
 
 		effect = {
+			add_years_of_income = -0.25
 			add_country_modifier = {
 				name = nau
 				duration = -1
