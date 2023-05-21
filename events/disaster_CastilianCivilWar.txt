@@ -1357,9 +1357,10 @@ country_event = {
 					POR = { has_ruler_flag = isabel }
 				}
 			}
-			prestige = POR
-			legitimacy = POR
-			total_development = POR
+			OR = {
+				prestige = POR
+				legitimacy = POR
+			}
 		}
 
 		if = {
@@ -1391,9 +1392,10 @@ country_event = {
 					ARA = { has_ruler_flag = joanna }
 				}
 			}
-			prestige = ARA
-			legitimacy = ARA
-			total_development = ARA
+			OR = {
+				prestige = ARA
+				legitimacy = ARA
+			}
 		}
 
 		if = {
@@ -1425,10 +1427,9 @@ country_event = {
 					POR = { has_ruler_flag = isabel }
 				}
 			}
-			OR = { 
+			AND = { 
 				NOT = { prestige = POR }
 				NOT = { legitimacy = POR }
-				NOT = { total_development = POR }
 			}
 		}
 
@@ -1461,10 +1462,9 @@ country_event = {
 					ARA = { has_ruler_flag = joanna }
 				}
 			}
-			OR = {
+			AND = {
 				NOT = { prestige = ARA }
 				NOT = { legitimacy = ARA }
-				NOT = { total_development = ARA }
 			}
 		}
 
