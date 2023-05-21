@@ -378,6 +378,7 @@ estate_burghers_new_world_charter = {
 			num_of_colonists = 1
 			num_of_colonies = 1
 		}
+		has_country_modifier = quest_for_the_new_world
 	}
 	penalties = {
 		global_tariffs = -0.10

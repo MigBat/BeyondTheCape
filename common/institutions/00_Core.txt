@@ -635,9 +635,9 @@ new_world_i = {
 		has_port = yes
 		is_island = no
 		is_state = yes
+		development = 12
 		OR = {
 			province_has_center_of_trade_of_level = 1
-			development = 12
 			is_capital = yes
 		}
 		is_in_capital_area = yes

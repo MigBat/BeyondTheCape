@@ -409,11 +409,11 @@ extra_flagship = {
 }
 
 homeland_focus = {
-	monthly_portuguese_saudade = -0.1
+	monthly_portuguese_saudade = -1
 }
 
 overseas_focus = {
-	monthly_portuguese_saudade = 0.1
+	monthly_portuguese_saudade = 1
 }
 
 high_saudade_1 = {

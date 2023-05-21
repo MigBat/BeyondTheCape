@@ -16,6 +16,8 @@ country_event = {
 	title = btc_por.1_t
 	desc = btc_por.1_d
 	picture = COUNTRY_COLLAPSE_eventPicture
+
+	major = yes
 	
 	fire_only_once = yes
 	
@@ -2164,55 +2166,56 @@ country_event = {
 	option = {	# Homeland focus
 		name = btc_por.131a
 
-		trigger = {
-			NOT = {
-				has_country_flag = homeland
-			}
-		}
+		# trigger = {
+		# 	NOT = {
+		# 		has_country_flag = homeland
+		# 	}
+		# }
 
-		add_adm_power = -40
+		add_adm_power = -50
+		add_mil_power = -50
 
-		remove_country_modifier = overseas_focus
+		# remove_country_modifier = overseas_focus
 		add_country_modifier = {
 			name = homeland_focus
-			duration = -1
+			duration = 1875
 		}
-		set_country_flag = homeland
+		# set_country_flag = homeland
 	}
 
 	option = {	# Overseas focus
 		name = btc_por.131b
 
-		trigger = {
-			NOT = {
-				has_country_flag = overseas
-			}
-		}
+		# trigger = {
+		# 	NOT = {
+		# 		has_country_flag = overseas
+		# 	}
+		# }
 
-		add_mil_power = -20
-		add_dip_power = -30
+		add_adm_power = -50
+		add_dip_power = -50
 
-		remove_country_modifier = homeland_focus
+		# remove_country_modifier = homeland_focus
 		add_country_modifier = {
 			name = overseas_focus
-			duration = -1
+			duration = 1875
 		}
-		set_country_flag = overseas
+		# set_country_flag = overseas
 	}
 
-	option = {	# No focus
-		name = btc_por.131c
+	# option = {	# No focus
+	# 	name = btc_por.131c
 
-		trigger = {
-			OR = {
-				has_country_flag = overseas
-				has_country_flag = homeland
-			}
-		}
+	# 	trigger = {
+	# 		OR = {
+	# 			has_country_flag = overseas
+	# 			has_country_flag = homeland
+	# 		}
+	# 	}
 
-		remove_country_modifier = homeland_focus
-		remove_country_modifier = overseas_focus
-	}
+	# 	remove_country_modifier = homeland_focus
+	# 	remove_country_modifier = overseas_focus
+	# }
 
 	option = {	# Go back
 		name = btc_por.131d

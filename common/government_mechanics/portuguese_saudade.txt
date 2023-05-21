@@ -24,7 +24,7 @@ portuguese_saudade_mechanic = {
 			reverse_scaled_modifier = {
 				modifier = {
 					allowed_tercio_fraction = 0.15
-					global_colonial_growth = 20
+					global_colonial_growth = 30
 					reduced_liberty_desire_on_other_continent = -10
 				}
 			}

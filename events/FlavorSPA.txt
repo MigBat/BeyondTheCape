@@ -3016,6 +3016,7 @@ country_event = {
 	trigger = {
 		tag = CAS
 		NOT = { has_global_flag = columbus_happened }
+		NOT = { has_country_flag = turned_down_columbus }
 		iberia_region = {
 			type = all
 			NOT = { owned_by = GRA }

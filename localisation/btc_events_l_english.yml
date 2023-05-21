@@ -204,6 +204,20 @@
  btc_por.128a:0 "Bargaining successful! Goa is ours!"
  btc_por.128b:0 "If they won't sell it to us, then we shall take it by force!"
 
+# Granada Paria #
+
+ btc_gra.1_t:0 "Paria Tax"
+ btc_gra.1_d:0 "Parias are a form of tribute paid by the taifas of al-Andalus to the Christian kingdoms of the north. They were a form of protection money established by treaty. The payee owed the tributary military protection against foes both Islamic and Christian. Usually the original exaction was forced, either by a large razzia or the threat of one, or as the cost of supporting one Islamic party against another."
+ btc_gra.1a:0 "Pay the paria."
+ btc_gra.1b:0 "Refuse to pay."
+ btc_gra.2_t:0 "Paria Paid"
+ btc_gra.2_d:0 "Granada has paid their paria tax, and so we will protect them until the next payment is due."
+ btc_gra.2a:0 "Good."
+ btc_gra.3_t:0 "Paria Not Paid"
+ btc_gra.3_d:0 "Granada has refused to pay their paria tax. We are no longer bound to protect them, so now we must make a decision of what do to with them."
+ btc_gra.3a:0 "We will show them what it means to cross us."
+ btc_gra.3b:0 "Let them be."
+
 # Changes from vanilla localisation #
 
  flavor_por.EVTOPTA11:0 "Broker a deal with the local ruler"

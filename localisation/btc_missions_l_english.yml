@@ -39,6 +39,7 @@
  gc_por_fifth_empire_desc:0 "While the kings of Castile have occasionally had the arrogance to declare themselves Emperor of all Spain, we will create a true union of the Iberian crowns, one that will span the whole world."
  gc_por_search_for_gold_title:0 "Searching for Gold"
  gc_por_search_for_gold_desc:0 "There are reports of gold mines in the deeper regions of eastern Africa. We should control the banks of the river Tete to find and bring these riches to safe shores." 
+ miss_discover_cape_of_storms:0 "§Y[Root.GetName]§! has discovered the Cape of Storms."
 
 # Changes from vanilla localisation #
 
