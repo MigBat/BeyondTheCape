@@ -296,6 +296,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					is_capital = no
 					is_overseas = no
 					is_city = yes
 					is_island = no
@@ -304,6 +305,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					is_capital = no
 					is_overseas = no
 					is_city = yes
 					has_river_estuary_trigger = yes
@@ -312,6 +314,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					is_capital = no
 					is_overseas = no
 					is_city = yes
 					province_has_center_of_trade_of_level = 1
@@ -320,6 +323,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					is_capital = no
 					is_overseas = no
 					is_city = yes
 					province_has_center_of_trade_of_level = 2
@@ -328,6 +332,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					is_capital = no
 					is_overseas = no
 					is_city = yes
 					province_has_center_of_trade_of_level = 1
@@ -337,6 +342,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					is_capital = no
 					is_overseas = no
 					is_city = yes
 					province_has_center_of_trade_of_level = 2
@@ -346,6 +352,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					is_capital = no
 					is_overseas = no
 					is_city = yes
 					province_has_center_of_trade_of_level = 3
