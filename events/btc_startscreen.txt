@@ -34,6 +34,14 @@ country_event = {
 		}
 	}
 
+	option = {	# Sound Tolls
+		name = btc_startscreen.1d
+
+		country_event = {
+			id = btc_startscreen.5
+		}
+	}
+
 	option = {	# I've got it
 		name = btc_startscreen.1d
 
@@ -90,7 +98,7 @@ country_event = {
 		name = btc_startscreen.4a
 
 		country_event = {
-			id = btc_startscreen.5
+			id = btc_startscreen.41
 		}
 	}
 
@@ -98,7 +106,7 @@ country_event = {
 		name = btc_startscreen.4b
 
 		country_event = {
-			id = btc_startscreen.6
+			id = btc_startscreen.42
 		}
 	}
 
@@ -106,7 +114,7 @@ country_event = {
 		name = btc_startscreen.4c
 
 		country_event = {
-			id = btc_startscreen.7
+			id = btc_startscreen.43
 		}
 	}
 
@@ -121,6 +129,60 @@ country_event = {
 
 # Castile tutorial #
 country_event = {
+	id = btc_startscreen.41
+	title = btc_startscreen.41_t
+	desc = btc_startscreen.41_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.41a
+
+		country_event = {
+			id = btc_startscreen.4
+		}
+	}
+}
+
+# Portugal tutorial #
+country_event = {
+	id = btc_startscreen.42
+	title = btc_startscreen.42_t
+	desc = btc_startscreen.42_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.42a
+
+		country_event = {
+			id = btc_startscreen.4
+		}
+	}
+}
+
+# Aragon tutorial #
+country_event = {
+	id = btc_startscreen.43
+	title = btc_startscreen.43_t
+	desc = btc_startscreen.43_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.43a
+
+		country_event = {
+			id = btc_startscreen.4
+		}
+	}
+}
+
+# Sound Tolls tutorial #
+country_event = {
 	id = btc_startscreen.5
 	title = btc_startscreen.5_t
 	desc = btc_startscreen.5_d
@@ -132,43 +194,7 @@ country_event = {
 		name = btc_startscreen.5a
 
 		country_event = {
-			id = btc_startscreen.4
-		}
-	}
-}
-
-# Portugal tutorial #
-country_event = {
-	id = btc_startscreen.6
-	title = btc_startscreen.6_t
-	desc = btc_startscreen.6_d
-	picture = tutorial_picture
-
-	is_triggered_only = yes
-
-	option = {	# go back
-		name = btc_startscreen.6a
-
-		country_event = {
-			id = btc_startscreen.4
-		}
-	}
-}
-
-# Aragon tutorial #
-country_event = {
-	id = btc_startscreen.7
-	title = btc_startscreen.7_t
-	desc = btc_startscreen.7_d
-	picture = tutorial_picture
-
-	is_triggered_only = yes
-
-	option = {	# go back
-		name = btc_startscreen.7a
-
-		country_event = {
-			id = btc_startscreen.4
+			id = btc_startscreen.1
 		}
 	}
 }

@@ -1541,7 +1541,7 @@ country_event = {
 	}
 
 	option = {
-		name = "castilian_civil_war.30a"
+		name = "castilian_civil_war.31a"
 
 		trigger = {
 			POR = {
@@ -1559,7 +1559,7 @@ country_event = {
 	}
 
 	option = {
-		name = "castilian_civil_war.30a"
+		name = "castilian_civil_war.31b"
 
 		trigger = {
 			CAS = {
@@ -1577,7 +1577,7 @@ country_event = {
 	}
 
 	option = {
-		name = "castilian_civil_war.30a"
+		name = "castilian_civil_war.31c"
 
 		trigger = {
 			ARA = {
@@ -1595,7 +1595,7 @@ country_event = {
 	}
 
 	option = {
-		name = "castilian_civil_war.30a"
+		name = "castilian_civil_war.31d"
 
 		trigger = {
 			CAS = {
