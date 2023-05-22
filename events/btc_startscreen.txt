@@ -18,6 +18,14 @@ country_event = {
 		}
 	}
 
+	option = {	# Castile
+		name = btc_startscreen.1f
+
+		country_event = {
+			id = btc_startscreen.6
+		}
+	}
+
 	option = {	# Exploration
 		name = btc_startscreen.1b
 
@@ -43,7 +51,7 @@ country_event = {
 	}
 
 	option = {	# I've got it
-		name = btc_startscreen.1d
+		name = btc_startscreen.1e
 
 		set_country_flag = tutorial_done
 	}
@@ -60,6 +68,24 @@ country_event = {
 
 	option = {	# go back
 		name = btc_startscreen.2a
+
+		country_event = {
+			id = btc_startscreen.1
+		}
+	}
+}
+
+# Castile tutorial #
+country_event = {
+	id = btc_startscreen.6
+	title = btc_startscreen.6_t
+	desc = btc_startscreen.6_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.6a
 
 		country_event = {
 			id = btc_startscreen.1
