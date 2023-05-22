@@ -68,3 +68,4 @@
  gal_irmandinos_desc:0 "If there is any lesson to be drawn from the destructive Irmandinhos civil war that ravenged our county, is that the quickest way to break an enemy's resistence, is to tear down it's fortress. If these peasants were able to bring down over a hundred of our forts, we have much to learn from them." 
  gc_por_portugal_discovers_south_america_title:0 "Colonize Brazil"
  gc_por_portugal_discovers_south_america_desc:0 "The fertile land in Brazil would be an excellent place to begin a new colonial venture."
+ miss_discover_caribbean:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region."

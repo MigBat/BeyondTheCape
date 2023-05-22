@@ -12,6 +12,7 @@ country_event = {
 		tag = GRA
 		NOT = { truce_with = CAS }
 		NOT = { has_country_flag = paria_not_paid }
+		NOT = { is_year = 1480 }
 	}
 
 	option = {
@@ -19,10 +20,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 75
-			modifier = {
-				factor = 0
-				is_year = 1480
-			}
 		}
 
 		add_years_of_income = -0.5
