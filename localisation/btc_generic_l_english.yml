@@ -108,7 +108,6 @@
  christ_order_desc:0 "The Order of Christ was founded in 1319, with the protection of King Denis of Portugal, after the Templars were abolished. It accumulated great riches and power during the Age of Discoveries."
 
 # Policies #
-
  recognition_of_local_hierarchies:0 "Recognition of Local Hierarchies"
 
 # Flagships #
@@ -141,4 +140,6 @@
 # Other #
 
  colonial_region_restriction: "You cannot colonize outside of your capital's colonial region."
+ not_war_leader_tt: "[Root.GetName] is not a war leader."
+ is_ally_of_enemy_tt: "[From.GetName] is an ally of our enemy."
 
