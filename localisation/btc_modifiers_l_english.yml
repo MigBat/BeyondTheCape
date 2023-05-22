@@ -4,6 +4,8 @@
  desc_quest_for_the_new_world:0 "We have developed the technology required to explore the uncharted deep waters of the ocean."
  resist_reconquista:0 "Resist Reconquista"
  desc_resist_reconquista:0 "We will double our efforts to keep the christians at bay."
+ btc_sound_toll:0 "Sound Toll"
+ desc_btc_sound_toll:0 "Owning both sides of this sound allows us to control trade that flows through it."
 
 # Irmandino Revolts #
  galician_revolts:0 "Galician Revolts"
