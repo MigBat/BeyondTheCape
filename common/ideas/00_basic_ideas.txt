@@ -1070,7 +1070,7 @@ exploration_ideas = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { dip_tech = 7 }
+			NOT = { adm_tech = 6 }
 			capital_scope = {
 				NOT = {
 					region = iberia_region
