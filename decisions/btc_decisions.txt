@@ -153,3 +153,62 @@ country_decisions = {
 		}
 	}
 }
+
+country_decisions = {
+	iberian_wedding_information = {
+		potential = {
+			OR = {
+				AND = {
+					tag = POR
+					has_heir_flag = isabel
+				}
+				AND = {
+					tag = ARA
+					has_heir_flag = joanna
+				}
+			}
+		}
+
+		allow = {
+			prestige = CAS
+			legitimacy = CAS
+		}
+
+		effect = {
+		}
+	}
+}
+
+country_decisions = {
+	cas_por_iberian_wedding_information = {
+		potential = {
+			tag = CAS
+			has_heir_flag = isabel
+		}
+
+		allow = {
+			prestige = POR
+			legitimacy = POR
+		}
+
+		effect = {
+		}
+	}
+}
+
+country_decisions = {
+	cas_ara_iberian_wedding_information = {
+		potential = {
+			tag = CAS
+			has_heir_flag = joanna
+		}
+
+		allow = {
+			prestige = ARA
+			legitimacy = ARA
+		}
+
+		effect = {
+		}
+	}
+}

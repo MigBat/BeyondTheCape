@@ -945,11 +945,11 @@ country_event = {
 
 		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +5% admin tech cost
 			name = anti_islamic_society
-			duration = 73000
+			duration = 7300
 		}
 		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +0.2 interest rate
 			name = anti_semitic_society
-			duration = 73000
+			duration = 7300
 		}
 	}
 
@@ -1011,6 +1011,8 @@ country_event = {
 		}
 	}
 }
+
+# Death of the Infante #
 
 country_event = {
 	id = btc_por.102
@@ -1196,7 +1198,7 @@ country_event = {
 
 	trigger = {
 		tag = POR
-		is_year = 1544
+		is_year = 1531
 		NOT = { dip_tech = 11 }
 	}
 
@@ -1328,7 +1330,7 @@ country_event = {
 
 	trigger = {
 		tag = POR
-		is_year = 1596
+		is_year = 1583
 		NOT = { dip_tech = 15 }
 		OR = {
 			trade_company_coromandel = { 
@@ -1433,7 +1435,10 @@ country_event = {
 	trigger = {
 		tag = POR
 		south_america_superregion = {
-			owned_by = ROOT
+			OR = {
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
+			}
 			is_city = yes
 			trade_goods = gold
 		}
