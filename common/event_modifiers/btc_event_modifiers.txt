@@ -436,7 +436,7 @@ low_saudade_3 = {
 }
 
 around_africa = {
-	range = 0.25
+	range = 0.5
 }
 
 btc_sound_toll = {
