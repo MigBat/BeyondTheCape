@@ -446,4 +446,5 @@ btc_sound_toll = {
 feitoria = {
 	province_trade_power_value = 5
 	defensiveness = 0.15
+	local_governing_cost = 0.25
 }

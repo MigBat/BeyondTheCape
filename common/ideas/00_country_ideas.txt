@@ -1644,7 +1644,6 @@ IBE_ideas = {
 	}
 	por_feitoria_system = {
 		trade_steering = 0.15
-		defensiveness = 0.15
 	}
 	por_india_armadas = {
 		global_ship_trade_power = 0.15
