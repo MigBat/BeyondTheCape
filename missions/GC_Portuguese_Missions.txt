@@ -1188,7 +1188,7 @@ gc_por_3 = {
 				}
 			}
 			else = {
-				navy_size_percentage = 0.95
+				navy_size_percentage = 0.85
 			}
 		}
 

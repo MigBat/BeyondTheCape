@@ -1,79 +1,457 @@
-###########################
-# BEYOND THE CAPE: v1.0.0 #
-###########################
+### Changelog ###
 
-### PROVINCES ###
+## Common ##
 
-# added Setúbal and Beira Baixa provinces.
-# renamed Beira to Beira Alta.
-# replaced Aveiro province with Minho.
-# Denmark Strait province incorporated into Denmark Sea province. (denmark strait is a coastal sea tile, meaning the New World could be explored without QFNTW.
-# Porto now produces cloth rather than wine (an event can change it to wine).
-# Bragança now produces livestock rather than wine (an event can change it to wine).
+# Ages #
 
-### TRADE ###
+- Portugal age bonus changed from +50 global colonial growth to +100% special unit forcelimit
 
-# created new trade node Lisboa, splitting the Sevilla node in two. It receives trade from Gulf of St. Lawrence, Caribbean, Ivory Coast and Safi. It transfers to Sevilla and English Channel. The Lisboa node is comparable in size to the Valencia node.
-# added North Morocco area to Safi trade node.
-# now trade flows from Hormuz to Gulf of Aden rather than the other way around.
+# Bookmarks #
 
-### COLONIAL REGIONS AND TRADE COMPANIES ###
+- The bookmark Rise of the Ottomans is no longer the default bookmark
+- Added new default bookmark called Beyond the Cape
 
-# added Portuguese Charter in Lisboa trade node.
-# added North Morocco area to Maghreb Charter.
-# the caribbeans is no longer a colonial region, it is now a trade company region. this is to represent the variety of nations that colonized the islands and to promote competition between the countries, in particular privateering.
+# Casus Belli Types #
 
-### MONUMENTS ###
+- Added new casus belli for the castilian civil war (attacker cannot demand provinces)
 
-# added Mosteiro da Batalha monument in Coimbra. It took over a century to build, starting in 1386 and ending circa 1517, spanning the reign of seven kings. We feel this more adequately represents what a monument is in the game.
-# removed Torre de Belem monument in Lisboa. It's just a glorified naval battery. It still exists in the game in the form of a modifier given by a mission.
-# fuerte del morro monument (Puerto Rico) bonuses have been adjusted, since it is no longer located in a colonial region.
+# Colonial Regions #
 
-### DISASTERS ###
+- The Caribbean is no longer a colonial region
 
-# reworked castilian civil war disaster, giving Portugal and Aragon a chance to claim the crown of Castile.
+# Countries #
 
-### EVENTS ###
+- Changed country colour of Asturias
+- Changed country colour of Galicia
+- Added new formable country named Iberia
+- Changed country colour of Portugal
+- Changed portuguese monarch names chance when generated
+- Changed country colour of Tlemcen
+- Changed country colour of Touggourt
 
-# added many new portuguese events, including a much improved Lisbon Earthquake event chain, and reworked existing ones.
-# reworked Columbus event (more under "exploration").
-# removed the Iberian Wedding event since it has been integrated into the castilian civil war disaster event chain.
-# added Irmandinos Revolt event chain that focuses on Castile, Galicia and Portugal.
+# Country Tags #
 
-### MISSIONS ###
+- Added new country tag IBE for Iberia
 
-# added new Portuguese missions and reworked existing ones. Number of missions is now on par with that of England.
-# all countries that have missions to colonize the caribbeans have had their missions adequately modified to represent the change from colonial region to trade company.
+# Diplomatic actions #
 
-### IDEAS ###
+- It is no longer possible to ask military access to a country that is allied to your war enemy
 
-# reworked exploration ideas to be more historically accurate. Now QFTNW gives ships +1 speed and does not allow hiring explorers and conquistadors (more under "exploration").
-# changed Granada traditions to include enemy coring cost.
-# changed Portuguese traditions to include morale damage done by units.
+# Disasters #
 
-### EXPLORATION ###
+- Castilian Civil War disaster no longer requires stability to be 1 to end
+- It requires for no rebel armies to exist
+- Castile needs to have one of 3 flags: civil_war_ended, no_contest, or cas_civil_war_rebels_won
+- While the disaster is active Castile will receive -65% land forcelimit, -65% global manpower modifier and -5% discipline
+- There are no more on_monthly events during the disaster
 
-# diplomatic tech 7 now triggers an event for countries with exploration ideas which gives the ability to hire explorers, conquistadors and to sail into ocean provinces.
+# Estate Agendas #
 
-Developer note: We have decided to change how exploration happens in the game because we feel it deviates too much from what actually happened. Historically, since the start of the game Portugal is the only nation that is completely 
-focusing on exploration, while Castile still has to finish the reconquista and deal with internal turmoil and the affairs with Aragon. Additionally, Portugal's whole plan was to sail around Africa to get to India, not really focusing 
-on sailing west, like Columbus did. This is made clear by the fact that Columbus was rejected TWICE by the King of Portugal before he took his ideas to Castile. Thus, we wanted to represent this in the game somehow. 
-Portugal will receive the chance to hire Columbus if the year is at least 1480. If they reject the offer (if they discovered Cape province this is the only option), Castile will have that chance. However, they
-first need to conquer Granada, to represent the end of the reconquista and the beginning of looking outwards to the sea. If Columbus is hired, not only will the country get an explorer with great pips, but also the country will receive
-a modifier that will allow hiring explorers, conquistadors and exploring ocean tiles, without needing to wait for diplomatic tech 7!
-So now, even though Portugal starts with an explorer, they will be unable to hire new ones until they reach diplomatic tech 7, or accept Columbus' proposal. Through the completion of their mission tree, we have given Portugal numerous
-famous explorers, so they can continue their journey around Africa into India.
+- Changed instances of idea quest_for_the_new_world to modifier of the same name
+- Burgher estate agenda "Discover X in America" now requires exploration ideas to happen
 
-### FLAGSHIPS ###
+# Estate Privileges ##
 
-# replaced spanish 100% more cannnons with 100% more durability (spanish galleons were sturdier than most to endure their long journeys, and to resist piracy attempts)
-# added spanish +6 engagement width.
-# replaced portuguese 125% exploration range with 100% more cannons (see the Galleon S. João Baptista, aka Botafogo)
+- Burgher privilege "New World Charter" now requires quest_for_the_new_world modifier
 
-### OTHER CHANGES ###
+# Event Modifiers #
 
-# added many new songs when you play as Portugal, including the main theme.
-# reworked Portugal's borders, terrain and rivers.
-# slightly changed Gulf of Valencia so Aragon can no longer claim Granada's provinces.
-# added new trade winds in South Atlantic, Indian and Pacific oceans.
-# Henrique o Navegador advisor is no longer a naval reformer. He is now a navigator, as the name suggests.
+- Aragon no longer unlocks Caravel but instead unlocks Galleass
+- Castilian/Spanish Galleon fraction increased from 10% to 20% of naval forcelimit
+- Added modifiers to all new events, missions, units, province modifiers and government mechanics
+
+# Flagship Modifications #
+
+- Mass Load Cannons are now available to Castile and Spain and unavailable to Portugal and Brazil
+- Added Spanish Hull Sheathing modification for Castile and Spain which gives +100% durability
+- Portuguese Navigators has been changed to Spanish Navigators and removed from Portugal and Brazil to give to Castile and Spain
+- Spanish Mass Load Cannons has been changed to Portuguese Mass Load Cannons and removed from Castile and Spain to give to Portugal and Brazil
+
+# Government Mechanics #
+
+- Added new mechanic for Portugal called Saudade, which works similarly to Ottoman Decadence
+
+# Government Reforms #
+
+- Portuguese Monarchy reform no longer gives +10% tax and +20% sailor recovery speed
+- It now gives -1 unrest in catholic provinces and +5% clergy loyalty
+- Additionally, it gives the ability to create trade posts and access to the Saudade mechanic
+- Ordenanças reform no longer gives +1 land leader shock and -0.0005 army tradition decay
+- It now gives +1 own territory dice roll bonus, -10% land forcelimit, +25% garrison size, +50% garrison damage and +20% global garrison growth
+
+# Great Projects #
+
+- Belém Tower monument is no longer available
+- Added Batalha Monastery monument that gives bonuses to army tradition, clergy loyalty and stability
+
+# Holy Orders #
+
+- Changed AI chance of adopting certain holy orders based on factors such as existence of forts in the area
+- Added Order of Christ for portuguese and brazilian primary culture countries
+- Once adopted it gives provinces +10% local sailors and -15% ship building time
+
+# Ideas #
+
+- Added a monthly portuguese saudade modifier to each idea group bonus
+- Exploration idea group bonus is now -10% minimum autonomy in territories
+- Quest For The New World no longer exists as an idea
+- Added idea to exploration group called Experienced Sailors that gives -10% naval attrition and -10% attrition for units on transports
+- Changed order of Free Colonies and Factories ideas
+- AI will no longer choose exploration ideas if the country's capital is not in Iberia region and administrative tech is less than 6
+- Increased chance of England, Great Britain, France, Netherlands and Kurland picking exploration ideas from a factor of 2 to 100
+- Expansion idea group bonus is now the ability to fabricate claim overseas in colonial regions
+- AI will no longer choose expansion ideas if the country is Portugal, Castile or Spain and it doesn't already have exploration ideas
+- English tradition changed from +10% infantry combat ability to +15%
+- English bonus changed from +10% naval morale to +20% heavy ship combat ability
+- Swapped order of Royal Navy and Elthan Ordinance ideas
+- Added -10% development cost in primary culture to Eltham Ordinance
+- Changed Royal Navy idea from +0.25 navy tradition to +0.5, and +10% heavy ship combat ability to +15% naval morale
+- Changed Navigation Acts idea from +10% trade efficiency to +15%
+- Added City Upon a Hill idea from Great Britain ideas giving +20 global colonial growth and +15% global tariffs
+- Changed English Redcoats from +10% fire damage to +5% discipline
+- Added Acts of Union idea from Great Britain ideas giving -15% diplomatic annexation cost and +10% governing capacity
+- Removed Sick and Hurt Aboard idea
+- Transfered British Bill of Rights idea to Great Britain ideas
+- Great Britain traditions changed from +15% heavy ship combat ability to +1 navy tradition
+- Great Britain bonus changed from +1 navy tradition to +5% administrative efficiency
+- Changed British Parliament idea from -1 global unrest to +1 legitimacy and +1 number of parliament issues to +2
+- Transfered Acts of Union and City Upon a Hill ideas to English ideas
+- Changed Royal Society from -5% tech cost to -15% tech cost
+- Added Integrated Highland Regiments idea giving -10% morale damage received
+- Added British Bill of Rights idea giving -2 global unrest
+- Reform of Comission Buying idea now also gives +25% allowed marine fraction
+- British Industrialization idea now also gives -15% development cost
+- Changed Britannia Rules the Waves idea from +1 naval leader maneuver to +2 naval leader fire and removed +50% allowed marine fraction
+- Swapped order of Norwegian idea Pioneer Spirit and Call of our Forefathers
+- Spanish tradition no longer give +1 artillery fire and instead give +1 colonist
+- Spanish bonus no longer gives +5% discipline and instead gives +15% infantry combat ability
+- Inter Caetera idea renamed to Conquest of Paradise and also gives +15 global colonial growth
+- Removed Salamanca Scholars idea
+- Added Spanish Inquisition idea giving +2% missionary strength and +1 missionary
+- Spanish Armada no longer gives +10% heavy ship combat ability and +25% naval forcelimit, instead giving -33% sunk ship morale hit received and +10% naval morale
+- Spanish Cortes no longer give +5% estate loyalty on privilege revoked and instead give +5% reform progress growth
+- Castile traditions no longer +15% land morale and +25% naval forcelimit, instead they are -0.01 army tradition decay and +25% cavalry combat ability
+- Castile bonus no longer +25 colonial growth, instead it is +25% naval forcelimit
+- The Reconquista idea changed from -0.01 army tradition decay to -10% warscore against other religions and +10% land morale
+- Added Inter Caetera idea that gives +1 colonist
+- Added Conquest of Paradise idea giving ability to create claims on colonial regions and +20 colonial growth
+- Transfered Spanish Inquisition idea to Spanish ideas
+- Added Devout Catholicism idea giving +2 papal influence
+- Infantas idea changed from +1 diplomatic reputation to +2, and removed +33% heir chance
+- Removed Salamanca Scholard idea
+- Nueva Planta idea changed from -0.05 global autonomy to +15% reduced liberty desire on same continent and -15% diplomatic annexation cost
+- Netherlands bonus changed from +15% trade efficiency to +20%
+- Dutch Trading Spirit no longer gives +10% trade range
+- Amsterdam Wisselbank idea is now 3rd idea and also gives -25% interest
+- Army Sappers idea now also gives +15% fort defense
+- Platoon Fire idea changed from +10% fire damage to +5% infantry fire and +10% infantry combat ability
+- French idea Hundred Years War Lessons changed from +0.5 army tradition to +100% cavalry shock
+- Prussian traditions changed from -10% agressive expansion impact to -15%
+- Prussion bonus changed to +5% discipline to +33% land forcelimit
+- Removed -15% army maintenance from Noble Cadets idea
+- Goose Step idea no longer gives +20% infantry combat ability, instead it gives +5% discipline
+- Portuguese traditions changed from +1 fleet movement speed and +10% infantry combat ability to +15% heavy ship combat ability and +15% morale damage dealt
+- Changed Legacy of the Navigator idea from +10% naval morale and +20% colonial range to +25% colonial range and -20% troops in transport attrition at sea
+- Added Feitoria idea giving +15% trade steering and +15% fort defense
+- Added India Armadas idea giving +15% ship trade power and +1 artillery fire
+- Renamed Land Before Faith to Bandeirantes, and removed the original Bandeirantes idea
+- Added Caçadores idea giving -20% fire damage received
+- Removed Afonsive Ordinances idea and Royal Military Academy idea
+- Changed Scottish traditions from +25% land forcelimit to +20% manpower modifier
+- Changed Scottish bonus from -5% land maintenance to -1 global unrest
+- Added Resist the English idea giving -15% morale damage received and +15% fort defense
+- Removed Break the Black Douglas idea
+- Changed Reign In The Clans idea from +20% manpower to +25% land forcelimit
+- Changed Acts of Revocation from -15% aggressive expansion impact to +5% estate loyalty on privilege revoked and -25% autonomy change time
+- Change Royal Revenue from +10% global tax to +15%
+- Changed Comets idea from -10% stability cost to -10% idea cost and +15% institution spread
+- Changed Aragon tradition from +10% trade efficiency to +10% land morale
+- Changed Aragon bonus from +1 artillery fire to +15% naval forcelimit
+- Protection of the Little Folk idea changed from +10% land morale to +50% infantry shock and -10% infantry cost
+- Protection of the Coastlines idea changed from +10% naval forcelimit and +25% global sailors  to -10% naval maintenance and -10% sailor maintenance
+- Mediterranean Trade idea changed from +20% trade steering to +15% trade efficiency
+- Chartered Merchant Companies changed from +20% global trade power to +10% global trade power and +10% trade steering
+- Reformed Administration idea changed from -0.05 global autonomy to +1 possible administrative policies and +10% reform progress growth
+- Changed order of Navarra ideas Fearless Seamen, Shipbuilding Experts and An Industrious Folk
+- Brazil tradition changed from -25% envoy travel time to +25% manpower
+- Governorate General idea changed from +10% global tax to +15% governing capacity
+- Entradas and Bandeiras idea changed from -15% core creation cost to +1 colonist
+- Mines of Minas Gerais idea changed from -10% inflation reduction to -20% gold depletion chance
+- Halting Foreign Incursions idea changed from -10% infantry combat ability to +10% naval morale and +1 naval combat ability on owned coast
+- Research of Nassau is now 5th idea of Brazil
+- Inconfidencia Mineira idea now also has -50% harsh treatment cost
+- Leon Traditions changed from +2 tolerance of own religion and +10% global tax to +100% cavalry shock and +15% morale damage dealt
+- Heritage of the Reconquista idea changed from +0.5 army tradition to +50% prestige from land battles and +0.5 tradition from battle
+- Leonese Cortes idea now also gives +1 free administrative policy
+- Conquistadores idea now also gives +10% shock damage
+- Patronize Leonese Language changed from +1 prestige to +20% same culture advisor cost and -10% culture conversion cost
+- Nationalism idea changed from +10% infantry combat ability to +25% manpower in own culture provinces
+- Galicia traditions changed from -15% light ship cost and +1 navy tradition to -25% fort maintenance and -20% morale damage received
+- Galicia bonus changed from +1 merchants to +10% ship durability
+- Irmandinos idea changed from +10% infantry combat ability to +10% siege ability
+- Added Xunta Xeral de Galiza idea giving +5% burghers loyalty and +0.5 legitimacy
+- Added Costa da Morte idea giving +1 own coast naval combat bonus
+- Added Of Corn and Potato idea giving -7.5% developent cost and +5% global trade goods size
+- Added Galician Enlightenment idea giving -5% administrative technology cost and -10% idea cost
+- Added Rexurdimento idea giving -25% same culture advisor cost and +15% manpower in own culture provinces
+- Changed Irish tradition from +10% land morale to -10% fire damage received
+- Swapped order of Gallowglasses idea and Irish Endurance idea
+- Gallowglasses idea no longer gives +5% discipline, now gives +15% shock damage
+- Irish Endurance changed from -10% shock damage received to -15% morale damage received
+- Morocco tradition changed from -25% naval attrition to +1 attack bonus in capital terrain
+- Morocco bonus changed from +1 hostile attrition to +1 cavalry fire
+- Pirate Republics idea changed from +15% privateer efficiency to +25%, and -10% sailor maintenance
+- Slave Soldiers idea changed from -5% land maintenance to -15%, and +10% cavalry combat ability to +10% land forcelimit
+- Marabouts changed from -10% idea cost and -1% monthly piety to -10% morale and +15% manpower in true faith provinces
+- Added Collaborate With The Tribes idea giving +33% cavalry to infantry ration and +25% cavalry flanking
+- Removed Curb Power Of The Tribes idea
+- Asturias traditions changed from +1 missionary and +1 merchant to +20% manpower in own culture provinces and +20% manpower in true faith provinces
+- Asturias bonus changed from +15% global manpower to -15% warscore cost vs other religion
+- Reconquista idea changed from -15% province warscore cost to +20% land morale
+- Camino de Santiago idea changed from +2 tolerance of own faith to +10% global tax
+- Aristocracy idea changed from +1 diplomats to +1 land leader shock
+- Unify the Provinces idea changed from -0.05 global autonomy to -10% core creation cost
+- Millenarian Revival idea now also has -15% culture conversion cost
+- Colonialism is now 6th idea of Asturias
+
+# Institutions #
+
+- Changed instances of idea quest_for_the_new_world to modifier of the same name
+- Colonialism institution now spawns in province with at least 12 development and is center of trade or capital
+
+# Leader Personalities #
+
+- Great Explorer personality now also adds +50% exploration mission range in fleet
+
+# Natives #
+
+- Added african natives to the new Angolan provinces
+
+# Naval Doctrines #
+
+- Portuguese Marines doctrine now gives +25% allowed marine fraction rather than +15%
+
+# On Actions #
+
+- Added tutorial event on game start
+- Added End of Castilian Civil War event firing immediately after peace deal is accepted
+- Added hidden event that fires every month and calculates saudade modifier
+- Changed odds of certain exploration event happening
+
+# Opinion Modifiers #
+
+- Wants Your Provinces modifier now has minimum of -10 and maximum of -100
+- Wants Your Subject's Provinces modifier now has minimum of -10 and maximum of -100
+- Anglo Portuguese Alliance modifier now starts at +50 up to +100 with 0.5 yearly change
+- Added opinion modifiers to all new events
+
+# Parliament Issues #
+
+- Act of Exploration issue now requires the country now to have the Quest for the New World modifier
+- Its effects no longer include the ability to recruit explorers, conquistadors or to explore open seas
+
+# Provinces Names #
+
+- Cape of Good Hope province now named Cidade do Cabo for Portugal
+- Old Azores province (now São Miguel) no longer named Açores for Portugal
+
+# Policies #
+
+- Replaced Manueline Architecture with Recognition of local Hierarchies giving -15% autonomy in territories
+
+# Province Triggered Modifiers #
+
+- Added Gibraltar, Oresund, Bosphorus, Arab, Persian and Singapore sounds that give the modifier Sound Toll to the provinces that belong to them
+
+# Scripted Effects #
+
+- Burgher estate action decision Grant Admiralship no longer costs 10 loyalty
+- Burgher estate action decision Comission Ships for War now costs 10 loyalty
+
+# Scripted Functions #
+
+- Colonial Nations will no longer colonize outside their own colonial region
+
+# Scripted Triggers #
+
+- Added Order of Christ to holy order trigger tooltip
+- Changed instances of idea quest_for_the_new_world to modifier of the same name
+
+# Static Modifiers #
+
+- Monthly Saudade modifier by +0.1 for each colonial nation subject
+
+# Technologies #
+
+- Reduced global colonial growth given through diplomatic technology
+
+# Trade Companies #
+
+- Added new provinces to West Africa company
+- Added and removed provinces from North Sea company
+- Removed provinces from Lubeck company
+- Removed provinces from Antwerp company (former English Channel company)
+- Added provinces to Timbuktu company
+- Changed colour of Champagne company
+- Added provinces to Kongo company
+- Added Caribbean company
+- Removed provinces from Sevilla company
+- Added provinces to Safi company
+- Added Lisboa company
+- Added London company
+
+# Trade Nodes #
+
+- Added provinces to Kongo node
+- Changed path of Mississipi to Caribbean
+- Changed path of Katsina to Ethiopia
+- Changed path of Ethiopia to Alexandria
+- Hormuz now flows to Gulf of Aden rather than the opposite
+- Cuiaba no longer flows to Brazil
+- Tunis now flows to Safi rather than Sevilla
+- Changed path of Tunis to Valencia
+- Rheinland now flows to Antwerp (former English Channel)
+- Amazonas now flows to Panama rather than Caribbean
+- Changed path of Caribbean to Chesapeake Bay
+- Changed path of Caribbean to Bordeaux
+- Caribbean now flows to Antwerp
+- Brazil now flows to Lisboa
+- Chesapeake Bay now flows to London rather than Antwerp
+- Changed path of Safi to Sevilla
+- Safi now flows to Lisboa
+- St. Lawrence now flows to Lisboa
+- Changed path of St. Lawrence to Bordeaux
+- Ivory Coast now flows to Lisboa
+- Ivory Coast no longer flows to Bordeaux and Antwerp
+- Sevilla location changed
+- Bordeaux location changed
+- Champagne colour changed
+- Changed path of Champagne to Antwerp
+- Antwerp now flows to Lubeck and London
+- Added Lisboa node
+- Lisboa flows to London and Antwerp
+- Lubeck now flows to London
+- Added London end node
+
+# Triggered Modifiers #
+
+- Changed instances of idea quest_for_the_new_world to modifier of the same name
+
+# Wargoal Types #
+
+- Added War of the Castilian Succession superiority wargoal
+
+# Defines #
+
+- Minimum advisor duration changed from 10 to 15
+- Minimum advisor duration change value changed from 15 to 17
+
+## Decisions ##
+
+- Added new Estremadura area as a permanent claim when forming Andalusia
+- Added new Tangier area as a permanent claim when forming Andalusia
+- Added new Fez area as a permanent claim when forming Andalusia
+- Added new Square Rigged Caravel decision for Portugal
+- Added new Nau decision for Portugal
+- Added decision to bring up the mod tutorial
+- Added decision for countries with Saudade mechanic to choose the focus of the country
+- Added new Extra Flagship decision for countries with maritime or naval ideas and at least 100 ships
+- Added decision related to the new Iberian Wedding event that informs Portugal and Aragon of their prestige and legitimacy compared to Castile
+- Added two equal decisions for Castile informing of their prestige and legitimacy compared to Portugal and Aragon respectively
+- Corrected instances of Colonial Caribbean appearing changing it to Carribean Region
+- Added new decision for Portugal and Galicia to form Iberia
+- Portugal can no longer form Spain
+
+## Events ##
+
+- Added new Quest for the New World event
+- Added event for Morocco that makes two of their states more expensive to demand in peace deals
+- Added event for Castile that adds autonomy modifier in Galicia region
+- Added new event chain between Castile and Granada regarding the Paria Tax
+- Added Irmandino Revolt event chain for Castile
+- Added Earthquake of 1755 event chain for Portugal
+- Added around 20 new events for Portugal
+- Completely reworked Castilian Civil War disaster event chain
+- Changed Prospering Times event so that it no longer affects a low development province but rather a province that is present in a center of trade, estuary, or both
+- Added an AI chance of 5% of Aragon choosing to become a republic
+- Corrected instances of Colonial Caribbean appearing changing it to Carribean Region
+- Modified Portugal's events to be more in line with the new events in the mod
+- Iberian Wedding event no longer exists
+- Reworked Columbus event for Portugal and Spain
+- Swapped AI chance of the options in Collapse of the Mamluks event
+- Changed instances of idea quest_for_the_new_world to modifier of the same name
+- Removed Isabella of Castile event
+
+## GFX ##
+
+- Added new event pictures
+- Added new country flags for Aragon, Iberia and Spain
+- Swapped flags of Sicily and Two Sicilies
+
+## History ##
+
+# Advisors #
+
+- João Gonçalves Zarco now has skill = 2
+- Henrique o Navegador is now a navigator
+
+# Countries #
+
+- Aragon is back to having aragonese as primary culture and catalan as accepted culture
+- Aragon capital is now Zaragoza
+- Ruler and heir of Aragon have catalan culture
+- Castile no longer accepts andalucian culture, instead accepting galician
+- Castile no longer has Granada as historical rival and Portugal as historical friend
+- Added Iberia country
+- Portugal no longer has Spain and Castile as historical friends
+- Spain no longer has Portugal as historical friend
+
+# Provinces #
+
+- Changed the development of many existing provinces
+- Added province triggered modifiers for the sound toll to respective provinces
+- Added new provinces in Iberia, Morocco, Guinea and Angola
+
+# Wars #
+
+- Reduced truce time between Granada and Portugal, Castile and Aragon by 1 year
+
+## Interface ##
+
+- Added icons to new age bonus, mechanics, monuments, holy orders, missions, flagship modifications and a new loading screen
+
+## Localization ##
+
+- Added new localization and changed existing ones
+
+## Map ##
+
+- Added and removed some adjacencies
+- Added new areas and tweaked provinces that belong to existing ones
+- Added different climate to some provinces
+- Inserted new provinces in respective continents
+- Increased number of total provinces existing in the game
+- Inserted new provinces RGB and altered some existing ones
+- Changed position of units, cities, ports and unit battles in provinces
+- Added new provinces in the map and adjusted the size of existing ones
+- Denmark Strait is now open seas rather than coastal so ships are unable to explore without Quest for the New World
+- Added new areas to regions
+- Added new river in Portugal and changed shape of existing ones
+- Changed terrain of Iberian province
+- Added new terrain to some provinces
+- Added new trade wind and altered existing ones
+- Added new trees in Portugal
+
+## Missions ##
+
+- Changed instances of idea quest_for_the_new_world to modifier of the same name
+- Removed Exploration Spirit modifier as reward for English and British mission Establish Royal Navy
+- Added new claims to Spanish mission tree
+- Added new claims to French mission tree
+- Added new claims to Aragonese mission tree
+- Added new claims to Granadan mission tree
+- Completely reworked Portuguese mission tree
+
+## Music ##
+
+- Main theme is now the same from Europa Universalis 3

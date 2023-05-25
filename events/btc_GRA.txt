@@ -62,6 +62,10 @@ country_event = {
 		name = btc_gra.2a
 
 		add_years_of_income = 0.05
+		add_opinion = {
+			who = GRA
+			modifier = paria_paid	# +100
+		}
 		if = {
 			limit = {
 				NOT = { has_guaranteed = GRA }

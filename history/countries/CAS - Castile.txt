@@ -5,7 +5,6 @@ add_accepted_culture = galician
 add_accepted_culture = leonese
 religion = catholic
 technology_group = western
-historical_rival = GRA
 capital = 219 # Toledo
 national_focus = MIL
 

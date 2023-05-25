@@ -90,6 +90,17 @@ command_aftercastle = {
 }
 
 improved_crows_nest = {
+    trigger = {
+        OR = {
+            NOT = {
+                OR = {
+                    tag = CAS
+                    tag = SPA
+                }
+            }
+            normal_or_historical_nations = yes
+        }
+    }
 	modifier = {
         flagship_naval_engagement_modifier = 3
         naval_maintenance_flagship_modifier = 0.5
