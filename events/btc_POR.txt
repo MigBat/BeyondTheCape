@@ -2521,7 +2521,7 @@ province_event = {
 	option = {	# Build it
 		name = btc_por.134a
 
-		owner = { add_years_of_income = -0.1 }
+		owner = { add_years_of_income = -0.25 }
 
 		add_province_modifier = {
 			name = feitoria
