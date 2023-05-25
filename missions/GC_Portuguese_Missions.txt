@@ -1188,7 +1188,7 @@ gc_por_3 = {
 				}
 			}
 			else = {
-				navy_size_percentage = 0.95
+				navy_size_percentage = 0.85
 			}
 		}
 
@@ -1262,10 +1262,6 @@ gc_por_3 = {
 				siege = 1
 				trait = level_headed_personality
 			}
-			# add_country_modifier = {
-			# 	name = around_africa
-			# 	duration = 1825
-			# }
 		}
 	}
 
@@ -1312,6 +1308,10 @@ gc_por_3 = {
 					power = 20
 					key = ivory_coast_ambition
 				}
+			}
+			add_country_modifier = {
+				name = around_africa
+				duration = 1825
 			}
 			if = { 
 				limit = { religion = catholic }

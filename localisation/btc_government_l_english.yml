@@ -1,13 +1,14 @@
 ﻿l_english:
  
- ability_portuguese_saudade_mechanic:0 "Saudade Meter"
+ ability_portuguese_saudade_mechanic:0 "§YSaudade§!"
  portuguese_saudade:0 "Saudade"
  portuguese_saudade_desc:0 "Saudade is a Portuguese word often described as a feeling of longing, nostalgia, or melancholy. It's a complex emotion that encompasses a sense of loss, a desire for something that has been missed, and a deep yearning for a past or a person that is no longer present.\n\nSaudade increases as our focus is turned towards the sea rather than home. Check the tutorial decision to see more about how to modify Saudade."
  monthly_portuguese_saudade:0 "Monthly Saudade"
  portuguese_saudade_gain_modifier:0 "Saudade Gain Modifier"
- mechanic_portuguese_saudade_yes:0 "Enables Saudade"
+ mechanic_portuguese_saudade_yes:0 "Enables §YSaudade§!"
+ mechanic_can_establish_feitorias_yes:0 "Can establish §YFeitorias§!."
 
- saudade_tt:0 "Government has Saudade mechanic."
+ saudade_tt:0 "Government has §YSaudade§! mechanic."
 
  portuguese_focus_decision_title:0 "Portuguese Focus"
  portuguese_focus_decision_desc:0 "We can manage our Saudade by focusing on our homeland or overseas. The effects of this decision last for 5 years."

@@ -44,3 +44,7 @@ ignored_our_affairs = {
 	opinion = -200
 	yearly_decay = 5
 }
+
+paria_paid = {
+	opinion = 100
+}

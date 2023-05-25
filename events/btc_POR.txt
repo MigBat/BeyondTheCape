@@ -2506,3 +2506,32 @@ country_event = {
 		remove_country_modifier = low_saudade_3
 	}
 }
+
+# Establish Feitoria #
+
+province_event = {
+	id = btc_por.134
+	title = btc_por.134_t
+	desc = btc_por.134_d
+	picture = FORT_eventPicture
+	goto = ROOT
+
+	is_triggered_only = yes
+
+	option = {	# Build it
+		name = btc_por.134a
+
+		owner = { add_years_of_income = -0.1 }
+
+		add_province_modifier = {
+			name = feitoria
+			duration = -1
+		}
+	}
+
+	option = {	# Don't build it
+		name = btc_por.134b
+
+		owner = { add_prestige = -1 }
+	}
+}

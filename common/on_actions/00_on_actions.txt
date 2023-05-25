@@ -5463,6 +5463,30 @@ on_conquest = {
 			add_imperial_influence = 0.5
 		}
 	}
+	# BEYOND THE CAPE #
+	if = {
+		limit = {
+			AND = {
+				owner = {
+					has_government_attribute = can_establish_feitorias
+				}
+				has_port = yes
+				OR = {
+					AND = {
+						continent = africa
+						NOT = { region = maghreb_region }
+						NOT = { region = egypt_region }
+					}
+					continent = asia
+				}
+			}
+		}
+		root = {
+			province_event = {
+				id = btc_por.134
+			}
+		}
+	}
 }
 
 on_country_creation = {

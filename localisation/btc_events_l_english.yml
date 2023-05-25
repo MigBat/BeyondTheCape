@@ -203,6 +203,10 @@
  btc_por.128_d:0 "We have secured a meeting with the local Zamorin. We presented an offer to purchase land and establish a trading post, in the hopes of building a fruitful - or rather, spiceful - relationship with the locals. After very careful considerations by the Zamorin and his advisors, they come to us with an answer."
  btc_por.128a:0 "Bargaining successful! Goa is ours!"
  btc_por.128b:0 "If they won't sell it to us, then we shall take it by force!"
+ btc_por.134_t:0 "Establish Feitoria"
+ btc_por.134_d:0 "Now that we have successfully integrated [Root.Province.GetName], we can establish a feitoria to assert our dominance over the region."
+ btc_por.134a:0 "Build it."
+ btc_por.134b:0 "It is too expensive."
 
 # Granada Paria #
 
