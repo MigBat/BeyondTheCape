@@ -1535,10 +1535,15 @@ portuguese_monarchy_reform = {
 		church_loyalty_modifier = 0.05
 	}
 	conditional = {
-		can_use_trade_post = yes
+		allow = {
+			has_dlc = "Domination"
+		}
 		government_abilities = {
 			portuguese_saudade_mechanic
 		}
+	}
+	custom_attributes = {
+		can_establish_feitorias = yes
 	}
 	ai = {
 		factor = 1

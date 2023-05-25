@@ -216,6 +216,8 @@
  desc_adopting_tercios:0 "It is taking some getting used to this new formation. While it is bringing success, it is clear to see the troops are struggling to adapt. It may take some time until our terços are really effective."
  portuguese_tercios:0 "Portuguese Terços"
  desc_portuguese_tercios:0 "With the latest military reforms that were undertaken, our Terços are the blight of any opposing force."
+ feitoria:0 "Feitoria"
+ desc_feitoria:0 "The feitoria in this province improves defensiveness and increases control over trade."
 
 # Other Events #
  paria_paid:0 "Paria Paid"

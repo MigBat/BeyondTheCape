@@ -442,3 +442,8 @@ around_africa = {
 btc_sound_toll = {
 	province_trade_power_value = 5
 }
+
+feitoria = {
+	province_trade_power_value = 5
+	defensiveness = 0.15
+}

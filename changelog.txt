@@ -75,7 +75,7 @@
 
 - Portuguese Monarchy reform no longer gives +10% tax and +20% sailor recovery speed
 - It now gives -1 unrest in catholic provinces and +5% clergy loyalty
-- Additionally, it gives the ability to create trade posts and access to the Saudade mechanic
+- Additionally, it gives the ability to establish Feitorias and access to the Saudade mechanic
 - Ordenanças reform no longer gives +1 land leader shock and -0.0005 army tradition decay
 - It now gives +1 own territory dice roll bonus, -10% land forcelimit, +25% garrison size, +50% garrison damage and +20% global garrison growth
 
@@ -152,7 +152,7 @@
 - Goose Step idea no longer gives +20% infantry combat ability, instead it gives +5% discipline
 - Portuguese traditions changed from +1 fleet movement speed and +10% infantry combat ability to +15% heavy ship combat ability and +15% morale damage dealt
 - Changed Legacy of the Navigator idea from +10% naval morale and +20% colonial range to +25% colonial range and -20% troops in transport attrition at sea
-- Added Feitoria idea giving +15% trade steering and +15% fort defense
+- Added Feitoria idea giving +15% trade steering 
 - Added India Armadas idea giving +15% ship trade power and +1 artillery fire
 - Renamed Land Before Faith to Bandeirantes, and removed the original Bandeirantes idea
 - Added Caçadores idea giving -20% fire damage received
@@ -237,6 +237,7 @@
 - Added End of Castilian Civil War event firing immediately after peace deal is accepted
 - Added hidden event that fires every month and calculates saudade modifier
 - Changed odds of certain exploration event happening
+- Added trigger for Establish Feitoria event
 
 # Opinion Modifiers #
 
