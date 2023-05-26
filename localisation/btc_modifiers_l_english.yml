@@ -221,3 +221,5 @@
 
 # Other Events #
  paria_paid:0 "Paria Paid"
+ opm_diplomacy:0 "Extra Diplomat"
+ desc_opm_diplomacy:0 "As a small country, it is paramount we focus on keeping good diplomatic relations with our neighbours."

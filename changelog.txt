@@ -152,7 +152,7 @@
 - Goose Step idea no longer gives +20% infantry combat ability, instead it gives +5% discipline
 - Portuguese traditions changed from +1 fleet movement speed and +10% infantry combat ability to +15% heavy ship combat ability and +15% morale damage dealt
 - Changed Legacy of the Navigator idea from +10% naval morale and +20% colonial range to +25% colonial range and -20% troops in transport attrition at sea
-- Added Feitoria idea giving +15% trade steering
+- Added Feitoria idea giving +15% trade steering and +15% defensiveness
 - Added India Armadas idea giving +15% ship trade power and +1 artillery fire
 - Renamed Land Before Faith to Bandeirantes, and removed the original Bandeirantes idea
 - Added Caçadores idea giving -20% fire damage received
@@ -238,6 +238,7 @@
 - Added hidden event that fires every month and calculates saudade modifier
 - Changed odds of certain exploration event happening
 - Added trigger for Establish Feitoria event
+- Added event that gives +1 diplomatic relations to OPMs
 
 # Opinion Modifiers #
 
