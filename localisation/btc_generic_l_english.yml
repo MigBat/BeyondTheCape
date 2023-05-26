@@ -140,6 +140,9 @@
 # Other #
 
  colonial_region_restriction: "You cannot colonize outside of your capital's colonial region."
- not_war_leader_tt: "[Root.GetName] is not a war leader."
  is_ally_of_enemy_tt: "[From.GetName] is an ally of our enemy."
-
+ miss_discover_caribbean:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region."
+ miss_colonize_caribbean:0 "§Y[Root.GetName]§! or their subjects own at least one fully colonized province in the Caribbean region."
+ fra_carib_discovery.tooltip:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region"
+ fra_carib_colony.tooltip:1 "§Y[Root.GetName]§! or their non-tributary subjects own at least §Y5§! fully colonized provinces in the Caribbean region"
+ english_colony_in_the_carribean.tooltip:0 "§Y[Root.GetName]§! or their subjects own at least §Y5§! fully colonized provinces in the Caribbean region."
