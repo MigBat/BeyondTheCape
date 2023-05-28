@@ -439,10 +439,6 @@ around_africa = {
 	range = 0.5
 }
 
-btc_sound_toll = {
-	province_trade_power_value = 5
-}
-
 feitoria = {
 	province_trade_power_value = 5
 	local_ship_repair = 0.15
