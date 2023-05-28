@@ -38,34 +38,20 @@ gibraltar_sound = {
 		always = yes
 	}
 
-	hidden = yes
-
 	trigger = {
 		owner = {
 			owns = 226
 			owns = 1751
 		}
 	}
-	
-	#Province scope
-	on_activation = {
-		add_province_modifier = {
-			name = btc_sound_toll
-			duration = -1
-		}
-	}
-	
-	on_deactivation = {
-		remove_province_modifier = btc_sound_toll
-	}
+
+	province_trade_power_value = 5
 }
 
 oresund_sound = {
 	potential = {
 		always = yes
 	}
-
-	hidden = yes
 
 	trigger = {
 		owner = {
@@ -77,26 +63,14 @@ oresund_sound = {
 			owns = 4142
 		}
 	}
-	
-	#Province scope
-	on_activation = {
-		add_province_modifier = {
-			name = btc_sound_toll
-			duration = -1
-		}
-	}
-	
-	on_deactivation = {
-		remove_province_modifier = btc_sound_toll
-	}
+
+	province_trade_power_value = 5
 }
 
 bosphorus_sound = {
 	potential = {
 		always = yes
 	}
-
-	hidden = yes
 
 	trigger = {
 		owner = {
@@ -107,26 +81,14 @@ bosphorus_sound = {
 			owns = 316
 		}
 	}
-	
-	#Province scope
-	on_activation = {
-		add_province_modifier = {
-			name = btc_sound_toll
-			duration = -1
-		}
-	}
-	
-	on_deactivation = {
-		remove_province_modifier = btc_sound_toll
-	}
+
+	province_trade_power_value = 5
 }
 
 arab_sound = {
 	potential = {
 		always = yes
 	}
-
-	hidden = yes
 
 	trigger = {
 		owner = {
@@ -135,25 +97,13 @@ arab_sound = {
 		}
 	}
 	
-	#Province scope
-	on_activation = {
-		add_province_modifier = {
-			name = btc_sound_toll
-			duration = -1
-		}
-	}
-	
-	on_deactivation = {
-		remove_province_modifier = btc_sound_toll
-	}
+	province_trade_power_value = 5
 }
 
 persian_sound = {
 	potential = {
 		always = yes
 	}
-
-	hidden = yes
 
 	trigger = {
 		owner = {
@@ -163,25 +113,13 @@ persian_sound = {
 		}
 	}
 	
-	#Province scope
-	on_activation = {
-		add_province_modifier = {
-			name = btc_sound_toll
-			duration = -1
-		}
-	}
-	
-	on_deactivation = {
-		remove_province_modifier = btc_sound_toll
-	}
+	province_trade_power_value = 5
 }
 
 singapore_sound = {
 	potential = {
 		always = yes
 	}
-
-	hidden = yes
 
 	trigger = {
 		owner = {
@@ -191,17 +129,7 @@ singapore_sound = {
 		}
 	}
 	
-	#Province scope
-	on_activation = {
-		add_province_modifier = {
-			name = btc_sound_toll
-			duration = -1
-		}
-	}
-	
-	on_deactivation = {
-		remove_province_modifier = btc_sound_toll
-	}
+	province_trade_power_value = 5
 }
 
 

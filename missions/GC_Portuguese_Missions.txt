@@ -1698,9 +1698,20 @@ gc_por_4_a = {
 				navigator = 3
 				has_idea_group = exploration_ideas
 			}
+			has_discovered = 1469
 		}
 
 		effect = {
+			if = {
+				limit = {
+					1111 = {
+						is_empty = yes
+					}
+				}
+				country_event = {
+					id = btc_por.132
+				}
+			}
 			if = {
 				limit = {
 					navigator = 3
