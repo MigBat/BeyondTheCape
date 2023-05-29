@@ -669,7 +669,7 @@ gc_por_2_a = {
 				define_advisor = {
 					type = inquisitor 
 					skill = 2
-					cost_multiplier = 0.50
+					cost_multiplier = 0.75
 				}
 			}
 			else = { add_prestige = 5 }
@@ -2111,6 +2111,7 @@ gc_por_5_a = {
 		}
 
 		effect = {
+			add_navy_tradition = 25 
 			if = {
 				limit = { has_dlc = "Domination" }
 				add_country_modifier = {
@@ -2124,7 +2125,6 @@ gc_por_5_a = {
 					skill = 3
 					cost_multiplier = 0.25
 				}
-				add_navy_tradition = 25 
 			}
 		}
 	}

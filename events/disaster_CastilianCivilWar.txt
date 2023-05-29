@@ -593,8 +593,9 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
+					friend = POR
 					size = 3
-					leader = "Isabella"
+					leader = "Joanna"
 					leader_dynasty = "de Trastámara"
 					female = yes
 					win = yes
@@ -690,8 +691,9 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
+					friend = ARA
 					size = 3
-					leader = "Joanna"
+					leader = "Isabella"
 					leader_dynasty = "de Trastámara"
 					female = yes
 					win = yes
