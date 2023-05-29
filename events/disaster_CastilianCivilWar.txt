@@ -1300,51 +1300,13 @@ country_event = {
 	picture = COURT_eventPicture
 
 	major = yes
-
 	fire_only_once = yes
 
-	trigger = {
-		tag = CAS
-		NOT = { has_disaster = castilian_civil_war }
-		OR = {
-			# Castile ruler died, Isabel became queen
-			AND = {
-				POR = {
-					has_heir_flag = isabel
-				}
-				CAS = {
-					has_ruler_flag = isabel
-				}
-			}
-			# Portugal ruler died, Isabel became queen
-			AND = {
-				POR = {
-					has_ruler_flag = isabel
-				}
-				CAS = {
-					has_heir_flag = isabel
-				}
-			}
-			# Castile ruler died, Joanna became queen
-			AND = {
-				ARA = {
-					has_heir_flag = joanna
-				}
-				CAS = {
-					has_ruler_flag = joanna
-				}
-			}
-			# Aragon ruler died, Joanna became queen
-			AND = {
-				ARA = {
-					has_ruler_flag = joanna
-				}
-				CAS = {
-					has_heir_flag = joanna 
-				}
-			}
-		}
+	mean_time_to_happen = {
+		days = 1
 	}
+
+	is_triggered_only = yes
 
 	option = {	# Castile forms union over Portugal
 		name = "castilian_civil_war.30a"
