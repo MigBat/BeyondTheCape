@@ -323,7 +323,7 @@ country_event = {
 		define_heir = {
 			name = "Isabel"
 			dynasty = "de Avis"
-			age = 0
+			age = 14
 			culture = portugese
 			adm = 3
 			dip = 4
@@ -338,7 +338,7 @@ country_event = {
 			define_heir = {
 				name = "Isabel"
 				dynasty = "de Avis"
-				age = 0
+				age = 14
 				culture = portugese
 				adm = 3
 				dip = 4
@@ -893,7 +893,7 @@ country_event = {
 		define_heir = {
 			name = "Isabel"
 			dynasty = "de Avis"
-			age = 0
+			age = 14
 			culture = portugese
 			adm = 3
 			dip = 4
@@ -927,7 +927,7 @@ country_event = {
 			define_heir = {
 				name = "Isabel"
 				dynasty = "de Avis"
-				age = 0
+				age = 14
 				culture = portugese
 				adm = 3
 				dip = 4
@@ -1321,6 +1321,10 @@ country_event = {
 					CAS = { has_heir_flag = isabel }
 					POR = { has_ruler_flag = isabel }
 				}
+				AND = {
+					CAS = { has_ruler_flag = isabel }
+					POR = { has_ruler_flag = isabel }
+				}
 			}
 			OR = {
 				prestige = POR
@@ -1354,6 +1358,10 @@ country_event = {
 				}
 				AND = {
 					CAS = { has_heir_flag = joanna }
+					ARA = { has_ruler_flag = joanna }
+				}
+				AND = {
+					CAS = { has_ruler_flag = joanna }
 					ARA = { has_ruler_flag = joanna }
 				}
 			}
@@ -1391,6 +1399,10 @@ country_event = {
 					CAS = { has_heir_flag = isabel }
 					POR = { has_ruler_flag = isabel }
 				}
+				AND = {
+					CAS = { has_ruler_flag = isabel }
+					POR = { has_ruler_flag = isabel }
+				}
 			}
 			AND = { 
 				NOT = { prestige = POR }
@@ -1424,6 +1436,10 @@ country_event = {
 				}
 				AND = {
 					CAS = { has_heir_flag = joanna }
+					ARA = { has_ruler_flag = joanna }
+				}
+				AND = {
+					CAS = { has_ruler_flag = joanna }
 					ARA = { has_ruler_flag = joanna }
 				}
 			}

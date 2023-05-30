@@ -1270,7 +1270,7 @@ on_new_monarch = {
 			}
 			NOT = { has_disaster = castilian_civil_war }
 			OR = {
-				# Castile ruler died, Isabel became queen
+				# Isabel became Queen of Castile
 				AND = {
 					POR = {
 						has_heir_flag = isabel
@@ -1279,7 +1279,7 @@ on_new_monarch = {
 						has_ruler_flag = isabel
 					}
 				}
-				# Portugal ruler died, Isabel became queen
+				# Isabel became Queen of Portugal
 				AND = {
 					POR = {
 						has_ruler_flag = isabel
@@ -1288,7 +1288,16 @@ on_new_monarch = {
 						has_heir_flag = isabel
 					}
 				}
-				# Castile ruler died, Joanna became queen
+				# Isabel became Queen of Portugal and Castile at the same time
+				AND = {
+					POR = {
+						has_ruler_flag = isabel
+					}
+					CAS = {
+						has_ruler_flag = isabel
+					}
+				}
+				# Joanna became Queen of Castile
 				AND = {
 					ARA = {
 						has_heir_flag = joanna
@@ -1297,13 +1306,22 @@ on_new_monarch = {
 						has_ruler_flag = joanna
 					}
 				}
-				# Aragon ruler died, Joanna became queen
+				# Joanna became Queen of Aragon
 				AND = {
 					ARA = {
 						has_ruler_flag = joanna
 					}
 					CAS = {
 						has_heir_flag = joanna 
+					}
+				}
+				# Joanna became Queen of Aragon and Castile at the same time
+				AND = {
+					POR = {
+						has_ruler_flag = joanna
+					}
+					CAS = {
+						has_ruler_flag = joanna
 					}
 				}
 			}
