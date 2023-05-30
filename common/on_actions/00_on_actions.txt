@@ -1260,6 +1260,74 @@ on_new_monarch = {
 		50 = dynastic_events.5
 		25 = harem_events.7		#Failed Policy of Fratricide
 	}
+	# Beyond the Cape #
+	if = {
+		limit = {
+			OR = {
+				tag = CAS
+				tag = POR
+				tag = ARA
+			}
+			NOT = { has_disaster = castilian_civil_war }
+			OR = {
+				# Isabel became Queen of Castile
+				AND = {
+					POR = {
+						has_heir_flag = isabel
+					}
+					CAS = {
+						has_ruler_flag = isabel
+					}
+				}
+				# Isabel became Queen of Portugal
+				AND = {
+					POR = {
+						has_ruler_flag = isabel
+					}
+					CAS = {
+						has_heir_flag = isabel
+					}
+				}
+				# Isabel became Queen of Portugal and Castile at the same time
+				AND = {
+					POR = {
+						has_ruler_flag = isabel
+					}
+					CAS = {
+						has_ruler_flag = isabel
+					}
+				}
+				# Joanna became Queen of Castile
+				AND = {
+					ARA = {
+						has_heir_flag = joanna
+					}
+					CAS = {
+						has_ruler_flag = joanna
+					}
+				}
+				# Joanna became Queen of Aragon
+				AND = {
+					ARA = {
+						has_ruler_flag = joanna
+					}
+					CAS = {
+						has_heir_flag = joanna 
+					}
+				}
+				# Joanna became Queen of Aragon and Castile at the same time
+				AND = {
+					POR = {
+						has_ruler_flag = joanna
+					}
+					CAS = {
+						has_ruler_flag = joanna
+					}
+				}
+			}
+		}
+		CAS = { country_event = { id = castilian_civil_war.30 }}
+	}
 }
 
 on_new_consort = {
