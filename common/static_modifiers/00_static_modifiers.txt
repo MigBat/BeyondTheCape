@@ -1191,7 +1191,7 @@ inverse_religious_unity = {
 	global_unrest = 3
 	church_power_modifier = -1
 	devotion = -1
-	yearly_corruption = 0.1
+	yearly_corruption = 0.2
 }
 
 total_occupation = {
