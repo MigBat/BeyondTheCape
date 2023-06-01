@@ -1294,6 +1294,7 @@ absolutism = {
 	discipline = 0.05
 	core_decay_on_your_own = -0.5
 	monthly_ottoman_decadence = -0.5
+	yearly_corruption = 0.2
 }
 
 low_army_professionalism = {
