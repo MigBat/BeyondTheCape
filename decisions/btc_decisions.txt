@@ -71,6 +71,7 @@ country_decisions = {
 country_decisions = {
 	portuguese_focus_decision = {
 		color = { 125 35 47 }
+		major = yes
 		potential = {
 			has_government_mechanic = portuguese_saudade_mechanic
 			ai = no
@@ -104,28 +105,6 @@ country_decisions = {
 		}
 	}
 }
-
-# country_decisions = {
-# 	overseas_policy_decision = {
-# 		color = { 125 35 47 }
-# 		potential = {
-# 			has_government_mechanic = portuguese_saudade_mechanic
-# 		}
-
-# 		allow = {
-# 			NOT = {
-# 				has_country_modifier = boost_focus
-# 				has_country_modifier = reduce_focus
-# 			}
-# 		}
-
-# 		effect = {
-# 			country_event = {
-# 				id = btc_por.132
-# 			}
-# 		}
-# 	}
-# }
 
 country_decisions = {
 	extra_flagship_decision = {
