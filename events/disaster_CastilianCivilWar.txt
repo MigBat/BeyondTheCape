@@ -1301,12 +1301,11 @@ country_event = {
 
 	major = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
 		days = 1
 	}
-
-	is_triggered_only = yes
 
 	option = {	# Castile forms union over Portugal
 		name = "castilian_civil_war.30a"

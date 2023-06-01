@@ -1268,7 +1268,7 @@ on_new_monarch = {
 				tag = POR
 				tag = ARA
 			}
-			NOT = { has_disaster = castilian_civil_war }
+			CAS = { NOT = { has_disaster = castilian_civil_war }}
 			OR = {
 				# Isabel became Queen of Castile
 				AND = {

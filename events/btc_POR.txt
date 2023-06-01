@@ -2479,10 +2479,6 @@ province_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { owner = { treasury = 200 }}
-			}
 		}
 		
 		add_province_modifier = {
@@ -2497,7 +2493,7 @@ province_event = {
 				}
 			}
 			add_building = fort_15th
-			owner = { add_treasury = -200 }
+			owner = { add_years_of_income = -0.25 }
 		}
 		if = {
 			limit = {
@@ -2509,7 +2505,7 @@ province_event = {
 				}
 			}
 			add_building = fort_16th
-			owner = { add_treasury = -400 }
+			owner = { add_years_of_income = -0.25 }
 		}
 		if = {
 			limit = {
@@ -2521,7 +2517,7 @@ province_event = {
 				}
 			}
 			add_building = fort_17th
-			owner = { add_treasury = -600 }
+			owner = { add_years_of_income = -0.25 }
 		}
 		if = {
 			limit = {
@@ -2530,7 +2526,7 @@ province_event = {
 				}
 			}
 			add_building = fort_18th
-			owner = { add_treasury = -800 }
+			owner = { add_years_of_income = -0.25 }
 		}
 	}
 
@@ -2596,5 +2592,56 @@ country_event = {
 				remove_province_modifier = feitoria
 			}
 		}
+	}
+}
+
+# Fortress of Elvas #
+
+country_event = {
+	id = btc_por.136
+	title = btc_por.136_t
+	desc = btc_por.136_d
+	picture = FORT_eventPicture
+
+	trigger = {
+		tag = POR
+		4150 = {
+			owned_by = ROOT
+			controlled_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 400
+	}
+
+	option = {
+		name = btc_por.136a
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+		}
+
+		4150 = {
+			add_building_construction = {
+				building = fort_15th
+				cost = 0.25
+				speed = 0.5
+			}
+			add_province_modifier = {
+				name = local_fortress
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = btc_por.136b
+		
+		add_prestige = -1
 	}
 }

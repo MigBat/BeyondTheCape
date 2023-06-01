@@ -17,6 +17,8 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+add_province_triggered_modifier = avis_order_headquarters
+
 1540.1.1 = { fort_16th = yes } 
 1640.1.1 = { unrest = 8 } # Revolt headed by John of Bragança
 1640.12.1 = { unrest = 0 }
