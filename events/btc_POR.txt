@@ -1923,11 +1923,10 @@ country_event = {
 	option = {
 		name = btc_por.121a
 
-		add_treasury = -200
 		1851 = {
 			add_building_construction = {
 				building = university
-				cost = 0
+				cost = 0.5
 			}
 			add_province_modifier = {
 				name = coimbra_university
@@ -2472,7 +2471,13 @@ province_event = {
 	picture = FORT_eventPicture
 	goto = ROOT
 
-	is_triggered_only = yes
+	trigger = {
+		has_province_flag = can_build_feitoria
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
 
 	option = {	# Build it
 		name = btc_por.134a
@@ -2480,6 +2485,8 @@ province_event = {
 		ai_chance = {
 			factor = 1
 		}
+
+		clr_province_flag = can_build_feitoria
 		
 		add_province_modifier = {
 			name = feitoria
@@ -2534,6 +2541,7 @@ province_event = {
 		name = btc_por.134b
 
 		owner = { add_prestige = -1 }
+		clr_province_flag = can_build_feitoria
 	}
 }
 

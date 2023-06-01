@@ -31,7 +31,7 @@ philosopher = {
 	prestige = 1
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -125,7 +125,7 @@ natural_scientist = {
 	production_efficiency = 0.10
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -219,7 +219,7 @@ artist = {
 	stability_cost_modifier = -0.10
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -321,7 +321,7 @@ treasurer = {
 	global_tax_modifier = 0.1
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -415,7 +415,7 @@ theologian = {
 	global_unrest = -2
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -518,7 +518,7 @@ master_of_mint = {
 	inflation_reduction = 0.10
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -617,7 +617,7 @@ inquisitor = {
 	global_missionary_strength = 0.02
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -739,7 +739,7 @@ statesman = {
 	diplomatic_reputation = 1
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -814,7 +814,7 @@ naval_reformer = {
 	naval_morale = 0.1 
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -895,7 +895,7 @@ trader = {
 	trade_efficiency = 0.10
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -983,7 +983,7 @@ spymaster = {
 	spy_offence = 0.25
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1057,7 +1057,7 @@ colonial_governor = {
 	global_tariffs = 0.10
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1139,7 +1139,7 @@ diplomat = {
 	improve_relation_modifier = 0.2
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1213,7 +1213,7 @@ navigator = {
 	range = 0.20
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1296,7 +1296,7 @@ army_reformer = {
 	land_morale = 0.10
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1351,7 +1351,7 @@ army_organiser = {
 	land_forcelimit_modifier = 0.10
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1406,7 +1406,7 @@ commandant = {
 	discipline = 0.05
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1461,7 +1461,7 @@ quartermaster = {
 	reinforce_speed = 0.33
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1520,7 +1520,7 @@ recruitmaster = {
 	global_manpower_modifier = 0.10
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1579,7 +1579,7 @@ fortification_expert = {
 	defensiveness = 0.2
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }
@@ -1635,7 +1635,7 @@ grand_captain = {
 	land_maintenance_modifier = -0.10
 	skill_scaled_modifier = {
 		trigger = { }
-		modifier = { yearly_corruption = 0.1 }
+		modifier = { yearly_corruption = 0.05 }
 	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_mechanic = portuguese_saudade_mechanic  } }

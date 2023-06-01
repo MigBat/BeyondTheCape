@@ -557,7 +557,6 @@ left_trade_company = {
 	trade_goods_size_modifier = -2.0
 }
 
-
 scorched_earth = {
 	local_hostile_attrition = 10
 	local_hostile_movement_speed = -0.50
