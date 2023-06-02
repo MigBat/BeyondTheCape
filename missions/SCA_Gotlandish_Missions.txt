@@ -804,7 +804,7 @@ got_republic_slot_1 = {
 			OR = {
 				has_river_estuary_trigger = yes
 				province_has_center_of_trade_of_level = 1
-				has_province_modifier = sound_toll
+				has_province_modifier = oresund_sound
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -817,7 +817,7 @@ got_republic_slot_1 = {
 						OR = {
 							has_river_estuary_trigger = yes
 							province_has_center_of_trade_of_level = 1
-							has_province_modifier = sound_toll
+							has_province_modifier = oresund_sound
 						}
 						value = 3
 					}
@@ -828,7 +828,7 @@ got_republic_slot_1 = {
 					OR = {
 						has_river_estuary_trigger = yes
 						province_has_center_of_trade_of_level = 1
-						has_province_modifier = sound_toll
+						has_province_modifier = oresund_sound
 					}
 					value = 3
 				}
@@ -2214,7 +2214,7 @@ got_pirate_slot_4 = {
 		provinces_to_highlight = {
 			continent = europe
 			OR = {
-				has_province_modifier = sound_toll
+				has_province_modifier = oresund_sound
 				has_river_estuary_trigger = yes
 				province_has_center_of_trade_of_level = 1
 			}
@@ -2225,7 +2225,7 @@ got_pirate_slot_4 = {
 			num_of_owned_provinces_with = {
 				continent = europe
 				OR = {
-					has_province_modifier = sound_toll
+					has_province_modifier = oresund_sound
 					has_river_estuary_trigger = yes
 					province_has_center_of_trade_of_level = 1
 				}
