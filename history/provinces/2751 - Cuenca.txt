@@ -13,6 +13,7 @@ base_manpower = 1
 capital = "Cuenca" 
 is_city = yes
 
+add_province_triggered_modifier = santiago_order_headquarters
 
 
 discovered_by = western

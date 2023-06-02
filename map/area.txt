@@ -410,11 +410,11 @@ upper_andalucia_area = { #4
 
 castille_area = { #5
 	color = { 243 235 28 }
-	217 2755 4551 4789
+	217 2755 4551 4789 2751
 }
 
 toledo_area = { #5
-	219 221 2751 2754 4547
+	219 221 2754 4547
 }
 
 asturias_area = { #4
