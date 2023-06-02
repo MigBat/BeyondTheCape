@@ -548,64 +548,64 @@ country_event = {
 	}
 }
 
-# King Sebastião's Expedition to North Africa
-country_event = {
-	id = flavor_por.3272
-	title = "flavor_por.EVTNAME3272"
-	desc = "flavor_por.EVTDESC3272"
-	picture = SHIP_SAILING_eventPicture
+# # King Sebastião's Expedition to North Africa
+# country_event = {
+# 	id = flavor_por.3272
+# 	title = "flavor_por.EVTNAME3272"
+# 	desc = "flavor_por.EVTDESC3272"
+# 	picture = SHIP_SAILING_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
 
-	trigger = {
-		tag = POR
-		is_year = 1500
-		religion = catholic
-		is_free_or_tributary_trigger = yes
-		MOR = {
-			exists = yes
-			num_of_ports = 1
-			religion_group = muslim
-			is_free_or_tributary_trigger = yes
-			NOT = { war_with = POR }
-			NOT = { truce_with = POR }
-			NOT = { alliance_with = POR }
-		}
-	}
+# 	trigger = {
+# 		tag = POR
+# 		is_year = 1500
+# 		religion = catholic
+# 		is_free_or_tributary_trigger = yes
+# 		MOR = {
+# 			exists = yes
+# 			num_of_ports = 1
+# 			religion_group = muslim
+# 			is_free_or_tributary_trigger = yes
+# 			NOT = { war_with = POR }
+# 			NOT = { truce_with = POR }
+# 			NOT = { alliance_with = POR }
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 100
-	}
+# 	mean_time_to_happen = {
+# 		months = 100
+# 	}
 	
-	option = {		# Crusade against the Heretics in Africa
-		name = "flavor_por.EVTOPTA3272"
-		ai_chance = { factor = 90 }
+# 	option = {		# Crusade against the Heretics in Africa
+# 		name = "flavor_por.EVTOPTA3272"
+# 		ai_chance = { factor = 90 }
 		
-		add_papal_influence = 10
-		MOR = {
-			every_owned_province = {
-				limit = {
-					is_in_capital_area = yes
-					has_port = yes
-				}
-				add_claim = POR
-			}
-		}
+# 		add_papal_influence = 10
+# 		MOR = {
+# 			every_owned_province = {
+# 				limit = {
+# 					is_in_capital_area = yes
+# 					has_port = yes
+# 				}
+# 				add_claim = POR
+# 			}
+# 		}
 		
-		MOR = {
-			add_opinion = {
-				who = ROOT
-				modifier = prepares_crusade
-			}
-		}
-	}
-	option = {		# We should focus elsewhere
-		name = "flavor_por.EVTOPTB3272"
-		ai_chance = { factor = 0 }
-		add_prestige = -1
-	}
-}
+# 		MOR = {
+# 			add_opinion = {
+# 				who = ROOT
+# 				modifier = prepares_crusade
+# 			}
+# 		}
+# 	}
+# 	option = {		# We should focus elsewhere
+# 		name = "flavor_por.EVTOPTB3272"
+# 		ai_chance = { factor = 0 }
+# 		add_prestige = -1
+# 	}
+# }
 
 # The Meuthen Agreement
 #country_event = {
