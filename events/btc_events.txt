@@ -11,6 +11,7 @@ country_event = {
 
 	trigger = {
 		NOT = { has_country_flag = quest_for_the_new_world }
+		NOT = { has_country_modifier = quest_for_the_new_world }
 		has_idea_group = exploration_ideas
 		dip_tech = 7
 	}
