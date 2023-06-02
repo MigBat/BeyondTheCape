@@ -443,8 +443,21 @@ feitoria = {
 	province_trade_power_value = 5
 	local_ship_repair = 0.15
 	local_governing_cost = 0.25
+	local_fort_maintenance_modifier = -0.5
+	local_defensiveness = -0.15
+	fort_level = -1
 }
 
 opm_diplomacy = {
 	diplomatic_upkeep = 1
+}
+
+slave_plantations = {
+	trade_goods_size = 1
+	local_unrest = 5
+}
+
+mass_slave_plantations = {
+	trade_goods_size = 2
+	local_unrest = 10
 }

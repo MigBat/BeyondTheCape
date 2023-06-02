@@ -146,6 +146,7 @@ categories =  {
 		supply_limit = 4
 		local_development_cost = 0.2
 		nation_designer_cost_multiplier = 0.9
+		combat_width = -0.2
 		
 		terrain_override = { 
 			2 4 8 9 11 18 29 30 31 315 4123 4124 # Sweden
@@ -174,6 +175,7 @@ categories =  {
 		local_development_cost = 0.25
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
+		combat_width = -0.25
 		
 		terrain_override = {
 			228 4943 4555 4558 4554 4556 #Portugal 
@@ -247,6 +249,7 @@ categories =  {
 		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.9
 		supply_limit = 6
+		combat_width = -0.2
 		
 		terrain_override = {
 			231 # Portugal
@@ -318,6 +321,7 @@ categories =  {
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
+		combat_width = -0.5
 		
 		terrain_override = {
 			207 1745 4551 2987 2989 4953 4954 211 4953 # Spain
@@ -457,6 +461,7 @@ categories =  {
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.8
 		supply_limit = 5
+		combat_width = -0.25
 		
 		terrain_override = {
 			1237 1245 2703 #South East Asia
@@ -467,7 +472,7 @@ categories =  {
 			486 490 743 745 748 826 835 840 846 848 2630 2637 2641 2647 2654 2655 2659 2664 2819 2927
 			
 			582 2397 2398 579 2402 1815 590 2403 2400 589 602 1817 2389 2388 592 591 2404 843
-			789 1151 1181 1182 1183 2952
+			789 1181 1182 1183 2952
 			
 			616 2372 610 2377
 			756 759 757 765 2894 2896 2914 2929 
@@ -499,6 +504,7 @@ categories =  {
 		local_development_cost = 0.25
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
+		combat_width = -0.25
 
 		terrain_override = {
 			4787 #Portugal
@@ -655,7 +661,7 @@ categories =  {
 			4549 4562 4563 4564 4547 4557# new provinces 1.28
 			4628 4630 # new provinces Mesoamerica 1.28
 			
-			2736 4863 4861 4855 1094 2733
+			2736 4863 4861 4855 1094 2733 4949
 		}
 	}
 
@@ -671,6 +677,7 @@ categories =  {
 		local_defensiveness = 0.1
 		local_development_cost = 0.2
 		nation_designer_cost_multiplier = 0.9	
+		combat_width = -0.25
 
 		terrain_override = {
 			232 #Portugal
@@ -709,6 +716,8 @@ categories =  {
 			4422 4436 4464 #Central India
 			4566 208 # new provinces 1.28
 			4669 4701 4699 4780 # 1.30 Greece and Bulgaria
+
+			4947 4948
 		}
 	}
 
@@ -746,7 +755,7 @@ categories =  {
 			4618 4619 #Mesoamerica 1.28
 			4836 2383 4829
 			
-			1092 4851 1094 4850 4846 4881
+			1092 4851 1094 4850 4846 4881 1151 2242 4950 4951 4952
 		}		
 	}
 	

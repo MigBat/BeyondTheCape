@@ -1898,7 +1898,7 @@ benin_area = { #4
 }
 
 sao_tome_area = { #2
-	1097 1306
+	1097 1306 4962
 }
 
 west_africa_coast_area = { #5

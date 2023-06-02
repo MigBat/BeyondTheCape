@@ -1268,7 +1268,7 @@ on_new_monarch = {
 				tag = POR
 				tag = ARA
 			}
-			NOT = { has_disaster = castilian_civil_war }
+			CAS = { NOT = { has_disaster = castilian_civil_war }}
 			OR = {
 				# Isabel became Queen of Castile
 				AND = {
@@ -2356,9 +2356,6 @@ on_monthly_pulse = {
 	}
 	events = {
 		btc_events.5	#Monthly OPM diplo calculation
-	}
-	events = {
-		btc_por.135	#Remove feitoria modifier
 	}
 }
 on_yearly_pulse = {
@@ -5555,11 +5552,7 @@ on_conquest = {
 				}
 			}
 		}
-		root = {
-			province_event = {
-				id = btc_por.134
-			}
-		}
+		set_province_flag = can_build_feitoria
 	}
 }
 

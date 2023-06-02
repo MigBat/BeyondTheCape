@@ -25,7 +25,6 @@ btc_triangle_trade = {
 				region = guinea_region
 				region = kongo_region
 			}
-			region = guinea_region
 		}
 		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 			value = 1

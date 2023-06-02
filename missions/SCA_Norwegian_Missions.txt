@@ -3727,7 +3727,7 @@ nor_sca_conquest = {
 			OR = {
 				province_has_center_of_trade_of_level = 1
 				has_river_estuary_trigger = yes
-				has_province_modifier = sound_toll
+				has_province_modifier = oresund_sound
 			}
 			has_port = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -3756,7 +3756,7 @@ nor_sca_conquest = {
 					OR = {
 						province_has_center_of_trade_of_level = 1
 						has_river_estuary_trigger = yes
-						has_province_modifier = sound_toll
+						has_province_modifier = oresund_sound
 					}
 					has_port = yes
 				}

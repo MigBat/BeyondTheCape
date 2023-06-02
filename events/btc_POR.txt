@@ -1923,11 +1923,10 @@ country_event = {
 	option = {
 		name = btc_por.121a
 
-		add_treasury = -200
 		1851 = {
 			add_building_construction = {
 				building = university
-				cost = 0
+				cost = 0.5
 			}
 			add_province_modifier = {
 				name = coimbra_university
@@ -2472,23 +2471,22 @@ province_event = {
 	picture = FORT_eventPicture
 	goto = ROOT
 
-	is_triggered_only = yes
+	trigger = {
+		has_province_flag = can_build_feitoria
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
 
 	option = {	# Build it
 		name = btc_por.134a
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { owner = { treasury = 200 }}
-			}
 		}
-		
-		add_province_modifier = {
-			name = feitoria
-			duration = -1
-		}
+
+		clr_province_flag = can_build_feitoria
 
 		if = {
 			limit = {
@@ -2496,8 +2494,11 @@ province_event = {
 					NOT = { mil_tech = 14 }
 				}
 			}
-			add_building = fort_15th
-			owner = { add_treasury = -200 }
+			add_building_construction = {
+				building = fort_15th
+				cost = 0.5
+				speed = 0.5
+			}
 		}
 		if = {
 			limit = {
@@ -2508,8 +2509,11 @@ province_event = {
 					}
 				}
 			}
-			add_building = fort_16th
-			owner = { add_treasury = -400 }
+			add_building_construction = {
+				building = fort_16th
+				cost = 0.5
+				speed = 0.5
+			}
 		}
 		if = {
 			limit = {
@@ -2520,8 +2524,11 @@ province_event = {
 					}
 				}
 			}
-			add_building = fort_17th
-			owner = { add_treasury = -600 }
+			add_building_construction = {
+				building = fort_17th
+				cost = 0.5
+				speed = 0.5
+			}
 		}
 		if = {
 			limit = {
@@ -2529,8 +2536,11 @@ province_event = {
 					mil_tech = 24
 				}
 			}
-			add_building = fort_18th
-			owner = { add_treasury = -800 }
+			add_building_construction = {
+				building = fort_18th
+				cost = 0.5
+				speed = 0.5
+			}
 		}
 	}
 
@@ -2538,63 +2548,96 @@ province_event = {
 		name = btc_por.134b
 
 		owner = { add_prestige = -1 }
+		clr_province_flag = can_build_feitoria
 	}
 }
 
-# Remove feitoria #
+# Sugar and Slaves in Sao Tome #
 
 country_event = {
 	id = btc_por.135
 	title = btc_por.135_t
 	desc = btc_por.135_d
-	picture = FORT_eventPicture
-	goto = ROOT
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
-
-	trigger = {
-		any_owned_province = {
-			has_province_modifier = feitoria
-			AND = {
-				NOT = { has_building = fort_15th }
-				NOT = { has_building = fort_16th }
-				NOT = { has_building = fort_17th }
-				NOT = { has_building = fort_18th }
-			}
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			every_owned_province = {
-				if = {
-					limit = {
-						has_province_modifier = feitoria
-						AND = {
-							NOT = { has_building = fort_15th }
-							NOT = { has_building = fort_16th }
-							NOT = { has_building = fort_17th }
-							NOT = { has_building = fort_18th }
-						}
-					}
-					save_event_target_as = remove_feitoria
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
 
 	option = {
 		name = btc_por.135a
 
-		if = {
-			limit = { has_saved_event_target = remove_feitoria }
-			event_target:remove_feitoria = {
-				remove_province_modifier = feitoria
+		sao_tome_area = {
+			add_province_modifier = {
+				name = slave_plantations
+				duration = -1
 			}
 		}
+	}
+
+	option = {
+		name = btc_por.135b
+
+		sao_tome_area = {
+			add_province_modifier = {
+				name = mass_slave_plantations
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = btc_por.135c
+
+		add_prestige = -1
+	}
+}
+
+# Fortress of Elvas #
+
+country_event = {
+	id = btc_por.136
+	title = btc_por.136_t
+	desc = btc_por.136_d
+	picture = FORT_eventPicture
+
+	trigger = {
+		tag = POR
+		4150 = {
+			owned_by = ROOT
+			controlled_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 400
+	}
+
+	option = {
+		name = btc_por.136a
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+		}
+
+		4150 = {
+			add_building_construction = {
+				building = fort_15th
+				cost = 0.25
+				speed = 0.5
+			}
+			add_province_modifier = {
+				name = local_fortress
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = btc_por.136b
+		
+		add_prestige = -1
 	}
 }

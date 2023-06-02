@@ -39,6 +39,10 @@
  gc_por_fifth_empire_desc:0 "While the kings of Castile have occasionally had the arrogance to declare themselves Emperor of all Spain, we will create a true union of the Iberian crowns, one that will span the whole world."
  gc_por_search_for_gold_title:0 "Searching for Gold"
  gc_por_search_for_gold_desc:0 "There are reports of gold mines in the deeper regions of eastern Africa. We should control the banks of the river Tete to find and bring these riches to safe shores." 
+ gc_por_sao_tome_sugar_title:0 "Sugar in São Tomé"
+ gc_por_sao_tome_sugar_desc:0 "The three islands off the coast of Guinea seem to have perfect conditions to build sugar cane plantations, and are very close to our trade posts in the Congo so slave transport will be fast and simple."
+ gc_por_inner_angola_title:0 "Deeper into Africa"
+ gc_por_inner_angola_desc:0 "The slavers of Congo have grown greedy. They have been raising prices for each slave, even for the weak ones. To ensure our slave supply is of sufficient quality, we must control more of the region so we can capture them ourselves. The south area of the Congo is composed of a couple of unorganized tribes. We should start expanding our influence there."
  miss_discover_cape_of_storms:0 "§Y[Root.GetName]§! has discovered the Cape of Storms."
 
 # Changes from vanilla localisation #
@@ -69,3 +73,6 @@
  gc_por_portugal_discovers_south_america_title:0 "Colonize Brazil"
  gc_por_portugal_discovers_south_america_desc:0 "The fertile land in Brazil would be an excellent place to begin a new colonial venture."
  miss_discover_caribbean:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region."
+ swe_colonize_delaware_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every §YCenter of Trade§! or province with an §YEstuary§! in §YCaribbean§! region."
+ nor_discover_new_world_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province with a §YCenter of Trade§! or with an §YEstuary§! in §YColonial Eastern America§!, §YColonial Canada§!, §YColonial Mexico§! and §YCaribbean§! region."
+ por_triangle_trade_mission_tooltip:0 "Every province in §YKongo§!,§YGuinea§! and §YNiger§! producing §YSlaves§! gets '§YTriangle Trade§!' for §Y20 years§!, giving the following effects:\nGoods Produced: §G+10%§!"

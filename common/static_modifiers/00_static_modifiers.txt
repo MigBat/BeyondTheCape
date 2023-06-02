@@ -142,7 +142,7 @@ coastal_sea = {
 tropical = {
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.3
-	local_hostile_attrition = 2
+	local_hostile_attrition = 5
 
 	local_development_cost = 0.05
 
@@ -152,7 +152,7 @@ tropical = {
 arctic = {
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.4
-	local_hostile_attrition = 1
+	local_hostile_attrition = 5
 
 	allowed_num_of_buildings = -1
 	local_development_cost = 0.5
@@ -163,7 +163,7 @@ arctic = {
 arid = {
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.2
-	local_hostile_attrition = 1
+	local_hostile_attrition = 3
 
 	local_development_cost = 0.1
 
@@ -171,11 +171,11 @@ arid = {
 }
 
 sea_zone = {
-	max_attrition = 5						#Maximum Attrition is 5
+	max_attrition = 20						#Maximum Attrition is 5
 }
 
 land_province = {
-	max_attrition = 5						#Maximum Attrition is 5
+	max_attrition = 20						#Maximum Attrition is 5
 	local_manpower_modifier = 0.25			#25% of manpower.
 	local_has_musketeers = yes
 	local_has_streltsy = yes
@@ -189,7 +189,7 @@ mild_winter = {
 }
 
 normal_winter = {
-	local_hostile_attrition = 2
+	local_hostile_attrition = 3
 	supply_limit_modifier = -0.2
 	migration_cost = 0.1
 
@@ -197,7 +197,7 @@ normal_winter = {
 }
 
 severe_winter = {
-	local_hostile_attrition = 3
+	local_hostile_attrition = 5
 	supply_limit_modifier = -0.3
 	migration_cost = 0.2
 
@@ -205,7 +205,7 @@ severe_winter = {
 }
 
 mild_monsoon = {
-	local_hostile_attrition = 0.5
+	local_hostile_attrition = 2
 	local_hostile_movement_speed = -0.20
 	local_friendly_movement_speed = -0.20
 
@@ -213,7 +213,7 @@ mild_monsoon = {
 }
 
 normal_monsoon = {
-	local_hostile_attrition = 1
+	local_hostile_attrition = 4
 	local_hostile_movement_speed = -0.25
 	local_friendly_movement_speed = -0.25
 
@@ -221,7 +221,7 @@ normal_monsoon = {
 }
 
 severe_monsoon = {
-	local_hostile_attrition = 1.5
+	local_hostile_attrition = 6
 	local_hostile_movement_speed = -0.50
 	local_friendly_movement_speed = -0.50
 
@@ -557,8 +557,8 @@ left_trade_company = {
 	trade_goods_size_modifier = -2.0
 }
 
-
 scorched_earth = {
+	local_hostile_attrition = 10
 	local_hostile_movement_speed = -0.50
 	local_monthly_devastation = 0.25
 }
@@ -1191,7 +1191,7 @@ inverse_religious_unity = {
 	global_unrest = 3
 	church_power_modifier = -1
 	devotion = -1
-	yearly_corruption = 0.1
+	yearly_corruption = 0.2
 }
 
 total_occupation = {
@@ -1293,6 +1293,7 @@ absolutism = {
 	discipline = 0.05
 	core_decay_on_your_own = -0.5
 	monthly_ottoman_decadence = -0.5
+	yearly_corruption = 0.2
 }
 
 low_army_professionalism = {
@@ -2144,6 +2145,7 @@ expanded_infrastructure = {
 	local_governing_cost_increase = 15
 	local_governing_cost = 0.1
 	local_great_project_upgrade_cost = -0.05
+	local_friendly_movement_speed = 0.05
 }
 
 centralize_state = {

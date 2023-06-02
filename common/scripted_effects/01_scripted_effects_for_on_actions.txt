@@ -2718,9 +2718,7 @@ on_colony_finished_effect = {
 				}
 			}
 		}
-		province_event = {
-			id = btc_por.134
-		}
+		set_province_flag = can_build_feitoria
 	}
 }
 

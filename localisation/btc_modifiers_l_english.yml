@@ -16,7 +16,21 @@
  desc_persian_sound:0 "He who wishes to enter the waters of the Persian Gulf must dock at the island of Hormuz and go through customs, for no nation other than ours controls either side of Arabia and Persia."
  singapore_sound:0 "Singapore Sound"
  desc_singapore_sound:0 "The riches of China lay past these waters. All we ask for is a small payment for safe passage, a meaningless amount compared to what is found beyond."
-
+ christ_order_headquarters:0 "Order of Christ Headquarters"
+ desc_christ_order_headquarters:0 "This order calls home the town of Tomar."
+ avis_order_headquarters:0 "Order of Avis Headquarters"
+ desc_avis_order_headquarters:0 "This order calls home the town of Avis."
+ santiago_order_headquarters:0 "Order of Santiago Headquarters"
+ desc_santiago_order_headquarters:0 "This order calls home the town of Compostela."
+ montesa_order_headquarters:0 "Order of Montesa Headquarters"
+ desc_montesa_order_headquarters:0 "This order calls home the town of Montesa."
+ calatrava_order_headquarters:0 "Order of Calatrava Headquarters"
+ desc_calatrava_order_headquarters:0 "This order calls home the town of Calatrava."
+ alcantara_order_headquarters:0 "Order of Alcántara Headquarters"
+ desc_alcantara_order_headquarters:0 "This order calls home the town of Alcántara."
+ san_juan_order_headquarters:0 "Order of San Juan Headquarters"
+ desc_san_juan_order_headquarters:0 "This order calls home the town of Mdina."
+ 
 # Irmandino Revolts #
  galician_revolts:0 "Galician Revolts"
  desc_galician_revolts:0 "We are aiding the local nobles."
@@ -228,6 +242,10 @@
  desc_portuguese_tercios:0 "With the latest military reforms that were undertaken, our Terços are the blight of any opposing force."
  feitoria:0 "Feitoria"
  desc_feitoria:0 "If the fort in this province is destroyed, we will lose the benefits of the feitoria."
+ slave_plantations:0 "Slave Plantations"
+ desc_slave_plantations:0 "Slaves are used to grow the plantations here."
+ mass_slave_plantations:0 "Mass Slave Plantations"
+ desc_mass_slave_plantations:0 "Many slaves are used to grow the plantations here."
 
 # Other Events #
  paria_paid:0 "Paria Paid"

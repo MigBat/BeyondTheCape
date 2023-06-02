@@ -886,9 +886,13 @@ gc_por_2_c = {
 			add_mercantilism = 2
 			custom_tooltip = por_triangle_trade_mission_tooltip
 			hidden_effect = {
-				every_owned_province = {
+				every_province = {
 					limit = {
-						continent = africa
+						OR = {
+							region = kongo_region
+							region = niger_region
+							region = guinea_region
+						}
 						trade_goods = slaves
 					}
 					add_province_modifier = {
@@ -1898,6 +1902,91 @@ gc_por_4_c = {
 	}
 	has_country_shield = yes
 
+	gc_por_sao_tome_sugar = {
+		icon = mission_have_manufactories
+		required_missions = { gc_por_colonise_central_africa }
+		position = 8
+
+		provinces_to_highlight = {
+			area = sao_tome_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			sao_tome_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			sao_tome_area = {
+				change_trade_goods = sugar
+			}
+			country_event = { id = btc_por.135 }
+			inner_angola_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	gc_por_inner_angola = {
+		icon = mission_envoy_to_ethiopia
+		required_missions = { gc_por_sao_tome_sugar }
+		position = 9
+
+		provinces_to_highlight = {
+			area = inner_angola_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			inner_angola_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+
+		effect = {
+			custom_tooltip = por_angola_mission_tt
+			hidden_effect = {
+				kongo_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						trade_goods = slaves
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}
+
+gc_por_4_d = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = POR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
 	gc_por_malabar = {
 		icon = mission_portuguese_malabar
 		required_missions = { gc_portugal_discovers_india }
@@ -2171,7 +2260,6 @@ gc_por_5_b = {
 		trigger = {
 			368 =  {
 				has_building = workshop
-				base_production = 8
 				owned_by = ROOT
 			}
 		}
