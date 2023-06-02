@@ -242,6 +242,10 @@
  desc_portuguese_tercios:0 "With the latest military reforms that were undertaken, our Terços are the blight of any opposing force."
  feitoria:0 "Feitoria"
  desc_feitoria:0 "If the fort in this province is destroyed, we will lose the benefits of the feitoria."
+ slave_plantations:0 "Slave Plantations"
+ desc_slave_plantations:0 "Slaves are used to grow the plantations here."
+ mass_slave_plantations:0 "Mass Slave Plantations"
+ desc_mass_slave_plantations:0 "Many slaves are used to grow the plantations here."
 
 # Other Events #
  paria_paid:0 "Paria Paid"

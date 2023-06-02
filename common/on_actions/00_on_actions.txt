@@ -2357,9 +2357,6 @@ on_monthly_pulse = {
 	events = {
 		btc_events.5	#Monthly OPM diplo calculation
 	}
-	events = {
-		btc_por.135	#Remove feitoria modifier
-	}
 }
 on_yearly_pulse = {
 	events = {

@@ -612,7 +612,7 @@ severe_monsoon = {
 	1245 2718 2723 2724 # Vogelkop
 	1118 1119 2241 2242 # Gulf of Guinea
 	1151 1163 1164 1165 # Guinea
-	1097 1306 # Sao Tome
+	1097 1306 4962 # Sao Tome
 	1147 2289 2290 2294  # Benin
 	1114 1117 2238 # Futa Jallon
 	4021 4024 4025 # Betsimasaraka

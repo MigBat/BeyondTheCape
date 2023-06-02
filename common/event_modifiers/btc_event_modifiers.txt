@@ -451,3 +451,13 @@ feitoria = {
 opm_diplomacy = {
 	diplomatic_upkeep = 1
 }
+
+slave_plantations = {
+	trade_goods_size = 1
+	local_unrest = 5
+}
+
+mass_slave_plantations = {
+	trade_goods_size = 2
+	local_unrest = 10
+}

@@ -2552,63 +2552,44 @@ province_event = {
 	}
 }
 
-# # Remove feitoria #
+# Sugar and Slaves in Sao Tome #
 
-# country_event = {
-# 	id = btc_por.135
-# 	title = btc_por.135_t
-# 	desc = btc_por.135_d
-# 	picture = FORT_eventPicture
-# 	goto = ROOT
+country_event = {
+	id = btc_por.135
+	title = btc_por.135_t
+	desc = btc_por.135_d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
-# 	is_triggered_only = yes
+	is_triggered_only = yes
 
-# 	trigger = {
-# 		any_owned_province = {
-# 			has_province_modifier = feitoria
-# 			AND = {
-# 				NOT = { has_building = fort_15th }
-# 				NOT = { has_building = fort_16th }
-# 				NOT = { has_building = fort_17th }
-# 				NOT = { has_building = fort_18th }
-# 			}
-# 		}
-# 	}
+	option = {
+		name = btc_por.135a
 
-# 	immediate = {
-# 		hidden_effect = {
-# 			every_owned_province = {
-# 				if = {
-# 					limit = {
-# 						has_province_modifier = feitoria
-# 						AND = {
-# 							NOT = { has_building = fort_15th }
-# 							NOT = { has_building = fort_16th }
-# 							NOT = { has_building = fort_17th }
-# 							NOT = { has_building = fort_18th }
-# 						}
-# 					}
-# 					save_event_target_as = remove_feitoria
-# 				}
-# 			}
-# 		}
-# 	}
-	
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
+		sao_tome_area = {
+			add_province_modifier = {
+				name = slave_plantations
+				duration = -1
+			}
+		}
+	}
 
-# 	option = {
-# 		name = btc_por.135a
+	option = {
+		name = btc_por.135b
 
-# 		if = {
-# 			limit = { has_saved_event_target = remove_feitoria }
-# 			event_target:remove_feitoria = {
-# 				remove_province_modifier = feitoria
-# 			}
-# 		}
-# 	}
-# }
+		sao_tome_area = {
+			add_province_modifier = {
+				name = mass_slave_plantations
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = btc_por.135c
+
+		add_prestige = -1
+	}
+}
 
 # Fortress of Elvas #
 

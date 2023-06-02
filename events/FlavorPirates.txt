@@ -335,9 +335,9 @@ country_event = {
 		owns_core_province = 4563
 		num_of_cities = 2
 		is_subject = no
-		religion_group = muslim
 		4563 = {
 			privateer_power = { share = 5 }
+			religion_group = muslim
 		}
 	}
 
@@ -480,9 +480,9 @@ country_event = {
 		owns_core_province = 4561
 		num_of_cities = 2
 		is_subject = no
-		religion_group = muslim
 		4561 = {
 			privateer_power = { share = 5 }
+			religion_group = muslim
 		}
 		223 = {
 			owner = {
