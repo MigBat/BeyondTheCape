@@ -151,5 +151,6 @@
  english_colony_in_the_carribean.tooltip:0 "§Y[Root.GetName]§! or their subjects own at least §Y5§! fully colonized provinces in the Caribbean region."
  por_angola_mission_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province producing §YSlaves§! in the §YCongo§! region."
  great_explorer_personality_die_desc:0 "Alas, a great catastrophe! Our most highly esteemed and legendary navigator has embraced the afterlife. A grey and sorrowful day is upon us..."
+ REFORM_INCREASED_COST:2 "Each tier of Reforms will increase the cost by §Y60§!"
 
  CORRUPTION_EXPLANATION:2 "Corruption increases over time due to advisors, unbalanced research, overextension and lack of religious unity. It can be decreased by high stability and being ahead of time in administrative or diplomatic technology. If all else fails you can spend ducats to reduce corruption over time. Corruption can affect all power costs, minimum autonomy as well as spy defense and spy network construction speed."
