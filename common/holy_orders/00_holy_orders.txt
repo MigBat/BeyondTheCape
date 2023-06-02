@@ -313,6 +313,10 @@ alcantara_order = {
             factor = 5
             has_fort_building_trigger = yes
         }
+        modifier = {
+            factor = 1000
+            area = extremadura_area
+        }
     }
     localization = holy_order
 }
@@ -353,6 +357,10 @@ avis_order = {
             factor = 5
             has_fort_building_trigger = yes
         }
+        modifier = {
+            factor = 1000
+            area = alentejo_area
+        }
     }
     localization = holy_order
 }
@@ -389,6 +397,10 @@ calatrava_order = {
     }
     ai_priority = {
         factor = 5
+        modifier = {
+            factor = 1000
+            area = toledo_area
+        }
     }
     localization = holy_order
 }
@@ -428,6 +440,10 @@ montesa_order = {
         modifier = {
             factor = 5
             has_fort_building_trigger = yes
+        }
+        modifier = {
+            factor = 1000
+            area = valencia_area
         }
     }
     localization = holy_order
@@ -480,6 +496,10 @@ san_juan_order = {
             factor = 5
             devastation = 50
         }
+        modifier = {
+            factor = 1000
+            area = sicily_area
+        }
     }
     localization = holy_order
 }
@@ -511,6 +531,10 @@ santiago_order = {
     }
     ai_priority = {
         factor = 5
+        modifier = {
+            factor = 1000
+            area = castille_area
+        }
     }
     localization = holy_order
 }
@@ -823,8 +847,8 @@ christ_order = {
             has_port = no
         }
         modifier = {
-            factor = 5
-            is_in_capital_area = yes
+            factor = 1000
+            area = estremadura_area
         }
     }
     localization = holy_order
