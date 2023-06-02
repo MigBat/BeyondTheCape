@@ -2487,11 +2487,6 @@ province_event = {
 		}
 
 		clr_province_flag = can_build_feitoria
-		
-		add_province_modifier = {
-			name = feitoria
-			duration = -1
-		}
 
 		if = {
 			limit = {
@@ -2499,8 +2494,11 @@ province_event = {
 					NOT = { mil_tech = 14 }
 				}
 			}
-			add_building = fort_15th
-			owner = { add_years_of_income = -0.25 }
+			add_building_construction = {
+				building = fort_15th
+				cost = 0.5
+				speed = 0.5
+			}
 		}
 		if = {
 			limit = {
@@ -2511,8 +2509,11 @@ province_event = {
 					}
 				}
 			}
-			add_building = fort_16th
-			owner = { add_years_of_income = -0.25 }
+			add_building_construction = {
+				building = fort_16th
+				cost = 0.5
+				speed = 0.5
+			}
 		}
 		if = {
 			limit = {
@@ -2523,8 +2524,11 @@ province_event = {
 					}
 				}
 			}
-			add_building = fort_17th
-			owner = { add_years_of_income = -0.25 }
+			add_building_construction = {
+				building = fort_17th
+				cost = 0.5
+				speed = 0.5
+			}
 		}
 		if = {
 			limit = {
@@ -2532,8 +2536,11 @@ province_event = {
 					mil_tech = 24
 				}
 			}
-			add_building = fort_18th
-			owner = { add_years_of_income = -0.25 }
+			add_building_construction = {
+				building = fort_18th
+				cost = 0.5
+				speed = 0.5
+			}
 		}
 	}
 
@@ -2545,63 +2552,63 @@ province_event = {
 	}
 }
 
-# Remove feitoria #
+# # Remove feitoria #
 
-country_event = {
-	id = btc_por.135
-	title = btc_por.135_t
-	desc = btc_por.135_d
-	picture = FORT_eventPicture
-	goto = ROOT
+# country_event = {
+# 	id = btc_por.135
+# 	title = btc_por.135_t
+# 	desc = btc_por.135_d
+# 	picture = FORT_eventPicture
+# 	goto = ROOT
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	trigger = {
-		any_owned_province = {
-			has_province_modifier = feitoria
-			AND = {
-				NOT = { has_building = fort_15th }
-				NOT = { has_building = fort_16th }
-				NOT = { has_building = fort_17th }
-				NOT = { has_building = fort_18th }
-			}
-		}
-	}
+# 	trigger = {
+# 		any_owned_province = {
+# 			has_province_modifier = feitoria
+# 			AND = {
+# 				NOT = { has_building = fort_15th }
+# 				NOT = { has_building = fort_16th }
+# 				NOT = { has_building = fort_17th }
+# 				NOT = { has_building = fort_18th }
+# 			}
+# 		}
+# 	}
 
-	immediate = {
-		hidden_effect = {
-			every_owned_province = {
-				if = {
-					limit = {
-						has_province_modifier = feitoria
-						AND = {
-							NOT = { has_building = fort_15th }
-							NOT = { has_building = fort_16th }
-							NOT = { has_building = fort_17th }
-							NOT = { has_building = fort_18th }
-						}
-					}
-					save_event_target_as = remove_feitoria
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			every_owned_province = {
+# 				if = {
+# 					limit = {
+# 						has_province_modifier = feitoria
+# 						AND = {
+# 							NOT = { has_building = fort_15th }
+# 							NOT = { has_building = fort_16th }
+# 							NOT = { has_building = fort_17th }
+# 							NOT = { has_building = fort_18th }
+# 						}
+# 					}
+# 					save_event_target_as = remove_feitoria
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {
-		name = btc_por.135a
+# 	option = {
+# 		name = btc_por.135a
 
-		if = {
-			limit = { has_saved_event_target = remove_feitoria }
-			event_target:remove_feitoria = {
-				remove_province_modifier = feitoria
-			}
-		}
-	}
-}
+# 		if = {
+# 			limit = { has_saved_event_target = remove_feitoria }
+# 			event_target:remove_feitoria = {
+# 				remove_province_modifier = feitoria
+# 			}
+# 		}
+# 	}
+# }
 
 # Fortress of Elvas #
 

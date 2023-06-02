@@ -314,6 +314,28 @@ fort_15th = {
 	on_built = {
 		if = {
 			limit = {
+				AND = {
+					owner = {
+						has_government_attribute = can_establish_feitorias
+					}
+					has_port = yes
+					OR = {
+						AND = {
+							continent = africa
+							NOT = { region = maghreb_region }
+							NOT = { region = egypt_region }
+						}
+						continent = asia
+					}
+				}
+			}
+			add_province_modifier = {
+				name = feitoria
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
 				FROM = { NOT = { mil_tech = 14 } has_government_attribute = on_fort_built_nobles_loyalty }
 			}
 			FROM = {
@@ -362,6 +384,7 @@ fort_15th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
+		remove_province_modifier = feitoria
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
@@ -749,6 +772,7 @@ fort_16th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
+		remove_province_modifier = feitoria
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
@@ -1213,6 +1237,7 @@ fort_17th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
+		remove_province_modifier = feitoria
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
@@ -1667,6 +1692,7 @@ fort_18th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
+		remove_province_modifier = feitoria
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
