@@ -2599,6 +2599,8 @@ country_event = {
 	desc = btc_por.136_d
 	picture = FORT_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		4150 = {
