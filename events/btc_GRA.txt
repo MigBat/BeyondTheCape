@@ -89,6 +89,15 @@ country_event = {
 
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 0
+				NOT = { 
+					army_strength = {
+						who = GRA
+						value = 1
+					}
+				}
+			}
 		}
 
 		if = {
