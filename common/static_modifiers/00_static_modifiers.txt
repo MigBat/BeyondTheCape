@@ -280,10 +280,11 @@ development = {
 	local_amount_of_cawa = 0.125
 	local_amount_of_carolean = 0.1
 	local_amount_of_hussars = 0.01
+	local_build_cost = 0.02
 }
 
 development_scaled = {
-	local_development_cost = 0.03
+	local_development_cost = 0.04
 }
 
 capital_city = {
@@ -2131,14 +2132,13 @@ expanded_infrastructure = {
 	ship_recruit_speed = -0.15
 	local_defensiveness = 0.05
 	garrison_growth = 0.05
-	local_development_cost = -0.15
+	local_development_cost = -0.1
 	local_production_efficiency = 0.05
 	local_tax_modifier = 0.1
 	local_manpower_modifier = 0.05
 	local_sailors_modifier = 0.05
 	local_ship_repair = 0.05
 	local_autonomy = -0.005
-	local_build_cost = -0.05
 	local_build_time = -0.05
 	province_trade_power_modifier = 0.05
 	trade_goods_size_modifier = 0.05

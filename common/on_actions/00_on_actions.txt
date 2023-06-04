@@ -1197,14 +1197,29 @@ on_siege_lost_province =  {
 			FROM = {
 				NOT = { tag = REB }
 			}
+			NOT = { owns = ROOT }
 			development = 4
+			OR = {
+				NOT = { has_province_flag = dev_reduced_recently }
+				had_province_flag = { flag = dev_reduced_recently days = 730 }
+			}
 		}
 		random_list = {
-			15 = { add_base_tax = -1 }
-			15 = { add_base_production = -1 }
-			15 = { add_base_manpower = -1 }
-			55 = { }
+			10 = { 
+				add_base_tax = -1 
+				FROM = { add_years_of_income = 0.05 }
+			}
+			10 = { 
+				add_base_production = -1 
+				FROM = { add_years_of_income = 0.05 }
+			}
+			10 = { 
+				add_base_manpower = -1 
+				FROM = { add_years_of_income = 0.05 }
+			}
+			70 = { }
 		}
+		set_province_flag = dev_reduced_recently
 	}
 }
 
