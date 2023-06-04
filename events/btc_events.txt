@@ -11,6 +11,7 @@ country_event = {
 
 	trigger = {
 		NOT = { has_country_flag = quest_for_the_new_world }
+		NOT = { has_country_modifier = quest_for_the_new_world }
 		has_idea_group = exploration_ideas
 		dip_tech = 7
 	}
@@ -160,5 +161,55 @@ country_event = {
 			}
 			remove_country_modifier = opm_diplomacy
 		}
+	}
+}
+
+# Remove dev with high devastation
+
+province_event = {
+	id = btc_events.6
+	title = btc_events.6_t
+	desc = btc_events.6_d
+
+	hidden = yes
+	
+	trigger = {
+		devastation = 10
+		OR = {
+			NOT = { has_province_flag = dev_reduced_recently }
+			had_province_flag = { flag = dev_reduced_recently days = 730 }
+		}
+		development = 4
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			devastation = 20
+		}
+		modifier = {
+			factor = 0.5
+			devastation = 30
+		}
+		modifier = {
+			factor = 0.5
+			devastation = 40
+		}
+		modifier = {
+			factor = 0.5
+			devastation = 50
+		}
+	}
+
+	option = {
+		name = btc_events.6a
+
+		random_list = {
+			33 = { add_base_tax = -1 }
+			33 = { add_base_production = -1 }
+			33 = { add_base_manpower = -1 }
+		}
+		set_province_flag = dev_reduced_recently
 	}
 }

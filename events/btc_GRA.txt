@@ -19,7 +19,7 @@ country_event = {
 		name = btc_gra.1a
 
 		ai_chance = {
-			factor = 75
+			factor = 85
 		}
 
 		add_years_of_income = -0.5
@@ -36,7 +36,7 @@ country_event = {
 		name = btc_gra.1b
 
 		ai_chance = {
-			factor = 25
+			factor = 15
 		}
 
 		set_country_flag = paria_not_paid
@@ -89,6 +89,15 @@ country_event = {
 
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 0
+				NOT = { 
+					army_strength = {
+						who = GRA
+						value = 2
+					}
+				}
+			}
 		}
 
 		if = {

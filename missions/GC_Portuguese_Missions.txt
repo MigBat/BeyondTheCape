@@ -669,7 +669,7 @@ gc_por_2_a = {
 				define_advisor = {
 					type = inquisitor 
 					skill = 2
-					cost_multiplier = 0.75
+					cost_multiplier = 0.25
 				}
 			}
 			else = { add_prestige = 5 }
@@ -2329,9 +2329,18 @@ gc_por_5_b = {
 		position = 8
 
 		trigger = {
-			227 = {
-				development = 50
-				owned_by = ROOT
+			if = {
+				limit = { ai = no }
+				227 = {
+					development = 50
+					owned_by = ROOT
+				}
+			}
+			else = {
+				227 = {
+					development = 30
+					owned_by = ROOT
+				}
 			}
 			treasury = 400
 		}

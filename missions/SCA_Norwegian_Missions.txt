@@ -729,9 +729,18 @@ nor_conquest_mission_slot = {
 		required_missions = {  }
 		provinces_to_highlight = {}
 		trigger = {
-			OR = {
-				num_of_heavy_ship = 5
-				num_of_light_ship = 8
+			if = {
+				limit = { ai = no }
+				OR = {
+					num_of_heavy_ship = 5
+					num_of_light_ship = 8
+				}
+			}
+			else = {
+				OR = {
+					num_of_heavy_ship = 3
+					num_of_light_ship = 5
+				}
 			}
 		}
 		effect = {

@@ -33,7 +33,8 @@ marketplace = {
 
 	modifier = {
 		province_trade_power_modifier = 0.5
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.01
+		local_build_cost = 0.1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -66,7 +67,8 @@ workshop = {
 	time = 12
 	modifier = {
 		local_production_efficiency = 0.5
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.01
+		local_build_cost = 0.1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -97,7 +99,10 @@ temple = {
 	time = 12
 	modifier = {
 		local_tax_modifier = 0.4
-		local_development_cost_modifier = -0.05
+		local_unrest = -0.5
+		local_missionary_strength = 0.01
+		local_development_cost_modifier = -0.01
+		local_build_cost = 0.1
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes
@@ -160,7 +165,8 @@ barracks = {
 	time = 12
 	modifier = {
 		local_manpower_modifier = 0.5
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.01
+		local_build_cost = 0.1
 	}
 	on_built = {
 		if = {
@@ -267,7 +273,8 @@ shipyard = {
 		local_ship_repair = 0.25
 		local_has_man_of_war = yes
 		local_has_galleass = yes
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.01
+		local_build_cost = 0.1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -416,6 +423,7 @@ coastal_defence = {
 		blockade_force_required = 0.5
 		hostile_disembark_speed = 1.0
 		block_slave_raid = yes
+		allowed_num_of_buildings = 1
 	}
 
 	ai_will_do = {
@@ -435,7 +443,8 @@ courthouse = {
 		local_autonomy = -0.1
 		local_governing_cost = -0.25
 		allowed_num_of_buildings = 1
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.01
+		local_build_cost = 0.1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -534,7 +543,8 @@ dock = {
 		local_sailors_modifier = 0.5
 		local_has_man_of_war = yes
 		local_has_galleass = yes
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.01
+		local_build_cost = 0.1
 	}
 	
 	on_built = {
@@ -629,7 +639,8 @@ regimental_camp = {
 	time = 12
 	modifier = {
 		land_forcelimit = 1
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.01
+		local_build_cost = 0.1
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -807,6 +818,7 @@ naval_battery = {
 		hostile_disembark_speed = 2.0
 		hostile_fleet_attrition = 5
 		block_slave_raid = yes
+		allowed_num_of_buildings = 1
 	}
 
 	ai_will_do = {
@@ -824,8 +836,10 @@ cathedral = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.03
-		local_tax_modifier = 0.6
-		local_development_cost_modifier = -0.05
+		local_tax_modifier = 0.8
+		local_unrest = -2
+		local_development_cost_modifier = -0.02
+		local_build_cost = 0.2
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes
@@ -891,8 +905,9 @@ university = {
 	cost = 300
 	time = 12
 	modifier = {
-		local_development_cost = -0.20
-		allowed_num_of_buildings = 1
+		local_development_cost = -0.1
+		local_institution_spread = 0.5
+		local_build_cost = 0.2
 	}
 
 	on_built = {
@@ -987,7 +1002,8 @@ trade_depot = {
 
 	modifier = {
 		province_trade_power_modifier = 1
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.02
+		local_build_cost = 0.2
 	}
 
 	on_built = {
@@ -1029,7 +1045,8 @@ grand_shipyard = {
 		local_ship_repair = 0.50
 		local_has_man_of_war = yes
 		local_has_galleass = yes
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.02
+		local_build_cost = 0.2
 	}
 
 	on_built = {
@@ -1099,7 +1116,8 @@ training_fields = {
 
 	modifier = {
 		local_manpower_modifier = 1
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.02
+		local_build_cost = 0.2
 	}
 	
 	on_built = {
@@ -1272,7 +1290,8 @@ stock_exchange = {
 
 	modifier = {
 		province_trade_power_modifier = 1.25
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.03
+		local_build_cost = 0.3
 	}
 
 	on_built = {
@@ -1330,7 +1349,8 @@ counting_house = {
 	make_obsolete = workshop
 	modifier = {
 		local_production_efficiency = 1
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.02
+		local_build_cost = 0.2
 	}
 
 	on_built = {
@@ -1373,7 +1393,8 @@ town_hall = {
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
 		allowed_num_of_buildings = 1
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.02
+		local_build_cost = 0.2
 	}
 
 	on_built = {
@@ -1484,7 +1505,8 @@ drydock = {
 		local_sailors_modifier = 1.0
 		local_has_man_of_war = yes
 		local_has_galleass = yes
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.02
+		local_build_cost = 0.2
 	}
 	
 	on_built = {
@@ -1565,7 +1587,8 @@ conscription_center = {
 
 	modifier = {
 		land_forcelimit = 2
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.02
+		local_build_cost = 0.2
 	}
 	on_built = {
 		add_development_from_upgrading_or_building = {
@@ -1723,7 +1746,8 @@ manufactory = {
 	time = 60
 	modifier = {
 		trade_goods_size = 1.0
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.03
+		local_build_cost = 0.3
 	}
 }
 
@@ -2047,6 +2071,8 @@ furnace = {
 
 	modifier = {
 		global_trade_goods_size_modifier = 0.05 #National Bonus
+		local_development_cost_modifier = -0.03
+		local_build_cost = 0.3
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -2140,6 +2166,8 @@ soldier_households = {
 
 	modifier = {
 		local_manpower = 0.75
+		local_development_cost_modifier = -0.03
+		local_build_cost = 0.3
 	}
 	bonus_modifier = {
 		local_manpower = 0.75
@@ -2215,6 +2243,8 @@ impressment_offices = {
 		local_sailors = 250
 		ship_recruit_speed = -0.1
 		local_ship_cost = -0.05
+		local_development_cost_modifier = -0.03
+		local_build_cost = 0.3
 	}
 	bonus_modifier = {
 		local_sailors = 250
@@ -2302,6 +2332,8 @@ state_house = {
 		local_governing_cost = -0.15
 		local_governing_cost_increase = -10
 		allowed_num_of_buildings = 1
+		local_development_cost_modifier = -0.03
+		local_build_cost = 0.3
 	}
 	bonus_modifier = {
 		statewide_governing_cost = -0.2
