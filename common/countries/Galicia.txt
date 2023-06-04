@@ -34,8 +34,8 @@ historical_units = {
 }
 
 monarch_names = {
-	"GarcÃ­a #1" = 20
-	"OrdoÃ±o #2" = 20
+	"García #1" = 20
+	"Ordoño #2" = 20
 	"Afonso #5" = 15
 	"Sancho #1" = 15
 	"Ramiro #3" = 10
@@ -52,7 +52,7 @@ monarch_names = {
 	"Domingos #0" = 0
 	"Estevo #0" = 0
 	"Felipe #0" = 0
-	"FernÃ¡n #0" = 0
+	"Fernán #0" = 0
 	"Francisco #0" = 0
 	"Frederico #0" = 0
 	"Gonzalo #0" = 0
@@ -73,7 +73,7 @@ monarch_names = {
 	"Pedro #0" = 0
 	"MONARCH_NAME_RAMON" = 0
 	"Roi #0" = 0
-	"TomÃ© #0" = 0
+	"Tomé #0" = 0
 	"Vitor #0" = 0
 	"Xoan #0" = 0
 	"Xorxe #0" = 0
@@ -84,33 +84,33 @@ monarch_names = {
 }
 
 leader_names = {
-	"de Aguirre" "de AlarcÃ³n" "de Toledo" "de Andrade" "de Ayala"
-	"de BazÃ¡n" "de Benavides" Campomanes "de Castilla" "de la Cerda" Cienfuegos ColÃ³n Coronado CortÃ©s
-	"de Toledo" "de CÃ³rdoba" "de la Cueva" "de Figueroa" Fonseca
-	GÃ¡lvez GÃ³mez "de GuzmÃ¡n" "JimÃ©nez de Cisneros"
-	"de Leiva" "LÃ³pez de Haro" "de Luna"
+	"de Aguirre" "de Alarcón" "de Toledo" "de Andrade" "de Ayala"
+	"de Bazán" "de Benavides" Campomanes "de Castilla" "de la Cerda" Cienfuegos Colón Coronado Cortés
+	"de Toledo" "de Córdoba" "de la Cueva" "de Figueroa" Fonseca
+	Gálvez Gómez "de Guzmán" "Jiménez de Cisneros"
+	"de Leiva" "López de Haro" "de Luna"
 	"de Lara" "de Velasco" "de Villena" "de Mendoza"
-	NarvÃ¡ez "de Nebrija" "NuÃ±ez de Balboa" "de Ojeda" Orellana Osorio 
-	Pimentel PinzÃ³n Pizarro "Ponce de LeÃ³n" Portocarrero
-	"de Rojas" Tellez-GirÃ³n "de la Vega" "de ZÃºÃ±iga"
+	Narváez "de Nebrija" "Nuñez de Balboa" "de Ojeda" Orellana Osorio 
+	Pimentel Pinzón Pizarro "Ponce de León" Portocarrero
+	"de Rojas" Tellez-Girón "de la Vega" "de Zúñiga"
 }
 
 ship_names = {
-	Galicia Argonauta Asturias AsunciÃ³n Atrevido Azor
+	Galicia Argonauta Asturias Asunción Atrevido Azor
 	Cartagonova Castilla "Castillo Negro" Castor "Ciervo Volante"
-	Doncella DragÃ³n 
-	"El Gran Grin" "El Retiro" Eneas Eolo Esperanza "EspÃ­ritu Santo" Extremadura
-	Furor "Gran GrifÃ³n" HalcÃ³n HÃ©rcules Isabela JÃºpiter
-	"La ConcepciÃ³n" "La Magdalena" "La Manuela" LeÃ³n Ligera "Lobo Marino"
-	Marte Mercurio Neptuno NiÃ±a OriÃ³n
-	"Paloma Blanca" Pegaso "Perro Marino" Pinta PlutÃ³n Pollux "PrÃ­ncipe de Asturias"
+	Doncella Dragón 
+	"El Gran Grin" "El Retiro" Eneas Eolo Esperanza "Espíritu Santo" Extremadura
+	Furor "Gran Grifón" Halcón Hércules Isabela Júpiter
+	"La Concepción" "La Magdalena" "La Manuela" León Ligera "Lobo Marino"
+	Marte Mercurio Neptuno Niña Orión
+	"Paloma Blanca" Pegaso "Perro Marino" Pinta Plutón Pollux "Príncipe de Asturias"
 	Rayo "Real Alfonso" "Real Enrique" "Real Juan" "Rey Pelayo" "Rey Rodrigo"
-	"San AndrÃ©s" "San Antonio" "San BartolomÃ©" "San BernabÃ©" "San Cristobal" "San Enrique"
-	"San Esteban" "San Fernando" "San Francisco" "San Gabriel" "San Isidoro" "San JerÃ³nimo"
-	"San JosÃ©" "San Juan" "San Juan Bautista" "San Leandro" "San Miguel" "San Pedro"
-	"San Rafael" "San Salvador" "San Sebastian" "Santa Ana" "Santa BÃ¡rbara" "Santa Beatriz"
-	"Santa Catalina" "Santa Cruz" "Santa Fe" "Santa Isabel" "Santa Justa" "Santa MarÃ­a"
-	"Santa Marta" "Santa Rita" "Santa Teresa" Santiago "SantÃ­sima Trinidad" "Santo Domingo" Sirena
-	Terror Toledo Trinidad TritÃ³n Unicornio
-	Vencedora Ventura Victoria Vigilante Vizcaya Vulcano ZÃºÃ±iga
+	"San Andrés" "San Antonio" "San Bartolomé" "San Bernabé" "San Cristobal" "San Enrique"
+	"San Esteban" "San Fernando" "San Francisco" "San Gabriel" "San Isidoro" "San Jerónimo"
+	"San José" "San Juan" "San Juan Bautista" "San Leandro" "San Miguel" "San Pedro"
+	"San Rafael" "San Salvador" "San Sebastian" "Santa Ana" "Santa Bárbara" "Santa Beatriz"
+	"Santa Catalina" "Santa Cruz" "Santa Fe" "Santa Isabel" "Santa Justa" "Santa María"
+	"Santa Marta" "Santa Rita" "Santa Teresa" Santiago "Santísima Trinidad" "Santo Domingo" Sirena
+	Terror Toledo Trinidad Tritón Unicornio
+	Vencedora Ventura Victoria Vigilante Vizcaya Vulcano Zúñiga
 }

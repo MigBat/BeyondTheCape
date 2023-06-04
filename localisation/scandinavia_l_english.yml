@@ -3739,7 +3739,7 @@
  secure_clergy_power_reform_desc:0 "The clerics of our state have as much interest in the worldy possessions as our nobilty does. To appease them without sacrificing too much of our own power it is in our best interest to expand the lands and rights of the temples of our country."
  gov_expanded_temple_rights_mod:0 "Expanded Temple Rights"
  desc_gov_expanded_temple_rights_mod:0 "The religious buildings of this province have gained more rights and lands in exchange for an increased tax contribution."
- mechanic_temples_modifier_yes:1 "Temples and Cathedrals give the province §G+33.0%§! Local Tax Modifier and §G-2.00§! Local Unrest"
+#  mechanic_temples_modifier_yes:1 "Temples and Cathedrals give the province §G+33.0%§! Local Tax Modifier and §G-2.00§! Local Unrest"
  empower_the_burghers_reform:0 "Empower the Burghers"
  empower_the_burghers_reform_desc:0 "The Burghers are the traders and merchants of our state. They ensure that a constant stream of money finds its way into our state. To empower their privileges and their influence leads to a faster accumulation of our wealth."
  new_world_exploitation_reform:0 "Exploitation of the New World"

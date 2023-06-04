@@ -25,6 +25,18 @@ benedictines = {
     }
     ai_priority = {
         factor = 2
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
+        }
     }
     localization = holy_order
 }
@@ -56,6 +68,18 @@ carthusians = {
     }
     ai_priority = {
         factor = 2
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
+        }
     }
     localization = holy_order
 }
@@ -87,6 +111,18 @@ hieronymites = {
     }
     ai_priority = {
         factor = 2
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
+        }
     }
     localization = holy_order
 }
@@ -122,6 +158,18 @@ jesuit_order = {
             factor = 2.0
             NOT = { religion = ROOT }
         }
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
+        }
     }
     localization = holy_order
 }
@@ -153,6 +201,18 @@ augustinians = {
     }
     ai_priority = {
         factor = 2
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
+        }
     }
     localization = holy_order
 }
@@ -184,6 +244,18 @@ carmelites = {
     }
     ai_priority = {
         factor = 2
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
+        }
     }
     localization = holy_order
 }
@@ -235,6 +307,18 @@ dominican_order = {
             factor = 2.0
             NOT = { culture = ROOT }
         }
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
+        }
     }
     localization = holy_order
 }
@@ -273,6 +357,18 @@ franciscan_order = {
         modifier = {
             factor = 1.5
             devastation = 50
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
         }
     }
     localization = holy_order
@@ -316,6 +412,17 @@ alcantara_order = {
         modifier = {
             factor = 1000
             area = extremadura_area
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
         }
     }
     localization = holy_order
@@ -361,6 +468,17 @@ avis_order = {
             factor = 1000
             area = alentejo_area
         }
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
+        }
     }
     localization = holy_order
 }
@@ -400,6 +518,17 @@ calatrava_order = {
         modifier = {
             factor = 1000
             area = toledo_area
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = valencia_area
+                area = sicily_area
+            }
         }
     }
     localization = holy_order
@@ -444,6 +573,17 @@ montesa_order = {
         modifier = {
             factor = 1000
             area = valencia_area
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = sicily_area
+            }
         }
     }
     localization = holy_order
@@ -500,6 +640,17 @@ san_juan_order = {
             factor = 1000
             area = sicily_area
         }
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+            }
+        }
     }
     localization = holy_order
 }
@@ -534,6 +685,17 @@ santiago_order = {
         modifier = {
             factor = 1000
             area = castille_area
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                area = estremadura_area
+                area = alentejo_area
+                area = extremadura_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
         }
     }
     localization = holy_order
@@ -849,6 +1011,17 @@ christ_order = {
         modifier = {
             factor = 1000
             area = estremadura_area
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
         }
     }
     localization = holy_order

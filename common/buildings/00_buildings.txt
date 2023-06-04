@@ -423,6 +423,7 @@ coastal_defence = {
 		blockade_force_required = 0.5
 		hostile_disembark_speed = 1.0
 		block_slave_raid = yes
+		allowed_num_of_buildings = 1
 	}
 
 	ai_will_do = {
@@ -817,6 +818,7 @@ naval_battery = {
 		hostile_disembark_speed = 2.0
 		hostile_fleet_attrition = 5
 		block_slave_raid = yes
+		allowed_num_of_buildings = 1
 	}
 
 	ai_will_do = {
