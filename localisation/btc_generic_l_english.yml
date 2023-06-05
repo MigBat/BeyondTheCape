@@ -141,6 +141,7 @@
 
 # Other #
 
+ miss_discover_cape_of_storms:0 "§Y[Root.GetName]§! has discovered the Cape of Storms."
  colonial_region_restriction: "You cannot colonize outside of your capital's colonial region."
  is_ally_of_enemy_tt: "[From.GetName] is an ally of our enemy."
  does_not_border_tt: "We do not border [From.GetName]."

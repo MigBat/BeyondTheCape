@@ -179,7 +179,7 @@ gc_por_1_a = {
 		}
 	}
 
-	por_tercios_system = {
+	btc_por_tercios_system = {
 		icon = spa_tercios_system
 		required_missions = { gc_por_intervene_in_castile }
 		position = 3
@@ -203,9 +203,9 @@ gc_por_1_a = {
 		}
 	}
 	
-	por_reform_tercios = {
+	btc_por_reform_tercios = {
 		icon = spa_reform_tercios
-		required_missions = { por_tercios_system gc_conquer_the_north_african_coast }
+		required_missions = { btc_por_tercios_system gc_conquer_the_north_african_coast }
 		position = 4
 		trigger = {
 			army_tradition = 40
@@ -248,7 +248,7 @@ gc_por_1_b = {
 	
 	gc_por_portugal_discovers_south_america = {
 		icon = colonize_brazil
-		required_missions = { gc_por_go_west }
+		required_missions = { btc_por_go_west }
 		position = 6
 		completed_by = 1501.1.1
 		
@@ -748,7 +748,7 @@ gc_por_2_b = {
 	}
 	has_country_shield = yes
 
-	gc_por_go_west = {
+	btc_por_go_west = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { gc_por_discover_african_coast }
 		position = 5
@@ -773,9 +773,9 @@ gc_por_2_b = {
 		}
 	}
 
-	gc_por_terra_nova = {
+	btc_por_terra_nova = {
 		icon = mission_rb_cod_wars
-		required_missions = { gc_por_go_west }
+		required_missions = { btc_por_go_west }
 		position = 6
 
 		provinces_to_highlight = {
@@ -815,7 +815,7 @@ gc_por_2_b = {
 	
 	gc_por_caribbean = {
 		icon = mission_colonize_the_caribbean
-		required_missions = { gc_por_terra_nova }
+		required_missions = { btc_por_terra_nova }
 		position = 7
 		
 		provinces_to_highlight = {
@@ -986,7 +986,7 @@ gc_por_2_d = {
 		}
 	}
 
-	gc_por_search_for_gold = {
+	btc_por_search_for_gold = {
 		icon = mission_african_gold
 		required_missions = { gc_por_discovers_east_africa }
 		position = 11
@@ -1032,7 +1032,7 @@ gc_por_2_d = {
 
 	gc_por_african_gold = {
 		icon = mission_war_chest
-		required_missions = { gc_por_search_for_gold }
+		required_missions = { btc_por_search_for_gold }
 		position = 12
 		
 		provinces_to_highlight = {
@@ -1112,7 +1112,7 @@ gc_por_2_e = {
 	}
 	has_country_shield = yes
 	
-	gc_por_spice_islands = {
+	btc_por_spice_islands = {
 		icon = mission_junk_boat
 		required_missions = { gc_por_malacca }
 		position = 14
@@ -1141,7 +1141,7 @@ gc_por_2_e = {
 
 	gc_por_indonesia_dominance = {
 		icon = indonesian_trade
-		required_missions = { gc_por_spice_islands }
+		required_missions = { btc_por_spice_islands }
 		position = 15
 		
 		provinces_to_highlight = {
@@ -1178,9 +1178,9 @@ gc_por_3 = {
 	}
 	has_country_shield = yes
 
-	gc_por_order_of_christ = {
+	btc_por_order_of_christ = {
 		icon = mission_order_of_christ
-		required_missions = { gc_por_henry_the_navigator }
+		required_missions = { btc_por_henry_the_navigator }
 		position = 2
 
 		trigger = {
@@ -1206,7 +1206,7 @@ gc_por_3 = {
 
 	gc_por_discover_african_coast = {
 		icon = mission_establish_high_seas_navy
-		required_missions = { gc_por_order_of_christ }
+		required_missions = { btc_por_order_of_christ }
 		completed_by = 1445.1.1
 		position = 4
 		
@@ -1616,7 +1616,7 @@ gc_por_3 = {
 		}
 	}
 	
-	gc_por_fifth_empire = {
+	btc_por_fifth_empire = {
 		icon = mission_lusitanian_empire
 		required_missions = { gc_por_indian_investment gc_por_japanese_trade gc_por_indonesia_dominance gc_por_burma dom_por_clash_ottomans }
 		position = 16
@@ -1691,7 +1691,7 @@ gc_por_4_a = {
 	}
 	has_country_shield = yes
 
-	gc_por_henry_the_navigator = {
+	btc_por_henry_the_navigator = {
 		icon = mission_henry_the_navigator
 		required_missions = {  }
 		position = 1
@@ -1732,9 +1732,31 @@ gc_por_4_a = {
 		}
 	}
 
-	gc_por_tower_of_belem = {
+	btc_por_pinhal_leiria = {
+		icon = mission_expand_into_the_forest
+		required_missions = { btc_por_henry_the_navigator }
+		position = 2
+
+		trigger = {
+			1851 = {
+				owned_by = ROOT
+				base_production = 8
+			}
+		}
+
+		effect = {
+			1851 = {
+				add_province_modifier = {
+					name = pinhal_leiria
+					duration = -1
+				}
+			}
+		}
+	}
+
+	btc_por_tower_of_belem = {
 		icon = mission_tower_of_belem
-		required_missions = { gc_por_order_of_christ }
+		required_missions = { btc_por_order_of_christ }
 		position = 3
 
 		trigger = {
@@ -1755,9 +1777,9 @@ gc_por_4_a = {
 		}
 	}
 
-	gc_por_jeronimos_monastery = {
+	btc_por_jeronimos_monastery = {
 		icon = mission_jeronimos_monastery
-		required_missions = { gc_por_tower_of_belem }
+		required_missions = { btc_por_tower_of_belem }
 		position = 4
 
 		trigger = {
@@ -1828,7 +1850,7 @@ gc_por_4_b = {
 		}
 	}
 
-	gc_por_mariners_astrolabe = {
+	btc_por_mariners_astrolabe = {
 		icon = mission_mariners_astrolabe
 		required_missions = { dom_portugal_exploration_ideas }
 		position = 6
@@ -1848,7 +1870,7 @@ gc_por_4_b = {
 
 	dom_portugal_circumnavigation = {
 		icon = mission_explore_the_world
-		required_missions = { gc_por_mariners_astrolabe }
+		required_missions = { btc_por_mariners_astrolabe }
 		position = 7
 		
 		trigger = { 
@@ -1902,7 +1924,7 @@ gc_por_4_c = {
 	}
 	has_country_shield = yes
 
-	gc_por_sao_tome_sugar = {
+	btc_por_sao_tome_sugar = {
 		icon = mission_have_manufactories
 		required_missions = { gc_por_colonise_central_africa }
 		position = 8
@@ -1934,9 +1956,9 @@ gc_por_4_c = {
 		}
 	}
 
-	gc_por_inner_angola = {
+	btc_por_inner_angola = {
 		icon = mission_envoy_to_ethiopia
-		required_missions = { gc_por_sao_tome_sugar }
+		required_missions = { btc_por_sao_tome_sugar }
 		position = 9
 
 		provinces_to_highlight = {
@@ -2146,9 +2168,9 @@ gc_por_5_a = {
 	}
 	has_country_shield = yes
 
-	gc_por_sagres = {
+	btc_por_sagres = {
 		icon = mission_launch_a_flagship
-		required_missions = { gc_por_henry_the_navigator }
+		required_missions = { btc_por_henry_the_navigator }
 		position = 2
 		
 		provinces_to_highlight = {
@@ -2185,7 +2207,7 @@ gc_por_5_a = {
 
 	dom_portugal_reform_navy = {
 		icon = mission_aragonese_navy
-		required_missions = { gc_por_sagres }
+		required_missions = { btc_por_sagres }
 		position = 3
 
 		trigger = {
@@ -2218,7 +2240,7 @@ gc_por_5_a = {
 		}
 	}
 
-	gc_por_black_carrack_sword = {
+	btc_por_black_carrack_sword = {
 		icon = mission_black_carrack_sword
 		required_missions = { dom_portugal_reform_navy }
 		position = 4
@@ -2252,7 +2274,7 @@ gc_por_5_b = {
 	}
 	has_country_shield = yes
 
-	gc_por_madeira_sugar = {
+	btc_por_madeira_sugar = {
 		icon = mission_madeira_sugar
 		required_missions = {  }
 		position = 5
@@ -2276,7 +2298,7 @@ gc_por_5_b = {
 
 	gc_por_trading_houses = {
 		icon = mission_great_trading_houses
-		required_missions = { gc_por_madeira_sugar }
+		required_missions = { btc_por_madeira_sugar }
 		position = 6
 		
 		provinces_to_highlight = {
@@ -2303,7 +2325,7 @@ gc_por_5_b = {
 		}
 	}
 
-	gc_por_coimbra_university = {
+	btc_por_coimbra_university = {
 		icon = mission_coimbra_university
 		required_missions = { gc_por_trading_houses }
 		position = 7
@@ -2323,22 +2345,22 @@ gc_por_5_b = {
 		}
 	}
 
-	gc_por_ribeira_palace = {
+	btc_por_ribeira_palace = {
 		icon = mission_ribeira_palace
-		required_missions = { gc_por_coimbra_university }
+		required_missions = { btc_por_coimbra_university }
 		position = 8
 
 		trigger = {
 			if = {
 				limit = { ai = no }
 				227 = {
-					development = 50
+					development = 30
 					owned_by = ROOT
 				}
 			}
 			else = {
 				227 = {
-					development = 30
+					development = 25
 					owned_by = ROOT
 				}
 			}
@@ -2362,7 +2384,7 @@ gc_por_5_b = {
 
 	gc_por_universities = {
 		icon = mission_arts_and_letters
-		required_missions = { gc_por_ribeira_palace }
+		required_missions = { btc_por_ribeira_palace }
 		position = 9
 		
 		provinces_to_highlight = {
@@ -2451,7 +2473,7 @@ gc_por_5_b = {
 		}
 	}
 
-	gc_por_mafra_palace = {
+	btc_por_mafra_palace = {
 		icon = mission_mafra_palace
 		required_missions = { gc_por_wine_monopolies }
 		position = 11
@@ -2471,6 +2493,49 @@ gc_por_5_b = {
 }
 
 gc_por_5_c = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+		has_dlc = "Origins"
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+		has_dlc = "Origins"
+		tag = POR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_por_prester_john = {
+		icon = prester_john
+		required_missions = { gc_por_discovers_horn_africa }
+		position = 12
+
+		trigger = {
+			alliance_with = ETH
+			1099 = {
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			1099 = {
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+			}
+		}
+	}
+}
+
+gc_por_5_d = {
 	slot = 5
 	generic = no
 	ai = yes

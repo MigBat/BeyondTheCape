@@ -1022,9 +1022,13 @@ country_event = {
 
 	fire_only_once = yes
 
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	trigger = {
 		tag = POR
-		mission_completed = gc_por_henry_the_navigator
+		mission_completed = btc_por_henry_the_navigator
 		NOT = { navigator = 3 }
 	}
 
@@ -1965,7 +1969,7 @@ country_event = {
 	id = btc_por.123
 	title = btc_por.123_t
 	desc = btc_por.123_d
-	picture = FORT_eventPicture
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
 
 	is_triggered_only = yes
 
@@ -2468,7 +2472,7 @@ province_event = {
 	id = btc_por.134
 	title = btc_por.134_t
 	desc = btc_por.134_d
-	picture = FORT_eventPicture
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
 	goto = ROOT
 
 	trigger = {
@@ -2597,7 +2601,7 @@ country_event = {
 	id = btc_por.136
 	title = btc_por.136_t
 	desc = btc_por.136_d
-	picture = FORT_eventPicture
+	picture = btc_fort_eventPicture
 
 	fire_only_once = yes
 

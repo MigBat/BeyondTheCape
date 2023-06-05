@@ -2110,6 +2110,7 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_3 = -1
 	administrative_efficiency = -0.5
 	monthly_ottoman_decadence = 2
+	yearly_corruption = 1
 }
 
 # At 1000% below capacity, this modifier will be fully used

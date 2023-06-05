@@ -638,7 +638,9 @@ regimental_camp = {
 	cost = 200
 	time = 12
 	modifier = {
-		land_forcelimit = 1
+		land_forcelimit = 0.5
+		regiment_recruit_speed = -0.2
+		local_regiment_cost = -0.15
 		local_development_cost_modifier = -0.01
 		local_build_cost = 0.1
 	}
@@ -1586,7 +1588,9 @@ conscription_center = {
 #	}
 
 	modifier = {
-		land_forcelimit = 2
+		land_forcelimit = 1
+		regiment_recruit_speed = -0.4
+		local_regiment_cost = -0.3
 		local_development_cost_modifier = -0.02
 		local_build_cost = 0.2
 	}
@@ -1745,7 +1749,8 @@ manufactory = {
 	cost = 500
 	time = 60
 	modifier = {
-		trade_goods_size = 1.0
+		trade_goods_size = 0.2
+		trade_goods_size_modifier = 0.4
 		local_development_cost_modifier = -0.03
 		local_build_cost = 0.3
 	}

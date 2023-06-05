@@ -3077,7 +3077,7 @@ country_event = {
 	id = ideagroups.708
 	title = "EVTNAME6313"
 	desc = "EVTDESC6313"
-	picture = FORT_eventPicture
+	picture = btc_fort_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -3321,7 +3321,7 @@ country_event = {
 	id = ideagroups.802
 	title = "EVTNAME835"
 	desc = "EVTDESC835"
-	picture = FORT_eventPicture
+	picture = btc_fort_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -3562,7 +3562,7 @@ country_event = {
 	id = ideagroups.809
 	title = "EVTNAME6319"
 	desc = "EVTDESC6319"
-	picture = FORT_eventPicture
+	picture = btc_fort_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -8255,7 +8255,7 @@ country_event = {
 	id = ideagroups.1928
 	title = ideagroups.1928.t
 	desc = ideagroups.1928.d
-	picture = FORT_eventPicture
+	picture = btc_fort_eventPicture
 	is_triggered_only = yes
 	goto = seat_of_power_prov
 	trigger = {
@@ -8592,7 +8592,7 @@ country_event = {
 	id = ideagroups.1918
 	title = ideagroups.1918.t
 	desc = ideagroups.1918.d
-	picture = FORT_eventPicture
+	picture = btc_fort_eventPicture
 	is_triggered_only = yes
 	
 	trigger = {
