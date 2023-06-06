@@ -48,6 +48,15 @@
  btc_por_prester_john_title:0 "Prester John"
  btc_por_prester_john_desc:0 "We must find the kingdom of Prester John. They will be a valuable ally in this sea of enemies. Pêro da Covilhã has already been sent over land to meet our explorers on the Indian Ocean, and to find this mythical kingdom and establish diplomatic relations."
 
+# Netherlands Missions #
+
+ wic_claims_on_portugal:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YGuinea§! region owned by §YPortugal§!."
+ voc_claims_on_portugal:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YEast Indies§! super region owned by §YPortugal§!."
+ emp_ned_baltic_bulk_trades_title:0 "Control Home Trade"
+ emp_ned_baltic_bulk_trades_desc:0 "For our nation to prosper we need money. Luckily we are in a great geographic position from which we can control trade coming from various destinations. By establishing a majority of the trade share in the area, we will secure the necessary capital for new journeys abroad."
+ emp_ned_invest_in_the_rich_trade_title:1 "Invest in the Rich Trades"
+ emp_ned_invest_in_the_rich_trade_desc:0 "There's richer commerce out there for us to become part of. The Portuguese are avid traders and explorers and they keep their secrets safe and hidden. Who knows what riches they know of? If we establish a commercial presence in their markets, our merchants will surely learn of new opportunities."
+
 # Changes from vanilla localisation #
 
  dom_portugal_reform_navy_desc:0 "Dom Henrique, Duke of Viseu, the uncle of king Afonso V, is best known for promoting Portugal's exploration efforts in West Africa and reforming its Navy, sponsoring a new type of ship, the caravel. Now we must go one step further and once again design a new fighting ship, the galleon."

@@ -80,8 +80,8 @@
  desc_adopting_tercios:0 "The process of adoption of this new way of warfare cannot be done overnight."
  portuguese_tercios:0 "Portuguese Terços"
  desc_portuguese_tercios:0 "While proven to be useful in the past, the Spanish square has become too outdated to be used as a reliable formation on a battlefield where artillery and handguns become ever more widespread. While the name "Terço" is a tradition at this point, it is important to move on with the times and include a much more generous amount of gunmen in the formation."
- por_brazil_colonial:0 "Degredados"
- por_brazil_colonial_desc:0 "Degredados, meaning "Outlaws" were convicted criminals abandoned at the edge of the Portuguese overseas stations and forced to live among the locals and learn their language, in order to serve as intrepreters in the future."
+#  por_brazil_colonial:0 "Degredados"
+#  por_brazil_colonial_desc:0 "Degredados, meaning "Outlaws" were convicted criminals abandoned at the edge of the Portuguese overseas stations and forced to live among the locals and learn their language, in order to serve as intrepreters in the future."
 
 # Portuguese Events #
  massive_earthquake:0 "Massive Earthquake"

@@ -380,11 +380,6 @@ por_sagres = {
 	navy_tradition = 1
 }
 
-por_brazil_colonial = {
-	native_assimilation = 0.5
-	native_uprising_chance = -0.25
-}
-
 por_brazil_tariffs = {
 	colonist_placement_chance = 0.15
 	global_tariffs = 0.15

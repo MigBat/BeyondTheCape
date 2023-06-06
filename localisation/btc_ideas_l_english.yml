@@ -33,3 +33,22 @@
 # Moroccan Ideas #
  mor_colaborate_with_the_tribes:0 "Collaborate with the Tribes"
  mor_colaborate_with_the_tribes_desc:0 "The nomadic tribes that travel across our lands are our nominal subjects, but no matter our efforts we cannot dissassociate them from their own people and traditions. We could plunge our country into chaos and strife trying to force these people into our way of life, or we could work with our differences and use their strenghts to our advantage."
+
+# Dutch East India Company Ideas #
+ VOC_ideas:0 "Dutch East India Ideas"
+ VOC_ideas_start:0 "Dutch East India Traditions"
+ VOC_ideas_bonus:0 "Dutch East India Ambition"
+ voc_governors_general:0 "Governors-General of East India"
+ voc_governors_general_desc:0 "The government of the East India Company is exercised by the Governor-General, who directs the company's operations on the ground."
+ voc_indian_trade:0 "East Indian Trade"
+ voc_indian_trade_desc:0 "The East Indies are full of plantations of highly valuable trading goods, such as spice or cloves, which generate huge profits for the Company."
+ voc_chartered_merchants:0 "Chartered Merchants"
+ voc_chartered_merchants_desc:0 "The Company was founded to charter any merchant trading in the East Indies, and any merchant without a company license is subject to seizure of their ship and cargo."
+ voc_presidency_armies:0 "Presidency Armies"
+ voc_presidency_armies_desc:0 "The Presidencies are the administrative divisions of the Company in the East Indies, and each one has a dependent Army, composed primarily by local conscripts with some Dutch regulars."
+ voc_intercontinental_trade:0 "Intercontinental Trade"
+ voc_intercontinental_trade_desc:0 "The establishment of intercontinental trade routes between the Far East, India, Africa and the Netherlands is the principal business of the Company, which generates large revenues through this activity."
+ voc_colonial_monopoly:0 "Colonial Monopoly"
+ voc_colonial_monopoly_desc:0 "The Company's activity in the East Indies creates the conditions for a natural monopoly, as a result of chartering the business to the merchants and extracting huge rents of them with very low operating costs."
+ voc_colonial_exploitation:0 "Colonial Exploitation"
+ voc_colonial_exploitation_desc:0 "The combination of large investment capitals with low-cost labor determines the natural expansion of plantations directed towards the export of goods as a means of further increasing the wealth of the East India Company."

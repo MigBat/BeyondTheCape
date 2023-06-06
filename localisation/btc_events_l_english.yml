@@ -235,6 +235,15 @@
  btc_gra.3a:0 "We will show them what it means to cross us."
  btc_gra.3b:0 "Let them be."
 
+# Netherlands Events #
+
+ btc_ned.1a.tt:0 "§Y[Root.GetName]§! releases the §YDutch East India Company§! in §YEast India§!.\n§YThe Dutch East India Company§! becomes a §YCommercial Enterprise§! subject of §Y[Root.GetName]§!."
+ btc_ned.1_t:0 "Verenigde Oostindische Compagnie"
+ btc_ned.1_d:0 "The Dutch East India Company, also known as the Vereenigde Oost-Indische Compagnie (VOC), was founded in 1602 as a joint-stock company in the Netherlands. Its primary objective was to establish and maintain a monopoly on trade between the Netherlands and the East Indies, which encompassed present-day Indonesia, Malaysia, and parts of Southeast Asia. The company sought to profit from the lucrative spice trade, particularly in spices like cloves, nutmeg, and pepper."
+ btc_ned.1a:0 "Let the company take control over our East Indian affairs"
+ btc_ned.1b:0 "We can administrate East India ourselves"
+ btc_ned.1c:0 "We will see how this company will fare..."
+
 # Changes from vanilla localisation #
 
  flavor_por.EVTOPTA11:0 "Broker a deal with the local ruler"
