@@ -5,9 +5,10 @@
  BEYOND_THE_CAPE_DESC:0 "With the Reconquista almost complete, and the Iberian peninsula almost entirely in Christian hands, the kingdom of Portugal has turned its attention to the shores of Africa. With the conquest of Ceuta in 1415 the founder of the Avis dynasty, João I, has already made the first inroads into the Moorish homeland. A policy that his grandson, the still young Afonso V will continue to the best of his abilities. It is however through the work of Afonso's uncle, Dom Henrique, Henry the Navigator, that Portugal will leave its mark upon the world..."
 
 # Countries #
- IBE: "Iberia"
- IBE_ADJ: "Iberian"
- IBE_ADJ: "Iberian"
+ IBE:0 "Iberia"
+ IBE_ADJ:0 "Iberian"
+ VOC:0 "Dutch East India Company"
+ VOC_ADJ:1 "Company"
 
 # Provinces #
  PROV4556:0 "Minho"
@@ -141,6 +142,7 @@
 
 # Other #
 
+ miss_discover_cape_of_storms:0 "§Y[Root.GetName]§! has discovered the Cape of Storms."
  colonial_region_restriction: "You cannot colonize outside of your capital's colonial region."
  is_ally_of_enemy_tt: "[From.GetName] is an ally of our enemy."
  does_not_border_tt: "We do not border [From.GetName]."
@@ -153,5 +155,6 @@
  great_explorer_personality_die_desc:0 "Alas, a great catastrophe! Our most highly esteemed and legendary navigator has embraced the afterlife. A grey and sorrowful day is upon us..."
  REFORM_INCREASED_COST:2 "Each tier of Reforms will increase the cost by §Y60§!"
  mechanic_temples_modifier_yes:1 "Temples and Cathedrals give the province §G+33.0%§! Local Tax Modifier and §G-10%§! Local Governing Cost"
+ ned_establish_first_indian_trade_post_at:0 "This event allows us to establish the @VOC §YDutch East India Company§! in the East Indies as our §YCommercial Enterprise§! subject."
 
  CORRUPTION_EXPLANATION:2 "Corruption increases over time due to advisors, unbalanced research, overextension and lack of religious unity. It can be decreased by high stability and being ahead of time in administrative or diplomatic technology. If all else fails you can spend ducats to reduce corruption over time. Corruption can affect all power costs, minimum autonomy as well as spy defense and spy network construction speed."

@@ -769,9 +769,17 @@ nor_conquest_mission_slot = {
 				has_country_modifier = quest_for_the_new_world
 				has_idea = call_of_our_forefathers
 			}
-			share_of_starting_income = 1.5
-			is_in_deficit = no
-			NOT = { num_of_loans = 1 }
+			if = {
+				limit = {
+					ai = yes
+				}
+				share_of_starting_income = 1.2
+			}
+			else = {
+				share_of_starting_income = 1.5
+				is_in_deficit = no
+				NOT = { num_of_loans = 1 }
+			}
 		}
 		effect = {
 			capital_scope = {
@@ -922,6 +930,7 @@ nor_colonize_middle_america_slot = {
 		trigger = {
 			if = {
 				limit = {
+					ai = no
 					OR = {
 						1104 = { is_empty = yes }
 						1105 = { is_empty = yes }
@@ -950,13 +959,31 @@ nor_colonize_middle_america_slot = {
 					}
 				}
 			}
-			else = {
+			else_if = {
+				limit = {
+					ai = no
+				}
 				owns_or_non_sovereign_subject_of = 1104
 				owns_or_non_sovereign_subject_of = 1105
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				has_discovered = 1104
+				has_discovered = 1105
 			}
 		}
 		effect = {
 			if = {
+				limit = {
+					ai = yes
+				}
+				country_event = {
+					id = flavor_nor.33
+				}
+			}
+			else_if = {
 				limit = {
 					OR = {
 						1104 = {

@@ -351,10 +351,11 @@ por_english_alliance = {
 
 por_henry_cheaper = {
 	dip_advisor_cost = -0.5
+	yearly_corruption = -0.12
 }
 
 pinhal_leiria = {
-	global_ship_recruit_speed = -0.1
+	naval_maintenance_modifier = -0.1
 }
 
 tercios = {
@@ -377,11 +378,6 @@ portuguese_tercios = {
 por_sagres = {
 	dip_tech_cost_modifier = -0.15
 	navy_tradition = 1
-}
-
-por_brazil_colonial = {
-	native_assimilation = 0.5
-	native_uprising_chance = -0.25
 }
 
 por_brazil_tariffs = {

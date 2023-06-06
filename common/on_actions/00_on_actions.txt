@@ -1295,8 +1295,16 @@ on_new_monarch = {
 		limit = {
 			OR = {
 				tag = CAS
-				tag = POR
-				tag = ARA
+				AND = {
+					tag = POR
+					has_country_flag = pressed_claim
+					NOT = { has_country_flag = lost_war }
+				}
+				AND = {
+					tag = ARA
+					has_country_flag = pressed_claim
+					NOT = { has_country_flag = lost_war }
+				}
 			}
 			CAS = { NOT = { has_disaster = castilian_civil_war }}
 			OR = {

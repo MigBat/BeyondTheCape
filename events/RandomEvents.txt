@@ -4024,7 +4024,7 @@ country_event = {
 	id = 5085
 	title = "EVTNAME5085"
 	desc = "EVTDESC5085"
-	picture = FORT_eventPicture
+	picture = btc_fort_eventPicture
 	
 	is_triggered_only = yes
 
@@ -7264,7 +7264,7 @@ country_event = {
 	id = 737
 	title = "EVTNAME737"
 	desc = "EVTDESC737"
-	picture = FORT_eventPicture
+	picture = btc_fort_eventPicture
 	goto = local_fortification_expert_province
 
 	is_triggered_only = yes

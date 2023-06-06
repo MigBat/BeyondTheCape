@@ -461,7 +461,7 @@ emp_ned_slot2_indies_branch = {
 	
 	emp_ned_charter_the_voc = {
 		icon = mission_trade_company_region_abroad
-		required_missions = { emp_ned_invest_in_the_rich_trades }
+		required_missions = { emp_ned_invest_in_the_rich_trade }
 		position = 5
 		completed_by = 1602.3.20 # historical date of its establishment
 		
@@ -480,6 +480,24 @@ emp_ned_slot2_indies_branch = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			cape_of_good_hope_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = "voc_claims_on_portugal"
+			hidden_effect = {
+				east_indies_superregion = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+						owned_by = POR
+					}
+					add_permanent_claim = ROOT
+				}				
 			}
 		}
 	}
@@ -572,6 +590,10 @@ emp_ned_slot2_indies_branch = {
 					key = DUTCH_EAST_INDIES_TRADE
 				}
 			}
+			country_event_with_insight = {
+				id = btc_ned.1
+				insight_tooltip = ned_establish_first_indian_trade_post_at
+			}
 		}
 	}
 }
@@ -644,10 +666,10 @@ emp_ned_slot3_branch = {
 			province_id = 45
 		}
 		trigger = {
-			45 = {
+			1744 = {
 				trade_share = {
 					country = ROOT
-					share = 33
+					share = 50
 				}
 			}
 		}
@@ -658,7 +680,7 @@ emp_ned_slot3_branch = {
 		}
 	}
 	
-	emp_ned_invest_in_the_rich_trades = {
+	emp_ned_invest_in_the_rich_trade = {
 		icon = invest_in_the_rich_trades
 		required_missions = { emp_ned_baltic_bulk_trades }
 		position = 4
@@ -669,8 +691,11 @@ emp_ned_slot3_branch = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			1466 = {
-				is_strongest_trade_power = ROOT
+			227 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
 			}
 		}
 		effect = {
@@ -683,7 +708,7 @@ emp_ned_slot3_branch = {
 	
 	emp_ned_charter_the_wic = {
 		icon = charter_the_wic
-		required_missions = { emp_ned_invest_in_the_rich_trades }
+		required_missions = { emp_ned_invest_in_the_rich_trade }
 		position = 5
 		completed_by = 1621.6.3
 		
@@ -694,15 +719,25 @@ emp_ned_slot3_branch = {
 		}
 		
 		trigger = {
-			num_of_owned_provinces_with = {
-				region = guinea_region
-				value = 6
+			trade_company_west_africa = {
+				has_discovered = ROOT
 			}
 		}
 		effect = {
 			add_country_modifier = {
 					name = ned_west_indies_charter
 					duration = 7300
+			}
+			custom_tooltip = "wic_claims_on_portugal"
+			hidden_effect = {
+				guinea_region = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+						owned_by = POR
+					}
+					add_permanent_claim = ROOT
+				}				
 			}
 		}
 	}

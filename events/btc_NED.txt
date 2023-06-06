@@ -1,0 +1,427 @@
+namespace = btc_ned
+normal_or_historical_nations = yes
+
+# The East India Company
+country_event = {
+	id = btc_ned.1
+	title = btc_ned.1_t
+	desc = btc_ned.1_d
+	picture = MERCHANTS_ARGUING_eventPicture
+	is_triggered_only = yes
+	
+	#Establish this East India Company
+	option = {
+		name = btc_ned.1a
+		custom_tooltip = btc_ned.1a.tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					superregion = east_indies_superregion
+				}
+				add_core = VOC
+				if = {
+					limit = { is_core = ROOT }
+					remove_core = ROOT
+				}
+			}
+			release = VOC
+			create_subject = {
+				subject_type = commercial_enterprise
+				who = VOC
+			}
+			VOC = {
+				change_government = republic
+				add_government_reform = trade_company_government
+				change_religion = ROOT
+				change_primary_culture = ROOT
+				define_ruler = {
+					name = "Pieter"
+					dynasty = "Both"
+					change_adm = 3
+					change_dip = 3
+					change_mil = 3
+					max_age = 50
+					min_age = 30
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_treasury = 200
+				set_prestige_to_zero = yes
+				add_republican_tradition = 100
+				if = {
+					limit = {
+						630 = {
+							owned_by = ROOT
+						}
+					}
+					set_capital = 630
+				}
+			}
+		}
+		indonesia_region = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		north_sumatra_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		central_sumatra_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		south_sumatra_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		jambi_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		batak_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		minangkabau_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		timor_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		makassar_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		sulawesi_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		south_sulawesi_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		spice_islands_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		vogelkop_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		molluca_area = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	#We do not need such enterprise on foreign ground
+	option = {
+		name = btc_ned.1b
+		indonesia_region = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		north_sumatra_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		central_sumatra_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		south_sumatra_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		jambi_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		batak_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		minangkabau_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		timor_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		makassar_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		sulawesi_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		south_sulawesi_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		spice_islands_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		vogelkop_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		molluca_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	#Play as the East India Company
+	option = {
+		name = btc_ned.1c
+		trigger = {
+			ai = no
+		}
+		custom_tooltip = btc_ned.1a.tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					superregion = east_indies_superregion
+				}
+				add_core = VOC
+				if = {
+					limit = { is_core = ROOT }
+					remove_core = ROOT
+				}
+			}
+			release = VOC
+			create_subject = {
+				subject_type = commercial_enterprise
+				who = VOC
+			}
+			VOC = {
+				change_government = republic
+				add_government_reform = trade_company_government
+				change_religion = ROOT
+				change_primary_culture = ROOT
+				define_ruler = {
+					name = "Pieter"
+					dynasty = "Both"
+					change_adm = 3
+					change_dip = 3
+					change_mil = 3
+					max_age = 50
+					min_age = 30
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_treasury = 200
+				set_prestige_to_zero = yes
+				add_republican_tradition = 100
+				if = {
+					limit = {
+						630 = {
+							owned_by = ROOT
+						}
+					}
+					set_capital = 630
+				}
+			}
+			indonesia_region = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			north_sumatra_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			central_sumatra_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			south_sumatra_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			jambi_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			batak_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			minangkabau_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			timor_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			makassar_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			sulawesi_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			south_sulawesi_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			spice_islands_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			vogelkop_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+			molluca_area = {
+				limit = {
+					NOT = { is_core = VOC }
+					NOT = { is_permanent_claim = VOC }
+				}
+				add_permanent_claim = VOC
+			}
+		}
+		switch_tag = VOC
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

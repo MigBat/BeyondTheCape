@@ -1101,3 +1101,4 @@ ISR = "countries/Israel.txt"
 
 #BEYOND THE CAPE#
 IBE = "countries/Iberia.txt"
+VOC = "countries/DutchEastIndiaCompany.txt"

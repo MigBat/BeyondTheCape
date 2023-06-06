@@ -6547,7 +6547,7 @@ murud_janjira = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			naval_forcelimit_modifier = 0.1
+			naval_forcelimit_modifier = 0.05
 			naval_maintenance_modifier = -0.1
 		}
 
@@ -6577,7 +6577,7 @@ murud_janjira = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			naval_forcelimit_modifier = 0.2
+			naval_forcelimit_modifier = 0.1
 			naval_maintenance_modifier = -0.15
 			navy_tradition = 0.5
 		}
@@ -6608,7 +6608,7 @@ murud_janjira = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			naval_forcelimit_modifier = 0.3
+			naval_forcelimit_modifier = 0.15
 			naval_maintenance_modifier = -0.2
 			navy_tradition = 1
 			admiral_cost = -0.1
@@ -11303,9 +11303,9 @@ cartagena_de_indias = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_hostile_attrition = 0.5
+			local_hostile_attrition = 1
 			blockade_force_required = 1
-			hostile_fleet_attrition = 5
+			local_own_coast_naval_combat_bonus = 1
 		}
 		area_modifier = {
 			local_defensiveness = 0.15
@@ -11326,9 +11326,9 @@ cartagena_de_indias = {
 			factor = 5000
 		}
 		province_modifiers = {
-			local_hostile_attrition = 1
+			local_hostile_attrition = 2
 			blockade_force_required = 1
-			hostile_fleet_attrition = 10
+			local_own_coast_naval_combat_bonus = 2
 		}
 		area_modifier = {
 			local_defensiveness = 0.25
@@ -12194,113 +12194,110 @@ etchimiadzin_cathedral = {
 	}
 }
 
-fuerte_del_morro = {
-	start = 492 #Puerto Rico
-	date = 1444.01.01	#1589.01.01
-	time = { months = 0	}
-	build_cost = 0
-	can_be_moved = no
-	move_days_per_unit_distance = 10
-	starting_tier = 0
-	type = monument
+# fuerte_del_morro = {
+# 	start = 492 #Puerto Rico
+# 	date = 1444.01.01	#1589.01.01
+# 	time = { months = 0	}
+# 	build_cost = 0
+# 	can_be_moved = no
+# 	move_days_per_unit_distance = 10
+# 	starting_tier = 0
+# 	type = monument
 
-	build_trigger = {
-	}
+# 	build_trigger = {
+# 	}
 
-	on_built = {
-	}
+# 	on_built = {
+# 	}
 
-	on_destroyed = {
-	}
+# 	on_destroyed = {
+# 	}
 
-	can_use_modifiers_trigger = {
-	}
+# 	can_use_modifiers_trigger = {
+# 	}
 
-	can_upgrade_trigger = {
-	}
+# 	can_upgrade_trigger = {
+# 	}
 
-	keep_trigger = {
-	}
+# 	keep_trigger = {
+# 	}
 
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
+# 	tier_0 = {
+# 		upgrade_time = {
+# 			months = 0
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 0
+# 		}
+# 		province_modifiers = {
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
 
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-			local_defensiveness = 0.15
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-			naval_forcelimit_modifier = 0.1
-			overlord_naval_forcelimit_modifier = 0.1
-		}
-		on_upgraded = {
-		}
-	}
+# 	tier_1 = {
+# 		upgrade_time = {
+# 			months = 120
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 1000
+# 		}
+# 		province_modifiers = {
+# 			local_defensiveness = 0.15
+# 		}
+# 		area_modifier = {
+# 		}
+# 		country_modifiers = {
+# 			naval_forcelimit_modifier = 0.1
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
 
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-			blockade_force_required = 0.5
-		}
-		area_modifier = {
-			local_defensiveness = 0.15
-		}
-		country_modifiers = {			
-			naval_forcelimit_modifier = 0.2
-			overlord_naval_forcelimit_modifier = 0.2
-		}
-		on_upgraded = {
-		}
-	}
+# 	tier_2 = {
+# 		upgrade_time = {
+# 			months = 240
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 2500
+# 		}
+# 		province_modifiers = {
+# 			blockade_force_required = 0.5
+# 		}
+# 		area_modifier = {
+# 			local_defensiveness = 0.15
+# 		}
+# 		country_modifiers = {			
+# 			naval_forcelimit_modifier = 0.2
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
 
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-			blockade_force_required = 1
-		}
-		area_modifier = {
-			local_defensiveness = 0.25
-		}
-		country_modifiers = {			
-			naval_forcelimit_modifier = 0.3
-			overlord_naval_forcelimit_modifier = 0.3
-		}
-		on_upgraded = {
-		}
-	}
-}
+# 	tier_3 = {
+# 		upgrade_time = {
+# 			months = 480
+# 		}
+# 		cost_to_upgrade = {
+# 			factor = 5000
+# 		}
+# 		province_modifiers = {
+# 			blockade_force_required = 1
+# 		}
+# 		area_modifier = {
+# 			local_defensiveness = 0.25
+# 		}
+# 		country_modifiers = {			
+# 			naval_forcelimit_modifier = 0.3
+# 		}
+# 		on_upgraded = {
+# 		}
+# 	}
+# }
 
 gomateshwara_statue = {
 	start = 4421 #Seringapatam
@@ -18882,7 +18879,7 @@ fuerte_del_morro = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			naval_forcelimit_modifier = 0.1
+			naval_tradition_from_trade = 0.25
 		}
 		on_upgraded = {
 		}
@@ -18897,12 +18894,13 @@ fuerte_del_morro = {
 		}
 		province_modifiers = {
 			blockade_force_required = 0.5
+			hostile_fleet_attrition = 5
 		}
 		area_modifier = {
 			local_defensiveness = 0.15
 		}
-		country_modifiers = {			
-			naval_forcelimit_modifier = 0.2
+		country_modifiers = {	
+			naval_tradition_from_trade = 0.5	
 		}
 		on_upgraded = {
 		}
@@ -18917,12 +18915,13 @@ fuerte_del_morro = {
 		}
 		province_modifiers = {
 			blockade_force_required = 1
+			hostile_fleet_attrition = 10
 		}
 		area_modifier = {
 			local_defensiveness = 0.25
 		}
-		country_modifiers = {			
-			naval_forcelimit_modifier = 0.3
+		country_modifiers = {		
+			naval_tradition_from_trade = 1	
 		}
 		on_upgraded = {
 		}

@@ -189,6 +189,8 @@ country_event = {
 			factor = 0.9
 		}
 
+		set_country_flag = pressed_claim
+
 		define_consort = {
 			country_of_origin = CAS
 			name = "Joanna"
@@ -248,6 +250,8 @@ country_event = {
 		ai_chance = {
 			factor = 0.9
 		}
+
+		set_country_flag = pressed_claim
 		
 		define_consort = {
 			country_of_origin = CAS
@@ -547,6 +551,8 @@ country_event = {
 			}
 		}
 
+		set_country_flag = pressed_claim
+
 		define_consort = {
 			country_of_origin = CAS
 			name = "Joanna"
@@ -637,6 +643,8 @@ country_event = {
 				is_at_war = yes
 			}
 		}
+
+		set_country_flag = pressed_claim
 		
 		define_consort = {
 			country_of_origin = CAS

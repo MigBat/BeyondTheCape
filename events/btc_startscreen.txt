@@ -50,6 +50,22 @@ country_event = {
 		}
 	}
 
+	option = {	# Corruption and
+		name = btc_startscreen.1g
+
+		country_event = {
+			id = btc_startscreen.7
+		}
+	}
+
+	option = {	# Corruption and
+		name = btc_startscreen.1h
+
+		country_event = {
+			id = btc_startscreen.8
+		}
+	}
+
 	option = {	# I've got it
 		name = btc_startscreen.1e
 
@@ -218,6 +234,42 @@ country_event = {
 
 	option = {	# go back
 		name = btc_startscreen.5a
+
+		country_event = {
+			id = btc_startscreen.1
+		}
+	}
+}
+
+# Buildings, Corruption and Development tutorial #
+country_event = {
+	id = btc_startscreen.7
+	title = btc_startscreen.7_t
+	desc = btc_startscreen.7_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.7a
+
+		country_event = {
+			id = btc_startscreen.1
+		}
+	}
+}
+
+# Devastation and Attrition tutorial #
+country_event = {
+	id = btc_startscreen.8
+	title = btc_startscreen.8_t
+	desc = btc_startscreen.8_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.8a
 
 		country_event = {
 			id = btc_startscreen.1
