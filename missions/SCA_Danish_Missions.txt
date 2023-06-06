@@ -721,7 +721,7 @@ dan_trade_and_colonial_mission_slot = {
 				has_institution = new_world_i
 				has_country_modifier = quest_for_the_new_world
 			}
-			share_of_starting_income = 2
+			share_of_starting_income = 1.5
 			is_in_deficit = no
 			is_bankrupt = no
 		}

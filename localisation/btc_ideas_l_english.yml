@@ -52,3 +52,23 @@
  voc_colonial_monopoly_desc:0 "The Company's activity in the East Indies creates the conditions for a natural monopoly, as a result of chartering the business to the merchants and extracting huge rents of them with very low operating costs."
  voc_colonial_exploitation:0 "Colonial Exploitation"
  voc_colonial_exploitation_desc:0 "The combination of large investment capitals with low-cost labor determines the natural expansion of plantations directed towards the export of goods as a means of further increasing the wealth of the East India Company."
+
+# Iberian Ideas #
+
+ IBE_ideas:0 "Iberian Ideas"
+ IBE_ideas_start:0 "Iberian Traditions"
+ IBE_ideas_bonus:0 "Iberian Ambition"
+ ibe_masters_of_the_unknown:0 "Masters of the Unknown"
+ ibe_masters_of_the_unknown_desc:0 ""
+ ibe_first_global_empire:0 "First Global Empire"
+ ibe_first_global_empire_desc:0 ""
+ ibe_invincible_armada:0 "Invincible Armada"
+ ibe_invincible_armada_desc:0 ""
+ ibe_colonial_administration:0 "Colonial Administration"
+ ibe_colonial_administration_desc:0 ""
+ ibe_guerrilha_warfare:0 "Guerrilha Warfare"
+ ibe_guerrilha_warfare_desc:0 ""
+ ibe_eternal_reconquista:0 "Eternal Reconquista"
+ ibe_eternal_reconquista_desc:0 ""
+ ibe_fifth_empire:0 "Fifth Empire"
+ ibe_fifth_empire_desc:0 ""
