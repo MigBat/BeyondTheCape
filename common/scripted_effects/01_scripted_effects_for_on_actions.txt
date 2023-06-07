@@ -1531,6 +1531,7 @@ on_province_owner_change_government_effect = {
 
 on_province_religion_changed_effect = {
 	on_province_religion_converted_estate_privileges_effect = yes
+	add_papal_influence = 1
 	if = {
 		limit = {
 			owner = {

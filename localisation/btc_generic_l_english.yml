@@ -158,3 +158,10 @@
  ned_establish_first_indian_trade_post_at:0 "This event allows us to establish the @VOC §YDutch East India Company§! in the East Indies as our §YCommercial Enterprise§! subject."
 
  CORRUPTION_EXPLANATION:2 "Corruption increases over time due to advisors, unbalanced research, overextension and lack of religious unity. It can be decreased by high stability and being ahead of time in administrative or diplomatic technology. If all else fails you can spend ducats to reduce corruption over time. Corruption can affect all power costs, minimum autonomy as well as spy defense and spy network construction speed."
+
+ enable_propogate_religion_effect_tt:1 "Enables the use of the '§YPropagate Religion§!' Trading Policy."
+ disable_propogate_religion_effect_tt:1 "Disables the use of the '§YPropagate Religion§!' Trading Policy."
+ enable_propogate_religion_immunity_tt:1 "Provinces of [Root.GetName] are no longer affected by the '§YPropagate Religion§!' Trading Policy."
+ disable_propogate_religion_immunity_tt:1 "Provinces of [Root.GetName] are again affected by the '§YPropagate Religion§!' Trading Policy."
+ enable_propogate_religion_in_abrahamic_provinces_tt:1 "The '§YPropagate Religion§!' Trading Policy can now convert §YJewish§!, §YChristian§! and §YMuslim§! provinces."
+ disable_propogate_religion_in_abrahamic_provinces_tt:1 "The '§YPropagate Religion§!' Trading Policy can no longer convert §YJewish§!, §YChristian§! and §YMuslim§! provinces."
