@@ -1319,7 +1319,10 @@ gc_por_3 = {
 			}
 			if = { 
 				limit = { religion = catholic }
-				add_papal_influence = 25 
+				custom_tooltip = enable_propogate_religion_effect_tt
+				hidden_effect = {
+					set_country_flag = can_use_propagate_religion
+				}
 			}
 			else = { add_prestige_or_monarch_power = { amount = 15 } }
 		}
