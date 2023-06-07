@@ -647,4 +647,8 @@ spriteType = {
 	name = "GFX_great_project_batalha_monastery"	
 	texturefile = "gfx//interface//great_projects//great_project_batalha_monastery.dds"
 }
+
+spriteType = {
+	name = "GFX_great_project_santiago_cathedral"	
+	texturefile = "gfx//interface//great_projects//great_project_santiago_cathedral.dds"
 }
