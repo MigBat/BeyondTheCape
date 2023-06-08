@@ -966,13 +966,13 @@ got_republic_slot_1 = {
 
 		trigger = {
 			OR = {
-				1269 = {
+				1744 = {
 					trade_share = {
 						country = root
 						share = 25
 					}
 				}
-				1269 = {
+				1744 = {
 					privateer_power = {
 						country = root
 						share = 25
@@ -983,7 +983,7 @@ got_republic_slot_1 = {
 
 		effect = {
 			add_mercantilism = 10
-			1269 = {
+			1744 = {
 				add_trade_modifier = {
 					who = root
 					duration = -1
@@ -1928,7 +1928,7 @@ got_pirate_slot_3 = {
 					share = 25
 				}
 			}
-			1269 = {
+			1744 = {
 				privateer_power = {
 					country = ROOT
 					share = 10

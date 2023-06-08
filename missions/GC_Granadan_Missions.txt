@@ -1227,7 +1227,7 @@ granada_slot_4_missions = {
 		}
 		
 		trigger = {
-			1293 = {
+			224 = {
 				is_strongest_trade_power = ROOT
 			}
 		}

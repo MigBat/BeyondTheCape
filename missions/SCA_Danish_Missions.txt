@@ -278,10 +278,10 @@ dan_secure_baltic_mission_slot = {
 		position = 5
 		required_missions = { dan_the_sound_toll }
 		provinces_to_highlight = {
-			province_id = 1269
+			province_id = 1744
 		}
 		trigger = {
-			1269 = {
+			1744 = {
 				is_strongest_trade_power = ROOT
 				trade_share = {
 					country = ROOT

@@ -1366,6 +1366,18 @@ on_new_monarch = {
 		}
 		CAS = { country_event = { id = castilian_civil_war.30 }}
 	}
+	if = {
+		limit = {
+			tag = PAP
+			POR = {
+				any_owned_province = {
+					superregion = india_superregion
+				}
+				NOT = { has_country_flag = hanno_elephant }
+			}
+		}
+		POR = { country_event = { id = btc_por.139 }}
+	}
 }
 
 on_new_consort = {
@@ -1394,6 +1406,10 @@ on_new_consort = {
 
 # country
 on_monarch_death = {
+	if = {
+		limit = { has_ruler_flag = miguel_da_paz }
+		country_event = { id = btc_por.138 }
+	}
 	if = {
 		limit = {
 			tag = ANS
@@ -1575,6 +1591,10 @@ on_diplomatic_annex = {
 
 # country
 on_heir_death = {
+	if = {
+		limit = { has_heir_flag = miguel_da_paz }
+		country_event = { id = btc_por.138 }
+	}
 	if = {
 		limit = { has_country_flag = heir_dip_education }
 		clr_country_flag = heir_dip_education

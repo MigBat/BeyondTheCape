@@ -9,7 +9,10 @@ gc_por_1_a = {
 	potential = {
 		has_dlc = "Golden Century"
 		has_dlc = "Domination"
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -171,9 +174,8 @@ gc_por_1_a = {
 				}
 			}
 			else = {
-				add_country_modifier = {
-					name = proudly_alone
-					duration = -1
+				country_event = {
+					id = btc_por.137
 				}
 			}
 		}
@@ -240,7 +242,10 @@ gc_por_1_b = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no
 	}
@@ -446,7 +451,10 @@ gc_por_1_c = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -609,7 +617,10 @@ gc_por_2_a = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -742,8 +753,11 @@ gc_por_2_b = {
 		has_dlc = "Golden Century"
 	}
 	potential = {
-		 has_dlc = "Golden Century"
-		tag = POR
+		has_dlc = "Golden Century"
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -849,8 +863,11 @@ gc_por_2_c = {
 		has_dlc = "Golden Century"
 	}
 	potential = {
-		 has_dlc = "Golden Century"
-		tag = POR
+		has_dlc = "Golden Century"
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -919,8 +936,11 @@ gc_por_2_d = {
 		has_dlc = "Golden Century"
 	}
 	potential = {
-		 has_dlc = "Golden Century"
-		tag = POR
+		has_dlc = "Golden Century"
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1106,8 +1126,11 @@ gc_por_2_e = {
 		has_dlc = "Golden Century"
 	}
 	potential = {
-		 has_dlc = "Golden Century"
-		tag = POR
+		has_dlc = "Golden Century"
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1172,8 +1195,11 @@ gc_por_3 = {
 		has_dlc = "Golden Century"
 	}
 	potential = {
-		 has_dlc = "Golden Century"
-		tag = POR
+		has_dlc = "Golden Century"
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1689,7 +1715,10 @@ gc_por_4_a = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1816,7 +1845,10 @@ gc_por_4_b = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1922,7 +1954,10 @@ gc_por_4_c = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -2007,7 +2042,10 @@ gc_por_4_d = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -2166,7 +2204,10 @@ gc_por_5_a = {
 	potential = {
 		has_dlc = "Golden Century"
 		has_dlc = "Domination"
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -2272,7 +2313,10 @@ gc_por_5_b = {
 	potential = {
 		has_dlc = "Golden Century"
 		has_dlc = "Domination"
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -2508,7 +2552,10 @@ gc_por_5_c = {
 		has_dlc = "Golden Century"
 		has_dlc = "Domination"
 		has_dlc = "Origins"
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -2549,7 +2596,10 @@ gc_por_5_d = {
 	potential = {
 		has_dlc = "Golden Century"
 		has_dlc = "Domination"
-		tag = POR
+		OR = {
+			tag = POR
+			tag = IBE
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -2650,6 +2700,631 @@ gc_por_5_d = {
 					add_base_production = 2 
 				}
 			}
+		}
+	}
+}
+
+btc_ibe_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+		tag = IBE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_ibe_caribbean = {
+		icon = mission_colonize_the_caribbean
+		required_missions = { btc_por_fifth_empire }
+		position = 17
+		provinces_to_highlight = {
+			region = carribeans_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			carribeans_region = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+
+		effect = {
+
+		}
+	}
+
+	btc_ibe_colonies = {
+		icon = mission_iberian_conquistador
+		required_missions = { btc_ibe_caribbean }
+		position = 18
+		provinces_to_highlight = {	}
+
+		trigger = {
+			num_of_colonies = 5
+		}
+
+		effect = {
+
+		}
+	}
+
+	btc_ibe_india = {
+		icon = mission_indian_trade_company
+		required_missions = { btc_ibe_colonies }
+		position = 19
+		provinces_to_highlight = {
+			superregion = india_superregion
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				superregion = india_superregion
+			}
+		}
+
+		effect = {
+			
+		}
+	}
+
+	btc_ibe_pax_iberica = {
+		icon = a.e.i.o.u.
+		required_missions = { btc_ibe_india }
+		position = 20
+		provinces_to_highlight = { }
+		trigger = {
+			has_any_disaster = no
+			is_bankrupt = no
+			stability = 3
+			prestige = 75
+			total_own_and_non_tributary_subject_development = 4000
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Rights of Man"
+						has_dlc = "Emperor"
+					}
+				}
+				NOT = { great_power_rank = 2 }
+			}
+			if = {
+				limit = { has_dlc = "Emperor" }
+				is_hegemon = yes
+			}
+		}
+		effect = {
+		}
+	}
+}
+
+btc_ibe_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+		tag = IBE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_ibe_netherlands = {
+		icon = mission_spanish_netherlands
+		required_missions = { btc_ibe_france }
+		position = 18
+		provinces_to_highlight = { 
+			region = low_countries_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			low_countries_region = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+
+		effect = {
+			wessex_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_midlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			scottish_marches_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yorkshire_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			home_counties_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_anglia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wales_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_midlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+
+	btc_ibe_england = {
+		icon = mission_invade_england
+		required_missions = { btc_ibe_netherlands }
+		position = 19
+		provinces_to_highlight = { 
+			OR = {
+				area = wessex_area
+				area = east_midlands_area
+				area = scottish_marches_area
+				area = yorkshire_area
+				area = home_counties_area
+				area = east_anglia_area
+				area = wales_area
+				area = west_midlands_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			wessex_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			east_midlands_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			scottish_marches_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			yorkshire_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			home_counties_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			east_anglia_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			wales_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			west_midlands_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+
+		effect = {
+			british_isles_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+btc_ibe_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+		tag = IBE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_ibe_france = {
+		icon = king_of_france
+		required_missions = { btc_por_fifth_empire }
+		position = 17
+		provinces_to_highlight = { 
+			region = france_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			france_region = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+
+		effect = {
+			low_countries_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			apulia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	btc_ibe_hre = {
+		icon = lead_the_empire
+		required_missions = { btc_ibe_roma btc_ibe_england }
+		position = 20
+		provinces_to_highlight = { }
+
+		trigger = {
+			if = {
+				limit = { hre_size = 1 }
+				is_emperor = yes
+				imperial_influence = 25
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 25
+					OR = {
+						region = north_german_region
+						region = south_german_region
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = emp_bur_lead_the_empire_fallback_trigger
+					NOT = {
+						any_country = {
+							capital_scope = {
+								OR = {
+									region = north_german_region
+									region = south_german_region
+								}
+							}
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 10
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			if = {
+				limit = { hre_size = 1 }
+				add_imperial_influence = 25
+			}
+			else = { add_dip_power = 100 }
+		}
+	}
+}
+
+btc_ibe_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+		tag = IBE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_ibe_naples = {
+		icon = mission_seize_the_isles
+		required_missions = { btc_ibe_france }
+		position = 18
+		provinces_to_highlight = { 
+			OR = {
+				area = corsica_sardinia_area
+				area = sicily_area
+				area = naples_area
+				area = calabria_area
+				area = apulia_area
+				area = western_sicily_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			corsica_sardinia_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			sicily_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			naples_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			calabria_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			apulia_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			western_sicily_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+
+		effect = {
+			italy_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	btc_ibe_roma = {
+		icon = new_st_peters_basilica
+		required_missions = { btc_ibe_naples }
+		position = 19
+		provinces_to_highlight = { 
+			province_id = 118
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			118 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+
+		effect = {
+
+		}
+	}
+
+	btc_ibe_china = {
+		icon = mission_to_china
+		required_missions = { btc_ibe_jerusalem }
+		position = 20
+		provinces_to_highlight = { 
+			region = south_china_region
+			NOT = { religion = catholic }
+		}
+
+		trigger = {
+			south_china_region = {
+				type = all
+				religion = catholic
+			}
+		}
+
+		effect = {
+			
+		}
+	}
+}
+
+btc_ibe_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+		tag = IBE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_ibe_maghreb = {
+		icon = mission_moroccan_ports
+		required_missions = { btc_por_fifth_empire }
+		position = 17
+		provinces_to_highlight = {
+			region = maghreb_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 30
+				region = maghreb_region
+			}
+		}
+
+		effect = {
+			palestine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			mecca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+
+	btc_ibe_jerusalem = {
+		icon = jerusalem
+		required_missions = { btc_ibe_maghreb }
+		position = 19
+		provinces_to_highlight = { 
+			OR = {
+				province_id = 379
+				province_id = 385
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			379 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			385 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+
+		effect = {
+
+		}
+	}
+
+	btc_ibe_japan = {
+		icon = mission_to_japan
+		required_missions = { btc_ibe_jerusalem }
+		position = 20
+		provinces_to_highlight = { 
+			region = japan_region
+			NOT = { religion = catholic }
+		}
+
+		trigger = {
+			japan_region = {
+				type = all
+				religion = catholic
+			}
+		}
+
+		effect = {
+			
+		}
+	}
+
+	btc_ibe_europe = {
+		icon = peace_in_europe
+		required_missions = { btc_ibe_japan btc_ibe_china }
+		position = 21
+		provinces_to_highlight = { 
+			continent = europe
+			NOT = { religion = catholic }
+		}
+
+		trigger = {
+			europe = {
+				type = all
+				religion = catholic
+			}
+		}
+
+		effect = {
+			
 		}
 	}
 }

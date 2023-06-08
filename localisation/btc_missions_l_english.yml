@@ -57,6 +57,24 @@
  emp_ned_invest_in_the_rich_trade_title:1 "Invest in the Rich Trades"
  emp_ned_invest_in_the_rich_trade_desc:0 "There's richer commerce out there for us to become part of. The Portuguese are avid traders and explorers and they keep their secrets safe and hidden. Who knows what riches they know of? If we establish a commercial presence in their markets, our merchants will surely learn of new opportunities."
 
+# Iberian Missions #
+
+ btc_ibe_caribbean_title:0 "Dominate the Caribbean"
+ btc_ibe_colonies_title:0 "Control the New World"
+ btc_ibe_india_title:0 "Subjugate India"
+ btc_ibe_pax_iberica_title:0 "Pax Iberica"
+ btc_ibe_netherlands_title:0 "Drown the Dutch"
+ btc_ibe_england_title:0 "Cross the Channel"
+ btc_ibe_france_title:0 "End French Arrogance"
+ btc_ibe_hre_title:0 "Holy Iberian Empire"
+ btc_ibe_naples_title:0 "Old Spanish Claims"
+ btc_ibe_roma_title:0 "Be the Pope's Papa"
+ btc_ibe_china_title:0 "Enlighten the Chinese"
+ btc_ibe_maghreb_title:0 "Sebastian's Dream"
+ btc_ibe_jerusalem_title:0 "Holy Cities"
+ btc_ibe_japan_title:0 "Convert Japan"
+ btc_ibe_europe_title:0 "One True Faith"
+
 # Changes from vanilla localisation #
 
  dom_portugal_reform_navy_desc:0 "Dom Henrique, Duke of Viseu, the uncle of king Afonso V, is best known for promoting Portugal's exploration efforts in West Africa and reforming its Navy, sponsoring a new type of ship, the caravel. Now we must go one step further and once again design a new fighting ship, the galleon."

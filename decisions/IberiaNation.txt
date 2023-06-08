@@ -90,6 +90,12 @@ country_decisions = {
 				iberia_region = {
 					add_permanent_claim = IBE
 				}
+				france_region = {
+					add_permanent_claim = IBE
+				}
+				maghreb_region = {
+					add_permanent_claim = IBE
+				}
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

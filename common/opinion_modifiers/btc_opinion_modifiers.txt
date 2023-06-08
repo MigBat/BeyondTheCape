@@ -48,3 +48,23 @@ ignored_our_affairs = {
 paria_paid = {
 	opinion = 100
 }
+
+gifted_hanno = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+gifted_ganda = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+didnt_gift_hanno = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+didnt_gift_ganda = {
+	opinion = -50
+	yearly_decay = 1
+}

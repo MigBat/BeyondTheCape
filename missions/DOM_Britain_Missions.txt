@@ -996,7 +996,7 @@ ave_row_slot_2 = {
 			}
 		}	
 		effect = {
-			1276 = {
+			174 = {
 				add_trade_modifier = {
 					who = root
 					duration = 5475
@@ -4176,12 +4176,12 @@ gbr_ave_row_1 = {
 				limit = { is_random_new_world = no }
 				OR = {
 					province_id = 1500
-					province_id = 1269
+					province_id = 236
 				}
 				has_discovered = ROOT
 			}
 			else = {
-				province_id = 1269
+				province_id = 236
 			}
 		}		
 		trigger = {
@@ -4193,7 +4193,7 @@ gbr_ave_row_1 = {
 						share = 40
 					}
 				}
-				1269 = {
+				236 = {
 					highest_value_trade_node = yes
 					trade_share = {
 						country = ROOT
@@ -4202,7 +4202,7 @@ gbr_ave_row_1 = {
 				}
 			}
 			else = {
-				1269 = {
+				236 = {
 					highest_value_trade_node = yes
 					trade_share = {
 						country = ROOT
@@ -4231,16 +4231,16 @@ gbr_ave_row_1 = {
 		}
 		position = 12
 		provinces_to_highlight = {
-			province_id = 1269
+			province_id = 236
 		}		
 		trigger = { 
-			1269 = {
+			236 = {
 				is_strongest_trade_power = ROOT
 			}
-			1269 = {
+			236 = {
 				highest_value_trade_node = yes
 			}
-			1269 = {
+			236 = {
 				trade_node_value = 500
 			}
 			reform_level = 8
