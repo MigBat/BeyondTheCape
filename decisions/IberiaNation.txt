@@ -96,6 +96,9 @@ country_decisions = {
 				maghreb_region = {
 					add_permanent_claim = IBE
 				}
+				carribeans_region = {
+					add_permanent_claim = IBE
+				}
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

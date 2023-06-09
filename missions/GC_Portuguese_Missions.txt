@@ -2737,7 +2737,34 @@ btc_ibe_1 = {
 		}
 
 		effect = {
-
+			north_america_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_america_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			andes_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_america_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -2748,11 +2775,17 @@ btc_ibe_1 = {
 		provinces_to_highlight = {	}
 
 		trigger = {
-			num_of_colonies = 5
+			num_of_colonies = 8
 		}
 
 		effect = {
-
+			india_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -2773,7 +2806,34 @@ btc_ibe_1 = {
 		}
 
 		effect = {
-			
+			egypt_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mashriq_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			anatolia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			balkan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -2803,6 +2863,10 @@ btc_ibe_1 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = ibe_pax_iberica
+				duration = -1
+			}
 		}
 	}
 }
@@ -3184,7 +3248,10 @@ btc_ibe_4 = {
 		}
 
 		effect = {
-
+			add_country_modifier = {
+				name = popes_papa
+				duration = -1
+			}
 		}
 	}
 
@@ -3194,18 +3261,29 @@ btc_ibe_4 = {
 		position = 20
 		provinces_to_highlight = { 
 			region = south_china_region
-			NOT = { religion = catholic }
+			NOT = { religion = root }
 		}
 
 		trigger = {
 			south_china_region = {
 				type = all
-				religion = catholic
+				religion = root
 			}
 		}
 
 		effect = {
-			
+			custom_tooltip = ibe_reduce_unrest_religion_tt
+			hidden_effect = {
+				every_province = {
+					limit = {
+						religion = root
+					}
+					add_province_modifier = {
+						name = ibe_reduce_unrest_religion
+						duration = -1
+					}
+				}
+			}
 		}
 	}
 }
@@ -3282,7 +3360,13 @@ btc_ibe_5 = {
 		}
 
 		effect = {
-
+			if = { 
+				limit = { religion = catholic }
+				custom_tooltip = enable_propogate_religion_in_abrahamic_provinces_tt
+				hidden_effect = {
+					set_country_flag = can_propagate_religion_in_abrahamic_provinces
+				}
+			}
 		}
 	}
 
@@ -3292,18 +3376,29 @@ btc_ibe_5 = {
 		position = 20
 		provinces_to_highlight = { 
 			region = japan_region
-			NOT = { religion = catholic }
+			NOT = { religion = root }
 		}
 
 		trigger = {
 			japan_region = {
 				type = all
-				religion = catholic
+				religion = root
 			}
 		}
 
 		effect = {
-			
+			custom_tooltip = ibe_reduce_autonomy_religion_tt
+			hidden_effect = {
+				every_province = {
+					limit = {
+						religion = root
+					}
+					add_province_modifier = {
+						name = ibe_reduce_autonomy_religion
+						duration = -1
+					}
+				}
+			}
 		}
 	}
 
@@ -3313,18 +3408,29 @@ btc_ibe_5 = {
 		position = 21
 		provinces_to_highlight = { 
 			continent = europe
-			NOT = { religion = catholic }
+			NOT = { religion = root }
 		}
 
 		trigger = {
 			europe = {
 				type = all
-				religion = catholic
+				religion = root
 			}
 		}
-
+		
 		effect = {
-			
+			custom_tooltip = ibe_religious_missionary_tt
+			hidden_effect = {
+				every_province = {
+					limit = {
+						NOT = { religion = root }
+					}
+					add_province_modifier = {
+						name = ibe_religious_missionary
+						duration = -1
+					}
+				}
+			}
 		}
 	}
 }

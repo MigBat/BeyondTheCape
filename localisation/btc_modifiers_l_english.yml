@@ -259,6 +259,10 @@
  gifted_ganda:0 "Gifted Ganda"
  didnt_gift_ganda:0 "Didn't gift Ganda"
  sending_ganda_to_pope:0 "Ganda will be sent to the Pope on a ship."
+ ibe_pax_iberica:0 "Pax Iberica"
+ desc_ibe_pax_iberica:0 "We are the great Eagle of Roman Legacy. Our magnificent Empire thrones above the world, ready to stand the test of time. May our glory shine for eternity."
+ popes_papa:0 "Pope Subject"
+ didnt_popes_papa:0 "The Pope is our subject"
 
 # Other Events #
  paria_paid:0 "Paria Paid"

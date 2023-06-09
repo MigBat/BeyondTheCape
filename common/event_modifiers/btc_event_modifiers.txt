@@ -475,3 +475,23 @@ kept_ganda = {
 	prestige = 0.5
 	legitimacy = 0.25
 }
+
+ibe_pax_iberica = {
+	administrative_efficiency = 0.05
+}
+
+ibe_reduce_autonomy_religion = {
+	local_autonomy = -0.1
+}
+
+ibe_reduce_unrest_religion = {
+	local_unrest = -1
+}
+
+ibe_religious_missionary = {
+	local_missionary_strength = 0.05
+}
+
+popes_papa = {
+	papal_influence = 1
+}
