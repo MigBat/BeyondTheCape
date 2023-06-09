@@ -966,7 +966,7 @@ emp_ned_slot4_branch = { # Statists
 		}
 		
 		trigger = {
-			1269 = { # English Channel
+			1744 = { # Antwerp
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -1376,7 +1376,7 @@ emp_ned_slot5_branch = { # Orangists
 			}
 		}
 		effect = {
-			1269 = {
+			1744 = {
 				add_trade_modifier = {
 					who = root
 					duration = 7300

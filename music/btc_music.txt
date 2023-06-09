@@ -8,80 +8,73 @@ song = {
 		}
 		modifier = {
 			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 4
-			culture = galician
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				NOT = { culture = portuguese }
-				NOT = { culture = galician }
-			}
+			primary_culture = galician
 		}
 	}
 }
-song = {
-	name = "fandango"
+# song = {
+# 	name = "fandango"
 	
-	chance = {
-		modifier = {
-			factor = 0.5
-			current_age = age_of_discovery
-		}
-		modifier = {
-			factor = 1.25
-			current_age = age_of_absolutism
-		}
-		modifier = {
-			factor = 0
-			is_at_war = yes
-		}
-		modifier = {
-			factor = 3
-			culture = portuguese
-		}
-		modifier = {
-			factor = 0
-			NOT = { culture = portuguese }
-		}
-	}
-}
-song = {
-	name = "highervalor"
+# 	chance = {
+# 		modifier = {
+# 			factor = 0.5
+# 			current_age = age_of_discovery
+# 		}
+# 		modifier = {
+# 			factor = 1.25
+# 			current_age = age_of_absolutism
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			is_at_war = yes
+# 		}
+# 		modifier = {
+# 			factor = 3
+# 			culture = portuguese
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			NOT = { culture = portuguese }
+# 		}
+# 	}
+# }
+# song = {
+# 	name = "highervalor"
 	
-	chance = {
-		modifier = {
-			factor = 1.5
-			current_age = age_of_absolutism
-		}
-		modifier = {
-			factor = 1.50
-			num_of_colonists = 1
-		}
-		modifier = {
-			factor = 1.50
-			is_at_war = yes
-		}
-		modifier = {
-			factor = 3
-			culture = portuguese
-		}
-		modifier = {
-			factor = 2
-			culture = galician
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				NOT = { culture = portuguese }
-				NOT = { culture = galician }
-			}
-		}
-	}
-}
+# 	chance = {
+# 		modifier = {
+# 			factor = 1.5
+# 			current_age = age_of_absolutism
+# 		}
+# 		modifier = {
+# 			factor = 1.50
+# 			num_of_colonists = 1
+# 		}
+# 		modifier = {
+# 			factor = 1.50
+# 			is_at_war = yes
+# 		}
+# 		modifier = {
+# 			factor = 3
+# 			culture = portuguese
+# 		}
+# 		modifier = {
+# 			factor = 2
+# 			culture = galician
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			OR = { 
+# 				NOT = { culture = portuguese }
+# 				NOT = { culture = galician }
+# 			}
+# 		}
+# 	}
+# }
 song = {
 	name = "edgeoftheworld"
 	
@@ -100,18 +93,11 @@ song = {
 		}
 		modifier = {
 			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 2
-			culture = galician
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				NOT = { culture = portuguese }
-				NOT = { culture = galician }
-			}
+			primary_culture = galician
 		}
 	}
 }
@@ -141,18 +127,11 @@ song = {
 		}
 		modifier = {
 			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 2
-			culture = galician
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				NOT = { culture = portuguese }
-				NOT = { culture = galician }
-			}
+			primary_culture = galician
 		}
 	}
 }
@@ -186,18 +165,11 @@ song = {
 		}
 		modifier = {
 			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 2
-			culture = galician
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				NOT = { culture = portuguese }
-				NOT = { culture = galician }
-			}
+			primary_culture = galician
 		}
 	}
 }
@@ -215,18 +187,11 @@ song = {
 		}
 		modifier = {
 			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 2
-			culture = galician
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				NOT = { culture = portuguese }
-				NOT = { culture = galician }
-			}
+			primary_culture = galician
 		}
 	}
 }
@@ -248,18 +213,11 @@ song = {
 		}
 		modifier = {
 			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 2
-			culture = galician
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				NOT = { culture = portuguese }
-				NOT = { culture = galician }
-			}
+			primary_culture = galician
 		}	
 	}
 }
@@ -289,11 +247,7 @@ song = {
 		}
 		modifier = {
 			factor = 3
-			culture = portuguese
-		}	
-		modifier = {
-			factor = 0
-			NOT = { culture = portuguese }
+			primary_culture = portugese
 		}	
 	}
 }
@@ -315,18 +269,11 @@ song = {
 		}
 		modifier = {
 			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 2
-			culture = galician
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				NOT = { culture = portuguese }
-				NOT = { culture = galician }
-			}
+			primary_culture = galician
 		}
 	}	
 }
@@ -348,18 +295,11 @@ song = {
 		}
 		modifier = {
 			factor = 2
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 4
-			culture = galician
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				NOT = { culture = portuguese }
-				NOT = { culture = galician }
-			}
+			primary_culture = galician
 		}
 	}	
 }
@@ -373,19 +313,12 @@ song = {
  		}
 		modifier = {
  			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 4
-			culture = galician
+			primary_culture = galician
 		}
-		modifier = {
-			factor = 0
- 			OR = { 
- 				NOT = { culture = portuguese }
- 				NOT = { culture = galician }
- 			}
- 		}
  	}		
 }
 song = {
@@ -414,19 +347,12 @@ song = {
 		}
 		modifier = {
  			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 1.25
-			culture = galician
+			primary_culture = galician
 		}
-		modifier = {
-			factor = 0
- 			OR = { 
- 				NOT = { culture = portuguese }
- 				NOT = { culture = galician }
- 			}
- 		}
  	}		
 }
 song = {
@@ -439,19 +365,12 @@ song = {
  		}
 		modifier = {
  			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 4
-			culture = galician
+			primary_culture = galician
 		}
-		modifier = {
-			factor = 0
- 			OR = { 
- 				NOT = { culture = portuguese }
- 				NOT = { culture = galician }
- 			}
- 		}
  	}		
 }
 song = {
@@ -480,19 +399,12 @@ song = {
 		}
 		modifier = {
  			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 1.25
-			culture = galician
+			primary_culture = galician
 		}
-		modifier = {
-			factor = 0
- 			OR = { 
- 				NOT = { culture = portuguese }
- 				NOT = { culture = galician }
- 			}
- 		}
  	}		
 }
 # song = {
@@ -546,19 +458,12 @@ song = {
  		}
 		modifier = {
  			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 4
-			culture = galician
+			primary_culture = galician
 		}
-		modifier = {
-			factor = 0
- 			OR = { 
- 				NOT = { culture = portuguese }
- 				NOT = { culture = galician }
- 			}
- 		}
  	}		
 }
 song = {
@@ -575,18 +480,11 @@ song = {
 		}
 		modifier = {
  			factor = 3
-			culture = portuguese
+			primary_culture = portugese
 		}
 		modifier = {
 			factor = 4
-			culture = galician
+			primary_culture = galician
 		}
-		modifier = {
-			factor = 0
- 			OR = { 
- 				NOT = { culture = portuguese }
- 				NOT = { culture = galician }
- 			}
- 		}
  	}		
 }

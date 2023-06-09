@@ -884,7 +884,7 @@ eng_british_cot_dominance = {
 		}
 		
 		trigger = { 
-			1269 = {
+			236 = {
 				is_strongest_trade_power = ROOT
 			}
 		}

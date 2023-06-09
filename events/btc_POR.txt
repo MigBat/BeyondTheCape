@@ -2546,6 +2546,20 @@ province_event = {
 				speed = 0.5
 			}
 		}
+		if = {
+			limit = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			add_province_modifier = {
+				name = feitoria
+				duration = -1
+			}
+		}
 	}
 
 	option = {	# Don't build it
@@ -2651,5 +2665,274 @@ country_event = {
 		name = btc_por.136b
 		
 		add_prestige = -1
+	}
+}
+
+# Miguel da Paz #
+
+country_event = {
+	id = btc_por.137
+	title = btc_por.137_t
+	desc = btc_por.137_d
+	picture = NEW_HEIR_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_por.137a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		define_heir = {
+			name = "Miguel"
+			dynasty = ROOT
+			age = 0
+			culture = portugese
+			adm = 3
+			dip = 5
+			mil = 3
+			claim = 100
+		}
+
+		set_heir_flag = miguel_da_paz
+
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = CAS
+		}
+
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = ARA
+		}
+	}
+
+	option = {
+		name = btc_por.137b
+		
+		add_country_modifier = {
+			name = proudly_alone
+			duration = -1
+		}
+	}
+}
+
+# Death of Miguel da Paz #
+
+country_event = {
+	id = btc_por.138
+	title = btc_por.138_t
+	desc = btc_por.138_d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_por.138a
+
+		remove_casus_belli = {
+			type = cb_restore_personal_union
+			target = CAS
+		}
+
+		remove_casus_belli = {
+			type = cb_restore_personal_union
+			target = ARA
+		}
+	}
+}
+
+# Hanno the Elephant #
+
+country_event = {
+	id = btc_por.139
+	title = btc_por.139_t
+	desc = btc_por.139_d
+	picture = SULTAN_AND_MERCHANT_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Gift it to the Pope
+		name = btc_por.139a
+
+		add_country_modifier = {
+			name = gave_hanno
+			duration = 1825
+		}
+
+		PAP = {
+			add_opinion = {
+				who = POR
+				modifier = gifted_hanno # 50 relation
+			}
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = btc_por.140
+				days = 365
+			}
+		}
+		set_country_flag = hanno_elephant
+	}
+	
+	option = {	# Display it in [ROOT.capital.getName]
+		name = btc_por.139b
+
+		add_country_modifier = {
+			name = kept_hanno
+			duration = 1825
+		}
+		PAP = {
+			add_opinion = {
+				who = POR
+				modifier = didnt_gift_hanno # -50 relation
+			}
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = btc_por.140
+				days = 365
+			}
+		}
+		set_country_flag = hanno_elephant
+	}
+}
+
+# Ganda the Rhino #
+
+country_event = {
+	id = btc_por.140
+	title = btc_por.140_t
+	desc = btc_por.140_d
+	picture = SULTAN_WIFE_VIZIER_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Gift it to the Pope
+		name = btc_por.140a
+
+		custom_tooltip = "sending_ganda_to_pope"
+		hidden_effect = {
+			random_list = {
+				80 = {
+					country_event = {
+						id = btc_por.141
+					}
+				}
+				20 = {
+					country_event = {
+						id = btc_por.142
+					}
+				}
+			}
+			# random = {
+			# 	chance = 80
+			# 	country_event = {
+			# 		id = btc_por.141
+			# 	}
+			# }
+			# random = {
+			# 	chance = 20
+			# 	country_event = {
+			# 		id = btc_por.142
+			# 	}
+			# }
+		}
+	}
+	
+	option = {	# Keep it as the personal pet of [ROOT.getMonarchName]
+		name = btc_por.140b
+
+		add_country_modifier = {
+			name = kept_ganda
+			duration = 1825
+		}
+		PAP = {
+			add_opinion = {
+				who = POR
+				modifier = didnt_gift_ganda # -50 relation
+			}
+		}
+	}
+}
+
+# Ganda Asneira #
+
+country_event = {
+	id = btc_por.141
+	title = btc_por.141_t
+	desc = btc_por.141_d
+	picture = BAD_POPE_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Oops
+		name = btc_por.141a
+
+		add_prestige = -10
+		add_navy_tradition = -10
+
+		PAP = {
+			add_opinion = {
+				who = POR
+				modifier = didnt_gift_ganda # -50 relation
+			}
+		}
+	}
+}
+
+# Ganda Arrived Safely #
+
+country_event = {
+	id = btc_por.142
+	title = btc_por.142_t
+	desc = btc_por.142_d
+	picture = FLAGSHIP_SUNK_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Good thing the ship didn't sink on a storm off the coast of northern Italy
+		name = btc_por.142a
+
+		add_country_modifier = {
+			name = gave_ganda
+			duration = 1825
+		}
+		PAP = {
+			add_opinion = {
+				who = POR
+				modifier = gifted_ganda # 50 relation
+			}
+		}
 	}
 }

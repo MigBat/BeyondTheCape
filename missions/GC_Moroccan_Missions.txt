@@ -445,7 +445,7 @@ gc_morocco_2 = {
 		}
 		
 		trigger = {
-			1293 = {
+			224 = {
 				privateer_power = {
 					country = ROOT
 					share = 25

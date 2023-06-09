@@ -439,7 +439,7 @@ feitoria = {
 	province_trade_power_value = 5
 	local_ship_repair = 0.15
 	local_governing_cost = 0.25
-	local_fort_maintenance_modifier = -0.5
+	local_fort_maintenance_modifier = -0.3
 	local_defensiveness = -0.15
 	fort_level = -1
 }
@@ -456,4 +456,42 @@ slave_plantations = {
 mass_slave_plantations = {
 	trade_goods_size = 2
 	local_unrest = 10
+}
+
+gave_hanno = {
+	papal_influence = 1
+}
+
+kept_hanno = {
+	prestige = 0.5
+	legitimacy = 0.25
+}
+
+gave_ganda = {
+	papal_influence = 1
+}
+
+kept_ganda = {
+	prestige = 0.5
+	legitimacy = 0.25
+}
+
+ibe_pax_iberica = {
+	administrative_efficiency = 0.05
+}
+
+ibe_reduce_autonomy_religion = {
+	local_autonomy = -0.1
+}
+
+ibe_reduce_unrest_religion = {
+	local_unrest = -1
+}
+
+ibe_religious_missionary = {
+	local_missionary_strength = 0.05
+}
+
+popes_papa = {
+	papal_influence = 1
 }
