@@ -961,7 +961,7 @@ got_republic_slot_1 = {
 		required_missions = { got_republic_dominate_lubeck_trace }
 
 		provinces_to_highlight = {
-			province_id = 1269
+			province_id = 1744
 		}
 
 		trigger = {
@@ -1911,7 +1911,7 @@ got_pirate_slot_3 = {
 					}
 				}
 				AND = {
-					province_id = 1269
+					province_id = 1744
 					NOT = {
 						privateer_power = {
 							country = ROOT

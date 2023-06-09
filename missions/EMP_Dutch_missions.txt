@@ -962,7 +962,7 @@ emp_ned_slot4_branch = { # Statists
 		position = 4
 		
 		provinces_to_highlight = {
-			province_id = 1269
+			province_id = 1744
 		}
 		
 		trigger = {

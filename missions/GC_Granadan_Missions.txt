@@ -1222,7 +1222,7 @@ granada_slot_4_missions = {
 		position = 2
 		
 		provinces_to_highlight = {
-			province_id = 1293
+			province_id = 224
 			NOT = { is_strongest_trade_power = ROOT }
 		}
 		

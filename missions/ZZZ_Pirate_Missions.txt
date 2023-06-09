@@ -108,7 +108,7 @@ pirate_1 = {
 			OR = {
 				province_id = 1466
 				province_id = 1531
-				province_id = 1293
+				province_id = 224
 			}
 		}
 		
