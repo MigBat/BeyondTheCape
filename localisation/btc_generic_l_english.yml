@@ -133,7 +133,7 @@
  extra_flagship_decision_desc:0 "Flagships are expensive and powerful ships. Only a strong navy is worthy of fitting one, but ours is amongst the greatest navies in the world. Let us build a second flagship to strike fear into our enemies and awe all who see our mighty vessels!"
  iberia_nation_title:0 "Form Iberian Nation"
  iberia_nation_desc:0 "Global expansion in newly discovered areas and the establishment of colonies is transforming Iberia into one of the most powerful and wealthiest nations of our time. Iberian explorers are constantly moving into new lands and extending our borders. Immense amounts of gold and silver are being brought back to our motherland, filling the coffers of our state treasury."
- iberian_unification_effect.tooltip:0 "§YIberia§! will get a permanent claim on the entire §YIberia§!"
+ iberian_unification_effect.tooltip:0 "§YIberia§! will get a permanent claim on the §YIberia§!, §YFrance§!, §YMaghreb§! and §YCaribbean§! regions."
  iberian_wedding_information_title:0 "Iberian Inheritance Status"
  iberian_wedding_information_desc:0 "We need to have more prestige and more legitimacy than Castile to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill both prerequisites."
  cas_por_iberian_wedding_information_title:0 "Iberian Inheritance Status"
@@ -166,3 +166,6 @@
  disable_propogate_religion_immunity_tt:1 "Provinces of [Root.GetName] are again affected by the '§YPropagate Religion§!' Trading Policy."
  enable_propogate_religion_in_abrahamic_provinces_tt:1 "The '§YPropagate Religion§!' Trading Policy can now convert §YJewish§!, §YChristian§! and §YMuslim§! provinces."
  disable_propogate_religion_in_abrahamic_provinces_tt:1 "The '§YPropagate Religion§!' Trading Policy can no longer convert §YJewish§!, §YChristian§! and §YMuslim§! provinces."
+
+ confirm_thalassocracy_a_tt:1 "§Y[Root.GetName]§! is the strongest Trade Power in §Y[1298.GetName]§!, §Y[1295.GetName]§!, §Y[341.GetName]§!, §Y[224.GetName]§! and §Y[1110.GetName]§!."
+ confirm_thalassocracy_b_tt:0 "§Y[Root.GetName]§! is the strongest Trade Power in §Y[236.GetName]§!, §Y[45.GetName]§!, §Y[1926.GetName]§!, §Y[1744.GetName]§! and §Y[1975.GetName]§!."

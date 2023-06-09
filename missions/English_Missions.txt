@@ -879,7 +879,7 @@ eng_british_cot_dominance = {
 		position = 8
 		
 		provinces_to_highlight = {
-			province_id = 1269
+			province_id = 236
 			has_discovered = ROOT
 		}
 		

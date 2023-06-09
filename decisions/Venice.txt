@@ -13,7 +13,7 @@ country_decisions = {
 				1926 = { #Baltic Sea
 					is_strongest_trade_power = ROOT
 				}
-				1269 = { #Antwerpen
+				1744 = { #Antwerpen
 					is_strongest_trade_power = ROOT
 				}
 				1975 = { #North Sea
@@ -40,9 +40,6 @@ country_decisions = {
 					is_strongest_trade_power = ROOT
 				}
 				1110 = { #Safi
-					is_strongest_trade_power = ROOT
-				}
-				227 = { #Lisbon
 					is_strongest_trade_power = ROOT
 				}
 
@@ -113,7 +110,7 @@ country_decisions = {
 						1926 = { #Baltic Sea
 							is_strongest_trade_power = ROOT
 						}
-						1269 = { #Antwerpen
+						1744 = { #Antwerpen
 							is_strongest_trade_power = ROOT
 						}
 						1975 = { #North Sea
@@ -143,9 +140,6 @@ country_decisions = {
 							is_strongest_trade_power = ROOT
 						}
 						1110 = { #Safi
-							is_strongest_trade_power = ROOT
-						}
-						227 = { #Lisbon
 							is_strongest_trade_power = ROOT
 						}
 					}
@@ -216,10 +210,10 @@ country_decisions = {
 			OR = {
 				province_id = 45
 				province_id = 1926
-				province_id = 1269
+				province_id = 1744
 				province_id = 1975
 				province_id = 33
-				province_id = 1293
+				province_id = 224
 				province_id = 1295
 				province_id = 1298
 				province_id = 341
@@ -239,6 +233,7 @@ country_decisions = {
 				province_id = 1361
 				province_id = 1357
 				province_id = 1397
+				province_id = 236
 			}
 			NOT = { is_strongest_trade_power = ROOT }
 		}

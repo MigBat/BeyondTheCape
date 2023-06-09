@@ -441,7 +441,7 @@ gc_morocco_2 = {
 		position = 2
 		
 		provinces_to_highlight = {
-			province_id = 1293
+			province_id = 224
 		}
 		
 		trigger = {
