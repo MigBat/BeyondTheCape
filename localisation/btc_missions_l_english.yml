@@ -89,7 +89,7 @@
  btc_ibe_japan_desc:0 "If ever there was a more isolated and stubborn people, the Japanese would be good contenders. They claim they are peaceful, orderly and respectful, but how could this be if they do not embrace the one true God? Our advances have been met with resistance. This time it will be different."
  btc_ibe_europe_title:0 "One True Faith"
  btc_ibe_europe_desc:0 "Religous turmoil has been at the core of Europe's identity since time immemorial. Through our recent achievements, we have come to view ourselves as the true chosen ones of God. And now we shall do His work, and unite the continent in adoration of His miracles."
- ibe_religious_missionary_tt:0 "Every [Root.Religion.GetName] province in the world gets §Y+5%§! missionary strength."
+ ibe_religious_missionary_tt:0 "Every non-[Root.Religion.GetName] province in the world gets §Y+5%§! missionary strength."
  ibe_reduce_autonomy_religion_tt:0 "Every [Root.Religion.GetName] province in the world gets §Y-10%§! monthly autonomy."
  ibe_reduce_unrest_religion_tt:0 "Every [Root.Religion.GetName] province in the world gets §Y-1§! unrest."
 
