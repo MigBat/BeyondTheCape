@@ -89,15 +89,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 90
-			modifier = {
-				factor = 0
-				NOT = { 
-					army_strength = {
-						who = GRA
-						value = 2
-					}
-				}
-			}
 		}
 
 		if = {
@@ -106,9 +97,9 @@ country_event = {
 			}
 			remove_guarantee = GRA
 		}
-		declare_war_with_cb = {
-			casus_belli = cb_annex
-			who = GRA
+		add_country_modifier = {
+			name = finish_reconquista
+			duration = 1825
 		}
 	}
 
