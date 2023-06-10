@@ -2014,8 +2014,8 @@ geobukseon_ship = {
 }
 
 man_of_war_ship = {
-	#engagement_cost = -1
-	#naval_maintenance_modifier = 0.5
+	engagement_cost = -1
+	naval_maintenance_modifier = 0.5
 	naval_morale_damage = 0.15
 }
 
