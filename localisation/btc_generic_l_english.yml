@@ -135,11 +135,11 @@
  iberia_nation_desc:0 "Global expansion in newly discovered areas and the establishment of colonies is transforming Iberia into one of the most powerful and wealthiest nations of our time. Iberian explorers are constantly moving into new lands and extending our borders. Immense amounts of gold and silver are being brought back to our motherland, filling the coffers of our state treasury."
  iberian_unification_effect.tooltip:0 "§YIberia§! will get a permanent claim on the §YIberia§!, §YFrance§!, §YMaghreb§! and §YCaribbean§! regions."
  iberian_wedding_information_title:0 "Iberian Inheritance Status"
- iberian_wedding_information_desc:0 "We need to have more prestige and more legitimacy than Castile to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill both prerequisites."
+ iberian_wedding_information_desc:0 "We need to have more prestige and more legitimacy than Castile to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill both prerequisites. Be aware: when your heir rises to the throne, their claim will become the country's legitimacy."
  cas_por_iberian_wedding_information_title:0 "Iberian Inheritance Status"
- cas_por_iberian_wedding_information_desc:0 "We need to have more prestige or more legitimacy than Portugal to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill at least one of the prerequisites."
+ cas_por_iberian_wedding_information_desc:0 "We need to have more prestige or more legitimacy than Portugal to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill at least one of the prerequisites. Be aware: when your heir rises to the throne, their claim will become the country's legitimacy."
  cas_ara_iberian_wedding_information_title:0 "Iberian Inheritance Status"
- cas_ara_iberian_wedding_information_desc:0 "We need to have more prestige or more legitimacy than Aragon to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill at least one of the prerequisites."
+ cas_ara_iberian_wedding_information_desc:0 "We need to have more prestige or more legitimacy than Aragon to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill at least one of the prerequisites. Be aware: when your heir rises to the throne, their claim will become the country's legitimacy."
 
 # Other #
 

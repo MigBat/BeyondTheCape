@@ -72,8 +72,8 @@ country_event = {
 				POR = { has_regency = yes }
 			}
 			modifier = {
-				factor = 2
-				is_rival = ARA
+				factor = 0.1
+				is_rival = POR
 			}
 			modifier = {
 				factor = 2
@@ -128,8 +128,8 @@ country_event = {
 				ARA = { has_regency = yes }
 			}
 			modifier = {
-				factor = 2
-				is_rival = POR
+				factor = 0.1
+				is_rival = ARA
 			}
 			modifier = {
 				factor = 2
