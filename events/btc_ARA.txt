@@ -13,6 +13,10 @@ country_event = {
 	option = {	# Naples
 		name = btc_ara.1a
 
+		ai_chance = {
+			factor = 0
+		}
+
 		set_capital = 121
 		if = {
 			limit = {
@@ -30,6 +34,10 @@ country_event = {
 	}
 	option = {	# Barcelona
 		name = btc_ara.1b
+
+		ai_chance = {
+			factor = 0
+		}
 
 		set_capital = 213
 		if = {
@@ -49,6 +57,10 @@ country_event = {
 	option = {	# Valencia
 		name = btc_ara.1c
 
+		ai_chance = {
+			factor = 0
+		}
+
 		set_capital = 220
 		if = {
 			limit = {
@@ -66,6 +78,10 @@ country_event = {
 	}
 	option = {	# Zaragoza
 		name = btc_ara.1d
+
+		ai_chance = {
+			factor = 1
+		}
 		
 		if = {
 			limit = {
