@@ -229,14 +229,22 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					is_core = ROOT
-					culture = catalan
+					OR = {
+						culture = catalan
+						culture = valencian
+						culture = balearic
+					}
 				}
 				set_province_flag = ara_sindicat_remensa_flag
 			}
 			random_owned_province = {
 				limit = {
 					is_core = ROOT
-					culture = catalan
+					OR = {
+						culture = catalan
+						culture = valencian
+						culture = balearic
+					}
 					NOT = {  has_province_flag = ara_sindicat_remensa_flag }
 				}
 				set_province_flag = ara_sindicat_remensa_flag
@@ -244,7 +252,11 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					is_core = ROOT
-					culture = catalan
+					OR = {
+						culture = catalan
+						culture = valencian
+						culture = balearic
+					}
 					NOT = { has_province_flag = ara_sindicat_remensa_flag }
 				}
 				set_province_flag = ara_sindicat_remensa_flag

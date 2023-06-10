@@ -16,6 +16,8 @@ gc_aragon_1 = {
 				OR = {
 					primary_culture = aragonese
 					primary_culture = catalan
+					primary_culture = valencian
+					primary_culture = balearic
 				}
 			}
 		}
@@ -185,6 +187,8 @@ gc_aragon_2 = {
 				OR = {
 					primary_culture = aragonese
 					primary_culture = catalan
+					primary_culture = valencian
+					primary_culture = balearic
 				}
 			}
 		}
@@ -487,6 +491,8 @@ gc_aragon_3 = {
 				OR = {
 					primary_culture = aragonese
 					primary_culture = catalan
+					primary_culture = valencian
+					primary_culture = balearic
 				}
 			}
 		}
@@ -805,6 +811,8 @@ gc_aragon_4 = {
 				OR = {
 					primary_culture = aragonese
 					primary_culture = catalan
+					primary_culture = valencian
+					primary_culture = balearic
 				}
 			}
 		}
@@ -1131,6 +1139,8 @@ gc_aragon_5 = {
 				OR = {
 					primary_culture = aragonese
 					primary_culture = catalan
+					primary_culture = valencian
+					primary_culture = balearic
 				}
 			}
 		}

@@ -110,6 +110,10 @@ monarchy = {
 				tibetan_dual_government_reform
 				sisterhood_of_jeanne_darc_reform
 				crown_of_aragon_reform
+				naples_crown_of_aragon_reform
+				barcelona_crown_of_aragon_reform
+				valencia_crown_of_aragon_reform
+				zaragoza_crown_of_aragon_reform
 			}
 		}
 		hereditary_vs_nobility = {

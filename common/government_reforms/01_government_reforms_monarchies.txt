@@ -5876,6 +5876,8 @@ justicia_de_aragon_reform = {
 		OR = {
 			primary_culture = catalan
 			primary_culture = aragonese
+			primary_culture = valencian
+			primary_culture = balearic
 		}
 	}
 	modifiers = {
@@ -6610,17 +6612,90 @@ crown_of_aragon_reform = {
 	icon = "crown_of_aragon"
 	allow_normal_conversion = yes
 	potential = {
-		primary_culture = aragonese
-	}
-	nation_designer_trigger = {
-		primary_culture = aragonese
+		has_reform = crown_of_aragon_reform
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
 		diplomatic_upkeep = 2
-		num_accepted_cultures = 2
+		num_accepted_cultures = 3
 		years_to_integrate_personal_union = -5
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+naples_crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = naples_crown_of_aragon_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_upkeep = 2
+		num_accepted_cultures = 3
+		years_to_integrate_personal_union = -5
+		diplomatic_reputation = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+barcelona_crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = barcelona_crown_of_aragon_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_upkeep = 2
+		num_accepted_cultures = 3
+		years_to_integrate_personal_union = -5
+		global_trade_power = 0.1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+valencia_crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = valencia_crown_of_aragon_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_upkeep = 2
+		num_accepted_cultures = 3
+		years_to_integrate_personal_union = -5
+		same_culture_advisor_cost = -0.2
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+zaragoza_crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = zaragoza_crown_of_aragon_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_upkeep = 2
+		num_accepted_cultures = 3
+		years_to_integrate_personal_union = -5
+		administrative_efficiency = 0.05
 	}
 	ai = {
 		factor = 1

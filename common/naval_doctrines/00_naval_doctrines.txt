@@ -82,6 +82,8 @@ grand_armada = {
 				primary_culture = aragonese
 				primary_culture = catalan
 				primary_culture = basque
+				primary_culture = valencian
+				primary_culture = balearic
 			}
 		}
 		culture_group = iberian
@@ -126,6 +128,8 @@ aragonese_fleet = {
 		OR = {
 			primary_culture = aragonese
 			primary_culture = catalan
+			primary_culture = valencian
+			primary_culture = balearic
 		}
 	}
 

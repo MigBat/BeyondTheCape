@@ -3904,12 +3904,12 @@ dom_cas_missions_5_b = {
 			}
 		}
 		effect = {
-			127 = {
+			2986 = {
 				add_base_tax = 1
 				add_base_manpower = 1
 				add_base_production = 1
 			}
-			4737 = {
+			125 = {
 				add_base_tax = 1
 				add_base_manpower = 1
 				add_base_production = 1

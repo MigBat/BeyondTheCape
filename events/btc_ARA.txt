@@ -20,6 +20,12 @@ country_event = {
 			}
 			add_accepted_culture = neapolitan
 		}
+		if = {
+			limit = {
+				has_reform = crown_of_aragon_reform
+			}
+			add_government_reform = naples_crown_of_aragon_reform
+		}
 		add_prestige = 10
 	}
 	option = {	# Barcelona
@@ -31,6 +37,12 @@ country_event = {
 				NOT = { accepted_culture = catalan }
 			}
 			add_accepted_culture = catalan
+		}
+		if = {
+			limit = {
+				has_reform = crown_of_aragon_reform
+			}
+			add_government_reform = barcelona_crown_of_aragon_reform
 		}
 		add_prestige = 10
 	}
@@ -44,11 +56,29 @@ country_event = {
 			}
 			add_accepted_culture = catalan
 		}
+		if = {
+			limit = {
+				has_reform = crown_of_aragon_reform
+			}
+			add_government_reform = valencia_crown_of_aragon_reform
+		}
 		add_prestige = 10
 	}
 	option = {	# Zaragoza
 		name = btc_ara.1d
 		
+		if = {
+			limit = {
+				NOT = { accepted_culture = aragonese }
+			}
+			add_accepted_culture = aragonese
+		}
+		if = {
+			limit = {
+				has_reform = crown_of_aragon_reform
+			}
+			add_government_reform = zaragoza_crown_of_aragon_reform
+		}
 		add_prestige = 10
 	}
 }

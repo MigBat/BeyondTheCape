@@ -114,6 +114,16 @@
 # Policies #
  recognition_of_local_hierarchies:0 "Recognition of Local Hierarchies"
 
+# Cultures #
+ valencian:0 "Valencian"
+ colonial_government_valencian:0 "Viceroyalty"
+ colonial_government_ruler_valencian:0 "Viceroy"
+ colonial_government_ruler_female_valencian:0 "Vicereine"
+ balearic:0 "Balearic"
+ colonial_government_balearic:0 "Viceroyalty"
+ colonial_government_ruler_balearic:0 "Viceroy"
+ colonial_government_ruler_female_balearic:0 "Vicereine"
+
 # Flagships #
  portuguese_mass_load_cannons:0 "Portuguese Mass Load Cannons"
  portuguese_mass_load_cannons_desc:0 "However many cannons the enemy puts on their flagship, we must have twice as many. No ship has ever sunk from having too many cannons."
