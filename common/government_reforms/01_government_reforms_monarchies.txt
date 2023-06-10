@@ -6605,3 +6605,24 @@ courts_of_navarra = {
 		has_parliament = yes
 	}
 }
+
+crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = aragonese
+	}
+	nation_designer_trigger = {
+		primary_culture = aragonese
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_upkeep = 2
+		num_accepted_cultures = 2
+		years_to_integrate_personal_union = -5
+	}
+	ai = {
+		factor = 1
+	}
+}

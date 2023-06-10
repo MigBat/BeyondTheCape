@@ -1,9 +1,13 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = crown_of_aragon_reform
 primary_culture = aragonese
 add_accepted_culture = catalan
 add_accepted_culture = sicilian
+add_accepted_culture = sardinian
+add_accepted_culture = maltese
 religion = catholic
+historical_friend = SAR
+historical_friend = SIC
 technology_group = western
 capital = 214	# Zaragoza
 add_army_professionalism = 0.05

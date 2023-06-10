@@ -19,12 +19,7 @@ discovered_by = ottoman
 
 add_province_triggered_modifier = san_juan_order_headquarters
 
-1409.7.25 = {
-	owner = ARA
-	controller = ARA
-	add_core = ARA
-	add_core = NAP
-} # Martin I inherits Sicily from his son
+
 1516.1.23 = {
 	owner = SPA
 	controller = SPA

@@ -1,0 +1,54 @@
+namespace = btc_gra
+normal_or_historical_nations = yes
+
+country_event = {
+	id = btc_ara.1
+	title = btc_ara.1_t
+	desc = btc_ara.1_d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {	# Naples
+		name = btc_ara.1a
+
+		set_capital = 121
+		if = {
+			limit = {
+				NOT = { accepted_culture = neapolitan }
+			}
+			add_accepted_culture = neapolitan
+		}
+		add_prestige = 10
+	}
+	option = {	# Barcelona
+		name = btc_ara.1b
+
+		set_capital = 213
+		if = {
+			limit = {
+				NOT = { accepted_culture = catalan }
+			}
+			add_accepted_culture = catalan
+		}
+		add_prestige = 10
+	}
+	option = {	# Valencia
+		name = btc_ara.1c
+
+		set_capital = 220
+		if = {
+			limit = {
+				NOT = { accepted_culture = catalan }
+			}
+			add_accepted_culture = catalan
+		}
+		add_prestige = 10
+	}
+	option = {	# Zaragoza
+		name = btc_ara.1d
+		
+		add_prestige = 10
+	}
+}
