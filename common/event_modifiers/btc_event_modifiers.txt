@@ -495,3 +495,9 @@ ibe_religious_missionary = {
 popes_papa = {
 	papal_influence = 1
 }
+
+finish_reconquista = {
+	land_morale = 0.1
+	warscore_cost_vs_other_religion = -0.25
+	global_manpower_modifier = 0.2
+}

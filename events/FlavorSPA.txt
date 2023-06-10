@@ -3019,7 +3019,7 @@ country_event = {
 		NOT = { has_country_flag = turned_down_columbus }
 		iberia_region = {
 			type = all
-			NOT = { owned_by = GRA }
+			NOT = { religion = catholic }
 		}
 		has_idea_group = exploration_ideas
 	}
