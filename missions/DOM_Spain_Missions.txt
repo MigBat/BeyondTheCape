@@ -1158,6 +1158,20 @@ dom_cas_missions_2_b = {
 					}
 					add_permanent_claim = ROOT
 				}
+				estremadura_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				norte_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
@@ -1170,6 +1184,8 @@ dom_cas_missions_2_b = {
 			OR = {
 				area = alentejo_area
 				area = beieras_area
+				area = estremadura_area
+				area = norte_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1182,6 +1198,14 @@ dom_cas_missions_2_b = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			beieras_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			estremadura_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			norte_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -3843,10 +3867,91 @@ dom_cas_missions_5_b = {
 		}
 	}
 	has_country_shield = yes
+
+	btc_ara_sicily = {
+		icon = mission_unite_home_region
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = sicily_area
+				area = western_sicily_area
+				province_id = 127
+				province_id = 4735
+				province_id = 2986
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			sicily_area = {
+				type = all
+				owned_by = ROOT
+			}
+			western_sicily_area = {
+				type = all
+				owned_by = ROOT
+			}
+			127 = {
+				owned_by = ROOT
+			}
+			4735 = {
+				owned_by = ROOT
+			}
+			2986 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			2986 = {
+				add_base_tax = 1
+				add_base_manpower = 1
+				add_base_production = 1
+			}
+			125 = {
+				add_base_tax = 1
+				add_base_manpower = 1
+				add_base_production = 1
+			}
+			calabria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			apulia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			120 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
 	
 	gc_ara_naples2 = {
 		icon = mission_unite_home_region
-		required_missions = {  }
+		required_missions = { btc_ara_sicily }
 		position = 2
 		provinces_to_highlight = {
 			OR = {
@@ -3916,6 +4021,9 @@ dom_cas_missions_5_b = {
 					}
 					add_permanent_claim = ROOT
 				}
+			}
+			country_event = {
+				id = btc_ara.1
 			}
 		}
 	}

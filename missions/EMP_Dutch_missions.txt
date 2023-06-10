@@ -703,6 +703,7 @@ emp_ned_slot3_branch = {
 				name = ned_dutch_overseas_trade
 				duration = 7300
 			}
+			discover_provinces = POR
 		}
 	}
 	

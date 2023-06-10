@@ -2810,6 +2810,8 @@ revive_the_almogavars_reform = {
 		OR = {
 			primary_culture = catalan
 			primary_culture = aragonese
+			primary_culture = valencian
+			primary_culture = balearic
 		}
 	}
 	trigger = {

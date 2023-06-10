@@ -57,6 +57,11 @@
  emp_ned_invest_in_the_rich_trade_title:1 "Invest in the Rich Trades"
  emp_ned_invest_in_the_rich_trade_desc:0 "There's richer commerce out there for us to become part of. The Portuguese are avid traders and explorers and they keep their secrets safe and hidden. Who knows what riches they know of? If we establish a commercial presence in their markets, our merchants will surely learn of new opportunities."
 
+# Aragon Missions #
+
+ btc_ara_sicily_title:0 "Integrate the Islands"
+ btc_ara_sicily_desc:0 "Sicily and Sardinia are subject to Aragonese rule, but we do not rule them directly. They must be fully integrated into Aragon."
+
 # Iberian Missions #
 
  btc_ibe_caribbean_title:0 "Dominate the Caribbean"

@@ -2936,3 +2936,31 @@ country_event = {
 		}
 	}
 }
+
+# Leiria Woods Burns Down #
+
+country_event = {
+	id = btc_por.143
+	title = btc_por.143_t
+	desc = btc_por.143_d
+	picture = VILLAGE_BURNING_eventPicture
+
+	trigger = {
+		1851 = {
+			has_province_modifier = pinhal_leiria
+			devastation = 50
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Damnation
+		name = btc_por.143a
+
+		1851 = {
+			remove_province_modifier = pinhal_leiria
+		}
+	}
+}

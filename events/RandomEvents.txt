@@ -10206,6 +10206,8 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
+					culture = valencian
+					culture = balearic
 				}
 			}
 		}
@@ -10226,6 +10228,8 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
+					culture = valencian
+					culture = balearic
 				}
 			}
 		}
@@ -10324,6 +10328,8 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
+						culture = valencian
+						culture = balearic
 					}
 				}
 			}
@@ -10341,6 +10347,8 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
+						culture = valencian
+						culture = balearic
 					}
 				}
 			}
@@ -10448,6 +10456,8 @@ country_event = {
 							culture = galician
 							culture = andalucian
 							culture = basque
+							culture = valencian
+							culture = balearic
 						}
 					}
 				}
@@ -10462,6 +10472,8 @@ country_event = {
 							culture = galician
 							culture = andalucian
 							culture = basque
+							culture = valencian
+							culture = balearic
 						}
 					}
 					save_event_target_as = mexican_province
@@ -10481,6 +10493,8 @@ country_event = {
 							culture = galician
 							culture = andalucian
 							culture = basque
+							culture = valencian
+							culture = balearic
 						}
 					}
 				}
@@ -10495,6 +10509,8 @@ country_event = {
 							culture = galician
 							culture = andalucian
 							culture = basque
+							culture = valencian
+							culture = balearic
 						}
 					}
 					save_event_target_as = platinean_province
@@ -10667,6 +10683,8 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
+					culture = valencian
+					culture = balearic
 				}
 			}
 			culture_group = iberian
@@ -10694,6 +10712,8 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
+						culture = valencian
+						culture = balearic
 					}
 				}
 				change_culture = mexican
@@ -10713,6 +10733,8 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
+					culture = valencian
+					culture = balearic
 				}
 			}
 			culture_group = iberian
@@ -10740,6 +10762,8 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
+					culture = valencian
+					culture = balearic
 				}
 			}
 			culture_group = iberian
@@ -10767,6 +10791,8 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
+						culture = valencian
+						culture = balearic
 					}
 				}
 				change_culture = platinean
@@ -10786,6 +10812,8 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
+					culture = valencian
+					culture = balearic
 				}
 			}
 			culture_group = iberian
@@ -10910,6 +10938,8 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
+						culture = valencian
+						culture = balearic
 					}
 				}
 				change_culture = louisianans

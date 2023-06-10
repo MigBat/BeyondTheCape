@@ -1,4 +1,6 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
+333;4559;sea;1300;-1;-1;-1;-1;Majorca-Minorca
+4560;333;sea;1295;-1;-1;-1;-1;Ibiza-Majorca
 6;12;sea;1258;3008;1633;3000;1630;Sk�ne-Sjaelland
 12;14;sea;1258;2980;1631;2975;1631;Sjaelland-Fyn
 14;4142;sea;1258;2965;1635;2963;1641;Fyn-Aarhus

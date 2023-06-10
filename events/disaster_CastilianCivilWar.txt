@@ -1235,6 +1235,24 @@ country_event = {
 			}
 		}
 		add_stability = 1
+		hidden_effect = {
+			if = {
+				limit = {
+					POR = {
+						has_heir_flag = isabel
+					}
+				}
+				set_country_flag = won_castilian_civil_war
+			}
+			if = {
+				limit = {
+					ARA = {
+						has_heir_flag = joanna
+					}
+				}
+				set_country_flag = won_castilian_civil_war
+			}
+		}
 	}
 
 	option = {
