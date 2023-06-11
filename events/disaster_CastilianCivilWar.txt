@@ -1242,7 +1242,7 @@ country_event = {
 						has_heir_flag = isabel
 					}
 				}
-				set_country_flag = won_castilian_civil_war
+				POR = { set_country_flag = won_castilian_civil_war }
 			}
 			if = {
 				limit = {
@@ -1250,7 +1250,7 @@ country_event = {
 						has_heir_flag = joanna
 					}
 				}
-				set_country_flag = won_castilian_civil_war
+				ARA = { set_country_flag = won_castilian_civil_war }
 			}
 		}
 	}
