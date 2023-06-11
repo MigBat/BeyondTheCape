@@ -1,0 +1,21 @@
+﻿l_english:
+
+ # Slavers #
+ estate_slavers:0 "Slavers"
+ slavers_loyalty_modifier:0 "Slavers Loyalty Equilibrium"
+ slavers_influence_modifier:0 "Slavers Influence"
+ slavers_privilege_slots:0 "Slavers Max Privileges"
+ estate_slavers_monopoly_of_slaves:0 "Monopoly on Slaves"
+ estate_slavers_monopoly_of_slaves_desc:0 "Our colonies demand regular shipments of slaves to bolster the production of plantations. Giving the Slavers full control over the trade in slaves is a sensible precaution to ensure that a ready supply of goods may be maintained."
+ estate_slavers_monopoly_of_slaves_effect_tooltip:0 "§RNo income from §YSlaves§!§!"
+ estate_slavers_monopoly_of_slaves_mod:0 "Monopoly on Slaves"
+ desc_estate_slavers_monopoly_of_slaves_mod:0 "The state has granted the Slavers monopoly rights over the slave trade to ensure that there are always sufficient victims available for sacrifice."
+ estate_slavers_monopoly_of_slaves_revoke_tooltip:0 "Production income from §YSlaves§! is restored"
+ this_slavers:0 "Slavers"
+ string_slavers_this:0 "Slavers"
+ country_estate_slavers_name:0 "Slavers"
+ estate_privileges_and_agendas_events.3.n:0 "The Proposal of the Slavers"
+
+ # Agendas #
+ estate_slavers_build_manufactory_in_y:0 "Build a Manufactory in [agenda_province.GetName]"
+ estate_slavers_build_manufactory_in_y_desc:0 "The Slavers of [agenda_province.GetName] request that we fund the construction of a new [agenda_province.GetManufactory]. They claim that it will be a highly profitable investment, doubling the province's output of [agenda_province.GetTradeGoodsName]."

@@ -1,0 +1,158 @@
+estate_slavers_build_manufactory_in_y = {
+	can_select = {
+		any_province = {
+			OR = {
+				owned_by = root
+				owned_by_subject_of = root
+			}
+			root_can_build_manufactory_here_trigger = yes
+			has_slavers_trade_good_trigger = yes
+		}
+		monthly_income = 30
+	}
+	selection_weight = {
+		factor = 2
+		modifier = {
+			factor = 0.5
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_income = 40 }
+		}
+		modifier = {
+			factor = 2
+			monthly_income = 60
+		}
+		modifier = {
+			factor = 2
+			is_institution_enabled = manufactories
+			NOT = { has_institution = manufactories }
+		}
+	}
+	pre_effect = {
+		random_province = {
+			limit = {
+				OR = {
+					owned_by = root
+					owned_by_subject_of = root
+				}
+				root_can_build_manufactory_here_trigger = yes
+				has_slavers_trade_good_trigger = yes
+			}
+			save_event_target_as = agenda_province
+		}
+		random_province = {
+			limit = {
+				OR = {
+					owned_by = root
+					owned_by_subject_of = root
+				}
+				base_production = 5
+				root_can_build_manufactory_here_trigger = yes
+				has_slavers_trade_good_trigger = yes
+			}
+			save_event_target_as = agenda_province
+		}
+		random_province = {
+			limit = {
+				OR = {
+					owned_by = root
+					owned_by_subject_of = root
+				}
+				base_production = 10
+				root_can_build_manufactory_here_trigger = yes
+				has_slavers_trade_good_trigger = yes
+			}
+			save_event_target_as = agenda_province
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { owned_by_subject_of = root }
+			}
+		}
+	}
+    task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_slavers
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_slavers
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				custom_trigger_tooltip = {
+					tooltip = has_manufactory_trigger_tooltip
+					OR = {
+						if = {
+							limit = {
+								trade_goods = slaves
+							}
+							has_building = tradecompany
+						}
+						else = {
+							has_building = plantations
+						}
+						has_building = ramparts
+						has_building = soldier_households
+						has_building = impressment_offices
+						has_building = state_house
+					}
+				}
+			}
+		}
+    }
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_slavers
+		}
+		add_estate_loyalty = {
+			estate = estate_slavers
+			loyalty = 10
+		}
+		event_target:agenda_province = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = prospering_production
+				duration = 5475
+			}
+		}
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+		event_target:agenda_province = {
+			if = {
+				limit = { 
+					OR = {
+						owned_by = root 
+						owned_by_subject_of = root
+					}
+				}
+				add_named_unrest = {
+					name = local_slavers_displeased
+					value = 5
+				}
+			}
+		}
+        add_estate_loyalty_modifier = {
+            estate = estate_slavers
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
