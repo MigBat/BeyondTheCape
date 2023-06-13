@@ -505,3 +505,18 @@ finish_reconquista = {
 estate_slavers_monopoly_of_slaves_mod = {
 	local_production_efficiency = -10
 }
+
+estate_slavers_plantation_production = {
+	trade_goods_size = 1
+	local_unrest = 2
+}
+
+estate_slavers_gold_mining = {
+	trade_goods_size = 1
+	local_unrest = 2
+}
+
+slave_garrison = {
+	garrison_growth = 0.25
+	fort_level = 1
+}

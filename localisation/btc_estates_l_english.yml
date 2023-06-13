@@ -7,15 +7,81 @@
  slavers_privilege_slots:0 "Slavers Max Privileges"
  estate_slavers_monopoly_of_slaves:0 "Monopoly on Slaves"
  estate_slavers_monopoly_of_slaves_desc:0 "Our colonies demand regular shipments of slaves to bolster the production of plantations. Giving the Slavers full control over the trade in slaves is a sensible precaution to ensure that a ready supply of goods may be maintained."
- estate_slavers_monopoly_of_slaves_effect_tooltip:0 "§RNo income from §YSlaves§!§!"
- estate_slavers_monopoly_of_slaves_mod:0 "Monopoly on Slaves"
- desc_estate_slavers_monopoly_of_slaves_mod:0 "The state has granted the Slavers monopoly rights over the slave trade to ensure that there are always sufficient victims available for sacrifice."
- estate_slavers_monopoly_of_slaves_revoke_tooltip:0 "Production income from §YSlaves§! is restored"
+
  this_slavers:0 "Slavers"
  string_slavers_this:0 "Slavers"
  country_estate_slavers_name:0 "Slavers"
- estate_privileges_and_agendas_events.3.n:0 "The Proposal of the Slavers"
+ estate_privileges_and_agendas_events.3.s:0 "The Proposal of the Slavers"
+ estate_privileges_and_agendas_events.6.s:0 "Sell it to the Slavers"
+ estate_privileges_and_agendas_events.7.s:0 "Seize it from the Slavers"
 
  # Agendas #
  estate_slavers_build_manufactory_in_y:0 "Build a Manufactory in [agenda_province.GetName]"
  estate_slavers_build_manufactory_in_y_desc:0 "The Slavers of [agenda_province.GetName] request that we fund the construction of a new [agenda_province.GetManufactory]. They claim that it will be a highly profitable investment, doubling the province's output of [agenda_province.GetTradeGoodsName]."
+
+ estate_slavers_build_trade_building_in_y:0 "Expand Trade Infrastructure in [agenda_province.GetName]"
+ estate_slavers_build_trade_building_in_y_desc:0 "The Slavers claim that the marketplace in [agenda_province.GetName] is too small to suit their needs. They request that we invest in a larger market, which they say will greatly increase the prosperity of the province and the country as a whole."
+
+ estate_slavers_build_port_building_in_y:0 "Expand Port Infrastructure in [agenda_province.GetName]"
+ estate_slavers_build_port_building_in_y_desc:0 "The Slavers call for the expansion of [agenda_province.GetName]'s port facilities, allowing the province to develop into a valuable naval base for our nation."
+
+ estate_slavers_build_production_building_in_y:0 "Expand Production Efficiency in [agenda_province.GetName]"
+ estate_slavers_build_production_building_in_y_desc:0 "The entrepreneurs among the Slavers of [agenda_province.GetName] ask that we invest in their province's production infrastructure. They claim that the expanded facilities they propose would greatly increase the prosperity of the province and the country as a whole."
+
+ estate_slavers_slave_trade:0 "Control the Slave Trade"
+ estate_slavers_slave_trade_desc:0 "Among the opportunities that our outposts in West Africa offer are the chance to establish control over the sources of high-quality slaves. The Slavers urge us to make their acquisition our priority."
+
+ estate_slavers_protect_against_piracy:0 "Protect against Piracy"
+ estate_slavers_protect_against_piracy_desc:0 "The Slavers bemoan their losses from piracy in the Ivory Coast. They beseech us to take action to drive out the pirates and privateers that are plundering their slave ships."
+
+ estate_slavers_hire_advisor:0 "Hire a Diplomatic Advisor"
+ estate_slavers_fire_advisor:0 "Fire our Diplomatic Advisor"
+ estate_slavers_hire_advisor_desc:0 "The Slavers desire the [Root.Monarch.GetTitle] to hire a new diplomatic advisor."
+ estate_slavers_fire_advisor_desc:0 "[Root.Dip_Advisor.GetTitle] [Root.Dip_Advisor.GetName] has insulted the Slavers. They demand that we fire [Root.Dip_Advisor.GetHerHim]!"
+
+ # Privileges #
+
+ estate_slavers_monopoly_of_slaves_mod:0 "Monopoly on Slaves"
+ desc_estate_slavers_monopoly_of_slaves_mod:0 "The state has granted the Slavers monopoly rights over the slave trade to ensure that there are always sufficient victims available for sacrifice."
+ estate_slavers_monopoly_of_slaves_effect_tooltip:0 "§RNo income from §YSlaves§!§!"
+ estate_slavers_monopoly_of_slaves_revoke_tooltip:0 "Production income from §YSlaves§! is restored"
+
+ estate_slavers_boost_production_in_colony:0 "Send Slaves to the Plantations"
+ estate_slavers_boost_production_in_colony_desc:0 "The goods of the New World are in high demand back in Europe. In order to profit the most, we should send cheap labor over to boost production."
+ estate_slavers_boost_production_in_colony_tt:0 "Every province in the §YNew World§! owned by [Root.GetName] and their subjects producing §YSugar§!, §YCocoa§!, §YCoffee§!, §YCotton§!, §YTobacco§! and §YTea§! gains:\nLocal Goods Produced: §G+1§!\nLocal Unrest: §R+2§!"
+ estate_slavers_plantation_production:0 "Slave Plantations"
+ desc_estate_slavers_plantation_production:0 "The plantations here are worked mainly by slaves brought from Africa."
+
+ estate_slavers_raid_coasts:0 "Raiding Expeditions"
+ estate_slavers_raid_coasts_desc:0 "By putting our efforts in capturing slaves ourselves rather than buying them, we can make quite a bit of profit, although this will damage relations with whomever we are taking the slaves from."
+
+ estate_slavers_gold_mine_slaves:0 "Send Slaves to the Gold Mines"
+ estate_slavers_gold_mine_slaves_desc:0 "The New World is full of gold for the taking. The faster we mine it, the faster we get rich! Let's send over some cheap labor for maximum profit."
+ estate_slavers_gold_mine_slaves_tt:0 "Every province in the §YNew World§! owned by [Root.GetName] and their subjects producing §YGold§! gains:\nLocal Goods Produced: §G+1§!\nLocal Unrest: §R+2§!"
+ estate_slavers_gold_mining:0 "Slave Gold Mines"
+ desc_estate_slavers_gold_mining:0 "The gold mines here are worked mainly by slaves brought from Africa."
+
+ estate_slavers_slaves_to_europe:0 "Send Slaves to Europe"
+ estate_slavers_slaves_to_europe_desc:0 "There is more use to these slaves than working plantations or mines. With proper encouragement they can serve the nobles' households or as a source of their entertainment."
+
+ estate_slavers_grow_colonies:0 "Develop New Colonies"
+ estate_slavers_grow_colonies_desc:0 "Not everyone wishes to depart the comfort of their home country to sail across the Atlantic and settle there. In these circumstances, it would be best to look at other sources of labour, cheaper and more abundant."
+
+ estate_slavers_feitoria_defenses_tt:0 "Every province owned by [Root.GetName] with a §YFeitoria§! gains:\nGarrison Growth: §G+25%§!\nFort Level: §+1§!"
+ estate_slavers_feitoria_defenses:0 "Bolster Feitoria Garrisons"
+ estate_slavers_feitoria_defenses_desc:0 "We don't have enough manpower to properly replenish the garrisons of our feitorias. We could send properly trained slaves to protect these important trade posts."
+ slave_garrison:0 "Slave Garrison"
+ desc_slave_garrison:0 "This Feitoria has slaves as part of its garrison."
+
+ # Disasters #
+
+ estate_disasters.30.t:0 "The Slavers Seize Power"
+ estate_disasters.30.d:0 "$MONARCH$ has allowed the Slavers of $COUNTRY$ to grow too powerful and now they have made their move. Making use of their many hard-earned privileges as well as the many debts owed to them, they have effectively seized the reins of government and turned the $MONARCHTITLE$ into little more than their puppet."
+ estate_disasters.30.a:0 "We should have seen this coming..."
+ estate_disasters.30.a.tt:0 "[Root.GetName] will now be controlled by the §YSlavers§! until the §Y'Curtail the Slavers'§! decision is taken."
+ estate_disasters.31.t:0 "The Slavers Curtailed"
+ estate_disasters.31.d:0 "We have finally managed to break our reliance on the Slavers, reclaiming control over all important state functions and reducing these peddlers to their rightful confines within the city walls."
+ estate_disasters.31.a:0 "The $MONARCHTITLE$ is back in control."
+ EST_CRUSHED_SLAVERS:0 "The Slavers have been curtailed"
+ estate_slavers_disaster:0 "Slaver Guilds Coup"
+ estate_slavers_disaster_desc:0 "The cities and guilds have grown so powerful they assumed de facto control over our country. Real power now lies in the hands of a small group of wealthy Slavers."

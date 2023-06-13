@@ -1900,7 +1900,7 @@ gulf_of_guinea_area = { #4
 }
 
 benin_area = { #4
-	1147 2289 2290 2294 1141
+	1147 2289 2290 2294
 }
 
 sao_tome_area = { #2
@@ -1908,11 +1908,11 @@ sao_tome_area = { #2
 }
 
 west_africa_coast_area = { #5
-    1126 1139 2258 1118 1119
+    1126 1139 2258 4964 1141
 }
 
 guinea_coast_area = { #4
-    
+	1118 4963 1119
 }
 
 south_atlantic_islands_area = { #2

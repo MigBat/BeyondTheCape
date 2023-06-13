@@ -916,6 +916,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/privileges/estate_burghers_sindicat_remensa_privilege.dds"
 	}
 
+	# Beyond the Cape #
 
+	spriteType = {
+		name = "raid_coast_privilege"
+		texturefile = "gfx/interface/privileges/raid_coast_privilege.dds"
+	}
+
+	spriteType = {
+		name = "privilege_gold"
+		texturefile = "gfx/interface/privileges/privilege_gold.dds"
+	}
+
+	spriteType = {
+		name = "prosperity_privilege"
+		texturefile = "gfx/interface/privileges/prosperity_privilege.dds"
+	}
 	
 }

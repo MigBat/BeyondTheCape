@@ -4858,6 +4858,7 @@ defined_text = {
 	text = { localisation_key = estate_nomadic_tribes_disaster			trigger = { has_disaster = estate_nomadic_tribes_disaster } }
 	text = { localisation_key = estate_rajput_disaster					trigger = { has_disaster = estate_rajput_disaster } }
 	text = { localisation_key = estate_vaisyas_disaster					trigger = { has_disaster = estate_vaisyas_disaster } }
+	text = { localisation_key = estate_slavers_disaster					trigger = { has_disaster = estate_slavers_disaster } }
 	text = { localisation_key = fall_of_majapahit						trigger = { has_disaster = fall_of_majapahit } }
 	text = { localisation_key = french_revolution						trigger = { has_disaster = french_revolution } }
 	text = { localisation_key = french_wars_of_religion					trigger = { has_disaster = french_wars_of_religion } }

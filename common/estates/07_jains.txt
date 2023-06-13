@@ -96,6 +96,7 @@ estate_jains = {
 				has_disaster = estate_burghers_disaster
 				has_disaster = estate_brahmins_disaster
 				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_slavers_disaster
 			}
 		}
 		influence = -40
@@ -110,6 +111,7 @@ estate_jains = {
 				has_disaster = estate_burghers_disaster
 				has_disaster = estate_brahmins_disaster
 				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_slavers_disaster
 			}
 		}
 		loyalty = -20

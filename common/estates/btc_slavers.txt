@@ -1,6 +1,8 @@
 estate_slavers = {
 	icon = 14
 
+	color = { 95 41 29}
+
 	# If true, country will get estate
 	trigger = {
 		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -37,6 +39,7 @@ estate_slavers = {
 		capital_scope = {
 			continent = europe
 		}
+		num_of_ports = 1
 		NOT = { has_country_modifier = the_abolish_slavery_act }
 	}
 
@@ -97,17 +100,25 @@ estate_slavers = {
 		loyalty = -20
 	}
 
-	color = { 1 1 1 }
-
 	privileges = {
 		estate_slavers_monopoly_of_slaves
+		estate_slavers_boost_production_in_colony
+		estate_slavers_gold_mine_slaves
+		estate_slavers_slaves_to_europe
+		estate_slavers_raid_coasts
+		estate_slavers_grow_colonies
+		estate_slavers_feitoria_defenses
 	}
 
 	agendas = {
-		# estate_slavers_develop_x
+		estate_slavers_build_trade_building_in_y
+		estate_slavers_build_port_building_in_y
+		estate_slavers_build_production_building_in_y
 		estate_slavers_build_manufactory_in_y
-		# estate_slavers_hire_advisor
-		# estate_slavers_fire_advisor
+		estate_slavers_slave_trade
+		estate_slavers_protect_against_piracy
+		estate_slavers_hire_advisor
+		estate_slavers_fire_advisor
 	}
 	influence_from_dev_modifier = 1.0
 }

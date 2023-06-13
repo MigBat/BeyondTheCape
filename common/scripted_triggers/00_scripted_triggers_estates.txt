@@ -106,6 +106,9 @@ has_exempt_from_seize_land_for_estate_eunuchs = {
 		has_estate_privilege = estate_eunuchs_single_whip_law_privilege
 	}
 }
+has_exempt_from_seize_land_for_estate_slavers = {
+	has_estate_privilege = estate_slavers_raid_coasts
+}
 
 estate_has_exempt_from_seize_land_privilege = {
 	has_estate = $estate$
@@ -167,6 +170,7 @@ any_estate_loyalty = {
 		if = { limit = { has_estate = estate_vaisyas }			estate_loyalty = { estate = estate_vaisyas			loyalty = $loyalty$ } }
 		if = { limit = { has_estate = estate_janissaries }		estate_loyalty = { estate = estate_janissaries		loyalty = $loyalty$ } }
 		if = { limit = { has_estate = estate_eunuchs }			estate_loyalty = { estate = estate_eunuchs			loyalty = $loyalty$ } }
+		if = { limit = { has_estate = estate_slavers }			estate_loyalty = { estate = estate_slavers			loyalty = $loyalty$ } }
 	}
 }
 
@@ -669,7 +673,14 @@ has_estate_agenda_of_estate_eunuchs = {
 }
 has_estate_agenda_of_estate_slavers = {
 	OR = {
+		has_active_estate_agenda = estate_slavers_build_trade_building_in_y
+		has_active_estate_agenda = estate_slavers_build_port_building_in_y
+		has_active_estate_agenda = estate_slavers_build_production_building_in_y
 		has_active_estate_agenda = estate_slavers_build_manufactory_in_y
+		has_active_estate_agenda = estate_slavers_slave_trade
+		has_active_estate_agenda = estate_slavers_protect_against_piracy
+		has_active_estate_agenda = estate_slavers_hire_advisor
+		has_active_estate_agenda = estate_slavers_fire_advisor
 	}
 }
 
