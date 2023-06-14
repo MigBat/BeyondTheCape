@@ -4459,6 +4459,25 @@ on_revoke_estate_land = {
 		}
 		province_event = { id = burghers_estate_events.16 }
 	}
+	# Beyond the Cape #
+	if = {
+		limit = {
+			has_estate = estate_slavers
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = leadered_peasant_rebels
+			size = 1
+		}
+		province_event = { id = slavers_estate_events.4 }
+	}
 	if = {
 		limit = {
 			has_estate = estate_nomadic_tribes

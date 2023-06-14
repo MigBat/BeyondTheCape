@@ -85,3 +85,27 @@
  EST_CRUSHED_SLAVERS:0 "The Slavers have been curtailed"
  estate_slavers_disaster:0 "Slaver Guilds Coup"
  estate_slavers_disaster_desc:0 "The cities and guilds have grown so powerful they assumed de facto control over our country. Real power now lies in the hands of a small group of wealthy Slavers."
+
+ # Events #
+
+ burghers_estate_events.9.t:0 "Cottage Industry"
+ burghers_estate_events.9.d:1 "Economic development is not always without conflict. It seems rich merchants in some of our $ESTATE_BURGHERS$-dominated cities have been attempting to bypass various guild privileges by outsourcing work to the homes of families living outside the city. The fact that this 'Putting-out System' has been a very profitable strategy only further enflames the anger of the artisans in the city, who feel their ancient rights have been trampled and that the carefully managed prices of their products will suffer. The [Root.GetAdjective] artisans now turn to the [Root.Monarch.GetTitle] to defend their privileges as the city council has been unable to root out competition from outside the city."
+
+ slavers_estate_events.1.t:0 "Advancement of the Slaver Guilds"
+ slavers_estate_events.1.d:0 "The Slavers have had to make their own fortunes by working diligently and then risking the profit to again expand their businesses. As a rule, however, this has gone very well for them lately. While not as prestigious business is in many ways the backbone of our economy and through their control of the coins the Slavers have managed to increase their power over our country."
+ slavers_estate_events.2.t:0 "Decline of the Slaver Guilds"
+ slavers_estate_events.2.d:0 "The status and influence of the Slavers is rarely quite as secure as that of those born into power. Lately a combination of financial misfortune and misdirected political ambitions have resulted in a loss of power and influence for the Slavers of [Root.GetName]."
+ slavers_estate_events.3.t:0 "Outside Competition"
+ slavers_estate_events.3.d:0 "Slave trading is not always without conflict. It seems rich merchants in some of our Slaver-dominated cities have been attempting to bypass various guild privileges by outsourcing work to brigands living outside the city. The fact that this has been a very profitable strategy only further enflames the anger of the other slavers in the city, who feel their rights have been trampled and that the carefully managed prices of their slaves will suffer. The Slavers now turn to the [Root.Monarch.GetTitle] to defend their privileges as the city council has been unable to root out competition from the brigands."
+ slavers_estate_events.4.t:0 ""
+ slavers_estate_events.4.d:0 ""
+ slavers_estate_events.5.t:0 ""
+ slavers_estate_events.5.d:0 ""
+ slavers_estate_events.6.t:0 ""
+ slavers_estate_events.6.d:0 ""
+
+ EST_VAL_SLAVERS_ADVANCE:0 "Advancement of the Slaver Guilds: §Y$VAL$%§!"
+ EST_VAL_SLAVERS_ADVANCE_20:0 "Advancement of the Slaver Guilds: §Y$VAL$%§!"
+ EST_VAL_SLAVERS_DECLINE:0 "Decline of the Slaver Guilds: §Y$VAL$%§!"
+ EST_VAL_SLAVERS_PROTO_CAPITALISTS:0 "Growth of the Putting-Out System: §Y$VAL$%§!"
+ EST_VAL_SLAVER_ADMINISTRATION:0 "Slavers in Administration: §Y$VAL$%§!"

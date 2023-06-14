@@ -520,3 +520,26 @@ slave_garrison = {
 	garrison_growth = 0.25
 	fort_level = 1
 }
+
+slavers_conflict_within_city = {
+	local_unrest = 8
+}
+
+slavers_thankful_guilds = {
+	local_unrest = -2
+	local_goods_produced = 0.5
+}
+
+slaver_administration = {
+	cannons_for_hunting_pirates_in_fleet = 1
+	yearly_corruption = -0.02
+}
+
+slavers_addressing_social_banditry = {
+	local_autonomy = 0.5
+	local_production_efficiency = -0.66
+}
+
+slavers_social_banditry_modifer = {
+	province_trade_power_modifier = -0.33
+}
