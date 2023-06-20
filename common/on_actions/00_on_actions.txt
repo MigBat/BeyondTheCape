@@ -4473,7 +4473,7 @@ on_revoke_estate_land = {
 			}
 		}
 		spawn_rebels = {
-			type = leadered_peasant_rebels
+			type = particularist_rebels
 			size = 1
 		}
 		province_event = { id = slavers_estate_events.4 }
