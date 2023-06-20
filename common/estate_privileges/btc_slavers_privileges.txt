@@ -1,0 +1,478 @@
+estate_slavers_monopoly_of_slaves = {
+	icon = privilege_monopoly_of_goods_slaves
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	is_valid = {
+		OR = {
+			has_dlc = "Emperor"
+			has_country_flag = buffed_monopolies
+		}
+		any_owned_province = {
+			trade_goods = slaves
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = unavailable_during_revolution_disaster
+			NOT = { has_disaster = revolution }
+			NOT = {
+				has_disaster_progress = {
+					disaster = revolution
+					value = 1
+				}
+			}
+			NOT = { has_disaster = french_revolution }
+			NOT = {
+				has_disaster_progress = {
+					disaster = french_revolution
+					value = 1
+				}
+			}
+		}
+	}
+	on_granted = {
+		if = {
+			limit = {
+				slaves = 1
+			}
+			add_mercantilism = 1
+		}
+		add_years_of_owned_provinces_production_income = {
+			years = 8
+			trigger = {
+				trade_goods = slaves
+			}
+			custom_tooltip = MONOPOLY_INCOME_SLAVES_DESC
+		}
+		custom_tooltip = estate_slavers_monopoly_of_slaves_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				trade_goods = slaves
+			}
+			add_province_modifier = {
+				name = estate_slavers_monopoly_of_slaves_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_slavers_monopoly_of_slaves_mod
+			}
+			remove_province_modifier = estate_slavers_monopoly_of_slaves_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_slavers_monopoly_of_slaves_revoke_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_slavers_monopoly_of_slaves_mod
+			}
+			remove_province_modifier = estate_slavers_monopoly_of_slaves_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_slavers_monopoly_of_slaves_revoke_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_slavers_monopoly_of_slaves_mod
+			}
+			remove_province_modifier = estate_slavers_monopoly_of_slaves_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 10
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = buffed_monopolies
+		}
+		modifier = {
+			max_absolutism = 10
+			slavers_privilege_slots = 1
+		}
+	}
+	on_cooldown_expires = {
+		country_event = { id = monopoly_privileges.11 }
+	}
+	ai_will_do = { #having the AI use these could lead to an unstoppable downwards spiral if it can't work out how to get rid of them
+		factor = 0
+	}
+}
+
+estate_slavers_raid_coasts = {
+	icon = raid_coast_privilege
+	max_absolutism = -10
+	influence = 0.2
+	is_valid = {
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_slavers_raid_coasts }
+	}
+	on_granted = {
+	}
+	on_granted_province = {
+	}
+	on_revoked = {
+	}
+	on_revoked_province = {
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+	}
+	penalties = {
+	}
+	benefits = {
+		may_perform_slave_raid = yes
+	}
+	mechanics = { exempt_from_seize_land }
+	cooldown_years = 10
+	ai_will_do = { #can potentially be game breaking
+		factor = 0
+	}
+}
+
+estate_slavers_boost_production_in_colony = {
+	icon = privilege_serf
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		any_subject_country = {
+			is_colonial_nation_of = root
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					trade_goods = sugar
+					trade_goods = cocoa
+					trade_goods = coffee
+					trade_goods = cotton
+					trade_goods = tea
+					trade_goods = tobacco
+				}
+			}
+		}
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_slavers_boost_production_in_colony }
+	}
+	on_granted = {
+		custom_tooltip = estate_slavers_boost_production_in_colony_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					OR = {
+						owned_by = root
+						owner = {
+							is_colonial_nation_of = root
+						}
+					}
+					OR = {
+						trade_goods = sugar
+						trade_goods = cocoa
+						trade_goods = coffee
+						trade_goods = cotton
+						trade_goods = tea
+						trade_goods = tobacco
+					}
+				}
+				add_province_modifier = {	# +1 local goods produced +2 local unrest
+					name = estate_slavers_plantation_production
+					duration = -1
+				}
+			}
+			every_subject_country = {
+				limit = {
+					is_subject_of = root
+					capital_scope = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
+				set_country_flag = can_estate_slavers_boost_production_in_colony
+			}
+		}
+	}
+	on_granted_province = {
+	}
+	on_revoked = {
+		every_province = {
+			limit = {
+				OR = {
+					owned_by = root
+					owner = {
+						is_colonial_nation_of = root
+					}
+				}
+				has_province_modifier = estate_slavers_plantation_production
+			}
+			remove_province_modifier = estate_slavers_plantation_production
+		}
+	}
+	on_revoked_province = {
+	}
+	on_invalid = {
+		every_province = {
+			limit = {
+				OR = {
+					owned_by = root
+					owner = {
+						is_colonial_nation_of = root
+					}
+				}
+				has_province_modifier = estate_slavers_plantation_production
+			}
+			remove_province_modifier = estate_slavers_plantation_production
+		}
+	}
+	on_invalid_province = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_slavers_gold_mine_slaves = {
+	icon = privilege_gold
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		any_subject_country = {
+			is_colonial_nation_of = root
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = gold
+			}
+		}
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_slavers_gold_mine_slaves }
+	}
+	on_granted = {
+		custom_tooltip = estate_slavers_gold_mine_slaves_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					OR = {
+						owned_by = root
+						owner = {
+							is_colonial_nation_of = root
+						}
+					}
+					trade_goods = gold
+				}
+				add_province_modifier = {	# +1 local goods produced +2 local unrest
+					name = estate_slavers_gold_mining
+					duration = -1
+				}
+			}
+			every_subject_country = {
+				limit = {
+					is_subject_of = root
+					capital_scope = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
+				set_country_flag = can_estate_slavers_gold_mine_slaves
+			}
+		}
+	}
+	on_granted_province = {
+	}
+	on_revoked = {
+		every_province = {
+			limit = {
+				OR = {
+					owned_by = root
+					owner = {
+						is_colonial_nation_of = root
+					}
+				}
+				has_province_modifier = estate_slavers_gold_mining
+			}
+			remove_province_modifier = estate_slavers_gold_mining
+		}
+	}
+	on_revoked_province = {
+	}
+	on_invalid = {
+		every_province = {
+			limit = {
+				OR = {
+					owned_by = root
+					owner = {
+						is_colonial_nation_of = root
+					}
+				}
+				has_province_modifier = estate_slavers_gold_mining
+			}
+			remove_province_modifier = estate_slavers_gold_mining
+		}
+	}
+	on_invalid_province = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_slavers_slaves_to_europe = {
+	icon = prosperity_privilege
+	max_absolutism = -5
+	influence = 0.1
+	loyalty = -0.05
+	is_valid = {
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_slavers_slaves_to_europe }
+	}
+	on_granted = {
+	}
+	on_granted_province = {
+	}
+	on_revoked = {
+	}
+	on_revoked_province = {
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+	}
+	penalties = {
+		reduced_liberty_desire_on_other_continent = -10
+	}
+	benefits = {
+		global_prosperity_growth = 0.5
+		stability_cost_modifier = -0.1
+		estate_nobles_loyalty_modifier = 0.1
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_slavers_grow_colonies = {
+	icon = privilege_grant_new_world_charter
+	max_absolutism = -5
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_slavers_grow_colonies }
+	}
+	on_granted = {
+	}
+	on_granted_province = {
+	}
+	on_revoked = {
+	}
+	on_revoked_province = {
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+	}
+	penalties = {
+	}
+	benefits = {
+		global_colonial_growth = 20
+		colony_cost_modifier = -0.25
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_slavers_feitoria_defenses = {
+	icon = privilege_fort
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+		any_owned_province = {
+			has_province_modifier = feitoria
+		}
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_slavers_feitoria_defenses }
+	}
+	on_granted = {
+		custom_tooltip = estate_slavers_feitoria_defenses_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = feitoria
+				}
+				add_province_modifier = {
+					name = slave_garrison
+					duration = -1
+				}
+			}
+		}
+	}
+	on_granted_province = {
+	}
+	on_revoked = {
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = slave_garrison
+			}
+			remove_province_modifier = slave_garrison
+		}
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = slave_garrison
+			}
+			remove_province_modifier = slave_garrison
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 10
+	}
+}

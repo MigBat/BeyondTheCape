@@ -4459,6 +4459,25 @@ on_revoke_estate_land = {
 		}
 		province_event = { id = burghers_estate_events.16 }
 	}
+	# Beyond the Cape #
+	if = {
+		limit = {
+			has_estate = estate_slavers
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = particularist_rebels
+			size = 1
+		}
+		province_event = { id = slavers_estate_events.4 }
+	}
 	if = {
 		limit = {
 			has_estate = estate_nomadic_tribes
@@ -5552,6 +5571,53 @@ on_golden_bull_enacted = {
 on_conquest = {
 	remove_named_unrest = estate_land_seized
 	clr_province_flag = has_estate_unrest_flag
+	if = {
+		limit = {
+			owner = { 
+				OR = {
+					has_estate_privilege = estate_slavers_gold_mine_slaves
+					has_country_flag = can_estate_slavers_gold_mine_slaves
+				}
+			}
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+			NOT = { has_province_modifier = estate_slavers_gold_mining }
+			trade_goods = gold
+		}
+		add_province_modifier = {	# +1 local goods produced +2 local unrest
+			name = estate_slavers_gold_mining
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = { 
+				OR = {
+					has_estate_privilege = estate_slavers_boost_production_in_colony
+					has_country_flag = can_estate_slavers_boost_production_in_colony
+				}
+			}
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+			NOT = { has_province_modifier = estate_slavers_plantation_production }
+			OR = {
+				trade_goods = sugar
+				trade_goods = cocoa
+				trade_goods = cotton
+				trade_goods = coffee
+				trade_goods = tea
+				trade_goods = tobacco
+			}
+		}
+		add_province_modifier = {	# +1 local goods produced +2 local unrest
+			name = estate_slavers_plantation_production
+			duration = -1
+		}
+	}
 	if = {
 		limit = { 
 			is_part_of_hre = no

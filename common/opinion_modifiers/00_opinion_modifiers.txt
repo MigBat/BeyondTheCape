@@ -177,11 +177,11 @@ in_same_trade_league = {
 }
 
 consort_marriage_ties = {
-	opinion = 5
+	opinion = 10
 }
 
 consort_regent_marriage_ties = { # Goes under consort_marriage_ties in interface
-	opinion = 15
+	opinion = 20
 }
 
 religious_school_relation = {

@@ -1387,7 +1387,7 @@ iberian	= {
 	}
 	aragonese = {
 		country = { } 
-		province = { local_has_caravel = yes local_has_galleon = yes }
+		province = { local_has_caravel local_has_galleon = yes }
 		primary = ARA
 		dynasty_names = {
 			"d'Aragó" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
@@ -1534,10 +1534,22 @@ iberian	= {
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = POR
 		dynasty_names = {
-			"de Aviz" "de Bragança" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo" 
-			"de Moura" "de Nápoles" "de Menezes" "de Saldanha" 
+			"de Avis" "de Bragança" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo" 
+			"da Moura" "de Nápoles" "de Menezes" "de Saldanha" "de Borgonha"
 			#CK2
 			"da Câmara" "da Maia" "de Abrantes" "de Moura Barreto" "de Sousa"
+			#Noble Families
+			"d'Aboim" "d'Abreu" "d'Aguiar" "da Albergaria" "d'Almada" "d'Almeida" "d'Andrade"
+			"da Arca" "d'Ataíde" "d'Azevedo" "Barreto" "Bethancourt" "de Borges" "de Brito"
+			"Cabral" "de Carvalho" "Castel-Branco" "de Castro" "da Penha Verde" "Cerveira"
+			"Coelho" "Corte-Real" "da Costa" "Coutinho" "da Cunha" "Eça" "de Faria"
+			"Febos Monis" "Ferreira" "da Gama" "Góios" "de Góis" "Gouveia" "Henriques"
+			"de Lemos" "de Lima" "Lobato" "Lobo" "Malafaya" "Manuel" "Mascarenhas"
+			"da Meira" "de Melo" "de Mendonça" "de Miranda" "de Meneses" "da Mota"
+			"de Nogueira" "de Noronha" "Pacheco" "Pereira" "Pessanha" "de Pestana"
+			"Pimentel" "Pinto" "de Queiroz" "Ribeiro" "de Sá" "Sampaio" "de Sequeira"
+			"da Serpa" "da Silva" "Sotomaior" "de Sousa" "Tavares" "da Távora" "Teixeira"
+			"Valente" "de Vasconcelos" "Vieira"
 		}
 		male_names = {
 			João Filipe Afonso Pedro António Duarte Henrique José Manuel Sebastião Miguel Teodósio Dinis 

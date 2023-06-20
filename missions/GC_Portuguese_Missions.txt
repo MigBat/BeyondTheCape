@@ -1239,7 +1239,7 @@ gc_por_3 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_west_africa
-				west_africa_coast_area = {
+				guinea_region = {
 					has_discovered = ROOT
 				}
 			}

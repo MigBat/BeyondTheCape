@@ -463,6 +463,7 @@ guinea_region = {
 		west_africa_coast_area
 		jolof_area
 		sao_tome_area
+		kaabu_area
 	}
 	monsoon = {
 		00.06.01

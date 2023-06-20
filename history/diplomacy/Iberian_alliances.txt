@@ -1,10 +1,9 @@
 ## Beyond the Cape ##
-
 # Sicily and Aragon
 union = {
 	first = ARA
 	second = SIC
-	start_date = 1401.5.26
+	start_date = 1409.6.25
 	end_date = 1458.7.25
 }
 
@@ -12,7 +11,7 @@ union = {
 union = {
 	first = ARA
 	second = SAR
-	start_date = 1412.1.1
+	start_date = 1409.6.30
 	end_date = 1458.6.27
 }
 

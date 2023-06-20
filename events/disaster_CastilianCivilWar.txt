@@ -62,7 +62,7 @@ country_event = {
 		set_country_flag = civil_war_in_castile
 
 		ai_chance = {
-			factor = 1
+			factor = 25
 			modifier = {
 				factor = 0
 				war_with = POR
@@ -118,7 +118,7 @@ country_event = {
 		set_country_flag = civil_war_in_castile
 
 		ai_chance = {
-			factor = 1
+			factor = 75
 			modifier = {
 				factor = 0
 				war_with = ARA

@@ -5,38 +5,38 @@
 
 # BEYOND THE CAPE #
 
-btc_triangle_trade = {
-	potential = {
-		num_of_ports = 1
-		capital_scope = {
-			continent = europe
-		}		
-	}
+# btc_triangle_trade = {
+# 	potential = {
+# 		num_of_ports = 1
+# 		capital_scope = {
+# 			continent = europe
+# 		}		
+# 	}
 
-	trigger = {
-		custom_trigger_tooltip = {
-			tooltip = triangle_happened_tt
-			has_global_flag = triangle_happened
-		}
-		num_of_colonists = 1
-		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-			value = 1
-			OR = {
-				region = guinea_region
-				region = kongo_region
-			}
-		}
-		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-			value = 1
-			OR = {
-				continent = north_america
-				continent = south_america
-			}
-		}
-	}
+# 	trigger = {
+# 		custom_trigger_tooltip = {
+# 			tooltip = triangle_happened_tt
+# 			has_global_flag = triangle_happened
+# 		}
+# 		num_of_colonists = 1
+# 		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+# 			value = 1
+# 			OR = {
+# 				region = guinea_region
+# 				region = kongo_region
+# 			}
+# 		}
+# 		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+# 			value = 1
+# 			OR = {
+# 				continent = north_america
+# 				continent = south_america
+# 			}
+# 		}
+# 	}
 
-	global_colonial_growth = 30
-}
+# 	global_colonial_growth = 30
+# }
 
 ###########################################
 # Discovery of the East Indian trade route.
