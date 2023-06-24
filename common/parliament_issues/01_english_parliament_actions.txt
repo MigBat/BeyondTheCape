@@ -74,7 +74,17 @@ english_french_act_of_union = {
 		change_tag = AVE
 		hidden_effect = {
 			on_change_tag_effect = yes
-			restore_country_name = yes
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_country_flag = ave_theocracy_name }
+						NOT = { has_country_flag = ave_republic_name }
+						NOT = { has_country_flag = ave_state_name }
+						NOT = { has_country_flag = ave_empire_name }
+					}
+				}
+				restore_country_name = yes
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {

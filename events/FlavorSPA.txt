@@ -2808,11 +2808,21 @@ country_event = { #The Infantes of Aragon
 			spawn_rebels = {
 				type = noble_rebels
 				size = 2
+				leader = "Alvaro de Luna"
 				win = yes 
 				should_take_capital = yes
 			}
 		}
-		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_leader = "Alvaro de Luna"
+				}
+				kill_leader = {
+					type = "Alvaro de Luna"
+				}
+			}
+		}
 		custom_tooltip = cas_impact_mission_tt
 	}
 }
@@ -2841,7 +2851,6 @@ country_event = { # End of the Infantes
 				estate = estate_nobles 
 				loyalty = 20 
 			}
-			kill_leader = { type = "Alvaro de Luna" }
 			custom_tooltip = spa_no_isabella_event_tt
 			set_country_flag = no_isabella_event_flag
 		}

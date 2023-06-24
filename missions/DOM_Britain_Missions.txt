@@ -2968,15 +2968,33 @@ ave_row_4 = {
 		trigger = {
 			picardy_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owner = { 
+					OR = { 
+						tag = ROOT 
+						is_subject_of = ROOT 
+						overlord = { is_subject_of = ROOT }
+					}
+				}
 			}
 			west_burgundy_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owner = { 
+					OR = { 
+						tag = ROOT 
+						is_subject_of = ROOT 
+						overlord = { is_subject_of = ROOT }
+					}
+				}
 			}
 			bourgogne_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owner = { 
+					OR = { 
+						tag = ROOT 
+						is_subject_of = ROOT 
+						overlord = { is_subject_of = ROOT }
+					}
+				}
 			}
 		}
 		

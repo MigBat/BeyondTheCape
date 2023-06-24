@@ -1387,7 +1387,7 @@ iberian	= {
 	}
 	aragonese = {
 		country = { } 
-		province = { local_has_caravel local_has_galleon = yes }
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = ARA
 		dynasty_names = {
 			"d'Aragó" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"

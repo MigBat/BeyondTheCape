@@ -2793,6 +2793,7 @@ country_event = {
 		tag = TUR
 		NOT = { is_year = 1455 }
 		NOT = { owns = 151 }
+		years_of_income = 0.3
 	}
 	
 	mean_time_to_happen = {
@@ -3434,13 +3435,27 @@ country_event = {
 					is_lesser_in_union = no
 					dynasty = "von Habsburg"
 				}
-				if = {
-					limit = {
-						has_heir = yes
+				tooltip = {
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						kill_heir = { allow_new_heir = no }
 					}
-					kill_heir = { allow_new_heir = no }
+					kill_ruler = yes
 				}
-				kill_ruler = yes
+				hidden_effect = {
+					define_ruler = {
+						age = 20
+						claim = 75
+					}
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						kill_heir = { allow_new_heir = no }
+					}
+				}
 			}
 			add_government_reform = eyalet_government
 			eyalet_effect = {
@@ -4141,6 +4156,9 @@ country_event = {
 					}
 				}
 				every_owned_province = {
+					limit = {
+						region = italy_region
+					}
 					remove_core = PREV
 					if = {
 						limit = { NOT = { is_core = ROOT } }

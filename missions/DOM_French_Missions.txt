@@ -1248,7 +1248,7 @@ french_missions_1_Continuation_a = {
 					limit = { has_country_flag = FRA_supports_catholic_majority }
 					add_country_modifier = {
 						name = fra_catholic_supremacy_modifier
-						duration = 9125 
+						duration = -1
 					}
 					set_defender_of_the_faith = {
 						who = ROOT 

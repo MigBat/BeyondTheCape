@@ -1021,12 +1021,6 @@ estate_nobles_strong_duchies = {
 			}
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
-		NOT = {
-			AND = {
-				tag = FRA
-				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
-			}
-		}
 	}
 	can_select = {
 		custom_trigger_tooltip = {
@@ -1204,12 +1198,7 @@ estate_nobles_nieszawa_privileges = {
 	is_valid = {
 		has_estate_privilege = estate_nobles_nieszawa_privileges #event privilege for Poland
 	}
-	can_revoke = {
-		custom_trigger_tooltip = { #revoke Golden Liberty or do it via event
-			tooltip = estate_privilege_cannot_be_revoked
-			always = no
-		}
-	}
+	can_revoke = no
 	penalties = {
 		technology_cost = 0.05
 	}
@@ -1230,12 +1219,7 @@ estate_nobles_pacta_conventa = {
 	is_valid = {
 		has_estate_privilege = estate_nobles_pacta_conventa #event privilege for Poland
 	}
-	can_revoke = {
-		custom_trigger_tooltip = { #revoke Golden Liberty or do it via event
-			tooltip = estate_privilege_cannot_be_revoked
-			always = no
-		}
-	}
+	can_revoke = no
 	penalties = {
 		war_exhaustion_cost = 0.5
 		inflation_action_cost = 0.5
@@ -2401,12 +2385,7 @@ estate_nobles_early_serfdom = {
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_increased_peasant_freedom }
 	}
-	can_revoke = {
-		custom_trigger_tooltip = {
-			tooltip = estate_privilege_cannot_be_revoked
-			always = no
-		}
-	}
+	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
 		block_estate_removing_reforms = {
@@ -2488,12 +2467,7 @@ estate_nobles_legalized_serfdom = {
 		NOT = { has_country_flag = level_three_serfdom_privileges }
 		NOT = { has_country_flag = final_serfdom_privileges }
 	}
-	can_revoke = {
-		custom_trigger_tooltip = {
-			tooltip = estate_privilege_cannot_be_revoked
-			always = no
-		}
-	}
+	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
 		block_estate_removing_reforms = {
@@ -2567,19 +2541,14 @@ estate_nobles_total_serfdom = {
 		OR = {
 			has_estate_privilege = estate_nobles_total_serfdom
 			has_country_flag = level_three_serfdom_privileges
+			}
+			NOT = { has_country_flag = liberated_peasants }
+			NOT = { has_country_flag = final_serfdom_privileges }
 		}
-		NOT = { has_country_flag = liberated_peasants }
-		NOT = { has_country_flag = final_serfdom_privileges }
-	}
-	can_revoke = {
-		custom_trigger_tooltip = {
-			tooltip = estate_privilege_cannot_be_revoked
-			always = no
-		}
-	}
-	on_granted = {
-		custom_tooltip = estate_privilege_cannot_be_revoked
-		block_estate_removing_reforms = {
+		can_revoke = no
+		on_granted = {
+			custom_tooltip = estate_privilege_cannot_be_revoked
+			block_estate_removing_reforms = {
 			estate = estate_nobles
 		}
 		set_country_flag = rus_enacted_early_serfdom_flag
@@ -2650,12 +2619,7 @@ estate_nobles_restricted_serfdom = {
 		has_estate_privilege = estate_nobles_restricted_serfdom
 		NOT = { has_country_flag = liberated_peasants }
 	}
-	can_revoke = {
-		custom_trigger_tooltip = {
-			tooltip = estate_privilege_cannot_be_revoked
-			always = no
-		}
-	}
+	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
 		block_estate_removing_reforms = {
@@ -2729,12 +2693,7 @@ estate_nobles_devastating_serfdom = {
 		has_estate_privilege = estate_nobles_devastating_serfdom
 		NOT = { has_country_flag = liberated_peasants }
 	}
-	can_revoke = {
-		custom_trigger_tooltip = {
-			tooltip = estate_privilege_cannot_be_revoked
-			always = no
-		}
-	}
+	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
 		block_estate_removing_reforms = {
@@ -2813,12 +2772,7 @@ estate_nobles_increased_peasant_freedom = {
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_early_serfdom }
 	}
-	can_revoke = {
-		custom_trigger_tooltip = {
-			tooltip = estate_privilege_cannot_be_revoked
-			always = no
-		}
-	}
+	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
 		block_estate_removing_reforms = {
@@ -2895,12 +2849,7 @@ estate_nobles_peasant_liberation = {
 		has_country_flag = level_two_serfdom_privileges
 		NOT = { has_country_flag = enserfed_peasants }
 	}
-	can_revoke = {
-		custom_trigger_tooltip = {
-			tooltip = estate_privilege_cannot_be_revoked
-			always = no
-		}
-	}
+	can_revoke = no
 	on_granted = {
 		custom_tooltip = estate_privilege_cannot_be_revoked
 		block_estate_removing_reforms = {
