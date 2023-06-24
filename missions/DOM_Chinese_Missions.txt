@@ -620,12 +620,41 @@ ming_missions_1_b = {
 	potential = {
 		has_dlc = "Domination"
 		is_emperor_of_china = yes 
-		OR = { 
-			tag = QNG 
-			culture_group = east_asian
-			has_country_flag = enable_emperor_of_china_missions_flag
-		}
+		#OR = { 
+		#	culture_group = east_asian
+		#	has_country_flag = enable_emperor_of_china_missions_flag
+		#}
 		capital_scope = { continent = asia }
+		OR = {
+			tag = MNG
+			tag = QNG 
+			tag = MCH 
+			tag = YAN
+			tag = JIN
+			tag = QIN
+			tag = QIC
+			tag = CSH
+			tag = LNG
+			tag = TNG
+			tag = CXI
+			tag = CHC
+			tag = WUU
+			tag = NNG
+			tag = MIN
+			tag = HUA
+			tag = YUE
+			tag = CMI
+			tag = CYI
+			tag = CDL
+			tag = CGS
+			tag = SHU 
+			tag = FRM
+			tag = MJZ
+			tag = MYR
+			tag = EJZ
+			tag = NHX
+			tag = MHX
+		}
 	}
 	has_country_shield = yes 
 
@@ -778,8 +807,19 @@ ming_missions_1_b = {
 		}
 		
 		effect = {
-			custom_tooltip = mng_enable_3_grand_coordinators_offices_tt
-			set_country_flag = mng_enable_3_grand_coordinators_offices_flag 
+			if = {
+				limit = { has_dlc = "Golden Century" }
+				custom_tooltip = mng_enable_3_grand_coordinators_offices_tt
+				set_country_flag = mng_enable_3_grand_coordinators_offices_flag 
+			}
+			else = {
+				add_corruption = -2
+				change_government_reform_progress = 100
+				change_ruler_stat = {
+					stat = adm
+					amount = 1
+				}
+			}
 		}
 	}
 }
@@ -801,6 +841,7 @@ ming_missions_1_c = {
 		position = 9 
 		
 		trigger = {
+			reform_level = 10 
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = mng_has_had_crisis_disaster_tt
@@ -1780,12 +1821,41 @@ ming_missions_2_b = {
 	potential = {
 		has_dlc = "Domination"
 		is_emperor_of_china = yes 
-		OR = { 
-			tag = QNG 
-			culture_group = east_asian
-			has_country_flag = enable_emperor_of_china_missions_flag
-		}
+		#OR = {
+		#	culture_group = east_asian
+		#	has_country_flag = enable_emperor_of_china_missions_flag
+		#}
 		capital_scope = { continent = asia }
+		OR = {
+			tag = MNG
+			tag = QNG 
+			tag = MCH 
+			tag = YAN
+			tag = JIN
+			tag = QIN
+			tag = QIC
+			tag = CSH
+			tag = LNG
+			tag = TNG
+			tag = CXI
+			tag = CHC
+			tag = WUU
+			tag = NNG
+			tag = MIN
+			tag = HUA
+			tag = YUE
+			tag = CMI
+			tag = CYI
+			tag = CDL
+			tag = CGS
+			tag = SHU 
+			tag = FRM
+			tag = MJZ
+			tag = MYR
+			tag = EJZ
+			tag = NHX
+			tag = MHX
+		}
 	}
 	has_country_shield = yes 
 	
@@ -2109,20 +2179,17 @@ ming_missions_2_b = {
 				
 				if = {
 					limit = {
-						OR = {
-							NOT = { has_harmonized_with = pagan }
-							NOT = { has_harmonized_with = vajrayana }
-						}
+						NOT = { has_harmonized_with = pagan }
+						NOT = { has_harmonized_with = vajrayana }
 						religion = confucianism
-						has_reform = decentralize_reform
 					}
+					change_government_reform_progress = -250
 					add_harmonized_religion = pagan
 					add_harmonized_religion = vajrayana
-					add_harmony = 10 
-					change_government_reform_progress = -250
+					add_harmony = 10
 				}
-				else_if = {
-					limit = { has_reform = decentralize_reform } 
+				else = {
+					change_government_reform_progress = -250
 					add_country_modifier = {
 						name = mng_decentralized_migration_modifier
 						duration = -1 
@@ -2275,8 +2342,7 @@ ming_missions_2_b = {
 		
 		trigger = {
 			OR = {
-				custom_trigger_tooltip = {
-					tooltip = mng_5_tribs_with_opinion_and_lib_desire_tt
+			
 					calc_true_if = {
 						all_subject_country = {
 							is_subject_of_type_with_overlord = { who = ROOT type = tributary_state }
@@ -2286,9 +2352,10 @@ ming_missions_2_b = {
 								value = 120 
 							}
 						}
+						desc = mng_5_tribs_with_opinion_and_lib_desire_tt
 						amount = 5
 					}
-				}
+				
 				calc_true_if = {
 					all_ally = {
 						has_opinion = {
@@ -2699,7 +2766,7 @@ chinese_kingdoms_3 = {
 				if = {
 					limit = { 
 						is_in_war = {
-							attackers = ROOT 
+							attacker_leader = ROOT 
 							casus_belli = cb_independence_war
 							war_score = 25 
 						}
@@ -3953,12 +4020,41 @@ ming_missions_3_b = {
 	potential = {
 		has_dlc = "Domination"
 		is_emperor_of_china = yes 
-		OR = { 
-			tag = QNG 
-			culture_group = east_asian
-			has_country_flag = enable_emperor_of_china_missions_flag
-		}
+		#OR = {
+		#	culture_group = east_asian
+		#	has_country_flag = enable_emperor_of_china_missions_flag
+		#}
 		capital_scope = { continent = asia }
+		OR = {
+			tag = MNG
+			tag = QNG 
+			tag = MCH 
+			tag = YAN
+			tag = JIN
+			tag = QIN
+			tag = QIC
+			tag = CSH
+			tag = LNG
+			tag = TNG
+			tag = CXI
+			tag = CHC
+			tag = WUU
+			tag = NNG
+			tag = MIN
+			tag = HUA
+			tag = YUE
+			tag = CMI
+			tag = CYI
+			tag = CDL
+			tag = CGS
+			tag = SHU 
+			tag = FRM
+			tag = MJZ
+			tag = MYR
+			tag = EJZ
+			tag = NHX
+			tag = MHX
+		}
 	}
 	has_country_shield = yes 
 	
@@ -5221,12 +5317,41 @@ ming_missions_4_b = {
 	potential = {
 		has_dlc = "Domination"
 		is_emperor_of_china = yes 
-		OR = { 
-			tag = QNG 
-			culture_group = east_asian
-			has_country_flag = enable_emperor_of_china_missions_flag
-		}
+		#OR = {
+		#	culture_group = east_asian
+		#	has_country_flag = enable_emperor_of_china_missions_flag
+		#}
 		capital_scope = { continent = asia }
+		OR = {
+			tag = MNG
+			tag = QNG 
+			tag = MCH 
+			tag = YAN
+			tag = JIN
+			tag = QIN
+			tag = QIC
+			tag = CSH
+			tag = LNG
+			tag = TNG
+			tag = CXI
+			tag = CHC
+			tag = WUU
+			tag = NNG
+			tag = MIN
+			tag = HUA
+			tag = YUE
+			tag = CMI
+			tag = CYI
+			tag = CDL
+			tag = CGS
+			tag = SHU 
+			tag = FRM
+			tag = MJZ
+			tag = MYR
+			tag = EJZ
+			tag = NHX
+			tag = MHX
+		}
 	}
 	has_country_shield = yes 	
 	
@@ -5513,15 +5638,44 @@ ming_missions_4_moh = {
 	generic = no
 	ai = yes
 	potential = {
-		is_emperor_of_china = yes 
-		OR = { 
-			tag = QNG 
-			culture_group = east_asian
-			has_country_flag = enable_emperor_of_china_missions_flag
-		}
-		capital_scope = { continent = asia }
-		has_dlc = "Mandate of Heaven" 
 		has_dlc = "Domination"
+		has_dlc = "Mandate of Heaven"
+		is_emperor_of_china = yes 
+		#OR = {
+		#	culture_group = east_asian
+		#	has_country_flag = enable_emperor_of_china_missions_flag
+		#}
+		capital_scope = { continent = asia }
+		OR = {
+			tag = MNG
+			tag = QNG 
+			tag = MCH 
+			tag = YAN
+			tag = JIN
+			tag = QIN
+			tag = QIC
+			tag = CSH
+			tag = LNG
+			tag = TNG
+			tag = CXI
+			tag = CHC
+			tag = WUU
+			tag = NNG
+			tag = MIN
+			tag = HUA
+			tag = YUE
+			tag = CMI
+			tag = CYI
+			tag = CDL
+			tag = CGS
+			tag = SHU 
+			tag = FRM
+			tag = MJZ
+			tag = MYR
+			tag = EJZ
+			tag = NHX
+			tag = MHX
+		} 
 	}
 	has_country_shield = yes 
 
@@ -6413,12 +6567,41 @@ ming_missions_5_b = {
 	potential = {
 		has_dlc = "Domination"
 		is_emperor_of_china = yes 
-		OR = { 
-			tag = QNG 
-			culture_group = east_asian
-			has_country_flag = enable_emperor_of_china_missions_flag
-		}
+		#OR = {  
+		#	culture_group = east_asian
+		#	has_country_flag = enable_emperor_of_china_missions_flag
+		#}
 		capital_scope = { continent = asia }
+		OR = {
+			tag = MNG 
+			tag = QNG 
+			tag = MCH 
+			tag = YAN
+			tag = JIN
+			tag = QIN
+			tag = QIC
+			tag = CSH
+			tag = LNG
+			tag = TNG
+			tag = CXI
+			tag = CHC
+			tag = WUU
+			tag = NNG
+			tag = MIN
+			tag = HUA
+			tag = YUE
+			tag = CMI
+			tag = CYI
+			tag = CDL
+			tag = CGS
+			tag = SHU 
+			tag = FRM
+			tag = MJZ
+			tag = MYR
+			tag = EJZ
+			tag = NHX
+			tag = MHX
+		}
 	}
 	has_country_shield = yes 
 	
@@ -7562,23 +7745,3 @@ DOM_Qing_Missions_5_b = {
 		}
 	}
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	

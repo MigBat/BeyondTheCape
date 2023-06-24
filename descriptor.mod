@@ -1,4 +1,4 @@
-version="1.0.5"
+version="1.0.10"
 tags={
 	"Balance"
 	"Map"
@@ -13,5 +13,5 @@ tags={
 }
 name="Beyond the Cape"
 picture="thumbnail.png"
-supported_version="1.35.3"
+supported_version="1.35.4"
 remote_file_id="2966858781"

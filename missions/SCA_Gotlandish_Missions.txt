@@ -1423,7 +1423,7 @@ got_republic_slot_3 = {
 	}
 }
 
-#Gotland Pirate missions - gets shared with Pirate Rügen
+#Gotland Pirate missions
 got_pirate_slot_1 = {
 	slot = 1
 	generic = no

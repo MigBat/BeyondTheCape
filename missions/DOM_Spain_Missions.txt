@@ -262,6 +262,7 @@ dom_cas_missions_1 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				custom_tooltip = cas_armada_info_tt
 			}
 		}
 	}
@@ -570,13 +571,57 @@ dom_cas_missions_1_b = {
 				}
 				add_permanent_claim = ROOT 
 			}
-			
+			if = {
+				limit = { 
+					NOT = { mission_completed = gc_ara_naples2 }
+				}
+				provence_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 			if = { 
 				limit = { 
 					has_dlc = "Rights of Man" 
 					NOT = { num_of_ruler_traits = { amount = 3 } }
 				}				
 				add_ruler_personality = entrepreneur_personality 
+			}
+			if = {
+				limit = { 
+					NOT = { mission_completed = gc_ara_occitania2 }
+				}
+				savoy_dauphine_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				languedoc_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				guyenne_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				pyrenees_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			add_mercantilism = 5 
 		}
@@ -1856,7 +1901,10 @@ dom_cas_missions_3 = {
 					valid_for_personal_unions_trigger = yes
 					POR = {
 						valid_for_personal_unions_trigger = yes
-						NOT = { alliance_with = ROOT marriage_with = ROOT }
+						NOT = { 
+							alliance_with = ROOT 
+							marriage_with = ROOT 
+						}
 					}
 				}
 				add_casus_belli = {
@@ -1871,8 +1919,10 @@ dom_cas_missions_3 = {
 					valid_for_personal_unions_trigger = yes
 					POR = {
 						valid_for_personal_unions_trigger = yes
-						alliance_with = ROOT 
-						marriage_with = ROOT 
+						OR = {
+							alliance_with = ROOT 
+							marriage_with = ROOT 
+						}
 					}
 				}
 				custom_tooltip = spa_pu_por_tt
@@ -3071,7 +3121,7 @@ dom_cas_missions_4_b = {
 				name = ara_med_claim_modifier
 				duration = 5475
 			}
-			capital_scope = {
+			213 = {
 				add_building = shipyard 
 				add_base_production = 1
 			}
@@ -3914,6 +3964,8 @@ dom_cas_missions_5_b = {
 				add_base_manpower = 1
 				add_base_production = 1
 			}
+			add_accepted_culture = sicilian
+			add_accepted_culture = sardinian
 			calabria_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -4049,7 +4101,7 @@ dom_cas_missions_5_b = {
 		effect = {
 			if = {
 				limit = { 
-					NOT = { mission_completed = gc_ara_occitania2 }
+					NOT = { mission_completed = gc_ara_genoa2 }
 				}
 				savoy_dauphine_area = {
 					limit = {
