@@ -344,6 +344,7 @@ renaissance = {
 		is_state = yes
 		NOT = { province_id = 126 }
 		is_island = no
+		owner = { is_subject = no }
 		OR = {
 			development = 20
 			is_capital = yes

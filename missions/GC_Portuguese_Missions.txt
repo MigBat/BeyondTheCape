@@ -250,6 +250,48 @@ gc_por_1_b = {
 		is_random_new_world = no
 	}
 	has_country_shield = yes
+
+	
+
+	btc_por_terra_nova = {
+		icon = mission_rb_cod_wars
+		required_missions = { gc_por_discover_african_coast }
+		position = 5
+
+		provinces_to_highlight = {
+			area = newfoundland_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_canada
+				newfoundland_area = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_canada
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					area = newfoundland_area
+					is_city = yes
+				}
+			}
+		}
+
+		effect = {
+			add_navy_tradition = 5
+			add_mercantilism = 2
+			change_price = {
+				trade_goods = fish 
+				key = cod_fishing_key
+				value = 0.5
+				duration = 9125
+			}
+		}
+	}
 	
 	gc_por_portugal_discovers_south_america = {
 		icon = colonize_brazil
@@ -783,54 +825,17 @@ gc_por_2_b = {
 				manuever = 5
 				siege = 2
 				trait = cunning_navigator_personality
-			}			
-		}
-	}
-
-	btc_por_terra_nova = {
-		icon = mission_rb_cod_wars
-		required_missions = { btc_por_go_west }
-		position = 6
-
-		provinces_to_highlight = {
-			colonial_region = colonial_canada
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			has_discovered = ROOT
-		}
-		
-		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = miss_discover_canada
-				colonial_canada = {
-					has_discovered = ROOT
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = miss_colonize_canada
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 1
-					colonial_region = colonial_canada
-					is_city = yes
-				}
-			}
-		}
-
-		effect = {
-			add_navy_tradition = 5
-			add_mercantilism = 2
-			change_price = {
-				trade_goods = fish 
-				key = cod_fishing_key
-				value = 0.5
-				duration = 9125
-			}
+			}	
+			country_event = {
+				id = btc_por.144
+			}		
 		}
 	}
 	
 	gc_por_caribbean = {
 		icon = mission_colonize_the_caribbean
-		required_missions = { btc_por_terra_nova }
-		position = 7
+		required_missions = { btc_por_go_west }
+		position = 6
 		
 		provinces_to_highlight = {
 			region = carribeans_region
@@ -1731,7 +1736,7 @@ gc_por_4_a = {
 
 		trigger = {
 			OR = {
-				navigator = 3
+				is_advisor_employed = 617
 				has_idea_group = exploration_ideas
 			}
 			has_discovered = 1469
@@ -1750,7 +1755,7 @@ gc_por_4_a = {
 			}
 			if = {
 				limit = {
-					navigator = 3
+					is_advisor_employed = 617
 				}
 				add_country_modifier = {
 					name = por_henry_cheaper

@@ -2964,3 +2964,24 @@ country_event = {
 		}
 	}
 }
+
+# João Vaz Corte Real #
+
+country_event = {
+	id = btc_por.144
+	title = btc_por.144_t
+	desc = btc_por.144_d
+	picture = VILLAGE_BURNING_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Great
+		name = btc_por.144a
+
+		discover_province = 1480
+	}
+}
