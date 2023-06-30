@@ -80,7 +80,19 @@ country_event = {
 	option = {		# The King is tricked
 		name = "flavor_por.EVTOPTA3267"
 		ai_chance = { factor = 75 }
-		add_stability_or_adm_power = yes
+		add_stability = 1
+		227 = {
+			spawn_rebels = {
+				size = 1
+				type = noble_rebels
+			}
+		}
+		add_ruler_personality = strict_personality
+		remove_ruler_personality = expansionist_personality
+		add_ruler_modifier = {
+			name = duke_of_braganza
+			duration = -1
+		}
 		if = {
 			limit = {
 				is_advisor_employed = 617

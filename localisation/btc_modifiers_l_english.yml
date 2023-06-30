@@ -274,6 +274,8 @@
  desc_ibe_pax_iberica:0 "We are the great Eagle of Roman Legacy. Our magnificent Empire thrones above the world, ready to stand the test of time. May our glory shine for eternity."
  popes_papa:0 "Pope Subject"
  didnt_popes_papa:0 "The Pope is our subject"
+ duke_of_braganza:0 "The Duke of Bragança"
+ desc_duke_of_braganza:0 "Afonso of Bragança is a natural son of João I. He gained the favour of [Root.Monarch.GetName] after turning him against Pedro of Coimbra."
 
 # Other Events #
  paria_paid:0 "Paria Paid"

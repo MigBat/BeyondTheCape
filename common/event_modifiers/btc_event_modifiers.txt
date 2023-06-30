@@ -554,3 +554,8 @@ slavers_addressing_social_banditry = {
 slavers_social_banditry_modifer = {
 	province_trade_power_modifier = -0.33
 }
+
+duke_of_braganza = {
+	land_morale = 0.05
+	war_exhaustion = -0.02
+}
