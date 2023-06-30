@@ -809,6 +809,13 @@ emp_ned_slot3_branch = {
 			create_admiral = {
 				tradition = 80
 			}
+			colonial_australia = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			set_country_flag = ned_nova_hollandia_flag
 		}
 	}
@@ -1150,6 +1157,20 @@ emp_ned_slot4_colony_branch = {
 			add_country_modifier = {
 				name = "the_unknown_frontier"
 				duration = 5475
+			}
+			colonial_eastern_america = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			colonial_brazil = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}

@@ -819,7 +819,14 @@ gc_por_2_b = {
 				manuever = 5
 				siege = 2
 				trait = cunning_navigator_personality
-			}		
+			}	
+			colonial_brazil = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
 		}
 	}
 	
