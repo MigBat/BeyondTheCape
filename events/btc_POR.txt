@@ -2154,10 +2154,8 @@ country_event = {
 		clr_country_flag = deal_rejected
 		add_years_of_income = 1
 		add_permanent_claim = 2030
-		add_country_modifier = {
-			name = mare_clausum
-			duration = 7300
-		}
+		custom_tooltip = mare_clausum_tt
+		set_country_flag = mare_clausum
 	}
 }
 

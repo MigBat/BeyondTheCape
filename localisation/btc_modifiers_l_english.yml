@@ -30,6 +30,13 @@
  desc_alcantara_order_headquarters:0 "This order calls home the town of Alcántara."
  san_juan_order_headquarters:0 "Order of San Juan Headquarters"
  desc_san_juan_order_headquarters:0 "This order calls home the town of Mdina."
+
+# Spice Wars #
+
+ por_spice_monopoly_wars_triggered_modifier:0 "The Spice Monopoly Conflict"
+ desc_por_spice_monopoly_wars_triggered_modifier:0 "We've made our way to the Indian Ocean. Now it is time to claim its riches for ourselves."
+ mam_spice_monopoly_wars_triggered_modifier:0 "The Spice Monopoly Conflict"
+ desc_mam_spice_monopoly_wars_triggered_modifier:0 "The Portuguese have circumvented Africa and established a presence in the Indian Ocean, disrupting the ancient Silk Road trade that is so profitable to us."
  
 # Irmandino Revolts #
  galician_revolts:0 "Galician Revolts"
@@ -201,8 +208,8 @@
  desc_extra_flagship:0 "The pride of our navy now has a rival."
  mare_clausum:0 "Mare Clausum"
  desc_mare_clausum:0 "The Pope has decreed that the Indian Ocean is righfully the property of the Kingdom of Portugal. Naturally, it's up to the Portuguese to enforce their borders from the disrespectful infidels."
- mini_mare_clausum:0 "Legacy of Albuquerque"
- desc_mini_mare_clausum:0 "Albuquerque's plan bore fruit, and we have effectively establish a monopoly in the Indian Ocean."
+#  mini_mare_clausum:0 "Legacy of Albuquerque"
+#  desc_mini_mare_clausum:0 "Albuquerque's plan bore fruit, and we have effectively establish a monopoly in the Indian Ocean."
  port_wine:0 "Port Wine"
  desc_port_wine:0 "The famous Port wine is produced here, in the valleys of the Douro river."
  methuen_treaty:0 "Methuen Treaty"

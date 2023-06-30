@@ -1163,10 +1163,10 @@ gc_por_2_e = {
 		}
 	
 		effect = {
-			add_country_modifier = {
-				name = mini_mare_clausum
-				duration = -1
-			}
+			# add_country_modifier = {
+			# 	name = mini_mare_clausum
+			# 	duration = -1
+			# }
 			hidden_effect = {
 				384 = {
 					owner = {
