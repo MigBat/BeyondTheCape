@@ -1144,6 +1144,37 @@ country_event = {
 			value = -0.4
 			duration = -1
 		}
+		if = {
+			limit = {
+				POR = {
+					has_country_flag = battle_of_diu
+				}
+			}
+			4346 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}		
+			}
+			1334 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}			
+			}
+			1340 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}		
+			}
+			504 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}		
+			}
+		}
 	}
 }
 

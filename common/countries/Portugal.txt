@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = { 90 140 190 }
+color = { 90 140 255 }
 revolutionary_colors = { 9 8 5 }
 
 historical_score = 4700
@@ -53,7 +53,7 @@ monarch_names = {
 	"Carlos #0" = 5
 	"Diego #0" = 0
 	"Jaime #0" = 0
-	"Luís #0" = 5
+	"Luis #0" = 5
 	"Álvaro #0" = 0
 	"André #0" = 0
 	"MONARCH_NAME_ANTONIO_FRANCISCO" = 0
@@ -159,5 +159,5 @@ army_names = {
 }
 
 fleet_names = {
-	"Armada Real" "Armada de $PROVINCE$" "Esquadra de $PROVINCE$" "Frota de $PROVINCE$"  "Armada do Atlântico" "Esquadra do Atlântico" "Frota do Atlântico" "Armada do Brasil" "Esquadra do Brasil" "Frota do Brasil" "Armada da Guiné" "Esquadra da Guiné" "Frota da Guiné" "Armada do Cabo" "Esquadra do Cabo" "Frota do Cabo" "Armada do Índico" "Esquadra do Índico" "Frota do Índico" "Armada do Estreito" "Esquadra do Estreito" "Frota do Estreito" "Armada do Extremo Oriente" "Esquadra do Extremo Oriente" "Frota do Extremo Oriente""Armada do Pacífico" "Esquadra do Pacífico" "Frota do Pacífico"
+	"Armada Real" "Armada de $PROVINCE$" "Esquadra de $PROVINCE$" "Frota de $PROVINCE$"  "Armada do Atlâtico" "Esquadra do Atlântico" "Frota do Atlântico" "Armada do Brasil" "Esquadra do Brasil" "Frota do Brasil" "Armada da Guiné" "Esquadra da Guiné" "Frota da Guiné" "Armada do Cabo" "Esquadra do Cabo" "Frota do Cabo" "Armada do Índico" "Esquadra do Índico" "Frota do Índico" "Armada do Estreito" "Esquadra do Estreito" "Frota do Estreito" "Armada do Extremo Oriente" "Esquadra do Extremo Oriente" "Frota do Extremo Oriente""Armada do Pacífico" "Esquadra do Pacífico" "Frota do Pacífico"
 }

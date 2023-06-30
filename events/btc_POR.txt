@@ -325,7 +325,7 @@ country_event = {
 	}
 }
 
-# Marquês de Pombal
+# Marquï¿½s de Pombal
 
 country_event = {
 	id = btc_por.4
@@ -340,7 +340,7 @@ country_event = {
 		
 		define_advisor = {
 			type = statesman
-			name = "Marquês of Pombal"
+			name = "Marquï¿½s of Pombal"
 			skill = 3
 			cost_multiplier = 0.25
 		}
@@ -617,7 +617,7 @@ country_event = {
 		}
 	}
 	
-	option = {	# The Marquês has the situation under control
+	option = {	# The Marquï¿½s has the situation under control
 		name = btc_por.7E
 		
 		highlight = yes
@@ -780,8 +780,8 @@ country_event = {
 		
 		set_capital = 227
 		227 = {
-			change_province_name = "Belém"
-			rename_capital = "Belém"
+			change_province_name = "Belï¿½m"
+			rename_capital = "Belï¿½m"
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
@@ -1029,7 +1029,7 @@ country_event = {
 	trigger = {
 		tag = POR
 		mission_completed = btc_por_henry_the_navigator
-		NOT = { navigator = 3 }
+		NOT = { is_advisor_employed = 617 }
 	}
 
 	option = {
@@ -1897,7 +1897,7 @@ country_event = {
 	id = btc_por.120
 	title = btc_por.120_t
 	desc = btc_por.120_d
-	picture = HOUSE_OF_TRADE_eventPicture
+	picture = LARGE_SHIPYARD_eventPicture
 
 	is_triggered_only = yes
 
@@ -2085,7 +2085,7 @@ country_event = {
 	option = {
 		name = btc_por.127a
 
-		ai_chance = { factor = 0.15 }
+		ai_chance = { factor = 15 }
 		trigger = {
 			2030 = {
 				is_capital = no
@@ -2110,7 +2110,7 @@ country_event = {
 	option = {
 		name = btc_por.127b
 
-		ai_chance = { factor = 0.85 }
+		ai_chance = { factor = 85 }
 		add_prestige = 5
 		hidden_effect = {
 			FROM = {
@@ -2483,7 +2483,7 @@ province_event = {
 		days = 1
 	}
 
-	option = {	# Build it
+	option = {	# Build a fort
 		name = btc_por.134a
 
 		ai_chance = {
@@ -2560,10 +2560,23 @@ province_event = {
 				duration = -1
 			}
 		}
+		custom_tooltip = feitoria_tt
+	}
+
+	option = {	# Build a trade post
+		name = btc_por.134b
+		
+		owner = { add_years_of_income = -0.1 }
+
+		add_province_modifier = {
+			name = small_feitoria
+			duration = -1
+		}
+		clr_province_flag = can_build_feitoria
 	}
 
 	option = {	# Don't build it
-		name = btc_por.134b
+		name = btc_por.134c
 
 		owner = { add_prestige = -1 }
 		clr_province_flag = can_build_feitoria
@@ -2965,13 +2978,13 @@ country_event = {
 	}
 }
 
-# João Vaz Corte Real #
+# Joï¿½o Vaz Corte Real #
 
 country_event = {
 	id = btc_por.144
 	title = btc_por.144_t
 	desc = btc_por.144_d
-	picture = VILLAGE_BURNING_eventPicture
+	picture = SHIP_SAILING_eventPicture
 
 	is_triggered_only = yes
 
@@ -2983,5 +2996,289 @@ country_event = {
 		name = btc_por.144a
 
 		discover_province = 1480
+	}
+}
+
+# Tomb of Mohamed #
+
+country_event = {
+	id = btc_por.145
+	title = btc_por.145_t
+	desc = btc_por.145_d
+	picture = MOSQUE_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# We've done it
+		name = btc_por.145a
+
+		add_prestige = 100
+		add_papal_influence = 100
+
+		every_country = {
+			limit = {
+				religion_group = muslim
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = stole_mohamed
+			}
+		}
+
+		hidden_effect = {
+			384 = {
+				owner = {
+					save_event_target_as = owner_of_medina
+				}
+			}
+		}
+		event_target:owner_of_medina = {
+			country_event = {
+				id = btc_por.146
+			}
+		}
+	}
+}
+
+# The Prophet's body has been taken #
+
+country_event = {
+	id = btc_por.146
+	title = btc_por.146_t
+	desc = btc_por.146_d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Comply with their demands
+		name = btc_por.146a
+
+		ai_chance = {
+			factor = 10
+		}
+
+		add_stability = -2
+
+		hidden_effect = {
+			379 = {
+				owner = {
+					save_event_target_as = owner_of_jerusalem
+				}
+			}
+			364 = {
+				owner = {
+					save_event_target_as = owner_of_gaza
+				}
+			}
+			1854 = {
+				owner = {
+					save_event_target_as = owner_of_jaffa
+				}
+			}
+		}
+
+		event_target:owner_of_jerusalem = {
+			379 = {
+				cede_province = POR
+			}
+		}
+		event_target:owner_of_gaza = {
+			364 = {
+				cede_province = POR
+			}
+		}
+		event_target:owner_of_jaffa = {
+			1854 = {
+				cede_province = POR
+			}
+		}
+
+		POR = {
+			country_event = {
+				id = btc_por.147
+				days = 1
+			}
+			white_peace = event_target:owner_of_medina
+		}
+	}
+
+	option = {	# The wrath of all muslims shall fall upon them
+		name = btc_por.146b
+
+		ai_chance = {
+			factor = 90
+		}
+
+		add_stability = -1
+
+		POR = {
+			country_event = {
+				id = btc_por.148
+				days = 1
+			}
+		}
+		every_country = {
+			limit = {
+				religion_group = muslim
+				is_subject = no
+				total_own_and_non_tributary_subject_development = 100
+				NOT = { tag = event_target:owner_of_medina }
+			}
+			country_event = {
+				id = btc_por.149
+				days = 30
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					AND = {
+						religion_group = christian
+						is_subject = no
+						total_own_and_non_tributary_subject_development = 100
+						NOT = { tag = POR }
+					}
+					tag = PAP
+				}
+			}
+			country_event = {
+				id = btc_por.150
+				days = 30
+			}
+		}
+	}
+}
+
+# Jerusalem is free #
+
+country_event = {
+	id = btc_por.147
+	title = btc_por.147_t
+	desc = btc_por.147_d
+	picture = BYZ_JERUSALEM_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# We have freed the Holy Land
+		name = btc_por.147a
+
+		add_power_projection = {
+			type = 10_permanent_power_projection
+			amount = 25
+		}
+	}
+}
+
+# We shall keep the prophet #
+
+country_event = {
+	id = btc_por.148
+	title = btc_por.148_t
+	desc = btc_por.148_d
+	picture = KING_DOING_GREAT_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# How humiliating for them
+		name = btc_por.148a
+
+		every_country = {
+			limit = {
+				religion_group = muslim
+			}
+			remove_power_projection = {
+				type = 10_permanent_power_projection
+				amount = 10
+			}
+		}
+	}
+}
+
+# Jihad against Portugal #
+
+country_event = {
+	id = btc_por.149
+	title = btc_por.149_t
+	desc = btc_por.149_d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Unforgivable!
+		name = btc_por.149a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		join_all_defensive_wars_of = event_target:owner_of_medina
+	}
+
+	option = {	# Unforgivable... but we won't join
+		name = btc_por.149b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability = -1
+		add_prestige = -25
+	}
+}
+
+# The Portuguese Crusade #
+
+country_event = {
+	id = btc_por.150
+	title = btc_por.150_t
+	desc = btc_por.150_d
+	picture = RELIGIOUS_WARS_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# A true epic!
+		name = btc_por.150a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		join_all_offensive_wars_of = POR
+	}
+
+	option = {	# A true epic... but we won't join
+		name = btc_por.150b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -25
 	}
 }

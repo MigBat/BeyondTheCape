@@ -2715,7 +2715,11 @@ on_colony_finished_effect = {
 						NOT = { region = maghreb_region }
 						NOT = { region = egypt_region }
 					}
-					continent = asia
+					AND = {
+						continent = asia
+						NOT = { region = mashriq_region }
+						NOT = { region = east_siberia_region }
+					}
 				}
 			}
 		}

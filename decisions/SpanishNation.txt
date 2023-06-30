@@ -15,6 +15,7 @@ country_decisions = {
 				ai = no
 			}
 			NOT = { tag = POR }
+			NOT = { tag = IBE }
 			NOT = { tag = SPA }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }

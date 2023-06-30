@@ -68,3 +68,13 @@ didnt_gift_ganda = {
 	opinion = -50
 	yearly_decay = 1
 }
+
+stole_mohamed = {
+	opinion = -1000
+	yearly_decay = 1
+}
+
+allowed_trade = {
+	opinion = 50
+	yearly_decay = 1
+}

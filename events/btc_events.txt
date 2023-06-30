@@ -219,3 +219,261 @@ province_event = {
 		set_province_flag = dev_reduced_recently
 	}
 }
+
+# The Portuguese Have Grown Too Powerful #
+
+country_event = {
+	id = btc_events.7
+	title = btc_events.7_t
+	desc = btc_events.7_d
+	picture = SAD_MERCHANT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAM
+		has_country_flag = MAM_POR_conflict
+
+		exists = POR
+		owns = 2315
+		4346 = {				#Gulf of Aden
+			is_strongest_trade_power = POR
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = btc_events.7a
+		ai_chance = { factor = 90 }
+		
+		declare_war_with_cb = {
+			casus_belli = cb_trade_war_triggered
+			who = POR
+		}				
+	}
+
+	option = {
+		name = btc_events.7b
+		add_prestige = -25
+		4346 = {
+			add_trade_modifier = {
+				who = root
+				duration = 3650
+				power = -5
+				key = surrender_the_trade
+			}
+		}
+	}
+}
+
+# Lourenço de Almeida #
+
+country_event = {
+	id = btc_events.8
+	title = btc_events.8_t
+	desc = btc_events.8_d
+	picture = BANKRUPTCY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Send a letter apologising
+		name = btc_events.8a
+
+		ai_chance = {
+			factor = 90
+		}
+
+		add_prestige = 10
+
+		set_country_flag = killed_lourenco
+
+		POR = {
+			country_event = {
+				id = btc_events.9
+				days = 1
+			}
+		}
+	}
+
+	option = {	# He got no less than what he deserved
+		name = btc_events.8b
+
+		ai_chance = {
+			factor = 10
+		}
+		
+		add_legitimacy = 10
+
+		set_country_flag = killed_lourenco
+
+		POR = {
+			country_event = {
+				id = btc_events.9
+				days = 1
+			}
+		}
+	}
+}
+
+# A Son's Blood #
+
+country_event = {
+	id = btc_events.9
+	title = btc_events.9_t
+	desc = btc_events.9_d
+	picture = NAVAL_MILITARY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Send Albuquerque to retrieve him at once
+		name = btc_events.9a
+
+		ai_chance = {
+			factor = 90
+		}
+
+		custom_tooltip = get_francisco_tt
+
+		set_country_flag = get_francisco
+	}
+
+	option = {	# Send Albuquerque to assist him
+		name = btc_events.9b
+
+		ai_chance = {
+			factor = 10
+		}
+
+		custom_tooltip = keep_francisco_tt
+
+		set_country_flag = keep_francisco
+		add_legitimacy = -20
+	}
+}
+
+# Battle of Diu #
+
+country_event = {
+	id = btc_events.10
+	title = btc_events.10_t
+	desc = btc_events.10_d
+	picture = FLAGSHIP_SUNK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_events.10a
+
+		trigger = {
+			has_country_flag = get_francisco
+		}
+
+		set_country_flag = battle_of_diu
+
+		define_conquistador = {
+			name = "Afonso de Albuquerque"
+			fire = 5
+			shock = 5
+			manuever = 4
+			siege = 2
+			trait = master_of_arms_personality
+		}
+		kill_leader = { type = "Francisco de Almeida" }
+
+		4346 = {
+			remove_trade_modifier = {
+				who = root
+				key = portuguese_privateers
+			}
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = spice_trade_monopoly
+			}		
+		}
+		1334 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = spice_trade_monopoly
+			}		
+		}
+		1340 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = spice_trade_monopoly
+			}			
+		}
+		504 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = spice_trade_monopoly
+			}			
+		}
+	}
+
+	option = {
+		name = btc_events.10b
+
+		trigger = {
+			has_country_flag = keep_francisco
+		}
+
+		set_country_flag = battle_of_diu
+
+		define_conquistador = {
+			name = "Afonso de Albuquerque"
+			fire = 5
+			shock = 5
+			manuever = 4
+			siege = 2
+			trait = master_of_arms_personality
+		}
+
+		4346 = {
+			remove_trade_modifier = {
+				who = root
+				key = portuguese_privateers
+			}
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = spice_trade_monopoly
+			}		
+		}
+		1334 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = spice_trade_monopoly
+			}			
+		}
+		1340 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = spice_trade_monopoly
+			}		
+		}
+		504 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = spice_trade_monopoly
+			}		
+		}
+	}
+}

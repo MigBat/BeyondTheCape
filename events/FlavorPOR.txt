@@ -131,7 +131,7 @@ country_event = {
 			
 			add_trade_modifier = {
 				who = root
-				duration = -1
+				duration = 18250
 				power = 25
 				key = portuguese_privateers
 			}			
@@ -964,7 +964,7 @@ country_event = {
 
 		2030 = {
 			owner = {
-				country_event = { id = btc_por.127 days = 3 }
+				country_event = { id = btc_por.127 days = 1 }
 			}
 		}
 		add_years_of_income = -1

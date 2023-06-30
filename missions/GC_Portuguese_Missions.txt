@@ -265,19 +265,13 @@ gc_por_1_b = {
 		}
 		
 		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = miss_discover_canada
-				newfoundland_area = {
-					has_discovered = ROOT
-				}
+			newfoundland_area = {
+				has_discovered = ROOT
 			}
-			custom_trigger_tooltip = {
-				tooltip = miss_colonize_canada
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 1
-					area = newfoundland_area
-					is_city = yes
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				area = newfoundland_area
+				is_city = yes
 			}
 		}
 
@@ -825,9 +819,6 @@ gc_por_2_b = {
 				manuever = 5
 				siege = 2
 				trait = cunning_navigator_personality
-			}	
-			country_event = {
-				id = btc_por.144
 			}		
 		}
 	}
@@ -1139,6 +1130,57 @@ gc_por_2_e = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
+
+	btc_por_legacy_of_albuquerque = {
+		icon = mission_albuquerque
+		required_missions = { gc_portugal_discovers_india gc_por_conquers_hormuz }
+		position = 13
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 388
+				province_id = 2999
+				province_id = 2030
+				province_id = 596
+			}
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			388 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2999 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2030 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			596 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+	
+		effect = {
+			add_country_modifier = {
+				name = mini_mare_clausum
+				duration = -1
+			}
+			hidden_effect = {
+				384 = {
+					owner = {
+						save_event_target_as = owner_of_medina
+					}
+				}
+			}
+			add_casus_belli = {
+				type = cb_get_mohamed
+				target = event_target:owner_of_medina
+				months = 60
+			}
+		}
+	}
 	
 	btc_por_spice_islands = {
 		icon = mission_junk_boat
@@ -1257,6 +1299,9 @@ gc_por_3 = {
 			add_country_modifier = {
 				name = portuguese_exploration
 				duration = 18250
+			}
+			country_event = {
+				id = btc_por.144
 			}
 		}
 	}
@@ -1470,14 +1515,6 @@ gc_por_3 = {
 		effect = {
 			add_prestige = 15
 			add_navy_tradition = 5
-			define_conquistador = {
-				name = "Afonso de Albuquerque"
-				fire = 5
-				shock = 5
-				manuever = 4
-				siege = 2
-				trait = master_of_arms_personality
-			}
 			country_event = {
 				id = flavor_por.11
 			}
