@@ -2634,14 +2634,14 @@ dom_cas_missions_3_c = {
 				name = "spa_hispaniola_discovered"
 				duration = 5475
 			}
-			colonial_la_plata = {
+			la_plata_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			colonial_colombia = {
+			colombia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -3509,7 +3509,7 @@ dom_cas_missions_4_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernï¿½n Cortï¿½s"
+				name = "Hernán Cortés"
 			}
 			490 = {
 				add_base_production = 3

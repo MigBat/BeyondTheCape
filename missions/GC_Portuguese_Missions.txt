@@ -820,7 +820,7 @@ gc_por_2_b = {
 				siege = 2
 				trait = cunning_navigator_personality
 			}	
-			colonial_brazil = {
+			brazil_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

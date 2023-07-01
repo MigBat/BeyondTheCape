@@ -786,7 +786,7 @@ french_missions_1_Continuation_a = {
 				name = "fra_colonial_enthusiasm"
 				duration = 7300
 			}
-			colonial_canada = {
+			canada_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
