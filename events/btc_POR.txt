@@ -3288,7 +3288,7 @@ country_event = {
 	}
 }
 
-# The Silk Road  #
+# The Silk Road Crisis #
 
 country_event = {
 	id = btc_por.151

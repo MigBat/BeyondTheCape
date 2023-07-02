@@ -39,6 +39,45 @@
 # }
 
 ###########################################
+# BEYOND THE CAPE - Ottoman Silk Road Monopoly
+###########################################
+ottoman_silk_road_monopoly = {
+	potential = {
+		capital_scope = {
+			continent = europe
+		}
+		NOT = { tag = TUR }
+		religion = catholic
+	}
+
+	trigger = {
+		151 = {
+			owned_by = TUR
+		}
+		any_country = {
+			capital_scope = {
+				continent = europe
+			}
+			NOT = {
+				any_active_trade_node = {
+					has_merchant = ROOT
+					OR = {
+						province_id = 1361 # Straits of Johor
+						province_id = 1343 # Ganges Delta
+						province_id = 504 # Sind
+						province_id = 1340 # Comorin Cape
+						province_id = 1334 # Hormuz
+						province_id = 4346 # Gulf of Aden
+					}
+				}
+			}
+		}
+	}
+
+	trade_efficiency = -0.05	
+}
+
+###########################################
 # Discovery of the East Indian trade route.
 ###########################################
 east_indian_trade_route = {

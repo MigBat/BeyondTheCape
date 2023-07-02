@@ -37,6 +37,11 @@
  desc_por_spice_monopoly_wars_triggered_modifier:0 "We've made our way to the Indian Ocean. Now it is time to claim its riches for ourselves."
  mam_spice_monopoly_wars_triggered_modifier:0 "The Spice Monopoly Conflict"
  desc_mam_spice_monopoly_wars_triggered_modifier:0 "The Portuguese have circumvented Africa and established a presence in the Indian Ocean, disrupting the ancient Silk Road trade that is so profitable to us."
+
+# Ottoman Silk Road Monopoly #
+
+ ottoman_silk_road_monopoly:0 "Ottoman Silk Road Monopoly"
+ desc_ottoman_silk_road_monopoly:0 "With the fall of Constantinople to the Turks, the Ottomans have effectively established a monopoly on the important Silk Road, the main trade route between Asia and Europe. Consequently, they are charging european catholic nations extra ducats for these foreign goods."
  
 # Irmandino Revolts #
  galician_revolts:0 "Galician Revolts"
