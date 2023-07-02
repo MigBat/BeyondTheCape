@@ -1317,23 +1317,17 @@ gc_por_3 = {
 		icon = mission_colonial
 		required_missions = { gc_por_discover_african_coast }
 		completed_by = 1445.1.1
-		position = 5
+		position = 6
 		
 		provinces_to_highlight = {
-			region = guinea_region
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
+			kongo_region = { has_discovered = ROOT }
 		}
 		
 		trigger = { 
 			custom_trigger_tooltip = {
-				tooltip = miss_colonize_west_africa
-				guinea_region = {
-					owned_by = ROOT
-					is_city = yes
+				tooltip = miss_discover_kongo
+				kongo_region = {
+					has_discovered = ROOT
 				}
 			}
 		}
@@ -1349,6 +1343,9 @@ gc_por_3 = {
 				siege = 1
 				trait = level_headed_personality
 			}
+			country_event = {
+				id = btc_por.152
+			}
 		}
 	}
 
@@ -1361,16 +1358,9 @@ gc_por_3 = {
 		provinces_to_highlight = {
 			region = kongo_region
 			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
 		}
 		
 		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = miss_discover_kongo
-				kongo_region = {
-					has_discovered = ROOT
-				}
-			}
 			custom_trigger_tooltip = {	
 				tooltip = miss_colonize_kongo
 				kongo_region = {
@@ -1395,10 +1385,6 @@ gc_por_3 = {
 					power = 20
 					key = ivory_coast_ambition
 				}
-			}
-			add_country_modifier = {
-				name = around_africa
-				duration = 1825
 			}
 			if = { 
 				limit = { religion = catholic }
@@ -1444,10 +1430,6 @@ gc_por_3 = {
 				siege = 4
 				trait = great_explorer_personality
 			}
-			#add_country_modifier = {
-			#	name = way_to_india
-			#	duration = 7300
-			#}
 		}
 	}
 
@@ -1516,6 +1498,9 @@ gc_por_3 = {
 				2030 = {
 					has_discovered = POR
 				}
+				1339 = {
+					has_discovered = POR
+				}
 			}
 		}
 		
@@ -1537,6 +1522,9 @@ gc_por_3 = {
 				limit = { has_dlc = "Rule Britannia" }
 				change_innovativeness = 2
 			}
+			remove_country_modifier = discovery_fervor
+			remove_country_modifier = expensive_spices
+			set_country_flag = discovered_india
 		}
 	}
 

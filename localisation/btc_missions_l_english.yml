@@ -131,3 +131,4 @@
  swe_colonize_delaware_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every §YCenter of Trade§! or province with an §YEstuary§! in §YCaribbean§! region."
  nor_discover_new_world_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province with a §YCenter of Trade§! or with an §YEstuary§! in §YColonial Eastern America§!, §YColonial Canada§!, §YColonial Mexico§! and §YCaribbean§! region."
  por_triangle_trade_mission_tooltip:0 "Every province in §YKongo§!,§YGuinea§! and §YNiger§! producing §YSlaves§! gets '§YTriangle Trade§!' for §Y20 years§!, giving the following effects:\nGoods Produced: §G+10%§!"
+ gc_por_colonise_west_africa_title:0 "Go Further South"

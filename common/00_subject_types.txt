@@ -636,6 +636,12 @@ colony = {
 			num_of_cities = 10
 		}
 	}
+	modifier_overlord = {
+		modifier = huge_colonial_nation
+		trigger = {
+			development = 300
+		}
+	}
 	modifier_subject = {
 		modifier = new_world_exploitation_modifier
 		trigger = {

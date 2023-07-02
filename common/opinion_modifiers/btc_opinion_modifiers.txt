@@ -78,3 +78,13 @@ allowed_trade = {
 	opinion = 50
 	yearly_decay = 1
 }
+
+pero_da_covilha_stays = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+pero_da_covilha_taken = {
+	opinion = -100
+	yearly_decay = 1
+}

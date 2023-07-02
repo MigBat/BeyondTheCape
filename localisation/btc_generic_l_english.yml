@@ -193,3 +193,5 @@
 
  confirm_thalassocracy_a_tt:1 "§Y[Root.GetName]§! is the strongest Trade Power in §Y[1298.GetName]§!, §Y[1295.GetName]§!, §Y[341.GetName]§!, §Y[224.GetName]§! and §Y[1110.GetName]§!."
  confirm_thalassocracy_b_tt:0 "§Y[Root.GetName]§! is the strongest Trade Power in §Y[236.GetName]§!, §Y[45.GetName]§!, §Y[1926.GetName]§!, §Y[1744.GetName]§! and §Y[1975.GetName]§!."
+
+ huge_colonial_nation:0 "Prominent Colony"

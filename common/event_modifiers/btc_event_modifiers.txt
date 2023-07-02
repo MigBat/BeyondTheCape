@@ -538,7 +538,7 @@ slavers_conflict_within_city = {
 
 slavers_thankful_guilds = {
 	local_unrest = -2
-	local_goods_produced = 0.5
+	trade_goods_size = 0.5
 }
 
 slaver_administration = {
@@ -558,4 +558,20 @@ slavers_social_banditry_modifer = {
 duke_of_braganza = {
 	land_morale = 0.05
 	war_exhaustion = -0.02
+}
+
+huge_colonial_nation = {
+	diplomatic_reputation = 0.5
+	monthly_splendor = 1
+}
+
+discovery_fervor = {
+	global_sailors_modifier = 0.1
+	global_manpower_modifier = -0.1
+	range = 0.1
+	core_creation = 0.5
+}
+
+expensive_spices = {
+	trade_efficiency = -0.1
 }

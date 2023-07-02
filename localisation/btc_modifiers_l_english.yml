@@ -276,6 +276,12 @@
  didnt_popes_papa:0 "The Pope is our subject"
  duke_of_braganza:0 "The Duke of Bragança"
  desc_duke_of_braganza:0 "Afonso of Bragança is a natural son of João I. He gained the favour of [Root.Monarch.GetName] after turning him against Pedro of Coimbra."
+ discovery_fervor:0 "Discovery Fervor"
+ desc_discovery_fervor:0 "We are investing heavily into finding a sea route to India."
+ expensive_spices:0 "Expensive Spices"
+ desc_expensive_spices:0 "Until the Ottoman monopoly on spices is broken, our traders will suffer heavily."
+ pero_da_covilha_stays:0 "Pêro da Covilhã remains with us."
+ pero_da_covilha_taken:0 "The Portuguese took Pêro da Covilhã."
 
 # Other Events #
  paria_paid:0 "Paria Paid"
