@@ -3141,7 +3141,7 @@ country_event = {
 			}
 			country_event = {
 				id = btc_por.149
-				days = 30
+				days = 3
 			}
 		}
 		every_country = {
@@ -3158,7 +3158,7 @@ country_event = {
 			}
 			country_event = {
 				id = btc_por.150
-				days = 30
+				days = 3
 			}
 		}
 	}
@@ -3182,7 +3182,7 @@ country_event = {
 		name = btc_por.147a
 
 		add_power_projection = {
-			type = 10_permanent_power_projection
+			type = 25_permanent_power_projection
 			amount = 25
 		}
 	}

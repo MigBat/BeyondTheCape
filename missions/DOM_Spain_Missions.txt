@@ -963,7 +963,7 @@ dom_cas_missions_2 = {
 		}
 		effect = {
 			add_power_projection = {
-				type = 25_permanent_power_projection
+				type = 10_permanent_power_projection
 				amount = 10
 			}
 			custom_tooltip = zim_amongst_the_great_powers_tt
@@ -3509,7 +3509,7 @@ dom_cas_missions_4_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Hernï¿½n Cortï¿½s"
 			}
 			490 = {
 				add_base_production = 3
