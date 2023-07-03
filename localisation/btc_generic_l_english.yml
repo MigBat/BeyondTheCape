@@ -73,6 +73,15 @@
  PROV_ADJ4963:0 "Pepperan"
  PROV_ADJ4964:0 "Slavean"
 
+# Native Policy #
+
+ native_policy_coexist:0 "Settler Colonialism Policy"
+ native_policy_trade:0 "Slave-based Policy"
+ native_policy_hostile:0 "Native Assimilation Policy"
+ native_policy_coexist_desc:0 "We will send our own people to the colonies. This will allow them to have more development once they become cities."
+ native_policy_trade_desc:0 "We will send slaves to our colonies. This will allow them to grow faster."
+ native_policy_hostile_desc:0 "We will foster good relationships with the natives. This will allow them to be integrated in our colonies."
+
 # Areas #
  norte_area:0 "Norte"
  estremadura_area:0 "Estremadura"
@@ -184,3 +193,5 @@
 
  confirm_thalassocracy_a_tt:1 "§Y[Root.GetName]§! is the strongest Trade Power in §Y[1298.GetName]§!, §Y[1295.GetName]§!, §Y[341.GetName]§!, §Y[224.GetName]§! and §Y[1110.GetName]§!."
  confirm_thalassocracy_b_tt:0 "§Y[Root.GetName]§! is the strongest Trade Power in §Y[236.GetName]§!, §Y[45.GetName]§!, §Y[1926.GetName]§!, §Y[1744.GetName]§! and §Y[1975.GetName]§!."
+
+ huge_colonial_nation:0 "Prominent Colony"

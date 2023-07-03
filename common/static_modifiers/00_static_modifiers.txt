@@ -1392,21 +1392,21 @@ gbr_colonial_investment = {
 crown_colony_overlord = {
 	merchants = 1
 	global_trade_power = 0.05
-	monthly_portuguese_saudade = 0.1
+	monthly_portuguese_saudade = 0.05
 }
 
 private_enterprise_overlord = {
 	merchants = 1
 	global_trade_power = 0.05
 	global_tariffs = -0.05
-	monthly_portuguese_saudade = 0.1
+	monthly_portuguese_saudade = 0.05
 }
 
 self_governing_colony_overlord = {
 	merchants = 1
 	global_trade_power = 0.05
 	global_tariffs = -0.10
-	monthly_portuguese_saudade = 0.1
+	monthly_portuguese_saudade = 0.05
 }
 
 crown_colony_subject = {
@@ -1685,16 +1685,19 @@ invasion_nation = {
 ########################################
 
 native_policy_coexist = {
-	native_uprising_chance = -1.0
+	colony_development_boost = 1
 }
 
 native_policy_trade = {
-	native_assimilation = 0.5
-	native_uprising_chance = -0.5
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.05
+	expel_minorities_cost = -0.5
 }
 
 native_policy_hostile = {
-	global_colonial_growth = 20
+	native_assimilation = 0.5
+	native_uprising_chance = -0.5
+	idea_claim_colonies = yes
 }
 
 ########################################

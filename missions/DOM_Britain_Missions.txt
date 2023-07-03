@@ -853,6 +853,55 @@ gbr_row_slot_2 = {
 			unlock_issue = {
 				issue = the_sugar_act
 			}
+			canada_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			american_east_coast_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southeast_america_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			greater_antilles_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lucayan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			leeward_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			windward_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -3672,6 +3721,22 @@ gbr_row_5 = {
 							1 = { 1179 = { add_building = stock_exchange } }
 						}
 					}
+				}
+			}
+			if = {
+				limit = {
+					1177 = {
+						NOT = {
+							OR = {
+								province_has_center_of_trade_of_level = 1
+								province_has_center_of_trade_of_level = 2
+								province_has_center_of_trade_of_level = 3
+							}
+						}
+					}
+				}
+				1177 = {
+					center_of_trade = 1
 				}
 			}
 		}

@@ -13,5 +13,5 @@ tags={
 }
 name="Beyond the Cape"
 picture="thumbnail.png"
-supported_version="1.35.4"
+supported_version="1.35.5"
 remote_file_id="2966858781"

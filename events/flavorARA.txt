@@ -408,7 +408,7 @@ country_event = {
 	option = {
 		name = "flavor_ara.EVTOPTA7"
 		ai_chance = {
-			factor = 20
+			factor = 75
 		}
 		custom_tooltip = flavor_ara7_naples_goes_free
 		hidden_effect = {
@@ -422,7 +422,7 @@ country_event = {
 	option = {
 		name = "flavor_ara.EVTOPTB7"
 		ai_chance = {
-			factor = 1
+			factor = 25
 		}
 		
 		add_legitimacy = -25

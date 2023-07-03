@@ -30,6 +30,18 @@
  desc_alcantara_order_headquarters:0 "This order calls home the town of Alcántara."
  san_juan_order_headquarters:0 "Order of San Juan Headquarters"
  desc_san_juan_order_headquarters:0 "This order calls home the town of Mdina."
+
+# Spice Wars #
+
+ por_spice_monopoly_wars_triggered_modifier:0 "The Spice Monopoly Conflict"
+ desc_por_spice_monopoly_wars_triggered_modifier:0 "We've made our way to the Indian Ocean. Now it is time to claim its riches for ourselves."
+ mam_spice_monopoly_wars_triggered_modifier:0 "The Spice Monopoly Conflict"
+ desc_mam_spice_monopoly_wars_triggered_modifier:0 "The Portuguese have circumvented Africa and established a presence in the Indian Ocean, disrupting the ancient Silk Road trade that is so profitable to us."
+
+# Ottoman Silk Road Monopoly #
+
+ ottoman_silk_road_monopoly:0 "Ottoman Silk Road Monopoly"
+ desc_ottoman_silk_road_monopoly:0 "With the fall of Constantinople to the Turks, the Ottomans have effectively established a monopoly on the important Silk Road, the main trade route between Asia and Europe. Consequently, they are charging european catholic nations extra ducats for these foreign goods."
  
 # Irmandino Revolts #
  galician_revolts:0 "Galician Revolts"
@@ -201,6 +213,8 @@
  desc_extra_flagship:0 "The pride of our navy now has a rival."
  mare_clausum:0 "Mare Clausum"
  desc_mare_clausum:0 "The Pope has decreed that the Indian Ocean is righfully the property of the Kingdom of Portugal. Naturally, it's up to the Portuguese to enforce their borders from the disrespectful infidels."
+#  mini_mare_clausum:0 "Legacy of Albuquerque"
+#  desc_mini_mare_clausum:0 "Albuquerque's plan bore fruit, and we have effectively establish a monopoly in the Indian Ocean."
  port_wine:0 "Port Wine"
  desc_port_wine:0 "The famous Port wine is produced here, in the valleys of the Douro river."
  methuen_treaty:0 "Methuen Treaty"
@@ -240,8 +254,10 @@
  desc_adopting_tercios:0 "It is taking some getting used to this new formation. While it is bringing success, it is clear to see the troops are struggling to adapt. It may take some time until our terços are really effective."
  portuguese_tercios:0 "Portuguese Terços"
  desc_portuguese_tercios:0 "With the latest military reforms that were undertaken, our Terços are the blight of any opposing force."
- feitoria:0 "Feitoria"
+ feitoria:0 "Fortified Feitoria"
  desc_feitoria:0 "If the fort in this province is destroyed, we will lose the benefits of the feitoria."
+ small_feitoria:0 "Feitoria"
+ desc_small_feitoria:0 "A trading post established to control local trade."
  slave_plantations:0 "Slave Plantations"
  desc_slave_plantations:0 "Slaves are used to grow the plantations here."
  mass_slave_plantations:0 "Mass Slave Plantations"
@@ -263,6 +279,14 @@
  desc_ibe_pax_iberica:0 "We are the great Eagle of Roman Legacy. Our magnificent Empire thrones above the world, ready to stand the test of time. May our glory shine for eternity."
  popes_papa:0 "Pope Subject"
  didnt_popes_papa:0 "The Pope is our subject"
+ duke_of_braganza:0 "The Duke of Bragança"
+ desc_duke_of_braganza:0 "Afonso of Bragança is a natural son of João I. He gained the favour of [Root.Monarch.GetName] after turning him against Pedro of Coimbra."
+ discovery_fervor:0 "Discovery Fervor"
+ desc_discovery_fervor:0 "We are investing heavily into finding a sea route to India."
+ expensive_spices:0 "Expensive Spices"
+ desc_expensive_spices:0 "Until the Ottoman monopoly on spices is broken, our traders will suffer heavily."
+ pero_da_covilha_stays:0 "Pêro da Covilhã remains with us."
+ pero_da_covilha_taken:0 "The Portuguese took Pêro da Covilhã."
 
 # Other Events #
  paria_paid:0 "Paria Paid"
@@ -273,3 +297,5 @@
 #  triangle_happened_tt:0 "The Triangle Trade event has happened"
  finish_reconquista:0 "Finish the Reconquista"
  desc_finish_reconquista:0 "This has gone on for far too long. Let us end this charade once and for all!"
+ stole_mohamed:0 "They have dessecrated the body of the Prophet!"
+ allowed_trade:0 "Malacca allows us to trade in their waters."

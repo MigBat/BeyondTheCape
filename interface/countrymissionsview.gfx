@@ -650,4 +650,9 @@ spriteTypes = {
 		name = "mission_jeronimos_monastery"
 		texturefile = "gfx/interface/missions/mission_jeronimos_monastery.dds"
 	}
+
+	spriteType = {
+		name = "mission_albuquerque"
+		texturefile = "gfx/interface/missions/mission_albuquerque.dds"
+	}
 }

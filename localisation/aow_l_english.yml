@@ -1598,7 +1598,7 @@
  flavor_guj.6.a:0 "Great."
  flavor_guj.6.b:0 "Blasphemy! Clearly our laws have become too lax."
  flavor_guj.7.t:0 "An Embassy to the Ottoman Sultan"
- flavor_guj.7.d:0 "In a dangerous world it is sometimes good to have contacts that can protect you. With the arrival of the Portuguese in the Indian Ocean it seems uncertain if anyone can be safe at sea anymore. We have received repeated reports of shipping being raided by Christian ships lately. These pirates threaten the trade that our Sultanate lives from and must be stopped.\nIt has recently come to our attention that the Ottoman Empire, distant as it may be, has acquired ports in the red sea. Perhaps it would be wise to contact the Sultan of Constantinople to discuss a possible alliance against these Christian pirates?"
+#  flavor_guj.7.d:0 "In a dangerous world it is sometimes good to have contacts that can protect you. With the arrival of the Portuguese in the Indian Ocean it seems uncertain if anyone can be safe at sea anymore. We have received repeated reports of shipping being raided by Christian ships lately. These pirates threaten the trade that our Sultanate lives from and must be stopped.\nIt has recently come to our attention that the Ottoman Empire, distant as it may be, has acquired ports in the red sea. Perhaps it would be wise to contact the Sultan of Constantinople to discuss a possible alliance against these Christian pirates?"
  flavor_guj.7.a:0 "Send an emissary to the Sublime Porte."
  flavor_guj.7.b:0 "We will manage fine in our own."
  flavor_guj.8.t:0 "Time to get involved in the Indian Ocean?"

@@ -332,7 +332,11 @@ fort_15th = {
 							NOT = { region = maghreb_region }
 							NOT = { region = egypt_region }
 						}
-						continent = asia
+						AND = {
+							continent = asia
+							NOT = { region = mashriq_region }
+							NOT = { region = east_siberia_region }
+						}
 					}
 				}
 			}
@@ -760,7 +764,11 @@ fort_16th = {
 							NOT = { region = maghreb_region }
 							NOT = { region = egypt_region }
 						}
-						continent = asia
+						AND = {
+							continent = asia
+							NOT = { region = mashriq_region }
+							NOT = { region = east_siberia_region }
+						}
 					}
 				}
 			}
@@ -1266,7 +1274,11 @@ fort_17th = {
 							NOT = { region = maghreb_region }
 							NOT = { region = egypt_region }
 						}
-						continent = asia
+						AND = {
+							continent = asia
+							NOT = { region = mashriq_region }
+							NOT = { region = east_siberia_region }
+						}
 					}
 				}
 			}
@@ -1762,7 +1774,11 @@ fort_18th = {
 							NOT = { region = maghreb_region }
 							NOT = { region = egypt_region }
 						}
-						continent = asia
+						AND = {
+							continent = asia
+							NOT = { region = mashriq_region }
+							NOT = { region = east_siberia_region }
+						}
 					}
 				}
 			}

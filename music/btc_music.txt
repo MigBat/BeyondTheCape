@@ -135,7 +135,7 @@ song = {
 			current_age = age_of_revolutions
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			primary_culture = portugese
 		}
 		modifier = {

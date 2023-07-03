@@ -786,6 +786,20 @@ french_missions_1_Continuation_a = {
 				name = "fra_colonial_enthusiasm"
 				duration = 7300
 			}
+			canada_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hispaniola_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 		ai_weight = {
 			factor = 500
@@ -904,7 +918,7 @@ french_missions_1_Continuation_a = {
 				limit = { is_random_new_world = no }
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					region = guinea_region 
-					value = 5 
+					value = 1
 				}
 			}
 			else = { mercantilism = 25 }

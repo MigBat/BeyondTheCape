@@ -80,7 +80,26 @@ country_event = {
 	option = {		# The King is tricked
 		name = "flavor_por.EVTOPTA3267"
 		ai_chance = { factor = 75 }
-		add_stability_or_adm_power = yes
+		add_stability = 1
+		227 = {
+			spawn_rebels = {
+				size = 1
+				type = noble_rebels
+			}
+		}
+		add_ruler_personality = strict_personality
+		remove_ruler_personality = expansionist_personality
+		add_ruler_modifier = {
+			name = duke_of_braganza
+			duration = -1
+		}
+		if = {
+			limit = {
+				is_advisor_employed = 617
+			}
+			remove_advisor = 617
+			remove_country_modifier = por_henry_cheaper
+		}
 	}
 	option = {		# The Duke survives and assists the King
 		name = "flavor_por.EVTOPTB3267"
@@ -125,7 +144,7 @@ country_event = {
 			
 			add_trade_modifier = {
 				who = root
-				duration = -1
+				duration = 18250
 				power = 25
 				key = portuguese_privateers
 			}			
@@ -958,7 +977,7 @@ country_event = {
 
 		2030 = {
 			owner = {
-				country_event = { id = btc_por.127 days = 3 }
+				country_event = { id = btc_por.127 days = 1 }
 			}
 		}
 		add_years_of_income = -1
@@ -970,10 +989,8 @@ country_event = {
 		
 		add_permanent_claim = 2030
 		add_prestige = 10
-		add_country_modifier = {
-			name = mare_clausum
-			duration = 7300
-		}
+		custom_tooltip = mare_clausum_tt
+		set_country_flag = mare_clausum
 	}
 }
 

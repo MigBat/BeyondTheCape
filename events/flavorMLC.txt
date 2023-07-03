@@ -255,22 +255,28 @@ country_event = {
 	
 	option = {
 		name = flavor_mlc.7.a #Lambaste the Gujaratis and attempt to save the situation.
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 25 }
 		custom_tooltip = flavor_mlc.7.a.tt
-		add_stability = -1
+		
 		POR = {
-			add_casus_belli = {
-				target = MLC
-				type = cb_trade_war_triggered
-				months = 24
+			add_opinion = {
+				who = ROOT
+				modifier = allowed_trade
 			}
-			country_event = { id = flavor_mlc.8 }
+		}
+		1361 = {
+			add_trade_modifier = {
+				who = POR
+				duration = 3650
+				power = 25
+				key = allow_portuguese_trade
+			}	
 		}
 	}
 	
 	option = {
 		name = flavor_mlc.7.b #We must not allow the Portuguese to gain a hold in this part of the world.
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 75 }
 		custom_tooltip = flavor_mlc.7.b.tt
 		POR = {
 			add_casus_belli = {
@@ -279,6 +285,14 @@ country_event = {
 				months = 120
 			}
 			country_event = { id = flavor_mlc.8 }
+		}
+		1361 = {
+			add_trade_modifier = {
+				who = POR
+				duration = 3650
+				power = -25
+				key = deny_portuguese_trade
+			}	
 		}
 	}
 }

@@ -781,6 +781,22 @@ emp_ned_slot3_branch = {
 		
 		effect = {
 			add_treasury = 300
+			if = {
+				limit = {
+					1177 = {
+						NOT = {
+							OR = {
+								province_has_center_of_trade_of_level = 1
+								province_has_center_of_trade_of_level = 2
+								province_has_center_of_trade_of_level = 3
+							}
+						}
+					}
+				}
+				1177 = {
+					center_of_trade = 1
+				}
+			}
 		}
 	}
 	
@@ -808,6 +824,13 @@ emp_ned_slot3_branch = {
 		effect = {
 			create_admiral = {
 				tradition = 80
+			}
+			australia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			set_country_flag = ned_nova_hollandia_flag
 		}
@@ -1150,6 +1173,48 @@ emp_ned_slot4_colony_branch = {
 			add_country_modifier = {
 				name = "the_unknown_frontier"
 				duration = 5475
+			}
+			american_east_coast_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southeast_america_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			brazil_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			greater_antilles_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			leeward_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			windward_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
