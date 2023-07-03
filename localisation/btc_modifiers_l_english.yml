@@ -287,6 +287,8 @@
  desc_expensive_spices:0 "Until the Ottoman monopoly on spices is broken, our traders will suffer heavily."
  pero_da_covilha_stays:0 "Pêro da Covilhã remains with us."
  pero_da_covilha_taken:0 "The Portuguese took Pêro da Covilhã."
+ lusiadas:0 "Os Lusíadas"
+ desc_lusiadas:0 "The work celebrates the discovery of a sea route to India by the Portuguese. It is the most important work of Portuguese-language literature"
 
 # Other Events #
  paria_paid:0 "Paria Paid"

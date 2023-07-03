@@ -3679,3 +3679,207 @@ country_event = {
 		}
 	}
 }
+
+# Luis de Camões #
+
+country_event = {
+	id = btc_por.156
+	title = btc_por.156_t
+	desc = btc_por.156_d
+	picture = btc_camoes_picture
+
+	trigger = {
+		tag = POR
+		1851 = {	# Coimbra
+			owned_by = root
+		}
+		227 = {		# Lisboa
+			owned_by = root
+		}
+		1751 = {	# Ceuta
+			owned_by = root
+		}
+		2030 = {	# Goa
+			owned_by = root
+		}
+		2999 = {	# Hormuz
+			owned_by = root
+		}
+		668 = {		# Macau
+			owned_by = root
+		}
+		596 = {		# Malaca
+			owned_by = root
+		}
+		1186 = {	# Sofala
+			owned_by = root
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# As armas e os barões assinalados
+		name = btc_por.156a
+
+		hidden_effect = {
+			country_event = {
+				id = btc_por.157
+				days = 180
+			}
+		}
+	}
+}
+
+# A Bohemian Lifestyle #
+
+country_event = {
+	id = btc_por.157
+	title = btc_por.157_t
+	desc = btc_por.157_d
+	picture = btc_camoes_eye_picture
+
+	is_triggered_only = yes
+
+	option = {	# Que da ocidental praia Lusitana
+		name = btc_por.157a
+
+		hidden_effect = {
+			country_event = {
+				id = btc_por.158
+				days = 180
+			}
+		}
+	}
+}
+
+# The Borges Incident #
+
+country_event = {
+	id = btc_por.158
+	title = btc_por.158_t
+	desc = btc_por.158_d
+	picture = btc_camoes_borges_picture
+
+	is_triggered_only = yes
+
+	option = {	# Por mares nunca de antes navegados
+		name = btc_por.158a
+
+		hidden_effect = {
+			country_event = {
+				id = btc_por.159
+				days = 180
+			}
+		}
+	}
+}
+
+# Journey to the East #
+
+country_event = {
+	id = btc_por.159
+	title = btc_por.159_t
+	desc = btc_por.159_d
+	picture = btc_camoes_goa_picture
+
+	is_triggered_only = yes
+
+	option = {	# Passaram ainda além da Taprobana
+		name = btc_por.159a
+
+		hidden_effect = {
+			country_event = {
+				id = btc_por.160
+				days = 180
+			}
+		}
+	}
+}
+
+# The Cave in Macau #
+
+country_event = {
+	id = btc_por.160
+	title = btc_por.160_t
+	desc = btc_por.160_d
+	picture = btc_camoes_macau_picture
+
+	is_triggered_only = yes
+
+	option = {	# Em perigos e guerras esforçados
+		name = btc_por.160a
+
+		hidden_effect = {
+			country_event = {
+				id = btc_por.161
+				days = 180
+			}
+		}
+	}
+}
+
+# Shipwrecked #
+
+country_event = {
+	id = btc_por.161
+	title = btc_por.161_t
+	desc = btc_por.161_d
+	picture = btc_camoes_shipwreck_picture
+
+	is_triggered_only = yes
+
+	option = {	# Mais do que prometia a força humana
+		name = btc_por.161a
+
+		hidden_effect = {
+			country_event = {
+				id = btc_por.162
+				days = 180
+			}
+		}
+	}
+}
+
+# Poverty in Sofala #
+
+country_event = {
+	id = btc_por.162
+	title = btc_por.162_t
+	desc = btc_por.162_d
+	picture = btc_camoes_lusiadas_picture
+
+	is_triggered_only = yes
+
+	option = {	# E entre gente remota edificaram
+		name = btc_por.162a
+
+		hidden_effect = {
+			country_event = {
+				id = btc_por.163
+				days = 180
+			}
+		}
+	}
+}
+
+# Os Lusíadas #
+
+country_event = {
+	id = btc_por.163
+	title = btc_por.163_t
+	desc = btc_por.163_d
+	picture = btc_camoes_sebastiao_picture
+
+	is_triggered_only = yes
+
+	option = {	# Novo Reino, que tanto sublimaram
+		name = btc_por.163a
+
+		add_country_modifier = {
+			name = lusiadas
+			duration = -1
+		}
+	}
+}

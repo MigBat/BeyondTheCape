@@ -35,13 +35,7 @@ country_event = {
 	desc = btc_events.2_d
 	picture = RELIGIOUS_WARS_eventPicture
 
-	fire_only_once = yes
-
-	trigger = {
-		capital_scope = {
-			region = maghreb_region
-		}
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = btc_events.2a
@@ -52,6 +46,7 @@ country_event = {
 				duration = 36500
 			}
 		}
+		set_country_flag = resisting_reconquista
 	}
 }
 

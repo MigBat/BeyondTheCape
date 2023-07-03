@@ -175,6 +175,15 @@ on_startup = {
 		}
 		country_event = { id = btc_startscreen.1 }
 	}
+	if = {
+		limit =  {
+			capital_scope = {
+				region = maghreb_region
+			}
+			NOT = { has_country_flag = resisting_reconquista }
+		}
+		country_event = { id = btc_events.2 }
+	}
 }
 
 # country
