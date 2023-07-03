@@ -3538,7 +3538,7 @@ country_event = {
 	}
 }
 
-# Capital saudade calculation monthly pulse
+# Big city saudade calculation monthly pulse
 country_event = {
 	id = btc_por.155
 	title = btc_por.155_t
@@ -3558,166 +3558,124 @@ country_event = {
 	option = {
 		name = btc_por.155a
 
-		trigger = {
-			capital_scope = {
-				AND = {
-					development = 30
-					NOT = { development = 35 }
+		every_owned_province = {
+			if = {
+				limit = {
+					AND = {
+						development = 30
+						NOT = { development = 35 }
+					}
+					culture = root
 				}
-			}
-		}
-
-		capital_scope = {
-			add_province_modifier = {
-				name = capital_1
-				duration = -1
-			}
-			remove_province_modifier = capital_2
-			remove_province_modifier = capital_3
-			remove_province_modifier = capital_4
-			remove_province_modifier = capital_5
-			remove_province_modifier = capital_6
-		}
-	}
-
-	option = {
-		name = btc_por.155b
-
-		trigger = {
-			capital_scope = {
-				AND = {
-					development = 35
-					NOT = { development = 40 }
+				add_province_modifier = {
+					name = capital_1
+					duration = -1
 				}
+				remove_province_modifier = capital_2
+				remove_province_modifier = capital_3
+				remove_province_modifier = capital_4
+				remove_province_modifier = capital_5
+				remove_province_modifier = capital_6
 			}
-		}
-
-		capital_scope = {
-			add_province_modifier = {
-				name = capital_2
-				duration = -1
-			}
-			remove_province_modifier = capital_1
-			remove_province_modifier = capital_3
-			remove_province_modifier = capital_4
-			remove_province_modifier = capital_5
-			remove_province_modifier = capital_6
-		}
-	}
-
-	option = {
-		name = btc_por.155c
-
-		trigger = {
-			capital_scope = {
-				AND = {
-					development = 40
-					NOT = { development = 45 }
+			if = {
+				limit = {
+					AND = {
+						development = 35
+						NOT = { development = 40 }
+					}
+					culture = root
 				}
-			}
-		}
-
-		capital_scope = {
-			add_province_modifier = {
-				name = capital_3
-				duration = -1
-			}
-			remove_province_modifier = capital_1
-			remove_province_modifier = capital_2
-			remove_province_modifier = capital_4
-			remove_province_modifier = capital_5
-			remove_province_modifier = capital_6
-		}
-	}
-
-	option = {
-		name = btc_por.155d
-
-		trigger = {
-			capital_scope = {
-				AND = {
-					development = 45
-					NOT = { development = 50 }
+				add_province_modifier = {
+					name = capital_2
+					duration = -1
 				}
+				remove_province_modifier = capital_1
+				remove_province_modifier = capital_3
+				remove_province_modifier = capital_4
+				remove_province_modifier = capital_5
+				remove_province_modifier = capital_6
 			}
-		}
-
-		capital_scope = {
-			add_province_modifier = {
-				name = capital_4
-				duration = -1
-			}
-			remove_province_modifier = capital_1
-			remove_province_modifier = capital_2
-			remove_province_modifier = capital_3
-			remove_province_modifier = capital_5
-			remove_province_modifier = capital_6
-		}
-	}
-
-	option = {
-		name = btc_por.155e
-
-		trigger = {
-			capital_scope = {
-				AND = {
-					development = 50
-					NOT = { development = 55 }
+			if = {
+				limit = {
+					AND = {
+						development = 40
+						NOT = { development = 45 }
+					}
+					culture = root
 				}
+				add_province_modifier = {
+					name = capital_3
+					duration = -1
+				}
+				remove_province_modifier = capital_1
+				remove_province_modifier = capital_2
+				remove_province_modifier = capital_4
+				remove_province_modifier = capital_5
+				remove_province_modifier = capital_6
 			}
-		}
-
-		capital_scope = {
-			add_province_modifier = {
-				name = capital_5
-				duration = -1
+			if = {
+				limit = {
+					AND = {
+						development = 45
+						NOT = { development = 50 }
+					}
+					culture = root
+				}
+				add_province_modifier = {
+					name = capital_4
+					duration = -1
+				}
+				remove_province_modifier = capital_1
+				remove_province_modifier = capital_2
+				remove_province_modifier = capital_3
+				remove_province_modifier = capital_5
+				remove_province_modifier = capital_6
 			}
-			remove_province_modifier = capital_1
-			remove_province_modifier = capital_2
-			remove_province_modifier = capital_3
-			remove_province_modifier = capital_4
-			remove_province_modifier = capital_6
-		}
-	}
-
-	option = {
-		name = btc_por.155f
-
-		trigger = {
-			capital_scope = {
-				development = 55
+			if = {
+				limit = {
+					AND = {
+						development = 50
+						NOT = { development = 55 }
+					}
+					culture = root
+				}
+				add_province_modifier = {
+					name = capital_5
+					duration = -1
+				}
+				remove_province_modifier = capital_1
+				remove_province_modifier = capital_2
+				remove_province_modifier = capital_3
+				remove_province_modifier = capital_4
+				remove_province_modifier = capital_6
 			}
-		}
-
-		capital_scope = {
-			add_province_modifier = {
-				name = capital_6
-				duration = -1
+			if = {
+				limit = {
+					development = 55
+					culture = root
+				}
+				add_province_modifier = {
+					name = capital_6
+					duration = -1
+				}
+				remove_province_modifier = capital_1
+				remove_province_modifier = capital_2
+				remove_province_modifier = capital_3
+				remove_province_modifier = capital_4
+				remove_province_modifier = capital_5
 			}
-			remove_province_modifier = capital_1
-			remove_province_modifier = capital_2
-			remove_province_modifier = capital_3
-			remove_province_modifier = capital_4
-			remove_province_modifier = capital_5
-		}
-	}
-
-	option = {
-		name = btc_por.155g
-
-		trigger = {
-			capital_scope = {
-				NOT = { development = 30 }
+			if = {
+				limit = {
+					NOT = { development = 30 }
+					culture = root
+				}
+				remove_province_modifier = capital_1
+				remove_province_modifier = capital_2
+				remove_province_modifier = capital_3
+				remove_province_modifier = capital_4
+				remove_province_modifier = capital_5
+				remove_province_modifier = capital_6
 			}
-		}
-
-		capital_scope = {
-			remove_province_modifier = capital_1
-			remove_province_modifier = capital_2
-			remove_province_modifier = capital_3
-			remove_province_modifier = capital_4
-			remove_province_modifier = capital_5
-			remove_province_modifier = capital_6
 		}
 	}
 }
