@@ -1249,7 +1249,10 @@ country_event = {
 
 	trigger = {
 		tag = POR
-		is_year = 1560
+		OR = {
+			is_year = 1560
+			has_country_modifier = lusiadas
+		}
 		MOR = {
 			exists = yes
 			religion_group = muslim
@@ -1262,27 +1265,30 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.01
+			has_country_modifier = lusiadas
+		}
 	}
 
 	option = {	# By the grace of God!
 		name = btc_por.107a
 
 		add_papal_influence = 10
-		MOR = {
-			every_owned_province = {
-				limit = {
-					is_in_capital_area = yes
-				}
-				add_claim = POR
-			}
-		}
 
-		MOR = {
-			add_opinion = {
-				who = ROOT
-				modifier = prepares_crusade
-			}
+		declare_war_with_cb = {
+			casus_belli = cb_war_of_three_kings
+			who = MOR
 		}
+		set_country_flag = war_of_three_kings
+		MOR = { set_country_flag = war_of_three_kings }
+
+		# MOR = {
+		# 	add_opinion = {
+		# 		who = ROOT
+		# 		modifier = prepares_crusade
+		# 	}
+		# }
 
 		add_estate_influence_modifier = {
 			estate = estate_church
@@ -1300,9 +1306,9 @@ country_event = {
 		convert_heir_to_general = 50
 		convert_female_heir_to_general = 40
 
-		add_country_modifier = {
+		add_ruler_modifier = {
 			name = crusading_spirit	# -10% regiment cost, -15% recruiting time, -85% heir chance
-			duration = 5475
+			duration = -1
 		}
 	}
 
@@ -3881,5 +3887,7 @@ country_event = {
 			name = lusiadas
 			duration = -1
 		}
+		add_ruler_personality = bold_fighter_personality
+		add_ruler_personality = zealot_personality
 	}
 }

@@ -288,7 +288,9 @@
  pero_da_covilha_stays:0 "Pêro da Covilhã remains with us."
  pero_da_covilha_taken:0 "The Portuguese took Pêro da Covilhã."
  lusiadas:0 "Os Lusíadas"
- desc_lusiadas:0 "The work celebrates the discovery of a sea route to India by the Portuguese. It is the most important work of Portuguese-language literature"
+ desc_lusiadas:0 "The work celebrates the discovery of a sea route to India by the Portuguese. It is the most important work of Portuguese-language literature."
+ portugal_succession_crisis:0 "Portugal Succession Crisis"
+ desc_portugal_succession_crisis:0 "Our [Root.Monarch.GetTitle] has foolishly died in battle along with many of our nobility, leaving our country in turmoil."
 
 # Other Events #
  paria_paid:0 "Paria Paid"
@@ -301,3 +303,4 @@
  desc_finish_reconquista:0 "This has gone on for far too long. Let us end this charade once and for all!"
  stole_mohamed:0 "They have dessecrated the body of the Prophet!"
  allowed_trade:0 "Malacca allows us to trade in their waters."
+ war_of_three_kings:0 "Portugal have helped us regain the throne."

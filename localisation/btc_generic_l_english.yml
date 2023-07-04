@@ -195,3 +195,5 @@
  confirm_thalassocracy_b_tt:0 "§Y[Root.GetName]§! is the strongest Trade Power in §Y[236.GetName]§!, §Y[45.GetName]§!, §Y[1926.GetName]§!, §Y[1744.GetName]§! and §Y[1975.GetName]§!."
 
  huge_colonial_nation:0 "Prominent Colony"
+ cb_war_of_three_kings:0 "War of the Three Kings"
+ cb_war_of_three_kings_desc:0 "Morocco shall be catholic."
