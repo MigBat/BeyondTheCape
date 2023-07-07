@@ -1970,12 +1970,7 @@ cb_get_mohamed = {
 # War of the Three Kings
 cb_war_of_three_kings = {
 	valid_for_subject = no
-
-	prerequisites = {
-		NOT = {
-			truce_with = FROM
-		}
-	}
+	is_triggered_only = yes
 
 	attacker_disabled_po = {
 		po_demand_provinces

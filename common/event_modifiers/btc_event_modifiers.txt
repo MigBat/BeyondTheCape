@@ -606,3 +606,7 @@ portugal_succession_crisis = {
 	land_morale = -0.1
 	naval_morale = -0.1
 }
+
+reduced_saudade = {
+	monthly_portuguese_saudade = -0.5
+}

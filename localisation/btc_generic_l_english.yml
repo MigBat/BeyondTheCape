@@ -96,7 +96,7 @@
 # Trade Nodes #
  lisboa:0 "Lisboa"
  london:0 "London"
- english_channel:0 "Antwerp"
+ english_channel:0 "Lowlands"
 
 # Trade Companies #
  trade_company_the_caribbean:0 "Caribbean Charter"
@@ -197,3 +197,5 @@
  huge_colonial_nation:0 "Prominent Colony"
  cb_war_of_three_kings:0 "War of the Three Kings"
  cb_war_of_three_kings_desc:0 "Morocco shall be catholic."
+
+ crown_colony_long_desc:0 "A Crown Colony has a high amount of direct control from the overlord. They contribute a good amount of money."
