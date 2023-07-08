@@ -590,10 +590,10 @@ emp_ned_slot2_indies_branch = {
 					key = DUTCH_EAST_INDIES_TRADE
 				}
 			}
-			country_event_with_insight = {
-				id = btc_ned.1
-				insight_tooltip = ned_establish_first_indian_trade_post_at
-			}
+			# country_event_with_insight = {
+			# 	id = btc_ned.1
+			# 	insight_tooltip = ned_establish_first_indian_trade_post_at
+			# }
 		}
 	}
 }

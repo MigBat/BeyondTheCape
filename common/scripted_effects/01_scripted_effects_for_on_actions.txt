@@ -2725,6 +2725,26 @@ on_colony_finished_effect = {
 		}
 		set_province_flag = can_build_feitoria
 	}
+	if = {
+		limit = {
+			AND = {
+				owner = {
+					has_subject_of_type = commercial_enterprise
+				}
+				OR = {
+					superregion = india_superregion
+					superregion = east_indies_superregion
+					superregion = china_superregion
+					region = japan_region
+					region = korea_region
+					region = arabia_region
+				}
+			}
+		}
+		province_event = {
+			id = btc_ned.2
+		}
+	}
 }
 
 on_colonist_boosting_colony_effect = {

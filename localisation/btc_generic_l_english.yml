@@ -109,6 +109,8 @@
  TRADE_COMPANY_LONDON_Root_Culture_GetName:0 "[Root.Culture.GetName] English Company"
  TRADE_COMPANY_LONDON_European_Trade_Company:0 "English Trade Company"
 
+ large_trade_company:0 "Large Trade Company"
+
 # Changes from vanilla localisation #
  trade_company_sevilla:0 "Castilian Charter"
  TRADE_COMPANY_SEVILLA_Root_Culture_GetName:0 "[Root.Culture.GetName] Castilian Company"

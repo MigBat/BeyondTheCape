@@ -425,3 +425,45 @@ country_event = {
 		}
 	}
 }
+
+province_event = {
+	id = btc_ned.2
+	title = btc_ned.2_t
+	desc = btc_ned.2_d
+	picture = CENTRAL_AFRICAN_COURT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Give it to our commercial enterprise
+		name = btc_ned.2a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		if = {
+			limit = {
+				VOC = {
+					is_subject_of = root
+				}
+			}
+			cede_province = VOC			
+		}
+		else_if = {
+			limit = {
+				EIC = {
+					is_subject_of = root
+				}
+			}
+			cede_province = EIC
+		}
+	}
+
+	option = {	# Administer it directly
+		name = btc_ned.2b
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

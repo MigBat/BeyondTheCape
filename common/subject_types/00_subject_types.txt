@@ -1109,9 +1109,9 @@ commercial_enterprise = {
 
 	# Modifiers:
 	modifier_overlord = {
-		modifier = large_colonial_nation
+		modifier = large_trade_company
 		trigger = {
-			num_of_cities = 10
+			num_of_cities = 20
 		}
 	}
 	modifier_overlord = {
