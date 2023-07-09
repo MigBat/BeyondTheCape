@@ -645,3 +645,32 @@ milaccess = {
 		}
 	}
 }
+
+callaction = {
+	condition = {
+		tooltip = burgundian_conquests_tt
+		potential = {
+			FROM = {
+				is_emperor = yes
+			}
+			BUR = {
+				OR = {
+					has_casus_belli = {
+						type = cb_vassalize_mission
+						target = ROOT
+					}
+					has_casus_belli = {
+						type = cb_restore_personal_union
+						target = ROOT
+					}
+				}
+			}
+			ROOT = {
+				capital_scope = {
+					region = low_countries_region
+				}
+			}
+		}
+		allow = { always = no }
+	}
+}

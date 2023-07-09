@@ -610,3 +610,9 @@ portugal_succession_crisis = {
 reduced_saudade = {
 	monthly_portuguese_saudade = -0.5
 }
+
+large_trade_company = {
+	merchants = 2
+	global_trade_power = 0.1
+	naval_forcelimit = 5
+}

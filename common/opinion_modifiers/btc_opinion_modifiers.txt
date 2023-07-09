@@ -93,3 +93,8 @@ war_of_three_kings = {
 	opinion = 100
 	yearly_decay = 2
 }
+
+betrayed_us = {
+	opinion = -100
+	yearly_decay = 2
+}

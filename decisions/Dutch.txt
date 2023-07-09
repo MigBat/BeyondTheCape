@@ -21,18 +21,6 @@ country_decisions = {
 				burma_region = {
 					has_discovered = ROOT
 				}
-				west_india_region = {
-					has_discovered = ROOT
-				}
-				coromandel_region = {
-					has_discovered = ROOT
-				}
-				deccan_region = {
-					has_discovered = ROOT
-				}
-				bengal_region = {
-					has_discovered = ROOT
-				}
 				south_china_region = {
 					has_discovered = ROOT
 				}
@@ -46,10 +34,6 @@ country_decisions = {
 			dip_tech = 10
 			any_owned_province = {
 				OR = {
-					region = west_india_region
-					region = coromandel_region
-					region = deccan_region
-					region = bengal_region
 					region = malaya_region
 					region = moluccas_region
 					region = indonesia_region

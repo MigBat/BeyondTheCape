@@ -364,11 +364,32 @@
 # Netherlands Events #
 
  btc_ned.1a.tt:0 "§Y[Root.GetName]§! releases the §YDutch East India Company§! in §YEast India§!.\n§YThe Dutch East India Company§! becomes a §YCommercial Enterprise§! subject of §Y[Root.GetName]§!."
- btc_ned.1_t:0 "Verenigde Oostindische Compagnie"
+ btc_ned.1_t:0 "Vereenigde Oost-Indische Compagnie"
  btc_ned.1_d:0 "The Dutch East India Company, also known as the Vereenigde Oost-Indische Compagnie (VOC), was founded in 1602 as a joint-stock company in the Netherlands. Its primary objective was to establish and maintain a monopoly on trade between the Netherlands and the East Indies, which encompassed present-day Indonesia, Malaysia, and parts of Southeast Asia. The company sought to profit from the lucrative spice trade, particularly in spices like cloves, nutmeg, and pepper."
  btc_ned.1a:0 "Let the company take control over our East Indian affairs"
  btc_ned.1b:0 "We can administrate East India ourselves"
  btc_ned.1c:0 "We will see how this company will fare..."
+ btc_ned.2_t:0 "[Root.Province.GetName] to Commercial Enterprise"
+ btc_ned.2_d:0 "Now that [Root.Province.GetName] is part of our realm, we have the choice to either administer it directly, or grant it to our commercial enterprise and reap the benefits that come from it."
+ btc_ned.2a:0 "Grant it."
+ btc_ned.2b:0 "Keep it."
+ btc_ned.3_t:0 "Adolf's Revolt"
+ btc_ned.3_d:0 "Adolf van Ermond, the son of Arnold van Ermond and heir to the duchy of Gelre, is conspiring to take his father's throne. In exchange for our support in this endeavor, he has agreed to become a vassal of Burgundy."
+ btc_ned.3a:0 "Support Adolf."
+ btc_ned.3b:0 "He is not trustworthy."
+ btc_ned.4_t:0 "Successful Revolt"
+ btc_ned.4_d:0 "With the Burgundian's backing we have taken the throne from Arnold. However, in return we were to become their vassal."
+ btc_ned.4a:0 "They are of no further use to us."
+ btc_ned.4b:0 "Honor our agreement."
+ btc_ned.5_t:0 "The Scum of Gelre"
+ btc_ned.5_d:0 "We have just received a letter from Adolf van Ermond of Gelre that he has no intentions of becoming our vassal. This is a great betrayal, after what we did for him."
+ btc_ned.5a:0 "Take what is ours by force."
+ btc_ned.5b:0 "They will pay for this."
+ btc_ned.6_t:0 "The Burgundian Conquests"
+ btc_ned.6_d:0 "The duchy of Burgundy has ambitions in the Low Countries. Flanders, Brabant and Holland are already ours. The remaining Dutch shall also submit, in time. The Emperor seems amicable to us in this endeavor, so we shouldn't expect them to offer them much aid."
+ btc_ned.6a:0 "For Burgundy!"
+ austria_no_intervene:0 "The Emperor of the Holy Roman Empire will not defend the Dutch against the Burgundians when they attack with the Restoration of Union casus belli."
+ burgundian_conquests_tt:0 "The Emperor supports Burgundian claims in the Low Countries."
 
 # Aragon Events #
 

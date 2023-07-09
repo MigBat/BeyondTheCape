@@ -1380,12 +1380,6 @@ large_colonial_nation = {
 	land_forcelimit = 5
 }
 
-large_trade_company = {
-	merchants = 2
-	global_trade_power = 0.1
-	naval_forcelimit = 5
-}
-
 new_world_exploitation_modifier = {
 	global_trade_goods_size_modifier = 0.1
 }

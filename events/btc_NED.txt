@@ -426,11 +426,12 @@ country_event = {
 	}
 }
 
+# [Root.Province.GetName] to Commercial Enterprise
 province_event = {
 	id = btc_ned.2
 	title = btc_ned.2_t
 	desc = btc_ned.2_d
-	picture = CENTRAL_AFRICAN_COURT_eventPicture
+	picture = 16_Trade_Company_eventPicture
 
 	is_triggered_only = yes
 
@@ -465,5 +466,174 @@ province_event = {
 		ai_chance = {
 			factor = 0
 		}
+	}
+}
+
+# Adolf's Revolt
+country_event = {
+	id = btc_ned.3
+	title = btc_ned.3_t
+	desc = btc_ned.3_d
+	picture = CONSPIRACY_eventPicture
+
+	trigger = {
+		tag = BUR
+		GEL = {
+			exists = yes
+			has_ruler = "Arnold"
+			has_heir = "Adolf"
+			heir_age = 15
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {	# Support Adolf
+		name = btc_ned.3a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		add_treasury = -50
+
+		GEL = {
+			kill_ruler = yes
+			country_event = {
+				id = btc_ned.4
+				days = 30
+			}
+		}
+	}
+
+	option = {	# He is not trustworthy
+		name = btc_ned.3b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -5
+	}
+}
+
+# Successful Revolt
+country_event = {
+	id = btc_ned.4
+	title = btc_ned.4_t
+	desc = btc_ned.4_d
+	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# They are of no further use to us
+		name = btc_ned.4a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige = -5
+		BUR = {
+			add_opinion = {
+				who = GEL
+				modifier = betrayed_us
+			}
+			country_event = {
+				id = btc_ned.5
+				days = 30
+			}
+		}
+	}
+
+	option = {	# Honor our agreement
+		name = btc_ned.4b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		BUR = {
+			vassalize = GEL
+		}
+	}
+}
+
+# The Scum of Gelre
+country_event = {
+	id = btc_ned.5
+	title = btc_ned.5_t
+	desc = btc_ned.5_d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Take what is ours by force
+		name = btc_ned.5a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		declare_war_with_cb = {
+			casus_belli = cb_restore_personal_union
+			who = GEL
+		}
+	}
+
+	option = {	# They will pay for this
+		name = btc_ned.5b
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# The Burgundian Conquests
+country_event = {
+	id = btc_ned.6
+	title = btc_ned.6_t
+	desc = btc_ned.6_d
+	picture = CONQUEST_eventPicture
+
+	trigger = {
+		tag = BUR
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_ned.6a
+
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			target = GEL
+			months = 1200
+		}
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			target = UTR
+			months = 1200
+		}
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			target = FRI
+			months = 1200
+		}
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			target = EFR
+			months = 1200
+		}
+		custom_tooltip = austria_no_intervene
 	}
 }
