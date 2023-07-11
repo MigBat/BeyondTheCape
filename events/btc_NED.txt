@@ -638,3 +638,99 @@ country_event = {
 		custom_tooltip = austria_no_intervene
 	}
 }
+
+# The Bishopric's Last Stand
+
+country_event = {
+	id = btc_ned.7
+	title = btc_ned.7_t
+	desc = btc_ned.7_d
+	picture = CONQUEST_eventPicture
+
+	trigger = {
+		tag = BUR
+		GEL = {
+			is_subject_of = BUR
+		}
+		NOT = { truce_with = UTR }
+		UTR = {
+			is_subject = no
+			NOT = { war_with = BUR }
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {	# The Bishopric shall submit
+		name = btc_ned.7a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		declare_war_with_cb = {
+			casus_belli = cb_burgundian_conquests
+			who = UTR
+		}
+	}
+
+	option = {	# This is not the right time
+		name = btc_ned.7b
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# The Frisian Resistance
+
+country_event = {
+	id = btc_ned.8
+	title = btc_ned.8_t
+	desc = btc_ned.8_d
+	picture = CONQUEST_eventPicture
+
+	trigger = {
+		tag = BUR
+		GEL = {
+			is_subject_of = BUR
+		}
+		NOT = { truce_with = FRI }
+		FRI = {
+			is_subject = no
+			NOT = { war_with = BUR }
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {	# The Frisians shall submit
+		name = btc_ned.8a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		declare_war_with_cb = {
+			casus_belli = cb_burgundian_conquests
+			who = FRI
+		}
+	}
+
+	option = {	# This is not the right time
+		name = btc_ned.8b
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

@@ -3993,3 +3993,77 @@ country_event = {
 		}
 	}
 }
+
+# The Ordinances of [Root.Monarch.GetName]
+
+country_event = {
+	id = btc_por.166
+	title = btc_por.166_t
+	desc = btc_por.166_d
+	picture = COURT_eventPicture
+
+	trigger = {
+		tag = POR
+		NOT = { has_ruler_modifier = production_ordinances }
+		NOT = { has_ruler_modifier = tax_ordinances }
+		NOT = { has_ruler_modifier = trade_ordinances }
+		NOT = { has_ruler_modifier = tariff_ordinances }
+		has_regency = no
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = btc_por.166a
+
+		add_adm_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = production_ordinances
+		}
+	}
+
+	option = {
+		name = btc_por.166b
+
+		add_adm_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = tax_ordinances
+		}
+	}
+
+	option = {
+		name = btc_por.166c
+
+		add_dip_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = trade_ordinances
+		}
+	}
+
+	option = {
+		name = btc_por.166d
+
+		trigger = {
+			any_subject_country = {
+				is_colonial_nation = yes
+			}
+		}
+
+		add_dip_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = tariff_ordinances
+		}
+	}
+
+	option = {
+		name = btc_por.166e
+
+		add_prestige = -10
+	}
+}

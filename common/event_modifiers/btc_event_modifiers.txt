@@ -616,3 +616,19 @@ large_trade_company = {
 	global_trade_power = 0.1
 	naval_forcelimit = 5
 }
+
+production_ordinances = {
+	production_efficiency = 0.1
+}
+
+tax_ordinances = {
+	global_tax_modifier = 0.1
+}
+
+trade_ordinances = {
+	trade_efficiency = 0.1
+}
+
+tariff_ordinances = {
+	global_tariffs = 0.1
+}

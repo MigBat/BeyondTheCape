@@ -360,6 +360,13 @@
  btc_por.165c:0 "British sunburn."
  btc_por.165d:0 "Port wine."
  btc_por.165e:0 "Pedrógão ash."
+ btc_por.166_t:0 "The Ordinances of [Root.Monarch.GetName]"
+ btc_por.166_d:0 "The growth in aristocratic privilege is a threat to the authority of the crown. We are going to prevent that growth by making the administration of justice being done via crown appointees rather than the nobility. This will ensure that the crown's interests are put first. During the reign of [Root.Monarch.GetTitle] [Root.Monarch.GetName] we shall emphasize our legislation on the following area:"
+ btc_por.166a:0 "Production laws."
+ btc_por.166b:0 "Tax laws."
+ btc_por.166c:0 "Trade laws."
+ btc_por.166d:0 "Tariff laws."
+ btc_por.166e:0 "No special laws this time."
 
 # Granada Paria #
 
@@ -404,6 +411,14 @@
  btc_ned.6a:0 "For Burgundy!"
  austria_no_intervene:0 "The Emperor of the Holy Roman Empire will not defend the Dutch against the Burgundians when they attack with the Restoration of Union casus belli."
  burgundian_conquests_tt:0 "The Emperor supports Burgundian claims in the Low Countries."
+ btc_ned.7_t:0 "The Bishopric's Last Stand"
+ btc_ned.7_d:0 "With the fall of Gelre, the bishopric of Utrecht is divided and next in line in our quest for dominance. We should make quick work of them."
+ btc_ned.7a:0 "The bishopric shall submit."
+ btc_ned.7b:0 "This is not the right time."
+ btc_ned.8_t:0 "The Frisian Resistance"
+ btc_ned.8_d:0 "The stoic frisians are the last remnants of the dutch independent realms. They are too proud to submit, and so there is only one way to make them see reason."
+ btc_ned.8a:0 "The Frisians shall submit."
+ btc_ned.8b:0 "This is not the right time."
 
 # Aragon Events #
 

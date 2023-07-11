@@ -291,6 +291,14 @@
  desc_lusiadas:0 "The work celebrates the discovery of a sea route to India by the Portuguese. It is the most important work of Portuguese-language literature."
  portugal_succession_crisis:0 "Portugal Succession Crisis"
  desc_portugal_succession_crisis:0 "Our [Root.Monarch.GetTitle] has foolishly died in battle along with many of our nobility, leaving our country in turmoil."
+ production_ordinances:0 "Production Ordinances"
+ desc_production_ordinances:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s ordinances focus on production."
+ tax_ordinances:0 "Tax Ordinances"
+ desc_tax_ordinances:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s ordinances focus on tax."
+ trade_ordinances:0 "Trade Ordinances"
+ desc_trade_ordinances:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s ordinances focus on trade."
+ tariff_ordinances:0 "Tariff Ordinances"
+ desc_tariff_ordinances:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s ordinances focus on tariffs."
 
 # Other Events #
  paria_paid:0 "Paria Paid"
@@ -306,3 +314,4 @@
  war_of_three_kings:0 "Portugal have helped us regain the throne."
  reduced_saudade:0 "Reduced Saudade"
  desc_reduced_saudade:0 "Learning from our recent mistakes."
+ betrayed_us:0 "Gelre did not honor our agreement."
