@@ -654,15 +654,9 @@ callaction = {
 				is_emperor = yes
 			}
 			BUR = {
-				OR = {
-					has_casus_belli = {
-						type = cb_vassalize_mission
-						target = ROOT
-					}
-					has_casus_belli = {
-						type = cb_restore_personal_union
-						target = ROOT
-					}
+				has_casus_belli = {
+					type = cb_burgundian_conquests
+					target = ROOT
 				}
 			}
 			ROOT = {

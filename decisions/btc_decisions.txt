@@ -191,3 +191,18 @@ country_decisions = {
 		}
 	}
 }
+
+country_decisions = {
+	portugal_colour = {
+		potential = {
+			tag = POR
+			ai = no
+		}
+		allow = {}
+		effect = {
+			country_event = {
+				id = btc_por.164
+			}
+		}
+	}
+}

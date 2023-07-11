@@ -3891,3 +3891,105 @@ country_event = {
 		add_ruler_personality = zealot_personality
 	}
 }
+
+# Change Portugal Colour
+
+country_event = {
+	id = btc_por.164
+	title = btc_por.164_t
+	desc = btc_por.164_d
+	picture = portugal_monarchy_flag
+
+	is_triggered_only = yes
+
+	option = {	# Beyond the Cape Blue
+		name = btc_por.164a
+
+		change_country_color = {
+			color = { 90 140 255 }
+		}
+	}
+
+	option = {	# Beyond the Cape White
+		name = btc_por.164b
+
+		change_country_color = {
+			color = { 200 240 255 }
+		}
+	}
+
+	option = {	# Vanilla Blue
+		name = btc_por.164c
+
+		change_country_color = {
+			color = { 40 110 140 }
+		}
+	}
+
+	option = {	# Vanilla Green
+		name = btc_por.164d
+
+		change_country_color = {
+			color = { 57  160  101 }
+		}
+	}
+
+	option = {	# Meme Colours
+		name = btc_por.164e
+
+		country_event = {
+			id = btc_por.165
+		}
+	}
+}
+
+# Meme Colours
+
+country_event = {
+	id = btc_por.165
+	title = btc_por.165_t
+	desc = btc_por.165_d
+	picture = pepe
+
+	is_triggered_only = yes
+
+	option = {	# Mordor black
+		name = btc_por.165a
+
+		change_country_color = {
+			color = { 10  10  10 }
+		}
+	}
+
+	option = {	# Brazilian gold
+		name = btc_por.165b
+
+		change_country_color = {
+			color = { 212  175  55 }
+		}
+	}
+
+	option = {	# Tourist red
+		name = btc_por.165c
+
+		change_country_color = {
+			color = { 190 90 100 }
+		}
+	}
+
+	option = {	# Port wine
+		name = btc_por.165d
+
+		change_country_color = {
+			color = { 108  17  24 }
+		}
+	}
+
+	option = {	# Pedrogão ash
+		name = btc_por.165e
+
+		change_country_color = {
+			color = { 100  100  100 }
+		}
+	}
+}

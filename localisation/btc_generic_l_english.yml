@@ -166,6 +166,8 @@
  cas_por_iberian_wedding_information_desc:0 "We need to have more prestige or more legitimacy than Portugal to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill at least one of the prerequisites.\n\nYBe aware:§! when your heir rises to the throne, their claim will become the country's legitimacy."
  cas_ara_iberian_wedding_information_title:0 "Iberian Inheritance Status"
  cas_ara_iberian_wedding_information_desc:0 "We need to have more prestige or more legitimacy than Aragon to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill at least one of the prerequisites.\n\n§YBe aware:§! when your heir rises to the throne, their claim will become the country's legitimacy."
+ portugal_colour_title:0 "Change Country Colour"
+ portugal_colour_desc:0 "It's not possible to please everyone, so go ahead and choose which colour suits your Portugal best. You can take this decision as many times as you want."
 
 # Other #
 
@@ -199,5 +201,9 @@
  huge_colonial_nation:0 "Prominent Colony"
  cb_war_of_three_kings:0 "War of the Three Kings"
  cb_war_of_three_kings_desc:0 "Morocco shall be catholic."
+ cb_burgundian_conquests:0 "Burgundian Conquests"
+ cb_burgundian_conquests_desc:0 "The Low Countries belong to Burgundy."
+ burgundian_conquests_vassalize:0 "$ORDER$$FIRST$ Subjugation of the Low Countries"
+ burgundian_conquests_vassalize_desc:0 "The Low Countries must be subjugated."
 
  crown_colony_long_desc:0 "A Crown Colony has a high amount of direct control from the overlord. They contribute a good amount of money."

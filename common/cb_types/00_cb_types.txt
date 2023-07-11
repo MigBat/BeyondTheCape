@@ -1987,3 +1987,13 @@ cb_war_of_three_kings = {
 
 	war_goal = humiliate_rotw
 }
+
+# Burgundian Conquests
+cb_burgundian_conquests = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 120
+
+	war_goal = burgundian_conquests_vassalize
+}

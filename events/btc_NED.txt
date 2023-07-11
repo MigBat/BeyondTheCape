@@ -483,6 +483,7 @@ country_event = {
 			has_ruler = "Arnold"
 			has_heir = "Adolf"
 			heir_age = 15
+			is_subject = no
 		}
 	}
 
@@ -580,7 +581,7 @@ country_event = {
 		}
 
 		declare_war_with_cb = {
-			casus_belli = cb_restore_personal_union
+			casus_belli = cb_burgundian_conquests
 			who = GEL
 		}
 	}
@@ -615,22 +616,22 @@ country_event = {
 		name = btc_ned.6a
 
 		add_casus_belli = {
-			type = cb_vassalize_mission
+			type = cb_burgundian_conquests
 			target = GEL
 			months = 1200
 		}
 		add_casus_belli = {
-			type = cb_vassalize_mission
+			type = cb_burgundian_conquests
 			target = UTR
 			months = 1200
 		}
 		add_casus_belli = {
-			type = cb_vassalize_mission
+			type = cb_burgundian_conquests
 			target = FRI
 			months = 1200
 		}
 		add_casus_belli = {
-			type = cb_vassalize_mission
+			type = cb_burgundian_conquests
 			target = EFR
 			months = 1200
 		}

@@ -857,4 +857,16 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
+	spriteType = {
+		name = "portugal_monarchy_flag"
+		texturefile = "gfx/event_pictures/btc_event_pictures/portugal_monarchy_flag.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "pepe"
+		texturefile = "gfx/event_pictures/btc_event_pictures/pepe.dds"
+		alwaystransparent = yes
+	}
+
 }
