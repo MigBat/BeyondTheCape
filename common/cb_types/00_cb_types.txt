@@ -1966,3 +1966,34 @@ cb_get_mohamed = {
 
 	war_goal = superiority_crusade
 }
+
+# War of the Three Kings
+cb_war_of_three_kings = {
+	valid_for_subject = no
+	is_triggered_only = yes
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+
+	war_goal = humiliate_rotw
+}
+
+# Burgundian Conquests
+cb_burgundian_conquests = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 120
+
+	war_goal = burgundian_conquests_vassalize
+}

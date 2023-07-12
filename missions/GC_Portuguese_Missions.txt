@@ -1324,6 +1324,13 @@ gc_por_3 = {
 				}
 				add_permanent_claim = ROOT
 			}	
+			define_explorer = {
+				name = "Diogo Cão"
+				shock = 1
+				fire = 1
+				manuever = 3
+				siege = 0
+			}
 		}
 	}
 

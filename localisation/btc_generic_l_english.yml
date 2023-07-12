@@ -96,7 +96,7 @@
 # Trade Nodes #
  lisboa:0 "Lisboa"
  london:0 "London"
- english_channel:0 "Antwerp"
+ english_channel:0 "Lowlands"
 
 # Trade Companies #
  trade_company_the_caribbean:0 "Caribbean Charter"
@@ -108,6 +108,8 @@
  trade_company_london:0 "English Charter"
  TRADE_COMPANY_LONDON_Root_Culture_GetName:0 "[Root.Culture.GetName] English Company"
  TRADE_COMPANY_LONDON_European_Trade_Company:0 "English Trade Company"
+
+ large_trade_company:0 "Large Trade Company"
 
 # Changes from vanilla localisation #
  trade_company_sevilla:0 "Castilian Charter"
@@ -164,6 +166,8 @@
  cas_por_iberian_wedding_information_desc:0 "We need to have more prestige or more legitimacy than Portugal to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill at least one of the prerequisites.\n\nYBe aware:§! when your heir rises to the throne, their claim will become the country's legitimacy."
  cas_ara_iberian_wedding_information_title:0 "Iberian Inheritance Status"
  cas_ara_iberian_wedding_information_desc:0 "We need to have more prestige or more legitimacy than Aragon to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill at least one of the prerequisites.\n\n§YBe aware:§! when your heir rises to the throne, their claim will become the country's legitimacy."
+ portugal_colour_title:0 "Change Country Colour"
+ portugal_colour_desc:0 "It's not possible to please everyone, so go ahead and choose which colour suits your Portugal best. You can take this decision as many times as you want."
 
 # Other #
 
@@ -195,3 +199,11 @@
  confirm_thalassocracy_b_tt:0 "§Y[Root.GetName]§! is the strongest Trade Power in §Y[236.GetName]§!, §Y[45.GetName]§!, §Y[1926.GetName]§!, §Y[1744.GetName]§! and §Y[1975.GetName]§!."
 
  huge_colonial_nation:0 "Prominent Colony"
+ cb_war_of_three_kings:0 "War of the Three Kings"
+ cb_war_of_three_kings_desc:0 "Morocco shall be catholic."
+ cb_burgundian_conquests:0 "Burgundian Conquests"
+ cb_burgundian_conquests_desc:0 "The Low Countries belong to Burgundy."
+ burgundian_conquests_vassalize:0 "$ORDER$$FIRST$ Subjugation of the Low Countries"
+ burgundian_conquests_vassalize_desc:0 "The Low Countries must be subjugated."
+
+ crown_colony_long_desc:0 "A Crown Colony has a high amount of direct control from the overlord. They contribute a good amount of money."

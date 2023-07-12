@@ -889,21 +889,7 @@ country_event = {
 		has_global_flag = decline_of_spices_happened
 		is_year = 1650
 		has_country_modifier = dutch_india_trade_co
-		any_owned_province = {
-			OR = {
-				region = malaya_region
-				region = moluccas_region
-				region = indonesia_region
-				region = coromandel_region
-				region = deccan_region
-				region = west_india_region
-				region = hindusthan_region
-				region = bengal_region
-				region = burma_region
-				region = indo_china_region
-			}
-			is_owned_by_trade_company = yes
-		}
+		VOC = { is_subject_of = ROOT }
 	}
 	
 	mean_time_to_happen = {
@@ -922,9 +908,13 @@ country_event = {
 	}
 	option = {
 		name = flavor_hol.10.c #Dissolve the VoC (this is not a very attractive option at this point)
+		ai_chance = {
+			factor = 0
+		}
 		add_stability = -3
 		add_inflation = 5
 		remove_country_modifier = dutch_india_trade_co
+		inherit = VOC
 	}
 }
 
@@ -945,21 +935,7 @@ country_event = {
 		}
 		is_year = 1700
 		has_country_modifier = dutch_india_trade_co
-		any_owned_province = {
-			OR = {
-				region = malaya_region
-				region = moluccas_region
-				region = indonesia_region
-				region = coromandel_region
-				region = deccan_region
-				region = west_india_region
-				region = hindusthan_region
-				region = bengal_region
-				region = burma_region
-				region = indo_china_region
-			}
-			is_owned_by_trade_company = yes
-		}
+		VOC = { is_subject_of = ROOT }
 	}
 	
 	mean_time_to_happen = {
@@ -977,10 +953,14 @@ country_event = {
 	}
 	option = {
 		name = flavor_hol.11.b #Dissolve the VoC
+		ai_chance = {
+			factor = 0
+		}
 		set_country_flag = VoC_nationalized
 		add_stability = -2
 		add_inflation = 8
 		remove_country_modifier = dutch_india_trade_co
+		inherit = VOC
 	}
 }
 
@@ -998,20 +978,7 @@ country_event = {
 		has_country_flag = ned_voc_in_peril
 		is_year = 1750
 		has_country_modifier = dutch_india_trade_co
-		any_owned_province = {
-			OR = {
-				region = malaya_region
-				region = moluccas_region
-				region = indonesia_region
-				region = coromandel_region
-				region = deccan_region
-				region = west_india_region
-				region = hindusthan_region
-				region = bengal_region
-				region = burma_region
-				region = indo_china_region
-			}
-		}
+		VOC = { is_subject_of = ROOT }
 	}
 	
 	mean_time_to_happen = {
@@ -1035,6 +1002,7 @@ country_event = {
 		add_dip_power = -50
 		add_inflation = 10
 		remove_country_modifier = dutch_india_trade_co
+		inherit = VOC
 	}
 }
 

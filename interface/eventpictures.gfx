@@ -809,4 +809,64 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
+	spriteType = {
+		name = "btc_camoes_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_eye_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_eye_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_borges_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_borges_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_goa_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_goa_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_macau_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_macau_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_shipwreck_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_shipwreck_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_lusiadas_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_lusiadas_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_sebastiao_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_sebastiao_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "portugal_monarchy_flag"
+		texturefile = "gfx/event_pictures/btc_event_pictures/portugal_monarchy_flag.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "pepe"
+		texturefile = "gfx/event_pictures/btc_event_pictures/pepe.dds"
+		alwaystransparent = yes
+	}
+
 }

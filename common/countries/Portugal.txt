@@ -159,5 +159,5 @@ army_names = {
 }
 
 fleet_names = {
-	"Armada Real" "Armada de $PROVINCE$" "Esquadra de $PROVINCE$" "Frota de $PROVINCE$"  "Armada do Atlâtico" "Esquadra do Atlântico" "Frota do Atlântico" "Armada do Brasil" "Esquadra do Brasil" "Frota do Brasil" "Armada da Guiné" "Esquadra da Guiné" "Frota da Guiné" "Armada do Cabo" "Esquadra do Cabo" "Frota do Cabo" "Armada do Índico" "Esquadra do Índico" "Frota do Índico" "Armada do Estreito" "Esquadra do Estreito" "Frota do Estreito" "Armada do Extremo Oriente" "Esquadra do Extremo Oriente" "Frota do Extremo Oriente""Armada do Pacífico" "Esquadra do Pacífico" "Frota do Pacífico"
+	"Armada Real" "Armada de $PROVINCE$" "Esquadra de $PROVINCE$" "Frota de $PROVINCE$"  "Armada do Atlântico" "Esquadra do Atlântico" "Frota do Atlântico" "Armada do Brasil" "Esquadra do Brasil" "Frota do Brasil" "Armada da Guiné" "Esquadra da Guiné" "Frota da Guiné" "Armada do Cabo" "Esquadra do Cabo" "Frota do Cabo" "Armada do Índico" "Esquadra do Índico" "Frota do Índico" "Armada do Estreito" "Esquadra do Estreito" "Frota do Estreito" "Armada do Extremo Oriente" "Esquadra do Extremo Oriente" "Frota do Extremo Oriente""Armada do Pacífico" "Esquadra do Pacífico" "Frota do Pacífico"
 }

@@ -2,6 +2,7 @@
 
  # Slavers #
  estate_slavers:0 "Slavers"
+ estate_slavers_desc:0 "This estate represents the merchants that specialize in the slave trade, acquiring them in the western coast of Africa, and selling them to the highest bidder. The usual fate of these slaves is to be sold to plantation owners in the New World, working there for the rest of their lives. This practice of sending slaves from Africa to the New World has come to be known as the Atlantic Slave Trade."
  slavers_loyalty_modifier:0 "Slavers Loyalty Equilibrium"
  slavers_influence_modifier:0 "Slavers Influence"
  slavers_privilege_slots:0 "Slavers Max Privileges"

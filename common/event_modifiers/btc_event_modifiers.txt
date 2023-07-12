@@ -573,7 +573,7 @@ discovery_fervor = {
 }
 
 expensive_spices = {
-	trade_efficiency = -0.1
+	trade_efficiency = -0.05
 }
 
 capital_1 = {
@@ -593,4 +593,42 @@ capital_5 = {
 }
 capital_6 = {
 	monthly_portuguese_saudade = -0.3
+}
+
+lusiadas = {
+	prestige_decay = -0.01
+	navy_tradition_decay = -0.01
+	army_tradition_decay = -0.01
+}
+
+portugal_succession_crisis = {
+	legitimacy = -1
+	land_morale = -0.1
+	naval_morale = -0.1
+}
+
+reduced_saudade = {
+	monthly_portuguese_saudade = -0.5
+}
+
+large_trade_company = {
+	merchants = 2
+	global_trade_power = 0.1
+	naval_forcelimit = 5
+}
+
+production_ordinances = {
+	production_efficiency = 0.1
+}
+
+tax_ordinances = {
+	global_tax_modifier = 0.1
+}
+
+trade_ordinances = {
+	trade_efficiency = 0.1
+}
+
+tariff_ordinances = {
+	global_tariffs = 0.1
 }

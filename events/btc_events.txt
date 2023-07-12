@@ -35,11 +35,7 @@ country_event = {
 	desc = btc_events.2_d
 	picture = RELIGIOUS_WARS_eventPicture
 
-	fire_only_once = yes
-
-	trigger = {
-		tag = MOR
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = btc_events.2a
@@ -50,18 +46,7 @@ country_event = {
 				duration = 36500
 			}
 		}
-		# marrekesh_area = {
-		# 	add_province_modifier = {
-		# 		name = resist_reconquista
-		# 		duration = 36500
-		# 	}
-		# }
-		# fez_area = {
-		# 	add_province_modifier = {
-		# 		name = resist_reconquista
-		# 		duration = 36500
-		# 	}
-		# }
+		set_country_flag = resisting_reconquista
 	}
 }
 
@@ -474,6 +459,114 @@ country_event = {
 				power = 25
 				key = spice_trade_monopoly
 			}		
+		}
+	}
+}
+
+# We've Won the War of the Three Kings #
+
+country_event = {
+	id = btc_events.11
+	title = btc_events.11_t
+	desc = btc_events.11_d
+	picture = NAVAL_MILITARY_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = btc_events.11a
+
+		POR = { clr_country_flag = war_of_three_kings }
+		MOR = { clr_country_flag = war_of_three_kings }
+
+		remove_rival = MOR
+
+		MOR = {
+			define_ruler = {
+				name = "Abu Abdallah"
+				age = 35
+				dynasty = Saadi
+				adm = 2
+				dip = 4
+				mil = 4
+			}
+			kill_heir = {}
+			create_alliance = POR
+			change_religion = catholic
+			add_opinion = {
+				who = POR
+				modifier = war_of_three_kings
+			}
+			remove_rival = POR
+		}
+	}
+}
+
+# Battle of Alcácer Quibir #
+
+country_event = {
+	id = btc_events.12
+	title = btc_events.12_t
+	desc = btc_events.12_d
+	picture = NAVAL_MILITARY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_events.12a
+
+		POR = { clr_country_flag = war_of_three_kings }
+		MOR = { clr_country_flag = war_of_three_kings }
+
+		kill_ruler = yes
+		white_peace = MOR
+		add_stability = -2
+		add_country_modifier = {
+			name = portugal_succession_crisis
+			duration = 1825
+		}
+	}
+}
+
+# The Portuguese Succession #
+
+country_event = {
+	id = btc_events.13
+	title = btc_events.13_t
+	desc = btc_events.13_d
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		POR = {
+			has_country_modifier = portugal_succession_crisis
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {	# Seize this opportunity
+		name = btc_events.13a
+
+		declare_war_with_cb = {
+			casus_belli = cb_restore_personal_union
+			who = POR
+		}
+	}
+
+	option = {	# We will bide our time
+		name = btc_events.13b
+
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			target = POR
+			months = 60
 		}
 	}
 }
