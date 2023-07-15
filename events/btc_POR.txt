@@ -4651,8 +4651,19 @@ country_event = {
 	title = btc_por.169_t
 	desc = btc_por.169_d
 	picture = COURT_eventPicture
-	
-	is_triggered_only = yes
+
+	trigger = {
+		months_of_ruling = 360
+		OR = {
+			has_ruler_modifier = production_ordinances
+			has_ruler_modifier = tax_ordinances
+			has_ruler_modifier = trade_ordinances
+			has_ruler_modifier = tariff_ordinances
+			has_ruler_modifier = padrao_ordinances
+			has_ruler_modifier = diplomatic_ordinances
+			has_ruler_modifier = development_ordinances
+		}
+	}
 
 	mean_time_to_happen = {
 		days = 1
@@ -4667,10 +4678,9 @@ country_event = {
 			}
 			add_adm_power = -100
 			change_government_reform_progress = -25
-			add_country_modifier = {
-				name = production_ordinances
-				duration = -1
-			}
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_production_ordinances
+			custom_tooltip = production_ordinances_tt
 		}
 		if = {
 			limit = {
@@ -4678,10 +4688,9 @@ country_event = {
 			}
 			add_adm_power = -100
 			change_government_reform_progress = -25
-			add_country_modifier = {
-				name = tax_ordinances
-				duration = -1
-			}
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_tax_ordinances
+			custom_tooltip = tax_reduction
 		}
 		if = {
 			limit = {
@@ -4689,10 +4698,9 @@ country_event = {
 			}
 			add_dip_power = -100
 			change_government_reform_progress = -25
-			add_country_modifier = {
-				name = trade_ordinances
-				duration = -1
-			}
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_trade_ordinances
+			custom_tooltip = trade_ordinances_tt
 		}
 		if = {
 			limit = {
@@ -4700,10 +4708,9 @@ country_event = {
 			}
 			add_dip_power = -100
 			change_government_reform_progress = -25
-			add_country_modifier = {
-				name = tariff_ordinances
-				duration = -1
-			}
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_tariff_ordinances
+			custom_tooltip = tariff_ordinances_tt
 		}
 		if = {
 			limit = {
@@ -4711,10 +4718,9 @@ country_event = {
 			}
 			add_dip_power = -100
 			change_government_reform_progress = -25
-			add_country_modifier = {
-				name = padrao_ordinances
-				duration = -1
-			}
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_padrao_ordinances
+			custom_tooltip = padrao_ordinances_tt
 		}
 		if = {
 			limit = {
@@ -4722,10 +4728,9 @@ country_event = {
 			}
 			add_dip_power = -100
 			change_government_reform_progress = -25
-			add_country_modifier = {
-				name = diplomatic_ordinances
-				duration = -1
-			}
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_diplomatic_ordinances
+			custom_tooltip = diplomatic_ordinances_tt
 		}
 		if = {
 			limit = {
@@ -4733,10 +4738,9 @@ country_event = {
 			}
 			add_adm_power = -100
 			change_government_reform_progress = -25
-			add_country_modifier = {
-				name = development_ordinances
-				duration = -1
-			}
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_development_ordinances
+			custom_tooltip = development_ordinances_tt
 		}
 	}
 
@@ -4744,5 +4748,97 @@ country_event = {
 		name = btc_por.169b
 
 		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = btc_por.170
+	title = btc_por.170_t
+	desc = btc_por.170_d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = btc_por.170a
+
+		if = {
+			limit = {
+				has_country_flag = permanent_production_ordinances
+			}
+			add_country_modifier = {
+				name = production_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_production_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_tax_ordinances
+			}
+			add_country_modifier = {
+				name = tax_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_tax_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_trade_ordinances
+			}
+			add_country_modifier = {
+				name = trade_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_trade_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_tariff_ordinances
+			}
+			add_country_modifier = {
+				name = tariff_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_tariff_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_padrao_ordinances
+			}
+			add_country_modifier = {
+				name = padrao_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_padrao_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_diplomatic_ordinances
+			}
+			add_country_modifier = {
+				name = diplomatic_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_diplomatic_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_development_ordinances
+			}
+			add_country_modifier = {
+				name = development_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_development_ordinances
+			clr_country_flag = permanent_ordinances
+		}
 	}
 }

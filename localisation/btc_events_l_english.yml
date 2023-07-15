@@ -411,9 +411,16 @@
  btc_por.168.cloves:0 "Establish cloves production."
  btc_por.168.unknown:0 "Let the colonists choose their production."
  btc_por.169_t:0 "Portuguese Ordinances"
- btc_por.169_d:0 "The rule of [Root.Monarch.GetName] has been a long one, and the ordinances passed by the [Root.Monarch.GetTitle] at the start of his rule have proven to be a success. He intends to mark his place in Portuguese history by making the Ordinances of [Root.Monarch.GetName] permanent. Is this the right decision?"
+ btc_por.169_d:0 "The rule of [Root.Monarch.GetName] has been a long one, and the ordinances passed by the [Root.Monarch.GetTitle] at the start of his rule have proven to be a success. [Root.Monarch.GetSheHeCap] intends to mark [Root.Monarch.GetHerHis] place in Portuguese history by making the Ordinances of [Root.Monarch.GetName] permanent. Is this the right decision?"
  btc_por.169a:0 "Make it a permanent ordinance."
  btc_por.169b:0 "This is not a good idea."
+ production_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s production ordinances will become permanent after [Root.Monarch.GetHerHis] death."
+ tax_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s tax ordinances will become permanent after [Root.Monarch.GetHerHis] death."
+ trade_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s trade ordinances will become permanent after [Root.Monarch.GetHerHis] death."
+ tariff_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s tariff ordinances will become permanent after [Root.Monarch.GetHerHis] death."
+ padrao_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s Padrão ordinances will become permanent after [Root.Monarch.GetHerHis] death."
+ diplomatic_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s diplomatic ordinances will become permanent after [Root.Monarch.GetHerHis] death."
+ development_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s development ordinances will become permanent after [Root.Monarch.GetHerHis] death."
 
 # Granada Paria #
 
