@@ -1314,9 +1314,9 @@ gc_por_3 = {
 				name = portuguese_exploration
 				duration = 18250
 			}
-			country_event = {
-				id = btc_por.144
-			}
+			# country_event = {
+			# 	id = btc_por.144
+			# }
 			newfoundland_area = {
 				limit = {
 					NOT = { is_core = ROOT }

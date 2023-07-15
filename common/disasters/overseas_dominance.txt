@@ -141,15 +141,11 @@ overseas_dominance = {
 		}
 	}
 	can_end = {
-		if = {
-			limit = {
-				NOT = {
-					has_government_power = {
-						mechanic_type = portuguese_saudade_mechanic 
-						power_type = portuguese_saudade 
-						value = 50
-					}
-				}
+		NOT = {
+			has_government_power = {
+				mechanic_type = portuguese_saudade_mechanic 
+				power_type = portuguese_saudade 
+				value = 50
 			}
 		}
 	}

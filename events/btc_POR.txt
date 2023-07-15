@@ -3006,26 +3006,26 @@ country_event = {
 
 # Jo�o Vaz Corte Real #
 
-country_event = {
-	id = btc_por.144
-	title = btc_por.144_t
-	desc = btc_por.144_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_por.144
+# 	title = btc_por.144_t
+# 	desc = btc_por.144_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {	# Great
-		name = btc_por.144a
+# 	option = {	# Great
+# 		name = btc_por.144a
 
-		newfoundland_area = {
-			discover_country = ROOT
-		}
-	}
-}
+# 		newfoundland_area = {
+# 			discover_country = ROOT
+# 		}
+# 	}
+# }
 
 # Tomb of Mohamed #
 
