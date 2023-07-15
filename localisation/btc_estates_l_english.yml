@@ -86,6 +86,8 @@
  EST_CRUSHED_SLAVERS:0 "The Slavers have been curtailed"
  estate_slavers_disaster:0 "Slaver Guilds Coup"
  estate_slavers_disaster_desc:0 "The cities and guilds have grown so powerful they assumed de facto control over our country. Real power now lies in the hands of a small group of wealthy Slavers."
+ curtail_estate_slavers_title:0 "Curtail the Slavers"
+ curtail_estate_slavers_desc:0 "Through bribery and corruption, the Slavers have a stranglehold on our government. To seize control back from these slavers we will need to curtail their power and privileges."
 
  # Events #
 
