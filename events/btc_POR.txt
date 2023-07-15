@@ -4131,7 +4131,7 @@ province_event = {
 		name = btc_por.167a
 
 		FROM = { add_treasury = -15 }
-		add_province_modifier = {
+		add_permanent_province_modifier = {
 			name = padrao_raised
 			duration = -1
 		}

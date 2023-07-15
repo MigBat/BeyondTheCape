@@ -33,7 +33,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -81,7 +81,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -138,7 +138,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -194,7 +194,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -242,7 +242,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -298,7 +298,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -336,7 +336,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -382,7 +382,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -433,7 +433,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -481,7 +481,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -536,7 +536,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -576,7 +576,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -627,7 +627,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -681,7 +681,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
@@ -739,7 +739,7 @@ province_event = {
 			FROM = {
 				add_country_modifier = {
 					name = explored_coast
-					duration = 30
+					duration = 20
 				}
 			}
 		}
