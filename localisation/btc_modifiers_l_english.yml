@@ -299,6 +299,14 @@
  desc_trade_ordinances:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s ordinances focus on trade."
  tariff_ordinances:0 "Tariff Ordinances"
  desc_tariff_ordinances:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s ordinances focus on tariffs."
+ padrao_ordinances:0 "Padrão Ordinances"
+ desc_padrao_ordinances:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s ordinances allows us to place Padrões in newly discovered coastal provinces."
+ padrao_tt:0 "This allows us to raise §YPadrões§! at newly discovered coastal provinces. When we finish a colony in a province with a §YPadrão§!, we can choose the trade good it produces."
+ padrao_raised:0 "Padrão Raised"
+ desc_padrao_raised:0 "A Padrão was raised here by portuguese explorers."
+ padrao_raised_tt:0 "Once Portugal finishes colonizing the province, they can choose what trade good it will produce."
+ explored_coast:0 "Recently Explored Coast"
+ desc_explored_coast:0 "We've recently had an event while exploring a coastal province."
 
 # Other Events #
  paria_paid:0 "Paria Paid"

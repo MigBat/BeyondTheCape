@@ -1990,6 +1990,21 @@ country_event = {
 			}
 		}
 	}
+
+	option = {
+		name = btc_por.123b
+		
+		custom_tooltip = btc_enable_belem_tower_tt
+		hidden_effect = {
+			227 = {
+				add_great_project = {
+					type = belem_tower
+					instant = yes
+				}
+			}		
+			set_country_flag = has_belem_tower	
+		}
+	}
 }
 
 # Jeronimos Monastery #
@@ -3006,7 +3021,9 @@ country_event = {
 	option = {	# Great
 		name = btc_por.144a
 
-		discover_province = 1480
+		newfoundland_area = {
+			discover_country = ROOT
+		}
 	}
 }
 
@@ -4008,6 +4025,8 @@ country_event = {
 		NOT = { has_ruler_modifier = tax_ordinances }
 		NOT = { has_ruler_modifier = trade_ordinances }
 		NOT = { has_ruler_modifier = tariff_ordinances }
+		NOT = { has_ruler_modifier = padrao_ordinances }
+		NOT = { has_ruler_flag = no_ordinances }
 		has_regency = no
 	}
 
@@ -4062,8 +4081,507 @@ country_event = {
 	}
 
 	option = {
+		name = btc_por.166f
+
+		trigger = {
+			num_of_explorers = 1
+		}
+
+		add_dip_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = padrao_ordinances
+		}
+		custom_tooltip = padrao_tt
+	}
+
+	option = {
 		name = btc_por.166e
 
 		add_prestige = -10
+		set_ruler_flag = no_ordinances
+	}
+}
+
+# Padrão in $PROVINCENAME$
+
+province_event = {
+	id = btc_por.167
+	title = btc_por.167_t
+	desc = btc_por.167_d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "El Dorado"
+		is_empty = yes
+		OR = {
+			continent = africa
+			continent = asia
+		}
+		FROM = { has_ruler_modifier = padrao_ordinances }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Raise a Padrão
+		name = btc_por.167a
+
+		FROM = { add_treasury = -15 }
+		add_province_modifier = {
+			name = padrao_raised
+			duration = -1
+		}
+		custom_tooltip = padrao_raised_tt
+	}
+
+	option = {	# Keep exploring
+		name = btc_por.167b
+	}
+}
+
+# Developing $PROVINCENAME$
+province_event = {
+	id = btc_por.168
+	title = btc_por.168_t
+	desc = btc_por.168_d
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes	#Always when a colony finishes
+	goto = ROOT
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				save_event_target_as = ColonizingCountry
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = grain } }
+				calculate_trade_goods_price = { trade_goods = grain }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = wine } }
+				calculate_trade_goods_price = { trade_goods = wine }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = wool } }
+				calculate_trade_goods_price = { trade_goods = wool }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = cloth } }
+				calculate_trade_goods_price = { trade_goods = cloth }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = fish } }
+				calculate_trade_goods_price = { trade_goods = fish }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = fur } }
+				calculate_trade_goods_price = { trade_goods = fur }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = salt } }
+				calculate_trade_goods_price = { trade_goods = salt }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = naval_supplies } }
+				calculate_trade_goods_price = { trade_goods = naval_supplies }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = copper } }
+				calculate_trade_goods_price = { trade_goods = copper }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = gold } }
+				calculate_trade_goods_price = { trade_goods = gold }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = iron } }
+				calculate_trade_goods_price = { trade_goods = iron }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = slaves } }
+				calculate_trade_goods_price = { trade_goods = slaves }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = ivory } }
+				calculate_trade_goods_price = { trade_goods = ivory }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = tea } }
+				calculate_trade_goods_price = { trade_goods = tea }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = chinaware } }
+				calculate_trade_goods_price = { trade_goods = chinaware }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = spices } }
+				calculate_trade_goods_price = { trade_goods = spices }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = coffee } }
+				calculate_trade_goods_price = { trade_goods = coffee }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = cotton } }
+				calculate_trade_goods_price = { trade_goods = cotton }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = sugar } }
+				calculate_trade_goods_price = { trade_goods = sugar }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = tobacco } }
+				calculate_trade_goods_price = { trade_goods = tobacco }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = cocoa } }
+				calculate_trade_goods_price = { trade_goods = cocoa }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = silk } }
+				calculate_trade_goods_price = { trade_goods = silk }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = dyes } }
+				calculate_trade_goods_price = { trade_goods = dyes }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = tropical_wood } }
+				calculate_trade_goods_price = { trade_goods = tropical_wood }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = livestock } }
+				calculate_trade_goods_price = { trade_goods = livestock }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = incense } }
+				calculate_trade_goods_price = { trade_goods = incense }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = glass } }
+				calculate_trade_goods_price = { trade_goods = glass }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = paper } }
+				calculate_trade_goods_price = { trade_goods = paper }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = gems } }
+				calculate_trade_goods_price = { trade_goods = gems }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = coal } }
+				calculate_trade_goods_price = { trade_goods = coal }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = cloves } }
+				calculate_trade_goods_price = { trade_goods = cloves }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = unknown } }
+				calculate_trade_goods_price = { trade_goods = unknown }
+			}
+		}
+	}
+
+	#Keep the current trade good
+	option = {
+		name = btc_por.168a
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	#grain
+	option = {
+		name = btc_por.168.grain
+		trigger = { is_eligible_for_trade_good = { trade_goods = grain } }
+		purchase_trade_goods = { trade_goods = grain }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#wine
+	option = {
+		name = btc_por.168.wine
+		trigger = { is_eligible_for_trade_good = { trade_goods = wine } }
+		purchase_trade_goods = { trade_goods = wine }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#wool
+	option = {
+		name = btc_por.168.wool
+		trigger = { is_eligible_for_trade_good = { trade_goods = wool } }
+		purchase_trade_goods = { trade_goods = wool }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#cloth
+	option = {
+		name = btc_por.168.cloth
+		trigger = { is_eligible_for_trade_good = { trade_goods = cloth } }
+		purchase_trade_goods = { trade_goods = cloth }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#fish
+	option = {
+		name = btc_por.168.fish
+		trigger = { is_eligible_for_trade_good = { trade_goods = fish } }
+		purchase_trade_goods = { trade_goods = fish }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#fur
+	option = {
+		name = btc_por.168.fur
+		trigger = { is_eligible_for_trade_good = { trade_goods = fur } }
+		purchase_trade_goods = { trade_goods = fur }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#salt
+	option = {
+		name = btc_por.168.salt
+		trigger = { is_eligible_for_trade_good = { trade_goods = salt } }
+		purchase_trade_goods = { trade_goods = salt }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#naval_supplies
+	option = {
+		name = btc_por.168.naval_supplies
+		trigger = { is_eligible_for_trade_good = { trade_goods = naval_supplies } }
+		purchase_trade_goods = { trade_goods = naval_supplies }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#copper
+	option = {
+		name = btc_por.168.copper
+		trigger = { is_eligible_for_trade_good = { trade_goods = copper } }
+		purchase_trade_goods = { trade_goods = copper }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#gold
+	option = {
+		name = btc_por.168.gold
+		trigger = { is_eligible_for_trade_good = { trade_goods = gold } }
+		purchase_trade_goods = { trade_goods = gold }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#iron
+	option = {
+		name = btc_por.168.iron
+		trigger = { is_eligible_for_trade_good = { trade_goods = iron } }
+		purchase_trade_goods = { trade_goods = iron }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#slaves
+	option = {
+		name = btc_por.168.slaves
+		trigger = { is_eligible_for_trade_good = { trade_goods = slaves } }
+		purchase_trade_goods = { trade_goods = slaves }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#ivory
+	option = {
+		name = btc_por.168.ivory
+		trigger = { is_eligible_for_trade_good = { trade_goods = ivory } }
+		purchase_trade_goods = { trade_goods = ivory }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#tea
+	option = {
+		name = btc_por.168.tea
+		trigger = { is_eligible_for_trade_good = { trade_goods = tea } }
+		purchase_trade_goods = { trade_goods = tea }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#chinaware
+	option = {
+		name = btc_por.168.chinaware
+		trigger = { is_eligible_for_trade_good = { trade_goods = chinaware } }
+		purchase_trade_goods = { trade_goods = chinaware }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#spices
+	option = {
+		name = btc_por.168.spices
+		trigger = { is_eligible_for_trade_good = { trade_goods = spices } }
+		purchase_trade_goods = { trade_goods = spices }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#coffee
+	option = {
+		name = btc_por.168.coffee
+		trigger = { is_eligible_for_trade_good = { trade_goods = coffee } }
+		purchase_trade_goods = { trade_goods = coffee }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#cotton
+	option = {
+		name = btc_por.168.cotton
+		trigger = { is_eligible_for_trade_good = { trade_goods = cotton } }
+		purchase_trade_goods = { trade_goods = cotton }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#sugar
+	option = {
+		name = btc_por.168.sugar
+		trigger = { is_eligible_for_trade_good = { trade_goods = sugar } }
+		purchase_trade_goods = { trade_goods = sugar }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#tobacco
+	option = {
+		name = btc_por.168.tobacco
+		trigger = { is_eligible_for_trade_good = { trade_goods = tobacco } }
+		purchase_trade_goods = { trade_goods = tobacco }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#cocoa
+	option = {
+		name = btc_por.168.cocoa
+		trigger = { is_eligible_for_trade_good = { trade_goods = cocoa } }
+		purchase_trade_goods = { trade_goods = cocoa }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#silk
+	option = {
+		name = btc_por.168.silk
+		trigger = { is_eligible_for_trade_good = { trade_goods = silk } }
+		purchase_trade_goods = { trade_goods = silk }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#dyes
+	option = {
+		name = btc_por.168.dyes
+		trigger = { is_eligible_for_trade_good = { trade_goods = dyes } }
+		purchase_trade_goods = { trade_goods = dyes }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#tropical_wood
+	option = {
+		name = btc_por.168.tropical_wood
+		trigger = { is_eligible_for_trade_good = { trade_goods = tropical_wood } }
+		purchase_trade_goods = { trade_goods = tropical_wood }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#livestock
+	option = {
+		name = btc_por.168.livestock
+		trigger = { is_eligible_for_trade_good = { trade_goods = livestock } }
+		purchase_trade_goods = { trade_goods = livestock }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#incense
+	option = {
+		name = btc_por.168.incense
+		trigger = { is_eligible_for_trade_good = { trade_goods = incense } }
+		purchase_trade_goods = { trade_goods = incense }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#glass
+	option = {
+		name = btc_por.168.glass
+		trigger = { is_eligible_for_trade_good = { trade_goods = glass } }
+		purchase_trade_goods = { trade_goods = glass }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#paper
+	option = {
+		name = btc_por.168.paper
+		trigger = { is_eligible_for_trade_good = { trade_goods = paper } }
+		purchase_trade_goods = { trade_goods = paper }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#gems
+	option = {
+		name = btc_por.168.gems
+		trigger = { is_eligible_for_trade_good = { trade_goods = gems } }
+		purchase_trade_goods = { trade_goods = gems }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#coal
+	option = {
+		name = btc_por.168.coal
+		trigger = { is_eligible_for_trade_good = { trade_goods = coal } }
+		purchase_trade_goods = { trade_goods = coal }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#cloves
+	option = {
+		name = btc_por.168.cloves
+		trigger = { is_eligible_for_trade_good = { trade_goods = cloves } }
+		purchase_trade_goods = { trade_goods = cloves }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#unknown
+	option = {
+		name = btc_por.168.unknown
+		trigger = { is_eligible_for_trade_good = { trade_goods = unknown } }
+		purchase_trade_goods = { trade_goods = unknown }
+		ai_chance = {
+			factor = 0
+		}
 	}
 }

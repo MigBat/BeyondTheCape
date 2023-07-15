@@ -813,7 +813,7 @@ gc_por_2_b = {
 				duration = 5475
 			}
 			define_explorer = {
-				name = "Pedro √Ålvares Cabral"
+				name = "Pedro ¡lvares Cabral"
 				shock = 3
 				fire = 2
 				manuever = 5
@@ -1325,7 +1325,7 @@ gc_por_3 = {
 				add_permanent_claim = ROOT
 			}	
 			define_explorer = {
-				name = "Diogo C√£o"
+				name = "Diogo C„o"
 				shock = 1
 				fire = 1
 				manuever = 3
@@ -1747,6 +1747,14 @@ gc_por_3 = {
 					}
 				}
 				set_government_rank = 3
+			}
+			custom_tooltip = btc_enable_pena_palace_tt
+			hidden_effect = {
+				227 = {
+					add_great_project = {
+						type = pena_palace
+					}
+				}				
 			}
 			add_prestige_or_monarch_power = { amount = 50 }
 			add_power_projection = { 

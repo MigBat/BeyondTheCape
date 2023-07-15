@@ -49,6 +49,8 @@
  btc_por_prester_john_desc:0 "We must find the kingdom of Prester John. They will be a valuable ally in this sea of enemies. Pêro da Covilhã has already been sent over land to meet our explorers on the Indian Ocean, and to find this mythical kingdom and establish diplomatic relations."
  btc_por_legacy_of_albuquerque_title:0 "Legacy of Albuquerque"
  btc_por_legacy_of_albuquerque_desc:0 "The Portuguese led military campaigns towards the Islamic world. As stated by Afonso de Albuquerque: “The first goal of the rally around the Islamic world, is to storm the Prophet’s Mosque and take the remains of the Prophet Muhammad as a bargaining chip to recover Jerusalem from the Muslims”."
+ btc_enable_belem_tower_tt:0 "Enables the construction of the §YBelém Tower§! in Lisboa."
+ btc_enable_pena_palace_tt:0 "Enables the construction of the §YPena Palace§! in Lisboa."
 
 # Netherlands Missions #
 

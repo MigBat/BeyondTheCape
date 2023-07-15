@@ -21,10 +21,22 @@ province_event = {
 		has_dlc = "El Dorado"
 		native_hostileness = 5
 		is_empty = yes
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -57,10 +69,22 @@ province_event = {
 		has_dlc = "El Dorado"
 		native_hostileness = 5
 		is_empty = yes
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -101,6 +125,7 @@ province_event = {
 				technology_group = andean
 			}
 		}
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
@@ -109,6 +134,14 @@ province_event = {
 
 	immediate = {
 		owner = { save_event_target_as = tribal_nation }
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -149,10 +182,22 @@ province_event = {
 		is_empty = yes
 		NOT = { base_tax = 8 }
 		NOT = { has_province_flag = base_tax_changed }
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -185,10 +230,22 @@ province_event = {
 				technology_group = andean
 			}
 		}
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -229,10 +286,22 @@ province_event = {
 		is_empty = yes
 		base_tax = 3
 		NOT = { has_province_flag = base_tax_changed }
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -255,10 +324,22 @@ province_event = {
 	trigger = {
 		is_empty = yes
 		native_hostileness = 5
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -289,10 +370,22 @@ province_event = {
 				technology_group = andean
 			}
 		}
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1  
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -328,10 +421,22 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -364,10 +469,22 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		has_terrain = jungle
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -404,6 +521,7 @@ province_event = {
 			native_ferocity = 5
 			native_hostileness = 5
 		}
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
@@ -413,6 +531,14 @@ province_event = {
 	immediate = {
 		kill_leader = {
 			type = explorer
+		}
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
 		}
 	}
 	
@@ -438,10 +564,22 @@ province_event = {
 			NOT = { religion_group = muslim }
 			NOT = { has_country_modifier = drunken_explorer }
 		}
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -477,10 +615,22 @@ province_event = {
 			region = oceanea_region
 		}
 		has_climate = arctic
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -519,10 +669,22 @@ province_event = {
 				technology_group = andean
 			}
 		}
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -565,10 +727,22 @@ province_event = {
 				technology_group = andean
 			}
 		}
+		FROM = { NOT = { has_country_modifier = explored_coast } }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = explored_coast
+					duration = 30
+				}
+			}
+		}
 	}
 	
 	option = {

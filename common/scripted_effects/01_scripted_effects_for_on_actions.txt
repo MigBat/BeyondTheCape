@@ -2704,6 +2704,18 @@ on_colony_finished_effect = {
 	# BEYOND THE CAPE #
 	if = {
 		limit = {
+			owner = {
+				tag = POR
+			}
+			has_province_modifier = padrao_raised
+		}
+		remove_province_modifier = padrao_raised
+		province_event = {
+			id = btc_por.168
+		}
+	}
+	if = {
+		limit = {
 			AND = {
 				owner = {
 					has_government_attribute = can_establish_feitorias

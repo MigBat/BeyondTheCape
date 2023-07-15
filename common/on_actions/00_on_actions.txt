@@ -4338,11 +4338,13 @@ on_explore_coast = {
 		10 = exploration_events.8
 		10 = exploration_events.9
 		10 = exploration_events.10
-		5 = exploration_events.11
+		1 = exploration_events.11
 		10 = exploration_events.12
 		10 = exploration_events.13
 		10 = exploration_events.14
-		5 = exploration_events.15
+		1 = exploration_events.15
+		# Beyond the Cape
+		100000 = btc_por.167	# Padrão event is guaranteed to happen in empty provinces if you meet its conditions
 	}
 }
 on_conquistador_empty = {
