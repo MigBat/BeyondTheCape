@@ -638,6 +638,14 @@ padrao_ordinances = {
 	picture = "padrao"
 }
 
+diplomatic_ordinances = {
+	diplomatic_reputation = 1
+}
+
+development_ordinances = {
+	development_cost_modifier = -0.05
+}
+
 padrao_raised = {
 	# padrao was raised
 	picture = "padrao"

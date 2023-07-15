@@ -1520,10 +1520,6 @@ on_new_consort = {
 # country
 on_monarch_death = {
 	if = {
-		limit = { has_ruler_flag = miguel_da_paz }
-		country_event = { id = btc_por.138 }
-	}
-	if = {
 		limit = {
 			tag = ANS
 			BRA = {
@@ -1586,6 +1582,26 @@ on_monarch_death = {
 		flavor_mal.11 # Mali pretenders
 		flavor_mal.47 # Pilgrimage ends prematurely
 		government_events.3	# Election of a new Ruler
+	}
+	# Beyond the Cape
+	if = {
+		limit = { has_ruler_flag = miguel_da_paz }
+		country_event = { id = btc_por.138 }
+	}
+	if = {
+		limit = {
+			months_of_ruling = 360
+			OR = {
+				has_ruler_modifier = production_ordinances
+				has_ruler_modifier = tax_ordinances
+				has_ruler_modifier = trade_ordinances
+				has_ruler_modifier = tariff_ordinances
+				has_ruler_modifier = padrao_ordinances
+				has_ruler_modifier = diplomatic_ordinances
+				has_ruler_modifier = development_ordinances
+			}
+		}
+		country_event = { id = btc_por.169 }
 	}
 }
 

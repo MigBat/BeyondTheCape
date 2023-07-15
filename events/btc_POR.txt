@@ -4026,6 +4026,8 @@ country_event = {
 		NOT = { has_ruler_modifier = trade_ordinances }
 		NOT = { has_ruler_modifier = tariff_ordinances }
 		NOT = { has_ruler_modifier = padrao_ordinances }
+		NOT = { has_ruler_modifier = diplomatic_ordinances }
+		NOT = { has_ruler_modifier = development_ordinances }
 		NOT = { has_ruler_flag = no_ordinances }
 		has_regency = no
 	}
@@ -4117,6 +4119,38 @@ country_event = {
 			name = padrao_ordinances
 		}
 		custom_tooltip = padrao_tt
+	}
+
+	option = {
+		name = btc_por.166g
+
+		trigger = {
+			NOT = {
+				has_country_modifier = diplomatic_ordinances
+			}
+		}
+
+		add_dip_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = diplomatic_ordinances
+		}
+	}
+
+	option = {
+		name = btc_por.166h
+
+		trigger = {
+			NOT = {
+				has_country_modifier = development_ordinances
+			}
+		}
+
+		add_adm_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = development_ordinances
+		}
 	}
 
 	option = {
@@ -4618,16 +4652,7 @@ country_event = {
 	desc = btc_por.169_d
 	picture = COURT_eventPicture
 	
-	trigger = {
-		months_of_ruling = 360
-		OR = {
-			has_ruler_modifier = production_ordinances
-			has_ruler_modifier = tax_ordinances
-			has_ruler_modifier = trade_ordinances
-			has_ruler_modifier = tariff_ordinances
-			has_ruler_modifier = padrao_ordinances
-		}
-	}
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
 		days = 1
@@ -4688,6 +4713,28 @@ country_event = {
 			change_government_reform_progress = -25
 			add_country_modifier = {
 				name = padrao_ordinances
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_ruler_modifier = diplomatic_ordinances
+			}
+			add_dip_power = -100
+			change_government_reform_progress = -25
+			add_country_modifier = {
+				name = diplomatic_ordinances
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_ruler_modifier = development_ordinances
+			}
+			add_adm_power = -100
+			change_government_reform_progress = -25
+			add_country_modifier = {
+				name = development_ordinances
 				duration = -1
 			}
 		}

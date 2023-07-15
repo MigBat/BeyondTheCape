@@ -369,6 +369,8 @@
  btc_por.166d:0 "Tariff laws."
  btc_por.166e:0 "No special laws this time."
  btc_por.166f:0 "Padrão laws."
+ btc_por.166g:0 "Diplomatic laws."
+ btc_por.166h:0 "Development laws."
  btc_por.167_t:0 "Padrão in $PROVINCENAME$"
  btc_por.167_d:0 "We have just discovered the province of $PROVINCENAME$. Shall we raise a Padrão here?\n\nOnce we colonize this province, we will be able to choose which trade good will be produced here."
  btc_por.167a:0 "Raise a Padrão."
