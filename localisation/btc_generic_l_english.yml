@@ -208,3 +208,13 @@
  burgundian_conquests_vassalize_desc:0 "The Low Countries must be subjugated."
 
  crown_colony_long_desc:0 "A Crown Colony has a high amount of direct control from the overlord. They contribute a good amount of money."
+
+ renaissance_date:0 "1300"
+ printing_press_date:0 "1457"
+ new_world_i_date:0 "1492"
+ manufactories_date:0 "1544"
+ global_trade_date:0 "1596"
+ enlightenment_date:0 "1622"
+ industrialization_date:0 "1674"
+
+ tooltip_development_15:0 "European 15 development province"

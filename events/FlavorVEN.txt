@@ -1158,13 +1158,15 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 51
+		months = 12
 	}	
 	option = {	#Festina Lente!
 		name = flavor_ven.32.a
 		add_adm_power = 50
 		add_prestige = 10
-		set_country_flag = ven_aldus_manutius
+		capital_scope = {
+			set_province_flag = ven_aldus_manutius
+		}
 	}
 }
 

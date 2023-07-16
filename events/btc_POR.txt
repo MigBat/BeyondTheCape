@@ -1202,7 +1202,7 @@ country_event = {
 
 	trigger = {
 		tag = POR
-		is_year = 1531
+		is_year = 1529
 		NOT = { dip_tech = 11 }
 	}
 
@@ -1340,7 +1340,7 @@ country_event = {
 
 	trigger = {
 		tag = POR
-		is_year = 1583
+		is_year = 1581
 		NOT = { dip_tech = 15 }
 		OR = {
 			trade_company_coromandel = { 
@@ -3436,10 +3436,6 @@ country_event = {
 				discover_country = ROOT
 			}
 		}
-		add_country_modifier = {
-			name = around_africa
-			duration = 1825
-		}
 	}
 
 	option = {	# Have him return to Portugal
@@ -3479,10 +3475,6 @@ country_event = {
 			mombasa_area = {
 				discover_country = ROOT
 			}
-		}
-		add_country_modifier = {
-			name = around_africa
-			duration = 1825
 		}
 	}
 }
