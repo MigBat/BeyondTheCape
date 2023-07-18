@@ -3911,6 +3911,14 @@ country_event = {
 
 	is_triggered_only = yes
 
+	option = {	# Portuguese Blue
+		name = btc_por.164f
+
+		change_country_color = {
+			color = { 60 94 149 }
+		}
+	}
+
 	option = {	# Beyond the Cape Blue
 		name = btc_por.164a
 
@@ -3999,6 +4007,14 @@ country_event = {
 
 		change_country_color = {
 			color = { 100  100  100 }
+		}
+	}
+
+	option = {	# Go Back
+		name = btc_por.165e
+
+		country_event = {
+			id = btc_por.164
 		}
 	}
 }

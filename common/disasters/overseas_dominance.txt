@@ -2,7 +2,6 @@
 overseas_dominance = {
 	potential = {
 		has_dlc = "Domination"
-		tag = POR
 		normal_or_historical_nations = yes
 		has_government_mechanic = portuguese_saudade_mechanic
 	}

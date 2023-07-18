@@ -447,7 +447,9 @@ age_of_absolutism = {
 	start = 1620
 	
 	can_start = {
-		is_institution_enabled = global_trade
+		any_country = {
+			adm_tech = 20
+		}
 	}
 	
 	papacy = 1.5

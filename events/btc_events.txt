@@ -469,7 +469,7 @@ country_event = {
 	id = btc_events.11
 	title = btc_events.11_t
 	desc = btc_events.11_d
-	picture = NAVAL_MILITARY_eventPicture
+	picture = RELIGIOUS_WARS_eventPicture
 
 	is_triggered_only = yes
 	major = yes
@@ -509,7 +509,7 @@ country_event = {
 	id = btc_events.12
 	title = btc_events.12_t
 	desc = btc_events.12_d
-	picture = NAVAL_MILITARY_eventPicture
+	picture = WOUNDED_SOLDIERS_eventPicture
 
 	is_triggered_only = yes
 
@@ -535,7 +535,7 @@ country_event = {
 	id = btc_events.13
 	title = btc_events.13_t
 	desc = btc_events.13_d
-	picture = NAVAL_MILITARY_eventPicture
+	picture = DISCIPLINED_SOLDIERS_eventPicture
 
 	trigger = {
 		OR = {

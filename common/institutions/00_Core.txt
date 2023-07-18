@@ -1003,7 +1003,7 @@ new_world_i = {
 	
 	can_start = {
 		# is_year = 1500
-		is_institution_enabled = renaissance
+		renaissance = 100
 		OR = {
 			owner = { has_country_modifier = quest_for_the_new_world }
 			owner = { has_idea = call_of_our_forefathers }
@@ -1018,7 +1018,7 @@ new_world_i = {
 		is_state = yes
 		development = 15
 		OR = {
-			province_has_center_of_trade_of_level = 1
+			province_has_center_of_trade_of_level = 2
 			is_capital = yes
 		}
 		is_in_capital_area = yes
@@ -1287,11 +1287,11 @@ manufactories = {
 	can_start = {
 		# is_year = 1650
 		is_institution_enabled = printing_press
+		printing_press = 100
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
 		development = 20
-		printing_press = 100
 		custom_trigger_tooltip = {
 			tooltip = two_neighbor_dev_15_provinces
 			calc_true_if = {
@@ -2111,12 +2111,13 @@ enlightenment = {
 	
 	can_start = {
 		# is_year = 1700
+		owner = { adm_tech = 18 }	# National Sovereignty
 		is_institution_enabled = global_trade
+		printing_press = 100
+		global_trade = 100
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
-		printing_press = 100
-		global_trade = 100
 		development = 30
 		OR = {
 			custom_trigger_tooltip = {
@@ -2135,7 +2136,7 @@ enlightenment = {
 			}
 		}
 	}
-	start_chance = 10		#in 100 for when a province can_start
+	start_chance = 20		#in 100 for when a province can_start
 	
 	
 	on_start = institution_events.7
@@ -2463,13 +2464,15 @@ industrialization = {
 	
 	can_start = {
 		# is_year = 1750
+		owner = { adm_tech = 25 }
 		is_institution_enabled = enlightenment
+		manufactories = 100
+		printing_press = 100
+		enlightenment = 100
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
 		development = 30
-		manufactories = 100
-		enlightenment = 100
 		if = {
 			limit = {
 				has_dlc = "Rule Britannia"

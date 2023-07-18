@@ -2036,13 +2036,13 @@ gc_por_4_c = {
 
 		provinces_to_highlight = {
 			area = sao_tome_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
 			sao_tome_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 

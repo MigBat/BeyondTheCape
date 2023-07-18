@@ -300,6 +300,7 @@ jeronimos_monastery = {
 
 black_swords = {
 	shock_damage = 0.15
+	assault_fort_ability = 0.25
 	is_marine_modifier = yes 
 }
 
