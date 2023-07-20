@@ -173,10 +173,12 @@
 # Other #
 
  miss_discover_cape_of_storms:0 "§Y[Root.GetName]§! has discovered the Cape of Storms."
- colonial_region_restriction: "You cannot colonize outside of your capital's colonial region."
- subject_colonial_region_restriction: "You cannot colonize in a colonial region where your overlord has a colonial nation."
- is_ally_of_enemy_tt: "[From.GetName] is an ally of our enemy."
- does_not_border_tt: "We do not border [From.GetName]."
+ colonial_region_restriction:0 "You cannot colonize outside of your capital's colonial region."
+ subject_colonial_region_restriction:0 "You cannot colonize in a colonial region where your overlord has a colonial nation."
+ limit_colonize_cape:0 "You need diplomatic tech 9 to colonize this province."
+ limit_colonize_interior:0 "You need expansion ideas or the siberian frontier idea to colonize this province."
+ is_ally_of_enemy_tt:0 "[From.GetName] is an ally of our enemy."
+ does_not_border_tt:0 "We do not border [From.GetName]."
  miss_discover_caribbean:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region."
  miss_colonize_caribbean:0 "§Y[Root.GetName]§! or their subjects own at least one fully colonized province in the Caribbean region."
  fra_carib_discovery.tooltip:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region"

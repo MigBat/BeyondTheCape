@@ -1253,6 +1253,7 @@ country_event = {
 			is_year = 1560
 			has_country_modifier = lusiadas
 		}
+		religion = catholic
 		MOR = {
 			exists = yes
 			religion_group = muslim

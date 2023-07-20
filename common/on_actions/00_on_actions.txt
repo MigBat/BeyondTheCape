@@ -710,7 +710,7 @@ on_war_won = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = POR
+				is_or_was_tag = { tag = POR }
 				has_country_flag = war_of_three_kings
 			}
 			FROM = { tag = MOR }
