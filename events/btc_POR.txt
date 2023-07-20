@@ -1257,9 +1257,9 @@ country_event = {
 			exists = yes
 			religion_group = muslim
 			is_free_or_tributary_trigger = yes
-			NOT = { war_with = POR }
-			NOT = { truce_with = POR }
-			NOT = { alliance_with = POR }
+			NOT = { war_with = ROOT }
+			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
 		}
 	}
 
@@ -1532,7 +1532,7 @@ country_event = {
 	}
 
 	after = {
-		POR = { country_event = { id = btc_por.112 days = 1000 } }
+		ROOT = { country_event = { id = btc_por.112 days = 1000 } }
 	}
 }
 
@@ -1567,8 +1567,8 @@ country_event = {
 	trigger = {
 		is_or_was_tag = { tag = POR }
 		AND = {
-			231 = { owned_by = POR }
-			232 = { owned_by = POR }
+			231 = { owned_by = ROOT }
+			232 = { owned_by = ROOT }
 		}
 		is_year = 1690
 		OR = {
@@ -2065,6 +2065,12 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 
 	trigger = {
+		OR = {
+			NOT = { ROOT = { junior_union_with = ENG } }
+			NOT = { ROOT = { junior_union_with = GBR } }
+			NOT = { ENG = { junior_union_with = ROOT } }
+			NOT = { GBR = { junior_union_with = ROOT } }
+		}
 		is_or_was_tag = { tag = POR }
 		has_country_modifier = por_english_alliance
 		OR = {
@@ -2817,7 +2823,7 @@ country_event = {
 
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = gifted_hanno # 50 relation
 			}
 		}
@@ -2840,7 +2846,7 @@ country_event = {
 		}
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = didnt_gift_hanno # -50 relation
 			}
 		}
@@ -2910,7 +2916,7 @@ country_event = {
 		}
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = didnt_gift_ganda # -50 relation
 			}
 		}
@@ -2939,7 +2945,7 @@ country_event = {
 
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = didnt_gift_ganda # -50 relation
 			}
 		}
@@ -2969,7 +2975,7 @@ country_event = {
 		}
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = gifted_ganda # 50 relation
 			}
 		}
@@ -3117,21 +3123,45 @@ country_event = {
 
 		event_target:owner_of_jerusalem = {
 			379 = {
-				cede_province = POR
+				if = {
+					limit = {
+						exists = POR
+					}
+					cede_province = POR
+				}
+				else = {
+					cede_province = IBE
+				}
 			}
 		}
 		event_target:owner_of_gaza = {
 			364 = {
-				cede_province = POR
+				if = {
+					limit = {
+						exists = POR
+					}
+					cede_province = POR
+				}
+				else = {
+					cede_province = IBE
+				}
 			}
 		}
 		event_target:owner_of_jaffa = {
 			1854 = {
-				cede_province = POR
+				if = {
+					limit = {
+						exists = POR
+					}
+					cede_province = POR
+				}
+				else = {
+					cede_province = IBE
+				}
 			}
 		}
 
-		POR = {
+		ROOT = {
 			country_event = {
 				id = btc_por.147
 				days = 1
@@ -3149,7 +3179,7 @@ country_event = {
 
 		add_stability = -1
 
-		POR = {
+		ROOT = {
 			country_event = {
 				id = btc_por.148
 				days = 1
@@ -3297,7 +3327,15 @@ country_event = {
 			factor = 1
 		}
 
-		join_all_offensive_wars_of = POR
+		if = {
+			limit = {
+				exists = POR
+			}
+			join_all_offensive_wars_of = POR
+		}
+		else = {
+			join_all_offensive_wars_of = IBE
+		}
 	}
 
 	option = {	# A true epic... but we won't join
@@ -3511,7 +3549,7 @@ country_event = {
 
 		ETH = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = pero_da_covilha_stays
 			}
 		}
@@ -3536,7 +3574,7 @@ country_event = {
 
 		ETH = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = pero_da_covilha_taken
 			}
 		}

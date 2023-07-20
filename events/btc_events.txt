@@ -219,10 +219,16 @@ country_event = {
 		tag = MAM
 		has_country_flag = MAM_POR_conflict
 
-		exists = POR
+		OR = {
+			exists = POR
+			exists = IBE
+		}
 		owns = 2315
 		4346 = {				#Gulf of Aden
-			is_strongest_trade_power = POR
+			OR = {
+				is_strongest_trade_power = POR
+				is_strongest_trade_power = IBE
+			}
 		}
 	}
 	
@@ -233,11 +239,22 @@ country_event = {
 	option = {
 		name = btc_events.7a
 		ai_chance = { factor = 90 }
-		
-		declare_war_with_cb = {
-			casus_belli = cb_trade_war_triggered
-			who = POR
-		}				
+
+		if = {
+			limit = {
+				exists = POR
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_trade_war_triggered
+				who = POR
+			}	
+		}
+		else = {
+			declare_war_with_cb = {
+				casus_belli = cb_trade_war_triggered
+				who = IBE
+			}
+		}			
 	}
 
 	option = {
@@ -275,12 +292,26 @@ country_event = {
 
 		set_country_flag = killed_lourenco
 
-		POR = {
-			country_event = {
-				id = btc_events.9
-				days = 1
+		if = {
+			limit = {
+				exists = POR
+			}
+			POR = {
+				country_event = {
+					id = btc_events.9
+					days = 1
+				}
 			}
 		}
+		else = {
+			IBE = {
+				country_event = {
+					id = btc_events.9
+					days = 1
+				}
+			}
+		}
+		
 	}
 
 	option = {	# He got no less than what he deserved
@@ -294,10 +325,23 @@ country_event = {
 
 		set_country_flag = killed_lourenco
 
-		POR = {
-			country_event = {
-				id = btc_events.9
-				days = 1
+		if = {
+			limit = {
+				exists = POR
+			}
+			POR = {
+				country_event = {
+					id = btc_events.9
+					days = 1
+				}
+			}
+		}
+		else = {
+			IBE = {
+				country_event = {
+					id = btc_events.9
+					days = 1
+				}
 			}
 		}
 	}
