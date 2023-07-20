@@ -159,6 +159,27 @@ can_colonize_province = {
 			}
 		}
 	}
+	condition = {
+		tooltip = "subject_colonial_region_restriction"
+		potential = {
+			FROM = {
+				is_subject = yes
+				is_colonial_nation = no
+			}
+		}
+		allow = {
+			NOT = {
+				overlord = {
+					any_subject_country = {
+						is_colonial_nation = yes
+						capital_scope = {
+							colonial_region = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {
