@@ -301,7 +301,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 45
+			factor = 50
 		}
 	}
 	option = {
@@ -318,7 +318,7 @@ country_event = {
 			add_local_autonomy = -25
 		}
 		ai_chance = {
-			factor = 45
+			factor = 50
 		}
 	}
 	
@@ -367,7 +367,7 @@ country_event = {
 			hidden_effect = { add_republican_tradition = 100 }
 		}
 		ai_chance = {
-			factor = 10
+			factor = 0
 		}
 	}
 }
