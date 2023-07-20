@@ -3016,5 +3016,38 @@ burgundian_conquests_vassalize = {
 		}
 	}
 
-	war_name = "Burgundian Conquest of the Low Countries"
+	war_name = BURGUNDY_NETHERLANDS_CONQUEST
+}
+
+naval_war = {
+	type = naval_superiority
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			has_port = yes
+			is_claim = ROOT
+		}
+
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = NAVAL_WAR_NAME
 }

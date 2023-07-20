@@ -1001,7 +1001,6 @@ por_spice_monopoly_wars_triggered_modifier = {
 	transport_attrition = -0.15
 	naval_morale = 0.1
 	siege_ability = 0.1
-	land_morale = 0.1
 	warscore_cost_vs_other_religion = -0.15
 }
 
@@ -1047,6 +1046,7 @@ mam_spice_monopoly_wars_triggered_modifier = {
 			}
 		}
 	}
+	land_morale = 0.1
 	global_ship_recruit_speed = -0.5
 	global_ship_cost = -0.5
 	manpower_recovery_speed = 0.2

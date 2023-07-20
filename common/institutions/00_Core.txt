@@ -1790,7 +1790,10 @@ global_trade = {
 	
 	can_start = {
 		# is_year = 1600
-		has_global_flag = circumnavigation_completed
+		custom_trigger_tooltip = {
+			tooltip = circumnavigation_completed_tt
+			has_global_flag = circumnavigation_completed
+		}
 		is_institution_enabled = new_world_i
 		new_world_i = 100
 		is_island = no
@@ -2128,7 +2131,10 @@ enlightenment = {
 		}
 		OR = {
 			# continent = europe
-			has_province_flag = fra_descartes
+			custom_trigger_tooltip = {
+				tooltip = fra_descartes_tt
+				has_province_flag = fra_descartes
+			}
 			owner = {
 				ADM = 5
 				MIL = 5
