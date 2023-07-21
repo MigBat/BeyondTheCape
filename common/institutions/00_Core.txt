@@ -370,7 +370,7 @@ renaissance = {
 	embracement_speed = {
 		modifier = {
 			scale = yes
-			factor = 0.6
+			factor = 0.4
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_renaissance
 				any_friendly_coast_border_province = {
@@ -379,7 +379,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.1
 			scale = yes
 			potential = {
 				NOT = {
@@ -952,7 +952,7 @@ printing_press = {
 	embracement_speed = {
 	
 		modifier = {
-			factor = 0.6
+			factor = 0.3
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
@@ -963,7 +963,7 @@ printing_press = {
 		}
 		
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				NOT = {
@@ -1090,6 +1090,23 @@ printing_press = {
 						religion = anglican
 						religion = hussite
 					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			if = {
+				OR = {
+					religion = confucian
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			if = {
+				OR = {
+					religion = catholic
+					religion = orthodox
 				}
 			}
 		}
@@ -1298,6 +1315,7 @@ global_trade = {
 	embracement_speed = {
 	
 		modifier = {
+<<<<<<< Updated upstream
 			factor = 0.4 #Not scaled
 			province_trade_power = 15
 		}
@@ -1315,6 +1333,9 @@ global_trade = {
 		}
 		modifier = {
 			factor = 0.4
+=======
+			factor = 0.6
+>>>>>>> Stashed changes
 			scale = yes
 			potential = {
 				province_has_center_of_trade_of_level = 1
@@ -1378,7 +1399,7 @@ global_trade = {
 		}
 		
 		modifier = {
-			factor = 0.5
+			factor = 0.2
 			scale = yes
 			potential = {
 				has_port = yes
@@ -1387,8 +1408,83 @@ global_trade = {
 				tooltip = tooltip_neighbor_port_province_global_trade
 				has_port = yes
 				any_neighbor_province = {
+<<<<<<< Updated upstream
 					global_trade = 100
 					
+=======
+					new_world_i = 100
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.6
+			if = {
+				technology_group = western
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			if = {
+				technology_group = anatolian
+			}
+		}
+
+		modifier = {
+			factor = 0.4
+			if = {
+				technology_group = muslim
+			}
+		}
+
+		modifier = {
+			factor = 0.3
+			if = {
+				technology_group = eastern
+			}
+		}
+
+		modifier = {
+			factor = 0.2
+			if = {
+				technology_group = chinese
+			}
+		}
+		
+		#Port provinces in countries with colonial subjects
+		modifier = {
+			factor = 10
+			potential = {
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					capital_scope = {
+						NOT = { continent = north_america }
+						NOT = { continent = south_america }
+						NOT = { continent = new_world }
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_colonial_subject_in_new_world
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					colony = 1
+					any_subject_country = {
+						is_colonial_nation = yes
+						OR = {
+							capital_scope = { continent = north_america }
+							capital_scope = { continent = south_america }
+							capital_scope = { continent = new_world }
+						}
+					}
+>>>>>>> Stashed changes
 				}
 			}
 		}
@@ -1608,7 +1704,7 @@ manufactories = {
 	
 	embracement_speed = {
 		modifier = {
-			factor = 0.5
+			factor = 0.2
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_manufactories
@@ -1618,7 +1714,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			scale = yes
 			potential = {
 				NOT = {
@@ -1655,7 +1751,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.4
 			scale = yes
 			potential = {
 				OR = {
@@ -1672,7 +1768,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.4
 			scale = yes
 			potential = {
 				OR = {
@@ -1691,7 +1787,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.4
 			scale = yes
 			potential = {
 				OR = {
@@ -1712,7 +1808,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.4
 			scale = yes
 			potential = {
 				OR = {
@@ -1733,7 +1829,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.4
 			scale = yes
 			potential = {
 				OR = {
@@ -1751,7 +1847,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.4
 			scale = yes
 			potential = {
 				OR = {
@@ -1771,7 +1867,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1789,7 +1885,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1806,7 +1902,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.2
 			scale = yes
 			potential = {
 				OR = {
@@ -1825,7 +1921,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1846,7 +1942,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1867,7 +1963,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1885,7 +1981,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1925,7 +2021,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1
 			scale = yes
 			potential = {
 				owner = {
@@ -1943,7 +2039,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 1
+			factor = 0.5
 			scale = yes
 			potential = {
 				owner = {
@@ -1957,6 +2053,400 @@ manufactories = {
 				is_owned_by_trade_company = no
 				owner = {
 					has_institution = manufactories
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.6
+			if = {
+				technology_group = western
+			}
+		}
+
+		modifier = {
+			factor = 0.4
+			if = {
+				technology_group = eastern
+			}
+		}
+
+		modifier = {
+			factor = 0.2
+			if = {
+				technology_group = indian
+			}
+		}
+
+		modifier = {
+			factor = 0.8
+			if = {
+				OR = {
+						religion = reformed
+						religion = protestant
+						religion = anglican
+						religion = hussite
+					}
+			}
+		}
+
+		modifier = {
+			factor = 0.4
+			if = {
+				religion = catholic
+			}
+		}
+
+		modifier = {
+			factor = 0.2
+			if = {
+				religion = orthodox
+			}
+		}
+
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
+
+
+
+<<<<<<< Updated upstream
+=======
+
+#######################################
+# Global Trade
+#######################################
+global_trade = {
+
+	bonus = {
+		merchants = 1
+	}
+
+	trade_company_efficiency = 1.0
+
+	historical_start_date = 1600.1.1
+	historical_start_province = 97 #Holland
+
+	history = {
+		OR = {
+			AND = {
+				is_year = 1620
+				continent = europe
+				owner = { technology_group = western }
+			}
+			
+			AND = {
+				is_year = 1660
+				continent = europe
+			}	
+			AND = {
+				is_year = 1660
+				owner = {
+					NOT = { technology_group = north_american }
+					NOT = { technology_group = mesoamerican }
+					NOT = { technology_group = south_american }
+					NOT = { technology_group = andean }
+				}
+				superregion = south_america_superregion
+			}
+			AND = {
+				is_year = 1660
+				owner = {
+					NOT = { technology_group = north_american }
+					NOT = { technology_group = mesoamerican }
+					NOT = { technology_group = south_american }
+					NOT = { technology_group = andean }
+				}
+				superregion = north_america_superregion
+			}
+			AND = {
+				is_year = 1660
+				owner = {
+					NOT = { technology_group = north_american }
+					NOT = { technology_group = mesoamerican }
+					NOT = { technology_group = south_american }
+					NOT = { technology_group = andean }
+				}
+				superregion = central_america_superregion
+			}
+			AND = {
+				is_year = 1700
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					superregion = near_east_superregion
+				}
+			}
+			
+			AND = {
+				is_year = 1720
+				has_port = yes
+				OR = {
+					superregion = india_superregion
+					superregion = persia_superregion
+					superregion = east_indies_superregion
+				}
+			}
+			AND = {
+				is_year = 1750
+				has_port = yes
+				superregion = africa_superregion
+			}
+		}
+	}
+	
+	can_start = {
+		# is_year = 1600
+		custom_trigger_tooltip = {
+			tooltip = circumnavigation_completed_tt
+			has_global_flag = circumnavigation_completed
+		}
+		is_institution_enabled = new_world_i
+		new_world_i = 100
+		is_island = no
+		# highest_value_trade_node = yes
+		OR = {
+			province_has_center_of_trade_of_level = 3
+			province_has_center_of_trade_of_level = 2
+			is_capital = yes
+			AND = {
+				is_year = 1630 #fallback
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+		owner = {
+			dip_tech = 16
+			home_trade_node = {
+				is_strongest_trade_power = PREV
+				highest_value_trade_node = yes
+			}
+			OR = {
+				AND = {
+					any_active_trade_node = {
+						continent = europe
+					}
+					any_active_trade_node = {
+						continent = africa
+					}
+					any_active_trade_node = {
+						continent = asia
+					}
+					any_active_trade_node = {
+						continent = new_world
+					}
+				}
+				AND = {
+					num_of_owned_provinces_with = {
+						value = 1
+						continent = europe
+					}
+					num_of_owned_provinces_with = {
+						value = 1
+						continent = africa
+					}
+					num_of_owned_provinces_with = {
+						value = 1
+						continent = asia
+					}
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 1
+						continent = new_world
+					}
+				}
+			}
+		}
+	}
+	start_chance = 25		#in 100 for when a province can_start
+	
+	
+	on_start = institution_events.5
+	
+	
+	can_embrace = {
+		always = yes
+	}
+
+	
+	embracement_speed = {
+	
+		modifier = {
+			factor = 0.1 #Not scaled
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 0.2 #Not Scaled
+			province_trade_power = 25
+		}
+		modifier = {
+			factor = 0.4 #Not Scaled
+			province_trade_power = 35
+		}
+		modifier = {
+			factor = 0.8 #Not Scaled
+			province_trade_power = 45
+		}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				province_has_center_of_trade_of_level = 1
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_center_of_trade_3_spread
+				province_has_center_of_trade_of_level = 3
+			}
+		}
+		modifier = {
+			factor = 0.05
+			scale = yes
+			potential = {
+				province_has_center_of_trade_of_level = 1
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_center_of_trade_spread
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		modifier = {
+			factor = 0.1
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				owner = { has_estate = estate_burghers }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_global_trade_burghers
+				any_neighbor_province = {
+					global_trade = 100
+				}
+				owner = {
+					has_estate = estate_burghers
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+					estate_territory = {
+						estate = estate_burghers
+						territory = 30
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.05
+			scale = yes
+			potential = {
+				has_port = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_neighbor_non_port_province_global_trade
+				has_port = no
+				any_neighbor_province = {
+					global_trade = 100
+					
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				has_port = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_neighbor_port_province_global_trade
+				has_port = yes
+				any_neighbor_province = {
+					global_trade = 100
+					
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_colonial_overlord_global_trade
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = global_trade }
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			printing_press = 100
+		}
+		modifier = {
+			factor = 0.8
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = global_trade
+				}
+				continent = owner
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_global_trade_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = global_trade
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = global_trade
+				}
+				NOT = { continent = owner }
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_global_trade_embraced_other_continent
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = global_trade
 				}
 			}
 		}
@@ -1989,7 +2479,7 @@ manufactories = {
 }
 
 
-
+>>>>>>> Stashed changes
 #######################################
 # Enlightenment
 #######################################
@@ -2093,7 +2583,7 @@ enlightenment = {
 	
 	embracement_speed = {
 		modifier = {
-			factor = 0.4
+			factor = 0.15
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_enlightenment
@@ -2103,7 +2593,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				NOT = {
@@ -2121,7 +2611,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.3
 			potential = {
 				is_capital = yes
 			}
@@ -2137,7 +2627,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.2
 			potential = {
 				enlightenment_origin = {
 					same_continent = PREV
@@ -2150,7 +2640,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			potential = {
 				enlightenment_origin = {
 					NOT = { same_continent = PREV }
@@ -2210,7 +2700,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.2
 			potential = {
 				enlightenment_origin = {
 					NOT = { same_continent = PREV }
@@ -2308,7 +2798,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.8
 			scale = yes
 			potential = {
 				owner = {
@@ -2326,7 +2816,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.4
 			scale = yes
 			potential = {
 				owner = {
@@ -2343,6 +2833,58 @@ enlightenment = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0.6
+			if = {
+				technology_group = western
+			}
+		}
+		modifier = {
+			factor = 0.4
+			if = {
+				technology_group = eastern
+			}
+		}
+		modifier = {
+			factor = 0.2
+			if = {
+				technology_group = chinese
+			}
+		}
+
+		modifier = {
+			factor = 0.6
+			if = {
+				OR = {
+						religion = reformed
+						religion = protestant
+						religion = anglican
+						religion = hussite
+					}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			if = {
+				OR = {
+						religion = catholic
+						religion = shinto
+						religion = vajrayana
+					}
+			}
+		}
+		modifier = {
+			factor = 0.2
+			if = {
+				OR = {
+						religion = orthodox
+						religion = confucian
+						religion = mahayana
+					}
+			}
+		}
+
+		
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
@@ -2478,7 +3020,7 @@ industrialization = {
 	embracement_speed = {
 		#Split between RB and non-RB for these four as RB gives more possibilities for spread (so higher for non-RB to compensate
 		modifier = {
-			factor = 0.3
+			factor = 0.1
 			force_potential = yes
 			potential = {
 				has_dlc = "Rule Britannia"
@@ -2492,7 +3034,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.6
+			factor = 0.2
 			force_potential = yes
 			potential = {
 				NOT = { has_dlc = "Rule Britannia" }
@@ -2506,7 +3048,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -2526,7 +3068,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.1
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -2592,7 +3134,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.3
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -2611,7 +3153,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.2
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -2633,7 +3175,7 @@ industrialization = {
 
 		#General Manufactories
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -2651,7 +3193,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.18
 			scale = yes
 			potential = {
 				OR = {
@@ -2668,7 +3210,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.18
 			scale = yes
 			potential = {
 				OR = {
@@ -2687,7 +3229,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -2708,7 +3250,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -2729,7 +3271,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.12
 			scale = yes
 			potential = {
 				OR = {
@@ -2747,7 +3289,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			scale = yes
 			potential = {
 				OR = {
@@ -2767,7 +3309,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.08
+			factor = 0.05
 			scale = yes
 			potential = {
 				OR = {
@@ -2785,7 +3327,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -2802,7 +3344,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -2821,7 +3363,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.08
+			factor = 0.05
 			scale = yes
 			potential = {
 				OR = {
@@ -2842,7 +3384,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.08
+			factor = 0.05
 			scale = yes
 			potential = {
 				OR = {
@@ -2863,7 +3405,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.08
 			scale = yes
 			potential = {
 				OR = {
@@ -2881,7 +3423,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.08
+			factor = 0.05
 			scale = yes
 			potential = {
 				OR = {
@@ -2903,7 +3445,7 @@ industrialization = {
 
 		#Trade variables
 		modifier = {
-			factor = 0.18
+			factor = 0.15
 			scale = yes
 			potential = {
 				any_trade_node_member_province = {
@@ -2916,7 +3458,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 1
 			potential = {
 				province_trade_power = 15
 			}
@@ -2927,7 +3469,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 1
 			potential = {
 				continent = owner
 				has_port = yes
@@ -2968,7 +3510,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 1
+			factor = 0.6
 			scale = yes
 			potential = {
 				owner = {
@@ -2986,7 +3528,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.05
 			scale = yes
 			potential = {
 				owner = {
@@ -3000,6 +3542,58 @@ industrialization = {
 				is_owned_by_trade_company = no
 				owner = {
 					has_institution = industrialization
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.6
+			scale = yes
+			potential = {
+				OR = {
+					area = yorkshire_area
+					area = west_midlands_area
+					area = east_midlands_area
+					area = wessex_area
+					area = home_counties_area
+					area = east_anglia_area
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			scale = yes
+			potential = {
+				OR = {
+					area = flanders_area
+					area = holland_area
+					area = wallonia_area
+					area = north_brabant_area
+					area = brabant_area
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				OR = {
+					area = northern_saxony_area
+					area = westphalia_area
+					area = north_rhine_area
+					area = lower_rhineland_area
+				}
+			}
+		}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				OR = {
+					area = picardy_area
+					area = ile_de_france_area
+					area = champagne_area
+					area = normandy_area
 				}
 			}
 		}
