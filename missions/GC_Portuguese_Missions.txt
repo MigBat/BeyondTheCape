@@ -813,7 +813,7 @@ gc_por_2_b = {
 				duration = 5475
 			}
 			define_explorer = {
-				name = "Pedro √Ålvares Cabral"
+				name = "Pedro ¡lvares Cabral"
 				shock = 3
 				fire = 2
 				manuever = 5
@@ -1314,9 +1314,9 @@ gc_por_3 = {
 				name = portuguese_exploration
 				duration = 18250
 			}
-			country_event = {
-				id = btc_por.144
-			}
+			# country_event = {
+			# 	id = btc_por.144
+			# }
 			newfoundland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1325,7 +1325,7 @@ gc_por_3 = {
 				add_permanent_claim = ROOT
 			}	
 			define_explorer = {
-				name = "Diogo C√£o"
+				name = "Diogo C„o"
 				shock = 1
 				fire = 1
 				manuever = 3
@@ -1748,6 +1748,14 @@ gc_por_3 = {
 				}
 				set_government_rank = 3
 			}
+			custom_tooltip = btc_enable_pena_palace_tt
+			hidden_effect = {
+				227 = {
+					add_great_project = {
+						type = pena_palace
+					}
+				}				
+			}
 			add_prestige_or_monarch_power = { amount = 50 }
 			add_power_projection = { 
 				type = 25_permanent_power_projection
@@ -2028,13 +2036,13 @@ gc_por_4_c = {
 
 		provinces_to_highlight = {
 			area = sao_tome_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
 			sao_tome_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 

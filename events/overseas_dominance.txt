@@ -20,7 +20,7 @@ country_event = {
 	id = btc_overseas.2
 	title = btc_overseas.2_t
 	desc = btc_overseas.2_d
-	picture = PAX_OTTOMANA_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 
 	option = {

@@ -447,7 +447,9 @@ age_of_absolutism = {
 	start = 1620
 	
 	can_start = {
-		is_institution_enabled = global_trade
+		any_country = {
+			adm_tech = 20
+		}
 	}
 	
 	papacy = 1.5
@@ -642,7 +644,9 @@ age_of_revolutions = {
 	start = 1710
 	
 	can_start = {
-		is_institution_enabled = enlightenment
+		any_country = {
+			adm_tech = 26
+		}
 	}
 	
 	papacy = 2.0

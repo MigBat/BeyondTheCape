@@ -18,15 +18,7 @@ country_event = {
 		}
 	}
 
-	option = {	# Castile
-		name = btc_startscreen.1f
-
-		country_event = {
-			id = btc_startscreen.6
-		}
-	}
-
-	option = {	# Exploration
+	option = {	# Other Countries
 		name = btc_startscreen.1b
 
 		country_event = {
@@ -34,7 +26,7 @@ country_event = {
 		}
 	}
 
-	option = {	# Castilian civil war
+	option = {	# Exploration
 		name = btc_startscreen.1c
 
 		country_event = {
@@ -42,7 +34,7 @@ country_event = {
 		}
 	}
 
-	option = {	# Sound Tolls
+	option = {	# Castilian civil war
 		name = btc_startscreen.1d
 
 		country_event = {
@@ -50,32 +42,16 @@ country_event = {
 		}
 	}
 
-	option = {	# Buildings, Development and Corruption
-		name = btc_startscreen.1g
-
-		country_event = {
-			id = btc_startscreen.7
-		}
-	}
-
-	option = {	# War, Devastation and Attrition
-		name = btc_startscreen.1h
-
-		country_event = {
-			id = btc_startscreen.8
-		}
-	}
-
-	option = {	# Slavers Estate
-		name = btc_startscreen.1i
-
-		country_event = {
-			id = btc_startscreen.9
-		}
-	}
-
-	option = {	# I've got it
+	option = {	# Other Additions
 		name = btc_startscreen.1e
+
+		country_event = {
+			id = btc_startscreen.6
+		}
+	}
+
+	option = {	# I've got it, let me play!
+		name = btc_startscreen.1f
 
 		set_country_flag = tutorial_done
 	}
@@ -90,8 +66,24 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# go back
+	option = {	# Government
 		name = btc_startscreen.2a
+
+		country_event = {
+			id = btc_startscreen.21
+		}
+	}
+
+	option = {	# Disaster
+		name = btc_startscreen.2b
+
+		country_event = {
+			id = btc_startscreen.22
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.2c
 
 		country_event = {
 			id = btc_startscreen.1
@@ -99,25 +91,43 @@ country_event = {
 	}
 }
 
-# Castile tutorial #
+# Portuguese Government #
 country_event = {
-	id = btc_startscreen.6
-	title = btc_startscreen.6_t
-	desc = btc_startscreen.6_d
+	id = btc_startscreen.21
+	title = btc_startscreen.21_t
+	desc = btc_startscreen.21_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# go back
-		name = btc_startscreen.6a
+		name = btc_startscreen.21a
 
 		country_event = {
-			id = btc_startscreen.1
+			id = btc_startscreen.2
 		}
 	}
 }
 
-# Exploration tutorial #
+# Overextended Empire Disaster #
+country_event = {
+	id = btc_startscreen.22
+	title = btc_startscreen.22_t
+	desc = btc_startscreen.22_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.22a
+
+		country_event = {
+			id = btc_startscreen.2
+		}
+	}
+}
+
+# Other Countries #
 country_event = {
 	id = btc_startscreen.3
 	title = btc_startscreen.3_t
@@ -126,8 +136,78 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# go back
+	option = {	# Iberian Region
 		name = btc_startscreen.3a
+
+		country_event = {
+			id = btc_startscreen.31
+		}
+	}
+
+	option = {	# Low Countries Region
+		name = btc_startscreen.3b
+
+		country_event = {
+			id = btc_startscreen.32
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.3c
+
+		country_event = {
+			id = btc_startscreen.1
+		}
+	}
+}
+
+# Iberian Region #
+country_event = {
+	id = btc_startscreen.31
+	title = btc_startscreen.31_t
+	desc = btc_startscreen.31_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.31a
+
+		country_event = {
+			id = btc_startscreen.3
+		}
+	}
+}
+
+# Low Countries Region #
+country_event = {
+	id = btc_startscreen.32
+	title = btc_startscreen.32_t
+	desc = btc_startscreen.32_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.32a
+
+		country_event = {
+			id = btc_startscreen.3
+		}
+	}
+}
+
+# Exploration tutorial #
+country_event = {
+	id = btc_startscreen.4
+	title = btc_startscreen.4_t
+	desc = btc_startscreen.4_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.4a
 
 		country_event = {
 			id = btc_startscreen.1
@@ -137,39 +217,39 @@ country_event = {
 
 # Castilian Civil War tutorial #
 country_event = {
-	id = btc_startscreen.4
-	title = btc_startscreen.4_t
-	desc = btc_startscreen.4_d
+	id = btc_startscreen.5
+	title = btc_startscreen.5_t
+	desc = btc_startscreen.5_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# as Castile
-		name = btc_startscreen.4a
+		name = btc_startscreen.5a
 
 		country_event = {
-			id = btc_startscreen.41
+			id = btc_startscreen.51
 		}
 	}
 
 	option = {	# as Portugal
-		name = btc_startscreen.4b
+		name = btc_startscreen.5b
 
 		country_event = {
-			id = btc_startscreen.42
+			id = btc_startscreen.52
 		}
 	}
 
 	option = {	# as Aragon
-		name = btc_startscreen.4c
+		name = btc_startscreen.5c
 
 		country_event = {
-			id = btc_startscreen.43
+			id = btc_startscreen.53
 		}
 	}
 
 	option = {	# go back
-		name = btc_startscreen.4d
+		name = btc_startscreen.5d
 
 		country_event = {
 			id = btc_startscreen.1
@@ -179,126 +259,202 @@ country_event = {
 
 # Castile tutorial #
 country_event = {
-	id = btc_startscreen.41
-	title = btc_startscreen.41_t
-	desc = btc_startscreen.41_d
+	id = btc_startscreen.51
+	title = btc_startscreen.51_t
+	desc = btc_startscreen.51_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# go back
-		name = btc_startscreen.41a
+		name = btc_startscreen.51a
 
 		country_event = {
-			id = btc_startscreen.4
+			id = btc_startscreen.5
 		}
 	}
 }
 
 # Portugal tutorial #
 country_event = {
-	id = btc_startscreen.42
-	title = btc_startscreen.42_t
-	desc = btc_startscreen.42_d
+	id = btc_startscreen.52
+	title = btc_startscreen.52_t
+	desc = btc_startscreen.52_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# go back
-		name = btc_startscreen.42a
+		name = btc_startscreen.52a
 
 		country_event = {
-			id = btc_startscreen.4
+			id = btc_startscreen.5
 		}
 	}
 }
 
 # Aragon tutorial #
 country_event = {
-	id = btc_startscreen.43
-	title = btc_startscreen.43_t
-	desc = btc_startscreen.43_d
+	id = btc_startscreen.53
+	title = btc_startscreen.53_t
+	desc = btc_startscreen.53_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# go back
-		name = btc_startscreen.43a
+		name = btc_startscreen.53a
 
 		country_event = {
-			id = btc_startscreen.4
+			id = btc_startscreen.5
+		}
+	}
+}
+
+# More Stuff #
+country_event = {
+	id = btc_startscreen.6
+	title = btc_startscreen.6_t
+	desc = btc_startscreen.6_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# Sound Tolls
+		name = btc_startscreen.6a
+
+		country_event = {
+			id = btc_startscreen.61
+		}
+	}
+
+	option = {	# Buildings, Development and Corruption
+		name = btc_startscreen.6b
+
+		country_event = {
+			id = btc_startscreen.62
+		}
+	}
+
+	option = {	# War, Devastation and Attrition
+		name = btc_startscreen.6c
+
+		country_event = {
+			id = btc_startscreen.63
+		}
+	}
+
+	option = {	# Military Access and Casus Belli
+		name = btc_startscreen.6d
+
+		country_event = {
+			id = btc_startscreen.64
+		}
+	}
+
+	option = {	# Institutions
+		name = btc_startscreen.6e
+
+		country_event = {
+			id = btc_startscreen.65
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.6f
+
+		country_event = {
+			id = btc_startscreen.1
 		}
 	}
 }
 
 # Sound Tolls tutorial #
 country_event = {
-	id = btc_startscreen.5
-	title = btc_startscreen.5_t
-	desc = btc_startscreen.5_d
+	id = btc_startscreen.61
+	title = btc_startscreen.61_t
+	desc = btc_startscreen.61_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# go back
-		name = btc_startscreen.5a
+		name = btc_startscreen.61a
 
 		country_event = {
-			id = btc_startscreen.1
+			id = btc_startscreen.6
 		}
 	}
 }
 
-# Buildings, Corruption and Development tutorial #
+# Buildings, Development and Corruption tutorial #
 country_event = {
-	id = btc_startscreen.7
-	title = btc_startscreen.7_t
-	desc = btc_startscreen.7_d
+	id = btc_startscreen.62
+	title = btc_startscreen.62_t
+	desc = btc_startscreen.62_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# go back
-		name = btc_startscreen.7a
+		name = btc_startscreen.62a
 
 		country_event = {
-			id = btc_startscreen.1
+			id = btc_startscreen.6
 		}
 	}
 }
 
-# Devastation and Attrition tutorial #
+# War, Devastation and Attrition tutorial #
 country_event = {
-	id = btc_startscreen.8
-	title = btc_startscreen.8_t
-	desc = btc_startscreen.8_d
+	id = btc_startscreen.63
+	title = btc_startscreen.63_t
+	desc = btc_startscreen.63_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# go back
-		name = btc_startscreen.8a
+		name = btc_startscreen.63a
 
 		country_event = {
-			id = btc_startscreen.1
+			id = btc_startscreen.6
 		}
 	}
 }
 
-# Slavers Estate tutorial #
+# Military Access and Casus Belli tutorial #
 country_event = {
-	id = btc_startscreen.9
-	title = btc_startscreen.9_t
-	desc = btc_startscreen.9_d
+	id = btc_startscreen.64
+	title = btc_startscreen.64_t
+	desc = btc_startscreen.64_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# go back
-		name = btc_startscreen.9a
+		name = btc_startscreen.64a
 
 		country_event = {
-			id = btc_startscreen.1
+			id = btc_startscreen.6
+		}
+	}
+}
+
+# Institutions tutorial #
+country_event = {
+	id = btc_startscreen.65
+	title = btc_startscreen.65_t
+	desc = btc_startscreen.65_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.65a
+
+		country_event = {
+			id = btc_startscreen.6
 		}
 	}
 }

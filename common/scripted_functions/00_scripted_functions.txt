@@ -159,6 +159,58 @@ can_colonize_province = {
 			}
 		}
 	}
+	condition = {
+		tooltip = "subject_colonial_region_restriction"
+		potential = {
+			FROM = {
+				is_subject = yes
+				is_colonial_nation = no
+			}
+		}
+		allow = {
+			NOT = {
+				overlord = {
+					any_subject_country = {
+						is_colonial_nation = yes
+						capital_scope = {
+							colonial_region = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "limit_colonize_cape"
+		potential = {
+			FROM = { NOT = { dip_tech = 9 } }
+		}
+		allow = {
+			NOT = {
+				ROOT = {
+					area = cape_of_good_hope_area
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "limit_colonize_interior"
+		potential = {
+			FROM = {
+				NOT = {
+					OR = {
+						expansion_ideas = 1 
+						has_idea = siberian_frontier
+					}
+				}
+			}
+		}
+		allow = {
+			ROOT = {
+				has_port = yes
+			}
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {

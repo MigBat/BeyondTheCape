@@ -6563,10 +6563,10 @@ system_of_councils_reform = {
 		OR = { 
 			has_reform = system_of_councils_reform
 			mission_completed = spa_system_councils
-			AND = { 
-				religion_group = christian 
-				culture_group = iberian 
-			}
+			# AND = { 
+			# 	religion_group = christian 
+			# 	culture_group = iberian 
+			# }
 		}
 	}
 	trigger = {

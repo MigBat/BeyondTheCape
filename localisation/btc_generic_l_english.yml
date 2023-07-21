@@ -119,6 +119,7 @@
 # Monuments #
  batalha_monastery:0 "Batalha Monastery"
  santiago_cathedral:0 "Santiago de Compostela Cathedral"
+ belem_tower:0 "Belém Tower"
 
 # Age Bonus #
  ab_portugal_professional_navy:0 "Portuguese Professional Navy"
@@ -172,9 +173,12 @@
 # Other #
 
  miss_discover_cape_of_storms:0 "§Y[Root.GetName]§! has discovered the Cape of Storms."
- colonial_region_restriction: "You cannot colonize outside of your capital's colonial region."
- is_ally_of_enemy_tt: "[From.GetName] is an ally of our enemy."
- does_not_border_tt: "We do not border [From.GetName]."
+ colonial_region_restriction:0 "You cannot colonize outside of your capital's colonial region."
+ subject_colonial_region_restriction:0 "You cannot colonize in a colonial region where your overlord has a colonial nation."
+ limit_colonize_cape:0 "You need diplomatic tech 9 to colonize this province."
+ limit_colonize_interior:0 "You need expansion ideas or the siberian frontier idea to colonize this province."
+ is_ally_of_enemy_tt:0 "[From.GetName] is an ally of our enemy."
+ does_not_border_tt:0 "We do not border [From.GetName]."
  miss_discover_caribbean:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region."
  miss_colonize_caribbean:0 "§Y[Root.GetName]§! or their subjects own at least one fully colonized province in the Caribbean region."
  fra_carib_discovery.tooltip:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region"
@@ -203,7 +207,32 @@
  cb_war_of_three_kings_desc:0 "Morocco shall be catholic."
  cb_burgundian_conquests:0 "Burgundian Conquests"
  cb_burgundian_conquests_desc:0 "The Low Countries belong to Burgundy."
- burgundian_conquests_vassalize:0 "$ORDER$$FIRST$ Subjugation of the Low Countries"
+ burgundian_conquests_vassalize:0 "Subjugation"
  burgundian_conquests_vassalize_desc:0 "The Low Countries must be subjugated."
+ BURGUNDY_NETHERLANDS_CONQUEST:0 "$ORDER$$FIRST$ Subjugation of the Low Countries"
+ cb_naval_superiority:0 "Naval War"
+ cb_naval_superiority_desc:0 "Our naval power will be respected."
+ naval_war:0 "Naval Superiority"
+ naval_war_desc:0 "Our navy is superior."
+ NAVAL_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ Naval War"
 
  crown_colony_long_desc:0 "A Crown Colony has a high amount of direct control from the overlord. They contribute a good amount of money."
+
+ renaissance_date:0 "1300"
+ printing_press_date:0 "1457"
+ new_world_i_date:0 "1492"
+ manufactories_date:0 "1531"
+ global_trade_date:0 "1596"
+ enlightenment_date:0 "1637"
+ industrialization_date:0 "1715"
+
+ tooltip_development_15:0 "European 15 development province"
+ ven_aldus_manutius_tt:0 "Venice has had the Aldus Manutius event"
+ mai_gutenberg_tt:0 "Mainz has had the Johannes Gutenberg event"
+ fra_descartes_tt:0 "France has had the René Descartes event"
+ circumnavigation_completed_tt:0 "The circumnavigation of the world has been completed"
+
+ COMBINE_COLONY_WITH_OTHER_COLONY_IN_SAME_COLONIAL_REGION_VALID_OTHER_COLONY_TT:0 "We have another valid colonial nation with its capital in §Y[From.Capital.GetColonialRegionName]§! that has less than §Y50%§! liberty desire and is at peace"
+ combine_colony_with_other_colony_in_same_colonial_region_title:0 "Combine Colonies"
+ combine_colony_with_other_colony_in_same_colonial_region_desc:0 "§Y[From.GetName]§! is not the only colonial nation of us in §Y[From.Capital.GetColonialRegionName]§!. \nDo you want §Y[From.GetName]§! to annex our other colonial nations in that colonial region?"
+ combine_colony_with_other_colony_in_same_colonial_region_tooltip:0 "Make §Y[From.GetName]§! annex our other colonial nations in §Y[From.Capital.GetColonialRegionName]§!.\n"

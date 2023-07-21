@@ -1531,7 +1531,6 @@ on_province_owner_change_government_effect = {
 
 on_province_religion_changed_effect = {
 	on_province_religion_converted_estate_privileges_effect = yes
-	add_papal_influence = 1
 	if = {
 		limit = {
 			owner = {
@@ -2702,6 +2701,18 @@ on_colony_finished_effect = {
 		}
 	}
 	# BEYOND THE CAPE #
+	if = {
+		limit = {
+			owner = {
+				tag = POR
+			}
+			has_province_modifier = padrao_raised
+		}
+		remove_province_modifier = padrao_raised
+		province_event = {
+			id = btc_por.168
+		}
+	}
 	if = {
 		limit = {
 			AND = {

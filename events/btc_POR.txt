@@ -22,7 +22,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		owns = 227	# Lisboa
 		is_year = 1700
 	}
@@ -889,7 +889,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		is_year = 1495
 	}
 
@@ -980,7 +980,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		exploration_ideas = 1
 		num_of_trade_companies = 3
 	}
@@ -1027,7 +1027,7 @@ country_event = {
 	}
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		NOT = { is_advisor_employed = 617 }
 		has_country_modifier = por_henry_cheaper
 	}
@@ -1050,7 +1050,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		south_america_superregion = {
 			owned_by = ROOT
 			is_city = yes
@@ -1095,7 +1095,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		current_age = age_of_reformation
 		OR = {
 			NOT = { crown_land_share = 60 }
@@ -1148,7 +1148,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		num_of_trade_companies = 5
 	}
 
@@ -1201,8 +1201,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
-		is_year = 1531
+		is_or_was_tag = { tag = POR }
+		is_year = 1529
 		NOT = { dip_tech = 11 }
 	}
 
@@ -1248,18 +1248,19 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		OR = {
 			is_year = 1560
 			has_country_modifier = lusiadas
 		}
+		religion = catholic
 		MOR = {
 			exists = yes
 			religion_group = muslim
 			is_free_or_tributary_trigger = yes
-			NOT = { war_with = POR }
-			NOT = { truce_with = POR }
-			NOT = { alliance_with = POR }
+			NOT = { war_with = ROOT }
+			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
 		}
 	}
 
@@ -1339,8 +1340,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
-		is_year = 1583
+		is_or_was_tag = { tag = POR }
+		is_year = 1581
 		NOT = { dip_tech = 15 }
 		OR = {
 			trade_company_coromandel = { 
@@ -1399,7 +1400,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		current_age = age_of_absolutism
 		any_known_country = {
 			offensive_war_with = ROOT
@@ -1443,7 +1444,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		south_america_superregion = {
 			OR = {
 				owned_by = ROOT
@@ -1488,7 +1489,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		has_country_modifier = reliance_on_brazilian_gold
 		absolutism = 50
 	}
@@ -1532,7 +1533,7 @@ country_event = {
 	}
 
 	after = {
-		POR = { country_event = { id = btc_por.112 days = 1000 } }
+		ROOT = { country_event = { id = btc_por.112 days = 1000 } }
 	}
 }
 
@@ -1565,10 +1566,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		AND = {
-			231 = { owned_by = POR }
-			232 = { owned_by = POR }
+			231 = { owned_by = ROOT }
+			232 = { owned_by = ROOT }
 		}
 		is_year = 1690
 		OR = {
@@ -1664,7 +1665,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		OR = {
 			has_country_flag = pombal_1
 			has_country_flag = pombal_2
@@ -1711,7 +1712,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		has_institution = enlightenment
 	}
 
@@ -1765,7 +1766,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		had_country_flag = {
 			flag = expelled_jesuits
 			days = 3650
@@ -1804,7 +1805,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		current_age = age_of_revolutions
 		any_known_country = {
 			offensive_war_with = ROOT
@@ -1846,7 +1847,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		has_country_flag = stand_and_fight
 		227 = { NOT = { controlled_by = ROOT }}
 	}
@@ -1871,7 +1872,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		current_age = age_of_revolutions
 		any_subject_country = {
 			liberty_desire = 50
@@ -1990,6 +1991,21 @@ country_event = {
 			}
 		}
 	}
+
+	option = {
+		name = btc_por.123b
+		
+		custom_tooltip = btc_enable_belem_tower_tt
+		hidden_effect = {
+			227 = {
+				add_great_project = {
+					type = belem_tower
+					instant = yes
+				}
+			}		
+			set_country_flag = has_belem_tower	
+		}
+	}
 }
 
 # Jeronimos Monastery #
@@ -2026,7 +2042,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		has_discovered = 1460
 	}
 
@@ -2050,7 +2066,13 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 
 	trigger = {
-		tag = POR
+		OR = {
+			NOT = { ROOT = { junior_union_with = ENG } }
+			NOT = { ROOT = { junior_union_with = GBR } }
+			NOT = { ENG = { junior_union_with = ROOT } }
+			NOT = { GBR = { junior_union_with = ROOT } }
+		}
+		is_or_was_tag = { tag = POR }
 		has_country_modifier = por_english_alliance
 		OR = {
 			AND = {
@@ -2644,7 +2666,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		4150 = {
 			owned_by = ROOT
 			controlled_by = ROOT
@@ -2802,7 +2824,7 @@ country_event = {
 
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = gifted_hanno # 50 relation
 			}
 		}
@@ -2825,7 +2847,7 @@ country_event = {
 		}
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = didnt_gift_hanno # -50 relation
 			}
 		}
@@ -2895,7 +2917,7 @@ country_event = {
 		}
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = didnt_gift_ganda # -50 relation
 			}
 		}
@@ -2924,7 +2946,7 @@ country_event = {
 
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = didnt_gift_ganda # -50 relation
 			}
 		}
@@ -2954,7 +2976,7 @@ country_event = {
 		}
 		PAP = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = gifted_ganda # 50 relation
 			}
 		}
@@ -2991,24 +3013,26 @@ country_event = {
 
 # Jo�o Vaz Corte Real #
 
-country_event = {
-	id = btc_por.144
-	title = btc_por.144_t
-	desc = btc_por.144_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_por.144
+# 	title = btc_por.144_t
+# 	desc = btc_por.144_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {	# Great
-		name = btc_por.144a
+# 	option = {	# Great
+# 		name = btc_por.144a
 
-		discover_province = 1480
-	}
-}
+# 		newfoundland_area = {
+# 			discover_country = ROOT
+# 		}
+# 	}
+# }
 
 # Tomb of Mohamed #
 
@@ -3100,21 +3124,45 @@ country_event = {
 
 		event_target:owner_of_jerusalem = {
 			379 = {
-				cede_province = POR
+				if = {
+					limit = {
+						exists = POR
+					}
+					cede_province = POR
+				}
+				else = {
+					cede_province = IBE
+				}
 			}
 		}
 		event_target:owner_of_gaza = {
 			364 = {
-				cede_province = POR
+				if = {
+					limit = {
+						exists = POR
+					}
+					cede_province = POR
+				}
+				else = {
+					cede_province = IBE
+				}
 			}
 		}
 		event_target:owner_of_jaffa = {
 			1854 = {
-				cede_province = POR
+				if = {
+					limit = {
+						exists = POR
+					}
+					cede_province = POR
+				}
+				else = {
+					cede_province = IBE
+				}
 			}
 		}
 
-		POR = {
+		ROOT = {
 			country_event = {
 				id = btc_por.147
 				days = 1
@@ -3132,7 +3180,7 @@ country_event = {
 
 		add_stability = -1
 
-		POR = {
+		ROOT = {
 			country_event = {
 				id = btc_por.148
 				days = 1
@@ -3157,7 +3205,7 @@ country_event = {
 						religion_group = christian
 						is_subject = no
 						total_own_and_non_tributary_subject_development = 100
-						NOT = { tag = POR }
+						NOT = { is_or_was_tag = { tag = POR } }
 					}
 					tag = PAP
 				}
@@ -3280,7 +3328,15 @@ country_event = {
 			factor = 1
 		}
 
-		join_all_offensive_wars_of = POR
+		if = {
+			limit = {
+				exists = POR
+			}
+			join_all_offensive_wars_of = POR
+		}
+		else = {
+			join_all_offensive_wars_of = IBE
+		}
 	}
 
 	option = {	# A true epic... but we won't join
@@ -3303,7 +3359,7 @@ country_event = {
 	picture = COUNCIL_TRENT_eventPicture
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		151 = {
 			owned_by = TUR
 		}
@@ -3419,10 +3475,6 @@ country_event = {
 				discover_country = ROOT
 			}
 		}
-		add_country_modifier = {
-			name = around_africa
-			duration = 1825
-		}
 	}
 
 	option = {	# Have him return to Portugal
@@ -3463,10 +3515,6 @@ country_event = {
 				discover_country = ROOT
 			}
 		}
-		add_country_modifier = {
-			name = around_africa
-			duration = 1825
-		}
 	}
 }
 
@@ -3502,7 +3550,7 @@ country_event = {
 
 		ETH = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = pero_da_covilha_stays
 			}
 		}
@@ -3527,7 +3575,7 @@ country_event = {
 
 		ETH = {
 			add_opinion = {
-				who = POR
+				who = ROOT
 				modifier = pero_da_covilha_taken
 			}
 		}
@@ -3695,7 +3743,7 @@ country_event = {
 	picture = btc_camoes_picture
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		1851 = {	# Coimbra
 			owned_by = root
 		}
@@ -3902,6 +3950,14 @@ country_event = {
 
 	is_triggered_only = yes
 
+	option = {	# Portuguese Blue
+		name = btc_por.164f
+
+		change_country_color = {
+			color = { 60 94 149 }
+		}
+	}
+
 	option = {	# Beyond the Cape Blue
 		name = btc_por.164a
 
@@ -3992,6 +4048,14 @@ country_event = {
 			color = { 100  100  100 }
 		}
 	}
+
+	option = {	# Go Back
+		name = btc_por.165f
+
+		country_event = {
+			id = btc_por.164
+		}
+	}
 }
 
 # The Ordinances of [Root.Monarch.GetName]
@@ -4003,11 +4067,15 @@ country_event = {
 	picture = COURT_eventPicture
 
 	trigger = {
-		tag = POR
+		is_or_was_tag = { tag = POR }
 		NOT = { has_ruler_modifier = production_ordinances }
 		NOT = { has_ruler_modifier = tax_ordinances }
 		NOT = { has_ruler_modifier = trade_ordinances }
 		NOT = { has_ruler_modifier = tariff_ordinances }
+		NOT = { has_ruler_modifier = padrao_ordinances }
+		NOT = { has_ruler_modifier = diplomatic_ordinances }
+		NOT = { has_ruler_modifier = development_ordinances }
+		NOT = { has_ruler_flag = no_ordinances }
 		has_regency = no
 	}
 
@@ -4017,6 +4085,12 @@ country_event = {
 
 	option = {
 		name = btc_por.166a
+
+		trigger = {
+			NOT = {
+				has_country_modifier = production_ordinances
+			}
+		}
 
 		add_adm_power = -100
 		change_government_reform_progress = -25
@@ -4028,6 +4102,12 @@ country_event = {
 	option = {
 		name = btc_por.166b
 
+		trigger = {
+			NOT = {
+				has_country_modifier = tax_ordinances
+			}
+		}
+
 		add_adm_power = -100
 		change_government_reform_progress = -25
 		add_ruler_modifier = {
@@ -4037,6 +4117,12 @@ country_event = {
 
 	option = {
 		name = btc_por.166c
+
+		trigger = {
+			NOT = {
+				has_country_modifier = trade_ordinances
+			}
+		}
 
 		add_dip_power = -100
 		change_government_reform_progress = -25
@@ -4052,6 +4138,9 @@ country_event = {
 			any_subject_country = {
 				is_colonial_nation = yes
 			}
+			NOT = {
+				has_country_modifier = tariff_ordinances
+			}
 		}
 
 		add_dip_power = -100
@@ -4062,8 +4151,741 @@ country_event = {
 	}
 
 	option = {
+		name = btc_por.166f
+
+		trigger = {
+			num_of_explorers = 1
+			NOT = {
+				has_country_modifier = padrao_ordinances
+			}
+		}
+
+		add_dip_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = padrao_ordinances
+		}
+		custom_tooltip = padrao_tt
+	}
+
+	option = {
+		name = btc_por.166g
+
+		trigger = {
+			NOT = {
+				has_country_modifier = diplomatic_ordinances
+			}
+		}
+
+		add_dip_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = diplomatic_ordinances
+		}
+	}
+
+	option = {
+		name = btc_por.166h
+
+		trigger = {
+			NOT = {
+				has_country_modifier = development_ordinances
+			}
+		}
+
+		add_adm_power = -100
+		change_government_reform_progress = -25
+		add_ruler_modifier = {
+			name = development_ordinances
+		}
+	}
+
+	option = {
 		name = btc_por.166e
 
 		add_prestige = -10
+		set_ruler_flag = no_ordinances
+	}
+}
+
+# Padrão in $PROVINCENAME$
+
+province_event = {
+	id = btc_por.167
+	title = btc_por.167_t
+	desc = btc_por.167_d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "El Dorado"
+		is_empty = yes
+		OR = {
+			continent = africa
+			continent = asia
+		}
+		FROM = { has_ruler_modifier = padrao_ordinances }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Raise a Padrão
+		name = btc_por.167a
+
+		FROM = { add_treasury = -15 }
+		add_permanent_province_modifier = {
+			name = padrao_raised
+			duration = -1
+		}
+		custom_tooltip = padrao_raised_tt
+	}
+
+	option = {	# Keep exploring
+		name = btc_por.167b
+	}
+}
+
+# Developing $PROVINCENAME$
+province_event = {
+	id = btc_por.168
+	title = btc_por.168_t
+	desc = btc_por.168_d
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes	#Always when a colony finishes
+	goto = ROOT
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				save_event_target_as = ColonizingCountry
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = grain } }
+				calculate_trade_goods_price = { trade_goods = grain }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = wine } }
+				calculate_trade_goods_price = { trade_goods = wine }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = wool } }
+				calculate_trade_goods_price = { trade_goods = wool }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = cloth } }
+				calculate_trade_goods_price = { trade_goods = cloth }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = fish } }
+				calculate_trade_goods_price = { trade_goods = fish }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = fur } }
+				calculate_trade_goods_price = { trade_goods = fur }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = salt } }
+				calculate_trade_goods_price = { trade_goods = salt }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = naval_supplies } }
+				calculate_trade_goods_price = { trade_goods = naval_supplies }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = copper } }
+				calculate_trade_goods_price = { trade_goods = copper }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = gold } }
+				calculate_trade_goods_price = { trade_goods = gold }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = iron } }
+				calculate_trade_goods_price = { trade_goods = iron }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = slaves } }
+				calculate_trade_goods_price = { trade_goods = slaves }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = ivory } }
+				calculate_trade_goods_price = { trade_goods = ivory }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = tea } }
+				calculate_trade_goods_price = { trade_goods = tea }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = chinaware } }
+				calculate_trade_goods_price = { trade_goods = chinaware }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = spices } }
+				calculate_trade_goods_price = { trade_goods = spices }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = coffee } }
+				calculate_trade_goods_price = { trade_goods = coffee }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = cotton } }
+				calculate_trade_goods_price = { trade_goods = cotton }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = sugar } }
+				calculate_trade_goods_price = { trade_goods = sugar }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = tobacco } }
+				calculate_trade_goods_price = { trade_goods = tobacco }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = cocoa } }
+				calculate_trade_goods_price = { trade_goods = cocoa }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = silk } }
+				calculate_trade_goods_price = { trade_goods = silk }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = dyes } }
+				calculate_trade_goods_price = { trade_goods = dyes }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = tropical_wood } }
+				calculate_trade_goods_price = { trade_goods = tropical_wood }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = livestock } }
+				calculate_trade_goods_price = { trade_goods = livestock }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = incense } }
+				calculate_trade_goods_price = { trade_goods = incense }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = glass } }
+				calculate_trade_goods_price = { trade_goods = glass }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = paper } }
+				calculate_trade_goods_price = { trade_goods = paper }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = gems } }
+				calculate_trade_goods_price = { trade_goods = gems }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = coal } }
+				calculate_trade_goods_price = { trade_goods = coal }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = cloves } }
+				calculate_trade_goods_price = { trade_goods = cloves }
+			}
+			if = { 
+				limit = { is_eligible_for_trade_good = { trade_goods = unknown } }
+				calculate_trade_goods_price = { trade_goods = unknown }
+			}
+		}
+	}
+
+	#Keep the current trade good
+	option = {
+		name = btc_por.168a
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	#grain
+	option = {
+		name = btc_por.168.grain
+		trigger = { is_eligible_for_trade_good = { trade_goods = grain } }
+		purchase_trade_goods = { trade_goods = grain }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#wine
+	option = {
+		name = btc_por.168.wine
+		trigger = { is_eligible_for_trade_good = { trade_goods = wine } }
+		purchase_trade_goods = { trade_goods = wine }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#wool
+	option = {
+		name = btc_por.168.wool
+		trigger = { is_eligible_for_trade_good = { trade_goods = wool } }
+		purchase_trade_goods = { trade_goods = wool }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#cloth
+	option = {
+		name = btc_por.168.cloth
+		trigger = { is_eligible_for_trade_good = { trade_goods = cloth } }
+		purchase_trade_goods = { trade_goods = cloth }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#fish
+	option = {
+		name = btc_por.168.fish
+		trigger = { is_eligible_for_trade_good = { trade_goods = fish } }
+		purchase_trade_goods = { trade_goods = fish }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#fur
+	option = {
+		name = btc_por.168.fur
+		trigger = { is_eligible_for_trade_good = { trade_goods = fur } }
+		purchase_trade_goods = { trade_goods = fur }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#salt
+	option = {
+		name = btc_por.168.salt
+		trigger = { is_eligible_for_trade_good = { trade_goods = salt } }
+		purchase_trade_goods = { trade_goods = salt }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#naval_supplies
+	option = {
+		name = btc_por.168.naval_supplies
+		trigger = { is_eligible_for_trade_good = { trade_goods = naval_supplies } }
+		purchase_trade_goods = { trade_goods = naval_supplies }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#copper
+	option = {
+		name = btc_por.168.copper
+		trigger = { is_eligible_for_trade_good = { trade_goods = copper } }
+		purchase_trade_goods = { trade_goods = copper }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#gold
+	option = {
+		name = btc_por.168.gold
+		trigger = { is_eligible_for_trade_good = { trade_goods = gold } }
+		purchase_trade_goods = { trade_goods = gold }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#iron
+	option = {
+		name = btc_por.168.iron
+		trigger = { is_eligible_for_trade_good = { trade_goods = iron } }
+		purchase_trade_goods = { trade_goods = iron }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#slaves
+	option = {
+		name = btc_por.168.slaves
+		trigger = { is_eligible_for_trade_good = { trade_goods = slaves } }
+		purchase_trade_goods = { trade_goods = slaves }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#ivory
+	option = {
+		name = btc_por.168.ivory
+		trigger = { is_eligible_for_trade_good = { trade_goods = ivory } }
+		purchase_trade_goods = { trade_goods = ivory }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#tea
+	option = {
+		name = btc_por.168.tea
+		trigger = { is_eligible_for_trade_good = { trade_goods = tea } }
+		purchase_trade_goods = { trade_goods = tea }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#chinaware
+	option = {
+		name = btc_por.168.chinaware
+		trigger = { is_eligible_for_trade_good = { trade_goods = chinaware } }
+		purchase_trade_goods = { trade_goods = chinaware }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#spices
+	option = {
+		name = btc_por.168.spices
+		trigger = { is_eligible_for_trade_good = { trade_goods = spices } }
+		purchase_trade_goods = { trade_goods = spices }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#coffee
+	option = {
+		name = btc_por.168.coffee
+		trigger = { is_eligible_for_trade_good = { trade_goods = coffee } }
+		purchase_trade_goods = { trade_goods = coffee }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#cotton
+	option = {
+		name = btc_por.168.cotton
+		trigger = { is_eligible_for_trade_good = { trade_goods = cotton } }
+		purchase_trade_goods = { trade_goods = cotton }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#sugar
+	option = {
+		name = btc_por.168.sugar
+		trigger = { is_eligible_for_trade_good = { trade_goods = sugar } }
+		purchase_trade_goods = { trade_goods = sugar }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#tobacco
+	option = {
+		name = btc_por.168.tobacco
+		trigger = { is_eligible_for_trade_good = { trade_goods = tobacco } }
+		purchase_trade_goods = { trade_goods = tobacco }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#cocoa
+	option = {
+		name = btc_por.168.cocoa
+		trigger = { is_eligible_for_trade_good = { trade_goods = cocoa } }
+		purchase_trade_goods = { trade_goods = cocoa }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#silk
+	option = {
+		name = btc_por.168.silk
+		trigger = { is_eligible_for_trade_good = { trade_goods = silk } }
+		purchase_trade_goods = { trade_goods = silk }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#dyes
+	option = {
+		name = btc_por.168.dyes
+		trigger = { is_eligible_for_trade_good = { trade_goods = dyes } }
+		purchase_trade_goods = { trade_goods = dyes }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#tropical_wood
+	option = {
+		name = btc_por.168.tropical_wood
+		trigger = { is_eligible_for_trade_good = { trade_goods = tropical_wood } }
+		purchase_trade_goods = { trade_goods = tropical_wood }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#livestock
+	option = {
+		name = btc_por.168.livestock
+		trigger = { is_eligible_for_trade_good = { trade_goods = livestock } }
+		purchase_trade_goods = { trade_goods = livestock }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#incense
+	option = {
+		name = btc_por.168.incense
+		trigger = { is_eligible_for_trade_good = { trade_goods = incense } }
+		purchase_trade_goods = { trade_goods = incense }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#glass
+	option = {
+		name = btc_por.168.glass
+		trigger = { is_eligible_for_trade_good = { trade_goods = glass } }
+		purchase_trade_goods = { trade_goods = glass }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#paper
+	option = {
+		name = btc_por.168.paper
+		trigger = { is_eligible_for_trade_good = { trade_goods = paper } }
+		purchase_trade_goods = { trade_goods = paper }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#gems
+	option = {
+		name = btc_por.168.gems
+		trigger = { is_eligible_for_trade_good = { trade_goods = gems } }
+		purchase_trade_goods = { trade_goods = gems }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#coal
+	option = {
+		name = btc_por.168.coal
+		trigger = { is_eligible_for_trade_good = { trade_goods = coal } }
+		purchase_trade_goods = { trade_goods = coal }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#cloves
+	option = {
+		name = btc_por.168.cloves
+		trigger = { is_eligible_for_trade_good = { trade_goods = cloves } }
+		purchase_trade_goods = { trade_goods = cloves }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	#unknown
+	option = {
+		name = btc_por.168.unknown
+		trigger = { is_eligible_for_trade_good = { trade_goods = unknown } }
+		purchase_trade_goods = { trade_goods = unknown }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Portuguese Ordinances
+
+country_event = {
+	id = btc_por.169
+	title = btc_por.169_t
+	desc = btc_por.169_d
+	picture = COURT_eventPicture
+
+	trigger = {
+		months_of_ruling = 360
+		OR = {
+			has_ruler_modifier = production_ordinances
+			has_ruler_modifier = tax_ordinances
+			has_ruler_modifier = trade_ordinances
+			has_ruler_modifier = tariff_ordinances
+			has_ruler_modifier = padrao_ordinances
+			has_ruler_modifier = diplomatic_ordinances
+			has_ruler_modifier = development_ordinances
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_por.169a
+
+		if = {
+			limit = {
+				has_ruler_modifier = production_ordinances
+			}
+			add_adm_power = -100
+			change_government_reform_progress = -25
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_production_ordinances
+			custom_tooltip = production_ordinances_tt
+		}
+		if = {
+			limit = {
+				has_ruler_modifier = tax_ordinances
+			}
+			add_adm_power = -100
+			change_government_reform_progress = -25
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_tax_ordinances
+			custom_tooltip = tax_reduction
+		}
+		if = {
+			limit = {
+				has_ruler_modifier = trade_ordinances
+			}
+			add_dip_power = -100
+			change_government_reform_progress = -25
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_trade_ordinances
+			custom_tooltip = trade_ordinances_tt
+		}
+		if = {
+			limit = {
+				has_ruler_modifier = tariff_ordinances
+			}
+			add_dip_power = -100
+			change_government_reform_progress = -25
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_tariff_ordinances
+			custom_tooltip = tariff_ordinances_tt
+		}
+		if = {
+			limit = {
+				has_ruler_modifier = padrao_ordinances
+			}
+			add_dip_power = -100
+			change_government_reform_progress = -25
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_padrao_ordinances
+			custom_tooltip = padrao_ordinances_tt
+		}
+		if = {
+			limit = {
+				has_ruler_modifier = diplomatic_ordinances
+			}
+			add_dip_power = -100
+			change_government_reform_progress = -25
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_diplomatic_ordinances
+			custom_tooltip = diplomatic_ordinances_tt
+		}
+		if = {
+			limit = {
+				has_ruler_modifier = development_ordinances
+			}
+			add_adm_power = -100
+			change_government_reform_progress = -25
+			set_country_flag = permanent_ordinances
+			set_country_flag = permanent_development_ordinances
+			custom_tooltip = development_ordinances_tt
+		}
+	}
+
+	option = {
+		name = btc_por.169b
+
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = btc_por.170
+	title = btc_por.170_t
+	desc = btc_por.170_d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = btc_por.170a
+
+		if = {
+			limit = {
+				has_country_flag = permanent_production_ordinances
+			}
+			add_country_modifier = {
+				name = production_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_production_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_tax_ordinances
+			}
+			add_country_modifier = {
+				name = tax_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_tax_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_trade_ordinances
+			}
+			add_country_modifier = {
+				name = trade_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_trade_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_tariff_ordinances
+			}
+			add_country_modifier = {
+				name = tariff_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_tariff_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_padrao_ordinances
+			}
+			add_country_modifier = {
+				name = padrao_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_padrao_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_diplomatic_ordinances
+			}
+			add_country_modifier = {
+				name = diplomatic_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_diplomatic_ordinances
+			clr_country_flag = permanent_ordinances
+		}
+		if = {
+			limit = {
+				has_country_flag = permanent_development_ordinances
+			}
+			add_country_modifier = {
+				name = development_ordinances
+				duration = -1
+			}
+			clr_country_flag = permanent_development_ordinances
+			clr_country_flag = permanent_ordinances
+		}
 	}
 }

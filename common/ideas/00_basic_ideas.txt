@@ -939,7 +939,7 @@ exploration_ideas = {
 	important = yes
 
 	bonus = {
-		min_autonomy_in_territories = -0.1
+		cb_on_overseas = yes
 		monthly_portuguese_saudade = 0.075
 	}
 
@@ -971,7 +971,7 @@ exploration_ideas = {
 	
 	global_empire = {
 		naval_forcelimit_modifier = 0.25
-		treasure_fleet_income = 0.25
+		min_autonomy_in_territories = -0.1
 	}
 
 	ai_will_do = {
@@ -1409,7 +1409,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
-		cb_on_primitives = yes
+		treasure_fleet_income = 0.25
 		monthly_portuguese_saudade = 0.075
 	}
 

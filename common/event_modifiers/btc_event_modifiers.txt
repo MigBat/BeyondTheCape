@@ -300,6 +300,7 @@ jeronimos_monastery = {
 
 black_swords = {
 	shock_damage = 0.15
+	assault_fort_ability = 0.25
 	is_marine_modifier = yes 
 }
 
@@ -631,4 +632,26 @@ trade_ordinances = {
 
 tariff_ordinances = {
 	global_tariffs = 0.1
+}
+
+padrao_ordinances = {
+	# can place padroes
+	picture = "padrao"
+}
+
+diplomatic_ordinances = {
+	diplomatic_reputation = 1
+}
+
+development_ordinances = {
+	development_cost_modifier = -0.05
+}
+
+padrao_raised = {
+	# padrao was raised
+	picture = "padrao"
+}
+
+explored_coast = {
+	# had recent explore coast event
 }

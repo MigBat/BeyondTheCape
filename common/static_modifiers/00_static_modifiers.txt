@@ -256,9 +256,9 @@ knowledge_sharing = {
 	monthly_russian_modernization = 0.06
 }
 
-cardinals_spread_institution = {
-	institution_growth = 20
-}
+# cardinals_spread_institution = {
+# 	institution_growth = 20
+# }
 
 manpower = {
 	garrison_growth = 0.01					#1% increase from manpower.
@@ -1697,7 +1697,7 @@ native_policy_trade = {
 native_policy_hostile = {
 	native_assimilation = 0.5
 	native_uprising_chance = -0.5
-	idea_claim_colonies = yes
+	cb_on_primitives = yes
 }
 
 ########################################

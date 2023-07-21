@@ -2,7 +2,6 @@
 overseas_dominance = {
 	potential = {
 		has_dlc = "Domination"
-		tag = POR
 		normal_or_historical_nations = yes
 		has_government_mechanic = portuguese_saudade_mechanic
 	}
@@ -141,15 +140,11 @@ overseas_dominance = {
 		}
 	}
 	can_end = {
-		if = {
-			limit = {
-				NOT = {
-					has_government_power = {
-						mechanic_type = portuguese_saudade_mechanic 
-						power_type = portuguese_saudade 
-						value = 50
-					}
-				}
+		NOT = {
+			has_government_power = {
+				mechanic_type = portuguese_saudade_mechanic 
+				power_type = portuguese_saudade 
+				value = 50
 			}
 		}
 	}

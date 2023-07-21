@@ -1252,7 +1252,7 @@ ming_missions_2 = {
 			OR = {
 				AND = {
 					exploration_ideas = 1 
-					dip_tech = 7 
+					dip_tech = 8 
 					num_of_light_ship = 25
 				}
 				AND = {
@@ -1291,7 +1291,7 @@ ming_missions_2 = {
 				if = {
 					limit = {
 						exploration_ideas = 1 
-						dip_tech = 7 
+						dip_tech = 8
 						num_of_light_ship = 25
 					}
 					add_country_modifier = {

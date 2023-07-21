@@ -3910,6 +3910,7 @@ por_elite_marines_modifier = {
 	discipline = 0.05
 	is_marine_modifier = yes 
 }
+
 por_minas_gerais = {
 	trade_goods_size = 2
 }

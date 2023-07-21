@@ -13,7 +13,7 @@ country_event = {
 		NOT = { has_country_flag = quest_for_the_new_world }
 		NOT = { has_country_modifier = quest_for_the_new_world }
 		has_idea_group = exploration_ideas
-		dip_tech = 7
+		dip_tech = 8
 	}
 
 	option = {
@@ -41,7 +41,7 @@ country_event = {
 		name = btc_events.2a
 
 		every_owned_province = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = resist_reconquista
 				duration = 36500
 			}
@@ -219,10 +219,16 @@ country_event = {
 		tag = MAM
 		has_country_flag = MAM_POR_conflict
 
-		exists = POR
+		OR = {
+			exists = POR
+			exists = IBE
+		}
 		owns = 2315
 		4346 = {				#Gulf of Aden
-			is_strongest_trade_power = POR
+			OR = {
+				is_strongest_trade_power = POR
+				is_strongest_trade_power = IBE
+			}
 		}
 	}
 	
@@ -233,11 +239,22 @@ country_event = {
 	option = {
 		name = btc_events.7a
 		ai_chance = { factor = 90 }
-		
-		declare_war_with_cb = {
-			casus_belli = cb_trade_war_triggered
-			who = POR
-		}				
+
+		if = {
+			limit = {
+				exists = POR
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_trade_war_triggered
+				who = POR
+			}	
+		}
+		else = {
+			declare_war_with_cb = {
+				casus_belli = cb_trade_war_triggered
+				who = IBE
+			}
+		}			
 	}
 
 	option = {
@@ -275,12 +292,26 @@ country_event = {
 
 		set_country_flag = killed_lourenco
 
-		POR = {
-			country_event = {
-				id = btc_events.9
-				days = 1
+		if = {
+			limit = {
+				exists = POR
+			}
+			POR = {
+				country_event = {
+					id = btc_events.9
+					days = 1
+				}
 			}
 		}
+		else = {
+			IBE = {
+				country_event = {
+					id = btc_events.9
+					days = 1
+				}
+			}
+		}
+		
 	}
 
 	option = {	# He got no less than what he deserved
@@ -294,10 +325,23 @@ country_event = {
 
 		set_country_flag = killed_lourenco
 
-		POR = {
-			country_event = {
-				id = btc_events.9
-				days = 1
+		if = {
+			limit = {
+				exists = POR
+			}
+			POR = {
+				country_event = {
+					id = btc_events.9
+					days = 1
+				}
+			}
+		}
+		else = {
+			IBE = {
+				country_event = {
+					id = btc_events.9
+					days = 1
+				}
 			}
 		}
 	}
@@ -469,7 +513,7 @@ country_event = {
 	id = btc_events.11
 	title = btc_events.11_t
 	desc = btc_events.11_d
-	picture = NAVAL_MILITARY_eventPicture
+	picture = RELIGIOUS_WARS_eventPicture
 
 	is_triggered_only = yes
 	major = yes
@@ -478,6 +522,7 @@ country_event = {
 		name = btc_events.11a
 
 		POR = { clr_country_flag = war_of_three_kings }
+		IBE = { clr_country_flag = war_of_three_kings }
 		MOR = { clr_country_flag = war_of_three_kings }
 
 		remove_rival = MOR
@@ -492,13 +537,71 @@ country_event = {
 				mil = 4
 			}
 			kill_heir = {}
-			create_alliance = POR
-			change_religion = catholic
-			add_opinion = {
-				who = POR
-				modifier = war_of_three_kings
+			if = {
+				limit = {
+					exists = POR
+				}
+				create_alliance = POR
+				add_opinion = {
+					who = POR
+					modifier = war_of_three_kings
+				}
+				remove_rival = POR
 			}
-			remove_rival = POR
+			else = {
+				create_alliance = IBE
+				add_opinion = {
+					who = IBE
+					modifier = war_of_three_kings
+				}
+				remove_rival = IBE
+			}
+			capital_scope = {
+				change_religion = catholic	
+				set_province_flag = is_catholic					
+			}
+			every_owned_province = {
+				random_province_in_state = {
+					limit = {
+						NOT = { has_province_flag = is_catholic }	
+						NOT = { religion = catholic }
+					}
+					change_religion = catholic	
+					set_province_flag = is_catholic		
+				}
+				random_province_in_state = {
+					limit = {
+						NOT = { has_province_flag = is_catholic }		
+						NOT = { religion = catholic }
+					}
+					change_religion = catholic	
+					set_province_flag = is_catholic		
+				}
+				random_province_in_state = {
+					limit = {
+						NOT = { has_province_flag = is_catholic }		
+						NOT = { religion = catholic }
+					}
+					change_religion = catholic	
+					set_province_flag = is_catholic		
+				}
+				random_province_in_state = {
+					limit = {
+						NOT = { has_province_flag = is_catholic }		
+						NOT = { religion = catholic }
+					}
+					change_religion = catholic	
+					set_province_flag = is_catholic		
+				}
+				random_province_in_state = {
+					limit = {
+						NOT = { has_province_flag = is_catholic }		
+						NOT = { religion = catholic }
+					}
+					change_religion = catholic	
+					set_province_flag = is_catholic		
+				}
+			}
 		}
 	}
 }
@@ -509,7 +612,7 @@ country_event = {
 	id = btc_events.12
 	title = btc_events.12_t
 	desc = btc_events.12_d
-	picture = NAVAL_MILITARY_eventPicture
+	picture = WOUNDED_SOLDIERS_eventPicture
 
 	is_triggered_only = yes
 
@@ -535,7 +638,7 @@ country_event = {
 	id = btc_events.13
 	title = btc_events.13_t
 	desc = btc_events.13_d
-	picture = NAVAL_MILITARY_eventPicture
+	picture = DISCIPLINED_SOLDIERS_eventPicture
 
 	trigger = {
 		OR = {
