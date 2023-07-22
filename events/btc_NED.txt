@@ -66,42 +66,7 @@ country_event = {
 			}
 			add_permanent_claim = VOC
 		}
-		north_sumatra_area = {
-			limit = {
-				NOT = { is_core = VOC }
-				NOT = { is_permanent_claim = VOC }
-			}
-			add_permanent_claim = VOC
-		}
-		central_sumatra_area = {
-			limit = {
-				NOT = { is_core = VOC }
-				NOT = { is_permanent_claim = VOC }
-			}
-			add_permanent_claim = VOC
-		}
-		south_sumatra_area = {
-			limit = {
-				NOT = { is_core = VOC }
-				NOT = { is_permanent_claim = VOC }
-			}
-			add_permanent_claim = VOC
-		}
-		jambi_area = {
-			limit = {
-				NOT = { is_core = VOC }
-				NOT = { is_permanent_claim = VOC }
-			}
-			add_permanent_claim = VOC
-		}
-		batak_area = {
-			limit = {
-				NOT = { is_core = VOC }
-				NOT = { is_permanent_claim = VOC }
-			}
-			add_permanent_claim = VOC
-		}
-		minangkabau_area = {
+		malaya_region = {
 			limit = {
 				NOT = { is_core = VOC }
 				NOT = { is_permanent_claim = VOC }
@@ -172,42 +137,7 @@ country_event = {
 			}
 			add_permanent_claim = ROOT
 		}
-		north_sumatra_area = {
-			limit = {
-				NOT = { is_core = ROOT }
-				NOT = { is_permanent_claim = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		central_sumatra_area = {
-			limit = {
-				NOT = { is_core = ROOT }
-				NOT = { is_permanent_claim = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		south_sumatra_area = {
-			limit = {
-				NOT = { is_core = ROOT }
-				NOT = { is_permanent_claim = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		jambi_area = {
-			limit = {
-				NOT = { is_core = ROOT }
-				NOT = { is_permanent_claim = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		batak_area = {
-			limit = {
-				NOT = { is_core = ROOT }
-				NOT = { is_permanent_claim = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		minangkabau_area = {
+		malaya_region = {
 			limit = {
 				NOT = { is_core = ROOT }
 				NOT = { is_permanent_claim = ROOT }
@@ -327,42 +257,7 @@ country_event = {
 				}
 				add_permanent_claim = VOC
 			}
-			north_sumatra_area = {
-				limit = {
-					NOT = { is_core = VOC }
-					NOT = { is_permanent_claim = VOC }
-				}
-				add_permanent_claim = VOC
-			}
-			central_sumatra_area = {
-				limit = {
-					NOT = { is_core = VOC }
-					NOT = { is_permanent_claim = VOC }
-				}
-				add_permanent_claim = VOC
-			}
-			south_sumatra_area = {
-				limit = {
-					NOT = { is_core = VOC }
-					NOT = { is_permanent_claim = VOC }
-				}
-				add_permanent_claim = VOC
-			}
-			jambi_area = {
-				limit = {
-					NOT = { is_core = VOC }
-					NOT = { is_permanent_claim = VOC }
-				}
-				add_permanent_claim = VOC
-			}
-			batak_area = {
-				limit = {
-					NOT = { is_core = VOC }
-					NOT = { is_permanent_claim = VOC }
-				}
-				add_permanent_claim = VOC
-			}
-			minangkabau_area = {
+			malaya_region = {
 				limit = {
 					NOT = { is_core = VOC }
 					NOT = { is_permanent_claim = VOC }
