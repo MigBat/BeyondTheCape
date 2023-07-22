@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = native_clan_council_reform
+primary_culture = berber
+religion = sunni
+technology_group = muslim
+capital = 4565 # Tenerife
+fixed_capital = 4565 # Cannot move capital away from this province & no power cost to move to it
+religious_school = maliki_school
+
+1444.1.1 = {
+	monarch = {
+		name = "Cancha al-Adara"
+		birth_date = 1410.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

@@ -792,7 +792,7 @@ CAS_ideas = {
 		colonists = 1
 	}
 	conquest_of_paradise = {
-		idea_claim_colonies = yes
+		cb_on_primitives = yes
 		global_colonial_growth = 20
 	}
 	devout_catholisism = {

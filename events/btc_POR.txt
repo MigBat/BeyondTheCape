@@ -4083,6 +4083,10 @@ country_event = {
 		months = 1
 	}
 
+	immediate = {
+		clr_country_flag = had_perm_ordinances_event
+	}
+
 	option = {
 		name = btc_por.166a
 
@@ -4710,10 +4714,15 @@ country_event = {
 			has_ruler_modifier = diplomatic_ordinances
 			has_ruler_modifier = development_ordinances
 		}
+		NOT = { has_country_flag = had_perm_ordinances_event }
 	}
 
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		set_country_flag = had_perm_ordinances_event
 	}
 
 	option = {
@@ -4797,6 +4806,8 @@ country_event = {
 		add_prestige = -10
 	}
 }
+
+# Permanent ordinances
 
 country_event = {
 	id = btc_por.170

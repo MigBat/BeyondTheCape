@@ -9,6 +9,8 @@
  IBE_ADJ:0 "Iberian"
  VOC:0 "Dutch East India Company"
  VOC_ADJ:1 "Company"
+ GCH:0 "Guanches"
+ GCH_ADJ:0 "Guanchian"
 
 # Provinces #
  PROV4556:0 "Minho"
@@ -236,3 +238,15 @@
  combine_colony_with_other_colony_in_same_colonial_region_title:0 "Combine Colonies"
  combine_colony_with_other_colony_in_same_colonial_region_desc:0 "§Y[From.GetName]§! is not the only colonial nation of us in §Y[From.Capital.GetColonialRegionName]§!. \nDo you want §Y[From.GetName]§! to annex our other colonial nations in that colonial region?"
  combine_colony_with_other_colony_in_same_colonial_region_tooltip:0 "Make §Y[From.GetName]§! annex our other colonial nations in §Y[From.Capital.GetColonialRegionName]§!.\n"
+
+# Technology
+
+ adm_tech_cs_20_name:0 "National Sovereignty"
+ adm_tech_cs_18_name:0 "Absolute Rulership"
+ adm_tech_cs_26_name:0 "Improved Production"
+ adm_tech_cs_25_name:1 "Separation of Powers"
+
+ adm_tech_cs_20_desc:0 "The many and long wars of the first half of the 17th century have led to an international diplomatic system where the territorial integrity of states is a cornerstone. States rather than individual rulers or supra-national groupings are the actors on the international arena and no state has the right to intervene in the internal affairs of another."
+ adm_tech_cs_18_desc:0 "There are many people who demand to be given a role in the government, but in reality mostly want rewards without effort. A new interesting idea of absolutism is spreading, which is a system where we dispose of those parasites and govern alone."
+ adm_tech_cs_26_desc:0 "Having the technical means to improve land and thus production is useless without incentives to do so. By reforming the laws of land tenure we can provide greater incentives to adopt improved methods of production."
+ adm_tech_cs_25_desc:1 "An anonymous treatise on political theory has emerged, and despite efforts to suppress it it is quickly spreading across the world. It deals with the nature of forms of government, be they monarchies, despotisms, or democracies, and argues for a strict separation of the executive, legislative, and judiciary branches. This would protect the people and limit the power of a monarch, which is understandably a very popular prospect for many of our subjects. Despite the unfortunate implications for the power of monarchs, these ideas may well benefit our nation greatly."

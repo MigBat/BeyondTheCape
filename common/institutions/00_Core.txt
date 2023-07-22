@@ -826,6 +826,27 @@ printing_press = {
 			}
 		}
 		modifier = {
+			factor = 0.6
+			if = {
+				limit = {
+					OR = {
+						religion = confucianism
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			if = {
+				limit = {
+					OR = {
+						religion = catholic
+						religion = orthodox
+					}
+				}
+			}
+		}
+		modifier = {
 			factor = 3
 			scale = yes
 			potential = {
@@ -1063,9 +1084,24 @@ new_world_i = {
 	}
 	
 	embracement_speed = {
-	
 		modifier = {
-			factor = 1.2
+			factor = 0.4 #Not scaled
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 0.8 #Not Scaled
+			province_trade_power = 25
+		}
+		modifier = {
+			factor = 1.2 #Not Scaled
+			province_trade_power = 35
+		}
+		modifier = {
+			factor = 1.6 #Not Scaled
+			province_trade_power = 45
+		}
+		modifier = {
+			factor = 0.6
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
@@ -1073,7 +1109,6 @@ new_world_i = {
 					new_world_i = 100
 				}
 			}
-			
 		}
 		
 		modifier = {
@@ -1091,7 +1126,63 @@ new_world_i = {
 				tooltip = tooltip_neighbor_port_province_new_world
 				has_port = yes
 				any_neighbor_province = {
+					global_trade = 100
 					new_world_i = 100
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.6
+			if = {
+				limit = {
+					owner = {
+						technology_group = western
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			if = {
+				limit = {
+					owner = {
+						technology_group = ottoman
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.4
+			if = {
+				limit = {
+					owner = {
+						technology_group = muslim
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.3
+			if = {
+				limit = {
+					owner = {
+						technology_group = eastern
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.2
+			if = {
+				limit = {
+					owner = {
+						technology_group = chinese
+					}
 				}
 			}
 		}
@@ -1703,9 +1794,6 @@ manufactories = {
 	}
 }
 
-
-
-
 #######################################
 # Global Trade
 #######################################
@@ -1863,23 +1951,23 @@ global_trade = {
 	embracement_speed = {
 	
 		modifier = {
-			factor = 0.4 #Not scaled
+			factor = 0.1 #Not scaled
 			province_trade_power = 15
 		}
 		modifier = {
-			factor = 0.8 #Not Scaled
+			factor = 0.2 #Not Scaled
 			province_trade_power = 25
 		}
 		modifier = {
-			factor = 1.2 #Not Scaled
+			factor = 0.4 #Not Scaled
 			province_trade_power = 35
 		}
 		modifier = {
-			factor = 1.6 #Not Scaled
+			factor = 0.8 #Not Scaled
 			province_trade_power = 45
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.2
 			scale = yes
 			potential = {
 				province_has_center_of_trade_of_level = 1
@@ -1890,7 +1978,7 @@ global_trade = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			scale = yes
 			potential = {
 				province_has_center_of_trade_of_level = 1
@@ -1927,7 +2015,7 @@ global_trade = {
 		}
 
 		modifier = {
-			factor = 0.25
+			factor = 0.05
 			scale = yes
 			potential = {
 				has_port = no
@@ -1943,7 +2031,7 @@ global_trade = {
 		}
 		
 		modifier = {
-			factor = 0.5
+			factor = 0.2
 			scale = yes
 			potential = {
 				has_port = yes
@@ -1959,7 +2047,7 @@ global_trade = {
 		}
 		
 		modifier = {
-			factor = 5
+			factor = 0.2
 			scale = yes
 			potential = {
 				owner = {
@@ -1984,7 +2072,7 @@ global_trade = {
 			printing_press = 100
 		}
 		modifier = {
-			factor = 2
+			factor = 0.8
 			scale = yes
 			potential = {
 				owner = {
@@ -2002,7 +2090,7 @@ global_trade = {
 			}
 		}
 		modifier = {
-			factor = 1
+			factor = 0.4
 			scale = yes
 			potential = {
 				owner = {
@@ -2402,6 +2490,80 @@ enlightenment = {
 				is_owned_by_trade_company = no
 				owner = {
 					has_institution = enlightenment
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			if = {
+				limit = {
+					owner = {
+						technology_group = western
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			if = {
+				limit = {
+					owner = {
+						technology_group = eastern
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.2
+			if = {
+				limit = {
+					owner = {
+						technology_group = chinese
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.6
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							religion = reformed
+							religion = protestant
+							religion = anglican
+							religion = hussite
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							religion = catholic
+							religion = shinto
+							religion = vajrayana
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.2
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							religion = orthodox
+							religion = confucianism
+							religion = mahayana
+						}
+					}
 				}
 			}
 		}
