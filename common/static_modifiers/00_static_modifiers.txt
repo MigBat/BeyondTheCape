@@ -256,9 +256,9 @@ knowledge_sharing = {
 	monthly_russian_modernization = 0.06
 }
 
-# cardinals_spread_institution = {
-# 	institution_growth = 20
-# }
+cardinals_spread_institution = {
+	institution_growth = 10
+}
 
 manpower = {
 	garrison_growth = 0.01					#1% increase from manpower.

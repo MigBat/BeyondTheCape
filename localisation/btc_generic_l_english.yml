@@ -9,6 +9,8 @@
  IBE_ADJ:0 "Iberian"
  VOC:0 "Dutch East India Company"
  VOC_ADJ:1 "Company"
+ GCH:0 "Guanches"
+ GCH_ADJ:0 "Guanchian"
 
 # Provinces #
  PROV4556:0 "Minho"
