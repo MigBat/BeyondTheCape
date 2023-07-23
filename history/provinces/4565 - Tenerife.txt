@@ -22,7 +22,7 @@ culture = berber
 	controller = GCH
 	add_core = GCH
 	is_city = yes
-	religion = animism
+	religion = shamanism
 	culture = berber	
 	trade_goods = sugar
 }
