@@ -67,8 +67,20 @@ emp_ned_slot1_branch = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = {
+				limit = {
+					exists = VOC
+				}
+				VOC = {
+					is_subject_of_type = commercial_enterprise
+					is_subject_of = ROOT
+				}
+			}
 			630 = {
-				owned_by = ROOT
+				OR = {
+					owned_by = ROOT
+					owned_by = VOC
+				}
 			}
 		}
 		effect = {
@@ -96,9 +108,21 @@ emp_ned_slot1_branch = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			if = {
+				limit = {
+					exists = VOC
+				}
+				VOC = {
+					is_subject_of_type = commercial_enterprise
+					is_subject_of = ROOT
+				}
+			}
 			malacca_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+					owned_by = ROOT
+					owned_by = VOC
+				}
 			}
 		}
 		effect = {
@@ -703,7 +727,10 @@ emp_ned_slot3_branch = {
 				name = ned_dutch_overseas_trade
 				duration = 7300
 			}
-			discover_provinces = POR
+			custom_tooltip = discover_portugal_tt
+			hidden_effect = {
+				discover_provinces = POR
+			}
 		}
 	}
 	
