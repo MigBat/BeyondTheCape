@@ -1,7 +1,7 @@
 government = tribal
 add_government_reform = native_clan_council_reform
 primary_culture = berber
-religion = sunni
+religion = shamanism
 technology_group = muslim
 capital = 4565 # Tenerife
 fixed_capital = 4565 # Cannot move capital away from this province & no power cost to move to it
