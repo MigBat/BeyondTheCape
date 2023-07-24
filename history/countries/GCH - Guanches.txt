@@ -8,7 +8,7 @@ fixed_capital = 4565 # Cannot move capital away from this province & no power co
 
 1444.1.1 = {
 	monarch = {
-		name = "Cancha al-Adara"
+		name = "Cancha"
 		birth_date = 1410.1.1
 		adm = 2
 		dip = 2

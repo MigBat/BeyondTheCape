@@ -134,7 +134,9 @@ estate_slavers_raid_coasts = {
 	benefits = {
 		may_perform_slave_raid = yes
 	}
-	mechanics = { exempt_from_seize_land }
+	mechanics = { 
+		exempt_from_seize_land
+	}
 	cooldown_years = 10
 	ai_will_do = { #can potentially be game breaking
 		factor = 0
