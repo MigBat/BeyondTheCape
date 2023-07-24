@@ -229,9 +229,9 @@
  industrialization_date:0 "1715"
 
  tooltip_development_15:0 "European 15 development province"
- ven_aldus_manutius_tt:0 "Venice has had the Aldus Manutius event"
- mai_gutenberg_tt:0 "Mainz has had the Johannes Gutenberg event"
- fra_descartes_tt:0 "France has had the René Descartes event"
+ ven_aldus_manutius_tt:0 "Venice has had the §YAldus Manutius§! event"
+ mai_gutenberg_tt:0 "Mainz has had the §YJohannes Gutenberg§! event"
+ fra_descartes_tt:0 "France has had the §YRené Descartes§! event"
  circumnavigation_completed_tt:0 "The circumnavigation of the world has been completed"
 
  COMBINE_COLONY_WITH_OTHER_COLONY_IN_SAME_COLONIAL_REGION_VALID_OTHER_COLONY_TT:0 "We have another valid colonial nation with its capital in §Y[From.Capital.GetColonialRegionName]§! that has less than §Y50%§! liberty desire and is at peace"

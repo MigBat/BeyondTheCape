@@ -1,12 +1,12 @@
 ## Beyond the Cape ##
 
 # Castile and Guanches
-vassal = {
-	first = CAS
-	second = GCH
-	start_date = 1402.1.1
-	end_date = 1498.1.1
-}
+# vassal = {
+# 	first = CAS
+# 	second = GCH
+# 	start_date = 1444.1.1
+# 	end_date = 1498.1.1
+# }
 
 # Sicily and Aragon
 union = {

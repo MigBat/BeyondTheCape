@@ -629,3 +629,78 @@ country_event = {
 		}
 	}
 }
+
+# Cornelis de Houtman
+
+country_event = {
+	id = btc_ned.9
+	title = btc_ned.9_t
+	desc = btc_ned.9_d
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		tag = NED
+		is_year = 1595
+		630 = {
+			has_discovered = ROOT
+		}
+		if = {
+			limit = {
+				ai = no
+			}
+			mission_completed = emp_ned_invest_in_the_rich_trade
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = btc_ned.9a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		if = {
+			limit = {
+				630 = {
+					owner = {
+						capital_scope = {
+							superregion = east_indies_superregion
+						}
+					}
+				}
+			}
+			630 = {
+				cede_province = ROOT
+				add_core = ROOT
+			}
+		}
+		else = {
+			random_province = {
+				limit = {
+					has_port = yes
+					region = indonesia_region
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = btc_ned.9b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		630 = {
+			add_permanent_claim = ROOT
+		}
+	}
+}

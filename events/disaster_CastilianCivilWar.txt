@@ -62,7 +62,7 @@ country_event = {
 		set_country_flag = civil_war_in_castile
 
 		ai_chance = {
-			factor = 25
+			factor = 10
 			modifier = {
 				factor = 0
 				war_with = POR
@@ -118,7 +118,7 @@ country_event = {
 		set_country_flag = civil_war_in_castile
 
 		ai_chance = {
-			factor = 75
+			factor = 90
 			modifier = {
 				factor = 0
 				war_with = ARA
@@ -186,7 +186,7 @@ country_event = {
 		}
 		
 		ai_chance = {
-			factor = 0.9
+			factor = 90
 		}
 
 		set_country_flag = pressed_claim
@@ -220,7 +220,7 @@ country_event = {
 		name = "castilian_civil_war.2b"
 
 		ai_chance = {
-			factor = 0.1
+			factor = 10
 		}
 
 		add_prestige = -10
@@ -248,7 +248,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 0.9
+			factor = 99
 		}
 
 		set_country_flag = pressed_claim
@@ -280,7 +280,7 @@ country_event = {
 		name = "castilian_civil_war.3b"
 
 		ai_chance = {
-			factor = 0.1
+			factor = 1
 		}
 
 		add_prestige = -10

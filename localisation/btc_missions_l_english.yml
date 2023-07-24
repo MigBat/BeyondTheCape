@@ -54,6 +54,7 @@
 
 # Netherlands Missions #
 
+ discover_portugal_tt:0 "We will discover all provinces owned by §YPortugal§!."
  wic_claims_on_portugal:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YGuinea§! region owned by §YPortugal§!."
  voc_claims_on_portugal:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YEast Indies§! super region owned by §YPortugal§!."
 #  emp_ned_baltic_bulk_trades_title:0 "Control Home Trade"

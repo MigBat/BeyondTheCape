@@ -655,3 +655,11 @@ padrao_raised = {
 explored_coast = {
 	# had recent explore coast event
 }
+
+dev_decreased_recently = {
+	local_prosperity_growth = -0.01
+}
+
+dev_increased_recently = {
+	local_monthly_devastation = -0.01
+}

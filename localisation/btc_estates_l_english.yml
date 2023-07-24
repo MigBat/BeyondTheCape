@@ -117,3 +117,10 @@
  EST_VAL_SLAVERS_DECLINE:0 "Decline of the Slaver Guilds: §Y$VAL$%§!"
  EST_VAL_SLAVERS_PROTO_CAPITALISTS:0 "Growth of the Putting-Out System: §Y$VAL$%§!"
  EST_VAL_SLAVER_ADMINISTRATION:0 "Slavers in Administration: §Y$VAL$%§!"
+
+ slaver_rebels_title:0 "Slaver Rebels"
+ slaver_rebels_name:0 "$COUNTRY$ Slavers"
+ slaver_rebels_desc:0 "The Slaver rebels seek to defend their power and privileges in the court and seek to increase their influence."
+ slaver_rebels_army:0 "Slaver Rebel Army"
+ slaver_rebels_demands:0 "Increase Slaver Influence"
+ slaver_rebels_demands_desc:0 "The rebels demand to increase their influence over the government substantially."

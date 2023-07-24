@@ -475,6 +475,10 @@
  btc_ned.8_d:0 "The stoic frisians are the last remnants of the dutch independent realms. They are too proud to submit, and so there is only one way to make them see reason."
  btc_ned.8a:0 "The Frisians shall submit."
  btc_ned.8b:0 "This is not the right time."
+ btc_ned.9_t:0 "Cornelis de Houtman"
+ btc_ned.9_d:0 "In 1592, the Compagnie van Verre was founded to finance a Dutch trading expedition to the East Indies. Their initial inspiration had been the publication of a series of maps that appeared to show the route to the East Indies. Houtman was sent to Lisbon as a commercial spy to gather information about Portuguese spice trade in the East Indies. With extensive information about the east indies, including crucial details on navigation and the spice trade, four ships left for Banten to establish Dutch presence in the area."
+ btc_ned.9a:0 "Seize the opportunity!"
+ btc_ned.9b:0 "Let's not be hasty."
 
 # Aragon Events #
 

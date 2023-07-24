@@ -650,7 +650,7 @@ printing_press = {
 				tooltip = mai_gutenberg_tt
 				has_province_flag = mai_gutenberg
 			}
-			is_year = 1500
+			owner = { adm_tech = 9 }
 		}
 		is_institution_enabled = renaissance
 		renaissance = 100
@@ -1025,10 +1025,6 @@ new_world_i = {
 	can_start = {
 		# is_year = 1500
 		renaissance = 100
-		OR = {
-			owner = { has_country_modifier = quest_for_the_new_world }
-			owner = { has_idea = call_of_our_forefathers }
-		}
 		OR = {
 			continent = europe
 			continent = asia
@@ -1885,53 +1881,76 @@ global_trade = {
 		is_institution_enabled = new_world_i
 		new_world_i = 100
 		is_island = no
-		# highest_value_trade_node = yes
+		highest_value_trade_node = yes
 		OR = {
-			province_has_center_of_trade_of_level = 3
-			province_has_center_of_trade_of_level = 2
 			is_capital = yes
+			province_has_center_of_trade_of_level = 3
 			AND = {
-				is_year = 1630 #fallback
+				owner = { dip_tech = 17 }
+				province_has_center_of_trade_of_level = 2
+			}
+			AND = {
+				owner = { dip_tech = 18 }
 				province_has_center_of_trade_of_level = 1
 			}
 		}
 		owner = {
-			dip_tech = 16
 			home_trade_node = {
 				is_strongest_trade_power = PREV
 				highest_value_trade_node = yes
 			}
-			OR = {
-				AND = {
-					any_active_trade_node = {
-						continent = europe
-					}
-					any_active_trade_node = {
-						continent = africa
-					}
-					any_active_trade_node = {
-						continent = asia
-					}
-					any_active_trade_node = {
-						continent = new_world
-					}
-				}
-				AND = {
-					num_of_owned_provinces_with = {
-						value = 1
-						continent = europe
-					}
-					num_of_owned_provinces_with = {
-						value = 1
-						continent = africa
-					}
-					num_of_owned_provinces_with = {
-						value = 1
-						continent = asia
-					}
-					num_of_provinces_owned_or_owned_by_subjects_with = {
-						value = 1
-						continent = new_world
+		}
+		OR = {
+			owner = {
+				dip_tech = 18
+			}
+			AND = {
+				owner = {
+					dip_tech = 16
+					OR = {
+						AND = {
+							any_active_trade_node = {
+								continent = europe
+							}
+							any_active_trade_node = {
+								continent = africa
+							}
+							any_active_trade_node = {
+								continent = asia
+							}
+							OR = {
+								any_active_trade_node = {
+									continent = south_america
+								}
+								any_active_trade_node = {
+									continent = north_america
+								}
+							}
+						}
+						AND = {
+							num_of_provinces_owned_or_owned_by_subjects_with = {
+								value = 1
+								continent = europe
+							}
+							num_of_provinces_owned_or_owned_by_subjects_with = {
+								value = 1
+								continent = africa
+							}
+							num_of_provinces_owned_or_owned_by_subjects_with = {
+								value = 1
+								continent = asia
+							}
+							OR = {
+								num_of_provinces_owned_or_owned_by_subjects_with = {
+									value = 1
+									continent = south_america
+								}
+								num_of_provinces_owned_or_owned_by_subjects_with = {
+									value = 1
+									continent = north_america
+								}
+							}
+						}
 					}
 				}
 			}
@@ -2659,12 +2678,12 @@ industrialization = {
 						trade_goods = coal
 					}
 					num_of_trading_bonuses = 3
-					is_year = 1770 #fallback
+					adm_tech = 27
 				}
 			}
 			OR = {
 				highest_value_trade_node = yes
-				is_year = 1760 #fallback
+				owner = { adm_tech = 26 }
 			}
 		}
 		else = {
@@ -2681,12 +2700,12 @@ industrialization = {
 						trade_goods = cloth
 					}
 					num_of_trading_bonuses = 3
-					is_year = 1770 #fallback
+					adm_tech = 27
 				}
 			}
 			OR = {
 				highest_value_trade_node = yes
-				is_year = 1760 #fallback
+				owner = { adm_tech = 26 }
 			}
 		}
 	}

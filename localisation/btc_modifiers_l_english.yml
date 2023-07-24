@@ -327,3 +327,7 @@
  reduced_saudade:0 "Reduced Saudade"
  desc_reduced_saudade:0 "Learning from our recent mistakes."
  betrayed_us:0 "Gelre did not honor our agreement."
+ dev_decreased_recently:0 "Development Decreased"
+ desc_dev_decreased_recently:0 "Development in this province has recently been decreased due to high devastation."
+ dev_increased_recently:0 "Development Increased"
+ desc_dev_increased_recently:0 "Development in this province has recently been increased due to high prosperity."
