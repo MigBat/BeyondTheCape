@@ -84,7 +84,7 @@
  tooltip_development_20_capital:0 "European 20 development capital"
  tooltip_development_5_post_1500:0 "European 5 development province - post 1500"
  tooltip_flanders_tuscany_venetia:0 "Province in the Flanders, Tuscany or Venetia Area"
- tooltip_dip_tech15_capital:0 "Capital of country with DIP Tech 15"
+#  tooltip_dip_tech15_capital:0 "Capital of country with DIP Tech 15"
  tooltip_owner_protestant:2 "Not Trade Company & State Religion is Protestant, Anglican, or Reformed"
  tooltip_owner_reformed:1 "Not Trade Company & State Religion is Reformed"
  tooltip_province_protestant:1 "Province is Protestant or Reformed"

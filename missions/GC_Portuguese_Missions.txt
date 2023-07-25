@@ -1487,13 +1487,13 @@ gc_por_3 = {
 			388 = {
 				add_permanent_claim = ROOT
 			}
-			majarteen_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
+			# majarteen_area = {
+			# 	limit = {
+			# 		NOT = { is_core = ROOT }
+			# 		NOT = { is_permanent_claim = ROOT }
+			# 	}
+			# 	add_claim = ROOT
+			# }
 			define_explorer = {
 				name = "Francisco de Almeida"
 				shock = 5
@@ -1502,6 +1502,7 @@ gc_por_3 = {
 				siege = 4
 				trait = naval_gunner_personality
 			}
+			custom_tooltip = mamluk_war_tooltip
 		}
 	}
 

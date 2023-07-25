@@ -147,7 +147,7 @@ country_event = {
 				duration = 18250
 				power = 25
 				key = portuguese_privateers
-			}			
+			}		
 		}
 	}
 	option = {		# Seek better relations in the region
@@ -1018,7 +1018,7 @@ country_event = {
 	
 	option = {		# Reject his proposal
 		name = "flavor_por.EVTOPTA1"
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 1 }
 		add_prestige = 5
 
 		set_country_flag = turned_down_columbus
@@ -1027,7 +1027,7 @@ country_event = {
 	option = {		# Hire Columbus
 		name = "flavor_por.EVTOPTB1"
 
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 		set_global_flag = columbus_happened
 		add_years_of_income = -0.10
 		define_explorer = {

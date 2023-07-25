@@ -3026,23 +3026,31 @@ country_event = {
 		tag = CAS
 		NOT = { has_global_flag = columbus_happened }
 		NOT = { has_country_flag = turned_down_columbus }
-		iberia_region = {
+		lower_andalucia_area = {
 			type = all
-			NOT = { religion = catholic }
+			religion = catholic
+		}
+		upper_andalucia_area = {
+			type = all
+			religion = catholic
 		}
 		has_idea_group = exploration_ideas
 	}
 
+	mean_time_to_happen = {
+		months = 1
+	}
+
 	option = {		# Reject his proposal
 		name = "flavor_spa.EVTOPTA1"
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 		set_country_flag = turned_down_columbus
 		add_prestige = 5
 	}
 	
 	option = {		# Hire Columbus
 		name = "flavor_spa.EVTOPTB1"
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 1 }
 		add_years_of_income = -0.25
 		set_global_flag = columbus_happened
 		define_explorer = {

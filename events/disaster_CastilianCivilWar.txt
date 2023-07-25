@@ -1292,6 +1292,10 @@ country_event = {
 		}
 	}
 
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	option = { name = castilian_civil_war.28a }
 }
 
@@ -1312,6 +1316,10 @@ country_event = {
 			has_ruler_flag = joanna
 			has_ruler_flag = isabella
 		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 
 	option = { name = castilian_civil_war.29a }

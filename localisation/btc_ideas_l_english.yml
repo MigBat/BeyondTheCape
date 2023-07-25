@@ -72,3 +72,23 @@
  ibe_eternal_reconquista_desc:0 "The idea of Iberia was forged in the fire and blood of the Reconquista, a colossal effort in which the free Christians of the peninsula waged a nearly impossible war against the overwhelming armies of the invading Saracen. Now the Saracen is vanquished, but many former Christian lands in Africa and the Holy Land are still under the boot of the infidel. This Holy War transcends all borders and peoples, and our efforts will only end when all the world knows of the word of our lord and saviour Jesus Christ."
  ibe_fifth_empire:0 "Fifth Empire"
  ibe_fifth_empire_desc:0 "First, came the Assyrians who dominated all, but they could not tame the unknown, so they declined and faded to history. Then came the Persians, who dominated all, but they could not tame the unknown, so they declined and faded to history. Then came the Greeks, who dominated all, but they could not tame the unknown, so they declined and faded to history. Then came the Romans, who dominated all, but they could not tame the unknown, so they declined and faded to history. And finally, came the Portuguese, who have tamed the unknown, and guided by the Lord himself are poised to spread the word of God and unite the kingdom of Heaven to the kingdom of Earth."
+
+# Guanches ideas
+
+ GCH_ideas:0 "Guanches Ideas"
+ GCH_ideas_start:0 "Guanches Traditions"
+ GCH_ideas_bonus:0 "Guanches Ambition"
+ guanches_resilience:0 "Guanches Resilience"
+ guanches_resilience_desc:0 "The Guanches have a long history of defending their homelands from various invasions, making their fortifications exceptionally resilient to enemy attacks. The rugged and unfamiliar terrain of the Canary Islands can be challenging for foreign armies to navigate, causing higher attrition and making it harder for invaders to maintain their strength."
+ island_warriors:0 "Island Warriors"
+ island_warriors_desc:0 "The Guanches are renowned for their determination and fierce resistance against foreign forces. This increased land morale boosts their soldiers' fighting spirit in battles. Their infantry tactics and combat skills are honed through generations of island warfare, giving them an advantage in close-quarters combat."
+ volcanic_landscapes:0 "Volcanic Landscapes"
+ volcanic_landscapes_desc:0 "The Canary Islands are home to fertile volcanic soils, allowing the Guanches to produce goods more efficiently and boosting their economic output. The local population's ability to provide manpower for military recruitment is higher due to the abundance of resources and favorable living conditions on the islands."
+ seafaring_tradition:0 "Seafaring Tradition"
+ seafaring_tradition_desc:0 "The Guanches have a deep-rooted connection to the sea, and their naval forces are motivated by their rich maritime heritage. Their expertise in navigation makes their naval forces particularly effective in skirmishes and patrolling."
+ distinctive_culture:0 "Distinctive Culture"
+ distinctive_culture_desc:0 "The Guanches' strong sense of identity and cultural cohesion leads to reduced unrest among their populace, fostering stability and harmony within their nation. Their unique cultural practices and accumulated knowledge grant them an edge on technology advancements, enabling them to stay competitive in the world."
+ ancient_knowledge:0 "Ancient Knowledge"
+ ancient_knowledge_desc:0 "The Guanches revere their wise elders and scholars, which results in lower costs when hiring advisors to counsel their rulers. Their openness to adopting new ideas and technologies facilitates the spread of institutions within their realm."
+ trade_with_berbers:0 "Trade with the Berbers"
+ trade_with_berbers_desc:0 "The Guanches benefit from their trade connections with the Berbers and excel in increasing their share of global trade. Their expertise in handling trade caravans allows them to dominate land-based trade routes in their region."

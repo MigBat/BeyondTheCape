@@ -1710,6 +1710,57 @@ VOC_ideas = {
 	}
 }
 
+GCH_ideas = {
+	start = {
+		own_territory_dice_roll_bonus = 1
+		attack_bonus_in_capital_terrain = 1
+	}
+
+	bonus = {
+		fort_maintenance_modifier = -0.25
+	}
+
+	trigger = {
+		tag = GCH
+	}
+	free = yes
+
+	guanches_resilience = {
+		defensiveness = 0.15
+		hostile_attrition = 1
+	}
+
+	island_warriors = {
+		land_morale = 0.1
+		infantry_power = 0.1
+	}
+
+	volcanic_landscapes = {
+		trade_goods_size_modifier = 0.1
+		global_manpower_modifier = 0.1
+	}
+
+	seafaring_tradition = {
+		naval_morale = 0.1
+		light_ship_power = 0.1
+	}
+
+	distinctive_culture = {
+		global_unrest = -1
+		technology_cost = -0.05
+	}
+
+	ancient_knowledge = {
+		advisor_cost = -0.1
+		global_institution_spread = 0.1
+	}
+
+	trade_with_berbers = {
+		global_trade_power = 0.1
+		caravan_power = 0.25
+	}
+}
+
 POL_ideas = {
 	start = {
 		cavalry_cost = -0.1

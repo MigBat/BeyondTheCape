@@ -10,6 +10,10 @@ bookmark =
 	country = POR
 	country = CAS
 	country = ARA
+	country = GCH
+	country = BUR
+	country = HOL
+	country = NOR
 	
 	easy_country = POR
 }
