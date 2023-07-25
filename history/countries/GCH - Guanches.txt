@@ -2,16 +2,20 @@ government = tribal
 add_government_reform = native_clan_council_reform
 primary_culture = berber
 religion = shamanism
-technology_group = muslim
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+religious_school = maliki_school
 capital = 4565 # Tenerife
 fixed_capital = 4565 # Cannot move capital away from this province & no power cost to move to it
 
 1444.1.1 = {
 	monarch = {
 		name = "Cancha"
-		birth_date = 1410.1.1
-		adm = 2
-		dip = 2
-		mil = 2
+		birth_date = 1420.1.1
+		adm = 5
+		dip = 4
+		mil = 6
 	}
 }

@@ -164,7 +164,7 @@
  iberia_nation_desc:0 "Global expansion in newly discovered areas and the establishment of colonies is transforming Iberia into one of the most powerful and wealthiest nations of our time. Iberian explorers are constantly moving into new lands and extending our borders. Immense amounts of gold and silver are being brought back to our motherland, filling the coffers of our state treasury."
  iberian_unification_effect.tooltip:0 "§YIberia§! will get a permanent claim on the §YIberia§!, §YFrance§!, §YMaghreb§! and §YCaribbean§! regions."
  iberian_wedding_information_title:0 "Iberian Inheritance Status"
- iberian_wedding_information_desc:0 "We need to have more prestige and more legitimacy than Castile to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill both prerequisites.\n\nYBe aware:§! when your heir rises to the throne, their claim will become the country's legitimacy."
+ iberian_wedding_information_desc:0 "We need to have more prestige and more legitimacy than Castile to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill both prerequisites.\n\n§YBe aware:§! when your heir rises to the throne, their claim will become the country's legitimacy."
  cas_por_iberian_wedding_information_title:0 "Iberian Inheritance Status"
  cas_por_iberian_wedding_information_desc:0 "We need to have more prestige or more legitimacy than Portugal to be the senior partner when our heir rises to the throne. Hover over the (?) to check if we fulfill at least one of the prerequisites.\n\nYBe aware:§! when your heir rises to the throne, their claim will become the country's legitimacy."
  cas_ara_iberian_wedding_information_title:0 "Iberian Inheritance Status"
@@ -233,6 +233,9 @@
  mai_gutenberg_tt:0 "Mainz has had the §YJohannes Gutenberg§! event"
  fra_descartes_tt:0 "France has had the §YRené Descartes§! event"
  circumnavigation_completed_tt:0 "The circumnavigation of the world has been completed"
+
+ merchant_every_continent_tt:0 "Have a §Ymerchant§! in at least 1 trade node in §YEurope§!, §YAfrica§!, §YAsia§! and the §YNew World§!."
+ province_every_continent_tt:0 "Own or have a subject own at least 1 province in §YEurope§!, §YAfrica§!, §YAsia§! and the §YNew World§!."
 
  COMBINE_COLONY_WITH_OTHER_COLONY_IN_SAME_COLONIAL_REGION_VALID_OTHER_COLONY_TT:0 "We have another valid colonial nation with its capital in §Y[From.Capital.GetColonialRegionName]§! that has less than §Y50%§! liberty desire and is at peace"
  combine_colony_with_other_colony_in_same_colonial_region_title:0 "Combine Colonies"

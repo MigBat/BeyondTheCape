@@ -1881,7 +1881,7 @@ global_trade = {
 		is_institution_enabled = new_world_i
 		new_world_i = 100
 		is_island = no
-		highest_value_trade_node = yes
+		# highest_value_trade_node = yes
 		OR = {
 			is_capital = yes
 			province_has_center_of_trade_of_level = 3
@@ -1908,46 +1908,52 @@ global_trade = {
 				owner = {
 					dip_tech = 16
 					OR = {
-						AND = {
-							any_active_trade_node = {
-								continent = europe
-							}
-							any_active_trade_node = {
-								continent = africa
-							}
-							any_active_trade_node = {
-								continent = asia
-							}
-							OR = {
+						custom_trigger_tooltip = {
+							tooltip = merchant_every_continent_tt
+							AND = {
 								any_active_trade_node = {
-									continent = south_america
+									continent = europe
 								}
 								any_active_trade_node = {
-									continent = north_america
+									continent = africa
+								}
+								any_active_trade_node = {
+									continent = asia
+								}
+								OR = {
+									any_active_trade_node = {
+										continent = south_america
+									}
+									any_active_trade_node = {
+										continent = north_america
+									}
 								}
 							}
 						}
-						AND = {
-							num_of_provinces_owned_or_owned_by_subjects_with = {
-								value = 1
-								continent = europe
-							}
-							num_of_provinces_owned_or_owned_by_subjects_with = {
-								value = 1
-								continent = africa
-							}
-							num_of_provinces_owned_or_owned_by_subjects_with = {
-								value = 1
-								continent = asia
-							}
-							OR = {
+						custom_trigger_tooltip = {
+							tooltip = province_every_continent_tt
+							AND = {
 								num_of_provinces_owned_or_owned_by_subjects_with = {
 									value = 1
-									continent = south_america
+									continent = europe
 								}
 								num_of_provinces_owned_or_owned_by_subjects_with = {
 									value = 1
-									continent = north_america
+									continent = africa
+								}
+								num_of_provinces_owned_or_owned_by_subjects_with = {
+									value = 1
+									continent = asia
+								}
+								OR = {
+									num_of_provinces_owned_or_owned_by_subjects_with = {
+										value = 1
+										continent = south_america
+									}
+									num_of_provinces_owned_or_owned_by_subjects_with = {
+										value = 1
+										continent = north_america
+									}
 								}
 							}
 						}

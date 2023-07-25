@@ -147,7 +147,7 @@ country_event = {
 				duration = 18250
 				power = 25
 				key = portuguese_privateers
-			}			
+			}		
 		}
 	}
 	option = {		# Seek better relations in the region
