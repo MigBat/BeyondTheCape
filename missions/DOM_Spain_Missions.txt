@@ -51,6 +51,17 @@ dom_cas_missions_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			4565 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	

@@ -19,6 +19,7 @@ native_hostileness = 0
 	discovered_by = ottoman
 	discovered_by = CAS
 	discovered_by = GCH
+	add_core = GCH
 
 	owner = CAS
 	controller = CAS
