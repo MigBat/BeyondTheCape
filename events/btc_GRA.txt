@@ -19,7 +19,7 @@ country_event = {
 		name = btc_gra.1a
 
 		ai_chance = {
-			factor = 85
+			factor = 80
 		}
 
 		add_years_of_income = -0.5
@@ -36,7 +36,7 @@ country_event = {
 		name = btc_gra.1b
 
 		ai_chance = {
-			factor = 15
+			factor = 20
 		}
 
 		set_country_flag = paria_not_paid
