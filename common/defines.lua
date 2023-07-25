@@ -697,9 +697,9 @@ NCountry = {
 	PIETY_DECREASE_AT_BAD_WAR = -0.0,
 	ADVISOR_COST_INCREASE_PER_YEAR = 0.005,			-- yearly increase in price in percent,
 	SCRIPTED_ADVISOR_DISCOUNT = 0.5,				-- Multiplier on cost for advisors scripted with discount=yes
-	MINIMUM_ADVISOR_DURATION = 15, 					-- _CDEF_MINIMUM_ADVISOR_DURATION_
+	MINIMUM_ADVISOR_DURATION = 20, 					-- _CDEF_MINIMUM_ADVISOR_DURATION_
 	-- BEYOND THE CAPE CHANGE
-	MINIMUM_ADVISOR_DURATION_CHANCE_VALUE = 20,		-- Higher value here gives lower daily death chance after MINIMUM_ADVISOR_DURATION
+	MINIMUM_ADVISOR_DURATION_CHANCE_VALUE = 15,		-- Higher value here gives lower daily death chance after MINIMUM_ADVISOR_DURATION
 	ADVISOR_CUT_OFF_AGE = 30, 						-- _CDEF_ADVISOR_CUT_OFF_AGE = 10,
 	MAXIMUM_ADVISOR_SKILL = 5,						-- Maximum advisor skill reachable through promotion
 	PROMOTE_COST_MONTHS_ADVISOR_SALARY = 60.0,		-- Promote advisor cost in monthly salaries
