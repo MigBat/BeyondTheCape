@@ -8,6 +8,8 @@
  btc_events.1_d:0 "We now have the technology and funding to undertake the greatest adventures of 10 generations. Let us sail west in search of new lands and riches!"
  btc_events.1a:0 "A new horizon"
 
+ is_colonizer_tt:0 "We are both colonizers."
+
 # At Game Start #
  btc_events.2_t:0 "Resisting the Iberian Push"
  btc_events.2_d:0 "The Portuguese have already conquered Ceuta. We must unite to stop the Iberians from entering our heartland, and expel them from our lands."
@@ -47,6 +49,9 @@
  btc_events.13_d:0 "Portugal is weak, her ruler perished in the sands of Morocco, as well as most of their military prowess. If we wish to finally unite this peninsula, now is the time to strike!"
  btc_events.13a:0 "Seize this opportunity."
  btc_events.13b:0 "We will bide our time."
+ btc_events.15_t:0 "[Root.Country.GetName] Settler Pool"
+ btc_events.15_d:0 "A country's settler pool represents its ability to send people over to newly colonized provinces. It goes without saying that countries with a higher population have more people to send, and thus the bigger a country is the more capable they are at sending more people overseas.\n\nEvery country has a maximum number of possible settlers. This is determined by the number of state provinces they have as well as total development.\n\nThe base value for the settler pool is 1000 for every country. To that is added the total number of state provinces time 100. Further to that is added the total development of the country.\n\nEach colony a country is developing reduces the pool by 1000. Once the colony is complete, the 1000 will be replenished to the pool.\n\nThere are a number of modifiers related to how many free settlers you have in comparison to the total settler pool:\n\nMany Settlers: over 75% of the total pool. This gives you +25 global colonial growth and +5% colonist placement chance.\nSome Settlers: between 50% and 75% of the total pool. This gives you +10 global colonial growth.\nLow Settlers: between 25% and 50% of the total pool. This gives you -10 global colonial growth.\nVery Low Settlers: over 0% and less than 25% of the total pool. This gives you -25 global colonial growth and -5% colonist placement chance.\nNo Settlers: 0% or less of the total pool. This gives you -50 global colonial growth, -10% colonist placement chance and -1 colonist.\n\n"
+ btc_events.15a:0 "Understood."
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"
