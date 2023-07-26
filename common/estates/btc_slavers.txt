@@ -108,6 +108,9 @@ estate_slavers = {
 		estate_slavers_raid_coasts
 		estate_slavers_grow_colonies
 		estate_slavers_feitoria_defenses
+		estate_slavers_settler_pool
+		estate_slavers_build_time
+		estate_slavers_galleys
 	}
 
 	agendas = {

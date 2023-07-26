@@ -277,3 +277,5 @@
  desc_some_settlers:0 "We have some settlers available for colonizing."
  many_settlers:0 "Many Settlers"
  desc_many_settlers:0 "We have many settlers available for colonizing."
+
+ add_settlers_tt:0 "1000 settlers will be added to the settler pool for §Y5§! years"

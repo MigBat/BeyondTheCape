@@ -478,3 +478,117 @@ estate_slavers_feitoria_defenses = {
 		factor = 10
 	}
 }
+
+estate_slavers_settler_pool = {
+	icon = privilege_singular_cult
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+		num_of_colonists = 1
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_slavers_settler_pool }
+	}
+	on_granted = {
+		custom_tooltip = estate_slavers_settler_pool_tt
+		hidden_effect = {
+			set_country_flag = slaverSettlerPool_flag
+		}
+		add_country_modifier = {
+			name = slaves_for_colonists
+			duration = -1
+		}
+	}
+	on_granted_province = {
+	}
+	on_revoked = {
+		remove_country_modifier = slaves_for_colonists
+		clr_country_flag = slaverSettlerPool_flag
+	}
+	on_revoked_province = {
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_slavers_build_time = {
+	icon = privilege_multiple_professions
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_slavers_build_time }
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = slave_builders
+			duration = -1
+		}
+	}
+	on_granted_province = {
+	}
+	on_revoked = {
+		remove_country_modifier = slave_builders
+	}
+	on_revoked_province = {
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_slavers_galleys = {
+	icon = privilege_galley
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_slavers_galleys }
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = slave_oarsmen
+			duration = -1
+		}
+	}
+	on_granted_province = {
+	}
+	on_revoked = {
+		remove_country_modifier = slave_oarsmen
+	}
+	on_revoked_province = {
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 10
+	}
+}

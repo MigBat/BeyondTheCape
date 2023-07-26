@@ -74,6 +74,22 @@
  slave_garrison:0 "Slave Garrison"
  desc_slave_garrison:0 "This Feitoria has slaves as part of its garrison."
 
+ estate_slavers_settler_pool:0 "Slave Settlers"
+ estate_slavers_settler_pool_desc:0 "We could get an even larger settler pool by taking the slaves to the colonies being developed. We should keep a close eye on them though..."
+ estate_slavers_settler_pool_tt:0 "1000 slaves will be added to the settler pool"
+ slaves_for_colonists:0 "Slave Colonists"
+ desc_slaves_for_colonists:0 "By adding slaves to our settler pool, our colonial capabilities have been improved. We need to keep a both eyes on them though."
+
+ estate_slavers_build_time:0 "Slave Construction Workers"
+ estate_slavers_build_time_desc:0 "By using slaves as cheap labor, we manage to reduce construction time by having more men working on the buildings."
+ slave_builders:0 "Slave Construction Workers"
+ desc_slave_builders:0 "Slaves are being used as construction workers, reducing the time it takes to finish buildings."
+
+ estate_slavers_galleys:0 "Oarsmen for Galleys"
+ estate_slavers_galleys_desc:0 "If we make slaves the oarsmen of our galley crew, we can reduce on recruitment costs. Let's get some slaves rowing of the lower decks!"
+ slave_oarsmen:0 "Slave Oarsmen"
+ desc_slave_oarsmen:0 "Slaves are being used as oarsmen in our galleys."
+
  # Disasters #
 
  estate_disasters.30.t:0 "The Slavers Seize Power"

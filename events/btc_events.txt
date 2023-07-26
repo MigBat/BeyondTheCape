@@ -738,7 +738,36 @@ country_event = {
 		}
 		change_variable = {
 			which = numProvincesInStates
-			value = 1000
+			value = 1000				# base value
+		}
+		# Decision add 1000 settlers
+		if = {
+			limit = {
+				has_country_flag = decisionAddSettlers_flag
+			}
+			change_variable = {
+				which = numProvincesInStates
+				value = 1000
+			}
+		}
+		if = {
+			limit = {
+				had_country_flag = {
+					flag = decisionAddSettlers_flag
+					days = 1825
+				}
+			}
+			clr_country_flag = decisionAddSettlers_flag
+		}
+		# Slaver privilege
+		if = {
+			limit = {
+				has_country_flag = slaverSettlerPool_flag
+			}
+			change_variable = {
+				which = numProvincesInStates
+				value = 1000
+			}
 		}
 		set_variable = {
 			which = maxNumOfSettlers	# maximum number of settlers of a country
@@ -928,5 +957,19 @@ country_event = {
 
 	option = {
 		name = btc_events.15a
+
+		trigger = {
+			NOT = { has_country_flag = decisionAddSettlers_flag }
+		}
+
+		add_years_of_income = -0.2
+		custom_tooltip = add_settlers_tt
+		hidden_effect = {
+			set_country_flag = decisionAddSettlers_flag
+		}
+	}
+
+	option = {
+		name = btc_events.15b
 	}
 }
