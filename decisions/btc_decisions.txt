@@ -211,6 +211,7 @@ country_decisions = {
 
 country_decisions = {
 	colonial_pool = {
+		color = { 55 160 255 }
 		potential = {
 			ai = no
 			num_of_colonists = 1

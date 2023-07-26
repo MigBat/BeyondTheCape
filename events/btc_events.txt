@@ -725,12 +725,16 @@ country_event = {
 			value = trigger_value:num_of_provinces_in_states
 		}
 		multiply_variable = {
-			which = numProvincesInStates
-			value = 100
+			which = numProvincesInStates	# provinces in states * 30
+			value = 30
 		}
 		export_to_variable = {
 			which = totalDevelopment
 			value = trigger_value:total_development
+		}
+		multiply_variable = {
+			which = totalDevelopment	# total development * 2
+			value = 2
 		}
 		change_variable = {
 			which = numProvincesInStates
@@ -769,6 +773,7 @@ country_event = {
 				value = 1000
 			}
 		}
+
 		set_variable = {
 			which = maxNumOfSettlers	# maximum number of settlers of a country
 			which = numProvincesInStates
