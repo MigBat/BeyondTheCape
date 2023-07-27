@@ -677,9 +677,9 @@ country_event = {
 # Increase dev with high prosperity
 
 province_event = {
-	id = btc_events.13
-	title = btc_events.13_t
-	desc = btc_events.13_d
+	id = btc_events.15
+	title = btc_events.15_t
+	desc = btc_events.15_d
 
 	hidden = yes
 	
@@ -693,7 +693,7 @@ province_event = {
 	}
 
 	option = {
-		name = btc_events.6a
+		name = btc_events.15a
 
 		random_list = {
 			33 = { add_base_tax = 1 }
