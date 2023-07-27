@@ -259,7 +259,7 @@
  tooltip_province_christian:0 "Province is Catholic or Orthodox"
 
  colonial_pool_title:0 "Settler Pool"
- colonial_pool_desc:0 "The settler pool gives bonuses or maluses to your colonization efforts depending on the number of settlers you have. For more information, click the decision and an event will pop up."
+ colonial_pool_desc:0 "The settler pool gives bonuses or maluses to your colonisation efforts depending on the number of settlers you have. For more information, click the decision and an event will pop up."
 
  maxNumOfSettlers:0 "Maximum Number of Settlers"
  usedSettlers:0 "Used Settlers"

@@ -1008,7 +1008,7 @@ country_event = {
 		NOT = { has_global_flag = columbus_happened }
 		NOT = { has_country_flag = turned_down_columbus }
 		NOT = { has_discovered = 1177 }
-		is_year = 1480
+		dip_tech = 8
 		has_idea_group = exploration_ideas
 	}
 
