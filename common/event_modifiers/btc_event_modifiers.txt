@@ -663,3 +663,43 @@ dev_decreased_recently = {
 dev_increased_recently = {
 	local_monthly_devastation = -0.01
 }
+
+no_settlers = {
+	global_colonial_growth = -50
+	colonist_placement_chance = -0.1
+	colonists = -1
+}
+
+very_low_settlers = {
+	global_colonial_growth = -25
+	colonist_placement_chance = -0.05
+}
+
+low_settlers = {
+	global_colonial_growth = -10
+}
+
+some_settlers = {
+	global_colonial_growth = 10
+}
+
+many_settlers = {
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.05
+}
+
+slaves_for_colonists = {
+	native_uprising_chance = 0.5
+}
+
+slave_builders = {
+	build_time = -0.2
+}
+
+slave_oarsmen = {
+	galley_cost = -0.5
+}
+
+strait_engagement_width = {
+	local_naval_engagement_modifier = -0.5
+}

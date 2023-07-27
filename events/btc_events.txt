@@ -13,7 +13,7 @@ country_event = {
 		NOT = { has_country_flag = quest_for_the_new_world }
 		NOT = { has_country_modifier = quest_for_the_new_world }
 		has_idea_group = exploration_ideas
-		dip_tech = 8
+		dip_tech = 9
 	}
 
 	option = {
@@ -677,9 +677,9 @@ country_event = {
 # Increase dev with high prosperity
 
 province_event = {
-	id = btc_events.13
-	title = btc_events.13_t
-	desc = btc_events.13_d
+	id = btc_events.15
+	title = btc_events.15_t
+	desc = btc_events.15_d
 
 	hidden = yes
 	
@@ -693,7 +693,7 @@ province_event = {
 	}
 
 	option = {
-		name = btc_events.6a
+		name = btc_events.15a
 
 		random_list = {
 			33 = { add_base_tax = 1 }
@@ -704,5 +704,277 @@ province_event = {
 			name = dev_increased_recently
 			duration = 730
 		}
+	}
+}
+
+# Settler Pool Calculations #
+
+country_event = {
+	id = btc_events.14
+	title = btc_events.14_t
+	desc = btc_events.14_d
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+
+		export_to_variable = {
+			which = numProvincesInStates
+			value = trigger_value:num_of_provinces_in_states
+		}
+		multiply_variable = {
+			which = numProvincesInStates	# provinces in states * 30
+			value = 30
+		}
+		export_to_variable = {
+			which = totalDevelopment
+			value = trigger_value:total_development
+		}
+		multiply_variable = {
+			which = totalDevelopment	# total development * 2
+			value = 2
+		}
+		change_variable = {
+			which = numProvincesInStates
+			which = totalDevelopment
+		}
+		change_variable = {
+			which = numProvincesInStates
+			value = 1000				# base value
+		}
+		# Decision add 1000 settlers
+		if = {
+			limit = {
+				has_country_flag = decisionAddSettlers_flag
+			}
+			change_variable = {
+				which = numProvincesInStates
+				value = 1000
+			}
+		}
+		if = {
+			limit = {
+				had_country_flag = {
+					flag = decisionAddSettlers_flag
+					days = 1825
+				}
+			}
+			clr_country_flag = decisionAddSettlers_flag
+		}
+		# Slaver privilege
+		if = {
+			limit = {
+				has_country_flag = slaverSettlerPool_flag
+			}
+			change_variable = {
+				which = numProvincesInStates
+				value = 1000
+			}
+		}
+
+		set_variable = {
+			which = maxNumOfSettlers	# maximum number of settlers of a country
+			which = numProvincesInStates
+		}
+
+		export_to_variable = {
+			which = numOfColonies	# current number of colonies
+			value = trigger_value:num_of_colonies
+		}
+		set_variable = {
+			which = usedSettlers
+			which = numOfColonies
+		}
+		multiply_variable = {
+			which = usedSettlers	# settlers currently colonizing
+			value = 1000
+		}
+
+		set_variable = {
+			which = proxyMaxNumOfSettlers
+			which = maxNumOfSettlers
+		}
+		subtract_variable = {
+			which = proxyMaxNumOfSettlers
+			which = usedSettlers
+		}
+		set_variable = {
+			which = freeSettlers	# currently available settlers
+			which = proxyMaxNumOfSettlers
+		}
+	}
+
+	option = {
+		name = btc_events.14a
+
+		set_variable = {
+			which = 0settlers	# 0% of max settlers
+			value = 0			
+		}
+		change_variable = {
+			which = 0settlers
+			value = 1
+		}
+
+		set_variable = {
+			which = 25settlers
+			which = maxNumOfSettlers
+		}
+		multiply_variable = {
+			which = 25settlers	# 25% of max settlers
+			value = 0.25
+		}
+
+		set_variable = {
+			which = 50settlers
+			which = maxNumOfSettlers
+		}
+		multiply_variable = {
+			which = 50settlers	# 50% of max settlers
+			value = 0.50
+		}
+
+		set_variable = {
+			which = 75settlers
+			which = maxNumOfSettlers
+		}
+		multiply_variable = {
+			which = 75settlers	# 75% of max settlers
+			value = 0.75
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = freeSettlers
+						which = 0settlers
+					}
+				}
+			}
+			add_country_modifier = {
+				name = no_settlers
+				duration = -1
+			}
+			remove_country_modifier = very_low_settlers
+			remove_country_modifier = low_settlers
+			remove_country_modifier = some_settlers
+			remove_country_modifier = many_settlers
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = freeSettlers
+					which = 0settlers
+				}
+				NOT = {
+					check_variable = {
+						which = freeSettlers
+						which = 25settlers
+					}
+				}
+			}
+			add_country_modifier = {
+				name = very_low_settlers
+				duration = -1
+			}
+			remove_country_modifier = no_settlers
+			remove_country_modifier = low_settlers
+			remove_country_modifier = some_settlers
+			remove_country_modifier = many_settlers
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = {
+						which = freeSettlers
+						which = 25settlers
+					}
+					NOT = {
+						check_variable = {
+							which = freeSettlers
+							which = 50settlers
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = low_settlers
+				duration = -1
+			}
+			remove_country_modifier = no_settlers
+			remove_country_modifier = very_low_settlers
+			remove_country_modifier = some_settlers
+			remove_country_modifier = many_settlers
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = {
+						which = freeSettlers
+						which = 50settlers
+					}
+					NOT = {
+						check_variable = {
+							which = freeSettlers
+							which = 75settlers
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = some_settlers
+				duration = -1
+			}
+			remove_country_modifier = no_settlers
+			remove_country_modifier = very_low_settlers
+			remove_country_modifier = low_settlers
+			remove_country_modifier = many_settlers
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = freeSettlers
+					which = 75settlers
+				}
+			}
+			add_country_modifier = {
+				name = many_settlers
+				duration = -1
+			}
+			remove_country_modifier = no_settlers
+			remove_country_modifier = very_low_settlers
+			remove_country_modifier = low_settlers
+			remove_country_modifier = some_settlers
+		}
+	}
+}
+
+country_event = {
+	id = btc_events.15
+	title = btc_events.15_t
+	desc = btc_events.15_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_events.15a
+
+		trigger = {
+			NOT = { has_country_flag = decisionAddSettlers_flag }
+		}
+
+		add_years_of_income = -0.2
+		custom_tooltip = add_settlers_tt
+		hidden_effect = {
+			set_country_flag = decisionAddSettlers_flag
+		}
+	}
+
+	option = {
+		name = btc_events.15b
 	}
 }

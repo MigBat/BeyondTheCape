@@ -8,6 +8,8 @@
  btc_events.1_d:0 "We now have the technology and funding to undertake the greatest adventures of 10 generations. Let us sail west in search of new lands and riches!"
  btc_events.1a:0 "A new horizon"
 
+ is_colonizer_tt:0 "We are both colonizers."
+
 # At Game Start #
  btc_events.2_t:0 "Resisting the Iberian Push"
  btc_events.2_d:0 "The Portuguese have already conquered Ceuta. We must unite to stop the Iberians from entering our heartland, and expel them from our lands."
@@ -38,15 +40,19 @@
  keep_francisco_tt:0 "Afonso de Albuquerque will be sent to fight alongside Francisco de Almeida."
  spice_trade_monopoly:0 "Spice Trade Monopoly"
  btc_events.11_t:0 "Our Faith has Prevailed"
- btc_events.11_d:0 ""
+ btc_events.11_d:0 "Our enemies have been vanquished, and we have gained a powerful Christian ally in the Maghreb. This can be seen as no less than a total victory for Christianity!"
  btc_events.11a:0 "Old enemies turned friends."
  btc_events.12_t:0 "Battle of Alcácer Quibir"
- btc_events.12_d:0 ""
+ btc_events.12_d:0 "Our foolish [Root.Monarch.GetTitle] has charged headfirst into a contingent of Moroccans, never to be found again, taking with him most of our nobility. This is the greatest defeat in Portuguese history, for now the Castilians are sure to be looking at our lands like vultures, in our most vulnerable moment. This was has been a failure, and we must retreat at once."
  btc_events.12a:0 "What a disaster!"
  btc_events.13_t:0 "The Portuguese Succession"
- btc_events.13_d:0 ""
+ btc_events.13_d:0 "Portugal is weak, her ruler perished in the sands of Morocco, as well as most of their military prowess. If we wish to finally unite this peninsula, now is the time to strike!"
  btc_events.13a:0 "Seize this opportunity."
  btc_events.13b:0 "We will bide our time."
+ btc_events.15_t:0 "[Root.Country.GetName] Settler Pool"
+ btc_events.15_d:0 "A country's settler pool represents its ability to send people over to newly colonized provinces. It goes without saying that countries with a higher population have more people to send, and thus the bigger a country is the more capable they are at sending more people overseas.\n\nEvery country has a maximum number of possible settlers. This is determined by the number of state provinces they have as well as total development.\n\nThe base value for the settler pool is 1000 for every country. To that is added the total number of state provinces times 30. Further to that is added the total development of the country times 2.\n\nEach colony a country is developing reduces the pool by 1000. Once the colony is complete, the 1000 will be replenished to the pool.\n\nThere are a number of modifiers related to how many free settlers you have in comparison to the total settler pool:\n\nMany Settlers: over 75% of the total pool. This gives you +25 global colonial growth and +5% colonist placement chance.\nSome Settlers: between 50% and 75% of the total pool. This gives you +10 global colonial growth.\nLow Settlers: between 25% and 50% of the total pool. This gives you -10 global colonial growth.\nVery Low Settlers: over 0% and less than 25% of the total pool. This gives you -25 global colonial growth and -5% colonist placement chance.\nNo Settlers: 0% or less of the total pool. This gives you -50 global colonial growth, -10% colonist placement chance and -1 colonist.\n\n"
+ btc_events.15a:0 "Encourage people to go to the colonies." 
+ btc_events.15b:0 "Understood."
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"
@@ -241,7 +247,7 @@
  btc_por.134_t:0 "Establish Feitoria"
  btc_por.134_d:0 "Now that we have successfully integrated [Root.Province.GetName], we can establish a feitoria to assert our dominance over the region."
  btc_por.134a:0 "Build a fort."
- feitoria_tt:0 "[Root.Province.GetName] gets '§YFortified Feitoria§!' until the end of the game, giving the following effects:\nLocal Trade Power: §G+5.00§!\nFort Level:§R-1§!\nLocal Desfensiveness: §R-15.0%§!\nLocal Ship Repair: §G+15.0%§!\nProvince Governing Cost: §R+25.0%§!\nLocal Fort Maintenance: §G-30.0%§!"
+ feitoria_tt:0 "[Root.Province.GetName] gets '§YFortified Feitoria§!' until the end of the game, giving the following effects:\nLocal Trade Power: §G+5.00§!\nFort Level:§R-1§!\nLocal Defensiveness: §R-15.0%§!\nLocal Ship Repair: §G+15.0%§!\nProvince Governing Cost: §R+25.0%§!\nLocal Fort Maintenance: §G-30.0%§!"
  btc_por.134b:0 "Build a trade post."
  btc_por.134c:0 "It is too expensive."
  btc_por.135_t:0 "Sugar and Slaves in São Tomé"

@@ -3034,6 +3034,7 @@ country_event = {
 			type = all
 			religion = catholic
 		}
+		dip_tech = 8
 		has_idea_group = exploration_ideas
 	}
 

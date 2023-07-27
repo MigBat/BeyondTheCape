@@ -206,3 +206,26 @@ country_decisions = {
 		}
 	}
 }
+
+# Colonial Pool
+
+country_decisions = {
+	colonial_pool = {
+		color = { 55 160 255 }
+		potential = {
+			ai = no
+			num_of_colonists = 1
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = settler_pool_tt
+				num_of_colonists = 1
+			}
+		}
+		effect = {
+			country_event = {
+				id = btc_events.15
+			}
+		}
+	}
+}

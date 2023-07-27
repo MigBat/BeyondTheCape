@@ -668,3 +668,18 @@ callaction = {
 		allow = { always = no }
 	}
 }
+
+sharemap = {
+	condition = {
+		tooltip = is_colonizer_tt
+		potential = {
+			FROM = {
+				has_idea_group = exploration_ideas
+			}
+			ROOT = {
+				has_idea_group = exploration_ideas
+			}
+		}
+		allow = { always = no }
+	}
+}

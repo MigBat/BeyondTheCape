@@ -1729,7 +1729,7 @@
  gc_por_japanese_trade_desc:0 "Suspicious of all strangers, the feudal rulers of Japan are reluctant to allow any merchants the right trade or even land in Japanese ports. We must find a way to overcome their suspicions and become the only European power with a foothold in this exclusive market."
  por_japan_mission_tooltip:0 "If [Root.GetName] has good relations with the owner of §YHizen§!, the §YPortuguese Nagasaki§! event happens\nElse Gain §G3.00§! Mercantilism"
  macau_event_tooltip:0 "If [Root.GetName] has good relations with the owner of §YMacau§!, the event §Y'The Purchase of Macau'§! happens\nElse Gain §G3.00§! Mercantilism"
- gc_por_triangle_trade_title:0 "The Triangle Trade"
+#  gc_por_triangle_trade_title:0 "The Triangle Trade"
  gc_por_triangle_trade_desc:0 "Slaves from Africa are sent to work on plantations in the New World. The products of this slave labor are then shipped back to Europe and sold for an outrageous profit. This is the Atlantic triangle trade, and we must dominate it."
 #  por_triangle_trade_mission_tooltip:0 "Every owned province in §YAfrica§! producing §YSlaves§! gets '§YTriangle Trade§!' for §Y20 years§!, giving the following effects:\nGoods Produced: §G+10%§!"
  por_indian_investment_tooltip:1 " States owned in the §YIndia§! superregion have at least one Trade Company Investment"

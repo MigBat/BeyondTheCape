@@ -1037,12 +1037,11 @@ new_world_i = {
 		is_in_capital_area = yes
 		owner = { 
 			has_any_exploration_idea = yes
-			#at least one province colonised or colonising, or have a subject colony
+			#at least three provinces colonised or colonising in caribbean, or have a subject colony
 			OR = {
-				any_owned_province = {
-					OR = {
-						region = carribeans_region
-					}
+				num_of_owned_provinces_with = {
+					region = carribeans_region
+					value = 3
 				}
 				any_subject_country = {
 					OR = {
@@ -1126,6 +1125,7 @@ new_world_i = {
 
 		modifier = {
 			factor = 0.6
+			has_port = yes
 			owner = {
 				technology_group = western
 			}
@@ -1133,6 +1133,7 @@ new_world_i = {
 
 		modifier = {
 			factor = 0.5
+			has_port = yes
 			owner = {
 				technology_group = ottoman
 			}
@@ -1140,6 +1141,7 @@ new_world_i = {
 
 		modifier = {
 			factor = 0.4
+			has_port = yes
 			owner = {
 				technology_group = muslim
 			}
@@ -1147,6 +1149,7 @@ new_world_i = {
 
 		modifier = {
 			factor = 0.3
+			has_port = yes
 			owner = {
 				technology_group = eastern
 			}
@@ -1154,6 +1157,7 @@ new_world_i = {
 
 		modifier = {
 			factor = 0.2
+			has_port = yes
 			owner = {
 				technology_group = chinese
 			}

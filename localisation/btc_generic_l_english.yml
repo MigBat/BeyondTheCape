@@ -256,4 +256,29 @@
 
  tooltip_dip_tech7_capital:0 "Capital of country with DIP Tech 7"
  tooltip_province_confucian:0 "Province is Confucian"
- tooltop_province_christian:0 "Province is Catholic or Orthodox"
+ tooltip_province_christian:0 "Province is Catholic or Orthodox"
+
+ colonial_pool_title:0 "Settler Pool"
+ colonial_pool_desc:0 "The settler pool gives bonuses or maluses to your colonisation efforts depending on the number of settlers you have. For more information, click the decision and an event will pop up."
+
+ maxNumOfSettlers:0 "Maximum Number of Settlers"
+ usedSettlers:0 "Used Settlers"
+ freeSettlers:0 "Free Settlers"
+ numOfColonies:0 "Colonies"
+ settler_pool_tt:0 "Our §Y[Root.maxNumOfSettlers.GetName]§! is [Root.maxNumOfSettlers.GetValue].\nWe currently have [Root.numOfColonies.GetValue] §Y[Root.numOfColonies.GetName]§!, causing our §Y[Root.usedSettlers.GetName]§! to be [Root.usedSettlers.GetValue].\nWe have [Root.freeSettlers.GetValue] §Y[Root.freeSettlers.GetName]§!."
+
+ no_settlers:0 "No Settlers"
+ desc_no_settlers:0 "We no settlers available for colonizing."
+ very_low_settlers:0 "Very Low Settlers"
+ desc_very_low_settlers:0 "We have almost no settlers available for colonizing."
+ low_settlers:0 "Low Settlers"
+ desc_low_settlers:0 "We have few settlers available for colonizing."
+ some_settlers:0 "Some Settlers"
+ desc_some_settlers:0 "We have some settlers available for colonizing."
+ many_settlers:0 "Many Settlers"
+ desc_many_settlers:0 "We have many settlers available for colonizing."
+
+ add_settlers_tt:0 "1000 settlers will be added to the settler pool for §Y5§! years"
+
+ strait_engagement_width:0 "Strait"
+ strait_tt:0 "This sea is narrow, decreasing naval engagement width by 50%."

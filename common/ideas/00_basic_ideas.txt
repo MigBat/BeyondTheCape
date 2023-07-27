@@ -1083,11 +1083,13 @@ exploration_ideas = {
 		modifier = {
 			factor = 0
 			NOT = { adm_tech = 6 }
-			capital_scope = {
-				NOT = {
-					region = iberia_region
-				}
-			}
+			NOT = { tag = POR }
+		}
+		modifier = {
+			factor = 0
+			NOT = { adm_tech = 9 }
+			NOT = { tag = POR }
+			NOT = { tag = CAS }
 		}
 		modifier = {
 			factor = 10
@@ -1114,11 +1116,6 @@ exploration_ideas = {
 			OR = {
 				tag = POR
 				tag = CAS
-			}
-		}
-		modifier = {
-			factor = 100
-			OR = {
 				tag = GBR
 				tag = NED
 				tag = ENG
