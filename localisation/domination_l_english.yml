@@ -7019,7 +7019,7 @@
  
  
  #Tooltip Keys 
- triangle_trade_key:0 "Triangle Trade"
+#  triangle_trade_key:0 "Triangle Trade"
  por_every_wine_prov_tt:1 "\nEvery owned province with §YWine§! will gain the following reward:"
  por_more_likely_to_get_expansionist_tt:0 "Our rulers will be more likely to gain the '§YExpansionist§!' trait as long as we have §YExploration§! or §YExpansion§! ideas active"
  second_circumnavigation_tt:0 "Was the second nation to circumnavigate the World."

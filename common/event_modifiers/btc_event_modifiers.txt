@@ -699,3 +699,7 @@ slave_builders = {
 slave_oarsmen = {
 	galley_cost = -0.5
 }
+
+strait_engagement_width = {
+	local_naval_engagement_modifier = -0.5
+}
