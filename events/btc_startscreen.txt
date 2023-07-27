@@ -206,11 +206,37 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# go back
+	option = {	# settler pool
 		name = btc_startscreen.4a
 
 		country_event = {
+			id = btc_startscreen.41
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.4b
+
+		country_event = {
 			id = btc_startscreen.1
+		}
+	}
+}
+
+# Settler Pool tutorial #
+country_event = {
+	id = btc_startscreen.41
+	title = btc_startscreen.41_t
+	desc = btc_startscreen.41_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.41a
+
+		country_event = {
+			id = btc_startscreen.4
 		}
 	}
 }
