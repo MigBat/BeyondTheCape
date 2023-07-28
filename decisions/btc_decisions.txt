@@ -224,7 +224,7 @@ country_decisions = {
 		}
 		effect = {
 			country_event = {
-				id = btc_events.15
+				id = btc_events.16
 			}
 		}
 	}

@@ -953,21 +953,21 @@ country_event = {
 }
 
 country_event = {
-	id = btc_events.15
-	title = btc_events.15_t
-	desc = btc_events.15_d
+	id = btc_events.16
+	title = btc_events.16_t
+	desc = btc_events.16_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {
-		name = btc_events.15a
+		name = btc_events.16a
 
 		trigger = {
 			NOT = { has_country_flag = decisionAddSettlers_flag }
 		}
 
-		add_years_of_income = -0.2
+		add_years_of_income = -0.25
 		custom_tooltip = add_settlers_tt
 		hidden_effect = {
 			set_country_flag = decisionAddSettlers_flag
@@ -975,6 +975,6 @@ country_event = {
 	}
 
 	option = {
-		name = btc_events.15b
+		name = btc_events.16b
 	}
 }
