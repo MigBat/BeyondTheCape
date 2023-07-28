@@ -415,15 +415,15 @@ NOR_ideas = {
 	natural_seamanship = {
 		naval_morale = 0.20		
 	}
+	nor_shipbuilding = {
+		global_ship_cost = -0.1
+	}
 	call_of_our_forefathers = {
 		range = 0.33
 		may_explore = yes
 	}
 	pioneer_spirit = {
 		colonists = 1
-	}
-	nor_shipbuilding = {
-		global_ship_cost = -0.1
 	}
 	seize_the_opportunity = {
  		global_trade_power = 0.1

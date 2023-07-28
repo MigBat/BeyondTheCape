@@ -2596,7 +2596,7 @@ province_event = {
 			factor = 1
 		}
 		
-		owner = { add_years_of_income = -0.1 }
+		owner = { add_treasury = -25 }
 
 		add_province_modifier = {
 			name = small_feitoria
