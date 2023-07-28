@@ -1550,14 +1550,17 @@ country_event = {
 	option = {
 		name = "flavor_nor.32.a"
 		add_navy_tradition = 15
-		north_atlantic_region = {
-			discover_country = ROOT
-		}
+		# north_atlantic_region = {
+		# 	discover_country = ROOT
+		# }
 		greenland_area = {
 			discover_country = ROOT
 		}
 		hidden_effect = {
 			1804 = { discover_country = ROOT }
+			1481 = { discover_country = ROOT }
+			1482 = { discover_country = ROOT }
+			1924 = { discover_country = ROOT }
 		}
 	}
 }

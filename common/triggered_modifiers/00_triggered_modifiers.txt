@@ -964,20 +964,6 @@ por_spice_monopoly_wars_triggered_modifier = {
 	potential = {
 		tag = POR
 		has_country_flag = mare_clausum
-		any_owned_province = {
-			has_port = yes
-			OR = {
-				area = basra_area
-				area = gulf_of_arabia_area
-				region = horn_of_africa_region
-				region = arabia_region
-				region = persia_region
-				region = khorasan_region
-				region = west_india_region
-				region = coromandel_region
-				region = deccan_region
-			}
-		}
 	}
 	trigger = {
 		any_country = {

@@ -3021,6 +3021,8 @@ country_event = {
 	title = "flavor_spa.EVTNAME1"
 	desc = "flavor_spa.EVTDESC1"
 	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
 	
 	trigger = {
 		tag = CAS
@@ -3034,7 +3036,7 @@ country_event = {
 			type = all
 			religion = catholic
 		}
-		dip_tech = 8
+		is_year = 1491
 		has_idea_group = exploration_ideas
 	}
 

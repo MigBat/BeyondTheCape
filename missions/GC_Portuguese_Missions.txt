@@ -1510,15 +1510,6 @@ gc_por_3 = {
 			# 	}
 			# 	add_claim = ROOT
 			# }
-			define_explorer = {
-				name = "Francisco de Almeida"
-				shock = 5
-				fire = 4
-				manuever = 2
-				siege = 4
-				trait = naval_gunner_personality
-			}
-			custom_tooltip = mamluk_war_tooltip
 		}
 	}
 
