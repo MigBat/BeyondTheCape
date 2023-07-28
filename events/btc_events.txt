@@ -686,10 +686,99 @@ province_event = {
 	trigger = {
 		is_prosperous = yes
 		NOT = { has_province_modifier = dev_increased_recently }
+		NOT = { development = 40 }
+		NOT = {
+			OR = {
+				has_terrain = glacier
+				has_terrain = desert
+			}
+		}
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 36
+		# Terrains
+		modifier = {
+			factor = 1
+			has_terrain = farmlands
+		}
+		modifier = {
+			factor = 1.2
+			has_terrain = grasslands
+		}
+		modifier = {
+			factor = 1.4
+			has_terrain = drylands
+		}
+		modifier = {
+			factor = 1.8
+			has_terrain = woods
+		}
+		modifier = {
+			factor = 1.8
+			has_terrain = coastline
+		}
+		modifier = {
+			factor = 1.8
+			has_terrain = savannah
+		}
+		modifier = {
+			factor = 2
+			has_terrain = forest
+		}
+		modifier = {
+			factor = 2
+			has_terrain = highlands
+		}
+		modifier = {
+			factor = 2
+			has_terrain = steppe
+		}
+		modifier = {
+			factor = 2.2
+			has_terrain = hills
+		}
+		modifier = {
+			factor = 2.2
+			has_terrain = marsh
+		}
+		modifier = {
+			factor = 2.6
+			has_terrain = mountain
+		}
+		modifier = {
+			factor = 2.6
+			has_terrain = jungle
+		}
+		modifier = {
+			factor = 2.6
+			has_terrain = coastal_desert
+		}
+		# Development
+		modifier = {
+			factor = 1.3
+			development = 10
+		}
+		modifier = {
+			factor = 1.6
+			development = 15
+		}
+		modifier = {
+			factor = 1.9
+			development = 20
+		}
+		modifier = {
+			factor = 2.2
+			development = 25
+		}
+		modifier = {
+			factor = 2.5
+			development = 30
+		}
+		modifier = {
+			factor = 2.8
+			development = 35
+		}
 	}
 
 	option = {
@@ -702,8 +791,8 @@ province_event = {
 		}
 		add_province_modifier = {
 			name = dev_increased_recently
-			duration = 3650
-		}
+			duration = 7300
+		}	
 	}
 }
 
