@@ -440,7 +440,6 @@ coastal_defence = {
 		hostile_disembark_speed = 1.0
 		block_slave_raid = yes
 		allowed_num_of_buildings = 1
-		siege_blockade_progress = -1
 		hostile_fleet_attrition = 2
 	}
 
@@ -877,7 +876,6 @@ naval_battery = {
 		hostile_fleet_attrition = 5
 		block_slave_raid = yes
 		allowed_num_of_buildings = 1
-		siege_blockade_progress = -2
 		local_own_coast_naval_combat_bonus = 1
 	}
 
