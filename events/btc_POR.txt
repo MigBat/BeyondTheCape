@@ -2184,6 +2184,15 @@ country_event = {
 		add_permanent_claim = 2030
 		custom_tooltip = mare_clausum_tt
 		set_country_flag = mare_clausum
+		define_explorer = {
+			name = "Francisco de Almeida"
+			shock = 5
+			fire = 4
+			manuever = 2
+			siege = 4
+			trait = naval_gunner_personality
+		}
+		custom_tooltip = mamluk_war_tooltip
 	}
 }
 
