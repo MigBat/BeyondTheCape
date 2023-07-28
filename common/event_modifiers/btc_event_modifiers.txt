@@ -703,3 +703,10 @@ slave_oarsmen = {
 strait_engagement_width = {
 	local_naval_engagement_modifier = -0.5
 }
+
+tripitaka_koreana = {
+	harmonization_speed = 0.1
+	yearly_karma_decay = 0.01
+	monthly_splendor = 1
+	technology_cost = -0.1
+}

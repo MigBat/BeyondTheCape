@@ -702,7 +702,7 @@ province_event = {
 		}
 		add_province_modifier = {
 			name = dev_increased_recently
-			duration = 730
+			duration = 3650
 		}
 	}
 }
