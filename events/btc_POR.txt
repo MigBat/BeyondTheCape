@@ -2066,12 +2066,6 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 
 	trigger = {
-		OR = {
-			NOT = { ROOT = { junior_union_with = ENG } }
-			NOT = { ROOT = { junior_union_with = GBR } }
-			NOT = { ENG = { junior_union_with = ROOT } }
-			NOT = { GBR = { junior_union_with = ROOT } }
-		}
 		is_or_was_tag = { tag = POR }
 		has_country_modifier = por_english_alliance
 		OR = {
@@ -2089,6 +2083,12 @@ country_event = {
 				NOT = { exists = ENG }
 				NOT = { exists = GBR }
 			}
+		}
+		AND = {
+			NOT = { ROOT = { junior_union_with = ENG } }
+			NOT = { ROOT = { junior_union_with = GBR } }
+			NOT = { ENG = { junior_union_with = ROOT } }
+			NOT = { GBR = { junior_union_with = ROOT } }
 		}
 	}
 
@@ -3396,6 +3396,10 @@ country_event = {
 			name = expensive_spices
 			duration = -1
 		}
+		# hidden_effect = {
+		# 	set_country_flag = discovery_excitement			
+		# }
+		# custom_tooltip = discovery_excitement_tt
 	}
 
 	option = {	# Not with 100 caravels could we do this. It is folly.

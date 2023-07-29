@@ -23,9 +23,18 @@ dom_cas_missions_1 = {
 		# free mission
 
 		trigger = {
-			army_size_percentage = 1
-			navy_size_percentage = 1
-			num_of_generals = 1
+			if = {
+				limit = {
+					ai = yes
+				}
+				army_size_percentage = 0.5
+				navy_size_percentage = 0.5
+			}
+			else = {
+				army_size_percentage = 1
+				navy_size_percentage = 1
+				num_of_generals = 1
+			}
 		}
 
 		effect = {

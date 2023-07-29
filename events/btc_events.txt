@@ -833,6 +833,16 @@ country_event = {
 			which = numProvincesInStates
 			value = 1000				# base value
 		}
+		# # Silk Road Crisis event
+		# if = {
+		# 	limit = {
+		# 		has_country_flag = discovery_excitement
+		# 	}
+		# 	change_variable = {
+		# 		which = numProvincesInStates
+		# 		value = 1000
+		# 	}
+		# }
 		# Decision add 1000 settlers
 		if = {
 			limit = {

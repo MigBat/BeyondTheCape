@@ -571,6 +571,7 @@ discovery_fervor = {
 	global_manpower_modifier = -0.1
 	range = 0.1
 	core_creation = 0.5
+	global_colonial_growth = 15
 }
 
 expensive_spices = {

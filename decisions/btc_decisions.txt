@@ -136,6 +136,7 @@ country_decisions = {
 country_decisions = {
 	iberian_wedding_information = {
 		potential = {
+			ai = no
 			OR = {
 				AND = {
 					tag = POR
@@ -161,6 +162,7 @@ country_decisions = {
 country_decisions = {
 	cas_por_iberian_wedding_information = {
 		potential = {
+			ai = no
 			tag = CAS
 			has_heir_flag = isabel
 		}
@@ -178,6 +180,7 @@ country_decisions = {
 country_decisions = {
 	cas_ara_iberian_wedding_information = {
 		potential = {
+			ai = no
 			tag = CAS
 			has_heir_flag = joanna
 		}

@@ -430,6 +430,7 @@
  padrao_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s Padrão ordinances will become permanent after [Root.Monarch.GetHerHis] death."
  diplomatic_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s diplomatic ordinances will become permanent after [Root.Monarch.GetHerHis] death."
  development_ordinances_tt:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s development ordinances will become permanent after [Root.Monarch.GetHerHis] death."
+ discovery_excitement_tt:0 "1000 settlers will be added to the Settler Pool until we find the way to India."
 
 # Granada Paria #
 
@@ -502,3 +503,4 @@
  flavor_por.EVTOPTB11:0 "Forcefully establish our presence"
  flavor_guj.7.d:0 "In a dangerous world it is sometimes good to have contacts that can protect you. With the arrival of the Portuguese in the Indian Ocean it seems uncertain if anyone can be safe at sea anymore. We have received repeated reports of shipping being raided by Christian ships lately. These pirates threaten the trade that our Sultanate lives from and must be stopped. Perhaps it would be wise to contact the Sultan of Constantinople to discuss a possible alliance against these Christian pirates?"
  portugal_discovers_india.tooltip:0 "§Y[Root.GetName]§! has discovered Malabar Coast, Goa, and any province in the Coromandel region."
+ flavor_spa.EVTDESC1:0 "Explorer Christopher Columbus made two attempts to convince the King of Portugal, [POR.Monarch.GetName], to finance an expedition to try and find a western route to the Orient. After being rejected the second time, Columbus turned his efforts towards the [Root.GetAdjective] Crown. Backed up by Italian investors, Columbus hopes to convince King [Root.Monarch.GetName] to agree to the expedition."
