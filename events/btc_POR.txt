@@ -4237,9 +4237,15 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		area_for_scope_province = {
-			NOT = { has_province_modifier = padrao_raised }
+			type = all
+			NOT = { has_province_modifier = padrao_raised }	
 		}
-		FROM = { has_ruler_modifier = padrao_ordinances }
+		FROM = { 
+			OR = {
+				has_ruler_modifier = padrao_ordinances 
+				has_country_modifier = padrao_ordinances
+			}
+		}
 	}
 
 	mean_time_to_happen = {
