@@ -12,7 +12,7 @@ country_event = {
 		tag = GRA
 		NOT = { truce_with = CAS }
 		NOT = { has_country_flag = paria_not_paid }
-		NOT = { is_year = 1480 }
+		NOT = { is_year = 1475 }
 	}
 
 	option = {
