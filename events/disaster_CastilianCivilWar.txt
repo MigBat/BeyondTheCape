@@ -1399,8 +1399,14 @@ country_event = {
 				}
 			}
 			OR = {
-				prestige = ARA
-				legitimacy = ARA
+				OR = {
+					prestige = ARA
+					legitimacy = ARA
+				}
+				AND = {
+					ai = yes
+					ARA = { ai = yes }
+				}
 			}
 		}
 
@@ -1479,6 +1485,13 @@ country_event = {
 			AND = {
 				NOT = { prestige = ARA }
 				NOT = { legitimacy = ARA }
+				OR = {
+					ARA = { ai = no }			
+					AND = {
+						ai = no
+						ARA = { ai = yes }
+					}		
+				}
 			}
 		}
 

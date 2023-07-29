@@ -449,7 +449,7 @@ province_event = {
 	option = {
 		name = exploration_events.9.b
 		FROM = {
-			add_prestige = 10
+			add_prestige = 5
 		}
 		change_native_hostileness = 2
 	}
@@ -490,14 +490,14 @@ province_event = {
 	option = {
 		name = exploration_events.10.a
 		FROM = {
-			add_years_of_income = -0.25
+			add_years_of_income = -0.15
 			add_dip_power = 50
 		}
 	}
 	option = {
 		name = exploration_events.10.b
 		FROM = {
-			add_years_of_income = 0.25
+			add_years_of_income = 0.15
 		}
 		change_native_hostileness = 1
 		change_native_ferocity = 1
@@ -642,7 +642,7 @@ province_event = {
 	option = {
 		name = exploration_events.13.b
 		FROM = {
-			add_adm_power = 50
+			add_adm_power = 25
 		}
 	}
 }
@@ -700,7 +700,7 @@ province_event = {
 	option = {
 		name = exploration_events.14.b
 		FROM = {
-			add_adm_power = 50
+			add_adm_power = 25
 		}
 	}
 }

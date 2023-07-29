@@ -991,6 +991,15 @@ country_event = {
 		add_prestige = 10
 		custom_tooltip = mare_clausum_tt
 		set_country_flag = mare_clausum
+		define_explorer = {
+			name = "Francisco de Almeida"
+			shock = 5
+			fire = 4
+			manuever = 2
+			siege = 4
+			trait = naval_gunner_personality
+		}
+		custom_tooltip = mamluk_war_tooltip
 	}
 }
 
@@ -1008,7 +1017,7 @@ country_event = {
 		NOT = { has_global_flag = columbus_happened }
 		NOT = { has_country_flag = turned_down_columbus }
 		NOT = { has_discovered = 1177 }
-		dip_tech = 8
+		is_year = 1490
 		has_idea_group = exploration_ideas
 	}
 

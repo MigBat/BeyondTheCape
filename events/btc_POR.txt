@@ -2184,6 +2184,15 @@ country_event = {
 		add_permanent_claim = 2030
 		custom_tooltip = mare_clausum_tt
 		set_country_flag = mare_clausum
+		define_explorer = {
+			name = "Francisco de Almeida"
+			shock = 5
+			fire = 4
+			manuever = 2
+			siege = 4
+			trait = naval_gunner_personality
+		}
+		custom_tooltip = mamluk_war_tooltip
 	}
 }
 
@@ -4227,11 +4236,16 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
-		OR = {
-			continent = africa
-			continent = asia
+		area_for_scope_province = {
+			type = all
+			NOT = { has_province_modifier = padrao_raised }	
 		}
-		FROM = { has_ruler_modifier = padrao_ordinances }
+		FROM = { 
+			OR = {
+				has_ruler_modifier = padrao_ordinances 
+				has_country_modifier = padrao_ordinances
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -4246,6 +4260,7 @@ province_event = {
 			name = padrao_raised
 			duration = -1
 		}
+		add_permanent_claim = FROM
 		custom_tooltip = padrao_raised_tt
 	}
 

@@ -744,15 +744,7 @@ nor_conquest_mission_slot = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					is_random_new_world = no
-				}
-				country_event = {
-					id = flavor_nor.32
-				}
-			}
-			create_explorer = {
+			create_admiral = {
 				tradition = 100
 			}
 			add_navy_tradition = 10
@@ -790,6 +782,17 @@ nor_conquest_mission_slot = {
 			add_country_modifier = {
 				name = nor_sailors_of_norway
 				duration = 9125
+			}
+			create_explorer = {
+				tradition = 100
+			}
+			if = {
+				limit = {
+					is_random_new_world = no
+				}
+				country_event = {
+					id = flavor_nor.32
+				}
 			}
 		}
 	}

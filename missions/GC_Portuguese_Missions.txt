@@ -205,6 +205,7 @@ gc_por_1_a = {
 			num_of_owned_provinces_with = {
 				value = 5
 				province_has_current_tech_fort_trigger = yes
+				is_state = yes
 			}
 			mil_tech = 12
 			army_professionalism = 0.15
@@ -742,13 +743,6 @@ gc_por_2_a = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			southern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_claim = ROOT
 			}
 		}
 	}
@@ -1510,15 +1504,6 @@ gc_por_3 = {
 			# 	}
 			# 	add_claim = ROOT
 			# }
-			define_explorer = {
-				name = "Francisco de Almeida"
-				shock = 5
-				fire = 4
-				manuever = 2
-				siege = 4
-				trait = naval_gunner_personality
-			}
-			custom_tooltip = mamluk_war_tooltip
 		}
 	}
 
@@ -1877,7 +1862,10 @@ gc_por_4_a = {
 
 		trigger = {
 			227 = {
-				has_building = coastal_defence
+				OR = {
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
 				owned_by = ROOT
 			}
 			coromandel_region = {
