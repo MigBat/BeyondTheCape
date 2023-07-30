@@ -314,43 +314,6 @@ country_event = {
 	}
 }
 
-# Portuguese East India Company
-country_event = {
-	id = flavor_por.4
-	title = "flavor_por.EVTNAME4"
-	desc = "flavor_por.EVTDESC4"
-	picture = MERCHANTS_TALKING_eventPicture
-	
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			AND = {
-				NOT = { has_dlc = "Golden Century" }
-				tag = POR
-				has_country_modifier = india_trade_co
-			}
-			has_country_flag = por_india_mission_flag
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-	
-
-
-	option = {		# We need an East India Company
-		name = "flavor_por.EVTOPTA4"
-		add_mercantilism = 10
-		add_country_modifier = {
-			name = "portuguese_india_trade_co"
-			duration = -1
-		}
-	}
-}
-
 # Capture of Santa Catarina
 country_event = {
 	id = flavor_por.5
@@ -1014,10 +977,10 @@ country_event = {
 	
 	trigger = {
 		tag = POR
+		NOT = { has_country_modifier = quest_for_the_new_world }
 		NOT = { has_global_flag = columbus_happened }
 		NOT = { has_country_flag = turned_down_columbus }
-		NOT = { has_discovered = 1177 }
-		is_year = 1490
+		is_year = 1488
 		has_idea_group = exploration_ideas
 	}
 
@@ -1035,20 +998,63 @@ country_event = {
 	
 	option = {		# Hire Columbus
 		name = "flavor_por.EVTOPTB1"
-
+		
 		ai_chance = { factor = 0 }
-		set_global_flag = columbus_happened
-		add_years_of_income = -0.10
-		define_explorer = {
-			name = "Cristóvão Colombo"
-			fire = 2
-			shock = 2
-			manuever = 6
-			siege = 0
+
+		trigger = {
+			NOT = { has_discovered = 1177 }
 		}
+
+		add_years_of_income = -0.10
+		set_global_flag = columbus_happened
+		custom_tooltip = columbus_voyage
+		hidden_effect = {
+			ROOT = {
+				country_event = {
+					id = btc_events.17
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+# Portuguese East India Company
+country_event = {
+	id = flavor_por.4
+	title = "flavor_por.EVTNAME4"
+	desc = "flavor_por.EVTDESC4"
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_dlc = "Golden Century" }
+				tag = POR
+				has_country_modifier = india_trade_co
+			}
+			has_country_flag = por_india_mission_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+
+
+	option = {		# We need an East India Company
+		name = "flavor_por.EVTOPTA4"
+		add_mercantilism = 10
 		add_country_modifier = {
-			name = quest_for_the_new_world
+			name = "portuguese_india_trade_co"
 			duration = -1
+		}
+		227 = {
+			upgrade_building = { trade = yes }
 		}
 	}
 }

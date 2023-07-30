@@ -1077,3 +1077,178 @@ country_event = {
 		name = btc_events.16b
 	}
 }
+
+# Land Sighted!
+country_event = {
+	id = btc_events.17
+	title = btc_events.17_t
+	desc = btc_events.17_d
+	picture = EP_ISLAND_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_events.17a
+
+		trigger = {
+			tag = CAS
+		}
+
+		hidden_effect = {
+			POR = {
+				country_event = {
+					id = btc_events.18
+					days = 30
+				}
+			}
+		}
+
+		add_prestige = 10
+		define_explorer = {
+			name = "NAME_CRISTOBAL_COLON"
+			fire = 2
+			shock = 2
+			manuever = 6
+			siege = 0
+			trait = great_explorer_personality
+		}
+		hidden_effect = {
+			discover_province = 1580
+			discover_province = 1583
+			discover_province = 1575
+			discover_province = 1574
+			discover_province = 1504
+			discover_province = 1503	
+			discover_province = 1524
+			discover_province = 1525		
+		}
+		discover_province = 482
+		discover_province = 2659		
+		create_colony_mission_reward = {
+			province = 2659
+		}
+	}
+
+	option = {
+		name = btc_events.17b
+
+		trigger = {
+			tag = POR
+		}
+
+		add_prestige = 10
+		define_explorer = {
+			name = "Cristóvão Colombo"
+			fire = 2
+			shock = 2
+			manuever = 6
+			siege = 0
+			trait = great_explorer_personality
+		}
+		hidden_effect = {
+			discover_province = 1580
+			discover_province = 1583
+			discover_province = 1575
+			discover_province = 1574
+			discover_province = 1504
+			discover_province = 1503
+			discover_province = 1524
+			discover_province = 1525			
+		}
+		discover_province = 482
+	}
+}
+
+# The Treaty of Tordesillas (POR)
+country_event = {
+	id = btc_events.18
+	title = btc_events.18_t
+	desc = btc_events.18_d
+	picture = DIPLOMAT_INTERROGATION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Contest castilian discovery
+		name = btc_events.18a
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = tordesillas_por_tt
+		hidden_effect = {
+			CAS = {
+				country_event = {
+					id = btc_events.19
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {	# Let them have it
+		name = btc_events.18b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# The Treaty of Tordesillas (CAS)
+country_event = {
+	id = btc_events.19
+	title = btc_events.19_t
+	desc = btc_events.19_d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Negotiate with the Portuguese
+		name = btc_events.19a
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = tordesillas_cas_tt
+		hidden_effect = {
+			CAS = {
+				country_event = {
+					id = btc_events.20
+					days = 30
+				}
+			}
+			POR = {
+				country_event = {
+					id = btc_events.20
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {	# Those lands are ours
+		name = btc_events.19b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# The Treaty of Tordesillas
+country_event = {
+	id = btc_events.20
+	title = btc_events.20_t
+	desc = btc_events.20_d
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Our interests have been assured
+		name = btc_events.20a
+
+		custom_tooltip = tordesillas_tt
+		hidden_effect = {
+			POR = { set_country_flag = tordesillas_por }
+			CAS = { set_country_flag = tordesillas_cas }			
+		}
+	}
+}

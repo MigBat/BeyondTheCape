@@ -668,7 +668,7 @@ dev_increased_recently = {
 no_settlers = {
 	global_colonial_growth = -50
 	colonist_placement_chance = -0.1
-	colonists = -1
+	colony_cost_modifier = 0.5
 }
 
 very_low_settlers = {

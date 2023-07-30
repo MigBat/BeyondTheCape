@@ -211,6 +211,70 @@ can_colonize_province = {
 			}
 		}
 	}
+	# tordesillas portugal
+	condition = {
+		tooltip = "tordesillas_portugal"
+		potential = {
+			FROM = {
+				tag = POR
+				has_country_flag = tordesillas_por
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = north_america
+						AND = {
+							continent = south_america
+							NOT = {
+								OR = {
+									area = maranhao_area
+									area = piaui_area
+									area = ceara_area
+									area = sao_francisco_area
+									area = pernambuco_area
+									area = bahia_area
+									area = diamantina_area
+									area = minas_gerais_area
+									area = rio_de_janeiro_area
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	# tordesillas castile
+	condition = {
+		tooltip = "tordesillas_castile"
+		potential = {
+			FROM = {
+				tag = CAS
+				has_country_flag = tordesillas_cas
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						continent = asia
+						area = maranhao_area
+						area = piaui_area
+						area = ceara_area
+						area = sao_francisco_area
+						area = pernambuco_area
+						area = bahia_area
+						area = diamantina_area
+						area = minas_gerais_area
+						area = rio_de_janeiro_area
+					}
+				}
+			}
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {
