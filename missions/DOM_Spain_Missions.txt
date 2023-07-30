@@ -4491,6 +4491,16 @@ dom_cas_missions_5_c = {
 				}
 				add_permanent_claim = ROOT
 			}
+			ROOT = {
+				country_event = {
+					id = btc_events.21
+				}
+			}
+			POR = {
+				country_event = {
+					id = btc_events.21
+				}
+			}
 		}
 	}
 	

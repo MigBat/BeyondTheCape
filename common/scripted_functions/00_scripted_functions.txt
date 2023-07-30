@@ -180,19 +180,19 @@ can_colonize_province = {
 			}
 		}
 	}
-	condition = {
-		tooltip = "limit_colonize_cape"
-		potential = {
-			FROM = { NOT = { dip_tech = 9 } }
-		}
-		allow = {
-			NOT = {
-				ROOT = {
-					area = cape_of_good_hope_area
-				}
-			}
-		}
-	}
+	# condition = {
+	# 	tooltip = "limit_colonize_cape"
+	# 	potential = {
+	# 		FROM = { NOT = { dip_tech = 9 } }
+	# 	}
+	# 	allow = {
+	# 		NOT = {
+	# 			ROOT = {
+	# 				area = cape_of_good_hope_area
+	# 			}
+	# 		}
+	# 	}
+	# }
 	condition = {
 		tooltip = "limit_colonize_interior"
 		potential = {
@@ -224,7 +224,15 @@ can_colonize_province = {
 			ROOT = {
 				NOT = {
 					OR = {
-						continent = north_america
+						AND = {
+							continent = north_america
+							if = {
+								limit = { POR = { has_country_flag = terra_nova_claim } }
+								NOT = {
+									area = newfoundland_area
+								}
+							}
+						}
 						AND = {
 							continent = south_america
 							NOT = {
@@ -238,6 +246,10 @@ can_colonize_province = {
 									area = diamantina_area
 									area = minas_gerais_area
 									area = rio_de_janeiro_area
+									area = grao_para_area
+									area = pontal_area
+									area = goias_area
+									area = sao_paolo_area
 								}
 							}
 						}
@@ -270,6 +282,14 @@ can_colonize_province = {
 						area = diamantina_area
 						area = minas_gerais_area
 						area = rio_de_janeiro_area
+						area = grao_para_area
+						area = pontal_area
+						area = goias_area
+						area = sao_paolo_area
+						if = {
+							limit = { POR = { has_country_flag = terra_nova_claim } }
+							area = newfoundland_area
+						}
 					}
 				}
 			}

@@ -1035,7 +1035,7 @@ country_event = {
 	}
 }
 
-# The Golden Age of Piracy
+# The Golden Age of Piracy - Beyond the Cape
 country_event = {
 	id = pirates.20
 	title = "pirates.20.t"
@@ -1048,39 +1048,33 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Golden Century"
-		OR = {
-			any_subject_country = {
-				capital_scope = {
-					region = carribeans_region
+		1516 = { privateer_power = { share = 25 country = ROOT } }
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 20
+			region = carribeans_region
+			OR = {
+				owner = {
+					capital_scope = {
+						continent = europe
+					}
 				}
-			}
-			1516 = {
-				privateer_power = { country = ROOT share = 5 }
-			}
-		}
-		OR = {
-			any_country = {
-				truce_with = ROOT
-				OR = {
-					any_subject_country = {
+				owner = {
+					is_subject = yes
+					overlord = {
 						capital_scope = {
-							region = carribeans_region
+							continent = europe
 						}
 					}
-					1516 = {
-						privateer_power = { country = PREV share = 5 }
-					}
 				}
-			}
-			1516 = { # or just have a whole lot of privateers
-				privateer_power = { country = ROOT share = 25 }
 			}
 		}
 		has_privateers = yes
 	}
+
 	mean_time_to_happen = {
 		months = 3
 	}
+	
 	option = {
 		name = "pirates.20.a"
 		set_global_flag = golden_age_of_piracy

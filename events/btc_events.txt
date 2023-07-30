@@ -1122,7 +1122,6 @@ country_event = {
 			discover_province = 1524
 			discover_province = 1525		
 		}
-		discover_province = 482
 		discover_province = 2659		
 		create_colony_mission_reward = {
 			province = 2659
@@ -1155,7 +1154,6 @@ country_event = {
 			discover_province = 1524
 			discover_province = 1525			
 		}
-		discover_province = 482
 	}
 }
 
@@ -1240,6 +1238,8 @@ country_event = {
 	desc = btc_events.20_d
 	picture = DIPLOMACY_SIGNING_eventPicture
 
+	major = yes
+
 	is_triggered_only = yes
 
 	option = {	# Our interests have been assured
@@ -1250,5 +1250,57 @@ country_event = {
 			POR = { set_country_flag = tordesillas_por }
 			CAS = { set_country_flag = tordesillas_cas }			
 		}
+	}
+}
+
+# The Treaty of Madrid
+country_event = {
+	id = btc_events.21
+	title = btc_events.21_t
+	desc = btc_events.21_d
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {	# The Treaty of Tordesillas has outlived its usefulness
+		name = btc_events.21a
+
+		custom_tooltip = madrid_tt
+		hidden_effect = {
+			POR = { clr_country_flag = tordesillas_por }
+			CAS = { clr_country_flag = tordesillas_cas }			
+		}
+	}
+}
+
+# Claims in Terra Nova
+country_event = {
+	id = btc_events.22
+	title = btc_events.22_t
+	desc = btc_events.22_d
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = POR
+		mission_completed = gc_por_discover_african_coast
+		newfoundland_area = {
+			has_discovered = POR
+		}
+		POR = {
+			has_country_flag = tordesillas_por
+		}
+	}
+
+	option = {	# Amend the Treaty
+		name = btc_events.22a
+
+		custom_tooltip = terra_nova_claim_tt
+		POR = { set_country_flag = terra_nova_claim }
 	}
 }

@@ -3022,26 +3022,30 @@ country_event = {
 
 # Jo�o Vaz Corte Real #
 
-# country_event = {
-# 	id = btc_por.144
-# 	title = btc_por.144_t
-# 	desc = btc_por.144_d
-# 	picture = SHIP_SAILING_eventPicture
+country_event = {
+	id = btc_por.144
+	title = btc_por.144_t
+	desc = btc_por.144_d
+	picture = SHIP_SAILING_eventPicture
 
-# 	is_triggered_only = yes
+	is_triggered_only = yes
 
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 
-# 	option = {	# Great
-# 		name = btc_por.144a
+	option = {	# Great
+		name = btc_por.144a
 
-# 		newfoundland_area = {
-# 			discover_country = ROOT
-# 		}
-# 	}
-# }
+		newfoundland_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
 
 # Tomb of Mohamed #
 
@@ -4240,6 +4244,19 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
+		OR = {
+			continent = africa
+			continent = asia
+			area = maranhao_area
+			area = piaui_area
+			area = ceara_area
+			area = sao_francisco_area
+			area = pernambuco_area
+			area = bahia_area
+			area = diamantina_area
+			area = minas_gerais_area
+			area = rio_de_janeiro_area
+		}
 		area_for_scope_province = {
 			type = all
 			NOT = { has_province_modifier = padrao_raised }	

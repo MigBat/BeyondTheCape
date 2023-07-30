@@ -127,6 +127,8 @@
  TORDESILLAS_THEM_1:0 "Inter Caetera"
  TORDESILLAS_THEM_LOG:0 "$WHO$ gains rights to $REGION$ through Inter Caetera."
  TORDESILLAS_THEM_MAP:0 "Inter Caetera"
+ gc_por_caribbean_title:0 "Caribbean Plunder"
+ gc_por_caribbean_desc:0 "The Caribbean islands are the bottleneck of New World trade. Many of our rivals have set up colonies there, bringing the riches of the americas to the local markets before being shipped towards Europe. These are ideal conditions to send experienced sailors to "confiscate" some of their precious cargo."
 
 # Monuments #
  batalha_monastery:0 "Batalha Monastery"
