@@ -1318,19 +1318,19 @@ on_siege_lost_province =  {
 			}
 		}
 		random_list = {
-			10 = { 
+			15 = { 
 				add_base_tax = -1 
 				FROM = { add_years_of_income = 0.05 }
 			}
-			10 = { 
+			15 = { 
 				add_base_production = -1 
 				FROM = { add_years_of_income = 0.05 }
 			}
-			10 = { 
+			15 = { 
 				add_base_manpower = -1 
 				FROM = { add_years_of_income = 0.05 }
 			}
-			70 = { }
+			55 = { }
 		}
 		set_province_flag = dev_reduced_recently
 	}

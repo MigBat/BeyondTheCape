@@ -788,17 +788,17 @@ CAS_ideas = {
 		warscore_cost_vs_other_religion = -0.1
 		land_morale = 0.1
 	}
+	devout_catholisism = {
+		papal_influence = 2
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.5
+	}
 	inter_caetera = {
 		colonists = 1
 	}
 	conquest_of_paradise = {
 		cb_on_primitives = yes
 		global_colonial_growth = 20
-	}
-	devout_catholisism = {
-		papal_influence = 2
-		church_power_modifier = 0.25
-		monthly_fervor_increase = 0.5
 	}
 	infantas = {
 		diplomatic_reputation = 2
@@ -1600,7 +1600,7 @@ POR_ideas = {
 		transport_attrition = -0.2
 	}
 	por_feitoria_system = {
-		trade_steering = 0.15
+		trade_steering = 0.1
 		defensiveness = 0.15
 	}
 	por_india_armadas = {

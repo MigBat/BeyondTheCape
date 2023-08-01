@@ -23,9 +23,18 @@ dom_cas_missions_1 = {
 		# free mission
 
 		trigger = {
-			army_size_percentage = 1
-			navy_size_percentage = 1
-			num_of_generals = 1
+			if = {
+				limit = {
+					ai = yes
+				}
+				army_size_percentage = 0.5
+				navy_size_percentage = 0.5
+			}
+			else = {
+				army_size_percentage = 1
+				navy_size_percentage = 1
+				num_of_generals = 1
+			}
 		}
 
 		effect = {
@@ -4398,24 +4407,32 @@ dom_cas_missions_5_c = {
 		required_missions = {  }
 		position = 7
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					region = guinea_region
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				province_id = 1466
-			}
+			province_id = 1466
 			has_discovered = ROOT
 		}
 
 		trigger = {
-			guinea_region = {
-				owned_by = ROOT
+			if = {
+				limit = {
+					ai = yes
+				}
+				1466 = {	# Ivory Coast
+					trade_share = {
+						country = ROOT
+						share = 5
+					}
+				}
 			}
-			1466 = {
-				is_strongest_trade_power = ROOT
+			else = {
+				1466 = {	# Ivory Coast
+					trade_share = {
+						country = ROOT
+						share = 10
+					}
+				}
 			}
 		}
+
 		effect = {
 			add_mercantilism = 2
 			
@@ -4481,6 +4498,26 @@ dom_cas_missions_5_c = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					AND = {
+						CAS = { has_country_flag = tordesillas_cas }
+						POR = { has_country_flag = tordesillas_por }
+					}
+				}
+				ROOT = {
+					country_event = {
+						id = btc_events.21
+					}
+				}
+				hidden_effect = {
+					POR = {
+						country_event = {
+							id = btc_events.21
+						}
+					}				
+				}
 			}
 		}
 	}

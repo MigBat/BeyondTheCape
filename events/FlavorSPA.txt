@@ -3026,17 +3026,15 @@ country_event = {
 	
 	trigger = {
 		tag = CAS
+		is_subject = no
+		NOT = { has_country_modifier = quest_for_the_new_world }
 		NOT = { has_global_flag = columbus_happened }
 		NOT = { has_country_flag = turned_down_columbus }
-		lower_andalucia_area = {
+		iberia_region = {
 			type = all
-			religion = catholic
+			NOT = { owner = { religion_group = muslim } }
 		}
-		upper_andalucia_area = {
-			type = all
-			religion = catholic
-		}
-		is_year = 1491
+		POR = { has_country_flag = turned_down_columbus }
 		has_idea_group = exploration_ideas
 	}
 
@@ -3056,16 +3054,14 @@ country_event = {
 		ai_chance = { factor = 1 }
 		add_years_of_income = -0.25
 		set_global_flag = columbus_happened
-		define_explorer = {
-			name = "NAME_CRISTOBAL_COLON"
-			fire = 2
-			shock = 2
-			manuever = 6
-			siege = 0
-		}
-		add_country_modifier = {
-			name = quest_for_the_new_world
-			duration = -1
+		custom_tooltip = columbus_voyage
+		hidden_effect = {
+			ROOT = {
+				country_event = {
+					id = btc_events.17
+					days = 90
+				}
+			}
 		}
 	}
 }

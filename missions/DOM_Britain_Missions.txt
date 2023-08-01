@@ -823,6 +823,7 @@ gbr_row_slot_2 = {
 			NOT = { has_discovered = ROOT }
 		}
 		trigger = {
+			has_idea_group = exploration_ideas
 			if = {
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
@@ -3626,6 +3627,7 @@ gbr_row_5 = {
 			has_port = yes
 		}
 		trigger = { 
+			has_idea_group = exploration_ideas
 			custom_trigger_tooltip = {
 				tooltip = gbr_sail_around_africa_ct
 				east_africa_region = {
@@ -3639,8 +3641,12 @@ gbr_row_5 = {
 			}
 		}	
 		effect = {
-			create_colony_mission_reward = {
-				province = 1177
+			cape_of_good_hope_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 		ai_weight = {

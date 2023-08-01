@@ -854,22 +854,21 @@ gc_por_2_b = {
 		
 		provinces_to_highlight = {
 			region = carribeans_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				region = carribeans_region
-				is_city = yes
-			}
+			1516 = { privateer_power = { share = 25 country = ROOT } }
+			has_global_flag = golden_age_of_piracy
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "portuguese_carib_modifier"
-				duration = 7300
+			define_admiral = {
+				name = "Bartolomeu Português"
+				shock = 2
+				fire = 4
+				manuever = 4
+				trait = buccaneer_personality
 			}
 		}
 	}
@@ -1324,15 +1323,8 @@ gc_por_3 = {
 				name = portuguese_exploration
 				duration = 18250
 			}
-			# country_event = {
-			# 	id = btc_por.144
-			# }
-			newfoundland_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			country_event = {
+				id = btc_por.144
 			}	
 			define_explorer = {
 				name = "Diogo Cão"

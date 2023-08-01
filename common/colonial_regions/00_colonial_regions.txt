@@ -63,13 +63,13 @@ colonial_alaska = {
 		name = "COLONIAL_ALASKA_Alaska"
 	}
 	names = {
+		name = "COLONIAL_ALASKA_Aleutia"
+	}
+	names = {
 		name = "COLONIAL_CALIFORNIA_Cascadia"
 	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		name = "COLONIAL_ALASKA_Aleutia"
 	}
 }
 
@@ -119,24 +119,6 @@ colonial_canada = {
 	# Specific
 	names = {
 		trigger = {
-			OR = {
-				tag = FRA
-				culture_group = french
-			}
-		}
-		name = "COLONIAL_CANADA_Root_Culture_GetGroupName_Canada"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = FRA
-				culture_group = french
-			}
-		}
-		name = "COLONIAL_CANADA_Acadia"
-	}
-	names = {
-		trigger = {
 			tag = FRA
 			OR = {
 				any_owned_province = {
@@ -153,9 +135,45 @@ colonial_canada = {
 	}
 	names = {
 		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_CANADA_Acadia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_CANADA_Root_Culture_GetGroupName_Canada"
+	}
+	names = {
+		trigger = {
 			tag = BRU
 		}
 		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+			SCO = {
+				exists = no
+			}
+			any_owned_province = {
+				OR = {
+					area = highlands_area
+					area = lowlands_area
+				}
+			}
+		}
+		name = "COLONIAL_CANADA_Nova_Scotia"
 	}
 	names = {
 		trigger = {
@@ -192,24 +210,6 @@ colonial_canada = {
 			}
 		}
 		name = "COLONIAL_CANADA_Borealia"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-			SCO = {
-				exists = no
-			}
-			any_owned_province = {
-				OR = {
-					area = highlands_area
-					area = lowlands_area
-				}
-			}
-		}
-		name = "COLONIAL_CANADA_Nova_Scotia"
 	}
 	names = {
 		trigger = {
@@ -253,13 +253,19 @@ colonial_canada = {
 	}
 	# Generic
 	names = {
+		trigger = {
+			owns = 1010 # Manitoba
+		}
+		name = "Manitoba"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
+	}
+	names = {
 		name = "COLONIAL_CANADA_Root_Culture_GetName_Canada"
 	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
 	}
 	names = {
 		name = "COLONIAL_CANADA_Newfoundland"
@@ -278,12 +284,6 @@ colonial_canada = {
 	}
 	names = {
 		name = "COLONIAL_CANADA_Borealia"
-	}
-	names = {
-		trigger = {
-			owns = 1010 # Manitoba
-		}
-		name = "PROV1010"
 	}
 	names = {
 		name = "COLONIAL_CANADA_Hudson_Bay"
@@ -397,49 +397,49 @@ colonial_eastern_america = {
 	}
 	# Generic
 	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		name = "COLONIAL_EASTERN_AMERICA_Florida"
-	}
-	names = {
 		trigger = {
 			owns = 968
 		}
-		name = "PROV968" # Massachusets
-	}
-	names = {
-		trigger = {
-			owns = 2010
-		}
-		name = "PROV2010" # Connecticut
+		name = "Massachusets" # Massachusets
 	}
 	names = {
 		trigger = {
 			owns = 965
 		}
-		name = "PROV965" # Manhattan
+		name = "Manhattan" # Manhattan
+	}
+	names = {
+		trigger = {
+			owns = 2010
+		}
+		name = "Connecticut" # Connecticut
 	}
 	names = {
 		trigger = {
 			owns = 957
 		}
-		name = "PROV957" # Delaware
+		name = "Delaware" # Delaware
 	}
 	names = {
 		trigger = {
 			owns = 953
 		}
-		name = "PROV953" # Conoy
+		name = "Conoy" # Conoy
 	}
 	names = {
 		trigger = {
 			owns = 924
 		}
-		name = "PROV924" # Alabama
+		name = "Alabama" # Alabama
 	}
 	names = {
 		name = "COLONIAL_EASTERN_AMERICA_Virginia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_EASTERN_AMERICA_Florida"
 	}
 }
 
@@ -493,24 +493,6 @@ colonial_louisiana = {
 				tag = FRA
 				culture_group = french
 			}
-		}
-		name = "COLONIAL_LOUISIANA_Root_Culture_GetGroupName_Louisiana"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = FRA
-				culture_group = french
-			}
-		}
-		name = "COLONIAL_LOUISIANA_Manitounie"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = FRA
-				culture_group = french
-			}
 			OR = {
 				owns = 915 # Illinois
 				owns = 916 # Kaskaskia
@@ -519,24 +501,30 @@ colonial_louisiana = {
 		}
 		name = "PROV915"
 	}
-	# Generic
 	names = {
-		name = "COLONIAL_LOUISIANA_Root_Culture_GetName_Louisiana"
-	}
-	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		name = "COLONIAL_LOUISIANA_Mississippi"
-	}
-	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
 		name = "COLONIAL_LOUISIANA_Manitounie"
 	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_LOUISIANA_Root_Culture_GetGroupName_Louisiana"
+	}
+	# Generic
 	names = {
 		trigger = {
 			owns = 948 # Ohio
 		}
-		name = "PROV948"
+		name = "Ohio"
 	}
 	names = {
 		trigger = {
@@ -546,7 +534,7 @@ colonial_louisiana = {
 				owns = 917 # Cahokia
 			}
 		}
-		name = "PROV915"
+		name = "Illinois"
 	}
 	names = {
 		trigger = {
@@ -555,7 +543,7 @@ colonial_louisiana = {
 				owns = 902 # Missouri
 			}
 		}
-		name = "PROV902"
+		name = "Missouri"
 	}
 	names = {
 		trigger = {
@@ -570,7 +558,7 @@ colonial_louisiana = {
 				owns = 944 # Potawatomi
 			}
 		}
-		name = "PROV945"
+		name = "Michigan"
 	}
 	names = {
 		trigger = {
@@ -586,19 +574,19 @@ colonial_louisiana = {
 		trigger = {
 			owns = 905 # Iowa
 		}
-		name = "PROV905"
+		name = "Iowa"
 	}
 	names = {
 		trigger = {
 			owns = 908 # Minnesota
 		}
-		name = "PROV908"
+		name = "Minnesota"
 	}
 	names = {
 		trigger = {
 			owns = 898 # Kansas
 		}
-		name = "PROV898"
+		name = "Kansas"
 	}
 	names = {
 		trigger = {
@@ -616,7 +604,19 @@ colonial_louisiana = {
 				owns = 907 # Dakota
 			}
 		}
-		name = "PROV907"
+		name = "Dakota"
+	}
+	names = {
+		name = "COLONIAL_LOUISIANA_Root_Culture_GetName_Louisiana"
+	}
+	names = {
+		name = "COLONIAL_LOUISIANA_Mississippi"
+	}
+	names = {
+		name = "COLONIAL_LOUISIANA_Manitounie"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
 	}
 }
 
@@ -669,7 +669,7 @@ colonial_california = {
 				primary_culture = anglois
 			}
 		}
-		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
+		name = "COLONIAL_CALIFORNIA_New_Albion"
 	}
 	names = {
 		trigger = {
@@ -682,15 +682,15 @@ colonial_california = {
 				primary_culture = anglois
 			}
 		}
-		name = "COLONIAL_CALIFORNIA_New_Albion"
+		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
 	}
 	# Generic
 	names = {
-		name = "COLONIAL_CALIFORNIA_California"
-	}
-	names = {
 		trigger = { owns = 2481 } # Klamath
 		name = "COLONIAL_CALIFORNIA_Oregon"
+	}
+	names = {
+		name = "COLONIAL_CALIFORNIA_California"
 	}
 	names = {
 		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
@@ -761,12 +761,6 @@ colonial_mexico = {
 	}
 	# Generic
 	names = {
-		name = "COLONIAL_MEXICO_Root_Culture_GetName_Mexico"
-	}
-	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
 		trigger = {
 			any_owned_province = {
 				OR = {
@@ -778,32 +772,38 @@ colonial_mexico = {
 		name = "COLONIAL_MEXICO_Yucatan"
 	}
 	names = {
-		trigger = { owns = 841 } # Guatemala
-		name = "COLONIAL_MEXICO_Guatemala"
-	}
-	names = {
 		trigger = {
 			owns = 885 # Teyas
 		}
 		name = "COLONIAL_MEXICO_Texas"
 	}
 	names = {
+		trigger = { owns = 841 } # Guatemala
+		name = "COLONIAL_MEXICO_Guatemala"
+	}
+	names = {
 		trigger = {
 			owns = 843 # Belize
 		}
-		name = "PROV843"
+		name = "Belize"
 	}
 	names = {
 		trigger = {
 			owns = 835 # Panama
 		}
-		name = "PROV835"
+		name = "Panama"
 	}
 	names = {
 		trigger = {
 			owns = 840 # Honduras
 		}
-		name = "PROV840"
+		name = "Honduras"
+	}
+	names = {
+		name = "COLONIAL_MEXICO_Root_Culture_GetName_Mexico"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
 	}
 }
 
@@ -859,13 +859,13 @@ colonial_colombia = {
 	}
 	# Generic
 	names = {
-		name = "COLONIAL_COLOMBIA_Root_Culture_GetName_Colombia"
-	}
-	names = {
 		trigger = {
 			owns = 837 # Nicaragua
 		}
-		name = "PROV837"
+		name = "Nicaragua"
+	}
+	names = {
+		name = "COLONIAL_COLOMBIA_Root_Culture_GetName_Colombia"
 	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
@@ -912,29 +912,28 @@ colonial_peru = {
 #	}
 	# Generic
 	names = {
-		name = "COLONIAL_PERU_Root_Culture_GetName_Peru"
-	}
-	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-
-	names = {
 		trigger = {
 			owns = 813 # Cajamarca
 		}
-		name = "PROV813"
+		name = "Cajamarca"
 	}
 	names = {
 		trigger = {
 			owns = 809 # Lima
 		}
-		name = "PROV809"
+		name = "Lima"
 	}
 	names = {
 		trigger = {
 			owns = 808 # Cuzco
 		}
-		name = "PROV808"
+		name = "Cuzco"
+	}
+	names = {
+		name = "COLONIAL_PERU_Root_Culture_GetName_Peru"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
 	}
 }
 
@@ -991,21 +990,15 @@ colonial_la_plata = {
 		trigger = {
 			tag = POR
 		}
-		name = "COLONIAL_LA_PLATA_Rio_de_Prata"
+		name = "COLONIAL_LA_PLATA_Transplatina"
 	}
 	names = {
 		trigger = {
 			tag = POR
 		}
-		name = "COLONIAL_LA_PLATA_Transplatina"
+		name = "COLONIAL_LA_PLATA_Rio_de_Prata"
 	}
 	# Generic
-	names = {
-		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_La_Plata"
-	}
-	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
 	names = {
 		trigger = {
 			any_owned_province = {
@@ -1013,6 +1006,12 @@ colonial_la_plata = {
 			}
 		}
 		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_Paraguay"
+	}
+	names = {
+		trigger = {
+			owns = 772 # Uruguay
+		}
+		name = "Uruguay"
 	}
 	names = {
 		trigger = { # Amélioration la Pléiade
@@ -1030,10 +1029,10 @@ colonial_la_plata = {
 		name = "COLONIAL_LA_PLATA_Argentina"
 	}
 	names = {
-		trigger = {
-			owns = 772 # Uruguay
-		}
-		name = "PROV772"
+		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_La_Plata"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
 	}
 }
 
@@ -1088,15 +1087,15 @@ colonial_brazil = {
 	names = {
 		trigger = {
 			tag = POR
+			religion_group = christian
 		}
-		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
+		name = "COLONIAL_BRAZIL_Terra_de_Vera_Cruz"
 	}
 	names = {
 		trigger = {
 			tag = POR
-			religion_group = christian
 		}
-		name = "COLONIAL_BRAZIL_Terra_de_Vera_Cruz"
+		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
 	}
 	names = {
 		trigger = {
@@ -1111,22 +1110,22 @@ colonial_brazil = {
 	}
 	# Generic
 	names = {
-		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
-	}
-	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
 		trigger = {
 			owns = 753 # Rio Grande
 		}
-		name = "PROV753"
+		name = "Rio Grande"
 	}
 	names = {
 		trigger = {
 			owns = 756 # Bahia
 		}
-		name = "PROV756"
+		name = "Bahia"
+	}
+	names = {
+		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
 	}
 }
 
@@ -1196,13 +1195,13 @@ colonial_australia = {
 	}
 	# Generic
 	names = {
+		name = "COLONIAL_REGION_Terra_Australis"
+	}
+	names = {
 		name = "COLONIAL_AUSTRALIA_Root_Culture_GetName_Australia"
 	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		name = "COLONIAL_REGION_Terra_Australis"
 	}
 }
 

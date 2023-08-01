@@ -53,12 +53,15 @@ difficulty_very_hard_player = {
 ##########################################################################
 
 difficulty_very_easy_ai = {
+	native_uprising_chance = -10.0
 }
 
 difficulty_easy_ai = {
+	native_uprising_chance = -10.0
 }
 
 difficulty_normal_ai = {
+	native_uprising_chance = -10.0
 }
 
 difficulty_hard_ai = {
@@ -68,7 +71,7 @@ difficulty_hard_ai = {
 	interest = -1
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.15
-
+	native_uprising_chance = -10.0
 }
 
 difficulty_very_hard_ai = {
@@ -89,6 +92,7 @@ difficulty_very_hard_ai = {
 	build_cost = -0.25
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.3
+	native_uprising_chance = -10.0
 }
 
 

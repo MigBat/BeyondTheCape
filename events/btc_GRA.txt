@@ -88,9 +88,16 @@ country_event = {
 		name = btc_gra.3a
 
 		ai_chance = {
-			factor = 90
+			factor = 1
 		}
 
+		upper_andalucia_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		if = {
 			limit = {
 				has_guaranteed = GRA
@@ -101,13 +108,24 @@ country_event = {
 			name = finish_reconquista
 			duration = 1825
 		}
+		hidden_effect = {
+			if = {
+				limit = { 
+					ai = yes
+				}
+				declare_war_with_cb = {
+					casus_belli = cb_conquest
+					who = GRA
+				}
+			}			
+		}
 	}
 
 	option = {
 		name = btc_gra.3b
 
 		ai_chance = {
-			factor = 10
+			factor = 0
 		}
 
 		if = {

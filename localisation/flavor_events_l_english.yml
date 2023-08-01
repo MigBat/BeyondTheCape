@@ -1337,7 +1337,7 @@
  flavor_rus.EVTOPTB2002:0 "Improve [Root.Capital.GetName] instead"
  flavor_rus.EVTOPTB1110:0 "[Root.GetName] needs a new dynasty!"
  flavor_spa.EVTNAME1:0 "Christopher Columbus"
- flavor_spa.EVTDESC1:0 "Explorer Christopher Columbus made two attempts to convince the King of Portugal, [From.Monarch.GetName], to finance an expedition to try and find a western route to the Orient. After being rejected the second time, Columbus turned his efforts towards the [Root.GetAdjective] Crown. Backed up by Italian investors, Columbus hopes to convince King [Root.Monarch.GetName] to agree to the expedition."
+#  flavor_spa.EVTDESC1:0 "Explorer Christopher Columbus made two attempts to convince the King of Portugal, [From.Monarch.GetName], to finance an expedition to try and find a western route to the Orient. After being rejected the second time, Columbus turned his efforts towards the [Root.GetAdjective] Crown. Backed up by Italian investors, Columbus hopes to convince King [Root.Monarch.GetName] to agree to the expedition."
  flavor_spa.EVTOPTA1:0 "Reject his proposal"
  flavor_spa.EVTOPTB1:0 "Hire Columbus"
  flavor_spa.EVTNAME3716:0 "The Iberian Wedding"

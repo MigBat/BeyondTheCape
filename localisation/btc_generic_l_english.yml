@@ -117,6 +117,18 @@
  trade_company_sevilla:0 "Castilian Charter"
  TRADE_COMPANY_SEVILLA_Root_Culture_GetName:0 "[Root.Culture.GetName] Castilian Company"
  TRADE_COMPANY_SEVILLA_European_Trade_Company:0 "Castilian Trade Company"
+ COLONIZE_IN_TORDESILLAS_CLAIM:0 "Inter Caetera: $VAL$\n"
+ violated_tordesillas:0 "Violated Inter Caetera"
+ TORDESILLAS_US_TITLE:0 "Inter Caetera"
+ TORDESILLAS_US_1:0 "Inter Caetera"
+ TORDESILLAS_US_LOG:0 "The Pope grants us $REGION$ through Inter Caetera."
+ TORDESILLAS_US_MAP:0 "Inter Caetera"
+ TORDESILLAS_THEM_TITLE:0 "Inter Caetera"
+ TORDESILLAS_THEM_1:0 "Inter Caetera"
+ TORDESILLAS_THEM_LOG:0 "$WHO$ gains rights to $REGION$ through Inter Caetera."
+ TORDESILLAS_THEM_MAP:0 "Inter Caetera"
+ gc_por_caribbean_title:0 "Caribbean Plunder"
+ gc_por_caribbean_desc:0 "The Caribbean islands are the bottleneck of New World trade. Many of our rivals have set up colonies there, bringing the riches of the americas to the local markets before being shipped towards Europe. These are ideal conditions to send experienced sailors to "confiscate" some of their precious cargo."
 
 # Monuments #
  batalha_monastery:0 "Batalha Monastery"
@@ -179,6 +191,10 @@
  subject_colonial_region_restriction:0 "You cannot colonize in a colonial region where your overlord has a colonial nation."
  limit_colonize_cape:0 "You need diplomatic tech 9 to colonize this province."
  limit_colonize_interior:0 "You need expansion ideas or the siberian frontier idea to colonize this province."
+ tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
+ new_tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
+ tordesillas_castile:0 "The Treaty of Tordesillas prevents you from colonising here."
+ new_tordesillas_castile:0 "The Treaty of Tordesillas prevents you from colonising here."
  is_ally_of_enemy_tt:0 "[From.GetName] is an ally of our enemy."
  does_not_border_tt:0 "We do not border [From.GetName]."
  miss_discover_caribbean:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region."
@@ -261,6 +277,9 @@
  colonial_pool_title:0 "Settler Pool"
  colonial_pool_desc:0 "The settler pool gives bonuses or maluses to your colonisation efforts depending on the number of settlers you have. For more information, click the decision and an event will pop up."
 
+ revoke_tordesillas_title:0 "Revoke Treaty of Tordesillas"
+ revoke_tordesillas_desc:0 "The Treaty of Tordesillas no longer serves our interests. It is time we revoke this treaty so we can freely colonise wherever we please."
+
  maxNumOfSettlers:0 "Maximum Number of Settlers"
  usedSettlers:0 "Used Settlers"
  freeSettlers:0 "Free Settlers"
@@ -282,3 +301,6 @@
 
  strait_engagement_width:0 "Strait"
  strait_tt:0 "This sea is narrow, decreasing naval engagement width by 50%."
+
+ revoke_tordesillas_tt:0 "Taking this decision will revoke the Treaty of Tordesillas."
+ tordesillas_revoked_tt:0 "The Treaty of Tordesillas will no longer be in effect."

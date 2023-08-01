@@ -833,6 +833,16 @@ country_event = {
 			which = numProvincesInStates
 			value = 1000				# base value
 		}
+		# # Silk Road Crisis event
+		# if = {
+		# 	limit = {
+		# 		has_country_flag = discovery_excitement
+		# 	}
+		# 	change_variable = {
+		# 		which = numProvincesInStates
+		# 		value = 1000
+		# 	}
+		# }
 		# Decision add 1000 settlers
 		if = {
 			limit = {
@@ -840,7 +850,7 @@ country_event = {
 			}
 			change_variable = {
 				which = numProvincesInStates
-				value = 1000
+				value = 500
 			}
 		}
 		if = {
@@ -859,13 +869,23 @@ country_event = {
 			}
 			change_variable = {
 				which = numProvincesInStates
-				value = 1000
+				value = 500
 			}
 		}
 
 		set_variable = {
 			which = maxNumOfSettlers	# maximum number of settlers of a country
 			which = numProvincesInStates
+		}
+
+		if = {
+			limit = {
+				ai = yes		# ai gets 500 extra settlers per each colonist
+			}
+			change_variable = {
+				which = maxNumOfSettlers
+				value = 500
+			}
 		}
 
 		export_to_variable = {
@@ -939,7 +959,8 @@ country_event = {
 				NOT = {
 					check_variable = {
 						which = freeSettlers
-						which = 0settlers
+						# which = 0settlers
+						value = 1
 					}
 				}
 			}
@@ -956,12 +977,14 @@ country_event = {
 			limit = {
 				check_variable = {
 					which = freeSettlers
-					which = 0settlers
+					# which = 0settlers
+					value = 1
 				}
 				NOT = {
 					check_variable = {
 						which = freeSettlers
-						which = 25settlers
+						# which = 25settlers
+						value = 500
 					}
 				}
 			}
@@ -979,12 +1002,14 @@ country_event = {
 				AND = {
 					check_variable = {
 						which = freeSettlers
-						which = 25settlers
+						# which = 25settlers
+						value = 500
 					}
 					NOT = {
 						check_variable = {
 							which = freeSettlers
-							which = 50settlers
+							# which = 50settlers
+							value = 1000
 						}
 					}
 				}
@@ -1003,12 +1028,14 @@ country_event = {
 				AND = {
 					check_variable = {
 						which = freeSettlers
-						which = 50settlers
+						# which = 50settlers
+						value = 1000
 					}
 					NOT = {
 						check_variable = {
 							which = freeSettlers
-							which = 75settlers
+							# which = 75settlers
+							value = 2000
 						}
 					}
 				}
@@ -1026,7 +1053,8 @@ country_event = {
 			limit = {
 				check_variable = {
 					which = freeSettlers
-					which = 75settlers
+					# which = 75settlers
+					value = 2000
 				}
 			}
 			add_country_modifier = {
@@ -1065,5 +1093,237 @@ country_event = {
 
 	option = {
 		name = btc_events.16b
+	}
+}
+
+# Land Sighted!
+country_event = {
+	id = btc_events.17
+	title = btc_events.17_t
+	desc = btc_events.17_d
+	picture = EP_ISLAND_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_events.17a
+
+		trigger = {
+			tag = CAS
+		}
+
+		hidden_effect = {
+			POR = {
+				country_event = {
+					id = btc_events.18
+					days = 30
+				}
+			}
+		}
+
+		add_prestige = 10
+		define_explorer = {
+			name = "NAME_CRISTOBAL_COLON"
+			fire = 2
+			shock = 2
+			manuever = 6
+			siege = 0
+			trait = great_explorer_personality
+		}
+		hidden_effect = {
+			discover_province = 1580
+			discover_province = 1583
+			discover_province = 1575
+			discover_province = 1574
+			discover_province = 1504
+			discover_province = 1503	
+			discover_province = 1524
+			discover_province = 1525		
+		}
+		discover_province = 2659		
+		create_colony_mission_reward = {
+			province = 2659
+		}
+	}
+
+	option = {
+		name = btc_events.17b
+
+		trigger = {
+			tag = POR
+		}
+
+		add_prestige = 10
+		define_explorer = {
+			name = "Cristóvão Colombo"
+			fire = 2
+			shock = 2
+			manuever = 6
+			siege = 0
+			trait = great_explorer_personality
+		}
+		hidden_effect = {
+			discover_province = 1580
+			discover_province = 1583
+			discover_province = 1575
+			discover_province = 1574
+			discover_province = 1504
+			discover_province = 1503
+			discover_province = 1524
+			discover_province = 1525			
+		}
+	}
+}
+
+# The Treaty of Tordesillas (POR)
+country_event = {
+	id = btc_events.18
+	title = btc_events.18_t
+	desc = btc_events.18_d
+	picture = DIPLOMAT_INTERROGATION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Contest castilian discovery
+		name = btc_events.18a
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = tordesillas_por_tt
+		hidden_effect = {
+			CAS = {
+				country_event = {
+					id = btc_events.19
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {	# Let them have it
+		name = btc_events.18b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# The Treaty of Tordesillas (CAS)
+country_event = {
+	id = btc_events.19
+	title = btc_events.19_t
+	desc = btc_events.19_d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Negotiate with the Portuguese
+		name = btc_events.19a
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = tordesillas_cas_tt
+		hidden_effect = {
+			CAS = {
+				country_event = {
+					id = btc_events.20
+					days = 30
+				}
+			}
+			POR = {
+				country_event = {
+					id = btc_events.20
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {	# Those lands are ours
+		name = btc_events.19b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# The Treaty of Tordesillas
+country_event = {
+	id = btc_events.20
+	title = btc_events.20_t
+	desc = btc_events.20_d
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {	# Our interests have been assured
+		name = btc_events.20a
+
+		custom_tooltip = tordesillas_tt
+		hidden_effect = {
+			POR = { set_country_flag = tordesillas_por }
+			CAS = { set_country_flag = tordesillas_cas }			
+		}
+	}
+}
+
+# The Treaty of Madrid
+country_event = {
+	id = btc_events.21
+	title = btc_events.21_t
+	desc = btc_events.21_d
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {	# The Treaty of Tordesillas has been revised
+		name = btc_events.21a
+
+		custom_tooltip = madrid_tt
+		hidden_effect = {
+			POR = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por }
+			IBE = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por }
+			CAS = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas }	
+			SPA = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas }			
+		}
+	}
+}
+
+# Claims in Terra Nova
+country_event = {
+	id = btc_events.22
+	title = btc_events.22_t
+	desc = btc_events.22_d
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		has_country_flag = tordesillas_por
+		NOT = { has_country_flag = terra_nova_por }
+		mission_completed = gc_por_discover_african_coast
+		newfoundland_area = {
+			has_discovered = ROOT
+		}
+	}
+
+	option = {	# Amend the Treaty
+		name = btc_events.22a
+
+		custom_tooltip = terra_nova_claim_tt
+		hidden_effect = {
+			POR = { set_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+			IBE = { set_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+			CAS = { set_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }	
+			SPA = { set_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }			
+		}
 	}
 }

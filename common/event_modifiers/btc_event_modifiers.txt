@@ -571,6 +571,7 @@ discovery_fervor = {
 	global_manpower_modifier = -0.1
 	range = 0.1
 	core_creation = 0.5
+	global_colonial_growth = 15
 }
 
 expensive_spices = {
@@ -667,7 +668,7 @@ dev_increased_recently = {
 no_settlers = {
 	global_colonial_growth = -50
 	colonist_placement_chance = -0.1
-	colonists = -1
+	colony_cost_modifier = 0.5
 }
 
 very_low_settlers = {

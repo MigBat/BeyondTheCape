@@ -331,3 +331,4 @@
  desc_dev_decreased_recently:0 "Development in this province has recently been decreased due to high devastation."
  dev_increased_recently:0 "Development Increased"
  desc_dev_increased_recently:0 "Development in this province has recently been increased due to high prosperity."
+ revoked_tordesillas:0 "Revoked Treaty of Tordesillas."

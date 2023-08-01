@@ -58,8 +58,14 @@ ottoman_silk_road_monopoly = {
 			capital_scope = {
 				continent = europe
 			}
-			NOT = {
-				has_country_modifier = east_indian_trade_route
+			any_active_trade_node = {
+				has_merchant = ROOT
+				OR = {
+					province_id = 1361 # Straits of Johor
+					province_id = 1343 # Ganges Delta
+					province_id = 504 # Sind
+					province_id = 1340 # Comorin Cape
+				}
 			}
 		}
 	}
@@ -89,7 +95,6 @@ east_indian_trade_route = {
 	trigger = {
 		has_discovered = 1460 # Cape of Good Hope
 		num_of_ports = 4
-		has_country_modifier = quest_for_the_new_world
 		any_active_trade_node = {
 			has_merchant = ROOT
 			OR = {
