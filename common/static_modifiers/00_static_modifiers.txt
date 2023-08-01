@@ -288,7 +288,7 @@ development = {
 }
 
 development_scaled = {
-	local_development_cost = 0.04
+	local_development_cost = 0.05
 }
 
 capital_city = {
@@ -456,7 +456,7 @@ devastation = {
 	trade_goods_size_modifier = -2
 	supply_limit_modifier = -0.5
 	local_institution_spread = -2.0
-	local_development_cost = 0.2
+	local_development_cost = 0.3
 	local_manpower_modifier = -2.0
 	local_sailors_modifier = -2.0
 	local_hostile_movement_speed = -0.25
