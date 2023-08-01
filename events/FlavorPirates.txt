@@ -1159,7 +1159,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 1
 	}
 
 	option = {
@@ -1207,12 +1207,11 @@ country_event = {
 	trigger = {
 		tag = CRN
 		has_dlc = "Golden Century"
-		num_ships_privateering = 3
 		NOT = { has_reform = pirate_republic_reform }
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 1
 	}
 
 	option = {

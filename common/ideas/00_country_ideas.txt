@@ -1600,7 +1600,7 @@ POR_ideas = {
 		transport_attrition = -0.2
 	}
 	por_feitoria_system = {
-		trade_steering = 0.15
+		trade_steering = 0.1
 		defensiveness = 0.15
 	}
 	por_india_armadas = {
