@@ -256,7 +256,7 @@ colonial_canada = {
 		trigger = {
 			owns = 1010 # Manitoba
 		}
-		name = "PROV1010"
+		name = "Manitoba"
 	}
 	names = {
 		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
@@ -400,37 +400,37 @@ colonial_eastern_america = {
 		trigger = {
 			owns = 968
 		}
-		name = "PROV968" # Massachusets
-	}
-	names = {
-		trigger = {
-			owns = 2010
-		}
-		name = "PROV2010" # Connecticut
+		name = "Massachusets" # Massachusets
 	}
 	names = {
 		trigger = {
 			owns = 965
 		}
-		name = "PROV965" # Manhattan
+		name = "Manhattan" # Manhattan
+	}
+	names = {
+		trigger = {
+			owns = 2010
+		}
+		name = "Connecticut" # Connecticut
 	}
 	names = {
 		trigger = {
 			owns = 957
 		}
-		name = "PROV957" # Delaware
+		name = "Delaware" # Delaware
 	}
 	names = {
 		trigger = {
 			owns = 953
 		}
-		name = "PROV953" # Conoy
+		name = "Conoy" # Conoy
 	}
 	names = {
 		trigger = {
 			owns = 924
 		}
-		name = "PROV924" # Alabama
+		name = "Alabama" # Alabama
 	}
 	names = {
 		name = "COLONIAL_EASTERN_AMERICA_Virginia"
@@ -524,7 +524,7 @@ colonial_louisiana = {
 		trigger = {
 			owns = 948 # Ohio
 		}
-		name = "PROV948"
+		name = "Ohio"
 	}
 	names = {
 		trigger = {
@@ -534,7 +534,7 @@ colonial_louisiana = {
 				owns = 917 # Cahokia
 			}
 		}
-		name = "PROV915"
+		name = "Illinois"
 	}
 	names = {
 		trigger = {
@@ -543,7 +543,7 @@ colonial_louisiana = {
 				owns = 902 # Missouri
 			}
 		}
-		name = "PROV902"
+		name = "Missouri"
 	}
 	names = {
 		trigger = {
@@ -558,7 +558,7 @@ colonial_louisiana = {
 				owns = 944 # Potawatomi
 			}
 		}
-		name = "PROV945"
+		name = "Michigan"
 	}
 	names = {
 		trigger = {
@@ -574,19 +574,19 @@ colonial_louisiana = {
 		trigger = {
 			owns = 905 # Iowa
 		}
-		name = "PROV905"
+		name = "Iowa"
 	}
 	names = {
 		trigger = {
 			owns = 908 # Minnesota
 		}
-		name = "PROV908"
+		name = "Minnesota"
 	}
 	names = {
 		trigger = {
 			owns = 898 # Kansas
 		}
-		name = "PROV898"
+		name = "Kansas"
 	}
 	names = {
 		trigger = {
@@ -604,7 +604,7 @@ colonial_louisiana = {
 				owns = 907 # Dakota
 			}
 		}
-		name = "PROV907"
+		name = "Dakota"
 	}
 	names = {
 		name = "COLONIAL_LOUISIANA_Root_Culture_GetName_Louisiana"
@@ -785,19 +785,19 @@ colonial_mexico = {
 		trigger = {
 			owns = 843 # Belize
 		}
-		name = "PROV843"
+		name = "Belize"
 	}
 	names = {
 		trigger = {
 			owns = 835 # Panama
 		}
-		name = "PROV835"
+		name = "Panama"
 	}
 	names = {
 		trigger = {
 			owns = 840 # Honduras
 		}
-		name = "PROV840"
+		name = "Honduras"
 	}
 	names = {
 		name = "COLONIAL_MEXICO_Root_Culture_GetName_Mexico"
@@ -862,7 +862,7 @@ colonial_colombia = {
 		trigger = {
 			owns = 837 # Nicaragua
 		}
-		name = "PROV837"
+		name = "Nicaragua"
 	}
 	names = {
 		name = "COLONIAL_COLOMBIA_Root_Culture_GetName_Colombia"
@@ -915,19 +915,19 @@ colonial_peru = {
 		trigger = {
 			owns = 813 # Cajamarca
 		}
-		name = "PROV813"
+		name = "Cajamarca"
 	}
 	names = {
 		trigger = {
 			owns = 809 # Lima
 		}
-		name = "PROV809"
+		name = "Lima"
 	}
 	names = {
 		trigger = {
 			owns = 808 # Cuzco
 		}
-		name = "PROV808"
+		name = "Cuzco"
 	}
 	names = {
 		name = "COLONIAL_PERU_Root_Culture_GetName_Peru"
@@ -1011,7 +1011,7 @@ colonial_la_plata = {
 		trigger = {
 			owns = 772 # Uruguay
 		}
-		name = "PROV772"
+		name = "Uruguay"
 	}
 	names = {
 		trigger = { # Amélioration la Pléiade
@@ -1113,13 +1113,13 @@ colonial_brazil = {
 		trigger = {
 			owns = 753 # Rio Grande
 		}
-		name = "PROV753"
+		name = "Rio Grande"
 	}
 	names = {
 		trigger = {
 			owns = 756 # Bahia
 		}
-		name = "PROV756"
+		name = "Bahia"
 	}
 	names = {
 		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
