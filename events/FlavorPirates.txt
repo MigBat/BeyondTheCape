@@ -1151,10 +1151,6 @@ country_event = {
 		}
 		owns_core_province = 4745
 		NOT = { num_of_cities = 2 } #must be an OPM
-		OR = {
-			ai = no
-			is_subject = no
-		}
 		NOT = { has_reform = pirate_republic_reform }
 	}
 
@@ -1235,7 +1231,7 @@ country_event = {
 	option = {
 		name = "pirates.23.b"
 		ai_chance = {
-			factor = 1
+			factor = 0
 		}
 		233 = {
 			spawn_rebels = {
