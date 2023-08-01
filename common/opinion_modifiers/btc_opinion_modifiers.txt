@@ -98,3 +98,8 @@ betrayed_us = {
 	opinion = -100
 	yearly_decay = 2
 }
+
+revoked_tordesillas = {
+	opinion = -200
+	yearly_decay = 2
+}

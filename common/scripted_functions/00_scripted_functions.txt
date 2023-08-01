@@ -180,19 +180,6 @@ can_colonize_province = {
 			}
 		}
 	}
-	# condition = {
-	# 	tooltip = "limit_colonize_cape"
-	# 	potential = {
-	# 		FROM = { NOT = { dip_tech = 9 } }
-	# 	}
-	# 	allow = {
-	# 		NOT = {
-	# 			ROOT = {
-	# 				area = cape_of_good_hope_area
-	# 			}
-	# 		}
-	# 	}
-	# }
 	condition = {
 		tooltip = "limit_colonize_interior"
 		potential = {
@@ -216,8 +203,9 @@ can_colonize_province = {
 		tooltip = "tordesillas_portugal"
 		potential = {
 			FROM = {
-				tag = POR
 				has_country_flag = tordesillas_por
+				NOT = { has_country_flag = terra_nova_por }
+				NOT = { has_country_flag = new_tordesillas_por }
 			}
 		}
 		allow = {
@@ -226,10 +214,13 @@ can_colonize_province = {
 					OR = {
 						AND = {
 							continent = north_america
-							if = {
-								limit = { POR = { has_country_flag = terra_nova_claim } }
-								NOT = {
-									area = newfoundland_area
+							if = { 
+								limit = { FROM = { has_country_flag = terra_nova_claim } } 
+								NOT = { 
+									OR = {
+										area = newfoundland_area
+										area = labrador_area
+									}
 								}
 							}
 						}
@@ -258,13 +249,102 @@ can_colonize_province = {
 			}
 		}
 	}
+	# terra nova portugal
+	condition = {
+		tooltip = "tordesillas_portugal"
+		potential = {
+			FROM = {
+				has_country_flag = terra_nova_por
+				NOT = { has_country_flag = tordesillas_por }
+				NOT = { has_country_flag = new_tordesillas_por }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							continent = north_america
+							NOT = { 
+								OR = {
+									area = newfoundland_area
+									area = labrador_area
+								}
+							}
+						}
+						AND = {
+							continent = south_america
+							NOT = {
+								OR = {
+									area = maranhao_area
+									area = piaui_area
+									area = ceara_area
+									area = sao_francisco_area
+									area = pernambuco_area
+									area = bahia_area
+									area = diamantina_area
+									area = minas_gerais_area
+									area = rio_de_janeiro_area
+									area = grao_para_area
+									area = pontal_area
+									area = goias_area
+									area = sao_paolo_area
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	# new tordesillas portugal
+	condition = {
+		tooltip = "tordesillas_portugal"
+		potential = {
+			FROM = {
+				has_country_flag = new_tordesillas_por
+				NOT = { has_country_flag = terra_nova_por }
+				NOT = { has_country_flag = tordesillas_por }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							continent = north_america
+							NOT = { 
+								OR = {
+									area = newfoundland_area
+									area = labrador_area
+								}
+							}
+						}
+						AND = {
+							continent = south_america
+							NOT = {
+								region = brazil_region
+							}
+						}
+						area = luzon_area
+						area = southern_luzon_area
+						area = visayas_area
+						area = mindanao_area
+						area = west_mindanao_area
+						area = palawan_area
+					}
+				}
+			}
+		}
+	}
 	# tordesillas castile
 	condition = {
 		tooltip = "tordesillas_castile"
 		potential = {
 			FROM = {
-				tag = CAS
 				has_country_flag = tordesillas_cas
+				NOT = { has_country_flag = terra_nova_cas }
+				NOT = { has_country_flag = new_tordesillas_cas }
 			}
 		}
 		allow = {
@@ -286,10 +366,78 @@ can_colonize_province = {
 						area = pontal_area
 						area = goias_area
 						area = sao_paolo_area
-						if = {
-							limit = { POR = { has_country_flag = terra_nova_claim } }
-							area = newfoundland_area
+					}
+				}
+			}
+		}
+	}
+	# terra nova castile
+	condition = {
+		tooltip = "tordesillas_castile"
+		potential = {
+			FROM = {
+				has_country_flag = terra_nova_cas
+				NOT = { has_country_flag = tordesillas_cas }
+				NOT = { has_country_flag = new_tordesillas_cas }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						continent = asia
+						area = maranhao_area
+						area = piaui_area
+						area = ceara_area
+						area = sao_francisco_area
+						area = pernambuco_area
+						area = bahia_area
+						area = diamantina_area
+						area = minas_gerais_area
+						area = rio_de_janeiro_area
+						area = grao_para_area
+						area = pontal_area
+						area = goias_area
+						area = sao_paolo_area
+						area = newfoundland_area
+						area = labrador_area
+					}
+				}
+			}
+		}
+	}
+	# new tordesillas castile
+	condition = {
+		tooltip = "tordesillas_castile"
+		potential = {
+			FROM = {
+				has_country_flag = new_tordesillas_cas
+				NOT = { has_country_flag = terra_nova_cas }
+				NOT = { has_country_flag = tordesillas_cas }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						AND = {
+							continent = asia
+							NOT = {
+								OR = {
+									area = luzon_area
+									area = southern_luzon_area
+									area = visayas_area
+									area = mindanao_area
+									area = west_mindanao_area
+									area = palawan_area
+								}
+							}
 						}
+						region = brazil_region
+						area = newfoundland_area
+						area = labrador_area
 					}
 				}
 			}

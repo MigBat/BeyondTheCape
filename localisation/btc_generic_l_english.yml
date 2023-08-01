@@ -192,7 +192,9 @@
  limit_colonize_cape:0 "You need diplomatic tech 9 to colonize this province."
  limit_colonize_interior:0 "You need expansion ideas or the siberian frontier idea to colonize this province."
  tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
+ new_tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
  tordesillas_castile:0 "The Treaty of Tordesillas prevents you from colonising here."
+ new_tordesillas_castile:0 "The Treaty of Tordesillas prevents you from colonising here."
  is_ally_of_enemy_tt:0 "[From.GetName] is an ally of our enemy."
  does_not_border_tt:0 "We do not border [From.GetName]."
  miss_discover_caribbean:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region."
@@ -275,6 +277,9 @@
  colonial_pool_title:0 "Settler Pool"
  colonial_pool_desc:0 "The settler pool gives bonuses or maluses to your colonisation efforts depending on the number of settlers you have. For more information, click the decision and an event will pop up."
 
+ revoke_tordesillas_title:0 "Revoke Treaty of Tordesillas"
+ revoke_tordesillas_desc:0 "The Treaty of Tordesillas no longer serves our interests. It is time we revoke this treaty so we can freely colonise wherever we please."
+
  maxNumOfSettlers:0 "Maximum Number of Settlers"
  usedSettlers:0 "Used Settlers"
  freeSettlers:0 "Free Settlers"
@@ -296,3 +301,6 @@
 
  strait_engagement_width:0 "Strait"
  strait_tt:0 "This sea is narrow, decreasing naval engagement width by 50%."
+
+ revoke_tordesillas_tt:0 "Taking this decision will revoke the Treaty of Tordesillas."
+ tordesillas_revoked_tt:0 "The Treaty of Tordesillas will no longer be in effect."

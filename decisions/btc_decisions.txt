@@ -232,3 +232,116 @@ country_decisions = {
 		}
 	}
 }
+
+# Revoke Treaty of Tordesillas
+
+country_decisions = {
+	revoke_tordesillas = {
+		potential = {
+			ai = no
+			OR = {
+				has_country_flag = tordesillas_por
+				has_country_flag = terra_nova_por
+				has_country_flag = new_tordesillas_por
+				has_country_flag = tordesillas_cas
+				has_country_flag = terra_nova_cas
+				has_country_flag = new_tordesillas_cas
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = revoke_tordesillas_tt
+			}
+		}
+		effect = {
+			custom_tooltip = tordesillas_revoked_tt
+			hidden_effect = {
+				POR = {
+					clr_country_flag = tordesillas_por
+					clr_country_flag = terra_nova_por
+					clr_country_flag = new_tordesillas_por
+				}
+				IBE = {
+					clr_country_flag = tordesillas_por
+					clr_country_flag = terra_nova_por
+					clr_country_flag = new_tordesillas_por
+				}
+				CAS = {
+					clr_country_flag = tordesillas_cas
+					clr_country_flag = terra_nova_cas
+					clr_country_flag = new_tordesillas_cas
+				}
+				SPA = {
+					clr_country_flag = tordesillas_cas
+					clr_country_flag = terra_nova_cas
+					clr_country_flag = new_tordesillas_cas
+				}
+			}
+			add_stability = -2
+			if = {
+				limit = {
+					ROOT = {
+						is_or_was_tag = {
+							tag = POR
+						}
+					}
+					exists = CAS
+				}
+				CAS = {
+					add_opinion = {
+						who = ROOT
+						modifier = revoked_tordesillas
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_or_was_tag = {
+							tag = POR
+						}
+					}
+					exists = SPA
+				}
+				SPA = {
+					add_opinion = {
+						who = ROOT
+						modifier = revoked_tordesillas
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_or_was_tag = {
+							tag = CAS
+						}
+					}
+					exists = POR
+				}
+				POR = {
+					add_opinion = {
+						who = ROOT
+						modifier = revoked_tordesillas
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_or_was_tag = {
+							tag = CAS
+						}
+					}
+					exists = IBE
+				}
+				IBE = {
+					add_opinion = {
+						who = ROOT
+						modifier = revoked_tordesillas
+					}
+				}
+			}
+		}
+	}
+}

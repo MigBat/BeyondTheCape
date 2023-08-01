@@ -850,7 +850,7 @@ country_event = {
 			}
 			change_variable = {
 				which = numProvincesInStates
-				value = 1000
+				value = 500
 			}
 		}
 		if = {
@@ -869,13 +869,31 @@ country_event = {
 			}
 			change_variable = {
 				which = numProvincesInStates
-				value = 1000
+				value = 500
 			}
 		}
 
 		set_variable = {
 			which = maxNumOfSettlers	# maximum number of settlers of a country
 			which = numProvincesInStates
+		}
+
+		export_to_variable = {
+			which = numColonists
+			value = trigger_value:num_of_colonists
+		}
+		multiply_variable = {
+			which = numColonists
+			value = 500
+		}
+		if = {
+			limit = {
+				is_ai = yes		# ai gets 500 extra settlers per each colonist
+			}
+			change_variable = {
+				which = maxNumOfSettlers
+				which = numColonists
+			}
 		}
 
 		export_to_variable = {
@@ -949,7 +967,8 @@ country_event = {
 				NOT = {
 					check_variable = {
 						which = freeSettlers
-						which = 0settlers
+						# which = 0settlers
+						value = 1
 					}
 				}
 			}
@@ -966,12 +985,14 @@ country_event = {
 			limit = {
 				check_variable = {
 					which = freeSettlers
-					which = 0settlers
+					# which = 0settlers
+					value = 1
 				}
 				NOT = {
 					check_variable = {
 						which = freeSettlers
-						which = 25settlers
+						# which = 25settlers
+						value = 500
 					}
 				}
 			}
@@ -989,12 +1010,14 @@ country_event = {
 				AND = {
 					check_variable = {
 						which = freeSettlers
-						which = 25settlers
+						# which = 25settlers
+						value = 500
 					}
 					NOT = {
 						check_variable = {
 							which = freeSettlers
-							which = 50settlers
+							# which = 50settlers
+							value = 1000
 						}
 					}
 				}
@@ -1013,12 +1036,14 @@ country_event = {
 				AND = {
 					check_variable = {
 						which = freeSettlers
-						which = 50settlers
+						# which = 50settlers
+						value = 1000
 					}
 					NOT = {
 						check_variable = {
 							which = freeSettlers
-							which = 75settlers
+							# which = 75settlers
+							value = 2000
 						}
 					}
 				}
@@ -1036,7 +1061,8 @@ country_event = {
 			limit = {
 				check_variable = {
 					which = freeSettlers
-					which = 75settlers
+					# which = 75settlers
+					value = 2000
 				}
 			}
 			add_country_modifier = {
@@ -1264,13 +1290,15 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# The Treaty of Tordesillas has outlived its usefulness
+	option = {	# The Treaty of Tordesillas has been revised
 		name = btc_events.21a
 
 		custom_tooltip = madrid_tt
 		hidden_effect = {
-			POR = { clr_country_flag = tordesillas_por }
-			CAS = { clr_country_flag = tordesillas_cas }			
+			POR = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por }
+			IBE = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por }
+			CAS = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas }	
+			SPA = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas }			
 		}
 	}
 }
@@ -1287,13 +1315,11 @@ country_event = {
 	major = yes
 
 	trigger = {
-		tag = POR
+		has_country_flag = tordesillas_por
+		NOT = { has_country_flag = terra_nova_por }
 		mission_completed = gc_por_discover_african_coast
 		newfoundland_area = {
-			has_discovered = POR
-		}
-		POR = {
-			has_country_flag = tordesillas_por
+			has_discovered = ROOT
 		}
 	}
 
@@ -1301,6 +1327,11 @@ country_event = {
 		name = btc_events.22a
 
 		custom_tooltip = terra_nova_claim_tt
-		POR = { set_country_flag = terra_nova_claim }
+		hidden_effect = {
+			POR = { set_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+			IBE = { set_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+			CAS = { set_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }	
+			SPA = { set_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }			
+		}
 	}
 }
