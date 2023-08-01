@@ -837,13 +837,6 @@ gc_por_2_b = {
 				}
 				add_permanent_claim = ROOT
 			}	
-			windward_islands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}	
 		}
 	}
 	
@@ -2442,6 +2435,10 @@ gc_por_5_b = {
 
 		trigger = {
 			1851 = { 
+				if = { 
+					limit = { has_dlc = "Leviathan" } 
+					num_of_times_expanded_infrastructure = 1
+				}
 				development = 20 
 				owned_by = ROOT
 			}
@@ -2464,6 +2461,10 @@ gc_por_5_b = {
 			if = {
 				limit = { ai = no }
 				227 = {
+					if = { 
+						limit = { has_dlc = "Leviathan" } 
+						num_of_times_expanded_infrastructure = 2
+					}
 					development = 30
 					owned_by = ROOT
 				}
