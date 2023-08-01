@@ -878,21 +878,13 @@ country_event = {
 			which = numProvincesInStates
 		}
 
-		export_to_variable = {
-			which = numColonists
-			value = trigger_value:num_of_colonists
-		}
-		multiply_variable = {
-			which = numColonists
-			value = 500
-		}
 		if = {
 			limit = {
-				is_ai = yes		# ai gets 500 extra settlers per each colonist
+				ai = yes		# ai gets 500 extra settlers per each colonist
 			}
 			change_variable = {
 				which = maxNumOfSettlers
-				which = numColonists
+				value = 500
 			}
 		}
 

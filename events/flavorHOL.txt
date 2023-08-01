@@ -783,65 +783,6 @@ country_event = {
 	}
 }
 
-# Groot Desseyn, The Grand Design
-country_event = {
-	id = flavor_hol.8
-	title = flavor_hol.8.t
-	desc = flavor_hol.8.d
-	picture = EXPLORERS_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		always = no
-		tag = NED
-		is_year = 1590
-		NOT = { is_year = 1640 }
-		is_free_or_tributary_trigger = yes
-		POR = {
-			NOT = { alliance_with = NED }
-			any_owned_province = {
-				OR = {
-					continent = north_america
-					continent = south_america
-					continent = africa
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 150
-	}
-	
-	option = {
-		name = flavor_hol.8.a #Sounds like a grand plan!
-		every_province = {
-			limit = {
-				OR = {
-					owned_by = POR
-					owner = { is_colonial_nation_of = POR }
-				}
-				OR = {
-					continent = south_america
-					continent = africa
-				}
-			}
-			add_claim = NED
-		}
-		POR = {
-			add_opinion = { who = NED modifier = ned_grand_design }
-			every_ally = {
-				add_opinion = { who = NED modifier = ned_grand_design }
-			}
-		}
-	}
-	option = {
-		name = flavor_hol.8.b #No, the international community would hate us.
-		add_prestige = 5
-	}
-}
-
 # The Fluyte
 country_event = {
 	id = flavor_hol.9
@@ -1486,3 +1427,69 @@ country_event = {
 
 
 ### Dutch Dejima chain
+
+# BEYOND THE CAPE #
+
+# Groot Desseyn, The Grand Design
+country_event = {
+	id = flavor_hol.8
+	title = flavor_hol.8.t
+	desc = flavor_hol.8.d
+	picture = EXPLORERS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		always = no
+		tag = NED
+		has_idea_group = exploration_ideas
+		is_free_or_tributary_trigger = yes
+		POR = {
+			NOT = { alliance_with = NED }
+			any_owned_province = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = africa
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+	}
+	
+	option = {
+		name = flavor_hol.8.a #Sounds like a grand plan!
+		ai_chance = {
+			factor = 1
+		}
+		every_province = {
+			limit = {
+				OR = {
+					owned_by = POR
+					owner = { is_colonial_nation_of = POR }
+				}
+				OR = {
+					continent = south_america
+					continent = africa
+				}
+			}
+			add_claim = NED
+		}
+		POR = {
+			add_opinion = { who = NED modifier = ned_grand_design }
+			every_ally = {
+				add_opinion = { who = NED modifier = ned_grand_design }
+			}
+		}
+	}
+	option = {
+		name = flavor_hol.8.b #No, the international community would hate us.
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = 5
+	}
+}

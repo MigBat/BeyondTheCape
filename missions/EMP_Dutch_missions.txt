@@ -498,6 +498,36 @@ emp_ned_slot2_indies_branch = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					1177 = {
+						is_empty = yes
+					}
+				}
+				create_colony_mission_reward = {
+					province = 1177
+				}
+			}
+			else_if = {
+				limit = {
+					1179 = {
+						is_empty = yes
+					}
+				}
+				create_colony_mission_reward = {
+					province = 1179
+				}
+			}
+			else_if = {
+				limit = {
+					833 = {
+						is_empty = yes
+					}
+				}
+				create_colony_mission_reward = {
+					province = 833
+				}
+			}
 			lanka_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
