@@ -271,7 +271,7 @@ country_event = {
 	}
 }
 
-# Louren√ßo de Almeida #
+# LourenÁo de Almeida #
 
 country_event = {
 	id = btc_events.8
@@ -606,7 +606,7 @@ country_event = {
 	}
 }
 
-# Battle of Alc√°cer Quibir #
+# Battle of Alc·cer Quibir #
 
 country_event = {
 	id = btc_events.12
@@ -888,6 +888,16 @@ country_event = {
 			}
 		}
 
+		if = {
+			limit = {
+				has_idea = siberian_frontier
+			}
+			change_variable = {
+				which = maxNumOfSettlers
+				value = 3000
+			}
+		}
+
 		export_to_variable = {
 			which = numOfColonies	# current number of colonies
 			value = trigger_value:num_of_colonies
@@ -1155,7 +1165,7 @@ country_event = {
 
 		add_prestige = 10
 		define_explorer = {
-			name = "Crist√≥v√£o Colombo"
+			name = "CristÛv„o Colombo"
 			fire = 2
 			shock = 2
 			manuever = 6

@@ -53,15 +53,12 @@ difficulty_very_hard_player = {
 ##########################################################################
 
 difficulty_very_easy_ai = {
-	native_uprising_chance = -10.0
 }
 
 difficulty_easy_ai = {
-	native_uprising_chance = -10.0
 }
 
 difficulty_normal_ai = {
-	native_uprising_chance = -10.0
 }
 
 difficulty_hard_ai = {
@@ -71,7 +68,6 @@ difficulty_hard_ai = {
 	interest = -1
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.15
-	native_uprising_chance = -10.0
 }
 
 difficulty_very_hard_ai = {
@@ -92,7 +88,6 @@ difficulty_very_hard_ai = {
 	build_cost = -0.25
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.3
-	native_uprising_chance = -10.0
 }
 
 
@@ -1689,19 +1684,20 @@ invasion_nation = {
 ########################################
 
 native_policy_coexist = {
-	colony_development_boost = 1
+	native_uprising_chance = -1.0
+	idea_claim_colonies = yes
 }
 
 native_policy_trade = {
-	global_colonial_growth = 25
-	colonist_placement_chance = 0.05
-	expel_minorities_cost = -0.5
+	native_assimilation = 0.5
+	colony_development_boost = 1
 }
 
-native_policy_hostile = {
-	native_assimilation = 0.5
-	native_uprising_chance = -0.5
-	idea_claim_colonies = yes
+native_policy_hostile = {	
+	native_uprising_chance = 0.5
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.1
+	expel_minorities_cost = -0.5
 }
 
 ########################################

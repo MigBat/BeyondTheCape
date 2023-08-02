@@ -87,6 +87,10 @@ country_event = {
 				type = noble_rebels
 			}
 		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 2
+		} 
 		add_ruler_personality = strict_personality
 		remove_ruler_personality = expansionist_personality
 		add_ruler_modifier = {
@@ -104,6 +108,10 @@ country_event = {
 	option = {		# The Duke survives and assists the King
 		name = "flavor_por.EVTOPTB3267"
 		ai_chance = { factor = 25 }
+		change_ruler_stat = {
+			stat = dip
+			amount = 2
+		}
 		add_ruler_modifier = {
 			name = duke_of_coimbra
 			duration = -1
@@ -1007,6 +1015,7 @@ country_event = {
 
 		add_years_of_income = -0.10
 		set_global_flag = columbus_happened
+		set_country_flag = had_columbus
 		custom_tooltip = columbus_voyage
 		hidden_effect = {
 			ROOT = {

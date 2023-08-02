@@ -77,12 +77,12 @@
 
 # Native Policy #
 
- native_policy_coexist:0 "Settler Colonialism Policy"
- native_policy_trade:0 "Slave-based Policy"
- native_policy_hostile:0 "Native Assimilation Policy"
- native_policy_coexist_desc:0 "We will send our own people to the colonies. This will allow them to have more development once they become cities."
- native_policy_trade_desc:0 "We will send slaves to our colonies. This will allow them to grow faster."
- native_policy_hostile_desc:0 "We will foster good relationships with the natives. This will allow them to be integrated in our colonies."
+ native_policy_coexist:0 "Native Cooperation Policy"
+ native_policy_coexist_desc:0 "We will foster good relationships with the natives. This will eliminate chances of uprisings happening, as well as possible claims on native land owned by other colonizers."
+ native_policy_trade:0 "Settler Colonialism Policy"
+ native_policy_trade_desc:0 "We will send our own people to the colonies. This will allow them to have more development once they become cities."
+ native_policy_hostile:0 "Slave-based Policy"
+ native_policy_hostile_desc:0 "We will send slaves to our colonies. This will allow them to grow faster, but chances of native revolts happening are higher."
 
 # Areas #
  norte_area:0 "Norte"
@@ -257,6 +257,8 @@
  combine_colony_with_other_colony_in_same_colonial_region_title:0 "Combine Colonies"
  combine_colony_with_other_colony_in_same_colonial_region_desc:0 "§Y[From.GetName]§! is not the only colonial nation of us in §Y[From.Capital.GetColonialRegionName]§!. \nDo you want §Y[From.GetName]§! to annex our other colonial nations in that colonial region?"
  combine_colony_with_other_colony_in_same_colonial_region_tooltip:0 "Make §Y[From.GetName]§! annex our other colonial nations in §Y[From.Capital.GetColonialRegionName]§!.\n"
+
+ had_columbus_tt:0 "Had the §YChristopher Columbus§! event"
 
 # Technology
 
