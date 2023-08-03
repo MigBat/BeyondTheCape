@@ -108,16 +108,14 @@ country_event = {
 			name = finish_reconquista
 			duration = 1825
 		}
-		hidden_effect = {
-			if = {
-				limit = { 
-					ai = yes
-				}
-				declare_war_with_cb = {
-					casus_belli = cb_conquest
-					who = GRA
-				}
-			}			
+		if = {
+			limit = { 
+				ai = yes
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_annex
+				who = GRA
+			}
 		}
 	}
 
