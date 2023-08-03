@@ -228,10 +228,10 @@ severe_monsoon = {
 }
 
 blockaded = {
-	regiment_recruit_speed = 0.2
-	ship_recruit_speed = 0.2
-	local_monthly_devastation = 0.25
-	province_trade_power_modifier = -1
+	regiment_recruit_speed = 0.5
+	ship_recruit_speed = 0.5
+	local_monthly_devastation = 0.75
+	province_trade_power_modifier = -2
 }
 
 no_adjacent_controlled = {
@@ -1199,9 +1199,9 @@ total_occupation = {
 }
 
 total_blockaded = {
-	war_exhaustion = 0.10					#increases exhaustion.
-	global_trade_power = -0.75
-	trade_steering = -0.75
+	war_exhaustion = 0.25					#increases exhaustion.
+	global_trade_power = -1
+	trade_steering = -1
 }
 
 uncontested_cores = {
