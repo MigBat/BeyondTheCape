@@ -133,6 +133,10 @@ gc_por_1_a = {
 				duration = -1
 			}
 			custom_tooltip = port_english_alliance_tt
+			hidden_effect = {
+				POR = { set_country_flag = por_eng_alliance }
+				ENG = { set_country_flag = por_eng_alliance }
+			}
 		}
 	}
 

@@ -10927,7 +10927,7 @@ cartagena_de_indias = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_hostile_attrition = 1
+			local_hostile_attrition = 2
 			blockade_force_required = 1
 			local_own_coast_naval_combat_bonus = 1
 		}
@@ -10950,7 +10950,7 @@ cartagena_de_indias = {
 			factor = 5000
 		}
 		province_modifiers = {
-			local_hostile_attrition = 2
+			local_hostile_attrition = 4
 			blockade_force_required = 1
 			local_own_coast_naval_combat_bonus = 2
 		}
@@ -13568,7 +13568,7 @@ malta_forts = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
-			local_hostile_attrition = 0.5
+			local_hostile_attrition = 2
 			hostile_disembark_speed = 1
 		}
 		area_modifier = {
@@ -13589,7 +13589,7 @@ malta_forts = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.5
-			local_hostile_attrition = 1
+			local_hostile_attrition = 4
 			hostile_disembark_speed = 2
 		}
 		area_modifier = {
@@ -17335,7 +17335,7 @@ edinburgh_castle = {
 		}
 		area_modifier = {
 			local_defender_dice_roll_bonus = 1 
-			local_hostile_attrition = 1
+			local_hostile_attrition = 3
 		}
 		region_modifier = {
 		}

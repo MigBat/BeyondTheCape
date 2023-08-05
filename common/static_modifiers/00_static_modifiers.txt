@@ -143,7 +143,7 @@ coastal_sea = {
 tropical = {
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.3
-	local_hostile_attrition = 5
+	local_hostile_attrition = 4
 
 	local_development_cost = 0.05
 
@@ -183,7 +183,7 @@ land_province = {
 }
 
 mild_winter = {
-	local_hostile_attrition = 1
+	local_hostile_attrition = 2
 	supply_limit_modifier = -0.1
 
 	picture = "winter_mild"
@@ -198,7 +198,7 @@ normal_winter = {
 }
 
 severe_winter = {
-	local_hostile_attrition = 5
+	local_hostile_attrition = 4
 	supply_limit_modifier = -0.3
 	migration_cost = 0.2
 
@@ -214,7 +214,7 @@ mild_monsoon = {
 }
 
 normal_monsoon = {
-	local_hostile_attrition = 4
+	local_hostile_attrition = 3
 	local_hostile_movement_speed = -0.25
 	local_friendly_movement_speed = -0.25
 
@@ -222,7 +222,7 @@ normal_monsoon = {
 }
 
 severe_monsoon = {
-	local_hostile_attrition = 6
+	local_hostile_attrition = 4
 	local_hostile_movement_speed = -0.50
 	local_friendly_movement_speed = -0.50
 
@@ -232,7 +232,7 @@ severe_monsoon = {
 blockaded = {
 	regiment_recruit_speed = 0.5
 	ship_recruit_speed = 0.5
-	local_monthly_devastation = 0.75
+	local_monthly_devastation = 0.5
 	province_trade_power_modifier = -2
 }
 
@@ -560,7 +560,7 @@ left_trade_company = {
 }
 
 scorched_earth = {
-	local_hostile_attrition = 10
+	local_hostile_attrition = 5
 	local_hostile_movement_speed = -0.50
 	local_monthly_devastation = 0.25
 }

@@ -203,6 +203,7 @@
  por_english_alliance:0 "English Military Alliance"
  desc_por_english_alliance:0 "It is cordially agreed that if, in time to come, one of the kings or his heir shall need the support of the other, or his help, and in order to get such assistance applies to his ally in lawful manner, the ally shall be bound to give aid and succour to the other, so far as he is able (without any deceit, fraud, or pretence) to the extent required by the danger to his ally's realms, lands, domains, and subjects; and he shall be firmly bound by these present alliances to do this." 
  por_english_alliance_tt:0 "\nIf the alliance with @ENG is ended, we will lose this reward."
+ england_portugal_alliance_tt:0 "The English and the Portuguese will always defend eachother."
  pinhal_leiria:0 "Leiria Woods"
  desc_pinhal_leiria:0 "These woods are paramount to our shipbuilding capabilities."
  square_rigged_caravel:0 "Square-Rigged Caravel"

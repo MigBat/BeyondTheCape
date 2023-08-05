@@ -667,6 +667,18 @@ callaction = {
 		}
 		allow = { always = no }
 	}
+	condition = {
+		tooltip = england_portugal_alliance_tt
+		potential = {
+			FROM = {
+				has_country_flag = por_eng_alliance
+			}
+			ROOT = {
+				has_country_flag = por_eng_alliance
+			}
+		}
+		allow = { always = yes }
+	}
 }
 
 sharemap = {
