@@ -261,6 +261,7 @@
  btc_por.126_t:0 "End of the Anglo-Portuguese Alliance"
  btc_por.126_d:0 "Our alliance with the english has run its course, and so do the benefits that came with it."
  btc_por.126a:0 "A pity..."
+ btc_por.126b:0 "Let them reconsider."
  btc_por.127_t:0 "The Portuguese in Goa"
  btc_por.127_d:0 "Foreign ships are spotted in the horizon, vessels larger than any we'd seen before. They set port and its sailors are brought to us by local fishermen they traded with. They claim to be Portuguese explorers who sailed around Africa in search of indian riches. Surely they jest, but what caught our attention was their offer to establish a trading post in Goa to initiate mercantile activities with us. Should we take them up on that offer?"
  btc_por.127a:0 "Allow them to establish a base in Goa."
@@ -464,6 +465,10 @@
  btc_por.171_d:0 "Almeida Castle was included in a set of manuscripts formed into a book which contained drawings of all 56 castles located on the borders of Portugal. It was considered an important defense point of the northern region of the country, and so during the reign of [Root.Monarch.GetTitle] [Root.Monarch.GetName] the strengthening and enlargement of the castle's walls and fortifications were ordered. The works were carried out under the instruction of the architect Mateus Fernandes."
  btc_por.171a:0 "Begin restoration work at once."
  btc_por.171b:0 "Do nothing." 
+ btc_por.172_t:0 "Reconsider the alliance with Portugal"
+ btc_por.172_d:0 "Our recent refusal of the portuguese call to arms has led them to send us a delegation to reconsider our stance in the hopes of prolonging the old alliance."
+ btc_por.172a:0 "We shall defend Portugal."
+ btc_por.172b:0 "Our decision is final." 
 
 # Granada Paria #
 
