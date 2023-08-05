@@ -652,7 +652,7 @@
  defend_korea_title:1 "Conquer Korea"
  defend_korea_desc:1 "Korea has cowered behind our protection for too long. If they wish to enjoy future safety under our wing, they must submit to our rule more directly."
  miss_discover_west_africa:0 "§Y[Root.GetName]§! has discovered any province in the West African Coast Area."
- miss_colonize_west_africa:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the Guinea region."
+#  miss_colonize_west_africa:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the Guinea region."
  miss_discover_kongo:0 "§Y[Root.GetName]§! has discovered any province in the Kongo Region."
  miss_colonize_kongo:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the Kongo region."
  miss_discover_brazil:0 "§Y[Root.GetName]§! has discovered any province in the Colonial Brazil colonial region."

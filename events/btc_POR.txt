@@ -2096,12 +2096,6 @@ country_event = {
 		name = btc_por.126a
 
 		remove_country_modifier = por_english_alliance
-		hidden_effect = {
-			POR = { clr_country_flag = por_eng_alliance }
-			IBE = { clr_country_flag = por_eng_alliance }
-			ENG = { clr_country_flag = por_eng_alliance }
-			GBR = { clr_country_flag = por_eng_alliance }
-		}
 	}
 }
 

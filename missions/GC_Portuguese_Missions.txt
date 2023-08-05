@@ -1336,7 +1336,13 @@ gc_por_3 = {
 		position = 6
 		
 		provinces_to_highlight = {
-			kongo_region = { has_discovered = ROOT }
+			region = guinea_region
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+				NOT = { area = cap_verde_area }
+			}
+			has_discovered = ROOT
 		}
 		
 		trigger = { 
@@ -1344,6 +1350,14 @@ gc_por_3 = {
 				tooltip = miss_discover_kongo
 				kongo_region = {
 					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_west_africa
+				guinea_region = {
+					owned_by = ROOT
+					is_city = yes
+					NOT = { area = cap_verde_area }
 				}
 			}
 		}
