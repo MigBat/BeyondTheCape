@@ -1176,6 +1176,14 @@ country_event = {
 			galley = root
 		}
 
+		# if = {
+		# 	limit = { has_dlc = "Emperor" }
+		# 	custom_tooltip = pirates_of_rugen_tt
+		# 	emperor = {
+		# 		set_imperial_incident = incident_pirates_of_rugen
+		# 	}
+		# }
+
 		ai_chance = {
 			factor = 1
 		}

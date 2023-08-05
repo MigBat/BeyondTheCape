@@ -88,6 +88,8 @@ difficulty_very_hard_ai = {
 	build_cost = -0.25
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.3
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.25
 }
 
 
