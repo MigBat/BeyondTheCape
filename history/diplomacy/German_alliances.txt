@@ -8,6 +8,20 @@ vassal = {
 	end_date = 1526.1.1
 }
 
+union = {
+	first = HAB
+	second = STY
+	start_date = 1444.1.1
+	end_date = 1457.1.1
+}
+
+union = {
+	first = HAB
+	second = TIR
+	start_date = 1444.1.1
+	end_date = 1457.1.1
+}
+
 # Savoy and Geneva
 vassal = {
 	first = SAV

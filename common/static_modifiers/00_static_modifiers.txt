@@ -53,15 +53,12 @@ difficulty_very_hard_player = {
 ##########################################################################
 
 difficulty_very_easy_ai = {
-	native_uprising_chance = -10.0
 }
 
 difficulty_easy_ai = {
-	native_uprising_chance = -10.0
 }
 
 difficulty_normal_ai = {
-	native_uprising_chance = -10.0
 }
 
 difficulty_hard_ai = {
@@ -71,7 +68,6 @@ difficulty_hard_ai = {
 	interest = -1
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.15
-	native_uprising_chance = -10.0
 }
 
 difficulty_very_hard_ai = {
@@ -92,7 +88,8 @@ difficulty_very_hard_ai = {
 	build_cost = -0.25
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.3
-	native_uprising_chance = -10.0
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.25
 }
 
 
@@ -146,7 +143,7 @@ coastal_sea = {
 tropical = {
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.3
-	local_hostile_attrition = 5
+	local_hostile_attrition = 4
 
 	local_development_cost = 0.05
 
@@ -186,7 +183,7 @@ land_province = {
 }
 
 mild_winter = {
-	local_hostile_attrition = 1
+	local_hostile_attrition = 2
 	supply_limit_modifier = -0.1
 
 	picture = "winter_mild"
@@ -201,7 +198,7 @@ normal_winter = {
 }
 
 severe_winter = {
-	local_hostile_attrition = 5
+	local_hostile_attrition = 4
 	supply_limit_modifier = -0.3
 	migration_cost = 0.2
 
@@ -217,7 +214,7 @@ mild_monsoon = {
 }
 
 normal_monsoon = {
-	local_hostile_attrition = 4
+	local_hostile_attrition = 3
 	local_hostile_movement_speed = -0.25
 	local_friendly_movement_speed = -0.25
 
@@ -225,7 +222,7 @@ normal_monsoon = {
 }
 
 severe_monsoon = {
-	local_hostile_attrition = 6
+	local_hostile_attrition = 4
 	local_hostile_movement_speed = -0.50
 	local_friendly_movement_speed = -0.50
 
@@ -233,10 +230,10 @@ severe_monsoon = {
 }
 
 blockaded = {
-	regiment_recruit_speed = 0.2
-	ship_recruit_speed = 0.2
-	local_monthly_devastation = 0.25
-	province_trade_power_modifier = -1
+	regiment_recruit_speed = 0.5
+	ship_recruit_speed = 0.5
+	local_monthly_devastation = 0.5
+	province_trade_power_modifier = -2
 }
 
 no_adjacent_controlled = {
@@ -563,7 +560,7 @@ left_trade_company = {
 }
 
 scorched_earth = {
-	local_hostile_attrition = 10
+	local_hostile_attrition = 5
 	local_hostile_movement_speed = -0.50
 	local_monthly_devastation = 0.25
 }
@@ -1204,9 +1201,9 @@ total_occupation = {
 }
 
 total_blockaded = {
-	war_exhaustion = 0.10					#increases exhaustion.
-	global_trade_power = -0.75
-	trade_steering = -0.75
+	war_exhaustion = 0.25					#increases exhaustion.
+	global_trade_power = -1
+	trade_steering = -1
 }
 
 uncontested_cores = {
@@ -1689,19 +1686,20 @@ invasion_nation = {
 ########################################
 
 native_policy_coexist = {
-	colony_development_boost = 1
+	native_uprising_chance = -1.0
+	idea_claim_colonies = yes
 }
 
 native_policy_trade = {
-	global_colonial_growth = 25
-	colonist_placement_chance = 0.05
-	expel_minorities_cost = -0.5
+	native_assimilation = 0.5
+	colony_development_boost = 1
 }
 
-native_policy_hostile = {
-	native_assimilation = 0.5
-	native_uprising_chance = -0.5
-	idea_claim_colonies = yes
+native_policy_hostile = {	
+	native_uprising_chance = 0.5
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.1
+	expel_minorities_cost = -0.5
 }
 
 ########################################

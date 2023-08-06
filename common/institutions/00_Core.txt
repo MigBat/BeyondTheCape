@@ -1036,7 +1036,13 @@ new_world_i = {
 		}
 		is_in_capital_area = yes
 		owner = { 
-			has_any_exploration_idea = yes
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = had_columbus_tt
+					has_country_flag = had_columbus
+				}
+				has_any_exploration_idea = yes
+			}
 			#at least three provinces colonised or colonising in caribbean, or have a subject colony
 			OR = {
 				num_of_owned_provinces_with = {

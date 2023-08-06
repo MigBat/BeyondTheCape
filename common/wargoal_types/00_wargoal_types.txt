@@ -3025,7 +3025,7 @@ naval_war = {
 	attacker = {
 		badboy_factor = 1
 		prestige_factor = 1
-		peace_cost_factor = 1
+		peace_cost_factor = 0.75
 		
 		allowed_provinces = {
 			has_port = yes

@@ -271,7 +271,7 @@ country_event = {
 	}
 }
 
-# Louren√ßo de Almeida #
+# LourenÁo de Almeida #
 
 country_event = {
 	id = btc_events.8
@@ -606,7 +606,7 @@ country_event = {
 	}
 }
 
-# Battle of Alc√°cer Quibir #
+# Battle of Alc·cer Quibir #
 
 country_event = {
 	id = btc_events.12
@@ -888,6 +888,16 @@ country_event = {
 			}
 		}
 
+		if = {
+			limit = {
+				has_idea = siberian_frontier
+			}
+			change_variable = {
+				which = maxNumOfSettlers
+				value = 3000
+			}
+		}
+
 		export_to_variable = {
 			which = numOfColonies	# current number of colonies
 			value = trigger_value:num_of_colonies
@@ -1155,7 +1165,7 @@ country_event = {
 
 		add_prestige = 10
 		define_explorer = {
-			name = "Crist√≥v√£o Colombo"
+			name = "CristÛv„o Colombo"
 			fire = 2
 			shock = 2
 			manuever = 6
@@ -1327,3 +1337,293 @@ country_event = {
 		}
 	}
 }
+
+# # Pirates of Rugen Incident
+# country_event = {
+# 	id = btc_events.23
+# 	title = btc_events.23_t
+# 	desc = btc_events.23_d
+# 	picture = DIPLOMACY_SIGNING_eventPicture
+
+# 	major = yes
+# 	is_triggered_only = yes
+	
+# 	option = {	# Allow Rugen to remain in the HRE as pirates
+# 		name = btc_events.23a
+# 		custom_tooltip = btc_events.23a.tt
+# 		RUG = {
+# 			add_opinion = {
+# 				who = Emperor
+# 				modifier = rug_allowed_us_to_stay
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			RUG = {
+# 				country_event = {
+# 					id = btc_events.24
+# 				}
+# 				every_neighbor_country = {
+# 					limit = {
+# 						is_part_of_hre = yes
+# 					}
+# 					add_opinion = {
+# 						who = Emperor
+# 						modifier = rug_allowed_rugen_to_stay_in_the_empire
+# 					}
+# 				}
+# 			}
+# 		}
+# 		ai_chance = {
+# 			factor = 1
+# 			modifier = {
+# 				factor = 2
+# 				has_opinion = {
+# 					who = RUG
+# 					value = 100
+# 				}
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				emperor = { is_rival = RUG }
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				RUG = { is_rival = emperor }
+# 			}
+# 			modifier = {
+# 				factor = 2
+# 				NOT = { emperor = { is_rival = RUG } }
+# 			}
+# 			modifier = {
+# 				factor = 2
+# 				NOT = { RUG = { is_rival = emperor } }
+# 			}
+# 			modifier = {
+# 				factor = 3
+# 				RUG = { diplomatic_reputation = 1 }
+# 			}
+# 			modifier = {
+# 				factor = 3
+# 				RUG = { diplomatic_reputation = 2 }
+# 			}
+# 			modifier = {
+# 				factor = 3
+# 				RUG = { diplomatic_reputation = 3 }
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					is_enemy = RUG
+# 					is_rival = RUG
+# 				}
+# 			}
+# 			modifier = {
+# 				factor = 0.1
+# 				is_neighbor_of = RUG
+# 			}
+# 		}
+# 	}
+	
+# 	option = {	# Allow them to stay, but they must renounce their piratical ways
+# 		name = btc_events.23b
+# 		custom_tooltip = btc_events.23b.tt
+# 		hidden_effect = {
+# 			RUG = {
+# 				country_event = {
+# 					id = btc_events.25
+# 				}
+# 			}
+# 		}
+# 		ai_chance = {
+# 			factor = 10
+# 			modifier = {
+# 				factor = 0.5
+# 				emperor = { is_rival = RUG }
+# 			}
+# 			modifier = {
+# 				factor = 0.5
+# 				RUG = { is_rival = emperor }
+# 			}
+# 			modifier = {
+# 				factor = 2
+# 				NOT = { emperor = { is_rival = RUG } }
+# 			}
+# 			modifier = {
+# 				factor = 2
+# 				NOT = { RUG = { is_rival = emperor } }
+# 			}
+# 			modifier = {
+# 				factor = 10
+# 				is_neighbor_of = RUG
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					is_enemy = RUG
+# 					is_rival = RUG
+# 				}
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					ai_attitude = { who = RUG attitude = attitude_hostile }
+# 					ai_attitude = { who = RUG attitude = attitude_domineering }
+# 					ai_attitude = { who = RUG attitude = attitude_outraged }
+# 					ai_attitude = { who = RUG attitude = attitude_rivalry }
+# 				}
+# 			}
+# 		}
+# 	}
+	
+# 	option = {	# Pirates have no business being in the HRE
+# 		name = btc_events.23c
+# 		custom_tooltip = btc_events.23c.tt
+# 		hidden_effect = {
+# 			RUG = {
+# 				country_event = {
+# 					id = btc_events.26
+# 				}
+# 			}
+# 		}
+# 		emperor = {
+# 			reverse_add_opinion = {
+# 				who = RUG
+# 				modifier = rug_expelled_us_from_hre
+# 			}
+# 			add_opinion = {
+# 				who = RUG
+# 				modifier = rug_expelled_rugen_from_hre
+# 			}
+# 		}
+# 		ai_chance = {
+# 			factor = 10
+# 			modifier = {
+# 				factor = 1.5
+# 				NOT = {
+# 					has_opinion = {
+# 						who = emperor
+# 						value = 0
+# 					}
+# 				}
+# 			}
+# 			modifier = {
+# 				factor = 2
+# 				is_rival = RUG
+# 			}
+# 			modifier = {
+# 				factor = 2
+# 				RUG = { is_rival = emperor }
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				alliance_with = RUG
+# 			}
+# 			modifier = {
+# 				factor = 0
+# 				OR = {
+# 					ai_attitude = { who = RUG attitude = attitude_allied }
+# 					ai_attitude = { who = RUG attitude = attitude_defensive }
+# 					ai_attitude = { who = RUG attitude = attitude_friendly }
+# 					ai_attitude = { who = RUG attitude = attitude_neutral }
+# 					ai_attitude = { who = RUG attitude = attitude_protective }
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+# # Rugen is allowed to be a pirate nation within the HRE
+# country_event = {
+# 	id = btc_events.24
+# 	title = btc_events.24_t
+# 	desc = btc_events.24_d
+# 	picture = DIPLOMACY_SIGNING_eventPicture
+# 	is_triggered_only = yes
+	
+# 	option = {	# Nice
+# 		name = btc_events.24a
+# 		custom_tooltip = btc_events.24a.tt
+# 		set_in_empire = yes
+# 		set_country_flag = rug_stays_in_hre
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 	}
+# }
+
+# # Rugen is allowed to stay in the HRE if they renounce their piratical ways
+# country_event = {
+# 	id = btc_events.25
+# 	title = btc_events.25_t
+# 	desc = btc_events.25_d
+# 	picture = DIPLOMAT_INTERROGATION_eventPicture
+# 	is_triggered_only = yes
+	
+# 	option = {	# Okay.
+# 		name = flavor_teu.30.a
+# 		custom_tooltip = flavor_teu.30.a.tt
+# 		set_in_empire = yes
+# 		set_country_flag = rug_stays_in_hre
+# 		else = {
+# 			custom_tooltip = flavor_teu.30.a.bt
+# 			if = {
+# 				limit = { is_part_of_hre = yes }
+# 				set_in_empire = no
+# 			}
+# 		}
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 	}
+	
+# 	option = {	# This is outrageous! This is unfair!
+# 		name = btc_events.25b
+# 		custom_tooltip = btc_events.25b.tt
+# 		if = {
+# 			limit = { is_part_of_hre = yes }
+# 			set_in_empire = no
+# 		}
+# 		add_opinion = {
+# 			who = FROM
+# 			modifier = teu_unfair_conditions
+# 		}
+# 		reverse_add_opinion = {
+# 			who = FROM
+# 			modifier = teu_rejected_our_offer
+# 		}
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 	}
+# }
+
+# # Rugen is expelled from HRE
+# country_event = {
+# 	id = btc_events.26
+# 	title = btc_events.26_t
+# 	desc = btc_events.26_d
+# 	picture = ACCUSATION_eventPicture
+# 	is_triggered_only = yes
+	
+# 	option = {	# Okay.
+# 		name = btc_events.26a
+# 		custom_tooltip = btc_events.26a.tt
+# 		tooltip = {
+# 			reverse_add_opinion = {
+# 				who = FROM
+# 				modifier = teu_rejected_us_from_joining
+# 			}
+# 			add_opinion = {
+# 				who = FROM
+# 				modifier = teu_does_not_want_the_order_in_the_hre
+# 			}
+# 		}
+# 		if = {
+# 			limit = { is_part_of_hre = yes }
+# 			set_in_empire = no
+# 		}
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 	}
+# }

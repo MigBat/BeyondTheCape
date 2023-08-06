@@ -456,7 +456,7 @@ avis_order = {
     }
     modifier = {
 		local_defensiveness = 0.15
-		local_hostile_attrition = 1
+		local_hostile_attrition = 2
     }
     ai_priority = {
         factor = 2

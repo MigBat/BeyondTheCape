@@ -682,11 +682,12 @@ low_settlers = {
 
 some_settlers = {
 	global_colonial_growth = 10
+	colonist_placement_chance = 0.05
 }
 
 many_settlers = {
 	global_colonial_growth = 25
-	colonist_placement_chance = 0.05
+	colonist_placement_chance = 0.1
 }
 
 slaves_for_colonists = {

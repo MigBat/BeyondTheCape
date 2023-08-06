@@ -155,6 +155,7 @@ austrian_archduchy_reform = {
 	}
 	nation_designer_cost = 0
 	modifiers = {
+		diplomatic_upkeep = 2
 		liberty_desire_from_subject_development = -0.33
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05

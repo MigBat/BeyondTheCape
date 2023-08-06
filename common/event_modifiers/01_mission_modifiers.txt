@@ -418,7 +418,7 @@ teu_crusader_the_great_missionaries = {
 teu_crusader_a_fortified_order = {
 	defensiveness = 0.25
 	fort_maintenance_modifier = -0.25
-	hostile_attrition = 1
+	hostile_attrition = 3
 }
 
 teu_crusader_crushed_the_reformation = {	#Permanent
@@ -3654,7 +3654,7 @@ rmn_consolidating_transylvania = {
 
 rmn_bulwark = {
 	defensiveness = 0.25
-	hostile_attrition = 1
+	hostile_attrition = 3
 }
 
 dregatori_modifier = {
@@ -7941,7 +7941,7 @@ fin_abundant_food_modifier = {
 fin_viipurin_linna_modifier = {
 	local_defender_dice_roll_bonus = 2 
 	max_attrition = 3
-	local_hostile_attrition = 3
+	local_hostile_attrition = 5
 }
 fin_commercial_tar_modifier = {
 	trade_goods_size = 2
@@ -7949,8 +7949,7 @@ fin_commercial_tar_modifier = {
 }
 fin_white_death_descends_upon_europe = {
 	defensiveness = 0.2 
-	hostile_attrition = 1
-	max_hostile_attrition = 1
+	hostile_attrition = 3
 	attack_bonus_in_capital_terrain = 1 
 }
 
@@ -8566,7 +8565,7 @@ mng_increased_eunuch_influence_modifier = {
 	yearly_corruption = 0.1 
 }
 mng_great_wall_china_expanded_modifier = {
-	local_hostile_attrition = 2
+	local_hostile_attrition = 3
 	local_defensiveness = 0.33
 }
 mng_imperial_explorers_corps_of_the_ming_dynasty_modifier = {

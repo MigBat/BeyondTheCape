@@ -64,7 +64,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2587;2521;sea;1661;1530;1620;1515;1618;Odawa-Okouara
 2587;1001;sea;1661;1511;1656;1510;1660;Odawa-Soto
 2576;2578;sea;1490;-1;-1;-1;-1;Mingan-Anticosti
-249;4121;sea;1284;-1;-1;-1;-1;Ayrshire-Ulster
+
 536;2100;sea;1340;4044;796;4050;793;Madurai-Vanni
 2803;502;sea;1522;-1;-1;-1;-1;Orinoco Delta-Trinidad
 500;499;sea;1522;-1;-1;-1;-1;St Vincent-St Lucia
@@ -110,4 +110,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1087;4869;sea;1414;-1;-1;-1;-1;Wurundjeri-Peerapper
 631;627;sea;1354;-1;-1;-1;-1;Bali-Blambangan
 227;4942;sea;1292;-1;-1;-1;-1;Lisboa-Set�bal
+130;4757;sea;1308;-1;-1;-1;-1;Istria-Zara
 -1;-1;;-1;-1;-1;-1;-1;-1

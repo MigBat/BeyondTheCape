@@ -1687,8 +1687,7 @@ hangeul_alphabet_revoked = {
 the_righteous_army = {
 	global_tax_modifier = -0.1
 	land_morale = 0.1
-	hostile_attrition = 3
-	max_hostile_attrition = 3
+	hostile_attrition = 5
 }
 
 the_righteous_army_cd = {}
@@ -4283,7 +4282,7 @@ regimental_pride = {
 }
 
 prepared_defence = {
-	hostile_attrition = 0.5
+	hostile_attrition = 1
 }
 
 to_the_last_man = {
@@ -8321,7 +8320,7 @@ defended_denmark = {
 #KOR
 
 korean_frontier = {
-	local_hostile_attrition = 3
+	local_hostile_attrition = 5
 }
 
 #Pap

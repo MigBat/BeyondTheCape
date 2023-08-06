@@ -720,10 +720,23 @@ emp_ned_slot3_branch = {
 			province_id = 45
 		}
 		trigger = {
-			45 = {
-				trade_share = {
-					country = ROOT
-					share = 20
+			if = {
+				limit = {
+					has_idea_group = exploration_ideas
+				}
+				45 = {
+					trade_share = {
+						country = ROOT
+						share = 10
+					}
+				}
+			}
+			else = {
+				45 = {
+					trade_share = {
+						country = ROOT
+						share = 20
+					}
 				}
 			}
 		}
@@ -745,10 +758,23 @@ emp_ned_slot3_branch = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			227 = {
-				trade_share = {
-					country = ROOT
-					share = 20
+			if = {
+				limit = {
+					has_idea_group = exploration_ideas
+				}
+				227 = {
+					trade_share = {
+						country = ROOT
+						share = 10
+					}
+				}
+			}
+			else = {
+				227 = {
+					trade_share = {
+						country = ROOT
+						share = 20
+					}
 				}
 			}
 		}

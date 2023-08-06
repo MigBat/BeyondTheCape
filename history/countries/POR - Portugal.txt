@@ -12,9 +12,9 @@ national_focus = DIP
 	monarch = {
 		name = "João I"
 		dynasty = "de Avis"
-		adm = 2
-		dip = 2
-		mil = 2
+		adm = 5
+		dip = 4
+		mil = 3
 	}
 }
 

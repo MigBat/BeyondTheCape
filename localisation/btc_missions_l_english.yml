@@ -137,3 +137,4 @@
  gc_por_colonise_west_africa_title:0 "Go Further South"
  gc_por_triangle_trade_title:0 "Portuguese Slave Trade"
  triangle_trade_key:0 "Portuguese Slave Trade"
+ miss_colonize_west_africa:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the Guinea region that is not in the Cap Verde area."

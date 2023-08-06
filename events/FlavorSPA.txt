@@ -3054,6 +3054,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		add_years_of_income = -0.25
 		set_global_flag = columbus_happened
+		set_country_flag = had_columbus
 		custom_tooltip = columbus_voyage
 		hidden_effect = {
 			ROOT = {
