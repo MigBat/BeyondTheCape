@@ -1758,6 +1758,27 @@ naval_ideas = {
 			factor = 10
 			has_government_attribute = is_pirate_republic_reform
 		}
+		modifier = {
+			factor = 1000
+			OR = {
+				tag = GBR
+				tag = ENG
+				tag = TUN
+				tag = HOL
+				tag = NED
+				tag = CAS
+				tag = SPA
+				tag = ARA
+				tag = DAN
+				tag = NOR
+				tag = VEN
+				tag = KOR
+				tag = MLC
+				tag = MNG
+				tag = BNG
+				tag = MAJ
+			}
+		}
 	}
 }
 
