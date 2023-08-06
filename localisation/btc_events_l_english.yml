@@ -1,7 +1,8 @@
 ﻿l_english:
 
  henry_the_navigator_tt:0 "This modifer will last until the death of the navigator advisor."
- port_english_alliance_tt:0 "If the alliance is broken, we will lose this modifier."
+ merc_english_longbowmen:0 "§REnglish Longbowmen§!"
+ port_english_alliance_tt:0 "The §YEnglish Longbowmen§! mercenary company becomes available to hire.\n§YIf the alliance is broken, we will lose this modifier and mercenary company.§!"
  mamluk_war_tooltip:0 "§YBecome the dominant trade power in the Gulf of Aden while Francisco de Almeida is alive to unlock unique events.§!"
 
  btc_events.1_t:0 "Quest for the New World"

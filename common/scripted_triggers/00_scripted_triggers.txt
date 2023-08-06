@@ -2237,6 +2237,7 @@ is_not_free_merc_company = {
 		NOT = { mercenary_company = merc_scouting_almogavars }
 		NOT = { mercenary_company = merc_skirmishing_almogavars }
 		NOT = { mercenary_company = merc_veteran_almogavars }
+		NOT = { mercenary_company = merc_english_longbowmen }
 	}
 }
 
