@@ -998,8 +998,10 @@ country_event = {
 	
 	option = {		# Reject his proposal
 		name = "flavor_por.EVTOPTA1"
+		trigger = {
+			NOT = { has_discovered = 1460 }
+		}
 		ai_chance = { factor = 1 }
-		add_prestige = 5
 
 		set_country_flag = turned_down_columbus
 	}
@@ -1010,7 +1012,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 
 		trigger = {
-			NOT = { has_discovered = 1177 }
+			NOT = { has_discovered = 1460 }
 		}
 
 		add_years_of_income = -0.10
@@ -1025,6 +1027,17 @@ country_event = {
 				}
 			}
 		}
+	}
+
+	option = {		# We have already reached the indian ocean
+		name = "flavor_por.EVTOPTC1"
+		trigger = {
+			has_discovered = 1460
+		}
+		ai_chance = { factor = 1 }
+		add_prestige = 5
+
+		set_country_flag = turned_down_columbus
 	}
 }
 
