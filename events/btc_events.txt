@@ -1273,6 +1273,19 @@ country_event = {
 	option = {	# Our interests have been assured
 		name = btc_events.20a
 
+		POR = {
+			add_country_modifier = {
+				name = tordesillas_claims
+				duration = -1
+			}
+		}
+		CAS = {
+			add_country_modifier = {
+				name = tordesillas_claims
+				duration = -1
+			}
+		}
+
 		custom_tooltip = tordesillas_tt
 		hidden_effect = {
 			POR = { set_country_flag = tordesillas_por }

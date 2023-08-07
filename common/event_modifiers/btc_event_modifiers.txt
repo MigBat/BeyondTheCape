@@ -712,3 +712,7 @@ tripitaka_koreana = {
 	monthly_splendor = 1
 	technology_cost = -0.1
 }
+
+tordesillas_claims = {
+	global_colonial_growth = 15
+}

@@ -83,6 +83,8 @@
  tordesillas_tt:0 "Castile is now unable to colonise any unclaimed land in §YAfrica§!, §YAsia§! and some of §YBrazil§! region, and Portugal is unable to colonise in the §YAmericas§!, except for some parts of §YBrazil§! region."
  madrid_tt:0 "Portugal will be able to colonise the entirety of the §YBrazil§! region, and Spain will be able to colonise the §YPhilippines§!."
  terra_nova_claim_tt:0 "Portugal will be able to colonise the §YNewfoundland§! and §YLabrador§! areas."
+ tordesillas_claims:0 "Treaty of Tordesillas"
+ desc_tordesillas_claims:0 "Half of the world is ours for the taking, and our people are eager to claim it."
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"

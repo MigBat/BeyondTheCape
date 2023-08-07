@@ -702,6 +702,9 @@ country_event = {
 	
 	option = {
 		name = "flavor_bur.EVTOPTA20"
+		ai_chance = {
+			factor = 1
+		}
 		create_alliance = NED
 		join_all_offensive_wars_of = NED
 		set_ai_attitude = {
@@ -717,6 +720,9 @@ country_event = {
 	}
 	option = {
 		name = "flavor_bur.EVTOPTB20"
+		ai_chance = {
+			factor = 0
+		}
 		add_prestige = -10
 	}
 }
