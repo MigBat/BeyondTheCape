@@ -1360,6 +1360,7 @@ manufactories = {
 	can_start = {
 		# is_year = 1650
 		is_institution_enabled = printing_press
+		owner = { adm_tech = 11 }
 		printing_press = 100
 		is_in_capital_area = yes
 		is_island = no
