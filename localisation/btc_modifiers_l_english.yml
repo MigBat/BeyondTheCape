@@ -327,6 +327,8 @@
  desc_city_of_caesars_location:0 "The City of the Caesars is located somewhere in this province"
  quivira_location:0 "Quivira Location"
  desc_quivira_location:0 "Quivira is located somewhere in this province"
+ discovered_caribbean:0 "New World Discovered"
+ desc_discovered_caribbean:0 "Our people are ecstactic at the discovery of a new continent!"
 
 # Other Events #
  paria_paid:0 "Paria Paid"

@@ -214,6 +214,14 @@ country_event = {
 		}
 	}
 
+	option = {	# settler pool
+		name = btc_startscreen.4c
+
+		country_event = {
+			id = btc_startscreen.42
+		}
+	}
+
 	option = {	# go back
 		name = btc_startscreen.4b
 
@@ -234,6 +242,24 @@ country_event = {
 
 	option = {	# go back
 		name = btc_startscreen.41a
+
+		country_event = {
+			id = btc_startscreen.4
+		}
+	}
+}
+
+# The Seven Cities of Gold #
+country_event = {
+	id = btc_startscreen.42
+	title = btc_startscreen.42_t
+	desc = btc_startscreen.42_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.42a
 
 		country_event = {
 			id = btc_startscreen.4

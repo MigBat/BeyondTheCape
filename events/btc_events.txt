@@ -1154,6 +1154,10 @@ country_event = {
 		create_colony_mission_reward = {
 			province = 2659
 		}
+		add_country_modifier = {
+			name = discovered_caribbean
+			duration = 5475
+		}
 	}
 
 	option = {
@@ -1181,6 +1185,10 @@ country_event = {
 			discover_province = 1503
 			discover_province = 1524
 			discover_province = 1525			
+		}
+		add_country_modifier = {
+			name = discovered_caribbean
+			duration = 5475
 		}
 	}
 }

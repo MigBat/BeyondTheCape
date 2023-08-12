@@ -748,3 +748,7 @@ city_of_caesars_location = {
 quivira_location = {
 	picture = "cityofgold"
 }
+
+discovered_caribbean = {
+	global_colonial_growth = 25
+}
