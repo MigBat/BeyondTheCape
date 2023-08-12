@@ -1040,6 +1040,7 @@ province_event = {
 			set_country_flag = has_eldorado
 		}
 		4617 = {
+			discover_country = FROM
 			custom_tooltip = el_dorado_tt
 			hidden_effect = {
 				add_great_project = {
@@ -1048,7 +1049,7 @@ province_event = {
 				}
 				add_great_project_tier = {
 					type = el_dorado
-					tier = 3 
+					tier = 1
 				}
 			}
 			add_permanent_province_modifier = {
@@ -1261,6 +1262,7 @@ province_event = {
 			set_country_flag = has_fountainofyouth
 		}
 		482 = {
+			discover_country = FROM
 			custom_tooltip = fountain_of_youth_tt
 			hidden_effect = {
 				add_great_project = {
@@ -1269,7 +1271,7 @@ province_event = {
 				}
 				add_great_project_tier = {
 					type = fountain_of_youth
-					tier = 3 
+					tier = 1
 				}				
 			}
 			add_permanent_province_modifier = {
@@ -1480,6 +1482,7 @@ province_event = {
 			set_country_flag = has_cibola
 		}
 		881 = {
+			discover_country = FROM
 			custom_tooltip = cibola_tt
 			hidden_effect = {
 				add_great_project = {
@@ -1488,7 +1491,7 @@ province_event = {
 				}
 				add_great_project_tier = {
 					type = cibola
-					tier = 3 
+					tier = 1
 				}				
 			}
 			add_permanent_province_modifier = {
@@ -1699,6 +1702,7 @@ province_event = {
 			set_country_flag = has_cityofcaesars
 		}
 		2871 = {
+			discover_country = FROM
 			custom_tooltip = city_of_caesars_tt
 			hidden_effect = {
 				add_great_project = {
@@ -1707,7 +1711,7 @@ province_event = {
 				}
 				add_great_project_tier = {
 					type = city_of_caesars
-					tier = 3 
+					tier = 1
 				}				
 			}
 			add_permanent_province_modifier = {
@@ -1919,6 +1923,7 @@ province_event = {
 			set_country_flag = has_sierradelaplata
 		}
 		2944 = {
+			discover_country = FROM
 			custom_tooltip = sierra_de_la_plata_tt
 			hidden_effect = {
 				add_great_project = {
@@ -1927,7 +1932,7 @@ province_event = {
 				}
 				add_great_project_tier = {
 					type = sierra_de_la_plata
-					tier = 3 
+					tier = 1
 				}				
 			}
 			add_permanent_province_modifier = {
@@ -2138,6 +2143,7 @@ province_event = {
 			set_country_flag = has_norumbega
 		}
 		2565 = {
+			discover_country = FROM
 			custom_tooltip = norumbega_tt
 			hidden_effect = {
 				add_great_project = {
@@ -2146,7 +2152,7 @@ province_event = {
 				}
 				add_great_project_tier = {
 					type = norumbega
-					tier = 3 
+					tier = 1
 				}				
 			}
 			add_permanent_province_modifier = {
@@ -2357,6 +2363,7 @@ province_event = {
 			set_country_flag = has_saguenay
 		}
 		2581 = {
+			discover_country = FROM
 			custom_tooltip = saguenay_tt
 			hidden_effect = {
 				add_great_project = {
@@ -2365,7 +2372,7 @@ province_event = {
 				}
 				add_great_project_tier = {
 					type = saguenay
-					tier = 3 
+					tier = 1
 				}				
 			}
 			add_permanent_province_modifier = {
@@ -2578,6 +2585,7 @@ province_event = {
 			set_country_flag = has_quivira
 		}
 		898 = {
+			discover_country = FROM
 			custom_tooltip = quivira_tt
 			hidden_effect = {
 				add_great_project = {
@@ -2586,7 +2594,7 @@ province_event = {
 				}
 				add_great_project_tier = {
 					type = quivira
-					tier = 3 
+					tier = 1
 				}				
 			}
 			add_permanent_province_modifier = {
