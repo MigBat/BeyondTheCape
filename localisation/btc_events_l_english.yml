@@ -85,6 +85,10 @@
  terra_nova_claim_tt:0 "Portugal will be able to colonise the §YNewfoundland§! and §YLabrador§! areas."
  tordesillas_claims:0 "Treaty of Tordesillas"
  desc_tordesillas_claims:0 "Half of the world is ours for the taking, and our people are eager to claim it."
+ btc_events.27_t:0 "Consolidation of Russia"
+ btc_events.27_d:0 "Our destiny is to unite the entirety of Russia under one rule. The pesky merchants of Novgorod have been more than a thorn on our side, but they are weak now. We should take this chance to strike, and convince their people that our rule is fair and necessary. We shall take their land in one fell swoop!"
+ btc_events.27a:0 "Time to end this charade"
+ btc_events.27b:0 "The time is not right"
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"

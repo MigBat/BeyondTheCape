@@ -4,6 +4,7 @@ monarch_power = MIL
 # no bonus for MIL currently
 ahead_of_time = {
 	monthly_russian_modernization = 0.05
+	nobles_influence_modifier = -0.1
 }
 
 # Pre-era techs

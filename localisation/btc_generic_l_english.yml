@@ -242,6 +242,12 @@
  naval_war_desc:0 "Our navy is superior."
  NAVAL_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ Naval War"
 
+ cb_novgorod_war:0 "Annexation of Novgorod"
+ cb_novgorod_war_desc:0 "It is time for Novgorod to fall."
+ annex_novgorod:0 "Annex Novgorod"
+ annex_novgorod_desc:0 "Novgorod will fall."
+ NOVGOROD_WAR_NAME:0 "Novgorod Annexation War"
+
  crown_colony_long_desc:0 "A Crown Colony has a high amount of direct control from the overlord. They contribute a good amount of money."
 
  renaissance_date:0 "1300"

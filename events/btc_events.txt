@@ -1640,3 +1640,42 @@ country_event = {
 # 		}
 # 	}
 # }
+
+# Muscovy declares war on Novgorod
+country_event = {
+	id = btc_events.27
+	title = btc_events.27_t
+	desc = btc_events.27_d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		tag = MOS
+		is_year = 1445
+		mission_completed = mos_rus_build_up_army
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {	# Time to end this charade
+		name = btc_events.27a
+
+		ai_chance = {
+			factor = 1
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_novgorod_war
+			who = NOV
+		}
+	}
+	
+	option = {	# The time is not right
+		name = btc_events.27b
+
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -5
+	}
+}
