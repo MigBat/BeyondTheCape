@@ -1116,6 +1116,7 @@ exploration_ideas = {
 			OR = {
 				tag = POR
 				tag = CAS
+				tag = SPA
 				tag = GBR
 				tag = NED
 				tag = ENG
@@ -1777,6 +1778,14 @@ naval_ideas = {
 				tag = MNG
 				tag = BNG
 				tag = MAJ
+				tag = GUJ
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				tag = NED
+				NOT = { has_idea_group = exploration_ideas }
 			}
 		}
 	}

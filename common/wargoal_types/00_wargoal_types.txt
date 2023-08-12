@@ -3051,3 +3051,35 @@ naval_war = {
 
 	war_name = NAVAL_WAR_NAME
 }
+
+annex_novgorod = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1
+		peace_cost_factor = 0.25
+		
+		allowed_provinces = {
+			is_claim = ROOT
+		}
+
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		allow_annex = yes
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = NOVGOROD_WAR_NAME
+}

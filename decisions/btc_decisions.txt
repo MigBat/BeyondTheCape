@@ -277,6 +277,10 @@ country_decisions = {
 					clr_country_flag = new_tordesillas_cas
 				}
 			}
+			POR = { remove_country_modifier = tordesillas_claims }
+			IBE = { remove_country_modifier = tordesillas_claims }
+			CAS = { remove_country_modifier = tordesillas_claims }
+			SPA = { remove_country_modifier = tordesillas_claims }
 			add_stability = -2
 			if = {
 				limit = {

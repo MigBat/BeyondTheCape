@@ -1154,6 +1154,10 @@ country_event = {
 		create_colony_mission_reward = {
 			province = 2659
 		}
+		add_country_modifier = {
+			name = discovered_caribbean
+			duration = 5475
+		}
 	}
 
 	option = {
@@ -1181,6 +1185,10 @@ country_event = {
 			discover_province = 1503
 			discover_province = 1524
 			discover_province = 1525			
+		}
+		add_country_modifier = {
+			name = discovered_caribbean
+			duration = 5475
 		}
 	}
 }
@@ -1272,6 +1280,19 @@ country_event = {
 
 	option = {	# Our interests have been assured
 		name = btc_events.20a
+
+		POR = {
+			add_country_modifier = {
+				name = tordesillas_claims
+				duration = -1
+			}
+		}
+		CAS = {
+			add_country_modifier = {
+				name = tordesillas_claims
+				duration = -1
+			}
+		}
 
 		custom_tooltip = tordesillas_tt
 		hidden_effect = {
@@ -1627,3 +1648,42 @@ country_event = {
 # 		}
 # 	}
 # }
+
+# Muscovy declares war on Novgorod
+country_event = {
+	id = btc_events.27
+	title = btc_events.27_t
+	desc = btc_events.27_d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		tag = MOS
+		is_year = 1445
+		mission_completed = mos_rus_build_up_army
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {	# Time to end this charade
+		name = btc_events.27a
+
+		ai_chance = {
+			factor = 1
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_novgorod_war
+			who = NOV
+		}
+	}
+	
+	option = {	# The time is not right
+		name = btc_events.27b
+
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -5
+	}
+}

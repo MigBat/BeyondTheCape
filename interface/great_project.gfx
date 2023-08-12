@@ -652,3 +652,43 @@ spriteType = {
 	name = "GFX_great_project_santiago_cathedral"	
 	texturefile = "gfx//interface//great_projects//great_project_santiago_cathedral.dds"
 }
+
+spriteType = {
+	name = "GFX_great_project_el_dorado"	
+	texturefile = "gfx//interface//great_projects//great_project_el_dorado.dds"
+}
+
+spriteType = {
+	name = "GFX_great_project_fountain_of_youth"	
+	texturefile = "gfx//interface//great_projects//great_project_fountain_of_youth.dds"
+}
+
+spriteType = {
+	name = "GFX_great_project_cibola"	
+	texturefile = "gfx//interface//great_projects//great_project_cibola.dds"
+}
+
+spriteType = {
+	name = "GFX_great_project_city_of_caesars"	
+	texturefile = "gfx//interface//great_projects//great_project_city_of_caesars.dds"
+}
+
+spriteType = {
+	name = "GFX_great_project_norumbega"	
+	texturefile = "gfx//interface//great_projects//great_project_norumbega.dds"
+}
+
+spriteType = {
+	name = "GFX_great_project_saguenay"	
+	texturefile = "gfx//interface//great_projects//great_project_saguenay.dds"
+}
+
+spriteType = {
+	name = "GFX_great_project_quivira"	
+	texturefile = "gfx//interface//great_projects//great_project_quivira.dds"
+}
+
+spriteType = {
+	name = "GFX_great_project_sierra_de_la_plata"	
+	texturefile = "gfx//interface//great_projects//great_project_sierra_de_la_plata.dds"
+}

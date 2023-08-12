@@ -153,7 +153,7 @@
 4372 = "Covêntria"
 4375 = "Céstria"
 245 = "Iorque"
-246 = " Nortúmbria"
+246 = "Nortúmbria"
 248 = "Edimburgo"
 369 = "Órcades"
 253 = "Hébridas Exteriores"
@@ -698,7 +698,7 @@
 992 = "Vila de Corte Real" #The name "Gatineau" might come from the name of a french explorer family, so i did the same with a portuguese family that explored Canada.
 4890 = "Odava" # Instead of adapting "Ottawa" from english I went for the same Ojibwe origin "odaawaa".
 4892 = "Algonquinos" #Basically they are the Iroquois tribe.
-989 = Forte de São Francisco" #Couldn't find a translation for "fort frontenac".
+989 = "Forte de São Francisco" #Couldn't find a translation for "fort frontenac".
 2670 = "Santa Maria da Lagoa" 
 987 = "Pego do Rio Grande"
 2587 = "Manintolim" #Adaptation of the name.
@@ -754,7 +754,7 @@
 2559 = "Carrilhão do Monte" #From than french name "carillon".
 4912 = "Caniatarova" #Adaptation of the name "Kaniatarowanen".
 964 = "Agnier"
-963 = Nova Beja"
+963 = "Nova Beja"
 4874 = "Ostenuque" #Adaptation of the given tribe name "hous atenuc".
 967 = "Baía de Santa Isabel"
 2010 = "Coneticute"
@@ -841,7 +841,7 @@
 898 = "Cansas" #Prtuguese name of the nowadays american state, also the the best adaptation to portuguese of the tribe's name "Kanza".
 2672 = "Pradarias Boas"
 2507 = "Báchinena"
-901 "Chaui"
+901 = "Chaui"
 4915 = "Pitauirata" #Adaptation of "Pitahauirata"
 903 = "Omaá" #"Omaha" originaly, but in portuguese the "h" alone disappears.
 2513 = "Moingona"
@@ -901,7 +901,7 @@
 873 ="Ribeira de São Roque" #It's the estuary of the Columbia river, but it was named "Río de San Roque" by the spanish, so I adapted it to portuguese in the same way.
 2485 = "Chaelis" #The name of the tribe is "Chehalis", but sounded to me like I wrote on the audio of said name, so I can be wrong.
 2487 = "Forte dos Espocâs" #Derived from the name of the local tribe "Spokane", and added the "fort" because a frontier outpost was created in the area called"Fort Spokane".
-874 = "Sélis" #Adaptation of the original name of the tribe "Séliš", or more commonly used, "Salish".
+874 = "Sélis" #Adaptation of the original name of the tribe "Séliÿ", or more commonly used, "Salish".
 2484 = "Chimacum" #Other name of the local tribe.
 973 = "Nova Tavira" #City of Vancouver nowadays, but as the name is from the 19th century, so I named it in honor of the best city of Portugal (jk, unless...).
 2607 = "Lago Grande" #There's no city named "Syilkx" in canada, but there's a lake in the area.
@@ -925,7 +925,7 @@
 977 = "Iucutate"
 2612 = "Catelha" #Adapted of "Katella".
 978 = "Alasca"
-979 = Ilhas Aleutas"
+979 = "Ilhas Aleutas"
 
 #California
 2477 = "Imaculada Conceição" #Didn't find anything related to "ukom'nom".
@@ -976,7 +976,7 @@
 881 = "Nossa Sra. do Socorro"
 4630 = "Natagés"
 882 = "Prado dos Mescaleros"
-2497 = "Nova Évora
+2497 = "Nova Évora"
 4629 = "As Pastagens" #Couldn't find any information regarding the name.
 2498 = "Entreposto do Norte" #Nowadays "El Paso". It was a middle point for those who wanted to go north of Rio grande.
 863 = "Jumanos"
@@ -1018,7 +1018,7 @@
 4582 = "Xaguie" #Other name for "Teocaltítl?n", or simply "Teotitlán del Valle", as the spanish called it.
 4598 = "Guatusco" #Other name of this province.
 2647 = "Veracruz do México"#Veracruz for the spanish. Added the "do mexico" to distinguish from "Veracruz" the colony, aka Brazil.
-2630 = Monte dos Coelhos"
+2630 = "Monte dos Coelhos"
 2629 = "Rio Lameiro" #From the nahualt "cuitla" (meaning muddy), and "apan" (meaning river).
 847 = "Mixtecos"
 844 = "Zapotecas"
@@ -1044,7 +1044,7 @@
 2640 = "Tegucigalpa"
 
 #Caribbean
-481 = "Bermudas"#Named after the Spanish sailor Juan de Bermúdez, who discovered the islands in 1505;
+481 = "Bermudas" #Named after the Spanish sailor Juan de Bermúdez, who discovered the islands in 1505;
 483 = "Ilhas Turcas e Caicos" #Called "turks" because a species of cactus endemic from this islands is similar to a fez, a turkish hat.
 4624 = "Pinhal do Rio"
 4623 = "Escambrão"
@@ -1095,7 +1095,7 @@
 4612 = "São Paulo d'Tacarígua"
 2811 = "Atabape"
 4615 = "Terra dos Calinas" #Guanipa was only founded in 1910. Also, "Kalina" is a term related to the Carib tribe.
-4616 = Nova Braga" #Anzoategui was only renamed this way in 1909, before was called "Nueva Barcelona del Cerro Santo". I did the same logic, but with Braga.
+4616 = "Nova Braga" #Anzoategui was only renamed this way in 1909, before was called "Nueva Barcelona del Cerro Santo". I did the same logic, but with Braga.
 2805 = "Maturim"
 2803 = "Foz do Orinoco"
 2804 = "Guasipate"
@@ -1122,12 +1122,12 @@
 2947 = "Azangaro"
 2833 = "Mãe de Deus"
 2832 = "São Joaquim"
-800 "Sta. Maria d'Miúdos" #Chiquitos got his name because early conquistadors and explorers thought the natives were pygmeis. "Chiquitos" mean "Little children" in castilian.
+800 = "Sta. Maria d'Miúdos" #Chiquitos got his name because early conquistadors and explorers thought the natives were pygmeis. "Chiquitos" mean "Little children" in castilian.
 801 = "Cachapampa"
 2434 = "Santa Cruz da Serra" 
 2835 = "Cidade Prata" #Sucre only got this name in 1824. "La Plata" was the colonial name before independency was achieved. You almost got it in time pdx. 
 2838 = "Tórique" #Followed the same steps as in castilian. The name is derived from the muslim general Ariq o Tárik ibn Ziyad, from the name "Tárik" became "Tajiq", and that became "Tajira", being the city finaly "Tojira". I did the same for portuguese: "Tarik"-"Tariq"-"Tarique"-"Tórique".
-2946 = Quilhacas"
+2946 = "Quilhacas"
 795 = "Grande Monte Potosí"
 2831 = "Tiauanaco"
 2942 = "São Pedro da Boavista"
@@ -1196,7 +1196,7 @@
 4852 = "Mato Seco"
 4851 = "Costa do Sol"
 4855 = "Pampa Austral"
-4854 = "Belém do Sul
+4854 = "Belém do Sul"
 1091 = "Ourique"
 4856 = "Tasca do Rei" #A place to discuss the most important matters arround (and beyond, mostly the cape ones XD).
 1092 = "Porto do Sul"
@@ -1214,7 +1214,7 @@
 1086 = "Forte Adelaide"
 4862 = "São Teotónio"
 2736 = "Porto Moniz"
-4869 = Porto Rainha"
+4869 = "Porto Rainha"
 4868 = "Vila Lencastre"
 1085 = "Paderme"
 1106 = "Costa do Norte"

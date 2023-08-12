@@ -789,14 +789,14 @@ country_event = {
 		has_dlc = "Golden Century"
 		NOT = { exists = TOR }
 		NOT = { has_reform = pirate_republic_reform }
-		489 = {
-			OR = {
-				religion = protestant
-				religion = anglican
-				religion = reformed
-				religion = hussite
-			}
-		}
+		# 489 = {
+		# 	OR = {
+		# 		religion = protestant
+		# 		religion = anglican
+		# 		religion = reformed
+		# 		religion = hussite
+		# 	}
+		# }
 		has_global_flag = golden_age_of_piracy
 		OR = {
 			AND = {

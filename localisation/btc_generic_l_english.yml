@@ -134,6 +134,14 @@
  batalha_monastery:0 "Batalha Monastery"
  santiago_cathedral:0 "Santiago de Compostela Cathedral"
  belem_tower:0 "Belém Tower"
+ el_dorado:0 "El Dorado"
+ fountain_of_youth:0 "Fountain of Youth"
+ cibola:0 "Cibola"
+ norumbega:0 "Norumbega"
+ saguenay:0 "Kingdom of Saguenay"
+ quivira:0 "Quivira"
+ sierra_de_la_plata:0 "Sierra de la Plata"
+ city_of_caesars:0 "City of the Caesars"
 
 # Age Bonus #
  ab_portugal_professional_navy:0 "Portuguese Professional Navy"
@@ -233,6 +241,12 @@
  naval_war:0 "Naval Superiority"
  naval_war_desc:0 "Our navy is superior."
  NAVAL_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ Naval War"
+
+ cb_novgorod_war:0 "Annexation of Novgorod"
+ cb_novgorod_war_desc:0 "It is time for Novgorod to fall."
+ annex_novgorod:0 "Annex Novgorod"
+ annex_novgorod_desc:0 "Novgorod will fall."
+ NOVGOROD_WAR_NAME:0 "Novgorod Annexation War"
 
  crown_colony_long_desc:0 "A Crown Colony has a high amount of direct control from the overlord. They contribute a good amount of money."
 

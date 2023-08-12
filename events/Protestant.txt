@@ -32,6 +32,7 @@ country_event = {
 				RELIGION = protestant
 			}
 		}
+		is_year = 1515
 	}
 	
 	mean_time_to_happen = {

@@ -1,7 +1,8 @@
 ﻿l_english:
 
  henry_the_navigator_tt:0 "This modifer will last until the death of the navigator advisor."
- port_english_alliance_tt:0 "If the alliance is broken, we will lose this modifier."
+ merc_english_longbowmen:0 "§REnglish Longbowmen§!"
+ port_english_alliance_tt:0 "The §YEnglish Longbowmen§! mercenary company becomes available to hire.\n§YIf the alliance is broken, we will lose this modifier and mercenary company.§!"
  mamluk_war_tooltip:0 "§YBecome the dominant trade power in the Gulf of Aden while Francisco de Almeida is alive to unlock unique events.§!"
 
  btc_events.1_t:0 "Quest for the New World"
@@ -82,6 +83,12 @@
  tordesillas_tt:0 "Castile is now unable to colonise any unclaimed land in §YAfrica§!, §YAsia§! and some of §YBrazil§! region, and Portugal is unable to colonise in the §YAmericas§!, except for some parts of §YBrazil§! region."
  madrid_tt:0 "Portugal will be able to colonise the entirety of the §YBrazil§! region, and Spain will be able to colonise the §YPhilippines§!."
  terra_nova_claim_tt:0 "Portugal will be able to colonise the §YNewfoundland§! and §YLabrador§! areas."
+ tordesillas_claims:0 "Treaty of Tordesillas"
+ desc_tordesillas_claims:0 "Half of the world is ours for the taking, and our people are eager to claim it."
+ btc_events.27_t:0 "Consolidation of Russia"
+ btc_events.27_d:0 "Our destiny is to unite the entirety of Russia under one rule. The pesky merchants of Novgorod have been more than a thorn on our side, but they are weak now. We should take this chance to strike, and convince their people that our rule is fair and necessary. We shall take their land in one fell swoop!"
+ btc_events.27a:0 "Time to end this charade"
+ btc_events.27b:0 "The time is not right"
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"

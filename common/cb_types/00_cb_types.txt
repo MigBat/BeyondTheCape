@@ -2022,3 +2022,12 @@ cb_naval_superiority = {
 
 	war_goal = naval_war
 }
+
+cb_novgorod_war = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 60
+
+	war_goal = annex_novgorod
+}

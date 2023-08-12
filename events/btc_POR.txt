@@ -5066,12 +5066,28 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			random_ally = {
+				limit = {
+					OR = {
+						war_with = POR
+						war_with = IBE
+					}
+				}
+				save_event_target_as = ally_war_portugal
+			}			
+		}
+	}
+
 	option = {	# We shall defend Portugal
 		name = btc_por.172a
 
 		ai_chance = {
 			factor = 1
 		}
+
+		break_alliance = event_target:ally_war_portugal
 
 		if = {
 			limit = {

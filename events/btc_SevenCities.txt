@@ -1,0 +1,1161 @@
+namespace = btc_seven_cities
+
+### El Dorado ###
+
+# The Crossroads
+province_event = {
+	id = btc_seven_cities.1
+	title = btc_seven_cities.1_t
+	desc = btc_seven_cities.1_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_eldorado
+			NOT = { has_country_flag = eldorado_event_1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = eldorado_event_1
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.1a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.1b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.1c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+}
+
+# The Clearing
+province_event = {
+	id = btc_seven_cities.2
+	title = btc_seven_cities.2_t
+	desc = btc_seven_cities.2_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_eldorado
+			had_country_flag = {
+				flag = eldorado_event_1
+				days = 120
+			}
+			NOT = { has_country_flag = eldorado_event_2 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = eldorado_event_2
+			}
+		}
+	}
+
+	option = {	# Good option
+		name = btc_seven_cities.2a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.2b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.2c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+}
+
+# The Puzzle
+province_event = {
+	id = btc_seven_cities.3
+	title = btc_seven_cities.3_t
+	desc = btc_seven_cities.3_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_eldorado
+			had_country_flag = {
+				flag = eldorado_event_2
+				days = 120
+			}
+			NOT = { has_country_flag = eldorado_event_3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = eldorado_event_3
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.3a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.3b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.3c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
+
+### Fountain of Youth ###
+
+# The Natives of ProvinceName
+province_event = {
+	id = btc_seven_cities.4
+	title = btc_seven_cities.4_t
+	desc = btc_seven_cities.4_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_fountainofyouth
+			NOT = { has_country_flag = fountainofyouth_event_1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = fountainofyouth_event_1
+			}
+		}
+	}
+
+	option = {	# Bad option
+		name = btc_seven_cities.4a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.4b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.4c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+}
+
+# The Sunken Ship
+province_event = {
+	id = btc_seven_cities.5
+	title = btc_seven_cities.5_t
+	desc = btc_seven_cities.5_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_fountainofyouth
+			had_country_flag = {
+				flag = fountainofyouth_event_1
+				days = 20
+			}
+			NOT = { has_country_flag = fountainofyouth_event_2 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = fountainofyouth_event_2
+			}
+		}
+	}
+
+	option = {	# Bad option
+		name = btc_seven_cities.5a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.5b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.5c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+}
+
+# The Behemoth
+province_event = {
+	id = btc_seven_cities.6
+	title = btc_seven_cities.6_t
+	desc = btc_seven_cities.6_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_fountainofyouth
+			had_country_flag = {
+				flag = fountainofyouth_event_2
+				days = 20
+			}
+			NOT = { has_country_flag = fountainofyouth_event_3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = fountainofyouth_event_3
+			}
+		}
+	}
+
+	option = {	# Good option
+		name = btc_seven_cities.6a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.6b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.6c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+}
+
+### Cibola ###
+
+# The Narrow Passage
+province_event = {
+	id = btc_seven_cities.7
+	title = btc_seven_cities.7_t
+	desc = btc_seven_cities.7_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_cibola
+			NOT = { has_country_flag = cibola_event_1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = cibola_event_1
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.7a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.7b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.7c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
+
+# The Mass
+province_event = {
+	id = btc_seven_cities.8
+	title = btc_seven_cities.8_t
+	desc = btc_seven_cities.8_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_cibola
+			had_country_flag = {
+				flag = cibola_event_1
+				days = 120
+			}
+			NOT = { has_country_flag = cibola_event_2 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = cibola_event_2
+			}
+		}
+	}
+
+	option = {	# Bad option
+		name = btc_seven_cities.8a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.8b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.8c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
+
+# Aggressive Natives
+province_event = {
+	id = btc_seven_cities.9
+	title = btc_seven_cities.9_t
+	desc = btc_seven_cities.9_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_cibola
+			had_country_flag = {
+				flag = cibola_event_2
+				days = 120
+			}
+			NOT = { has_country_flag = cibola_event_3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = cibola_event_3
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.9a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.9b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.9c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+}
+
+### City of the Caesars ###
+
+# Looking for Directions
+province_event = {
+	id = btc_seven_cities.10
+	title = btc_seven_cities.10_t
+	desc = btc_seven_cities.10_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_cityofcaesars
+			NOT = { has_country_flag = cityofcaesars_event_1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = cityofcaesars_event_1
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.10a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.10b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.10c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
+
+# Native Knowledge
+province_event = {
+	id = btc_seven_cities.11
+	title = btc_seven_cities.11_t
+	desc = btc_seven_cities.11_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_cityofcaesars
+			had_country_flag = {
+				flag = cityofcaesars_event_1
+				days = 120
+			}
+			NOT = { has_country_flag = cityofcaesars_event_2 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = cityofcaesars_event_2
+			}
+		}
+	}
+
+	option = {	# Bad option
+		name = btc_seven_cities.11a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.11b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.11c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+}
+
+# Mountain Sight
+province_event = {
+	id = btc_seven_cities.12
+	title = btc_seven_cities.12_t
+	desc = btc_seven_cities.12_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_cityofcaesars
+			had_country_flag = {
+				flag = cityofcaesars_event_2
+				days = 120
+			}
+			NOT = { has_country_flag = cityofcaesars_event_3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = cityofcaesars_event_3
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.12a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.12b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.12c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
+
+### Sierra de la Plata ###
+
+# The Storm
+province_event = {
+	id = btc_seven_cities.13
+	title = btc_seven_cities.13_t
+	desc = btc_seven_cities.13_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_sierradelaplata
+			NOT = { has_country_flag = sierradelaplata_event_1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = sierradelaplata_event_1
+			}
+		}
+	}
+
+	option = {	# Good option
+		name = btc_seven_cities.13a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.13b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.13c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+}
+
+# Supplies
+province_event = {
+	id = btc_seven_cities.14
+	title = btc_seven_cities.14_t
+	desc = btc_seven_cities.14_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_sierradelaplata
+			had_country_flag = {
+				flag = sierradelaplata_event_1
+				days = 120
+			}
+			NOT = { has_country_flag = sierradelaplata_event_2 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = sierradelaplata_event_2
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.14a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.14b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.14c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+}
+
+# Meeting Natives
+province_event = {
+	id = btc_seven_cities.15
+	title = btc_seven_cities.15_t
+	desc = btc_seven_cities.15_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_sierradelaplata
+			had_country_flag = {
+				flag = sierradelaplata_event_2
+				days = 120
+			}
+			NOT = { has_country_flag = sierradelaplata_event_3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = sierradelaplata_event_3
+			}
+		}
+	}
+
+	option = {	# Bad option
+		name = btc_seven_cities.15a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.15b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.15c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+}
+
+### Norumbega ###
+
+# Wild Wolves
+province_event = {
+	id = btc_seven_cities.16
+	title = btc_seven_cities.16_t
+	desc = btc_seven_cities.16_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_norumbega
+			NOT = { has_country_flag = norumbega_event_1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = norumbega_event_1
+			}
+		}
+	}
+
+	option = {	# Good option
+		name = btc_seven_cities.16a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.16b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.16c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+}
+
+# The Sacred Champion
+province_event = {
+	id = btc_seven_cities.17
+	title = btc_seven_cities.17_t
+	desc = btc_seven_cities.17_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_norumbega
+			had_country_flag = {
+				flag = norumbega_event_1
+				days = 120
+			}
+			NOT = { has_country_flag = norumbega_event_2 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = norumbega_event_2
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.17a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.17b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.17c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
+
+# The River
+province_event = {
+	id = btc_seven_cities.18
+	title = btc_seven_cities.18_t
+	desc = btc_seven_cities.18_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_norumbega
+			had_country_flag = {
+				flag = norumbega_event_2
+				days = 120
+			}
+			NOT = { has_country_flag = norumbega_event_3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = norumbega_event_3
+			}
+		}
+	}
+
+	option = {	# Bad option
+		name = btc_seven_cities.18a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.18b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.18c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+}
+
+### Kingdom of Saguenay ###
+
+# The Frozen Lake
+province_event = {
+	id = btc_seven_cities.19
+	title = btc_seven_cities.19_t
+	desc = btc_seven_cities.19_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_saguenay
+			NOT = { has_country_flag = saguenay_event_1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = saguenay_event_1
+			}
+		}
+	}
+
+	option = {	# Good option
+		name = btc_seven_cities.19a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.19b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.19c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+}
+
+# The Cave
+province_event = {
+	id = btc_seven_cities.20
+	title = btc_seven_cities.20_t
+	desc = btc_seven_cities.20_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_saguenay
+			had_country_flag = {
+				flag = saguenay_event_1
+				days = 120
+			}
+			NOT = { has_country_flag = saguenay_event_2 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = saguenay_event_2
+			}
+		}
+	}
+
+	option = {	# Bad option
+		name = btc_seven_cities.20a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.20b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.20c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+}
+
+# Warmongering Natives
+province_event = {
+	id = btc_seven_cities.21
+	title = btc_seven_cities.21_t
+	desc = btc_seven_cities.21_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_saguenay
+			had_country_flag = {
+				flag = saguenay_event_2
+				days = 120
+			}
+			NOT = { has_country_flag = saguenay_event_3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = saguenay_event_3
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.21a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.21b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.21c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
+
+### Quivira ###
+
+# Endless Plains
+province_event = {
+	id = btc_seven_cities.22
+	title = btc_seven_cities.22_t
+	desc = btc_seven_cities.22_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_quivira
+			NOT = { has_country_flag = quivira_event_1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = quivira_event_1
+			}
+		}
+	}
+
+	option = {	# Ok option
+		name = btc_seven_cities.22a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Bad option
+		name = btc_seven_cities.22b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.22c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
+
+# Wooden Area
+province_event = {
+	id = btc_seven_cities.23
+	title = btc_seven_cities.23_t
+	desc = btc_seven_cities.23_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_quivira
+			had_country_flag = {
+				flag = quivira_event_1
+				days = 120
+			}
+			NOT = { has_country_flag = quivira_event_2 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = quivira_event_2
+			}
+		}
+	}
+
+	option = {	# Bad option
+		name = btc_seven_cities.23a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.23b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.23c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
+
+# Trail of Gold
+province_event = {
+	id = btc_seven_cities.24
+	title = btc_seven_cities.24_t
+	desc = btc_seven_cities.24_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_country_modifier = sce_search_quivira
+			had_country_flag = {
+				flag = quivira_event_2
+				days = 120
+			}
+			NOT = { has_country_flag = quivira_event_3 }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_country_flag = quivira_event_3
+			}
+		}
+	}
+
+	option = {	# Bad option
+		name = btc_seven_cities.24a
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
+	}
+	option = {	# Ok option
+		name = btc_seven_cities.24b
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
+	}
+	option = {	# Good option
+		name = btc_seven_cities.24c
+
+		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
+	}
+}
