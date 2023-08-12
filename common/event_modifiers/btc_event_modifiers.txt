@@ -716,3 +716,35 @@ tripitaka_koreana = {
 tordesillas_claims = {
 	global_colonial_growth = 15
 }
+
+el_dorado_location = {
+	picture = "cityofgold"
+}
+
+fountain_of_youth_location = {
+	picture = "cityofgold"
+}
+
+cibola_location = {
+	picture = "cityofgold"
+}
+
+norumbega_location = {
+	picture = "cityofgold"
+}
+
+saguenay_location = {
+	picture = "cityofgold"
+}
+
+sierra_de_la_plata_location = {
+	picture = "cityofgold"
+}
+
+city_of_caesars_location = {
+	picture = "cityofgold"
+}
+
+quivira_location = {
+	picture = "cityofgold"
+}

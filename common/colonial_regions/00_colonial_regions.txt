@@ -131,7 +131,7 @@ colonial_canada = {
 				alliance_with = SCO
 			}
 		}
-		name = "COLONIAL_CANADA_Nouvelle_Écosse"
+		name = "Nouvelle Écosse"
 	}
 	names = {
 		trigger = {
