@@ -167,11 +167,12 @@ province_event = {
 	trigger = {
 		devastation = 10
 		NOT = { has_province_modifier = dev_decreased_recently }
-		development = 4
+		development = 8
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 120
+		# devastation
 		modifier = {
 			factor = 0.5
 			devastation = 20
@@ -188,6 +189,19 @@ province_event = {
 			factor = 0.5
 			devastation = 50
 		}
+		# development
+		modifier = {
+			factor = 0.5
+			development = 15
+		}
+		modifier = {
+			factor = 0.5
+			development = 25
+		}
+		modifier = {
+			factor = 0.5
+			development = 35
+		}
 	}
 
 	option = {
@@ -200,7 +214,7 @@ province_event = {
 		}
 		add_province_modifier = {
 			name = dev_decreased_recently
-			duration = 730
+			duration = 1460
 		}
 	}
 }
@@ -1660,10 +1674,17 @@ country_event = {
 		tag = MOS
 		is_year = 1445
 		mission_completed = mos_rus_build_up_army
+		NOT = { has_country_flag = had_declare_war_novgorod }
 	}
 
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_declare_war_novgorod
+		}
 	}
 	
 	option = {	# Time to end this charade
@@ -1681,6 +1702,114 @@ country_event = {
 	option = {	# The time is not right
 		name = btc_events.27b
 
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -5
+	}
+}
+
+# Subject Demands Independence
+country_event = {
+	id = btc_events.28
+	title = btc_events.28_t
+	desc = btc_events.28_d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		any_subject_country = {
+			liberty_desire = 100
+			NOT = { has_country_flag = requested_independence }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					is_subject_of = ROOT
+					liberty_desire = 100
+				}
+				set_country_flag = requested_independence
+				save_event_target_as = target_subject
+			}
+		}
+	}
+	
+	option = {	# Their lands belong to us
+		name = btc_events.28a
+		ai_chance = {
+			factor = 1
+		}
+
+		add_opinion = {
+			who = event_target:target_subject
+			modifier = refused_independence
+		}
+	}
+	
+	option = {	# Grant them independence
+		name = btc_events.28b
+		ai_chance = {
+			factor = 0
+		}
+		event_target:target_subject = {
+			grant_independence = yes
+		}
+	}
+}
+
+# War for Independence
+country_event = {
+	id = btc_events.29
+	title = btc_events.29_t
+	desc = btc_events.29_d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		has_country_flag = requested_independence
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {	# Today we regain our freedom!
+		name = btc_events.29a
+		ai_chance = {
+			factor = 1
+		}
+
+		clr_country_flag = requested_independence
+
+		if = {
+			limit = {
+				OR = {
+					is_subject_of_type = colony
+					is_subject_of_type = crown_colony
+					is_subject_of_type = self_governing_colony
+					is_subject_of_type = private_enterprise
+				}
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_colonial_independence_war
+				who = overlord
+			}
+		}
+		else = {
+			declare_war_with_cb = {
+				casus_belli = cb_independence_war
+				who = overlord
+			}
+		}
+	}
+	
+	option = {	# The time is not right
+		name = btc_events.29b
 		ai_chance = {
 			factor = 0
 		}

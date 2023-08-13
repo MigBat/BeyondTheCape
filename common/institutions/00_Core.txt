@@ -520,6 +520,18 @@ renaissance = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0.05
+			scale = no
+			potential = {
+				trade_goods = silk
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_silk_spread
+				trade_goods = silk
+				NOT = { superregion = india_superregion }
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
