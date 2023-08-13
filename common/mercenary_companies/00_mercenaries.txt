@@ -2438,6 +2438,7 @@ merc_english_longbowmen = {
 	counts_towards_force_limit = no
 	min_size = 5 
 	max_size = 10
+	no_additional_manpower_from_max_size = yes
 	sprites = { dlc001_eng_sprite_pack dlc028_eng_sprite_pack dlc042_eng_sprite_pack westerngfx_sprite_pack }
 	trigger = { 
 		has_country_modifier = por_english_alliance

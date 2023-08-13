@@ -520,6 +520,18 @@ renaissance = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0.05
+			scale = no
+			potential = {
+				trade_goods = silk
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_silk_spread
+				trade_goods = silk
+				NOT = { superregion = india_superregion }
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
@@ -1360,7 +1372,7 @@ manufactories = {
 	can_start = {
 		# is_year = 1650
 		is_institution_enabled = printing_press
-		owner = { adm_tech = 11 }
+		owner = { adm_tech = 13 }
 		printing_press = 100
 		is_in_capital_area = yes
 		is_island = no

@@ -16,6 +16,8 @@
  estate_privileges_and_agendas_events.6.s:0 "Sell it to the Slavers"
  estate_privileges_and_agendas_events.7.s:0 "Seize it from the Slavers"
 
+ estate_slavers_ownership:0 "Slavers Land Ownership"
+
  # Agendas #
  estate_slavers_build_manufactory_in_y:0 "Build a Manufactory in [agenda_province.GetName]"
  estate_slavers_build_manufactory_in_y_desc:0 "The Slavers of [agenda_province.GetName] request that we fund the construction of a new [agenda_province.GetManufactory]. They claim that it will be a highly profitable investment, doubling the province's output of [agenda_province.GetTradeGoodsName]."

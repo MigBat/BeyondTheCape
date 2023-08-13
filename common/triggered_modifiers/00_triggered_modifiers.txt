@@ -58,13 +58,15 @@ ottoman_silk_road_monopoly = {
 			capital_scope = {
 				continent = europe
 			}
-			any_active_trade_node = {
-				has_merchant = ROOT
-				OR = {
-					province_id = 1361 # Straits of Johor
-					province_id = 1343 # Ganges Delta
-					province_id = 504 # Sind
-					province_id = 1340 # Comorin Cape
+			NOT = {
+				any_active_trade_node = {
+					has_merchant = ROOT
+					OR = {
+						province_id = 1361 # Straits of Johor
+						province_id = 1343 # Ganges Delta
+						province_id = 504 # Sind
+						province_id = 1340 # Comorin Cape
+					}
 				}
 			}
 		}

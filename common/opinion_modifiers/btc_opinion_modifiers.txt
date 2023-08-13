@@ -103,3 +103,8 @@ revoked_tordesillas = {
 	opinion = -200
 	yearly_decay = 2
 }
+
+refused_independence = {
+	opinion = -200
+	yearly_decay = 2
+}

@@ -52,7 +52,7 @@ province_event = {
 	id = btc_seven_cities.2
 	title = btc_seven_cities.2_t
 	desc = btc_seven_cities.2_d
-	picture = CONQUISTADORS_eventPicture
+	picture = EXPLORERS_eventPicture
 
 	is_triggered_only = yes
 
@@ -101,7 +101,7 @@ province_event = {
 	id = btc_seven_cities.3
 	title = btc_seven_cities.3_t
 	desc = btc_seven_cities.3_d
-	picture = CONQUISTADORS_eventPicture
+	picture = INCAN_GODS_eventPicture
 
 	is_triggered_only = yes
 
@@ -197,7 +197,7 @@ province_event = {
 	id = btc_seven_cities.5
 	title = btc_seven_cities.5_t
 	desc = btc_seven_cities.5_d
-	picture = CONQUISTADORS_eventPicture
+	picture = EXPLORERS_eventPicture
 
 	is_triggered_only = yes
 
@@ -246,7 +246,7 @@ province_event = {
 	id = btc_seven_cities.6
 	title = btc_seven_cities.6_t
 	desc = btc_seven_cities.6_d
-	picture = CONQUISTADORS_eventPicture
+	picture = SHIP_SAILING_eventPicture
 
 	is_triggered_only = yes
 
@@ -342,7 +342,7 @@ province_event = {
 	id = btc_seven_cities.8
 	title = btc_seven_cities.8_t
 	desc = btc_seven_cities.8_d
-	picture = CONQUISTADORS_eventPicture
+	picture = PRAYING_eventPicture
 
 	is_triggered_only = yes
 
@@ -391,7 +391,7 @@ province_event = {
 	id = btc_seven_cities.9
 	title = btc_seven_cities.9_t
 	desc = btc_seven_cities.9_d
-	picture = CONQUISTADORS_eventPicture
+	picture = GUARDED_TREASURE_eventPicture
 
 	is_triggered_only = yes
 
@@ -487,7 +487,7 @@ province_event = {
 	id = btc_seven_cities.11
 	title = btc_seven_cities.11_t
 	desc = btc_seven_cities.11_d
-	picture = CONQUISTADORS_eventPicture
+	picture = NATIVES_LOW_eventPicture
 
 	is_triggered_only = yes
 
@@ -536,7 +536,7 @@ province_event = {
 	id = btc_seven_cities.12
 	title = btc_seven_cities.12_t
 	desc = btc_seven_cities.12_d
-	picture = CONQUISTADORS_eventPicture
+	picture = SIERRA_DE_LA_PLATA_eventPicture
 
 	is_triggered_only = yes
 
@@ -587,7 +587,7 @@ province_event = {
 	id = btc_seven_cities.13
 	title = btc_seven_cities.13_t
 	desc = btc_seven_cities.13_d
-	picture = CONQUISTADORS_eventPicture
+	picture = 19_Monsoon_eventPicture
 
 	is_triggered_only = yes
 
@@ -632,7 +632,7 @@ province_event = {
 	id = btc_seven_cities.14
 	title = btc_seven_cities.14_t
 	desc = btc_seven_cities.14_d
-	picture = CONQUISTADORS_eventPicture
+	picture = TRADEGOODS_eventPicture
 
 	is_triggered_only = yes
 
@@ -681,7 +681,7 @@ province_event = {
 	id = btc_seven_cities.15
 	title = btc_seven_cities.15_t
 	desc = btc_seven_cities.15_d
-	picture = CONQUISTADORS_eventPicture
+	picture = HUNTER_GATHERERS_eventPicture
 
 	is_triggered_only = yes
 
@@ -732,7 +732,7 @@ province_event = {
 	id = btc_seven_cities.16
 	title = btc_seven_cities.16_t
 	desc = btc_seven_cities.16_d
-	picture = CONQUISTADORS_eventPicture
+	picture = EXPLORERS_eventPicture
 
 	is_triggered_only = yes
 
@@ -777,7 +777,7 @@ province_event = {
 	id = btc_seven_cities.17
 	title = btc_seven_cities.17_t
 	desc = btc_seven_cities.17_d
-	picture = CONQUISTADORS_eventPicture
+	picture = NATIVES_eventPicture
 
 	is_triggered_only = yes
 
@@ -826,7 +826,7 @@ province_event = {
 	id = btc_seven_cities.18
 	title = btc_seven_cities.18_t
 	desc = btc_seven_cities.18_d
-	picture = CONQUISTADORS_eventPicture
+	picture = EXPLORERS_eventPicture
 
 	is_triggered_only = yes
 
@@ -922,7 +922,7 @@ province_event = {
 	id = btc_seven_cities.20
 	title = btc_seven_cities.20_t
 	desc = btc_seven_cities.20_d
-	picture = CONQUISTADORS_eventPicture
+	picture = EXPLORERS_eventPicture
 
 	is_triggered_only = yes
 
@@ -971,7 +971,7 @@ province_event = {
 	id = btc_seven_cities.21
 	title = btc_seven_cities.21_t
 	desc = btc_seven_cities.21_d
-	picture = CONQUISTADORS_eventPicture
+	picture = GUARDED_TREASURE_eventPicture
 
 	is_triggered_only = yes
 
@@ -1067,7 +1067,7 @@ province_event = {
 	id = btc_seven_cities.23
 	title = btc_seven_cities.23_t
 	desc = btc_seven_cities.23_d
-	picture = CONQUISTADORS_eventPicture
+	picture = EXPLORERS_eventPicture
 
 	is_triggered_only = yes
 
