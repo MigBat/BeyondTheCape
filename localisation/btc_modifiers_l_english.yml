@@ -30,6 +30,7 @@
  desc_alcantara_order_headquarters:0 "This order calls home the town of Alcántara."
  san_juan_order_headquarters:0 "Order of San Juan Headquarters"
  desc_san_juan_order_headquarters:0 "This order calls home the town of Mdina."
+ refused_independence:0 "Refused Independence"
 
 # Spice Wars #
 

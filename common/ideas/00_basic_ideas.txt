@@ -1458,7 +1458,6 @@ expansion_ideas = {
 			factor = 5
 			OR = {
 				tag = CAS
-				tag = POR
 				tag = SPA
 			}
 		}

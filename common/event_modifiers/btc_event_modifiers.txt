@@ -557,7 +557,8 @@ slavers_social_banditry_modifer = {
 }
 
 duke_of_braganza = {
-	land_morale = 0.05
+	land_morale = 0.1
+	military_tactics = 0.1
 	war_exhaustion = -0.02
 }
 
@@ -658,11 +659,11 @@ explored_coast = {
 }
 
 dev_decreased_recently = {
-	local_prosperity_growth = -0.01
+	local_monthly_devastation = -0.01
 }
 
 dev_increased_recently = {
-	local_monthly_devastation = -0.01
+	local_prosperity_growth = 0.01
 }
 
 no_settlers = {
