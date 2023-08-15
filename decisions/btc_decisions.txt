@@ -349,3 +349,28 @@ country_decisions = {
 		}
 	}
 }
+
+# Hire Navigator
+
+country_decisions = {
+	hire_navigator = {
+		potential = {
+			ai = no
+			mission_completed = btc_por_sagres
+		}
+		allow = {
+			mission_completed = btc_por_sagres
+			owns = 230
+			navy_tradition = 5
+		}
+		effect = {
+			define_advisor = {
+				type = navigator
+				skill = 1
+				discount = yes
+				location = 230
+			}
+			add_navy_tradition = -5
+		}
+	}
+}

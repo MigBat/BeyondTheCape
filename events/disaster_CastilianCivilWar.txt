@@ -62,11 +62,7 @@ country_event = {
 		set_country_flag = civil_war_in_castile
 
 		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				war_with = POR
-			}
+			factor = 1
 			modifier = {
 				factor = 0
 				POR = { has_regency = yes }
@@ -118,11 +114,7 @@ country_event = {
 		set_country_flag = civil_war_in_castile
 
 		ai_chance = {
-			factor = 90
-			modifier = {
-				factor = 0
-				war_with = ARA
-			}
+			factor = 100
 			modifier = {
 				factor = 0
 				ARA = { has_regency = yes }
@@ -224,6 +216,9 @@ country_event = {
 		}
 
 		add_prestige = -10
+		hidden_effect = {
+			set_country_flag = disregarded_claim
+		}
 
 		CAS = {
 			country_event = { id = castilian_civil_war.5 days = 15 } # Joanna de Castile
@@ -895,7 +890,10 @@ country_event = {
 
 		if = { 
 			limit = { ARA = { has_country_flag = at_war } }
-			ARA = { clr_country_flag = at_war }
+			ARA = { 
+				clr_country_flag = at_war
+				set_country_flag = lost_war 
+			}
 		}
 
 		define_heir = {
@@ -1009,7 +1007,10 @@ country_event = {
 
 		if = { 
 			limit = { POR = { has_country_flag = at_war } }
-			POR = { clr_country_flag = at_war }
+			POR = { 
+				clr_country_flag = at_war 
+				set_country_flag = lost_war
+			}
 		}
 
 		define_heir = {

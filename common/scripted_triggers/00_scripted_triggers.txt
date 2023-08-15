@@ -2238,6 +2238,15 @@ is_not_free_merc_company = {
 		NOT = { mercenary_company = merc_skirmishing_almogavars }
 		NOT = { mercenary_company = merc_veteran_almogavars }
 		NOT = { mercenary_company = merc_english_longbowmen }
+		NOT = { mercenary_company = merc_british_redcoats }
+		NOT = { mercenary_company = merc_colonial_ordenancas }
+		NOT = { mercenary_company = merc_knights_of_christ }
+		NOT = { mercenary_company = merc_knights_of_avis }
+		NOT = { mercenary_company = merc_knights_of_calatrava }
+		NOT = { mercenary_company = merc_knights_of_montesa }
+		NOT = { mercenary_company = merc_knights_of_alcantara }
+		NOT = { mercenary_company = merc_knights_of_santiago }
+		NOT = { mercenary_company = merc_knights_of_san_juan }
 	}
 }
 

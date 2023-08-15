@@ -2970,7 +2970,6 @@ superiority_castilian_civil_war = {
 
 		peace_options = {
 			po_concede_defeat
-			po_demand_provinces
 		}
 	}
 	
@@ -3036,6 +3035,9 @@ naval_war = {
 
 		peace_options = {
 			po_demand_provinces
+			po_gold
+			po_humiliate_rival
+			po_trade_power
 		}
 	}
 	

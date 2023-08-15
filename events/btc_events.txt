@@ -1311,7 +1311,10 @@ country_event = {
 		custom_tooltip = tordesillas_tt
 		hidden_effect = {
 			POR = { set_country_flag = tordesillas_por }
-			CAS = { set_country_flag = tordesillas_cas }			
+			CAS = { 
+				clr_country_flag = alcacovas_treaty
+				set_country_flag = tordesillas_cas 
+			}			
 		}
 	}
 }
