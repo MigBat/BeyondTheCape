@@ -1721,11 +1721,12 @@ country_event = {
 		any_subject_country = {
 			liberty_desire = 100
 			NOT = { has_country_flag = requested_independence }
+			NOT = { truce_with = ROOT }
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 60
 	}
 
 	immediate = {
@@ -1773,10 +1774,11 @@ country_event = {
 
 	trigger = {
 		has_country_flag = requested_independence
+		NOT = { truce_with = ROOT }
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 60
 	}
 	
 	option = {	# Today we regain our freedom!
