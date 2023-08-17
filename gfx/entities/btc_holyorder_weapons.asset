@@ -1,0 +1,39 @@
+entity = {
+	name = "btc_AVIS_cavalry_horse_01_mesh"
+	pdxmesh = "btc_AVIS_cavalry_horse_01_mesh"
+}
+
+entity = {
+	name = "btc_CHRIST_cavalry_horse_01_mesh"
+	pdxmesh = "btc_CHRIST_cavalry_horse_01_mesh"
+}
+
+entity = {
+	name = "btc_CALATRAVA_cavalry_horse_01_mesh"
+	pdxmesh = "btc_CALATRAVA_cavalry_horse_01_mesh"
+}
+
+entity = {
+	name = "btc_ALCANTARA_cavalry_horse_01_mesh"
+	pdxmesh = "btc_ALCANTARA_cavalry_horse_01_mesh"
+}
+
+entity = {
+	name = "btc_MONTESA_cavalry_horse_01_mesh"
+	pdxmesh = "btc_MONTESA_cavalry_horse_01_mesh"
+}
+
+entity = {
+	name = "btc_SANTIAGO_cavalry_horse_01_mesh"
+	pdxmesh = "btc_SANTIAGO_cavalry_horse_01_mesh"
+}
+
+entity = {
+	name = "btc_SANJUAN_cavalry_horse_01_mesh"
+	pdxmesh = "btc_SANJUAN_cavalry_horse_01_mesh"
+}
+
+entity = {
+	name = "gnup_cavalry_saber"
+	pdxmesh = "gnup_cavalry_saber_mesh"
+}

@@ -1058,8 +1058,11 @@ new_world_i = {
 			#at least three provinces colonised or colonising in caribbean, or have a subject colony
 			OR = {
 				num_of_owned_provinces_with = {
-					region = carribeans_region
-					value = 3
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					value = 5
 				}
 				any_subject_country = {
 					OR = {

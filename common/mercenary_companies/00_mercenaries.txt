@@ -2518,13 +2518,23 @@ merc_knights_of_christ = {
 	min_size = 4 
 	max_size = 8
 	no_additional_manpower_from_max_size = yes
-	sprites = { dlc042_por_sprite_pack westerngfx_sprite_pack }
+	sprites = { christ_order_sprite_pack }
 	trigger = {
 		owns = 4787
 		4787 = {
 			holy_order = christ_order
 		}
         is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
 	}
     modifier = {
 		cav_to_inf_ratio = 1
@@ -2540,13 +2550,23 @@ merc_knights_of_avis = {
 	min_size = 4 
 	max_size = 8
 	no_additional_manpower_from_max_size = yes
-	sprites = { dlc042_por_sprite_pack westerngfx_sprite_pack }
+	sprites = { avis_order_sprite_pack }
 	trigger = {
 		owns = 4150
 		4150 = {
 			holy_order = avis_order
 		}
         is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
 	}
     modifier = {
 		cav_to_inf_ratio = 1
@@ -2562,13 +2582,23 @@ merc_knights_of_calatrava = {
 	min_size = 4 
 	max_size = 8
 	no_additional_manpower_from_max_size = yes
-	sprites = { dlc049_SPA_sprite_pack westerngfx_sprite_pack }
+	sprites = { calatrava_order_sprite_pack }
 	trigger = {
 		owns = 2754
 		2754 = {
 			holy_order = calatrava_order
 		}
         is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
 	}
     modifier = {
 		cav_to_inf_ratio = 1
@@ -2584,13 +2614,23 @@ merc_knights_of_santiago = {
 	min_size = 4 
 	max_size = 8
 	no_additional_manpower_from_max_size = yes
-	sprites = { dlc049_SPA_sprite_pack westerngfx_sprite_pack }
+	sprites = { santiago_order_sprite_pack }
 	trigger = {
 		owns = 2751
 		2751 = {
 			holy_order = santiago_order
 		}
         is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
 	}
     modifier = {
 		cav_to_inf_ratio = 1
@@ -2606,13 +2646,23 @@ merc_knights_of_montesa = {
 	min_size = 4 
 	max_size = 8
 	no_additional_manpower_from_max_size = yes
-	sprites = { dlc049_SPA_sprite_pack westerngfx_sprite_pack }
+	sprites = { montesa_order_sprite_pack }
 	trigger = {
 		owns = 4549
 		4549 = {
 			holy_order = montesa_order
 		}
         is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
 	}
     modifier = {
 		cav_to_inf_ratio = 1
@@ -2629,13 +2679,23 @@ merc_knights_of_alcantara = {
 	min_size = 4 
 	max_size = 8
 	no_additional_manpower_from_max_size = yes
-	sprites = { dlc049_SPA_sprite_pack westerngfx_sprite_pack }
+	sprites = { alcantara_order_sprite_pack }
 	trigger = {
 		owns = 4788
 		4788 = {
 			holy_order = alcantara_order
 		}
         is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
 	}
     modifier = {
 		cav_to_inf_ratio = 1
@@ -2651,13 +2711,23 @@ merc_knights_of_san_juan = {
 	min_size = 4 
 	max_size = 8
 	no_additional_manpower_from_max_size = yes
-	sprites = { dlc049_SPA_sprite_pack westerngfx_sprite_pack }
+	sprites = { san_juan_order_sprite_pack }
 	trigger = {
 		owns = 126
 		126 = {
 			holy_order = san_juan_order
 		}
         is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
 	}
     modifier = {
 		cav_to_inf_ratio = 1
