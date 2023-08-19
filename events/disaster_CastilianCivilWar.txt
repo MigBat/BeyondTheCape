@@ -313,8 +313,8 @@ country_event = {
 		set_ruler_flag = joanna
 
 		define_consort = {
-			name = "King"
-			dynasty = "of Portugal"
+			name = "King of"
+			dynasty = "Portugal"
 			country_of_origin = POR
 			age = 15
 			male = yes
@@ -434,8 +434,8 @@ country_event = {
 		set_ruler_flag = isabella
 
 		define_consort = {
-			name = "King"
-			dynasty = "of Aragon"
+			name = "King of"
+			dynasty = "Aragon"
 			country_of_origin = ARA
 			age = 15
 			male = yes
@@ -928,8 +928,8 @@ country_event = {
 			set_ruler_flag = joanna
 
 			define_consort = {
-				name = "King"
-				dynasty = "of Portugal"
+				name = "King of"
+				dynasty = "Portugal"
 				country_of_origin = POR
 				age = 15
 				male = yes
@@ -1047,8 +1047,8 @@ country_event = {
 			set_ruler_flag = isabella
 
 			define_consort = {
-				name = "King"
-				dynasty = "of Aragon"
+				name = "King of"
+				dynasty = "Aragon"
 				country_of_origin = ARA
 				age = 15
 				male = yes
