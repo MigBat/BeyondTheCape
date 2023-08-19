@@ -522,7 +522,7 @@ renaissance = {
 		}
 		modifier = {
 			factor = 0.05
-			scale = no
+			scale = yes
 			potential = {
 				trade_goods = silk
 			}

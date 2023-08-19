@@ -2538,6 +2538,7 @@ merc_knights_of_christ = {
 	}
     modifier = {
 		cav_to_inf_ratio = 1
+		movement_speed = 0.2
 		cavalry_shock = 1
     }
 }
@@ -2570,6 +2571,7 @@ merc_knights_of_avis = {
 	}
     modifier = {
 		cav_to_inf_ratio = 1
+		movement_speed = 0.2
 		morale_damage = 0.2
     }
 }
@@ -2602,6 +2604,7 @@ merc_knights_of_calatrava = {
 	}
     modifier = {
 		cav_to_inf_ratio = 1
+		movement_speed = 0.2
 		cavalry_power = 0.2
     }
 }
@@ -2634,6 +2637,7 @@ merc_knights_of_santiago = {
 	}
     modifier = {
 		cav_to_inf_ratio = 1
+		movement_speed = 0.2
 		shock_damage = 0.2
     }
 }
@@ -2666,7 +2670,7 @@ merc_knights_of_montesa = {
 	}
     modifier = {
 		cav_to_inf_ratio = 1
-		movement_speed = 0.33
+		movement_speed = 0.2
 		cavalry_flanking = 0.5
     }
 }
@@ -2699,6 +2703,7 @@ merc_knights_of_alcantara = {
 	}
     modifier = {
 		cav_to_inf_ratio = 1
+		movement_speed = 0.2
 		discipline = 0.05
     }
 }
@@ -2731,6 +2736,7 @@ merc_knights_of_san_juan = {
 	}
     modifier = {
 		cav_to_inf_ratio = 1
+		movement_speed = 0.2
 		cavalry_fire = 1
     }
 }
