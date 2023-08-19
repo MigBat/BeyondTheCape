@@ -1301,7 +1301,6 @@ absolutism = {
 low_army_professionalism = {
 	mercenary_cost = -0.15
 	mercenary_manpower = 0.15
-	mercenary_discipline = 0.1
 }
 
 high_army_professionalism = {

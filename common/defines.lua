@@ -1277,7 +1277,7 @@ NMilitary = {
 	MOVE_LOCK_PERCENTAGE = 0.5,						-- Unit movement is locked after this percentage of progress
 	REGULAR_LEADER_POWER = 1,						-- Used for generals & admirals (affects total pips)
 	EXPLORER_LEADER_POWER = 0.8,					-- Used for conquistadors & explorers (affects total pips)
-	BASE_MP_TO_MANPOWER = 0.25,		-- 250 men per manpower
+	BASE_MP_TO_MANPOWER = 0.15,		-- 250 men per manpower
 	SIEGE_ATTRITION = 1,
 	SIEGE_DISEASE_IMPACT = 0.05,						-- Fraction of besieging soldiers lost in a disease outbraek
 	ARMY_ATTRITION_AT_COAST = 1,					-- How many percent attrition units take while loaded onto ships along the coast
@@ -1318,7 +1318,7 @@ NMilitary = {
 	-- Breakthrough: An experimental feature that when you defeat an enemy regiment with artillery behind it,
 	-- there's a chance that you pull their artillery into the front row.
 	INFANTRY_BREAKTHROUGH = 0.0,					-- Between 0 and 1
-	CAVALRY_BREAKTHROUGH = 0.0,						-- Between 0 and 1
+	CAVALRY_BREAKTHROUGH = 1.0,						-- Between 0 and 1
 
 	INFANTRY_SPEED = 0.7, 							-- _MDEF_INFANTRY_SPEED = 10,
 	CAVALRY_SPEED = 0.7, 							-- _MDEF_CAVALRY_SPEED = 10,
@@ -1680,7 +1680,7 @@ NAI = {
 	HRE_DESIRE_MIN_THREAT_LEVEL = 100,
 	HRE_DESIRE_THREATENED_BY_MULTIPLIER = 1.0,
 	
-	ONLY_INFANTRY_MERCS = 1, --Set to 0 to let AI hire artillery and cavalry mercenaries.
+	ONLY_INFANTRY_MERCS = 0, --Set to 0 to let AI hire artillery and cavalry mercenaries.
 	AI_FORT_PER_DEV_RATIO = 75, -- How much development the AI wants per fort (approximately)
 	FORT_ON_BORDER_MULT = 0.75, -- 
 	FORT_NEXT_TO_FORT_MULT = 0.75, -- 
