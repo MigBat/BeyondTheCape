@@ -379,7 +379,7 @@ estate_slavers_slaves_to_europe = {
 	benefits = {
 		global_prosperity_growth = 0.5
 		stability_cost_modifier = -0.1
-		estate_nobles_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
 	}
 	cooldown_years = 10
 	ai_will_do = {

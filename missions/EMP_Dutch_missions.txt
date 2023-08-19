@@ -572,7 +572,10 @@ emp_ned_slot2_indies_branch = {
 			}
 		}
 		effect = {
-			add_mercantilism = 2
+			add_country_modifier = {
+				name = predatory_trade
+				duration = 18250
+			}
 		}
 	}
 	
@@ -644,10 +647,6 @@ emp_ned_slot2_indies_branch = {
 					key = DUTCH_EAST_INDIES_TRADE
 				}
 			}
-			# country_event_with_insight = {
-			# 	id = btc_ned.1
-			# 	insight_tooltip = ned_establish_first_indian_trade_post_at
-			# }
 		}
 	}
 }
@@ -882,11 +881,85 @@ emp_ned_slot3_branch = {
 			}
 		}
 	}
+
+	btc_ned_mare_liberum = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { emp_ned_found_batavia emp_ned_colonize_the_cape }
+		position = 8
+		completed_by = 1660.1.1
+
+		trigger = {
+			if = {
+				limit = {
+					ai = yes
+				navy_size = 150
+				}
+			}
+			else = {
+				navy_size = 200
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = mare_liberum
+				duration = 18250
+			}
+			4346 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}	
+			}
+			4346 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}	
+			}
+			1334 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}	
+			}
+			1334 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}	
+			}
+			1340 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}		
+			}
+			1340 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}		
+			}
+			504 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}			
+			}
+			504 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}			
+			}
+		}
+	}
 	
 	emp_ned_discover_australia = {
 		icon = colonize_australia
-		required_missions = { emp_ned_colonize_the_cape }
-		position = 7
+		required_missions = { emp_ned_conquer_malacca }
+		position = 9
 		completed_by = 1660.1.1
 		
 		trigger = {

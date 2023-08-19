@@ -426,41 +426,53 @@ country_event = {
 		}
 		kill_leader = { type = "Francisco de Almeida" }
 
-		4346 = {
-			remove_trade_modifier = {
-				who = root
-				key = portuguese_privateers
+		if = {
+			limit = {
+				OR = {
+					HOL = {
+						NOT = { mission_completed = btc_ned_mare_liberum }
+					}
+					NED = {
+						NOT = { mission_completed = btc_ned_mare_liberum }
+					}
+				}
 			}
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = 25
-				key = spice_trade_monopoly
-			}		
-		}
-		1334 = {
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = 25
-				key = spice_trade_monopoly
-			}		
-		}
-		1340 = {
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = 25
-				key = spice_trade_monopoly
-			}			
-		}
-		504 = {
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = 25
-				key = spice_trade_monopoly
-			}			
+			4346 = {
+				remove_trade_modifier = {
+					who = root
+					key = portuguese_privateers
+				}
+				add_trade_modifier = {
+					who = root
+					duration = -1
+					power = 25
+					key = spice_trade_monopoly
+				}		
+			}
+			1334 = {
+				add_trade_modifier = {
+					who = root
+					duration = -1
+					power = 25
+					key = spice_trade_monopoly
+				}		
+			}
+			1340 = {
+				add_trade_modifier = {
+					who = root
+					duration = -1
+					power = 25
+					key = spice_trade_monopoly
+				}			
+			}
+			504 = {
+				add_trade_modifier = {
+					who = root
+					duration = -1
+					power = 25
+					key = spice_trade_monopoly
+				}			
+			}
 		}
 	}
 

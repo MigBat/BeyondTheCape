@@ -1015,6 +1015,9 @@ on_battle_won_unit = {
 	if = {
 		limit = {
 			general_with_name = "Francisco de Almeida"
+			location = {
+				region = arabian_sea_region
+			}
 			unit_owner = {
 				war_with = MAM
 				OR = {
@@ -1023,6 +1026,11 @@ on_battle_won_unit = {
 				}
 				NOT = {
 					has_country_flag = battle_of_diu 
+				}
+			}
+			enemy_unit = {
+				unit_owner = {
+					tag = MAM
 				}
 			}
 		}

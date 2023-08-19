@@ -754,3 +754,14 @@ quivira_location = {
 discovered_caribbean = {
 	global_colonial_growth = 25
 }
+
+mare_liberum = {
+	trade_efficiency = 0.05
+	placed_merchant_power = 5
+}
+
+predatory_trade = {
+	embargo_efficiency = 0.5
+	privateer_efficiency = 0.33
+	mercantilism_cost = -0.25
+}

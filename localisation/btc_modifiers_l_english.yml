@@ -351,3 +351,7 @@
  dev_increased_recently:0 "Development Increased"
  desc_dev_increased_recently:0 "Development in this province has recently been increased due to high prosperity."
  revoked_tordesillas:0 "Revoked Treaty of Tordesillas."
+ mare_liberum:0 "Mare Liberum"
+ desc_mare_liberum:0 "The sea is free for everyone."
+ predatory_trade:0 "Predatory Trade Policies"
+ desc_predatory_trade:0 "The free seas are ours to do what we please! That includes appropriating others' possessions."
