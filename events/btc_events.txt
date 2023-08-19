@@ -847,16 +847,6 @@ country_event = {
 			which = numProvincesInStates
 			value = 1000				# base value
 		}
-		# # Silk Road Crisis event
-		# if = {
-		# 	limit = {
-		# 		has_country_flag = discovery_excitement
-		# 	}
-		# 	change_variable = {
-		# 		which = numProvincesInStates
-		# 		value = 1000
-		# 	}
-		# }
 		# Decision add 1000 settlers
 		if = {
 			limit = {
@@ -891,14 +881,22 @@ country_event = {
 			which = maxNumOfSettlers	# maximum number of settlers of a country
 			which = numProvincesInStates
 		}
-
+		# AI Bonus
+		export_to_variable = {
+			which = numOfColonists	# current number of colonies
+			value = trigger_value:num_of_colonists
+		}
 		if = {
 			limit = {
 				ai = yes		# ai gets 500 extra settlers per each colonist
 			}
+			multiply_variable = {
+				which = numOfColonists
+				value = 500
+			}
 			change_variable = {
 				which = maxNumOfSettlers
-				value = 500
+				which = numOfColonists
 			}
 		}
 
@@ -1311,7 +1309,10 @@ country_event = {
 		custom_tooltip = tordesillas_tt
 		hidden_effect = {
 			POR = { set_country_flag = tordesillas_por }
-			CAS = { set_country_flag = tordesillas_cas }			
+			CAS = { 
+				clr_country_flag = alcacovas_treaty
+				set_country_flag = tordesillas_cas 
+			}			
 		}
 	}
 }
@@ -1720,11 +1721,12 @@ country_event = {
 		any_subject_country = {
 			liberty_desire = 100
 			NOT = { has_country_flag = requested_independence }
+			NOT = { truce_with = ROOT }
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 60
 	}
 
 	immediate = {
@@ -1772,10 +1774,11 @@ country_event = {
 
 	trigger = {
 		has_country_flag = requested_independence
+		NOT = { truce_with = ROOT }
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 60
 	}
 	
 	option = {	# Today we regain our freedom!

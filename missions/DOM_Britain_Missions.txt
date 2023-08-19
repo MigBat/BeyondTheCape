@@ -697,6 +697,9 @@ eng_row_slot_2 = {
 			unlock_issue = {
 				issue = crown_of_ireland_act
 			}
+			373 = {
+				center_of_trade = 1
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -1622,6 +1625,9 @@ gbr_row_3 = {
 			unlock_issue = {
 				issue = act_of_exploration
 			}
+			add_permanent_claim_province = {
+				province = 226
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -2535,24 +2541,11 @@ gbr_row_4 = {
 		required_missions = { gbr_establish_royal_navy }
 		position = 5
 		provinces_to_highlight = {
-			OR = {
-				province_id = 126
-				province_id = 163
-				province_id = 321
-				province_id = 4559
-				area = corsica_sardinia_area
-			}
+			province_id = 226
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_or_non_sovereign_subject_of = 126
-			owns_or_non_sovereign_subject_of = 163
-			owns_or_non_sovereign_subject_of = 321
-			owns_or_non_sovereign_subject_of = 4559
-			corsica_sardinia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns_or_non_sovereign_subject_of = 226
 		}
 		effect = {
 			add_dip_power = 100
@@ -2579,6 +2572,13 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				corsica_sardinia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 				add_permanent_claim_province = {
 					province = 163
 				}
@@ -2589,13 +2589,7 @@ gbr_row_4 = {
 					province = 4698
 				}
 			}
-			126 = {
-				center_of_trade = 1
-			}
-			163 = {
-				center_of_trade = 1
-			}
-			321 = {
+			226 = {
 				center_of_trade = 1
 			}
 		}

@@ -2,6 +2,7 @@
 
  henry_the_navigator_tt:0 "This modifer will last until the death of the navigator advisor."
  merc_english_longbowmen:0 "§REnglish Longbowmen§!"
+ merc_british_redcoats:0 "§RBritish Redcoats§!"
  port_english_alliance_tt:0 "The §YEnglish Longbowmen§! mercenary company becomes available to hire.\n§YIf the alliance is broken, we will lose this modifier and mercenary company.§!"
  mamluk_war_tooltip:0 "§YBecome the dominant trade power in the Gulf of Aden while Francisco de Almeida is alive to unlock unique events.§!"
 
@@ -10,6 +11,15 @@
  btc_events.1a:0 "A new horizon"
 
  is_colonizer_tt:0 "We are both colonizers."
+
+ merc_colonial_ordenancas:0 "§GColonial Ordenanças§!"
+ merc_knights_of_christ:0 "§YKnights of Christ§!"
+ merc_knights_of_avis:0 "§YKnights of Avis§!"
+ merc_knights_of_calatrava:0 "§YKnights of Calatrava§!"
+ merc_knights_of_santiago:0 "§YKnights of Santiago§!"
+ merc_knights_of_alcantara:0 "§YKnights of Alcántara§!"
+ merc_knights_of_montesa:0 "§YKnights of Montesa§!"
+ merc_knights_of_san_juan:0 "§YKnights of San Juan§!"
 
 # At Game Start #
  btc_events.2_t:0 "Resisting the Iberian Push"
@@ -484,6 +494,15 @@
  btc_por.172_d:0 "Our recent refusal of the portuguese call to arms has led them to send us a delegation to reconsider our stance in the hopes of prolonging the old alliance."
  btc_por.172a:0 "We shall defend Portugal."
  btc_por.172b:0 "Our decision is final." 
+ btc_por.173_t:0 "The Treaty of Alcáçovas"
+ btc_por.173_d:0 "This treaty put an end to the War of the Castilian Succession, which ended with a victory of the Castilians on land and a Portuguese victory on the sea. The four peace treaties signed at Alcáçovas reflected that outcome: Isabella was recognized as Queen of Castile while Portugal reached hegemony in the Atlantic Ocean."
+ btc_por.173a:0 "Propose the treaty."
+ btc_por.173b:0 "We have other priorities." 
+ alcacovas_treaty_tt:0 "All lands south of the Canary Islands will only be colonized by Portugal."
+ btc_por.174_t:0 "The Treaty of Alcáçovas"
+ btc_por.174_d:0 "This treaty put an end to the War of the Castilian Succession, which ended with a victory of the Castilians on land and a Portuguese victory on the sea. The four peace treaties signed at Alcáçovas reflected that outcome: Isabella was recognized as Queen of Castile while Portugal reached hegemony in the Atlantic Ocean."
+ btc_por.174a:0 "Sign the treaty."
+ btc_por.174b:0 "Compensate Portugal financially." 
 
 # Granada Paria #
 

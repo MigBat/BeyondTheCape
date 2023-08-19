@@ -1,0 +1,177 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "gnup_cavalry_saber_mesh"
+		file = "gfx/models/Units/gnup_cavalry_saber.mesh"			
+		
+		scale = 0.5
+	}
+
+	pdxmesh = {
+		name = "btc_AVIS_cavalry_01_mesh"
+		file = "gfx/models/Units/btc_AVIS_cavalry_01.mesh"			
+	
+		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
+		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }
+		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }	
+	
+		scale = 0.5
+	}
+	pdxmesh = {
+		name = "btc_AVIS_cavalry_horse_01_mesh"
+		file = "gfx/models/Units/btc_AVIS_cavalry_horse_01.mesh"
+		
+		animation = { id = "horse_attack" 		type = "cavalry_horse_attack_animation" }
+		animation = { id = "horse_idle"			type = "cavalry_horse_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_horse_moving_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_horse_moving_animation" }
+		
+		scale = 0.48
+	}
+	
+	pdxmesh = {
+		name = "btc_CHRIST_cavalry_01_mesh"
+		file = "gfx/models/Units/btc_CHRIST_cavalry_01.mesh"			
+	
+		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
+		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }
+		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }	
+	
+		scale = 0.5
+	}
+	pdxmesh = {
+		name = "btc_CHRIST_cavalry_horse_01_mesh"
+		file = "gfx/models/Units/btc_CHRIST_cavalry_horse_01.mesh"
+		
+		animation = { id = "horse_attack" 		type = "cavalry_horse_attack_animation" }
+		animation = { id = "horse_idle"			type = "cavalry_horse_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_horse_moving_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_horse_moving_animation" }
+		
+		scale = 0.48
+	}
+	
+	pdxmesh = {
+		name = "btc_CALATRAVA_cavalry_01_mesh"
+		file = "gfx/models/Units/btc_CALATRAVA_cavalry_01.mesh"			
+	
+		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
+		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }
+		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }	
+	
+		scale = 0.5
+	}
+	pdxmesh = {
+		name = "btc_CALATRAVA_cavalry_horse_01_mesh"
+		file = "gfx/models/Units/btc_CALATRAVA_cavalry_horse_01.mesh"
+		
+		animation = { id = "horse_attack" 		type = "cavalry_horse_attack_animation" }
+		animation = { id = "horse_idle"			type = "cavalry_horse_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_horse_moving_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_horse_moving_animation" }
+		
+		scale = 0.48
+	}
+	
+	pdxmesh = {
+		name = "btc_ALCANTARA_cavalry_01_mesh"
+		file = "gfx/models/Units/btc_ALCANTARA_cavalry_01.mesh"			
+	
+		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
+		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }
+		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }	
+	
+		scale = 0.5
+	}
+	pdxmesh = {
+		name = "btc_ALCANTARA_cavalry_horse_01_mesh"
+		file = "gfx/models/Units/btc_ALCANTARA_cavalry_horse_01.mesh"
+		
+		animation = { id = "horse_attack" 		type = "cavalry_horse_attack_animation" }
+		animation = { id = "horse_idle"			type = "cavalry_horse_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_horse_moving_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_horse_moving_animation" }
+		
+		scale = 0.48
+	}
+	
+	pdxmesh = {
+		name = "btc_MONTESA_cavalry_01_mesh"
+		file = "gfx/models/Units/btc_MONTESA_cavalry_01.mesh"			
+	
+		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
+		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }
+		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }	
+	
+		scale = 0.5
+	}
+	pdxmesh = {
+		name = "btc_MONTESA_cavalry_horse_01_mesh"
+		file = "gfx/models/Units/btc_MONTESA_cavalry_horse_01.mesh"
+		
+		animation = { id = "horse_attack" 		type = "cavalry_horse_attack_animation" }
+		animation = { id = "horse_idle"			type = "cavalry_horse_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_horse_moving_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_horse_moving_animation" }
+		
+		scale = 0.48
+	}
+	
+	pdxmesh = {
+		name = "btc_SANTIAGO_cavalry_01_mesh"
+		file = "gfx/models/Units/btc_SANTIAGO_cavalry_01.mesh"			
+	
+		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
+		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }
+		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }	
+	
+		scale = 0.5
+	}
+	pdxmesh = {
+		name = "btc_SANTIAGO_cavalry_horse_01_mesh"
+		file = "gfx/models/Units/btc_SANTIAGO_cavalry_horse_01.mesh"
+		
+		animation = { id = "horse_attack" 		type = "cavalry_horse_attack_animation" }
+		animation = { id = "horse_idle"			type = "cavalry_horse_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_horse_moving_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_horse_moving_animation" }
+		
+		scale = 0.48
+	}
+	
+	pdxmesh = {
+		name = "btc_SANJUAN_cavalry_01_mesh"
+		file = "gfx/models/Units/btc_SANJUAN_cavalry_01.mesh"			
+	
+		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
+		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }
+		animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_rider_retreat_animation" }	
+	
+		scale = 0.5
+	}
+	pdxmesh = {
+		name = "btc_SANJUAN_cavalry_horse_01_mesh"
+		file = "gfx/models/Units/btc_SANJUAN_cavalry_horse_01.mesh"
+		
+		animation = { id = "horse_attack" 		type = "cavalry_horse_attack_animation" }
+		animation = { id = "horse_idle"			type = "cavalry_horse_idle_animation" }
+		animation = { id = "horse_walk"			type = "cavalry_horse_moving_animation" }
+		animation = { id = "horse_retreat"		type = "cavalry_horse_moving_animation" }
+		
+		scale = 0.48
+	}
+}

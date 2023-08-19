@@ -198,6 +198,28 @@ can_colonize_province = {
 			}
 		}
 	}
+	# alcaçovas treaty
+	condition = {
+		tooltip = "alcacovas_treaty"
+		potential = {
+			FROM = {
+				has_country_flag = alcacovas_treaty
+				NOT = { has_country_flag = tordesillas_cas }
+				NOT = { has_country_flag = terra_nova_cas }
+				NOT = { has_country_flag = new_tordesillas_cas }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						continent = south_america
+					}
+				}
+			}
+		}
+	}
 	# tordesillas portugal
 	condition = {
 		tooltip = "tordesillas_portugal"
@@ -343,6 +365,7 @@ can_colonize_province = {
 		potential = {
 			FROM = {
 				has_country_flag = tordesillas_cas
+				NOT = { has_country_flag = alcacovas_treaty }
 				NOT = { has_country_flag = terra_nova_cas }
 				NOT = { has_country_flag = new_tordesillas_cas }
 			}
@@ -377,6 +400,7 @@ can_colonize_province = {
 		potential = {
 			FROM = {
 				has_country_flag = terra_nova_cas
+				NOT = { has_country_flag = alcacovas_treaty }
 				NOT = { has_country_flag = tordesillas_cas }
 				NOT = { has_country_flag = new_tordesillas_cas }
 			}
@@ -413,6 +437,7 @@ can_colonize_province = {
 		potential = {
 			FROM = {
 				has_country_flag = new_tordesillas_cas
+				NOT = { has_country_flag = alcacovas_treaty }
 				NOT = { has_country_flag = terra_nova_cas }
 				NOT = { has_country_flag = tordesillas_cas }
 			}

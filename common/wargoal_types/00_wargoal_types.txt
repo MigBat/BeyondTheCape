@@ -2962,6 +2962,12 @@ war_empire_cb_wgt = {
 
 superiority_castilian_civil_war = {
 	type = superiority
+
+	allowed_provinces = {
+		always = no
+	}
+	
+	allowed_provinces_are_eligible = yes
 	
 	attacker = 	{
 		badboy_factor = 1
@@ -2970,7 +2976,6 @@ superiority_castilian_civil_war = {
 
 		peace_options = {
 			po_concede_defeat
-			po_demand_provinces
 		}
 	}
 	
@@ -2984,7 +2989,8 @@ superiority_castilian_civil_war = {
 			po_concede_defeat
 		}
 	}
-
+	
+	prov_desc = NO_PROVS
 	war_name = "War of the Castilian Succession"
 }
 
@@ -3036,6 +3042,9 @@ naval_war = {
 
 		peace_options = {
 			po_demand_provinces
+			po_gold
+			po_humiliate_rival
+			po_trade_power
 		}
 	}
 	

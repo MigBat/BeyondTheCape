@@ -2779,10 +2779,15 @@ country_event = {
 	desc = btc_por.137_d
 	picture = NEW_HEIR_eventPicture
 
-	is_triggered_only = yes
+	trigger = {
+		tag = POR
+		is_year = 1500
+		has_country_flag = lost_war
+		NOT = { has_country_flag = won_castilian_civil_war }
+	}
 
 	mean_time_to_happen = {
-		days = 1
+		months = 12
 	}
 
 	option = {
@@ -5062,8 +5067,6 @@ country_event = {
 	desc = btc_por.172_d
 	picture = DIPLOMACY_eventPicture
 
-	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	immediate = {
@@ -5136,5 +5139,78 @@ country_event = {
 				set_country_flag = england_rejected_alliance
 			}
 		}
+	}
+}
+
+# The Treaty of Alcáçovas (POR)#
+
+country_event = {
+	id = btc_por.173
+	title = btc_por.173_t
+	desc = btc_por.173_d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Propose the Treaty
+		name = btc_por.173a
+		ai_chance = {
+			factor = 1
+		}
+
+		CAS = { 
+			country_event = {
+				id = btc_por.174
+				days = 3
+			} 
+		}
+		custom_tooltip = alcacovas_treaty_tt
+	}
+
+	option = {	# We have other priorities
+		name = btc_por.173b
+		ai_chance = {
+			factor = 0
+		}
+
+		add_country_modifier = {
+			name = proudly_alone
+			duration = -1
+		}
+	}
+}
+
+# The Treaty of Alcáçovas (CAS)#
+
+country_event = {
+	id = btc_por.174
+	title = btc_por.174_t
+	desc = btc_por.174_d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {	# Sign the Treaty
+		name = btc_por.174a
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = alcacovas_treaty_tt
+		hidden_effect = {
+			CAS = { set_country_flag = alcacovas_treaty }
+		}
+	}
+
+	option = {	# Compensate Portugal financially
+		name = btc_por.174b
+		ai_chance = {
+			factor = 0
+		}
+
+		add_years_of_income = -0.25
+		POR = { add_years_of_income = 0.25 }
 	}
 }

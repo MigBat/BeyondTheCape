@@ -199,6 +199,7 @@
  subject_colonial_region_restriction:0 "You cannot colonize in a colonial region where your overlord has a colonial nation."
  limit_colonize_cape:0 "You need diplomatic tech 9 to colonize this province."
  limit_colonize_interior:0 "You need expansion ideas or the siberian frontier idea to colonize this province."
+ alcacovas_treaty:0 "The Treaty of Alcáçovas prevents you from colonising here."
  tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
  new_tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
  tordesillas_castile:0 "The Treaty of Tordesillas prevents you from colonising here."
@@ -293,6 +294,9 @@
 
  colonial_pool_title:0 "Settler Pool"
  colonial_pool_desc:0 "The settler pool gives bonuses or maluses to your colonisation efforts depending on the number of settlers you have. For more information, click the decision and an event will pop up."
+
+ hire_navigator_title:0 "Hire Navigator"
+ hire_navigator_desc:0 "The Naval School of Sagres promotes the study of the seas, ship designs and navigation techniques. We can hire skilled navigators from there at a discount."
 
  revoke_tordesillas_title:0 "Revoke Treaty of Tordesillas"
  revoke_tordesillas_desc:0 "The Treaty of Tordesillas no longer serves our interests. It is time we revoke this treaty so we can freely colonise wherever we please."

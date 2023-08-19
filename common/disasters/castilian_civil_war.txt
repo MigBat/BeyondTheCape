@@ -14,13 +14,21 @@ castilian_civil_war = {
 		POR = {
 			is_free_or_tributary_trigger = yes
 		}
+		OR = {
+			POR = { has_regency = no }
+			ARA = { has_regency = no }
+		}
+		OR = {
+			POR = { government = monarchy }
+			ARA = { government = monarchy }
+		}
 		government = monarchy
 		normal_or_historical_nations = yes
 		uses_doom = no
 	}
 
 	can_start = {
-		current_age = age_of_discovery
+		NOT = { is_year = 1500 }
 		is_at_war = no
 		has_any_disaster = no
 		has_heir = yes
