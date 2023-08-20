@@ -1,0 +1,14 @@
+﻿l_english:
+ crownland_reminder_title:0 "A reminder to seize crownland"
+ crownland_reminder_desc_1.1:0 "It has been five years since we last seized crownland from our estates."
+ crownland_reminder_desc_1.2:0 "It has been five years since we last seized crownland from our estates. However we have to wait until the war is over."
+ crownland_reminder_desc_1.3:0 "It has been five years since we last seized crownland from our estates. However we have to wait until we have defeated the rebels in our country."
+ crownland_reminder_desc_1.4:0 "It has been five years since we last seized crownland from our estates. However our estates are not loyal so we should probably wait a bit longer."
+ crownland_reminder_ok:0 "Understood."
+ crownland_reminder_later:0 "Remind me later again."
+ crownland_reminder_patient:0 "Yes, we will wait."
+ crownland_reminder_impatient:0 "No, we will do it now."
+ crownland_reminder_peace_loyal_desc:0 "Now that there is finally externally and internally peace, we can turn our attention back to internal affairs. It is time to seize crownland from our estates."
+ crownland_reminder_peace_not_loyal_desc:0 "Now that there is finally externally and internally peace, we can turn our attention back to internal affairs. However our estates are not loyal so we should probably wait a bit longer."
+ crownland_reminder_loyal_desc:0 "Our estates are now loyal enough to accept seizing land without the risk of revolts or unrest."
+ 

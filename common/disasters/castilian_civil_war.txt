@@ -3,6 +3,7 @@
 
 castilian_civil_war = {
 	potential = {
+		NOT = { is_year = 1500 }
 		tag = CAS
 		NOT = { has_country_flag = had_cas_civil_war }
 		is_free_or_tributary_trigger = yes
@@ -24,7 +25,6 @@ castilian_civil_war = {
 	}
 
 	can_start = {
-		NOT = { is_year = 1500 }
 		is_at_war = no
 		has_any_disaster = no
 		has_heir = yes
@@ -37,6 +37,7 @@ castilian_civil_war = {
 	}
 	
 	can_stop = {
+		is_at_war = yes
 		OR = {
 			has_any_disaster = yes
 			is_lesser_in_union = yes

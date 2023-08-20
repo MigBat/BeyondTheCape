@@ -2703,6 +2703,23 @@ on_colony_finished_effect = {
 	# BEYOND THE CAPE #
 	if = {
 		limit = {
+			OR = {
+				owner = {
+					has_country_flag = patroonschap_system
+					overlord = {
+						has_country_flag = patroonschap_system
+					}
+				}
+			}
+			colonial_region = colonial_eastern_america
+		}
+		add_province_modifier = {
+			name = ned_patroonschap
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
 			owner = {
 				tag = POR
 			}

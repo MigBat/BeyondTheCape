@@ -704,3 +704,90 @@ country_event = {
 		}
 	}
 }
+
+# The Patroonschap
+
+country_event = {
+	id = btc_ned.10
+	title = btc_ned.10_t
+	desc = btc_ned.10_d
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				965 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 1177
+			}
+		}
+		else_if = {
+			limit = {
+				957 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 1179
+			}
+		}
+		else_if = {
+			limit = {
+				968 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 833
+			}
+		}
+		else_if = {
+			limit = {
+				950 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 1179
+			}
+		}
+		else_if = {
+			limit = {
+				932 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 833
+			}
+		}
+	}
+
+	option = {	# Establish the Patroonschap
+		name = btc_ned.10a
+
+		ai_chance = {
+			factor = 1
+		}
+		
+		hidden_effect = {
+			set_country_flag = patroonschap_system
+			custom_tooltip = patroonschap_system_tooltip
+		}
+	}
+
+	option = {	# We don't want such limitations
+		name = btc_ned.10b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -5
+	}
+}

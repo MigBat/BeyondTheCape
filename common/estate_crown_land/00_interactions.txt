@@ -334,6 +334,29 @@ interaction = {
 			}
 			clr_country_flag = recent_land_seizure
 		}
+		country_event = {
+			id = crownland_reminder.1
+			days = 1825
+		}
+		# If the player seizes crownland before the alarm goes off, this will reset the event
+		if = {
+			limit = {
+				has_country_flag = crownland_waiting_for_peace
+			}
+			clr_country_flag = crownland_waiting_for_peace
+		}
+		if = {
+			limit = {
+				has_country_flag = crownland_waiting_for_rebels
+			}
+			clr_country_flag = crownland_waiting_for_rebels
+		}
+		if = {
+			limit = {
+				has_country_flag = crownland_waiting_for_loyalty
+			}
+			clr_country_flag = crownland_waiting_for_loyalty
+		}	
 		set_country_flag = recent_land_seizure
 		if = {
 			limit = {

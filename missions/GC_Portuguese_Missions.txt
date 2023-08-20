@@ -1193,10 +1193,6 @@ gc_por_2_e = {
 		}
 	
 		effect = {
-			# add_country_modifier = {
-			# 	name = mini_mare_clausum
-			# 	duration = -1
-			# }
 			hidden_effect = {
 				384 = {
 					owner = {
@@ -1208,6 +1204,65 @@ gc_por_2_e = {
 				type = cb_get_mohamed
 				target = event_target:owner_of_medina
 				months = 60
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = battle_of_diu
+					}
+				}
+				4346 = {
+					remove_trade_modifier = {
+						who = root
+						key = portuguese_privateers
+					}
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}		
+				}
+				1334 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}		
+				}
+				1340 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}			
+				}
+				504 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}			
+				}
+				1343 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}		
+				}
+				1361 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}			
+				}
 			}
 		}
 	}

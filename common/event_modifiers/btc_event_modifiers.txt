@@ -765,3 +765,10 @@ predatory_trade = {
 	privateer_efficiency = 0.33
 	mercantilism_cost = -0.25
 }
+
+ned_patroonschap = {
+	min_local_autonomy = 0.1
+	local_tax_modifier = -0.5
+	province_trade_power_value = 3
+	trade_goods_size_modifier = 0.25
+}

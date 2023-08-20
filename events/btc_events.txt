@@ -435,6 +435,9 @@ country_event = {
 					NED = {
 						NOT = { mission_completed = btc_ned_mare_liberum }
 					}
+					ROOT = {
+						NOT = { mission_completed = btc_por_legacy_of_albuquerque }
+					}
 				}
 			}
 			4346 = {
@@ -466,6 +469,22 @@ country_event = {
 				}			
 			}
 			504 = {
+				add_trade_modifier = {
+					who = root
+					duration = -1
+					power = 25
+					key = spice_trade_monopoly
+				}			
+			}
+			1343 = {
+				add_trade_modifier = {
+					who = root
+					duration = -1
+					power = 25
+					key = spice_trade_monopoly
+				}		
+			}
+			1361 = {
 				add_trade_modifier = {
 					who = root
 					duration = -1

@@ -468,6 +468,28 @@ can_colonize_province = {
 			}
 		}
 	}
+	# patroonschap system
+	condition = {
+		tooltip = "patroonschap_system"
+		potential = {
+			FROM = {
+				has_country_flag = patroonschap_system
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					AND = {
+						colonial_region = colonial_eastern_america
+						OR = {
+							has_no_river_estuary_trigger = yes
+							NOT = { province_has_center_of_trade_of_level = 1 }
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {

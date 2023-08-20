@@ -2297,6 +2297,9 @@ country_event = {
 		create_colony_mission_reward = {
 			province = 1111
 		}
+		1111 = {
+			change_trade_goods = slaves
+		}
 	}
 
 	option = {	# We don't have the resources

@@ -559,6 +559,11 @@
  btc_ned.9_d:0 "In 1592, the Compagnie van Verre was founded to finance a Dutch trading expedition to the East Indies. Their initial inspiration had been the publication of a series of maps that appeared to show the route to the East Indies. Houtman was sent to Lisbon as a commercial spy to gather information about Portuguese spice trade in the East Indies. With extensive information about the east indies, including crucial details on navigation and the spice trade, four ships left for Banten to establish Dutch presence in the area."
  btc_ned.9a:0 "Seize the opportunity!"
  btc_ned.9b:0 "Let's not be hasty."
+ btc_ned.10_t:0 "The Patroonschap"
+ btc_ned.10_d:0 "In $YEAR$, the West India Company established the "Freedoms and Exemptions", which introduced a new form of colonization. This order allowed the formation of Patroonschappen, entities with local government and land ownership, responsible to the director-general of the colony. Although they could intervene formally, in practice directors-general have little influence over the Patroonschap."
+ btc_ned.10a:0 "Establish the Patroonschap System."
+ btc_ned.10b:0 "Let's stick to traditional colonization."
+ patroonschap_system_tooltip:0 "Provinces in the §YEastern America§! colonial region will have §Yincreased chance of discovering Fur.§!\n\nIn the §YEastern America§! colonial region, you can only colonize provinces that have §YCenters of Trade§! or §YEstuaries§!."
 
 # Aragon Events #
 

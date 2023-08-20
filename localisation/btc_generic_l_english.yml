@@ -1,5 +1,7 @@
 ﻿l_english:
 
+ HINT_TERRAINCOGNITA_QFTNW_WARN:0 "§R- You need the modifier Quest for the New World to explore across the oceans.§!"
+
 # Bookmarks #
  BEYOND_THE_CAPE:0 "Beyond the Cape"
  BEYOND_THE_CAPE_DESC:0 "With the Reconquista almost complete, and the Iberian peninsula almost entirely in Christian hands, the kingdom of Portugal has turned its attention to the shores of Africa. With the conquest of Ceuta in 1415 the founder of the Avis dynasty, João I, has already made the first inroads into the Moorish homeland. A policy that his grandson, the still young Afonso V will continue to the best of his abilities. It is however through the work of Afonso's uncle, Dom Henrique, Henry the Navigator, that Portugal will leave its mark upon the world..."
@@ -204,6 +206,7 @@
  new_tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
  tordesillas_castile:0 "The Treaty of Tordesillas prevents you from colonising here."
  new_tordesillas_castile:0 "The Treaty of Tordesillas prevents you from colonising here."
+ patroonschap_system:0 "The Patroonschap system prevents you from colonising here."
  is_ally_of_enemy_tt:0 "[From.GetName] is an ally of our enemy."
  does_not_border_tt:0 "We do not border [From.GetName]."
  miss_discover_caribbean:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region."
