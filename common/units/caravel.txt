@@ -11,3 +11,7 @@ trade_power = 4.0
 sailors = 75
 
 sprite_level = 2
+
+trigger = {
+	NOT = { tag = POR }
+}

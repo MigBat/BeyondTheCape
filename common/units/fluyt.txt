@@ -1,0 +1,18 @@
+#Fluyt
+type = light_ship
+
+hull_size = 18
+base_cannons = 22
+blockade = 10
+
+trade_power = 7.0
+
+sail_speed = 13
+
+sailors = 125
+
+sprite_level = 4
+
+trigger = {
+	culture = dutch
+}

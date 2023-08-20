@@ -1,18 +1,17 @@
-#Early Frigate
+#Caravela de Armada
 type = light_ship
 
 hull_size = 12
 base_cannons = 15
 blockade = 10
 
-sail_speed = 12
-
+sail_speed = 11
 trade_power = 5.0
 
-sailors = 100
+sailors = 75
 
-sprite_level = 3
+sprite_level = 2
 
 trigger = {
-	NOT = { culture = dutch }
+	tag = POR
 }
