@@ -1305,7 +1305,6 @@ country_event = {
 	picture = COURT_eventPicture
 
 	major = yes
-	fire_only_once = yes
 	is_triggered_only = yes
 
 	mean_time_to_happen = {
