@@ -201,11 +201,32 @@ country_decisions = {
 					has_heir_flag = joanna
 				}
 			}
+			CAS = { NOT = { has_disaster = castilian_civil_war }}
 		}
 
 		allow = {
 			prestige = CAS
-			legitimacy = CAS
+			stability = CAS
+			OR = {
+				legitimacy = CAS
+				legitimacy = 100
+			}
+			if = {
+				limit = {
+					POR = { has_heir_flag = isabel }
+				}
+				227 = {
+					higher_development_than = 219
+				}
+			}
+			if = {
+				limit = {
+					ARA = { has_heir_flag = joanna }
+				}
+				214 = {
+					higher_development_than = 219
+				}
+			}
 		}
 
 		effect = {
@@ -219,11 +240,21 @@ country_decisions = {
 			ai = no
 			tag = CAS
 			has_heir_flag = isabel
+			CAS = { NOT = { has_disaster = castilian_civil_war }}
 		}
 
 		allow = {
-			prestige = POR
-			legitimacy = POR
+			OR = {
+				prestige = POR
+				stability = POR
+				OR = {
+					legitimacy = POR
+					legitimacy = 100
+				}
+				219 = {
+					higher_development_than = 227
+				}
+			}
 		}
 
 		effect = {
@@ -237,11 +268,21 @@ country_decisions = {
 			ai = no
 			tag = CAS
 			has_heir_flag = joanna
+			CAS = { NOT = { has_disaster = castilian_civil_war }}
 		}
 
 		allow = {
-			prestige = ARA
-			legitimacy = ARA
+			OR = {
+				prestige = ARA
+				stability = ARA
+				OR = {
+					legitimacy = ARA
+					legitimacy = 100
+				}
+				219 = {
+					higher_development_than = 214
+				}
+			}
 		}
 
 		effect = {

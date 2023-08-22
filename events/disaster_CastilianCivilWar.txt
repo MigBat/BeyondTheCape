@@ -280,6 +280,7 @@ country_event = {
 			name = "King of"
 			dynasty = "Portugal"
 			country_of_origin = POR
+			culture = portugese
 			age = 15
 			male = yes
 		}
@@ -401,6 +402,7 @@ country_event = {
 			name = "King of"
 			dynasty = "Aragon"
 			country_of_origin = ARA
+			culture = aragonese
 			age = 15
 			male = yes
 		}
@@ -895,6 +897,7 @@ country_event = {
 				name = "King of"
 				dynasty = "Portugal"
 				country_of_origin = POR
+				culture = portugese
 				age = 15
 				male = yes
 			}
@@ -1014,6 +1017,7 @@ country_event = {
 				name = "King of"
 				dynasty = "Aragon"
 				country_of_origin = ARA
+				culture = aragonese
 				age = 15
 				male = yes
 			}
@@ -1311,32 +1315,6 @@ country_event = {
 		days = 1
 	}
 
-	immediate = {
-		hidden_effect = {
-			every_province = {
-				limit = {
-					owned_by = POR
-					is_capital = yes
-				}
-				save_event_target_as = por_capital
-			}
-			every_province = {
-				limit = {
-					owned_by = ARA
-					is_capital = yes
-				}
-				save_event_target_as = ara_capital
-			}
-			every_province = {
-				limit = {
-					owned_by = CAS
-					is_capital = yes
-				}
-				save_event_target_as = cas_capital
-			}
-		}
-	}
-
 	option = {	# Castile forms union over Portugal
 		name = "castilian_civil_war.30a"
 
@@ -1362,8 +1340,8 @@ country_event = {
 					NOT = { POR = { legitimacy = 100 } }
 				}
 				NOT = { POR = { stability = CAS } }
-				event_target:cas_capital = {
-					development = event_target:por_capital
+				219 = {
+					higher_development_than = 227
 				}
 			}
 		}
@@ -1410,8 +1388,8 @@ country_event = {
 							NOT = { ARA = { legitimacy = 100 } }
 						}
 						NOT = { ARA = { stability = CAS } }
-						event_target:cas_capital = {
-							development = event_target:ara_capital
+						219 = {
+							higher_development_than = 214
 						}
 					}
 				}
@@ -1463,9 +1441,9 @@ country_event = {
 				}
 				POR = { stability = CAS }
 				NOT = { 
-					event_target:cas_capital = {
-						development = event_target:por_capital
-					} 
+					219 = {
+						higher_development_than = 227
+					}
 				}
 			}
 		}
@@ -1511,9 +1489,9 @@ country_event = {
 				}
 				ARA = { stability = CAS }
 				NOT = { 
-					event_target:cas_capital = {
-						development = event_target:ara_capital
-					} 
+					219 = {
+						higher_development_than = 214
+					}
 				}
 				OR = {
 					ARA = { ai = no }			
