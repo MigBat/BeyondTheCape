@@ -1311,6 +1311,32 @@ country_event = {
 		days = 1
 	}
 
+	immediate = {
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = POR
+					is_capital = yes
+				}
+				save_event_target_as = por_capital
+			}
+			every_province = {
+				limit = {
+					owned_by = ARA
+					is_capital = yes
+				}
+				save_event_target_as = ara_capital
+			}
+			every_province = {
+				limit = {
+					owned_by = CAS
+					is_capital = yes
+				}
+				save_event_target_as = cas_capital
+			}
+		}
+	}
+
 	option = {	# Castile forms union over Portugal
 		name = "castilian_civil_war.30a"
 
@@ -1331,7 +1357,14 @@ country_event = {
 			}
 			OR = {
 				prestige = POR
-				legitimacy = POR
+				AND = {
+					legitimacy = POR
+					NOT = { POR = { legitimacy = 100 } }
+				}
+				NOT = { POR = { stability = CAS } }
+				event_target:cas_capital = {
+					development = event_target:por_capital
+				}
 			}
 		}
 
@@ -1369,9 +1402,18 @@ country_event = {
 				}
 			}
 			OR = {
-				OR = {
-					prestige = ARA
-					legitimacy = ARA
+				AND = {
+					OR = {
+						prestige = ARA
+						AND = {
+							legitimacy = ARA
+							NOT = { ARA = { legitimacy = 100 } }
+						}
+						NOT = { ARA = { stability = CAS } }
+						event_target:cas_capital = {
+							development = event_target:ara_capital
+						}
+					}
 				}
 				AND = {
 					ai = yes
@@ -1415,7 +1457,16 @@ country_event = {
 			}
 			AND = { 
 				NOT = { prestige = POR }
-				NOT = { legitimacy = POR }
+				OR = {
+					NOT = { legitimacy = POR }
+					POR = { legitimacy = 100 }
+				}
+				POR = { stability = CAS }
+				NOT = { 
+					event_target:cas_capital = {
+						development = event_target:por_capital
+					} 
+				}
 			}
 		}
 
@@ -1454,7 +1505,16 @@ country_event = {
 			}
 			AND = {
 				NOT = { prestige = ARA }
-				NOT = { legitimacy = ARA }
+				OR = {
+					NOT = { legitimacy = ARA }
+					ARA = { legitimacy = 100 }
+				}
+				ARA = { stability = CAS }
+				NOT = { 
+					event_target:cas_capital = {
+						development = event_target:ara_capital
+					} 
+				}
 				OR = {
 					ARA = { ai = no }			
 					AND = {
