@@ -16,6 +16,7 @@ trigger = {
 		OR = {
 			tag = VEN
 			culture_group = east_asian
+			culture_group = byzantine
 		}
 	}
 }

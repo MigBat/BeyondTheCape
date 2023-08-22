@@ -49,6 +49,7 @@ technology = { #The Barque
 	enable = early_caravel
 	enable = argosy
 	enable = junk
+	enable = fire_ship
 	
 	naval_engagement_width = 20
 
