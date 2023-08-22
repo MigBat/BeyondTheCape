@@ -15,7 +15,6 @@ trigger = {
 	NOT = {
 		OR = {
 			tag = KOR
-			culture = japanese
 		}
 	}
 }

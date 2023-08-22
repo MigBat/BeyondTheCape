@@ -481,9 +481,14 @@ can_colonize_province = {
 				NOT = {
 					AND = {
 						colonial_region = colonial_eastern_america
-						OR = {
-							has_no_river_estuary_trigger = yes
-							NOT = { province_has_center_of_trade_of_level = 1 }
+						NOT = {
+							OR = {
+								province_id = 965
+								province_id = 957
+								province_id = 968
+								province_id = 950
+								province_id = 932
+							}
 						}
 					}
 				}

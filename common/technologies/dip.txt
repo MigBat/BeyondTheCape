@@ -260,7 +260,6 @@ technology = { #The Galleass
 	enable = galleass
 
 	enable = geobukseon
-	enable = atakebune
 }
  
 technology = { #The Galleon
@@ -284,6 +283,7 @@ technology = { #The Galleon
 
 	enable = galeon
 	enable = vlieboot
+	enable = atakebune
 
 }
 

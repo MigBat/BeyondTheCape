@@ -146,7 +146,6 @@
  city_of_caesars:0 "City of the Caesars"
 
 # Units #
-
  early_caravel:0 "§MEarly Caravel§!"
  early_caravelDESCR:0 "The Early Caravel is a small maneuverable sailing ship used in the 15th century by the Portuguese to explore along the West African coast and into the Atlantic Ocean."
  caravela_de_armada:0 "§MCaravela de Armada§!"
@@ -314,6 +313,8 @@
  por_upgrade_armada_decision_desc:0 "Reinforce the hull and double the cannons! Our Armadas will have exceptional maneuverability and combat capabilities, although it comes at a higher cost."
  por_upgrade_fullrigged_decision_title:0 "Upgrade the Full-Rigged Ships"
  por_upgrade_fullrigged_decision_desc:0 "Make room for extra quarters in the ship! We may lose some firepower due to having less cannons, but now we have one ship that functions as two, packing a punch at both land and sea."
+ ven_upgrade_galeazza_decision_title:0 "Upgrade the Galeazze"
+ ven_upgrade_galeazza_decision_desc:0 "Increase the ship size, reinforce the hull! Our Galeazze will be unsinkable, albeit sacrificing movement speed."
  extra_flagship_decision_title:0 "Launch a New Flagship"
  extra_flagship_decision_desc:0 "Flagships are expensive and powerful ships. Only a strong navy is worthy of fitting one, but ours is amongst the greatest navies in the world. Let us build a second flagship to strike fear into our enemies and awe all who see our mighty vessels!"
  iberia_nation_title:0 "Form Iberian Nation"

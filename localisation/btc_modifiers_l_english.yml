@@ -210,6 +210,8 @@
  desc_por_armada:0 "A more combat oriented version of the Armada ship."
  por_fullrigged:0 "Portuguese Full-Rigged Ship"
  desc_por_fullrigged:0 "A version of the Full-Rigged ship that sacrifices combat ability for transporting troops."
+ ven_galeazza:0 "Venetian Galeazza"
+ desc_ven_galeazza:0 "A large and slow version of the Galeazza, meant to endure cannon fire."
  extra_flagship:0 "Extra Flagship"
  desc_extra_flagship:0 "The pride of our navy now has a rival."
  mare_clausum:0 "Mare Clausum"

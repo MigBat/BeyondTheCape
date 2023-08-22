@@ -14,8 +14,10 @@ sailors = 125
 sprite_level = 4
 
 trigger = {
-	OR = {
-		NOT = { culture = dutch }
-		NOT = { culture = cosmopolitan_french }
+	NOT = {
+		OR = {
+			culture = dutch
+			culture = cosmopolitan_french
+		}
 	}
 }

@@ -16,6 +16,7 @@ trigger = {
 		OR = {
 			tag = CAS
 			tag = SPA
+			culture_group = japanese_g
 		}
 	}
 }

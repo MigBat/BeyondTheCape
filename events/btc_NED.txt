@@ -638,25 +638,21 @@ country_event = {
 	desc = btc_ned.9_d
 	picture = SHIP_SAILING_eventPicture
 
-	trigger = {
-		tag = NED
-		is_year = 1595
-		630 = {
-			has_discovered = ROOT
-		}
-		if = {
-			limit = {
-				ai = no
-			}
-			mission_completed = emp_ned_invest_in_the_rich_trade
-		}
-	}
+	is_triggered_only = yes
 
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		months = 60
-	}
+	# trigger = {
+	# 	tag = NED
+	# 	is_year = 1595
+	# 	630 = {
+	# 		has_discovered = ROOT
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			ai = no
+	# 		}
+	# 		mission_completed = emp_ned_invest_in_the_rich_trade
+	# 	}
+	# }
 
 	option = {
 		name = btc_ned.9a
@@ -665,6 +661,7 @@ country_event = {
 			factor = 1
 		}
 
+		add_years_of_income = -0.5
 		if = {
 			limit = {
 				630 = {
@@ -723,7 +720,7 @@ country_event = {
 				}
 			}
 			create_colony_mission_reward = {
-				province = 1177
+				province = 965
 			}
 		}
 		else_if = {
@@ -733,7 +730,7 @@ country_event = {
 				}
 			}
 			create_colony_mission_reward = {
-				province = 1179
+				province = 957
 			}
 		}
 		else_if = {
@@ -743,7 +740,7 @@ country_event = {
 				}
 			}
 			create_colony_mission_reward = {
-				province = 833
+				province = 968
 			}
 		}
 		else_if = {
@@ -753,7 +750,7 @@ country_event = {
 				}
 			}
 			create_colony_mission_reward = {
-				province = 1179
+				province = 950
 			}
 		}
 		else_if = {
@@ -763,7 +760,7 @@ country_event = {
 				}
 			}
 			create_colony_mission_reward = {
-				province = 833
+				province = 932
 			}
 		}
 	}
@@ -775,9 +772,9 @@ country_event = {
 			factor = 1
 		}
 		
+		custom_tooltip = patroonschap_system_tooltip
 		hidden_effect = {
 			set_country_flag = patroonschap_system
-			custom_tooltip = patroonschap_system_tooltip
 		}
 	}
 

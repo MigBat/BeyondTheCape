@@ -53,6 +53,60 @@ country_decisions = {
 }
 
 country_decisions = {
+	spa_upgrade_fullrigged_decision = {
+		color = { 255 69 0 }
+		major = yes
+		potential = {
+			has_country_modifier = spa_employ_galleon_modifier
+			NOT = { has_country_modifier = spa_fullrigged }
+			is_or_was_tag = {
+				tag = CAS
+			}
+		}
+
+		allow = {
+			has_country_modifier = spa_employ_galleon_modifier
+			num_of_galleon = 5
+		}
+
+		effect = {
+			add_years_of_income = -0.25
+			add_country_modifier = {
+				name = spa_fullrigged
+				duration = -1
+			}
+		}
+	}
+}
+
+country_decisions = {
+	ven_upgrade_galeazza_decision = {
+		color = { 255 69 0 }
+		major = yes
+		potential = {
+			has_reform = merchant_arsenal_reform
+			NOT = { has_country_modifier = ven_galeazza }
+			is_or_was_tag = {
+				tag = VEN
+			}
+		}
+
+		allow = {
+			has_reform = merchant_arsenal_reform
+			num_of_galleass = 5
+		}
+
+		effect = {
+			add_years_of_income = -0.25
+			add_country_modifier = {
+				name = ven_galeazza
+				duration = -1
+			}
+		}
+	}
+}
+
+country_decisions = {
 	show_tutorial_decision = {
 		potential = { 
 			ai = no
