@@ -393,15 +393,15 @@ por_brazil_tariffs = {
 	global_tariffs = 0.15
 }
 
-square_rigged_caravel = {
+por_armada = {
 	number_of_cannons_modifier = 1
 	hull_size_modifier = 1
 	sailor_maintenance_modifer = 1
-	light_ship_cost = 0.5
+	naval_maintenance_modifier = 0.5
 	is_caravel_modifier = yes
 }
 
-nau = {
+por_fullrigged = {
 	hull_size_modifier = 0.1
 	heavy_ship_power = -0.1
 	can_transport_units = yes

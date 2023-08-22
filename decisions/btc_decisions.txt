@@ -1,10 +1,10 @@
 country_decisions = {
-	square_rigged_caravel_decision = {
+	por_upgrade_armada_decision = {
 		color = { 255 69 0 }
 		major = yes
 		potential = {
 			has_country_modifier = por_caravels
-			NOT = { has_country_modifier = square_rigged_caravel }
+			NOT = { has_country_modifier = por_armada }
 			is_or_was_tag = {
 				tag = POR
 			}
@@ -18,7 +18,7 @@ country_decisions = {
 		effect = {
 			add_years_of_income = -0.25
 			add_country_modifier = {
-				name = square_rigged_caravel
+				name = por_armada
 				duration = -1
 			}
 		}
@@ -26,12 +26,12 @@ country_decisions = {
 }
 
 country_decisions = {
-	nau_decision = {
+	por_upgrade_fullrigged_decision = {
 		color = { 255 69 0 }
 		major = yes
 		potential = {
 			has_country_modifier = por_galleons
-			NOT = { has_country_modifier = nau }
+			NOT = { has_country_modifier = por_fullrigged }
 			is_or_was_tag = {
 				tag = POR
 			}
@@ -45,7 +45,7 @@ country_decisions = {
 		effect = {
 			add_years_of_income = -0.25
 			add_country_modifier = {
-				name = nau
+				name = por_fullrigged
 				duration = -1
 			}
 		}

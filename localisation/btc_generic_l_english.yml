@@ -186,6 +186,18 @@
 
 # Special Units #
 
+ geobukseon_ship:0 "Bonus from Turtle Ship"
+ man_of_war_ship:0 "Bonus from Royal Ship"
+ galleon_ship:0 "Bonus from Full-Rigged Ship"
+ galleass_ship:0 "Bonus from Galeazza"
+ caravel_ship:0 "Bonus from Armada"
+
+ MODIFIER_HAS_GEOBUKSEON:0 "Country Allows Turtle Ships"
+ MODIFIER_HAS_MAN_OF_WAR:0 "Country Allows Royal Ships"
+ MODIFIER_HAS_GALLEON:0 "Country Allows Full-Rigged Ships"
+ MODIFIER_HAS_GALLEASSE:0 "Country Allows Galeazza Ships"
+ MODIFIER_HAS_CARAVEL:0 "Country Allows Armada Ships"
+
  CARAVEL_NAME:0 "Armada $NAME$"
  MODIFIER_ALLOWED_CARAVEL_FRACTION:0 "Armada Force Limit"
  MODIFIER_LOCAL_HAS_CARAVEL:0 "Province Allows Armada Ships"
@@ -261,6 +273,12 @@
  MODIFIER_AMOUNT_OF_MAN_OF_WAR:0 "Royal Ship Force Limit"
  ONLY_MAN_OF_WAR_MODIFIER:0 "§YAffects only Royal Ships§!"
 
+ desc_spa_employ_galleon_modifier:0 "Full-Rigged ships are a key new development in shipbuilding engineering, becoming the workhorse of our Navy."
+ improved_man_of_war_acts:0 "Royal Ship Acts"
+ unlock_issue_improved_man_of_war_acts_tt:0 "Unlock the §YRoyal Ship Acts§! [Root.GetParliamentOrFallbackName] issue."
+ kor_turtle_ships_desc:1 "Our shipbuilders have devised a plan for a new type of heavily armored warship. Taking inspiration from the strong plating on the sides and a covered roof to protect the crew from missile fire, they are calling it the turtle ship. The fearsome appearance of this new warship and the strength of its defenses will ensure that the naval superiority Korea requires to be defensible is never lost!"
+ desc_kor_turtle_fleets:0 "The turtle ship was a type of large warship used by the Korean navy during the Japanese Invasions of Korea (1592–1598), during which it played a key role in preventing the Japanese from attaining naval superiority, ultimately forcing them to retreat. Their name derives from the ship's protections, with a covered roof shaped vaguely like the shell of a turtle.\n\nIt is sometimes claimed that these were the first iron clad warships, but in point of fact it is not known whether versions were ever built with iron plating."
+
 # Age Bonus #
  ab_portugal_professional_navy:0 "Portuguese Professional Navy"
 
@@ -292,10 +310,10 @@
  spanish_navigators_desc:0 "A Spanish navigator will not only get you to the most distant undiscovered shore, but also, if the winds will it, get you back."
 
 # Decisions #
- square_rigged_caravel_decision_title:0 "Develop the Square-Rigged Caravel"
- square_rigged_caravel_decision_desc:0 "The square-rigged caravel is a design notable for its exceptional maneuverability and combat capabilities, although it comes at a higher cost."
- nau_decision_title:0 "Develop the Nau"
- nau_decision_desc:0 "By increasing the size of our galleons, we can fulfill both the responsibilities of transporting troops and naval engagement with a single ship, although its fighting capabilities will be diminished."
+ por_upgrade_armada_decision_title:0 "Upgrade the Armada Ships"
+ por_upgrade_armada_decision_desc:0 "Reinforce the hull and double the cannons! Our Armadas will have exceptional maneuverability and combat capabilities, although it comes at a higher cost."
+ por_upgrade_fullrigged_decision_title:0 "Upgrade the Full-Rigged Ships"
+ por_upgrade_fullrigged_decision_desc:0 "Make room for extra quarters in the ship! We may lose some firepower due to having less cannons, but now we have one ship that functions as two, packing a punch at both land and sea."
  extra_flagship_decision_title:0 "Launch a New Flagship"
  extra_flagship_decision_desc:0 "Flagships are expensive and powerful ships. Only a strong navy is worthy of fitting one, but ours is amongst the greatest navies in the world. Let us build a second flagship to strike fear into our enemies and awe all who see our mighty vessels!"
  iberia_nation_title:0 "Form Iberian Nation"
