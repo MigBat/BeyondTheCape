@@ -896,6 +896,9 @@ country_event = {
 				}
 			}
 			clr_country_flag = decisionAddSettlers_flag
+			country_event = {
+				id = btc_events.161
+			}
 		}
 		# Slaver privilege
 		if = {
@@ -1146,6 +1149,29 @@ country_event = {
 
 	option = {
 		name = btc_events.16b
+	}
+}
+
+country_event = {
+	id = btc_events.161
+	title = btc_events.161_t
+	desc = btc_events.161_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_events.161a
+
+		add_years_of_income = -0.25
+		custom_tooltip = add_settlers_tt
+		hidden_effect = {
+			set_country_flag = decisionAddSettlers_flag
+		}
+	}
+
+	option = {
+		name = btc_events.161b
 	}
 }
 

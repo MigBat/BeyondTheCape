@@ -1249,6 +1249,7 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
+		is_at_war = no
 		OR = {
 			is_year = 1560
 			has_country_modifier = lusiadas
