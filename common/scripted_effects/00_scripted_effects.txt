@@ -6342,19 +6342,6 @@ determine_value_of_trade_goods_fur = {
 				which = chance_modifier_fur
 			}
 		}
-		# Beyond the Cape
-		if = {
-			limit = {
-				OR = {
-					has_country_flag = patroonschap_system
-					colonial_parent = { has_country_flag = patroonschap_system }
-				}
-			}
-			multiply_variable = {
-				which = chance_modifier_fur
-				value = 3
-			}
-		}
 	}
 }
 determine_value_of_trade_goods_salt = {

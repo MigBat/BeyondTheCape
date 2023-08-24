@@ -567,7 +567,7 @@
  btc_ned.10_d:0 "In $YEAR$, the West India Company established the "Freedoms and Exemptions", which introduced a new form of colonization. This order allowed the formation of Patroonschappen, entities with local government and land ownership, responsible to the director-general of the colony. Although they could intervene formally, in practice directors-general have little influence over the Patroonschap."
  btc_ned.10a:0 "Establish the Patroonschap System."
  btc_ned.10b:0 "Let's stick to traditional colonization."
- patroonschap_system_tooltip:0 "Provinces in the §YEastern America§! colonial region will have §Yincreased chance of discovering Fur.§!\n\nIn the §YEastern America§! colonial region, you can only colonize provinces that have §YCenters of Trade§! or §YEstuaries§!."
+ patroonschap_system_tooltip:0 "In the §YEastern America§! colonial region, you can only colonize provinces that have §YCenters of Trade§! or §YEstuaries§!."
 
 # Aragon Events #
 
