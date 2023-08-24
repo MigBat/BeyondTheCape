@@ -463,6 +463,7 @@ country_decisions = {
 			mission_completed = btc_por_sagres
 		}
 		allow = {
+			has_estate_privilege = estate_burghers_naval_school_right
 			mission_completed = btc_por_sagres
 			owns = 230
 			navy_tradition = 5
