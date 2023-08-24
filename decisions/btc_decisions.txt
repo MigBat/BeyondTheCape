@@ -205,8 +205,11 @@ country_decisions = {
 		}
 
 		allow = {
-			prestige = CAS
 			stability = CAS
+			OR = {
+				prestige = CAS
+				prestige = 100
+			}
 			OR = {
 				legitimacy = CAS
 				legitimacy = 100
@@ -245,8 +248,11 @@ country_decisions = {
 
 		allow = {
 			OR = {
-				prestige = POR
 				stability = POR
+				OR = {
+					prestige = POR
+					prestige = 100
+				}
 				OR = {
 					legitimacy = POR
 					legitimacy = 100
@@ -273,8 +279,11 @@ country_decisions = {
 
 		allow = {
 			OR = {
-				prestige = ARA
 				stability = ARA
+				OR = {
+					prestige = ARA
+					prestige = 100
+				}
 				OR = {
 					legitimacy = ARA
 					legitimacy = 100

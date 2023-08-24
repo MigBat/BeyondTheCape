@@ -1309,7 +1309,47 @@ country_event = {
 	picture = COURT_eventPicture
 
 	major = yes
-	is_triggered_only = yes
+	
+	trigger = {
+		tag = CAS
+		OR = {
+			POR = {
+				has_country_flag = pressed_claim
+				NOT = { has_country_flag = lost_war }
+			}
+			ARA = {
+				has_country_flag = pressed_claim
+				NOT = { has_country_flag = lost_war }
+			}
+		}
+		CAS = { NOT = { has_disaster = castilian_civil_war }}
+		OR = {
+			AND = {	# Isabel Queen of Castile
+				POR = { has_heir_flag = isabel }
+				CAS = { has_ruler_flag = isabel }
+			}
+			AND = {	# Isabel Queen of Portugal
+				POR = { has_ruler_flag = isabel }
+				CAS = { has_heir_flag = isabel }
+			}
+			AND = {	# Isabel Queen of Castile and Portugal
+				POR = { has_ruler_flag = isabel }
+				CAS = { has_ruler_flag = isabel }
+			}
+			AND = {	# Joanna Queen of Castile
+				ARA = { has_heir_flag = joanna }
+				CAS = { has_ruler_flag = joanna }
+			}
+			AND = {	# Joanna Queen of Aragon
+				ARA = { has_ruler_flag = joanna }
+				CAS = { has_heir_flag = joanna }
+			}
+			AND = {	# Joanna Queen of Castile and Aragon
+				ARA = { has_ruler_flag = joanna }
+				CAS = { has_ruler_flag = joanna }
+			}
+		}
+	}
 
 	mean_time_to_happen = {
 		days = 1
@@ -1334,7 +1374,10 @@ country_event = {
 				}
 			}
 			OR = {
-				prestige = POR
+				AND = {
+					prestige = POR
+					NOT = { POR = { prestige = 100 } }
+				}
 				AND = {
 					legitimacy = POR
 					NOT = { POR = { legitimacy = 100 } }
@@ -1382,7 +1425,10 @@ country_event = {
 			OR = {
 				AND = {
 					OR = {
-						prestige = ARA
+						AND = {
+							prestige = ARA
+							NOT = { ARA = { prestige = 100 } }
+						}
 						AND = {
 							legitimacy = ARA
 							NOT = { ARA = { legitimacy = 100 } }
@@ -1434,7 +1480,10 @@ country_event = {
 				}
 			}
 			AND = { 
-				NOT = { prestige = POR }
+				OR = {
+					NOT = { prestige = POR }
+					POR = { prestige = 100 }
+				}
 				OR = {
 					NOT = { legitimacy = POR }
 					POR = { legitimacy = 100 }
@@ -1482,7 +1531,10 @@ country_event = {
 				}
 			}
 			AND = {
-				NOT = { prestige = ARA }
+				OR = {
+					NOT = { prestige = ARA }
+					ARA = { prestige = 100 }
+				}
 				OR = {
 					NOT = { legitimacy = ARA }
 					ARA = { legitimacy = 100 }

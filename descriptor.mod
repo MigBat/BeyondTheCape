@@ -1,4 +1,4 @@
-version="1.0.10"
+version="1.0.20"
 tags={
 	"Balance"
 	"Map"
@@ -12,6 +12,7 @@ tags={
 	"Loading Screen"
 }
 name="Beyond the Cape"
+replace_path="gfx/loadingscreens"
 picture="thumbnail.png"
 supported_version="1.35.6"
 remote_file_id="2966858781"
