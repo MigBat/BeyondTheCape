@@ -828,7 +828,9 @@ gc_por_2_b = {
 		position = 5
 
 		trigger = {
-			has_country_modifier = quest_for_the_new_world
+			1584 = {
+				has_discovered = ROOT
+			}
 		}
 
 		effect = {
@@ -1671,7 +1673,6 @@ gc_por_3 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
 					owner = {
-						is_subject = no
 						has_opinion = {
 							who = ROOT
 							value = 50
@@ -1689,9 +1690,6 @@ gc_por_3 = {
 					limit = {
 						668 = {
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
-							owner = {
-								is_subject = no
-							}
 						}
 					}
 					
@@ -1711,8 +1709,6 @@ gc_por_3 = {
 	}
 
 	gc_por_japanese_trade = {
-		add_prestige = 5
-		add_navy_tradition = 5
 		icon = mission_trade_with_japan
 		required_missions = { gc_por_trade_with_china }
 		position = 15
@@ -1739,7 +1735,6 @@ gc_por_3 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
 					owner = {
-						is_subject = no
 						has_opinion = {
 							who = ROOT
 							value = 50
@@ -1755,9 +1750,6 @@ gc_por_3 = {
 					limit = {
 						4182 = {
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
-							owner = {
-								is_subject = no
-							}
 						}
 					}
 					4182 = {

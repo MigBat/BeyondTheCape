@@ -5214,7 +5214,33 @@ country_event = {
 			factor = 0
 		}
 
-		add_years_of_income = -0.25
-		POR = { add_years_of_income = 0.25 }
+		add_years_of_income = -1
+		POR = { add_years_of_income = 1 }
+	}
+}
+
+# In Search of New Lands #
+
+country_event = {
+	id = btc_por.175
+	title = btc_por.175_t
+	desc = btc_por.175_d
+	picture = SHIP_SAILING_eventPicture
+	
+	trigger = {
+		has_country_flag = tordesillas_por
+		NOT = { 1584 = { has_discovered = ROOT } }
+	}
+
+	mean_time_to_happen = {
+		days = 3650
+	}
+
+	option = {	# New Lands
+		name = btc_por.175a
+
+		1584 = {
+			discover_country = ROOT
+		}
 	}
 }

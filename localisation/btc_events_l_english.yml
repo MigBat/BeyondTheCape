@@ -507,6 +507,9 @@
  btc_por.174_d:0 "This treaty put an end to the War of the Castilian Succession, which ended with a victory of the Castilians on land and a Portuguese victory on the sea. The four peace treaties signed at Alcáçovas reflected that outcome: Isabella was recognized as Queen of Castile while Portugal reached hegemony in the Atlantic Ocean."
  btc_por.174a:0 "Sign the treaty."
  btc_por.174b:0 "Compensate Portugal financially." 
+ btc_por.175_t:0 "In Search of New Lands"
+ btc_por.175_d:0 "With the signing of the Treaty of Tordesillas, the newly discovered lands by Columbus have mostly been granted by Castile. However, we do not know the full extent of this new continent. There may still be some land left for us on our side of the Tordesillas meridian, and if so we must claim and settle them for ourselves."
+ btc_por.175a:0 "Send forth an explorer!"
 
 # Granada Paria #
 
