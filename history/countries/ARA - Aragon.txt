@@ -7,7 +7,6 @@ add_accepted_culture = balearic
 religion = catholic
 historical_friend = SAR
 historical_friend = SIC
-historical_friend = POR
 technology_group = western
 capital = 214	# Zaragoza
 add_army_professionalism = 0.05

@@ -5244,3 +5244,64 @@ country_event = {
 		}
 	}
 }
+
+# Leonor of Aragon #
+
+country_event = {
+	id = btc_por.176
+	title = btc_por.176_t
+	desc = btc_por.176_d
+	picture = QUEEN_AND_MALE_HEIR_eventPicture
+	
+	trigger = {
+		tag = POR
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Infante Pedro shall remain the sole custodian
+		name = btc_por.176a
+		ai_chance = {
+			factor = 1
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+
+		ARA = {
+			add_opinion = {
+				who = ROOT
+				modifier = exiled_leonor
+			}
+		}
+	}
+
+	option = {	# Allow shared custody of the young King
+		name = btc_por.176b
+		ai_chance = {
+			factor = 0
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+
+		ARA = {
+			add_opinion = {
+				who = ROOT
+				modifier = welcomed_leonor
+			}
+			add_historical_friend = ROOT
+			remove_rival = ROOT
+		}
+		add_historical_friend = ARA
+		remove_rival = ARA
+	}
+}

@@ -108,3 +108,13 @@ refused_independence = {
 	opinion = -200
 	yearly_decay = 2
 }
+
+exiled_leonor = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+welcomed_leonor = {
+	opinion = 50
+	yearly_decay = 2	
+}

@@ -3,8 +3,8 @@ country_decisions = {
 		color = { 255 69 0 }
 		major = yes
 		potential = {
-			has_country_modifier = por_caravels
-			NOT = { has_country_modifier = por_armada }
+			# has_country_modifier = por_caravels
+			# NOT = { has_country_modifier = por_armada }
 			is_or_was_tag = {
 				tag = POR
 			}
@@ -30,8 +30,8 @@ country_decisions = {
 		color = { 255 69 0 }
 		major = yes
 		potential = {
-			has_country_modifier = por_galleons
-			NOT = { has_country_modifier = por_fullrigged }
+			# has_country_modifier = por_galleons
+			# NOT = { has_country_modifier = por_fullrigged }
 			is_or_was_tag = {
 				tag = POR
 			}
