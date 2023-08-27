@@ -12,3 +12,12 @@ sail_speed = 13
 sailors = 125
 
 sprite_level = 4
+
+trigger = {
+	NOT = {
+		OR = {
+			culture = dutch
+			culture = cosmopolitan_french
+		}
+	}
+}

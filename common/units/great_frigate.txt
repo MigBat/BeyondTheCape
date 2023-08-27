@@ -11,3 +11,13 @@ trade_power = 8.0
 sailors = 150
 
 sprite_level = 6
+
+trigger = {
+	NOT = {
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = AVE
+		}
+	}
+}

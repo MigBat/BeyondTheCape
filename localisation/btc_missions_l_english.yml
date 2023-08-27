@@ -22,7 +22,7 @@
  btc_por_mariners_astrolabe_title:0 "Mariner's Astrolabe"
  btc_por_mariners_astrolabe_desc:0 "It is imperial that our men at sea can find and map their way through uncharted waters. This small instrument would fit in any pocket, and allows navigators to determine the latitude of a ship at sea."
  intervene_in_castile_tooltip:0 "Has won, lost or not participated in the §YCastilian War of Succession§!."
- por_win_war_tt:0 "If we win the §YCastilian War of Succession§! we will get the following rewards:"
+ por_win_war_tt:0 "If we win the §YCastilian War of Succession§!, or the year is §Y1500§!, we will get the following rewards:"
  por_lose_war_tt:0 "\nIf we lose the §YCastilian War of Succession§! we will get the following rewards:"
  por_no_war_tt:0 "\nIf we do not participate in the §YCastilian War of Succession§! we will get the following rewards:"
  btc_por_terra_nova_title:0 "Terra Nova"
@@ -64,6 +64,10 @@
 #  emp_ned_baltic_bulk_trades_desc:0 "For our nation to prosper we need money. Luckily we are in a great geographic position from which we can control trade coming from various destinations. By establishing a majority of the trade share in the area, we will secure the necessary capital for new journeys abroad."
  emp_ned_invest_in_the_rich_trade_title:1 "Invest in the Rich Trades"
  emp_ned_invest_in_the_rich_trade_desc:0 "There's richer commerce out there for us to become part of. The Portuguese are avid traders and explorers and they keep their secrets safe and hidden. Who knows what riches they know of? If we establish a commercial presence in their markets, our merchants will surely learn of new opportunities."
+ btc_ned_mare_liberum_title:0 "Mare Liberum"
+ btc_ned_mare_liberum_desc:0 "Grotius formulated the new principle that the sea was international territory and all nations were free to use it for seafaring trade. The disputation was directed towards the Portuguese Mare clausum policy and their claim of monopoly on the East Indian Trade."
+ btc_ned_patroonschap_title:0 "The Patroonschap"
+ btc_ned_patroonschap_desc:0 "Patroonschappen are entities with local government and land ownership, responsible to the director-general of the colony. Although they could intervene formally, in practice directors-general have little influence over the Patroonschap."
 
 # Aragon Missions #
 
@@ -108,7 +112,7 @@
 
 # Changes from vanilla localisation #
 
- dom_portugal_reform_navy_desc:0 "Dom Henrique, Duke of Viseu, the uncle of king Afonso V, is best known for promoting Portugal's exploration efforts in West Africa and reforming its Navy, sponsoring a new type of ship, the caravel. Now we must go one step further and once again design a new fighting ship, the galleon."
+ dom_portugal_reform_navy_desc:0 "Dom Henrique, Duke of Viseu, the uncle of king Afonso V, is best known for promoting Portugal's exploration efforts in West Africa and reforming its Navy, sponsoring a new type of ship, the Caravel. Now we must go one step further and once again design a new fighting ship, the Galleon."
  noble_resilience_desc:0 "The various mercenary groups of this continent are often headed by lesser nobles. By befriending the nobility, we can make use of their network of contacts to seek out more and larger groups of mercenary soldiers."
  organised_construction_desc:0 "The need to upgrade the infrastructure of our government is a costly business, if we structure the process correctly we can do this cheaper."
  smithian_economics_desc:0 "By opposing mercantilism and restricting the state's influence in economic matters, we shall support a free market that will increase our overall production efficiency."

@@ -6,55 +6,55 @@ namespace = flavor_por
 normal_or_historical_nations = yes
 
 # Colonial Policy
-country_event = {
-	id = flavor_por.3266
-	title = "flavor_por.EVTNAME3266"
-	desc = "flavor_por.EVTDESC3266"
-	picture = COLONIZATION_eventPicture
+# country_event = {
+# 	id = flavor_por.3266
+# 	title = "flavor_por.EVTNAME3266"
+# 	desc = "flavor_por.EVTDESC3266"
+# 	picture = COLONIZATION_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		tag = POR
-		colony = 1
-	}
+# 	trigger = {
+# 		tag = POR
+# 		colony = 1
+# 	}
 
-	mean_time_to_happen = {
-		months = 120
-	}
+# 	mean_time_to_happen = {
+# 		months = 120
+# 	}
 	
 	
-	option = {		# Every man make his own fortune
-		name = "flavor_por.EVTOPTA3266"
-		ai_chance = { factor = 75 }
-		add_corruption = 1
-		add_country_modifier = {
-			name = colonial_policy
-			duration = -1
-		}
-	}
-	option = {		# Demand less corruption
-		name = "flavor_por.EVTOPTB3266"
-		ai_chance = { factor = 25 }
-		if = {
-			limit = {
-				corruption = 0.01
-			}
-			add_corruption = -1
-		}
-		if = {
-			limit = {
-				NOT = {
-					corruption = 1
-				}
-			}
-			add_country_modifier = {
-				name = less_colonial_corruption
-				duration = -1
-			}
-		}
-	}
-}
+# 	option = {		# Every man make his own fortune
+# 		name = "flavor_por.EVTOPTA3266"
+# 		ai_chance = { factor = 75 }
+# 		add_corruption = 1
+# 		add_country_modifier = {
+# 			name = colonial_policy
+# 			duration = -1
+# 		}
+# 	}
+# 	option = {		# Demand less corruption
+# 		name = "flavor_por.EVTOPTB3266"
+# 		ai_chance = { factor = 25 }
+# 		if = {
+# 			limit = {
+# 				corruption = 0.01
+# 			}
+# 			add_corruption = -1
+# 		}
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					corruption = 1
+# 				}
+# 			}
+# 			add_country_modifier = {
+# 				name = less_colonial_corruption
+# 				duration = -1
+# 			}
+# 		}
+# 	}
+# }
 
 # The Duke of Coimbra
 country_event = {
@@ -1077,6 +1077,58 @@ country_event = {
 		}
 		227 = {
 			upgrade_building = { trade = yes }
+		}
+	}
+}
+
+# Colonial Policy
+
+country_event = {
+	id = flavor_por.3266
+	title = "flavor_por.EVTNAME3266"
+	desc = "flavor_por.EVTDESC3266"
+	picture = COLONIZATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		colony = 1
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	
+	option = {		# Every man make his own fortune
+		name = "flavor_por.EVTOPTA3266"
+		ai_chance = { factor = 75 }
+		add_corruption = 1
+		add_country_modifier = {
+			name = colonial_policy
+			duration = -1
+		}
+	}
+	option = {		# Demand less corruption
+		name = "flavor_por.EVTOPTB3266"
+		ai_chance = { factor = 25 }
+		if = {
+			limit = {
+				corruption = 1
+			}
+			add_corruption = -1
+		}
+		if = {
+			limit = {
+				NOT = {
+					corruption = 1
+				}
+			}
+			add_country_modifier = {
+				name = less_colonial_corruption
+				duration = -1
+			}
 		}
 	}
 }

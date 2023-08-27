@@ -55,91 +55,31 @@ emp_ned_slot1_branch = {
 			}
 		}
 	}
-
-	emp_ned_found_batavia = {
-		icon = found_batavia
+	
+	emp_ned_control_coromandel_trade = {
+		icon = control_coromandel
 		required_missions = { emp_ned_seize_ceylon }
 		position = 7
-		completed_by = 1660.1.1
+		completed_by = 1665.1.1 # arbitrary
 		
 		provinces_to_highlight = {
-			province_id = 630
-			NOT = { owned_by = ROOT }
+			province_id = 1340
+			has_discovered = ROOT
 		}
 		trigger = {
-			if = {
-				limit = {
-					exists = VOC
-				}
-				VOC = {
-					is_subject_of_type = commercial_enterprise
-					is_subject_of = ROOT
-				}
-			}
-			630 = {
-				OR = {
-					owned_by = ROOT
-					owned_by = VOC
-				}
+			1340 = {
+				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
-			630 = {
-				rename_capital = "Batavia"
-			}
-			malacca_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	emp_ned_conquer_malacca = {
-		icon = conquer_malacca
-		required_missions = { emp_ned_found_batavia }
-		position = 8
-		completed_by = 1665.1.1
-		
-		provinces_to_highlight = {
-			area = malacca_area
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			if = {
-				limit = {
-					exists = VOC
-				}
-				VOC = {
-					is_subject_of_type = commercial_enterprise
-					is_subject_of = ROOT
-				}
-			}
-			malacca_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
-					owned_by = VOC
-				}
-			}
-		}
-		effect = {
-			taiwan_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_mercantilism = 2
 		}
 	}
 	
 	emp_ned_dutch_formosa = {
 		icon = dutch_formosa
 		required_missions = { emp_ned_conquer_malacca }
-		position = 9
+		position = 8
 
 		provinces_to_highlight = {
 			area = taiwan_area
@@ -174,7 +114,7 @@ emp_ned_slot1_branch = {
 	emp_ned_secure_dejima = {
 		icon = secure_dejima
 		required_missions = { emp_ned_dutch_formosa }
-		position = 10
+		position = 9
 		
 		provinces_to_highlight = {
 			province_id = 4182
@@ -496,8 +436,80 @@ emp_ned_slot2_indies_branch = {
 			trade_company_moluccas = {
 				has_discovered = ROOT
 			}
+			630 = {
+				has_discovered = ROOT
+			}
 		}
 		effect = {
+			lanka_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cape_of_good_hope_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = "voc_claims_on_portugal"
+			hidden_effect = {
+				east_indies_superregion = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+						owned_by = POR
+					}
+					add_permanent_claim = ROOT
+				}				
+			}
+			country_event = {
+				id = btc_ned.9
+			}
+		}
+	}
+
+	emp_ned_found_batavia = {
+		icon = found_batavia
+		required_missions = { emp_ned_charter_the_voc }
+		position = 6
+		completed_by = 1660.1.1
+		
+		provinces_to_highlight = {
+			province_id = 630
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = {
+					exists = VOC
+				}
+				VOC = {
+					is_subject_of_type = commercial_enterprise
+					is_subject_of = ROOT
+				}
+			}
+			630 = {
+				OR = {
+					owned_by = ROOT
+					owned_by = VOC
+				}
+			}
+		}
+		effect = {
+			630 = {
+				rename_capital = "Batavia"
+			}
+			malacca_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			if = {
 				limit = {
 					1177 = {
@@ -528,126 +540,147 @@ emp_ned_slot2_indies_branch = {
 					province = 833
 				}
 			}
-			lanka_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			cape_of_good_hope_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			custom_tooltip = "voc_claims_on_portugal"
-			hidden_effect = {
-				east_indies_superregion = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-						owned_by = POR
-					}
-					add_permanent_claim = ROOT
-				}				
-			}
 		}
 	}
 	
-	emp_ned_control_coromandel_trade = {
-		icon = control_coromandel
-		required_missions = { emp_ned_seize_ceylon }
+	emp_ned_conquer_malacca = {
+		icon = conquer_malacca
+		required_missions = { emp_ned_found_batavia }
 		position = 7
-		completed_by = 1665.1.1 # arbitrary
+		completed_by = 1665.1.1
 		
 		provinces_to_highlight = {
-			province_id = 1340
-			has_discovered = ROOT
+			area = malacca_area
+			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			1340 = {
-				is_strongest_trade_power = ROOT
+			if = {
+				limit = {
+					exists = VOC
+				}
+				VOC = {
+					is_subject_of_type = commercial_enterprise
+					is_subject_of = ROOT
+				}
+			}
+			malacca_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = VOC
+				}
 			}
 		}
 		effect = {
-			add_mercantilism = 2
-		}
-	}
-	
-	emp_ned_indonesia_cot = {
-		icon = indonesian_trade
-		required_missions = { emp_ned_conquer_malacca }
-		position = 9
-		
-		provinces_to_highlight = {
-			province_id = 1361
-			has_discovered = ROOT
-		}
-		
-		trigger = { 
-			1361 = {		# Straits of Johor
-				is_strongest_trade_power = ROOT
+			taiwan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = predatory_trade
+				duration = 18250
 			}
 		}
-	
+	}
+
+	btc_ned_mare_liberum = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { emp_ned_conquer_malacca }
+		position = 8
+		completed_by = 1660.1.1
+
+		trigger = {
+			if = {
+				limit = {
+					ai = yes
+				navy_size = 150
+				}
+			}
+			else = {
+				navy_size = 200
+			}
+		}
+
 		effect = {
 			add_country_modifier = {
-				name = "por_johor_dominance"
-				duration = 7300
+				name = mare_liberum
+				duration = 18250
 			}
-		}
-	}
-	
-	emp_ned_dutch_east_indies = {
-		icon = dutch_east_indies
-		required_missions = { emp_ned_indonesia_cot }
-		position = 10
-		
-		provinces_to_highlight = {
-			OR = {
-				trade_company_region = trade_company_moluccas
-				trade_company_region = trade_company_indonesia
+			4346 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}	
 			}
-			is_sea = no
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		
-		trigger = { 
-			calc_true_if = {
-				all_owned_province = {
-					OR = {
-						trade_company_region = trade_company_moluccas
-						trade_company_region = trade_company_indonesia
-					}
-				}
-				amount = 15
+			4346 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}	
 			}
-		}
-	
-		effect = {
-			1357 = {
-				add_trade_modifier = {
-					who = root
-					duration = 7300
-					power = 50
-					key = DUTCH_EAST_INDIES_TRADE
-				}
+			1334 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}	
+			}
+			1334 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}	
+			}
+			1340 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}		
+			}
+			1340 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}		
+			}
+			504 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}			
+			}
+			504 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}			
+			}
+			1343 = {
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}		
+			}
+			1343 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}		
 			}
 			1361 = {
-				add_trade_modifier = {
-					who = root
-					duration = 7300
-					power = 50
-					key = DUTCH_EAST_INDIES_TRADE
-				}
+				remove_trade_modifier = {
+					who = POR
+					key = spice_trade_monopoly
+				}			
 			}
-			# country_event_with_insight = {
-			# 	id = btc_ned.1
-			# 	insight_tooltip = ned_establish_first_indian_trade_post_at
-			# }
+			1361 = {
+				remove_trade_modifier = {
+					who = IBE
+					key = spice_trade_monopoly
+				}			
+			}
 		}
 	}
 }
@@ -825,11 +858,43 @@ emp_ned_slot3_branch = {
 			}
 		}
 	}
+
+	btc_ned_patroonschap = {
+		icon = mission_rb_the_thirteen_colonies
+		required_missions = { emp_ned_charter_the_wic }
+		position = 6
+
+		provinces_to_highlight = { }
+
+		trigger = {
+			965 = {
+				has_discovered = ROOT
+			}
+			957 = {
+				has_discovered = ROOT
+			}
+			968 = {
+				has_discovered = ROOT
+			}
+			950 = {
+				has_discovered = ROOT
+			}
+			932 = {
+				has_discovered = ROOT
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = btc_ned.10
+			}
+		}
+	}
 	
 	emp_ned_colonize_the_cape = {
 		icon = colonize_the_cape
-		required_missions = { emp_ned_charter_the_voc }
-		position = 6
+		required_missions = { emp_ned_found_batavia }
+		position = 7
 		completed_by = 1652.1.1
 		
 		provinces_to_highlight = {
@@ -883,39 +948,74 @@ emp_ned_slot3_branch = {
 		}
 	}
 	
-	emp_ned_discover_australia = {
-		icon = colonize_australia
-		required_missions = { emp_ned_colonize_the_cape }
-		position = 7
-		completed_by = 1660.1.1
+	emp_ned_dutch_east_indies = {
+		icon = dutch_east_indies
+		required_missions = { emp_ned_conquer_malacca }
+		position = 8
 		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = ned_spice_australia.tooltip
-				colonial_australia = {
-					has_discovered = ROOT
+		provinces_to_highlight = {
+			OR = {
+				trade_company_region = trade_company_moluccas
+				trade_company_region = trade_company_indonesia
+			}
+			is_sea = no
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						trade_company_region = trade_company_moluccas
+						trade_company_region = trade_company_indonesia
+					}
 				}
-				trade_company_indonesia = {
-					has_discovered = ROOT
+				amount = 15
+			}
+		}
+	
+		effect = {
+			1357 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 50
+					key = DUTCH_EAST_INDIES_TRADE
 				}
-				trade_company_moluccas = {
-					has_discovered = ROOT
+			}
+			1361 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 50
+					key = DUTCH_EAST_INDIES_TRADE
 				}
 			}
 		}
+	}
+	
+	emp_ned_indonesia_cot = {
+		icon = indonesian_trade
+		required_missions = { emp_ned_dutch_east_indies }
+		position = 9
 		
+		provinces_to_highlight = {
+			province_id = 1361
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			1361 = {		# Straits of Johor
+				is_strongest_trade_power = ROOT
+			}
+		}
+	
 		effect = {
-			create_admiral = {
-				tradition = 80
+			add_country_modifier = {
+				name = "por_johor_dominance"
+				duration = 7300
 			}
-			australia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			set_country_flag = ned_nova_hollandia_flag
 		}
 	}
 }
@@ -1257,7 +1357,7 @@ emp_ned_slot4_colony_branch = {
 				name = "the_unknown_frontier"
 				duration = 5475
 			}
-			american_east_coast_region = {
+			northeast_america_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1304,7 +1404,7 @@ emp_ned_slot4_colony_branch = {
 	
 	emp_ned_settle_north_america = {
 		icon = settle_north_america
-		required_missions = { emp_ned_explore_caribbean }
+		required_missions = { emp_ned_explore_caribbean btc_ned_patroonschap }
 		position = 7
 		completed_by = 1640.1.1
 		
@@ -1328,12 +1428,6 @@ emp_ned_slot4_colony_branch = {
 			}
 			else = {
 				custom_trigger_tooltip = {
-					tooltip = miss_discover_eastern_america
-					colonial_eastern_america = {
-						has_discovered = ROOT
-					}
-				}
-				custom_trigger_tooltip = {
 					tooltip = miss_colonize_eastern_america
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 1
@@ -1349,6 +1443,42 @@ emp_ned_slot4_colony_branch = {
 				name = "por_brazil_colonial"
 				duration = 5475
 			}
+		}
+	}
+	
+	emp_ned_discover_australia = {
+		icon = colonize_australia
+		required_missions = { emp_ned_colonize_the_cape }
+		position = 8
+		completed_by = 1660.1.1
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ned_spice_australia.tooltip
+				colonial_australia = {
+					has_discovered = ROOT
+				}
+				trade_company_indonesia = {
+					has_discovered = ROOT
+				}
+				trade_company_moluccas = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			create_admiral = {
+				tradition = 80
+			}
+			australia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			set_country_flag = ned_nova_hollandia_flag
 		}
 	}
 }

@@ -393,19 +393,29 @@ por_brazil_tariffs = {
 	global_tariffs = 0.15
 }
 
-square_rigged_caravel = {
+por_armada = {
 	number_of_cannons_modifier = 1
 	hull_size_modifier = 1
 	sailor_maintenance_modifer = 1
-	light_ship_cost = 0.5
+	naval_maintenance_modifier = 0.5
 	is_caravel_modifier = yes
 }
 
-nau = {
-	hull_size_modifier = 0.1
+por_fullrigged = {
 	heavy_ship_power = -0.1
 	can_transport_units = yes
 	is_galleon_modifier = yes
+}
+
+spa_fullrigged = {
+	cannons_for_hunting_pirates_in_fleet = 1
+	is_galleon_modifier = yes
+}
+
+ven_galeazza = {
+	hull_size_modifier = 1
+	movement_speed_in_fleet_modifier = -1 
+	is_galleass_modifier = yes
 }
 
 extra_flagship = {
@@ -753,4 +763,22 @@ quivira_location = {
 
 discovered_caribbean = {
 	global_colonial_growth = 25
+}
+
+mare_liberum = {
+	trade_efficiency = 0.05
+	placed_merchant_power = 5
+}
+
+predatory_trade = {
+	embargo_efficiency = 0.5
+	privateer_efficiency = 0.33
+	mercantilism_cost = -0.25
+}
+
+ned_patroonschap = {
+	min_local_autonomy = 0.1
+	local_tax_modifier = -0.5
+	province_trade_power_value = 3
+	trade_goods_size_modifier = 0.3
 }

@@ -1086,16 +1086,10 @@ colonial_brazil = {
 	}
 	names = {
 		trigger = {
-			tag = POR
+			is_or_was_tag = { tag = POR }
 			religion_group = christian
 		}
 		name = "COLONIAL_BRAZIL_Terra_de_Vera_Cruz"
-	}
-	names = {
-		trigger = {
-			tag = POR
-		}
-		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
 	}
 	names = {
 		trigger = {

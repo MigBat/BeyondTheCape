@@ -145,6 +145,7 @@ gc_por_1_a = {
 			custom_trigger_tooltip = {
 				tooltip = intervene_in_castile_tooltip
 				OR = {
+					is_year = 1500
 					has_country_flag = won_castilian_civil_war
 					has_country_flag = lost_war
 					has_country_flag = disregarded_claim
@@ -179,7 +180,10 @@ gc_por_1_a = {
 			hidden_effect = {
 				if = {
 					limit = { 
-						has_country_flag = won_castilian_civil_war
+						OR = {
+							has_country_flag = won_castilian_civil_war
+							is_year = 1500
+						}
 					}
 					add_prestige = 20
 					iberia_region = {
@@ -828,7 +832,9 @@ gc_por_2_b = {
 		position = 5
 
 		trigger = {
-			has_country_modifier = quest_for_the_new_world
+			1584 = {
+				has_discovered = ROOT
+			}
 		}
 
 		effect = {
@@ -1193,10 +1199,6 @@ gc_por_2_e = {
 		}
 	
 		effect = {
-			# add_country_modifier = {
-			# 	name = mini_mare_clausum
-			# 	duration = -1
-			# }
 			hidden_effect = {
 				384 = {
 					owner = {
@@ -1208,6 +1210,65 @@ gc_por_2_e = {
 				type = cb_get_mohamed
 				target = event_target:owner_of_medina
 				months = 60
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = battle_of_diu
+					}
+				}
+				4346 = {
+					remove_trade_modifier = {
+						who = root
+						key = portuguese_privateers
+					}
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}		
+				}
+				1334 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}		
+				}
+				1340 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}			
+				}
+				504 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}			
+				}
+				1343 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}		
+				}
+				1361 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 25
+						key = spice_trade_monopoly
+					}			
+				}
 			}
 		}
 	}
@@ -1616,7 +1677,6 @@ gc_por_3 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
 					owner = {
-						is_subject = no
 						has_opinion = {
 							who = ROOT
 							value = 50
@@ -1634,9 +1694,6 @@ gc_por_3 = {
 					limit = {
 						668 = {
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
-							owner = {
-								is_subject = no
-							}
 						}
 					}
 					
@@ -1656,8 +1713,6 @@ gc_por_3 = {
 	}
 
 	gc_por_japanese_trade = {
-		add_prestige = 5
-		add_navy_tradition = 5
 		icon = mission_trade_with_japan
 		required_missions = { gc_por_trade_with_china }
 		position = 15
@@ -1684,7 +1739,6 @@ gc_por_3 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
 					owner = {
-						is_subject = no
 						has_opinion = {
 							who = ROOT
 							value = 50
@@ -1700,9 +1754,6 @@ gc_por_3 = {
 					limit = {
 						4182 = {
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
-							owner = {
-								is_subject = no
-							}
 						}
 					}
 					4182 = {

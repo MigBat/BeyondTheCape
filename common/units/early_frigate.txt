@@ -12,3 +12,7 @@ trade_power = 5.0
 sailors = 100
 
 sprite_level = 3
+
+trigger = {
+	NOT = { culture = dutch }
+}
