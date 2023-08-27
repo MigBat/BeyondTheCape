@@ -145,6 +145,7 @@ gc_por_1_a = {
 			custom_trigger_tooltip = {
 				tooltip = intervene_in_castile_tooltip
 				OR = {
+					is_year = 1500
 					has_country_flag = won_castilian_civil_war
 					has_country_flag = lost_war
 					has_country_flag = disregarded_claim
@@ -179,7 +180,10 @@ gc_por_1_a = {
 			hidden_effect = {
 				if = {
 					limit = { 
-						has_country_flag = won_castilian_civil_war
+						OR = {
+							has_country_flag = won_castilian_civil_war
+							is_year = 1500
+						}
 					}
 					add_prestige = 20
 					iberia_region = {

@@ -180,9 +180,7 @@ country_event = {
 		}
 
 		add_prestige = -10
-		hidden_effect = {
-			set_country_flag = disregarded_claim
-		}
+		set_country_flag = disregarded_claim
 
 		CAS = {
 			country_event = { id = castilian_civil_war.5 days = 15 } # Joanna de Castile
@@ -553,7 +551,8 @@ country_event = {
 		}
 
 		add_prestige = -10
-
+		set_country_flag = disregarded_claim
+		
 		CAS = {
 			set_country_flag = no_contest
 			random_owned_province = {
@@ -1245,6 +1244,24 @@ country_event = {
 			}
 		}
 		add_stability = -1		
+		hidden_effect = {
+			if = {
+				limit = {
+					POR = {
+						has_heir_flag = isabel
+					}
+				}
+				POR = { set_country_flag = won_castilian_civil_war }
+			}
+			if = {
+				limit = {
+					ARA = {
+						has_heir_flag = joanna
+					}
+				}
+				ARA = { set_country_flag = won_castilian_civil_war }
+			}
+		}
 	}
 }
 

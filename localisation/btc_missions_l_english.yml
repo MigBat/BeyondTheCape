@@ -22,7 +22,7 @@
  btc_por_mariners_astrolabe_title:0 "Mariner's Astrolabe"
  btc_por_mariners_astrolabe_desc:0 "It is imperial that our men at sea can find and map their way through uncharted waters. This small instrument would fit in any pocket, and allows navigators to determine the latitude of a ship at sea."
  intervene_in_castile_tooltip:0 "Has won, lost or not participated in the §YCastilian War of Succession§!."
- por_win_war_tt:0 "If we win the §YCastilian War of Succession§! we will get the following rewards:"
+ por_win_war_tt:0 "If we win the §YCastilian War of Succession§!, or the year is §Y1500§!, we will get the following rewards:"
  por_lose_war_tt:0 "\nIf we lose the §YCastilian War of Succession§! we will get the following rewards:"
  por_no_war_tt:0 "\nIf we do not participate in the §YCastilian War of Succession§! we will get the following rewards:"
  btc_por_terra_nova_title:0 "Terra Nova"

@@ -47,28 +47,14 @@ ottoman_silk_road_monopoly = {
 			continent = europe
 		}
 		NOT = { tag = TUR }
+		NOT = { tag = VEN }
 		religion = catholic
+		NOT = { has_country_modifier = east_indian_trade_route }
 	}
 
 	trigger = {
 		151 = {
 			owned_by = TUR
-		}
-		any_country = {
-			capital_scope = {
-				continent = europe
-			}
-			NOT = {
-				any_active_trade_node = {
-					has_merchant = ROOT
-					OR = {
-						province_id = 1361 # Straits of Johor
-						province_id = 1343 # Ganges Delta
-						province_id = 504 # Sind
-						province_id = 1340 # Comorin Cape
-					}
-				}
-			}
 		}
 	}
 

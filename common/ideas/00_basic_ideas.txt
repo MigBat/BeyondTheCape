@@ -1778,6 +1778,9 @@ naval_ideas = {
 				tag = BNG
 				tag = MAJ
 				tag = GUJ
+				tag = MAM
+				tag = TUR
+				tag = VIJ
 			}
 		}
 		modifier = {
@@ -1785,6 +1788,13 @@ naval_ideas = {
 			AND = {
 				tag = NED
 				NOT = { has_idea_group = exploration_ideas }
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				tag = TUR
+				NOT = { adm_tech = 9 }
 			}
 		}
 	}
