@@ -7,8 +7,251 @@
 # ROOT = country picking the idea
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
 
+## TIER 1 ADM ##
+
+# Religious
+
+religious_ideas = {
+	category = ADM
+
+	bonus = {
+		culture_conversion_cost = -0.25
+		brahmins_hindu_loyalty_modifier = 0.1
+		church_loyalty_modifier = 0.1
+		monthly_portuguese_saudade = 0.075
+	}
+
+	trigger = {
+		NOT = { has_idea_group = innovativeness_ideas }
+	}
+
+	missionary_schools = {
+		missionaries = 1
+		missionary_maintenance_cost = -0.5
+	}
+	church_attendance_duty = { 
+		manpower_in_true_faith_provinces = 0.1
+	}
+	divine_supremacy = {
+		global_missionary_strength = 0.03
+	}
+	devoutness = {
+		tolerance_own = 2
+	}
+	inquisition = {
+		papal_influence = 2
+		devotion = 0.25
+		monthly_fervor_increase = 0.25
+		church_power_modifier = 0.1
+		monthly_piety_accelerator = 0.001
+		yearly_karma_decay = 0.1
+		yearly_doom_reduction = 1
+		yearly_authority = 0.15
+		yearly_patriarch_authority = 0.005
+		prestige_per_development_from_conversion = 0.1
+	}
+	religious_tradition = {
+		reverse_relation_with_same_religion = 10
+	}
+	deus_vult = {
+		cb_on_religious_enemies = yes
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religious_unity = 0.5 }
+		}
+		modifier = {
+			factor = 0.75
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 1.1
+			religion = catholic
+			any_neighbor_country = {
+				is_crusade_target = yes 
+			}
+		}
+		modifier = {
+			factor = 0.25
+			religious_unity = 0.95 
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				any_neighbor_country = {
+					religion = ROOT 
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_adm = 7 }
+		}
+	}
+}
+
+# Innovative
+
+innovativeness_ideas = {
+	category = ADM
+
+	bonus = {
+		advisor_cost = -0.2
+		monthly_portuguese_saudade = -0.05
+	}
+
+	trigger = {
+		NOT = { has_idea_group = religious_ideas }
+	}
+
+	patron_of_art  = {
+		prestige_decay = -0.01
+	}
+	empiricism = {
+		innovativeness_gain = 0.5
+	}
+	scientific_revolution = {
+		technology_cost = -0.1
+		embracement_cost = -0.1
+	}
+	dynamic_court = {
+		advisor_pool = 1
+	}
+	print_culture = {
+		global_institution_spread = 0.25
+	}
+	optimism = {
+		war_exhaustion = -0.05
+		monthly_splendor = 1
+	}
+	expanded_policies = {
+		free_policy = 1
+	}
+
+	ai_will_do = {
+		factor = 0.55
+		modifier = {
+			factor = 1.25
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 1.25
+			innovativeness = 40
+			NOT = { is_year = 1650 }
+		}
+		modifier = {
+			factor = 1.25
+			OR = { 
+				ruler_has_personality = scholar_personality 
+				ruler_has_personality = free_thinker_personality
+				in_golden_age = yes 	
+			}
+		}
+		modifier = {
+			factor = 1.1
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_idea_group = economic_ideas 
+				has_idea_group = offensive_ideas 
+				has_idea_group = naval_ideas
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_year = 1700 
+				innovativeness = 80
+			}
+		}
+	}
+}
+
+# Agrarian
+
+
+
+# Urban
+
+urban_ideas = {
+	category = ADM
+	
+
+	bonus = {
+		development_cost = -0.1
+		monthly_portuguese_saudade = -0.075
+	}
+
+	trigger = {
+		NOT = { has_idea_group = agrarian_ideas }
+	}
+
+	state_efficiency = {
+		global_prosperity_growth = 0.25
+		state_maintenance_modifier = -0.33
+	}
+	organised_construction = {
+		build_cost = -0.1 
+	}
+	efficient_construction_plans = {
+		expand_infrastructure_cost_modifier = -0.25
+	}
+	expanded_infrastructure_network = {
+		movement_speed = 0.1
+		center_of_trade_upgrade_cost = -0.2
+	}
+	administrative_efficiency_idea = {
+		state_governing_cost = -0.1
+	}
+	fort_logistics = {
+		fort_maintenance_modifier = -0.25
+ 	}
+	regulation_bureau = {
+		expand_administration_cost = -1
+		build_time = -0.25
+	}
+
+	ai_will_do = {
+		factor = 0.7
+		modifier = {
+			factor = 1.1 
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 1.1
+			national_focus = ADM 
+		}
+		modifier = { 
+			factor = 0.75 
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 1.15
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = naval_ideas
+			}
+		}
+	}
+}
+
+# Aristocratic
+
 aristocracy_ideas = {
-	category = MIL
+	category = ADM
 
 	bonus = {
 		leader_siege = 1
@@ -84,9 +327,10 @@ aristocracy_ideas = {
 	}
 }
 
+# Plutocratic
 
 plutocracy_ideas = {
-	category = MIL
+	category = ADM
 
 	bonus = {
 		global_prov_trade_power_modifier = 0.25
@@ -149,8 +393,10 @@ plutocracy_ideas = {
 	}
 }
 
+# Horde
+
 horde_gov_ideas = {
-	category = MIL
+	category = ADM
 	
 	bonus = {
 		cavalry_power = 0.25
@@ -195,8 +441,10 @@ horde_gov_ideas = {
 	}
 }
 
+# Theocratic
+
 theocracy_gov_ideas = {
-	category = MIL
+	category = ADM
 	
 	bonus = {
 		global_heretic_missionary_strength = 0.01
@@ -265,7 +513,7 @@ theocracy_gov_ideas = {
 }
 
 indigenous_ideas = {
-	category = MIL
+	category = ADM
 
 	bonus = {
 		global_institution_spread = 0.25
@@ -304,165 +552,142 @@ indigenous_ideas = {
 	}
 }
 
-innovativeness_ideas = {
-	category = ADM
+## TIER 1 DIP ##
 
-	bonus = {
-		advisor_cost = -0.2
-		monthly_portuguese_saudade = -0.05
-	}
-
-	patron_of_art  = {
-		prestige_decay = -0.01
-	}
-	empiricism = {
-		innovativeness_gain = 0.5
-	}
-	scientific_revolution = {
-		technology_cost = -0.1
-		embracement_cost = -0.1
-	}
-	dynamic_court = {
-		advisor_pool = 1
-	}
-	print_culture = {
-		global_institution_spread = 0.25
-	}
-	optimism = {
-		war_exhaustion = -0.05
-		monthly_splendor = 1
-	}
-	expanded_policies = {
-		free_policy = 1
-	}
-
-	ai_will_do = {
-		factor = 0.55
-		modifier = {
-			factor = 1.25
-			has_reform = steppe_horde
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { monthly_adm = 8 }
-		}
-		modifier = {
-			factor = 1.25
-			innovativeness = 40
-			NOT = { is_year = 1650 }
-		}
-		modifier = {
-			factor = 1.25
-			OR = { 
-				ruler_has_personality = scholar_personality 
-				ruler_has_personality = free_thinker_personality
-				in_golden_age = yes 	
-			}
-		}
-		modifier = {
-			factor = 1.1
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_idea_group = economic_ideas 
-				has_idea_group = offensive_ideas 
-				has_idea_group = naval_ideas
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				is_year = 1700 
-				innovativeness = 80
-			}
-		}
-	}
-}
+# Caravan
 
 
-religious_ideas = {
-	category = ADM
 
-	bonus = {
-		culture_conversion_cost = -0.25
-		brahmins_hindu_loyalty_modifier = 0.1
-		church_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = 0.075
-	}
+# Maritime
 
-	missionary_schools = {
-		missionaries = 1
-		missionary_maintenance_cost = -0.5
-	}
-	church_attendance_duty = { 
-		manpower_in_true_faith_provinces = 0.1
-	}
-	divine_supremacy = {
-		global_missionary_strength = 0.03
-	}
-	devoutness = {
-		tolerance_own = 2
-	}
-	inquisition = {
-		papal_influence = 2
-		devotion = 0.25
-		monthly_fervor_increase = 0.25
-		church_power_modifier = 0.1
-		monthly_piety_accelerator = 0.001
-		yearly_karma_decay = 0.1
-		yearly_doom_reduction = 1
-		yearly_authority = 0.15
-		yearly_patriarch_authority = 0.005
-		prestige_per_development_from_conversion = 0.1
-	}
-	religious_tradition = {
-		reverse_relation_with_same_religion = 10
-	}
-	deus_vult = {
-		cb_on_religious_enemies = yes
-	}
 
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			has_idea_group = humanist_ideas
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { religious_unity = 0.5 }
-		}
-		modifier = {
-			factor = 0.75
-			personality = ai_diplomat
-		}
-		modifier = {
-			factor = 1.1
-			religion = catholic
-			any_neighbor_country = {
-				is_crusade_target = yes 
-			}
-		}
-		modifier = {
-			factor = 0.25
-			religious_unity = 0.95 
-		}
-		modifier = {
-			factor = 0.25
-			NOT = {
-				any_neighbor_country = {
-					religion = ROOT 
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { monthly_adm = 7 }
-		}
-	}
-}
+
+# Artistic
+
+
+
+# Imperialism
+
+
+
+# Exploration
+
+
+
+## TIER 1 MIL ##
+
+# Naval
+
+
+
+# Mercenary
+
+
+
+# Mobilisation
+
+
+
+# Defensive
+
+
+
+# Offensive
+
+
+
+## TIER 2 ADM ##
+
+# Nationalist
+
+
+
+# Humanist
+
+
+
+# Meritocracy
+
+
+
+# Expansion
+
+
+
+## TIER 2 DIP ##
+
+# Mercantilism
+
+
+
+# Free Trade
+
+
+
+# Espionage
+
+
+
+# Colonial
+
+
+
+## TIER 2 MIL ##
+
+# Standing Army
+
+
+
+# Firepower
+
+
+
+# Bravery
+
+
+
+# Logistics
+
+
+
+## TIER 3 ADM ##
+
+# Command Economy
+
+
+
+# Liberalism
+
+
+
+## TIER 3 DIP ##
+
+# Influence
+
+
+
+# Coercive Diplomacy
+
+
+
+## TIER 3 MIL ##
+
+# Decisive Battle
+
+
+
+# War of Attrition
+
+
+
+##################################
+
+
+
+
+
+
+
 
 
 spy_ideas = {
@@ -472,6 +697,14 @@ spy_ideas = {
 		rebel_support_efficiency = 1
 		spy_action_cost_modifier = -0.2
 		monthly_portuguese_saudade = 0.05
+	}
+
+	trigger = {
+		has_tier_1_dip_idea = yes
+		OR = {
+			has_tier_1_adm_idea = yes
+			has_tier_1_mil_idea = yes
+		}
 	}
 	
 	claim_fabrication = {
@@ -526,11 +759,17 @@ spy_ideas = {
 }
 
 
-diplomatic_ideas = {
+coercive_diplomacy_ideas = {
 	category = DIP
 	bonus = {
 		reduced_stab_impacts = yes
 		monthly_portuguese_saudade = 0.05
+	}
+
+	trigger = {
+		has_tier_2_dip_idea = yes
+		has_idea_group = imperialism_ideas
+		NOT = { has_idea_group = influence_ideas }
 	}
 	
 	grand_banquets = {
@@ -581,6 +820,10 @@ offensive_ideas = {
 	bonus = {
 		recover_army_morale_speed = 0.1
 		monthly_portuguese_saudade = 0.05
+	}
+
+	trigger = {
+		NOT = { has_idea_group = defensive_ideas }
 	}
 
 	bayonet_leaders = {
@@ -686,6 +929,10 @@ defensive_ideas = {
 		monthly_portuguese_saudade = -0.075
 	}
 
+	trigger = {
+		NOT = { has_idea_group = offensive_ideas }
+	}
+
 	battlefield_commisions = {
 		army_tradition_from_battle = 1.0
 	}
@@ -785,7 +1032,7 @@ defensive_ideas = {
 }
 
 
-trade_ideas = {
+caravan_ideas = {
 	category = DIP
 
 	bonus = {
@@ -857,12 +1104,23 @@ trade_ideas = {
 
 
 
-economic_ideas = {
+mercantilism_ideas = {
 	category = ADM
 
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
 		monthly_portuguese_saudade = -0.075
+	}
+
+	trigger = {
+		OR = {
+			has_idea_group = maritime_ideas
+			has_idea_group = caravan_ideas
+		}
+		OR = {
+			has_tier_1_adm_idea = yes
+			has_tier_1_mil_idea = yes
+		}
 	}
 
 	bureaucracy = { 
@@ -941,6 +1199,10 @@ exploration_ideas = {
 	bonus = {
 		cb_on_overseas = yes
 		monthly_portuguese_saudade = 0.075
+	}
+
+	trigger = {
+		num_of_ports = 1
 	}
 
 	overseas_exploration = {
@@ -1131,14 +1393,15 @@ exploration_ideas = {
 maritime_ideas = {
 	category = DIP
 
-	trigger = {
-		primitives = no
-	}
-
 	bonus = {
 		sea_repair = yes
 		movement_speed_in_fleet_modifier = 1 
 		monthly_portuguese_saudade = 0.075
+	}
+
+	trigger = {
+		primitives = no
+		num_of_ports = 1
 	}
 
 	merchant_traditions = {
@@ -1232,13 +1495,23 @@ maritime_ideas = {
 }
 
 
-quality_ideas = {
+firepower_ideas = {
 	category = MIL
 
 	bonus = {
 		discipline = 0.05
 		janissaries_loyalty_modifier = 0.1
 		monthly_portuguese_saudade = -0.05
+	}
+
+	trigger = {
+		NOT = { has_idea_group = mobilisation_ideas }
+		NOT = { has_idea_group = bravery_ideas }
+		has_tier_1_mil_idea = yes
+		OR = {
+			has_tier_1_adm_idea = yes
+			has_tier_1_dip_idea = yes
+		}
 	}
 
 	private_to_marshal = {
@@ -1327,13 +1600,20 @@ quality_ideas = {
 }
 
 
-quantity_ideas = {
+mobilisation_ideas = {
 	category = MIL
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
 		monthly_portuguese_saudade = -0.05
 	}
+
+	trigger = {
+		NOT = { has_idea_group = mercenary_ideas }
+		NOT = { has_idea_group = firepower_ideas }
+		NOT = { has_idea_group = bravery_ideas }
+	}
+
 	mass_army = {
 		global_manpower_modifier = 0.33
 	}
@@ -1409,6 +1689,19 @@ expansion_ideas = {
 	bonus = {
 		treasure_fleet_income = 0.25
 		monthly_portuguese_saudade = 0.075
+	}
+
+	trigger = {
+		OR = {
+			AND = {
+				has_tier_1_adm_idea = yes
+				OR = {
+					has_tier_1_dip_idea = yes
+					has_tier_1_mil_idea = yes
+				}
+			}
+			has_idea_group = exploration_ideas
+		}
 	}
 
 	additional_colonists = {
@@ -1492,13 +1785,22 @@ expansion_ideas = {
 }
 
 
-administrative_ideas = {
+meritocracy_ideas = {
 	category = ADM
 
 	bonus = {
 		governing_capacity_modifier = 0.2
 		eunuchs_loyalty_modifier = 0.1
 		monthly_portuguese_saudade = -0.075
+	}
+
+	trigger = {
+		NOT = { has_idea_group = aristocracy_ideas }
+		has_tier_1_adm_idea = yes
+		OR = {
+			has_tier_1_dip_idea = yes
+			has_tier_1_mil_idea = yes
+		}
 	}
 
 	administrative_council = {
@@ -1574,6 +1876,15 @@ humanist_ideas = {
 		monthly_portuguese_saudade = -0.05
 	}
 
+	trigger = {
+		NOT = { has_idea_group = nationalist_ideas }
+		has_tier_1_adm_idea = yes
+		OR = {
+			has_tier_1_dip_idea = yes
+			has_tier_1_mil_idea = yes
+		}
+	}
+
 	local_traditions = {
 		global_unrest = -2
 		harmonization_speed = 0.25
@@ -1642,6 +1953,11 @@ influence_ideas = {
 		monthly_portuguese_saudade = 0.075
 	}
 
+	trigger = {
+		NOT = { has_idea_group = coercive_diplomacy_ideas }
+		has_tier_2_dip_idea = yes
+	}
+
 	tribute_system = {
 		vassal_income = 0.25
 	}
@@ -1694,6 +2010,7 @@ naval_ideas = {
 
 	trigger = {
 		primitives = no
+		num_of_ports = 1
 	}
 
 	bonus = {
@@ -1800,7 +2117,7 @@ naval_ideas = {
 	}
 }
 
-court_ideas = {
+artistic_ideas = {
 	category = DIP
 
 
@@ -1870,6 +2187,11 @@ mercenary_ideas = {
 		monthly_portuguese_saudade = -0.05
 	}
 
+	trigger = {
+		NOT = { has_idea_group = mobilisation_ideas }
+		NOT = { has_idea_group = standing_army_ideas }
+	}
+
 	organised_mercenary_payment = {
 		mercenary_cost = -0.25
 	}
@@ -1900,60 +2222,3 @@ mercenary_ideas = {
 	}
 }
 
-infrastructure_ideas = {
-	category = ADM
-	
-
-	bonus = {
-		development_cost = -0.1
-		monthly_portuguese_saudade = -0.075
-	}
-
-	state_efficiency = {
-		global_prosperity_growth = 0.25
-		state_maintenance_modifier = -0.33
-	}
-	organised_construction = {
-		build_cost = -0.1 
-	}
-	efficient_construction_plans = {
-		expand_infrastructure_cost_modifier = -0.25
-	}
-	expanded_infrastructure_network = {
-		movement_speed = 0.1
-		center_of_trade_upgrade_cost = -0.2
-	}
-	administrative_efficiency_idea = {
-		state_governing_cost = -0.1
-	}
-	fort_logistics = {
-		fort_maintenance_modifier = -0.25
- 	}
-	regulation_bureau = {
-		expand_administration_cost = -1
-		build_time = -0.25
-	}
-
-	ai_will_do = {
-		factor = 0.7
-		modifier = {
-			factor = 1.1 
-			personality = ai_capitalist
-		}
-		modifier = {
-			factor = 1.1
-			national_focus = ADM 
-		}
-		modifier = { 
-			factor = 0.75 
-			NOT = { monthly_adm = 8 }
-		}
-		modifier = {
-			factor = 1.15
-			OR = {
-				has_idea_group = trade_ideas
-				has_idea_group = naval_ideas
-			}
-		}
-	}
-}
