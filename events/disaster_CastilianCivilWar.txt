@@ -1326,6 +1326,7 @@ country_event = {
 	picture = COURT_eventPicture
 
 	major = yes
+	fire_only_once = yes
 	
 	trigger = {
 		tag = CAS
