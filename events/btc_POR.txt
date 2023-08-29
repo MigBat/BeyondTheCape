@@ -2783,6 +2783,8 @@ country_event = {
 	desc = btc_por.137_d
 	picture = NEW_HEIR_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		is_year = 1500
