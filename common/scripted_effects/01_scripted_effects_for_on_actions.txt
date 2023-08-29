@@ -2721,7 +2721,7 @@ on_colony_finished_effect = {
 	if = {
 		limit = {
 			owner = {
-				tag = { is_or_war_tag = POR }
+				tag = { is_or_was_tag = POR }
 			}
 			has_province_modifier = padrao_raised
 		}
