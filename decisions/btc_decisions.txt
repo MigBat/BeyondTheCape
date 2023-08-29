@@ -374,3 +374,51 @@ country_decisions = {
 		}
 	}
 }
+ 
+ #Venetian decisions
+
+ #Council of ten emergency government decision
+ country_decisions = {
+	btc_ven_ten_council_government = {
+		potential = {
+			ai = no
+			has_reform = venice_merchants_reform
+			NOT = { has_country_modifier = btc_ven_ten_council_eliminated }
+			NOT = { has_government_attribute = improved_ten_council }
+		}
+		allow = {
+			NOT = { has_country_modifier = btc_ven_ten_emergency_government }
+			war_exhaustion = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = btc_ven_ten_emergency_government
+				duration = 1825
+			}
+			add_stability = -1
+			add_prestige = -20
+		}
+	}
+}
+
+country_decisions = {
+	btc_ven_improved_ten_council_government = {
+		potential = {
+			ai = no
+			NOT = { has_country_modifier = btc_ven_ten_council_eliminated }
+			has_government_attribute = improved_ten_council
+		}
+		allow = {
+			NOT = { has_country_modifier = btc_ven_ten_emergency_government }
+			NOT = { has_country_modifier = btc_ven_ten_improved_emergency_government }
+			war_exhaustion = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = btc_ven_ten_improved_emergency_government
+				duration = 1825
+			}
+			add_prestige = -10
+		}
+	}
+}

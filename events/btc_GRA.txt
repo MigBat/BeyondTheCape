@@ -1,6 +1,6 @@
 namespace = btc_gra
 normal_or_historical_nations = yes
-#test
+
 # Pay the Paria
 country_event = {
 	id = btc_gra.1

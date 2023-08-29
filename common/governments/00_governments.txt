@@ -783,6 +783,8 @@ republic = {
 				devolution_of_powers_reform
 				consolidate_power_to_the_ruler_reform
 				consolidate_power_into_different_candidates_reform
+				#Venetian improved council of the Ten reform
+				btc_ven_improve_the_council_of_the_ten_reform
 				power_to_the_raiders_reform
 				power_to_the_smugglers_reform
 				power_to_the_captains_reform
