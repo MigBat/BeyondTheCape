@@ -2749,7 +2749,6 @@ ordennancas_reform = {
 		}
 	}
 	modifiers = {
-		own_territory_dice_roll_bonus = 1
 		land_forcelimit_modifier = -0.1
 		garrison_size = 0.25
 		garrison_damage = 0.5

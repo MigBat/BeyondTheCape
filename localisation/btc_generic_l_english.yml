@@ -148,8 +148,8 @@
 # Units #
  early_caravel:0 "§MEarly Caravel§!"
  early_caravelDESCR:0 "The Early Caravel is a small maneuverable sailing ship used in the 15th century by the Portuguese to explore along the West African coast and into the Atlantic Ocean."
- caravela_de_armada:0 "§MCaravela de Armada§!"
- caravela_de_armadaDESCR:0 "A much larger version of the caravel, the Caravela de Armada held a notable role in the Portuguese expansion during the age of discovery, especially in the first half of the sixteenth century, for its exceptional maneuverability and combat capabilities."
+ caravela_de_armada:0 "§MCaravela Redonda§!"
+ caravela_de_armadaDESCR:0 "A much larger version of the caravel, the Caravela Redonda held a notable role in the Portuguese expansion during the age of discovery, especially in the first half of the sixteenth century, for its exceptional maneuverability and combat capabilities."
  oceanic_carrack:0 "§MOceanic Carrack§!"
  oceanic_carrackDESCR:0 "As the Portuguese gradually extended their trade ever further south along Africa's Atlantic coast during the 15th century, they needed larger, more durable and more advanced sailing ships for their long oceanic ventures."
  nau:0 "§MNau§!"

@@ -1,0 +1,54 @@
+song = {
+	name = "welcomereality"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+song = {
+	name = "thevoyage"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+song = {
+	name = "thekraken"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+song = {
+	name = "peleliu"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+song = {
+	name = "lasthorizon"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+song = {
+	name = "beyondthecape"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}

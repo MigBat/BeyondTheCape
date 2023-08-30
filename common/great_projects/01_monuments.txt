@@ -18378,6 +18378,7 @@ batalha_monastery = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			own_territory_dice_roll_bonus = 1
 			army_tradition_from_battle = 0.15
 			army_tradition_decay = -0.005			
 		}
@@ -18403,8 +18404,9 @@ batalha_monastery = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			own_territory_dice_roll_bonus = 1
 			army_tradition_from_battle = 0.25
-			army_tradition_decay = -0.005
+			army_tradition_decay = -0.0075
 			church_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
@@ -18429,10 +18431,10 @@ batalha_monastery = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			own_territory_dice_roll_bonus = 1
 			army_tradition_from_battle = 0.5
 			army_tradition_decay = -0.01
 			church_loyalty_modifier = 0.05
-			stability_cost_modifier = -0.05
 		}
 		on_upgraded = {
 			owner = {
