@@ -775,7 +775,7 @@ SPA_ideas = {
 CAS_ideas = {
 	start = {
 		army_tradition_decay = -0.01
-		cavalry_power = 0.25
+		cavalry_power = 0.15
 	}
 	bonus = {
 		naval_forcelimit_modifier = 0.25

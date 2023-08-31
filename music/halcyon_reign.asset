@@ -1,0 +1,24 @@
+music = {
+	name = "welcomereality"
+	file = "welcomereality.ogg"
+}
+music = {
+	name = "thevoyage"
+	file = "thevoyage.ogg"
+}
+music = {
+	name = "thekraken"
+	file = "thekraken.ogg"
+}
+music = {
+	name = "peleliu"
+	file = "peleliu.ogg"
+}
+music = {
+	name = "lasthorizon"
+	file = "lasthorizon.ogg"
+}
+music = {
+	name = "beyondthecape"
+	file = "beyondthecape.ogg"
+}
