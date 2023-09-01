@@ -1,2 +1,0 @@
-# Gulf of Guinea - Wasteland province
-discovered_by = sub_saharan

@@ -1,3 +1,0 @@
-namespace = btc_expeditions
-normal_or_historical_nations = yes
-
