@@ -3283,7 +3283,7 @@ country_event = {
 					AND = {
 						religion_group = christian
 						is_subject = no
-						total_own_and_non_tributary_subject_development = 100
+						total_own_and_non_tributary_subject_development = 150
 						NOT = { is_or_was_tag = { tag = POR } }
 					}
 					tag = PAP
