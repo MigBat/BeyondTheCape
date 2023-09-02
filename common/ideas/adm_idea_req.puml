@@ -1,0 +1,42 @@
+@startuml
+
+package Administrative_Ideas {
+
+package Tier1_Adm {
+object Religious
+object Innovative
+object Agrarian
+object Urban
+object Government
+}
+
+package Tier2_Adm {
+object Nationalist
+object Humanist
+object Meritocratic
+object Expansion
+}
+
+package Tier3_Adm {
+object Command_Economy
+object Liberalism
+}
+}
+
+package Dip_Ideas {
+object Exploration
+object Mercantilism
+object Free_Trade
+}
+
+Religious .. Innovative
+Agrarian .. Urban
+Nationalist .. Humanist
+Government .. Meritocratic
+Command_Economy .. Liberalism
+
+Mercantilism --|> Command_Economy
+Free_Trade --|> Liberalism
+Exploration --|> Expansion
+
+@enduml

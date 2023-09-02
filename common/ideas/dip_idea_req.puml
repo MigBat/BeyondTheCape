@@ -1,0 +1,52 @@
+@startuml
+
+package Diplomatic_Ideas {
+
+diamond dia1
+package Tier1_Dip {
+object Caravan
+object Maritime
+object Artistic
+object Imperialism
+object Exploration
+}
+
+package Tier2_Dip {
+object Mercantilism
+object Free_Trade
+object Espionage
+object Colonial
+}
+
+package Tier3_Dip {
+object Influence
+object Coercive_Diplomacy
+}
+}
+
+package Adm_Ideas {
+object Expansion
+}
+
+package Mil_Ideas {
+object Naval
+}
+
+diamond dia2
+
+Influence .. Coercive_Diplomacy
+
+Artistic --> Influence
+Imperialism --> Coercive_Diplomacy
+
+Caravan --|> dia1
+Maritime --|> dia1
+dia1 --> Mercantilism
+dia1 --> Free_Trade
+
+Naval --> Colonial
+Exploration --|> dia2
+Expansion --|> dia2
+dia2 --> Colonial
+
+@enduml

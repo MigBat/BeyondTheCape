@@ -1,0 +1,50 @@
+@startuml
+
+package Military_Ideas {
+
+package Tier1_Mil {
+object Naval
+object Mercenary
+object Mobilisation
+object Defensive
+object Offensive
+}
+
+package Tier2_Mil {
+object Standing_Army
+object Firepower
+object Bravery
+object Logistics
+}
+
+package Tier3_Mil {
+object Decisive_Battle
+object War_of_Attrition
+}
+
+diamond dia1
+diamond dia2
+
+}
+
+Mercenary .. Mobilisation
+Mercenary .. Standing_Army
+Mobilisation .. Firepower
+Mobilisation .. Bravery
+Firepower .. Bravery
+Defensive .. Offensive
+Decisive_Battle .. War_of_Attrition
+
+Defensive --|> War_of_Attrition
+Offensive --|> Decisive_Battle
+
+Standing_Army --|> dia1
+Firepower --|> dia1
+Bravery --|> dia1
+Defensive --|> dia1
+dia1 --|> Decisive_Battle
+Offensive --|> dia2
+Logistics --|> dia2
+dia2 --|> War_of_Attrition
+
+@enduml
