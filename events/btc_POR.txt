@@ -3283,7 +3283,7 @@ country_event = {
 					AND = {
 						religion_group = christian
 						is_subject = no
-						total_own_and_non_tributary_subject_development = 100
+						total_own_and_non_tributary_subject_development = 150
 						NOT = { is_or_was_tag = { tag = POR } }
 					}
 					tag = PAP
@@ -3831,6 +3831,7 @@ country_event = {
 		is_or_was_tag = { tag = POR }
 		1851 = {	# Coimbra
 			owned_by = root
+			has_building = university
 		}
 		227 = {		# Lisboa
 			owned_by = root
@@ -3856,7 +3857,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 1
+		days = 18250
 	}
 
 	option = {	# As armas e os barões assinalados
