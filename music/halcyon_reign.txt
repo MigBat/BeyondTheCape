@@ -2,53 +2,41 @@ song = {
 	name = "welcomereality"
 	
 	chance = {
-		modifier = {
-			factor = 1.5
-		}
+		factor = 1.5
 	}
 }
 song = {
 	name = "thevoyage"
 	
 	chance = {
-		modifier = {
-			factor = 1.5
-		}
+		factor = 1.5
 	}
 }
 song = {
 	name = "thekraken"
 	
 	chance = {
-		modifier = {
-			factor = 1.5
-		}
+		factor = 1.5
 	}
 }
 song = {
 	name = "peleliu"
 	
 	chance = {
-		modifier = {
-			factor = 1.5
-		}
+		factor = 1.5
 	}
 }
 song = {
 	name = "lasthorizon"
 	
 	chance = {
-		modifier = {
-			factor = 1.5
-		}
+		factor = 1.5
 	}
 }
 song = {
 	name = "beyondthecape"
 	
 	chance = {
-		modifier = {
-			factor = 1.5
-		}
+		factor = 1.5
 	}
 }
