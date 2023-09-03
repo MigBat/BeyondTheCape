@@ -6,7 +6,7 @@ diamond dia1
 package Tier1_Dip {
 object Caravan
 object Maritime
-object Artistic
+object Cultural
 object Imperialism
 object Exploration
 }
@@ -36,7 +36,7 @@ diamond dia2
 
 Influence .. Coercive_Diplomacy
 
-Artistic --> Influence
+Cultural --> Influence
 Imperialism --> Coercive_Diplomacy
 
 Caravan --|> dia1
