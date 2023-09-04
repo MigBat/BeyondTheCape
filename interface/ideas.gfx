@@ -235,28 +235,28 @@ spriteTypes = {
 	# BEYOND THE CAPE #
 
 	spriteType = {
-		name = "GFX_idea_agrarian_ideas"
+		name = "GFX_idea_economic_ideas"
 		texturefile = "gfx//interface//ideas//idea_agrarian_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_bravery_ideas"
+		name = "GFX_idea_quality_ideas"
 		texturefile = "gfx//interface//ideas//idea_bravery_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_caravan_ideas"
+		name = "GFX_idea_trade_ideas"
 		texturefile = "gfx//interface//ideas//idea_caravan_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_coercive_diplomacy_ideas"
+		name = "GFX_idea_diplomatic_ideas"
 		texturefile = "gfx//interface//ideas//idea_coercive_diplomacy_ideas.dds"
 		noOfFrames = 1
 		
@@ -270,14 +270,14 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_command_economy_ideas"
+		name = "GFX_idea_administrative_ideas"
 		texturefile = "gfx//interface//ideas//idea_command_economy_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_cultural_ideas"
+		name = "GFX_idea_court_ideas"
 		texturefile = "gfx//interface//ideas//idea_cultural_ideas.dds"
 		noOfFrames = 1
 		
@@ -354,7 +354,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_mobilisation_ideas"
+		name = "GFX_idea_quantity_ideas"
 		texturefile = "gfx//interface//ideas//idea_mobilisation_ideas.dds"
 		noOfFrames = 1
 		
@@ -384,7 +384,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_urban_ideas"
+		name = "GFX_idea_infrastructure_ideas"
 		texturefile = "gfx//interface//ideas//idea_urban_ideas.dds"
 		noOfFrames = 1
 		
