@@ -123,8 +123,8 @@ strong_feitorias = {
 
 patrol_fleets = {
 	allowed_marine_fraction = -0.05
-	light_ship_cost = -0.1
-	light_ship_power = 0.15
+	light_ship_cost = -0.05
+	light_ship_power = 0.1
 }
 
 overstretched_empire = {
