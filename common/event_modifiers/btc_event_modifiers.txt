@@ -309,19 +309,19 @@ way_to_india = {
 	range = 0.5
 }
 
-mare_clausum = {
-	transport_attrition = -0.15
-	naval_morale = 0.1
-	siege_ability = 0.1
-	land_morale = 0.1
-	warscore_cost_vs_other_religion = -0.15
-}
+# mare_clausum = {
+# 	transport_attrition = -0.15
+# 	naval_morale = 0.1
+# 	siege_ability = 0.1
+# 	land_morale = 0.1
+# 	warscore_cost_vs_other_religion = -0.15
+# }
 
-mini_mare_clausum = {
-	transport_attrition = -0.15
-	siege_ability = 0.1
-	warscore_cost_vs_other_religion = -0.1
-}
+# mini_mare_clausum = {
+# 	transport_attrition = -0.15
+# 	siege_ability = 0.1
+# 	warscore_cost_vs_other_religion = -0.1
+# }
 
 mariners_astrolabe = {
 	movement_speed_in_fleet_modifier = 1
