@@ -918,7 +918,7 @@ free_city_in_hre = {
 }
 
 member_in_hre = {
-	land_forcelimit = -6
+	land_forcelimit = -3
 	stability_cost_modifier = -0.1
 }
 

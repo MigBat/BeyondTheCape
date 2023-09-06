@@ -530,6 +530,11 @@ country_event = {
 			target = EFR
 			months = 1200
 		}
+		add_casus_belli = {
+			type = cb_burgundian_conquests
+			target = LIE
+			months = 1200
+		}
 		custom_tooltip = austria_no_intervene
 	}
 }
