@@ -1029,7 +1029,7 @@ mam_spice_monopoly_wars_triggered_modifier = {
 	manpower_recovery_speed = 0.2
 	global_ship_recruit_speed = -0.5
 	global_ship_cost = -0.5
-	naval_forcelimit = 1
+	naval_forcelimit = 100
 	relation_with_same_religion = 50
 }
 
