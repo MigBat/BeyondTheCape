@@ -651,7 +651,10 @@ callaction = {
 		tooltip = burgundian_conquests_tt
 		potential = {
 			FROM = {
-				is_emperor = yes
+				OR = {
+					is_emperor = yes
+					is_subject_of = HAB
+				}
 			}
 			BUR = {
 				has_casus_belli = {

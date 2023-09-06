@@ -232,7 +232,7 @@ country_event = {
 	trigger = {
 		tag = MAM
 		has_country_flag = MAM_POR_conflict
-
+		is_at_war = no
 		OR = {
 			exists = POR
 			exists = IBE
@@ -258,15 +258,22 @@ country_event = {
 			limit = {
 				exists = POR
 			}
-			declare_war_with_cb = {
-				casus_belli = cb_trade_war_triggered
-				who = POR
-			}	
+			POR = {
+				declare_war_with_cb = {
+					casus_belli = cb_trade_war_triggered
+					who = MAM
+				}	
+			}
 		}
-		else = {
-			declare_war_with_cb = {
-				casus_belli = cb_trade_war_triggered
-				who = IBE
+		else_if = {
+			limit = {
+				exists = IBE
+			}
+			IBE = {
+				declare_war_with_cb = {
+					casus_belli = cb_trade_war_triggered
+					who = MAM
+				}
 			}
 		}			
 	}

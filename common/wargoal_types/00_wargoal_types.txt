@@ -2962,14 +2962,12 @@ war_empire_cb_wgt = {
 
 superiority_castilian_civil_war = {
 	type = superiority
-
-	allowed_provinces = {
-		always = no
-	}
-	
-	allowed_provinces_are_eligible = yes
 	
 	attacker = 	{
+		allowed_provinces = {
+			always = no
+		}
+		allowed_provinces_are_eligible = yes
 		badboy_factor = 1
 		prestige_factor = 1
 		peace_cost_factor = 1
@@ -2977,9 +2975,14 @@ superiority_castilian_civil_war = {
 		peace_options = {
 			po_concede_defeat
 		}
+		prov_desc = NO_PROVS
 	}
 	
 	defender = 	{
+		allowed_provinces = {
+			always = no
+		}
+		allowed_provinces_are_eligible = yes
 		badboy_factor = 1
 		prestige_factor = 1
 		peace_cost_factor = 1
@@ -2988,9 +2991,9 @@ superiority_castilian_civil_war = {
 			po_return_cores
 			po_concede_defeat
 		}
+		prov_desc = NO_PROVS
 	}
 	
-	prov_desc = NO_PROVS
 	war_name = "War of the Castilian Succession"
 }
 
@@ -2998,13 +3001,9 @@ burgundian_conquests_vassalize = {
 	type = take_capital
 	
 	attacker = {
-		badboy_factor = 0.1
+		badboy_factor = 0.25
 		prestige_factor = 1
-		peace_cost_factor = 1
-
-		required_treaty_to_take_provinces = {
-			po_subjugate_vassal
-		}
+		peace_cost_factor = 0.7
 		
 		peace_options = {
 			po_demand_provinces
