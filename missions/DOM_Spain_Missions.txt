@@ -1164,7 +1164,7 @@ dom_cas_missions_2_b = {
 					alliance_with = CAS 
 					marriage_with = CAS 
 					if = {
-						limit = { has_dlc = "Leviathan" ai = no }
+						limit = { has_dlc = "Leviathan" }
 						CAS = {
 							trust = {
 								who = ROOT 
@@ -3529,7 +3529,7 @@ dom_cas_missions_4_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Hernï¿½n Cortï¿½s"
 			}
 			490 = {
 				add_base_production = 3
