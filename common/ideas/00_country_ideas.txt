@@ -956,12 +956,12 @@ FRA_ideas_2 = {
 
 TUR_ideas = {
 	start = {
-		discipline = 0.05
+		land_forcelimit_modifier = 0.25
 		tolerance_heathen = 3
 	}
 	
 	bonus = {
-		land_forcelimit_modifier = 0.25
+		discipline = 0.05
 	}
 
 	trigger = {
