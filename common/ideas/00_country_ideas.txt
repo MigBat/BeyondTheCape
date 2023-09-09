@@ -1582,7 +1582,7 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		heavy_ship_power = 0.15
+		heavy_ship_power = 0.1
 		morale_damage = 0.15
 	}
 	

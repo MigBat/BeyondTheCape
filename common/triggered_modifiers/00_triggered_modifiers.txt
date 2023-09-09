@@ -1027,6 +1027,7 @@ mam_spice_monopoly_wars_triggered_modifier = {
 	}
 	land_morale = 0.1
 	manpower_recovery_speed = 0.2
+	sailors_recovery_speed = 1
 	global_ship_recruit_speed = -0.9
 	global_ship_cost = -0.5
 	naval_forcelimit = 100

@@ -111,6 +111,14 @@
  btc_events.29_d:0 "For too long have we been under the shadow of our oppressive overlord. To have freedom is not easy, it comes with a great deal of sacrifice, but our people are ready to face the oppressors. We will show them!"
  btc_events.29a:0 "Today we regain our freedom!"
  btc_events.29b:0 "The time is not right"
+ btc_events.30_t:0 "Fighting Off Portuguese Hegemony"
+ btc_events.30_d:0 "Portugal is currently fighting a war to assert their dominance in the Indian Ocean against muslim traders. This goes against our interests, as the spice road is very profitable to us. Getting directly involved in the war would be a bad idea, but perhaps we can assist the muslim traders in other ways."
+ btc_events.30a:0 "Support them against Portugal."
+ btc_events.30b:0 "We don't have the funds."
+ btc_events.31_t:0 "Support From Venice"
+ btc_events.31_d:0 "Venice has just sent us 50 galleys to assist in our war against Portugal! They are wise and understand that this war has wider repercussions."
+ btc_events.31a:0 "We shall put these ships to good use."
+ gave_us_ships:0 "Venice gave us ships"
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"

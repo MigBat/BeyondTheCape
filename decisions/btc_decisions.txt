@@ -462,6 +462,13 @@ country_decisions = {
 		potential = {
 			ai = no
 			mission_completed = btc_por_sagres
+			OR = {
+				had_country_flag = {
+					flag = hired_navigator
+					days = 1825
+				}
+				NOT = { has_country_flag = 1st_nav_decision }
+			}
 		}
 		allow = {
 			has_estate_privilege = estate_burghers_naval_school_right
@@ -477,6 +484,9 @@ country_decisions = {
 				location = 230
 			}
 			add_navy_tradition = -5
+			clr_country_flag = hired_navigator
+			set_country_flag = hired_navigator
+			set_country_flag = 1st_nav_decision
 		}
 	}
 }
