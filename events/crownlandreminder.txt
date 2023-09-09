@@ -9,6 +9,21 @@ country_event = {
 			NOT = { num_of_rebel_controlled_provinces = 1 }
 			AND = {
 				OR = {
+				NOT = { has_estate = estate_slavers }
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_slavers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+				}
+				OR = {
 				NOT = { has_estate = estate_church }
 					estate_loyalty = {
 						estate = estate_church
@@ -228,6 +243,21 @@ country_event = {
 			NOT = { num_of_rebel_controlled_provinces = 1 }
 			NOT = {
 				AND = {
+					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
 					OR = {
 						NOT = { has_estate = estate_church }
 							estate_loyalty = {
@@ -496,6 +526,21 @@ country_event = {
 			NOT = { num_of_rebel_controlled_provinces = 1 }
 			AND = {
 				OR = {
+				NOT = { has_estate = estate_slavers }
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_slavers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+				}
+				OR = {
 				NOT = { has_estate = estate_church }
 					estate_loyalty = {
 						estate = estate_church
@@ -727,6 +772,21 @@ country_event = {
 			NOT = {
 				AND = {
 					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
+					OR = {
 						NOT = { has_estate = estate_church }
 							estate_loyalty = {
 								estate = estate_church
@@ -935,6 +995,21 @@ country_event = {
 			NOT = {
 				AND = {
 					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}	
+					OR = {
 						NOT = { has_estate = estate_church }
 							estate_loyalty = {
 								estate = estate_church
@@ -1141,6 +1216,21 @@ country_event = {
 		trigger = {
 			AND = {
 				OR = {
+					NOT = { has_estate = estate_slavers }
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_slavers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+				}	
+				OR = {
 					NOT = { has_estate = estate_church }
 					estate_loyalty = {
 						estate = estate_church
@@ -1343,6 +1433,21 @@ country_event = {
 		trigger = {
 			NOT = {
 				AND = {
+					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
 					OR = {
 						NOT = { has_estate = estate_church }
 							estate_loyalty = {
@@ -1574,6 +1679,21 @@ country_event = {
 		trigger = {
 			AND = {
 				OR = {
+					NOT = { has_estate = estate_slavers }
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_slavers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+				}
+				OR = {
 					NOT = { has_estate = estate_church }
 					estate_loyalty = {
 						estate = estate_church
@@ -1779,6 +1899,21 @@ country_event = {
 			NOT = {
 				AND = {
 					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
+					OR = {
 						NOT = { has_estate = estate_church }
 							estate_loyalty = {
 								estate = estate_church
@@ -1983,6 +2118,21 @@ country_event = {
 		trigger = {
 			NOT = {
 				AND = {
+					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
 					OR = {
 						NOT = { has_estate = estate_church }
 							estate_loyalty = {
@@ -2196,6 +2346,21 @@ country_event = {
 		NOT = { num_of_rebel_controlled_provinces = 1 }		
 		has_country_flag = crownland_waiting_for_loyalty
 		AND = {
+			OR = {
+				NOT = { has_estate = estate_slavers }
+				estate_loyalty = {
+					estate = estate_slavers
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+			}	
 			OR = {
 				NOT = { has_estate = estate_church }
 				estate_loyalty = {

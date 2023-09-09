@@ -19057,7 +19057,12 @@ el_dorado = {
 
 	build_trigger = {
 		owner = {
-			has_country_flag = has_eldorado
+			OR = {
+				has_country_flag = has_eldorado
+				overlord = {
+					has_country_flag = has_eldorado
+				}
+			}
 		}
 	}
 
@@ -19185,7 +19190,12 @@ fountain_of_youth = {
 
 	build_trigger = {
 		owner = {
-			has_country_flag = has_fountainofyouth
+			OR = {
+				has_country_flag = has_fountainofyouth
+				overlord = {
+					has_country_flag = has_fountainofyouth
+				}
+			}
 		}
 	}
 
@@ -19293,7 +19303,12 @@ cibola = {
 
 	build_trigger = {
 		owner = {
-			has_country_flag = has_cibola
+			OR = {
+				has_country_flag = has_cibola
+				overlord = {
+					has_country_flag = has_cibola					
+				}
+			}
 		}
 	}
 
@@ -19421,7 +19436,12 @@ city_of_caesars = {
 
 	build_trigger = {
 		owner = {
-			has_country_flag = has_cityofcaesars
+			OR = {
+				has_country_flag = has_cityofcaesars
+				overlord = {
+					has_country_flag = has_cityofcaesars					
+				}
+			}
 		}
 	}
 
@@ -19558,7 +19578,12 @@ sierra_de_la_plata = {
 
 	build_trigger = {
 		owner = {
-			has_country_flag = has_sierradelaplata
+			OR = {
+				has_country_flag = has_sierradelaplata
+				overlord = {
+					has_country_flag = has_sierradelaplata
+				}
+			}
 		}
 	}
 
@@ -19689,7 +19714,12 @@ norumbega = {
 
 	build_trigger = {
 		owner = {
-			has_country_flag = has_norumbega
+			OR = {
+				has_country_flag = has_norumbega
+				overlord = {
+					has_country_flag = has_norumbega					
+				}
+			}
 		}
 	}
 
@@ -19799,7 +19829,12 @@ saguenay = {
 
 	build_trigger = {
 		owner = {
-			has_country_flag = has_saguenay
+			OR = {
+				has_country_flag = has_saguenay
+				overlord = {
+					has_country_flag = has_saguenay					
+				}
+			}
 		}
 	}
 
@@ -19909,7 +19944,12 @@ quivira = {
 
 	build_trigger = {
 		owner = {
-			has_country_flag = has_quivira
+			OR = {
+				has_country_flag = has_quivira
+				overlord = {
+					has_country_flag = has_quivira
+				}
+			}
 		}
 	}
 
