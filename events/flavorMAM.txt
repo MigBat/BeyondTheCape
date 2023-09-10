@@ -509,12 +509,22 @@ country_event = {
 
 		exists = POR
 		manpower_percentage = 0.5
+		any_owned_province = {
+			has_port = yes
+			OR = {
+				area = basra_area
+				area = gulf_of_arabia_area
+				region = horn_of_africa_region
+				region = arabia_region
+			}
+		}
 		owns = 2315
 		4346 = {				#Gulf of Aden
 			trade_share = {
 				country = POR
 				share = 20
 			}
+			province_trade_power = 1
 		}
 		
 		NOT = { num_of_light_ship = POR }	# we have to have less lightships.
@@ -528,16 +538,32 @@ country_event = {
 		ai_chance = { factor = 90 }
 		name = flavor_mam.15.a
 		set_country_flag = MAM_POR_conflict
+
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					OR = {
+						area = basra_area
+						area = gulf_of_arabia_area
+						region = horn_of_africa_region
+						region = arabia_region
+					}
+				}
+				save_event_target_as = arabian_port
+			}
+		}
+
 		if = {
 			limit = {
 				manpower_percentage = 0.5
 			}
 			add_manpower = -40
 			
-			2315 = {
+			event_target:arabian_port = {
 				add_unit_construction = {
 					type = galley
-					amount = 20
+					amount = 30
 					speed = 0.1
 					cost = 0
 				}
@@ -553,7 +579,6 @@ country_event = {
 				who = root
 				modifier = mam_por_confronted
 			}	
-			
 			country_event = { 
 				id = flavor_mam.16
 				days = 2
@@ -562,8 +587,6 @@ country_event = {
 			}
 				
 		}
-		
-		
 	}
 	option = {
 		name = flavor_mam.15.b

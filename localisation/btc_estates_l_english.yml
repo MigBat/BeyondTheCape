@@ -54,6 +54,7 @@
  estate_slavers_boost_production_in_colony_tt:0 "Every province in the §YNew World§! owned by [Root.GetName] and their subjects producing §YSugar§!, §YCocoa§!, §YCoffee§!, §YCotton§!, §YTobacco§! and §YTea§! gains:\nLocal Goods Produced: §G+1§!\nLocal Unrest: §R+2§!"
  estate_slavers_plantation_production:0 "Slave Plantations"
  desc_estate_slavers_plantation_production:0 "The plantations here are worked mainly by slaves brought from Africa."
+ revoke_slavers_plantation_production_tt:0 "§YSlave Plantations§! will be removed from every province that has it."
 
  estate_slavers_raid_coasts:0 "Raiding Expeditions"
  estate_slavers_raid_coasts_desc:0 "By putting our efforts in capturing slaves ourselves rather than buying them, we can make quite a bit of profit, although this will damage relations with whomever we are taking the slaves from."
@@ -63,6 +64,7 @@
  estate_slavers_gold_mine_slaves_tt:0 "Every province in the §YNew World§! owned by [Root.GetName] and their subjects producing §YGold§! gains:\nLocal Goods Produced: §G+1§!\nLocal Unrest: §R+2§!"
  estate_slavers_gold_mining:0 "Slave Gold Mines"
  desc_estate_slavers_gold_mining:0 "The gold mines here are worked mainly by slaves brought from Africa."
+ revoke_slavers_gold_mining_tt:0 "§YSlave Gold Mines§! will be removed from every province that has it."
 
  estate_slavers_slaves_to_europe:0 "Send Slaves to Europe"
  estate_slavers_slaves_to_europe_desc:0 "There is more use to these slaves than working plantations or mines. With proper encouragement they can serve the nobles' households or as a source of their entertainment."
