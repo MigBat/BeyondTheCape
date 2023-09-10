@@ -213,17 +213,20 @@ estate_slavers_boost_production_in_colony = {
 	on_granted_province = {
 	}
 	on_revoked = {
-		every_province = {
-			limit = {
-				OR = {
-					owned_by = root
-					owner = {
-						is_colonial_nation_of = root
+		custom_tooltip = revoke_slavers_plantation_production_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						owned_by = root
+						owner = {
+							is_colonial_nation_of = root
+						}
 					}
+					has_province_modifier = estate_slavers_plantation_production
 				}
-				has_province_modifier = estate_slavers_plantation_production
-			}
-			remove_province_modifier = estate_slavers_plantation_production
+				remove_province_modifier = estate_slavers_plantation_production
+			}			
 		}
 	}
 	on_revoked_province = {
@@ -310,17 +313,20 @@ estate_slavers_gold_mine_slaves = {
 	on_granted_province = {
 	}
 	on_revoked = {
-		every_province = {
-			limit = {
-				OR = {
-					owned_by = root
-					owner = {
-						is_colonial_nation_of = root
+		custom_tooltip = revoke_slavers_gold_mining_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						owned_by = root
+						owner = {
+							is_colonial_nation_of = root
+						}
 					}
+					has_province_modifier = estate_slavers_gold_mining
 				}
-				has_province_modifier = estate_slavers_gold_mining
-			}
-			remove_province_modifier = estate_slavers_gold_mining
+				remove_province_modifier = estate_slavers_gold_mining
+			}			
 		}
 	}
 	on_revoked_province = {

@@ -777,7 +777,7 @@ crimea_area = { #4
 }
 
 white_ruthenia_area = { #3
-	292 771 4246
+	292 771 4246 275
 }
 
 minsk_area = { #4
@@ -823,7 +823,7 @@ novgorod_area = { #5
 }
 
 pskov_area = { #4
-	274 275 1960 4148
+	274 1960 4148
 }
 
 vologda_area = { #3

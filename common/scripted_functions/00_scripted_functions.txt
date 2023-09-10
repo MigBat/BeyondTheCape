@@ -169,11 +169,13 @@ can_colonize_province = {
 		}
 		allow = {
 			NOT = {
-				overlord = {
-					any_subject_country = {
-						is_colonial_nation = yes
-						capital_scope = {
-							colonial_region = ROOT
+				FROM = {
+					overlord = {
+						any_subject_country = {
+							is_colonial_nation = yes
+							capital_scope = {
+								colonial_region = ROOT
+							}
 						}
 					}
 				}

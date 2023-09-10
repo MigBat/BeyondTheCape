@@ -936,7 +936,7 @@ trade_company_kiev = {
 		296 300 4116 #oka_area
 		280 1942 1944 4247 #west_dniepr_area
 		289 290 1945 2407 #east_dniepr_area
-		292 771 4246 #White Ruthenia
+		292 771 4246 275 #White Ruthenia
 		276 4115 4242 #minsk_area
 		4538 4537 4536 4535 4545 4544 4540 4539 4542 4543 269
 	}
