@@ -748,96 +748,106 @@ country_event = {
 	}
 }
 
-# # Transatlantic Slave Trade
-# country_event = {
-# 	id = west_african.17
-# 	title = "west_african.17.t"
-# 	desc = "west_african.17.d"
-# 	picture = BENIN_TRADING_eventPicture
+# BEYOND THE CAPE CHANGE #
+# Transatlantic Slave Trade
+country_event = {
+	id = west_african.17
+	title = "west_african.17.t"
+	desc = "west_african.17.d"
+	picture = BENIN_TRADING_eventPicture
 
-# 	trigger = {
-# 		has_dlc = "Art of War"
-# 		OR = {
-# 			culture_group = sahelian
-# 			culture_group = mande
-# 			culture_group = west_african
-# 			culture_group = african
-# 		}
-# 		NOT = { has_country_modifier = refused_slave_trade_with_europeans }
-# 		any_owned_province = {
-# 			trade_goods = slaves
-# 			NOT = { has_province_modifier = slave_trade_with_europeans }
-# 			any_trade_node_member_country = {
-# 				capital_scope = { continent = europe }
-# 				NOT = { has_country_modifier = the_abolish_slavery_act }
-# 			}
-# 		}
-# 		any_neighbor_country = {
-# 			capital_scope = { continent = europe }
-# 			NOT = { has_country_modifier = the_abolish_slavery_act }
-# 			any_owned_province = {
-# 				OR = {
-# 					continent = south_america
-# 					continent = north_america
-# 				}
-# 			}
-# 		}
-# 	}
+	trigger = {
+		has_dlc = "Art of War"
+		OR = {
+			culture_group = sahelian
+			culture_group = mande
+			culture_group = west_african
+			culture_group = african
+		}
+		NOT = { has_country_modifier = refused_slave_trade_with_europeans }
+		any_owned_province = {
+			trade_goods = slaves
+			NOT = { has_province_modifier = slave_trade_with_europeans }
+			any_trade_node_member_country = {
+				capital_scope = { continent = europe }
+				NOT = { has_country_modifier = the_abolish_slavery_act }
+			}
+		}
+		any_neighbor_country = {
+			capital_scope = { continent = europe }
+			NOT = { has_country_modifier = the_abolish_slavery_act }
+			any_owned_province = {
+				OR = {
+					continent = south_america
+					continent = north_america
+				}
+			}
+		}
+	}
 
-# 	mean_time_to_happen = {
-# 		months = 600
-# 	}
+	mean_time_to_happen = {
+		months = 600
+	}
 
-# 	# Refuse slave trade agreement
-# 	option = {
-# 		name = "west_african.17.a"
-# 		add_country_modifier = {
-# 			name = "refused_slave_trade_with_europeans"
-# 			duration = 7300
-# 		}
-# 		random_neighbor_country = {
-# 			limit = {
-# 				capital_scope = { continent = europe }
-# 				NOT = { has_country_modifier = the_abolish_slavery_act }
-# 			}
-# 			add_opinion = {
-# 				who = ROOT
-# 				modifier = impeded_slave_trade
-# 			}
-# 		}
-# 	}
+	# Refuse slave trade agreement
+	option = {
+		name = "west_african.17.a"
+		ai_chance = {
+			factor = 5
+		}
+		add_country_modifier = {
+			name = "refused_slave_trade_with_europeans"
+			duration = 7300
+		}
+		random_neighbor_country = {
+			limit = {
+				capital_scope = { continent = europe }
+				NOT = { has_country_modifier = the_abolish_slavery_act }
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = impeded_slave_trade
+			}
+		}
+	}
 
-# 	# Accept slave trade agreement
-# 	option = {
-# 		name = "west_african.17.b"
-# 		add_prestige = -10
-# 		every_owned_province = {
-# 			limit = { trade_goods = slaves }
-# 			add_province_modifier = {
-# 				name = "slave_trade_with_europeans"
-# 				duration = 7300
-# 			}
-# 		}
-# 	}
+	# Accept slave trade agreement
+	option = {
+		name = "west_african.17.b"
+		ai_chance = {
+			factor = 19
+		}
+		add_prestige = -10
+		every_owned_province = {
+			limit = { trade_goods = slaves }
+			add_province_modifier = {
+				name = "slave_trade_with_europeans"
+				duration = 7300
+			}
+		}
+	}
 
-# 	# Abolish slavery
-# 	option = {
-# 		name = "west_african.17.c"
-# 		trigger = {
-# 			has_idea_group = innovativeness_ideas
-# 			dip = 3
-# 		}
-# 		add_stability = -1
-# 		add_country_modifier = {
-# 			name = "the_abolish_slavery_act"
-# 			duration = -1
-# 		}
-# 		add_country_modifier = {
-# 			name = innovative_modifier
-# 			duration = 3650
-# 		}
-# 	}
-# }
+	# Abolish slavery
+	option = {
+		name = "west_african.17.c"
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_idea_group = innovativeness_ideas
+			dip = 3
+		}
+		add_stability = -1
+		add_country_modifier = {
+			name = "the_abolish_slavery_act"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = innovative_modifier
+			duration = 3650
+		}
+	}
+}
 
 
 # Once Nomads
