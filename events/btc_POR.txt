@@ -2646,6 +2646,17 @@ province_event = {
 			}
 		}
 		custom_tooltip = feitoria_tt
+		# for slavers estate privilege
+		if = {
+			limit = {
+				has_fort_building_trigger = yes
+				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
+			}
+			add_province_modifier = {
+				name = slave_garrison
+				duration = -1
+			}
+		}
 	}
 
 	option = {	# Build a trade post

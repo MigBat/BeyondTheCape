@@ -456,7 +456,7 @@
  many_settlers:0 "Many Settlers"
  desc_many_settlers:0 "We have many settlers available for colonizing."
 
- add_settlers_tt:0 "1000 settlers will be added to the settler pool for §Y5§! years"
+ add_settlers_tt:0 "500 settlers will be added to the settler pool for §Y5§! years"
 
  strait_engagement_width:0 "Strait"
  strait_tt:0 "This sea is narrow, decreasing naval engagement width by 50%."

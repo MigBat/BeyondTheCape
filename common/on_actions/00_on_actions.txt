@@ -692,8 +692,8 @@ on_war_won = {
 				tag = CAS
 				has_country_flag = at_war
 				AND = {
-					ARA = { has_heir_flag = joanna }
-					CAS = { has_heir_flag = joanna }
+					ARA = { has_heir_flag = joana }
+					CAS = { has_heir_flag = joana }
 				}
 			}
 			FROM = { tag = POR }

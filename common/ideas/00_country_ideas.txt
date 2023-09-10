@@ -956,25 +956,25 @@ FRA_ideas_2 = {
 
 TUR_ideas = {
 	start = {
-		discipline = 0.05
+		land_forcelimit_modifier = 0.25
 		tolerance_heathen = 3
 	}
 	
 	bonus = {
-		land_forcelimit_modifier = 0.25
+		manpower_recovery_speed = 0.2
 	}
 
 	trigger = {
 		tag = TUR
 	}
 	free = yes		#will be added at load.
-	
+		
+	ghazi = {
+		discipline = 0.05
+	}
 	millets = {
 		core_creation = -0.25
 		num_accepted_cultures = 1
-	}	
-	ghazi = {
-		manpower_recovery_speed = 0.2
 	}		
 	timariot_system = {
 		cavalry_power = 0.15
@@ -1582,7 +1582,7 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		heavy_ship_power = 0.15
+		heavy_ship_power = 0.1
 		morale_damage = 0.15
 	}
 	
