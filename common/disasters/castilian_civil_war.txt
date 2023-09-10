@@ -12,11 +12,13 @@ castilian_civil_war = {
 		ARA = {
 			is_free_or_tributary_trigger = yes
 			has_regency = no
+			is_female = no
 			government = monarchy
 		}
 		POR = {
 			is_free_or_tributary_trigger = yes
 			has_regency = no
+			is_female = no
 			government = monarchy
 		}
 		government = monarchy
