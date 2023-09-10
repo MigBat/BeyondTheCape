@@ -1400,7 +1400,10 @@ country_event = {
 					legitimacy = POR
 					NOT = { POR = { legitimacy = 100 } }
 				}
-				NOT = { POR = { stability = CAS } }
+				AND = {
+					stability = POR
+					NOT = { POR = { stability = 3 } }
+				}
 				219 = {
 					higher_development_than = 227
 				}
@@ -1451,7 +1454,10 @@ country_event = {
 							legitimacy = ARA
 							NOT = { ARA = { legitimacy = 100 } }
 						}
-						NOT = { ARA = { stability = CAS } }
+						AND = {
+							stability = ARA
+							NOT = { ARA = { stability = 3 } }
+						}
 						219 = {
 							higher_development_than = 214
 						}
@@ -1506,7 +1512,10 @@ country_event = {
 					NOT = { legitimacy = POR }
 					POR = { legitimacy = 100 }
 				}
-				POR = { stability = CAS }
+				OR = {
+					NOT = { stability = POR }
+					POR = { stability = 3 }
+				}
 				NOT = { 
 					219 = {
 						higher_development_than = 227
@@ -1557,7 +1566,10 @@ country_event = {
 					NOT = { legitimacy = ARA }
 					ARA = { legitimacy = 100 }
 				}
-				ARA = { stability = CAS }
+				OR = {
+					NOT = { stability = ARA }
+					ARA = { stability = 3 }
+				}
 				NOT = { 
 					219 = {
 						higher_development_than = 214
