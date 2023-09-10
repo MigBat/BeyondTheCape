@@ -417,7 +417,7 @@ country_event = {
 			female = yes
 		}
 
-		set_heir_flag = joanna
+		set_heir_flag = joana
 
 		ARA = {
 			define_heir = {
@@ -431,7 +431,7 @@ country_event = {
 				claim = 70
 				female = yes
 			}
-			set_heir_flag = joanna
+			set_heir_flag = joana
 		}
 
 		add_opinion = {
@@ -995,7 +995,7 @@ country_event = {
 			female = yes
 		}
 
-		set_heir_flag = joanna
+		set_heir_flag = joana
 
 		CAS = {
 			define_ruler = {
@@ -1009,7 +1009,7 @@ country_event = {
 				claim = 50
 				female = yes
 			}
-			clr_ruler_flag = joanna
+			clr_ruler_flag = joana
 			set_ruler_flag = isabella
 
 			define_consort = {
@@ -1031,7 +1031,7 @@ country_event = {
 				claim = 70
 				female = yes
 			}
-			set_heir_flag = joanna
+			set_heir_flag = joana
 		}
 
 		ARA = {
@@ -1221,7 +1221,7 @@ country_event = {
 			if = {
 				limit = {
 					ARA = {
-						has_heir_flag = joanna
+						has_heir_flag = joana
 					}
 				}
 				ARA = { set_country_flag = won_castilian_civil_war }
@@ -1256,7 +1256,7 @@ country_event = {
 			if = {
 				limit = {
 					ARA = {
-						has_heir_flag = joanna
+						has_heir_flag = joana
 					}
 				}
 				ARA = { set_country_flag = won_castilian_civil_war }
@@ -1354,17 +1354,17 @@ country_event = {
 				POR = { has_ruler_flag = isabel }
 				CAS = { has_ruler_flag = isabel }
 			}
-			AND = {	# Joanna Queen of Castile
-				ARA = { has_heir_flag = joanna }
-				CAS = { has_ruler_flag = joanna }
+			AND = {	# Joana Queen of Castile
+				ARA = { has_heir_flag = joana }
+				CAS = { has_ruler_flag = joana }
 			}
-			AND = {	# Joanna Queen of Aragon
-				ARA = { has_ruler_flag = joanna }
-				CAS = { has_heir_flag = joanna }
+			AND = {	# Joana Queen of Aragon
+				ARA = { has_ruler_flag = joana }
+				CAS = { has_heir_flag = joana }
 			}
-			AND = {	# Joanna Queen of Castile and Aragon
-				ARA = { has_ruler_flag = joanna }
-				CAS = { has_ruler_flag = joanna }
+			AND = {	# Joana Queen of Castile and Aragon
+				ARA = { has_ruler_flag = joana }
+				CAS = { has_ruler_flag = joana }
 			}
 		}
 	}
@@ -1431,16 +1431,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ARA = { has_heir_flag = joanna }
-					CAS = { has_ruler_flag = joanna }
+					ARA = { has_heir_flag = joana }
+					CAS = { has_ruler_flag = joana }
 				}
 				AND = {
-					CAS = { has_heir_flag = joanna }
-					ARA = { has_ruler_flag = joanna }
+					CAS = { has_heir_flag = joana }
+					ARA = { has_ruler_flag = joana }
 				}
 				AND = {
-					CAS = { has_ruler_flag = joanna }
-					ARA = { has_ruler_flag = joanna }
+					CAS = { has_ruler_flag = joana }
+					ARA = { has_ruler_flag = joana }
 				}
 			}
 			OR = {
@@ -1545,16 +1545,16 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ARA = { has_heir_flag = joanna }
-					CAS = { has_ruler_flag = joanna }
+					ARA = { has_heir_flag = joana }
+					CAS = { has_ruler_flag = joana }
 				}
 				AND = {
-					CAS = { has_heir_flag = joanna }
-					ARA = { has_ruler_flag = joanna }
+					CAS = { has_heir_flag = joana }
+					ARA = { has_ruler_flag = joana }
 				}
 				AND = {
-					CAS = { has_ruler_flag = joanna }
-					ARA = { has_ruler_flag = joanna }
+					CAS = { has_ruler_flag = joana }
+					ARA = { has_ruler_flag = joana }
 				}
 			}
 			AND = {
@@ -1634,24 +1634,24 @@ country_event = {
 					NOT = { has_ruler_flag = isabel }
 				}
 			}
-			# Castile Joanna died
+			# Castile Joana died
 			AND = {
 				ARA = {
-					has_heir_flag = joanna
+					has_heir_flag = joana
 				}
 				CAS = {
-					NOT = { has_heir_flag = joanna }
-					NOT = { has_ruler_flag = joanna }
+					NOT = { has_heir_flag = joana }
+					NOT = { has_ruler_flag = joana }
 				}
 			}
-			# Aragon Joanna died
+			# Aragon Joana died
 			AND = {
 				CAS = {
-					has_heir_flag = joanna
+					has_heir_flag = joana
 				}
 				ARA = {
-					NOT = { has_heir_flag = joanna }
-					NOT = { has_ruler_flag = joanna }
+					NOT = { has_heir_flag = joana }
+					NOT = { has_ruler_flag = joana }
 				}
 			}
 		}
@@ -1698,11 +1698,11 @@ country_event = {
 
 		trigger = {
 			ARA = {
-				has_heir_flag = joanna
+				has_heir_flag = joana
 			}
 			CAS = {
-				NOT = { has_heir_flag = joanna }
-				NOT = { has_ruler_flag = joanna }
+				NOT = { has_heir_flag = joana }
+				NOT = { has_ruler_flag = joana }
 			}
 		}
 
@@ -1716,11 +1716,11 @@ country_event = {
 
 		trigger = {
 			CAS = {
-				has_heir_flag = joanna
+				has_heir_flag = joana
 			}
 			ARA = {
-				NOT = { has_heir_flag = joanna }
-				NOT = { has_ruler_flag = joanna }
+				NOT = { has_heir_flag = joana }
+				NOT = { has_ruler_flag = joana }
 			}
 		}
 

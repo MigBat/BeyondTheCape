@@ -199,7 +199,7 @@ country_decisions = {
 				}
 				AND = {
 					tag = ARA
-					has_heir_flag = joanna
+					has_heir_flag = joana
 				}
 			}
 			CAS = { NOT = { has_disaster = castilian_civil_war }}
@@ -225,7 +225,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					ARA = { has_heir_flag = joanna }
+					ARA = { has_heir_flag = joana }
 				}
 				214 = {
 					higher_development_than = 219
@@ -274,7 +274,7 @@ country_decisions = {
 		potential = {
 			ai = no
 			tag = CAS
-			has_heir_flag = joanna
+			has_heir_flag = joana
 			CAS = { NOT = { has_disaster = castilian_civil_war }}
 		}
 
