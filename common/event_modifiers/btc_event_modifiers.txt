@@ -782,3 +782,18 @@ ned_patroonschap = {
 	province_trade_power_value = 3
 	trade_goods_size_modifier = 0.3
 }
+
+discipline_for_the_marines_acts_modifier = {
+	morale_damage = 0.05
+	fire_damage = 0.1
+	fire_damage_received = -0.1
+	is_marine_modifier = yes
+}
+
+army_reform_acts_modifier = {
+	artillery_fire = 1
+}
+improved_man_of_war_acts = {
+	ship_durability = 0.15
+	is_man_of_war_modifier = yes
+}
