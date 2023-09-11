@@ -1,138 +1,98 @@
-# The following scripted effects are meant to run
-# against a prest colonial nation in the specified
-# colonial region, it is designed to update the color
-# of the preset CN to match the formable.
-#
-# e.g. Darker Blue from Yellow when Scotland forms Albion
-#
-# To add a new entry use the following format:
-# else_if = {
-# 	limit = {
-#		tag = <PRESET_CN_TAG>
-#		is_subject_of = <FORMABLE_TAG>
-#	}
-#	change_country_color = {
-#		color = { R G B }
-#	}
-# }
 btc_update_colonial_australia_colour = {
-	if
-		limit = {
-			tag EAU
-		}
-		change_country_color = {
-			color = { 270 120 120 }
-		}
+	limit = {
+		tag EAU
+	}
+	change_country_color = {
+		color = { 270 120 120 }
 	}
 }
 
 btc_update_colonial_brazil_colour = {
-	if
-		limit = {
-			tag EBZ
-		}
-		change_country_color = {
-			color = { 250 110 110 }
-		}
+	limit = {
+		tag EBZ
+	}
+	change_country_color = {
+		color = { 250 110 110 }
 	}
 }
 
 btc_update_colonial_california_colour = {
-	if
-		limit = {
-			tag ECA
-		}
-		change_country_color = {
-			color = { 210 60 60 }
-		}
+	limit = {
+		tag ECA
+	}
+	change_country_color = {
+		color = { 210 60 60 }
 	}
 }
 
 btc_update_colonial_canada_colour = {
-	if
-		limit = {
-			tag ECN
-		}
-		change_country_color = {
-			color = { 180 30 30 }
-		}
+	limit = {
+		tag ECN
+	}
+	change_country_color = {
+		color = { 180 30 30 }
 	}
 }
 
 btc_update_colonial_cascadia_colour = {
-	if
-		limit = {
-			tag ECS
-		}
-		change_country_color = {
-			color = { 5 13 0 }
-		}
+	limit = {
+		tag ECS
+	}
+	change_country_color = {
+		color = { 5 13 0 }
 	}
 }
 
 btc_update_colonial_colombia_colour = {
-	if
-		limit = {
-			tag ECO
-		}
-		change_country_color = {
-			color = { 230 80 80 }
-		}
+	limit = {
+		tag ECO
+	}
+	change_country_color = {
+		color = { 230 80 80 }
 	}
 }
 
 btc_update_colonial_easternamerica_colour = {
-	if
-		limit = {
-			tag EEA
-		}
-		change_country_color = {
-			color = { 130 30 30 }
-		}
+	limit = {
+		tag EEA
+	}
+	change_country_color = {
+		color = { 130 30 30 }
 	}
 }
 
 btc_update_colonial_laplata_colour = {
-	if
-		limit = {
-			tag ELP
-		}
-		change_country_color = {
-			color = { 250 100 100 }
-		}
+	limit = {
+		tag ELP
+	}
+	change_country_color = {
+		color = { 250 100 100 }
 	}
 }
 
 btc_update_colonial_louisiana_colour = {
-	if
-		limit = {
-			tag ELO
-		}
-		change_country_color = {
-			color = { 200 50 50 }
-		}
+	limit = {
+		tag ELO
+	}
+	change_country_color = {
+		color = { 200 50 50 }
 	}
 }
 
 btc_update_colonial_mexico_colour = {
-	if
-		limit = {
-			tag EMX
-		}
-		change_country_color = {
-			color = { 220 70 70 }
-		}
+	limit = {
+		tag EMX
+	}
+	change_country_color = {
+		color = { 220 70 70 }
 	}
 }
 
-
 btc_update_colonial_mexico_colour = {
-	if
-		limit = {
-			tag EMX
-		}
-		change_country_color = {
-			color = { 240 90 90 }
-		}
+	limit = {
+		tag EMX
+	}
+	change_country_color = {
+		color = { 240 90 90 }
 	}
 }

@@ -359,9 +359,3 @@
  desc_predatory_trade:0 "The free seas are ours to do what we please! That includes appropriating others' possessions."
  ned_patroonschap:0 "Patroonschap"
  desc_ned_patroonschap:0 "This province has a local government and land ownership."
- 
- 
- #BTC England#
- discipline_for_the_marines_acts_modifier:0 "Discipline For The Marines Act"
- army_reform_acts_modifier:0 "Army Reform Act"
- improved_man_of_war_acts:0 "Improved Man Of War Act"

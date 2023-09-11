@@ -797,3 +797,9 @@ improved_man_of_war_acts = {
 	ship_durability = 0.15
 	is_man_of_war_modifier = yes
 }
+
+english_push_for_new_world = {
+	colonists = 1
+	range = 0.25
+	global_colonial_growth = 10
+}
