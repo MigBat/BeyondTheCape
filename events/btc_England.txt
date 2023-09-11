@@ -35,7 +35,7 @@ country_event = {
 		
 		ai_chance = { factor = 1 }
 
-		add_years_of_income = -0.5
+		add_years_of_income = -0.25
 		set_global_flag = columbus_happened
 		set_country_flag = had_columbus
 		hidden_effect = {
@@ -53,7 +53,7 @@ country_event = {
 		
 		ai_chance = { factor = 0 }
 		add_adm_power = 50
-		add_years_of_income = 1
+		add_years_of_income = 0.5
 
 	}
 }
