@@ -95,7 +95,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = "english_push_for_new_world"
-			duration = 10950
+			duration = 7300
 		}
 	}
 }
