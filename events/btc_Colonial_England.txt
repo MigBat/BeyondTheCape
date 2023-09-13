@@ -17,7 +17,7 @@ country_event = {
 			colonial_region = colonial_australia
 			is_core = ROOT
 		}
-		NOT = { exists = E00 }
+		NOT = { exists = EAU }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -27,7 +27,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E00
+		change_tag = EAU
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_australia_colour = yes
@@ -50,7 +50,7 @@ country_event = {
 			colonial_region = colonial_brazil
 			is_core = ROOT
 		}
-		NOT = { exists = E01 }
+		NOT = { exists = EBZ }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -60,7 +60,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E01
+		change_tag = EBZ
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_brazil_colour = yes
@@ -81,7 +81,7 @@ country_event = {
 			colonial_region = colonial_california
 			is_core = ROOT
 		}
-		NOT = { exists = E02 }
+		NOT = { exists = ECA }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -91,7 +91,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E02
+		change_tag = ECA
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_california_colour = yes
@@ -112,7 +112,7 @@ country_event = {
 			colonial_region = colonial_canada
 			is_core = ROOT
 		}
-		NOT = { exists = E03 }
+		NOT = { exists = ECN }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -122,7 +122,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E03
+		change_tag = ECN
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_canada_colour = yes
@@ -143,7 +143,7 @@ country_event = {
 			colonial_region = colonial_cascadia
 			is_core = ROOT
 		}
-		NOT = { exists = E04 }
+		NOT = { exists = ECS }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -153,7 +153,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E04
+		change_tag = ECS
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_canada_colour = yes
@@ -175,7 +175,7 @@ country_event = {
 			colonial_region = colonial_colombia
 			is_core = ROOT
 		}
-		NOT = { exists = E05 }
+		NOT = { exists = ECO }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -185,7 +185,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E05
+		change_tag = ECO
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_colombia_colour = yes
@@ -207,7 +207,7 @@ country_event = {
 			colonial_region = colonial_eastern_america
 			is_core = ROOT
 		}
-		NOT = { exists = E06 }
+		NOT = { exists = EEA }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -217,7 +217,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E06
+		change_tag = EEA
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_easternamerica_colour = yes
@@ -239,7 +239,7 @@ country_event = {
 			colonial_region = colonial_la_plata
 			is_core = ROOT
 		}
-		NOT = { exists = E07 }
+		NOT = { exists = ELP }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -249,7 +249,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E07
+		change_tag = ELP
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_laplata_colour = yes
@@ -271,7 +271,7 @@ country_event = {
 			colonial_region = colonial_louisiana
 			is_core = ROOT
 		}
-		NOT = { exists = E08 }
+		NOT = { exists = ELO }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -281,7 +281,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E08
+		change_tag = ELO
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_louisiana_colour = yes
@@ -303,7 +303,7 @@ country_event = {
 			colonial_region = colonial_mexico
 			is_core = ROOT
 		}
-		NOT = { exists = E09 }
+		NOT = { exists = EMX }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -313,7 +313,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E09
+		change_tag = EMX
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_mexico_colour = yes
@@ -335,7 +335,7 @@ country_event = {
 			colonial_region = colonial_peru
 			is_core = ROOT
 		}
-		NOT = { exists = E10 }
+		NOT = { exists = EPR }
 		OR = {
 			is_colonial_nation_of = ENG
 			is_colonial_nation_of = GBR
@@ -345,7 +345,7 @@ country_event = {
 	option = {
 		name = "btc_colonial_england.a"
 		swap_free_idea_group = yes
-		change_tag = E10
+		change_tag = EPR
 		swap_non_generic_missions = yes
 		change_religion = overlord
 		btc_update_colonial_peru_colour = yes

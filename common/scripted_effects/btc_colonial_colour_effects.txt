@@ -88,9 +88,9 @@ btc_update_colonial_mexico_colour = {
 	}
 }
 
-btc_update_colonial_mexico_colour = {
+btc_update_colonial_peru_colour = {
 	limit = {
-		tag EMX
+		tag EPR
 	}
 	change_country_color = {
 		color = { 240 90 90 }
