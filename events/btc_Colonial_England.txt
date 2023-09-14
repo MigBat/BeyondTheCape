@@ -1,0 +1,353 @@
+namespace = btc_colonial_england
+normal_or_historical_nations = yes
+
+
+#Australia
+country_event = {
+	id = btc_colonial_england.1
+	title = "btc_colonial_england.1.t"
+	desc = "btc_colonial_england.1.d"
+	picture = COLONIZATION_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_australia
+			is_core = ROOT
+		}
+		NOT = { exists = EAU }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = EAU
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_australia_colour = yes
+	
+	}
+}
+
+#Brazil
+country_event = {
+	id = btc_colonial_england.2
+	title = "btc_colonial_england.2.t"
+	desc = "btc_colonial_england.2.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_brazil
+			is_core = ROOT
+		}
+		NOT = { exists = EBZ }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = EBZ
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_brazil_colour = yes
+	}
+}
+#California
+country_event = {
+	id = btc_colonial_england.3
+	title = "btc_colonial_england.3.t"
+	desc = "btc_colonial_england.3.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_california
+			is_core = ROOT
+		}
+		NOT = { exists = ECA }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = ECA
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_california_colour = yes
+	}
+}
+#Canada
+country_event = {
+	id = btc_colonial_england.4
+	title = "btc_colonial_england.4.t"
+	desc = "btc_colonial_england.4.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_canada
+			is_core = ROOT
+		}
+		NOT = { exists = ECN }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = ECN
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_canada_colour = yes
+	}
+}
+#Cascadia
+country_event = {
+	id = btc_colonial_england.5
+	title = "btc_colonial_england.5.t"
+	desc = "btc_colonial_england.5.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_cascadia
+			is_core = ROOT
+		}
+		NOT = { exists = ECS }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = ECS
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_canada_colour = yes
+	}
+}
+
+#Colombia
+country_event = {
+	id = btc_colonial_england.6
+	title = "btc_colonial_england.6.t"
+	desc = "btc_colonial_england.6.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_colombia
+			is_core = ROOT
+		}
+		NOT = { exists = ECO }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = ECO
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_colombia_colour = yes
+	}
+}
+
+#Eastern America
+country_event = {
+	id = btc_colonial_england.7
+	title = "btc_colonial_england.7.t"
+	desc = "btc_colonial_england.7.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_eastern_america
+			is_core = ROOT
+		}
+		NOT = { exists = EEA }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = EEA
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_easternamerica_colour = yes
+	}
+}
+
+#La Plata
+country_event = {
+	id = btc_colonial_england.8
+	title = "btc_colonial_england.8.t"
+	desc = "btc_colonial_england.8.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_la_plata
+			is_core = ROOT
+		}
+		NOT = { exists = ELP }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = ELP
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_laplata_colour = yes
+	}
+}
+
+#Louisiana
+country_event = {
+	id = btc_colonial_england.9
+	title = "btc_colonial_england.9.t"
+	desc = "btc_colonial_england.9.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_louisiana
+			is_core = ROOT
+		}
+		NOT = { exists = ELO }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = ELO
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_louisiana_colour = yes
+	}
+}
+
+#Mexico
+country_event = {
+	id = btc_colonial_england.10
+	title = "btc_colonial_england.10.t"
+	desc = "btc_colonial_england.10.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_mexico
+			is_core = ROOT
+		}
+		NOT = { exists = EMX }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = EMX
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_mexico_colour = yes
+	}
+}
+
+#Peru
+country_event = {
+	id = btc_colonial_england.11
+	title = "btc_colonial_england.11.t"
+	desc = "btc_colonial_england.11.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			colonial_region = colonial_peru
+			is_core = ROOT
+		}
+		NOT = { exists = EPR }
+		OR = {
+			is_colonial_nation_of = ENG
+			is_colonial_nation_of = GBR
+			is_colonial_nation_of = AVE
+		}
+	}
+	option = {
+		name = "btc_colonial_england.a"
+		swap_free_idea_group = yes
+		change_tag = EPR
+		swap_non_generic_missions = yes
+		change_religion = overlord
+		btc_update_colonial_peru_colour = yes
+	}
+}
