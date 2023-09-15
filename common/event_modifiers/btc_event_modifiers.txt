@@ -793,7 +793,8 @@ discipline_for_the_marines_acts_modifier = {
 army_reform_acts_modifier = {
 	artillery_fire = 1
 }
-improved_man_of_war_acts = {
+
+improved_man_of_war = {
 	ship_durability = 0.15
 	is_man_of_war_modifier = yes
 }

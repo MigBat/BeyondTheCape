@@ -1919,7 +1919,7 @@ improved_man_of_war_acts = {
 	
 	effect = {
 		add_country_modifier = {
-			name = improved_man_of_war_acts
+			name = improved_man_of_war
 			duration = -1
 		}
 	}

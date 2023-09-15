@@ -620,85 +620,85 @@ colonial_louisiana = {
 	}
 }
 
-# California
-colonial_california = {
-	color = { 200 117 43 }
+# # California
+# colonial_california = {
+# 	color = { 200 117 43 }
 
-	# Random New World
-	tax_income = 1
-	native_size = 8
-	native_ferocity = 1
-	native_hostileness = 3
+# 	# Random New World
+# 	tax_income = 1
+# 	native_size = 8
+# 	native_ferocity = 1
+# 	native_hostileness = 3
 
-	trade_goods = {
-		fur = 4
-		grain = 3
-		salt = 1
-		wool = 2
-	}
+# 	trade_goods = {
+# 		fur = 4
+# 		grain = 3
+# 		salt = 1
+# 		wool = 2
+# 	}
 
-	culture = {
-		shoshone = 10
-		piman = 8
-		navajo = 1
-	}
+# 	culture = {
+# 		shoshone = 10
+# 		piman = 8
+# 		navajo = 1
+# 	}
 
-	religion = {
-		shamanism = 4
-		animism = 10
-	}
+# 	religion = {
+# 		shamanism = 4
+# 		animism = 10
+# 	}
 
-	provinces = {
-		868 867 876 875 870 869 871 2021
-		2476 2477 2478 2479 2480 2491
-		2493
-		4638 4637 4636 4635 4634
-		865 866 2620 4639 4577 2616 4650 862 4649 877 4633 # beja california, arizona, and sonoria
-		878 2494 879 2492
-	}
+# 	provinces = {
+# 		868 867 876 875 870 869 871 2021
+# 		2476 2477 2478 2479 2480 2491
+# 		2493
+# 		4638 4637 4636 4635 4634
+# 		865 866 2620 4639 4577 2616 4650 862 4649 877 4633 # beja california, arizona, and sonoria
+# 		878 2494 879 2492
+# 	}
 
-	# Specific
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-			OR = {
-				culture_group = british
-				primary_culture = anglois
-			}
-		}
-		name = "COLONIAL_CALIFORNIA_New_Albion"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-			OR = {
-				culture_group = british
-				primary_culture = anglois
-			}
-		}
-		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
-	}
-	# Generic
-	names = {
-		trigger = { owns = 2481 } # Klamath
-		name = "COLONIAL_CALIFORNIA_Oregon"
-	}
-	names = {
-		name = "COLONIAL_CALIFORNIA_California"
-	}
-	names = {
-		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
-	}
-	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-}
+# 	# Specific
+# 	names = {
+# 		trigger = {
+# 			OR = {
+# 				tag = GBR
+# 				tag = ENG
+# 			}
+# 			OR = {
+# 				culture_group = british
+# 				primary_culture = anglois
+# 			}
+# 		}
+# 		name = "COLONIAL_CALIFORNIA_New_Albion"
+# 	}
+# 	names = {
+# 		trigger = {
+# 			OR = {
+# 				tag = GBR
+# 				tag = ENG
+# 			}
+# 			OR = {
+# 				culture_group = british
+# 				primary_culture = anglois
+# 			}
+# 		}
+# 		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
+# 	}
+# 	# Generic
+# 	names = {
+# 		trigger = { owns = 2481 } # Klamath
+# 		name = "COLONIAL_CALIFORNIA_Oregon"
+# 	}
+# 	names = {
+# 		name = "COLONIAL_CALIFORNIA_California"
+# 	}
+# 	names = {
+# 		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
+# 	}
+# 	names = {
+# 		name = "COLONIAL_REGION_New_Root_GetName"
+# 	}
+# }
 
 # Mexico
 colonial_mexico = {
@@ -744,6 +744,13 @@ colonial_mexico = {
 		2665 2666 2667 2668 2669
 		4632 4631 4630 4628 4629 4627 4606 4644 4646 4648 4647 4645 4643 4642 4578 4640 4576 4579 4580 4575 4574 4573 4641 4572 4571 4570 4581 4583 4598 4582 4584 4585 4586 4587 4594 4589 4588 4590 4591 4593
 		4909 4910 4911
+		# California
+		868 867 876 875 870 869 871 2021
+		2476 2477 2478 2479 2480 2491
+		2493
+		4638 4637 4636 4635 4634
+		865 866 2620 4639 4577 2616 4650 862 4649 877 4633 # beja california, arizona, and sonoria
+		878 2494 879 2492
 	}
 
 	# Specific
@@ -760,17 +767,6 @@ colonial_mexico = {
 		name = "COLONIAL_MEXICO_New_Castile"
 	}
 	# Generic
-	names = {
-		trigger = {
-			any_owned_province = {
-				OR = {
-					area = yucatan_area
-					area = east_yucatan_area
-				}
-			}
-		}
-		name = "COLONIAL_MEXICO_Yucatan"
-	}
 	names = {
 		trigger = {
 			owns = 885 # Teyas
@@ -798,6 +794,21 @@ colonial_mexico = {
 			owns = 840 # Honduras
 		}
 		name = "Honduras"
+	}
+		names = {
+		trigger = { owns = 2481 } # Klamath
+		name = "COLONIAL_CALIFORNIA_Oregon"
+	}
+	names = {
+		trigger = {
+			any_owned_province = {
+				OR = {
+					area = yucatan_area
+					area = east_yucatan_area
+				}
+			}
+		}
+		name = "COLONIAL_MEXICO_Yucatan"
 	}
 	names = {
 		name = "COLONIAL_MEXICO_Root_Culture_GetName_Mexico"
