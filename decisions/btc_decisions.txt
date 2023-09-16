@@ -206,14 +206,17 @@ country_decisions = {
 		}
 
 		allow = {
-			stability = CAS
 			OR = {
-				prestige = CAS
+				NOT = { CAS = { prestige = ROOT } }
 				prestige = 100
 			}
 			OR = {
-				legitimacy = CAS
+				NOT = { CAS = { legitimacy = ROOT } }
 				legitimacy = 100
+			}
+			OR = {
+				NOT = { CAS = { stability = ROOT } }
+				stability = 3
 			}
 			if = {
 				limit = {
@@ -249,14 +252,17 @@ country_decisions = {
 
 		allow = {
 			OR = {
-				stability = POR
 				OR = {
 					prestige = POR
-					prestige = 100
+					NOT = { POR = { prestige = 100 } }
 				}
 				OR = {
 					legitimacy = POR
-					legitimacy = 100
+					NOT = { POR = { legitimacy = 100 } }
+				}
+				OR = {
+					stability = POR
+					NOT = { POR = { stability = 3 } }
 				}
 				219 = {
 					higher_development_than = 227
@@ -280,14 +286,17 @@ country_decisions = {
 
 		allow = {
 			OR = {
-				stability = ARA
 				OR = {
 					prestige = ARA
-					prestige = 100
+					NOT = { ARA = { prestige = 100 } }
 				}
 				OR = {
 					legitimacy = ARA
-					legitimacy = 100
+					NOT = { ARA = { legitimacy = 100 } }
+				}
+				OR = {
+					stability = ARA
+					NOT = { ARA = { stability = 3 } }
 				}
 				219 = {
 					higher_development_than = 214
