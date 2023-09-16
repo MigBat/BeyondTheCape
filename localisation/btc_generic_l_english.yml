@@ -182,6 +182,8 @@
  atakebuneDESCR:0 "Atakebune were Japanese warships of the 16th and 17th century used during the internecine Japanese wars for political control and unity of all Japan."
  fire_ship:0 "§MFire Ship§!"
  fire_shipDESCR:0 "Ships armed with greek fire, an extremely volatile mixture squirted out of hoses from the bow of the fire ship and ignited on contact with air."
+ dhow:0 "§MDhow§!"
+ dhowDESCR:0 "Typically sporting long thin hulls, dhows are trading vessels primarily used to carry heavy items, such as fruit, fresh water, or other heavy merchandise, along the coasts of Eastern Arabia, East Africa, Yemen and coastal South Asia."
 
 # Special Units #
 

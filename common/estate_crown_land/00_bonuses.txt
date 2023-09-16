@@ -83,6 +83,7 @@ bonus = {
     modifier = {
         max_absolutism = 10
         reform_progress_growth = 0.4
+        yearly_corruption = 0.05
     }
 }
 
@@ -95,6 +96,7 @@ bonus = {
         yearly_absolutism = 1
         reform_progress_growth = 0.6
         global_autonomy = -0.01
+        yearly_corruption = 0.1
     }
 }
 
@@ -107,6 +109,7 @@ bonus = {
         yearly_absolutism = 1
         reform_progress_growth = 0.7
         global_autonomy = -0.02
+        yearly_corruption = 0.15
     }
 }
 
@@ -119,6 +122,7 @@ bonus = {
         yearly_absolutism = 1
         reform_progress_growth = 0.8
         global_autonomy = -0.025
+        yearly_corruption = 0.2
     }
 }
 
@@ -131,5 +135,6 @@ bonus = {
         yearly_absolutism = 1
         reform_progress_growth = 1
         global_autonomy = -0.05
+        yearly_corruption = 0.25
     }
 }
