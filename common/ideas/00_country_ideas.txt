@@ -204,13 +204,14 @@ GBR_ideas = {
 	}
 	integrated_highland_regiments = {
 		morale_damage_received = -0.1
+		global_sailors_modifier = 0.3
 	}
 	british_bill_of_rights = {
 		global_unrest = -2
 	}
 	reform_of_comission_buying = {
 		discipline = 0.05
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.5
 	}
 	british_industrialization = {
 		global_trade_goods_size_modifier = 0.20

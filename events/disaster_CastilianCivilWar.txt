@@ -293,6 +293,7 @@ country_event = {
 			mil = 5
 			claim = 70
 			female = yes
+			block_disinherit = yes
 		}
 
 		set_heir_flag = isabel
@@ -308,6 +309,7 @@ country_event = {
 				mil = 5
 				claim = 70
 				female = yes
+				block_disinherit = yes
 			}
 			set_heir_flag = isabel
 		}
@@ -415,6 +417,7 @@ country_event = {
 			mil = 3
 			claim = 70
 			female = yes
+			block_disinherit = yes
 		}
 
 		set_heir_flag = joana
@@ -430,6 +433,7 @@ country_event = {
 				mil = 3
 				claim = 70
 				female = yes
+				block_disinherit = yes
 			}
 			set_heir_flag = joana
 		}
@@ -873,6 +877,7 @@ country_event = {
 			mil = 5
 			claim = 70
 			female = yes
+			block_disinherit = yes
 		}
 
 		set_heir_flag = isabel
@@ -910,6 +915,7 @@ country_event = {
 				mil = 5
 				claim = 70
 				female = yes
+				block_disinherit = yes
 			}
 			set_heir_flag = isabel
 		}
@@ -993,6 +999,7 @@ country_event = {
 			mil = 3
 			claim = 70
 			female = yes
+			block_disinherit = yes
 		}
 
 		set_heir_flag = joana
@@ -1030,6 +1037,7 @@ country_event = {
 				mil = 3
 				claim = 70
 				female = yes
+				block_disinherit = yes
 			}
 			set_heir_flag = joana
 		}

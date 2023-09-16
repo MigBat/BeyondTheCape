@@ -1,0 +1,42 @@
+﻿l_english:
+
+ # England Colonial Countries #
+ EAU:0 "Australasia"
+ EAU_ADJ:0 "Australasian"
+ EBZ:0 "British Reach"
+ EBZ_ADJ:0 "British Reachean"
+ ECA:0 "Pacifica"
+ ECA_ADJ:0 "Pacifican"
+ ECN:0 "Canada"
+ ECN_ADJ:0 "Canadian"
+ ECS:0 "Northumbrian Territories"
+ ECS_ADJ:0 "Northumbrian"
+ ECO:0 "British Guiana"
+ ECO_ADJ:0 "Guianan"
+ EEA:0 "New Britannia"
+ EEA_ADJ:0 "Britannian"
+ ELP:0 "The Argentine"
+ ELP_ADJ:0 "Argentine"
+ ELO:0 "Royal Dominion"
+ ELO_ADJ:0 "Dominion"
+ EMX:0 "Edwardia"
+ EMX_ADJ:0 "Edwardian"
+ EPR:0 "Southern Range"
+ EPR_ADJ:0 "Southern Range"
+ 
+  
+ 
+ #Modifiers
+ discipline_for_the_marines_acts_modifier:0 "Discipline For The Marines Act"
+ army_reform_acts_modifier:0 "Army Reform Act"
+ improved_man_of_war:0 "Improved Royal Ship Act"
+ english_push_for_new_world:0 "Push For The New World"
+  
+ #Events#
+ btc_England.1_t:0 "John Cabot Petitions The [Root.Monarch.GetTitle]!"
+ btc_England.1_d:0 "John Cabot, or Zuan Chabotto, has recently sought refuge in [Root.Country.GetName], fleeing debts accrued in his native Venice. Looking for work, he's petitioned [Root.Monarch.GetName] to grant him funding and a royal patent to assemble a fleet in search of a northern passage to Asia. While some of the court believes he's just looking for an easy payout, many others point to rumours of a recent successful voyage by a fellow Italian, Cristoffa Corombo"
+ btc_England.1a:0 "Grant him funding"
+ btc_England.1b:0 "Arrest this fraud and seize his assets"
+ btc_England.2_t:0 "John Cabot Returns!"
+ btc_England.2_d:0 "Suprising many, Cabot's ship returned to harbour, battered and leaking, but still seaworthy. Allegedly, he sailed for more than a month without seeing even a mere island, but on the 47th day, he discovered a winding shore that stretched as far as the eye could see, covered in steep cliffs and windswept grassy plains. Although he was too hesitant to venture more than a crossbow's length from the ship, apparently he sighted the remains of a fire, suggesting the presence of some Asians."
+ btc_England.2a:0 "Steep cliffs? Windswept grassy plains? Sounds more like Ireland than India!"

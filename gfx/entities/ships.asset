@@ -352,6 +352,20 @@ entity = {
 }
 
 entity = {
+	name = "dhow"
+	pdxmesh = "barque"
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "retreat" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack"
+		event = { time = 0.55	node = "gun_01"	particle = "ship_cannon" }
+		event = { time = 0.4	node = "gun_02"	particle = "ship_cannon" }
+		event = { time = 0.6	node = "gun_03"	particle = "ship_cannon" }
+		event = { time = 0.35	node = "gun_04"	particle = "ship_cannon" }
+	}
+}
+
+entity = {
 	name = "barque"
 	pdxmesh = "barque"
 	state = { name = "idle" 		animation = "idle" }

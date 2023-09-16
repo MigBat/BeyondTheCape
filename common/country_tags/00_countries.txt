@@ -1103,3 +1103,17 @@ ISR = "countries/Israel.txt"
 IBE = "countries/Iberia.txt"
 VOC = "countries/DutchEastIndiaCompany.txt"
 GCH = "countries/Guanches.txt"
+
+
+#Beyond The Cape England Colonial Nations
+EAU = "countries/EnglandAustralia.txt"
+EBZ = "countries/EnglandBrazil.txt"
+ECA = "countries/EnglandCalifornia.txt"
+ECN = "countries/EnglandCanada.txt"
+ECS = "countries/EnglandCascadia.txt"
+ECO = "countries/EnglandColombia.txt"
+EEA = "countries/EnglandEasternAmerica.txt"
+ELP = "countries/EnglandLaPlata.txt"
+ELO = "countries/EnglandLouisiana.txt"
+EMX = "countries/EnglandMexico.txt"
+EPR = "countries/EnglandPeru.txt"

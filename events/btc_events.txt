@@ -1976,3 +1976,52 @@ country_event = {
 		}
 	}
 }
+
+# Ladislaus Unites Habsburg Territory
+country_event = {
+	id = btc_events.32
+	title = btc_events.32_t
+	desc = btc_events.32_d
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	trigger = {
+		tag = HAB
+		has_country_flag = hab_ladislaus_postumus_heir
+		is_year = 1456
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = btc_events.32a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		HAB = {
+			if = {
+				limit = { senior_union_with = STY }
+				inherit = STY
+			}
+		}
+		HAB = {
+			if = {
+				limit = { senior_union_with = TIR }
+				inherit = TIR
+			}
+		}
+	}
+	
+	option = {
+		name = btc_events.32b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_imperial_influence = 20
+	}
+}

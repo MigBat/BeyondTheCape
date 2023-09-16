@@ -782,3 +782,25 @@ ned_patroonschap = {
 	province_trade_power_value = 3
 	trade_goods_size_modifier = 0.3
 }
+
+discipline_for_the_marines_acts_modifier = {
+	morale_damage = 0.05
+	fire_damage = 0.1
+	fire_damage_received = -0.1
+	is_marine_modifier = yes
+}
+
+army_reform_acts_modifier = {
+	artillery_fire = 1
+}
+
+improved_man_of_war = {
+	ship_durability = 0.15
+	is_man_of_war_modifier = yes
+}
+
+english_push_for_new_world = {
+	colonists = 1
+	range = 0.25
+	global_colonial_growth = 10
+}

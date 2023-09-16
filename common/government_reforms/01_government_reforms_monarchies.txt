@@ -1623,6 +1623,7 @@ bohemian_elective_kingdom_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
+		diplomatic_upkeep = 1
 		diplomatic_reputation = 1
 		nobles_loyalty_modifier = 0.1
 		nobles_privilege_slots = 1

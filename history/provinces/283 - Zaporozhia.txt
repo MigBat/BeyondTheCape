@@ -1,9 +1,9 @@
 #283 - Zaporozhia
 
-owner = CRI
-controller = CRI
-culture = crimean
-religion = sunni
+owner = ZAZ
+controller = ZAZ
+culture = ruthenian
+religion = orthodox
 hre = no
 base_tax = 1
 base_production = 1
@@ -13,7 +13,6 @@ capital = "Sich"
 is_city = yes
 add_core = CRI
 add_core = ZAZ
-add_core = LIT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

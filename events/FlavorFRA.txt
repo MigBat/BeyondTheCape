@@ -1719,7 +1719,7 @@ country_event = {
 	option = {
 		name = "flavor_fra.6.a"
 		ai_chance = {
-			factor = 25
+			factor = 15
 		}
 		tooltip = {
 			177 = {
@@ -1735,15 +1735,15 @@ country_event = {
 	option = {
 		name = "flavor_fra.6.b"
 		ai_chance = {
-			factor = 75
-			modifier = {
-				factor = 0
-				is_at_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_any_disaster = yes
-			}
+			factor = 85
+			# modifier = {
+			# 	factor = 0
+			# 	is_at_war = yes
+			# }
+			# modifier = {
+			# 	factor = 0
+			# 	has_any_disaster = yes
+			# }
 		}
 		custom_tooltip = flavor_fra.6.a.tt
 		FRA = { country_event = { id = flavor_fra.7 } }
@@ -1765,14 +1765,14 @@ country_event = {
 		name = "flavor_fra.7.a" #'teach them how to war' /Reversed Henry V
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
-			modifier = {
-				factor = 0
-				is_at_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_any_disaster = yes
-			}
+			# modifier = {
+			# 	factor = 0
+			# 	is_at_war = yes
+			# }
+			# modifier = {
+			# 	factor = 0
+			# 	has_any_disaster = yes
+			# }
 		}
 		ENG = {
 			declare_war_with_cb = {

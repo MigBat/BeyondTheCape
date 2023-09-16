@@ -13,5 +13,13 @@ sailors = 50
 sprite_level = 1
 
 trigger = {
-	NOT = { tag = POR }
+	NOT = { 
+		OR = {
+			tag = POR 
+			culture_group = western_aryan
+			culture_group = dravidian
+			culture = omani_culture
+			culture = yemeni_culture
+		}
+	}
 }

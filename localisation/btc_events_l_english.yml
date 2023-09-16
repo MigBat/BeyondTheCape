@@ -119,6 +119,10 @@
  btc_events.31_d:0 "Venice has just sent us 50 galleys to assist in our war against Portugal! They are wise and understand that this war has wider repercussions."
  btc_events.31a:0 "We shall put these ships to good use."
  gave_us_ships:0 "Venice gave us ships"
+ btc_events.32_t:0 "Ladislaus Unites Habsburg Territory"
+ btc_events.32_d:0 "Our heir Ladislaus has just come of age and already he is being active in the political theater, advocating for increased centralization of the Habsburg territories. There seems to be a lot of support for this initiative."
+ btc_events.32a:0 "Centralize Austria."
+ btc_events.32b:0 "Use our influence for other matters."
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"
