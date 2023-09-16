@@ -1,9 +1,9 @@
 #2406 - Ingil
 
-owner = CRI
-controller = CRI
-culture = crimean
-religion = sunni
+owner = ZAZ
+controller = ZAZ
+culture = ruthenian
+religion = orthodox
 hre = no
 base_tax = 1
 base_production = 1
@@ -14,7 +14,6 @@ is_city = yes
 add_local_autonomy = 25
 add_core = CRI
 add_core = ZAZ
-add_core = LIT
 
 
 
