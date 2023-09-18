@@ -1,0 +1,14 @@
+dependency = {
+	subject_type = commercial_enterprise
+	first = NED
+	second = VOC
+	#start_date = 1602.3.20
+	start_date = 1609.1.1 #first province
+	end_date = 1790.1.1
+}
+union = {	#fix dates later
+	first = BUR
+	second = LUX
+	start_date = 1444.1.1
+	end_date = 1477.1.1
+}

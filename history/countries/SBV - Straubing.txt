@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+primary_culture = bavarian
+add_accepted_culture = dutch
+religion = catholic
+government_rank = 1
+capital = 2956	#Straubing
+
+1389.1.1 = {
+	monarch = {
+		name = "Albert"
+		dynasty = "von Wittelsbach"
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1389.1.1 = {
+	heir = {
+		name = "Willem"
+		monarch_name = "Willem II"
+		dynasty = "von Wittelsbach"
+		birth_date = 1365.4.5
+		death_date = 1417.5.31
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
