@@ -98,7 +98,7 @@ NDiplomacy = {
 	MAX_CLIENT_STATES = 10,							-- Max client states for one country
 
 	ALLOW_LEADER_DEMAND_TOGGLE = 0,					-- Whether or not player is allowed to set if warleader can negotiate for them
-	VASSALIZE_BASE_DEVELOPMENT_CAP = 100, 			-- Countries with more total development than this cannot be vassalized
+	VASSALIZE_BASE_DEVELOPMENT_CAP = 200, 			-- Countries with more total development than this cannot be vassalized
 
 	MARCH_BASE_DEVELOPMENT_CAP = 200, 				-- Countries with more total development than this cannot be made into a march
 
@@ -355,7 +355,7 @@ NDiplomacy = {
 	ELECTIVE_VICTORY_LEGITIMACY = 10,				-- Legitimacy for getting a heir from your country onto the throne of an elective nation
 
 	INTEGRATE_UNION_MIN_YEARS = 50,					-- Number of years before a union can be integrated
-	INTEGRATE_VASSAL_MIN_YEARS = 10,				-- Number of years before a vassal can be integrated
+	INTEGRATE_VASSAL_MIN_YEARS = 25,				-- Number of years before a vassal can be integrated
 
 	MONTHS_BEFORE_TOTAL_OCCUPATION = 60,			-- Before this many months have passed in the war, you cannot gain 100% warscore by just occupying the warleader
 
@@ -822,7 +822,7 @@ NCountry = {
 	BREAK_MARRIAGE_STABILITY_PENALTY = -1,			-- Stability penalty when break royal marriage
 	FORM_MARRIAGE_HIGHER_PRESTIGE = -2,				-- Legitimacy Change when forming a royal marriage while having more Prestige than the other country.
 	FORM_MARRIAGE_HIGHER_LEGITIMACY = -3,			-- Legitimacy Change when forming a royal marriage while having more legitimacy than the other country.
-	ANNEX_OR_INTEGRATE_PRESTIGE = 5.0,				-- Prestige gain on diplomatic annex or integrate
+	ANNEX_OR_INTEGRATE_PRESTIGE = 10.0,				-- Prestige gain on diplomatic annex or integrate
 	PROVINCE_DISCOVERY_PRESTIGE = 0.1,				-- Prestige change when first in tech group to discover first province in a region
 	PROVINCE_DISCOVERY_YEARS_TECHNOLOGY = 50,		-- Years until discoveries spread within technology group
 	PROVINCE_DISCOVERY_YEARS_RELIGION = 100,		-- Years until discoveries spread with religion
@@ -2028,7 +2028,7 @@ NAI = {
 	DIPLOMATIC_ACTION_SUPPORT_HEIR_DEVELOPMENT_FACTOR = 2, -- AI scoring for support heir is increased by this for each development in target's provinces
 	DIPLOMATIC_ACTION_SUPPORT_HEIR_ALLIANCE_FACTOR = 2, -- AI scoring for support heir is multiplied by this if the two countries have an alliance
 	DIPLOMATIC_ACTION_BUILD_SPY_NETWORK_RIVAL_FACTOR = 50, -- AI scoring to build spy network in neighboring rivals, or overlord if disloyal subject.
-	AI_TOTAL_DEV_CULTURE_MULTIPLIER = 1,				-- Multiplier for how much the AI values having much development in accepted cultures.
+	AI_TOTAL_DEV_CULTURE_MULTIPLIER = 1.25,				-- Multiplier for how much the AI values having much development in accepted cultures.
 	AI_PROPORTION_OF_DEV_CULTURE_MULTIPLIER = 30,		-- Multiplier for how much the AI wants to convert brother cultures in terms of percentage of the nation. Essentially we compare the total dev of the non-promoted culture * AI_TOTAL_DEV_CULTURE_MULTIPLIER with the proportion of dev of the country * AI_PROPORTION_OF_DEV_CULTURE_MULTIPLIER and choose the larger of the two as our desire to add an accepted culture.
 	AI_BROTHER_CULTURE_MULTIPLIER = 0.75,					-- How much multiplier for how much the AI wants to convert brother cultures (there's less penalty on them not being the same culture because they're at least close).
 	DIPLOMATIC_ACTION_INFILTRATE_BASE_FACTOR = 25, -- AI infiltrate administration base scoring
