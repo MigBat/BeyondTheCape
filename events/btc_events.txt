@@ -104,56 +104,56 @@ country_event = {
 
 # Monthly OPM Diplo Calculation #
 
-country_event = {
-	id = btc_events.5
-	title = btc_events.5_t
-	desc = btc_events.5_d
+# country_event = {
+# 	id = btc_events.5
+# 	title = btc_events.5_t
+# 	desc = btc_events.5_d
 
-	is_triggered_only = yes
-	hidden = yes
+# 	is_triggered_only = yes
+# 	hidden = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {
-		name = btc_events.5a
+# 	option = {
+# 		name = btc_events.5a
 
-		trigger = {
-			AND = {
-				num_of_cities = 1
-				NOT = { num_of_cities = 2 }
-			}
-		}
+# 		trigger = {
+# 			AND = {
+# 				num_of_cities = 1
+# 				NOT = { num_of_cities = 2 }
+# 			}
+# 		}
 
-		if = {
-			limit = {
-				NOT = {
-					has_country_modifier = opm_diplomacy
-				}
-			}
-			add_country_modifier = {
-				name = opm_diplomacy
-				duration = -1
-			}
-		}
-	}
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					has_country_modifier = opm_diplomacy
+# 				}
+# 			}
+# 			add_country_modifier = {
+# 				name = opm_diplomacy
+# 				duration = -1
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = btc_events.5b
+# 	option = {
+# 		name = btc_events.5b
 
-		trigger = {
-			num_of_cities = 2
-		}
+# 		trigger = {
+# 			num_of_cities = 2
+# 		}
 
-		if = {
-			limit = {
-				has_country_modifier = opm_diplomacy
-			}
-			remove_country_modifier = opm_diplomacy
-		}
-	}
-}
+# 		if = {
+# 			limit = {
+# 				has_country_modifier = opm_diplomacy
+# 			}
+# 			remove_country_modifier = opm_diplomacy
+# 		}
+# 	}
+# }
 
 # Remove dev with high devastation
 
@@ -692,6 +692,8 @@ country_event = {
 	title = btc_events.13_t
 	desc = btc_events.13_d
 	picture = DISCIPLINED_SOLDIERS_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		OR = {

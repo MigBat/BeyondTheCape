@@ -174,7 +174,7 @@ vassal = {
 union = {
 	first = ARA
 	second = SIC
-	start_date = 1409.6.25
+	start_date = 1409.7.26
 	end_date = 1458.7.25
 }
 
