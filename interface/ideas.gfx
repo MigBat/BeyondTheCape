@@ -291,7 +291,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_expansion2_ideas"
+		name = "GFX_idea_expansion_ideas"
 		texturefile = "gfx//interface//ideas//idea_expansion2_ideas.dds"
 		noOfFrames = 1
 		
@@ -319,7 +319,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_influence2_ideas"
+		name = "GFX_idea_influence_ideas"
 		texturefile = "gfx//interface//ideas//idea_influence2_ideas.dds"
 		noOfFrames = 1
 		
@@ -368,13 +368,19 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_offensive2_ideas"
+		name = "GFX_idea_offensive_ideas"
 		texturefile = "gfx//interface//ideas//idea_offensive2_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_spy_ideas"
+		texturefile = "gfx//interface//ideas//idea_spy2_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}	
 	spriteType = {
 		name = "GFX_idea_standing_army_ideas"
 		texturefile = "gfx//interface//ideas//idea_standing_army_ideas.dds"
