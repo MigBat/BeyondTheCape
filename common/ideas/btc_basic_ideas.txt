@@ -58,41 +58,41 @@ religious_ideas = {
 
 	ai_will_do = {
 		factor = 1
-	# 	modifier = {
-	# 		factor = 0
-	# 		has_idea_group = humanist_ideas
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.25
-	# 		NOT = { religious_unity = 0.5 }
-	# 	}
-	# 	modifier = {
-	# 		factor = 0.75
-	# 		personality = ai_diplomat
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.1
-	# 		religion = catholic
-	# 		any_neighbor_country = {
-	# 			is_crusade_target = yes 
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		factor = 0.25
-	# 		religious_unity = 0.95 
-	# 	}
-	# 	modifier = {
-	# 		factor = 0.25
-	# 		NOT = {
-	# 			any_neighbor_country = {
-	# 				religion = ROOT 
-	# 			}
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		factor = 0.5
-	# 		NOT = { monthly_adm = 7 }
-	# 	}
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religious_unity = 0.5 }
+		}
+		modifier = {
+			factor = 0.75
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 1.1
+			religion = catholic
+			any_neighbor_country = {
+				is_crusade_target = yes 
+			}
+		}
+		modifier = {
+			factor = 0.25
+			religious_unity = 0.95 
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				any_neighbor_country = {
+					religion = ROOT 
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_adm = 7 }
+		}
 	}
 }
 
@@ -137,46 +137,46 @@ innovativeness_ideas = {
 
 	ai_will_do = {
 		factor = 0.55
-	# 	modifier = {
-	# 		factor = 1.25
-	# 		has_reform = steppe_horde
-	# 	}
-	# 	modifier = {
-	# 		factor = 0.5
-	# 		NOT = { monthly_adm = 8 }
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.25
-	# 		innovativeness = 40
-	# 		NOT = { is_year = 1650 }
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.25
-	# 		OR = { 
-	# 			ruler_has_personality = scholar_personality 
-	# 			ruler_has_personality = free_thinker_personality
-	# 			in_golden_age = yes 	
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.1
-	# 		personality = ai_capitalist
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.25
-	# 		OR = {
-	# 			has_idea_group = economic_ideas 
-	# 			has_idea_group = offensive_ideas 
-	# 			has_idea_group = naval_ideas
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		factor = 0
-	# 		OR = {
-	# 			is_year = 1700 
-	# 			innovativeness = 80
-	# 		}
-	# 	}
+		modifier = {
+			factor = 1.25
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 1.25
+			innovativeness = 40
+			NOT = { is_year = 1650 }
+		}
+		modifier = {
+			factor = 1.25
+			OR = { 
+				ruler_has_personality = scholar_personality 
+				ruler_has_personality = free_thinker_personality
+				in_golden_age = yes 	
+			}
+		}
+		modifier = {
+			factor = 1.1
+			personality = ai_capitalist
+		}
+		# modifier = {
+		# 	factor = 1.25
+		# 	OR = {
+		# 		has_idea_group = economic_ideas 
+		# 		has_idea_group = offensive_ideas 
+		# 		has_idea_group = naval_ideas
+		# 	}
+		# }
+		modifier = {
+			factor = 0
+			OR = {
+				is_year = 1700 
+				innovativeness = 80
+			}
+		}
 	}
 }
 
@@ -221,25 +221,25 @@ economic_ideas = {
 
 	ai_will_do = {
 		factor = 0.7
-	# 	modifier = {
-	# 		factor = 1.1 
-	# 		personality = ai_capitalist
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.1
-	# 		national_focus = ADM 
-	# 	}
-	# 	modifier = { 
-	# 		factor = 0.75 
-	# 		NOT = { monthly_adm = 8 }
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.15
-	# 		OR = {
-	# 			has_idea_group = trade_ideas
-	# 			has_idea_group = naval_ideas
-	# 		}
-	# 	}
+		modifier = {
+			factor = 1.1 
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 1.1
+			national_focus = ADM 
+		}
+		modifier = { 
+			factor = 0.75 
+			NOT = { monthly_adm = 8 }
+		}
+		# modifier = {
+		# 	factor = 1.15
+		# 	OR = {
+		# 		has_idea_group = trade_ideas
+		# 		has_idea_group = naval_ideas
+		# 	}
+		# }
 	}
 }
 
@@ -281,25 +281,25 @@ infrastructure_ideas = {
 
 	ai_will_do = {
 		factor = 0.7
-	# 	modifier = {
-	# 		factor = 1.1 
-	# 		personality = ai_capitalist
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.1
-	# 		national_focus = ADM 
-	# 	}
-	# 	modifier = { 
-	# 		factor = 0.75 
-	# 		NOT = { monthly_adm = 8 }
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.15
-	# 		OR = {
-	# 			has_idea_group = trade_ideas
-	# 			has_idea_group = naval_ideas
-	# 		}
-	# 	}
+		modifier = {
+			factor = 1.1 
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 1.1
+			national_focus = ADM 
+		}
+		modifier = { 
+			factor = 0.75 
+			NOT = { monthly_adm = 8 }
+		}
+		# modifier = {
+		# 	factor = 1.15
+		# 	OR = {
+		# 		has_idea_group = trade_ideas
+		# 		has_idea_group = naval_ideas
+		# 	}
+		# }
 	}
 }
 
@@ -348,34 +348,33 @@ aristocracy_ideas = {
 
 	ai_will_do = {
 		factor = 3.75
-		
-	# 	modifier = {
-	# 		factor = 1.25
-	# 		has_global_modifier_value = {
-	# 			which = cavalry_power 
-	# 			value = 0.25
-	# 		}
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.25
-	# 		cavalry_fraction = 0.3
-	# 	}
-	# 	modifier = {
-	# 		factor = 0.5
-	# 		NOT = { monthly_mil = 7 }
-	# 	}
-	# 	modifier = {
-	# 		factor = 1.1
-	# 		personality = ai_militarist 
-	# 	}
-	# 	modifier = {
-	# 		factor = 0.5
-	# 		is_subject = yes
-	# 	}
-	# 	modifier = { 
-	# 		factor = 1.25
-	# 		has_idea_group = spy_ideas 
-	# 	}
+		modifier = {
+			factor = 1.25
+			has_global_modifier_value = {
+				which = cavalry_power 
+				value = 0.25
+			}
+		}
+		modifier = {
+			factor = 1.25
+			cavalry_fraction = 0.3
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_mil = 7 }
+		}
+		modifier = {
+			factor = 1.1
+			personality = ai_militarist 
+		}
+		modifier = {
+			factor = 0.5
+			is_subject = yes
+		}
+		modifier = { 
+			factor = 1.25
+			has_idea_group = spy_ideas 
+		}
 	}
 }
 
@@ -422,26 +421,25 @@ plutocracy_ideas = {
 
 	ai_will_do = {
 		factor = 3.75
-		
-		# modifier = {
-		# 	factor = 1.25
-		# 	trade_income_percentage = 0.4
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	production_income_percentage = 0.35
-		# }
-		# modifier = {
-		# 	factor = 0.5
-		# 	NOT = { monthly_mil = 7 }
-		# }
-		# modifier = {
-		# 	factor = 1.1
-		# 	OR = {
-		# 		personality = ai_capitalist
-		# 		personality = ai_militarist 
-		# 	}
-		# }
+		modifier = {
+			factor = 1.25
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.25
+			production_income_percentage = 0.35
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_mil = 7 }
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				personality = ai_capitalist
+				personality = ai_militarist 
+			}
+		}
 	}
 }
 
@@ -486,10 +484,10 @@ horde_gov_ideas = {
 	
 	ai_will_do = {
 		factor = 8
-		# modifier = {
-		# 	factor = 1.5
-		# 	personality = ai_militarist 
-		# }
+		modifier = {
+			factor = 1.5
+			personality = ai_militarist 
+		}
 	}
 }
 
@@ -538,30 +536,30 @@ theocracy_gov_ideas = {
 	}
 	ai_will_do = {
 		factor = 3.75
-		# modifier = {
-		# 	factor = 0
-		# 	has_idea_group = humanist_ideas
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	any_neighbor_country = { 
-		# 		NOT = { religion = ROOT }
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	any_neighbor_country = { 
-		# 		NOT = { religion = ROOT }
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0.5
-		# 	NOT = { monthly_mil = 7 }
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	personality = ai_militarist 
-		# }
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 1.25
+			any_neighbor_country = { 
+				NOT = { religion = ROOT }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			any_neighbor_country = { 
+				NOT = { religion = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_mil = 7 }
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_militarist 
+		}
 	}
 }
 
@@ -644,29 +642,29 @@ trade_ideas = {
 
 	ai_will_do = {
 		factor = 0.4
-		# modifier = {
-		# 	factor = 0
-		# 	NOT = { num_of_cities = 6 }
-		# 	NOT = { has_government_attribute = is_merchant_republic }
-		# }
-		# modifier = {
-		# 	factor = 2
-		# 	has_government_attribute = is_merchant_republic
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	personality = ai_capitalist 
-		# 	trade_income_percentage = 0.35
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	home_trade_node = {
-		# 		trade_share = {
-		# 			country = ROOT 
-		# 			share = 0.4
-		# 		}
-		# 	}
-		# }
+		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 6 }
+			NOT = { has_government_attribute = is_merchant_republic }
+		}
+		modifier = {
+			factor = 2
+			has_government_attribute = is_merchant_republic
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_capitalist 
+			trade_income_percentage = 0.35
+		}
+		modifier = {
+			factor = 1.25
+			home_trade_node = {
+				trade_share = {
+					country = ROOT 
+					share = 0.4
+				}
+			}
+		}
 		# modifier = {
 		# 	factor = 1.25
 		# 	OR = {
@@ -723,63 +721,63 @@ maritime_ideas = {
 
 	ai_will_do = {
 		factor = 0.55
-		# modifier = {
-		# 	factor = 0
-		# 	is_tribal = yes
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	primitives = yes
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	NOT = { num_of_ports = 1 }
-		# }
-		# modifier = {
-		# 	factor = 0.25
-		# 	NOT = { num_of_ports = 10 }
-		# 	current_age = age_of_discovery 
-		# }
-		# modifier = {
-		# 	factor = 0.25
-		# 	NOT = { num_of_ports = 20 }
-		# 	current_age = age_of_reformation 
-		# }
-		# modifier = {
-		# 	factor = 0.25
-		# 	NOT = { num_of_ports = 30 }
-		# 	current_age = age_of_absolutism 
-		# }
-		# modifier = {
-		# 	factor = 0.25
-		# 	NOT = { num_of_ports = 40 }
-		# 	current_age = age_of_revolutions 
-		# }
-		# modifier = {
-		# 	factor = 0.35
-		# 	NOT = { num_of_ports = 15 }
-		# }
-		# modifier = {
-		# 	factor = 1.5 
-		# 	capital_scope = {
-		# 		is_island = yes 
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.5
-		# 	has_global_modifier_value = {
-		# 		which = naval_forcelimit_modifier 
-		# 		value = 0.25
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.15
-		# 	light_ship_fraction = 0.25
-		# }
-		# modifier = {
-		# 	factor = 2.5
-		# 	has_government_attribute = is_pirate_republic_reform
-		# }
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_ports = 10 }
+			current_age = age_of_discovery 
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_ports = 20 }
+			current_age = age_of_reformation 
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_ports = 30 }
+			current_age = age_of_absolutism 
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_ports = 40 }
+			current_age = age_of_revolutions 
+		}
+		modifier = {
+			factor = 0.35
+			NOT = { num_of_ports = 15 }
+		}
+		modifier = {
+			factor = 1.5 
+			capital_scope = {
+				is_island = yes 
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = naval_forcelimit_modifier 
+				value = 0.25
+			}
+		}
+		modifier = {
+			factor = 1.15
+			light_ship_fraction = 0.25
+		}
+		modifier = {
+			factor = 2.5
+			has_government_attribute = is_pirate_republic_reform
+		}
 	}
 }
 
@@ -822,22 +820,22 @@ court_ideas = {
 
 	ai_will_do = {
 		factor = 0.5
-		# modifier = {
-		# 	factor = 1.25
-		# 	num_of_powerful_estates = 3 
-		# }
-		# modifier = {
-		# 	factor = 1.2
-		# 	personality = ai_diplomat
-		# }
-		# modifier = {
-		# 	factor = 1.1 
-		# 	national_focus = DIP 
-		# }
-		# modifier = {
-		# 	factor = 0.75
-		# 	NOT = { monthly_dip = 8 } 
-		# }
+		modifier = {
+			factor = 1.25
+			num_of_powerful_estates = 3 
+		}
+		modifier = {
+			factor = 1.2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = DIP 
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_dip = 8 } 
+		}
 	}
 }
 
@@ -878,22 +876,22 @@ imperialism_ideas = {
 
 	ai_will_do = {
 		factor = 0.5
-		# modifier = {
-		# 	factor = 1.25
-		# 	num_of_powerful_estates = 3 
-		# }
-		# modifier = {
-		# 	factor = 1.2
-		# 	personality = ai_diplomat
-		# }
-		# modifier = {
-		# 	factor = 1.1 
-		# 	national_focus = DIP 
-		# }
-		# modifier = {
-		# 	factor = 0.75
-		# 	NOT = { monthly_dip = 8 } 
-		# }
+		modifier = {
+			factor = 1.25
+			num_of_powerful_estates = 3 
+		}
+		modifier = {
+			factor = 1.2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = DIP 
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_dip = 8 } 
+		}
 	}
 }
 
@@ -945,154 +943,154 @@ exploration_ideas = {
 
 	ai_will_do = {
 		factor = 0.75
-		# modifier = {
-		# 	factor = 0
-		# 	is_colonial_nation = yes
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	is_tribal = yes
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	is_subject = yes
-		# }		
-		# modifier = {
-		# 	factor = 0
-		# 	primitives = yes
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	current_age = age_of_revolutions #too late
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	NOT = {
-		# 		any_owned_province = {
-		# 			has_port = yes
-		# 			sea_zone = {
-		# 				NOT = { area = eastern_mediterrenean_area }
-		# 			}
-		# 		}
-		# 	}
-		# 	NOT = { 
-		# 		any_owned_province = { 
-		# 			is_in_capital_area = yes
-		# 			has_empty_adjacent_province = yes
-		# 		} 
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0.5
-		# 	NOT = {
-		# 		any_owned_province = {
-		# 			has_port = yes
-		# 			sea_zone = {
-		# 				OR = {
-		# 					NOT = { region = mediterrenean_region }
-		# 					province_id = 1293 #Gibraltar
-		# 					province_id = 1294 #Almeria
-		# 				}
-		# 				NOT = { area = red_sea_area }
-		# 				NOT = { area = baltic_area }
-		# 			}
-		# 		}
-		# 	}
-		# 	NOT = { 
-		# 		any_owned_province = { 
-		# 			is_in_capital_area = yes
-		# 			has_empty_adjacent_province = yes
-		# 		} 
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0.1
-		# 	NOT = { num_of_ports = 3 }
-		# 	NOT = { 
-		# 		any_owned_province = { 
-		# 			is_in_capital_area = yes
-		# 			has_empty_adjacent_province = yes
-		# 		}
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0.1
-		# 	NOT = { has_institution = renaissance }
-		# 	NOT = { tag = POR }
-		# }
-		# modifier = {
-		# 	factor = 0.1
-		# 	capital_scope = {
-		# 		NOT = {
-		# 			region = france_region
-		# 			region = iberia_region
-		# 			region = british_isles_region
-		# 			region = low_countries_region
-		# 		}
-		# 	}
-		# 	NOT = { technology_group = high_american }
-		# }
-		# modifier = {
-		# 	factor = 10
-		# 	capital_scope = {
-		# 		region = france_region
-		# 		region = iberia_region
-		# 		region = british_isles_region
-		# 		region = low_countries_region
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0.1
-		# 	tag = ARA
-		# }
-		# modifier = {
-		# 	factor = 0.1
-		# 	tag = PRO
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	NOT = { adm_tech = 6 }
-		# 	NOT = { tag = POR }
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	NOT = { adm_tech = 9 }
-		# 	NOT = { tag = POR }
-		# 	NOT = { tag = CAS }
-		# }
-		# modifier = {
-		# 	factor = 10
-		# 	technology_group = high_american
-		# }
-		# modifier = {
-		# 	factor = 2.0
-		# 	num_of_ports = 5
-		# }
-		# modifier = {
-		# 	factor = 2.0
-		# 	num_of_ports = 10
-		# }
-		# modifier = {
-		# 	factor = 2.0
-		# 	num_of_ports = 15
-		# }
-		# modifier = {
-		# 	factor = 2.0
-		# 	num_of_ports = 20
-		# }
-		# modifier = {
-		# 	factor = 1000
-		# 	OR = {
-		# 		tag = POR
-		# 		tag = CAS
-		# 		tag = SPA
-		# 		tag = GBR
-		# 		tag = NED
-		# 		tag = ENG
-		# 		tag = FRA
-		# 		tag = KUR
-		# 	}
-		# }
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
+		}
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			is_subject = yes
+		}		
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions #too late
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					sea_zone = {
+						NOT = { area = eastern_mediterrenean_area }
+					}
+				}
+			}
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				} 
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					sea_zone = {
+						OR = {
+							NOT = { region = mediterrenean_region }
+							province_id = 1293 #Gibraltar
+							province_id = 1294 #Almeria
+						}
+						NOT = { area = red_sea_area }
+						NOT = { area = baltic_area }
+					}
+				}
+			}
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				} 
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { num_of_ports = 3 }
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_institution = renaissance }
+			NOT = { tag = POR }
+		}
+		modifier = {
+			factor = 0.1
+			capital_scope = {
+				NOT = {
+					region = france_region
+					region = iberia_region
+					region = british_isles_region
+					region = low_countries_region
+				}
+			}
+			NOT = { technology_group = high_american }
+		}
+		modifier = {
+			factor = 10
+			capital_scope = {
+				region = france_region
+				region = iberia_region
+				region = british_isles_region
+				region = low_countries_region
+			}
+		}
+		modifier = {
+			factor = 0.1
+			tag = ARA
+		}
+		modifier = {
+			factor = 0.1
+			tag = PRO
+		}
+		modifier = {
+			factor = 0
+			NOT = { adm_tech = 6 }
+			NOT = { tag = POR }
+		}
+		modifier = {
+			factor = 0
+			NOT = { adm_tech = 9 }
+			NOT = { tag = POR }
+			NOT = { tag = CAS }
+		}
+		modifier = {
+			factor = 10
+			technology_group = high_american
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 15
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 20
+		}
+		modifier = {
+			factor = 1000
+			OR = {
+				tag = POR
+				tag = CAS
+				tag = SPA
+				tag = GBR
+				tag = NED
+				tag = ENG
+				tag = FRA
+				tag = KUR
+			}
+		}
 	}
 }
 
@@ -1144,71 +1142,71 @@ naval_ideas = {
 
 	ai_will_do = {
 		factor = 0.45
-		# modifier = {
-		# 	factor = 0
-		# 	is_tribal = yes
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	primitives = yes
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	NOT = { num_of_ports = 1 }
-		# 	NOT = { is_colonial_nation = yes }
-		# }
-		# modifier = {
-		# 	factor = 0.31
-		# 	NOT = { num_of_ports = 10 }
-		# }
-		# modifier = {
-		# 	factor = 0.31
-		# 	num_of_cities = 50
-		# }
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.31
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.31
+			num_of_cities = 50
+		}
 
-		# modifier = {
-		# 	factor = 10
-		# 	has_government_attribute = is_pirate_republic_reform
-		# }
-		# modifier = {
-		# 	factor = 1000
-		# 	OR = {
-		# 		tag = GBR
-		# 		tag = ENG
-		# 		tag = TUN
-		# 		tag = HOL
-		# 		tag = NED
-		# 		tag = CAS
-		# 		tag = SPA
-		# 		tag = ARA
-		# 		tag = DAN
-		# 		tag = NOR
-		# 		tag = VEN
-		# 		tag = KOR
-		# 		tag = MLC
-		# 		tag = MNG
-		# 		tag = BNG
-		# 		tag = MAJ
-		# 		tag = GUJ
-		# 		tag = MAM
-		# 		tag = TUR
-		# 		tag = VIJ
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	AND = {
-		# 		tag = NED
-		# 		NOT = { has_idea_group = exploration_ideas }
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	AND = {
-		# 		tag = TUR
-		# 		NOT = { adm_tech = 9 }
-		# 	}
-		# }
+		modifier = {
+			factor = 10
+			has_government_attribute = is_pirate_republic_reform
+		}
+		modifier = {
+			factor = 1000
+			OR = {
+				tag = GBR
+				tag = ENG
+				tag = TUN
+				tag = HOL
+				tag = NED
+				tag = CAS
+				tag = SPA
+				tag = ARA
+				tag = DAN
+				tag = NOR
+				tag = VEN
+				tag = KOR
+				tag = MLC
+				tag = MNG
+				tag = BNG
+				tag = MAJ
+				tag = GUJ
+				tag = MAM
+				tag = TUR
+				tag = VIJ
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				tag = NED
+				NOT = { has_idea_group = exploration_ideas }
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				tag = TUR
+				NOT = { adm_tech = 9 }
+			}
+		}
 	}
 }
 
@@ -1253,7 +1251,7 @@ mercenary_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 1
 	}
 }
 
@@ -1298,46 +1296,46 @@ quantity_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = global_manpower_modifier 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = land_forcelimit_modifier 
-		# 			value = 0.15
-		# 		}
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = trade_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = global_manpower_modifier 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = land_forcelimit_modifier 
+					value = 0.15
+				}
+			}
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+			}
+		}
 	}
 }
 
@@ -1411,46 +1409,46 @@ defensive_ideas = {
 	
 	ai_will_do = {
 		factor = 2.5
-		# modifier = {
-		# 	factor = 1.1
-		# 	has_global_modifier_value = {
-		# 		which = land_morale  
-		# 		value = 0.2
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.1
-		# 	has_global_modifier_value = {
-		# 		which = defensiveness  
-		# 		value = 0.2
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	monthly_mil = 7 
-		# }
-		# modifier = {
-		# 	factor = 1.1 
-		# 	personality = ai_militarist
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	current_age = age_of_discovery
-		# 	num_of_owned_provinces_with = {
-		# 		has_terrain = mountain
-		# 		value = 5
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.05 
-		# 	any_rival_country = {
-		# 		army_size = ROOT 
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	is_march = yes
-		# }
+		modifier = {
+			factor = 1.1
+			has_global_modifier_value = {
+				which = land_morale  
+				value = 0.2
+			}
+		}
+		modifier = {
+			factor = 1.1
+			has_global_modifier_value = {
+				which = defensiveness  
+				value = 0.2
+			}
+		}
+		modifier = {
+			factor = 1.25
+			monthly_mil = 7 
+		}
+		modifier = {
+			factor = 1.1 
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.25
+			current_age = age_of_discovery
+			num_of_owned_provinces_with = {
+				has_terrain = mountain
+				value = 5
+			}
+		}
+		modifier = {
+			factor = 1.05 
+			any_rival_country = {
+				army_size = ROOT 
+			}
+		}
+		modifier = {
+			factor = 1.25
+			is_march = yes
+		}
 	}
 }
 
@@ -1514,49 +1512,49 @@ offensive_ideas = {
 
 	ai_will_do = {
 		factor = 3.51
-		# modifier = {
-		# 	factor = 1.1
-		# 	has_global_modifier_value = {
-		# 		which = discipline 
-		# 		value = 0.1
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	monthly_mil = 7 
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = {
-		# 	factor = 1.25 
-		# 	personality = ai_militarist
-		# }
-		# modifier = {
-		# 	factor = 1.5
-		# 	OR = {
-		# 		num_of_artillery = 30
-		# 		num_of_galley = 50
-		# 		num_of_heavy_ship = 20
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.1 
-		# 	national_focus = MIL 
-		# }
-		# modifier = {
-		# 	factor = 1.15
-		# 	OR = {
-		# 		has_idea_group = economic_ideas 
-		# 		has_idea_group = innovativeness_ideas 
-		# 		has_idea_group = infrastructure_ideas
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	is_march = yes
-		# }
+		modifier = {
+			factor = 1.1
+			has_global_modifier_value = {
+				which = discipline 
+				value = 0.1
+			}
+		}
+		modifier = {
+			factor = 1.25
+			monthly_mil = 7 
+		}
+		modifier = {
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = {
+			factor = 1.25 
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				num_of_artillery = 30
+				num_of_galley = 50
+				num_of_heavy_ship = 20
+			}
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = MIL 
+		}
+		modifier = {
+			factor = 1.15
+			OR = {
+				has_idea_group = economic_ideas 
+				has_idea_group = innovativeness_ideas 
+				has_idea_group = infrastructure_ideas
+			}
+		}
+		modifier = {
+			factor = 1.25
+			is_march = yes
+		}
 	}
 }
 
@@ -1609,36 +1607,32 @@ nationalist_ideas = {
 
 	ai_will_do = {
 		factor = 0.55
-		# modifier = {
-		# 	factor = 0
-		# 	has_idea_group = religious_ideas
-		# }
-		# modifier = {
-		# 	factor = 0.5
-		# 	any_rival_country = {
-		# 		NOT = { religion = ROOT } 
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	personality = ai_militarist
-		# }
-		# modifier = {
-		# 	factor = 0.75
-		# 	NOT = { monthly_adm = 8 }
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	religion = confucianism
-		# }
-		# modifier = {
-		# 	factor = 1.1 
-		# 	national_focus = ADM 
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	has_idea_group = offensive_ideas 
-		# }
+		modifier = {
+			factor = 0.5
+			any_rival_country = {
+				NOT = { religion = ROOT } 
+			}
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 1.25
+			religion = confucianism
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = ADM 
+		}
+		modifier = {
+			factor = 1.25
+			has_idea_group = offensive_ideas 
+		}
 	}
 }
 
@@ -1689,36 +1683,36 @@ humanist_ideas = {
 
 	ai_will_do = {
 		factor = 0.55
-		# modifier = {
-		# 	factor = 0
-		# 	has_idea_group = religious_ideas
-		# }
-		# modifier = {
-		# 	factor = 0.5
-		# 	any_rival_country = {
-		# 		NOT = { religion = ROOT } 
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	personality = ai_militarist
-		# }
-		# modifier = {
-		# 	factor = 0.75
-		# 	NOT = { monthly_adm = 8 }
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	religion = confucianism
-		# }
-		# modifier = {
-		# 	factor = 1.1 
-		# 	national_focus = ADM 
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	has_idea_group = offensive_ideas 
-		# }
+		modifier = {
+			factor = 0
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.5
+			any_rival_country = {
+				NOT = { religion = ROOT } 
+			}
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 1.25
+			religion = confucianism
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = ADM 
+		}
+		modifier = {
+			factor = 1.25
+			has_idea_group = offensive_ideas 
+		}
 	}
 }
 
@@ -1775,41 +1769,41 @@ meritocracy_ideas = {
 
 	ai_will_do = {
 		factor = 0.65
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_adm = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = ADM 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = core_creation 
-		# 			value = 0.15
-		# 		}
-		# 		has_reform = livonian_military_monarchy
-		# 		has_reform = prussian_theocratic_reform
-		# 		has_reform = prussian_republic_reform
-		# 		has_reform = prussian_monarchy
-		# 		has_reform = prussian_monarchy_base
-		# 		governing_capacity_percentage = 0.9
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = ADM 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = core_creation 
+					value = 0.15
+				}
+				has_reform = livonian_military_monarchy
+				has_reform = prussian_theocratic_reform
+				has_reform = prussian_republic_reform
+				has_reform = prussian_monarchy
+				has_reform = prussian_monarchy_base
+				governing_capacity_percentage = 0.9
+			}
+		}
 	}
 }
 
@@ -1862,56 +1856,58 @@ expansion_ideas = {
 
 	ai_will_do = {
 		factor = 0.5
-		# modifier = {
-		# 	factor = 10
-		# 	OR = {
-		# 		has_idea_group = exploration_ideas
-		# 		is_colonial_nation = yes
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	OR = {
-		# 		tag = CAS
-		# 		tag = POR
-		# 		tag = SPA
-		# 	}
-		# 	NOT = { has_idea_group = exploration_ideas }
-		# }
-		# modifier = {
-		# 	factor = 5
-		# 	OR = {
-		# 		tag = CAS
-		# 		tag = SPA
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 10
-		# 	NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
-		# 	tag = RUS
-		# 	num_of_cities = 20
-		# 	any_owned_province = {
-		# 		has_empty_adjacent_province = yes
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0
-		# 	NOT = { has_idea_group = exploration_ideas }
-		# 	NOT = { is_colonial_nation = yes }
-		# 	NOT = {
-		# 		any_owned_province = {
-		# 			has_empty_adjacent_province = yes
-		# 		}
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 0.1
-		# 	NOT = {
-		# 		technology_group = western
-		# 		technology_group = eastern
-		# 		technology_group = muslim
-		# 	}
-		# }
+		modifier = {
+			factor = 10
+			OR = {
+				has_idea_group = exploration_ideas
+				is_colonial_nation = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = MOS
+					tag = RUS
+					is_colonial_nation = yes
+				}
+			}
+			NOT = { has_idea_group = exploration_ideas }
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = CAS
+				tag = SPA
+			}
+		}
+		modifier = {
+			factor = 10
+			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
+			tag = RUS
+			num_of_cities = 20
+			any_owned_province = {
+				has_empty_adjacent_province = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_idea_group = exploration_ideas }
+			NOT = { is_colonial_nation = yes }
+			NOT = {
+				any_owned_province = {
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
+			}
+		}
 	}
 }
 
@@ -1962,46 +1958,46 @@ mercantilism_ideas = {
 
 	ai_will_do = {
 		factor = 0.35
-		# modifier = {
-		# 	factor = 2
-		# 	inflation = 5
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	inflation = 10
-		# }
-		# modifier = {
-		# 	factor = 1.5
-		# 	has_reform = steppe_horde
-		# }
-		# modifier = {
-		# 	factor = 1.1
-		# 	num_of_cities = 20
-		# }
-		# modifier = {
-		# 	factor = 1.1
-		# 	num_of_cities = 50
-		# }
-		# modifier = {
-		# 	factor = 1.2
-		# 	personality = ai_capitalist 
-		# }
-		# modifier = { 
-		# 	factor = 0.8
-		# 	NOT = { monthly_adm = 7 } 
-		# }
-		# modifier = {
-		# 	factor = 1.1
-		# 	national_focus = ADM 
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = quality_ideas
-		# 		has_idea_group = trade_ideas
-		# 		has_idea_group = offensive_ideas 
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			inflation = 5
+		}
+		modifier = {
+			factor = 1.25
+			inflation = 10
+		}
+		modifier = {
+			factor = 1.5
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 50
+		}
+		modifier = {
+			factor = 1.2
+			personality = ai_capitalist 
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { monthly_adm = 7 } 
+		}
+		modifier = {
+			factor = 1.1
+			national_focus = ADM 
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = quality_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = offensive_ideas 
+			}
+		}
 	}
 }
 
@@ -2051,46 +2047,46 @@ free_trade_ideas = {
 
 	ai_will_do = {
 		factor = 0.35
-		# modifier = {
-		# 	factor = 2
-		# 	inflation = 5
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	inflation = 10
-		# }
-		# modifier = {
-		# 	factor = 1.5
-		# 	has_reform = steppe_horde
-		# }
-		# modifier = {
-		# 	factor = 1.1
-		# 	num_of_cities = 20
-		# }
-		# modifier = {
-		# 	factor = 1.1
-		# 	num_of_cities = 50
-		# }
-		# modifier = {
-		# 	factor = 1.2
-		# 	personality = ai_capitalist 
-		# }
-		# modifier = { 
-		# 	factor = 0.8
-		# 	NOT = { monthly_adm = 7 } 
-		# }
-		# modifier = {
-		# 	factor = 1.1
-		# 	national_focus = ADM 
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = quality_ideas
-		# 		has_idea_group = trade_ideas
-		# 		has_idea_group = offensive_ideas 
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			inflation = 5
+		}
+		modifier = {
+			factor = 1.25
+			inflation = 10
+		}
+		modifier = {
+			factor = 1.5
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.1
+			num_of_cities = 50
+		}
+		modifier = {
+			factor = 1.2
+			personality = ai_capitalist 
+		}
+		modifier = { 
+			factor = 0.8
+			NOT = { monthly_adm = 7 } 
+		}
+		modifier = {
+			factor = 1.1
+			national_focus = ADM 
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = quality_ideas
+				has_idea_group = trade_ideas
+				has_idea_group = offensive_ideas 
+			}
+		}
 	}
 }
 
@@ -2147,18 +2143,18 @@ spy_ideas = {
 
 	ai_will_do = {
 		factor = 1
-		# modifier = {
-		# 	factor = 1.1
-		# 	personality = ai_militarist 
-		# }
-		# modifier = {
-		# 	factor = 0.45
-		# 	NOT = { monthly_dip = 7 }
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	has_idea_group = aristocracy_ideas
-		# }
+		modifier = {
+			factor = 1.1
+			personality = ai_militarist 
+		}
+		modifier = {
+			factor = 0.45
+			NOT = { monthly_dip = 7 }
+		}
+		modifier = {
+			factor = 1.25
+			has_idea_group = aristocracy_ideas
+		}
 	}
 }
 
@@ -2206,62 +2202,55 @@ colonialism_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = infrastructure_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = infantry_power 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = cavalry_power 
-		# 			value = 0.25
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = artillery_power 
-		# 			value = 0.1
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = heavy_ship_power 
-		# 			value = 0.1
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = galley_power 
-		# 			value = 0.15
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = army_tradition
-		# 			value = 0.01
-		# 		}
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = infantry_power 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = cavalry_power 
+					value = 0.25
+				}
+				has_global_modifier_value = { 
+					which = artillery_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = heavy_ship_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = galley_power 
+					value = 0.15
+				}
+				has_global_modifier_value = { 
+					which = army_tradition
+					value = 0.01
+				}
+			}
+		}
 	}
 }
 
@@ -2316,63 +2305,55 @@ standing_army_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = infrastructure_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = infantry_power 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = cavalry_power 
-		# 			value = 0.25
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = artillery_power 
-		# 			value = 0.1
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = heavy_ship_power 
-		# 			value = 0.1
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = galley_power 
-		# 			value = 0.15
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = army_tradition
-		# 			value = 0.01
-		# 		}
-		# 	}
-			
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = infantry_power 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = cavalry_power 
+					value = 0.25
+				}
+				has_global_modifier_value = { 
+					which = artillery_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = heavy_ship_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = galley_power 
+					value = 0.15
+				}
+				has_global_modifier_value = { 
+					which = army_tradition
+					value = 0.01
+				}
+			}
+		}
 	}
 }
 
@@ -2420,63 +2401,62 @@ firepower_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = infrastructure_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = infantry_power 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = cavalry_power 
-		# 			value = 0.25
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = artillery_power 
-		# 			value = 0.1
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = heavy_ship_power 
-		# 			value = 0.1
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = galley_power 
-		# 			value = 0.15
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = army_tradition
-		# 			value = 0.01
-		# 		}
-		# 	}
-			
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = infrastructure_ideas
+				has_idea_group = economic_ideas
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = infantry_power 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = cavalry_power 
+					value = 0.25
+				}
+				has_global_modifier_value = { 
+					which = artillery_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = heavy_ship_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = galley_power 
+					value = 0.15
+				}
+				has_global_modifier_value = { 
+					which = army_tradition
+					value = 0.01
+				}
+			}
+		}
 	}
 }
 
@@ -2527,63 +2507,62 @@ quality_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = infrastructure_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = infantry_power 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = cavalry_power 
-		# 			value = 0.25
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = artillery_power 
-		# 			value = 0.1
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = heavy_ship_power 
-		# 			value = 0.1
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = galley_power 
-		# 			value = 0.15
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = army_tradition
-		# 			value = 0.01
-		# 		}
-		# 	}
-			
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = infrastructure_ideas
+				has_idea_group = economic_ideas
+			}
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = infantry_power 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = cavalry_power 
+					value = 0.25
+				}
+				has_global_modifier_value = { 
+					which = artillery_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = heavy_ship_power 
+					value = 0.1
+				}
+				has_global_modifier_value = { 
+					which = galley_power 
+					value = 0.15
+				}
+				has_global_modifier_value = { 
+					which = army_tradition
+					value = 0.01
+				}
+			}
+		}
 	}
 }
 
@@ -2630,46 +2609,46 @@ logistics_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = global_manpower_modifier 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = land_forcelimit_modifier 
-		# 			value = 0.15
-		# 		}
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = trade_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = global_manpower_modifier 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = land_forcelimit_modifier 
+					value = 0.15
+				}
+			}
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+			}
+		}
 	}
 }
 
@@ -2720,46 +2699,46 @@ administrative_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = global_manpower_modifier 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = land_forcelimit_modifier 
-		# 			value = 0.15
-		# 		}
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = trade_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = global_manpower_modifier 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = land_forcelimit_modifier 
+					value = 0.15
+				}
+			}
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+			}
+		}
 	}
 }
 
@@ -2807,46 +2786,46 @@ liberalism_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = global_manpower_modifier 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = land_forcelimit_modifier 
-		# 			value = 0.15
-		# 		}
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = trade_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = global_manpower_modifier 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = land_forcelimit_modifier 
+					value = 0.15
+				}
+			}
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+			}
+		}
 	}
 }
 
@@ -2899,22 +2878,22 @@ influence_ideas = {
 
 	ai_will_do = {
 		factor = 0.5
-		# modifier = {
-		# 	factor = 1.5
-		# 	is_emperor = yes
-		# }
-		# modifier = {
-		# 	factor = 1.5
-		# 	num_of_subjects = 2
-		# }
-		# modifier = {
-		# 	factor = 1.5
-		# 	num_of_subjects = 3
-		# }
-		# modifier = {
-		# 	factor = 0.75
-		# 	NOT = { monthly_dip = 8 }
-		# }
+		modifier = {
+			factor = 1.5
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 2
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 3
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_dip = 8 }
+		}
 	}
 }
 
@@ -2965,18 +2944,18 @@ diplomatic_ideas = {
 	ai_will_do = {
 		factor = 0.5
 
-		# modifier = {
-		# 	factor = 2
-		# 	is_emperor = yes
-		# }
-		# modifier = { 	
-		# 	factor = 0.75 
-		# 	NOT = { monthly_dip = 7 }
-		# }
-		# modifier = {
-		# 	factor = 1.25
-		# 	personality = ai_diplomat 
-		# }
+		modifier = {
+			factor = 2
+			is_emperor = yes
+		}
+		modifier = { 	
+			factor = 0.75 
+			NOT = { monthly_dip = 7 }
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_diplomat 
+		}
 	}
 }
 
@@ -3037,46 +3016,46 @@ decisive_battle_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = global_manpower_modifier 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = land_forcelimit_modifier 
-		# 			value = 0.15
-		# 		}
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = trade_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = global_manpower_modifier 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = land_forcelimit_modifier 
+					value = 0.15
+				}
+			}
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+			}
+		}
 	}
 }
 
@@ -3136,45 +3115,45 @@ war_of_attrition_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		# modifier = {
-		# 	factor = 2
-		# 	has_strong_mil_national_ideas = yes 
-		# }
-		# modifier = { 
-		# 	factor = 0.75
-		# 	NOT = { monthly_mil = 8 }
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	is_great_power = yes 
-		# }
-		# modifier = { 
-		# 	factor = 1.05
-		# 	national_focus = MIL 
-		# }
-		# modifier = { 
-		# 	factor = 1.1
-		# 	personality = ai_militarist  
-		# }
-		# modifier = { 
-		# 	factor = 1.25
-		# 	OR = { 
-		# 		has_global_modifier_value = { 
-		# 			which = global_manpower_modifier 
-		# 			value = 0.2
-		# 		}
-		# 		has_global_modifier_value = { 
-		# 			which = land_forcelimit_modifier 
-		# 			value = 0.15
-		# 		}
-		# 	}
-		# }
-		# modifier = {
-		# 	factor = 1.05
-		# 	OR = {
-		# 		has_idea_group = trade_ideas
-		# 		has_idea_group = economic_ideas
-		# 	}
-		# }
+		modifier = {
+			factor = 2
+			has_strong_mil_national_ideas = yes 
+		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = { 
+			factor = 1.25
+			OR = { 
+				has_global_modifier_value = { 
+					which = global_manpower_modifier 
+					value = 0.2
+				}
+				has_global_modifier_value = { 
+					which = land_forcelimit_modifier 
+					value = 0.15
+				}
+			}
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+			}
+		}
 	}
 }
