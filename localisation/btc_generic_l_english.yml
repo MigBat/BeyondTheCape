@@ -47,6 +47,12 @@
  PROV4962:0 "Principe"
  PROV4963:0 "Pepper Coast"
  PROV4964:0 "Slave Coast"
+ PROV3190:0 "Taurus"
+ PROV3191:0 "Carpathians"
+ PROV3192:0 "Tatras"
+ PROV3193:0 "Sudetes"
+ PROV3194:0 "Pindos"
+ PROV3195:0 "Korab"
 
 # Province Adjectives #
  PROV_ADJ4556:0 "Minhoto"
@@ -299,6 +305,7 @@
  colonial_government_balearic:0 "Viceroyalty"
  colonial_government_ruler_balearic:0 "Viceroy"
  colonial_government_ruler_female_balearic:0 "Vicereine"
+ russian_big:0 "Russian"
 
 # Flagships #
  portuguese_mass_load_cannons:0 "Portuguese Mass Load Cannons"
