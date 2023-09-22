@@ -416,6 +416,8 @@
 
  had_columbus_tt:0 "Had the §YChristopher Columbus§! event"
 
+ NO_OVERSEAS_STATE:0 "Overseas provinces cannot be stated."
+
 # Technology
 
  adm_tech_cs_20_name:0 "National Sovereignty"

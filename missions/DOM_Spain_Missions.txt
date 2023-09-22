@@ -64,11 +64,10 @@ dom_cas_missions_1 = {
 				if = {
 					limit = {
 						NOT = {
-							is_permanent_claim = ROOT
 							is_core = ROOT
 						}
 					}
-					add_permanent_claim = ROOT
+					add_core = ROOT
 				}
 			}
 		}
@@ -3529,7 +3528,7 @@ dom_cas_missions_4_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Hernï¿½n Cortï¿½s"
 			}
 			490 = {
 				add_base_production = 3
