@@ -850,13 +850,6 @@ gc_por_2_b = {
 				siege = 2
 				trait = cunning_navigator_personality
 			}	
-			brazil_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}	
 		}
 	}
 	
@@ -1576,13 +1569,6 @@ gc_por_3 = {
 			388 = {
 				add_permanent_claim = ROOT
 			}
-			# majarteen_area = {
-			# 	limit = {
-			# 		NOT = { is_core = ROOT }
-			# 		NOT = { is_permanent_claim = ROOT }
-			# 	}
-			# 	add_claim = ROOT
-			# }
 		}
 	}
 

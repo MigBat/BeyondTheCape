@@ -581,6 +581,7 @@ country_event = {
 		remove_rival = MOR
 
 		MOR = {
+			change_religion = catholic
 			define_ruler = {
 				name = "Abu Abdallah"
 				age = 35
@@ -613,46 +614,49 @@ country_event = {
 				change_religion = catholic	
 				set_province_flag = is_catholic					
 			}
-			every_owned_province = {
-				random_province_in_state = {
-					limit = {
-						NOT = { has_province_flag = is_catholic }	
-						NOT = { religion = catholic }
+			custom_tooltip = catholic_morocco_tt
+			hidden_effect = {
+				every_owned_province = {
+					random_province_in_state = {
+						limit = {
+							NOT = { has_province_flag = is_catholic }	
+							NOT = { religion = catholic }
+						}
+						change_religion = catholic	
+						set_province_flag = is_catholic		
 					}
-					change_religion = catholic	
-					set_province_flag = is_catholic		
-				}
-				random_province_in_state = {
-					limit = {
-						NOT = { has_province_flag = is_catholic }		
-						NOT = { religion = catholic }
+					random_province_in_state = {
+						limit = {
+							NOT = { has_province_flag = is_catholic }		
+							NOT = { religion = catholic }
+						}
+						change_religion = catholic	
+						set_province_flag = is_catholic		
 					}
-					change_religion = catholic	
-					set_province_flag = is_catholic		
-				}
-				random_province_in_state = {
-					limit = {
-						NOT = { has_province_flag = is_catholic }		
-						NOT = { religion = catholic }
+					random_province_in_state = {
+						limit = {
+							NOT = { has_province_flag = is_catholic }		
+							NOT = { religion = catholic }
+						}
+						change_religion = catholic	
+						set_province_flag = is_catholic		
 					}
-					change_religion = catholic	
-					set_province_flag = is_catholic		
-				}
-				random_province_in_state = {
-					limit = {
-						NOT = { has_province_flag = is_catholic }		
-						NOT = { religion = catholic }
+					random_province_in_state = {
+						limit = {
+							NOT = { has_province_flag = is_catholic }		
+							NOT = { religion = catholic }
+						}
+						change_religion = catholic	
+						set_province_flag = is_catholic		
 					}
-					change_religion = catholic	
-					set_province_flag = is_catholic		
-				}
-				random_province_in_state = {
-					limit = {
-						NOT = { has_province_flag = is_catholic }		
-						NOT = { religion = catholic }
+					random_province_in_state = {
+						limit = {
+							NOT = { has_province_flag = is_catholic }		
+							NOT = { religion = catholic }
+						}
+						change_religion = catholic	
+						set_province_flag = is_catholic		
 					}
-					change_religion = catholic	
-					set_province_flag = is_catholic		
 				}
 			}
 		}

@@ -777,7 +777,7 @@ predatory_trade = {
 }
 
 ned_patroonschap = {
-	min_local_autonomy = 0.1
+	min_local_autonomy = 10
 	local_tax_modifier = -0.5
 	province_trade_power_value = 3
 	trade_goods_size_modifier = 0.3
