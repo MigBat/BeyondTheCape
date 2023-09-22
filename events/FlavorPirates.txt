@@ -1048,19 +1048,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Golden Century"
-		1516 = { privateer_power = { share = 25 country = ROOT } }
-		calc_true_if = {
-			all_province = {
-				carribeans_region = {
-					owner = {
-						capital_scope = {
-							continent = europe
-						}
-					}
-				}
-			}
-			amount = 20
-		}
+		1516 = { privateer_power = { share = 25 country = ROOT } trade_node_value = 5 }
 		has_privateers = yes
 	}
 

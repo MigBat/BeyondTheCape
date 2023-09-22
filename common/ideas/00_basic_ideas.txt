@@ -1447,10 +1447,12 @@ expansion_ideas = {
 		}
 		modifier = {
 			factor = 0
-			OR = {
-				tag = CAS
-				tag = POR
-				tag = SPA
+			NOT = {
+				OR = {
+					tag = MOS
+					tag = RUS
+					is_colonial_nation = yes
+				}
 			}
 			NOT = { has_idea_group = exploration_ideas }
 		}

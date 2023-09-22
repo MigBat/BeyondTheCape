@@ -55,6 +55,7 @@
  btc_events.11_t:0 "Our Faith has Prevailed"
  btc_events.11_d:0 "Our enemies have been vanquished, and we have gained a powerful Christian ally in the Maghreb. This can be seen as no less than a total victory for Christianity!"
  btc_events.11a:0 "Old enemies turned friends."
+ catholic_morocco_tt:0 "Up to 5 random Moroccan provinces will be converted to the Catholic religion."
  btc_events.12_t:0 "Battle of Alcácer Quibir"
  btc_events.12_d:0 "Our foolish [Root.Monarch.GetTitle] has charged headfirst into a contingent of Moroccans, never to be found again, taking with him most of our nobility. This is the greatest defeat in Portuguese history, for now the Castilians are sure to be looking at our lands like vultures, in our most vulnerable moment. This was has been a failure, and we must retreat at once."
  btc_events.12a:0 "What a disaster!"

@@ -1516,12 +1516,12 @@ rebel_sentiment = {
 
 
 conversion_zeal = {
-	global_heretic_missionary_strength = 0.10
+	global_heretic_missionary_strength = 0.03
 	missionary_maintenance_cost = -0.33
 }
 
 religious_zeal_at_conv = {
-	local_missionary_strength = -1
+	local_missionary_strength = -0.05
 }
 
 
