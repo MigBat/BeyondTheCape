@@ -684,12 +684,12 @@ curonia_area = { #3
 	35 39 1935
 }
 
-east_prussia_area = { #5
-	40 41 767 2958 42
+east_prussia_area = { #4
+	40 41 767 2958
 }
 
-west_prussia_area = { #3 (South West Prussia)
-	2997 43 1841
+west_prussia_area = { #4
+	42 43 1841 2997
 }
 
 wielkopolska_area = { #5
@@ -3451,8 +3451,8 @@ texas_plains_area = { #4 NEW
     886 2500 4909 4910
 }
 
-oregon_area = { #4
-    872 2481 2482 2483
+oregon_area = { #3
+    872 2482 2483
 }
 
 columbia_river_area = { #4
@@ -3622,12 +3622,12 @@ california_area = { #5
     868 869 2021 2476 4637
 }
  
-central_valley_area = { #4
-    870 2478 4635 4636
+central_valley_area = { #5
+    870 2478 2479 4635 4636
 }
 
 northern_california_area = { #5
-    871 2477 2479 2480 4638
+    871 2477 2480 2481 4638
 }
 
 baja_california_area = { #4

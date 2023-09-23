@@ -212,3 +212,11 @@ dependency = {
 	start_date = 1435.1.1
 	end_date = 1485.1.1
 }
+
+# Qasimov under Muscovy
+vassal = {
+	first = MOS
+	second = QAS
+	start_date = 1444.1.1
+	end_date = 1681.1.1
+}

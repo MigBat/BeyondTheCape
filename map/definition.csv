@@ -3188,13 +3188,13 @@ province;red;green;blue;x;x
 3187;207;140;136;Unused174;
 3188;207;140;137;Unused175;
 3189;207;140;138;Unused176;
-3190;219;32;0;UnusedLand0;
-3191;219;32;1;UnusedLand1;
-3192;219;32;2;UnusedLand2;
-3193;219;32;3;UnusedLand3;
-3194;219;32;4;UnusedLand4;
-3195;219;32;5;UnusedLand5;
-3196;219;32;6;UnusedLand6;
+3190;219;32;0;Taurus Mountains;x
+3191;219;32;1;Carpathians2;x
+3192;219;32;2;Tatras;x
+3193;219;32;3;Sudetes;x
+3194;219;32;4;Pindos Mountains;x
+3195;219;32;5;Korab Mountains;x
+3196;219;32;6;UnusedLand6;x
 3197;219;32;7;UnusedLand7;
 3198;219;32;8;UnusedLand8;
 3199;219;32;9;UnusedLand9;

@@ -1364,7 +1364,7 @@ boom_economy = {
 
 separation_of_powers = {
 	prestige = 0.5
-	parliament_backing_chance = 0.03
+	parliament_backing_chance = 0.05
 }
 
 cult_of_reason = {
