@@ -1356,7 +1356,7 @@ gc_por_3 = {
 				}
 			}
 			else = {
-				navy_size_percentage = 0.85
+				navy_size_percentage = 0.5
 			}
 		}
 
@@ -1515,7 +1515,10 @@ gc_por_3 = {
 				}
 			}
 			light_ship_fraction = 0.5
-			has_naval_doctrine = any 
+			if = {
+				limit = { ai = no }
+				has_naval_doctrine = any
+			}
 		}
 	
 		effect = {

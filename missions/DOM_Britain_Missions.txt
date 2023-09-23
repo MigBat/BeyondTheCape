@@ -1539,8 +1539,12 @@ gbr_row_3 = {
 						}
 					}
 				}
+				AND = {
+					ai = yes
+					is_year = 1500
+				}
 			}
-		}	
+		}
 		effect = {
 			if = {
 				limit = {

@@ -94,9 +94,6 @@ dom_cas_missions_1 = {
 		effect = {
 			set_country_flag = fate_of_granada_mission_flag 
 			country_event = { id = flavor_spa.8 }
-			126 = {
-				add_permanent_claim = ROOT
-			}
 			northern_morocco_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -107,10 +104,44 @@ dom_cas_missions_1 = {
 		}
 	}
 	
+	gc_cas_spa_iberia_christian2 = {
+		icon = mission_religious
+		required_missions = { gc_cas_spa_reconquista_one2 }
+		completed_by = 1511.1.1
+		position = 3
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = { religion_group = ROOT }
+		}
+
+		trigger = {
+			iberia_region = {
+				type = all
+				religion_group = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "spa_rb_christian_iberia"
+				duration = 5475
+			}
+			
+			if = { 
+				limit = { has_estate = estate_church }
+				add_estate_loyalty = {
+					estate = estate_church 
+					loyalty = 20 
+				}
+			}
+			add_prestige_or_monarch_power = { amount = 10 }
+		}
+	}
+	
 	gc_cas_spa_reconquista_four2 = {
 		icon = mission_assemble_an_army
-		required_missions = { gc_cas_spa_reconquista_one2 }
-		position = 3
+		required_missions = { gc_cas_spa_iberia_christian2 }
+		position = 4
 		provinces_to_highlight = {
 			area = northern_morocco_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -142,40 +173,6 @@ dom_cas_missions_1 = {
 				}
 				add_claim = ROOT
 			}
-		}
-	}
-	
-	gc_cas_spa_iberia_christian2 = {
-		icon = mission_religious
-		required_missions = { gc_cas_spa_reconquista_four2 }
-		completed_by = 1511.1.1
-		position = 4
-		provinces_to_highlight = {
-			region = iberia_region
-			NOT = { religion_group = ROOT }
-		}
-
-		trigger = {
-			iberia_region = {
-				type = all
-				religion_group = ROOT
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "spa_rb_christian_iberia"
-				duration = 5475
-			}
-			
-			if = { 
-				limit = { has_estate = estate_church }
-				add_estate_loyalty = {
-					estate = estate_church 
-					loyalty = 20 
-				}
-			}
-			add_prestige_or_monarch_power = { amount = 10 }
 		}
 	}
 	
@@ -1900,17 +1897,24 @@ dom_cas_missions_3 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			valencia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			catalonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			aragon_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				ARA = {
+					junior_union_with = ROOT
+				}
+				AND = {
+					valencia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					catalonia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					aragon_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
 			}
 		}
 
@@ -1959,50 +1963,6 @@ dom_cas_missions_3 = {
 					type = cb_restore_personal_union
 					months = 300
 					target = NAP
-				}
-				sicily_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				western_sicily_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				calabria_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				apulia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				naples_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				120 = {
-					if = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-					add_permanent_claim = ROOT
-					}
 				}
 			}
 			else = {
@@ -2115,40 +2075,36 @@ dom_cas_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			lombardy_area = {
+			if = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					exists = MLO
+					valid_for_personal_unions_trigger = yes
+					MLO = {
+						valid_for_personal_unions_trigger = yes
+					}
 				}
-				add_permanent_claim = ROOT
+				add_casus_belli = {
+					target = MLO
+					type = cb_restore_personal_union
+					months = 600
+				}
+	
 			}
-			po_valley_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+			else = {
+				lombardy_area = {
+					limit = {
+						NOT = { is_core = ROOT}
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
-			}
-			wallonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				po_valley_area = {
+					limit = {
+						NOT = { is_core = ROOT}
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
-			}
-			flanders_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			brabant_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}
 			hidden_effect = {
 				remove_casus_belli = {
@@ -2164,26 +2120,19 @@ dom_cas_missions_3 = {
 		required_missions = { gc_cas_spa_italian_ambition2 }
 		position = 4
 		provinces_to_highlight = {
-			OR = {
-				area = tuscany_area
-				area = lombardy_area
-				area = po_valley_area
-			}
+			area = lombardy_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
-			tuscany_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			lombardy_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			po_valley_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				MLO = {
+					junior_union_with = ROOT
+				}
+				lombardy_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = {
@@ -2285,10 +2234,9 @@ dom_cas_missions_3 = {
 		}
 
 		trigger = {
-			low_countries_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-				religion = ROOT
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value =  15
+				region = low_countries_region
 			}
 		}
 		effect = {
@@ -2732,15 +2680,9 @@ dom_cas_missions_3_c = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = spa_mayan_conquest_tooltip
-				central_america_region = {
-					type = all
-					OR = {
-						is_empty = yes
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value =  15
+				region = central_america_region
 			}
 		}
 		effect = {
@@ -2756,7 +2698,7 @@ dom_cas_missions_3_c = {
 		required_missions = { gc_cas_spa_new_spain2 }
 		position = 13
 		provinces_to_highlight = {
-			colonial_region = colonial_california
+			region = california
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -2784,7 +2726,7 @@ dom_cas_missions_3_c = {
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_california
+				region = california_region
 				is_city = yes
 			}
 		}
@@ -2794,7 +2736,7 @@ dom_cas_missions_3_c = {
 				add_base_tax = 3
 			}
 			4637 = { add_center_of_trade_level = 1  add_base_production = 4 } 
-			colonial_california = {
+			california = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -3498,7 +3440,10 @@ dom_cas_missions_4_c = {
 		trigger = {
 			if = {
 				limit = {
-					has_dlc = "Rights of Man"
+					AND = {
+						has_dlc = "Rights of Man"
+						ai = no
+					}
 				}
 				490 = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -4611,7 +4556,10 @@ dom_cas_missions_5_c = {
 		trigger = {
 			if = {
 				limit = {
-					has_dlc = "Rights of Man"
+					AND = {
+						has_dlc = "Rights of Man"
+						ai = no
+					}
 				}
 				484 = {
 					country_or_non_sovereign_subject_holds = ROOT

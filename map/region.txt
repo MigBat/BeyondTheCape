@@ -299,7 +299,6 @@ carpathia_region = {
 
 egypt_region = {
 	areas = {
-		lower_nubia_area
 		cyrenaica_area
 		gulf_of_arabia_area
 		al_wahat_area
@@ -344,6 +343,7 @@ mashriq_region = {
 		trans_jordan_area
 		syrian_desert_area
 		aleppo_area
+		shahrizor_area
 	}
 }
 
@@ -376,7 +376,6 @@ persia_region = {
 		persian_gulf_coast
 		tabriz_area
 		khuzestan_area
-		shahrizor_area
 		mogostan_area
 	}
 }
@@ -503,6 +502,7 @@ horn_of_africa_region = {
 		majarteen_area
 		mogadishu_area
 		red_sea_coast_area
+		lower_nubia_area
 		upper_nubia_area
 		sennar_area
 		dongola_area
