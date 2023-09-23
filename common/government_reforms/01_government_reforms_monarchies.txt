@@ -1211,8 +1211,9 @@ tanistry_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
 	modifiers = {
-		morale_damage = 0.05
-		same_culture_advisor_cost = -0.1
+		diplomatic_upkeep = -2
+		morale_damage = 0.1
+		same_culture_advisor_cost = -0.15
 		nobles_loyalty_modifier = 0.05
 	}
 	conditional = {

@@ -786,20 +786,6 @@ french_missions_1_Continuation_a = {
 				name = "fra_colonial_enthusiasm"
 				duration = 7300
 			}
-			canada_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			hispaniola_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 		ai_weight = {
 			factor = 500

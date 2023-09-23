@@ -151,7 +151,7 @@ tropical = {
 }
 
 arctic = {
-	local_colonial_growth = -20
+	local_colonial_growth = -30
 	supply_limit_modifier = -0.4
 	local_hostile_attrition = 5
 	local_hostile_movement_speed = -0.2

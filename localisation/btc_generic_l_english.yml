@@ -48,7 +48,7 @@
  PROV4963:0 "Pepper Coast"
  PROV4964:0 "Slave Coast"
  PROV3190:0 "Taurus"
- PROV3191:0 "Carpathians"
+ PROV3191:0 "The Carpathians"
  PROV3192:0 "Tatras"
  PROV3193:0 "Sudetes"
  PROV3194:0 "Pindos"
@@ -422,6 +422,8 @@
  combine_colony_with_other_colony_in_same_colonial_region_tooltip:0 "Make §Y[From.GetName]§! annex our other colonial nations in §Y[From.Capital.GetColonialRegionName]§!.\n"
 
  had_columbus_tt:0 "Had the §YChristopher Columbus§! event"
+
+ NO_OVERSEAS_STATE:0 "Overseas provinces cannot be stated."
 
 # Technology
 
