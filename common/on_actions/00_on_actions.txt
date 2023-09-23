@@ -2468,9 +2468,9 @@ on_monthly_pulse = {
 	events = {
 		btc_por.155	#Monthly capital saudade calculation
 	}
-	events = {
-		btc_events.5	#Monthly OPM diplo calculation
-	}
+	# events = {
+	# 	btc_events.5	#Monthly OPM diplo calculation
+	# }
 	events = {
 		btc_events.14	#Monthly settler pool calculation
 	}

@@ -964,14 +964,34 @@ emp_ned_slot3_branch = {
 		}
 		
 		trigger = { 
-			calc_true_if = {
-				all_owned_province = {
-					OR = {
-						trade_company_region = trade_company_moluccas
-						trade_company_region = trade_company_indonesia
+			if = {
+				limit = {
+					VOC = {
+						is_subject_of = ROOT
 					}
 				}
-				amount = 15
+				VOC = {
+					calc_true_if = {
+						all_owned_province = {
+							OR = {
+								trade_company_region = trade_company_moluccas
+								trade_company_region = trade_company_indonesia
+							}
+						}
+						amount = 15
+					}
+				}
+			}
+			else = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							trade_company_region = trade_company_moluccas
+							trade_company_region = trade_company_indonesia
+						}
+					}
+					amount = 15
+				}
 			}
 		}
 	
@@ -1357,48 +1377,6 @@ emp_ned_slot4_colony_branch = {
 				name = "the_unknown_frontier"
 				duration = 5475
 			}
-			northeast_america_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			southeast_america_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			brazil_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			greater_antilles_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			leeward_islands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			windward_islands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	
@@ -1470,13 +1448,6 @@ emp_ned_slot4_colony_branch = {
 		effect = {
 			create_admiral = {
 				tradition = 80
-			}
-			australia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}
 			set_country_flag = ned_nova_hollandia_flag
 		}

@@ -518,13 +518,11 @@ country_event = {
 				region = arabia_region
 			}
 		}
-		owns = 2315
 		4346 = {				#Gulf of Aden
 			trade_share = {
 				country = POR
 				share = 20
 			}
-			province_trade_power = 1
 		}
 		
 		NOT = { num_of_light_ship = POR }	# we have to have less lightships.
