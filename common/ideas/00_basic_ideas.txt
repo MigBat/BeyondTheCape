@@ -81,6 +81,14 @@ aristocracy_ideas = {
 			factor = 1.25
 			has_idea_group = spy_ideas 
 		}
+		modifier = {
+			factor = 100
+			OR = {
+				tag = POL
+				tag = LIT
+				tag = PLC
+			}
+		}
 	}
 }
 
@@ -419,6 +427,7 @@ religious_ideas = {
 	}
 	religious_tradition = {
 		reverse_relation_with_same_religion = 10
+		religious_unity = 0.10
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
@@ -780,6 +789,13 @@ defensive_ideas = {
 		modifier = {
 			factor = 1.25
 			is_march = yes
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				tag = MOS
+				tag = RUS
+			}
 		}
 	}
 }
@@ -1398,6 +1414,13 @@ quantity_ideas = {
 				has_idea_group = economic_ideas
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				tag = MOS
+				tag = RUS
+			}
+		}
 	}
 }
 
@@ -1489,6 +1512,10 @@ expansion_ideas = {
 				technology_group = eastern
 				technology_group = muslim
 			}
+		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
 		}
 	}
 }

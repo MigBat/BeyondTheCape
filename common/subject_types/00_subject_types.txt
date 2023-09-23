@@ -992,9 +992,9 @@ core_eyalet = {
 	manpower_to_overlord = 0.33							# Percent of subject FL to use as base for modifiers
 	sailors_to_overlord = 0.33							# Percent of subject FL to use as base for modifiers
 	annex_cost_per_development = 6.0					# annex/integrate cost per development
-	must_accept_cta_from_overlord = no
+	must_accept_cta_from_overlord = yes
 	relative_power_class = 2
-	should_quit_wars_on_activation = yes
+	counts_for_borders = yes
 
 	restoration_cb = cb_disloyal_eyalet
 

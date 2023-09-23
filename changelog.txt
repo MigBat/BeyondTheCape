@@ -18,6 +18,8 @@
 # Colonial Regions #
 
 - The Caribbean is no longer a colonial region
+- Merged the California colonial region with the Mexico colonial region
+- Adjusted a few colonial regions' borders in North America
 
 # Countries #
 
@@ -59,6 +61,7 @@
 - Aragon no longer unlocks Caravel but instead unlocks Galleass
 - Castilian/Spanish Galleon fraction increased from 10% to 20% of naval forcelimit
 - Added modifiers to all new events, missions, units, province modifiers and government mechanics
+- Added "rise of" modifiers to AI: Ardabil*, Taungu, Afghanistan*, Jianzhou*
 
 # Flagship Modifications #
 
@@ -213,6 +216,7 @@
 - Unify the Provinces idea changed from -0.05 global autonomy to -10% core creation cost
 - Millenarian Revival idea now also has -15% culture conversion cost
 - Colonialism is now 6th idea of Asturias
+- Religious ideas now also give +10% religious unity
 
 # Institutions #
 
@@ -281,6 +285,8 @@
 # Static Modifiers #
 
 - Monthly Saudade modifier by +0.1 for each colonial nation subject
+- Nerfed base missionary strength, monthly heir claim increase and -monthly autonomy change
+- Added +monthly autonomy change while at war
 
 # Technologies #
 
@@ -346,6 +352,14 @@
 
 - Minimum advisor duration changed from 10 to 15
 - Minimum advisor duration change value changed from 15 to 17
+- Increased base coring time (from 3 years to 5 years)
+- Provinces with unaccepted cultures now have higher governing cost and slight +monthly autonomy change
+- Vassals can now be integrated only after 25 years (10 years in vanilla)
+- Disinheriting your heir costs you only -33 prestige
+- A heir's claim strength can only reach 90 (100 in vanilla)
+- Lost cores in same culture group provinces last longer (150 -> 200)
+- Reducing war exhaustion and inflation cost a bit more (75 -> 100)
+- Strengthening government gives less meritocracy (10 -> 5)
 
 ## Decisions ##
 
@@ -412,6 +426,8 @@
 - Changed the development of many existing provinces
 - Added province triggered modifiers for the sound toll to respective provinces
 - Added new provinces in Iberia, Morocco, Guinea and Angola
+- Changed the cultures of a few provinces in Europe
+- Changed the religion of provinces & countries in Kamchatka from Tengri to Animist
 
 # Wars #
 
@@ -442,6 +458,8 @@
 - Added new terrain to some provinces
 - Added new trade wind and altered existing ones
 - Added new trees in Portugal
+- Added new mountain wastelands in the Balkans and Anatolia
+- Redrew the borders of a few provinces in Eastern Europe
 
 ## Missions ##
 
@@ -452,6 +470,8 @@
 - Added new claims to Aragonese mission tree
 - Added new claims to Granadan mission tree
 - Completely reworked Portuguese mission tree
+- Adjusted the rewards of a few European missions to give more subjugation/PU CBs and less permanent claims
+- Made several missions easier for the AI to complete so that AI doesn't get stuck on its mission tree
 
 ## Music ##
 
