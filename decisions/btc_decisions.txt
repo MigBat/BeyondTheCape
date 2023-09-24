@@ -395,7 +395,27 @@ country_decisions = {
 			IBE = { remove_country_modifier = tordesillas_claims }
 			CAS = { remove_country_modifier = tordesillas_claims }
 			SPA = { remove_country_modifier = tordesillas_claims }
-			add_stability = -2
+			if = {
+				limit = {
+					OR = {
+						POR = {
+							exists = yes
+						}
+						IBE = {
+							exists = yes
+						}
+					}
+					OR = {
+						CAS = {
+							exists = yes
+						}
+						SPA = {
+							exists = yes
+						}
+					}
+				}
+				add_stability = -2
+			}
 			if = {
 				limit = {
 					ROOT = {
