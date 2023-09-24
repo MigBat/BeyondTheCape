@@ -276,7 +276,9 @@ shogunate = {
 
 	custom_attributes = {
 		locked_government_type = yes
+		need_crownland_to_annex = yes
 	}
+	
 }
 
 daimyo = {
@@ -333,7 +335,7 @@ feudal_france_reform = {
 	custom_attributes = {
 		locked_government_type = yes
 		has_appanages = yes
-		#need_crownland_to_annex = yes
+		need_crownland_to_annex = yes
 		nobility_loyalty_hit_on_integration = yes
 	}
 }
@@ -3395,6 +3397,13 @@ polish_great_sejm = {
 		reform_progress_growth = -0.2
 		
 	}
+	
+	conditional = {
+		allow = { ai = yes }
+		custom_attributes = {
+			need_crownland_to_annex = yes
+		}
+	}
 
 	conditional = {
 		allow = {
@@ -3431,6 +3440,13 @@ polish_elective_monarchy = {
 		max_absolutism = -30
 		nobles_influence_modifier = 0.05
 		reform_progress_growth = -0.2
+	}
+	
+	conditional = {
+		allow = { ai = yes }
+		custom_attributes = {
+			need_crownland_to_annex = yes
+		}
 	}
 
 	conditional = {

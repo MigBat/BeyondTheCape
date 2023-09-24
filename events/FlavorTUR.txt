@@ -6083,24 +6083,51 @@ country_event = {
 	major = yes
 	fire_only_once = yes
 	trigger = {
-		has_dlc = "Domination"
-		tag = TUR
-		has_country_flag = tur_decided_to_go_eyalet
-		had_country_flag = {
-			flag = tur_decided_to_go_eyalet
-			days = 1095
-		}
-		is_in_war = {
-			casus_belli = cb_ottoman_invasion
-			defender_leader = MAM
-		}
-		war_score_against = {
-			who = MAM
-			value = 90
-		}
-		MAM = {
-			capital_scope = {
-				controlled_by = ROOT
+		OR = {
+			AND = {
+				has_dlc = "Domination"
+				tag = TUR
+				has_country_flag = tur_decided_to_go_eyalet
+				had_country_flag = {
+					flag = tur_decided_to_go_eyalet
+					days = 1095
+				}
+				is_in_war = {
+					casus_belli = cb_ottoman_invasion
+					defender_leader = MAM
+				}
+				war_score_against = {
+					who = MAM
+					value = 90
+				}
+				MAM = {
+					capital_scope = {
+						controlled_by = ROOT
+					}
+				}
+			}
+			AND = {
+				has_dlc = "Domination"
+				tag = TUR
+				ai = yes
+				has_country_flag = tur_decided_to_go_eyalet
+				had_country_flag = {
+					flag = tur_decided_to_go_eyalet
+					days = 365
+				}
+				is_in_war = {
+					casus_belli = cb_ottoman_invasion
+					defender_leader = MAM
+				}
+				war_score_against = {
+					who = MAM
+					value = 90
+				}
+				MAM = {
+					capital_scope = {
+						controlled_by = ROOT
+					}
+				}
 			}
 		}
 	}

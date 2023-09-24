@@ -316,7 +316,7 @@ stonehenge = {
 	build_cost = 0
 	
 	#can we move it?
-	can_be_moved = yes
+	can_be_moved = no
 	
 	#time to move the project one unit of distance, in days
 	move_days_per_unit_distance = 2
@@ -14393,7 +14393,7 @@ royal_palace_caserta = {
 }
 
 san_antonio_missions = {
-	start = 4627 #Tanu
+	start = 883 #Tanu
 	date = 1444.01.01	#1716.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -16850,12 +16850,12 @@ harar_jugol = {
 			factor = 1000
 		}
 		province_modifiers = {
-			institution_growth = 3
 		}
 		area_modifier = {
 		}
 		country_modifiers = {			
 			prestige_per_development_from_conversion = 0.1
+			institution_spread_from_true_faith = 0.2
 		}
 		on_upgraded = {
 		}
@@ -16871,11 +16871,11 @@ harar_jugol = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			institution_growth = 3
 		}
 		country_modifiers = {
 			stability_cost_modifier = -0.1
 			prestige_per_development_from_conversion = 0.2
+			institution_spread_from_true_faith = 0.33
 		}
 		on_upgraded = {
 		}
@@ -16889,13 +16889,14 @@ harar_jugol = {
 			factor = 5000
 		}
 		province_modifiers = {
+			institution_growth = 3
 		}
 		area_modifier = {
-			institution_growth = 6
 		}
 		country_modifiers = {
 			stability_cost_modifier = -0.25
 			prestige_per_development_from_conversion = 0.3
+			institution_spread_from_true_faith = 0.5
 		}
 		on_upgraded = {
 			custom_tooltip = mechanic_allow_piety_switch_decision_yes
