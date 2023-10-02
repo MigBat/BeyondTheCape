@@ -2909,8 +2909,28 @@ btc_ibe_1 = {
 		provinces_to_highlight = {	}
 
 		trigger = {
-			num_of_colonies = 8
-		}
+			if = {
+				limit = { is_random_new_world = no }
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					value = 200
+				}
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					continent = new_world
+					value = 100
+				}
+			}
+			NOT = {
+				any_subject_country = {
+					liberty_desire = 25
+				}
+			}
+		}	
 
 		effect = {
 			india_superregion = {
