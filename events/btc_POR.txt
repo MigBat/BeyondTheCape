@@ -2562,6 +2562,8 @@ province_event = {
 
 	trigger = {
 		has_province_flag = can_build_feitoria
+		NOT = { has_province_modifier = feitoria }
+		NOT = { has_province_modifier = small_feitoria }
 	}
 
 	mean_time_to_happen = {

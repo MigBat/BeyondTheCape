@@ -82,6 +82,17 @@ can_make_core = {
 }
 
 can_make_state = {
+	condition = {
+		tooltip = "NO_OVERSEAS_STATE"
+		potential = {
+			ROOT = {
+				is_overseas = yes
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 can_abandon_state = {

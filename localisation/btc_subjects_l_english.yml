@@ -1,0 +1,12 @@
+﻿l_english:
+
+ voivode: "Voivode"
+ voivode_title: "Voivode"
+ voivode_title_plural: "Voivodes"
+ voivode_is_our: "§Y$NAME$§! is our Voivode."
+ voivode_long_desc: "A Voivode receives similar bonuses to an appanage, but without the increased liberty desire in exchance for reduced land forcelimit.\n"
+ voivode_no_overlord_dow: "You cannot declare war on your own Voivode."
+ voivode_overlord_title: "Overlord"
+
+ voivode_subject: "Voivode Subject"
+ desc_voivode_subject: "This country is a voivode."

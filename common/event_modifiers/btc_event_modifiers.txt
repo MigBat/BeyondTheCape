@@ -333,6 +333,7 @@ proudly_alone = {
 
 portuguese_exploration = {
 	free_navy_leader_pool = 2
+	colony_cost_modifier = -0.5
 }
 
 coimbra_university = {
@@ -803,4 +804,9 @@ english_push_for_new_world = {
 	colonists = 1
 	range = 0.25
 	global_colonial_growth = 10
+}
+
+voivode_subject = {
+	land_forcelimit = -3
+	liberty_desire = -0.2
 }

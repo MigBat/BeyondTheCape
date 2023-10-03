@@ -1990,6 +1990,8 @@ country_event = {
 	desc = btc_events.32_d
 	picture = DIPLOMACY_SIGNING_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = HAB
 		has_country_flag = hab_ladislaus_postumus_heir
