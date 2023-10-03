@@ -188,6 +188,9 @@ grand_duchy_reform = {
 	modifiers = {
 		governing_capacity = 200
 	}
+	custom_attributes = {
+		need_crownland_to_annex = yes
+	}
 }
 
 indian_sultanate_reform = {

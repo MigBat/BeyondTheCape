@@ -805,3 +805,8 @@ english_push_for_new_world = {
 	range = 0.25
 	global_colonial_growth = 10
 }
+
+voivode_subject = {
+	land_forcelimit = -3
+	liberty_desire = -0.2
+}
