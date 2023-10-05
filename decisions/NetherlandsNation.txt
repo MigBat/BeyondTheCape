@@ -29,30 +29,31 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 95 # Breda
-				province_id = 97 # Amsterdam
-				province_id = 98 # Utrecht
-				province_id = 99 # Gelre
-				province_id = 4383 # Den Haag
-				# AND = {
-				# 	region = low_countries_region
-				# 	ROOT = {
-				# 		NOT = {
-				# 			num_of_owned_provinces_with = {
-				# 				value = 10
-				# 				region = low_countries_region
-				# 				is_core = root
-				# 			}
-				# 		}
-				# 		owns_core_province = 95
-				# 		owns_core_province = 97
-				# 		owns_core_province = 98
-				# 		owns_core_province = 99
-				# 		owns_core_province = 4383
-				# 	}
-				# }
-			}
+			region = low_countries_region
+			# OR = {
+				# province_id = 95 # Breda
+				# province_id = 97 # Amsterdam
+				# province_id = 98 # Utrecht
+				# province_id = 99 # Gelre
+				# province_id = 4383 # Den Haag
+			# 	AND = {
+			# 		region = low_countries_region
+			# 		ROOT = {
+			# 			NOT = {
+			# 				num_of_owned_provinces_with = {
+			# 					value = 10
+			# 					region = low_countries_region
+			# 					is_core = root
+			# 				}
+			# 			}
+			# 			owns_core_province = 95
+			# 			owns_core_province = 97
+			# 			owns_core_province = 98
+			# 			owns_core_province = 99
+			# 			owns_core_province = 4383
+			# 		}
+			# 	}
+			# }
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -64,19 +65,19 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			NOT = { exists = NED }
-			owns_core_province = 95 # Breda
-			owns_core_province = 98 # Utrecht
-			owns_core_province = 99 # Gelre
-			owns_core_province = 4383 # Den Haag
-			owns_core_province = 97 # Amsterdam
-			97 = {
-				is_state = yes
-			}
-			# num_of_owned_provinces_with = {
-			# 	value = 10
-			# 	region = low_countries_region
-			# 	is_core = root
+			# owns_core_province = 95 # Breda
+			# owns_core_province = 98 # Utrecht
+			# owns_core_province = 99 # Gelre
+			# owns_core_province = 4383 # Den Haag
+			# owns_core_province = 97 # Amsterdam
+			# 97 = {
+			# 	is_state = yes
 			# }
+			num_of_owned_provinces_with = {
+				value = 5
+				region = low_countries_region
+				is_core = root
+			}
 			if = {
 				limit = {
 					tag = BUR
