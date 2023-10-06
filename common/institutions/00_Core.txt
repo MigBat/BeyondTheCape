@@ -389,7 +389,7 @@ renaissance = {
 	embracement_speed = {
 		modifier = {
 			scale = yes
-			factor = 0.6
+			factor = 0.5
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_renaissance
 				any_friendly_coast_border_province = {
@@ -398,7 +398,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			scale = yes
 			potential = {
 				NOT = {
@@ -428,7 +428,7 @@ renaissance = {
 		# 	}
 		# }
 		modifier = {
-			factor = 0.05
+			factor = 0.04
 			scale = yes
 			potential = {
 				continent = europe
@@ -440,7 +440,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.05
+			factor = 0.04
 			scale = yes
 			potential = {
 				continent = europe
@@ -465,7 +465,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			scale = yes
 			potential = {
 				OR = {
@@ -504,7 +504,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.6
 			scale = yes
 			potential = {
 				owner = {
@@ -694,9 +694,22 @@ printing_press = {
 
 	
 	embracement_speed = {
+
+		modifier = {
+			factor = 0.05
+			scale = yes
+			potential = {
+				trade_goods = naval_supplies
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_naval_supplies_spread
+				trade_goods = naval_supplies
+				NOT = { superregion = india_superregion }
+			}
+		}
 	
 		modifier = {
-			factor = 0.6
+			factor = 0.4
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
@@ -838,14 +851,14 @@ printing_press = {
 			}
 		}
 		modifier = {
-			factor = 0.6
+			factor = 0.5
 			custom_trigger_tooltip = {
 				tooltip = tooltip_province_confucian
 				religion = confucianism
 			}
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.3
 			custom_trigger_tooltip = {
 				tooltip = tooltip_province_christian
 				OR = {
@@ -855,7 +868,7 @@ printing_press = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 2
 			scale = yes
 			potential = {
 				owner = {
@@ -875,7 +888,7 @@ printing_press = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.8
 			scale = yes
 			potential = {
 				owner = {
@@ -1097,23 +1110,32 @@ new_world_i = {
 	
 	embracement_speed = {
 		modifier = {
-			factor = 0.4 #Not scaled
+			factor = 0.3 #Not scaled
 			province_trade_power = 15
 		}
 		modifier = {
-			factor = 0.8 #Not Scaled
+			factor = 0.6 #Not Scaled
 			province_trade_power = 25
 		}
 		modifier = {
-			factor = 1.2 #Not Scaled
+			factor = 0.9 #Not Scaled
 			province_trade_power = 35
 		}
 		modifier = {
-			factor = 1.6 #Not Scaled
+			factor = 1.2 #Not Scaled
 			province_trade_power = 45
 		}
 		modifier = {
-			factor = 0.6
+			factor = 0.2
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = furs
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
@@ -1124,7 +1146,7 @@ new_world_i = {
 		}
 		
 		modifier = {
-			factor = 0.5
+			factor = 0.2
 			scale = yes
 			potential = {
 				has_port = yes
@@ -1145,26 +1167,10 @@ new_world_i = {
 		}
 
 		modifier = {
-			factor = 0.6
-			has_port = yes
-			owner = {
-				technology_group = western
-			}
-		}
-
-		modifier = {
-			factor = 0.5
-			has_port = yes
-			owner = {
-				technology_group = ottoman
-			}
-		}
-
-		modifier = {
 			factor = 0.4
 			has_port = yes
 			owner = {
-				technology_group = muslim
+				technology_group = western
 			}
 		}
 
@@ -1181,6 +1187,14 @@ new_world_i = {
 			has_port = yes
 			owner = {
 				technology_group = chinese
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			has_port = yes
+			owner = {
+				technology_group = ottoman
 			}
 		}
 		
@@ -1221,7 +1235,7 @@ new_world_i = {
 		}
 		
 		modifier = {
-			factor = 5
+			factor = 3
 			scale = yes
 			potential = {
 				owner = {
@@ -1241,7 +1255,7 @@ new_world_i = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1
 			scale = yes
 			potential = {
 				owner = {
@@ -1412,7 +1426,7 @@ manufactories = {
 	
 	embracement_speed = {
 		modifier = {
-			factor = 0.5
+			factor = 0.3
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_manufactories
@@ -1422,7 +1436,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			potential = {
 				NOT = {
@@ -1440,7 +1454,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			scale = yes
 			potential = {
 				OR = {
@@ -1459,7 +1473,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			scale = yes
 			potential = {
 				OR = {
@@ -1476,7 +1490,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			scale = yes
 			potential = {
 				OR = {
@@ -1495,7 +1509,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			scale = yes
 			potential = {
 				OR = {
@@ -1516,7 +1530,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			scale = yes
 			potential = {
 				OR = {
@@ -1537,7 +1551,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			scale = yes
 			potential = {
 				OR = {
@@ -1555,7 +1569,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			scale = yes
 			potential = {
 				OR = {
@@ -1575,7 +1589,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1593,7 +1607,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1610,7 +1624,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.2
 			scale = yes
 			potential = {
 				OR = {
@@ -1629,7 +1643,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1650,7 +1664,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1671,7 +1685,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1689,7 +1703,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -1709,7 +1723,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 2
 			scale = yes
 			potential = {
 				owner = {
@@ -1729,7 +1743,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1
 			scale = yes
 			potential = {
 				owner = {
@@ -1747,7 +1761,7 @@ manufactories = {
 			}
 		}
 		modifier = {
-			factor = 1
+			factor = 0.8
 			scale = yes
 			potential = {
 				owner = {
@@ -1994,6 +2008,15 @@ global_trade = {
 			province_trade_power = 45
 		}
 		modifier = {
+			factor = 0.4
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = furs
+				}
+			}
+		}
+		modifier = {
 			factor = 0.2
 			scale = yes
 			potential = {
@@ -2005,7 +2028,7 @@ global_trade = {
 			}
 		}
 		modifier = {
-			factor = 0.05
+			factor = 0.02
 			scale = yes
 			potential = {
 				province_has_center_of_trade_of_level = 1
@@ -2042,7 +2065,7 @@ global_trade = {
 		}
 
 		modifier = {
-			factor = 0.05
+			factor = 0.02
 			scale = yes
 			potential = {
 				has_port = no
@@ -2095,7 +2118,7 @@ global_trade = {
 		}
 		
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			printing_press = 100
 		}
 		modifier = {
@@ -2270,7 +2293,7 @@ enlightenment = {
 	
 	embracement_speed = {
 		modifier = {
-			factor = 0.4
+			factor = 0.2
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_enlightenment
@@ -2280,7 +2303,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				NOT = {
@@ -2298,7 +2321,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			potential = {
 				is_capital = yes
 			}
@@ -2314,7 +2337,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.2
 			potential = {
 				enlightenment_origin = {
 					same_continent = PREV
@@ -2340,7 +2363,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.2
 			potential = {
 				owner = {
 					has_parliament = yes
@@ -2356,7 +2379,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.2
 			potential = {
 				owner = {
 					has_parliament = yes
@@ -2371,7 +2394,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1
 			potential = {
 				enlightenment_origin = {
 					same_continent = PREV
@@ -2387,7 +2410,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			potential = {
 				enlightenment_origin = {
 					NOT = { same_continent = PREV }
@@ -2403,10 +2426,26 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 0.4
 			potential = {
 				enlightenment_origin = {
 					same_continent = PREV
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_scientist_capital
+				is_capital = yes
+				owner = {
+					advisor = natural_scientist
+					dip_tech = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 0.4
+			potential = {
+				enlightenment_origin = {
+					NOT = { same_continent = PREV }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -2422,22 +2461,6 @@ enlightenment = {
 			factor = 1
 			potential = {
 				enlightenment_origin = {
-					NOT = { same_continent = PREV }
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_scientist_capital
-				is_capital = yes
-				owner = {
-					advisor = natural_scientist
-					dip_tech = 20
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			potential = {
-				enlightenment_origin = {
 					same_continent = PREV
 				}
 			}
@@ -2450,7 +2473,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1
 			potential = {
 				enlightenment_origin = {
 					NOT = { same_continent = PREV }
@@ -2465,7 +2488,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 1
 			scale = yes
 			potential = {
 				owner = {
@@ -2485,7 +2508,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1
 			scale = yes
 			potential = {
 				owner = {
@@ -2503,7 +2526,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.5
 			scale = yes
 			potential = {
 				owner = {
@@ -2707,7 +2730,7 @@ industrialization = {
 	embracement_speed = {
 		#Split between RB and non-RB for these four as RB gives more possibilities for spread (so higher for non-RB to compensate
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			force_potential = yes
 			potential = {
 				has_dlc = "Rule Britannia"
@@ -2721,7 +2744,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.6
+			factor = 0.4
 			force_potential = yes
 			potential = {
 				NOT = { has_dlc = "Rule Britannia" }
@@ -2735,7 +2758,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -2755,7 +2778,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -2776,7 +2799,7 @@ industrialization = {
 		}
 		#Rule Britannia specific
 		modifier = {
-			factor = 1
+			factor = 0.5
 			force_potential = yes
 			potential = {
 				has_dlc = "Rule Britannia"
@@ -2791,7 +2814,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 1
+			factor = 0.5
 			force_potential = yes
 			potential = {
 				has_dlc = "Rule Britannia"
@@ -2806,7 +2829,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 1
+			factor = 0.5
 			force_potential = yes
 			potential = {
 				has_dlc = "Rule Britannia"
@@ -2821,7 +2844,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -2840,7 +2863,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.15
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -2862,7 +2885,7 @@ industrialization = {
 
 		#General Manufactories
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -2880,7 +2903,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			scale = yes
 			potential = {
 				OR = {
@@ -2897,7 +2920,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2
 			scale = yes
 			potential = {
 				OR = {
@@ -2916,7 +2939,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -2937,7 +2960,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -2958,7 +2981,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			potential = {
 				OR = {
@@ -2976,7 +2999,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.05
 			scale = yes
 			potential = {
 				OR = {
@@ -2996,7 +3019,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.08
+			factor = 0.06
 			scale = yes
 			potential = {
 				OR = {
@@ -3014,7 +3037,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.10
 			scale = yes
 			potential = {
 				OR = {
@@ -3031,7 +3054,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.10
 			scale = yes
 			potential = {
 				OR = {
@@ -3050,7 +3073,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.08
+			factor = 0.04
 			scale = yes
 			potential = {
 				OR = {
@@ -3071,7 +3094,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.08
+			factor = 0.02
 			scale = yes
 			potential = {
 				OR = {
@@ -3110,7 +3133,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.08
+			factor = 0.06
 			scale = yes
 			potential = {
 				OR = {
@@ -3132,7 +3155,7 @@ industrialization = {
 
 		#Trade variables
 		modifier = {
-			factor = 0.18
+			factor = 0.12
 			scale = yes
 			potential = {
 				any_trade_node_member_province = {
@@ -3145,7 +3168,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 0.6
 			potential = {
 				province_trade_power = 15
 			}
@@ -3156,7 +3179,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 1
 			potential = {
 				continent = owner
 				has_port = yes
@@ -3177,7 +3200,7 @@ industrialization = {
 
 		#Stuff once someone has embraced it
 		modifier = {
-			factor = 0.75
+			factor = 0.6
 			scale = yes
 			potential = {
 				owner = {
@@ -3197,7 +3220,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 1
+			factor = 0.6
 			scale = yes
 			potential = {
 				owner = {
@@ -3215,7 +3238,7 @@ industrialization = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.2
 			scale = yes
 			potential = {
 				owner = {
