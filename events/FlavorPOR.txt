@@ -203,6 +203,7 @@ country_event = {
 	
 	option = {		# Kill them
 		name = "flavor_por.EVTOPTA3271"
+		ai_chance = { factor = 75 }
 		define_general = {
 			name = "Martim de Sousa"
 			shock = 3
@@ -221,6 +222,7 @@ country_event = {
 	
 	option = {		# Negotiate
 		name = "flavor_por.EVTOPTB3271"
+		ai_chance = { factor = 25 }
 		define_advisor = {
 			type = colonial_governor
 			name = "Martim de Sousa"
