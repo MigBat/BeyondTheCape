@@ -74,12 +74,16 @@ anti_islamic_society = {
 	tolerance_of_heathens_capacity = -1
 	innovativeness_gain = -0.25
 	adm_tech_cost_modifier = 0.05
+	development_cost = 0.05
+	improve_relation_modifier = -0.1
 }
 
 anti_semitic_society = {
 	tolerance_of_heathens_capacity = -1
 	innovativeness_gain = -0.25
 	interest = 0.5
+	development_cost = 0.05
+	improve_relation_modifier = -0.1
 }
 
 respected_merchants = {

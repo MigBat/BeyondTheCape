@@ -1783,8 +1783,12 @@ innovative_modifier = {
 }
 
 narrowminded_modifier = {
+	global_unrest = -1
+	global_missionary_strength = 0.02
+	tolerance_heretic = -1
+	global_institution_spread = -0.15
+	innovativeness_gain = -0.25
 	technology_cost = 0.05
-	global_missionary_strength = 0.01
 }
 
 mercantilism_modifier = {
@@ -3433,11 +3437,13 @@ bavarian_jesuits = {
 }
 
 colonial_policy = {
-	global_colonial_growth = 10
+	global_colonial_growth = 15
+	yearly_corruption = 0.3
 }
 
 less_colonial_corruption = {
-	global_tariffs = 0.10
+	global_tariffs = 0.05
+	native_assimilation = 0.15
 }
 
 duke_of_coimbra = {

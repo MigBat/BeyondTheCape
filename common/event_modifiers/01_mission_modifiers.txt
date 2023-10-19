@@ -1596,9 +1596,9 @@ por_ivory_gains = {
 }
 
 por_brazil_colonial = {
-	innovativeness_gain = 0.5
-	naval_morale = 0.1
-	navy_tradition = 1 
+	innovativeness_gain = 0.25
+	naval_morale = 0.05
+	navy_tradition = 0.25 
 }
 
 por_brazil_tariffs = {
@@ -1621,6 +1621,12 @@ por_erudite_explorers = {
 	province_trade_power_modifier = 0.25
 	innovativeness_gain = 0.25
 	dip_tech_cost_modifier = -0.05
+}
+
+por_push_to_india = {
+	range = 0.2
+	naval_morale = 0.05
+	navy_tradition = 0.25
 }
 
 # Genoese missions

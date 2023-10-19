@@ -210,6 +210,8 @@
  desc_por_armada:0 "A more combat oriented version of the Armada ship."
  por_fullrigged:0 "Portuguese Full-Rigged Ship"
  desc_por_fullrigged:0 "A version of the Full-Rigged ship that sacrifices combat ability for transporting troops."
+ por_push_to_india:0 "Push to India"
+ por_push_to_india_desc:0 "Upon reaching the Zanzibar coast, local Muslim merchants can serve as reliable and experienced guides to the way to India"
  ven_galeazza:0 "Venetian Galeazza"
  desc_ven_galeazza:0 "A large and slow version of the Galeazza, meant to endure cannon fire."
  extra_flagship:0 "Extra Flagship"
