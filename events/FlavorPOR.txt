@@ -521,6 +521,7 @@ country_event = {
 		name = "flavor_por.EVTOPTA3269"
 		ai_chance = { factor = 75 }
 		add_papal_influence = 20
+		add_stability = 1
 		add_country_modifier = {
 			name = narrowminded_modifier
 			duration = 36500
@@ -529,6 +530,7 @@ country_event = {
 	option = {		# 
 		name = "flavor_por.EVTOPTB3269"
 		ai_chance = { factor = 25 }
+		add_papal_influence = -40
 		PAP = {
 			add_opinion = {
 				who = ROOT
