@@ -1533,7 +1533,7 @@ gc_por_3 = {
 				trait = great_explorer_personality
 			}
 			add_country_modifier = {
-				name = push_to_india
+				name = por_push_to_india
 				duration = 7300
 			}
 		}
