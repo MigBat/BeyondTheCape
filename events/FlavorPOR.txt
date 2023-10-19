@@ -201,13 +201,39 @@ country_event = {
 		months = 100
 	}
 	
-	
-	option = {		# Appoint de Sousa
+	option = {		# Kill them
 		name = "flavor_por.EVTOPTA3271"
-		add_country_modifier = {
-			name = governor_de_sousa
-			duration = 3650
+		define_general = {
+			name = "Martim de Sousa"
+			shock = 3
+			fire = 4
+			manuever = 5
+			siege = 0
 		}
+		add_mil_power = -75
+		add_years_of_income = -0.2
+		add_country_modifier = {
+			name = rooting_out_corsairs
+			duration = 1460
+		}
+
+	}
+	
+	option = {		# Negotiate
+		name = "flavor_por.EVTOPTB3271"
+		define_advisor = {
+			type = colonial_governor
+			name = "Martim de Sousa"
+			skill = 2
+			cost_multiplier = 0.5
+		}
+		add_dip_power = -75
+		add_years_of_income = -0.2
+		add_country_modifier = {
+			name = negotiating_with_corsairs
+			duration = 1460
+		}
+
 	}
 }
 
@@ -385,7 +411,7 @@ country_event = {
 	option = {		# Request the return of the cargo!
 		name = "flavor_por.EVTOPTA5"
 		ai_chance = { factor = 90 }
-		add_prestige = 10
+		add_years_of_income = -0.5
 		hidden_effect = {
 			NED = { country_event = { id = flavor_por.6 days = 10 } }
 		}
@@ -393,7 +419,8 @@ country_event = {
 	option = {		# Recognize their right
 		name = "flavor_por.EVTOPTB5"
 		ai_chance = { factor = 10 }
-		add_prestige = -10
+		add_prestige = -20
+		add_years_of_income = -0.5
 	}
 }
 
@@ -418,6 +445,7 @@ country_event = {
 		name = "flavor_por.EVTOPTB6"
 		ai_chance = { factor = 10 }
 		add_prestige = -10
+		add_dip_power = 15
 		hidden_effect = {
 			POR = { country_event = { id = flavor_por.7 days = 10 } }
 		}
@@ -435,7 +463,7 @@ country_event = {
 
 	option = {		# Very well
 		name = "flavor_por.EVTOPTA7"
-		add_years_of_income = 0.5
+		add_years_of_income = 0.4
 	}
 }
 
