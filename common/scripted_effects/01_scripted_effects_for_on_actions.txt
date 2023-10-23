@@ -2703,8 +2703,8 @@ on_colony_finished_effect = {
 	# BEYOND THE CAPE #
 	if = {
 		limit = {
-			OR = {
-				owner = {
+			owner = {
+				OR = {
 					has_country_flag = patroonschap_system
 					overlord = {
 						has_country_flag = patroonschap_system

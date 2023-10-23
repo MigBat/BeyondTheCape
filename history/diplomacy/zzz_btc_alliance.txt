@@ -174,7 +174,7 @@ vassal = {
 union = {
 	first = ARA
 	second = SIC
-	start_date = 1409.6.25
+	start_date = 1409.7.26
 	end_date = 1458.7.25
 }
 
@@ -205,10 +205,58 @@ union = {
 	end_date = 1477.1.5
 }
 
+# Qasimov under Muscovy
+vassal = {
+	first = MOS
+	second = QAS
+	start_date = 1444.1.1
+	end_date = 1681.1.1
+}
+
 dependency = {
-	subject_type = "tributary_state"
+    subject_type = "voivode"
 	first = LIT
 	second = ZAZ
-	start_date = 1435.1.1
-	end_date = 1485.1.1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+dependency = {
+    subject_type = "voivode"
+	first = LIT
+	second = PLT
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+dependency = {
+    subject_type = "voivode"
+	first = LIT
+	second = SMO
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+dependency = {
+    subject_type = "voivode"
+	first = LIT
+	second = CHR
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+dependency = {
+    subject_type = "voivode"
+	first = LIT
+	second = KIE
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+dependency = {
+    subject_type = "voivode"
+	first = LIT
+	second = VOL
+	start_date = 1444.1.1
+	end_date = 1500.1.1
 }

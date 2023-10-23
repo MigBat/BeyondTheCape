@@ -1127,7 +1127,7 @@ the_sheikh_ul_islam = {
 }
 
 muslim_enforced_religion = {
-	global_heretic_missionary_strength = 0.02
+	global_heretic_missionary_strength = 0.01
 	religion = yes
 }
 
@@ -1243,13 +1243,13 @@ religious_sect_tolerance = {
 }
 
 the_haridasa_movement = {
-	global_missionary_strength = 0.02
+	global_missionary_strength = 0.01
 	stability_cost_modifier = -0.10
 	religion = yes
 }
 
 the_advaita_movement = {
-	global_missionary_strength = 0.02
+	global_missionary_strength = 0.01
 	global_unrest = -1
 	religion = yes
 }
@@ -1364,7 +1364,7 @@ boom_economy = {
 
 separation_of_powers = {
 	prestige = 0.5
-	parliament_backing_chance = 0.03
+	parliament_backing_chance = 0.05
 }
 
 cult_of_reason = {
@@ -1516,12 +1516,12 @@ rebel_sentiment = {
 
 
 conversion_zeal = {
-	global_heretic_missionary_strength = 0.10
+	global_heretic_missionary_strength = 0.03
 	missionary_maintenance_cost = -0.33
 }
 
 religious_zeal_at_conv = {
-	local_missionary_strength = -1
+	local_missionary_strength = -0.05
 }
 
 
@@ -7016,7 +7016,6 @@ new_world_company = {
 }
 
 new_world_missions = {
-	native_uprising_chance = -0.5
 	native_assimilation = 0.5
 }
 
@@ -11537,8 +11536,8 @@ estate_maratha_levies_for_muslims_mod = {
 
 estate_dhimmi_guaranteed_autonomy_mod = {
 	religion = yes
-	local_religious_unity_contribution = -1
-	local_missionary_strength = -1
+	local_tolerance_of_heathens = 10
+	local_missionary_strength = -0.10
 }
 
 estate_dhimmi_millet_system_mod = {
@@ -11548,14 +11547,14 @@ estate_dhimmi_millet_system_mod = {
 
 estate_burghers_guaranteed_autonomy_mod = {
 	religion = yes
-	local_religious_unity_contribution = -1
-	local_missionary_strength = -1
+	local_tolerance_of_heretics = 10
+	local_missionary_strength = -0.10
 }
 
 estate_brahmins_guaranteed_autonomy_mod = {
 	religion = yes
-	local_missionary_strength = -1
-	local_religious_unity_contribution = -1
+	local_tolerance_of_heathens = 10
+	local_missionary_strength = -0.10
 }
 
 estate_burghers_the_great_privilege_mod = {
@@ -12219,8 +12218,8 @@ estate_burghers_tropical_mod = {
 }
 
 estate_church_lao_animism_mod = {
-	local_missionary_strength = -1
-	local_religious_unity_contribution = -1
+	local_missionary_strength = -0.10
+	local_tolerance_of_heathens = 10
 }
 
 maj_harmed_trade_relations = {

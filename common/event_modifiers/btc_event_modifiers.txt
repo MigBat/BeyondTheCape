@@ -333,6 +333,7 @@ proudly_alone = {
 
 portuguese_exploration = {
 	free_navy_leader_pool = 2
+	colony_cost_modifier = -0.5
 }
 
 coimbra_university = {
@@ -777,7 +778,7 @@ predatory_trade = {
 }
 
 ned_patroonschap = {
-	min_local_autonomy = 0.1
+	min_local_autonomy = 10
 	local_tax_modifier = -0.5
 	province_trade_power_value = 3
 	trade_goods_size_modifier = 0.3
@@ -803,4 +804,9 @@ english_push_for_new_world = {
 	colonists = 1
 	range = 0.25
 	global_colonial_growth = 10
+}
+
+voivode_subject = {
+	land_forcelimit = -3
+	liberty_desire = -0.2
 }

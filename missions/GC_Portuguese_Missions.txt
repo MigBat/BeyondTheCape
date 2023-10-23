@@ -843,19 +843,12 @@ gc_por_2_b = {
 				duration = 5475
 			}
 			define_explorer = {
-				name = "Pedro ¡lvares Cabral"
+				name = "Pedro √Ålvares Cabral"
 				shock = 3
 				fire = 2
 				manuever = 5
 				siege = 2
 				trait = cunning_navigator_personality
-			}	
-			brazil_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}	
 		}
 	}
@@ -877,7 +870,7 @@ gc_por_2_b = {
 		
 		effect = {
 			define_admiral = {
-				name = "Bartolomeu PortuguÍs"
+				name = "Bartolomeu Portugu√™s"
 				shock = 2
 				fire = 4
 				manuever = 4
@@ -1356,7 +1349,7 @@ gc_por_3 = {
 				}
 			}
 			else = {
-				navy_size_percentage = 0.85
+				navy_size_percentage = 0.5
 			}
 		}
 
@@ -1395,7 +1388,7 @@ gc_por_3 = {
 				id = btc_por.144
 			}	
 			define_explorer = {
-				name = "Diogo C„o"
+				name = "Diogo C√£o"
 				shock = 1
 				fire = 1
 				manuever = 3
@@ -1514,8 +1507,12 @@ gc_por_3 = {
 					has_discovered = ROOT
 				}
 			}
-			light_ship_fraction = 0.5
-			has_naval_doctrine = any 
+			light_ship_fraction = 0.25
+			if = {
+				limit = { ai = no }
+        light_ship_fraction = 0.5
+				has_naval_doctrine = any
+			}
 		}
 	
 		effect = {
@@ -1571,13 +1568,6 @@ gc_por_3 = {
 			388 = {
 				add_permanent_claim = ROOT
 			}
-			# majarteen_area = {
-			# 	limit = {
-			# 		NOT = { is_core = ROOT }
-			# 		NOT = { is_permanent_claim = ROOT }
-			# 	}
-			# 	add_claim = ROOT
-			# }
 		}
 	}
 
@@ -2918,8 +2908,28 @@ btc_ibe_1 = {
 		provinces_to_highlight = {	}
 
 		trigger = {
-			num_of_colonies = 8
-		}
+			if = {
+				limit = { is_random_new_world = no }
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					value = 200
+				}
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					continent = new_world
+					value = 100
+				}
+			}
+			NOT = {
+				any_subject_country = {
+					liberty_desire = 25
+				}
+			}
+		}	
 
 		effect = {
 			india_superregion = {

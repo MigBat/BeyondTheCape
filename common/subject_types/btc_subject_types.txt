@@ -1,0 +1,67 @@
+
+# Forward declaring all subject types so they can refer to each other in triggers etc.
+voivode = { }
+
+# Subjects
+voivode = {
+	copy_from = vassal
+	count = vassal
+
+	# Graphics:
+	sprite = GFX_icon_appanage
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
+
+	# Properties:
+	has_power_projection = yes
+	takes_diplo_slot = no
+	gets_help_with_rebels = no
+	separatists_become_subjects = yes
+	allows_taking_land_without_independence = yes
+	forms_trade_companies = no
+	can_concentrate_development = no
+	liberty_desire_development_ratio = 0.25
+	trust_on_start = 0
+	military_focus = 1.2
+
+	relative_power_class = 1
+	should_quit_wars_on_activation = yes
+
+	can_fight = {
+		same_overlord = voivode
+	}
+	can_rival = {
+		same_overlord = voivode
+	}
+	can_ally = {
+		same_overlord = voivode
+	}
+	can_marry = {
+		same_overlord = voivode
+	}
+	
+	# Subject Interactions
+	seize_court_resources = no
+	request_extra_levies = no
+	grant_administrative_autonomy = yes
+	#(disable)
+	scutage = yes
+	grant_core_claim = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	enforce_religion = no
+	enforce_culture = no
+	seize_territory = no
+	#(enable)
+	contribute_to_capital = yes
+	return_land = yes
+	conscript_general = yes
+	
+	# Modifiers
+	
+	modifier_overlord = clear #We don't want to duplicate the ones inherited from vassal
+	modifier_subject = clear #Ditto
+	modifier_subject = {
+		modifier = voivode_subject
+	}
+}

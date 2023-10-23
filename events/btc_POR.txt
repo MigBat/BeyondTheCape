@@ -2562,6 +2562,8 @@ province_event = {
 
 	trigger = {
 		has_province_flag = can_build_feitoria
+		NOT = { has_province_modifier = feitoria }
+		NOT = { has_province_modifier = small_feitoria }
 	}
 
 	mean_time_to_happen = {
@@ -2838,6 +2840,12 @@ country_event = {
 			months = 1200
 			target = ARA
 		}
+
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = SPA
+		}
 	}
 
 	option = {
@@ -2875,6 +2883,11 @@ country_event = {
 		remove_casus_belli = {
 			type = cb_restore_personal_union
 			target = ARA
+		}
+
+		remove_casus_belli = {
+			type = cb_restore_personal_union
+			target = SPA
 		}
 	}
 }

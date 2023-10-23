@@ -26,6 +26,10 @@ swe_scandinavian_colonialism_mission_slot = {
 		trigger = {
 			army_size_percentage = 1
 			OR = {
+				ai = yes
+				army_size_percentage = 0.5
+			}
+			OR = {
 				is_subject = no
 				liberty_desire = 100
 				any_hired_mercenary_company = {

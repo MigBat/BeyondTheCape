@@ -1,11 +1,11 @@
-namespace = btc_England
+namespace = btc_england
 normal_or_historical_nations = yes
 
-#Mr Cabot
+#John Cabot
 country_event = {
-	id = btc_England.1
-	title = btc_England.1_t
-	desc = btc_England.1_d
+	id = btc_england.1
+	title = btc_england.1_t
+	desc = btc_england.1_d
 	picture = SHIP_SAILING_eventPicture
 	
 	fire_only_once = yes
@@ -32,11 +32,15 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		months = 120
+		modifier = {
+			factor = 0.1
+			has_idea_group = exploration_ideas
+		}
 	}
 	
 	option = {		# Hire Cabot
-		name = btc_England.1a
+		name = btc_england.1a
 		
 		ai_chance = { factor = 1 }
 
@@ -46,7 +50,7 @@ country_event = {
 		hidden_effect = {
 			ROOT = {
 				country_event = {
-					id = btc_England.2
+					id = btc_england.2
 					days = 90
 				}
 			}
@@ -54,7 +58,7 @@ country_event = {
 	}
 	
 	option = {		# Reject his proposal
-		name = btc_England.1b
+		name = btc_england.1b
 		
 		ai_chance = { factor = 0 }
 		add_adm_power = 50
@@ -65,15 +69,15 @@ country_event = {
 
 #He Returns
 country_event = {
-	id = btc_England.2
-	title = btc_England.2_t
-	desc = btc_England.2_d
+	id = btc_england.2
+	title = btc_england.2_t
+	desc = btc_england.2_d
 	picture = SHIP_SAILING_eventPicture
 	
 	is_triggered_only = yes 
 	
 	option = {
-		name = btc_England.2a
+		name = btc_england.2a
 
 		add_prestige = 10
 		define_explorer = {
@@ -102,5 +106,48 @@ country_event = {
 			name = english_push_for_new_world
 			duration = 3650
 		}
+	}
+}
+
+# Irish Religious Revolts
+country_event = {
+	id = btc_england.3
+	title = btc_england.3_t
+	desc = btc_england.3_d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		culture = irish
+		is_subject_of_type = tributary_state
+		overlord = {
+			is_or_was_tag = ENG
+			NOT = { religion = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = btc_england.3a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		ROOT = {
+			grant_independence = yes
+		}
+	}
+
+	option = {
+		name = btc_england.3b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
 	}
 }
