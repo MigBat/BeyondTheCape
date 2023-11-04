@@ -190,7 +190,7 @@ country_event = {
 
 	trigger = {
 		tag = POR
-		is_year = 1530
+		is_year = 1525
 		NOT = { is_year = 1580 }
 		brazil_region = {
 			country_or_vassal_holds = POR

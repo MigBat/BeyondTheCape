@@ -1097,6 +1097,7 @@ country_event = {
 	trigger = {
 		is_or_was_tag = { tag = POR }
 		current_age = age_of_reformation
+		is_year = 1570
 		OR = {
 			NOT = { crown_land_share = 60 }
 			estate_influence = {
@@ -1113,7 +1114,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 240
 	}
 
 	option = {	# Our subjects must act strictly according to the crown's wishes
@@ -1202,8 +1203,8 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		is_year = 1529
-		NOT = { dip_tech = 11 }
+		is_year = 1538
+		NOT = { dip_tech = 12 }
 	}
 
 	mean_time_to_happen = {
@@ -1251,7 +1252,7 @@ country_event = {
 		is_or_was_tag = { tag = POR }
 		is_at_war = no
 		OR = {
-			is_year = 1560
+			is_year = 1565
 			has_country_modifier = lusiadas
 		}
 		religion = catholic
@@ -1342,7 +1343,7 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		is_year = 1581
+		is_year = 1568
 		NOT = { dip_tech = 15 }
 		OR = {
 			trade_company_coromandel = { 
@@ -2739,6 +2740,7 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
+		is_year = 1510
 		4150 = {
 			owned_by = ROOT
 			controlled_by = ROOT
