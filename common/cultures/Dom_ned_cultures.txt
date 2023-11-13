@@ -32,9 +32,8 @@ germanic = {
 			Ælfswith Ælfthryth Ælfwynn Æthelburg Æthelflæd Æthelgifu Æthelhild Æthelræda_Æthelreda Æthelswith Æthelthryth
 			Æthelburh Seaxburh Wihtburh
 		}
-	}	
-	burgundian_german = {
-		
+	}
+	burgundian_german = { #placeholder
 		primary = BUR
 		dynasty_names = {
 			"de Valois" "de Bourbon" "de la Tour" "d'Anjou" 
@@ -74,9 +73,8 @@ germanic = {
 			Raymonde Sarrazine Solène Sophie Stéphanie Sybille Tiburge Valence Yolande
 		}
 	}
-	lotharingian = {
-		
-		primary = LOR #Lot
+	lotharingian = {		
+		primary = LOR #Lot placeholder
 		dynasty_names = {
 			"de Valois" "de Bourbon" "de la Tour" "d'Anjou" 
 			"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
@@ -113,6 +111,41 @@ germanic = {
 			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
 			Mascarose Mathilde Mélisande Mélisende Mélusine Péronelle Pernelle Perinne Pernette Plaisance 
 			Raymonde Sarrazine Solène Sophie Stéphanie Sybille Tiburge Valence Yolande
+		}
+	}
+	limburgish = {
+		primary = LBG
+		dynasty_names = {
+			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
+			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jülich-Hengebach"
+			# CKII
+			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
+			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
+			"van Brederode" "van Breda" "van Heemskerk" "van Glymes" "van Grimberghe"
+			"van Renesse" "van Wassenaer" "van Bronckhorst"
+			"van Keppel" "Van Voorst tot Voorst" "van Wisch" "van Kamerijk" "Cirksena"
+			"van Diest" "van Montfoort"
+			# Frisian
+			"van Serooskerken"
+		}
+		male_names = {
+			Filips Jan Boudewijn Arnolf Lodewijk Robrecht Willem Diederik Gwijde Karel Antoon Abraham Alexander Alfons 
+			Andries Balthasar Bartholomeus Christoffel Constantijn Cornelis Daniël David Ernst Erwin Ewoud Floris 
+			Gabriel Godfried Hans Jacob Kasper Ludger Luuk Marinus Pieter Renate Rodolf Roeland Valentijn
+		}
+		female_names = {
+			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
+			Badeloge Bava Beatrijs Beatrice Benedicta
+			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
+			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
+			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
+			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
+			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
+			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
+			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
+			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
 		}
 	}
 }

@@ -19,17 +19,17 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 2 #change to 1 future
 
-1477.1.5 = { owner = HAB controller = HAB add_core = HAB }
-1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB }
-1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = SPA }
-#1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = HAB }
+#Another group of people who immigrated to Amsterdam from the 16th century to the 19th century was the Armenians. The Armenians were famous traders; their trading network stretched from the far east (Manila, India, Nepal, Iran) All the way to Europe and, most notably, Amsterdam. The Armenians mainly traded Iranian silk, which they had a monopoly over. Iranian silk was very popular in Amsterdam; hence, it made the Armenian community very wealthy, and the Armenians flourished in Amsterdam.[
+
+1477.1.5 = { owner = BUR controller = BUR add_core = BUR }
+#1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB }
 1572.1.1 = { religion = reformed controller = REB }
 1576.11.4 = {
 	#add_center_of_trade_level = 1
 	base_tax = 9
 	base_production = 10
 	base_manpower = 6
-	trade_goods = cloth
+	trade_goods = gems
 } #Dutch Miracle, Fall of Antwerp moves trade north to Amsterdam
 1577.1.1 = { owner = NED controller = NED add_core = NED } #Union of Brussels puts an end to the early period of dutch revolt
 1579.1.23 = { controller = NED unrest = 0 } # Union of Utrecht - Holland is founder of it

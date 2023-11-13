@@ -20,12 +20,12 @@ extra_cost = 8
 center_of_trade = 2
 
 
-1477.1.5 = { owner = HAB controller = HAB add_core = HAB }
+1477.1.5 = { owner = BUR controller = BUR add_core = BUR }
 1500.1.1 = {
 	add_center_of_trade_level = -1
 	base_tax = 7 base_production = 7 base_manpower = 4
 } #Golden Inlet becomes less useable
-1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
+#1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
 1548.6.26 = { hre = yes } # Flanders incorporated into the Holy Roman Empire
 #1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = HAB }
 1576.11.4 = { base_tax = 5 base_production = 6 base_manpower = 3 } #Protestants Flee North

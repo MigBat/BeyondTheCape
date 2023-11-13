@@ -23,8 +23,8 @@ latent_trade_goods = {
 	coal
 }
 
-1477.1.5 = { owner = HAB controller = HAB add_core = HAB remove_core = BUR } # Charles the Bold dies, Lowlands to Austria
-1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
+#1477.1.5 = { owner = HAB controller = HAB add_core = HAB remove_core = BUR } # Charles the Bold dies, Lowlands to Austria
+#1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
 #1529.8.3 = { remove_core = FRA } # 'Ladies Peace' (Damesvrede) of Cambrai: France renounces its claims
 1559.5.12 = { unrest = 3 } # New bishoprics established in the Lowlands create an outrage
 1566.8.1 = { unrest = 4 } # 'Beeldenstorm' at hand
@@ -35,7 +35,7 @@ latent_trade_goods = {
 1569.1.1 = { unrest = 10 } # The Duke of Alba reforms the taxation system ('tiende penning')
 1570.1.1 = { unrest = 13  } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
 1572.5.24 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Louis of Nassau captures Mons
-1572.8.1 = { revolt = {} controller = SPA } # Don Felipé takes back Mons
+1572.8.1 = { revolt = {} controller = BUR } # Don Felipé takes back Mons
 1576.11.4 = { base_tax = 5 base_production = 5 } #Protestants Flee North
 1577.2.12 = { unrest = 16 owner = NED controller = NED add_core = NED } # Eeuwig Edict accepted by Don Juan formation of Union of Brussels, puts an end to the early period of dutch revolt
 1579.1.6 = { owner = SPA controller = SPA add_core = SPA remove_core = NED unrest = 0 } # Union of Arras established

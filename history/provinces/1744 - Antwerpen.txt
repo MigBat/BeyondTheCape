@@ -3,6 +3,7 @@
 owner = BRB
 controller = BRB
 add_core = BRB
+add_core = ANW
 is_city = yes
 capital = "Antwerp"
 hre = yes
@@ -20,9 +21,9 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2 #should probably be 1
 
-1477.1.5 = { owner = HAB controller = HAB add_core = HAB }
-1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB }
-1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = SPA }
+1477.1.5 = { owner = BUR controller = BUR add_core = BUR }
+#1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB }
+#1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = SPA }
 
 1500.1.1 = {
 	#add_center_of_trade_level = 1

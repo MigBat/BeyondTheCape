@@ -1,0 +1,65 @@
+schieringers_vetkopers = {
+	potential = {
+		OR = {
+			tag = FRI
+			tag = EFR
+		}
+		NOT = { has_country_flag = had_schieringers_vetkopers }
+	}
+	
+	can_start = {
+		is_year = 1444
+		NOT = {
+			current_age = age_of_reformation
+		}
+	}
+	
+	can_stop = {
+		always = no
+	}
+
+	progress = {
+		modifier = {
+			factor = 100
+			NOT = { stability = 2 }
+		}
+	}
+	
+	can_end = {
+		OR = {
+			if = {
+				limit = {
+					tag = EFR
+				}
+				stability = 2
+			}
+			else = {
+				stability = 3	
+			}
+		is_subject = yes
+		}
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		#NOT = {
+		#	average_unrest = 1
+		#}
+	}
+
+	modifier = {
+		global_unrest = 10
+		global_monthly_devastation = 0.25
+	}	
+	
+	
+	on_start = dom_frisian.1
+	on_end = dom_frisian.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			120 = 0
+			1 = dom_frisian.3 #Conflict flares up
+		}
+	}
+}
+

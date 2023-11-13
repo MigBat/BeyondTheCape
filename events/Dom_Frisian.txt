@@ -1,0 +1,909 @@
+namespace = dom_frisian
+#normal_or_historical_nations = yes
+#https://imgur.com/a/pmEhA
+#mission_selector
+
+country_event = {
+	id = dom_frisian.1
+	title = "dom_frisian.EVTNAME1"
+	desc = "dom_frisian.EVTDESC1"
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = FRI
+			tag = EFR
+			tag = GRN
+		}
+	}
+		
+	option = { #close
+		name = "dom_frisian.EVTOPTA1" #
+		custom_tooltip = frisian_disaster_tt
+	}
+}
+
+country_event = {
+	id = dom_frisian.2
+	title = "dom_frisian.EVTNAME2"
+	desc = "dom_frisian.EVTDESC2"
+	picture = WOUNDED_SOLDIERS_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = FRI
+			tag = EFR
+			tag = GRN
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_schieringers_vetkopers
+		}
+	}
+	
+	option = {
+		name = "dom_frisian.EVTOPTC2" 
+		ai_chance = { factor = 1 }
+		add_prestige = 10
+		add_republican_tradition = 10
+		add_legitimacy = 10
+		if = {
+			limit = {
+				tag = FRI
+			}
+			add_permanent_claim = 1931
+		}
+		if = {
+			limit = {
+				tag = EFR
+			}
+			add_permanent_claim = 100
+			add_permanent_claim = 4382
+		}
+	}
+}
+
+country_event = {
+	id = dom_frisian.3
+	title = "dom_frisian.EVTNAME3"
+	desc = "dom_frisian.EVTDESC3"
+	picture = GENERALS_DISCUSSING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = FRI
+	}
+	
+	option = {
+		name = "dom_frisian.EVTOPTA3" 
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 0.5
+			}
+		}
+		#add_stability = -1
+		add_dip_power = 50
+	}
+	option = {
+		name = "dom_frisian.EVTOPTB3" 
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 0.5
+			}
+		}
+		#add_stability = -1
+		add_republican_tradition = 10
+	}
+	option = {
+		name = "dom_frisian.EVTOPTC3"
+		random_owned_province = {
+		spawn_rebels = {
+			type = noble_rebels
+			size = 0.5
+		}
+		}
+		set_country_flag = dom_fri_calls_for_an_end
+		#add_stability = -1
+	}
+}
+
+country_event = {
+	id = dom_frisian.4
+	title = "dom_frisian.EVTNAME4"
+	desc = "dom_frisian.EVTDESC4"
+	picture = GENERALS_DISCUSSING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRI
+		has_disaster = schieringers_vetkopers
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+	}
+	
+	option = {
+		name = "dom_frisian.EVTOPTA4" 
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				leader = "Sierck van Harinxma"
+				leader_dynasty = "fan Donia"
+				size = 0.8
+			}
+		}
+		create_general = {
+			tradition = 50
+		}
+		add_manpower = 2
+		add_stability = -1
+	}
+	option = {
+		name = "dom_frisian.EVTOPTB4" 
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				leader_dynasty = "van Harinxma"
+				size = 0.8
+			}
+		}
+		define_general = {
+			name = "Gale Galama"
+			shock = 2
+			fire = 2
+			manuever = 2
+			siege = 2
+		}
+		add_manpower = 2
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = dom_frisian.5
+	title = "dom_frisian.EVTNAME5"
+	desc = "dom_frisian.EVTDESC5"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		tag = FRI
+		has_disaster = schieringers_vetkopers
+		is_year = 1450
+	}
+	
+	mean_time_to_happen = {
+		months = 300 #25 years
+		modifier = { #2.5 years
+			factor = 10
+			has_country_flag = dom_fri_calls_for_an_end
+		}
+		modifier = { #12.5 years
+			factor = 2
+			stability = 1
+		}
+	}
+	
+	immediate = { 
+		#hidden_effect = {
+			if = {
+				limit = {
+					any_country = {
+					is_elector = yes
+					government = monarchy
+					emperor = {
+						has_opinion = {
+							who = PREV
+							value = 50
+							}
+						}
+					}
+				}
+				random_country = {
+					limit = {
+					is_elector = yes
+					government = monarchy
+					emperor = {
+						has_opinion = {
+							who = PREV
+							value = 50
+							}
+						}
+					}
+					save_event_target_as = dom_fri_hre_protector_nation
+				}
+			}
+			else_if = {
+				limit = {
+					any_country = {
+					is_part_of_hre = yes
+					government = monarchy
+					total_development = 30 
+					emperor = {
+						has_opinion = {
+							who = PREV
+							value = 50
+							}
+						}
+					}
+				}
+				random_country = {
+					limit = {
+					is_part_of_hre = yes
+					government = monarchy
+					total_development = 30 
+					emperor = {
+						has_opinion = {
+							who = PREV
+							value = 50
+							}
+						}
+					}
+					save_event_target_as = dom_fri_hre_protector_nation
+				}
+			}
+			else = {
+				emperor = {
+					save_event_target_as = dom_fri_hre_protector_nation
+				}
+			}
+		#}
+	}
+	
+	option = {
+		name = "dom_frisian.EVTOPTA5" 
+		ai_chance = { factor = 1 }
+		event_target:dom_fri_hre_protector_nation = {
+			create_union = ROOT
+		}
+		FRI = {
+			change_government = monarchy 
+		}
+		if = {
+			limit = {
+				owns = 4382 
+			}
+			release = GRN
+			hidden_effect = {
+				GRN = { 
+					set_country_flag = had_schieringers_vetkopers 
+					add_accepted_culture = frisian
+					country_event = {
+						id = dutch_domination.20
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "dom_frisian.EVTOPTB5" 
+		event_target:dom_fri_hre_protector_nation = {
+			create_union = ROOT
+		}
+		FRI = {
+			change_government = monarchy 
+		}
+		if = {
+			limit = {
+				owns = 4382 
+			}
+			#4382 = { cede_province = GRN }
+			release = GRN
+			switch_tag = GRN
+			hidden_effect = {
+				GRN = { 
+					set_country_flag = had_schieringers_vetkopers 
+					add_accepted_culture = frisian
+					country_event = {
+						id = dutch_domination.20
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "dom_frisian.EVTOPTC5" 
+		ai_chance = { factor = 1 }
+		add_stability = -1
+		add_prestige = 10
+		add_republican_tradition = 10
+	}
+}
+
+# Republic.3 event for peasant republics
+country_event = {
+	id = dom_frisian.6
+	title = republics.3.t
+	desc = republics.3.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		government = republic
+		is_colonial_nation = no
+		has_reform = peasants_republic
+		 OR = {
+            NOT = { has_dlc = "Res Publica" }
+            NOT = { has_government_attribute = has_dutch_election }
+        }
+		OR = {
+			AND = {
+				NOT = { republican_tradition = 40 }
+				has_dlc = "Res Publica"
+			}
+			NOT = { republican_tradition = 1 }
+		}
+		NOT = {
+			OR = {
+				is_revolutionary_republic_trigger = yes
+				has_government_attribute = cannot_become_dictatorship
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 1.0
+			NOT = { republican_tradition = 50 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { republican_tradition = 25 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { republican_tradition = 10 }
+		}		
+		modifier = {
+			factor = 0.01
+			NOT = { republican_tradition = 1 }
+		}			
+	}
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { is_tribal = yes }
+				change_government_to_monarchy = yes
+				#set_legacy_government = despotic_monarchy
+			}
+			if = {
+				limit = {
+					is_tribal = no  
+					has_dlc = "Res Publica"
+				}
+				add_government_reform = peasants_chiefdom
+			}
+			if = {
+				limit = {
+					is_tribal = no  
+					NOT = { has_dlc = "Res Publica" }
+				}
+				change_government_to_monarchy = yes
+				#set_legacy_government = despotic_monarchy
+			}
+		}
+	}
+	
+	option = {
+		name = republics.3.a
+		tooltip = {
+			if = {
+				limit = { is_tribal = yes }
+				change_government_to_monarchy = yes
+				#set_legacy_government = despotic_monarchy
+			}
+			if = {
+				limit = {
+					is_tribal = no  
+					has_dlc = "Res Publica"
+				}
+				add_government_reform = peasants_chiefdom
+			}
+			if = {
+				limit = {
+					is_tribal = no  
+					NOT = { has_dlc = "Res Publica" }
+				}
+				change_government_to_monarchy = yes
+				#set_legacy_government = despotic_monarchy
+			}
+		}
+	}
+}
+
+#Enno Cirksena
+country_event = {
+	id = dom_frisian.7
+	title = dom_frisian.7.t
+	desc = dom_frisian.7.desc
+	picture = HENRY_eventPicture
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 6
+	}
+	trigger = {
+		has_dlc = "Domination"
+		tag = EFR
+		is_year = 1440
+		NOT = { is_year = 1470 }
+		government = monarchy
+		NOT = {
+			dynasty = "Cirksena"
+		}
+		always = no
+	}
+	
+	#What a great king
+	option = {
+		name = dom_frisian.7.a
+		define_ruler = {
+			name = "Ulrich"
+			adm = 5
+			dip = 5
+			mil = 5
+			#birth_date = 1408.1.1
+			age = 35
+			dynasty = "Cirksena"
+		}
+		#hidden_effect = {
+		#	add_heir_personality = reformist_personality
+		#	set_country_flag = had_henry_viii_event
+		#	set_heir_flag = has_henry_vii
+		#}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	#I think we are better off without him
+	option = {
+		name = flavor_tur.239.b
+		trigger = {
+			has_heir = yes
+		}
+		add_heir_claim = 20
+		random_list = {
+			1 = { trigger = { NOT = { heir_adm = 6 } } change_heir_adm = 1 }
+			1 = { trigger = { NOT = { heir_dip = 6 } } change_heir_dip = 1 }
+			1 = { trigger = { NOT = { heir_mil = 6 } } change_heir_mil = 1 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { #A Frisian King? - Magna Frisia
+	id = dom_frisian.8
+	title = "dom_frisian.8.t"
+	desc = "dom_frisian.8.desc"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_ally = {
+			save_event_target_as = dynasty_found
+		}
+		random_neighbor_country = {
+			limit = {
+				reverse_has_opinion = {
+					who = ROOT
+					value = 50
+				}
+				government = monarchy
+			}
+			save_event_target_as = dynasty_found
+		}
+		swap_non_generic_missions = yes
+	}
+	
+	option = {
+		name = "dom_frisian.8.a" #Republic
+		ai_chance = { factor = 1 }
+		if = {
+			limit = { NOT = { government = republic } }
+			change_government = republic
+		}
+		add_republican_tradition = 25
+	}
+	option = {
+		name = "dom_frisian.8.b" #Monarchy
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { government = monarchy }
+		}
+		change_government = monarchy
+		if = {
+			limit = { any_ally = { government = monarchy } }
+			define_ruler = {
+				dynasty = event_target:dynasty_found
+				change_adm = 2
+				change_dip = 2
+				change_mil = 2
+				claim = 95
+			}
+		}
+		else_if = {
+			limit = {
+				any_neighbor_country = {
+					reverse_has_opinion = {
+						who = ROOT
+						value = 50
+					}
+					government = monarchy
+				}
+			}
+			define_ruler = {
+				dynasty = event_target:dynasty_found
+				change_adm = 2
+				change_dip = 2
+				change_mil = 2
+				claim = 95
+			}
+		}
+		else = {
+			define_ruler = {
+				adm = 2
+				dip = 2
+				mil = 2
+				claim = 95
+			}
+		}
+		if = {
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+				has_dlc = "Emperor"
+			}
+			set_imperial_incident = incident_king_in_frisia
+		}
+		else = {
+			set_government_rank = 2
+			add_prestige = 20
+			add_legitimacy = 20
+		}
+		#set_legacy_government = administrative_monarchy
+	}
+	option = {
+		name = "dom_frisian.8.c" #Monarchy
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { government = monarchy }
+		}
+		change_government = monarchy
+		define_ruler = {
+			dynasty = "Folcwalding"
+			change_adm = 2
+			change_dip = 2
+			change_mil = 2
+			claim = 95
+		}
+		if = {
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+				has_dlc = "Emperor"
+			}
+			set_imperial_incident = incident_king_in_frisia
+		}
+		else = {
+			set_government_rank = 2
+			add_prestige = 20
+			add_legitimacy = 20
+		}
+		#set_legacy_government = administrative_monarchy
+	}
+	option = {
+		name = "dom_frisian.8.d" #Grutte Pier?
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_leader = "Grutte Pier"
+		}
+		if = {
+			limit = { NOT = { government = monarchy } }
+			change_government = monarchy
+		}
+		define_leader_to_ruler = {
+			name = "Grutte Pier"
+		}
+		if = {
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+				has_dlc = "Emperor"
+			}
+			set_imperial_incident = incident_king_in_frisia
+		}
+		else = {
+			elector = yes
+			set_government_rank = 2
+			add_prestige = 20
+			add_legitimacy = 20
+		}
+		#set_legacy_government = administrative_monarchy
+	}
+	#option = {
+	#	name = "dom_frisian.8.e"
+	#	ai_chance = { factor = 1 }
+	#	trigger = {
+	#		government = monarchy
+	#	}
+	#	if = {
+	#		limit = {  }
+	#		if = {
+	#		limit = {
+	#			is_part_of_hre = yes
+	#			is_emperor = no
+	#			has_dlc = "Emperor"
+	#		}
+	#		set_imperial_incident = incident_king_in_frisia
+	#		}
+	#		else = {
+	#			elector = yes
+	#			set_government_rank = 2
+	#			add_prestige = 20
+	#			add_legitimacy = 20
+	#		}
+	#	}
+	#}
+	option = {
+		name = "flavor_hol.EVTOPTD3502" #Keep current government
+		ai_chance = { factor = 0 }
+		if = {
+			limit = { government = monarchy }
+			if = {
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+				has_dlc = "Emperor"
+			}
+			set_imperial_incident = incident_king_in_frisia
+			}
+			else = {
+				elector = yes
+				set_government_rank = 2
+				add_prestige = 20
+				add_legitimacy = 20
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dom_frisian.11
+	title = dom_frisian.11.t
+	desc = dom_frisian.11.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRI
+		#government = monarchy
+		NOT = { government_rank = 2 }
+		is_subject = no
+		total_development = 200
+		has_regency = no
+		is_female = no
+		NOT = { active_imperial_incident = any }
+		has_country_flag = magna_frisia_formed
+		#is_elector = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = king_in_prussia.1.a
+		if = {
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+				has_dlc = "Emperor"
+			}
+			set_imperial_incident = incident_king_in_frisia
+		}
+		else = {
+			set_government_rank = 2
+			add_prestige = 20
+			add_legitimacy = 20
+		}
+	}
+}
+
+# Mock imperial incident
+country_event = {
+	id = dom_frisian.12
+	title = dom_frisian.12.t
+	desc = dom_frisian.12.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = { # elevate prussia to an hre kingdom
+		name = dom_frisian.12.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				alliance_with = FRI
+			}
+		}
+		add_imperial_influence = -10
+		custom_tooltip = king_in_frisia_elevated_tt
+		reverse_add_opinion = {
+			who = FRI
+			modifier = elevated_frisia
+		}
+		tooltip = {
+			FRI = {
+				elector = yes
+				set_government_rank = 2
+				add_prestige = 25
+				add_legitimacy = 25
+				reverse_add_opinion = {
+					who = emperor
+					modifier = elevated_frisia
+				}
+			}
+		}
+		hidden_effect = {
+			FRI = {
+				set_country_flag = king_in_frisia_elevated
+				country_event = { id = dom_frisian.13 days = 3 }
+			}
+		}
+	}
+	option = { # compromise
+		name = dom_frisian.12.b
+		ai_chance = {
+			factor = 2
+		}
+		custom_tooltip = king_in_frisia_compromise_tt
+		reverse_add_opinion = {
+			who = FRI
+			modifier = opinion_king_in_frisia
+		}
+		hidden_effect = {
+			FRI = {
+				set_country_flag = king_in_frisia_compromise
+				country_event = { id = dom_frisian.13 days = 3 }
+			}
+		}
+	}
+	option = { # reject
+		name = dom_frisian.12.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				is_rival = FRI
+			}
+		}
+		custom_tooltip = king_in_frisia_rejection_tt
+		reverse_add_opinion = {
+			who = FRI
+			modifier = opinion_frisia_not_recognized
+		}
+		hidden_effect = {
+			FRI = {
+				set_country_flag = king_in_frisia_rejection
+				country_event = { id = dom_frisian.13 days = 3 }
+			}
+		}
+	}
+}
+
+# Follow-up for Prussia
+country_event = {
+	id = dom_frisian.13
+	title = dom_frisian.13.t
+	desc = {
+		trigger = {
+			has_country_flag = king_in_frisia_elevated
+		}
+		desc = dom_frisian.13.d
+	}
+	desc = {
+		trigger = {
+			has_country_flag = king_in_frisia_compromise
+		}
+		desc = dom_frisian.13.d2
+	}
+	desc = {
+		trigger = {
+			has_country_flag = king_in_frisia_rejection
+		}
+		desc = dom_frisian.13.d3
+	}
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		trigger = {
+			has_country_flag = king_in_frisia_elevated
+		}
+		name = dom_frisian.13.a
+		elector = yes
+		set_government_rank = 2
+		add_prestige = 25
+		add_legitimacy = 25
+		reverse_add_opinion = {
+			who = emperor
+			modifier = elevated_frisia
+		}
+	}
+	option = {
+		trigger = {
+			has_country_flag = king_in_frisia_compromise
+		}
+		name = dom_frisian.13.b
+		elector = yes
+		set_government_rank = 2
+		add_prestige = 10
+		add_legitimacy = 10
+		reverse_add_opinion = {
+			who = emperor
+			modifier = opinion_king_in_frisia
+		}
+	}
+	option = {
+		trigger = {
+			has_country_flag = king_in_frisia_rejection
+		}
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 100
+				total_development = 500
+			}
+		}
+		name = dom_frisian.13.c
+		set_government_rank = 2
+		set_in_empire = no
+		reverse_add_opinion = {
+			who = emperor
+			modifier = opinion_frisia_not_recognized
+		}
+	}
+	option = {
+		trigger = {
+			has_country_flag = king_in_frisia_rejection
+		}
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 0
+				total_development = 500
+			}
+		}
+		name = dom_frisian.13.optd
+		add_prestige = -10
+		add_legitimacy = -10
+		add_casus_belli = {
+			target = emperor
+			type = cb_insult
+			months = 24
+		}
+	}
+}

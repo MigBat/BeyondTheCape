@@ -32,8 +32,19 @@ capital = 4383 #Haag
 
 1575.1.1 = { religion = reformed }
 
+1577.2.12 = { 
+	override_country_name = UNION_OF_BRUSSELS 	
+	change_country_color = { 
+		color = { 240 180 66 }
+	}
+}
+
 1579.1.1 = { leader = {	name = "Willem L. von Nassau"	type = general	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1620.6.13 } }
 
+1579.11.1 = { 
+	restore_country_name = yes 
+	restore_country_color = yes 
+}
 
 1579.1.23 = {
 	government_rank = 2
@@ -172,6 +183,8 @@ capital = 4383 #Haag
 
 1666.12.30 = { leader = { name = "Abraham Crijnssen"	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 1	death_date = 1669.1.1 } }
 
+1667.1.1 = { set_country_flag = mission_branch_america_surinam }
+
 1668.1.17 = { leader = { name = "Paulus Wirtz"		type = general	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1675.3.26 } }
 
 1672.6.28 = {
@@ -277,6 +290,7 @@ capital = 4383 #Haag
 		dip = 3
 		mil = 2
 	}
+	change_government = monarchy
 	set_legacy_government = constitutional_monarchy # Napoleonic monarchy
 	government_rank = 2
 }

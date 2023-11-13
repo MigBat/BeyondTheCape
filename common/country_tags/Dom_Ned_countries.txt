@@ -15,7 +15,11 @@ BEL = "countries/Belgium.txt"
 GRN = "countries/Groningen.txt"
 CMB = "countries/Cambrai.txt"
 IJS = "countries/Overijssel.txt"
-#VOC = "countries/VOC.txt"
 ZEE = "countries/Zeeland.txt"
 LOO = "countries/Loon.txt"
+ANW = "countries/Antwerp.txt"
 #STV = "countries/Stavelot.txt"
+
+#Colonial
+VOC = "countries/VOC.txt"
+CNG = "countries/Congo.txt"

@@ -17,22 +17,30 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+add_permanent_province_modifier = {
+	name = dairy_production_mod
+	duration = -1
+}
+
 1473.2.23 = {
 	owner = BUR
 	controller = BUR
 	add_core = BUR
 } # Charles the Bold annexes Gelre
 1477.1.5 = {
-	owner = HAB
-	controller = HAB
-	add_core = HAB
-	remove_core = BUR
-} # Charles the Bold dies and Gelre goes to the Habsburgs
-1492.1.1 = { 
 	owner = GEL
 	controller = GEL
-} # Karel van Gelre is released from prison and assumes control of Gelre by right of the Egmond family.
-1543.9.7 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V annexes Gelre
+} #Charles the Bold dies and Gelre becomes independant again, but habsburg claim it
+#1477.6.27 = { #handled through diplomacy
+#	owner = HAB
+#	controller = HAB
+#	add_core = HAB
+#} #Adolf, Duke of Gelre dies unexpectedly and the duchy becomes part of Mary's land
+#1492.1.1 = { #handled through diplomacy
+#	owner = GEL
+#	controller = GEL
+#} # Karel II van Gelre is released from prison and assumes control of Gelre by right of the Egmond family.
+1543.9.7 = { owner = BUR controller = BUR } # End of Guelders Wars - Charles V annexes Gelre
 #1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = SPA } perpetual edict of 17 provinces
 1559.5.12 = { unrest = 3 } # New bishoprics in the Lowlands create an outrage
 1565.1.1 = { unrest = 5 } # Letters of Segovia, Philip I orders the harsh persecution of Calvinists
@@ -43,7 +51,7 @@ discovered_by = ottoman
 1570.1.1 = { unrest = 20 } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
 1572.1.1 = { religion = reformed }
 1572.6.5 = { unrest = 0 revolt = { type = nationalist_rebels size = 2 } controller = REB } # Rebels rise up in Gelre & Zutphen
-1572.9.1 = { revolt = {} controller = SPA unrest = 10 } # Don Frederique takes control of Gelre for Spain again
+1572.9.1 = { revolt = {} controller = BUR unrest = 10 } # Don Frederique takes control of Gelre for Spain again
 1576.11.4 = { base_tax = 7 base_production = 8 } #Protestants Flee North
 1577.2.12 = { unrest = 16 owner = NED controller = NED add_core = NED } # Eeuwig Edict accepted by Don Juan formation of Union of Brussels, puts an end to the early period of dutch revolt
 1579.1.23 = {	

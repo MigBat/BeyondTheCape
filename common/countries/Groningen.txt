@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx # was dutchgfx # UPE compatibility
 
-color = { 96  137  180 }
+color = {  102  200  45 }
 
 historical_idea_groups = {
 	trade_ideas

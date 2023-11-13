@@ -19,8 +19,8 @@ discovered_by = ottoman
 fort_15th = yes
 
 
-1477.1.5 = { owner = HAB controller = HAB add_core = HAB }
-1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
+1477.1.5 = { owner = BUR controller = BUR add_core = BUR }
+#1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
 1548.6.26 = { hre = yes } # Flanders incorporated into the Holy Roman Empire
 1549.11.4 = { add_core = NED }
 1555.1.1 = { religion = reformed }
@@ -28,7 +28,8 @@ fort_15th = yes
 1577.2.12 = { unrest = 16 owner = NED controller = NED add_core = NED } # Eeuwig Edict accepted by Don Juan formation of Union of Brussels, puts an end to the early period of dutch revolt
 1579.1.6 = { owner = SPA controller = SPA add_core = SPA remove_core = NED unrest = 0 } # Union of Arras established
 1582.1.1 = { religion = catholic } # defeat of the Hurlus
-1648.1.30 = { remove_core = NED } # Peace of Münster/Westphalia
+1635.5.1 = { controller = FRA } # French troops capture parts of the Southern Lowlands
+1648.1.30 = { controller = SPA remove_core = NED } # Peace of Münster/Westphalia
 1665.9.17 = { add_claim = FRA } # Louis XIV's father-in-law, Philip IV of Spain, dies
 1667.1.1 = { controller = FRA }
 1668.5.2 = { owner = FRA remove_claim = FRA add_core = FRA remove_core = SPA hre = no } # Treaty of Aix-la-Chapelle (1668)

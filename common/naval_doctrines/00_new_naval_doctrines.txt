@@ -1,0 +1,39 @@
+dutch_trade_fleet = {
+	can_select = {
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
+		NOT = { has_country_flag = unlock_frisian_naval_doctrine } 
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = frisian
+		}
+	}
+
+	country_modifier = {
+		global_ship_trade_power = 0.25
+		range = 0.25
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 12
+}
+
+frisian_privateers = {
+	can_select = {
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		has_country_flag = unlock_frisian_naval_doctrine
+	}
+
+	country_modifier = {
+		may_perform_slave_raid = yes
+		privateer_efficiency = 0.25
+		capture_ship_chance = 0.1 
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 31
+}

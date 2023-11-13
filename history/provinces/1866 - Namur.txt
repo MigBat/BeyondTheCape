@@ -25,8 +25,8 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
-1477.1.5 = { owner = HAB controller = HAB add_core = HAB remove_core = BUR } # Charles the Bold dies, Lowlands to Austria
-1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
+#1477.1.5 = { owner = HAB controller = HAB add_core = HAB remove_core = BUR } # Charles the Bold dies, Lowlands to Austria
+#1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
 1559.5.12 = { unrest = 3 } # New bishoprics established in the Lowlands create an outrage
 1566.8.1 = { unrest = 4 } # 'Beeldenstorm' at hand
 1566.8.10 = { unrest = 0 revolt = { type = heretic_rebels size = 1 } controller = REB } # 'Beeldenstorm' also hits Hainaut
@@ -36,10 +36,11 @@ discovered_by = ottoman
 1569.1.1 = { unrest = 10 } # The Duke of Alba reforms the taxation system ('tiende penning')
 1570.1.1 = { unrest = 13 } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
 1572.5.24 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Louis of Nassau captures Mons
-1572.8.1 = { revolt = {} controller = SPA } # Don Felipé takes back Mons
+1572.8.1 = { revolt = {} controller = BUR } # Don Felipé takes back Mons
 1576.11.4 = { base_tax = 5 base_production = 5 } #Protestants Flee North
-1577.2.12 = { unrest = 16 owner = NED controller = NED add_core = NED } # Eeuwig Edict accepted by Don Juan formation of Union of Brussels, puts an end to the early period of dutch revolt
-1579.1.6 = { owner = SPA controller = SPA add_core = SPA remove_core = NED unrest = 0 } # Union of Arras established
+#1579.1.6 = { owner = SPA controller = SPA add_core = SPA remove_core = NED unrest = 0 } # Union of Arras established
+1577.2.12 = { owner = NED controller = SPA unrest = 5 } # The 'Perpetual Edict' (Eeuwig Edict) is accepted by Don Juan
+1579.1.6 = { owner = SPA add_core = SPA unrest = 0 } # The Union of Arras is formed
 1583.1.1 = { fort_15th = no fort_16th = yes }
 1635.5.1 = { controller = FRA } # French troops capture parts of the Southern Lowlands
 1648.1.1 = { fort_16th = no fort_17th = yes } 

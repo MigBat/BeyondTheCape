@@ -1,16 +1,20 @@
 # 1742 - Upper Guelders
 
+latent_trade_goods = {
+	coal
+}
+
 owner = GEL
 controller = GEL
 add_core = GEL
 is_city = yes
 capital = "Roermond"
-culture = flemish #or dutch
+culture = limburgish #flemish or dutch
 religion = catholic
 hre = yes
 base_tax = 5
 base_production = 5
-trade_goods = cloth
+trade_goods = grain #reducing cloth, could change to wine
 base_manpower = 4
 discovered_by = eastern
 discovered_by = western
@@ -18,6 +22,7 @@ discovered_by = muslim
 discovered_by = ottoman
 add_core = LBG
 fort_15th = yes #Maastricht
+
 
 1473.2.23 = {
 	owner = BUR
@@ -27,14 +32,17 @@ fort_15th = yes #Maastricht
 1477.1.5 = {
 	owner = GEL
 	controller = GEL
-	add_core = HAB
-	remove_core = BUR
-} # Charles the Bold dies and Gelre becomes independant again, but habsburg claim it
-#1492.1.1 = { 
+} #Charles the Bold dies and Gelre becomes independant again, but habsburg claim it
+#1477.6.27 = { #handled through diplomacy
+#	owner = HAB
+#	controller = HAB
+#	add_core = HAB
+#} #Adolf, Duke of Gelre dies unexpectedly and the duchy becomes part of Mary's land
+#1492.1.1 = { #handled through diplomacy
 #	owner = GEL
 #	controller = GEL
-#} # Karel van Gelre is released from prison and assumes control of Gelre by right of the Egmond family.
-1543.9.7 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V annexes Gelre
+#} # Karel II van Gelre is released from prison and assumes control of Gelre by right of the Egmond family.
+1543.9.7 = { owner = BUR controller = BUR } # End of Guelders Wars - Charles V annexes Gelre
 #1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = HAB }
 1577.2.12 = { unrest = 16 owner = NED controller = NED add_core = NED } # Eeuwig Edict accepted by Don Juan formation of Union of Brussels, puts an end to the early period of dutch revolt
 #1576.11.4 = { add_base_tax = -2 add_base_production = -2 add_base_manpower = -1 } #Protestants Flee North

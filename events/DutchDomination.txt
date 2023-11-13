@@ -1,0 +1,2688 @@
+namespace = dutch_domination
+#normal_or_historical_nations = yes
+#https://imgur.com/a/pmEhA
+#mission_selector
+
+country_event = { #conquest missions selection
+	id = dutch_domination.1
+	title = "dutch_domination.EVTNAME1"
+	desc = "dutch_domination.EVTDESC1"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = "dutch_domination.EVTOPTA1" # Enact
+		ai_chance = { factor = 1 }
+		set_country_flag = mission_branch_conquest_large
+		custom_tooltip = pol_impact_future_missions_tt 
+		swap_non_generic_missions = yes
+		holland_area = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+		north_brabant_area = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+		frisia_area = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}		
+		flanders_area = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+		brabant_area = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}			
+	}
+	option = {
+		name = "dutch_domination.EVTOPTB1" # Refuse to enact
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 10 #making the AI proactively defensive
+				NOT = {
+					is_great_power = yes
+				}
+				any_province = {
+					low_countries_region = {
+						OR = {
+							owned_by = FRA
+							owned_by = SPA
+							owned_by = CAS
+							owned_by = HAB
+						}
+					}
+				}
+			}
+		}
+		set_country_flag = mission_branch_conquest_small
+		custom_tooltip = pol_impact_future_missions_tt
+		swap_non_generic_missions = yes
+		holland_area = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+		north_brabant_area = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+		frisia_area = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+#mission_selector
+country_event = { #religion missions selection
+	id = dutch_domination.2
+	title = "dutch_domination.EVTNAME2"
+	desc = "dutch_domination.EVTDESC2"
+	picture = ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = "dutch_domination.EVTOPTA2" #Erasmus doesn't go far enough - Protestant choices
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 25
+				OR = {
+					tag = GEL
+					tag = HOL
+					tag = FLA
+					tag = BRB
+					tag = FRI
+					tag = EFR
+				}
+			}
+		}
+		set_country_flag = ned_chose_protestant
+		custom_tooltip = pol_impact_future_missions_tt 
+		swap_non_generic_missions = yes 
+		add_country_modifier = {
+			name = "ned_erasmus_protestant"
+			duration = 18250
+		}
+		#add_country_modifier 
+	}
+	option = {
+		name = "dutch_domination.EVTOPTB2" #We should adhere to erasmus his words and reform catholicism
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 25
+				OR = {
+					tag = HOL
+					tag = FLA
+					tag = BRB
+					tag = GRN #catholic town
+					tag = UTR #bishopric should be catholic
+				}
+			}
+		}
+		custom_tooltip = pol_impact_future_missions_tt
+		set_country_flag = ned_chose_catholic #tolerant?
+		swap_non_generic_missions = yes
+		add_country_modifier = {
+			name = "ned_erasmus_middle"
+			duration = 18250
+		}
+		#add_country_modifier 
+	}
+	option = {
+		name = "dutch_domination.EVTOPTC2" #Heretics are wrong
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 25
+				tag = UTR #bishopric should be catholic
+			}
+		}
+		custom_tooltip = pol_impact_future_missions_tt
+		set_country_flag = ned_chose_catholic
+		swap_non_generic_missions = yes
+		add_country_modifier = {
+			name = "ned_erasmus_catholic"
+			duration = 18250
+		}
+		#add_country_modifier 
+	}
+}
+
+#mission_selector fixer
+country_event = { #fix religion missions
+	id = dutch_domination.201
+	title = "dutch_domination.201.t"
+	desc = "dutch_domination.201.d"
+	picture = ADVISOR_eventPicture
+	
+	mean_time_to_happen = {
+		days = 365
+	}
+	
+	trigger = {
+		OR = {
+			AND = {
+				has_country_flag = ned_chose_catholic
+				NOT = {
+					religion = catholic
+				}
+			}
+			AND = {
+				has_country_flag = ned_chose_protestant
+				NOT = {
+					OR = {
+						religion = protestant
+						religion = reformed
+					}
+				}
+			}
+		}
+		NOT = {
+			current_age = age_of_discovery
+		}
+	}
+	
+	option = {
+		name = "dutch_domination.EVTOPTA2" #Erasmus doesn't go far enough - Protestant choices
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 25
+				OR = {
+					tag = GEL
+					tag = HOL
+					tag = FLA
+					tag = BRB
+					tag = FRI
+					tag = EFR
+					NOT = { religion = catholic }
+				}
+			}
+		}
+		set_country_flag = ned_chose_protestant
+		clr_country_flag = ned_chose_catholic
+		custom_tooltip = pol_impact_future_missions_tt 
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = "dutch_domination.EVTOPTB2" #We should adhere to erasmus his words and reform catholicism
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 25
+				OR = {
+					tag = HOL
+					tag = FLA
+					tag = BRB
+					tag = GRN #catholic town
+					tag = UTR #bishopric should be catholic
+				}
+			}
+		}
+		custom_tooltip = pol_impact_future_missions_tt
+		set_country_flag = ned_chose_catholic #tolerant?
+		clr_country_flag = ned_chose_protestant
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = "dutch_domination.EVTOPTC2" #Heretics are wrong
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 25
+				tag = UTR #bishopric should be catholic
+			}
+		}
+		custom_tooltip = pol_impact_future_missions_tt
+		set_country_flag = ned_chose_catholic
+		clr_country_flag = ned_chose_protestant
+		swap_non_generic_missions = yes
+	}
+}
+
+#mission_selector
+country_event = { #religious
+	id = dutch_domination.3
+	title = "dutch_domination.EVTNAME3"
+	desc = "dutch_domination.EVTDESC3"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = "dutch_domination.EVTOPTA3" #
+		custom_tooltip = pol_impact_future_missions_tt 
+		set_country_flag = ned_chose_tolerance
+		swap_non_generic_missions = yes 
+		#add_country_modifier 
+	}
+	option = {
+		name = "dutch_domination.EVTOPTB3" #
+		custom_tooltip = pol_impact_future_missions_tt
+		set_country_flag = ned_chose_persecution
+		swap_non_generic_missions = yes
+		#add_country_modifier 
+	}
+}
+
+#mission_selector
+
+#Anabaptists in the lowlands
+
+#country_event = {
+#	id = dutch_domination.6
+#	title = "dutch_domination.EVTNAME6"
+#	desc = "dutch_domination.EVTDESC6"
+#	picture = COURT_eventPicture
+#	
+#	trigger = {
+#		current_age = age_of_reformation
+#		is_year = 1520
+#		always = no
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 12
+#	}
+#	
+#	option = { #accept
+#		name = "dutch_domination.EVTOPTA6" #
+#		change_government =	theocracy
+#	}
+#	option = { #reject
+#		name = "dutch__d"
+#	}
+#	option = { #reject
+#		name = "dutch_domination.EVTOPTB6" #
+#		random_war_enemy_country = {
+#			random_owned_province = {
+#				limit = {
+#					has_port = yes  	
+#					NOT = {
+#					border_distance = {
+#						who = ROOT
+#						distance = 100
+#					} 
+#					}
+#				}
+#				marine_infantry = ROOT
+#				marine_infantry = ROOT
+#				marine_infantry = ROOT
+#			}
+#		}
+#		random_owned_province = {
+#			limit = { has_port = yes }
+#			light_ship = ROOT
+#		}
+#	}
+#	option = {
+#		name = "dutch_dutch_dutch"
+#		unlock_merc_company = {
+#			merc_company = merc_arumer_zwarte_hoop
+#			free_merc = yes
+#		}
+#	}
+#}
+
+#Exploration
+
+country_event = { #Willem Barrentz
+	id = dutch_domination.7
+	title = "dutch_domination.EVTNAME7"
+	desc = "dutch_domination.EVTDESC7"
+	picture = COLONIZATION_eventPicture
+	goto = 1263
+	
+	trigger = {
+		OR = {
+			dutch_minor_tags = yes
+			tag = LOT tag = BUR
+		}
+		1263 = {
+			OR = {
+				 light_ships_in_province = ROOT
+				 heavy_ships_in_province = ROOT
+				 galleys_in_province = ROOT
+				 transports_in_province = ROOT
+			}
+		}
+		NOT = {
+			has_country_flag = flag_passed_nova_zembla
+		}
+	}
+	
+	option = { #close
+		name = "dutch_domination.EVTOPTA7"
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = {
+			has_leader = "Willem Barentsz"
+		}
+		kill_leader = {
+			type = "Willem Barentsz"
+		}
+		create_explorer = {
+			tradition = 100
+		}
+		set_country_flag = flag_passed_nova_zembla
+		add_prestige_or_monarch_power = { amount = 5 }
+		1263 = { change_province_name = "Barentszzee" }
+	}
+	option = { #close
+		name = "dutch_domination.7.b"
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = {
+			NOT = { has_leader = "Willem Barentsz" }
+		}
+		set_country_flag = flag_passed_nova_zembla
+		add_prestige_or_monarch_power = { amount = 5 }
+		1263 = { change_province_name = "Barentszzee" }
+	}
+}
+
+country_event = { #Mauritius
+	id = dutch_domination.701
+	title = "dutch_domination.EVTNAME701"
+	desc = "dutch_domination.EVTDESC701"
+	picture = COLONIZATION_eventPicture
+	goto = 1454
+	
+	trigger = {
+		OR = {
+			dutch_minor_tags = yes
+			tag = LOT tag = BUR
+		}
+		OR = {
+		1454 = {
+			OR = {
+				 light_ships_in_province = ROOT
+				 heavy_ships_in_province = ROOT
+				 galleys_in_province = ROOT
+				 transports_in_province = ROOT
+			}
+		}
+		1455 = {
+			OR = {
+				 light_ships_in_province = ROOT
+				 heavy_ships_in_province = ROOT
+				 galleys_in_province = ROOT
+				 transports_in_province = ROOT
+			}
+		}
+		}
+		not = {
+			has_country_flag = flag_passed_mauritius
+		}
+	}
+	
+	option = { #close
+		name = "dutch_domination.EVTOPTA701"
+		ai_chance = { 
+			factor = 1
+		}
+		set_country_flag = flag_passed_mauritius
+		add_prestige_or_monarch_power = { amount = 5 }
+		1102 = { change_province_name = "Mauritius" }
+		#maybe tie it with the dodo event
+	}
+}
+
+country_event = { #Kaap Hoorn
+	id = dutch_domination.702
+	title = "dutch_domination.EVTNAME702"
+	desc = "dutch_domination.EVTDESC702"
+	picture = COLONIZATION_eventPicture
+	goto = 1595
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			dutch_minor_tags = yes
+			tag = LOT tag = BUR
+		}
+		OR = {
+		1539 = {
+			OR = {
+				 light_ships_in_province = ROOT
+				 heavy_ships_in_province = ROOT
+				 galleys_in_province = ROOT
+				 transports_in_province = ROOT
+			}
+		}		
+		1595 = {
+			OR = {
+				 light_ships_in_province = ROOT
+				 heavy_ships_in_province = ROOT
+				 galleys_in_province = ROOT
+				 transports_in_province = ROOT
+			}
+		}
+		}
+	}
+	
+	option = { #close
+		name = "dutch_domination.EVTOPTA702"
+		ai_chance = { 
+			factor = 1
+		}
+		add_prestige_or_monarch_power = { amount = 5 }
+		1593 = { change_province_name = "Kaap Hoorn" }
+	}
+}
+
+country_event = { #The Cape
+	id = dutch_domination.703
+	title = "dutch_domination.EVTNAME703"
+	desc = "dutch_domination.EVTDESC703"
+	picture = COLONIZATION_eventPicture
+	goto = 1460
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			dutch_minor_tags = yes
+			tag = LOT tag = BUR
+		}
+		1460 = {
+			OR = {
+				 light_ships_in_province = ROOT
+				 heavy_ships_in_province = ROOT
+				 galleys_in_province = ROOT
+				 transports_in_province = ROOT
+			}
+		}
+	}
+	
+	option = { #close
+		name = "dutch_domination.EVTOPTA703"
+		ai_chance = { 
+			factor = 1
+		}
+		hidden_effect = {
+			set_country_flag = flag_passed_the_cape
+		}
+	}
+}
+
+country_event = { #Hudson Bay
+	id = dutch_domination.704
+	title = "dutch_domination.704.t"
+	desc = "dutch_domination.704.desc"
+	picture = COLONIZATION_eventPicture
+	goto = 1487 #western hudson
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			dutch_minor_tags = yes
+			tag = LOT tag = BUR
+		}
+		OR = {
+			1488 = {
+				OR = {
+					 light_ships_in_province = ROOT
+					 heavy_ships_in_province = ROOT
+					 galleys_in_province = ROOT
+					 transports_in_province = ROOT
+				}
+			}
+			1487 = {
+				OR = {
+					 light_ships_in_province = ROOT
+					 heavy_ships_in_province = ROOT
+					 galleys_in_province = ROOT
+					 transports_in_province = ROOT
+				}
+			}
+			1486 = {
+				OR = {
+					 light_ships_in_province = ROOT
+					 heavy_ships_in_province = ROOT
+					 galleys_in_province = ROOT
+					 transports_in_province = ROOT
+				}
+			}
+		}
+	}
+	
+	option = { #close
+		name = "dutch_domination.704.a"
+		ai_chance = { 
+			factor = 1
+		}
+		#hidden_effect = {
+			set_country_flag = flag_passed_hudson_bay
+		#}
+	}
+}
+
+country_event = { #Statist/Republican missions
+	id = dutch_domination.8
+	title = "dutch_domination.EVTNAME8"
+	desc = "dutch_domination.EVTDESC8"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NED
+	}
+		
+	option = {
+		name = "dutch_domination.EVTOPTA8" #
+		ai_chance = { 
+			factor = 1
+		}
+		custom_tooltip = pol_impact_future_missions_tt
+		set_country_flag = mission_branch_republic_orangist
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = "dutch_domination.EVTOPTB8" #
+		ai_chance = { 
+			factor = 1
+		}
+		custom_tooltip = pol_impact_future_missions_tt
+		set_country_flag = mission_branch_republic_statist
+		swap_non_generic_missions = yes
+	}
+}
+
+# The VOC copy of East india company
+country_event = {
+	id = dutch_domination.9
+	title = dutch_domination.9.t
+	desc = dutch_domination.9.d
+	picture = MERCHANTS_ARGUING_eventPicture
+	is_triggered_only = yes
+	
+	#Establish this VOC
+	option = {
+		name = dutch_domination.9.a
+		custom_tooltip = dutch_domination.9.a.tt
+		custom_tooltip = voc_province_warning_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+					region = moluccas_region
+					region = indonesia_region
+					}
+				}
+				add_core = VOC
+				if = {
+					limit = { is_core = ROOT }
+					remove_core = ROOT
+				}
+			}
+			release = VOC
+			create_subject = {
+				subject_type = commercial_enterprise
+				who = VOC
+			}
+			VOC = {
+				change_government = republic
+				add_government_reform = trade_company_government
+				change_religion = ROOT
+				change_primary_culture = ROOT
+				define_ruler = {
+					name = "Heren XVIII"
+					adm = 3
+					dip = 3
+					mil = 3
+					#regent = yes
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_treasury = 200
+				set_prestige_to_zero = yes
+				add_republican_tradition = 100
+			}
+			country_event = { id = dutch_domination.901 days = 2 }
+		}
+		moluccas_region = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		indonesia_region = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		custom_tooltip = charter_voc_tt
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	#We do not need such enterprise on foreign ground
+	option = {
+		name = dutch_domination.9.b
+		moluccas_region = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		indonesia_region = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	#Play as the East India Company
+	option = {
+		name = dutch_domination.9.c
+		trigger = {
+			ai = no
+		}
+		custom_tooltip = dutch_domination.9.a.tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+					region = moluccas_region
+					region = indonesia_region
+					}
+				}
+				add_core = VOC
+				if = {
+					limit = { is_core = ROOT }
+					remove_core = ROOT
+				}
+			}
+			release = VOC
+			create_subject = {
+				subject_type = commercial_enterprise
+				who = VOC
+			}
+			VOC = {
+				change_government = republic
+				add_government_reform = trade_company_government
+				change_religion = ROOT
+				change_primary_culture = ROOT
+				define_ruler = {
+					name = "Heren XVIII"
+					adm = 3
+					dip = 3
+					mil = 3
+					#regent = yes
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_treasury = 200
+				set_prestige_to_zero = yes
+				add_republican_tradition = 100
+			}
+			country_event = { id = dutch_domination.901 days = 2 }
+		}
+		moluccas_region = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		indonesia_region = {
+			limit = {
+				NOT = { is_core = VOC }
+				NOT = { is_permanent_claim = VOC }
+			}
+			add_permanent_claim = VOC
+		}
+		custom_tooltip = charter_voc_tt
+		switch_tag = VOC
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = dutch_domination.901
+	title = dutch_domination.901.t
+	desc = dutch_domination.901.d
+	picture = MERCHANTS_ARGUING_eventPicture
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	immediate = {		
+		set_estate_privilege = estate_trade_company_charter_voc
+	}
+	
+	#Establish this VOC
+	option = {
+		name = dutch_domination.901.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { #clear groot_desseyn
+	id = dutch_domination.10
+	title = dutch_domination.10.t
+	desc = dutch_domination.10.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes 
+	trigger = {
+		had_country_flag = {
+			flag = dom_ned_desseyn_challenge
+			days = 1825
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = dom_ned_desseyn_challenge
+			complete_mission = dom_ned_gold_coast
+			complete_mission = dom_ned_brazilian_exp
+			complete_mission = dom_ned_siege_luanda
+		}
+	}
+	
+	option = {
+		name = dutch_domination.10.a 
+		custom_tooltip = gain_15_ae_n_s_germany_tt #fix later
+		hidden_effect = {
+			every_country = {
+				limit = { 
+					culture_group = iberian
+				}
+				add_aggressive_expansion = {
+					who = ROOT 
+					value = 15
+					apply_calc = no 
+				}
+			}
+		}
+	}
+}
+
+country_event = { #groot privilege
+	id = dutch_domination.11
+	title = "dutch_domination.11.t"
+	desc = "dutch_domination.11.d"
+	picture = COURT_eventPicture
+	
+	major = yes
+	major_trigger = { #not fully working
+		OR = {
+			is_subject_of = root
+			tag = HOL
+			tag = FLA
+			tag = BRB
+		}
+	}
+	is_triggered_only = yes
+		
+	option = { #accept
+		ai_chance = { 
+			factor = 3
+			modifier = {
+				factor = 5
+				num_of_loans = 1 
+			}
+		}
+		name = "dutch_domination.11.a" #
+		add_treasury = 300
+		FROM = { 
+			add_treasury = -300
+			add_favors = {
+				who = root
+				amount = 25
+			}
+			add_trust = {
+				who = root
+				value = 25
+				mutual = yes
+			}
+		}
+		if = {
+			limit = {
+				tag = BUR
+				BUR = {
+					has_reform = dom_ned_great_council_of_mechelen_reform
+				}
+			}
+			add_country_modifier = {
+				name = groot_privilege_mod
+				duration = 7300
+			}
+			remove_government_reform = dom_ned_great_council_of_mechelen_reform
+		}
+	}
+	option = { #reject
+		ai_chance = { 
+			factor = 1
+		}
+		name = "dutch_domination.11.b" #
+		add_country_modifier = {
+			name = bur_subjects_pissed
+			duration = 7300
+		}
+	}
+}
+
+country_event = { #The Eedverbond Mission
+	id = dutch_domination.12
+	title = "dutch_domination.12.t"
+	desc = "dutch_domination.12.d"
+	picture = DIPLOMACY_SIGNING_eventPicture
+	
+	major = yes
+	major_trigger = { #not fully working
+		OR = {
+			is_subject_of = root
+			tag = HOL
+			tag = FLA
+			tag = BRB
+		}
+	}
+	is_triggered_only = yes
+		
+	option = { #accept
+		ai_chance = { 
+			factor = 4
+		}
+		name = "dutch_domination.12.a" #
+		if = {
+			limit = {
+				any_owned_province = {
+					is_core = ARS
+				}
+			}
+			release = ARS
+			create_union = ARS
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					is_core = HAI	
+				}
+			}
+			release = HAI
+			create_union = HAI
+		}
+	}
+	option = { #reject
+		ai_chance = { 
+			factor = 1
+		}
+		name = "dutch_domination.12.b" #
+		#get fucked
+	}
+}
+
+country_event = { #The Burgundians Missions
+	id = dutch_domination.13
+	title = "dutch_domination.13.t"
+	desc = "dutch_domination.13.desc"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	#major = yes
+	#major_trigger = {
+	#	is_neighbor_of = BUR
+	#}
+	
+	trigger = {
+		
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					is_subject_of = BUR
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = friends_with_burgundy
+				}
+				set_country_flag = ned_join_burgundy
+				BUR = { 
+					country_event = { 
+						id = dutch_domination.14
+						days = 30
+						random = 15
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							tag = GEL
+							tag = UTR
+							tag = LIE
+						}
+					}
+					set_country_flag = mission_branch_bur_friend
+					custom_tooltip = pol_impact_future_missions_tt
+					swap_non_generic_missions = yes
+				}
+				if = {
+					limit = { OR = { tag = FLA tag = HOL tag = BRB tag = LUX } }
+					swap_non_generic_missions = yes
+				}
+			}
+			else = {
+				#set_country_flag = ned_reject_burgundy
+				if = {
+					limit = {
+						OR = {
+							tag = GEL
+							tag = UTR
+							tag = LIE
+						}
+					}
+					set_country_flag = mission_branch_bur_foe
+					custom_tooltip = pol_impact_future_missions_tt
+					swap_non_generic_missions = yes
+				}
+				if = {
+					limit = { OR = { tag = FLA tag = HOL tag = BRB tag = LUX } }
+					swap_non_generic_missions = yes
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_country_flag = friends_with_burgundy
+				}
+				set_country_flag = ned_join_burgundy
+				custom_tooltip = pol_impact_future_missions_tt
+				swap_non_generic_missions = yes
+			}
+			else = {
+				set_country_flag = ned_reject_burgundy
+				custom_tooltip = pol_impact_future_missions_tt
+				swap_non_generic_missions = yes
+				add_country_modifier = {
+					name = ned_wish_for_liberty
+					duration = 9125
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "dutch_domination.13.a" # Enact
+		#ai skip
+	}
+}
+
+country_event = { #opinion adder
+	id = dutch_domination.131
+	title = "dutch_domination.131.t"
+	desc = "dutch_domination.131.desc"
+	picture = COURT_eventPicture
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	#major = yes
+	#major_trigger = {
+	#	is_neighbor_of = BUR
+	#}
+	
+	trigger = {
+		
+	}
+	
+	immediate = {
+		if = { limit = { has_country_flag = ned_join_burgundy } 
+		every_country = {
+			limit = { has_country_flag = ned_reject_burgundy NOT = { tag = ROOT } }
+			add_opinion = {
+				who = ROOT
+				modifier = sided_with_burgundy_foe
+			}
+		}
+		every_country = {
+			limit = { has_country_flag = ned_join_burgundy NOT = { tag = ROOT } }
+			add_opinion = {
+				who = ROOT
+				modifier = sided_with_burgundy_friend
+			}
+		}
+		}
+		if = { limit = { has_country_flag = ned_reject_burgundy }
+		every_country = {
+			limit = { has_country_flag = ned_reject_burgundy NOT = { tag = ROOT } }
+			add_opinion = {
+				who = ROOT
+				modifier = sided_against_burgundy_friend
+			}
+		}
+		every_country = {
+			limit = { has_country_flag = ned_join_burgundy NOT = { tag = ROOT } }
+			add_opinion = {
+				who = ROOT
+				modifier = sided_against_burgundy_foe
+			}
+		}
+		}
+	}
+	
+	option = {
+		name = "dutch_domination.131.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #create guarantees
+	id = dutch_domination.14
+	title = "dutch_domination.14.t"
+	desc = "dutch_domination.14.d"
+	picture = DIPLOMACY_SIGNING_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		tag = FROM
+	}
+	
+	trigger = {
+		
+	}
+	option = {
+		name = "dutch_domination.14.a"
+		ai_chance = { 
+		factor = 1
+			modifier = {
+				factor = 0.1
+				NOT = {
+					num_of_free_diplomatic_relations = 1
+				}
+			}
+		}
+		create_guarantee = FROM
+		FROM = {
+			#set_country_flag = bur_influence_succession
+			add_opinion = {
+				who = ROOT
+				modifier = bur_promised_protection
+			}
+		}
+	}
+	option = {
+		name = "dutch_domination.14.b"
+		ai_chance = { factor = 1 }
+		add_prestige = -1
+	}
+	option = {
+		name = "dutch_domination.14.c"
+		ai_chance = { factor = 1 }
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = bur_denied_protection
+			}
+		}		
+	}
+}
+
+# Dutch state joins the Netherlands
+country_event = {
+	id = dutch_domination.15
+	title = "dutch_domination.15.t"
+	desc = "dutch_domination.15.desc"
+	picture = DIPLOMACY_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		ai = yes
+		was_player = no
+		NOT = { tag = NED }
+		NED = {
+			exists = yes
+			OR = {
+				AND = {
+					ai = yes
+					was_player = no
+				}
+				has_country_flag = swapped_to_dutch_republic
+			}
+			NOT = { truce_with = ROOT }
+			is_subject = no
+		}
+		OR = {
+			is_subject_of = BUR
+			is_subject_of = SPA
+			is_subject_of = HAB
+		}
+		has_opinion_modifier = {
+			who = NED
+			modifier united_low_countries_front
+		}
+		NOT = { num_of_cities = 5 }
+		any_owned_province = {
+			region = low_countries_region
+		}
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = frisian
+		}
+		NOT = {
+			has_country_flag = state_joined_netherlands
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "dutch_domination.15.a"
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 10
+				has_opinion = {
+					who = NED
+					value = 50
+				}
+			}
+		}
+		NED = {
+			country_event = { id = flavor_bur.17 days = 1 }
+		}
+		set_country_flag = state_joined_netherlands
+	}
+	
+	option = {
+		name = "dutch_domination.15.b"
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 10
+				has_opinion = {
+					who = NED
+					value = -50
+				}
+			}
+		}
+	}
+	
+}
+
+country_event = { #Bur election
+	id = dutch_domination.16
+	title = "dutch_domination.16.t"
+	desc = "dutch_domination.16.d"
+	picture = DIPLOMACY_SIGNING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+		
+	option = {
+		name = "dutch_domination.16.a" #
+		ai_chance = { 
+			factor = 1
+		}
+	}
+}
+
+country_event = { #Utr election
+	id = dutch_domination.161
+	title = "dutch_domination.16.t"
+	desc = "dutch_domination.161.d"
+	picture = DIPLOMACY_SIGNING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+		
+	option = {
+		name = "dutch_domination.16.a" #
+		ai_chance = { 
+			factor = 1
+		}
+	}
+}
+
+country_event = { #Liege Wars
+	id = dutch_domination.17
+	title = "dutch_domination.17.t"
+	desc = "dutch_domination.17.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BUR
+			was_tag = BUR
+		}
+		OR = {
+			LIE = {
+				is_subject_of = ROOT
+			}
+			2974 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			93 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = {
+		name = "dutch_domination.17.a" #
+		trigger = {
+			LIE = {
+				exists = yes
+			}
+		}
+		ai_chance = { 
+			factor = 1
+		}
+		LIE = {
+			grant_independence = yes
+		}
+		add_prestige = -10		
+	}
+	option = {
+		name = "dutch_domination.17.a" #
+		trigger = {
+			LIE = {
+				exists = no
+			}
+		}
+		ai_chance = { 
+			factor = 1
+		}
+		release = LIE
+		add_prestige = -10		
+	}
+	option = {
+		name = "dutch_domination.17.b" #
+		ai_chance = { 
+			factor = 10
+		}
+		LIE = {
+			grant_independence = yes
+			#every_owned_province = {
+			#	add_core = ROOT
+			#}
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_liberation
+			}
+		}
+	}
+}
+
+country_event = { #Utrechtian Wars
+	id = dutch_domination.18
+	title = "dutch_domination.18.t"
+	desc = "dutch_domination.18.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	#trigger = {
+	#	OR = {
+	#		tag = BUR
+	#		was_tag = BUR
+	#	}
+	#	OR = {
+	#		UTR = {
+	#			is_subject_of = ROOT
+	#		}
+	#		98 = {
+	#			country_or_non_sovereign_subject_holds = ROOT
+	#		}
+	#	}
+	#}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		IJS = {
+			change_government = monarchy
+			add_government_reform = feudalism_reform
+			define_ruler = {
+				name = "Gijsbrecht"
+				dynasty = "van Brederode"
+			}
+		}
+	}
+	
+	#mean_time_to_happen = {
+	#	months = 30
+	#}
+	
+	option = {
+		name = "dutch_domination.18.a" #
+		trigger = {
+			UTR = { 
+				exists = yes
+			}
+		}
+		ai_chance = { 
+			factor = 1
+		}
+		UTR = {
+			grant_independence = yes
+		}
+		IJS = {
+			declare_war_with_cb = {
+				who = UTR
+				casus_belli = cb_liberation
+			}
+		}
+		add_prestige = -10		
+	}
+	option = {
+		name = "dutch_domination.18.b" #
+		ai_chance = { 
+			factor = 10
+		}
+		IJS = {
+			#define_ruler Gijsbrecht van Brederode 
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_liberation
+			}
+		}
+		if = {
+			limit = {
+				overlord_of = HOL
+			}
+			97 = {
+				spawn_rebels = {
+					type = noble_rebels
+					size = 2
+					friend = IJS
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Treaty of Breda America Branch
+	id = dutch_domination.19
+	title = "dutch_domination.19.t"
+	desc = "dutch_domination.19.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = "dutch_domination.19.a" # Enact
+		ai_chance = { factor = 1 }
+		set_country_flag = mission_branch_america_usa
+		custom_tooltip = pol_impact_future_missions_tt 
+		swap_non_generic_missions = yes
+		northeast_america_region = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+		southeast_america_region = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+		reverse_add_opinion = {
+			who = ENG
+			modifier = traded_surinam_new_amsterdam
+		}
+	}
+	option = {
+		name = "dutch_domination.19.b" # Enact
+		ai_chance = { factor = 1 }
+		set_country_flag = mission_branch_america_surinam
+		custom_tooltip = pol_impact_future_missions_tt 
+		swap_non_generic_missions = yes
+		reverse_add_opinion = {
+			who = ENG
+			modifier = traded_surinam_new_amsterdam
+		}
+	}
+	option = {
+		name = "dutch_domination.19.c" # Enact
+		ai_chance = { factor = 1 }
+		set_country_flag = mission_branch_america_both
+		custom_tooltip = pol_impact_future_missions_tt 
+		swap_non_generic_missions = yes
+		northeast_america_region = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+		southeast_america_region = {
+			limit = { NOT = { owned_by = ROOT } }
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+country_event = { #Holland Straubing
+	id = dutch_domination.21
+	title = "dutch_domination.21.t"
+	desc = "dutch_domination.21.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #accept
+		ai_chance = {
+			factor = 1
+		}
+		name = "dutch_domination.21.a" #
+		add_prestige = 10
+	}
+	option = { #become straubing
+		ai_chance = { 
+			factor = 0
+		}
+		name = "dutch_domination.21.b" #
+		change_tag = SBV
+		change_primary_culture = bavarian
+		#add_accepted_culture = dutch
+		
+		if = {
+			limit = {
+				2956 = {
+				NOT = { is_core = ROOT }
+				}
+			}
+			2956 = {
+				add_core = ROOT
+			}
+		}
+		if = {
+			limit = {
+				91 = {
+					owned_by = ROOT NOT = { is_core = ROOT }
+				}
+			}
+			91 = {
+				add_core = ROOT
+			}
+		}
+		if = {
+			limit = {
+				1743 = {
+					owned_by = ROOT NOT = { is_core = ROOT }
+				}
+			}
+			1743 = {
+				add_core = ROOT
+			}
+		}
+		lower_bavaria_area = {
+			limit = { owned_by = ROOT NOT = { is_core = ROOT } }
+			add_core = ROOT			
+		}
+		upper_bavaria_area = {
+			limit = { owned_by = ROOT NOT = { is_core = ROOT } }
+			add_core = ROOT
+		}
+		east_bavaria_area = {
+			limit = { owned_by = ROOT NOT = { is_core = ROOT } }
+			add_core = ROOT
+		}
+		on_change_tag_effect = yes
+		restore_country_name = yes
+		swap_non_generic_missions = yes
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		if = {
+			limit = { 2956 = { owned_by = ROOT } }
+			set_capital = 2956
+		}
+	}
+}
+
+country_event = { #Plakkaat van Verlatinghe
+	id = dutch_domination.22
+	title = "dutch_domination.22.t"
+	desc = "dutch_domination.22.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+		
+	
+	option = {
+		name = "dutch_domination.22.a" #Republic
+		ai_chance = { factor = 1 }
+		if = {
+			limit = { NOT = { government = republic } }
+			change_government = republic
+		}
+	}
+	option = {
+		name = "dutch_domination.22.b" #Monarchy
+		ai_chance = { factor = 1 }
+		if = {
+			limit = { NOT = { government = monarchy } }
+			change_government = monarchy
+		}
+		if = {
+			limit = { any_ally = { government = monarchy } }
+			hidden_effect = {
+			random_ally = {
+				save_event_target_as = dynasty_found
+			}
+			}
+			define_ruler = {
+				dynasty = event_target:dynasty_found
+				claim = 95
+			}
+		}
+		else_if = {
+			limit = {				
+				any_neighbor_country = {
+					reverse_has_opinion = {
+						who = ROOT
+						value = 50
+					}
+					government = monarchy
+				}
+			}
+			hidden_effect = {
+				random_neighbor_country = {
+					limit = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = 50
+						}
+						government = monarchy
+					}
+				save_event_target_as = dynasty_found
+				}
+			}
+			define_ruler = {
+				dynasty = event_target:dynasty_found
+				claim = 95
+			}
+		}
+		else = {
+			define_ruler = {
+				dynasty = event_target:dynasty_found
+				claim = 95
+			}
+		}
+		#set_legacy_government = administrative_monarchy
+	}
+	option = {
+		name = "flavor_hol.EVTOPTD3502" #Keep current government
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #Commission Art
+	id = dutch_domination.231
+	title = "dutch_domination.231.t"
+	desc = "dutch_domination.231.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		#hidden_effect = {
+			random_list = {
+				1 = {
+				 	ROOT = { set_country_flag = art_maritime }
+				}
+				1 = {
+					ROOT = { set_country_flag = art_foreign_lands }
+				}
+				1 = {
+					ROOT = { set_country_flag = art_military }
+				}
+			}
+			random_list = {
+				1 = {
+					ROOT = { set_country_flag = art_aristocrats }
+				}
+				1 = {
+					ROOT = { set_country_flag = art_landscape }
+				}
+				1 = {
+					ROOT = { set_country_flag = art_every_day }
+				}
+			}
+			country_event = {
+				id = dutch_domination.23
+			}
+		#}
+	}
+	
+	option = {
+		name = "dutch_domination.23.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Commission Art
+	id = dutch_domination.23
+	title = "dutch_domination.23.t"
+	desc = "dutch_domination.23.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_country_flag = art_maritime
+		clr_country_flag = art_foreign_lands
+		clr_country_flag = art_military
+		clr_country_flag = art_aristocrats
+		clr_country_flag = art_landscape
+		clr_country_flag = art_every_day
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_country_flag = art_maritime
+				}
+				1 = {
+					set_country_flag = art_foreign_lands
+				}
+				1 = {
+					set_country_flag = art_military
+				}
+				1 = {
+					set_country_flag = art_aristocrats
+				}
+				1 = {
+					set_country_flag = art_landscape
+				}
+				1 = {
+					set_country_flag = art_every_day
+				}
+			}
+			random_list = {
+				1 = {
+					set_country_flag = art_aristocrats
+				}
+				1 = {
+					set_country_flag = art_landscape
+				}
+				1 = {
+					set_country_flag = art_every_day
+				}
+				1 = {
+					set_country_flag = art_maritime
+				}
+				1 = {
+					set_country_flag = art_foreign_lands
+				}
+				1 = {
+					set_country_flag = art_military
+				}
+			}
+		}
+	}
+	option = {
+		name = "dutch_domination.23.maritime"
+		trigger = {
+			has_country_flag = art_maritime
+		}
+		add_country_modifier = {
+			name = art_maritime_mod
+			duration = 1825
+		}
+		#secondary event to define the quality of the painting
+		if = {
+			limit = {
+				has_country_flag = ned_artist_cheaper
+			}
+			add_treasury = 200
+		}
+		else = {
+			add_treasury = 250
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = "dutch_domination.23.foreign"
+		trigger = {
+			has_country_flag = art_foreign_lands
+		}
+		add_country_modifier = {
+			name = art_foreign_lands_mod
+			duration = 1825
+		}
+		#secondary event to define the quality of the painting
+		if = {
+			limit = {
+				has_country_flag = ned_artist_cheaper
+			}
+			add_treasury = 200
+		}
+		else = {
+			add_treasury = 250
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = "dutch_domination.23.military"
+		trigger = {
+			has_country_flag = art_military
+		}
+		add_country_modifier = {
+			name = art_military_mod
+			duration = 1825
+		}
+		#secondary event to define the quality of the painting
+		if = {
+			limit = {
+				has_country_flag = ned_artist_cheaper
+			}
+			add_treasury = 200
+		}
+		else = {
+			add_treasury = 250
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = "dutch_domination.23.aristocrats"
+		trigger = {
+			has_country_flag = art_aristocrats
+		}
+		add_country_modifier = {
+			name = art_aristocrats
+			duration = 1825
+		}
+		#secondary event to define the quality of the painting
+		if = {
+			limit = {
+				has_country_flag = ned_artist_cheaper
+			}
+			add_treasury = 200
+		}
+		else = {
+			add_treasury = 250
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = "dutch_domination.23.landscape"
+		trigger = {
+			has_country_flag = art_landscape
+		}
+		add_country_modifier = {
+			name = art_landscape
+			duration = 1825
+		}
+		#secondary event to define the quality of the painting
+		if = {
+			limit = {
+				has_country_flag = ned_artist_cheaper
+			}
+			add_treasury = 200
+		}
+		else = {
+			add_treasury = 250
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = "dutch_domination.23.everyday"
+		trigger = {
+			has_country_flag = art_every_day
+		}
+		add_country_modifier = {
+			name = art_every_day
+			duration = 1825
+		}
+		#secondary event to define the quality of the painting
+		if = {
+			limit = {
+				has_country_flag = ned_artist_cheaper
+			}
+			add_treasury = 200
+		}
+		else = {
+			add_treasury = 250
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = "dutch_domination.23.a"
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = recently_commissioned_art
+			duration = 1825
+		}
+		add_treasury = -500
+		define_advisor = {
+			type = artist
+			name = "Johannes Vermeer"
+			culture = dutch
+			discount = yes
+			skill = 4
+			#location = 92 #Brabant
+		}
+	}
+	option = {
+		name = "dutch_domination.23.b"
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = recently_commissioned_art
+			duration = 30
+		}
+	}
+}
+
+country_event = { #Clove Mission Event
+	id = dutch_domination.24
+	title = "dutch_domination.24.t"
+	desc = "dutch_domination.24.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+			overlord_of = VOC
+			}
+			VOC = {
+				random_owned_province = {
+					limit = {
+						trade_goods = cloves
+					}
+					set_province_flag = one_cloves_prov_saved
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					trade_goods = cloves
+				}
+				set_province_flag = one_cloves_prov_saved
+			}
+		}
+	}
+	
+	option = {
+		name = "dutch_domination.24.a" #Change tradegoods for price increase
+		ai_chance = { factor = 1 }
+		change_price = {
+			trade_goods = cloves
+			key = dutch_cloves_monopoly
+			value = 4
+			duration = -1
+		}
+		custom_tooltip = every_prov_cloves_tt
+		#hidden_effect = {
+		every_owned_province = {
+			limit = {
+				trade_goods = cloves
+				NOT = {
+					has_province_flag = one_cloves_prov_saved
+				}
+			}
+			change_trade_goods = spices
+		}
+		every_subject_country = {
+			every_owned_province = {
+				limit = {
+					trade_goods = cloves
+					NOT = {
+						has_province_flag = one_cloves_prov_saved
+					}
+				}
+				change_trade_goods = spices
+			}
+		}
+		#}
+	}
+	option = {
+		name = "dutch_domination.24.b" #Leave it alone
+		ai_chance = { factor = 1 }
+		custom_tooltip = add_opinion_to_east_indies_nations
+	}
+}
+
+country_event = { #Delfts Blauw
+	id = dutch_domination.25
+	title = "dutch_domination.25.t"
+	desc = "dutch_domination.25.desc"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "dutch_domination.25.a" #Change tradegoods in Den Haag
+		ai_chance = { factor = 1 }
+		4383 = {
+			change_trade_goods = chinaware
+			add_province_modifier = {
+				name = delfts_blauw_mod
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "dutch_domination.25.b" #Chinaware trade
+		ai_chance = { factor = 1 }
+		1371 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 25
+				key = NED_CHINATRADE
+			}
+		}
+	}
+}
+
+country_event = { #subject demands provinces - reunify with hainaut 
+	id = dutch_domination.27
+	title = "dutch_domination.27.t"
+	
+	desc = {
+		trigger = { FROM = { tag = HOL } }
+		desc = dutch_domination.27.hol_desc
+	}
+	desc = {
+		trigger = { FROM = { tag = FLA } }
+		desc = dutch_domination.27.fla_desc
+	}
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	major_trigger = {
+		OR = {
+			tag = HOL
+			tag = FLA
+		}
+	}
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = "dutch_domination.27.a" # Enact
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				FROM = {
+					tag = HOL
+				}
+			}
+			91 = {
+				cede_province = FROM
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = FLA
+				}
+			}
+			88 = {
+				cede_province = FROM
+			}
+		}
+	}
+	option = {
+		name = "dutch_domination.27.b" # Refuse to enact
+		FROM = {
+			add_country_modifier = {
+				name = holland_not_granted_hainaut_mod
+				duration = 7300
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = HOL
+					}
+				}
+				91 = {
+					add_core = HOL
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = FLA
+					}
+				}
+				88 = {
+					add_core = FLA
+				}
+			}
+		}
+	}
+}
+
+country_event = { #conquest flanders missions selection
+	id = dutch_domination.28
+	title = "dutch_domination.28.t"
+	desc = "dutch_domination.28.desc"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = "dutch_domination.28.a" # Enact
+		ai_chance = { factor = 1 }
+		set_country_flag = mission_branch_flanders_france
+		custom_tooltip = pol_impact_future_missions_tt 
+		swap_non_generic_missions = yes
+		champagne_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		lorraine_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+	option = {
+		name = "dutch_domination.28.b" # Refuse to enact
+		ai_chance = { 
+			factor = 1
+		}
+		set_country_flag = mission_branch_flanders_crusader
+		custom_tooltip = pol_impact_future_missions_tt
+		swap_non_generic_missions = yes
+		add_country_modifier = { 
+			name = fra_resurgence_of_crusader_fervor_modifier
+			duration = 9125
+		}
+		palestine_area = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT 
+		}
+	}
+}
+
+country_event = { #Free State Congo / Belgian Congo
+	id = dutch_domination.31
+	title = "dutch_domination.31.t"
+	desc = "dutch_domination.31.desc"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			walloon_tags = yes
+			AND = {
+				tag = BEL
+				NOT_was_flemish_tag = yes				
+			}
+		}
+	}
+		
+	option = {
+		name = "dutch_domination.31.a" #
+		ai_chance = { 
+			factor = 1
+		}
+		set_country_flag = mission_branch_free_congo
+		swap_non_generic_missions = yes
+		tooltip = {
+			CNG = { override_country_name = FREE_STATE_CONGO }
+			create_union = CNG
+		}
+	}
+	option = {
+		name = "dutch_domination.31.b" #
+		ai_chance = { 
+			factor = 1
+		}
+		set_country_flag = mission_branch_belgian_congo
+		swap_non_generic_missions = yes
+		tooltip = {
+			CNG = { override_country_name = BELGIAN_CONGO }
+			create_subject = {
+				subject_type = colony
+				subject = CNG
+			}
+		}
+	}
+}
+
+#province_event = { #
+#	id = dutch_domination.26
+#	title = "dutch_domination.25.t"
+#	desc = "dutch_domination.25.d"
+#	picture = COURT_eventPicture
+#	
+#	trigger = {
+#		region = low_countries_region 
+#		OR = {
+#			has_province_modifier = growing_trade_hub
+#			has_province_modifier = declining_trade_hub
+#			province_has_center_of_trade_of_level = 1
+#		}
+#		any_province = {
+#			region = low_countries_region
+#			NOT = { 
+#				development = ROOT
+#			}
+#		}
+#		any_province = {
+#			region = low_countries_region
+#			NOT = { 
+#				development = 10
+#			}
+#		}
+#		any_province = {
+#			region = low_countries_region
+#			NOT = { 
+#				development = event_target:my_province
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	#immediate = {
+#	#}
+#	
+#	option = {
+#		name = "dutch_domination.25.a" #Fantastic
+#		random_province = {
+#			limit = { 
+#				region = low_countries_region 
+#				#province_has_center_of_trade_of_level = 1
+#				NOT = {
+#					development = ROOT
+#				}
+#			}
+#			add_province_modifier = { 
+#				name = declining_trade_hub
+#				duration = -1
+#			}
+#		}
+#	}
+#	option = {
+#		name = "dutch_domination.25.a" #Fantastic
+#		ai_chance = { factor = 1 }
+#		if = { 
+#			limit = { 
+#				has_province_modifier = growing_trade_hub  
+#				any_province = {
+#					region = low_countries_region
+#					NOT = { 
+#						development = ROOT
+#					}
+#				}
+#			}
+#			remove_province_modifier = growing_trade_hub
+#			center_of_trade = 1	
+#			random_province = {
+#				limit = { 
+#					region = low_countries_region 
+#					province_has_center_of_trade_of_level = 1
+#					NOT = {
+#						development = ROOT
+#					}
+#				}
+#				add_province_modifier = { 
+#					name = declining_trade_hub
+#					duration = -1
+#				}
+#			}
+#		}
+#	}
+#}
+
+country_event = { #Auto cede provinces to VOC
+	id = dutch_domination.60
+	title = "dutch_domination.60.t"
+	desc = "dutch_domination.60.d"
+	picture = COURT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		VOC = {
+			exists = yes
+			is_subject_of = ROOT
+		}
+		any_owned_province = {
+			OR = {
+				trade_company_region = trade_company_east_india
+				trade_company_region = trade_company_moluccas
+				is_permanent_claim = VOC
+			}
+			is_city = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = {
+				OR = {
+					trade_company_region = trade_company_east_india
+					trade_company_region = trade_company_moluccas
+				}
+				is_city = yes
+			}
+			cede_province = VOC
+		}		
+	}
+	
+	option = {
+		name = "dutch_domination.60.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = dutch_domination.20
+	title = "dutch_domination.20.t"
+	desc = "dutch_domination.20.d"
+	desc = {
+		desc = dutch_domination.20.desc
+		trigger = { 
+			all_low_countries_tags = yes
+			NOT = {				
+				tag = BUR
+			}
+		}
+	}
+	desc = {
+		desc = dutch_domination.20.burgundy
+		trigger = {
+			tag = BUR
+		}
+	}
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		all_low_countries_tags = yes
+	}
+		
+	option = { #accept
+		ai_chance = { 
+			factor = 100
+		}
+		trigger = {
+			all_low_countries_tags = yes
+			NOT = {				
+				tag = BUR
+			}
+		}
+		name = "dutch_domination.20.a" #
+		set_country_flag = dom_ned_modded_missions
+		set_country_flag = update_minors_flavor_321010
+		custom_tooltip = pol_impact_future_missions_tt
+		swap_non_generic_missions = yes
+	}
+	option = { #reject
+		ai_chance = { 
+			factor = 0
+		}
+		trigger = { 
+			all_low_countries_tags = yes
+			NOT = {				
+				tag = BUR
+			}
+		}
+		name = "dutch_domination.20.b" #
+		custom_tooltip = pol_impact_future_missions_tt
+		swap_non_generic_missions = yes
+		set_country_flag = update_minors_flavor_321010
+	}
+	option = { #burgundy accept
+		ai_chance = { 
+			factor = 100
+		}
+		trigger = {
+			tag = BUR
+		}
+		name = "dutch_domination.20.a" #
+		set_country_flag = dom_ned_modded_missions
+		set_country_flag = update_minors_flavor_321010
+		custom_tooltip = pol_impact_future_missions_tt
+		swap_non_generic_missions = yes
+	}
+	option = { #burgundy reject
+		ai_chance = { 
+			factor = 0
+		}
+		trigger = {
+			tag = BUR
+		}
+		name = "dutch_domination.20.b" #
+		custom_tooltip = pol_impact_future_missions_tt
+		swap_non_generic_missions = yes
+		set_country_flag = update_minors_flavor_321010
+	}
+}
+
+#country_event = { #burgundian option
+#	id = dutch_domination.28
+#	title = "dutch_domination.28.t"
+#	desc = "dutch_domination.28.d"
+#	picture = COURT_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		OR = {
+#			tag = NED tag = HOL tag = UTR tag = GEL tag = FRI tag = EFR tag = GRN tag = FLA tag = BRB tag = IJS tag = HAI tag = LUX tag = VOC tag = ZEE tag = LBG
+#			tag = BUR tag = LOT
+#			tag = LIE
+#			AND = {
+#				is_playing_custom_nation = yes 
+#				OR = {
+#					primary_culture = dutch
+#					primary_culture = flemish
+#					primary_culture = frisian
+#				}
+#			}
+#		}
+#	}
+#		
+#	option = { #accept
+#		ai_chance = { 
+#			factor = 100
+#		}
+#		name = "dutch_domination.28.a" #
+#		set_country_flag = dom_ned_modded_missions
+#		set_country_flag = update_minors_flavor_320714
+#		custom_tooltip = pol_impact_future_missions_tt
+#		swap_non_generic_missions = yes
+#	}
+#	option = { #reject
+#		ai_chance = { 
+#			factor = 0
+#		}
+#		name = "dutch_domination.28.b" #
+#		custom_tooltip = pol_impact_future_missions_tt
+#		swap_non_generic_missions = yes
+#		set_country_flag = update_minors_flavor_320714
+#	}
+#}
+
+country_event = {
+	id = dutch_domination.70
+	title = "dutch_domination.70.t"
+	desc = {
+		desc = dutch_domination.EVTDESC1
+		trigger = {
+			has_country_flag = choose_branch_conquest
+		}	
+	}
+	desc = {
+		desc = dutch_domination.EVTDESC8
+		trigger = {
+			has_country_flag = choose_branch_republic
+		}		
+	}
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = NED tag = HOL tag = UTR tag = GEL tag = FRI tag = EFR tag = GRN tag = FLA tag = BRB tag = IJS tag = HAI tag = LUX
+			tag = BUR
+		}
+	}
+		
+	option = { #north
+		ai_chance = { 
+			factor = 100
+		}
+		trigger = {
+			has_country_flag = choose_branch_conquest
+		}
+		name = "dutch_domination.EVTOPTA1" #
+		switch_missions_with = {
+			flag = conquest
+			option = small
+		}
+		clr_country_flag = choose_branch_conquest
+	}
+	option = { #united
+		ai_chance = { 
+			factor = 0
+		}
+		trigger = {
+			has_country_flag = choose_branch_conquest		
+		}
+		name = "dutch_domination.EVTOPTB1" #
+		switch_missions_with = {
+			flag = conquest
+			option = large
+		}
+		clr_country_flag = choose_branch_conquest
+	}
+	
+	option = { #orangist
+		ai_chance = { 
+			factor = 100
+		}
+		trigger = {
+			has_country_flag = choose_branch_republic
+		}
+		name = "dutch_domination.EVTOPTA8" #
+		switch_missions_with = {
+			flag = republic
+			option = orangist
+		}
+		clr_country_flag = choose_branch_republic
+	}
+	option = { #statist
+		ai_chance = { 
+			factor = 0
+		}
+		trigger = {
+			has_country_flag = choose_branch_republic		
+		}
+		name = "dutch_domination.EVTOPTB8" #
+		switch_missions_with = {
+			flag = republic
+			option = statist
+		}
+		clr_country_flag = choose_branch_republic
+	}
+}
+
+country_event = {
+	id = dutch_domination.98
+	title = "dutch_domination.99.t"
+	desc = "dutch_domination.99.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	hidden =  yes
+	
+	immediate = {
+		grant_independence = yes
+		BUR = { exile_ruler_as = { name = bur_ned_exiled_ruler } exile_heir_as = bur_ned_exiled_heir } #exile_consort_as = bur_ned_exiled_consort  }
+		set_ruler = bur_ned_exiled_ruler
+		set_heir = bur_ned_exiled_heir
+		create_union = BUR
+		add_government_reform = burgundian_state_reform
+		add_country_modifier = { 
+			name = burgundian_successor
+			duration = 3650
+		}
+	}
+	
+	option = {
+		name = "dutch_domination.99.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = dutch_domination.99
+	title = "dutch_domination.99.t"
+	desc = "dutch_domination.99.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		always = no
+	}
+	option = {
+		name = "dutch_domination.99.a"
+		ai_chance = { factor = 1 }
+		BUR = {
+			country_event = { 
+				id = dutch_domination.12
+			}
+		}
+	}
+	option = {
+		name = "dutch_domination.99.b"
+		ai_chance = { factor = 1 }
+		BUR = {
+			country_event = { 
+				id = dutch_domination.14
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dutch_domination.999
+	title = "dutch_domination.999.t"
+	desc = "dutch_domination.999.desc"
+	picture = COURT_eventPicture
+	
+	hidden = yes
+	#major = yes
+
+	trigger = {
+		is_month = 11
+		NOT = { has_country_flag = checked_trade_income_start }
+		all_low_countries_tags = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		country_event = {
+			id = dutch_domination.9999
+			days = 30
+		}
+		set_trade_income = yes
+		set_country_flag = checked_trade_income_start
+	}
+	
+	option = {
+		name = "dutch_domination.99.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = dutch_domination.9999
+	title = "dutch_domination.999.t"
+	desc = "dutch_domination.999.desc"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		all_low_countries_tags = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	immediate = {
+		country_event = {
+			id = dutch_domination.9999
+			days = 30
+		}
+		set_trade_income = yes
+	}
+	
+	option = {
+		name = "dutch_domination.99.a"
+		ai_chance = { factor = 1 }
+	}
+}

@@ -169,6 +169,8 @@ capital = 1931	# Emden
 	}
 }
 
+#1505.1.1 = { add_devastation = 50 } #East Frisia claims to be defender of the city Groningen - in retaliation, twenty-four dukes and counts took up arms against edzard and devastated the lands. Edzard receives an imperial ban and is excommunicated
+
 1528.2.14 = {
 	monarch = {
 		name = "Enno II"
