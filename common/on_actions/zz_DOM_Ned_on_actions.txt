@@ -102,12 +102,6 @@ on_startup = {
 		country_event = { id = flavor_fra.206 }
 	}
 	if = {
-		limit = { 
-			NOT = { is_year = 1445 }
-		}
-		country_event = { id = dutch_domination.20 }
-	}
-	if = {
 		limit = {
 			NOT = { has_global_flag = end_of_the_tatar_yoke }
 			owns = 466
@@ -207,12 +201,6 @@ on_country_released = {
 		limit = { NOT = { is_year = 1445 } }
 		set_country_flag = released_in_1444
 	}
-	THIS = {
-		country_event = {
-			id = dutch_domination.20
-			days = 1
-		}
-	}
 }
 
 # ROOT = New vassal, FROM = Overlord
@@ -242,12 +230,6 @@ on_create_vassal = {
 		limit = { NOT = { is_year = 1445 } }
 		set_country_flag = released_in_1444
 	}
-	ROOT = {
-		country_event = {
-			id = dutch_domination.20
-			days = 1
-		}
-	}
 }
 
 on_country_creation = {
@@ -270,18 +252,6 @@ on_country_creation = {
 		change_government = theocracy
 		add_government_reform = papacy_reform
 	}
-	#THIS = {
-	#	country_event = {
-	#		id = dutch_domination.20
-	#		days = 1
-	#	}
-	#}
-	#ROOT = {
-	#	country_event = {
-	#		id = dutch_domination.20
-	#		days = 1
-	#}
-	#}
 }
 
 #on_explore_coast

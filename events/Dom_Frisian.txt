@@ -282,9 +282,6 @@ country_event = {
 				GRN = { 
 					set_country_flag = had_schieringers_vetkopers 
 					add_accepted_culture = frisian
-					country_event = {
-						id = dutch_domination.20
-					}
 				}
 			}
 		}
@@ -308,9 +305,6 @@ country_event = {
 				GRN = { 
 					set_country_flag = had_schieringers_vetkopers 
 					add_accepted_culture = frisian
-					country_event = {
-						id = dutch_domination.20
-					}
 				}
 			}
 		}

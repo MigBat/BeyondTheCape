@@ -54,9 +54,6 @@
  ned_commission_art_title: "Commission Art"
  ned_commission_art_desc: "By spending some gold we can commission artists in our country to make masterpieces."
  
- dom_ned_reload_missions_update_title: "Reload Missions"
- dom_ned_reload_missions_update_desc: "After an update, there is a chance that the current missions are no longer up to date, to make sure it is up to date again, use this decision."
- 
  not_magna_frisia_tt: "Did §RNot§! become §YMagna Frisia§!"
  ned_commission_art_tt: "This event allows us to choose what art we should commission"
  not_recently_art_tt: "Did not recently Commission Art"

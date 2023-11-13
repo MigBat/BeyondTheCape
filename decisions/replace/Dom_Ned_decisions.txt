@@ -285,29 +285,6 @@ country_decisions = {
 		ai_importance = 400
 	}
 	
-	dom_ned_reload_missions_update = {
-		major = yes
-		potential = {
-			all_low_countries_tags = yes
-			NOT = {
-				has_country_flag = update_minors_flavor_321010
-			}
-		}
-		provinces_to_highlight = {
-		}
-		allow = {
-		}
-	 	effect = {
-			country_event = {
-				id = dutch_domination.20
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 400
-	}
-	
 	ned_commission_art = {
 		color = { 255 162 25 }
 		major = yes
