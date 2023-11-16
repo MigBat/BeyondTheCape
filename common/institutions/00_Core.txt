@@ -1133,6 +1133,9 @@ new_world_i = {
 					trade_goods = furs
 				}
 			}
+			owner = {
+				technology_group = nomadic
+			}
 		}
 		modifier = {
 			factor = 0.4
@@ -2008,11 +2011,18 @@ global_trade = {
 			province_trade_power = 45
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.5
 			scale = yes
 			potential = {
 				OR = {
 					trade_goods = furs
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_printing_press_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = printing_press
 				}
 			}
 		}
@@ -2115,11 +2125,6 @@ global_trade = {
 					overlord = { has_institution = global_trade }
 				}
 			}
-		}
-		
-		modifier = {
-			factor = 0.4
-			printing_press = 100
 		}
 		modifier = {
 			factor = 0.8
