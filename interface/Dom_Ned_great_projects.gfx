@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	#spriteType = {
+	#	name = "GFX_great_project_hollandse_polders"	
+	#	texturefile = "gfx//interface//great_projects//great_project_hollandse_polders_3.dds"
+	#}
+	spriteType = {
+		name = "GFX_great_project_fortress_of_luxemburg"	
+		texturefile = "gfx//interface//great_projects//great_project_fortress_of_luxemburg.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_palace_of_coudenberg"	
+		texturefile = "gfx//interface//great_projects//great_project_palace_of_coudenberg.dds"
+	}
+}
