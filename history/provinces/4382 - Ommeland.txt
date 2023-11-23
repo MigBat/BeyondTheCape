@@ -1,0 +1,62 @@
+# 4383 Ommeland - Groningen, Ommeland & Drenthe
+
+owner = FRI
+controller = FRI
+capital = "Groningen"
+is_city = yes
+culture = frisian
+religion = catholic
+hre = yes
+base_tax = 4
+base_production = 4
+base_manpower = 2
+trade_goods = livestock #perhaps something else
+add_core = FRI
+add_core = GRN
+add_claim = EFR
+fort_15th = yes #City of Groningen
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+add_permanent_province_modifier = {
+	name = dairy_production_mod
+	duration = -1
+}
+
+#COPIED FROM PROV1931, but effectively the same
+1426.1.1 = { revolt = { type = pretender_rebels size = 2 leader = "Focko Ukena" } controller = REB add_devastation = 50 } # Conflict with Focko Ukena
+1427.10.28 = { revolt = {} controller = FRI } # Focko Ukena wins the Battle of Detern and captures Ocko II
+#
+1498.1.1 = { owner = GRN controller = GRN } # Saxony controls Friesland, Groningen becomes independent
+1500.1.1 = { controller = SAX } #Groningen is conquered
+1500.9.12 = { controller = GRN } #Saxon Duke dies in Emden
+#1505.1.1 = { controller = EFR } #East Frisia claims to be defender of the city Groningen
+1528.10.20 = { owner = GEL controller = GEL } #treaty of Gorinchem Groningen becomes part of Gelre
+1536.1.1 = { religion = reformed }
+1536.5.1 = { controller = GEL } #meindert van ham
+1536.8.5 = { owner = BUR controller = BUR add_core = BUR } #battle of heiligerlee
+#1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = SPA } perpetual edict of 17 provinces
+1559.5.12 = { unrest = 3 } # New bishoprics established in the Lowlands create an outrage
+1565.1.1 = { unrest = 5 } # Letters of Segovia, harsh persecution of Calvinists advocated by Philip I
+1566.4.5 = { unrest = 3 } # 'Eedverbond der Edelen', Margaretha of Parma promises leniency
+1567.9.10 = { unrest = 4 } # Counts of Egmont & Hoorne arrested
+1568.5.23 = { revolt = { type = nationalist_rebels size = 2 name = "Les Gueux"	leader = "Louis of Nassau" } controller = REB } # Louis of Nassau beats a Spanish army at Heiligerlee
+1568.7.21 = { revolt = {} controller = BUR } # Louis of Nassau is beaten at Jemmingen (actually just across the German border)
+1569.1.1 = { unrest = 12 } # The Duke of Alba reforms the tax system ('tiende penning')
+1570.1.1 = { unrest = 20 } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
+1577.2.12 = { unrest = 16 owner = NED controller = NED add_core = NED } # Eeuwig Edict accepted by Don Juan formation of Union of Brussels, puts an end to the early period of dutch revolt
+1580.3.3 = { controller = SPA } #Verraad van Rennenberg
+1594.7.22 = { controller = NED } #Reductie van Groningen
+1648.10.24 = { hre = no } # The Peace of Westphalia
+1681.1.1 = { base_tax = 9 
+base_production = 9 } # Protestants expelled from France
+1810.7.10 = {	owner = FRA
+	controller = FRA
+	add_core = FRA
+} # Annexed by France
+1813.11.30 = {	owner = NED
+	controller = NED
+	remove_core = FRA
+} # William returns to the Netherlands

@@ -85,6 +85,12 @@ english_french_act_of_union = {
 				}
 				restore_country_name = yes
 			}
+			if = {
+				limit = {
+					has_country_modifier = ave_anglo_french_imperium
+				}
+				country_event = { id = flavor_gbr.20 }	#Renew renaming
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -1879,17 +1885,18 @@ discipline_for_the_marines_acts = {
 		has_issue_unlocked = {
 			issue = discipline_for_the_marines_acts
 		}
+		has_not_enacted_parliament_action = {
+			parliament_action = discipline_for_the_marines_acts
+		}
 	}
-	
+		
 	effect = {
-		add_mil_power = 50
+		add_country_modifier = {
+			name = discipline_for_the_marines_acts_modifier
+			duration = -1
+		}
 	}
-	
-	modifier = {
-		morale_damage = 0.1
-		is_marine_modifier = yes
-	}
-	
+		
 	chance = {
 		factor = 1
 		modifier = {
@@ -1911,17 +1918,18 @@ improved_man_of_war_acts = {
 		has_issue_unlocked = {
 			issue = improved_man_of_war_acts
 		}
+		has_not_enacted_parliament_action = {
+			parliament_action = improved_man_of_war_acts
+		}
 	}
 	
 	effect = {
-		add_navy_tradition = 5
+		add_country_modifier = {
+			name = improved_man_of_war
+			duration = -1
+		}
 	}
-	
-	modifier = {
-		ship_durability = 0.15
-		is_man_of_war_modifier = yes
-	}
-	
+		
 	chance = {
 		factor = 1
 		modifier = {
@@ -1943,14 +1951,16 @@ army_reform_acts = {
 		has_issue_unlocked = {
 			issue = army_reform_acts
 		}
+		has_not_enacted_parliament_action = {
+			parliament_action = army_reform_acts
+		}
 	}
 	
 	effect = {
-		add_army_tradition = 5
-	}
-	
-	modifier = {
-		fire_damage_received = -0.1
+		add_country_modifier = {
+			name = army_reform_acts_modifier
+			duration = -1
+		}
 	}
 	
 	chance = {

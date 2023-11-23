@@ -62,25 +62,7 @@ country_event = {
 		set_country_flag = civil_war_in_castile
 
 		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				POR = { has_regency = yes }
-			}
-			modifier = {
-				factor = 0.1
-				is_rival = POR
-			}
-			modifier = {
-				factor = 2
-				alliance_with = POR
-			}
-			modifier = {
-				factor = 0
-				POR = {
-					NOT = { government = monarchy }
-				}
-			}
+			factor = 0
 		}
 
 		ARA = {
@@ -114,25 +96,7 @@ country_event = {
 		set_country_flag = civil_war_in_castile
 
 		ai_chance = {
-			factor = 100
-			modifier = {
-				factor = 0
-				ARA = { has_regency = yes }
-			}
-			modifier = {
-				factor = 0.1
-				is_rival = ARA
-			}
-			modifier = {
-				factor = 2
-				alliance_with = ARA
-			}
-			modifier = {
-				factor = 0
-				ARA = {
-					NOT = { government = monarchy }
-				}
-			}
+			factor = 1
 		}
 
 		POR = {
@@ -216,9 +180,7 @@ country_event = {
 		}
 
 		add_prestige = -10
-		hidden_effect = {
-			set_country_flag = disregarded_claim
-		}
+		set_country_flag = disregarded_claim
 
 		CAS = {
 			country_event = { id = castilian_civil_war.5 days = 15 } # Joanna de Castile
@@ -316,6 +278,7 @@ country_event = {
 			name = "King of"
 			dynasty = "Portugal"
 			country_of_origin = POR
+			culture = portugese
 			age = 15
 			male = yes
 		}
@@ -330,6 +293,7 @@ country_event = {
 			mil = 5
 			claim = 70
 			female = yes
+			block_disinherit = yes
 		}
 
 		set_heir_flag = isabel
@@ -345,6 +309,7 @@ country_event = {
 				mil = 5
 				claim = 70
 				female = yes
+				block_disinherit = yes
 			}
 			set_heir_flag = isabel
 		}
@@ -437,6 +402,7 @@ country_event = {
 			name = "King of"
 			dynasty = "Aragon"
 			country_of_origin = ARA
+			culture = aragonese
 			age = 15
 			male = yes
 		}
@@ -451,9 +417,10 @@ country_event = {
 			mil = 3
 			claim = 70
 			female = yes
+			block_disinherit = yes
 		}
 
-		set_heir_flag = joanna
+		set_heir_flag = joana
 
 		ARA = {
 			define_heir = {
@@ -466,8 +433,9 @@ country_event = {
 				mil = 3
 				claim = 70
 				female = yes
+				block_disinherit = yes
 			}
-			set_heir_flag = joanna
+			set_heir_flag = joana
 		}
 
 		add_opinion = {
@@ -587,7 +555,8 @@ country_event = {
 		}
 
 		add_prestige = -10
-
+		set_country_flag = disregarded_claim
+		
 		CAS = {
 			set_country_flag = no_contest
 			random_owned_province = {
@@ -908,6 +877,7 @@ country_event = {
 			mil = 5
 			claim = 70
 			female = yes
+			block_disinherit = yes
 		}
 
 		set_heir_flag = isabel
@@ -931,6 +901,7 @@ country_event = {
 				name = "King of"
 				dynasty = "Portugal"
 				country_of_origin = POR
+				culture = portugese
 				age = 15
 				male = yes
 			}
@@ -944,6 +915,7 @@ country_event = {
 				mil = 5
 				claim = 70
 				female = yes
+				block_disinherit = yes
 			}
 			set_heir_flag = isabel
 		}
@@ -1027,9 +999,10 @@ country_event = {
 			mil = 3
 			claim = 70
 			female = yes
+			block_disinherit = yes
 		}
 
-		set_heir_flag = joanna
+		set_heir_flag = joana
 
 		CAS = {
 			define_ruler = {
@@ -1043,13 +1016,14 @@ country_event = {
 				claim = 50
 				female = yes
 			}
-			clr_ruler_flag = joanna
+			clr_ruler_flag = joana
 			set_ruler_flag = isabella
 
 			define_consort = {
 				name = "King of"
 				dynasty = "Aragon"
 				country_of_origin = ARA
+				culture = aragonese
 				age = 15
 				male = yes
 			}
@@ -1063,8 +1037,9 @@ country_event = {
 				mil = 3
 				claim = 70
 				female = yes
+				block_disinherit = yes
 			}
-			set_heir_flag = joanna
+			set_heir_flag = joana
 		}
 
 		ARA = {
@@ -1254,7 +1229,7 @@ country_event = {
 			if = {
 				limit = {
 					ARA = {
-						has_heir_flag = joanna
+						has_heir_flag = joana
 					}
 				}
 				ARA = { set_country_flag = won_castilian_civil_war }
@@ -1277,6 +1252,24 @@ country_event = {
 			}
 		}
 		add_stability = -1		
+		hidden_effect = {
+			if = {
+				limit = {
+					POR = {
+						has_heir_flag = isabel
+					}
+				}
+				POR = { set_country_flag = won_castilian_civil_war }
+			}
+			if = {
+				limit = {
+					ARA = {
+						has_heir_flag = joana
+					}
+				}
+				ARA = { set_country_flag = won_castilian_civil_war }
+			}
+		}
 	}
 }
 
@@ -1342,7 +1335,47 @@ country_event = {
 
 	major = yes
 	fire_only_once = yes
-	is_triggered_only = yes
+	
+	trigger = {
+		tag = CAS
+		OR = {
+			POR = {
+				has_country_flag = pressed_claim
+				NOT = { has_country_flag = lost_war }
+			}
+			ARA = {
+				has_country_flag = pressed_claim
+				NOT = { has_country_flag = lost_war }
+			}
+		}
+		CAS = { NOT = { has_disaster = castilian_civil_war }}
+		OR = {
+			AND = {	# Isabel Queen of Castile
+				POR = { has_heir_flag = isabel }
+				CAS = { has_ruler_flag = isabel }
+			}
+			AND = {	# Isabel Queen of Portugal
+				POR = { has_ruler_flag = isabel }
+				CAS = { has_heir_flag = isabel }
+			}
+			AND = {	# Isabel Queen of Castile and Portugal
+				POR = { has_ruler_flag = isabel }
+				CAS = { has_ruler_flag = isabel }
+			}
+			AND = {	# Joana Queen of Castile
+				ARA = { has_heir_flag = joana }
+				CAS = { has_ruler_flag = joana }
+			}
+			AND = {	# Joana Queen of Aragon
+				ARA = { has_ruler_flag = joana }
+				CAS = { has_heir_flag = joana }
+			}
+			AND = {	# Joana Queen of Castile and Aragon
+				ARA = { has_ruler_flag = joana }
+				CAS = { has_ruler_flag = joana }
+			}
+		}
+	}
 
 	mean_time_to_happen = {
 		days = 1
@@ -1367,8 +1400,21 @@ country_event = {
 				}
 			}
 			OR = {
-				prestige = POR
-				legitimacy = POR
+				AND = {
+					prestige = POR
+					NOT = { POR = { prestige = 100 } }
+				}
+				AND = {
+					legitimacy = POR
+					NOT = { POR = { legitimacy = 100 } }
+				}
+				AND = {
+					stability = POR
+					NOT = { POR = { stability = 3 } }
+				}
+				219 = {
+					higher_development_than = 227
+				}
 			}
 		}
 
@@ -1393,22 +1439,37 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ARA = { has_heir_flag = joanna }
-					CAS = { has_ruler_flag = joanna }
+					ARA = { has_heir_flag = joana }
+					CAS = { has_ruler_flag = joana }
 				}
 				AND = {
-					CAS = { has_heir_flag = joanna }
-					ARA = { has_ruler_flag = joanna }
+					CAS = { has_heir_flag = joana }
+					ARA = { has_ruler_flag = joana }
 				}
 				AND = {
-					CAS = { has_ruler_flag = joanna }
-					ARA = { has_ruler_flag = joanna }
+					CAS = { has_ruler_flag = joana }
+					ARA = { has_ruler_flag = joana }
 				}
 			}
 			OR = {
-				OR = {
-					prestige = ARA
-					legitimacy = ARA
+				AND = {
+					OR = {
+						AND = {
+							prestige = ARA
+							NOT = { ARA = { prestige = 100 } }
+						}
+						AND = {
+							legitimacy = ARA
+							NOT = { ARA = { legitimacy = 100 } }
+						}
+						AND = {
+							stability = ARA
+							NOT = { ARA = { stability = 3 } }
+						}
+						219 = {
+							higher_development_than = 214
+						}
+					}
 				}
 				AND = {
 					ai = yes
@@ -1451,8 +1512,23 @@ country_event = {
 				}
 			}
 			AND = { 
-				NOT = { prestige = POR }
-				NOT = { legitimacy = POR }
+				OR = {
+					NOT = { prestige = POR }
+					POR = { prestige = 100 }
+				}
+				OR = {
+					NOT = { legitimacy = POR }
+					POR = { legitimacy = 100 }
+				}
+				OR = {
+					NOT = { stability = POR }
+					POR = { stability = 3 }
+				}
+				NOT = { 
+					219 = {
+						higher_development_than = 227
+					}
+				}
 			}
 		}
 
@@ -1477,21 +1553,36 @@ country_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ARA = { has_heir_flag = joanna }
-					CAS = { has_ruler_flag = joanna }
+					ARA = { has_heir_flag = joana }
+					CAS = { has_ruler_flag = joana }
 				}
 				AND = {
-					CAS = { has_heir_flag = joanna }
-					ARA = { has_ruler_flag = joanna }
+					CAS = { has_heir_flag = joana }
+					ARA = { has_ruler_flag = joana }
 				}
 				AND = {
-					CAS = { has_ruler_flag = joanna }
-					ARA = { has_ruler_flag = joanna }
+					CAS = { has_ruler_flag = joana }
+					ARA = { has_ruler_flag = joana }
 				}
 			}
 			AND = {
-				NOT = { prestige = ARA }
-				NOT = { legitimacy = ARA }
+				OR = {
+					NOT = { prestige = ARA }
+					ARA = { prestige = 100 }
+				}
+				OR = {
+					NOT = { legitimacy = ARA }
+					ARA = { legitimacy = 100 }
+				}
+				OR = {
+					NOT = { stability = ARA }
+					ARA = { stability = 3 }
+				}
+				NOT = { 
+					219 = {
+						higher_development_than = 214
+					}
+				}
 				OR = {
 					ARA = { ai = no }			
 					AND = {
@@ -1551,24 +1642,24 @@ country_event = {
 					NOT = { has_ruler_flag = isabel }
 				}
 			}
-			# Castile Joanna died
+			# Castile Joana died
 			AND = {
 				ARA = {
-					has_heir_flag = joanna
+					has_heir_flag = joana
 				}
 				CAS = {
-					NOT = { has_heir_flag = joanna }
-					NOT = { has_ruler_flag = joanna }
+					NOT = { has_heir_flag = joana }
+					NOT = { has_ruler_flag = joana }
 				}
 			}
-			# Aragon Joanna died
+			# Aragon Joana died
 			AND = {
 				CAS = {
-					has_heir_flag = joanna
+					has_heir_flag = joana
 				}
 				ARA = {
-					NOT = { has_heir_flag = joanna }
-					NOT = { has_ruler_flag = joanna }
+					NOT = { has_heir_flag = joana }
+					NOT = { has_ruler_flag = joana }
 				}
 			}
 		}
@@ -1615,11 +1706,11 @@ country_event = {
 
 		trigger = {
 			ARA = {
-				has_heir_flag = joanna
+				has_heir_flag = joana
 			}
 			CAS = {
-				NOT = { has_heir_flag = joanna }
-				NOT = { has_ruler_flag = joanna }
+				NOT = { has_heir_flag = joana }
+				NOT = { has_ruler_flag = joana }
 			}
 		}
 
@@ -1633,11 +1724,11 @@ country_event = {
 
 		trigger = {
 			CAS = {
-				has_heir_flag = joanna
+				has_heir_flag = joana
 			}
 			ARA = {
-				NOT = { has_heir_flag = joanna }
-				NOT = { has_ruler_flag = joanna }
+				NOT = { has_heir_flag = joana }
+				NOT = { has_ruler_flag = joana }
 			}
 		}
 

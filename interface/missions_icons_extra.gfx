@@ -1,0 +1,50 @@
+spriteTypes = {
+	spriteType = {
+		name = "mission_fort_build"
+		texturefile = "gfx//interface//missions//mission_fort_build.dds"
+	}
+	spriteType = {
+		name = "mission_fryskeskutjes"
+		texturefile = "gfx//interface//missions//mission_fryskeskutjes.dds"
+	}
+	spriteType = {
+		name = "mission_golden_inlet"
+		texturefile = "gfx//interface//missions//mission_golden_inlet.dds"
+	}
+	spriteType = {
+		name = "mission_magnafrisia"
+		texturefile = "gfx//interface//missions//mission_magnafrisia.dds"
+	}
+	spriteType = {
+		name = "mission_brabantflag"
+		texturefile = "gfx//interface//missions//mission_brabantflag.dds"
+	}
+	spriteType = {
+		name = "mission_hollandflag"
+		texturefile = "gfx//interface//missions//mission_hollandflag.dds"
+	}
+	spriteType = {
+		name = "mission_hainautflag"
+		texturefile = "gfx//interface//missions//mission_hainautflag.dds"
+	}
+	spriteType = {
+		name = "mission_flemishflag"
+		texturefile = "gfx//interface//missions//mission_flemishflag.dds"
+	}
+	spriteType = {
+		name = "mission_leo_belgicus"
+		texturefile = "gfx//interface//missions//mission_leobelgicus.dds"
+	}
+	spriteType = {
+		name = "mission_domstad"
+		texturefile = "gfx//interface//missions//mission_domstad.dds"
+	}
+	spriteType = {
+		name = "mission_nijmegen"
+		texturefile = "gfx//interface//missions//mission_nijmegen.dds"
+	}
+	spriteType = {
+		name = "mission_frisian_sea"
+		texturefile = "gfx//interface//missions//mission_frisian_sea2.dds"
+	}
+}

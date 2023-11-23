@@ -2,34 +2,52 @@
 union = {
 	first = BUR
 	second = FLA
-	start_date = 1369.1.1
+	start_date = 1444.1.1
 	end_date = 1493.1.1
 }
 union = {
 	first = BUR
 	second = BRB
-	start_date = 1430.1.1
+	start_date = 1444.1.1
 	end_date = 1477.1.5
 }
 union = {
 	first = BUR
 	second = HOL
-	start_date = 1432.1.1
+	start_date = 1444.1.1
 	end_date = 1477.1.5
 }
-#vassal = {
-#	first = HAB
-#	second = NED
-#	start_date = 1477.1.5
-#	end_date = 1519.1.12
-#}
+union = { #Burgundian Succession
+	first = HAB
+	second = BUR
+	start_date = 1477.8.19 #marriage with Maximilian I of Austria
+	end_date = 1482.3.27
+}
+vassal = { #Death of Mary
+	first = HAB
+	second = BUR
+	start_date = 1482.3.27
+	end_date = 1519.1.12
+}
+union = {
+	first = SPA
+	second = BUR
+	start_date = 1519.1.12
+	end_date = 1549.11.4
+}
 vassal = {
 	first = SPA
-	second = NED
+	second = BUR
 	start_date = 1549.11.4
-	end_date = 1579.1.23
+	end_date = 1577.2.12
 }
 
+vassal = { #union of brussels
+	first = SPA
+	second = NED
+	start_date = 1577.2.12
+	end_date = 1579.1.23
+}
 #union = {
 #	first = BUR
 #	second = HAI
@@ -40,7 +58,7 @@ vassal = {
 vassal = {
 	first = BUR
 	second = NEV
-	start_date = 1407.1.1
+	start_date = 1444.1.1
 	end_date = 1465.1.1
 }
 
@@ -57,7 +75,7 @@ union = {
 	first = BUR
 	second = GEL
 	start_date = 1477.6.27
-	end_date = 1477.8.1
+	end_date = 1492.1.1 #1477.8.1
 }
 
 # Duke of Kleves/Gelre
@@ -109,28 +127,28 @@ alliance = {
 }
 
 # Maria I/Marie I
-alliance = {
-	first = BUR
-	second = GEL
-	start_date = 1477.6.27
-	end_date = 1477.8.1
-}
+#alliance = {
+#	first = BUR
+#	second = GEL
+#	start_date = 1477.6.27
+#	end_date = 1477.8.1
+#}
+#
+## Burgundy and Gelre
+#alliance = {
+#	first = HAB
+#	second = GEL
+#	start_date = 1477.8.2
+#	end_date = 1492.1.1
+#}
 
-# Burgundy and Gelre
-alliance = {
-	first = HAB
-	second = GEL
-	start_date = 1477.8.2
-	end_date = 1492.1.1
-}
-
-# Duke of Kleves/Gelre
-alliance = {
-	first = KLE
-	second = GEL
-	start_date = 1539.2.6
-	end_date = 1543.1.1
-}
+# Duke of Kleves/Gelre - Union not alliance
+#alliance = {
+#	first = KLE
+#	second = GEL
+#	start_date = 1539.2.6
+#	end_date = 1543.1.1
+#}
 
 # Netherlands and Brandenburg
 alliance = {

@@ -81,6 +81,14 @@ aristocracy_ideas = {
 			factor = 1.25
 			has_idea_group = spy_ideas 
 		}
+		modifier = {
+			factor = 100
+			OR = {
+				tag = POL
+				tag = LIT
+				tag = PLC
+			}
+		}
 	}
 }
 
@@ -419,6 +427,7 @@ religious_ideas = {
 	}
 	religious_tradition = {
 		reverse_relation_with_same_religion = 10
+		religious_unity = 0.10
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
@@ -781,6 +790,13 @@ defensive_ideas = {
 			factor = 1.25
 			is_march = yes
 		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				tag = MOS
+				tag = RUS
+			}
+		}
 	}
 }
 
@@ -939,16 +955,16 @@ exploration_ideas = {
 	important = yes
 
 	bonus = {
-		min_autonomy_in_territories = -0.1
+		cb_on_overseas = yes
 		monthly_portuguese_saudade = 0.075
-	}
-
-	colonial_ventures = {
-		colonists = 1
 	}
 
 	overseas_exploration = {
 		range = 0.5
+	}
+
+	colonial_ventures = {
+		colonists = 1
 	}
 
 	land_of_opportunity = {
@@ -971,7 +987,7 @@ exploration_ideas = {
 	
 	global_empire = {
 		naval_forcelimit_modifier = 0.25
-		treasure_fleet_income = 0.25
+		min_autonomy_in_territories = -0.1
 	}
 
 	ai_will_do = {
@@ -1059,42 +1075,56 @@ exploration_ideas = {
 					region = iberia_region
 					region = british_isles_region
 					region = low_countries_region
-					region = scandinavia_region
 				}
 			}
 			NOT = { technology_group = high_american }
 		}
 		modifier = {
-			factor = 0.5
+			factor = 10
+			capital_scope = {
+				region = france_region
+				region = iberia_region
+				region = british_isles_region
+				region = low_countries_region
+			}
+		}
+		modifier = {
+			factor = 0.1
 			tag = ARA
+		}
+		modifier = {
+			factor = 0.1
+			tag = PRO
 		}
 		modifier = {
 			factor = 0
 			NOT = { adm_tech = 6 }
-			capital_scope = {
-				NOT = {
-					region = iberia_region
-				}
-			}
+			NOT = { tag = POR }
+		}
+		modifier = {
+			factor = 0
+			NOT = { adm_tech = 9 }
+			NOT = { tag = POR }
+			NOT = { tag = CAS }
 		}
 		modifier = {
 			factor = 10
 			technology_group = high_american
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			num_of_ports = 5
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			num_of_ports = 10
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			num_of_ports = 15
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			num_of_ports = 20
 		}
 		modifier = {
@@ -1102,11 +1132,7 @@ exploration_ideas = {
 			OR = {
 				tag = POR
 				tag = CAS
-			}
-		}
-		modifier = {
-			factor = 100
-			OR = {
+				tag = SPA
 				tag = GBR
 				tag = NED
 				tag = ENG
@@ -1388,6 +1414,13 @@ quantity_ideas = {
 				has_idea_group = economic_ideas
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+				tag = MOS
+				tag = RUS
+			}
+		}
 	}
 }
 
@@ -1397,7 +1430,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
-		cb_on_primitives = yes
+		treasure_fleet_income = 0.25
 		monthly_portuguese_saudade = 0.075
 	}
 
@@ -1437,10 +1470,12 @@ expansion_ideas = {
 		}
 		modifier = {
 			factor = 0
-			OR = {
-				tag = CAS
-				tag = POR
-				tag = SPA
+			NOT = {
+				OR = {
+					tag = MOS
+					tag = RUS
+					is_colonial_nation = yes
+				}
 			}
 			NOT = { has_idea_group = exploration_ideas }
 		}
@@ -1448,7 +1483,6 @@ expansion_ideas = {
 			factor = 5
 			OR = {
 				tag = CAS
-				tag = POR
 				tag = SPA
 			}
 		}
@@ -1478,6 +1512,10 @@ expansion_ideas = {
 				technology_group = eastern
 				technology_group = muslim
 			}
+		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
 		}
 	}
 }
@@ -1748,6 +1786,45 @@ naval_ideas = {
 		modifier = {
 			factor = 10
 			has_government_attribute = is_pirate_republic_reform
+		}
+		modifier = {
+			factor = 1000
+			OR = {
+				tag = GBR
+				tag = ENG
+				tag = TUN
+				tag = HOL
+				tag = NED
+				tag = CAS
+				tag = SPA
+				tag = ARA
+				tag = DAN
+				tag = NOR
+				tag = VEN
+				tag = KOR
+				tag = MLC
+				tag = MNG
+				tag = BNG
+				tag = MAJ
+				tag = GUJ
+				tag = MAM
+				tag = TUR
+				tag = VIJ
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				tag = NED
+				NOT = { has_idea_group = exploration_ideas }
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				tag = TUR
+				NOT = { adm_tech = 9 }
+			}
 		}
 	}
 }

@@ -1,0 +1,147 @@
+guelders_wars = {
+	potential = {
+		OR = {
+		99 = {
+			owner = {
+				OR = {
+				NOT = {
+					culture_group = germanic #Everyone except HRE 
+					primary_culture = wallonian
+				}
+				primary_culture = austrian #Habsburg Austria
+				}
+			}
+			owned_by = ROOT
+		}
+		1742 = {
+			owner = {
+				OR = {
+				NOT = {
+					culture_group = germanic #Everyone except HRE 
+					primary_culture = wallonian
+				}
+				primary_culture = austrian #Habsburg Austria
+				}
+			}
+			owned_by = ROOT
+		}
+		}
+		#always = no
+		NOT = { has_country_flag = had_guelders_wars }
+	}
+	
+	can_start = {
+		is_year = 1490
+		NOT = {
+			is_year = 1550
+		}
+	}
+	
+	can_stop = {
+		99 = {
+			NOT = { owned_by = ROOT }
+		}
+		100 = {
+			NOT = { owned_by = ROOT }
+		}
+		1742 = {
+			NOT = { owned_by = ROOT }
+		}
+		4382 = {
+			NOT = { owned_by = ROOT }
+		}
+	}
+
+	progress = {
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { accepted_culture = dutch }
+		}
+		modifier = {
+			factor = 0.5
+			99 = { 
+				owned_by = ROOT
+			}
+		}
+		modifier = {
+			factor = 0.5
+			1742 = { 
+				owned_by = ROOT
+			}
+		}
+		modifier = {
+			factor = 1
+			99 = { 
+				owned_by = ROOT
+				unrest = 1
+			}
+		}
+		modifier = {
+			factor = 1
+			1742 = { 
+				owned_by = ROOT
+				unrest = 1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			100 = { 
+				owned_by = ROOT
+			}
+		}
+		modifier = {
+			factor = 0.5
+			4382 = { 
+				owned_by = ROOT
+			}
+		}
+	}
+	
+	can_end = {
+		OR = {
+			AND = {
+				99 = {
+					NOT = { owned_by = ROOT }
+				}
+				100 = {
+					NOT = { owned_by = ROOT }
+				}
+				1742 = {
+					NOT = { owned_by = ROOT }
+				}
+				4382 = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			is_year = 1570
+		}
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+
+	modifier = {
+		global_unrest = 1
+		stability_cost_modifier = 0.2
+		years_of_nationalism = 5
+		trade_efficiency = -0.05
+	}
+	
+	
+	on_start = dom_guelders.1
+	on_end = dom_guelders.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			120 = 0
+			#1 = dom_guelders.3 #Conflict flares up
+			#Duke of Gelre Dies (Charles II dies, successor William Duke of Julich-Cleves-Berg
+			#grant gelren independence and seek alliances with France and Denmark
+		}
+	}
+}
+

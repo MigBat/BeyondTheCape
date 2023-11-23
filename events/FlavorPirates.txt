@@ -1048,26 +1048,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Golden Century"
-		1516 = { privateer_power = { share = 25 country = ROOT } }
-		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-			value = 20
-			region = carribeans_region
-			OR = {
-				owner = {
-					capital_scope = {
-						continent = europe
-					}
-				}
-				owner = {
-					is_subject = yes
-					overlord = {
-						capital_scope = {
-							continent = europe
-						}
-					}
-				}
-			}
-		}
+		1516 = { privateer_power = { share = 25 country = ROOT } trade_node_value = 5 }
 		has_privateers = yes
 	}
 

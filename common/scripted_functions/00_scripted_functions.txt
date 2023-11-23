@@ -82,6 +82,17 @@ can_make_core = {
 }
 
 can_make_state = {
+	condition = {
+		tooltip = "NO_OVERSEAS_STATE"
+		potential = {
+			ROOT = {
+				is_overseas = yes
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 can_abandon_state = {
@@ -169,11 +180,13 @@ can_colonize_province = {
 		}
 		allow = {
 			NOT = {
-				overlord = {
-					any_subject_country = {
-						is_colonial_nation = yes
-						capital_scope = {
-							colonial_region = ROOT
+				FROM = {
+					overlord = {
+						any_subject_country = {
+							is_colonial_nation = yes
+							capital_scope = {
+								colonial_region = ROOT
+							}
 						}
 					}
 				}
@@ -468,6 +481,33 @@ can_colonize_province = {
 			}
 		}
 	}
+	# patroonschap system
+	condition = {
+		tooltip = "patroonschap_system"
+		potential = {
+			FROM = {
+				has_country_flag = patroonschap_system
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					AND = {
+						colonial_region = colonial_eastern_america
+						NOT = {
+							OR = {
+								province_id = 965
+								province_id = 957
+								province_id = 968
+								province_id = 950
+								province_id = 932
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {
@@ -533,4 +573,20 @@ will_demand_annexation = {
 			NOT = { hre_reform_passed = landfriede }
 		}
 	}
+}
+
+can_join_hre = {
+	condition = {
+		tooltip = "PERMANENTLY_LEFT_HRE"
+		potential = {
+		}
+		allow = {
+			NOT = {
+				has_country_flag = permanently_left_hre_flag
+			}
+		}
+	}
+}
+
+can_leave_hre = {
 }

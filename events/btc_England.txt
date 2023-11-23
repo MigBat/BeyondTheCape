@@ -1,0 +1,149 @@
+namespace = btc_england
+normal_or_historical_nations = yes
+
+#John Cabot
+country_event = {
+	id = btc_england.1
+	title = btc_england.1_t
+	desc = btc_england.1_d
+	picture = SHIP_SAILING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			AND = {
+				was_tag = ENG
+				NOT = { exists = ENG }
+				AND = {
+					tag = GBR
+					tag = AVE
+					}
+				}
+			}
+		NOT = { has_country_modifier = quest_for_the_new_world }
+		any_country = {
+			had_country_flag = {
+				flag = had_columbus
+				days = 2190
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.1
+			has_idea_group = exploration_ideas
+		}
+	}
+	
+	option = {		# Hire Cabot
+		name = btc_england.1a
+		
+		ai_chance = { factor = 1 }
+
+		add_years_of_income = -0.25
+		set_global_flag = columbus_happened
+		set_country_flag = had_columbus
+		hidden_effect = {
+			ROOT = {
+				country_event = {
+					id = btc_england.2
+					days = 90
+				}
+			}
+		}
+	}
+	
+	option = {		# Reject his proposal
+		name = btc_england.1b
+		
+		ai_chance = { factor = 0 }
+		add_adm_power = 50
+		add_years_of_income = 0.5
+
+	}
+}
+
+#He Returns
+country_event = {
+	id = btc_england.2
+	title = btc_england.2_t
+	desc = btc_england.2_d
+	picture = SHIP_SAILING_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = btc_england.2a
+
+		add_prestige = 10
+		define_explorer = {
+			name = "John Cabot"
+			fire = 2
+			shock = 2
+			manuever = 6
+			siege = 0
+			trait = great_explorer_personality
+		}
+		hidden_effect = {
+			discover_province = 1479
+			discover_province = 1478
+			discover_province = 1497
+			discover_province = 1496
+			discover_province = 1493
+			discover_province = 1495	
+			discover_province = 1494
+			discover_province = 1492
+			discover_province = 1490
+			discover_province = 1498
+			discover_province = 2573
+			discover_province = 980
+		}
+	}
+}
+
+# Irish Religious Revolts
+country_event = {
+	id = btc_england.3
+	title = btc_england.3_t
+	desc = btc_england.3_d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		culture = irish
+		is_subject_of_type = tributary_state
+		overlord = {
+			is_or_was_tag = ENG
+			NOT = { religion = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = btc_england.3a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		ROOT = {
+			grant_independence = yes
+		}
+	}
+
+	option = {
+		name = btc_england.3b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
+	}
+}

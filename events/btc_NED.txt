@@ -530,6 +530,11 @@ country_event = {
 			target = EFR
 			months = 1200
 		}
+		add_casus_belli = {
+			type = cb_burgundian_conquests
+			target = LIE
+			months = 1200
+		}
 		custom_tooltip = austria_no_intervene
 	}
 }
@@ -638,25 +643,21 @@ country_event = {
 	desc = btc_ned.9_d
 	picture = SHIP_SAILING_eventPicture
 
-	trigger = {
-		tag = NED
-		is_year = 1595
-		630 = {
-			has_discovered = ROOT
-		}
-		if = {
-			limit = {
-				ai = no
-			}
-			mission_completed = emp_ned_invest_in_the_rich_trade
-		}
-	}
+	is_triggered_only = yes
 
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		months = 60
-	}
+	# trigger = {
+	# 	tag = NED
+	# 	is_year = 1595
+	# 	630 = {
+	# 		has_discovered = ROOT
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			ai = no
+	# 		}
+	# 		mission_completed = emp_ned_invest_in_the_rich_trade
+	# 	}
+	# }
 
 	option = {
 		name = btc_ned.9a
@@ -665,6 +666,7 @@ country_event = {
 			factor = 1
 		}
 
+		add_years_of_income = -0.5
 		if = {
 			limit = {
 				630 = {
@@ -702,5 +704,92 @@ country_event = {
 		630 = {
 			add_permanent_claim = ROOT
 		}
+	}
+}
+
+# The Patroonschap
+
+country_event = {
+	id = btc_ned.10
+	title = btc_ned.10_t
+	desc = btc_ned.10_d
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				965 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 965
+			}
+		}
+		else_if = {
+			limit = {
+				957 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 957
+			}
+		}
+		else_if = {
+			limit = {
+				968 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 968
+			}
+		}
+		else_if = {
+			limit = {
+				950 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 950
+			}
+		}
+		else_if = {
+			limit = {
+				932 = {
+					is_empty = yes
+				}
+			}
+			create_colony_mission_reward = {
+				province = 932
+			}
+		}
+	}
+
+	option = {	# Establish the Patroonschap
+		name = btc_ned.10a
+
+		ai_chance = {
+			factor = 1
+		}
+		
+		custom_tooltip = patroonschap_system_tooltip
+		hidden_effect = {
+			set_country_flag = patroonschap_system
+		}
+	}
+
+	option = {	# We don't want such limitations
+		name = btc_ned.10b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -5
 	}
 }

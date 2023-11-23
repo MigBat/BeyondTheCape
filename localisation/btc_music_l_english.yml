@@ -1,6 +1,7 @@
 ﻿l_english:
 
- CHANNEL_music_btc_music:0 "Beyond the Cape"
+ CHANNEL_music_btc_music:0 "* Portuguese Music *"
+ CHANNEL_music_halcyon_reign:0 "* Halcyon Reign *"
 
 # Portugal #
  autumninbraganca:0 "Brigantine Autumn"
@@ -22,3 +23,11 @@
  songofrain:0 "Song of the Rain"
  throughmistandfoliage:0 "Through Mist and Foliage"
  memoriadanoite:0 "Memória da Noite"
+
+# Halcyon Reign #
+ welcomereality:0 "01 Welcome Reality"
+ thekraken:0 "02 The Kraken"
+ peleliu:0 "03 Peleliu"
+ beyondthecape:0 "04 Beyond the Cape"
+ lasthorizon:0 "05 Last Horizon"
+ thevoyage:0 "06 The Voyage"

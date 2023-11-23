@@ -18,6 +18,7 @@ portuguese_saudade_mechanic = {
 					reduced_liberty_desire_on_same_continent = -20
 					global_foreign_trade_power = 0.15
 					allowed_marine_fraction = 0.15
+					land_forcelimit_modifier = -0.2
 				}
 			}
 

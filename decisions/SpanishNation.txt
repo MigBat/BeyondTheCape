@@ -211,12 +211,12 @@ country_decisions = {
 				AND = {
 					ai = yes
 					tag = CAS
-					ARA = { NOT = { num_of_cities = 40 } } #Keep this number the same as below
+					ARA = { NOT = { num_of_cities = 50 } } #Keep this number the same as below
 				}
 				AND = {
 					ai = yes
 					tag = ARA
-					CAS = { NOT = { num_of_cities = 47 } } #Keep this number the same as below
+					CAS = { NOT = { num_of_cities = 60 } } #Keep this number the same as below
 				}
 			}
 		}
@@ -251,13 +251,13 @@ country_decisions = {
 				AND = {
 					tag = CAS
 					ARA = {
-						NOT = { num_of_cities = 40 } #Keep this number the same as above. Original 17 +15, +5 with Spain update, +3 with Emperor update
+						NOT = { num_of_cities = 50 } #Keep this number the same as above. Original 17 +15, +5 with Spain update, +3 with Emperor update
 					}
 				}
 				AND = {
 					tag = ARA
 					CAS = {
-						NOT = { num_of_cities = 47 } #Keep this number the same as above. Original 25 +15, +5 with Spain update, +2 with Emperor update
+						NOT = { num_of_cities = 60 } #Keep this number the same as above. Original 25 +15, +5 with Spain update, +2 with Emperor update
 					}
 				}
 			}

@@ -1,0 +1,16 @@
+#Geobukseon
+type = galley
+
+hull_size = 15
+base_cannons = 18
+blockade = 8
+
+sailors = 90
+
+sail_speed = 4.25
+
+sprite_level = 3
+
+trigger = {
+	tag = KOR
+}

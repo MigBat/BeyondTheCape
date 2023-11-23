@@ -1,4 +1,4 @@
-##########################
+ ##########################
 # Beyond the Cape Events #
 ##########################
 
@@ -1097,6 +1097,7 @@ country_event = {
 	trigger = {
 		is_or_was_tag = { tag = POR }
 		current_age = age_of_reformation
+		is_year = 1570
 		OR = {
 			NOT = { crown_land_share = 60 }
 			estate_influence = {
@@ -1113,7 +1114,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 240
 	}
 
 	option = {	# Our subjects must act strictly according to the crown's wishes
@@ -1202,8 +1203,8 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		is_year = 1529
-		NOT = { dip_tech = 11 }
+		is_year = 1538
+		NOT = { dip_tech = 12 }
 	}
 
 	mean_time_to_happen = {
@@ -1249,8 +1250,9 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
+		is_at_war = no
 		OR = {
-			is_year = 1560
+			is_year = 1565
 			has_country_modifier = lusiadas
 		}
 		religion = catholic
@@ -1341,7 +1343,7 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		is_year = 1581
+		is_year = 1568
 		NOT = { dip_tech = 15 }
 		OR = {
 			trade_company_coromandel = { 
@@ -2297,6 +2299,9 @@ country_event = {
 		create_colony_mission_reward = {
 			province = 1111
 		}
+		1111 = {
+			change_trade_goods = slaves
+		}
 	}
 
 	option = {	# We don't have the resources
@@ -2558,6 +2563,8 @@ province_event = {
 
 	trigger = {
 		has_province_flag = can_build_feitoria
+		NOT = { has_province_modifier = feitoria }
+		NOT = { has_province_modifier = small_feitoria }
 	}
 
 	mean_time_to_happen = {
@@ -2642,6 +2649,17 @@ province_event = {
 			}
 		}
 		custom_tooltip = feitoria_tt
+		# for slavers estate privilege
+		if = {
+			limit = {
+				has_fort_building_trigger = yes
+				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
+			}
+			add_province_modifier = {
+				name = slave_garrison
+				duration = -1
+			}
+		}
 	}
 
 	option = {	# Build a trade post
@@ -2722,6 +2740,7 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
+		is_year = 1510
 		4150 = {
 			owned_by = ROOT
 			controlled_by = ROOT
@@ -2779,6 +2798,8 @@ country_event = {
 	desc = btc_por.137_d
 	picture = NEW_HEIR_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = POR
 		is_year = 1500
@@ -2821,6 +2842,12 @@ country_event = {
 			months = 1200
 			target = ARA
 		}
+
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = SPA
+		}
 	}
 
 	option = {
@@ -2858,6 +2885,11 @@ country_event = {
 		remove_casus_belli = {
 			type = cb_restore_personal_union
 			target = ARA
+		}
+
+		remove_casus_belli = {
+			type = cb_restore_personal_union
+			target = SPA
 		}
 	}
 }
@@ -3277,7 +3309,7 @@ country_event = {
 					AND = {
 						religion_group = christian
 						is_subject = no
-						total_own_and_non_tributary_subject_development = 100
+						total_own_and_non_tributary_subject_development = 150
 						NOT = { is_or_was_tag = { tag = POR } }
 					}
 					tag = PAP
@@ -3825,6 +3857,7 @@ country_event = {
 		is_or_was_tag = { tag = POR }
 		1851 = {	# Coimbra
 			owned_by = root
+			has_building = university
 		}
 		227 = {		# Lisboa
 			owned_by = root
@@ -3850,7 +3883,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 1
+		days = 18250
 	}
 
 	option = {	# As armas e os barões assinalados
@@ -5210,7 +5243,94 @@ country_event = {
 			factor = 0
 		}
 
-		add_years_of_income = -0.25
-		POR = { add_years_of_income = 0.25 }
+		add_years_of_income = -1
+		POR = { add_years_of_income = 1 }
+	}
+}
+
+# In Search of New Lands #
+
+country_event = {
+	id = btc_por.175
+	title = btc_por.175_t
+	desc = btc_por.175_d
+	picture = SHIP_SAILING_eventPicture
+	
+	trigger = {
+		has_country_flag = tordesillas_por
+		NOT = { 1584 = { has_discovered = ROOT } }
+	}
+
+	mean_time_to_happen = {
+		days = 3650
+	}
+
+	option = {	# New Lands
+		name = btc_por.175a
+
+		1584 = {
+			discover_country = ROOT
+		}
+	}
+}
+
+# Leonor of Aragon #
+
+country_event = {
+	id = btc_por.176
+	title = btc_por.176_t
+	desc = btc_por.176_d
+	picture = QUEEN_AND_MALE_HEIR_eventPicture
+	
+	trigger = {
+		tag = POR
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {	# Infante Pedro shall remain the sole custodian
+		name = btc_por.176a
+		ai_chance = {
+			factor = 1
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+
+		ARA = {
+			add_opinion = {
+				who = ROOT
+				modifier = exiled_leonor
+			}
+		}
+	}
+
+	option = {	# Allow shared custody of the young King
+		name = btc_por.176b
+		ai_chance = {
+			factor = 0
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+
+		ARA = {
+			add_opinion = {
+				who = ROOT
+				modifier = welcomed_leonor
+			}
+			add_historical_friend = ROOT
+			remove_rival = ROOT
+		}
+		add_historical_friend = ARA
+		remove_rival = ARA
 	}
 }

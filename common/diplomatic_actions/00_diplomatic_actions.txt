@@ -334,6 +334,7 @@ annexationaction = {
 				OR = {
 					is_subject_of_type = core_eyalet
 					is_subject_of_type = appanage
+					is_subject_of_type = voivode
 					vassal_of = ROOT
 				}
 			}
@@ -407,7 +408,11 @@ annexationaction = {
 	effect = {
 		if = {
 			limit = {
-				FROM = { is_subject_of_type = appanage }
+				FROM = { 
+					OR = {
+						is_subject_of_type = appanage
+					}
+				}
 			}
 			subtract_variable = {
 				which = can_annex_appanages_points
@@ -651,7 +656,10 @@ callaction = {
 		tooltip = burgundian_conquests_tt
 		potential = {
 			FROM = {
-				is_emperor = yes
+				OR = {
+					is_emperor = yes
+					is_subject_of = HAB
+				}
 			}
 			BUR = {
 				has_casus_belli = {
@@ -681,5 +689,16 @@ sharemap = {
 			}
 		}
 		allow = { always = no }
+	}
+}
+
+grant_freecity = {
+	condition = {
+		tooltip = NOT_PEASANT_REPUBLIC
+		potential = {
+		}
+		allow = {
+			FROM = { NOT = { has_reform = peasants_republic } }
+		}
 	}
 }

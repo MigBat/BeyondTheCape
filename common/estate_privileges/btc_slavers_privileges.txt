@@ -146,7 +146,7 @@ estate_slavers_raid_coasts = {
 estate_slavers_boost_production_in_colony = {
 	icon = privilege_serf
 	max_absolutism = -5
-	loyalty = 0.05
+	loyalty = 0.1
 	influence = 0.1
 	is_valid = {
 		any_subject_country = {
@@ -213,17 +213,20 @@ estate_slavers_boost_production_in_colony = {
 	on_granted_province = {
 	}
 	on_revoked = {
-		every_province = {
-			limit = {
-				OR = {
-					owned_by = root
-					owner = {
-						is_colonial_nation_of = root
+		custom_tooltip = revoke_slavers_plantation_production_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						owned_by = root
+						owner = {
+							is_colonial_nation_of = root
+						}
 					}
+					has_province_modifier = estate_slavers_plantation_production
 				}
-				has_province_modifier = estate_slavers_plantation_production
-			}
-			remove_province_modifier = estate_slavers_plantation_production
+				remove_province_modifier = estate_slavers_plantation_production
+			}			
 		}
 	}
 	on_revoked_province = {
@@ -257,7 +260,7 @@ estate_slavers_boost_production_in_colony = {
 estate_slavers_gold_mine_slaves = {
 	icon = privilege_gold
 	max_absolutism = -5
-	loyalty = 0.05
+	loyalty = 0.1
 	influence = 0.1
 	is_valid = {
 		any_subject_country = {
@@ -310,17 +313,20 @@ estate_slavers_gold_mine_slaves = {
 	on_granted_province = {
 	}
 	on_revoked = {
-		every_province = {
-			limit = {
-				OR = {
-					owned_by = root
-					owner = {
-						is_colonial_nation_of = root
+		custom_tooltip = revoke_slavers_gold_mining_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						owned_by = root
+						owner = {
+							is_colonial_nation_of = root
+						}
 					}
+					has_province_modifier = estate_slavers_gold_mining
 				}
-				has_province_modifier = estate_slavers_gold_mining
-			}
-			remove_province_modifier = estate_slavers_gold_mining
+				remove_province_modifier = estate_slavers_gold_mining
+			}			
 		}
 	}
 	on_revoked_province = {
@@ -355,7 +361,7 @@ estate_slavers_slaves_to_europe = {
 	icon = prosperity_privilege
 	max_absolutism = -5
 	influence = 0.1
-	loyalty = -0.05
+	loyalty = 0.05
 	is_valid = {
 	}
 	can_select = {
@@ -379,7 +385,7 @@ estate_slavers_slaves_to_europe = {
 	benefits = {
 		global_prosperity_growth = 0.5
 		stability_cost_modifier = -0.1
-		estate_nobles_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
 	}
 	cooldown_years = 10
 	ai_will_do = {

@@ -1,0 +1,115 @@
+name = "Guelders Wars"
+war_goal = {
+	type = take_border #restore union
+	casus_belli = cb_border_war #restore union
+	province = 99
+}
+
+1502.1.1 = {
+	add_attacker = BUR
+	add_attacker = UTR
+	add_defender = GEL
+}
+
+#Saxon Feud
+1514.1.1 = {
+	add_attacker = SAX
+	add_defender = EFR
+}
+
+1515.1.1 = { #saxony sells frisia to habsburgs
+	rem_attacker = SAX
+}
+
+#piracy by Arumer Zwarte Hoop
+#1515.1.2 = { 
+#	battle = { 
+#		name = "Solebay" 
+#		location = 1270
+#		attacker = { 
+#			commander = "James Stuart"		# James Stuart
+#			heavy_ship = 73
+#			light_ship = 20
+#			losses = 1		# percent 
+#			country = ENG
+#		} 
+#		defender = { 
+#			commander = "Michiel de Ruyter"		# Michiel de Ruyter
+#			heavy_ship = 46
+#			light_ship = 29
+#			losses = 1		# percent 
+#			country = NED
+#		} 
+#		result = no
+#	} 
+#}
+
+
+1517.1.1 = {
+	rem_attacker = BUR
+	rem_attacker = UTR
+	rem_defender = GEL
+	rem_defender = EFR
+}
+
+1522.1.1 = {
+	add_attacker = SPA
+	add_attacker = UTR
+	add_defender = GEL
+}
+
+1528.10.20 = { #treaty of Gorinchem
+	rem_attacker = UTR
+	rem_attacker = SPA
+	rem_defender = GEL
+}
+
+1534.1.1 = { #count's feud spills over
+	add_attacker = SPA
+	add_attacker = EFR
+	add_attacker = OLD
+	add_defender = GEL
+	add_defender = DAN
+}
+
+1536.1.1 = {
+	battle = {
+		name = "Battle of Heiligerlee"
+		location = 4382
+		attacker = {
+			commander = "Georg Schenck van Toutenburg"
+			infantry = 4500
+			losses = 10	# percent
+			country = HAB
+		}
+		defender = {
+			commander = "Meindert van Ham"
+			infantry = 3000
+			losses = 30	# percent
+			country = GEL
+		}
+		result = yes
+	}
+}
+
+1536.1.2 = { #treaty of grave
+	rem_attacker = SPA
+	rem_attacker = EFR
+	rem_attacker = OLD
+	rem_defender = GEL
+	rem_defender = DAN
+}
+
+1538.1.2 = { #succession war - part of the larger italian wars
+	add_attacker = SPA
+	add_defender = GEL
+	add_defender = KLE
+	add_defender = FRA
+}
+
+1543.9.7 = { #treaty of venlo
+	rem_attacker = SPA
+	rem_defender = GEL
+	rem_defender = KLE
+	rem_defender = FRA
+}

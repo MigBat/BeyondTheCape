@@ -1,10 +1,10 @@
 country_decisions = {
-	square_rigged_caravel_decision = {
+	por_upgrade_armada_decision = {
 		color = { 255 69 0 }
 		major = yes
 		potential = {
 			has_country_modifier = por_caravels
-			NOT = { has_country_modifier = square_rigged_caravel }
+			NOT = { has_country_modifier = por_armada }
 			is_or_was_tag = {
 				tag = POR
 			}
@@ -18,7 +18,7 @@ country_decisions = {
 		effect = {
 			add_years_of_income = -0.25
 			add_country_modifier = {
-				name = square_rigged_caravel
+				name = por_armada
 				duration = -1
 			}
 		}
@@ -26,12 +26,12 @@ country_decisions = {
 }
 
 country_decisions = {
-	nau_decision = {
+	por_upgrade_fullrigged_decision = {
 		color = { 255 69 0 }
 		major = yes
 		potential = {
 			has_country_modifier = por_galleons
-			NOT = { has_country_modifier = nau }
+			NOT = { has_country_modifier = por_fullrigged }
 			is_or_was_tag = {
 				tag = POR
 			}
@@ -45,7 +45,61 @@ country_decisions = {
 		effect = {
 			add_years_of_income = -0.25
 			add_country_modifier = {
-				name = nau
+				name = por_fullrigged
+				duration = -1
+			}
+		}
+	}
+}
+
+country_decisions = {
+	spa_upgrade_fullrigged_decision = {
+		color = { 255 69 0 }
+		major = yes
+		potential = {
+			has_country_modifier = spa_employ_galleon_modifier
+			NOT = { has_country_modifier = spa_fullrigged }
+			is_or_was_tag = {
+				tag = CAS
+			}
+		}
+
+		allow = {
+			has_country_modifier = spa_employ_galleon_modifier
+			num_of_galleon = 5
+		}
+
+		effect = {
+			add_years_of_income = -0.25
+			add_country_modifier = {
+				name = spa_fullrigged
+				duration = -1
+			}
+		}
+	}
+}
+
+country_decisions = {
+	ven_upgrade_galeazza_decision = {
+		color = { 255 69 0 }
+		major = yes
+		potential = {
+			has_reform = merchant_arsenal_reform
+			NOT = { has_country_modifier = ven_galeazza }
+			is_or_was_tag = {
+				tag = VEN
+			}
+		}
+
+		allow = {
+			has_reform = merchant_arsenal_reform
+			num_of_galleass = 5
+		}
+
+		effect = {
+			add_years_of_income = -0.25
+			add_country_modifier = {
+				name = ven_galeazza
 				duration = -1
 			}
 		}
@@ -112,6 +166,7 @@ country_decisions = {
 			OR = {
 				has_idea_group = maritime_ideas
 				has_idea_group = naval_ideas
+				navy_size = 50
 			}
 			NOT = { has_country_modifier = extra_flagship }
 		}
@@ -119,8 +174,8 @@ country_decisions = {
 		allow = {
 			navy_size = 100
 			OR = {
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
 			}
 		}
 
@@ -144,14 +199,41 @@ country_decisions = {
 				}
 				AND = {
 					tag = ARA
-					has_heir_flag = joanna
+					has_heir_flag = joana
 				}
 			}
+			CAS = { NOT = { has_disaster = castilian_civil_war }}
 		}
 
 		allow = {
-			prestige = CAS
-			legitimacy = CAS
+			OR = {
+				NOT = { CAS = { prestige = ROOT } }
+				prestige = 100
+			}
+			OR = {
+				NOT = { CAS = { legitimacy = ROOT } }
+				legitimacy = 100
+			}
+			OR = {
+				NOT = { CAS = { stability = ROOT } }
+				stability = 3
+			}
+			if = {
+				limit = {
+					POR = { has_heir_flag = isabel }
+				}
+				227 = {
+					higher_development_than = 219
+				}
+			}
+			if = {
+				limit = {
+					ARA = { has_heir_flag = joana }
+				}
+				214 = {
+					higher_development_than = 219
+				}
+			}
 		}
 
 		effect = {
@@ -165,11 +247,27 @@ country_decisions = {
 			ai = no
 			tag = CAS
 			has_heir_flag = isabel
+			CAS = { NOT = { has_disaster = castilian_civil_war }}
 		}
 
 		allow = {
-			prestige = POR
-			legitimacy = POR
+			OR = {
+				OR = {
+					prestige = POR
+					NOT = { POR = { prestige = 100 } }
+				}
+				OR = {
+					legitimacy = POR
+					NOT = { POR = { legitimacy = 100 } }
+				}
+				OR = {
+					stability = POR
+					NOT = { POR = { stability = 3 } }
+				}
+				219 = {
+					higher_development_than = 227
+				}
+			}
 		}
 
 		effect = {
@@ -182,12 +280,28 @@ country_decisions = {
 		potential = {
 			ai = no
 			tag = CAS
-			has_heir_flag = joanna
+			has_heir_flag = joana
+			CAS = { NOT = { has_disaster = castilian_civil_war }}
 		}
 
 		allow = {
-			prestige = ARA
-			legitimacy = ARA
+			OR = {
+				OR = {
+					prestige = ARA
+					NOT = { ARA = { prestige = 100 } }
+				}
+				OR = {
+					legitimacy = ARA
+					NOT = { ARA = { legitimacy = 100 } }
+				}
+				OR = {
+					stability = ARA
+					NOT = { ARA = { stability = 3 } }
+				}
+				219 = {
+					higher_development_than = 214
+				}
+			}
 		}
 
 		effect = {
@@ -281,7 +395,27 @@ country_decisions = {
 			IBE = { remove_country_modifier = tordesillas_claims }
 			CAS = { remove_country_modifier = tordesillas_claims }
 			SPA = { remove_country_modifier = tordesillas_claims }
-			add_stability = -2
+			if = {
+				limit = {
+					OR = {
+						POR = {
+							exists = yes
+						}
+						IBE = {
+							exists = yes
+						}
+					}
+					OR = {
+						CAS = {
+							exists = yes
+						}
+						SPA = {
+							exists = yes
+						}
+					}
+				}
+				add_stability = -2
+			}
 			if = {
 				limit = {
 					ROOT = {
@@ -357,8 +491,16 @@ country_decisions = {
 		potential = {
 			ai = no
 			mission_completed = btc_por_sagres
+			OR = {
+				had_country_flag = {
+					flag = hired_navigator
+					days = 1825
+				}
+				NOT = { has_country_flag = 1st_nav_decision }
+			}
 		}
 		allow = {
+			has_estate_privilege = estate_burghers_naval_school_right
 			mission_completed = btc_por_sagres
 			owns = 230
 			navy_tradition = 5
@@ -371,6 +513,9 @@ country_decisions = {
 				location = 230
 			}
 			add_navy_tradition = -5
+			clr_country_flag = hired_navigator
+			set_country_flag = hired_navigator
+			set_country_flag = 1st_nav_decision
 		}
 	}
 }

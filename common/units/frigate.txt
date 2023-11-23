@@ -5,10 +5,19 @@ hull_size = 16
 base_cannons = 20
 blockade = 10
 
-trade_power = 6.0
+trade_power = 5.5
 
 sail_speed = 13
 
 sailors = 125
 
 sprite_level = 4
+
+trigger = {
+	NOT = {
+		OR = {
+			culture = dutch
+			culture = cosmopolitan_french
+		}
+	}
+}

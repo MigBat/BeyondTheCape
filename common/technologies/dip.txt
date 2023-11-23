@@ -45,6 +45,12 @@ technology = { #The Barque
 	trade_range				=	100
 	enable = cog
 	enable = galley
+
+	enable = early_caravel
+	enable = argosy
+	enable = junk
+	enable = fire_ship
+	enable = dhow
 	
 	naval_engagement_width = 20
 
@@ -67,6 +73,8 @@ technology = { #The Early Carrack
 	may_build_flagships = yes
 	
 	enable = early_carrack
+
+	enable = oceanic_carrack
 
 
 }
@@ -160,6 +168,9 @@ technology = { #Carracks & Caravel
 	
 	enable = carrack
 	enable = caravel
+
+	enable = caravela_de_armada
+	enable = nau
 	may_study_technology = yes
 	
 }
@@ -179,6 +190,8 @@ technology = { #The Flute
 	# global_colonial_growth  = 	10
 	enable = flute
 	enable = war_galley
+
+	enable = panokseon
 }
 
 technology = { #Wharf
@@ -246,6 +259,8 @@ technology = { #The Galleass
 
 	
 	enable = galleass
+
+	enable = geobukseon
 }
  
 technology = { #The Galleon
@@ -266,6 +281,10 @@ technology = { #The Galleon
 	enable = galleon
 	enable = early_frigate
 	may_sabotage_recruitment = yes
+
+	enable = galeon
+	enable = vlieboot
+	enable = atakebune
 
 }
 
@@ -348,6 +367,10 @@ technology = { #The War Galleon
 	
 	enable = wargalleon
 	enable = frigate
+
+	enable = manila_galleon
+	enable = fluyt
+	enable = corvette
 }
 
 technology = { #Naval Professionalization
@@ -410,6 +433,8 @@ technology = { #Limes
 	enable = twodecker
 	enable = trabakul
 	naval_engagement_width = 5
+
+	enable = ship_of_the_line
 }
 
 technology = { #Heavy Frigates
@@ -474,6 +499,8 @@ technology = { #The Threedeckers
 	naval_maintenance		= 	0.1
 	
 	enable = threedecker
+
+	enable = man_of_war
 }
 
 technology = { #The Eastindiaman
@@ -496,6 +523,8 @@ technology = { #The Eastindiaman
 	
 	enable = eastindiaman
 	enable = great_frigate
+
+	enable = sloop_of_war
 }
 
 technology = { #Public Punishments

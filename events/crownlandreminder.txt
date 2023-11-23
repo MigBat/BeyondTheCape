@@ -1,0 +1,2569 @@
+namespace = crownland_reminder
+country_event = {
+	id = crownland_reminder.1
+	title = "crownland_reminder_title"
+	desc = {
+		trigger = {
+			is_at_war = no
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			AND = {
+				OR = {
+				NOT = { has_estate = estate_slavers }
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_slavers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+				}
+				OR = {
+				NOT = { has_estate = estate_church }
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+				}	
+				OR = {
+					NOT = { has_estate = estate_nobles }
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+				}	
+				OR = {
+					NOT = { has_estate = estate_burghers }
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+				}	
+				OR = {
+					NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+						estate = estate_cossacks
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+				}	
+				OR = {
+					NOT = { has_estate = estate_nomadic_tribes }
+					estate_loyalty = {
+						estate = estate_nomadic_tribes
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+				}	
+				OR = {
+					NOT = { has_estate = estate_dhimmi }
+					estate_loyalty = {
+						estate = estate_dhimmi
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+				}	
+				OR = {
+					NOT = { has_estate = estate_brahmins }
+					estate_loyalty = {
+						estate = estate_brahmins
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+				}	
+				OR = {
+					NOT = { has_estate = estate_maratha }
+					estate_loyalty = {
+						estate = estate_maratha
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+				}	
+				OR = {
+					NOT = { has_estate = estate_vaisyas }
+					estate_loyalty = {
+						estate = estate_vaisyas
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+				}	
+				OR = {
+					NOT = { has_estate = estate_jains }
+					estate_loyalty = {
+						estate = estate_jains
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+				}	
+				OR = {
+					NOT = { has_estate = estate_rajput }
+					estate_loyalty = {
+						estate = estate_rajput
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+				}	
+				OR = {
+					NOT = { has_estate = estate_eunuchs }
+					estate_loyalty = {
+						estate = estate_eunuchs
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+				}	
+				OR = {
+					NOT = { has_estate = estate_janissaries }
+					estate_loyalty = {
+						estate = estate_janissaries
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+				}				
+			}
+		}
+		desc = "crownland_reminder_desc_1.1"
+	}
+	desc = {
+		trigger = { is_at_war = yes }
+		desc = "crownland_reminder_desc_1.2"
+	}
+	desc = {
+		trigger = {
+			is_at_war = no
+			OR = {
+				num_of_rebel_armies = 1
+				num_of_rebel_controlled_provinces = 1
+			}
+		}
+		desc = "crownland_reminder_desc_1.3"
+	}	
+	desc = {
+		trigger = {
+			is_at_war = no
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			NOT = {
+				AND = {
+					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
+					OR = {
+						NOT = { has_estate = estate_church }
+							estate_loyalty = {
+								estate = estate_church
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_church
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nobles }
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nobles
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+					}	
+					OR = {
+						NOT = { has_estate = estate_burghers }
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_burghers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+					}	
+					OR = {
+						NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_cossacks
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nomadic_tribes }
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nomadic_tribes
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+					}	
+					OR = {
+						NOT = { has_estate = estate_dhimmi }
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_dhimmi
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+					}	
+					OR = {
+						NOT = { has_estate = estate_brahmins }
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_brahmins
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+					}	
+					OR = {
+						NOT = { has_estate = estate_maratha }
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_maratha
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+					}	
+					OR = {
+						NOT = { has_estate = estate_vaisyas }
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_vaisyas
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+					}	
+					OR = {
+						NOT = { has_estate = estate_jains }
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_jains
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+					}	
+					OR = {
+						NOT = { has_estate = estate_rajput }
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_rajput
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+					}	
+					OR = {
+						NOT = { has_estate = estate_eunuchs }
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_eunuchs
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+					}	
+					OR = {
+						NOT = { has_estate = estate_janissaries }
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_janissaries
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+					}				
+				}
+			}
+		}
+		desc = "crownland_reminder_desc_1.4"
+	}
+	picture = WESTERNISATION_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		#Is it even possible to seize crownland?
+		hidden_trigger = { has_any_estates = yes }
+	    NOT = { crown_land_share = 100 }
+		if = {
+			limit = {
+				OR = {
+					has_estate_privilege = estate_brahmins_statutory_rights
+					AND = {
+						religion = hinduism
+						has_estate = estate_brahmins
+					}
+				}
+				has_estate = estate_brahmins
+			}
+			NOT = { has_estate_privilege = estate_brahmins_statutory_rights }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_estate_privilege = estate_nobles_statutory_rights
+					AND = {
+						has_estate = estate_nobles
+						government = monarchy
+					}
+				}
+			}
+			NOT = { has_estate_privilege = estate_nobles_statutory_rights }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_estate_privilege = estate_burghers_statutory_rights
+					AND = {
+						has_estate = estate_burghers
+						government = republic
+					}
+				}
+			}
+			NOT = { has_estate_privilege = estate_burghers_statutory_rights }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_estate_privilege = estate_church_statutory_rights
+					AND = {
+						has_estate = estate_church
+						government = theocracy
+					}
+				}
+			}
+			NOT = { has_estate_privilege = estate_church_statutory_rights }
+		}
+		if = {
+			limit = { has_government_attribute = can_not_seize_land }
+			NOT = { has_government_attribute_short_desc = can_not_seize_land }
+		}							
+	}
+	option = {
+		name = "crownland_reminder_ok"
+		trigger = {
+			is_at_war = no
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			AND = {
+				OR = {
+				NOT = { has_estate = estate_slavers }
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_slavers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+				}
+				OR = {
+				NOT = { has_estate = estate_church }
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+				}	
+				OR = {
+					NOT = { has_estate = estate_nobles }
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+				}	
+				OR = {
+					NOT = { has_estate = estate_burghers }
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+				}	
+				OR = {
+					NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+						estate = estate_cossacks
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+				}	
+				OR = {
+					NOT = { has_estate = estate_nomadic_tribes }
+					estate_loyalty = {
+						estate = estate_nomadic_tribes
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+				}	
+				OR = {
+					NOT = { has_estate = estate_dhimmi }
+					estate_loyalty = {
+						estate = estate_dhimmi
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+				}	
+				OR = {
+					NOT = { has_estate = estate_brahmins }
+					estate_loyalty = {
+						estate = estate_brahmins
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+				}	
+				OR = {
+					NOT = { has_estate = estate_maratha }
+					estate_loyalty = {
+						estate = estate_maratha
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+				}	
+				OR = {
+					NOT = { has_estate = estate_vaisyas }
+					estate_loyalty = {
+						estate = estate_vaisyas
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+				}	
+				OR = {
+					NOT = { has_estate = estate_jains }
+					estate_loyalty = {
+						estate = estate_jains
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+				}	
+				OR = {
+					NOT = { has_estate = estate_rajput }
+					estate_loyalty = {
+						estate = estate_rajput
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+				}	
+				OR = {
+					NOT = { has_estate = estate_eunuchs }
+					estate_loyalty = {
+						estate = estate_eunuchs
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+				}	
+				OR = {
+					NOT = { has_estate = estate_janissaries }
+					estate_loyalty = {
+						estate = estate_janissaries
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+				}				
+			}
+		}
+	}
+	option = {
+		name = "crownland_reminder_later"
+		trigger = {
+			OR = {
+				is_at_war = yes
+				OR = {
+					num_of_rebel_armies = 1
+					num_of_rebel_controlled_provinces = 1
+				}
+			}
+		}
+		if = {
+			limit = { is_at_war = yes }
+				set_country_flag = crownland_waiting_for_peace
+		}
+		if = {
+			limit = {
+				OR = {
+					num_of_rebel_armies = 1
+					num_of_rebel_controlled_provinces = 1
+				}
+			}
+			set_country_flag = crownland_waiting_for_rebels
+		}
+	}
+	option = {
+		name = "crownland_reminder_patient"
+		trigger = {
+			is_at_war = no
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			NOT = {
+				AND = {
+					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
+					OR = {
+						NOT = { has_estate = estate_church }
+							estate_loyalty = {
+								estate = estate_church
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_church
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nobles }
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nobles
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+					}	
+					OR = {
+						NOT = { has_estate = estate_burghers }
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_burghers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+					}	
+					OR = {
+						NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_cossacks
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nomadic_tribes }
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nomadic_tribes
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+					}	
+					OR = {
+						NOT = { has_estate = estate_dhimmi }
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_dhimmi
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+					}	
+					OR = {
+						NOT = { has_estate = estate_brahmins }
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_brahmins
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+					}	
+					OR = {
+						NOT = { has_estate = estate_maratha }
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_maratha
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+					}	
+					OR = {
+						NOT = { has_estate = estate_vaisyas }
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_vaisyas
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+					}	
+					OR = {
+						NOT = { has_estate = estate_jains }
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_jains
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+					}	
+					OR = {
+						NOT = { has_estate = estate_rajput }
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_rajput
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+					}	
+					OR = {
+						NOT = { has_estate = estate_eunuchs }
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_eunuchs
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+					}	
+					OR = {
+						NOT = { has_estate = estate_janissaries }
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_janissaries
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+					}				
+				}
+			}
+		}
+		set_country_flag = crownland_waiting_for_loyalty
+	}
+	option = {
+		name = "crownland_reminder_impatient"
+		trigger = {
+			is_at_war = no
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			NOT = {
+				AND = {
+					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}	
+					OR = {
+						NOT = { has_estate = estate_church }
+							estate_loyalty = {
+								estate = estate_church
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_church
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nobles }
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nobles
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+					}	
+					OR = {
+						NOT = { has_estate = estate_burghers }
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_burghers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+					}	
+					OR = {
+						NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_cossacks
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nomadic_tribes }
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nomadic_tribes
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+					}	
+					OR = {
+						NOT = { has_estate = estate_dhimmi }
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_dhimmi
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+					}	
+					OR = {
+						NOT = { has_estate = estate_brahmins }
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_brahmins
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+					}	
+					OR = {
+						NOT = { has_estate = estate_maratha }
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_maratha
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+					}	
+					OR = {
+						NOT = { has_estate = estate_vaisyas }
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_vaisyas
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+					}	
+					OR = {
+						NOT = { has_estate = estate_jains }
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_jains
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+					}	
+					OR = {
+						NOT = { has_estate = estate_rajput }
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_rajput
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+					}	
+					OR = {
+						NOT = { has_estate = estate_eunuchs }
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_eunuchs
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+					}	
+					OR = {
+						NOT = { has_estate = estate_janissaries }
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_janissaries
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+					}				
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = crownland_reminder.2
+	title = "crownland_reminder_title"
+	desc = {
+		trigger = {
+			AND = {
+				OR = {
+					NOT = { has_estate = estate_slavers }
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_slavers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+				}	
+				OR = {
+					NOT = { has_estate = estate_church }
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+				}	
+				OR = {
+					NOT = { has_estate = estate_nobles }
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+				}	
+				OR = {
+					NOT = { has_estate = estate_burghers }
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+				}	
+				OR = {
+					NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+						estate = estate_cossacks
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+				}	
+				OR = {
+					NOT = { has_estate = estate_nomadic_tribes }
+					estate_loyalty = {
+						estate = estate_nomadic_tribes
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+				}	
+				OR = {
+					NOT = { has_estate = estate_dhimmi }
+					estate_loyalty = {
+						estate = estate_dhimmi
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+				}	
+				OR = {
+					NOT = { has_estate = estate_brahmins }
+					estate_loyalty = {
+						estate = estate_brahmins
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+				}	
+				OR = {
+					NOT = { has_estate = estate_maratha }
+					estate_loyalty = {
+						estate = estate_maratha
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+				}	
+				OR = {
+					NOT = { has_estate = estate_vaisyas }
+					estate_loyalty = {
+						estate = estate_vaisyas
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+				}	
+				OR = {
+					NOT = { has_estate = estate_jains }
+					estate_loyalty = {
+						estate = estate_jains
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+				}	
+				OR = {
+					NOT = { has_estate = estate_rajput }
+					estate_loyalty = {
+						estate = estate_rajput
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+				}	
+				OR = {
+					NOT = { has_estate = estate_eunuchs }
+					estate_loyalty = {
+						estate = estate_eunuchs
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+				}	
+				OR = {
+					NOT = { has_estate = estate_janissaries }
+					estate_loyalty = {
+						estate = estate_janissaries
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+				}				
+			}
+		}
+		desc = "crownland_reminder_peace_loyal_desc"
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				AND = {
+					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
+					OR = {
+						NOT = { has_estate = estate_church }
+							estate_loyalty = {
+								estate = estate_church
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_church
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nobles }
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nobles
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+					}	
+					OR = {
+						NOT = { has_estate = estate_burghers }
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_burghers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+					}	
+					OR = {
+						NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_cossacks
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nomadic_tribes }
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nomadic_tribes
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+					}	
+					OR = {
+						NOT = { has_estate = estate_dhimmi }
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_dhimmi
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+					}	
+					OR = {
+						NOT = { has_estate = estate_brahmins }
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_brahmins
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+					}	
+					OR = {
+						NOT = { has_estate = estate_maratha }
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_maratha
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+					}	
+					OR = {
+						NOT = { has_estate = estate_vaisyas }
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_vaisyas
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+					}	
+					OR = {
+						NOT = { has_estate = estate_jains }
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_jains
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+					}	
+					OR = {
+						NOT = { has_estate = estate_rajput }
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_rajput
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+					}	
+					OR = {
+						NOT = { has_estate = estate_eunuchs }
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_eunuchs
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+					}	
+					OR = {
+						NOT = { has_estate = estate_janissaries }
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_janissaries
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+					}				
+				}
+			}
+		}
+		desc = "crownland_reminder_peace_not_loyal_desc"
+	}
+	picture = WESTERNISATION_eventPicture
+	trigger = {
+		is_at_war = no
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { has_country_flag = crownland_waiting_for_loyalty }
+		OR = {
+			has_country_flag = crownland_waiting_for_peace
+			has_country_flag = crownland_waiting_for_rebels
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effet = {
+			If = {
+				limit = { has_country_flag = crownland_waiting_for_peace }
+					clr_country_flag = crownland_waiting_for_peace
+			}
+			If = {
+				limit = { has_country_flag = crownland_waiting_for_rebels }
+					clr_country_flag = crownland_waiting_for_rebels
+			}
+		}
+	}
+	option = {
+		name = "crownland_reminder_ok"
+		trigger = {
+			AND = {
+				OR = {
+					NOT = { has_estate = estate_slavers }
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_slavers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+				}
+				OR = {
+					NOT = { has_estate = estate_church }
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+				}	
+				OR = {
+					NOT = { has_estate = estate_nobles }
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+				}	
+				OR = {
+					NOT = { has_estate = estate_burghers }
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+				}	
+				OR = {
+					NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+						estate = estate_cossacks
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+				}	
+				OR = {
+					NOT = { has_estate = estate_nomadic_tribes }
+					estate_loyalty = {
+						estate = estate_nomadic_tribes
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+				}	
+				OR = {
+					NOT = { has_estate = estate_dhimmi }
+					estate_loyalty = {
+						estate = estate_dhimmi
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+				}	
+				OR = {
+					NOT = { has_estate = estate_brahmins }
+					estate_loyalty = {
+						estate = estate_brahmins
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+				}	
+				OR = {
+					NOT = { has_estate = estate_maratha }
+					estate_loyalty = {
+						estate = estate_maratha
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+				}	
+				OR = {
+					NOT = { has_estate = estate_vaisyas }
+					estate_loyalty = {
+						estate = estate_vaisyas
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+				}	
+				OR = {
+					NOT = { has_estate = estate_jains }
+					estate_loyalty = {
+						estate = estate_jains
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+				}	
+				OR = {
+					NOT = { has_estate = estate_rajput }
+					estate_loyalty = {
+						estate = estate_rajput
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+				}	
+				OR = {
+					NOT = { has_estate = estate_eunuchs }
+					estate_loyalty = {
+						estate = estate_eunuchs
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+				}	
+				OR = {
+					NOT = { has_estate = estate_janissaries }
+					estate_loyalty = {
+						estate = estate_janissaries
+						loyalty = 50
+					}
+					AND = {
+						has_government_attribute = seizing_land_loyalty
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 45
+						}
+					}
+					estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+				}				
+			}
+		}
+		clr_country_flag = crownland_waiting_for_peace
+		clr_country_flag = crownland_waiting_for_rebels
+	}
+	option = {
+		name = "crownland_reminder_patient"
+		trigger = {
+			NOT = {
+				AND = {
+					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
+					OR = {
+						NOT = { has_estate = estate_church }
+							estate_loyalty = {
+								estate = estate_church
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_church
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nobles }
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nobles
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+					}	
+					OR = {
+						NOT = { has_estate = estate_burghers }
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_burghers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+					}	
+					OR = {
+						NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_cossacks
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nomadic_tribes }
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nomadic_tribes
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+					}	
+					OR = {
+						NOT = { has_estate = estate_dhimmi }
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_dhimmi
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+					}	
+					OR = {
+						NOT = { has_estate = estate_brahmins }
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_brahmins
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+					}	
+					OR = {
+						NOT = { has_estate = estate_maratha }
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_maratha
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+					}	
+					OR = {
+						NOT = { has_estate = estate_vaisyas }
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_vaisyas
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+					}	
+					OR = {
+						NOT = { has_estate = estate_jains }
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_jains
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+					}	
+					OR = {
+						NOT = { has_estate = estate_rajput }
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_rajput
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+					}	
+					OR = {
+						NOT = { has_estate = estate_eunuchs }
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_eunuchs
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+					}	
+					OR = {
+						NOT = { has_estate = estate_janissaries }
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_janissaries
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+					}				
+				}
+			}
+		}
+		set_country_flag = crownland_waiting_for_loyalty
+	}
+	option = {
+		name = "crownland_reminder_impatient"
+		trigger = {
+			NOT = {
+				AND = {
+					OR = {
+						NOT = { has_estate = estate_slavers }
+							estate_loyalty = {
+								estate = estate_slavers
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_slavers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+					}
+					OR = {
+						NOT = { has_estate = estate_church }
+							estate_loyalty = {
+								estate = estate_church
+								loyalty = 50
+							}
+							AND = {
+								has_government_attribute = seizing_land_loyalty
+								estate_loyalty = {
+									estate = estate_church
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nobles }
+						estate_loyalty = {
+							estate = estate_nobles
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nobles
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+					}	
+					OR = {
+						NOT = { has_estate = estate_burghers }
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_burghers
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+					}	
+					OR = {
+						NOT = { has_estate = estate_cossacks }
+					estate_loyalty = {
+							estate = estate_cossacks
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_cossacks
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+					}	
+					OR = {
+						NOT = { has_estate = estate_nomadic_tribes }
+						estate_loyalty = {
+							estate = estate_nomadic_tribes
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_nomadic_tribes
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+					}	
+					OR = {
+						NOT = { has_estate = estate_dhimmi }
+						estate_loyalty = {
+							estate = estate_dhimmi
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_dhimmi
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+					}	
+					OR = {
+						NOT = { has_estate = estate_brahmins }
+						estate_loyalty = {
+							estate = estate_brahmins
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_brahmins
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+					}	
+					OR = {
+						NOT = { has_estate = estate_maratha }
+						estate_loyalty = {
+							estate = estate_maratha
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_maratha
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+					}	
+					OR = {
+						NOT = { has_estate = estate_vaisyas }
+						estate_loyalty = {
+							estate = estate_vaisyas
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_vaisyas
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+					}	
+					OR = {
+						NOT = { has_estate = estate_jains }
+						estate_loyalty = {
+							estate = estate_jains
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_jains
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+					}	
+					OR = {
+						NOT = { has_estate = estate_rajput }
+						estate_loyalty = {
+							estate = estate_rajput
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_rajput
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+					}	
+					OR = {
+						NOT = { has_estate = estate_eunuchs }
+						estate_loyalty = {
+							estate = estate_eunuchs
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_eunuchs
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+					}	
+					OR = {
+						NOT = { has_estate = estate_janissaries }
+						estate_loyalty = {
+							estate = estate_janissaries
+							loyalty = 50
+						}
+						AND = {
+							has_government_attribute = seizing_land_loyalty
+							estate_loyalty = {
+								estate = estate_janissaries
+								loyalty = 45
+							}
+						}
+						estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+					}				
+				}
+			}
+		}
+		clr_country_flag = crownland_waiting_for_peace
+		clr_country_flag = crownland_waiting_for_rebels
+	}	
+}
+country_event = {
+	id = crownland_reminder.3
+	title = "crownland_reminder_title"
+	desc = "crownland_reminder_loyal_desc"
+	picture = WESTERNISATION_eventPicture
+	trigger = {
+		is_at_war = no
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }		
+		has_country_flag = crownland_waiting_for_loyalty
+		AND = {
+			OR = {
+				NOT = { has_estate = estate_slavers }
+				estate_loyalty = {
+					estate = estate_slavers
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers }
+			}	
+			OR = {
+				NOT = { has_estate = estate_church }
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_church }
+			}	
+			OR = {
+				NOT = { has_estate = estate_nobles }
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
+			}	
+			OR = {
+				NOT = { has_estate = estate_burghers }
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
+			}	
+			OR = {
+				NOT = { has_estate = estate_cossacks }
+				estate_loyalty = {
+					estate = estate_cossacks
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_cossacks
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
+			}	
+			OR = {
+				NOT = { has_estate = estate_nomadic_tribes }
+				estate_loyalty = {
+					estate = estate_nomadic_tribes
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_nomadic_tribes
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
+			}	
+			OR = {
+				NOT = { has_estate = estate_dhimmi }
+				estate_loyalty = {
+					estate = estate_dhimmi
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_dhimmi
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
+			}	
+			OR = {
+				NOT = { has_estate = estate_brahmins }
+				estate_loyalty = {
+					estate = estate_brahmins
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_brahmins
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
+			}	
+			OR = {
+				NOT = { has_estate = estate_maratha }
+				estate_loyalty = {
+					estate = estate_maratha
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_maratha
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
+			}	
+			OR = {
+				NOT = { has_estate = estate_vaisyas }
+				estate_loyalty = {
+					estate = estate_vaisyas
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_vaisyas
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
+			}	
+			OR = {
+				NOT = { has_estate = estate_jains }
+				estate_loyalty = {
+					estate = estate_jains
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_jains
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_jains }
+			}	
+			OR = {
+				NOT = { has_estate = estate_rajput }
+				estate_loyalty = {
+					estate = estate_rajput
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_rajput
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
+			}	
+			OR = {
+				NOT = { has_estate = estate_eunuchs }
+				estate_loyalty = {
+					estate = estate_eunuchs
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_eunuchs
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
+			}	
+			OR = {
+				NOT = { has_estate = estate_janissaries }
+				estate_loyalty = {
+					estate = estate_janissaries
+					loyalty = 50
+				}
+				AND = {
+					has_government_attribute = seizing_land_loyalty
+					estate_loyalty = {
+						estate = estate_janissaries
+						loyalty = 45
+					}
+				}
+				estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
+			}				
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "crownland_reminder_ok"
+			clr_country_flag = crownland_waiting_for_peace
+			clr_country_flag = crownland_waiting_for_loyalty
+	}
+}

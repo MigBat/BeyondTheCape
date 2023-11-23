@@ -1,0 +1,98 @@
+btc_update_colonial_australia_colour = {
+	limit = {
+		tag EAU
+	}
+	change_country_color = {
+		color = { 270 120 120 }
+	}
+}
+
+btc_update_colonial_brazil_colour = {
+	limit = {
+		tag EBZ
+	}
+	change_country_color = {
+		color = { 250 110 110 }
+	}
+}
+
+btc_update_colonial_california_colour = {
+	limit = {
+		tag ECA
+	}
+	change_country_color = {
+		color = { 210 60 60 }
+	}
+}
+
+btc_update_colonial_canada_colour = {
+	limit = {
+		tag ECN
+	}
+	change_country_color = {
+		color = { 180 30 30 }
+	}
+}
+
+btc_update_colonial_cascadia_colour = {
+	limit = {
+		tag ECS
+	}
+	change_country_color = {
+		color = { 5 13 0 }
+	}
+}
+
+btc_update_colonial_colombia_colour = {
+	limit = {
+		tag ECO
+	}
+	change_country_color = {
+		color = { 230 80 80 }
+	}
+}
+
+btc_update_colonial_easternamerica_colour = {
+	limit = {
+		tag EEA
+	}
+	change_country_color = {
+		color = { 130 30 30 }
+	}
+}
+
+btc_update_colonial_laplata_colour = {
+	limit = {
+		tag ELP
+	}
+	change_country_color = {
+		color = { 250 100 100 }
+	}
+}
+
+btc_update_colonial_louisiana_colour = {
+	limit = {
+		tag ELO
+	}
+	change_country_color = {
+		color = { 200 50 50 }
+	}
+}
+
+btc_update_colonial_mexico_colour = {
+	limit = {
+		tag EMX
+	}
+	change_country_color = {
+		color = { 220 70 70 }
+	}
+}
+
+btc_update_colonial_peru_colour = {
+	limit = {
+		tag EPR
+	}
+	change_country_color = {
+		color = { 240 90 90 }
+	}
+}
