@@ -7,6 +7,8 @@
 # ROOT = country picking the idea
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
 
+#ideas in the group can have effect = {} and removed_effect = {}
+
 aristocracy_ideas = {
 	category = MIL
 
@@ -36,6 +38,7 @@ aristocracy_ideas = {
 	noble_officers = {
 		army_tradition_decay = -0.01
 		navy_tradition_decay = -0.01
+		num_of_pronoiars = 1
 	}
 	international_nobility = {
 		diplomats = 1
@@ -80,14 +83,6 @@ aristocracy_ideas = {
 		modifier = { 
 			factor = 1.25
 			has_idea_group = spy_ideas 
-		}
-		modifier = {
-			factor = 100
-			OR = {
-				tag = POL
-				tag = LIT
-				tag = PLC
-			}
 		}
 	}
 }
@@ -515,6 +510,7 @@ spy_ideas = {
 	blackmailing = {
 		monthly_favor_modifier = 0.33
 		accept_vassalization_reasons = 15
+		num_of_pronoiars = 1
 	}
 
 	ai_will_do = {
@@ -603,6 +599,7 @@ offensive_ideas = {
 	}
 	glorious_arms = {
 		prestige_from_land = 1.0
+		num_of_pronoiars = 1
 	}
 	engineer_corps = {
 		siege_ability = 0.20
@@ -1254,6 +1251,7 @@ quality_ideas = {
 	bonus = {
 		discipline = 0.05
 		janissaries_loyalty_modifier = 0.1
+		ghulams_loyalty_modifier = 0.1
 		monthly_portuguese_saudade = -0.05
 	}
 
@@ -1352,6 +1350,7 @@ quantity_ideas = {
 	}
 	mass_army = {
 		global_manpower_modifier = 0.33
+		num_of_pronoiars = 1
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -1436,6 +1435,7 @@ expansion_ideas = {
 
 	additional_colonists = {
 		colonists = 1
+		effect = { remove_temporary_colonist = yes }
 	}
 	additional_merchants = {
 		merchants = 1
@@ -1454,6 +1454,7 @@ expansion_ideas = {
 	general_colonization_law  = {
 		colonists = 1
 		colonist_placement_chance = 0.05
+		effect = { remove_temporary_colonist = yes }
 	}
 	competetive_merchants  = {
 		global_trade_power = 0.2
@@ -1535,6 +1536,7 @@ administrative_ideas = {
 	}
 	local_rule = {
 		advisor_pool = 1
+		num_of_pronoiars = 1
 	}
 	adaptability = {
 		core_creation = -0.25
@@ -1846,6 +1848,7 @@ court_ideas = {
 	
 	long_echo = {
 		power_projection_from_insults = 1
+		diplomatic_reputation = 1
 	}
 	recognize_hierarchy = {
 		all_estate_loyalty_equilibrium = 0.1
@@ -1853,6 +1856,7 @@ court_ideas = {
 	}
 	welcoming_ceremonies = {
 		prestige = 1 
+		monthly_persian_influence = 0.1
 	}
 	tranquil_coordination = {
 		reform_progress_growth = 0.2

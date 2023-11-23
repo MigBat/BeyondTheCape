@@ -1,4 +1,3 @@
-
 monarchy = {
 	reform_levels = {
 		feudalism_vs_autocracy = {

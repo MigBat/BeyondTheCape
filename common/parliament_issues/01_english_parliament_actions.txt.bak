@@ -74,7 +74,17 @@ english_french_act_of_union = {
 		change_tag = AVE
 		hidden_effect = {
 			on_change_tag_effect = yes
-			restore_country_name = yes
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_country_flag = ave_theocracy_name }
+						NOT = { has_country_flag = ave_republic_name }
+						NOT = { has_country_flag = ave_state_name }
+						NOT = { has_country_flag = ave_empire_name }
+					}
+				}
+				restore_country_name = yes
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -342,12 +352,31 @@ crown_of_iberia_act = {
 		}
 		custom_tooltip = crown_of_iberia_act_at
 		hidden_effect = {
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
 			every_owned_province = {
-				limit = { region = iberia_region }
-				add_base_production = 1
-				type = random
-				amount = 10
+				limit = {
+					has_province_flag = received_reward
+				}
+				clr_province_flag = received_reward
 			}
+			#iberia_region = {
+			#	limit = {
+			#	  owned_by = ROOT
+			#	}
+			#	add_base_production = 1
+			#  
+			#	type = random
+			#	amount = 10
+			#}
 		}
 		country_event = {
 			id = flavor_gbr.23
@@ -399,14 +428,31 @@ crown_of_italy_act = {
 		}
 		custom_tooltip = crown_of_italy_act_at
 		hidden_effect = {
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
 			every_owned_province = {
 				limit = {
-					region = italy_region
+					has_province_flag = received_reward
 				}
-				add_base_production = 1
-				type = random
-				amount = 10
+				clr_province_flag = received_reward
 			}
+			#italy_region = {
+			#	limit = {
+			#		owned_by = ROOT
+			#	}
+			#	add_base_production = 1
+			#  
+			#	type = random
+			#	amount = 10
+			#}
 		}
 		country_event = {
 			id = flavor_gbr.24
@@ -532,7 +578,7 @@ the_black_act = {
 		set_parliament_action_flag = {
 			parliament_action = the_black_act
 		}
-		add_stability = 3
+		add_stability_or_adm_power = yes
 	}
 	
 	modifier = {
@@ -1833,17 +1879,18 @@ discipline_for_the_marines_acts = {
 		has_issue_unlocked = {
 			issue = discipline_for_the_marines_acts
 		}
+		has_not_enacted_parliament_action = {
+			parliament_action = discipline_for_the_marines_acts
+		}
 	}
-	
+		
 	effect = {
-		add_mil_power = 50
+		add_country_modifier = {
+			name = discipline_for_the_marines_acts_modifier
+			duration = -1
+		}
 	}
-	
-	modifier = {
-		morale_damage = 0.1
-		is_marine_modifier = yes
-	}
-	
+		
 	chance = {
 		factor = 1
 		modifier = {
@@ -1865,17 +1912,18 @@ improved_man_of_war_acts = {
 		has_issue_unlocked = {
 			issue = improved_man_of_war_acts
 		}
+		has_not_enacted_parliament_action = {
+			parliament_action = improved_man_of_war_acts
+		}
 	}
 	
 	effect = {
-		add_navy_tradition = 15
+		add_country_modifier = {
+			name = improved_man_of_war
+			duration = -1
+		}
 	}
-	
-	modifier = {
-		ship_durability = 0.15
-		is_man_of_war_modifier = yes
-	}
-	
+		
 	chance = {
 		factor = 1
 		modifier = {
@@ -1897,15 +1945,16 @@ army_reform_acts = {
 		has_issue_unlocked = {
 			issue = army_reform_acts
 		}
+		has_not_enacted_parliament_action = {
+			parliament_action = army_reform_acts
+		}
 	}
 	
 	effect = {
-		add_army_professionalism = 0.01
-		add_army_tradition = 15
-	}
-	
-	modifier = {
-		fire_damage_received = -0.1
+		add_country_modifier = {
+			name = army_reform_acts_modifier
+			duration = -1
+		}
 	}
 	
 	chance = {

@@ -190,7 +190,7 @@ country_event = {
 
 	trigger = {
 		tag = POR
-		is_year = 1530
+		is_year = 1525
 		NOT = { is_year = 1580 }
 		brazil_region = {
 			country_or_vassal_holds = POR
@@ -201,13 +201,41 @@ country_event = {
 		months = 100
 	}
 	
-	
-	option = {		# Appoint de Sousa
+	option = {		# Kill them
 		name = "flavor_por.EVTOPTA3271"
-		add_country_modifier = {
-			name = governor_de_sousa
-			duration = 3650
+		ai_chance = { factor = 75 }
+		define_general = {
+			name = "Martim de Sousa"
+			shock = 3
+			fire = 4
+			manuever = 5
+			siege = 0
 		}
+		add_mil_power = -75
+		add_years_of_income = -0.2
+		add_country_modifier = {
+			name = rooting_out_corsairs
+			duration = 1460
+		}
+
+	}
+	
+	option = {		# Negotiate
+		name = "flavor_por.EVTOPTB3271"
+		ai_chance = { factor = 25 }
+		define_advisor = {
+			type = colonial_governor
+			name = "Martim de Sousa"
+			skill = 2
+			cost_multiplier = 0.5
+		}
+		add_dip_power = -75
+		add_years_of_income = -0.2
+		add_country_modifier = {
+			name = negotiating_with_corsairs
+			duration = 1460
+		}
+
 	}
 }
 
@@ -268,7 +296,7 @@ country_event = {
 		add_dip_power = 100
 		define_advisor = {
 			type = statesman
-			name = "Dom Luís de Meneses"
+			name = "Dom Luï¿½s de Meneses"
 			culture = portugese
 			discount = yes
 			skill = 2
@@ -385,7 +413,7 @@ country_event = {
 	option = {		# Request the return of the cargo!
 		name = "flavor_por.EVTOPTA5"
 		ai_chance = { factor = 90 }
-		add_prestige = 10
+		add_years_of_income = -0.5
 		hidden_effect = {
 			NED = { country_event = { id = flavor_por.6 days = 10 } }
 		}
@@ -393,7 +421,8 @@ country_event = {
 	option = {		# Recognize their right
 		name = "flavor_por.EVTOPTB5"
 		ai_chance = { factor = 10 }
-		add_prestige = -10
+		add_prestige = -20
+		add_years_of_income = -0.5
 	}
 }
 
@@ -418,6 +447,7 @@ country_event = {
 		name = "flavor_por.EVTOPTB6"
 		ai_chance = { factor = 10 }
 		add_prestige = -10
+		add_dip_power = 15
 		hidden_effect = {
 			POR = { country_event = { id = flavor_por.7 days = 10 } }
 		}
@@ -435,7 +465,7 @@ country_event = {
 
 	option = {		# Very well
 		name = "flavor_por.EVTOPTA7"
-		add_years_of_income = 0.5
+		add_years_of_income = 0.4
 	}
 }
 
@@ -458,7 +488,7 @@ country_event = {
 	}
 }
 
-# Jerónimos Monastery
+# Jerï¿½nimos Monastery
 #country_event = {
 #	id = flavor_por.10
 #	title = "flavor_por.EVTNAME10"
@@ -521,14 +551,16 @@ country_event = {
 		name = "flavor_por.EVTOPTA3269"
 		ai_chance = { factor = 75 }
 		add_papal_influence = 20
+		add_stability = 1
 		add_country_modifier = {
 			name = narrowminded_modifier
-			duration = 3650
+			duration = 36500
 		}
 	}
 	option = {		# 
 		name = "flavor_por.EVTOPTB3269"
 		ai_chance = { factor = 25 }
+		add_papal_influence = -40
 		PAP = {
 			add_opinion = {
 				who = ROOT
@@ -538,7 +570,7 @@ country_event = {
 	}
 }
 
-# # King Sebastião's Expedition to North Africa
+# # King Sebastiï¿½o's Expedition to North Africa
 # country_event = {
 # 	id = flavor_por.3272
 # 	title = "flavor_por.EVTNAME3272"
@@ -730,7 +762,7 @@ country_event = {
 #	}
 #}
 
-# Marquês de Pombal
+# Marquï¿½s de Pombal
 #country_event = {
 #	id = flavor_por.3279
 #	title = "flavor_por.EVTNAME3279"
@@ -808,6 +840,10 @@ country_event = {
 				size = 2
 			}
 		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -15
+		}
 		set_country_flag = tavoras
 	}
 	option = {		# Be Lenient
@@ -815,12 +851,12 @@ country_event = {
 		ai_chance = { factor = 25 }
 		add_legitimacy = -25
 		add_republican_tradition = -25
-
+		add_absolutism = -15
 		set_country_flag = tavoras
 	}
 }
 
-# The Expulsion of Marquês de Pombal
+# The Expulsion of Marquï¿½s de Pombal
 country_event = {
 	id = flavor_por.3281
 	title = "flavor_por.EVTNAME3281"
@@ -851,7 +887,7 @@ country_event = {
 			duration = -1
 		}
 	}
-	option = {		# Let the 'Great Marquês' rule
+	option = {		# Let the 'Great Marquï¿½s' rule
 		name = "flavor_por.EVTOPTB3281"
 		ai_chance = { factor = 25 }
 		every_owned_province = {
@@ -910,7 +946,7 @@ country_event = {
 #	}
 #}
 
-# The Tower of Belém
+# The Tower of Belï¿½m
 #country_event = {
 #	id = flavor_por.9
 #	title = "flavor_por.EVTNAME9"
@@ -1104,7 +1140,6 @@ country_event = {
 	option = {		# Every man make his own fortune
 		name = "flavor_por.EVTOPTA3266"
 		ai_chance = { factor = 75 }
-		add_corruption = 1
 		add_country_modifier = {
 			name = colonial_policy
 			duration = -1
@@ -1117,7 +1152,8 @@ country_event = {
 			limit = {
 				corruption = 1
 			}
-			add_corruption = -1
+			add_adm_power = -100
+			add_dip_power = -25
 		}
 		if = {
 			limit = {

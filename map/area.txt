@@ -1158,13 +1158,13 @@ kartli_kakheti_area = { #3
 	423 2203 4301
 }
 
-armenia_area = { #4
-	420 419 2202 2205
+armenia_area = { #5
+	420 419 2202 2205 4302
 }
 
 shirvan_area = { #5 #Northern Azerbaijan
 	color = { 225 231 53 }
-	421 424 4299 4305 4340
+	421 4299 4305 4340
 }
 
 circassia_area = { #4
@@ -1184,8 +1184,8 @@ rum_area = { #5
 	329 1846 2300 4314 4315
 }
 
-erzurum_area = { #4
-	331 2305 2306 4302
+erzurum_area = { #3	Erzurum and Trebizond
+	330 331 2305
 }
 
 hudavendigar_area = { #3
@@ -1211,8 +1211,8 @@ aegean_archipelago_area = { #4
 	164 320 2348 3003 4700
 }
 
-kastamonu_area = { #5
-	325 328 330 2299 2304
+kastamonu_area = { #4
+	325 328 2299 2304
 }
 
 karaman_area = { #4
@@ -1240,9 +1240,9 @@ palestine_area = { #3
 	364 379 1854
 }
 
-dulkadir_area = { # 3
+dulkadir_area = { # 4
 	color = { 184 54 72 }
-	332 2303 4310
+	332 2303 2308 4310
 }
 
 iraq_arabi_area = { #5 Lower Mesopotamia
@@ -1253,12 +1253,12 @@ basra_area = { #4
 	408 2311 2312 4288
 }
 
-luristan_area = { #5
-	413 414 2209 2210 2211
+luristan_area = { #4
+	413 414 2209 2210
 }
 
-north_kurdistan_area = { #4
-	418 2307 4295 4296
+north_kurdistan_area = { #5
+	418 2306 2307 4295 4296
 }
 
 khuzestan_area = { #5
@@ -1267,12 +1267,12 @@ khuzestan_area = { #5
 
 shahrizor_area = {	#4
 	color = { 152 102 102 }
-	411 415 4293 4294
+	415 2211 4293 4294
 }
 
 al_jazira_area = { #5
 	color = { 92 200 92 }
-	407 2308 2309 2314 4292
+	407 411 2309 2314 4292
 }
 
 
@@ -2062,7 +2062,7 @@ isfahan_area = { #3
 }
 
 tabriz_area = { #4 Central Azerbaijan
-	416 2206 2207 4304
+	416 2206 2207 4304 424
 }
 
 tabarestan_area = { #5

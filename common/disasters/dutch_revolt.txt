@@ -80,6 +80,10 @@ dutch_revolt_disaster = {
 				}
 			}
 		}
+		if = {
+			limit = { has_government_attribute = no_more_dutch_revolt }
+			NOT = { has_government_attribute = no_more_dutch_revolt }
+		}
 	}
 	
 	can_stop = {
