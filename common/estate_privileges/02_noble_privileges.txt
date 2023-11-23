@@ -423,7 +423,7 @@ estate_nobles_levies = {
 }
 
 estate_nobles_advisors = {
-	icon = privilege_recruit_minister
+	icon = privilege_empty_throne
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.05
@@ -577,7 +577,7 @@ estate_nobles_french_strong_duchies = {
 #DLC Privileges
 
 estate_nobles_supremacy_over_crown = {
-	icon = privilege_empty_throne
+	icon = privilege_recruit_minister
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	influence = 0.1
