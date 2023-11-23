@@ -1,0 +1,43 @@
+﻿l_english:
+
+ #MISSIONS
+ #dutch 
+ emp_ned_baltic_bulk_trades_title: "Moedernegotie"
+ #emp_ned_baltic_bulk_trades_desc: "Moedernegotie"
+ emp_ned_challenge_spanish_power_title: "Zeemacht"
+ emp_ned_challenge_spanish_power_desc: "Our rivals constantly eye our trade and even our lands with clearly envious eyes. We must be ready to fend them off!"
+ emp_ned_discover_australia_title: "Land in New Holland"
+ #emp_ned_discover_australia_desc: "Land in New Holland"
+ emp_ned_settle_north_america_title: "Settle New Amsterdam"
+ emp_ned_settle_north_america_desc: "The Americas produce many lucrative goods which we would be foolish to ignore. It's vital that we establish a presence in the north, where we could perhaps found a city. This city could become a major world center of trade."
+ #emp_ned_reform_the_generality_lands_title: "Modernize the Estates"
+ #emp_ned_reform_the_generality_lands_desc: "Modernize the Estates"
+ emp_ned_the_true_freedom_title: "Stock Exchange"
+ #emp_ned_the_true_freedom_desc: "Stock Exchange"
+ emp_ned_merge_the_stadtholders_title: "Maurician Reforms"
+ #emp_ned_merge_the_stadtholders_desc: "Maurician Reforms"
+ 
+ emp_ned_leiden_university_title: "[Root.GetUniNameNetherlands] University"
+ emp_ned_leiden_university_desc: "The Low Countries are home to many provinces each with a high degree of autonomy. Each province has wanted to emphasize eductation in it's own way. Honest discourse and intellectual freedom are the foundations upon which our universities rest. State support and promotion of our esteemed and open institutions of higher learning is sure to attract talented minds from across Europe."
+ 
+ emp_ned_sea_beggars_desc: "The Sea Beggars or Watergeuzen took their name from the Geuzen, a confederation of nobles who asked the lady-protector of the netherlands to grant them more religious freedoms. Instead this lead to outright conflict. The Watergeuzen operated from the Sea and privateered against the Spanish. Originally sailing from the English Harbours, they gained fame by seizing the Town of Brielle."
+ ned_sea_beggar_activity: "Trading Prowess of the Fluyt"
+ #Provinces
+ PROV1263: "Murman Sea"
+ PROV1263_ADJ: "Murman"
+ PROV1102: "Dina Arobi" #arab name alt. Cirne or Do-Cerne or Mascarenes 
+ PROV4381: "Overijssel"
+ PROV1488: "Eastern Wînipekw"
+ PROV1487: "Western Wînipekw"
+ PROV1485: "Mistaken Strait"
+ 
+ south_west_pacific_region: "Tasman Sea" #Or Pacific Oceania
+ 
+ HOL_ADJ: "Hollander" #Holland =/= Netherlands
+ LIE: "Liège"
+ 
+ emp_ned_assert_dutch_sovereignty_tt: "Own §Y3§! core provinces"
+ 
+ bur_diplo_mod: "Legacy of Lothair"
+ bur_subjects.tooltip: "All subjects except §YLuxembourg§! have less than §Y1.00%§! Liberty Desire"
+ #CHURCH_OF: "[Root.GetChurchOrBaptistName] of $COUNTRY$"

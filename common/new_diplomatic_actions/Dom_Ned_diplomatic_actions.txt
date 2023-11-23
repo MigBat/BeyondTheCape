@@ -1,0 +1,102 @@
+influence_bishop_election = {
+    category = influence
+    
+    #alert_index = <int>             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    #alert_tooltip = <key>           # The localisation key to display in the alert tooltip. Optional.
+    
+    #require_acceptance = yes / no   # Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+    is_visible = {
+		OR = {
+        tag = BUR
+		tag = UTR #will expand this to others soon
+		}
+		FROM = {
+			government = theocracy
+			government_rank = 1
+			NOT = { tag = PAP }
+		}
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		OR = {
+			is_neighbor_of = FROM
+			any_subject_country = { is_neighbor_of = FROM }
+		}
+		FROM = {
+			guaranteed_by = ROOT
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 50
+			}
+		}
+		FROM = {			
+			owes_favors = { 
+				who = ROOT
+				value = 25
+			}
+		}
+		papal_influence = 25
+	}
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		add_papal_influence = -25
+		add_favors = {
+			who = FROM
+			amount = -50
+		}
+		if = { limit = { ROOT = { tag = BUR }  }
+			FROM = { set_country_flag = bur_influenced_election }
+		}
+		if = { limit = { ROOT = { tag = UTR } }
+			FROM = { set_country_flag = dom_utr_influenced_election }
+		}
+		FROM = {
+			kill_heir = {}
+		}
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		#add cb_annex
+		add_casus_belli = {
+			target = FROM
+			type = cb_claim_throne
+			months = -1
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+    #ai_acceptance = {
+    #    # Add an AI factor entry
+    #    add_entry = {
+    #        name = bishopric_likes_burgundy 
+	#		#<key>    # The localisation key to display for this factor
+    #        
+    #        # Restricts this entry to the countries that validate the triggers. Optional.
+    #        limit = {
+    #            <triggers>
+    #        }
+    #        
+    #        # ai_value MUST always be created within an entry first.
+    #        export_to_variable = {
+    #            variable_name = ai_value
+    #            value = <exportable value>      # Which exportable value to export
+    #            who = FROM                      # Who to export the value from
+    #            with = THIS                     # Who the ai_value is for
+    #        }
+    #        
+    #        # You can then change ai_value with effects such as multiply_variable, etc
+    #    }
+    #}
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+		always = yes
+    }
+}

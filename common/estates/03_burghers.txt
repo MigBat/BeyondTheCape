@@ -207,6 +207,15 @@ estate_burghers = {
 		}
 		loyalty = -20
 	}
+	
+	influence_modifier = {
+		desc = DOM_NED_Peasants_Lowered_Burghers
+		trigger = {
+			has_reform = peasants_republic
+		}	
+		influence = -15
+	}
+	
 	#Custom Names
 	custom_name = {
 		desc = estate_quartersmasters

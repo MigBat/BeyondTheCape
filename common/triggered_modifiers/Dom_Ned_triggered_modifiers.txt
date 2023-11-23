@@ -1,0 +1,376 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+###########################################
+japanese_samurai_mission = {
+	potential = {
+		mission_completed = dom_ned_japanese_friendship
+	}
+
+	trigger = {
+		OR = {
+			AND = {
+				alliance_with = JAP
+				JAP = {
+					trust = { who = ROOT value = 75 } 
+				}
+			}
+			AND = {
+				accepted_culture = japanese
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					region = japan_region
+					value = 25
+				}
+			}
+		}
+	}
+
+	has_samurai = yes
+	allowed_samurai_fraction = 0.1 
+}
+###########################################
+
+burgundy_dutch_subjects_1 = {
+	potential = {
+		has_reform = burgundian_state_reform
+		NOT = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 2
+		}
+		}
+	}
+
+	trigger = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 1
+		}
+	}
+	
+	diplomatic_upkeep = 1
+}
+
+burgundy_dutch_subjects_2 = {
+	potential = {
+		has_reform = burgundian_state_reform
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 1
+		}
+		NOT = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 3
+		}
+		}
+	}
+
+	trigger = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 2
+		}
+	}
+	
+	diplomatic_upkeep = 2
+}
+
+burgundy_dutch_subjects_3 = {
+	potential = {
+		has_reform = burgundian_state_reform
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 2
+		}
+		NOT = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 4
+		}
+		}
+	}
+
+	trigger = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 3
+		}
+	}
+	
+	diplomatic_upkeep = 3
+}
+burgundy_dutch_subjects_4 = {
+	potential = {
+		has_reform = burgundian_state_reform
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 3
+		}
+		NOT = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 5
+		}
+		}
+	}
+
+	trigger = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 4
+		}
+	}
+	
+	diplomatic_upkeep = 4
+}
+burgundy_dutch_subjects_5 = {
+	potential = {
+		has_reform = burgundian_state_reform
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 5
+		}
+		NOT = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 6
+		}
+		}
+	}
+
+	trigger = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 5
+		}
+	}
+	
+	diplomatic_upkeep = 5
+}
+burgundy_dutch_subjects_6 = {
+	potential = {
+		has_reform = burgundian_state_reform
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 5
+		}
+		NOT = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 7
+		}
+		}
+	}
+
+	trigger = {
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+					primary_culture = flemish
+				}
+				#capital = {
+				#	region = low_countries_region
+				#}
+			}
+			amount = 6
+		}
+	}
+	
+	diplomatic_upkeep = 6
+}
+###########################################
+exploration_modifier_1 = {
+	potential = {
+		NOT = {
+			is_year = 1500
+		}
+		dip_tech = 3
+	}
+
+	trigger = {
+		always = yes
+	}
+	global_colonial_growth = -15
+	range = 0.25 #base needs more
+}
+exploration_modifier_2 = {
+	potential = {
+		is_year = 1500
+		NOT = {
+			is_year = 1600
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	global_colonial_growth = -5
+	range = 0.25 #base needs more
+}

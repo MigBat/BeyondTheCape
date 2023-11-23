@@ -1,0 +1,31 @@
+dependency = {
+	subject_type = commercial_enterprise
+	first = NED
+	second = VOC
+	#start_date = 1602.3.20
+	start_date = 1609.1.1 #first province
+	end_date = 1790.1.1
+}
+
+union = {	#fix dates later
+	first = BUR
+	second = LUX
+	start_date = 1444.1.1
+	end_date = 1477.1.1
+}
+
+# Duke of Kleves/Gelre
+#union = {
+#	first = KLE
+#	second = GEL
+#	start_date = 1539.2.6
+#	end_date = 1543.1.1
+#}
+
+#
+#union = {
+#	first = KLE
+#	second = GEL
+#	start_date = 1538.6.30
+#	end_date = 1543.9.7
+#}
