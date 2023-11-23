@@ -85,6 +85,12 @@ english_french_act_of_union = {
 				}
 				restore_country_name = yes
 			}
+			if = {
+				limit = {
+					has_country_modifier = ave_anglo_french_imperium
+				}
+				country_event = { id = flavor_gbr.20 }	#Renew renaming
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {

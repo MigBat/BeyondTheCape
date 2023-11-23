@@ -98,7 +98,7 @@ dom_cas_missions_1 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -480,7 +480,7 @@ dom_cas_missions_1_b = {
 						province_id = 220
 					}
 					OR = {
-						NOT = { has_building = marketplace }
+						has_trade_building_trigger = no
 						NOT = { owned_by = ROOT }
 					}
 				}
@@ -500,11 +500,11 @@ dom_cas_missions_1_b = {
 				}
 			}
 			213 = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 				owned_by = ROOT
 			}
 			220 = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 				owned_by = ROOT
 			}
 			reform_level = 3
@@ -712,6 +712,7 @@ dom_cas_missions_1_c = {
 			tag = CAS 
 			tag = SPA 
 		}
+		
 	}
 	has_country_shield = yes
 	
@@ -925,7 +926,7 @@ dom_cas_missions_2 = {
 				limit = { 
 					NOT = { religion = catholic }
 				}
-				has_advisor = inquisitor 
+				inquisitor = 1
 			}
 		}
 		effect = {
@@ -1032,7 +1033,10 @@ dom_cas_missions_2 = {
 				}
 				OR = { 
 					navy_tradition = 30 
-					has_flagship = yes 
+					if = {
+						limit = { has_dlc = "Golden Century" }
+						has_flagship = yes 
+					}
 					num_of_heavy_ship = 8 
 				}
 			}
@@ -1105,7 +1109,7 @@ dom_cas_missions_2 = {
 			}
 			else = { 
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 2
 				}
 			}
@@ -1160,7 +1164,7 @@ dom_cas_missions_2_b = {
 					alliance_with = CAS 
 					marriage_with = CAS 
 					if = {
-						limit = { has_dlc = "Leviathan" }
+						limit = { has_dlc = "Leviathan" ai = no }
 						CAS = {
 							trust = {
 								who = ROOT 
@@ -1307,9 +1311,15 @@ dom_cas_missions_2_b = {
 		effect = {
 			set_government_rank = 3 
 			
-			add_country_modifier = {
-				name = ara_a_new_power_modifier
-				duration = -1 
+			if = {
+				limit = { has_dlc = "Golden Century" }
+				add_country_modifier = {
+					name = ara_a_new_power_modifier
+					duration = -1 
+				}
+			}
+			else = {
+				add_prestige_or_monarch_power = { amount = 50 }
 			}
 		}
 	}
@@ -1419,11 +1429,11 @@ dom_cas_missions_2_b = {
 				add_claim = ROOT
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 		}
@@ -1963,6 +1973,50 @@ dom_cas_missions_3 = {
 					months = 300
 					target = NAP
 				}
+				sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				western_sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				calabria_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				apulia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				naples_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				120 = {
+					if = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+					add_permanent_claim = ROOT
+					}
+				}
 			}
 			else = {
 				sicily_area = {
@@ -2074,36 +2128,40 @@ dom_cas_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			if = {
+			lombardy_area = {
 				limit = {
-					exists = MLO
-					valid_for_personal_unions_trigger = yes
-					MLO = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_casus_belli = {
-					target = MLO
-					type = cb_restore_personal_union
-					months = 600
-				}
-	
+				add_permanent_claim = ROOT
 			}
-			else = {
-				lombardy_area = {
-					limit = {
-						NOT = { is_core = ROOT}
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			po_valley_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				po_valley_area = {
-					limit = {
-						NOT = { is_core = ROOT}
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			wallonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
+				add_permanent_claim = ROOT
+			}
+			flanders_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			brabant_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			hidden_effect = {
 				remove_casus_belli = {
@@ -2119,19 +2177,26 @@ dom_cas_missions_3 = {
 		required_missions = { gc_cas_spa_italian_ambition2 }
 		position = 4
 		provinces_to_highlight = {
-			area = lombardy_area
+			OR = {
+				area = tuscany_area
+				area = lombardy_area
+				area = po_valley_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
-			OR = {
-				MLO = {
-					junior_union_with = ROOT
-				}
-				lombardy_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lombardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			po_valley_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -2141,15 +2206,15 @@ dom_cas_missions_3 = {
 			}
 			
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 		}
@@ -2233,9 +2298,10 @@ dom_cas_missions_3 = {
 		}
 
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value =  15
-				region = low_countries_region
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
 			}
 		}
 		effect = {
@@ -2601,41 +2667,6 @@ dom_cas_missions_3_c = {
 				name = "spa_hispaniola_discovered"
 				duration = 5475
 			}
-			la_plata_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			colombia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			east_cuba_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			cuba_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			dominica_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	
@@ -2679,9 +2710,15 @@ dom_cas_missions_3_c = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value =  15
-				region = central_america_region
+			custom_trigger_tooltip = {
+				tooltip = spa_mayan_conquest_tooltip
+				central_america_region = {
+					type = all
+					OR = {
+						is_empty = yes
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
 			}
 		}
 		effect = {
@@ -2803,15 +2840,15 @@ dom_cas_missions_4 = {
 					duration = 9125
 				}
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 1
 				}
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 1
 				}
 			}
@@ -2862,15 +2899,15 @@ dom_cas_missions_4 = {
 						duration = 9125
 					}
 					change_ruler_stat = {
-						stat = adm
+						type = adm
 						amount = 1
 					}
 					change_ruler_stat = {
-						stat = dip
+						type = dip
 						amount = 1
 					}
 					change_ruler_stat = {
-						stat = mil
+						type = mil
 						amount = 1
 					}
 				}
@@ -3117,7 +3154,7 @@ dom_cas_missions_4_b = {
 				name = ara_med_claim_modifier
 				duration = 5475
 			}
-			213 = {
+			capital_scope = {
 				add_building = shipyard 
 				add_base_production = 1
 			}
@@ -3358,13 +3395,13 @@ dom_cas_missions_4_c = {
 				custom_tooltip = por_more_likely_to_get_expansionist_tt
 				set_country_flag = por_more_likely_to_get_expansionist_flag 
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 2
 				}
 				add_prestige_or_monarch_power = { amount = 10 }
@@ -3439,10 +3476,7 @@ dom_cas_missions_4_c = {
 		trigger = {
 			if = {
 				limit = {
-					AND = {
-						has_dlc = "Rights of Man"
-						ai = no
-					}
+					has_dlc = "Rights of Man"
 				}
 				490 = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -3473,7 +3507,7 @@ dom_cas_missions_4_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hern�n Cort�s"
+				name = "Hernán Cortés"
 			}
 			490 = {
 				add_base_production = 3
@@ -4351,7 +4385,13 @@ dom_cas_missions_5_c = {
 		required_missions = {  }
 		position = 7
 		provinces_to_highlight = {
-			province_id = 1466
+			OR = {
+				AND = {
+					region = guinea_region
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				province_id = 1466
+			}
 			has_discovered = ROOT
 		}
 
@@ -4555,10 +4595,7 @@ dom_cas_missions_5_c = {
 		trigger = {
 			if = {
 				limit = {
-					AND = {
-						has_dlc = "Rights of Man"
-						ai = no
-					}
+					has_dlc = "Rights of Man"
 				}
 				484 = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -4593,7 +4630,7 @@ dom_cas_missions_5_c = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip 
+					type = dip 
 					amount = 1 
 				}
 				add_mercantilism = 3 

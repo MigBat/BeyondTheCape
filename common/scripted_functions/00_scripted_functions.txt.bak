@@ -82,6 +82,17 @@ can_make_core = {
 }
 
 can_make_state = {
+	condition = {
+		tooltip = "NO_OVERSEAS_STATE"
+		potential = {
+			ROOT = {
+				is_overseas = yes
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 can_abandon_state = {
@@ -159,12 +170,353 @@ can_colonize_province = {
 			}
 		}
 	}
+	condition = {
+		tooltip = "subject_colonial_region_restriction"
+		potential = {
+			FROM = {
+				is_subject = yes
+				is_colonial_nation = no
+			}
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					overlord = {
+						any_subject_country = {
+							is_colonial_nation = yes
+							capital_scope = {
+								colonial_region = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "limit_colonize_interior"
+		potential = {
+			FROM = {
+				NOT = {
+					OR = {
+						expansion_ideas = 1 
+						has_idea = siberian_frontier
+					}
+				}
+			}
+		}
+		allow = {
+			ROOT = {
+				has_port = yes
+			}
+		}
+	}
+	# alcaçovas treaty
+	condition = {
+		tooltip = "alcacovas_treaty"
+		potential = {
+			FROM = {
+				has_country_flag = alcacovas_treaty
+				NOT = { has_country_flag = tordesillas_cas }
+				NOT = { has_country_flag = terra_nova_cas }
+				NOT = { has_country_flag = new_tordesillas_cas }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						continent = south_america
+					}
+				}
+			}
+		}
+	}
+	# tordesillas portugal
+	condition = {
+		tooltip = "tordesillas_portugal"
+		potential = {
+			FROM = {
+				has_country_flag = tordesillas_por
+				NOT = { has_country_flag = terra_nova_por }
+				NOT = { has_country_flag = new_tordesillas_por }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							continent = north_america
+							if = { 
+								limit = { FROM = { has_country_flag = terra_nova_claim } } 
+								NOT = { 
+									OR = {
+										area = newfoundland_area
+										area = labrador_area
+									}
+								}
+							}
+						}
+						AND = {
+							continent = south_america
+							NOT = {
+								OR = {
+									area = maranhao_area
+									area = piaui_area
+									area = ceara_area
+									area = sao_francisco_area
+									area = pernambuco_area
+									area = bahia_area
+									area = diamantina_area
+									area = minas_gerais_area
+									area = rio_de_janeiro_area
+									area = grao_para_area
+									area = pontal_area
+									area = goias_area
+									area = sao_paolo_area
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	# terra nova portugal
+	condition = {
+		tooltip = "tordesillas_portugal"
+		potential = {
+			FROM = {
+				has_country_flag = terra_nova_por
+				NOT = { has_country_flag = tordesillas_por }
+				NOT = { has_country_flag = new_tordesillas_por }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							continent = north_america
+							NOT = { 
+								OR = {
+									area = newfoundland_area
+									area = labrador_area
+								}
+							}
+						}
+						AND = {
+							continent = south_america
+							NOT = {
+								OR = {
+									area = maranhao_area
+									area = piaui_area
+									area = ceara_area
+									area = sao_francisco_area
+									area = pernambuco_area
+									area = bahia_area
+									area = diamantina_area
+									area = minas_gerais_area
+									area = rio_de_janeiro_area
+									area = grao_para_area
+									area = pontal_area
+									area = goias_area
+									area = sao_paolo_area
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	# new tordesillas portugal
+	condition = {
+		tooltip = "tordesillas_portugal"
+		potential = {
+			FROM = {
+				has_country_flag = new_tordesillas_por
+				NOT = { has_country_flag = terra_nova_por }
+				NOT = { has_country_flag = tordesillas_por }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							continent = north_america
+							NOT = { 
+								OR = {
+									area = newfoundland_area
+									area = labrador_area
+								}
+							}
+						}
+						AND = {
+							continent = south_america
+							NOT = {
+								region = brazil_region
+							}
+						}
+						area = luzon_area
+						area = southern_luzon_area
+						area = visayas_area
+						area = mindanao_area
+						area = west_mindanao_area
+						area = palawan_area
+					}
+				}
+			}
+		}
+	}
+	# tordesillas castile
+	condition = {
+		tooltip = "tordesillas_castile"
+		potential = {
+			FROM = {
+				has_country_flag = tordesillas_cas
+				NOT = { has_country_flag = alcacovas_treaty }
+				NOT = { has_country_flag = terra_nova_cas }
+				NOT = { has_country_flag = new_tordesillas_cas }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						continent = asia
+						area = maranhao_area
+						area = piaui_area
+						area = ceara_area
+						area = sao_francisco_area
+						area = pernambuco_area
+						area = bahia_area
+						area = diamantina_area
+						area = minas_gerais_area
+						area = rio_de_janeiro_area
+						area = grao_para_area
+						area = pontal_area
+						area = goias_area
+						area = sao_paolo_area
+					}
+				}
+			}
+		}
+	}
+	# terra nova castile
+	condition = {
+		tooltip = "tordesillas_castile"
+		potential = {
+			FROM = {
+				has_country_flag = terra_nova_cas
+				NOT = { has_country_flag = alcacovas_treaty }
+				NOT = { has_country_flag = tordesillas_cas }
+				NOT = { has_country_flag = new_tordesillas_cas }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						continent = asia
+						area = maranhao_area
+						area = piaui_area
+						area = ceara_area
+						area = sao_francisco_area
+						area = pernambuco_area
+						area = bahia_area
+						area = diamantina_area
+						area = minas_gerais_area
+						area = rio_de_janeiro_area
+						area = grao_para_area
+						area = pontal_area
+						area = goias_area
+						area = sao_paolo_area
+						area = newfoundland_area
+						area = labrador_area
+					}
+				}
+			}
+		}
+	}
+	# new tordesillas castile
+	condition = {
+		tooltip = "tordesillas_castile"
+		potential = {
+			FROM = {
+				has_country_flag = new_tordesillas_cas
+				NOT = { has_country_flag = alcacovas_treaty }
+				NOT = { has_country_flag = terra_nova_cas }
+				NOT = { has_country_flag = tordesillas_cas }
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						AND = {
+							continent = asia
+							NOT = {
+								OR = {
+									area = luzon_area
+									area = southern_luzon_area
+									area = visayas_area
+									area = mindanao_area
+									area = west_mindanao_area
+									area = palawan_area
+								}
+							}
+						}
+						region = brazil_region
+						area = newfoundland_area
+						area = labrador_area
+					}
+				}
+			}
+		}
+	}
+	# patroonschap system
+	condition = {
+		tooltip = "patroonschap_system"
+		potential = {
+			FROM = {
+				has_country_flag = patroonschap_system
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					AND = {
+						colonial_region = colonial_eastern_america
+						NOT = {
+							OR = {
+								province_id = 965
+								province_id = 957
+								province_id = 968
+								province_id = 950
+								province_id = 932
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {
 }
 
 can_add_seat_in_parliament = {
+}
+
+can_remove_seat_in_parliament = {
 }
 
 can_add_estate = {
