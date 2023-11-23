@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 monarchy = {
 	reform_levels = {
