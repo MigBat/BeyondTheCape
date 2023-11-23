@@ -900,7 +900,7 @@ country_event = {
 		}
 		name = elections.720.b
 		define_ruler = {
-			dynasty = "von Nassau"
+			dynasty = "van Oranje"
 		}
 		change_statists_vs_orangists = 0.33
 	}
@@ -1012,6 +1012,8 @@ country_event = {
 			NOT = { has_reform = monastic_elections_reform }
 			NOT = { has_reform = feuillant_reform }
 		}
+		define_ruler = {
+		}
 		if = {
 			limit = {
 				NOT = { government = monarchy }
@@ -1058,7 +1060,7 @@ country_event = {
 		}
 		name = elections.720.b
 		define_ruler = {
-			dynasty = "von Nassau"
+			dynasty = "van Oranje"
 		}
 		hidden_effect = {
 			set_ruler_flag = van_oranje_dynasty

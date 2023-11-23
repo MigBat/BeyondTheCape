@@ -359,6 +359,15 @@
  dev_increased_recently:0 "Development Increased"
  desc_dev_increased_recently:0 "Development in this province has recently been increased due to high prosperity."
  revoked_tordesillas:0 "Revoked Treaty of Tordesillas."
+
+#venetian btc modifiers
+ btc_ven_ten_emergency_government:0 "Council of the Ten's emergency government"
+ btc_ven_ten_take_control_of_the_chancery:0 "Venetian chancery under the council of the Ten's control"
+ btc_ven_ten_council_eliminated:0 "Council of the Ten eliminated from Venetian government"
+ btc_ven_ten_council_restored_to_previous_functions:0 "Council of the Ten's curtailed to his previous functions"
+ btc_ven_tens_improved_control_of_the_chancery:0 "Council of the Ten's improved control of the Venetian chancery"
+ btc_ven_ten_improved_emergency_government:0 "Improved Council of the Ten's emergency government"
+ 
  mare_liberum:0 "Mare Liberum"
  desc_mare_liberum:0 "The sea is free for everyone."
  predatory_trade:0 "Predatory Trade Policies"

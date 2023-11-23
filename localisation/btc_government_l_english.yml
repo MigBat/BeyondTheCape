@@ -67,4 +67,11 @@
  valencia_crown_of_aragon_reform_desc:0 "The Aragonese crown controls various kingdoms in the mediterranean, each having their own law and cultural differences, all under one King."
  zaragoza_crown_of_aragon_reform:0 "Reformed Crown of Aragon"
  zaragoza_crown_of_aragon_reform_desc:0 "The Aragonese crown controls various kingdoms in the mediterranean, each having their own law and cultural differences, all under one King."
+
+ #Venetian government
+ VEN_parliament_name:0 "Maggior Consiglio"
+ mechanic_improved_ten_council_yes:0 "§YCouncil of the Ten Government decision§! will be replaced with §YImproved Council of the Ten Government decision§!."
+ btc_ven_improve_the_council_of_the_ten_reform:0 "Improved Council of the Ten"
+ btc_ven_improve_the_council_of_the_ten_reform_desc:0 "By increasing the power of the Council of the Ten we can increase our efficiency, and assure our Nation's survival."
+ 
  
