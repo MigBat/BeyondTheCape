@@ -549,7 +549,7 @@ country_event = {
 	
 	trigger ={
 		tag = VEN
-		NOT = { has_idea = quest_for_the_new_world }
+		NOT = { has_country_modifier = quest_for_the_new_world }
 		exists = SPA
 		SPA = {
 			OR = {
