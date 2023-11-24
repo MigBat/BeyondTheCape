@@ -1,0 +1,85 @@
+set_trade_income = {
+	export_to_variable = {
+		which = TradeIncomeVar               # e.g., stabilityVar
+		value = monthly_income           # e.g., stability
+		who = ROOT
+	}
+	export_to_variable = {
+		which = TradePercVar
+		value = trade_income_percentage
+		who = ROOT
+	}
+	multiply_variable = {            
+		which = TradeIncomeVar
+		which = TradePercVar
+	}
+}
+
+switch_missions_with = {
+	set_country_flag = mission_branch_$flag$_$option$
+	custom_tooltip = pol_impact_future_missions_tt
+	swap_non_generic_missions = yes
+}
+
+seperate_rewards_effect_weffect = {
+	if = {
+		limit = { has_country_flag = $flag$ }
+		custom_tooltip = BONUS_REWARD_YES
+	}
+	else = {
+		custom_tooltip = BONUS_REWARD_NO
+	}
+	tooltip = {
+		[[effect]
+			$effect$=$value$]
+	}
+	#hidden_effect = {
+		if = {
+			limit = { has_country_flag = $flag$ }
+			[[effect]
+				$effect$=$value$]
+		}
+	#}
+}
+
+trigger_mission_award_effect = {
+	custom_tooltip = $tooltip$
+	if = {
+		limit = { has_country_flag = $flag$ }
+		custom_tooltip = BONUS_REWARD_YES
+	}
+	else = {
+		custom_tooltip = BONUS_REWARD_NO
+	}
+	tooltip = {
+		[[simpleeffect]
+			$simpleeffect$=$value$]
+		[[province]
+			$province$={$provinceeffect$=$value2$}]
+	}
+	#hidden_effect = {
+		if = {
+			limit = { has_country_flag = $flag$ }
+		[[simpleeffect]
+			$simpleeffect$=$value$]
+		[[province]
+			$province$={$provinceeffect$=$value2$}]
+		}
+	#}
+}
+
+trigger_mission_award_tooltip = {
+	[[tooltip]
+		custom_tooltip = $tooltip$
+	]
+	if = {
+		limit = { 
+		[[trigger]
+			$trigger$=$triggervalue$] 
+		}
+		custom_tooltip = BONUS_REWARD_YES
+	}
+	else = {
+		custom_tooltip = BONUS_REWARD_NO
+	}
+}

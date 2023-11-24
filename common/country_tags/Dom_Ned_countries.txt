@@ -1,0 +1,25 @@
+#Chocolate Countries
+
+#HRE
+SBV = "countries/Straubing.txt"
+JUL = "countries/Julich.txt"
+TEC = "countries/Tecklenburg.txt"
+ZCH = "countries/Zurich.txt"
+#BSL = "countries/Basel.txt"
+
+#Low Countries
+ARS = "countries/Artois.txt"
+LBG = "countries/Limburg.txt"
+NAM = "countries/Namur.txt"
+BEL = "countries/Belgium.txt"
+GRN = "countries/Groningen.txt"
+CMB = "countries/Cambrai.txt"
+IJS = "countries/Overijssel.txt"
+ZEE = "countries/Zeeland.txt"
+LOO = "countries/Loon.txt"
+ANW = "countries/Antwerp.txt"
+#STV = "countries/Stavelot.txt"
+
+#Colonial
+VOC = "countries/VOC.txt"
+CNG = "countries/Congo.txt"

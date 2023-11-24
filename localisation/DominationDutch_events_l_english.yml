@@ -1,0 +1,275 @@
+﻿l_english:
+  
+ ### ### ###
+ #Events
+ 
+ dutch_domination.EVTNAME1: "The United Netherlands?"
+ dutch_domination.EVTOPTA1: "Unity all the lowlands"
+ dutch_domination.EVTOPTB1: "Defend the North"
+ dutch_domination.EVTDESC1: "With our recent success and expansion of our state, we must now choose whether we focus on securing a stable stable far enough away from our southern neighbours or expand across most of the lowlands and perhaps incur the wrath of our southern neighbour."
+
+ dutch_domination.EVTNAME2: "Wisdom of Erasmus"
+ dutch_domination.EVTOPTA2: "We must embrace more radical options in regards to how to save Christianity."
+ dutch_domination.EVTOPTB2: "Erasmus knows best, we can't tolerate further degredation of our Faith."
+ dutch_domination.EVTOPTC2: "Anyone who dares question the Church must be dealt with appropriately."
+ dutch_domination.EVTOPTD2: "Erasmus is a fool, we must instead listen to the Anabaptist Preachers."
+ dutch_domination.EVTDESC2: "Desiderius Erasmus Roterodamus, better known as Erasmus, was a humanist and the greatest scholar of the northern Renaissance, the first editor of the New Testament and also an important figure in patristics and classical literature who had great influence on theological debate during his life. As a man of the middle ground, his views made him a beacon for those who valued liberty more than orthodoxy. \n\n We must weigh his judgment and deal with our religious matters. With increasing tensions in Christianity, we must now choose what to do. Do we blindly follow the Church or take action to preserve the Faith."
+ 
+ dutch_domination.201.t: "Reevaluating our choices"
+ dutch_domination.201.d: "With developments in our country, perhaps it's time we reevaluate the choices we made with regards to how we followed Erasmus advice."
+ #dutch_domination.9.a: "Establish the Vereenigde Oostindische Compagnie"
+ 
+ dutch_domination.EVTNAME3: "Tolerance or Persecution"
+ dutch_domination.EVTOPTA3: "We should strife for tolerance, free tought leads to more inventions."
+ dutch_domination.EVTOPTB3: "We simply cannot allow wrong-thinkers in our new state. They must be dealt with."
+ dutch_domination.EVTDESC4: "The Anabaptists began as an offshoot, but quickly gained ground in large parts of Europe and especially here in the Lowlands. A few influental figures have now risen up around this movement. Do we stand with the Charismatic but Radical Jan Matthys or we do instead throw in our lot with Menno Simons?"
+ 
+ dutch_domination.EVTNAME4: "Anabaptist Struggles"
+ dutch_domination.EVTOPTA4: "Join Jan Matthys and found a new Jerusalem."
+ dutch_domination.EVTOPTB4: "Menno Simons is the right choice for us."
+ 
+ dutch_domination.EVTNAME5: "Anabaptist Preachers"
+ dutch_domination.EVTOPTA5: "Fascinating."
+ dutch_domination.EVTOPTB5: "Persecute"
+ dutch_domination.EVTDESC3: "With our state coming into being further we must settle the debate around religion. Will we tolerate defiation from our Faith or should we persecute wrong-thinkers."
+ dutch_domination.EVTDESC5: "It's come to our attention that a group of Preachers from Zürich have reached our nation and are preaching about rebaptizing oneselves. How shall we handle them?"
+ 
+ dutch_domination.EVTNAME7: "Willem Barentsz and Het Behouden Huys"
+ dutch_domination.EVTDESC7: "The Northwestern and Northeastern Passages to Asia were a theoretical pathway, which both the Dutch and other nations believed existed and could help them bypass lands held by Portugal and Spain. After a few earlier attempts to find the Northeastern Passage to the Asia, Willem Barentsz went past the Norwegian Sea, past Spitsbergen and made it to the Murman Sea, reaching Nova Zembla. The Ice was too thick however and he was forced to shelter for Winter. Sadly he didn't survive his return home."
+ dutch_domination.EVTOPTA7: "We shall honor his memory."
+ dutch_domination.7.b: "It seems our sailors are stuck in the ice as well."
+ 
+ dutch_domination.EVTNAME701: "The Mascarenes"
+ dutch_domination.EVTDESC701: "While sailing pass the Cape of Good Hope, our ships have stumbled upon a archepelago of islands. The Mascarenes feature a bunch of islands, but one in particular stands out. It seems to be inhabited by giant chickens!"
+ dutch_domination.EVTOPTA701: "We should name this island in honor of our ruler" 
+ 
+ dutch_domination.EVTNAME702: "Kaap Hoorn"
+ dutch_domination.EVTDESC702: "Our expedition to the southern ends of the American continent have seemingly made us reach the furthest southern point. This cape was historically reached by Willem Corneliszoon Schouten, who would name it after his hometown of Hoorn."
+ dutch_domination.EVTOPTA702: "We shall name it Kaap Hoorn" 
+ 
+ dutch_domination.EVTNAME703: "Cape of Good Hope"
+ dutch_domination.EVTDESC703: "Our ships have reached the famous Cape of Good Hope. Our spies tell us that this cape is the furthest end of the African Continent and from here on the oceans themselves change."
+ dutch_domination.EVTOPTA703: "We must travel onwards towards the East Indies." 
+ 
+ dutch_domination.704.t: "Arctic Bay"
+ dutch_domination.704.desc: "On our way to locate a Northwestern passage, our ships have reached a nearly frozen arctic bay far north of any previously known lands. Historically it was the English Explorer Henry Hudson who explored this area in the name of the Dutch."
+ dutch_domination.704.a: "Fascinating." 
+ 
+ dutch_domination.EVTNAME8: "Power Struggles in the Republic"
+ dutch_domination.EVTDESC8: "The Republic is suffering from internal power struggles between the Statists and Orangists, making it harder to push through reforms and truly become a functional great power that can rival anyone. If we are to make a bid for the future, we must decide between these two factions and settle this once and for all."
+ dutch_domination.EVTOPTA8: "The Orangists are the ones who have liberated our nation from the tyranny of overlords." 
+ dutch_domination.EVTOPTB8: "The Statists have kept peace and increased our Prosperity." 
+ 
+ dutch_domination.9.t: "Vereenigde Oostindische Compagnie"
+ dutch_domination.9.d: "Vereenigde Oostindische Compagnie was formed in 1602. It was an independant state funded private company with a monopoly on the overseas trade in the East Indies. It was the first publicly traded company in the world."
+ dutch_domination.9.a: "Establish the Vereenigde Oostindische Compagnie"
+ dutch_domination.9.b: "We can administrate the East Indies ourselves"
+ dutch_domination.9.c: "We will see how this company will fare..."
+ 
+ dutch_domination.10.t: "The Groot Desseyn Fails"
+ dutch_domination.10.d: "With our efforts to stop the Iberians in their colonial pursuit being fruitless, the West India Company is left in a vulnerable spot. We can no longer justify this project and will have to abandon it."
+ dutch_domination.10.a: "The Iberians will not forgive us easily."
+ 
+ dutch_domination.11.t: "Offers of Gold from [From.GetName]"
+ dutch_domination.11.d: "Our subjects have noted our monetary mismanagement and have offered us some of their gold in return for privileges of liberty."
+ dutch_domination.11.a: "Accept their offer of gold."
+ dutch_domination.11.b: "Refuse their offer."
+ 
+ dutch_domination.12.t: "Subjects form a United Front"
+ dutch_domination.12.d: "Our subjects grow stronger over time and have formed a unified front against us. They demand we grant them more freedoms."
+ dutch_domination.12.a: "It's best we accept their demands."
+ dutch_domination.12.b: "Refuse their outragious demands."
+ 
+ dutch_domination.13.t: "The Burgundians"
+ dutch_domination.13.desc: "The last decades have made the dukes of Burgundy a powerful actor in our region. With states like Holland, Flanders and Brabant falling under it's control and it's ambitions seemingly unlimited, we must now act to make sure our nation survives the ambitions of Burgundy."
+ dutch_domination.13.a: "Find common ground with Burgundy and seek it's protection."
+ dutch_domination.13.b: "Challenge the Burgundians."
+ dutch_domination.13.d: "Liberate ourselves from this Oppressor."
+ dutch_domination.13.c: "Cooperate with Burgundy."
+ 
+ dutch_domination.14.t: "They seek our Protection"
+ dutch_domination.14.d: "States in the Low Countries have seen our meteoric rise in power and have flocked to our side. They ask us for a guaranteed protection."
+ dutch_domination.14.a: "Proclaim a Guarantee"
+ dutch_domination.14.b: "Make vague promises"
+ dutch_domination.14.c: "Ignore their plea"
+ 
+ dutch_domination.15.t: "[Root.GetName] joins the Republic"
+ dutch_domination.15.desc: "Rather than to succumb to oppressors from outside the Low Countries, [Root.GetName] has decided to join the republic of the Netherlands."
+ dutch_domination.15.a: "A wise choice"
+ 
+ dutch_domination.16.t: "[Root.GetAdjective] Influence Grows"
+ dutch_domination.16.d: "We have successfully influenced the election of a bishop of our family in a nearby state." #[FROM.GetName] 
+ dutch_domination.16.a: "Perfect"
+ dutch_domination.161.d: "We have successfully influenced the election of our ruler in the nearby Theocracy."
+ 
+ dutch_domination.17.t: "Wars of Liège"
+ dutch_domination.17.d: "Our recent endeavours have made us effectively the rulers in Liège. However, the locals are not pleased with us taking control. They are threatening to rebel if we do not reliquish our control over them."
+ dutch_domination.17.a: "Don't involve ourselves in Liègian Affairs"
+ dutch_domination.17.b: "The People of Liège must forcefully be taught to obey"
+ 
+ dutch_domination.18.t: "Utrecht Wars"
+ dutch_domination.18.d: "The feuds in Holland between the Hoekse and Kabeljauwse factions have spilled over in Utrecht. With our recent acquisitions in the Low Countries, the locals are split on whether they should be loyal to us or instead reject our rule. Now that our dynasty has taken control over Utrecht, we must now deal with the consequences."
+ dutch_domination.18.a: "Utrecht is not our problem"
+ dutch_domination.18.b: "We shall defend our influence over Utrecht"
+ 
+ dutch_domination.19.t: "Treaty of Breda"
+ dutch_domination.19.d: "The Treaty of Breda was signed on 31 July of 1667 to conclude the Peace between the English and it's opponents in the Second Anglo-Dutch War. It resulted in the Dutch effectively trading New Netherlands including New Amsterdam to the English and they would hold on to Surinam."
+ dutch_domination.19.a: "We must prioritize New Netherlands over Surinam."
+ dutch_domination.19.b: "New Netherlands is a lost cause, Surinam is too lucrative."
+ dutch_domination.19.c: "We shall claim both."
+
+ dutch_domination.21.t: "Duchy of Bavaria-Straubing"
+ dutch_domination.21.d: "The Straubing line of the Wittelbachs went extinct in male line, the territories were partioned. Holland, Zeeland and Hainaut were inherited by Jacoba, Countess of Hainaut. And after her death, the counties would fall under Burgundian control. It is time once more to decide how we shall interpret this history."
+ dutch_domination.21.a: "We must focus on the county of Holland, it is far more prestigious."
+ dutch_domination.21.b: "The Duchy of Straubing can give us great claims for the future."
+ 
+ dutch_domination.22.t: "Plakaat van Verlatinghe"
+ dutch_domination.22.d: "With our last ruler found unfit to rule, we have been granted independance. It is time for us to decide how to rule our country from now onwards. Should we elect a new Monarch or should we instead do away with Monarchs all together and form a republic."
+ dutch_domination.22.a: "No Monarch is fit to rule our nation, we must become a republic."
+ dutch_domination.22.b: "We must find a friendly dynasty to invite to our nation." 
+ #dutch_domination.22.b: "We shall keep the status quo"
+ 
+ dutch_domination.23.t: "Commission Art"
+ dutch_domination.23.d: "With so many artists in our nation, we must decide who we should give patronage."
+ dutch_domination.23.a: "We should hire an Artist Full-Time."
+ dutch_domination.23.b: "Opt out of supporting an artist."
+ dutch_domination.23.maritime: "Art showing our maritime accomplishments will be welcome."
+ dutch_domination.23.foreign: "The wonders of our recent explorations will make great art"
+ dutch_domination.23.military: "Art showing our military prowess."
+ dutch_domination.23.aristocrats: "Art featuring our aristocrats will surely help."
+ dutch_domination.23.landscape: "The beautiful landscape of the Low Countries."
+ dutch_domination.23.everyday: "Everyday working people should be our focus."
+ 
+ dutch_domination.24.t: "Extirpation of Clove Trees"
+ dutch_domination.24.d: "Now that we have gained a monopoly on the clove production and trade it is time to burn down the excess crop and further drive up the price."
+ dutch_domination.24.a: "Burn the crops, we will make money by increasing the price"
+ dutch_domination.24.b: "Why would we destroy our own production capacity. Let the spice flow."
+ dutch_cloves_monopoly: "Cloves Monopoly"
+ 
+ dutch_domination.25.t: "Delfts Blauw"
+ dutch_domination.25.desc: "The Porcelain Chinaware is a high value commodity in Europe. However some of our merchants have learned the art of creating similar style porcelain. This has become very influential in the Hollandic City of Delft, where they have called it Delfts Blauw."
+ dutch_domination.25.a: "We must encourage these artisans."
+ dutch_domination.25.b: "We should instead dominate the Chinaware trade ourselves and make profit this way."
+ 
+ dutch_domination.26.t: "Charismatic Preachers"
+ dutch_domination.26.desc: "The Charismatic Preachers in our town have riled up the citizens. They preach about baptism and it is becoming more popular."
+ dutch_domination.26.a: "Interesting."
+ 
+ dutch_domination.27.t: "[From.GetName] Demands Claimed Provinces"
+ dutch_domination.27.hol_desc: "Our subject [From.GetName] is demanding that we cede control of Hainaut to them as they are claiming it rightfully is theirs."
+ dutch_domination.27.fla_desc: "Our subject [From.GetName] is demanding that we cede control of Artois to them as they are claiming it rightfully is theirs."
+ dutch_domination.27.a: "Grant them the province."
+ dutch_domination.27.b: "Refuse to give up control of our provinces."
+ 
+ dutch_domination.28.t: "Flemish Heritage"
+ dutch_domination.28.desc: "Our nation has a rich history. Our ancestors were knights in France and even joined the Crusades and our rulers became Kings of Jerusalem and the Latin Empire."
+ dutch_domination.28.a: "The Kingdom of France should be our main focus"
+ dutch_domination.28.b: "We will retake the Holy Land"
+ 
+ dutch_domination.31.t: "The Congo Basin"
+ dutch_domination.31.desc: "Up the Congo River there is vast swaths of land which no European Nation has claimed. Our monarch has a desire to claim the land as his own dominion, while our state would like to establish a colony over there."
+ dutch_domination.31.a: "Establish a Dominion in union under our Monarch [Root.GetRuler]"
+ dutch_domination.31.b: "Create a [BEL.GetAdjective] Colony"
+ 
+ dom_frisian.EVTNAME1: "Skieringers en Fetkeapers"
+ dom_frisian.EVTDESC1: "Since the economic downturn of the 14th Century, the Frisian lands have politically fragmented, where rich landowners have attempted to establish themselves as Nobles. This ultimately led to the Great Frisian War only a few decades ago, in which East Frisia became independant from the rest of Friesland and is now ruled by a local chieftain. \nMeanwhile, the troubles haven't ended and the factions are still at eachothers throat. If we are to restore peace and stability we must act."
+ dom_frisian.EVTOPTA1: "We must deal with this." 
+ frisian_disaster_tt: "Starts the §YSkieringers en Fetkeapers§! disaster"
+ 
+ dom_frisian.EVTNAME2: "End of Turmoil"
+ dom_frisian.EVTDESC2: "With the actions taken, the conflict has mostly settled down. It's time our nation recovered from this period of time and make decisions for the future."
+ dom_frisian.EVTOPTA2: "By seeking a strong overlord, we can avoid factional tensions in the future." 
+ dom_frisian.EVTOPTC2: "We must decide our own path from here on." 
+ dom_frisian.EVTOPTB2: "We won't tolerate the foreign influence and must look to the city of Groningen for protection" 
+ 
+ dom_frisian.EVTNAME3: "Conflicts Flare Up"
+ dom_frisian.EVTDESC3: "Once again the conflicts have appeared in the countryside. We must deal with this."
+ dom_frisian.EVTOPTA3: "Side with the Skieringers." 
+ dom_frisian.EVTOPTB3: "Side with the Vetkopers." 
+ dom_frisian.EVTOPTC3: "This conflict has gone far too long, there are no sides to take." 
+ 
+ dom_frisian.EVTNAME4: "Donia-Wars"
+ dom_frisian.EVTDESC4: "While the exact reasons for this conflict are uncertain, multiple different feuds between different chiefs and family feuds led to the three chiefs of the Harinxma family from Heeg, Sneek and IJlst, which can be referred to as the Schieringse party to fight their opponents, who were seven of their cousins, from the Donia family, sons of Sierck Harinxma at the Doniahuis in Oosterend. These were originally Schieringer, but sought their allies with the 'Vetkoperse' chieftains Gale Galama van Koudum, Jancko Douwema van Langweer and Doitse Albada van Jirnsum. The Donia War started in the southwest corner of Westergo and spread from there to the Zevenwouden."
+ dom_frisian.EVTOPTA4: "Side with the the Harixma's" 
+ dom_frisian.EVTOPTB4: "Side with the Donia's" 
+ 
+ dom_frisian.EVTNAME5: "Outside Help"
+ dom_frisian.EVTDESC5: "The conflict has been raging for a long period now. The fields lay devastated thanks to the conflict. We cannot simply allow this to continue without reprocussions. Perhaps it's time to find help outside of Frisia, to deal with this conflict."
+ dom_frisian.EVTOPTA5: "We must seek a capable ruler in the Holy Roman Empire to protect us." 
+ dom_frisian.EVTOPTB5: "The city of Groningen will protect us instead." 
+ dom_frisian.EVTOPTC5: "We have no need of outside forces." 
+ 
+ dom_frisian.7.t: "Ulrich Cirksena"
+ dom_frisian.7.d: "Ulrich Cirksena was a son of Enno Cirksena, a chief of East Frisia."
+ dom_frisian.7.a: "Pick Ulrich Cirksena"
+ 
+ dom_frisian.8.t: "A Frisian King?"
+ dom_frisian.8.desc: "With our refound prestige and reunited historical lands, we stand at a crossroads. Do we embrace our Peasant Freedom or do we instead elect a New King to rule our nation into the future."
+ dom_frisian.8.a: "No Monarch is fit to rule our nation, we must be a leader to the peasant republics."
+ dom_frisian.8.b: "We must find a friendly dynasty to invite to our nation."
+ dom_frisian.8.c: "A descendant from our last ruling kings"
+ dom_frisian.8.d: "We must elect Pier Gerlofs Donia"
+ #dutch_domination.22.b: "We shall keep the status quo"
+ 
+ dom_frisian.12.t: "The King in Prussia"
+ dom_frisian.12.d: "Frisia is once again becoming dominant and considers itself as a contender on the world stage. [FRI.Monarch.GetTitle] [FRI.Monarch.GetName] has announced [FRI.Monarch.GetHerHis] intention to create a Kingdom of Magna Frisia, elevating the nation from its status as a mere [FRI.GovernmentName]. This is almost unprecedented within the Holy Roman Empire, and the Emperor must consider how to handle this matter."
+ dom_frisian.12.a: "Elevate Magna Frisia to an Imperial Kingdom"
+ dom_frisian.12.b: "Let [FRI.Monarch.GetHerHim] call [FRI.Monarch.GetHerselfHimself] the King in Frisia"
+ dom_frisian.12.c: "We will not recognize this self-appointed monarch."
+ 
+ dom_frisian.13.t: "The King in Frisia"
+ dom_frisian.13.d: "Our close friend and ally, the Emperor [emperor.Monarch.GetName], has graciously decided to elevate Prussia to the rank of Imperial Kingdom! Such a privilege has not been granted since the rise of the Kings of Bohemia. The Kings of Prussia shall wear their crown with pride, always remembering the favor granted to them by the Emperor."
+ dom_frisian.13.d2: "Imperial tradition dictates that the only Kings in the Empire should be the King of the Romans, that being the Emperor himself, and the King of Bohemia. We have however reached an intriguing legal compromise with the Emperor: our monarchs shall use the title of ‘King in Prussia’. As Prussia lies outside the bounds of the Holy Roman Empire, we can name ourselves Kings without any need for the Emperor to break Imperial traditions."
+ dom_frisian.13.d3: "The Emperor, that honorless cur, has refused to acknowledge our right to call ourselves Kings no matter what reasonable compromises we proposed. We shall pay him no heed of course, and title ourselves as Kings regardless."
+ dom_frisian.13.a: "Thank God and the Emperor!"
+ dom_frisian.13.b: "A satisfying compromise."
+ dom_frisian.13.c: "We do not need the Emperor's permission."
+ 
+ king_in_frisia_elevated_tt: "§YFrisia will become a Kingdom within the Holy Roman Empire through the sponsorship of the Emperor.§!"
+ king_in_frisia_compromise_tt: "§YFrisia will become a Kingdom within the Holy Roman Empire through a legal compromise tolerated by the Emperor.§!"
+ king_in_frisia_rejection_tt: "§YFrisia must choose between their false crown and their status as an Imperial Prince.§!"
+ 
+ dutch_domination.9.a.tt: "§Y[Root.GetName]§! releases the §YVereenigde Oostindische Compagnie§! in §YEast Indies§!.\n§YThe VOC§! becomes a §YCommercial Enterprise§! subject of §Y[Root.GetName]§!."
+ 
+ dom_guelders.EVTNAME1: "The Guelders Wars"
+ dom_guelders.EVTDESC1: "With our acquisition of the Duchy of Gelre, we have unleashed a monster in the Nationalists of the Low Countries. All groups of contrarians are standing with the Gelran Nationalists."
+ dom_guelders.1.a: "This is bad."
+ 
+ dom_guelders.EVTNAME2: "The Guelders Wars End"
+ dom_guelders.2.desca: "The Rebels have been beaten back and it's finally time to enjoy the provinces we have gained."
+ dom_guelders.2.a: "It's time for peace."
+ 
+ dom_guelders.5.t: "[From.GetName] offers us a Deal"
+ dom_guelders.5.d: "[GEL.GetName] has led us know they are struggling with money, we can offer them some gold in return for them to pawn off the title of the Duke of [GEL.GetName]"
+ dom_guelders.5.a: "This is a great deal"
+ dom_guelders.5.b: "We have no need for [GEL.GetName]"
+ burgundy_warning_mission_tt: "§RWarning:§! This will complete the mission §YDuchy of Gelre§! without rewards."
+ 
+ dom_guelders.6.t: "[From.GetName] offers us a Deal"
+ dom_guelders.5.Gelre_Desc: "[BUR.GetName] is swimming in Ducats. They have offered us some of this, in return they want us to give them a claim to the Throne of Gelre."
+ dom_guelders.6.a: "This is a great deal"
+ dom_guelders.6.b: "We have no need for their Ducats."
+ gelre_warning_mission_tt: "§RWarning:§! This will complete the mission §YDucal Title§! without rewards."
+ dom_gel_next_monarch_death_tt: "§RWarning:§! On [GEL.GetAdjective] next §YRuler§!'s Death. The nation will form a union with §Y[BUR.GetName]§!"
+ 
+ dom_guelders.7.t: "Death of our Monarch"
+ dom_guelders.7.desc: "Historically, Arnold of Gelre borrowed money from the Duke of Burgundy. He failed to repay his debt however and as a collatoral, the Duchy of Gelre passed to the Duke of Burgundy. We have found ourselves in a similar position, as stipulated in the agreement we made with Burgundy, our Duchy would fall under their rule after our current Rulers Death."
+ dom_guelders.7.a: "As per agreement."
+ 
+ theocracy.1.bur: "A Burgundian seems like the most appropriate"
+ theocracy.1.utr: "The Bishop of Utrecht makes a strong candidate"
+ #
+ monopoly_privileges.5.d.peasants: "The monopoly on mining and smelting operations we granted to the [Root.GetPeasantsName] has expired, meaning that we are now able to reclaim the income from these operations. However, the [Root.GetPeasantsName] are keen to keep their privileges and are offering to pay us a lump sum in return for the monopoly being guaranteed for a further 10 years."
+ monopoly_privileges.6.d.peasants: "The monopoly on livestock we granted to the [Root.GetPeasantsName] has expired, meaning that we are now able to reclaim the income from livestock farming. However, the [Root.GetPeasantsName] are keen to keep their privileges and are offering to pay us a lump sum in return for the monopoly being guaranteed for a further 10 years."
+ 
+ 
+ dutch_domination.999.t: "Test"
+ dutch_domination.999.desc: "[Root.TradeIncomeVar.GetValue]"
+ dutch_domination.999.a: "Ok."
+ 
+ #AGENDA EVENT STUFF:
+ estate_privileges_and_agendas_events.3.cho.a: "The Proposal of the [Root.GetPeasantsName]"
+ estate_privileges_and_agendas_events.3.cho.b: "The Proposal of the [Root.GetTradeCompanyName]"
+ 
+ #
+ flavor_bur.16.b: "Not today"

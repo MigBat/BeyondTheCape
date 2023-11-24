@@ -1,0 +1,105 @@
+#Define estate loyalty and influence modifiers here
+
+estate_peasants = {
+	modifier_definition = {
+		type = loyalty
+		key = peasants_loyalty_modifier
+		trigger = {
+			has_estate = estate_peasants
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = peasants_influence_modifier
+		trigger = {
+			has_estate = estate_peasants
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = peasants_privilege_slots
+		trigger = {
+			has_estate = estate_peasants
+		}
+	}
+}
+
+estate_trade_company = {
+	modifier_definition = {
+		type = loyalty
+		key = trade_company_loyalty_modifier
+		trigger = {
+			has_estate = estate_trade_company
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = trade_company_influence_modifier
+		trigger = {
+			has_estate = estate_trade_company
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = trade_companies_privilege_slots
+		trigger = {
+			has_estate = estate_trade_company
+		}
+	}
+}
+
+#estate_brahmins = {
+#	modifier_definition = {
+#		type = loyalty
+#		key = brahmins_hindu_loyalty_modifier
+#		trigger = {
+#			has_estate = estate_brahmins
+#			religion = hinduism
+#		}
+#	}
+#	modifier_definition = {
+#		type = loyalty
+#		key = brahmins_muslim_loyalty_modifier
+#		trigger = {
+#			has_estate = estate_brahmins
+#			religion_group = muslim
+#		}
+#	}
+#	modifier_definition = {
+#		type = loyalty
+#		key = brahmins_other_loyalty_modifier
+#		trigger = {
+#			has_estate = estate_brahmins
+#			NOT = { religion = hinduism }
+#			NOT = { religion_group = muslim }
+#		}
+#	}
+#	modifier_definition = {
+#		type = influence
+#		key = brahmins_hindu_influence_modifier
+#		trigger = {
+#			has_estate = estate_brahmins
+#			religion = hinduism
+#		}
+#	}
+#	modifier_definition = {
+#		type = influence
+#		key = brahmins_muslim_influence_modifier
+#		trigger = {
+#			has_estate = estate_brahmins
+#			religion_group = muslim
+#		}
+#	}
+#	modifier_definition = {
+#		type = influence
+#		key = brahmins_other_influence_modifier
+#		trigger = {
+#			has_estate = estate_brahmins
+#			NOT = { religion = hinduism }
+#			NOT = { religion_group = muslim }
+#		}
+#	}
+#}
+

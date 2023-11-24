@@ -1,0 +1,35 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_schieringers_vetkopers"
+		texturefile = "gfx//interface//disasters//counts_feud.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_guelders_wars"
+		texturefile = "gfx//interface//disasters//counts_feud.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_dutch_wars_of_religion"
+		texturefile = "gfx//interface//disasters//counts_feud.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_dom_frisian.12.a"
+		texturefile = "gfx//interface//imperial_incident_generosity.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_dom_frisian.12.b"
+		texturefile = "gfx//interface//imperial_incident_legitimacy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_dom_frisian.12.c"
+		texturefile = "gfx//interface//imperial_incident_denial_of_request.dds"
+		loadType = "INGAME"
+	}
+}

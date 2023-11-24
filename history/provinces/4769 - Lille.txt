@@ -1,0 +1,39 @@
+# 4769 - Lille, meant to represent Waals Vlaanderen. Principal cities: Lille, Douai, Orchies
+
+owner = FLA
+controller = FLA
+add_core = FLA
+is_city = yes
+capital = "Lille"
+culture = wallonian
+religion = catholic
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = cloth
+base_manpower = 3
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+fort_15th = yes
+
+
+1477.1.5 = { owner = BUR controller = BUR add_core = BUR }
+#1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
+1548.6.26 = { hre = yes } # Flanders incorporated into the Holy Roman Empire
+1549.11.4 = { add_core = NED }
+1555.1.1 = { religion = reformed }
+1576.11.4 = { base_tax = 3 base_production = 3 base_manpower = 2 } #Protestants Flee North
+1577.2.12 = { unrest = 16 owner = NED controller = NED add_core = NED } # Eeuwig Edict accepted by Don Juan formation of Union of Brussels, puts an end to the early period of dutch revolt
+1579.1.6 = { owner = SPA controller = SPA add_core = SPA remove_core = NED unrest = 0 } # Union of Arras established
+1582.1.1 = { religion = catholic } # defeat of the Hurlus
+1635.5.1 = { controller = FRA } # French troops capture parts of the Southern Lowlands
+1648.1.30 = { controller = SPA remove_core = NED } # Peace of Münster/Westphalia
+1665.9.17 = { add_claim = FRA } # Louis XIV's father-in-law, Philip IV of Spain, dies
+1667.1.1 = { controller = FRA }
+1668.5.2 = { owner = FRA remove_claim = FRA add_core = FRA remove_core = SPA hre = no } # Treaty of Aix-la-Chapelle (1668)
+1671.1.1 = {
+	fort_15th = no
+	fort_17th = yes
+} # Vauban's Citadel of Lille begins to be used while still under construction.

@@ -843,7 +843,7 @@ gc_por_2_b = {
 				duration = 5475
 			}
 			define_explorer = {
-				name = "Pedro √Ålvares Cabral"
+				name = "Pedro ¡lvares Cabral"
 				shock = 3
 				fire = 2
 				manuever = 5
@@ -870,7 +870,7 @@ gc_por_2_b = {
 		
 		effect = {
 			define_admiral = {
-				name = "Bartolomeu Portugu√™s"
+				name = "Bartolomeu PortuguÍs"
 				shock = 2
 				fire = 4
 				manuever = 4
@@ -1388,7 +1388,7 @@ gc_por_3 = {
 				id = btc_por.144
 			}	
 			define_explorer = {
-				name = "Diogo C√£o"
+				name = "Diogo C„o"
 				shock = 1
 				fire = 1
 				manuever = 3
@@ -1531,6 +1531,10 @@ gc_por_3 = {
 				manuever = 6
 				siege = 4
 				trait = great_explorer_personality
+			}
+			add_country_modifier = {
+				name = por_push_to_india
+				duration = 7300
 			}
 		}
 	}

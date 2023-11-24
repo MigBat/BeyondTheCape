@@ -85,6 +85,12 @@ english_french_act_of_union = {
 				}
 				restore_country_name = yes
 			}
+			if = {
+				limit = {
+					has_country_modifier = ave_anglo_french_imperium
+				}
+				country_event = { id = flavor_gbr.20 }	#Renew renaming
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -1967,5 +1973,60 @@ army_reform_acts = {
 
 	ai_will_do = {
 		factor = 1
+	}
+}
+
+
+#Venice Maggior Consiglio's issues
+
+btc_ven_eliminate_the_council_of_ten_issue = {
+	category = 3
+
+	allow = {
+		has_global_flag = btc_ven_maggior_consiglio_trying_to_eliminate_the_tens
+		NOT = { has_country_modifier = btc_ven_ten_emergency_government }
+	}
+	
+	effect = {
+		remove_country_modifier = btc_ven_ten_take_control_of_the_chancery
+		add_country_modifier = {
+			name = btc_ven_ten_council_eliminated
+			duration = -1
+		}
+		clr_global_flag = btc_ven_maggior_consiglio_trying_to_eliminate_the_tens
+	}
+	
+	chance = {
+		factor = 900000000
+	}
+
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+btc_ven_curtail_the_council_of_ten_issue = {
+	category = 3
+
+	allow = {
+		has_global_flag = btc_ven_maggior_consiglio_trying_to_curtail_the_tens
+		NOT = { has_country_modifier = btc_ven_ten_emergency_government }
+	}
+	
+	effect = {
+		remove_country_modifier = btc_ven_ten_take_control_of_the_chancery
+		add_country_modifier = {
+			name = btc_ven_ten_council_restored_to_previous_functions
+			duration = -1
+		}
+		clr_global_flag = btc_ven_maggior_consiglio_trying_to_curtail_the_tens
+	}
+	
+	chance = {
+		factor = 900000000
+	}
+
+	ai_will_do = {
+		factor = 2
 	}
 }

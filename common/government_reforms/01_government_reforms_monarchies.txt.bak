@@ -155,6 +155,7 @@ austrian_archduchy_reform = {
 	}
 	nation_designer_cost = 0
 	modifiers = {
+		diplomatic_upkeep = 2
 		liberty_desire_from_subject_development = -0.33
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
@@ -186,6 +187,9 @@ grand_duchy_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		governing_capacity = 200
+	}
+	custom_attributes = {
+		need_crownland_to_annex = yes
 	}
 }
 
@@ -275,7 +279,9 @@ shogunate = {
 
 	custom_attributes = {
 		locked_government_type = yes
+		need_crownland_to_annex = yes
 	}
+	
 }
 
 daimyo = {
@@ -792,7 +798,12 @@ english_monarchy = {
 	icon = "british_queen"
 	allow_normal_conversion = no
 	potential = {
-		have_had_reform = english_monarchy
+		OR = {
+			have_had_reform = english_monarchy
+			tag = ENG
+			was_tag = ENG
+			tag = GBR
+		}
 	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
@@ -1203,8 +1214,9 @@ tanistry_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
 	modifiers = {
-		morale_damage = 0.05
-		same_culture_advisor_cost = -0.1
+		diplomatic_upkeep = -2
+		morale_damage = 0.1
+		same_culture_advisor_cost = -0.15
 		nobles_loyalty_modifier = 0.05
 	}
 	conditional = {
@@ -1531,10 +1543,15 @@ portuguese_monarchy_reform = {
 		church_loyalty_modifier = 0.05
 	}
 	conditional = {
-		can_use_trade_post = yes
+		allow = {
+			has_dlc = "Domination"
+		}
 		government_abilities = {
 			portuguese_saudade_mechanic
 		}
+	}
+	custom_attributes = {
+		can_establish_feitorias = yes
 	}
 	ai = {
 		factor = 1
@@ -1612,6 +1629,7 @@ bohemian_elective_kingdom_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
+		diplomatic_upkeep = 1
 		diplomatic_reputation = 1
 		nobles_loyalty_modifier = 0.1
 		nobles_privilege_slots = 1
@@ -2015,6 +2033,19 @@ eyalet_government = {
 		no_religion_penalty = yes
 		governing_capacity = 100
 	}
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { is_subject_of_type = eyalet }
+					NOT = { is_subject_of_type = core_eyalet }
+				}
+				country_event = {
+					id = flavor_tur.1000
+				}
+			}
+		}
+	}
 
 	custom_attributes = {
 		locked_government_type = yes
@@ -2053,6 +2084,19 @@ barbary_eyalet_government = {
 		capture_ship_chance = 0.25
 		naval_forcelimit_modifier = 0.1
 		governing_capacity = 100
+	}
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { is_subject_of_type = eyalet }
+					NOT = { is_subject_of_type = core_eyalet }
+				}
+				country_event = {
+					id = flavor_tur.1000
+				}
+			}
+		}
 	}
 
 	custom_attributes = {
@@ -2508,7 +2552,7 @@ russian_empire_reform = {
 
 	modifiers = {
 		max_absolutism = 10
-		yearly_absolutism = 0.05
+		yearly_absolutism = 0.5
 		global_autonomy = -0.05
 		global_manpower_modifier = 0.20
 		embracement_cost = -0.5
@@ -3356,6 +3400,13 @@ polish_great_sejm = {
 		reform_progress_growth = -0.2
 		
 	}
+	
+	conditional = {
+		allow = { ai = yes }
+		custom_attributes = {
+			need_crownland_to_annex = yes
+		}
+	}
 
 	conditional = {
 		allow = {
@@ -3392,6 +3443,13 @@ polish_elective_monarchy = {
 		max_absolutism = -30
 		nobles_influence_modifier = 0.05
 		reform_progress_growth = -0.2
+	}
+	
+	conditional = {
+		allow = { ai = yes }
+		custom_attributes = {
+			need_crownland_to_annex = yes
+		}
 	}
 
 	conditional = {
@@ -3952,6 +4010,7 @@ livonian_constitutional_monarchy = {
 				government_reform = livonian_constitutional_monarchy
 			}
 		}
+		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 	}
 	valid_for_nation_designer = yes
 	nation_designer_trigger = {
@@ -4302,6 +4361,7 @@ quash_noble_power_reform = {
 		nobles_influence_modifier = -0.1
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
+		#parliament_effect_duration = -2
 	}
 	ai = {
 		factor = 1
@@ -4760,6 +4820,7 @@ separation_of_boyars_from_court_reform = {
 	modifiers = {
 		yearly_government_power = 1.25
 		nobles_influence_modifier = -0.1
+		global_tax_modifier = 0.05
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
 	}
@@ -5840,6 +5901,8 @@ justicia_de_aragon_reform = {
 		OR = {
 			primary_culture = catalan
 			primary_culture = aragonese
+			primary_culture = valencian
+			primary_culture = balearic
 		}
 	}
 	modifiers = {
@@ -6366,6 +6429,7 @@ qng_grand_council_reform = {
 absolute_shogunate_reform = {
 	icon = "absolute_shogunate_reform"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			AND = {
@@ -6394,6 +6458,7 @@ absolute_shogunate_reform = {
 japanese_divine_empire = {
 	icon = "japanese_divine_empire"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	potential = {
 		OR = { 
 			AND = {
@@ -6406,20 +6471,29 @@ japanese_divine_empire = {
 		}
 		NOT = { has_reform = absolute_shogunate_reform }
 	}
-	trigger = { 
-		num_of_estate_privileges = {
-			estate = estate_nobles 
-			value = 6 
-		}
-		num_of_estate_privileges = {
-			estate = estate_burghers 
-			value = 6 
-		}
-		num_of_estate_privileges = {
-			estate = estate_church 
-			value = 6 
-		}
-	}
+	#trigger = {
+	#	if = { 
+	#		limit = { has_estate = estate_nobles }
+	#		num_of_estate_privileges = {
+	#			estate = estate_nobles 
+	#			value = 6 
+	#		}
+	#	}
+	#	if = { 
+	#		limit = { has_estate = estate_burghers }
+	#		num_of_estate_privileges = {
+	#			estate = estate_burghers 
+	#			value = 6 
+	#		}
+	#	}
+	#	if = { 
+	#		limit = { has_estate = estate_church }
+	#		num_of_estate_privileges = {
+	#			estate = estate_church 
+	#			value = 6 
+	#		}
+	#	}
+	#}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
 	nation_designer_trigger = {
@@ -6511,10 +6585,10 @@ system_of_councils_reform = {
 		OR = { 
 			has_reform = system_of_councils_reform
 			mission_completed = spa_system_councils
-			AND = { 
-				religion_group = christian 
-				culture_group = iberian 
-			}
+			# AND = { 
+			# 	religion_group = christian 
+			# 	culture_group = iberian 
+			# }
 		}
 	}
 	trigger = {
@@ -6558,5 +6632,99 @@ courts_of_navarra = {
 			}
 		}
 		has_parliament = yes
+	}
+}
+
+crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = crown_of_aragon_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_reputation = 2
+		num_accepted_cultures = 3
+		years_to_integrate_personal_union = -5
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+naples_crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = naples_crown_of_aragon_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_reputation = 2
+		num_accepted_cultures = 3
+		years_to_integrate_personal_union = -5
+		diplomatic_reputation = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+barcelona_crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = barcelona_crown_of_aragon_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_reputation = 2
+		num_accepted_cultures = 3
+		years_to_integrate_personal_union = -5
+		global_trade_power = 0.1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+valencia_crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = valencia_crown_of_aragon_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_reputation = 2
+		num_accepted_cultures = 3
+		years_to_integrate_personal_union = -5
+		same_culture_advisor_cost = -0.2
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+zaragoza_crown_of_aragon_reform = {
+	icon = "crown_of_aragon"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = zaragoza_crown_of_aragon_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		diplomatic_reputation = 2
+		num_accepted_cultures = 3
+		years_to_integrate_personal_union = -5
+		administrative_efficiency = 0.05
+	}
+	ai = {
+		factor = 1
 	}
 }

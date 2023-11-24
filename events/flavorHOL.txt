@@ -25,6 +25,7 @@ country_event = {
 		NOT = {
 			is_year = 1536
 		}
+		always = no
 	}
 	
 	mean_time_to_happen = {
@@ -60,13 +61,16 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = NED
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = frisian
+		}
 		is_year = 1603
 		NOT = {
 			is_year = 1645
 		}
-
-		owns = 97
+		owns = 4383
 	}
 	
 	mean_time_to_happen = {
@@ -112,12 +116,16 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = NED
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = frisian
+		}
 		is_year = 1623
 		NOT = {
 			is_year = 1687
 		}
-		owns = 97
+		owns = 4383
 	}
 	
 	mean_time_to_happen = {
@@ -161,6 +169,7 @@ country_event = {
 			is_year = 1594
 		}
 		owns = 92
+		always = no
 	}
 	
 	mean_time_to_happen = {

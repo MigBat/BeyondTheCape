@@ -800,47 +800,48 @@ country_event = {
 }
 
 # The growing power of the Council of Ten.
-country_event = {
-	id = flavor_ven.24
-	title = flavor_ven.24.t
-	desc = flavor_ven.24.d
-	picture = ELECTION_REPUBLICAN_eventPicture
-
-	fire_only_once = yes
-	
-	trigger = {
-		tag = VEN
-		is_year = 1460
-		NOT = { is_year = 1500 }
-		has_government_attribute = is_merchant_republic
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}	
-	option = {	#Curtail the power of the Ten
-		name = flavor_ven.24.a
-		ai_chance = { 
-			factor = 1		
-		}
-		add_republican_tradition = 20
-		add_country_modifier = {
-			name = ven_ten_restrained
-			duration = -1
-		}
-	}
-	option = {	#Support the Ten
-		name = flavor_ven.24.b
-		ai_chance = { 
-			factor = 0	
-		}
-		add_republican_tradition = -20
-		add_country_modifier = {
-			name = ven_council_of_ten_strong
-			duration = -1
-		}
-	}
-}
+# modified and rewrited in btc_VEN_events.txt
+#country_event = {
+##	id = flavor_ven.24
+##	title = flavor_ven.24.t
+#	desc = flavor_ven.24.d
+#	picture = ELECTION_REPUBLICAN_eventPicture
+#
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = VEN
+#		is_year = 1460
+#		NOT = { is_year = 1500 }
+#		has_government_attribute = is_merchant_republic
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 120
+#	}	
+#	option = {	#Curtail the power of the Ten
+#		name = flavor_ven.24.a
+#		ai_chance = { 
+#			factor = 1		
+#		}
+#		add_republican_tradition = 20
+#		add_country_modifier = {
+#			name = ven_ten_restrained
+#			duration = -1
+#		}
+#	}
+#	option = {	#Support the Ten
+#		name = flavor_ven.24.b
+#		ai_chance = { 
+#			factor = 0	
+#		}
+#		add_republican_tradition = -20
+#		add_country_modifier = {
+#			name = ven_council_of_ten_strong
+#			duration = -1
+#		}
+#	}
+#}
 
 # Revoke the laws restraining the Ten.
 country_event = {
@@ -888,6 +889,8 @@ country_event = {
 	}
 }
 
+#removing factions from events
+
 # Expansion of the Great Council.
 country_event = {
 	id = flavor_ven.26
@@ -909,10 +912,10 @@ country_event = {
 	}	
 	option = {	#Enlarge the council
 		name = flavor_ven.26.a
-		add_faction_influence = {
-			faction = mr_traders
-			influence = 20
-		}
+		#add_faction_influence = {
+		#	faction = mr_traders
+		#	influence = 20
+		#}
 		add_country_modifier = {
 			name = ven_expanded_council
 			duration = -1
@@ -952,10 +955,10 @@ country_event = {
 	}	
 	option = {	#They won't be a problem for long with those habits.
 		name = flavor_ven.27.a
-		add_faction_influence = {
-			faction = mr_traders
-			influence = 20
-		}
+		#add_faction_influence = {
+		#	faction = mr_traders
+		#	influence = 20
+		#}
 		add_country_modifier = {
 			name = ven_barnabotti
 			duration = -1
@@ -985,10 +988,10 @@ country_event = {
 	}	
 	option = {	#Create the Accademia della Guidecca
 		name = flavor_ven.28.a
-		add_faction_influence = {
-			faction = mr_aristocrats
-			influence = 10
-		}
+		#add_faction_influence = {
+		#	faction = mr_aristocrats
+		#	influence = 10
+		#}
 		add_country_modifier = {
 			name = ven_accademia_della_guidecca
 			duration = -1
@@ -1031,10 +1034,10 @@ country_event = {
 			}
 			add_corruption = -2
 		}
-		add_faction_influence = {
-			faction = mr_traders
-			influence = 40
-		}
+		#add_faction_influence = {
+		#	faction = mr_traders
+		#	influence = 40
+		#}
 		if = {
 			limit = { has_country_modifier = ven_council_of_ten_strong }
 			remove_country_modifier = ven_council_of_ten_strong
@@ -1058,10 +1061,10 @@ country_event = {
 		add_dip_power = 50
 		add_republican_tradition = -25
 		add_corruption = 1
-		add_faction_influence = {
-			faction = mr_aristocrats
-			influence = 40
-		}
+		#add_faction_influence = {
+		#	faction = mr_aristocrats
+		#	influence = 40
+		#}
 		if = {
 			limit = { has_country_modifier = ven_ten_restrained }
 			remove_country_modifier = ven_ten_restrained
@@ -1099,10 +1102,10 @@ country_event = {
 		112 = { add_base_tax = -1 }
 		add_stability = -1
 		set_country_flag = ven_great_plague
-		add_faction_influence = {
-			faction = mr_traders
-			influence = -10
-		}
+		#add_faction_influence = {
+		#	faction = mr_traders
+		#	influence = -10
+		#}
 	}
 }
 
@@ -1204,7 +1207,7 @@ country_event = {
 	}
 	option = {	#Support our own glass blower families instead
 		name = flavor_ven.33.b
-		add_faction_influence = { faction = mr_guilds influence = 30 }
+		#add_faction_influence = { faction = mr_guilds influence = 30 }
 		add_mercantilism = 2
 		112 = {
 			add_permanent_province_modifier = {
