@@ -1732,7 +1732,7 @@ dom_ned_economy_2_group = {
 			#OR = {
 				#
 			#}
-			has_idea = quest_for_the_new_world
+			has_country_modifier = quest_for_the_new_world
 			navigator = 2
 		}
 		effect = {
