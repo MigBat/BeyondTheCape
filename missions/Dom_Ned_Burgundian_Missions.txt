@@ -883,7 +883,7 @@ dom_ned_emp_burgundy_3 = {
 			}
 		}
 		ai_weight = {
-			factor = 500	#Natural Ã®ntegration
+			factor = 500	#Natural întegration
 		}
 	}
 }
@@ -2106,7 +2106,7 @@ dom_ned_burgundy_5 = {
 			}
 		}
 		ai_weight = {
-			factor = 500	#Natural Ã®ntegration
+			factor = 500	#Natural întegration
 		}
 	}
 	
