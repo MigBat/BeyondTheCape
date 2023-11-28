@@ -408,6 +408,7 @@
 
  tooltip_development_15:0 "European 15 development province"
  tooltip_silk_spread:0 "Non-Indian province producing Silk"
+ tooltip_naval_supplies_spread:0 "Non-Indian province producing Naval Supplies"
  ven_aldus_manutius_tt:0 "Venice has had the §YAldus Manutius§! event"
  mai_gutenberg_tt:0 "Mainz has had the §YJohannes Gutenberg§! event"
  fra_descartes_tt:0 "France has had the §YRené Descartes§! event"

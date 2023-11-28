@@ -62,9 +62,9 @@
  estate_trade_company_land_rights: "Trade Company Land Rights"
  estate_trade_company_land_rights_desc: "The Trade Companies have been requesting land from the Crown to exploit the land and increase revenue."
  estate_trade_company_exploration_expedition: "Trade Company Expeditions"
- #estate_trade_company_exploration_expedition_desc: "The Trade Companies have been requesting land from the Crown to exploit the land and increase revenue."
+ estate_trade_company_exploration_expedition_desc: "The Trade Companies have been requesting land from the Crown to exploit the land and increase revenue."
  estate_trade_company_establish_the_voc_vessels: "Charter the VOC Vessels"
- #estate_trade_company_establish_the_voc_vessels_desc: "Establish the VOC Vessels"
+ estate_trade_company_establish_the_voc_vessels_desc: "Establish the VOC Vessels"
  estate_trade_company_charter_voc: "Vereenigde Oostindische Compagnie"
  estate_trade_company_charter_wic: "Westindische Compagnie"
  

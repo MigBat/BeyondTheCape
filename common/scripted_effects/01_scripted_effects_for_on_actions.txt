@@ -3041,8 +3041,6 @@ on_colony_finished_effect = {
 			id = flavor_gbr.200
 		}
 	}
-}
-
 	# BEYOND THE CAPE #
 	if = {
 		limit = {
