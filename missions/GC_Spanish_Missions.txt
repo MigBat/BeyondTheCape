@@ -267,7 +267,7 @@ gc_spain_1_b = {
 		#completed_by = 1521.1.1
 
 		provinces_to_highlight = {
-			colonial_region = colonial_california
+			region = california_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -291,7 +291,7 @@ gc_spain_1_b = {
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_california
+				region = california_region
 				is_city = yes
 			}
 		}
@@ -300,7 +300,7 @@ gc_spain_1_b = {
 			2021 = {
 				add_base_tax = 3
 			}
-			colonial_california = {
+			california_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

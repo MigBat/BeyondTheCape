@@ -219,6 +219,10 @@ want_subject_provinces = {
 	opinion = -10
 	min = -100
 }
+want_your_and_subject_provinces = {
+	opinion = -10
+	min = -100
+}
 
 border_friction = {
 	opinion = -1

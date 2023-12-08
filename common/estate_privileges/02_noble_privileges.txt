@@ -621,12 +621,13 @@ estate_nobles_supremacy_over_crown = {
 		vaisyas_influence_modifier = 0.1
 		nomadic_tribes_influence_modifier = 0.1
 		janissaries_influence_modifier = 0.1
-		eunuchs_influence_modifier = 0.1
-		qizilbash_influence_modifier = 0.1
-		ghulams_influence_modifier = 0.1
 		# Beyond the Cape #
 		slavers_loyalty_modifier = 0.1
 		slavers_influence_modifier = 0.1
+		###################
+		eunuchs_influence_modifier = 0.1
+		qizilbash_influence_modifier = 0.1
+		ghulams_influence_modifier = 0.1
 	}
 	mechanics = {
 		can_give_agendas_without_interaction

@@ -28,8 +28,6 @@ has_any_estates = {
 			has_estate = estate_janissaries
 			has_estate = estate_eunuchs
 			has_estate = estate_slavers
-			has_estate = estate_peasants #new
-			has_estate = estate_trade_company #new
 		}
 	}
 }
@@ -176,8 +174,6 @@ any_estate_loyalty = {
 		if = { limit = { has_estate = estate_janissaries }		estate_loyalty = { estate = estate_janissaries		loyalty = $loyalty$ } }
 		if = { limit = { has_estate = estate_eunuchs }			estate_loyalty = { estate = estate_eunuchs			loyalty = $loyalty$ } }
 		if = { limit = { has_estate = estate_slavers }			estate_loyalty = { estate = estate_slavers			loyalty = $loyalty$ } }
-		if = { limit = { has_estate = estate_peasants }			estate_loyalty = { estate = estate_peasants			loyalty = $loyalty$ } }
-		if = { limit = { has_estate = estate_trade_company }	estate_loyalty = { estate = estate_trade_company	loyalty = $loyalty$ } }
 	}
 }
 

@@ -2036,6 +2036,8 @@ cb_novgorod_war = {
 	war_goal = annex_novgorod
 }
 
+#############
+
 cb_spread_islam = {
 	valid_for_subject = no
 	holy_war = yes

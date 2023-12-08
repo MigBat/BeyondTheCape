@@ -1651,43 +1651,6 @@ sufism_decree_reform = {
 	}
 }
 
-#Korea
-#ways_of_perfectionism_reform = {
-#	icon = "asian_scripture"
-#	allow_normal_conversion = yes
-#	potential = {
-#		has_dlc = "Domination"
-#		NOT = { has_government_attribute = is_pirate_republic_reform }
-#		OR = {
-#			is_revolutionary = no
-#			NOT = { has_dlc = "Emperor" }
-#		}
-#		OR = {
-#			culture_group = korean_g
-#			primary_culture = korean_new
-#		}
-#	}
-#	trigger = {
-#		religion = confucianism
-#	}
-#	modifiers = {
-#		church_loyalty_modifier = 0.1
-#		harmonization_speed = 0.1
-#		yearly_harmony = 0.25
-#		state_governing_cost = -0.05
-#	}
-#	conditional = {
-#		allow = { has_dlc = "Mandate of Heaven" }
-#		custom_attributes = {
-#			full_loyalty_on_harmonization = yes	#Add +100 Loyalty when harmonizing something
-#		}
-#	}
-#	
-#	ai = {
-#		factor = 1
-#	}
-#}
-
 #England
 anglican_state_church_reform = {
 	icon = "anglican_state_church"
@@ -1905,7 +1868,7 @@ cavalry_warfare_reform = {
 	}
 	modifiers = {
 		cav_to_inf_ratio = 0.1
-		cavalry_cost = -0.15
+		cavalry_cost = -0.1
 	}
 	
 	ai = {
@@ -1997,7 +1960,7 @@ mercenary_leadership_reform = {
 		}
 	}
 	modifiers = {
-		mercenary_cost = -0.25
+		mercenary_cost = -0.1
 		possible_condottieri = 0.5
 	}
 	
@@ -2033,7 +1996,7 @@ doppelsoldner_reform = {
 		}
 	}
 	modifiers = {
-		mercenary_cost = -0.25
+		mercenary_cost = -0.15
 		possible_condottieri = 0.5
 		merc_leader_army_tradition = 0.25
 	}

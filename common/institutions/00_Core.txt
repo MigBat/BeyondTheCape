@@ -96,16 +96,18 @@ feudalism = {
 			owner = { technology_group = high_american }
 			owner = {
 				NOT = {
-					government = tribal
-					government = native
-					primary_culture = bedouin_arabic
-					primary_culture = uyghur
-					technology_group = andean
-					technology_group = mesoamerican
-					technology_group = north_american
-					technology_group = south_american
-					technology_group = sub_saharan
-					technology_group = aboriginal_tech
+					OR = {
+						government = tribal
+						government = native
+						primary_culture = bedouin_arabic
+						primary_culture = uyghur
+						technology_group = andean
+						technology_group = mesoamerican
+						technology_group = north_american
+						technology_group = south_american
+						technology_group = sub_saharan
+						technology_group = aboriginal_tech
+					}
 				}
 			}
 			AND = {
@@ -1131,7 +1133,7 @@ new_world_i = {
 			scale = yes
 			potential = {
 				OR = {
-					trade_goods = furs
+					trade_goods = fur
 				}
 			}
 			owner = {
@@ -2016,7 +2018,7 @@ global_trade = {
 			scale = yes
 			potential = {
 				OR = {
-					trade_goods = furs
+					trade_goods = fur
 				}
 			}
 			custom_trigger_tooltip = {

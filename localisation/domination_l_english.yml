@@ -1610,6 +1610,7 @@
  
  
  
+ #Chinese Kingdoms Loc by Big Boss 
  
  #Missions 
  solidify_our_borders_title:0 "Solidify our Domain"
@@ -5731,7 +5732,7 @@
  desc_eng_empire_of_the_island:0 "No more a kingdom but a global and powerful empire, the [Root.GetAdjective] glory shall reign forever."
  eng_most_esteemed_university:0 "Most Esteemed University"
  desc_eng_most_esteemed_university:0 "Only the most elite of the intellectual are invited to study at this university."
-#  eng_the_man_of_war:0 "The Man-of-War"
+ #eng_the_man_of_war:0 "The Royal Ships"
  desc_eng_the_man_of_war:0 "The Royal Navy is nothing without a powerful ship to represent the maritime strength of the [Root.GovernmentName]."
  eng_strict_marines:0 "The Royal Marines"
  desc_eng_strict_marines:0 "As a maritime realm, it is only natural that our marines are the most elite and best the nation can offer."
@@ -7213,12 +7214,12 @@
  restore_color_decision_desc:0 "This National Decision allows for the restoration of our proper current color. \n\nIt will be available for §Y10§! years after adopting a new name."
  
  #Ship-related loc 
-#  geobukseon_ship:1 "Geobukseon Ship"
-#  man_of_war_ship:1 "Man o' War Ship"
-#  galleon_ship:1 "Galleon Ship"
-#  galleass_ship:1 "Galleass Ship"
-#  caravel_ship:1 "Caravel Ship"
- voc_indiamen_ship:1 "VOC Indiamen Ship"
+#  geobukseon_ship:0 "Bonus from Geobukseon"
+#  man_of_war_ship:0 "Bonus from Man o' War"
+#  galleon_ship:0 "Bonus from Galleon"
+#  galleass_ship:0 "Bonus from Galleass"
+#  caravel_ship:0 "Bonus from Caravel"
+ voc_indiamen_ship:0 "Bonus from VOC Indiamen"
  
  
  

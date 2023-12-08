@@ -672,8 +672,7 @@
  SWI_parliament_name:0 "Tagsatzung"
  TAU_parliament_name:0 "Hluttaw"
  TUR_parliament_name:0 "Meclis"
- #commented so it doesn't override the other localisation in btc_governments_l_english
- #VEN_parliament_name:0 "Great Council"
+ VEN_parliament_name:0 "Great Council"
  WES_parliament_name:0 "Generalrat"
  ITA_parliament_name:0 "Parlamento"
  NOV_parliament_name:0 "Veche"

@@ -504,8 +504,8 @@ spriteTypes = {
 		size = { x = 274 y = 110 }
 		effectFile = "gfx/FX/progress.lua"
 	}
-	
-		### 20 Egyptian Westernization ###
+
+	### 20 Egyptian Westernization ###
 	spriteType = {
 		name = "GFX_egyptian_westernization_bg"
 		texturefile = "gfx/interface/government_mechanics/egyptian_westernization/egyptian_westernization_bg.dds"
@@ -599,6 +599,5 @@ spriteTypes = {
 		textureFile2 = "gfx/interface/government_mechanics/zoroastrian_three_flames/the_three_royal_fires_progress_bar_empty.dds"
 		size = { x = 185 y = 14 }
 		effectFile = "gfx/FX/progress.lua"
-	}	
-}
+	}
 }

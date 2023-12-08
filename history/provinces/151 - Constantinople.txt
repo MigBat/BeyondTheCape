@@ -20,12 +20,21 @@ discovered_by = ottoman
 discovered_by = nomad_group
 extra_cost = 26
 center_of_trade = 2
+
 add_province_triggered_modifier = bosphorus_sound
+add_province_triggered_modifier = BYZ_galata
+
+#add_province_modifier = {
+#	name = BYZ_depopulation
+#	duration = -1
+#}
 
 1453.5.29 = {
 	owner = TUR
 	controller = TUR
 	add_core = TUR
+	remove_province_triggered_modifier = BYZ_galata
+	#remove_province_modifier = BYZ_depopulation
 } # The fall of the Byzantine Empire
 1459.1.1 = { culture = turkish religion = sunni }
 1481.6.1 = { unrest = 6 } # Civil war, Bayezid & Jem

@@ -98,7 +98,7 @@ dom_cas_missions_1 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = ROOT
+				add_claim = ROOT
 			}
 		}
 	}
@@ -1453,6 +1453,7 @@ dom_cas_missions_2_c = {
 			tag = CAS 
 			tag = SPA 
 		}
+		
 	}
 	has_country_shield = yes
 	
@@ -1906,24 +1907,17 @@ dom_cas_missions_3 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			OR = {
-				ARA = {
-					junior_union_with = ROOT
-				}
-				AND = {
-					valencia_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					catalonia_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					aragon_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
+			valencia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aragon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 
@@ -2630,6 +2624,7 @@ dom_cas_missions_3_c = {
 			tag = CAS 
 			tag = SPA 
 		}
+		
 	}
 	has_country_shield = yes
 	
@@ -2666,6 +2661,41 @@ dom_cas_missions_3_c = {
 			add_country_modifier = {
 				name = "spa_hispaniola_discovered"
 				duration = 5475
+			}
+			la_plata_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			colombia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_cuba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cuba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dominica_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -3334,6 +3364,7 @@ dom_cas_missions_4_c = {
 			tag = CAS 
 			tag = SPA 
 		}
+		
 	}
 	has_country_shield = yes
 	
@@ -4377,6 +4408,7 @@ dom_cas_missions_5_c = {
 			tag = CAS 
 			tag = SPA 
 		}
+		
 	}
 	has_country_shield = yes
 	
@@ -4385,13 +4417,7 @@ dom_cas_missions_5_c = {
 		required_missions = {  }
 		position = 7
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					region = guinea_region
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				province_id = 1466
-			}
+			province_id = 1466
 			has_discovered = ROOT
 		}
 
@@ -4595,7 +4621,10 @@ dom_cas_missions_5_c = {
 		trigger = {
 			if = {
 				limit = {
-					has_dlc = "Rights of Man"
+					AND = {
+						has_dlc = "Rights of Man"
+						ai = no
+					}
 				}
 				484 = {
 					country_or_non_sovereign_subject_holds = ROOT

@@ -1,5 +1,5 @@
 estate_slavers = {
-	icon = 14
+	icon = 16
 
 	color = { 95 41 29}
 

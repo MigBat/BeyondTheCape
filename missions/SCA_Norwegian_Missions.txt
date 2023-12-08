@@ -1062,7 +1062,7 @@ nor_colonize_middle_america_slot = {
 		provinces_to_highlight = {
 			OR = {
 				colonial_region = colonial_mexico
-				colonial_region = colonial_california
+				region = california_region
 			}
 			has_discovered = ROOT
 			OR = {
@@ -1075,7 +1075,7 @@ nor_colonize_middle_america_slot = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					colonial_region = colonial_mexico
-					colonial_region = colonial_california
+					region = california_region
 				}
 				is_city = yes
 				trade_goods = gold

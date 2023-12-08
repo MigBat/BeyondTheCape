@@ -714,7 +714,10 @@ gbr_row_slot_2 = {
 		has_dlc = "Domination"
 		OR = {
 			AND = {
-				tag = ENG
+				or = {
+					tag = ENG
+					has_country_flag = eng_took_gbr_branch
+				}
 				NOT = { has_country_flag = eng_took_ave_branch }
 			}
 			tag = GBR
@@ -736,6 +739,7 @@ gbr_row_slot_2 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			prestige = 50
 			OR = {
 				AND = {
@@ -823,6 +827,7 @@ gbr_row_slot_2 = {
 			NOT = { has_discovered = ROOT }
 		}
 		trigger = {
+			has_idea_group = exploration_ideas
 			if = {
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
@@ -875,6 +880,7 @@ gbr_row_slot_2 = {
 			has_discovered = ROOT
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
@@ -936,6 +942,7 @@ ave_row_slot_2 = {
 			AND = {
 				tag = ENG
 				has_country_flag = eng_took_ave_branch
+				not = { has_country_flag = eng_took_gbr_branch }
 			}
 			tag = AVE
 		}
@@ -956,6 +963,7 @@ ave_row_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			PRO = {
 				custom_trigger_tooltip = {
 					tooltip = ave_eliminate_the_french_minors_ct
@@ -996,7 +1004,7 @@ ave_row_slot_2 = {
 			}
 		}	
 		effect = {
-			1276 = {
+			174 = {
 				add_trade_modifier = {
 					who = root
 					duration = 5475
@@ -1040,6 +1048,7 @@ ave_row_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = iberia_region
 				value = 15
@@ -1074,6 +1083,7 @@ ave_row_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = iberia_region
 				value = 55
@@ -1165,7 +1175,10 @@ gbr_row_slot_2_continuation = {
 		has_dlc = "Domination"
 		OR = {
 			AND = {
-				tag = ENG
+				or = {
+					tag = ENG
+					has_country_flag = eng_took_gbr_branch
+				}
 				NOT = { has_country_flag = eng_took_ave_branch }
 			}
 			tag = GBR
@@ -1186,6 +1199,7 @@ gbr_row_slot_2_continuation = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			lanka_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
@@ -1227,6 +1241,7 @@ ave_row_slot_2_continuation = {
 			AND = {
 				tag = ENG
 				has_country_flag = eng_took_ave_branch
+				not = { has_country_flag = eng_took_gbr_branch }
 			}
 			tag = AVE
 		}
@@ -1247,6 +1262,7 @@ ave_row_slot_2_continuation = {
 			local_autonomy_above_min = 10
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			custom_trigger_tooltip = {
 				tooltip = ave_promote_angevin_culture_at
 				OR = {
@@ -1435,7 +1451,10 @@ gbr_row_3 = {
 		has_dlc = "Domination"
 		OR = {
 			AND = {
-				tag = ENG
+				or = {
+					tag = ENG
+					has_country_flag = eng_took_gbr_branch
+				}
 				NOT = { has_country_flag = eng_took_ave_branch }
 			}
 			tag = GBR
@@ -1459,6 +1478,7 @@ gbr_row_3 = {
 			}
 		}
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					region = france_region
@@ -1485,6 +1505,10 @@ gbr_row_3 = {
 							has_trade_building_trigger = yes
 						}
 					}
+				}
+				AND = {
+					ai = yes
+					is_year = 1500
 				}
 			}
 		}	
@@ -1529,6 +1553,7 @@ gbr_row_3 = {
 		provinces_to_highlight = {
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			NOT = { has_estate_privilege = estate_nobles_english_villeinage }
 			NOT = { num_of_rebel_armies = 1 }
 			NOT = { num_of_rebel_controlled_provinces = 1 }
@@ -1554,6 +1579,7 @@ gbr_row_3 = {
 		provinces_to_highlight = {
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = { ai = no }
 				navy_size = 50
@@ -1569,8 +1595,15 @@ gbr_row_3 = {
 			create_explorer = {
 				tradition = 50
 			}
+			add_country_modifier = {
+				name = gbr_exploration_spirit
+				duration = 9125
+			}
 			unlock_issue = {
 				issue = act_of_exploration
+			}
+			add_permanent_claim_province = {
+				province = 226
 			}
 		}
 		ai_weight = {
@@ -1585,6 +1618,7 @@ gbr_row_3 = {
 		provinces_to_highlight = {
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_special_units = { 
 				special_unit_category = man_of_war
 				type = heavy_ship 
@@ -1630,6 +1664,7 @@ gbr_row_3 = {
 			has_discovered = ROOT
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = { is_random_new_world = no }
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1681,6 +1716,7 @@ gbr_row_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = { is_random_new_world = no }
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1725,6 +1761,7 @@ gbr_row_3 = {
 			NOT = { owned_by = ROOT }
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			india_superregion = {
 				has_port = yes
 				owned_by = ROOT
@@ -1762,6 +1799,7 @@ gbr_row_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					area = tapti_area
@@ -1848,6 +1886,7 @@ ave_row_3 = {
 			AND = {
 				tag = ENG
 				has_country_flag = eng_took_ave_branch
+				not = { has_country_flag = eng_took_gbr_branch }
 			}
 			tag = AVE
 		}
@@ -1869,6 +1908,7 @@ ave_row_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			OR = {
 				FRA = { is_subject_of = ROOT }
 				AND = {
@@ -1905,6 +1945,51 @@ ave_row_3 = {
 				name = "eng_french_recovery"
 				duration = 9125
 			}
+			brittany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			picardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lorraine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_burgundy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bourgogne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			provence_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_permanent_claim_province = {
+				province = 178
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -1918,6 +2003,7 @@ ave_row_3 = {
 		provinces_to_highlight = {
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = { has_government_attribute = english_parliament }
 				has_enacted_parliament_action = {
@@ -1951,11 +2037,11 @@ ave_row_3 = {
 				add_adm_power = 50
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 		}
@@ -1986,6 +2072,7 @@ ave_row_3 = {
 			}
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			france_region = {
 				custom_trigger_tooltip = {
 					tooltip = ave_the_angevin_empire_at
@@ -2022,43 +2109,6 @@ ave_row_3 = {
 					duration = -1
 				}
 			}
-			if = {
-				limit = { has_government_attribute = english_parliament }
-				unlock_issue = {
-					issue = english_french_act_of_union
-				}
-			}
-			else = {
-				set_parliament_action_flag = {
-					parliament_action = english_french_act_of_union
-				}
-				custom_tooltip = english_french_act_of_union_at
-				hidden_effect = {
-					FRA = {
-						every_subject_country = {
-							limit = {
-								capital_scope = {
-									region = france_region
-								}
-							}
-							FRA = {
-								inherit = PREV
-							}
-						}
-					}
-					inherit = FRA
-					change_tag = AVE
-					on_change_tag_effect = yes
-					if = {
-						limit = { NOT = { has_idea_group = AVE_ideas } }
-						country_event = {
-							id = ideagroups.1
-						}
-					}
-				}
-				add_prestige = 25
-			}
-			custom_tooltip = english_french_act_of_union_bt	#claim tooltip
 			hidden_effect = {
 				catalonia_area = {
 					limit = {
@@ -2152,6 +2202,50 @@ ave_row_3 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			if = {
+				limit = { has_government_attribute = english_parliament }
+				unlock_issue = {
+					issue = english_french_act_of_union
+				}
+			}
+			else = {
+				set_parliament_action_flag = {
+					parliament_action = english_french_act_of_union
+				}
+				custom_tooltip = english_french_act_of_union_at
+				add_prestige = 25
+				hidden_effect = {
+					FRA = {
+						every_subject_country = {
+							limit = {
+								capital_scope = {
+									region = france_region
+								}
+							}
+							FRA = {
+								inherit = PREV
+							}
+						}
+					}
+					inherit = FRA
+					change_tag = AVE
+					if = {
+						limit = {
+							NOT = { government_rank = 2 }
+						}
+						set_government_rank = 2
+					}
+					on_change_tag_effect = yes
+					if = {
+						limit = { NOT = { has_idea_group = AVE_ideas } }
+						country_event = {
+							id = ideagroups.1
+						}
+					}
+					complete_mission = ave_the_angevin_empire
+				}
+			}
+			custom_tooltip = english_french_act_of_union_bt	#claim tooltip
 		}
 		ai_weight = {
 			factor = 250
@@ -2174,6 +2268,7 @@ ave_row_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					area = piedmont_area
@@ -2212,6 +2307,7 @@ ave_row_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = italy_region
 				value = 35
@@ -2245,6 +2341,7 @@ ave_row_3 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_owned_provinces_with = {
 				continent = europe
 				value = 250
@@ -2268,6 +2365,7 @@ ave_row_3 = {
 		provinces_to_highlight = {
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			army_tradition = 80
 			prestige = 80
 			if = {
@@ -2282,8 +2380,8 @@ ave_row_3 = {
 				crown_land_share = 75
 			}
 			check_variable = {
-				which = land_units_killed
-				value = 20000	#Counts units killed in a SINGLE battle. Not from ALL battles combined.
+				which = total_land_units_killed
+				value = 100000
 			}
 		}
 		effect = {
@@ -2316,6 +2414,7 @@ ave_row_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			british_isles_region = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
@@ -2332,7 +2431,6 @@ ave_row_3 = {
 				duration = -1
 			}
 			custom_tooltip = ave_claim_the_empire_title_bt
-			set_country_flag = ave_automatic_renaming_when_government_changes
 			country_event_with_insight = {
 				id = flavor_gbr.20
 				insight_tooltip = ave_claim_the_empire_title_at
@@ -2354,7 +2452,10 @@ gbr_row_4 = {
 		has_dlc = "Domination"
 		OR = {
 			AND = {
-				tag = ENG
+				or = {
+					tag = ENG
+					has_country_flag = eng_took_gbr_branch
+				}
 				NOT = { has_country_flag = eng_took_ave_branch }
 			}
 			tag = GBR
@@ -2370,6 +2471,7 @@ gbr_row_4 = {
 		provinces_to_highlight = {
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = obj_humiliate_rival_tooltip
@@ -2407,6 +2509,7 @@ gbr_row_4 = {
 		provinces_to_highlight = {
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			reform_level = 3
 			OR = {
 				reform_level = 8
@@ -2433,24 +2536,11 @@ gbr_row_4 = {
 		required_missions = { gbr_establish_royal_navy }
 		position = 5
 		provinces_to_highlight = {
-			OR = {
-				province_id = 126
-				province_id = 163
-				province_id = 321
-				province_id = 4559
-				area = corsica_sardinia_area
-			}
+			province_id = 226
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_or_non_sovereign_subject_of = 126
-			owns_or_non_sovereign_subject_of = 163
-			owns_or_non_sovereign_subject_of = 321
-			owns_or_non_sovereign_subject_of = 4559
-			corsica_sardinia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns_or_non_sovereign_subject_of = 226
 		}
 		effect = {
 			add_dip_power = 100
@@ -2477,6 +2567,13 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				corsica_sardinia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 				add_permanent_claim_province = {
 					province = 163
 				}
@@ -2487,13 +2584,7 @@ gbr_row_4 = {
 					province = 4698
 				}
 			}
-			126 = {
-				center_of_trade = 1
-			}
-			163 = {
-				center_of_trade = 1
-			}
-			321 = {
+			226 = {
 				center_of_trade = 1
 			}
 		}
@@ -2572,6 +2663,7 @@ gbr_row_4 = {
 			has_discovered = no
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			custom_trigger_tooltip = {
 				tooltip = england_discovers_india.tooltip
 				west_india_region = { has_discovered = ROOT }
@@ -2676,6 +2768,7 @@ gbr_row_4 = {
 			has_discovered = ROOT
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					trade_company_region = trade_company_moluccas
@@ -2709,7 +2802,7 @@ gbr_row_4 = {
 				}
 				west_bengal_area = {
 					limit = {
-						NOT = { is_claim = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
@@ -2732,6 +2825,7 @@ gbr_row_4 = {
 			has_port = no
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				superregion = india_superregion
 				has_port = no
@@ -2826,6 +2920,7 @@ gbr_row_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				superregion = india_superregion
 				value = 200
@@ -2860,6 +2955,7 @@ ave_row_4 = {
 			AND = {
 				tag = ENG
 				has_country_flag = eng_took_ave_branch
+				not = { has_country_flag = eng_took_gbr_branch }
 			}
 			tag = AVE
 		}
@@ -2882,6 +2978,7 @@ ave_row_4 = {
 			}
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_eastern_america
 				colonial_eastern_america = { has_discovered = ROOT }
@@ -2914,17 +3011,36 @@ ave_row_4 = {
 		}
 		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			picardy_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owner = { 
+					OR = { 
+						tag = ROOT 
+						is_subject_of = ROOT 
+						overlord = { is_subject_of = ROOT }
+					}
+				}
 			}
 			west_burgundy_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owner = { 
+					OR = { 
+						tag = ROOT 
+						is_subject_of = ROOT 
+						overlord = { is_subject_of = ROOT }
+					}
+				}
 			}
 			bourgogne_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owner = { 
+					OR = { 
+						tag = ROOT 
+						is_subject_of = ROOT 
+						overlord = { is_subject_of = ROOT }
+					}
+				}
 			}
 		}
 		
@@ -2970,6 +3086,7 @@ ave_row_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			OR = {
 				if = {
 					limit = {
@@ -3083,6 +3200,7 @@ ave_row_4 = {
 		provinces_to_highlight = {
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			OR = {
 				is_emperor = yes
 				AND = {
@@ -3133,6 +3251,7 @@ ave_row_4 = {
 			NOT = { development = 20 }
 		}
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_owned_provinces_with = {
 				OR = {
 					region = france_region
@@ -3190,6 +3309,7 @@ ave_row_4 = {
 		provinces_to_highlight = {
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
@@ -3252,7 +3372,7 @@ gbr_ave_the_royal_court_slot = {
 				legitimacy = 95
 			}
 			ruler_total_stats = {
-				stats = 5
+				amount = 5
 			}
 			has_adm_advisor = yes
 			has_dip_advisor = yes
@@ -3283,7 +3403,10 @@ gbr_row_5 = {
 		has_dlc = "Domination"
 		OR = {
 			AND = {
-				tag = ENG
+				or = {
+					tag = ENG
+					has_country_flag = eng_took_gbr_branch
+				}
 				NOT = { has_country_flag = eng_took_ave_branch }
 			}
 			tag = GBR
@@ -3315,19 +3438,23 @@ gbr_row_5 = {
 			}
 		}		
 		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
 			num_of_allies = 3
 			calc_true_if = {
 				all_ally = {
-					OR = {
-						tag = POR
-						total_development = 200
-					}
-					capital_scope = {
-						same_continent = ROOT
-					}
-					has_opinion = {
-						who = ROOT
-						value = 150
+					custom_trigger_tooltip = {
+						tooltip = gbr_allies_on_the_mainland_tt
+						capital_scope = {
+							same_continent = ROOT
+						}
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+						OR = {
+							tag = POR
+							total_development = 200
+						}
 					}
 				}
 				amount = 3
@@ -3378,6 +3505,7 @@ gbr_row_5 = {
 			NOT = { owner = { alliance_with = ROOT } }
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			OR = {
 				any_ally = {
 					custom_trigger_tooltip = {
@@ -3465,6 +3593,7 @@ gbr_row_5 = {
 			NOT = { is_strongest_trade_power = ROOT }
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			calc_true_if = {
 				desc = gbr_trade_dominance_in_europe_at
 				european_trade_node_scope = {
@@ -3504,6 +3633,8 @@ gbr_row_5 = {
 			has_port = yes
 		}
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
+			has_idea_group = exploration_ideas
 			custom_trigger_tooltip = {
 				tooltip = gbr_sail_around_africa_ct
 				east_africa_region = {
@@ -3517,8 +3648,12 @@ gbr_row_5 = {
 			}
 		}	
 		effect = {
-			create_colony_mission_reward = {
-				province = 1177
+			cape_of_good_hope_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 		ai_weight = {
@@ -3599,6 +3734,22 @@ gbr_row_5 = {
 							1 = { 1179 = { add_building = stock_exchange } }
 						}
 					}
+				}
+			}
+			if = {
+				limit = {
+					1177 = {
+						NOT = {
+							OR = {
+								province_has_center_of_trade_of_level = 1
+								province_has_center_of_trade_of_level = 2
+								province_has_center_of_trade_of_level = 3
+							}
+						}
+					}
+				}
+				1177 = {
+					center_of_trade = 1
 				}
 			}
 		}
@@ -3802,25 +3953,12 @@ ave_row_5 = {
 				is_city = no
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			}
+			is_sea = no
 			has_discovered = ROOT
 		}
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = miss_discover_canada
-				OR = {
-					north_america = {
-						has_discovered = ROOT
-					}
-					south_america = {
-						has_discovered = ROOT
-					}
-					new_world = {
-						has_discovered = ROOT
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = gbr_colonize_canada_ct
+				tooltip = ave_colonize_america_tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 10
 					OR = {
@@ -4134,12 +4272,12 @@ gbr_ave_row_1 = {
 				limit = { is_random_new_world = no }
 				OR = {
 					province_id = 1500
-					province_id = 1269
+					province_id = 236
 				}
 				has_discovered = ROOT
 			}
 			else = {
-				province_id = 1269
+				province_id = 236
 			}
 		}		
 		trigger = {
@@ -4151,7 +4289,7 @@ gbr_ave_row_1 = {
 						share = 40
 					}
 				}
-				1269 = {
+				236 = {
 					highest_value_trade_node = yes
 					trade_share = {
 						country = ROOT
@@ -4160,7 +4298,7 @@ gbr_ave_row_1 = {
 				}
 			}
 			else = {
-				1269 = {
+				236 = {
 					highest_value_trade_node = yes
 					trade_share = {
 						country = ROOT
@@ -4189,16 +4327,16 @@ gbr_ave_row_1 = {
 		}
 		position = 12
 		provinces_to_highlight = {
-			province_id = 1269
+			province_id = 236
 		}		
 		trigger = { 
-			1269 = {
+			236 = {
 				is_strongest_trade_power = ROOT
 			}
-			1269 = {
+			236 = {
 				highest_value_trade_node = yes
 			}
-			1269 = {
+			236 = {
 				trade_node_value = 500
 			}
 			reform_level = 8

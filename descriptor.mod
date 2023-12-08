@@ -14,5 +14,5 @@ tags={
 name="Beyond the Cape"
 replace_path="gfx/loadingscreens"
 picture="thumbnail.png"
-supported_version="1.36.1"
+supported_version="1.36.*"
 remote_file_id="2966858781"

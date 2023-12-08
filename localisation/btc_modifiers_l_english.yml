@@ -97,10 +97,6 @@
 #  por_brazil_colonial_desc:0 "Degredados, meaning "Outlaws" were convicted criminals abandoned at the edge of the Portuguese overseas stations and forced to live among the locals and learn their language, in order to serve as intrepreters in the future."
 
 # Portuguese Events #
- rooting_out_corsairs:0 "Rooting out Corsairs"
- desc_rooting_out_corsairs:0 "Hunting down and eliminating French corsairs"
- negotiating_with_corsairs:0 "Negotiating with Corsairs"
- desc_negotiating_with_corsairs:0 "Striking a benefitial bargain with the French corsairs"
  massive_earthquake:0 "Massive Earthquake"
  desc_massive_earthquake:0 "A massive earthquake has struck the city."
  mourning_the_dead:0 "Mourning the Dead"
@@ -214,8 +210,6 @@
  desc_por_armada:0 "A more combat oriented version of the Armada ship."
  por_fullrigged:0 "Portuguese Full-Rigged Ship"
  desc_por_fullrigged:0 "A version of the Full-Rigged ship that sacrifices combat ability for transporting troops."
- por_push_to_india:0 "Push to India"
- por_push_to_india_desc:0 "Upon reaching the Zanzibar coast, local Muslim merchants can serve as reliable and experienced guides to the way to India"
  ven_galeazza:0 "Venetian Galeazza"
  desc_ven_galeazza:0 "A large and slow version of the Galeazza, meant to endure cannon fire."
  extra_flagship:0 "Extra Flagship"
@@ -338,6 +332,12 @@
  desc_quivira_location:0 "Quivira is located somewhere in this province"
  discovered_caribbean:0 "New World Discovered"
  desc_discovered_caribbean:0 "Our people are ecstactic at the discovery of a new continent!"
+ rooting_out_corsairs:0 "Rooting out Corsairs"
+ desc_rooting_out_corsairs:0 "Hunting down and eliminating French corsairs"
+ negotiating_with_corsairs:0 "Negotiating with Corsairs"
+ desc_negotiating_with_corsairs:0 "Striking a benefitial bargain with the French corsairs"
+ por_push_to_india:0 "Push to India"
+ por_push_to_india_desc:0 "Upon reaching the Zanzibar coast, local Muslim merchants can serve as reliable and experienced guides to the way to India"
 
 # Other Events #
  paria_paid:0 "Paria Paid"
@@ -359,15 +359,6 @@
  dev_increased_recently:0 "Development Increased"
  desc_dev_increased_recently:0 "Development in this province has recently been increased due to high prosperity."
  revoked_tordesillas:0 "Revoked Treaty of Tordesillas."
-
-#venetian btc modifiers
- btc_ven_ten_emergency_government:0 "Council of the Ten's emergency government"
- btc_ven_ten_take_control_of_the_chancery:0 "Venetian chancery under the council of the Ten's control"
- btc_ven_ten_council_eliminated:0 "Council of the Ten eliminated from Venetian government"
- btc_ven_ten_council_restored_to_previous_functions:0 "Council of the Ten's curtailed to his previous functions"
- btc_ven_tens_improved_control_of_the_chancery:0 "Council of the Ten's improved control of the Venetian chancery"
- btc_ven_ten_improved_emergency_government:0 "Improved Council of the Ten's emergency government"
- 
  mare_liberum:0 "Mare Liberum"
  desc_mare_liberum:0 "The sea is free for everyone."
  predatory_trade:0 "Predatory Trade Policies"

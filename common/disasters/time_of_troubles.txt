@@ -22,13 +22,14 @@ time_of_troubles = {
 	can_start = {
 		current_age = age_of_reformation
 		government = monarchy
+		has_any_disaster = no
 		OR = {
 			has_new_dynasty = yes
 			custom_trigger_tooltip = {
 				tooltip = less_than_9_total_stats
 				NOT = {
 					ruler_total_stats = {
-						stats = 9
+						amount = 9
 					}
 				}
 			}
@@ -42,6 +43,7 @@ time_of_troubles = {
 	
 	can_stop = {
 		OR = {
+			has_any_disaster = yes
 			NOT = { government = monarchy }
 		}
 	}

@@ -84,6 +84,14 @@ aristocracy_ideas = {
 			factor = 1.25
 			has_idea_group = spy_ideas 
 		}
+		modifier = {
+			factor = 100
+			OR = {
+				tag = POL
+				tag = LIT
+				tag = PLC
+			}
+		}
 	}
 }
 
@@ -1251,7 +1259,6 @@ quality_ideas = {
 	bonus = {
 		discipline = 0.05
 		janissaries_loyalty_modifier = 0.1
-		ghulams_loyalty_modifier = 0.1
 		monthly_portuguese_saudade = -0.05
 	}
 
