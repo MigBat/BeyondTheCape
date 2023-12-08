@@ -241,8 +241,6 @@ country_event = {
 		clr_country_flag = estate_janissaries_present_agenda
 		clr_country_flag = estate_eunuchs_present_agenda
 		clr_country_flag = estate_slavers_present_agenda
-		clr_country_flag = estate_peasants_present_agenda
-		clr_country_flag = estate_trade_company_present_agenda
 		clr_country_flag = estate_qizilbash_present_agenda
 		clr_country_flag = estate_ghulams_present_agenda
 		clear_estate_agenda_cache = ROOT
@@ -909,100 +907,6 @@ country_event = {
 	}
 
 	option = {
-		name = estate_privileges_and_agendas_events.3.cho.a
-		trigger = { has_country_flag = estate_peasants_present_agenda }
-		start_estate_agenda = estate_peasants
-		goto = estate_peasants
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.5
-				NOT = {
-					estate_loyalty = {
-						loyalty = 30
-						estate = estate_peasants
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				NOT = {
-					estate_loyalty = {
-						loyalty = 20
-						estate = estate_peasants
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				estate_influence = {
-					influence = 70
-					estate = estate_peasants
-				}
-			}
-			modifier = {
-				factor = 2
-				is_absolutism_active = yes
-				num_of_estate_privileges = {
-					estate = estate_peasants
-					value = 1
-				}
-				estate_loyalty = {
-					estate = estate_peasants
-					higher_than_influence = no
-				}
-			}
-		}
-	}
-
-	option = {
-		name = estate_privileges_and_agendas_events.3.cho.b
-		trigger = { has_country_flag = estate_trade_company_present_agenda }
-		start_estate_agenda = estate_trade_company
-		goto = estate_trade_company
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.5
-				NOT = {
-					estate_loyalty = {
-						loyalty = 30
-						estate = estate_trade_company
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				NOT = {
-					estate_loyalty = {
-						loyalty = 20
-						estate = estate_trade_company
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				estate_influence = {
-					influence = 70
-					estate = estate_trade_company
-				}
-			}
-			modifier = {
-				factor = 2
-				is_absolutism_active = yes
-				num_of_estate_privileges = {
-					estate = estate_trade_company
-					value = 1
-				}
-				estate_loyalty = {
-					estate = estate_trade_company
-					higher_than_influence = no
-				}
-			}
-		}
-	}
-
-	option = {
 		name = estate_privileges_and_agendas_events.3.n
 		trigger = { has_country_flag = estate_qizilbash_present_agenda }
 		start_estate_agenda = estate_qizilbash
@@ -1390,34 +1294,6 @@ country_event = {
 			factor = 0
 		}
 	}
-	#Grant peasants land
-	option = {
-		name = estate_privileges_and_agendas_events.6.new.a
-		trigger = { has_estate = estate_peasants }
-		give_estate_land_share_gigantic = { estate = estate_peasants }
-		add_estate_loyalty = {
-			estate = estate_peasants
-			loyalty = 10
-			short = yes
-		}
-		ai_chance = {
-			factor = 0
-		}
-	}
-	#Grant trade company land
-	option = {
-		name = estate_privileges_and_agendas_events.6.new.b
-		trigger = { has_estate = estate_trade_company }
-		give_estate_land_share_gigantic = { estate = estate_trade_company }
-		add_estate_loyalty = {
-			estate = estate_trade_company
-			loyalty = 10
-			short = yes
-		}
-		ai_chance = {
-			factor = 0
-		}
-	}
 
 	#Grant qizilbash land
 	option = {
@@ -1755,6 +1631,7 @@ country_event = {
 			factor = 0
 		}
 	}
+}
 
 	#Seize from qizilbash
 	option = {

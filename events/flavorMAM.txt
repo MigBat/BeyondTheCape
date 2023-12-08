@@ -586,7 +586,6 @@ country_event = {
 				who = root
 				modifier = mam_por_confronted
 			}	
-			
 			country_event = { 
 				id = flavor_mam.16
 				days = 2
@@ -595,8 +594,6 @@ country_event = {
 			}
 				
 		}
-		
-		
 	}
 	option = {
 		name = flavor_mam.15.b

@@ -20,7 +20,7 @@ discovered_by = eastern
 
 1580.8.25 = { controller = SPA }
 1580.8.26 = { controller = POR }
-1640.1.1 = { unrest = 8 } # Revolt headed by John of Braganï¿½a
+1640.1.1 = { unrest = 8 } # Revolt headed by John of Bragança
 1640.12.1 = { unrest = 0 }
 1807.12.1 = { controller = FRA } # Occupied by France
 1808.8.30 = { controller = POR }

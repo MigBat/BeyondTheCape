@@ -487,6 +487,42 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	curtail_estate_slavers = {
+		major = yes
+		potential = {
+			has_country_flag = slavers_estate_in_power
+		}
+		allow = {
+			stability = 1
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }			
+			NOT = {
+				estate_influence = {
+					estate = estate_slavers
+					influence = 60
+				}				
+			}
+		}
+		effect = {
+			add_stability = -3
+			random_owned_province = {
+				limit = {
+					OR = {
+						region = guinea_region
+						region = kongo_region
+					}
+				}
+				add_base_production = -2
+			}
+			clr_country_flag = slavers_estate_in_power
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
 	
 	#1.36
 	curtail_estate_qizilbash = {
@@ -559,39 +595,4 @@ country_decisions = {
 		}
 		ai_importance = 100
 	}
-	
-	curtail_estate_slavers = {
-		major = yes
-		potential = {
-			has_country_flag = slavers_estate_in_power
-		}
-		allow = {
-			stability = 1
-			NOT = { num_of_rebel_armies = 1 }
-			NOT = { num_of_rebel_controlled_provinces = 1 }			
-			NOT = {
-				estate_influence = {
-					estate = estate_slavers
-					influence = 60
-				}				
-			}
-		}
-		effect = {
-			add_stability = -3
-			random_owned_province = {
-				limit = {
-					OR = {
-						region = guinea_region
-						region = kongo_region
-					}
-				}
-				add_base_production = -2
-			}
-			clr_country_flag = slavers_estate_in_power
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 }

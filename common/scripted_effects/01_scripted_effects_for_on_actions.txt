@@ -2931,6 +2931,32 @@ add_country_modifier_for_age = {
 	]
 }
 
+eng_remove_all_reformation_related_modifiers = {
+	if = {
+		limit = {
+			OR = {
+				has_country_modifier = eng_the_age_of_reformation
+				has_country_modifier = eng_reformer_ruler
+				has_country_modifier = eng_catholic_ruler
+				has_country_modifier = eng_tolerant_ruler
+				has_country_modifier = eng_reformer_ruler_for_catholic_gb
+				has_country_modifier = eng_catholic_ruler_for_reformed_gb
+			}
+			NOT = { religion = catholic }
+			NOT = { religion = protestant }
+			NOT = { religion = reformed }
+			NOT = { religion = anglican }
+			NOT = { religion = hussite }
+		}
+		remove_country_modifier = eng_the_age_of_reformation
+		remove_country_modifier = eng_reformer_ruler
+		remove_country_modifier = eng_catholic_ruler
+		remove_country_modifier = eng_tolerant_ruler
+		remove_country_modifier = eng_reformer_ruler_for_catholic_gb
+		remove_country_modifier = eng_catholic_ruler_for_reformed_gb
+	}
+}
+
 on_parliament_abolished_effect = {
 	custom_tooltip = on_parliament_abolished_effect_tt
 	hidden_effect = {
@@ -3041,8 +3067,6 @@ on_colony_finished_effect = {
 			id = flavor_gbr.200
 		}
 	}
-}
-
 	# BEYOND THE CAPE #
 	if = {
 		limit = {

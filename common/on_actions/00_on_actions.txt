@@ -22,6 +22,24 @@ on_startup = {
 	on_startup_effect = yes
 	on_startup_dlc_cleanup_effect = yes
 	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	# Beyond the cape #
+	if = {
+		limit = {
+			was_player = yes
+			NOT = { has_country_flag = tutorial_done }
+		}
+		country_event = { id = btc_startscreen.1 }
+	}
+	if = {
+		limit =  {
+			capital_scope = {
+				region = maghreb_region
+			}
+			NOT = { has_country_flag = resisting_reconquista }
+		}
+		country_event = { id = btc_events.2 }
+	}
 }
 
 # country
@@ -1426,10 +1444,6 @@ on_heir_death = {
 	on_heir_disinherited_or_death_effect = yes
 	ladislaus_postumus_heir_died_effect = yes
 	joan_de_trastamara_heir_died_effect = yes
-	if = {
-		limit = { has_heir_flag = miguel_da_paz }
-		country_event = { id = btc_por.138 }
-	}
 }
 
 # country

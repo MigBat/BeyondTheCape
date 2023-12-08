@@ -1571,7 +1571,6 @@ iberian	= {
 		}
 	}
 	brazilian = {
-		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = BRZ
 		dynasty_names = {
 			"de Bragança" "de Camargo" "de Alburquerque" "de Vassouras" "de Noronha" "de Melo" 

@@ -16,14 +16,14 @@ btc_update_colonial_brazil_colour = {
 	}
 }
 
-btc_update_colonial_california_colour = {
-	limit = {
-		tag ECA
-	}
-	change_country_color = {
-		color = { 210 60 60 }
-	}
-}
+# btc_update_colonial_california_colour = {
+# 	limit = {
+# 		tag ECA
+# 	}
+# 	change_country_color = {
+# 		color = { 210 60 60 }
+# 	}
+# }
 
 btc_update_colonial_canada_colour = {
 	limit = {

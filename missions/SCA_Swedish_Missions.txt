@@ -1040,7 +1040,7 @@ swe_diplomacy_mission_slot = {
 			}
 		}
 		effect = {
-			#Maybe a new event for Lübeck?
+			#Maybe a new event for LÃ¼beck?
 			if = {
 				limit = {
 					owns_or_non_sovereign_subject_of = 45

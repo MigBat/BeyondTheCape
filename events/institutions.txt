@@ -2428,7 +2428,7 @@ country_event = {
 			area = {
 				limit = {
 					owned_by = ROOT
-					#NOT = { printing_press = 100 }
+					NOT = { printing_press = 100 }
 				}
 				add_institution_embracement = {
 					which = printing_press

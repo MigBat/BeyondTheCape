@@ -409,6 +409,7 @@ country_event = {
 			is_subject = no
 		}
 		is_free_or_tributary_trigger = yes
+		is_at_war = no
 		NOT = { num_of_cities = 5 }
 		any_owned_province = {
 			region = low_countries_region
@@ -429,47 +430,10 @@ country_event = {
 	
 	option = {
 		name = "flavor_bur.EVTOPTA16"
-		ai_chance = { 
-			factor = 4
-			modifier = {
-				factor = 10
-				has_opinion = {
-					who = NED
-					value = 50
-				}
-			}
-			modifier = {
-				factor = 5
-				religion = NED
-			}
-			modifier = {
-				alliance_with = NED
-			}
-		}
 		NED = {
 			country_event = { id = flavor_bur.17 days = 1 }
 		}
 		set_country_flag = state_joined_netherlands
-	}
-	
-	option = {
-		name = "flavor_bur.16.b"
-		ai_chance = { 
-			factor = 1 
-			modifier = {
-				factor = 5
-				has_opinion = {
-					who = NED
-					value = -50
-				}
-			}
-			modifier = {
-				factor = 5
-				NOT = {
-					religion = NED
-				}
-			}
-		}
 	}
 }
 

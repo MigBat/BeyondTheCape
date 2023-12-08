@@ -1623,12 +1623,6 @@ por_erudite_explorers = {
 	dip_tech_cost_modifier = -0.05
 }
 
-por_push_to_india = {
-	range = 0.2
-	naval_morale = 0.05
-	navy_tradition = 0.25
-}
-
 # Genoese missions
 black_sea_ambition = {
 	global_ship_cost = -0.33
@@ -7924,7 +7918,6 @@ lit_forum_thought_modifier = {
 	technology_cost = -0.1
 }
 
-#Finland by Big Boss#
 fin_savage_tactics_modifier = {
 	movement_speed = 0.33 
 	morale_damage = 0.15 
@@ -8311,12 +8304,10 @@ tur_turkish_andalusian_relations_tur = {	#Permanent until no more Andalusian acc
 
 tur_conquest_of_iberia = {	#Permanent
 	tolerance_own = 1
-	warscore_cost_vs_other_religion = -0.05
 }
 
 tur_re_reconquista = {	#Permanent
 	diplomatic_upkeep = 1
-	warscore_cost_vs_other_religion = -0.05
 }
 
 tur_romanian_tribute = {
@@ -8450,8 +8441,6 @@ tur_safeguarded_jan_privileges_modifier = {
 }
 
 tur_one_faith_empire_mod = {
-	tolerance_own = 1
-	warscore_cost_vs_other_religion = -0.1
 	manpower_in_true_faith_provinces = 0.1
 	enforce_religion_cost = -0.75
 	religion = yes
@@ -8460,7 +8449,6 @@ tur_one_faith_empire_mod = {
 tur_religious_empire = {	#Permanent
 	tolerance_own = 2
 	global_missionary_strength = 0.01
-	warscore_cost_vs_other_religion = -0.05
 	religion = yes
 }
 

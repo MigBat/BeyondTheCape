@@ -67,36 +67,36 @@ country_event = {
 	}
 }
 #California
-country_event = {
-	id = btc_colonial_england.3
-	title = "btc_colonial_england.3.t"
-	desc = "btc_colonial_england.3.d"
-	picture = COLONIZATION_eventPicture
+# country_event = {
+# 	id = btc_colonial_england.3
+# 	title = "btc_colonial_england.3.t"
+# 	desc = "btc_colonial_england.3.d"
+# 	picture = COLONIZATION_eventPicture
 
-	is_triggered_only = yes
-	hidden = yes
+# 	is_triggered_only = yes
+# 	hidden = yes
 	
-	trigger = {
-		capital_scope = {
-			colonial_region = colonial_california
-			is_core = ROOT
-		}
-		NOT = { exists = ECA }
-		OR = {
-			is_colonial_nation_of = ENG
-			is_colonial_nation_of = GBR
-			is_colonial_nation_of = AVE
-		}
-	}
-	option = {
-		name = "btc_colonial_england.a"
-		swap_free_idea_group = yes
-		change_tag = ECA
-		swap_non_generic_missions = yes
-		change_religion = overlord
-		btc_update_colonial_california_colour = yes
-	}
-}
+# 	trigger = {
+# 		capital_scope = {
+# 			colonial_region = colonial_california
+# 			is_core = ROOT
+# 		}
+# 		NOT = { exists = ECA }
+# 		OR = {
+# 			is_colonial_nation_of = ENG
+# 			is_colonial_nation_of = GBR
+# 			is_colonial_nation_of = AVE
+# 		}
+# 	}
+# 	option = {
+# 		name = "btc_colonial_england.a"
+# 		swap_free_idea_group = yes
+# 		change_tag = ECA
+# 		swap_non_generic_missions = yes
+# 		change_religion = overlord
+# 		btc_update_colonial_california_colour = yes
+# 	}
+# }
 #Canada
 country_event = {
 	id = btc_colonial_england.4

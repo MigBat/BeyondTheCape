@@ -45,6 +45,9 @@ eyalet = {}
 core_eyalet = {}
 commercial_enterprise = {}
 trade_protectorate = {}
+hereditary_pronoia_subject_type = {}
+pronoia_subject_type = {}
+cultural_sphere_of_influence_subject = {}
 
 default = {
 	# Graphics:
@@ -106,7 +109,7 @@ default = {
 	can_concentrate_development = yes
 	can_have_great_projects_moved_by_overlord = yes
 	extend_trading_range = no
-	can_gain_favors = yes
+	can_gain_favors = no
 
 	max_government_rank = 0								# 0 means no limit
 	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
@@ -440,8 +443,8 @@ appanage = {
 	}
 	
 	# Subject Interactions
-	seize_court_resources = no
-	request_extra_levies = no
+	seize_court_resources = yes
+	request_extra_levies = yes
 	grant_administrative_autonomy = yes
 	#(disable)
 	scutage = yes
@@ -928,10 +931,10 @@ eyalet = {
 	liberty_desire_development_ratio = 0.1
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 1.25
-	forcelimit_to_overlord = 0.1						# Percent of subject FL to use as base for modifiers
-	naval_forcelimit_to_overlord = 0.1					# Percent of subject FL to use as base for modifiers
-	manpower_to_overlord = 0.1							# Percent of subject FL to use as base for modifiers
-	sailors_to_overlord = 0.1							# Percent of subject FL to use as base for modifiers
+	forcelimit_to_overlord = 0.2						# Percent of subject FL to use as base for modifiers
+	naval_forcelimit_to_overlord = 0.2					# Percent of subject FL to use as base for modifiers
+	manpower_to_overlord = 0.2							# Percent of subject FL to use as base for modifiers
+	sailors_to_overlord = 0.2							# Percent of subject FL to use as base for modifiers
 
 	relative_power_class = 2
 	should_quit_wars_on_activation = yes
@@ -990,10 +993,10 @@ core_eyalet = {
 	liberty_desire_development_ratio = 0.1
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 1.5
-	forcelimit_to_overlord = 0.2						# Percent of subject FL to use as base for modifiers
-	naval_forcelimit_to_overlord = 0.2					# Percent of subject FL to use as base for modifiers
-	manpower_to_overlord = 0.2							# Percent of subject FL to use as base for modifiers
-	sailors_to_overlord = 0.2							# Percent of subject FL to use as base for modifiers
+	forcelimit_to_overlord = 0.33						# Percent of subject FL to use as base for modifiers
+	naval_forcelimit_to_overlord = 0.33					# Percent of subject FL to use as base for modifiers
+	manpower_to_overlord = 0.33							# Percent of subject FL to use as base for modifiers
+	sailors_to_overlord = 0.33							# Percent of subject FL to use as base for modifiers
 	annex_cost_per_development = 6.0					# annex/integrate cost per development
 	must_accept_cta_from_overlord = yes
 	relative_power_class = 1

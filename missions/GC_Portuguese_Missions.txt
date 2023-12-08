@@ -1513,6 +1513,7 @@ gc_por_3 = {
         light_ship_fraction = 0.5
 				has_naval_doctrine = any
 			}
+
 		}
 	
 		effect = {

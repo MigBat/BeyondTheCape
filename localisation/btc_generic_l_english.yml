@@ -408,6 +408,7 @@
 
  tooltip_development_15:0 "European 15 development province"
  tooltip_silk_spread:0 "Non-Indian province producing Silk"
+ tooltip_naval_supplies_spread:0 "Non-Indian province producing Naval Supplies"
  ven_aldus_manutius_tt:0 "Venice has had the §YAldus Manutius§! event"
  mai_gutenberg_tt:0 "Mainz has had the §YJohannes Gutenberg§! event"
  fra_descartes_tt:0 "France has had the §YRené Descartes§! event"
@@ -474,15 +475,3 @@
 
  revoke_tordesillas_tt:0 "Taking this decision will revoke the Treaty of Tordesillas."
  tordesillas_revoked_tt:0 "The Treaty of Tordesillas will no longer be in effect."
- #Venetian Maggior Consiglio's issues and tooltips
- btc_ven_eliminate_the_council_of_ten_issue:0 "Eliminate The Council of the Ten"
- btc_ven_curtail_the_council_of_ten_issue:0 "Limit the Council of the Ten to his official functions"
- btc_ven_doge_deposed_by_ten_tt:0 "This decision could led further illegitimate actions to be made by the Council of the Ten"
- btc_ven_maggior_consiglio_trying_to_eliminate_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to eliminate the Ten's council and remove the §Y"Venetian chancery under the council of the Ten's control"§! modifier, but upon enacting this issue you will also lose the possibility to call an emergency Council of the Ten government."
- btc_ven_maggior_consiglio_trying_to_curtail_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to limit the Council of the Ten to its official functions and remove the §Y"Venetian chancery under the council of the Ten's control"§! modifier"
-
-#Venice ten council decision 
- btc_ven_ten_council_government_title:0 "Council of the Ten government"
- btc_ven_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, indeed due to its small size is much more efficient than the Maggior Consiglio."
- btc_ven_improved_ten_council_government_title:0 "Improved Council of the Ten government"
- btc_ven_improved_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, indeed due to its small size is much more efficient than the Maggior Consiglio."

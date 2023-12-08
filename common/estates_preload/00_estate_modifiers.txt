@@ -485,6 +485,45 @@ estate_eunuchs = {
 	}
 }
 
+#For special scripted modifiers which are not in the code base.
+estate_special = {
+	#For the Republics which only have limited terms
+	modifier_definition = {
+		type = privileges
+		key = max_terms
+		trigger = {
+			has_government_attribute = has_limited_terms
+		}
+	}
+}
+
+# Beyond the Cape #
+
+estate_slavers = {
+	modifier_definition = {
+		type = loyalty
+		key = slavers_loyalty_modifier
+		trigger = {
+			has_estate = estate_slavers
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = slavers_influence_modifier
+		trigger = {
+			has_estate = estate_slavers
+		}
+	}
+	
+	modifier_definition = {
+		type = privileges
+		key = slavers_privilege_slots
+		trigger = {
+			has_estate = estate_slavers
+		}
+	}
+}
+
 estate_ghulams = {
 	modifier_definition = {
 		type = loyalty
@@ -562,45 +601,6 @@ estate_special = {
 		key = influence_to_vassal_elevation_cost
 		trigger = {
 			always = yes
-		}
-	}
-}
-
-#For special scripted modifiers which are not in the code base.
-estate_special = {
-	#For the Republics which only have limited terms
-	modifier_definition = {
-		type = privileges
-		key = max_terms
-		trigger = {
-			has_government_attribute = has_limited_terms
-		}
-	}
-}
-
-# Beyond the Cape #
-
-estate_slavers = {
-	modifier_definition = {
-		type = loyalty
-		key = slavers_loyalty_modifier
-		trigger = {
-			has_estate = estate_slavers
-		}
-	}
-	modifier_definition = {
-		type = influence
-		key = slavers_influence_modifier
-		trigger = {
-			has_estate = estate_slavers
-		}
-	}
-	
-	modifier_definition = {
-		type = privileges
-		key = slavers_privilege_slots
-		trigger = {
-			has_estate = estate_slavers
 		}
 	}
 }

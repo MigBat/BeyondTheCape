@@ -2682,6 +2682,121 @@ share_modern_ideas = {
 	}
 }
 
+# BEYOND THE CAPE #
+
+combine_colony_with_other_colony_in_same_colonial_region = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			is_colonial_nation = yes
+		}
+		any_subject_country = {
+			is_colonial_nation = yes
+			NOT = { tag = FROM }
+			ai = yes
+			capital_scope = {
+				FROM = {
+					capital_scope = {
+						colonial_region = PREV_PREV
+					}
+				}
+			}
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			ai = no
+			FROM = {
+				is_subject_of = ROOT
+				is_colonial_nation = yes
+			}
+		}
+		is_at_war = no
+		FROM = { is_at_war = no }
+		FROM = {
+			NOT = { liberty_desire = 50 }
+		}
+		custom_trigger_tooltip = {
+			tooltip = COMBINE_COLONY_WITH_OTHER_COLONY_IN_SAME_COLONIAL_REGION_VALID_OTHER_COLONY_TT
+			any_subject_country = {
+				is_colonial_nation = yes
+				NOT = { tag = FROM }
+				ai = yes
+				NOT = { liberty_desire = 50 }
+				is_at_war = no
+				capital_scope = {
+					FROM = {
+						capital_scope = {
+							colonial_region = PREV_PREV
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				ai = no
+				FROM = {
+					is_subject_of = ROOT
+					is_colonial_nation = yes
+				}
+				is_at_war = no
+				FROM = { is_at_war = no }
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+				any_subject_country = {
+					is_colonial_nation = yes
+					NOT = { tag = FROM }
+					ai = yes
+					NOT = { liberty_desire = 50 }
+					is_at_war = no
+					capital_scope = {
+						FROM = {
+							capital_scope = {
+								colonial_region = PREV_PREV
+							}
+						}
+					}
+				}
+			}
+			FROM = {
+				add_liberty_desire = -10
+			}
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = yes
+					NOT = { tag = FROM }
+					ai = yes
+					NOT = { liberty_desire = 50 }
+					is_at_war = no
+					capital_scope = {
+						FROM = {
+							capital_scope = {
+								colonial_region = PREV_PREV
+							}
+						}
+					}
+				}
+				FROM = { inherit = PREV }
+			}
+		}
+	}
+
+	ai_will_do = {
+		always = no
+	}
+}
+
 create_pronoia = {
 	category = influence
 
@@ -5318,120 +5433,5 @@ mam_sponsor_hajj = {
 				value = -0.2
 			}
 		}
-	}
-}
-
-# BEYOND THE CAPE #
-
-combine_colony_with_other_colony_in_same_colonial_region = {
-	category = influence
-
-	require_acceptance = no
-
-	is_visible = {
-		ai = no
-		FROM = {
-			is_subject_of = ROOT
-			is_colonial_nation = yes
-		}
-		any_subject_country = {
-			is_colonial_nation = yes
-			NOT = { tag = FROM }
-			ai = yes
-			capital_scope = {
-				FROM = {
-					capital_scope = {
-						colonial_region = PREV_PREV
-					}
-				}
-			}
-		}
-	}
-
-	is_allowed = {
-		hidden_trigger = {
-			ai = no
-			FROM = {
-				is_subject_of = ROOT
-				is_colonial_nation = yes
-			}
-		}
-		is_at_war = no
-		FROM = { is_at_war = no }
-		FROM = {
-			NOT = { liberty_desire = 50 }
-		}
-		custom_trigger_tooltip = {
-			tooltip = COMBINE_COLONY_WITH_OTHER_COLONY_IN_SAME_COLONIAL_REGION_VALID_OTHER_COLONY_TT
-			any_subject_country = {
-				is_colonial_nation = yes
-				NOT = { tag = FROM }
-				ai = yes
-				NOT = { liberty_desire = 50 }
-				is_at_war = no
-				capital_scope = {
-					FROM = {
-						capital_scope = {
-							colonial_region = PREV_PREV
-						}
-					}
-				}
-			}
-		}
-	}
-
-	on_accept = {
-		if = {
-			limit = {
-				ai = no
-				FROM = {
-					is_subject_of = ROOT
-					is_colonial_nation = yes
-				}
-				is_at_war = no
-				FROM = { is_at_war = no }
-				FROM = {
-					NOT = { liberty_desire = 50 }
-				}
-				any_subject_country = {
-					is_colonial_nation = yes
-					NOT = { tag = FROM }
-					ai = yes
-					NOT = { liberty_desire = 50 }
-					is_at_war = no
-					capital_scope = {
-						FROM = {
-							capital_scope = {
-								colonial_region = PREV_PREV
-							}
-						}
-					}
-				}
-			}
-			FROM = {
-				add_liberty_desire = -10
-			}
-			every_subject_country = {
-				limit = {
-					is_colonial_nation = yes
-					NOT = { tag = FROM }
-					ai = yes
-					NOT = { liberty_desire = 50 }
-					is_at_war = no
-					capital_scope = {
-						FROM = {
-							capital_scope = {
-								colonial_region = PREV_PREV
-							}
-						}
-					}
-				}
-				FROM = { inherit = PREV }
-			}
-		}
-	}
-
-	ai_will_do = {
-		always = no
 	}
 }

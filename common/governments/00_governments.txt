@@ -109,14 +109,12 @@ monarchy = {
 				courts_of_navarra
 				league_of_lezhe_reform
 				tibetan_dual_government_reform
-				#
 				sisterhood_of_jeanne_darc_reform
 				crown_of_aragon_reform
 				naples_crown_of_aragon_reform
 				barcelona_crown_of_aragon_reform
 				valencia_crown_of_aragon_reform
 				zaragoza_crown_of_aragon_reform
-				erfstadhouder_monarchy_reform
 				#1.36
 				#Turkomen
 				turkoman_ottoman_institutions
@@ -185,7 +183,6 @@ monarchy = {
 				ottoman_provincial_government_system_reform
 				namestnik_reform
 				consulate_of_the_sea
-				dom_ned_great_council_of_mechelen_reform
 				#1.36
 				restore_the_master_of_offices_reform
 				court_of_art_and_culture_reform
@@ -626,10 +623,6 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
-				#
-				hansa_free_city_reform
-				peasants_chiefdom
-				bataafs_republiek
 			}
 		}
 		republican_virtues = {
@@ -847,8 +840,6 @@ republic = {
 				devolution_of_powers_reform
 				consolidate_power_to_the_ruler_reform
 				consolidate_power_into_different_candidates_reform
-				#Venetian improved council of the Ten reform
-				btc_ven_improve_the_council_of_the_ten_reform
 				power_to_the_raiders_reform
 				power_to_the_smugglers_reform
 				power_to_the_captains_reform
@@ -1195,8 +1186,6 @@ theocracy = {
 				sisterhood_of_jeanne_darc_reform
 				#Egypt
 				egyptian_government_reform
-				#
-				new_jerusalem_reform
 			}
 		}
 		internal_vs_external_mission = {

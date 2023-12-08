@@ -201,6 +201,7 @@ country_event = {
 		months = 100
 	}
 	
+	
 	option = {		# Kill them
 		name = "flavor_por.EVTOPTA3271"
 		ai_chance = { factor = 75 }
@@ -219,7 +220,7 @@ country_event = {
 		}
 
 	}
-	
+
 	option = {		# Negotiate
 		name = "flavor_por.EVTOPTB3271"
 		ai_chance = { factor = 25 }
@@ -235,7 +236,6 @@ country_event = {
 			name = negotiating_with_corsairs
 			duration = 1460
 		}
-
 	}
 }
 
@@ -296,7 +296,7 @@ country_event = {
 		add_dip_power = 100
 		define_advisor = {
 			type = statesman
-			name = "Dom Luï¿½s de Meneses"
+			name = "Dom Luís de Meneses"
 			culture = portugese
 			discount = yes
 			skill = 2
@@ -488,7 +488,7 @@ country_event = {
 	}
 }
 
-# Jerï¿½nimos Monastery
+# Jerónimos Monastery
 #country_event = {
 #	id = flavor_por.10
 #	title = "flavor_por.EVTNAME10"
@@ -554,7 +554,7 @@ country_event = {
 		add_stability = 1
 		add_country_modifier = {
 			name = narrowminded_modifier
-			duration = 36500
+			duration = 3650
 		}
 	}
 	option = {		# 
@@ -570,7 +570,7 @@ country_event = {
 	}
 }
 
-# # King Sebastiï¿½o's Expedition to North Africa
+# # King Sebastião's Expedition to North Africa
 # country_event = {
 # 	id = flavor_por.3272
 # 	title = "flavor_por.EVTNAME3272"
@@ -762,7 +762,7 @@ country_event = {
 #	}
 #}
 
-# Marquï¿½s de Pombal
+# Marquês de Pombal
 #country_event = {
 #	id = flavor_por.3279
 #	title = "flavor_por.EVTNAME3279"
@@ -856,7 +856,7 @@ country_event = {
 	}
 }
 
-# The Expulsion of Marquï¿½s de Pombal
+# The Expulsion of Marquês de Pombal
 country_event = {
 	id = flavor_por.3281
 	title = "flavor_por.EVTNAME3281"
@@ -887,7 +887,7 @@ country_event = {
 			duration = -1
 		}
 	}
-	option = {		# Let the 'Great Marquï¿½s' rule
+	option = {		# Let the 'Great Marquês' rule
 		name = "flavor_por.EVTOPTB3281"
 		ai_chance = { factor = 25 }
 		every_owned_province = {
@@ -946,7 +946,7 @@ country_event = {
 #	}
 #}
 
-# The Tower of Belï¿½m
+# The Tower of Belém
 #country_event = {
 #	id = flavor_por.9
 #	title = "flavor_por.EVTNAME9"
@@ -1152,6 +1152,7 @@ country_event = {
 			limit = {
 				corruption = 1
 			}
+			add_corruption = -1
 			add_adm_power = -100
 			add_dip_power = -25
 		}

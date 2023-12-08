@@ -697,9 +697,6 @@ eng_row_slot_2 = {
 			unlock_issue = {
 				issue = crown_of_ireland_act
 			}
-			373 = {
-				center_of_trade = 1
-			}
 		}
 		ai_weight = {
 			factor = 250
@@ -830,7 +827,7 @@ gbr_row_slot_2 = {
 			NOT = { has_discovered = ROOT }
 		}
 		trigger = {
-			not_in_mission_preview_mode = { key = GBR }
+			has_idea_group = exploration_ideas
 			if = {
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
@@ -1509,6 +1506,10 @@ gbr_row_3 = {
 						}
 					}
 				}
+				AND = {
+					ai = yes
+					is_year = 1500
+				}
 			}
 		}	
 		effect = {
@@ -1594,20 +1595,15 @@ gbr_row_3 = {
 			create_explorer = {
 				tradition = 50
 			}
+			add_country_modifier = {
+				name = gbr_exploration_spirit
+				duration = 9125
+			}
 			unlock_issue = {
 				issue = act_of_exploration
 			}
-		
-			126 = { add_permanent_claim = ROOT }
-			163 = { add_permanent_claim = ROOT }
-			321 = { add_permanent_claim = ROOT }
-			4559 = { add_permanent_claim = ROOT }
-			corsica_sardinia_area = { 
-				limit = {
-					NOT = { is_core = EIC }
-					NOT = { is_permanent_claim = EIC }
-				}
-				add_permanent_claim = ROOT 
+			add_permanent_claim_province = {
+				province = 226
 			}
 		}
 		ai_weight = {
@@ -2540,25 +2536,11 @@ gbr_row_4 = {
 		required_missions = { gbr_establish_royal_navy }
 		position = 5
 		provinces_to_highlight = {
-			OR = {
-				province_id = 126
-				province_id = 163
-				province_id = 321
-				province_id = 4559
-				area = corsica_sardinia_area
-			}
+			province_id = 226
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			not_in_mission_preview_mode = { key = GBR }
-			owns_or_non_sovereign_subject_of = 126
-			owns_or_non_sovereign_subject_of = 163
-			owns_or_non_sovereign_subject_of = 321
-			owns_or_non_sovereign_subject_of = 4559
-			corsica_sardinia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns_or_non_sovereign_subject_of = 226
 		}
 		effect = {
 			add_dip_power = 100
@@ -2634,7 +2616,6 @@ gbr_row_4 = {
 			has_discovered = ROOT
 		}		
 		trigger = { 
-			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
@@ -3653,6 +3634,7 @@ gbr_row_5 = {
 		}
 		trigger = { 
 			not_in_mission_preview_mode = { key = GBR }
+			has_idea_group = exploration_ideas
 			custom_trigger_tooltip = {
 				tooltip = gbr_sail_around_africa_ct
 				east_africa_region = {
