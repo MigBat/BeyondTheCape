@@ -519,3 +519,31 @@ country_decisions = {
 		}
 	}
 }
+
+# Colonial Focus
+
+country_decisions = {
+	colonial_focus = {
+		major = yes
+		potential = {
+			num_of_colonists = 1
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = colonial_focus_tt
+				OR = {
+					had_country_flag = {
+						flag = chose_colonial_focus
+						days = 3650
+					}
+					NOT = { has_country_flag = chose_colonial_focus }
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = btc_events.34
+			}
+		}
+	}
+}

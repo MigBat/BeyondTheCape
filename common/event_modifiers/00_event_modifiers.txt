@@ -13678,8 +13678,8 @@ CONTRIBUTE_WARRIORS_NOMADIC_TRIBES_level_3 = {
 	reinforce_speed = 0.075
 }
 CONTRIBUTE_WARRIORS_NOMADIC_TRIBES_level_4 = {
-	land_maintenance_modifier = -0.01
-	reinforce_speed = 0.01
+	land_maintenance_modifier = -0.1
+	reinforce_speed = 0.1
 }
 
 #Parliament Issues

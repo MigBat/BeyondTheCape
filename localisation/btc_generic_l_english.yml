@@ -24,7 +24,7 @@
  PROV367:0 "São Miguel"
  PROV1460:0 "Cape of Storms"
  PROV228:0 "Beira Alta"
- PROV4945:0 "Coastal Guinea"
+ PROV4945:0 "West Guinea"
  PROV4946:0 "Gulf of Guinea"
  PROV4947:0 "Ambriz"
  PROV4948:0 "Golungo Alto"
@@ -53,13 +53,14 @@
  PROV3193:0 "Sudetes"
  PROV3194:0 "Pindos"
  PROV3195:0 "Korab"
+ PROV4965:0 "East Guinea"
 
 # Province Adjectives #
  PROV_ADJ4556:0 "Minhoto"
  PROV_ADJ4942:0 "Setubaler"
  PROV_ADJ4943:0 "Beixa Baixan" 
  PROV_ADJ4944:0 "Terceiran"
- PROV_ADJ4945:0 "Coastal Guinean"
+ PROV_ADJ4945:0 "West Guinean"
  PROV_ADJ4946:0 "Gulf of Guinean"
  PROV_ADJ4947:0 "Ambrizan"
  PROV_ADJ4948:0 "Golungo Altan"
@@ -82,6 +83,7 @@
  PROV_ADJ4962:0 "Principan"
  PROV_ADJ4963:0 "Pepperan"
  PROV_ADJ4964:0 "Slavean"
+ PROV_ADJ4965:0 "East Guinean"
 
 # Native Policy #
 
@@ -340,6 +342,17 @@
 
 # Other #
 
+ no_colonial_focus:0 "You have not chosen a Colonial Focus yet."
+ alaska_focus:0 "You cannot colonise here as your Colonial Focus is on Alaska."
+ australia_focus:0 "You cannot colonise here as your Colonial Focus is on Australia."
+ brazil_focus:0 "You cannot colonise here as your Colonial Focus is on Brazil."
+ canada_focus:0 "You cannot colonise here as your Colonial Focus is on Canada."
+ colombia_focus:0 "You cannot colonise here as your Colonial Focus is on Colombia."
+ eastern_america_focus:0 "You cannot colonise here as your Colonial Focus is on Eastern America."
+ la_plata_focus:0 "You cannot colonise here as your Colonial Focus is on La Plata."
+ louisiana_focus:0 "You cannot colonise here as your Colonial Focus is on Louisiana."
+ mexico_focus:0 "You cannot colonise here as your Colonial Focus is on Mexico."
+ peru_focus:0 "You cannot colonise here as your Colonial Focus is on Peru."
  miss_discover_cape_of_storms:0 "§Y[Root.GetName]§! has discovered the Cape of Storms."
  colonial_region_restriction:0 "You cannot colonize outside of your capital's colonial region."
  subject_colonial_region_restriction:0 "You cannot colonize in a colonial region where your overlord has a colonial nation."
@@ -447,6 +460,10 @@
 
  hire_navigator_title:0 "Hire Navigator"
  hire_navigator_desc:0 "The Naval School of Sagres promotes the study of the seas, ship designs and navigation techniques. We can hire skilled navigators from there at a discount."
+
+ colonial_focus_title:0 "Colonial Focus"
+ colonial_focus_desc:0 "Our country needs to decide on which region of the New World we must focus our colonisation efforts in."
+ colonial_focus_tt:0 "Does not have a §YColonial Focus§!, or has had a §YColonial Focus§! for at least 10 years."
 
  revoke_tordesillas_title:0 "Revoke Treaty of Tordesillas"
  revoke_tordesillas_desc:0 "The Treaty of Tordesillas no longer serves our interests. It is time we revoke this treaty so we can freely colonise wherever we please."

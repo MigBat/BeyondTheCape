@@ -31,6 +31,8 @@
  san_juan_order_headquarters:0 "Order of San Juan Headquarters"
  desc_san_juan_order_headquarters:0 "This order calls home the town of Mdina."
  refused_independence:0 "Refused Independence"
+ island_development:0 "Island Development"
+ desc_island_development:0 "This province is an island, increasing its development cost."
 
 # Spice Wars #
 

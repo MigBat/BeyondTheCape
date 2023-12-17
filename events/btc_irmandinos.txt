@@ -39,39 +39,44 @@ country_event = {
 			name = galician_revolts	# +5 global unrest
 			duration = 1825
 			}
-		}
-
-		206 = {
 			spawn_rebels = {
 				type = leadered_peasant_rebels
 				size = 1
-			}
-		}
-		4555 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-			}
-		}
-		4554 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-			}
-		}
-		4558 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-			}
-		}
-
-		every_owned_province = {
-			limit = {
-				area = galicia_area
 			}
 			add_devastation = 50
 		}
+
+		# 206 = {
+		# 	spawn_rebels = {
+		# 		type = leadered_peasant_rebels
+		# 		size = 1
+		# 	}
+		# }
+		# 4555 = {
+		# 	spawn_rebels = {
+		# 		type = leadered_peasant_rebels
+		# 		size = 1
+		# 	}
+		# }
+		# 4554 = {
+		# 	spawn_rebels = {
+		# 		type = leadered_peasant_rebels
+		# 		size = 1
+		# 	}
+		# }
+		# 4558 = {
+		# 	spawn_rebels = {
+		# 		type = leadered_peasant_rebels
+		# 		size = 1
+		# 	}
+		# }
+
+		# every_owned_province = {
+		# 	limit = {
+		# 		area = galicia_area
+		# 	}
+		# 	add_devastation = 50
+		# }
 	}
 
 	option = {	# Let the nobles fight the peasants
@@ -84,36 +89,41 @@ country_event = {
 		every_owned_province = {
 			limit = { has_province_modifier = strong_nobility }
 			remove_province_modifier = strong_nobility
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 1
+				win = yes
+			}
 		}
 
-		206 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-				win = yes
-			}
-		}
-		4555 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-				win = yes
-			}
-		}
-		4554 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-				win = yes
-			}
-		}
-		4558 = {
-			spawn_rebels = {
-				type = leadered_peasant_rebels
-				size = 1
-				win = yes
-			}
-		}
+		# 206 = {
+		# 	spawn_rebels = {
+		# 		type = leadered_peasant_rebels
+		# 		size = 1
+		# 		win = yes
+		# 	}
+		# }
+		# 4555 = {
+		# 	spawn_rebels = {
+		# 		type = leadered_peasant_rebels
+		# 		size = 1
+		# 		win = yes
+		# 	}
+		# }
+		# 4554 = {
+		# 	spawn_rebels = {
+		# 		type = leadered_peasant_rebels
+		# 		size = 1
+		# 		win = yes
+		# 	}
+		# }
+		# 4558 = {
+		# 	spawn_rebels = {
+		# 		type = leadered_peasant_rebels
+		# 		size = 1
+		# 		win = yes
+		# 	}
+		# }
 
 		hidden_effect = {
 			CAS = { set_country_flag = abandon_galicia }

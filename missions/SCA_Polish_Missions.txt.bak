@@ -1,4 +1,4 @@
-poland_sca_slot_1 = { #Made by William 'Big Boss' S.
+poland_sca_slot_1 = { 
 	slot = 1
 	generic = no
 	ai = yes
@@ -47,7 +47,7 @@ poland_sca_slot_1 = { #Made by William 'Big Boss' S.
 						NOT = { 
 							num_of_estate_privileges = {
 								estate = estate_nobles 
-								value = 2
+								value = 4
 							}
 						}
 						crown_land_share = 50
@@ -510,13 +510,12 @@ poland_sca_slot_1_c = {
 			}
 		}
 		effect = { 
-			limit = { 
-				WAL = { is_subject = no }
-			}
-			add_casus_belli = {
-				target = WAL
-				type = cb_vassalize_mission
-				months = 300
+			wallachia_area = { 
+				limit = { 
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
 			}
 			custom_tooltip = pol_if_mol_is_subject_tt
 			tooltip = { 
@@ -684,30 +683,59 @@ poland_sca_slot_2_a = {
 				area = erzgebirge_area
 				area = lusatia_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				owner = { 
+					NOT = { alliance_with = ROOT }
+				}
+				owner = { 
+					overlord = {
+						NOT = { alliance_with = ROOT }
+					}
+				}
+			}
 		}
 		trigger = { 
 			OR = { 
 				AND = {
-					silesia_area = { 
+					silesia_area = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							custom_trigger_tooltip = {
+								tooltip = owned_by_ally_or_ally_subject_tt
+								OR = {
+									alliance_with = ROOT
+									overlord = { alliance_with = ROOT }
+								}
+							}
+						}
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
 					}
-					moravia_area = { 
+					moravia_area = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							custom_trigger_tooltip = {
+								tooltip = owned_by_ally_or_ally_subject_tt
+								OR = {
+									alliance_with = ROOT
+									overlord = { alliance_with = ROOT }
+								}
+							}
+						}
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
 					}
-					bohemia_area = { 
+					bohemia_area = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							custom_trigger_tooltip = {
+								tooltip = owned_by_ally_or_ally_subject_tt
+								OR = {
+									alliance_with = ROOT
+									overlord = { alliance_with = ROOT }
+								}
+							}
+						}
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-					}
-					erzgebirge_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-					}
-					lusatia_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
 					}
 				}
 				BOH = { is_subject_of = ROOT } 
@@ -717,9 +745,12 @@ poland_sca_slot_2_a = {
 						who = ROOT 
 						value = 190 
 					}
-					trust = { 	
-						who = ROOT 
-						value = 100 
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						trust = {
+							who = ROOT
+							value = 100
+						}
 					}
 					is_at_war = no 
 					NOT = { total_development = ROOT } 
@@ -737,7 +768,7 @@ poland_sca_slot_2_a = {
 			custom_tooltip = pol_alternatively_every_required_province_tt
 			tooltip = {
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 2
 				}
 				if = {
@@ -765,7 +796,7 @@ poland_sca_slot_2_a = {
 					bohemia_area = { add_nationalism = -5 }
 					lusatia_area = { add_nationalism = -5 }
 					change_ruler_stat = {
-						stat = mil
+						type = mil
 						amount = 2
 					}
 					if = { 
@@ -799,106 +830,126 @@ poland_sca_slot_2_a = {
 			OR = { 
 				unrest = 1 
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				local_autonomy_above_min = 5
+				owner = { 
+					NOT = { alliance_with = ROOT }
+				}
+				owner = { 
+					overlord = {
+						NOT = { alliance_with = ROOT }
+					}
+				}
 			}
 		}
 		trigger = { 
+			silesia_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					custom_trigger_tooltip = {
+						tooltip = owned_by_ally_or_ally_subject_tt
+						owner = {
+							OR = {
+								overlord = { alliance_with = ROOT }
+								alliance_with = ROOT
+							}
+						}
+					}
+				}
+				type = all 
+			}
+			moravia_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					custom_trigger_tooltip = {
+						tooltip = owned_by_ally_or_ally_subject_tt
+						owner = {
+							OR = {
+								overlord = { alliance_with = ROOT }
+								alliance_with = ROOT
+							}
+						}
+					}
+				}
+				type = all 
+			}
+			bohemia_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					custom_trigger_tooltip = {
+						tooltip = owned_by_ally_or_ally_subject_tt
+						owner = {
+							OR = {
+								overlord = { alliance_with = ROOT }
+								alliance_with = ROOT
+							}
+						}
+					}
+				}
+				type = all 
+			}
+			silesia_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					custom_trigger_tooltip = {
+						tooltip = owned_by_ally_or_ally_subject_tt
+						owner = {
+							OR = {
+								overlord = { alliance_with = ROOT }
+								alliance_with = ROOT
+							}
+						}
+					}
+				}
+				type = all 
+			}
+			alfold_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					custom_trigger_tooltip = {
+						tooltip = owned_by_ally_or_ally_subject_tt
+						owner = {
+							OR = {
+								overlord = { alliance_with = ROOT }
+								alliance_with = ROOT
+							}
+						}
+					}
+				}
+				type = all 
+			}
+			slovakia_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					custom_trigger_tooltip = {
+						tooltip = owned_by_ally_or_ally_subject_tt
+						owner = {
+							OR = {
+								overlord = { alliance_with = ROOT }
+								alliance_with = ROOT
+							}
+						}
+					}
+				}
+				type = all 
+			}
+			transdanubia_area = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					custom_trigger_tooltip = {
+						tooltip = owned_by_ally_or_ally_subject_tt
+						owner = {
+							OR = {
+								overlord = { alliance_with = ROOT }
+								alliance_with = ROOT
+							}
+						}
+					}
+				}
+				type = all 
+			}
 			stability = 2
 			grown_by_development = 350
 			crown_land_share = 50
 			legitimacy_equivalent = 90
-			OR = {
-				HUN = { 
-					alliance_with = ROOT 
-					has_opinion = {
-						who = ROOT
-						value = 190 
-					}
-					trust = { who = ROOT value = 100 }
-					grown_by_development = 100
-					is_in_deficit = no 
-					NOT = { num_of_loans = 1 }
-				}
-				custom_trigger_tooltip = {
-					tooltip = pol_no_unrest_average_auto_above_min_5_in_hungarian_provinces_tt
-					slovakia_area = {
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 }
-					}
-					alfold_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 }
-					}
-					transdanubia_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 }
-					}
-					transylvania_area = {
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 }
-					}
-					southern_transylvania_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 } 
-					}
-				}
-			}
-			OR = {
-				BOH = { 
-					alliance_with = ROOT 
-					has_opinion = {
-						who = ROOT
-						value = 190 
-					}
-					trust = { who = ROOT value = 100 }
-					grown_by_development = 100
-					is_in_deficit = no 
-					NOT = { num_of_loans = 1 }
-				}
-				custom_trigger_tooltip = {
-					tooltip = pol_no_unrest_average_auto_above_min_5_in_bohemian_provinces_tt
-					silesia_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 } 
-					}
-					moravia_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 } 
-					}
-					bohemia_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 } 
-					}
-					erzgebirge_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 } 
-					}
-					lusatia_area = { 
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-						NOT = { unrest = 1 }
-						NOT = { local_autonomy_above_min = 5 } 
-					}
-				}
-			}
 		}
 		effect = { 
 			266 = {
@@ -952,7 +1003,7 @@ poland_sca_slot_2_a = {
 				}
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 2
 			}
 		}
@@ -998,7 +1049,7 @@ poland_sca_slot_2_b = {
 					ruler_has_personality = free_thinker_personality 
 					ruler_has_personality = scholar_personality 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1006,7 +1057,7 @@ poland_sca_slot_2_b = {
 				OR = { 
 					full_idea_group = innovativeness_ideas 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1076,7 +1127,7 @@ poland_sca_slot_2_plc_1 = {
 					ruler_has_personality = free_thinker_personality 
 					ruler_has_personality = scholar_personality 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1084,7 +1135,7 @@ poland_sca_slot_2_plc_1 = {
 				OR = { 
 					full_idea_group = innovativeness_ideas 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1408,21 +1459,21 @@ poland_sca_slot_2_e = {
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT } 
 				}
-				add_claim = ROOT 
+				add_permanent_claim = ROOT 
 			}
 			silistria_area = { 
 				limit = { 
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT } 
 				}
-				add_claim = ROOT 
+				add_permanent_claim = ROOT 
 			}
 			thrace_area = { 
 				limit = { 
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT } 
 				}
-				add_claim = ROOT 
+				add_permanent_claim = ROOT 
 			}
 		}
 	}
@@ -1467,6 +1518,7 @@ poland_sca_slot_3_a = {
 				OR = { 
 					alliance_with = ROOT 
 					is_rival = ROOT 
+					is_subject_of = ROOT 
 					has_opinion_modifier = {
 						who = ROOT
 						modifier = insulted
@@ -1482,6 +1534,7 @@ poland_sca_slot_3_a = {
 				OR = { 
 					alliance_with = ROOT 
 					is_rival = ROOT 
+					is_subject_of = ROOT 
 					has_opinion_modifier = {
 						who = ROOT
 						modifier = insulted
@@ -1495,39 +1548,230 @@ poland_sca_slot_3_a = {
 			}
 		}
 		effect = {
-			custom_tooltip = pol_if_antagonize_poland_or_hungary_pu_tt
-			tooltip = {
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = HUN
-				} 
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = BOH
-				} 
+			if = {
+				limit = {
+					NOT = { has_country_flag = pol_denied_pu_flag }
+					NOT = { has_country_flag = pol_chose_pu_flag }
+				}
+				custom_tooltip = pol_before_event_goes_tt
 			}
-			custom_tooltip = pol_alternatively_tt 
+			if = {
+				limit = { has_country_flag = pol_denied_pu_flag }
+				tooltip = {
+					if = {
+						limit = { 
+							has_country_flag = pol_denied_pu_flag
+							HUN = { 
+								NOT = { 
+									OR = {
+										alliance_with = ROOT 
+										is_subject_of = ROOT
+									}
+								}
+							}
+						}
+						slovakia_area = { 
+							limit = { 
+								NOT = { is_core = ROOT } 
+								NOT = { is_permanent_claim = ROOT } 
+							}
+							add_permanent_claim = ROOT 
+						}
+						alfold_area = { 
+							limit = { 
+								NOT = { is_core = ROOT } 
+								NOT = { is_permanent_claim = ROOT } 
+							}
+							add_permanent_claim = ROOT 
+						}
+						transdanubia_area = { 
+							limit = { 
+								NOT = { is_core = ROOT } 
+								NOT = { is_permanent_claim = ROOT } 
+							}
+							add_permanent_claim = ROOT 
+						}
+						if = {
+							limit = {
+								BOH = { 
+									NOT = { 
+										OR = {
+											alliance_with = ROOT 
+											is_subject_of = ROOT
+										}
+									}
+									valid_for_personal_unions_trigger = yes 
+								}
+							}
+							add_casus_belli = {
+								type = cb_restore_personal_union
+								months = 300
+								target = BOH
+							}
+						}
+						else = {
+							moravia_area = { 
+								limit = { 
+									NOT = { is_core = ROOT } 
+									NOT = { is_permanent_claim = ROOT }  
+								}
+								add_permanent_claim = ROOT 
+							}
+							bohemia_area = { 
+								limit = { 
+									NOT = { is_core = ROOT } 
+									NOT = { is_permanent_claim = ROOT } 
+								}
+								add_permanent_claim = ROOT 
+							}
+							silesia_area = { 
+								limit = { 
+									NOT = { is_core = ROOT } 
+									NOT = { is_permanent_claim = ROOT } 
+								}
+								add_permanent_claim = ROOT 
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_country_flag = pol_chose_pu_flag }
+				tooltip = {
+					if = {
+						limit = { 
+							has_country_flag = pol_chose_pu_flag
+							BOH = { 
+								NOT = { 
+									OR = {
+										alliance_with = ROOT 
+										is_subject_of = ROOT
+									}
+								}
+							}
+						}
+						moravia_area = { 
+							limit = { 
+								NOT = { is_core = ROOT } 
+								NOT = { is_permanent_claim = ROOT }  
+							}
+							add_permanent_claim = ROOT 
+						}
+						bohemia_area = { 
+							limit = { 
+								NOT = { is_core = ROOT } 
+								NOT = { is_permanent_claim = ROOT } 
+							}
+							add_permanent_claim = ROOT 
+						}
+						silesia_area = { 
+							limit = { 
+								NOT = { is_core = ROOT } 
+								NOT = { is_permanent_claim = ROOT } 
+							}
+							add_permanent_claim = ROOT 
+						}
+						if = {
+							limit = {
+								HUN = { 
+									NOT = { 
+										OR = {
+											alliance_with = ROOT 
+											is_subject_of = ROOT
+										}
+									}
+									valid_for_personal_unions_trigger = yes 
+								}
+							}
+							add_casus_belli = {
+								type = cb_restore_personal_union
+								months = 300
+								target = HUN
+							}
+						}
+						else = {
+							slovakia_area = { 
+								limit = { 
+									NOT = { is_core = ROOT } 
+									NOT = { is_permanent_claim = ROOT } 
+								}
+								add_permanent_claim = ROOT 
+							}
+							alfold_area = { 
+								limit = { 
+									NOT = { is_core = ROOT } 
+									NOT = { is_permanent_claim = ROOT } 
+								}
+								add_permanent_claim = ROOT 
+							}
+							transdanubia_area = { 
+								limit = { 
+									NOT = { is_core = ROOT } 
+									NOT = { is_permanent_claim = ROOT } 
+								}
+								add_permanent_claim = ROOT 
+							}
+						}
+					}
+				}
+			}
+			#
+			if = {
+				limit = {
+					HUN = {
+						OR = { 
+							alliance_with = ROOT
+							is_subject_of = ROOT 
+						}
+					}
+				}
+				custom_tooltip = hun_friendship_yes_tt
+			}
+			else = {
+				custom_tooltip = hun_friendship_no_tt
+			}
 			tooltip = { 
 				add_favors = {
 					who = HUN 
 					amount = 10 
 				}
+				HUN = { add_historical_friend = ROOT }
+				add_historical_friend = HUN 
+			}
+			if = {
+				limit = {
+					BOH = {
+						OR = { 
+							alliance_with = ROOT
+							is_subject_of = ROOT 
+						}
+					}
+				}
+				custom_tooltip = boh_friendship_yes_tt
+			}
+			else = {
+				custom_tooltip = boh_friendship_no_tt
+			}
+			tooltip = { 
 				add_favors = { 
 					who = BOH 
 					amount = 10 
 				}
 				BOH = { add_historical_friend = ROOT }
 				add_historical_friend = BOH 
-				HUN = { add_historical_friend = ROOT }
-				add_historical_friend = HUN 
 			}
 			custom_tooltip = pol_impact_future_missions_tt 
 			hidden_effect = { 
 				swap_non_generic_missions = yes 
 				if = { 
-					limit = { alliance_with = BOH } 
+					limit = { 
+						BOH = {
+							OR = {
+								is_subject_of = ROOT
+								alliance_with = ROOT
+							}
+						}
+					}
 					add_favors = { 
 						who = BOH 
 						amount = 10 
@@ -1539,25 +1783,15 @@ poland_sca_slot_3_a = {
 					limit = {
 						valid_for_personal_unions_trigger = yes 
 						BOH = { 
-							OR = { 
-								is_rival = ROOT 
-								has_opinion_modifier = {
-									who = ROOT
-									modifier = insulted
-								}
-								has_opinion_modifier = {
-									who = ROOT
-									modifier = scornfully_insulted
-								} 
-							}
 							valid_for_personal_unions_trigger = yes 
 						}
+						has_country_flag = pol_denied_pu_flag
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
 						months = 300
 						target = BOH
-					} 
+					}
 				}
 				else = {
 					moravia_area = { 
@@ -1622,6 +1856,7 @@ poland_sca_slot_3_a = {
 							}
 							valid_for_personal_unions_trigger = yes 
 						}
+						has_country_flag = pol_chose_pu_flag 
 					}
 					add_casus_belli = {
 						type = cb_restore_personal_union
@@ -1650,18 +1885,68 @@ poland_sca_slot_3_a = {
 							NOT = { is_permanent_claim = ROOT } 
 						}
 						add_permanent_claim = ROOT 
+					}					
+				}
+				if = {
+					limit = {
+						has_country_flag = pol_chose_pu_flag 
+						NOT = {
+							OR = {
+								BOH = { is_subject_of = ROOT }
+								alliance_with = BOH
+							}
+						}
 					}
-					southern_transylvania_area = { 
+					moravia_area = { 
 						limit = { 
 							NOT = { is_core = ROOT } 
 							NOT = { is_permanent_claim = ROOT }  
 						}
 						add_permanent_claim = ROOT 
 					}
-					transylvania_area = { 
+					bohemia_area = { 
 						limit = { 
 							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT }  
+							NOT = { is_permanent_claim = ROOT } 
+						}
+						add_permanent_claim = ROOT 
+					}
+					silesia_area = { 
+						limit = { 
+							NOT = { is_core = ROOT } 
+							NOT = { is_permanent_claim = ROOT } 
+						}
+						add_permanent_claim = ROOT 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = pol_denied_pu_flag 
+						NOT = {
+							OR = {
+								HUN = { is_subject_of = ROOT }
+								alliance_with = HUN
+							}
+						}
+					}
+					slovakia_area = { 
+						limit = { 
+							NOT = { is_core = ROOT } 
+							NOT = { is_permanent_claim = ROOT } 
+						}
+						add_permanent_claim = ROOT 
+					}
+					alfold_area = { 
+						limit = { 
+							NOT = { is_core = ROOT } 
+							NOT = { is_permanent_claim = ROOT } 
+						}
+						add_permanent_claim = ROOT 
+					}
+					transdanubia_area = { 
+						limit = { 
+							NOT = { is_core = ROOT } 
+							NOT = { is_permanent_claim = ROOT } 
 						}
 						add_permanent_claim = ROOT 
 					}
@@ -1682,30 +1967,85 @@ poland_sca_slot_3_a = {
 				area = transylvania_area
 				area = alfold_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				owner = { 
+					NOT = { alliance_with = ROOT }
+				}
+				owner = { 
+					overlord = {
+						NOT = { alliance_with = ROOT }
+					}
+				}
+			}
 		}
 		trigger = { 
 			OR = { 
 				AND = {
-					slovakia_area = { 
+					slovakia_area = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							custom_trigger_tooltip = {
+								tooltip = owned_by_ally_or_ally_subject_tt
+								OR = {
+									alliance_with = ROOT
+									overlord = { alliance_with = ROOT }
+								}
+							}
+						}
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
 					}
-					transdanubia_area = { 
+					transdanubia_area = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							custom_trigger_tooltip = {
+								tooltip = owned_by_ally_or_ally_subject_tt
+								OR = {
+									alliance_with = ROOT
+									overlord = { alliance_with = ROOT }
+								}
+							}
+						}
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
 					}
-					southern_transylvania_area = { 
+					southern_transylvania_area = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							custom_trigger_tooltip = {
+								tooltip = owned_by_ally_or_ally_subject_tt
+								OR = {
+									alliance_with = ROOT
+									overlord = { alliance_with = ROOT }
+								}
+							}
+						}
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
 					}
-					transylvania_area = { 
+					transylvania_area = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							custom_trigger_tooltip = {
+								tooltip = owned_by_ally_or_ally_subject_tt
+								OR = {
+									alliance_with = ROOT
+									overlord = { alliance_with = ROOT }
+								}
+							}
+						}
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
 					}
-					alfold_area = { 
+					alfold_area = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							custom_trigger_tooltip = {
+								tooltip = owned_by_ally_or_ally_subject_tt
+								OR = {
+									alliance_with = ROOT
+									overlord = { alliance_with = ROOT }
+								}
+							}
+						}
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
 					}
 				}
 				HUN = { is_subject_of = ROOT } 
@@ -1715,9 +2055,12 @@ poland_sca_slot_3_a = {
 						who = ROOT 
 						value = 190 
 					}
-					trust = { 	
-						who = ROOT 
-						value = 100 
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						trust = { 	
+							who = ROOT 
+							value = 100 
+						}
 					}
 					is_at_war = no 
 					NOT = { total_development = ROOT } 
@@ -1883,7 +2226,7 @@ poland_sca_slot_3_a = {
 				else_if = { 
 					limit = { mercantilism = 25 } 
 					change_ruler_stat = {
-						stat = dip
+						type = dip
 						amount = 1
 					}
 					set_country_flag = enable_special_trader_flag
@@ -2086,7 +2429,7 @@ poland_sca_slot_3_b = {
 				}
 				else_if = {
 					limit = { in_golden_age = yes } 
-					extend_golden_age = 360
+					extend_golden_age = 600
 				}
 			}
 			else = {
@@ -2349,7 +2692,7 @@ poland_sca_slot_3_plc_1 = {
 			}
 			else = { 
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 1
 				}
 			}
@@ -2437,6 +2780,7 @@ poland_sca_slot_3_plc_1 = {
 				}
 			}
 		}
+		
 		effect = {
 			if = { 
 				limit = { has_dlc = "Mandate of Heaven" }
@@ -2447,7 +2791,7 @@ poland_sca_slot_3_plc_1 = {
 				}
 				else_if = {
 					limit = { in_golden_age = yes } 
-					extend_golden_age = 360 
+					extend_golden_age = 600
 				}
 			}
 			else = {
@@ -2554,21 +2898,21 @@ poland_sca_slot_3_plc_1 = {
 						NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 						NOT = { is_core = ROOT } 
 					}
-					add_claim = ROOT 
+					add_permanent_claim = ROOT 
 				}
 				novgorod_area = { 
 					limit = { 
 						NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 						NOT = { is_core = ROOT } 
 					}
-					add_claim = ROOT 
+					add_permanent_claim = ROOT 
 				}
 				moscow_area = {
 					limit = { 
 						NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 						NOT = { is_core = ROOT } 
 					}
-					add_claim = ROOT
+					add_permanent_claim = ROOT
 				}
 			}
 			hidden_effect = {
@@ -3069,9 +3413,18 @@ poland_sca_slot_4_b = {
 			}
 			OR = { 
 				PAP = { 
-					trust = { 
-						who = ROOT 
-						value = 70 
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						trust = { 	
+							who = ROOT 
+							value = 70
+						}
+					}
+					else = {
+						has_opinion_modifier = {
+							who = ROOT 
+							modifier = sent_gift
+						}
 					}
 				}
 				religious_unity = 0.9 
@@ -3329,21 +3682,21 @@ poland_sca_slot_4_d = {
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT }
 				}
-				add_claim = ROOT 
+				add_permanent_claim = ROOT 
 			}
 			west_prussia_area = {
 				limit = { 
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT }
 				}
-				add_claim = ROOT 
+				add_permanent_claim = ROOT 
 			}
 			pskov_area = {
 				limit = { 
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT }
 				}
-				add_claim = ROOT 
+				add_permanent_claim = ROOT 
 			}
 			if = { 
 				limit = { has_estate = estate_nobles }
@@ -3656,6 +4009,13 @@ poland_sca_slot_4_plc_3 = {
 							target = PLC
 						}
 					}
+				}
+				scandinavia_region = {
+					limit = { 
+						NOT = { is_core = ROOT } 
+						NOT = { owned_by = ROOT } 
+					}
+					add_permanent_claim = ROOT 
 				}
 				add_country_modifier = {
 					name = pol_winter_preparations_modifier
@@ -4214,7 +4574,7 @@ poland_sca_slot_5_branching_lit_hre = {
 				duration = 9125 
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 2
 			}
 		}
@@ -4269,6 +4629,7 @@ poland_sca_slot_5_branching_lit_east = {
 		}	
 		position = 2 
 		trigger = { 
+			not_in_mission_preview_mode = { key = POL }
 			west_dniepr_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
@@ -4396,6 +4757,7 @@ poland_sca_slot_5_branching_lit_east = {
 			}
 		}
 		trigger = { 
+			not_in_mission_preview_mode = { key = POL }
 			lithuania_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -4473,6 +4835,7 @@ poland_sca_slot_5_branching_lit_east = {
 		required_missions = { pol_tend_east } 
 		position = 4 
 		trigger = {
+			not_in_mission_preview_mode = { key = POL }
 			tag = PLC 
 			total_development = 1500
 			if = {
@@ -4518,6 +4881,7 @@ poland_sca_slot_5_branching_hre_west = {
 		required_missions = { pol_varna_aftermath } 
 		position = 2 
 		trigger = {
+			not_in_mission_preview_mode = { key = POL }
 			if = {
 				limit = { is_emperor = yes } 
 				is_emperor = yes 
@@ -4598,6 +4962,7 @@ poland_sca_slot_5_branching_hre_west = {
 		required_missions = { pol_delegate_emperor } 
 		position = 3
 		trigger = {
+			not_in_mission_preview_mode = { key = POL }
 			OR = {
 				is_elector = yes 
 				is_emperor = yes 
@@ -4661,11 +5026,11 @@ poland_sca_slot_5_branching_hre_west = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 2
 				}
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 1
 				}
 			}
@@ -4677,6 +5042,7 @@ poland_sca_slot_5_branching_hre_west = {
 		required_missions = { pol_place_sun } 
 		position = 4 
 		trigger = {
+			not_in_mission_preview_mode = { key = POL }
 			if = {
 				limit = { hre_size = 1 }
 				is_emperor = yes 
@@ -4718,7 +5084,7 @@ poland_sca_slot_5_branching_hre_west = {
 
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 2
 			}
 		}
@@ -5430,4 +5796,3 @@ poland_sca_slot_5_plc_3 = {
 		}
 	}
 }
-#Made by William 'Big Boss' S.

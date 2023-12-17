@@ -156,6 +156,295 @@ can_burn_colony = {
 
 can_colonize_province = {
 	condition = {
+		tooltip = "no_colonial_focus"
+		potential = {
+			FROM = {
+				NOT = {
+					OR = {
+						has_country_flag = alaska_focus
+						has_country_flag = australia_focus
+						has_country_flag = brazil_focus
+						has_country_flag = canada_focus
+						has_country_flag = colombia_focus
+						has_country_flag = eastern_america_focus
+						has_country_flag = la_plata_focus
+						has_country_flag = louisiana_focus
+						has_country_flag = mexico_focus
+						has_country_flag = peru_focus
+					}
+				}
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_australia
+						colonial_region = colonial_brazil
+						colonial_region = colonial_canada
+						colonial_region = colonial_colombia
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "alaska_focus"
+		potential = {
+			FROM = {
+				has_country_flag = alaska_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_australia
+						colonial_region = colonial_brazil
+						colonial_region = colonial_canada
+						colonial_region = colonial_colombia
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "australia_focus"
+		potential = {
+			FROM = {
+				has_country_flag = australia_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_brazil
+						colonial_region = colonial_canada
+						colonial_region = colonial_colombia
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "brazil_focus"
+		potential = {
+			FROM = {
+				has_country_flag = brazil_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_australia
+						colonial_region = colonial_canada
+						colonial_region = colonial_colombia
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "canada_focus"
+		potential = {
+			FROM = {
+				has_country_flag = canada_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_australia
+						colonial_region = colonial_brazil
+						colonial_region = colonial_colombia
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "colombia_focus"
+		potential = {
+			FROM = {
+				has_country_flag = colombia_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_australia
+						colonial_region = colonial_brazil
+						colonial_region = colonial_canada
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "eastern_america_focus"
+		potential = {
+			FROM = {
+				has_country_flag = eastern_america_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_australia
+						colonial_region = colonial_brazil
+						colonial_region = colonial_canada
+						colonial_region = colonial_colombia
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "la_plata_focus"
+		potential = {
+			FROM = {
+				has_country_flag = la_plata_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_australia
+						colonial_region = colonial_brazil
+						colonial_region = colonial_canada
+						colonial_region = colonial_colombia
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "louisiana_focus"
+		potential = {
+			FROM = {
+				has_country_flag = louisiana_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_australia
+						colonial_region = colonial_brazil
+						colonial_region = colonial_canada
+						colonial_region = colonial_colombia
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "mexico_focus"
+		potential = {
+			FROM = {
+				has_country_flag = mexico_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_australia
+						colonial_region = colonial_brazil
+						colonial_region = colonial_canada
+						colonial_region = colonial_colombia
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_peru
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "peru_focus"
+		potential = {
+			FROM = {
+				has_country_flag = peru_focus
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_australia
+						colonial_region = colonial_brazil
+						colonial_region = colonial_canada
+						colonial_region = colonial_colombia
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+					}
+				}
+			}
+		}
+	}
+	condition = {
 		tooltip = "colonial_region_restriction"
 		potential = {
 			FROM = {
@@ -201,6 +490,8 @@ can_colonize_province = {
 					OR = {
 						expansion_ideas = 1 
 						has_idea = siberian_frontier
+						is_colonial_nation = yes
+						is_former_colonial_nation = yes
 					}
 				}
 			}
