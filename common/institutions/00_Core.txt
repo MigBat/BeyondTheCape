@@ -1137,7 +1137,7 @@ new_world_i = {
 				}
 			}
 			owner = {
-				technology_group = nomadic
+				technology_group = nomad_group
 			}
 		}
 		modifier = {

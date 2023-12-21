@@ -522,8 +522,6 @@ country_decisions = {
 		}
 	}
 	
-}
-	
 	#1.36
 	curtail_estate_qizilbash = {
 		major = yes

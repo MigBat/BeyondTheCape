@@ -144,3 +144,6 @@
  slaver_rebels_army:0 "Slaver Rebel Army"
  slaver_rebels_demands:0 "Increase Slaver Influence"
  slaver_rebels_demands_desc:0 "The rebels demand to increase their influence over the government substantially."
+
+ growing_slave_trade:0 "Slave Trade"
+ desc_growing_slave_trade:1 "Our efforts to secure more sources of slaves have not gone unnoticed by the domestic slave merchants. Confident that the state is looking after their interests, they have been unusually forthcoming with any taxes or fees they are required to pay."

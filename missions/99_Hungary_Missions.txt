@@ -113,7 +113,7 @@ hun_north_group = {
 					months = 300
 				}
 			}
-			else = {
+			else_if = {
 				limit = {
 					AND = {
 						NOT = { alliance_with = POL }

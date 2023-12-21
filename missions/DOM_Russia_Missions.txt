@@ -2655,13 +2655,13 @@ mos_rus_california = {
 		required_missions = { mos_rus_colonize_alaska }
 		position = 8
 		provinces_to_highlight = {
-			colonial_region = colonial_california
+			region = california_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_california
+				region = california_region
 				value = 20
 			}
 		}

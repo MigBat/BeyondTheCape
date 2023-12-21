@@ -693,7 +693,7 @@
 2579 = "Mata de São Lourenço"
 2580 = "São Jorge da Ribeira" #St.Maurice isn't very celebrated in Portugal, soI went for the more common St.George.
 4895 = "Batiscão"
-993 = "Monte Real" This is the province of "Montreal", so I wrote it in portuguese without the name collapsing.
+993 = "Monte Real" #This is the province of "Montreal", so I wrote it in portuguese without the name collapsing.
 2584 = "São Ricardo do Rio"
 992 = "Vila de Corte Real" #The name "Gatineau" might come from the name of a french explorer family, so i did the same with a portuguese family that explored Canada.
 4890 = "Odava" # Instead of adapting "Ottawa" from english I went for the same Ojibwe origin "odaawaa".
@@ -1525,7 +1525,7 @@
 4495 = "Feizabade"
 2094 = "Barreiche"
 2055 = "Gorapura"
-555 = Jona Pur"
+555 = "Jona Pur"
 556 = "Aladabe"
 4487 = "Sarã"
 4490 = "Gazipura"
@@ -1536,7 +1536,7 @@
 4466 = "Maoba"
 4467 = "Calinjar"
 2097 = "Baguel"
-4468 = Bandogar"
+4468 = "Bandogar"
 
 #Inlnd Deccan
 533 = "Maiçor"

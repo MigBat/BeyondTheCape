@@ -844,7 +844,8 @@ republic = {
 				power_to_the_smugglers_reform
 				power_to_the_captains_reform
 				absolute_president_reform
-				revolutionary_council_reform
+				revolutionary_council_reform				
+				btc_ven_improve_the_council_of_the_ten_reform
 			}
 		}
 		guiding_principle_of_administration = {

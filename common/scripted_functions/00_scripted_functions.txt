@@ -192,7 +192,6 @@ can_colonize_province = {
 			NOT = { 
 				OR = {
 					colonial_region = colonial_mexico
-					colonial_region = colonial_colombia 
 					colonial_region = colonial_brazil
 					colonial_region = colonial_la_plata 
 					colonial_region = colonial_peru 
