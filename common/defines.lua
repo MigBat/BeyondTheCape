@@ -457,7 +457,7 @@ NDiplomacy = {
 	
 	CHANGE_COLONIAL_TYPE_COST = 1000,
 
-	CHARTER_COMPANY_BASE_COST = 1000,
+	CHARTER_COMPANY_BASE_COST = 500,
 	CHARTER_COMPANY_MINIMUM_COST = 100,
 
 	GOOD_RELATIONS = 100,
@@ -824,8 +824,8 @@ NCountry = {
 	FORM_MARRIAGE_HIGHER_LEGITIMACY = -3,			-- Legitimacy Change when forming a royal marriage while having more legitimacy than the other country.
 	ANNEX_OR_INTEGRATE_PRESTIGE = 10.0,				-- Prestige gain on diplomatic annex or integrate
 	PROVINCE_DISCOVERY_PRESTIGE = 0.1,				-- Prestige change when first in tech group to discover first province in a region
-	PROVINCE_DISCOVERY_YEARS_TECHNOLOGY = 50,		-- Years until discoveries spread within technology group
-	PROVINCE_DISCOVERY_YEARS_RELIGION = 100,		-- Years until discoveries spread with religion
+	PROVINCE_DISCOVERY_YEARS_TECHNOLOGY = 100,		-- Years until discoveries spread within technology group
+	PROVINCE_DISCOVERY_YEARS_RELIGION = 150,		-- Years until discoveries spread with religion
 
 	START_YEARLY_INFLATION = 0.0, 					-- _CDEF_START_YEARLY
 
@@ -2079,8 +2079,8 @@ NAI = {
 	TRADE_COMPANY_INVESTMENT_COST_THRESHOLD = 1.0,				-- How many times the cost of the investment must be in the treasury to consider buying it
 	ASSIMILATION_INTEREST_AMOUNT_FACTOR = 10,					-- Influence on assimilation interest from number of provinces left to conquer
 	INVASION_ARMY_LOOKUP_INTERVAL_ON_FAILURE = 15,				-- If AI fails to find an army for an invasion it will try again in this number of days
-	CHARTER_COMPANY_BASE_RELUCTANCE = -50,						-- Base reluctance to giving away provinces in charter company diplo action
-	CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE_MULTIPLIER = 1.5,	-- How much development multiplied by to provide resistance
+	CHARTER_COMPANY_BASE_RELUCTANCE = 0,						-- Base reluctance to giving away provinces in charter company diplo action
+	CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE_MULTIPLIER = 0.5,	-- How much development multiplied by to provide resistance
 	CHARTER_COMPANY_GREAT_PROJECT_VALUE_RELUCTANCE = 0.1,		-- Great Project value * this = reluctance
 	CHARTER_COMPANY_RESTRICTED_REGION_BASE = 50,
 	CHARTER_COMPANY_RESTRICTED_REGION_LESS_DEVELOPMENT_PENALTY = 20,
@@ -2088,7 +2088,7 @@ NAI = {
 	CHARTER_COMPANY_SWEETENER_PERCENTAGE_MULTIPLIER = 100,
 	CHARTER_COMPANY_ALLIANCE_BONUS = 50,
 	CHARTER_COMPANY_DIPLO_REP_MULTIPLIER = 2,
-	CHARTER_COMPANY_OPINION_MULTIPLIER = 0.25,
+	CHARTER_COMPANY_OPINION_MULTIPLIER = 0.5,
 	CHARTER_COMPANY_THREATENED_PENALTY = 100,
 	CHARTER_COMPANY_NON_TRADE_LEAGUE_MEMBER_PENALTY = 50,
 	CHARTER_COMPANY_EMPIRE_PENALTY = 1000,

@@ -45,6 +45,16 @@
 
  ottoman_silk_road_monopoly:0 "Ottoman Silk Road Monopoly"
  desc_ottoman_silk_road_monopoly:0 "With the fall of Constantinople to the Turks, the Ottomans have effectively established a monopoly on the important Silk Road, the main trade route between Asia and Europe. Consequently, they are charging european catholic nations extra ducats for these foreign goods."
+
+# Fighting Off European Invaders #
+
+ fighting_off_european_invaders:0 "Fighting Off European Invaders"
+ desc_fighting_off_european_invaders:0 "Invaders from another continent have landed at our shores. We must repel them at all costs and protect our people."
+
+# Fighting Spirit #
+
+ fighting_spirit:0 "Fighting Spirit"
+ desc_fighting_spirit:0 "We may be small but we pack a mean punch! Let them come!"
  
 # Irmandino Revolts #
  galician_revolts:0 "Galician Revolts"

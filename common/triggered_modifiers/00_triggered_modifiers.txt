@@ -62,6 +62,58 @@ ottoman_silk_road_monopoly = {
 }
 
 ###########################################
+# BEYOND THE CAPE - Fighting Off European Invaders
+###########################################
+fighting_off_european_invaders = {
+	potential = {
+		technology_group = north_american
+	}
+
+	trigger = {
+		any_country = {
+			capital_scope = {
+				continent = europe
+			}
+			war_with = ROOT
+		}
+	}
+
+	land_morale = 0.2
+	morale_damage_received = -0.3
+	land_forcelimit_modifier = 0.5
+	land_maintenance_modifier = -0.75
+}
+
+###########################################
+# BEYOND THE CAPE - Fighting Spirit
+###########################################
+fighting_spirit = {
+	potential = {
+		ai = yes
+		OR = {
+			tag = POR
+			tag = NED
+		}
+	}
+
+	trigger = {
+		NOT = { num_of_provinces_in_states = 21 }
+		any_neighbor_country = {
+			capital_scope = {
+				continent = europe
+			}
+			offensive_war_with = ROOT
+		}
+	}
+
+	hostile_attrition = 3
+	land_morale = 0.1
+	morale_damage_received = -0.2
+	land_forcelimit_modifier = 0.5
+	global_manpower_modifier = 0.25
+}
+
+###########################################
 # Discovery of the East Indian trade route.
 ###########################################
 east_indian_trade_route = {

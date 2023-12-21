@@ -134,6 +134,10 @@ gc_por_1_a = {
 			}
 			custom_tooltip = port_english_alliance_tt
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_intervene_in_castile = {
@@ -213,6 +217,10 @@ gc_por_1_a = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_por_tercios_system = {
@@ -238,6 +246,10 @@ gc_por_1_a = {
 				duration = 18250
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	btc_por_reform_tercios = {
@@ -258,6 +270,10 @@ gc_por_1_a = {
 				name = portuguese_tercios
 				duration = -1
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }	
@@ -285,8 +301,6 @@ gc_por_1_b = {
 		is_random_new_world = no
 	}
 	has_country_shield = yes
-
-	
 
 	btc_por_terra_nova = {
 		icon = mission_rb_cod_wars
@@ -319,6 +333,10 @@ gc_por_1_b = {
 				value = 0.5
 				duration = 9125
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -357,6 +375,10 @@ gc_por_1_b = {
 				duration = 5475
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_establishes_foothold_brazil = {
@@ -384,6 +406,10 @@ gc_por_1_b = {
 				name = "por_brazil_tariffs"
 				duration = 7300
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -454,6 +480,10 @@ gc_por_1_b = {
 			set_country_flag = por_bandeirantes_flag
 			custom_tooltip = por_bandeirantes_tooltip
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_jesuits = {
@@ -503,6 +533,10 @@ gc_por_1_b = {
 			else = {
 				add_dip_power = 100
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -560,6 +594,10 @@ gc_por_1_c = {
 				add_permanent_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_conquers_hormuz = {
@@ -597,6 +635,10 @@ gc_por_1_c = {
 			}
 			395 = {	add_permanent_claim = ROOT }
 			396 = {	add_permanent_claim = ROOT }
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -642,6 +684,10 @@ gc_por_1_c = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	dom_por_clash_ottomans = {
@@ -669,6 +715,10 @@ gc_por_1_c = {
 				duration = -1 
 			}
 			add_army_tradition = 10
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -728,6 +778,10 @@ gc_por_2_a = {
 				add_permanent_claim = ROOT 
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_conquer_tangiers = {
@@ -762,6 +816,10 @@ gc_por_2_a = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -805,6 +863,10 @@ gc_por_2_a = {
 					duration = 5475
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -851,6 +913,10 @@ gc_por_2_b = {
 				trait = cunning_navigator_personality
 			}	
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_por_caribbean = {
@@ -876,6 +942,10 @@ gc_por_2_b = {
 				manuever = 4
 				trait = buccaneer_personality
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -949,6 +1019,10 @@ gc_por_2_c = {
 				value = 0.5
 				duration = 9125
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -1029,6 +1103,10 @@ gc_por_2_d = {
 				add_permanent_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_por_search_for_gold = {
@@ -1072,6 +1150,10 @@ gc_por_2_d = {
 			1190 = {
 				add_permanent_claim = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -1139,6 +1221,10 @@ gc_por_2_d = {
 					}
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -1264,6 +1350,10 @@ gc_por_2_e = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	btc_por_spice_islands = {
@@ -1291,6 +1381,10 @@ gc_por_2_e = {
 				duration = 5475
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_indonesia_dominance = {
@@ -1314,6 +1408,10 @@ gc_por_2_e = {
 				name = "por_johor_dominance"
 				duration = 7300
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -1359,6 +1457,10 @@ gc_por_3 = {
 				duration = 7300
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_discover_african_coast = {
@@ -1394,6 +1496,10 @@ gc_por_3 = {
 				manuever = 3
 				siege = 0
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -1445,6 +1551,10 @@ gc_por_3 = {
 				id = btc_por.152
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_colonise_central_africa = {
@@ -1493,6 +1603,10 @@ gc_por_3 = {
 			}
 			else = { add_prestige_or_monarch_power = { amount = 15 } }
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_discovers_cape_good_hope = {
@@ -1538,6 +1652,10 @@ gc_por_3 = {
 				duration = 7300
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_discovers_horn_africa = {
@@ -1573,6 +1691,10 @@ gc_por_3 = {
 			388 = {
 				add_permanent_claim = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -1618,6 +1740,10 @@ gc_por_3 = {
 			remove_country_modifier = expensive_spices
 			set_country_flag = discovered_india
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_malacca = {
@@ -1649,6 +1775,10 @@ gc_por_3 = {
 					duration = -1
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -1704,6 +1834,10 @@ gc_por_3 = {
 					add_mercantilism = 3
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -1761,6 +1895,10 @@ gc_por_3 = {
 					add_mercantilism = 3
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -1823,6 +1961,10 @@ gc_por_3 = {
 				amount = 25 
 			}
 			custom_tooltip = chi_permanent_pp
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }	
@@ -1889,6 +2031,10 @@ gc_por_4_a = {
 				add_dip_power = 50
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_por_pinhal_leiria = {
@@ -1911,6 +2057,10 @@ gc_por_4_a = {
 					duration = -1
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -1938,6 +2088,10 @@ gc_por_4_a = {
 				id = btc_por.123
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_por_jeronimos_monastery = {
@@ -1957,6 +2111,10 @@ gc_por_4_a = {
 			country_event = {
 				id = btc_por.124
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2014,6 +2172,10 @@ gc_por_4_b = {
 				add_prestige_or_monarch_power = { amount = 10 }
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_por_mariners_astrolabe = {
@@ -2031,6 +2193,10 @@ gc_por_4_b = {
 				name = mariners_astrolabe
 				duration = -1
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -2066,6 +2232,10 @@ gc_por_4_b = {
 					duration = 9125
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2123,6 +2293,10 @@ gc_por_4_c = {
 				add_permanent_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_por_inner_angola = {
@@ -2154,6 +2328,10 @@ gc_por_4_c = {
 					add_permanent_claim = ROOT
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2246,6 +2424,10 @@ gc_por_4_d = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_ceylon = {
@@ -2280,6 +2462,10 @@ gc_por_4_d = {
 					duration = 5475
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -2320,6 +2506,10 @@ gc_por_4_d = {
 		effect = {
 			set_country_flag = por_india_mission_flag
 			country_event = { id = flavor_por.4 }
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2378,6 +2568,10 @@ gc_por_5_a = {
 				duration = -1 
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	dom_portugal_reform_navy = {
@@ -2413,6 +2607,10 @@ gc_por_5_a = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_por_black_carrack_sword = {
@@ -2429,6 +2627,10 @@ gc_por_5_a = {
 				name = black_swords
 				duration = -1
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2472,6 +2674,10 @@ gc_por_5_b = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_trading_houses = {
@@ -2500,6 +2706,10 @@ gc_por_5_b = {
 				duration = 7300
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_por_coimbra_university = {
@@ -2523,6 +2733,10 @@ gc_por_5_b = {
 			country_event = {
 				id = btc_por.121
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -2565,6 +2779,10 @@ gc_por_5_b = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_universities = {
@@ -2579,9 +2797,11 @@ gc_por_5_b = {
 				province_id = 1851
 				province_id = 4150
 			}
-			NOT = { 
-				has_building = university 
-				owned_by = ROOT
+			NOT = {
+				AND = {
+					has_building = university 
+					owned_by = ROOT
+				}
 			}			
 		}
 		
@@ -2611,6 +2831,10 @@ gc_por_5_b = {
 				name = "por_arts_and_letters"
 				duration = 7300
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -2656,6 +2880,10 @@ gc_por_5_b = {
 				duration = 7300
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_por_mafra_palace = {
@@ -2673,6 +2901,10 @@ gc_por_5_b = {
 			country_event = {
 				id = btc_por.122
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2719,6 +2951,10 @@ gc_por_5_c = {
 				cawa_infantry = ROOT
 				cawa_infantry = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2795,6 +3031,10 @@ gc_por_5_d = {
 				add_permanent_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	gc_por_burma = {
@@ -2838,6 +3078,10 @@ gc_por_5_d = {
 					add_base_production = 2 
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2904,6 +3148,10 @@ btc_ibe_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_ibe_colonies = {
@@ -2944,6 +3192,10 @@ btc_ibe_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 
@@ -2993,6 +3245,10 @@ btc_ibe_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 
 	btc_ibe_pax_iberica = {
@@ -3025,6 +3281,10 @@ btc_ibe_1 = {
 				name = ibe_pax_iberica
 				duration = -1
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }

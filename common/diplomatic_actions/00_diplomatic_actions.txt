@@ -745,10 +745,13 @@ sharemap = {
 		tooltip = is_colonizer_tt
 		potential = {
 			FROM = {
-				has_idea_group = exploration_ideas
-			}
-			ROOT = {
-				has_idea_group = exploration_ideas
+				OR = {
+					has_idea_group = exploration_ideas
+					has_idea_group = expansion_ideas
+					num_of_colonists = 1
+					tag = POR
+					tag = NOR
+				}
 			}
 		}
 		allow = { always = no }

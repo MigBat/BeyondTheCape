@@ -376,6 +376,8 @@
  REFORM_INCREASED_COST:2 "Each tier of Reforms will increase the cost by §Y60§!"
  mechanic_temples_modifier_yes:1 "Temples and Cathedrals give the province §G+33.0%§! Local Tax Modifier and §G-10%§! Local Governing Cost"
  ned_establish_first_indian_trade_post_at:0 "This event allows us to establish the @VOC §YDutch East India Company§! in the East Indies as our §YCommercial Enterprise§! subject."
+ iberia_colonise_restriction:0 "There are better provinces for us to colonise."
+ not_iberia_colonise_restriction:0 "There are better provinces for us to colonise."
 
  CORRUPTION_EXPLANATION:2 "Corruption increases over time due to advisors, unbalanced research, overextension and lack of religious unity. It can be decreased by high stability and being ahead of time in administrative or diplomatic technology. If all else fails you can spend ducats to reduce corruption over time. Corruption can affect all power costs, minimum autonomy as well as spy defense and spy network construction speed."
 
@@ -463,7 +465,8 @@
 
  colonial_focus_title:0 "Colonial Focus"
  colonial_focus_desc:0 "Our country needs to decide on which region of the New World we must focus our colonisation efforts in."
- colonial_focus_tt:0 "Does not have a §YColonial Focus§!, or has had a §YColonial Focus§! for at least 10 years."
+ colonial_focus_tt:0 "Does not have a §YColonial Focus§!, or has had a §YColonial Focus§! for at least 20 years."
+ colonial_focus_decision_taken_tt:0 "The §YColonial Focus§! event will happen in a few days."
 
  revoke_tordesillas_title:0 "Revoke Treaty of Tordesillas"
  revoke_tordesillas_desc:0 "The Treaty of Tordesillas no longer serves our interests. It is time we revoke this treaty so we can freely colonise wherever we please."

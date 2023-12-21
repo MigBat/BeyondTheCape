@@ -2071,589 +2071,150 @@ country_event = {
 	}
 }
 
-# Colonial Focus
+# Purchase of Masulipatnam
 country_event = {
 	id = btc_events.34
 	title = btc_events.34_t
 	desc = btc_events.34_d
 	picture = SHIP_SAILING_eventPicture
 
-	is_triggered_only = yes
-
-	immediate = {
-		clr_country_flag = chose_colonial_focus
+	trigger = {
+		is_or_was_tag = {
+			tag = ENG
+		}
+		543 = {
+			has_discovered = ROOT
+		}
 	}
 
-	# Alaska
-	option = {
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {		# Broker a deal with the local ruler
 		name = btc_events.34a
 
-		trigger = {
-			colonial_alaska = {
-				has_discovered = ROOT
-			}
-		}
-
-		set_country_flag = chose_colonial_focus
-		set_country_flag = alaska_focus
-
-		clr_country_flag = australia_focus
-		clr_country_flag = brazil_focus
-		clr_country_flag = canada_focus
-		clr_country_flag = colombia_focus
-		clr_country_flag = eastern_america_focus
-		clr_country_flag = la_plata_focus
-		clr_country_flag = louisiana_focus
-		clr_country_flag = mexico_focus
-		clr_country_flag = peru_focus
-
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_alaska
-				}
+		}
+
+		543 = { cede_province = ROOT }
+		add_claim = 543
+		add_prestige = 10
+		if = {
+			limit = {
+				ai = no
 			}
-			modifier = {
-				factor = 0
-				colonial_alaska = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 1000
-				tag = RUS
-			}
+			add_years_of_income = -1
 		}
 	}
 
-	# Australia
-	option = {
+	option = {		# Forcefully establish our presence
 		name = btc_events.34b
 
-		trigger = {
-			colonial_australia = {
-				has_discovered = ROOT
-			}
-		}
-
-		set_country_flag = chose_colonial_focus
-		set_country_flag = australia_focus
-
-		clr_country_flag = alaska_focus
-		clr_country_flag = brazil_focus
-		clr_country_flag = canada_focus
-		clr_country_flag = colombia_focus
-		clr_country_flag = eastern_america_focus
-		clr_country_flag = la_plata_focus
-		clr_country_flag = louisiana_focus
-		clr_country_flag = mexico_focus
-		clr_country_flag = peru_focus
-
 		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_australia
-				}
-			}
-			modifier = {
-				factor = 0
-				colonial_australia = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 100
-				capital_scope = {
-					OR = {
-						region = british_isles_region
-						region = low_countries_region
-					}
-				}
-			}
+			factor = 0
+		}
+		
+		add_permanent_claim = 543
+		add_prestige = 10
+	}
+}
+
+# Purchase of Chandernagore
+country_event = {
+	id = btc_events.35
+	title = btc_events.35_t
+	desc = btc_events.35_d
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		is_or_was_tag = {
+			tag = FRA
+		}
+		561 = {
+			has_discovered = ROOT
 		}
 	}
 
-	# Brazil
-	option = {
-		name = btc_events.34c
+	mean_time_to_happen = {
+		days = 365
+	}
 
-		trigger = {
-			colonial_brazil = {
-				has_discovered = ROOT
-			}
-		}
-
-		set_country_flag = chose_colonial_focus
-		set_country_flag = brazil_focus
-
-		clr_country_flag = alaska_focus
-		clr_country_flag = australia_focus
-		clr_country_flag = canada_focus
-		clr_country_flag = colombia_focus
-		clr_country_flag = eastern_america_focus
-		clr_country_flag = la_plata_focus
-		clr_country_flag = louisiana_focus
-		clr_country_flag = mexico_focus
-		clr_country_flag = peru_focus
+	option = {		# Broker a deal with the local ruler
+		name = btc_events.35a
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_brazil
-				}
+		}
+
+		561 = { cede_province = ROOT }
+		add_claim = 561
+		add_prestige = 10
+		if = {
+			limit = {
+				ai = no
 			}
-			modifier = {
-				factor = 0
-				colonial_brazil = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 1000
-				tag = POR
-			}
+			add_years_of_income = -1
 		}
 	}
 
-	# Canada
-	option = {
-		name = btc_events.34d
+	option = {		# Forcefully establish our presence
+		name = btc_events.35b
 
-		trigger = {
-			colonial_canada = {
-				has_discovered = ROOT
-			}
+		ai_chance = {
+			factor = 0
 		}
+		
+		add_permanent_claim = 561
+		add_prestige = 10
+	}
+}
 
-		set_country_flag = chose_colonial_focus
-		set_country_flag = canada_focus
+# Purchase of Pulicat
+country_event = {
+	id = btc_events.36
+	title = btc_events.36_t
+	desc = btc_events.36_d
+	picture = SHIP_SAILING_eventPicture
 
-		clr_country_flag = alaska_focus
-		clr_country_flag = australia_focus
-		clr_country_flag = brazil_focus
-		clr_country_flag = colombia_focus
-		clr_country_flag = eastern_america_focus
-		clr_country_flag = la_plata_focus
-		clr_country_flag = louisiana_focus
-		clr_country_flag = mexico_focus
-		clr_country_flag = peru_focus
+	trigger = {
+		tag = NED
+		539 = {
+			has_discovered = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {		# Broker a deal with the local ruler
+		name = btc_events.36a
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_canada
-				}
+		}
+
+		539 = { cede_province = ROOT }
+		add_claim = 539
+		add_prestige = 10
+		if = {
+			limit = {
+				ai = no
 			}
-			modifier = {
-				factor = 0
-				colonial_canada = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 1000
-				tag = NOR
-			}
-			modifier = {
-				factor = 100
-				capital_scope = {
-					OR = {
-						region = france_region
-						region = british_isles_region
-						region = scandinavia_region
-					}
-				}
-			}
-			modifier = {
-				factor = 0.1
-				capital_scope = {
-					region = iberia_region
-				}
-			}
+			add_years_of_income = -1
 		}
 	}
 
-	# Colombia
-	option = {
-		name = btc_events.34e
-
-		trigger = {
-			colonial_colombia = {
-				has_discovered = ROOT
-			}
-		}
-
-		set_country_flag = chose_colonial_focus
-		set_country_flag = colombia_focus
-
-		clr_country_flag = alaska_focus
-		clr_country_flag = australia_focus
-		clr_country_flag = brazil_focus
-		clr_country_flag = canada_focus
-		clr_country_flag = eastern_america_focus
-		clr_country_flag = la_plata_focus
-		clr_country_flag = louisiana_focus
-		clr_country_flag = mexico_focus
-		clr_country_flag = peru_focus
+	option = {		# Forcefully establish our presence
+		name = btc_events.36b
 
 		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_colombia
-				}
-			}
-			modifier = {
-				factor = 0
-				colonial_colombia = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 1000
-				tag = CAS
-			}
-			modifier = {
-				factor = 100
-				capital_scope = {
-					OR = {
-						region = iberia_region
-						region = france_region
-						region = low_countries_region
-					}
-				}
-			}
+			factor = 0
 		}
-	}
-
-	# Eastern America
-	option = {
-		name = btc_events.34f
-
-		trigger = {
-			colonial_eastern_america = {
-				has_discovered = ROOT
-			}
-		}
-
-		set_country_flag = chose_colonial_focus
-		set_country_flag = eastern_america_focus
-
-		clr_country_flag = alaska_focus
-		clr_country_flag = australia_focus
-		clr_country_flag = brazil_focus
-		clr_country_flag = canada_focus
-		clr_country_flag = colombia_focus
-		clr_country_flag = la_plata_focus
-		clr_country_flag = louisiana_focus
-		clr_country_flag = mexico_focus
-		clr_country_flag = peru_focus
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_eastern_america
-				}
-			}
-			modifier = {
-				factor = 0
-				colonial_eastern_america = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 1000
-				OR = {
-					tag = NED
-					tag = ENG
-				}
-			}
-			modifier = {
-				factor = 100
-				capital_scope = {
-					OR = {
-						region = british_isles_region
-						region = low_countries_region
-						region = scandinavia_region
-					}
-				}
-			}
-		}
-	}
-
-	# La Plata
-	option = {
-		name = btc_events.34g
-
-		trigger = {
-			colonial_la_plata = {
-				has_discovered = ROOT
-			}
-		}
-
-		set_country_flag = chose_colonial_focus
-		set_country_flag = la_plata_focus
-
-		clr_country_flag = alaska_focus
-		clr_country_flag = australia_focus
-		clr_country_flag = brazil_focus
-		clr_country_flag = canada_focus
-		clr_country_flag = colombia_focus
-		clr_country_flag = eastern_america_focus
-		clr_country_flag = louisiana_focus
-		clr_country_flag = mexico_focus
-		clr_country_flag = peru_focus
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_la_plata
-				}
-			}
-			modifier = {
-				factor = 0
-				colonial_la_plata = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 1000
-				tag = CAS
-			}
-			modifier = {
-				factor = 100
-				capital_scope = {
-					region = iberia_region
-				}
-			}
-		}
-	}
-
-	# Louisiana
-	option = {
-		name = btc_events.34h
-
-		trigger = {
-			colonial_louisiana = {
-				has_discovered = ROOT
-			}
-		}
-
-		set_country_flag = chose_colonial_focus
-		set_country_flag = louisiana_focus
-
-		clr_country_flag = alaska_focus
-		clr_country_flag = australia_focus
-		clr_country_flag = brazil_focus
-		clr_country_flag = canada_focus
-		clr_country_flag = colombia_focus
-		clr_country_flag = eastern_america_focus
-		clr_country_flag = la_plata_focus
-		clr_country_flag = mexico_focus
-		clr_country_flag = peru_focus
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_louisiana
-				}
-			}
-			modifier = {
-				factor = 0
-				colonial_louisiana = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 1000
-				tag = FRA
-			}
-			modifier = {
-				factor = 100
-				capital_scope = {
-					region = france_region
-				}
-			}
-		}
-	}
-
-	# Mexico
-	option = {
-		name = btc_events.34i
-
-		trigger = {
-			colonial_mexico = {
-				has_discovered = ROOT
-			}
-		}
-
-		set_country_flag = chose_colonial_focus
-		set_country_flag = mexico_focus
-
-		clr_country_flag = alaska_focus
-		clr_country_flag = australia_focus
-		clr_country_flag = brazil_focus
-		clr_country_flag = canada_focus
-		clr_country_flag = colombia_focus
-		clr_country_flag = eastern_america_focus
-		clr_country_flag = la_plata_focus
-		clr_country_flag = louisiana_focus
-		clr_country_flag = peru_focus
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_mexico
-				}
-			}
-			modifier = {
-				factor = 0
-				colonial_mexico = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 1000
-				tag = CAS
-			}
-			modifier = {
-				factor = 100
-				capital_scope = {
-					region = iberia_region
-				}
-			}
-		}
-	}
-
-	# Peru
-	option = {
-		name = btc_events.34j
-
-		trigger = {
-			colonial_peru = {
-				has_discovered = ROOT
-			}
-		}
-
-		set_country_flag = chose_colonial_focus
-		set_country_flag = peru_focus
-
-		clr_country_flag = alaska_focus
-		clr_country_flag = australia_focus
-		clr_country_flag = brazil_focus
-		clr_country_flag = canada_focus
-		clr_country_flag = colombia_focus
-		clr_country_flag = eastern_america_focus
-		clr_country_flag = la_plata_focus
-		clr_country_flag = louisiana_focus
-		clr_country_flag = mexico_focus
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_peru
-				}
-			}
-			modifier = {
-				factor = 0
-				colonial_peru = {
-					OR = {
-						NOT = {
-							range = ROOT
-						}
-						is_empty = no
-					}
-				}
-			}
-			modifier = {
-				factor = 1000
-				tag = CAS
-			}
-			modifier = {
-				factor = 100
-				capital_scope = {
-					region = iberia_region
-				}
-			}
-		}
-	}
-
-	# Choose later
-	option = {
-		name = btc_events.34k
+		
+		add_permanent_claim = 539
+		add_prestige = 10
 	}
 }
