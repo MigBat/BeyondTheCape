@@ -362,7 +362,7 @@ country_event = {
 		}
 		NOT = {
 			any_owned_province = {
-				has_province_modifier = slavers_social_banditry_modiifer
+				has_province_modifier = slavers_social_banditry_modifier
 			}
 		}
 		any_owned_province = {
@@ -445,7 +445,7 @@ country_event = {
 				size = 1
 			}
 			add_province_modifier = {
-				name = slavers_social_banditry_modifer # reduced trade power
+				name = slavers_social_banditry_modifier # reduced trade power
 				duration = 5475
 			}
 			clr_province_flag = slavers_social_banditry

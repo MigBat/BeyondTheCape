@@ -1,0 +1,156 @@
+
+  #Foscari's deposition by the council of ten 
+
+  namespace = btc_ven
+normal_or_historical_nations = yes
+
+country_event = {	
+	id = btc_ven.2
+	title = btc_ven.2_t
+	desc = btc_ven.2_d
+	picture = SPY_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		is_year = 1450
+		NOT = { is_year = 1500 }
+		has_government_attribute = is_merchant_republic
+		NOT = {
+			OR = {
+				has_country_modifier = btc_ven_ten_emergency_government 
+				has_country_modifier = btc_ven_ten_take_control_of_the_chancery 
+				has_country_modifier = btc_ven_ten_council_eliminated
+				has_country_modifier = btc_ven_ten_council_restored_to_previous_functions
+				has_country_modifier = btc_ven_tens_improved_control_of_the_chancery
+			}
+	    }
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 0 }
+		}
+	}	
+	option = {	#Depose the Doge
+		name = btc_ven.2_a
+		ai_chance = { 
+			factor = 1		
+		}
+		add_republican_tradition = -15
+		add_country_modifier = {
+			name = btc_ven_ten_emergency_government
+			duration = 1825
+		}
+		set_global_flag = btc_ven_doge_deposed_by_ten
+		custom_tooltip = btc_ven_doge_deposed_by_ten_tt
+		kill_ruler = yes
+	}
+	option = {	#Oppose the ten council
+		name = btc_ven.2_b
+		ai_chance = { 
+			factor = 0	
+		}
+		add_stability = -1
+		add_dip_power = -50
+		add_adm_power = -50
+		}
+	}
+  
+  #The ten take control of the Ducal Chancery
+  country_event = {	
+	id = btc_ven.3
+	title = btc_ven.3_t
+	desc = btc_ven.3_d
+	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+        has_global_flag = btc_ven_doge_deposed_by_ten
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy_equivalent = 60 }	
+		}
+
+	}	
+	option = {	#Ten take control
+		name = btc_ven.3_a
+		ai_chance = { 
+			factor = 1		
+		}
+		add_republican_tradition = -10
+		add_country_modifier = {
+			name = btc_ven_ten_take_control_of_the_chancery
+			duration = -1
+		}
+		add_stability = -1
+		set_global_flag = btc_ven_ten_take_control_of_the_chancery
+		clr_global_flag = btc_ven_doge_deposed_by_ten
+	}
+	}
+  
+  #The Maggior Consiglio tries to curtail the Council of ten's power
+    
+  country_event = {	
+	id = btc_ven.4
+	title = btc_ven.4_t
+	desc = btc_ven.4_d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VEN
+		has_government_attribute = is_merchant_republic
+		has_global_flag = btc_ven_ten_take_control_of_the_chancery
+		NOT = { has_country_modifier = btc_ven_ten_emergency_government }
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.5
+			legitimacy_equivalent = 60
+		}
+	}	
+	option = {	#Eliminate the ten council
+		name = btc_ven.4_a
+		ai_chance = { 
+			factor = 0	
+		}
+		custom_tooltip = btc_ven_maggior_consiglio_trying_to_eliminate_the_tens_tt
+		clr_global_flag = btc_ven_ten_take_control_of_the_chancery
+		set_global_flag = btc_ven_maggior_consiglio_trying_to_eliminate_the_tens
+	}
+	option = {	#restrict the ten council to his previous functions
+		name = btc_ven.4_b
+		ai_chance = { 
+			factor = 1	
+		}
+		custom_tooltip = btc_ven_maggior_consiglio_trying_to_curtail_the_tens_tt
+		clr_global_flag = btc_ven_ten_take_control_of_the_chancery
+		set_global_flag = btc_ven_maggior_consiglio_trying_to_curtail_the_tens
+		}
+		option = {	#Approve the ten council new functions
+		name = btc_ven.4_c
+		ai_chance = { 
+			factor = 0	
+			}
+		add_republican_tradition = -15
+		add_country_modifier = {
+				name = btc_ven_tens_improved_control_of_the_chancery
+				duration = -1
+			}
+		remove_country_modifier = btc_ven_ten_take_control_of_the_chancery
+		clr_global_flag = btc_ven_ten_take_control_of_the_chancery
+		}
+	}

@@ -551,19 +551,15 @@ gc_tunis_4 = {
 		
 		trigger = {
 			2459 = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2462 = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2461 = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			338 = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}

@@ -2764,7 +2764,7 @@ dom_cas_missions_3_c = {
 		required_missions = { gc_cas_spa_new_spain2 }
 		position = 13
 		provinces_to_highlight = {
-			region = california
+			region = california_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -2802,7 +2802,7 @@ dom_cas_missions_3_c = {
 				add_base_tax = 3
 			}
 			4637 = { add_center_of_trade_level = 1  add_base_production = 4 } 
-			california = {
+			california_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -3538,7 +3538,7 @@ dom_cas_missions_4_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Hernï¿½n Cortï¿½s"
 			}
 			490 = {
 				add_base_production = 3

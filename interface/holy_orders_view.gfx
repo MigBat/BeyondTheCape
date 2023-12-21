@@ -146,10 +146,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/holy_orders/dlc/golden_century/christ.dds"
 		noOfFrames = 4
 	}
-}
 
 	# King of Kings
-
 
 	spriteType = {
 		name = "GFX_holy_order_savafid_order"

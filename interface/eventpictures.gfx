@@ -868,8 +868,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/btc_event_pictures/pepe.dds"
 		alwaystransparent = yes
 	}
-
-}
+	
 	#1.36
 	spriteType = {
 		name = "CONSTANTINOPLE_eventPicture"

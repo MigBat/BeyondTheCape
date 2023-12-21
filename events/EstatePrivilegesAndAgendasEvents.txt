@@ -1631,7 +1631,6 @@ country_event = {
 			factor = 0
 		}
 	}
-}
 
 	#Seize from qizilbash
 	option = {
