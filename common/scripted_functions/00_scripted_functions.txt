@@ -156,6 +156,51 @@ can_burn_colony = {
 
 can_colonize_province = {
 	condition = {
+		tooltip = "iberia_colonise_restriction"
+		potential = { 
+			NOT = { is_year = 1650 }
+			FROM = {
+				ai = yes
+				capital_scope = {
+					region = iberia_region
+				}
+			}
+		}
+		allow = { 
+			NOT = { 
+				OR = {
+					colonial_region = colonial_canada
+					colonial_region = colonial_eastern_america 
+					colonial_region = colonial_louisiana
+					colonial_region = colonial_alaska  
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "not_iberia_colonise_restriction"
+		potential = { 
+			NOT = { is_year = 1650 }
+			FROM = {
+				ai = yes
+				capital_scope = {
+					NOT = { region = iberia_region }
+				}
+			}
+		}
+		allow = { 
+			NOT = { 
+				OR = {
+					colonial_region = colonial_mexico
+					colonial_region = colonial_colombia 
+					colonial_region = colonial_brazil
+					colonial_region = colonial_la_plata 
+					colonial_region = colonial_peru 
+				}
+			}
+		}
+	}
+	condition = {
 		tooltip = "colonial_region_restriction"
 		potential = {
 			FROM = {
@@ -201,6 +246,8 @@ can_colonize_province = {
 					OR = {
 						expansion_ideas = 1 
 						has_idea = siberian_frontier
+						is_colonial_nation = yes
+						is_former_colonial_nation = yes
 					}
 				}
 			}
@@ -247,18 +294,7 @@ can_colonize_province = {
 			ROOT = {
 				NOT = {
 					OR = {
-						AND = {
-							continent = north_america
-							if = { 
-								limit = { FROM = { has_country_flag = terra_nova_claim } } 
-								NOT = { 
-									OR = {
-										area = newfoundland_area
-										area = labrador_area
-									}
-								}
-							}
-						}
+						continent = north_america
 						AND = {
 							continent = south_america
 							NOT = {

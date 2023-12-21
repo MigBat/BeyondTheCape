@@ -820,3 +820,7 @@ voivode_subject = {
 	land_forcelimit = -3
 	liberty_desire = -0.2
 }
+
+island_development = {
+	development_cost_modifier = 1
+}

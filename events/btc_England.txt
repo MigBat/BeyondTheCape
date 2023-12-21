@@ -26,7 +26,7 @@ country_event = {
 		any_country = {
 			had_country_flag = {
 				flag = had_columbus
-				days = 2190
+				days = 2920
 			}
 		}
 	}
@@ -67,7 +67,7 @@ country_event = {
 	}
 }
 
-#He Returns
+# He Returns
 country_event = {
 	id = btc_england.2
 	title = btc_england.2_t
@@ -86,7 +86,6 @@ country_event = {
 			shock = 2
 			manuever = 6
 			siege = 0
-			trait = great_explorer_personality
 		}
 		hidden_effect = {
 			discover_province = 1479
@@ -102,10 +101,10 @@ country_event = {
 			discover_province = 2573
 			discover_province = 980
 		}
-		add_country_modifier = {
-			name = english_push_for_new_world
-			duration = 3650
-		}
+		# add_country_modifier = {
+		# 	name = english_push_for_new_world
+		# 	duration = 3650
+		# }
 	}
 }
 
@@ -120,7 +119,9 @@ country_event = {
 		culture = irish
 		is_subject_of_type = tributary_state
 		overlord = {
-			is_or_was_tag = ENG
+			is_or_was_tag = {
+				tag = ENG
+			}
 			NOT = { religion = ROOT }
 		}
 	}

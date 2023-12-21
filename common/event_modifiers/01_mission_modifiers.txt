@@ -928,7 +928,7 @@ united_scandinavia = {
 }
 
 dan_colonial_ambitions_mod = {
-	may_explore = yes
+	# may_explore = yes
 	colonists = 1
 }
 
@@ -2630,8 +2630,8 @@ rus_expansion_into_siberia = {
 }
 
 rus_new_world_colonization = {
-	may_explore = yes
-	range = 0.25
+	# may_explore = yes
+	# range = 0.25
 	colonists = 2
 	global_colonial_growth = 20
 }

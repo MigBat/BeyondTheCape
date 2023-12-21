@@ -2161,7 +2161,15 @@ country_event = {
 	option = {
 		name = btc_por.127a
 
-		ai_chance = { factor = 15 }
+		ai_chance = { 
+			factor = 15 
+			modifier = {
+				factor = 1000
+				FROM = {
+					ai = yes
+				}
+			}
+		}
 		trigger = {
 			2030 = {
 				is_capital = no
@@ -2740,7 +2748,7 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		is_year = 1510
+		is_year = 1488
 		4150 = {
 			owned_by = ROOT
 			controlled_by = ROOT
@@ -4944,7 +4952,6 @@ country_event = {
 	id = btc_por.170
 	title = btc_por.170_t
 	desc = btc_por.170_d
-	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 	hidden = yes
@@ -5044,7 +5051,7 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		has_country_flag = elvas
+		is_year = 1517
 		228 = {
 			owned_by = ROOT
 			controlled_by = ROOT
@@ -5058,7 +5065,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 240
+		months = 120
 	}
 
 	option = {

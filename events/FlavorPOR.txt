@@ -982,6 +982,10 @@ country_event = {
 	option = {		# Broker a deal with the local ruler
 		name = "flavor_por.EVTOPTA11"
 
+		ai_chance = {
+			factor = 90
+		}
+
 		2030 = {
 			owner = {
 				country_event = { id = btc_por.127 days = 1 }
@@ -993,6 +997,10 @@ country_event = {
 
 	option = {		# Forcefully establish our presence
 		name = "flavor_por.EVTOPTB11"
+
+		ai_chance = {
+			factor = 10
+		}
 		
 		add_permanent_claim = 2030
 		add_prestige = 10

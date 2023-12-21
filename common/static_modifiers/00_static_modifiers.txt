@@ -838,6 +838,7 @@ trade_refusal = {
 
 mercantilism = {
 	global_prov_trade_power_modifier = 2.0
+	global_trade_goods_size_modifier = 1.0
 	embargo_efficiency = 1
 	burghers_loyalty_modifier = 0.1
 	vaisyas_loyalty_modifier = 0.1

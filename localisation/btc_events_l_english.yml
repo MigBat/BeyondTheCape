@@ -10,7 +10,7 @@
  btc_events.1_d:0 "We now have the technology and funding to undertake the greatest adventures of 10 generations. Let us sail west in search of new lands and riches!"
  btc_events.1a:0 "A new horizon"
 
- is_colonizer_tt:0 "We are both colonizers."
+ is_colonizer_tt:0 "They are a coloniser nation."
 
  merc_colonial_ordenancas:0 "§GColonial Ordenanças§!"
  merc_knights_of_christ:0 "§YKnights of Christ§!"
@@ -124,6 +124,18 @@
  btc_events.32_d:0 "Our heir Ladislaus has just come of age and already he is being active in the political theater, advocating for increased centralization of the Habsburg territories. There seems to be a lot of support for this initiative."
  btc_events.32a:0 "Centralize Austria."
  btc_events.32b:0 "Use our influence for other matters."
+ btc_events.34_t:0 "The Purchase of Masulipatnam"
+ btc_events.34_d:0 "Now that we have discovered the sea way to India, its riches are ripe for the taking! Or perhaps striking a deal with the local ruler of Masulipatnam may save us some trouble."
+ btc_events.34a:0 "Broker a deal with the local ruler."
+ btc_events.34b:0 "Forcefully establish our presence."
+ btc_events.35_t:0 "The Purchase of Chandernagore"
+ btc_events.35_d:0 "Now that we have discovered the sea way to India, its riches are ripe for the taking! Or perhaps striking a deal with the local ruler of Chandernagore may save us some trouble."
+ btc_events.35a:0 "Broker a deal with the local ruler."
+ btc_events.35b:0 "Forcefully establish our presence."
+ btc_events.36_t:0 "The Purchase of Pulicat"
+ btc_events.36_d:0 "Now that we have discovered the sea way to India, its riches are ripe for the taking! Or perhaps striking a deal with the local ruler of Pulicat may save us some trouble."
+ btc_events.36a:0 "Broker a deal with the local ruler."
+ btc_events.36b:0 "Forcefully establish our presence."
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"

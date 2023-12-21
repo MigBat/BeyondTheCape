@@ -4943,7 +4943,7 @@ province;red;green;blue;x;x
 4942;255;28;50;Set�bal;x
 4943;51;35;126;Castelo Branco;x
 4944;36;110;7;Terceira;x
-4945;57;248;0;Coastal Guinea;x
+4945;57;248;0;West Guinea;x
 4946;188;109;227;Gulf of Guinea;x
 4947;147;220;138;Ambriz;x
 4948;79;105;230;Golungo Alto;x
@@ -4963,3 +4963,4 @@ province;red;green;blue;x;x
 4962;38;247;132;Principe;x
 4963;74;180;34;Pepper Coast;x
 4964;212;104;11;Slave Coast;x
+4965;112;148;160;East Guinea;x
