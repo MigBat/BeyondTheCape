@@ -387,9 +387,11 @@ renaissance = {
 	
 	can_embrace = {
 		owner = { 
-			has_institution = feudalism 
-			government = native
-			government = tribal
+			OR = {
+				has_institution = feudalism 
+				NOT = { government = native }
+				NOT = { government = tribal }
+			}
 		}
 	}
 	

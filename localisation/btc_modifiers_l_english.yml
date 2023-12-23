@@ -355,6 +355,8 @@
  desc_negotiating_with_corsairs:0 "Striking a benefitial bargain with the French corsairs"
  por_push_to_india:0 "Push to India"
  por_push_to_india_desc:0 "Upon reaching the Zanzibar coast, local Muslim merchants can serve as reliable and experienced guides to the way to India"
+ castilian_civil_war_no_stab_loss:0 "Castilian Succession Ongoing"
+ desc_castilian_civil_war_no_stab_loss:0 "The succession of the Castilian crown is not yet resolved."
 
 # Other Events #
  paria_paid:0 "Paria Paid"

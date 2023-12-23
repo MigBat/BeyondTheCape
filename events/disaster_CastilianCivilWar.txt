@@ -921,6 +921,10 @@ country_event = {
 		}
 
 		POR = {
+			add_country_modifier = {
+				name = castilian_civil_war_no_stab_loss
+				duration = -1
+			}
 			remove_rival = CAS
 			add_trust = {
 				who = CAS
@@ -1043,6 +1047,10 @@ country_event = {
 		}
 
 		ARA = {
+			add_country_modifier = {
+				name = castilian_civil_war_no_stab_loss
+				duration = -1
+			}
 			remove_rival = CAS
 			add_trust = {
 				who = CAS
@@ -1097,6 +1105,11 @@ country_event = {
 	option = {
 		name = "castilian_civil_war.14a"
 
+		add_country_modifier = {
+			name = castilian_civil_war_no_stab_loss
+			duration = -1
+		}
+
 		set_country_flag = won_war
 		clr_country_flag = at_war
 		set_country_flag = civil_war_ended
@@ -1133,6 +1146,11 @@ country_event = {
 		name = "castilian_civil_war.15a"
 
 		trigger = { tag = POR }
+		
+		add_country_modifier = {
+			name = castilian_civil_war_no_stab_loss
+			duration = -1
+		}
 
 		clr_country_flag = at_war
 		set_country_flag = won_castilian_civil_war
@@ -1147,6 +1165,11 @@ country_event = {
 		name = "castilian_civil_war.15b"
 
 		trigger = { tag = CAS }
+		
+		add_country_modifier = {
+			name = castilian_civil_war_no_stab_loss
+			duration = -1
+		}
 
 		clr_country_flag = at_war
 		set_country_flag = won_war
@@ -1169,6 +1192,11 @@ country_event = {
 		name = "castilian_civil_war.16a"
 
 		trigger = { tag = ARA }
+		
+		add_country_modifier = {
+			name = castilian_civil_war_no_stab_loss
+			duration = -1
+		}
 
 		clr_country_flag = at_war
 		set_country_flag = won_castilian_civil_war
@@ -1183,6 +1211,11 @@ country_event = {
 		name = "castilian_civil_war.16b"
 
 		trigger = { tag = CAS }
+		
+		add_country_modifier = {
+			name = castilian_civil_war_no_stab_loss
+			duration = -1
+		}
 
 		clr_country_flag = at_war
 		set_country_flag = won_war
@@ -1379,6 +1412,33 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				POR = {
+					has_country_modifier = castilian_civil_war_no_stab_loss
+				}
+			}
+			remove_country_modifier = castilian_civil_war_no_stab_loss
+		}
+		if = {
+			limit = {
+				CAS = {
+					has_country_modifier = castilian_civil_war_no_stab_loss
+				}
+			}
+			remove_country_modifier = castilian_civil_war_no_stab_loss
+		}
+		if = {
+			limit = {
+				ARA = {
+					has_country_modifier = castilian_civil_war_no_stab_loss
+				}
+			}
+			remove_country_modifier = castilian_civil_war_no_stab_loss
+		}
 	}
 
 	option = {	# Castile forms union over Portugal

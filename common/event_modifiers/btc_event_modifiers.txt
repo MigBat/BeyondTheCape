@@ -867,3 +867,9 @@ btc_ven_ten_improved_emergency_government = {
 	manpower_recovery_speed = 0.6
 	interest = -2
 }
+
+##
+
+castilian_civil_war_no_stab_loss = {
+	no_stability_loss_on_monarch_death = yes
+}

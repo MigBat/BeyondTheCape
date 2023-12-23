@@ -1244,7 +1244,11 @@ on_monarch_death = {
 	}
 	# Beyond the Cape
 	if = {
-		limit = { has_ruler_flag = miguel_da_paz }
+		limit = { 
+			has_country_flag = miguel_da_paz_exists
+			NOT = { has_heir_flag = miguel_da_paz }
+			NOT = { has_ruler_flag = miguel_da_paz }
+		}
 		country_event = { id = btc_por.138 }
 	}
 	if = {
