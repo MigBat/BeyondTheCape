@@ -36,6 +36,7 @@ on_startup = {
 			capital_scope = {
 				region = maghreb_region
 			}
+			NOT = { tag = GCH }
 			NOT = { has_country_flag = resisting_reconquista }
 		}
 		country_event = { id = btc_events.2 }

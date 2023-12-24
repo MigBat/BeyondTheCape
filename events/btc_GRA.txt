@@ -8,22 +8,30 @@ country_event = {
 	desc = btc_gra.1_d
 	picture = DEBATE_REPUBLICAN_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = GRA
-		NOT = { truce_with = CAS }
-		NOT = { has_country_flag = paria_not_paid }
-		NOT = { is_year = 1475 }
+		is_subject_of = CAS
+		is_subject_of_type = tributary_state
+		is_year = 1482
+	}
+
+	mean_time_to_happen = {
+		days = 1
 	}
 
 	option = {
 		name = btc_gra.1a
 
 		ai_chance = {
-			factor = 80
+			factor = 90
 		}
 
-		add_years_of_income = -0.5
-		add_truce_with = CAS
+		add_country_modifier = {
+			name = subject_of_castile
+			duration = 7300
+		}
 		CAS = { 
 			country_event = { 
 				id = btc_gra.2 
@@ -36,10 +44,9 @@ country_event = {
 		name = btc_gra.1b
 
 		ai_chance = {
-			factor = 20
+			factor = 10
 		}
 
-		set_country_flag = paria_not_paid
 		CAS = { 
 			country_event = { 
 				id = btc_gra.3 
@@ -61,16 +68,9 @@ country_event = {
 	option = {
 		name = btc_gra.2a
 
-		add_years_of_income = 0.05
 		add_opinion = {
 			who = GRA
 			modifier = paria_paid	# +100
-		}
-		if = {
-			limit = {
-				NOT = { has_guaranteed = GRA }
-			}
-			create_guarantee = GRA
 		}
 	}
 }
@@ -91,18 +91,11 @@ country_event = {
 			factor = 1
 		}
 
-		upper_andalucia_area = {
+		every_province = {
 			limit = {
-				NOT = { is_core = ROOT }
-				NOT = { is_permanent_claim = ROOT }
+				owned_by = GRA
 			}
 			add_permanent_claim = ROOT
-		}
-		if = {
-			limit = {
-				has_guaranteed = GRA
-			}
-			remove_guarantee = GRA
 		}
 		add_country_modifier = {
 			name = finish_reconquista
@@ -126,12 +119,6 @@ country_event = {
 			factor = 0
 		}
 
-		if = {
-			limit = {
-				has_guaranteed = GRA
-			}
-			remove_guarantee = GRA
-		}
-		add_truce_with = GRA
+		add_prestige = -10
 	}
 }

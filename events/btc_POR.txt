@@ -2176,11 +2176,9 @@ country_event = {
 			}
 		}
 		
-		tooltip = {
-			2030 = {
-				cede_province = FROM
-				add_core = FROM
-			}
+		2030 = {
+			cede_province = FROM
+			add_core = FROM
 		}
 		add_years_of_income = 1
 		hidden_effect = {

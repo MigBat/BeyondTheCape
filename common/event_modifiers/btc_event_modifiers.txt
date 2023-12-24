@@ -873,3 +873,19 @@ btc_ven_ten_improved_emergency_government = {
 castilian_civil_war_no_stab_loss = {
 	no_stability_loss_on_monarch_death = yes
 }
+
+subject_of_castile = {
+	global_unrest = 5
+}
+
+revenge_on_iberia = {
+	warscore_cost_vs_other_religion = -0.5	
+}
+
+guanches_exploration = {
+	may_explore = yes
+}
+
+guanches_colonisation = {
+	colonists = 1
+}

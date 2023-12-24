@@ -74,6 +74,30 @@
  btc_ara_sicily_title:0 "Integrate the Islands"
  btc_ara_sicily_desc:0 "Sicily and Sardinia are subject to Aragonese rule, but we do not rule them directly. They must be fully integrated into Aragon."
 
+# Guanches Missions #
+
+ btc_gch_fate_of_guanches_title:0 "Fate of the Guanches"
+ btc_gch_fate_of_guanches_desc:0 "For decades we have been the target of portuguese and castilian raids. They have relentlessly tried to take our islands, and have done so successfully in the east. We must turn to the Gods for guidance in these desperate times."
+ gch_choice_affects_missions_tt:0 "§YWe will gain new missions based on how we choose to complete this task§!"
+ choose_cult_tt:0 "Has selected a §YCult§!"
+ btc_gch_branch_mission_title:0 "[Root.GetSelectableMissionTitle]"
+ btc_gch_branch_mission_desc:0 "[Root.GetSelectableMissionDescription]"
+ gch_submit_to_iberians_tt:0 "If we choose to submit to @POR Portugal or @CAS Castile we may form @CNR Canaries."
+ gch_fight_iberians_tt:0 "If we choose to fight against the Iberians we will get claims on Macaronesia."
+ gch_flee_to_caribbean_tt:0 "If we choose to seek out new lands we will abandon Tenerife."
+ btc_gch_iberian_friend_title:0 "Ties with Iberia"
+ btc_gch_iberian_friend_desc:0 "Now that we have decided to submit to the Iberians, we must show how valuable we are to them."
+ btc_gch_build_fleet_title:0 "Build up our Fleet"
+ btc_gch_build_fleet_desc:0 "Now that we have decided to fight back against the Iberians, we need to build up a proper fleet to conquer their surrounding islands."
+ btc_gch_discover_home_islands_title:0 "Explore our Surroundings"
+ btc_gch_discover_home_islands_desc:0 "Now that we have finally settled down in our new home, it is time to discover what else is out there."
+ gch_done_exploring_tt:0 "§YDiscovered surrounding islands§!"
+ btc_gch_own_islands_title:0 "Expand our Territory"
+ btc_gch_own_islands_desc:0 "We must expand our reach if we are to thrive in this tropical paradise, lest others take what good lands we may use."
+ btc_gch_discover_all_islands_title:0 "Within our Reach"
+ btc_gch_discover_all_islands_desc:0 "Understanding our limitations is a key quality of leadership. Let us go as far as we can, and then we will learn what we need to improve ourselves."
+ gch_done_exploring_all_tt:0 "§YDiscovered all nearby lands§!"
+
 # Iberian Missions #
 
  btc_ibe_caribbean_title:0 "Dominate the Caribbean"

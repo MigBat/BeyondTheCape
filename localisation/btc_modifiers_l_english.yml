@@ -357,6 +357,8 @@
  por_push_to_india_desc:0 "Upon reaching the Zanzibar coast, local Muslim merchants can serve as reliable and experienced guides to the way to India"
  castilian_civil_war_no_stab_loss:0 "Castilian Succession Ongoing"
  desc_castilian_civil_war_no_stab_loss:0 "The succession of the Castilian crown is not yet resolved."
+ subject_of_castile:0 "Subject of Castile"
+ desc_subject_of_castile:0 "Our people are outraged that we continue being protected by Castile."
 
 # Other Events #
  paria_paid:0 "Paria Paid"
@@ -384,6 +386,12 @@
  desc_predatory_trade:0 "The free seas are ours to do what we please! That includes appropriating others' possessions."
  ned_patroonschap:0 "Patroonschap"
  desc_ned_patroonschap:0 "This province has a local government and land ownership."
+ revenge_on_iberia:0 "Revenge on Iberia"
+ desc_revenge_on_iberia:0 "We have been harassed for far too long. It is time to fight back!"
+ guanches_exploration:0 "Guanches Exploration"
+ desc_guanches_exploration:0 "What undiscovered horizons await us..."
+ guanches_colonisation:0 "Guanches Colonisation"
+ desc_guanches_colonisation:0 "These islands are ripe for the taking."
 
 #venetian btc modifiers
  btc_ven_ten_emergency_government:0 "Council of the Ten's emergency government"

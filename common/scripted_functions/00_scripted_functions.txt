@@ -184,6 +184,7 @@ can_colonize_province = {
 			FROM = {
 				ai = yes
 				capital_scope = {
+					continent = europe
 					NOT = { region = iberia_region }
 				}
 			}
@@ -269,7 +270,7 @@ can_colonize_province = {
 				NOT = {
 					OR = {
 						exploration_ideas = 1
-						expansion_ideas = 1 
+						expansion_ideas = 1
 						has_idea = siberian_frontier
 					}
 				}
@@ -277,7 +278,10 @@ can_colonize_province = {
 		}
 		allow = {
 			ROOT = {
-				is_overseas = no
+				OR = {
+					same_continent = capital
+					is_in_capital_area = yes
+				}
 			}
 		}
 	}
