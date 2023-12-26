@@ -1116,7 +1116,6 @@ new_world_i = {
 	can_embrace = {
 		owner = {
 			OR = {
-				dip_tech = 13
 				has_idea_group = exploration_ideas
 				has_idea_group = expansion_ideas
 				num_of_colonists = 1
