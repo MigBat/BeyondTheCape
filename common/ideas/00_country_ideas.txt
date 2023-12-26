@@ -645,7 +645,7 @@ SCA_ideas = {
 MOS_ideas = {
 	start = {
 		diplomatic_upkeep = 1
-		shock_damage = 0.10
+		liberty_desire_from_subject_development = -0.25
 	}
 
 	bonus = {
@@ -662,6 +662,7 @@ MOS_ideas = {
 	}
 	legacy_of_dmitriy_donskoi = {
 		army_tradition = 0.5
+		shock_damage = 0.10
 	}
 	seat_of_metropolitan_bishop  = {
 		tolerance_own = 1

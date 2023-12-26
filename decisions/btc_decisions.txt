@@ -567,3 +567,33 @@ country_decisions = {
 		}
 	}
 }
+
+# Guanches Caribbean #
+
+country_decisions = {
+	btc_gch_discover_island = {
+		major = yes
+		potential = {
+			has_country_flag = gch_discover_islands
+			NOT = { has_country_flag = all_discoveries_done }
+		}
+		allow = {
+			capital_scope = {
+				num_of_units_in_province = {
+					who = ROOT
+					type = infantry
+					amount = 1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = currently_exploring_tt
+				NOT = { has_country_flag = exploration_in_progress }
+			}
+		}
+		effect = {
+			country_event = {
+				id = btc_gch.3
+			}
+		}
+	}
+}

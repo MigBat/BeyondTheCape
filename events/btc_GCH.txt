@@ -1,0 +1,265 @@
+namespace = btc_gch
+normal_or_historical_nations = yes
+
+# Decide on our Fate #
+country_event = {
+	id = btc_gch.1
+	title = btc_gch.1_t
+	desc = btc_gch.1_d
+	picture = iberian_NATIVES_eventPicture
+
+	is_triggered_only = yes
+
+	# Castile vassal
+	option = {
+		name = btc_gch.1a
+
+		ai_chance = {
+			factor = 7
+		}
+
+		CAS = { vassalize = GCH }
+		set_country_flag = gch_vassal_path
+		swap_non_generic_missions = yes 
+	}
+
+	# Portugal vassal
+	option = {
+		name = btc_gch.1b
+
+		ai_chance = {
+			factor = 2
+		}
+
+		POR = { vassalize = GCH }
+		set_country_flag = gch_vassal_path
+		swap_non_generic_missions = yes 
+	}
+
+	# Fight Iberians
+	option = {
+		name = btc_gch.1c
+
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = revenge_on_iberia
+			duration = 36525
+		}
+		set_country_flag = gch_revenge_path
+		swap_non_generic_missions = yes 
+	}
+
+	# Go to Caribbean
+	option = {
+		name = btc_gch.1d
+
+		ai_chance = {
+			factor = 0
+		}
+
+		custom_tooltip = gch_journey_tt
+		hidden_effect = {
+			country_event = {
+				id = btc_gch.2
+				days = 90
+			}	
+			capital_scope = {
+				kill_units = {
+					who = ROOT
+				}
+			}		
+		}
+		set_country_flag = gch_caribbean_path
+		swap_non_generic_missions = yes 
+	}
+}
+
+country_event = {
+	id = btc_gch.2
+	title = btc_gch.2_t
+	desc = btc_gch.2_d
+	picture = northamericagfx_CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	goto = 501
+
+	immediate = {
+		hidden_effect = {
+			501 = {
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = berber
+				change_religion = shamanism
+			}
+			4565 = { remove_core = ROOT }
+			decolonize = 4565
+			europe = {
+				undiscover_country = ROOT
+			}
+			africa = {
+				undiscover_country = ROOT
+			}
+			north_atlantic_region = {
+				undiscover_country = ROOT
+			}
+			west_african_sea_region = {
+				undiscover_country = ROOT
+			}
+			undiscover_province = 1648
+			501 = {
+				discover_country = ROOT
+			}
+			1522 = {
+				discover_country = ROOT
+			}				
+		}
+	}
+
+	# A New Home
+	option = {
+		name = btc_gch.2a
+		goto = 501
+		custom_tooltip = guanches_caribbean_tt
+		hidden_effect = {
+			4565 = {
+				undiscover_country = ROOT
+			}
+		}
+		set_country_flag = gch_discover_islands
+	}
+}
+
+country_event = {
+	id = btc_gch.3
+	title = btc_gch.3_t
+	desc = btc_gch.3_d
+	picture = EP_POLYNESIAN_SHIPS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# send expedition
+		name = btc_gch.3a
+
+		custom_tooltip = will_explore_islands_tt
+
+		add_years_of_income = -0.5
+
+		hidden_effect = {
+			capital_scope = {
+				kill_units = {
+					who = ROOT
+					type = infantry
+					amount = 1
+				}
+			}
+			country_event = {
+				id = btc_gch.4
+				days = 180
+			}
+			set_country_flag = exploration_in_progress
+		}
+	}
+
+	option = {	# maybe later
+		name = btc_gch.3b
+	}
+}
+
+country_event = {
+	id = btc_gch.4
+	title = btc_gch.4_t
+	desc = btc_gch.4_d
+	picture = northamericagfx_COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# send expedition
+		name = btc_gch.4a
+		
+		clr_country_flag = exploration_in_progress
+
+		if = { limit = { NOT = { has_discovered = 499 } } discover_province = 499 set_country_flag = exp1 } # St Lucia
+		else_if = { limit = { NOT = { has_discovered = 500 } has_country_flag = exp1 } discover_province = 500 set_country_flag = exp2 } # St Vincent
+		else_if = { limit = { NOT = { has_discovered = 502 } has_country_flag = exp2 } discover_province = 502 set_country_flag = exp3 } # Trinidad
+		else_if = { limit = { NOT = { has_discovered = 1523 } has_country_flag = exp3 } discover_province = 1523 set_country_flag = gch_main_islands } # Lesser Antilles
+		else_if = { limit = { NOT = { has_discovered = 741 } has_country_flag = gch_main_islands } discover_province = 741 set_country_flag = exp4 } # Cumana
+		else_if = { limit = { NOT = { has_discovered = 2803 } has_country_flag = exp4 } discover_province = 2803 set_country_flag = exp5 } # Orinoco Delta
+		else_if = { limit = { NOT = { has_discovered = 494 } has_country_flag = exp5 } discover_province = 494 set_country_flag = exp6 } # St. Kitts
+		else_if = { limit = { NOT = { has_discovered = 495 } has_country_flag = exp6 } discover_province = 495 set_country_flag = exp7 } # Antigua
+		else_if = { limit = { NOT = { has_discovered = 496 } has_country_flag = exp7 } discover_province = 496 set_country_flag = exp8 } # Guadelupe
+		else_if = { limit = { NOT = { has_discovered = 497 } has_country_flag = exp8 } discover_province = 497 set_country_flag = exp9 } # Dominica
+		else_if = { limit = { NOT = { has_discovered = 498 } has_country_flag = exp9 } discover_province = 498 set_country_flag = exp10 } # Martinique
+		else_if = { limit = { NOT = { has_discovered = 1881 } has_country_flag = exp10 } discover_province = 1881 set_country_flag = exp11 } # St. Martin
+		else_if = { limit = { NOT = { has_discovered = 1526 } has_country_flag = exp11 } discover_province = 1526 set_country_flag = exp12 } # Mona Passage
+		else_if = { limit = { NOT = { has_discovered = 492 } has_country_flag = exp12 } discover_province = 492 set_country_flag = exp13 } # Boriken
+		else_if = { limit = { NOT = { has_discovered = 493 } has_country_flag = exp13 } discover_province = 493 set_country_flag = exp14 } # St. Thomas
+		else_if = { limit = { NOT = { has_discovered = 4620 } has_country_flag = exp14 } discover_province = 4620 set_country_flag = exp15 } # Ciguayo
+		else_if = { limit = { NOT = { has_discovered = 4621 } has_country_flag = exp15 } discover_province = 4621 set_country_flag = all_discoveries_done } # Higuey
+	}
+}
+
+# Pirate Guanches
+country_event = {
+	id = btc_gch.5
+	title = btc_gch.5_t
+	desc = btc_gch.5_d
+	picture = SMUGGLERS_eventPicture
+	is_triggered_only = yes
+	
+	option = {	#We trade for the goods.
+		name = btc_gch.5a
+
+		change_government = republic
+		add_government_reform = merchants_reform
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {	#We TAKE the goods!
+		name = btc_gch.5b
+
+		change_government = republic
+		add_government_reform = pirate_republic_reform
+		add_republican_tradition = 50
+		set_ruler_flag = historical_pirate
+		add_ruler_personality = legendary_pirate_personality
+		update_sprite_pack = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Kingdom of the Canaries
+country_event = {
+	id = btc_gch.6
+	title = btc_gch.6_t
+	desc = btc_gch.6_d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	
+	option = {	#We trade for the goods.
+		name = btc_gch.6a
+
+		change_tag = CNR
+		change_religion = catholic
+		change_government = monarchy
+		add_government_reform = feudalism_reform
+
+		define_ruler = {
+			name = "Maciot"
+			dynasty = "de B�thencourt"
+			age = 55
+			religion = catholic
+			culture = normand
+			adm = 2
+			dip = 4
+			mil = 3
+			male = yes
+		}
+	}
+}

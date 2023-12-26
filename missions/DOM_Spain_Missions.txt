@@ -3178,13 +3178,14 @@ dom_cas_missions_4_b = {
 			naval_forcelimit = 30
 			navy_size_percentage = 0.9
 			num_of_admirals = 1
+			owns = 213
 		}
 		effect = {
 			add_country_modifier = {
 				name = ara_med_claim_modifier
 				duration = 5475
 			}
-			capital_scope = {
+			213 = {
 				add_building = shipyard 
 				add_base_production = 1
 			}

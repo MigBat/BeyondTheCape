@@ -159,7 +159,7 @@ arctic = {
 	local_friendly_movement_speed = -0.2
 
 	allowed_num_of_buildings = -1
-	local_development_cost = 0.5
+	local_development_cost = 1
 
 	picture = "climate_arctic"
 }

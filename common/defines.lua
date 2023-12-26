@@ -457,7 +457,7 @@ NDiplomacy = {
 	
 	CHANGE_COLONIAL_TYPE_COST = 1000,
 
-	CHARTER_COMPANY_BASE_COST = 500,
+	CHARTER_COMPANY_BASE_COST = 1000,
 	CHARTER_COMPANY_MINIMUM_COST = 100,
 
 	GOOD_RELATIONS = 100,
@@ -1115,6 +1115,7 @@ NCountry = {
 	FEDERATION_ADVANCEMENT_COHESION_COST = 80.0,
 
 	EXPAND_INFRASTRUCTURE_DEV_LIMIT = 15, 			-- How much dev you need for each improvement.
+	PARLIAMENT_SCALED_MODIFIER_DEFAULT_PERCENTAGE = 0.20, -- How much the modifier is multiplied by if a country doesn't have the estate specified in the parliament issue
 },
 
 NEconomy = {
@@ -1478,6 +1479,20 @@ NMilitary = {
 	SAMURAI_STARTING_STRENGTH = 1.0,
 	SAMURAI_STARTING_MORALE = 0.1, 
 
+	QIZILBASH_USES_CONSTRUCTION = 1,
+	QIZILBASH_BASE_COST_MODIFIER = 0.7,
+	QIZILBASH_MANPOWER_COST_MODIFIER = 1.0,
+	QIZILBASH_LEGITIMACY_COST = 0,
+	QIZILBASH_STARTING_STRENGTH = 1.0,
+	QIZILBASH_STARTING_MORALE = 0.1, 
+
+	MAMLUKS_USES_CONSTRUCTION = 1,
+	MAMLUKS_BASE_COST_MODIFIER = 1.0,
+	MAMLUKS_MANPOWER_COST_MODIFIER = 1.0,
+	MAMLUKS_LEGITIMACY_COST = 0,
+	MAMLUKS_STARTING_STRENGTH = 1.0,
+	MAMLUKS_STARTING_MORALE = 0.1, 
+
 	GEOBUKSEON_USES_CONSTRUCTION = 1,
 	GEOBUKSEON_BASE_COST_MODIFIER = 1.0,
 	GEOBUKSEON_SAILORS_COST_MODIFIER = 1.0,
@@ -1773,6 +1788,8 @@ NAI = {
 	PEACE_WAR_DIRECTION_FACTOR = 0.5, -- AI willingness to peace based on who's making gains in the war
 	PEACE_WAR_DIRECTION_WINNING_MULT = 5.0, -- Multiplies AI emphasis on war direction if it's the one making gains
 	PEACE_FORCE_BALANCE_FACTOR = 0.2, -- AI willingness to peace based on strength estimation of both sides
+	PEACE_SWING_PANIC_THRESHOLD = 0.7, -- If a new entrant to a war will swing us from a winning position to a position worse than this, we'll consider accepting an enforce peace action a bit more seriously
+	PEACE_PANIC_FACTOR = 500, --the amount we'll swing if we start panicking (multiplied by the amount under the panic swing threshold we will now be)
 	PEACE_INDEPENDENCE_FACTOR = 50, -- Revolting AI's unwillingness to peace while between -5 and cost of independence wargoal in an independence war.
 	PEACE_WARGOAL_FACTOR = 0, -- AI unwillingness to peace based on holding the wargoal
 	PEACE_CAPITAL_FACTOR = 5, -- AI unwillingness to peace based on holding their own capital
@@ -2038,6 +2055,8 @@ NAI = {
 	DIPLOMATIC_ACTION_COUNTER_ESPIONAGE_ENEMY_FACTOR = 25, --AI scoring for counter espionage against an active enemy (someone we're at war with, antagonize or otherwise rival).
 	DIPLOMATIC_ACTION_TRIBUTARY_ACCEPTANCE_PER_DEVELOPMENT = -0.5,	-- AI scoring for accepting becoming a tributary state per raw development
 	DIPLOMATIC_ACTION_TRIBUTARY_EMPIRE_FACTOR = 10,			-- AI scoring for establishing Tributary States is increased by this if actor is Celestial Emperor or has horde government with rank Empire.
+	DIPLOMATIC_ACTION_ASK_KNOWLEDGE_SHARING_ALLIANCE_FACTOR = 50, -- AI scoring for asking for knowledge sharing if the other nation is an ally or they have a royal marriage.
+	DIPLOMATIC_ACTION_ASK_KNOWLEDGE_SHARING_OPINION_FACTOR = 0.1, -- Multiplier for score for knowledge sharing from relation.
 	ALLIANCE_DESIRE_TOO_MANY_RELATIONS = -20,				-- AI desire/acceptance for alliance when it has or will get too many relations. Multiplies with number of relations above limit.
 	SUPPORT_INDEPENDENCE_DESIRE_TOO_MANY_RELATIONS = -20,	-- AI desire/acceptance for supporting independence when it has or will get too many relations. Multiplies with number of relations above limit.
 	MARRIAGE_DESIRE_TOO_MANY_RELATIONS = -50,				-- AI desire/acceptance for royal marriange when it has or will get too many relations. Multiplies with number of relations above limit.
@@ -2079,8 +2098,8 @@ NAI = {
 	TRADE_COMPANY_INVESTMENT_COST_THRESHOLD = 1.0,				-- How many times the cost of the investment must be in the treasury to consider buying it
 	ASSIMILATION_INTEREST_AMOUNT_FACTOR = 10,					-- Influence on assimilation interest from number of provinces left to conquer
 	INVASION_ARMY_LOOKUP_INTERVAL_ON_FAILURE = 15,				-- If AI fails to find an army for an invasion it will try again in this number of days
-	CHARTER_COMPANY_BASE_RELUCTANCE = 0,						-- Base reluctance to giving away provinces in charter company diplo action
-	CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE_MULTIPLIER = 0.5,	-- How much development multiplied by to provide resistance
+	CHARTER_COMPANY_BASE_RELUCTANCE = -50,						-- Base reluctance to giving away provinces in charter company diplo action
+	CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE_MULTIPLIER = 1.5,	-- How much development multiplied by to provide resistance
 	CHARTER_COMPANY_GREAT_PROJECT_VALUE_RELUCTANCE = 0.1,		-- Great Project value * this = reluctance
 	CHARTER_COMPANY_RESTRICTED_REGION_BASE = 50,
 	CHARTER_COMPANY_RESTRICTED_REGION_LESS_DEVELOPMENT_PENALTY = 20,
@@ -2088,7 +2107,7 @@ NAI = {
 	CHARTER_COMPANY_SWEETENER_PERCENTAGE_MULTIPLIER = 100,
 	CHARTER_COMPANY_ALLIANCE_BONUS = 50,
 	CHARTER_COMPANY_DIPLO_REP_MULTIPLIER = 2,
-	CHARTER_COMPANY_OPINION_MULTIPLIER = 0.5,
+	CHARTER_COMPANY_OPINION_MULTIPLIER = 0.25,
 	CHARTER_COMPANY_THREATENED_PENALTY = 100,
 	CHARTER_COMPANY_NON_TRADE_LEAGUE_MEMBER_PENALTY = 50,
 	CHARTER_COMPANY_EMPIRE_PENALTY = 1000,

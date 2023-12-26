@@ -229,7 +229,7 @@ gc_por_1_a = {
 		position = 3
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 5
+				value = 3
 				province_has_current_tech_fort_trigger = yes
 				is_state = yes
 			}

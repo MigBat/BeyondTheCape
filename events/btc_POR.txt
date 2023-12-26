@@ -2176,11 +2176,9 @@ country_event = {
 			}
 		}
 		
-		tooltip = {
-			2030 = {
-				cede_province = FROM
-				add_core = FROM
-			}
+		2030 = {
+			cede_province = FROM
+			add_core = FROM
 		}
 		add_years_of_income = 1
 		hidden_effect = {
@@ -2838,6 +2836,7 @@ country_event = {
 		}
 
 		set_heir_flag = miguel_da_paz
+		set_country_flag = miguel_da_paz_exists
 
 		add_casus_belli = {
 			type = cb_restore_personal_union
@@ -2884,6 +2883,8 @@ country_event = {
 
 	option = {
 		name = btc_por.138a
+
+		clr_country_flag = miguel_da_paz_exists
 
 		remove_casus_belli = {
 			type = cb_restore_personal_union

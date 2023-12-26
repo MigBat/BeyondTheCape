@@ -13,6 +13,8 @@
  VOC_ADJ:1 "Company"
  GCH:0 "Guanches"
  GCH_ADJ:0 "Guanches"
+ CNR:0 "Canaries"
+ CNR_ADJ:0 "Canarian"
  
 # Provinces #
  PROV4556:0 "Minho"
@@ -358,6 +360,7 @@
  subject_colonial_region_restriction:0 "You cannot colonize in a colonial region where your overlord has a colonial nation."
  limit_colonize_cape:0 "You need diplomatic tech 9 to colonize this province."
  limit_colonize_interior:0 "You need expansion ideas or the siberian frontier idea to colonize this province."
+ limit_colonize_border_province:0 "You cannot colonize provinces in other continents that don't have a direct connection to your capital."
  alcacovas_treaty:0 "The Treaty of Alcáçovas prevents you from colonising here."
  tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
  new_tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
@@ -508,3 +511,7 @@
  btc_ven_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, indeed due to its small size is much more efficient than the Maggior Consiglio."
  btc_ven_improved_ten_council_government_title:0 "Improved Council of the Ten government"
  btc_ven_improved_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, indeed due to its small size is much more efficient than the Maggior Consiglio."
+
+ btc_gch_discover_island_title:0 "Send an Expedition"
+ btc_gch_discover_island_desc:0 "We will send men to charter our surroundings in the hopes of finding new lands to settle on."
+ currently_exploring_tt:0 "No expedition is currently underway."

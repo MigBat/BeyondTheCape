@@ -386,7 +386,13 @@ renaissance = {
 	# on_start = institution_events.2
 	
 	can_embrace = {
-		owner = { has_institution = feudalism }
+		owner = { 
+			OR = {
+				has_institution = feudalism 
+				NOT = { government = native }
+				NOT = { government = tribal }
+			}
+		}
 	}
 	
 	embracement_speed = {
@@ -1108,7 +1114,34 @@ new_world_i = {
 	on_start = institution_events.3
 	
 	can_embrace = {
-		always = yes
+		owner = {
+			OR = {
+				has_idea_group = exploration_ideas
+				has_idea_group = expansion_ideas
+				num_of_colonists = 1
+				has_idea = siberian_frontier
+				is_colonial_nation = yes
+				has_subject_of_type = colony
+				has_subject_of_type = crown_colony
+				has_subject_of_type = self_governing_colony
+				has_subject_of_type = private_enterprise
+				AND = {
+					capital_scope = {
+						OR = {
+							continent = europe
+							continent = africa
+							continent = asia
+						}
+					}
+					any_owned_province = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
+			}			
+		}
 	}
 	
 	embracement_speed = {
@@ -2731,7 +2764,11 @@ industrialization = {
 	
 	
 	can_embrace = {
-		always = yes
+		owner = {
+			any_owned_province = {
+				trade_goods = coal
+			}
+		}
 	}
 
 	
