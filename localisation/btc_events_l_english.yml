@@ -555,6 +555,10 @@
  btc_gra.3_d:0 "Granada has refused to pay their paria tax. We are no longer bound to protect them, so now we must make a decision of what do to with them."
  btc_gra.3a:0 "We will show them what it means to cross us."
  btc_gra.3b:0 "Let them be."
+ btc_gra.4_t:0 "Granada No Longer Our Tributary"
+ btc_gra.4_d:0 "Granada has refused to pay their paria tax. We are no longer bound to protect them, so now we must make a decision of what do to with them."
+ btc_gra.4a:0 "We will show them what it means to cross us."
+ btc_gra.4b:0 "Let them be."
 
 # Guanches Events #
 

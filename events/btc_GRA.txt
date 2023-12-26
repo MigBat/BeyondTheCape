@@ -21,6 +21,10 @@ country_event = {
 		days = 1
 	}
 
+	immediate = {
+		CAS = { set_country_flag = paria_event_happened }
+	}
+
 	option = {
 		name = btc_gra.1a
 
@@ -114,6 +118,64 @@ country_event = {
 
 	option = {
 		name = btc_gra.3b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
+	}
+}
+
+# Granada no longer pays tribute
+country_event = {
+	id = btc_gra.4
+	title = btc_gra.4_t
+	desc = btc_gra.4_d
+	picture = BANKRUPCY_eventPicture
+
+	trigger = {
+		tag = CAS
+		NOT = { has_country_flag = paria_event_happened }
+		GRA = {
+			NOT = { is_subject_of = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_gra.4a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		every_province = {
+			limit = {
+				owned_by = GRA
+			}
+			add_permanent_claim = ROOT
+		}
+		add_country_modifier = {
+			name = finish_reconquista
+			duration = 1825
+		}
+		if = {
+			limit = { 
+				ai = yes
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_annex
+				who = GRA
+			}
+		}
+	}
+
+	option = {
+		name = btc_gra.4b
 
 		ai_chance = {
 			factor = 0

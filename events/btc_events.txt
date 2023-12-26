@@ -2090,6 +2090,8 @@ country_event = {
 	desc = btc_events.34_d
 	picture = SHIP_SAILING_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		is_or_was_tag = {
 			tag = ENG
@@ -2140,6 +2142,8 @@ country_event = {
 	desc = btc_events.35_d
 	picture = SHIP_SAILING_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		is_or_was_tag = {
 			tag = FRA
@@ -2189,6 +2193,8 @@ country_event = {
 	title = btc_events.36_t
 	desc = btc_events.36_d
 	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = NED

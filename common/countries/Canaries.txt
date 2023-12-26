@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = { 195 255 50 }
+color = { 2 34 107 }
 revolutionary_colors = { 6 5 4 }
 
 historical_idea_groups = {
@@ -33,8 +33,8 @@ historical_units = {
 }
 
 monarch_names = {
-	"Garc–Ωa #1" = 20
-	"Ordo—Åo #2" = 20
+	"GarcÌa #1" = 20
+	"OrdoÒo #2" = 20
 	"Afonso #5" = 15
 	"Sancho #1" = 15
 	"Ramiro #3" = 10
@@ -51,7 +51,7 @@ monarch_names = {
 	"Domingos #0" = 0
 	"Estevo #0" = 0
 	"Felipe #0" = 0
-	"Fern–±n #0" = 0
+	"Fern·n #0" = 0
 	"Francisco #0" = 0
 	"Frederico #0" = 0
 	"Gonzalo #0" = 0
@@ -72,7 +72,7 @@ monarch_names = {
 	"Pedro #0" = 0
 	"MONARCH_NAME_RAMON" = 0
 	"Roi #0" = 0
-	"Tom–π #0" = 0
+	"TomÈ #0" = 0
 	"Vitor #0" = 0
 	"Xoan #0" = 0
 	"Xorxe #0" = 0
@@ -83,33 +83,33 @@ monarch_names = {
 }
 
 leader_names = {
-	"de Aguirre" "de Alarc—Én" "de Toledo" "de Andrade" "de Ayala"
-	"de Baz–±n" "de Benavides" Campomanes "de Castilla" "de la Cerda" Cienfuegos Col—Én Coronado Cort–πs
-	"de Toledo" "de C—Érdoba" "de la Cueva" "de Figueroa" Fonseca
-	G–±lvez G—Émez "de Guzm–±n" "Jim–πnez de Cisneros"
-	"de Leiva" "L—Épez de Haro" "de Luna"
+	"de Aguirre" "de AlarcÛn" "de Toledo" "de Andrade" "de Ayala"
+	"de Baz·n" "de Benavides" Campomanes "de Castilla" "de la Cerda" Cienfuegos ColÛn Coronado CortÈs
+	"de Toledo" "de CÛrdoba" "de la Cueva" "de Figueroa" Fonseca
+	G·lvez GÛmez "de Guzm·n" "JimÈnez de Cisneros"
+	"de Leiva" "LÛpez de Haro" "de Luna"
 	"de Lara" "de Velasco" "de Villena" "de Mendoza"
-	Narv–±ez "de Nebrija" "Nu—Åez de Balboa" "de Ojeda" Orellana Osorio 
-	Pimentel Pinz—Én Pizarro "Ponce de Le—Én" Portocarrero
-	"de Rojas" Tellez-Gir—Én "de la Vega" "de Z—ä—Åiga"
+	Narv·ez "de Nebrija" "NuÒez de Balboa" "de Ojeda" Orellana Osorio 
+	Pimentel PinzÛn Pizarro "Ponce de LeÛn" Portocarrero
+	"de Rojas" Tellez-GirÛn "de la Vega" "de Z˙Òiga"
 }
 
 ship_names = {
-	Galicia Argonauta Asturias Asunci—Én Atrevido Azor
+	Galicia Argonauta Asturias AsunciÛn Atrevido Azor
 	Cartagonova Castilla "Castillo Negro" Castor "Ciervo Volante"
-	Doncella Drag—Én 
-	"El Gran Grin" "El Retiro" Eneas Eolo Esperanza "Esp–Ωritu Santo" Extremadura
-	Furor "Gran Grif—Én" Halc—Én H–πrcules Isabela J—äpiter
-	"La Concepci—Én" "La Magdalena" "La Manuela" Le—Én Ligera "Lobo Marino"
-	Marte Mercurio Neptuno Ni—Åa Ori—Én
-	"Paloma Blanca" Pegaso "Perro Marino" Pinta Plut—Én Pollux "Pr–Ωncipe de Asturias"
+	Doncella DragÛn 
+	"El Gran Grin" "El Retiro" Eneas Eolo Esperanza "EspÌritu Santo" Extremadura
+	Furor "Gran GrifÛn" HalcÛn HÈrcules Isabela J˙piter
+	"La ConcepciÛn" "La Magdalena" "La Manuela" LeÛn Ligera "Lobo Marino"
+	Marte Mercurio Neptuno NiÒa OriÛn
+	"Paloma Blanca" Pegaso "Perro Marino" Pinta PlutÛn Pollux "PrÌncipe de Asturias"
 	Rayo "Real Alfonso" "Real Enrique" "Real Juan" "Rey Pelayo" "Rey Rodrigo"
-	"San Andr–πs" "San Antonio" "San Bartolom–π" "San Bernab–π" "San Cristobal" "San Enrique"
-	"San Esteban" "San Fernando" "San Francisco" "San Gabriel" "San Isidoro" "San Jer—Énimo"
-	"San Jos–π" "San Juan" "San Juan Bautista" "San Leandro" "San Miguel" "San Pedro"
-	"San Rafael" "San Salvador" "San Sebastian" "Santa Ana" "Santa B–±rbara" "Santa Beatriz"
-	"Santa Catalina" "Santa Cruz" "Santa Fe" "Santa Isabel" "Santa Justa" "Santa Mar–Ωa"
-	"Santa Marta" "Santa Rita" "Santa Teresa" Santiago "Sant–Ωsima Trinidad" "Santo Domingo" Sirena
-	Terror Toledo Trinidad Trit—Én Unicornio
-	Vencedora Ventura Victoria Vigilante Vizcaya Vulcano Z—ä—Åiga
+	"San AndrÈs" "San Antonio" "San BartolomÈ" "San BernabÈ" "San Cristobal" "San Enrique"
+	"San Esteban" "San Fernando" "San Francisco" "San Gabriel" "San Isidoro" "San JerÛnimo"
+	"San JosÈ" "San Juan" "San Juan Bautista" "San Leandro" "San Miguel" "San Pedro"
+	"San Rafael" "San Salvador" "San Sebastian" "Santa Ana" "Santa B·rbara" "Santa Beatriz"
+	"Santa Catalina" "Santa Cruz" "Santa Fe" "Santa Isabel" "Santa Justa" "Santa MarÌa"
+	"Santa Marta" "Santa Rita" "Santa Teresa" Santiago "SantÌsima Trinidad" "Santo Domingo" Sirena
+	Terror Toledo Trinidad TritÛn Unicornio
+	Vencedora Ventura Victoria Vigilante Vizcaya Vulcano Z˙Òiga
 }
