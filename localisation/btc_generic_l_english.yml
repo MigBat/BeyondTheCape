@@ -515,3 +515,7 @@
  btc_gch_discover_island_title:0 "Send an Expedition"
  btc_gch_discover_island_desc:0 "We will send men to charter our surroundings in the hopes of finding new lands to settle on."
  currently_exploring_tt:0 "No expedition is currently underway."
+
+ feitoria_key:0 "Feitoria"
+ foreign_feitoria_key:0 "Feitoria"
+ portuguese_feitoria:0 "Feitoria"

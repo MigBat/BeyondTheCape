@@ -1,0 +1,86 @@
+# Beyond the Cape buttons
+
+custom_button = {
+	name = feitoria_button
+	potential = {
+		FROM = { has_government_attribute = can_establish_feitorias  }
+		NOT = { has_province_modifier = feitoria }
+		owned_by = FROM
+		has_port = yes
+		OR = {
+			AND = {
+				continent = africa
+				NOT = { region = maghreb_region }
+				NOT = { region = egypt_region }
+			}
+			AND = {
+				continent = asia
+				NOT = { region = mashriq_region }
+				NOT = { region = east_siberia_region }
+			}
+		}
+	}
+	trigger = {
+		area_for_scope_province = {
+			type = all
+			NOT = { has_province_modifier = feitoria }	
+		}
+	}
+	effect = {
+		add_province_modifier = {
+			name = feitoria
+			duration = -1
+		}
+		FROM = { add_years_of_income = -0.2 }
+	}
+	tooltip = feitoria_key
+}
+
+custom_button = {
+	name = foreign_feitoria_button
+	potential = {
+		FROM = { has_government_attribute = can_establish_feitorias  }
+		NOT = { has_province_modifier = foreign_feitoria }
+		NOT = { owned_by = FROM }
+		has_port = yes
+		OR = {
+			AND = {
+				continent = africa
+				NOT = { region = maghreb_region }
+				NOT = { region = egypt_region }
+			}
+			AND = {
+				continent = asia
+				NOT = { region = mashriq_region }
+				NOT = { region = east_siberia_region }
+			}
+		}
+	}
+	trigger = {
+		owner = {
+			has_opinion = {
+				who = FROM
+				value = 100
+			}
+		}
+		area_for_scope_province = {
+			type = all
+			NOT = { has_province_modifier = foreign_feitoria }	
+		}
+		range = FROM
+	}
+	effect = {
+		add_province_modifier = {
+			name = foreign_feitoria
+			duration = -1
+		}
+		add_trade_modifier = {
+			who = FROM
+			duration = -1
+			power = 5
+			key = portuguese_feitoria
+		}
+		FROM = { add_years_of_income = -0.2 }
+	}
+	tooltip = foreign_feitoria_key
+}

@@ -4028,20 +4028,20 @@ on_five_year_pulse_4 = {
 # FROM = country doing the exploring, ROOT = province discovered
 on_explore_coast = {
 	random_events = {
-		20 = exploration_events.1
-		20 = exploration_events.2
-		20 = exploration_events.3
-		20 = exploration_events.4
-		20 = exploration_events.5
-		20 = exploration_events.6
-		20 = exploration_events.7
-		20 = exploration_events.8
-		20 = exploration_events.9
-		20 = exploration_events.10
+		30 = exploration_events.1
+		30 = exploration_events.2
+		30 = exploration_events.3
+		30 = exploration_events.4
+		30 = exploration_events.5
+		30 = exploration_events.6
+		30 = exploration_events.7
+		30 = exploration_events.8
+		30 = exploration_events.9
+		30 = exploration_events.10
 		1 = exploration_events.11
-		20 = exploration_events.12
-		20 = exploration_events.13
-		20 = exploration_events.14
+		30 = exploration_events.12
+		30 = exploration_events.13
+		30 = exploration_events.14
 		1 = exploration_events.15
 		# Beyond the Cape
 		100000 = btc_por.167	# Padrão event is guaranteed to happen in empty provinces if you meet its conditions
@@ -5668,29 +5668,29 @@ on_conquest = {
 		}
 	}
 	# BEYOND THE CAPE #
-	if = {
-		limit = {
-			AND = {
-				owner = {
-					has_government_attribute = can_establish_feitorias
-				}
-				has_port = yes
-				OR = {
-					AND = {
-						continent = africa
-						NOT = { region = maghreb_region }
-						NOT = { region = egypt_region }
-					}
-					AND = {
-						continent = asia
-						NOT = { region = mashriq_region }
-						NOT = { region = east_siberia_region }
-					}
-				}
-			}
-		}
-		set_province_flag = can_build_feitoria
-	}
+	# if = {
+	# 	limit = {
+	# 		AND = {
+	# 			owner = {
+	# 				has_government_attribute = can_establish_feitorias
+	# 			}
+	# 			has_port = yes
+	# 			OR = {
+	# 				AND = {
+	# 					continent = africa
+	# 					NOT = { region = maghreb_region }
+	# 					NOT = { region = egypt_region }
+	# 				}
+	# 				AND = {
+	# 					continent = asia
+	# 					NOT = { region = mashriq_region }
+	# 					NOT = { region = east_siberia_region }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	set_province_flag = can_build_feitoria
+	# }
 	if = {
 		limit = {
 			AND = {

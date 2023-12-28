@@ -2560,140 +2560,140 @@ country_event = {
 
 # Establish Feitoria #
 
-province_event = {
-	id = btc_por.134
-	title = btc_por.134_t
-	desc = btc_por.134_d
-	picture = CARIBBEAN_PIRATE_FORT_eventPicture
-	goto = ROOT
+# province_event = {
+# 	id = btc_por.134
+# 	title = btc_por.134_t
+# 	desc = btc_por.134_d
+# 	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+# 	goto = ROOT
 
-	trigger = {
-		has_province_flag = can_build_feitoria
-		NOT = { has_province_modifier = feitoria }
-		NOT = { has_province_modifier = small_feitoria }
-	}
+# 	trigger = {
+# 		has_province_flag = can_build_feitoria
+# 		NOT = { has_province_modifier = feitoria }
+# 		NOT = { has_province_modifier = small_feitoria }
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {	# Build a fort
-		name = btc_por.134a
+# 	option = {	# Build a fort
+# 		name = btc_por.134a
 
-		ai_chance = {
-			factor = 0
-		}
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 
-		clr_province_flag = can_build_feitoria
+# 		clr_province_flag = can_build_feitoria
 
-		if = {
-			limit = {
-				owner = {
-					NOT = { mil_tech = 14 }
-				}
-			}
-			add_building_construction = {
-				building = fort_15th
-				cost = 0.5
-				speed = 0.5
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					AND = {
-						mil_tech = 14
-						NOT = { mil_tech = 19 }
-					}
-				}
-			}
-			add_building_construction = {
-				building = fort_16th
-				cost = 0.5
-				speed = 0.5
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					AND = {
-						mil_tech = 19
-						NOT = { mil_tech = 24 }
-					}
-				}
-			}
-			add_building_construction = {
-				building = fort_17th
-				cost = 0.5
-				speed = 0.5
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					mil_tech = 24
-				}
-			}
-			add_building_construction = {
-				building = fort_18th
-				cost = 0.5
-				speed = 0.5
-			}
-		}
-		if = {
-			limit = {
-				OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
-			}
-			add_province_modifier = {
-				name = feitoria
-				duration = -1
-			}
-		}
-		custom_tooltip = feitoria_tt
-		# for slavers estate privilege
-		if = {
-			limit = {
-				has_fort_building_trigger = yes
-				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
-			}
-			add_province_modifier = {
-				name = slave_garrison
-				duration = -1
-			}
-		}
-	}
+# 		if = {
+# 			limit = {
+# 				owner = {
+# 					NOT = { mil_tech = 14 }
+# 				}
+# 			}
+# 			add_building_construction = {
+# 				building = fort_15th
+# 				cost = 0.5
+# 				speed = 0.5
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				owner = {
+# 					AND = {
+# 						mil_tech = 14
+# 						NOT = { mil_tech = 19 }
+# 					}
+# 				}
+# 			}
+# 			add_building_construction = {
+# 				building = fort_16th
+# 				cost = 0.5
+# 				speed = 0.5
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				owner = {
+# 					AND = {
+# 						mil_tech = 19
+# 						NOT = { mil_tech = 24 }
+# 					}
+# 				}
+# 			}
+# 			add_building_construction = {
+# 				building = fort_17th
+# 				cost = 0.5
+# 				speed = 0.5
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				owner = {
+# 					mil_tech = 24
+# 				}
+# 			}
+# 			add_building_construction = {
+# 				building = fort_18th
+# 				cost = 0.5
+# 				speed = 0.5
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_building = fort_15th
+# 					has_building = fort_16th
+# 					has_building = fort_17th
+# 					has_building = fort_18th
+# 				}
+# 			}
+# 			add_province_modifier = {
+# 				name = feitoria
+# 				duration = -1
+# 			}
+# 		}
+# 		custom_tooltip = feitoria_tt
+# 		# for slavers estate privilege
+# 		if = {
+# 			limit = {
+# 				has_fort_building_trigger = yes
+# 				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
+# 			}
+# 			add_province_modifier = {
+# 				name = slave_garrison
+# 				duration = -1
+# 			}
+# 		}
+# 	}
 
-	option = {	# Build a trade post
-		name = btc_por.134b
+# 	option = {	# Build a trade post
+# 		name = btc_por.134b
 
-		ai_chance = {
-			factor = 1
-		}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 		
-		owner = { add_treasury = -25 }
+# 		owner = { add_treasury = -25 }
 
-		add_province_modifier = {
-			name = small_feitoria
-			duration = -1
-		}
-		clr_province_flag = can_build_feitoria
-	}
+# 		add_province_modifier = {
+# 			name = small_feitoria
+# 			duration = -1
+# 		}
+# 		clr_province_flag = can_build_feitoria
+# 	}
 
-	option = {	# Don't build it
-		name = btc_por.134c
+# 	option = {	# Don't build it
+# 		name = btc_por.134c
 
-		ai_chance = {
-			factor = 0
-		}
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 
-		clr_province_flag = can_build_feitoria
-	}
-}
+# 		clr_province_flag = can_build_feitoria
+# 	}
+# }
 
 # Sugar and Slaves in Sao Tome #
 
@@ -2746,7 +2746,6 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		is_year = 1488
 		4150 = {
 			owned_by = ROOT
 			controlled_by = ROOT
@@ -5052,7 +5051,10 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		is_year = 1517
+		had_country_flag = {
+			flag = elvas
+			days = 10000
+		}
 		228 = {
 			owned_by = ROOT
 			controlled_by = ROOT
@@ -5340,5 +5342,67 @@ country_event = {
 		}
 		add_historical_friend = ARA
 		remove_rival = ARA
+	}
+}
+
+province_event = {
+	id = btc_por.177
+	title = btc_por.177_t
+	desc = btc_por.177_d
+
+	hidden = yes
+	
+	trigger = {
+		has_province_modifier = foreign_feitoria
+		if = {
+			limit = { 
+				exists = POR
+			}
+			owner = {
+				NOT = {
+					has_opinion = {
+						who = POR
+						value = 0
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				exists = IBE
+			}
+			owner = {
+				NOT = {
+					has_opinion = {
+						who = IBE
+						value = 0
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = btc_por.177a
+
+		remove_province_modifier = foreign_feitoria
+		if = {
+			limit = { exists = POR }
+			ROOT = {
+				remove_trade_modifier = {
+					who = POR
+					key = portuguese_feitoria
+				}
+			}
+		}
+		if = {
+			limit = { exists = IBE }
+			ROOT = {
+				remove_trade_modifier = {
+					who = IBE
+					key = portuguese_feitoria
+				}
+			}
+		}
 	}
 }

@@ -97,13 +97,6 @@ country_event = {
 			name = duke_of_braganza
 			duration = -1
 		}
-		if = {
-			limit = {
-				is_advisor_employed = 617
-			}
-			remove_advisor = 617
-			remove_country_modifier = por_henry_cheaper
-		}
 	}
 	option = {		# The Duke survives and assists the King
 		name = "flavor_por.EVTOPTB3267"
