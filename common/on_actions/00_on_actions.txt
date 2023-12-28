@@ -429,6 +429,59 @@ on_war_won = {
 			id = btc_events.11
 		}
 	}
+	# BTC War of the Roses
+	if = {
+		limit = {
+			ROOT = {
+				tag = ENG
+				has_country_flag = at_war
+			}
+			FROM = { 
+				tag = NOL
+			}
+		}
+		ENG = { clr_country_flag = at_war set_country_flag = won_war_of_roses create_union = NOL }
+		NOL = { clr_country_flag = at_war }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = ENG
+				has_country_flag = at_war
+			}
+			FROM = { 
+				tag = WLS
+			}
+		}
+		ENG = { clr_country_flag = at_war set_country_flag = won_war_of_roses create_union = WLS }
+		WLS = { clr_country_flag = at_war }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = NOL
+				has_country_flag = at_war
+			}
+			FROM = { 
+				tag = ENG
+			}
+		}
+		ENG = { clr_country_flag = at_war }
+		NOL = { clr_country_flag = at_war set_country_flag = won_war_of_roses create_union = ENG }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = WLS
+				has_country_flag = at_war
+			}
+			FROM = { 
+				tag = ENG
+			}
+		}
+		ENG = { clr_country_flag = at_war }
+		WLS = { clr_country_flag = at_war set_country_flag = won_war_of_roses create_union = ENG }
+	}
 }
 
 # country

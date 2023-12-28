@@ -1,4 +1,4 @@
-namespace = btc_gra
+namespace = btc_ara
 normal_or_historical_nations = yes
 
 country_event = {

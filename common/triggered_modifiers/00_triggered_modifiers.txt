@@ -80,7 +80,7 @@ decentralized_indian_state = {
 		num_of_provinces_in_states = 40
 	}
 	
-	global_unrest = 5
+	global_unrest = 10
 }
 
 ###########################################

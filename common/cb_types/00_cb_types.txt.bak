@@ -2055,6 +2055,18 @@ cb_novgorod_war = {
 	war_goal = annex_novgorod
 }
 
+cb_castilian_civil_war = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+
+	attacker_disabled_po = {
+		po_demand_provinces
+	}
+
+	war_goal = superiority_castilian_civil_war
+}
+
 # War of the Roses
 cb_war_of_roses = {
 	valid_for_subject = no

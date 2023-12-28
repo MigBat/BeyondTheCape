@@ -469,7 +469,7 @@ feitoria = {
 	local_ship_repair = 0.15
 	local_governing_cost = 0.25
 	local_fort_maintenance_modifier = -0.3
-	local_defensiveness = -0.15
+	local_defensiveness = 0.15
 	fort_level = -1
 }
 
