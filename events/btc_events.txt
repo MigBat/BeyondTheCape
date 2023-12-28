@@ -2236,3 +2236,59 @@ country_event = {
 		add_prestige = 10
 	}
 }
+
+# Western Technology
+country_event = {
+	id = btc_events.37
+	title = btc_events.37_t
+	desc = btc_events.37_d
+	picture = FIREARMS_INCIDENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			region = japan_region
+		}
+		OR = {
+			has_opinion = {
+				who = POR
+				value = 100
+			}
+			has_opinion = {
+				who = NED
+				value = 100
+			}
+		}
+		OR = {
+			POR = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			NED = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = btc_events.37a
+
+		capital_scope = {
+			add_institution_embracement = {
+				which = new_world_i
+				value = 100
+			}			
+		}
+		set_country_flag = got_colonialism
+	}
+}
