@@ -1250,6 +1250,7 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
+		is_subject = no
 		is_at_war = no
 		OR = {
 			is_year = 1565

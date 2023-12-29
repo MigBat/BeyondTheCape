@@ -56,6 +56,12 @@
  PROV3194:0 "Pindos"
  PROV3195:0 "Korab"
  PROV4965:0 "East Guinea"
+ PROV4966:0 "Juventud"
+ PROV4967:0 "Cayman Islands"
+ PROV4968:0 "Grenada"
+ PROV4969:0 "Tobago"
+ PROV4970:0 "Margarita"
+ PROV4971:0 "Eleuthera"
 
 # Province Adjectives #
  PROV_ADJ4556:0 "Minhoto"
@@ -86,6 +92,16 @@
  PROV_ADJ4963:0 "Pepperan"
  PROV_ADJ4964:0 "Slavean"
  PROV_ADJ4965:0 "East Guinean"
+ PROV_ADJ4966:0 "Juventudean"
+ PROV_ADJ4967:0 "Cayman"
+ PROV_ADJ4968:0 "Grenadan"
+ PROV_ADJ4969:0 "Tobagoan"
+ PROV_ADJ4970:0 "Margaritan"
+ PROV_ADJ4971:0 "Eleutheran"
+
+ leeward_antilles_area:0 "Leeward Antilles"
+ leeward_antilles_area_name:0 "Aruba"
+ leeward_antilles_area_adj:0 "Aruban"
 
 # Native Policy #
 
