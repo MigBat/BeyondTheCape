@@ -1235,6 +1235,10 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		CAS = { set_country_flag = spa_cas_ended_civil_war_flag }
+	}
+
 	option = {
 		name = "castilian_civil_war.100a" # Castile Wins War
 

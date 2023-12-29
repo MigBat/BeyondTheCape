@@ -7,7 +7,6 @@ religion = catholic
 technology_group = western
 capital = 219 # Toledo
 national_focus = MIL
-historical_rival = GRA
 
 add_army_professionalism = 0.1
 

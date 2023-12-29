@@ -2560,140 +2560,80 @@ country_event = {
 
 # Establish Feitoria #
 
-# province_event = {
-# 	id = btc_por.134
-# 	title = btc_por.134_t
-# 	desc = btc_por.134_d
-# 	picture = CARIBBEAN_PIRATE_FORT_eventPicture
-# 	goto = ROOT
+province_event = {
+	id = btc_por.134
+	title = btc_por.134_t
+	desc = btc_por.134_d
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+	goto = ROOT
 
-# 	trigger = {
-# 		has_province_flag = can_build_feitoria
-# 		NOT = { has_province_modifier = feitoria }
-# 		NOT = { has_province_modifier = small_feitoria }
-# 	}
+	trigger = {
+		has_province_flag = can_build_feitoria
+		NOT = { has_province_modifier = feitoria }
+		owner = { ai = yes }
+	}
 
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 
-# 	option = {	# Build a fort
-# 		name = btc_por.134a
+	option = {	# Build a trade post
+		name = btc_por.134b
 
-# 		ai_chance = {
-# 			factor = 0
-# 		}
-
-# 		clr_province_flag = can_build_feitoria
-
-# 		if = {
-# 			limit = {
-# 				owner = {
-# 					NOT = { mil_tech = 14 }
-# 				}
-# 			}
-# 			add_building_construction = {
-# 				building = fort_15th
-# 				cost = 0.5
-# 				speed = 0.5
-# 			}
-# 		}
-# 		if = {
-# 			limit = {
-# 				owner = {
-# 					AND = {
-# 						mil_tech = 14
-# 						NOT = { mil_tech = 19 }
-# 					}
-# 				}
-# 			}
-# 			add_building_construction = {
-# 				building = fort_16th
-# 				cost = 0.5
-# 				speed = 0.5
-# 			}
-# 		}
-# 		if = {
-# 			limit = {
-# 				owner = {
-# 					AND = {
-# 						mil_tech = 19
-# 						NOT = { mil_tech = 24 }
-# 					}
-# 				}
-# 			}
-# 			add_building_construction = {
-# 				building = fort_17th
-# 				cost = 0.5
-# 				speed = 0.5
-# 			}
-# 		}
-# 		if = {
-# 			limit = {
-# 				owner = {
-# 					mil_tech = 24
-# 				}
-# 			}
-# 			add_building_construction = {
-# 				building = fort_18th
-# 				cost = 0.5
-# 				speed = 0.5
-# 			}
-# 		}
-# 		if = {
-# 			limit = {
-# 				OR = {
-# 					has_building = fort_15th
-# 					has_building = fort_16th
-# 					has_building = fort_17th
-# 					has_building = fort_18th
-# 				}
-# 			}
-# 			add_province_modifier = {
-# 				name = feitoria
-# 				duration = -1
-# 			}
-# 		}
-# 		custom_tooltip = feitoria_tt
-# 		# for slavers estate privilege
-# 		if = {
-# 			limit = {
-# 				has_fort_building_trigger = yes
-# 				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
-# 			}
-# 			add_province_modifier = {
-# 				name = slave_garrison
-# 				duration = -1
-# 			}
-# 		}
-# 	}
-
-# 	option = {	# Build a trade post
-# 		name = btc_por.134b
-
-# 		ai_chance = {
-# 			factor = 1
-# 		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { treasury = 50 }					
+				}
+			}
+			modifier = {
+				factor = 10
+				has_river_estuary_trigger = yes
+			}
+			modifier = {
+				factor = 10
+				province_has_center_of_trade_of_level = 1
+			}
+			modifier = {
+				factor = 10
+				province_has_center_of_trade_of_level = 2
+			}
+			modifier = {
+				factor = 10
+				province_has_center_of_trade_of_level = 3
+			}
+		}
 		
-# 		owner = { add_treasury = -25 }
+		owner = { add_treasury = -50 }
 
-# 		add_province_modifier = {
-# 			name = small_feitoria
-# 			duration = -1
-# 		}
-# 		clr_province_flag = can_build_feitoria
-# 	}
+		add_province_modifier = {
+			name = feitoria
+			duration = -1
+		}
+		if = {
+			limit = {
+				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
+			}
+			add_province_modifier = {
+				name = slave_garrison
+				duration = -1
+			}
+		}
+		clr_province_flag = can_build_feitoria
+	}
 
-# 	option = {	# Don't build it
-# 		name = btc_por.134c
+	option = {	# Don't build it
+		name = btc_por.134c
 
-# 		ai_chance = {
-# 			factor = 0
-# 		}
+		ai_chance = {
+			factor = 1
+		}
 
-# 		clr_province_flag = can_build_feitoria
-# 	}
-# }
+		clr_province_flag = can_build_feitoria
+	}
+}
 
 # Sugar and Slaves in Sao Tome #
 

@@ -3097,29 +3097,29 @@ on_colony_finished_effect = {
 			id = btc_por.168
 		}
 	}
-	# if = {
-	# 	limit = {
-	# 		AND = {
-	# 			owner = {
-	# 				has_government_attribute = can_establish_feitorias
-	# 			}
-	# 			has_port = yes
-	# 			OR = {
-	# 				AND = {
-	# 					continent = africa
-	# 					NOT = { region = maghreb_region }
-	# 					NOT = { region = egypt_region }
-	# 				}
-	# 				AND = {
-	# 					continent = asia
-	# 					NOT = { region = mashriq_region }
-	# 					NOT = { region = east_siberia_region }
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	set_province_flag = can_build_feitoria
-	# }
+	if = {
+		limit = {
+			AND = {
+				owner = {
+					has_government_attribute = can_establish_feitorias
+				}
+				has_port = yes
+				OR = {
+					AND = {
+						continent = africa
+						NOT = { region = maghreb_region }
+						NOT = { region = egypt_region }
+					}
+					AND = {
+						continent = asia
+						NOT = { region = mashriq_region }
+						NOT = { region = east_siberia_region }
+					}
+				}
+			}
+		}
+		set_province_flag = can_build_feitoria
+	}
 	if = {
 		limit = {
 			AND = {
