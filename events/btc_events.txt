@@ -787,77 +787,81 @@ province_event = {
 			has_terrain = woods
 		}
 		modifier = {
-			factor = 1.8
+			factor = 2
 			has_terrain = coastline
 		}
 		modifier = {
-			factor = 2
+			factor = 2.2
 			has_terrain = savannah
 		}
 		modifier = {
-			factor = 2
+			factor = 2.4
 			has_terrain = forest
 		}
 		modifier = {
-			factor = 2.2
+			factor = 2.6
 			has_terrain = highlands
 		}
 		modifier = {
-			factor = 2.2
+			factor = 2.8
 			has_terrain = steppe
 		}
 		modifier = {
-			factor = 2.4
+			factor = 3
 			has_terrain = hills
 		}
 		modifier = {
-			factor = 2.4
+			factor = 3.2
 			has_terrain = marsh
 		}
 		modifier = {
-			factor = 2.6
+			factor = 3.4
 			has_terrain = mountain
 		}
 		modifier = {
-			factor = 2.6
+			factor = 3.6
 			has_terrain = jungle
 		}
 		modifier = {
-			factor = 2.6
+			factor = 3.8
 			has_terrain = coastal_desert
+		}
+		modifier = {
+			factor = 4
+			has_terrain = desert
 		}
 		# Development
 		modifier = {
-			factor = 1.4
+			factor = 1.5
 			development = 10
 		}
 		modifier = {
-			factor = 1.8
+			factor = 2
 			development = 15
 		}
 		modifier = {
-			factor = 2.2
+			factor = 2.5
 			development = 20
 		}
 		modifier = {
-			factor = 2.6
+			factor = 3
 			development = 25
 		}
 		modifier = {
-			factor = 3
+			factor = 3.5
 			development = 30
 		}
 		modifier = {
-			factor = 3.4
+			factor = 4
 			development = 35
 		}
 		# Climate
 		modifier = {
-			factor = 3
+			factor = 5
 			has_climate = arid
 		}
 		modifier = {
-			factor = 2
+			factor = 4
 			has_climate = tropical
 		}
 	}
@@ -2290,5 +2294,122 @@ country_event = {
 			}			
 		}
 		set_country_flag = got_colonialism
+	}
+}
+
+# Indian Overextension 1
+country_event = {
+	id = btc_events.38
+	title = btc_events.38_t
+	desc = btc_events.38_d
+	picture = indiangfx_ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_country_modifier = decentralized_indian_state
+		NOT = { has_country_flag = indian_overextension_1 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		set_country_flag = indian_overextension_1
+	}
+
+	option = {
+		name = btc_events.38a
+		custom_tooltip = indian_overextension_begin_tt
+	}
+}
+
+# Indian Overextension 2
+country_event = {
+	id = btc_events.39
+	title = btc_events.39_t
+	desc = btc_events.39_d
+	picture = indiangfx_ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_country_modifier = decentralized_indian_state
+		NOT = { has_country_flag = indian_overextension_2 }
+		had_country_flag = {
+			flag = indian_overextension_1
+			days = 1825
+		}
+		unrest = 1
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		clr_country_flag = indian_overextension_1
+		set_country_flag = indian_overextension_2
+	}
+
+	option = {
+		name = btc_events.39a
+		custom_tooltip = indian_overextension_middle_tt
+	}
+}
+
+# Indian Overextension 3
+country_event = {
+	id = btc_events.40
+	title = btc_events.40_t
+	desc = btc_events.40_d
+	picture = indiangfx_ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_country_modifier = decentralized_indian_state
+		had_country_flag = {
+			flag = indian_overextension_2
+			days = 1825
+		}
+		unrest = 1
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		clr_country_flag = indian_overextension_2
+	}
+
+	option = {
+		name = btc_events.40a
+
+		release_all_possible_countries = yes
+	}
+}
+
+# Indian Overextension clear
+country_event = {
+	id = btc_events.41
+	title = btc_events.41_t
+	desc = btc_events.41_d
+	picture = indiangfx_ANGRY_MOB_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		NOT = { has_country_modifier = decentralized_indian_state }
+		OR = {
+			has_country_flag = indian_overextension_1
+			has_country_flag = indian_overextension_2
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_events.40a
+		clr_country_flag = indian_overextension_1
+		clr_country_flag = indian_overextension_2
 	}
 }

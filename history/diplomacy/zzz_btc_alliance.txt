@@ -268,3 +268,54 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1500.1.1
 }
+
+# Japan
+
+vassal = {
+	first = ASK
+	second = ASA
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = ASK
+	second = AKM
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = ASK
+	second = CSK
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = ASK
+	second = HJO
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = ASK
+	second = IKE
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = ASK
+	second = MAE
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}
+
+vassal = {
+	first = ASK
+	second = MRI
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}

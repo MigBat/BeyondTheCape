@@ -325,7 +325,7 @@
  desc_diplomatic_ordinances:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s ordinances focus on diplomacy."
  development_ordinances:0 "Development Ordinances"
  desc_development_ordinances:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s ordinances focus on development."
- padrao_tt:0 "This allows us to raise §YPadrões§! at newly discovered coastal provinces. When we finish a colony in a province with a §YPadrão§!, we can choose the trade good it produces."
+ padrao_tt:0 "Our Explorers get a chance to raise a §YPadrão§! at newly discovered African and Asian coastal provinces. When we finish a colony in a province with a §YPadrão§!, we can choose the trade good it produces."
  padrao_raised:0 "Padrão Raised"
  desc_padrao_raised:0 "A Padrão was raised here by portuguese explorers."
  padrao_raised_tt:0 "Once Portugal finishes colonizing the province, they can choose what trade good it will produce."

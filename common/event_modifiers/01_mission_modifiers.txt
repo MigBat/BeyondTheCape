@@ -2631,7 +2631,7 @@ rus_expansion_into_siberia = {
 
 rus_new_world_colonization = {
 	# may_explore = yes
-	range = -0.75
+	range = -0.9
 	colonists = 2
 	global_colonial_growth = 20
 }

@@ -243,15 +243,17 @@ can_colonize_province = {
 		potential = {
 			FROM = {
 				NOT = {
-					AND = {
-						capital_scope = {
-							continent = europe
-						}
-						OR = {
-							expansion_ideas = 1 
-							has_idea = siberian_frontier
-							is_colonial_nation = yes
-							is_former_colonial_nation = yes
+					OR = {
+						is_colonial_nation = yes
+						is_former_colonial_nation = yes
+						AND = {
+							capital_scope = {
+								continent = europe
+							}
+							OR = {
+								expansion_ideas = 1 
+								has_idea = siberian_frontier
+							}
 						}
 					}
 				}
@@ -268,10 +270,14 @@ can_colonize_province = {
 		potential = {
 			FROM = {
 				NOT = {
-					OR = {
-						exploration_ideas = 1
-						expansion_ideas = 1
-						has_idea = siberian_frontier
+					AND = {
+						ai = yes
+						OR = {
+							capital_scope = {
+								superregion = europe_superregion
+							}
+							has_country_modifier = rus_new_world_colonization
+						}
 					}
 				}
 			}

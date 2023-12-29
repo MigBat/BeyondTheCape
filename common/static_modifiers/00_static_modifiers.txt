@@ -1527,13 +1527,13 @@ union_subject = {
 
 all_nations = {
 	global_tax_income = 12
-	land_forcelimit	= 12
+	land_forcelimit	= 10
 	naval_forcelimit = 12
 }
 
 subject_nation = {
 	global_tax_income = -6
-	land_forcelimit	= -3
+	land_forcelimit	= -4
 	naval_forcelimit = -6
 }
 

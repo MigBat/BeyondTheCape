@@ -4027,24 +4027,25 @@ on_five_year_pulse_4 = {
 # El Dorado
 # FROM = country doing the exploring, ROOT = province discovered
 on_explore_coast = {
+	events = {
+		btc_por.167	# Padrão event happens
+	}
 	random_events = {
-		30 = exploration_events.1
-		30 = exploration_events.2
-		30 = exploration_events.3
-		30 = exploration_events.4
-		30 = exploration_events.5
-		30 = exploration_events.6
-		30 = exploration_events.7
-		30 = exploration_events.8
-		30 = exploration_events.9
-		30 = exploration_events.10
+		50 = exploration_events.1
+		50 = exploration_events.2
+		50 = exploration_events.3
+		50 = exploration_events.4
+		50 = exploration_events.5
+		50 = exploration_events.6
+		50 = exploration_events.7
+		50 = exploration_events.8
+		50 = exploration_events.9
+		50 = exploration_events.10
 		1 = exploration_events.11
-		30 = exploration_events.12
-		30 = exploration_events.13
-		30 = exploration_events.14
+		50 = exploration_events.12
+		50 = exploration_events.13
+		50 = exploration_events.14
 		1 = exploration_events.15
-		# Beyond the Cape
-		100000 = btc_por.167	# Padrão event is guaranteed to happen in empty provinces if you meet its conditions
 
 		100000 = seven_cities_events.2	# Fountain of youth start
 		100000 = btc_seven_cities.4

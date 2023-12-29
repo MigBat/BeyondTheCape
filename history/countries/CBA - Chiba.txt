@@ -41,6 +41,7 @@ historical_rival = IKE
 historical_rival = MRI
 historical_rival = KNO
 historical_rival = ASK
+historical_friend = HJO
 
 1426.7.12 = { 
 	monarch = {

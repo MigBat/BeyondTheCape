@@ -139,6 +139,17 @@
  btc_events.37_t:0 "Western Technology"
  btc_events.37_d:0 "Our continuous contact and good relations with the westerners has allowed us to learn much about them, and their technologies. As such, we have gained technology unknown to the other daimyos. We shall use this to gain the upper hand and unite Japan under our banner!"
  btc_events.37a:0 "Yamato-damashii."
+ btc_events.38_t:0 "Rumours of Separatism"
+ btc_events.38_d:0 "Administering a country with territory as large as ours, with a multitude of different cultures and creeds, is no easy task. We must make sure we keep everyone happy, or silence those who speak against us..."
+ btc_events.38a:0 "So it begins..."
+ indian_overextension_begin_tt:0 "The §YIndian Decentralized State§! modifier has caused unrest in our country. Either get rid of it, or have less than 1 unrest to avoid the consequences..."
+ btc_events.39_t:0 "Plot Uncovered"
+ btc_events.39_d:0 "Agitators are trying to rip our country apart! If we do nothing, soon the situation will get out of hand."
+ btc_events.39a:0 "We've come to it at last..."
+ indian_overextension_middle_tt:0 "If we do not get rid of the §YIndian Decentralized State§! modifier or have less than 1 unrest, countries may declare their independence from us soon..."
+ btc_events.40_t:0 "Country Fragmentation"
+ btc_events.40_d:0 "Our inability to unite the people we rule over has led to numerous declarations of independence. There is nothing we can do now."
+ btc_events.40a:0 "Curses!"
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"
