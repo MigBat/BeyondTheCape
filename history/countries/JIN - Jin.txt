@@ -25,3 +25,4 @@ historical_rival = QIN
 historical_rival = QIC
 historical_rival = MNG
 historical_rival = LNG
+historical_rival = FRM

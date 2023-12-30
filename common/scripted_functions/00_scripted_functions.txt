@@ -265,32 +265,38 @@ can_colonize_province = {
 			}
 		}
 	}
-	condition = {
-		tooltip = "limit_colonize_border_province"
-		potential = {
-			FROM = {
-				NOT = {
-					AND = {
-						ai = no
-						OR = {
-							capital_scope = {
-								superregion = europe_superregion
-							}
-							has_country_modifier = rus_new_world_colonization
-						}
-					}
-				}
-			}
-		}
-		allow = {
-			ROOT = {
-				OR = {
-					same_continent = capital
-					is_in_capital_area = yes
-				}
-			}
-		}
-	}
+	# condition = {
+	# 	tooltip = "limit_colonize_border_province"
+	# 	potential = {
+	# 		FROM = {
+	# 			NOT = {
+	# 				AND = {
+	# 					ai = no
+	# 					OR = {
+	# 						capital_scope = {
+	# 							OR = {
+	# 								region = iberia_region
+	# 								region = france_region
+	# 								region = british_isles_region
+	# 								region = low_countries_region
+	# 								region = scandinavia_region
+	# 							}
+	# 						}
+	# 						has_country_modifier = rus_new_world_colonization
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		ROOT = {
+	# 			OR = {
+	# 				same_continent = capital
+	# 				is_in_capital_area = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
 	# alcaçovas treaty
 	condition = {
 		tooltip = "alcacovas_treaty"

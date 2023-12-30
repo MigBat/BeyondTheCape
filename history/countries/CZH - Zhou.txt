@@ -26,6 +26,7 @@ historical_rival = QIC
 historical_rival = MNG
 historical_rival = LNG
 historical_rival = JIN
+historical_rival = FRM
 
 1662.1.1 = {
 	monarch = {
