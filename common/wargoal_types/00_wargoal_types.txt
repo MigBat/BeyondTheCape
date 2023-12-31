@@ -1973,8 +1973,8 @@ annex_country_japan = {
 	type = take_capital
 	
 	attacker = {
-		badboy_factor = 0.75
-		prestige_factor = 1
+		badboy_factor = 1.5
+		prestige_factor = 1.5
 		peace_cost_factor = 1.0	
 		
 		allowed_provinces = {

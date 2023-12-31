@@ -352,11 +352,12 @@ daimyo_vassal = {
 	can_use_claims = no
 	forms_trade_companies = no
 	can_concentrate_development = no
+	can_be_annexed = no
 
 	trust_on_start = 0
 	
-	base_liberty_desire = 10.0
-	military_focus = 1.2
+	base_liberty_desire = 25.0
+	military_focus = 1.5
 
 	relative_power_class = 1
 	should_quit_wars_on_activation = yes

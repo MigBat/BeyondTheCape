@@ -276,11 +276,11 @@ shogunate = {
 		max_absolutism = 5
 		amount_of_samurai = 10
 		has_samurai = yes
+		reduced_stab_impacts = yes
 	}
 
 	custom_attributes = {
 		locked_government_type = yes
-		need_crownland_to_annex = yes
 	}
 	
 }
@@ -308,6 +308,7 @@ daimyo = {
 		land_morale = 0.1
 		infantry_power = 0.1
 		amount_of_samurai = 4
+		reduced_stab_impacts = yes
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -456,6 +457,7 @@ indep_daimyo = {
 		land_morale = 0.1
 		infantry_power = 0.1
 		amount_of_samurai = 5
+		reduced_stab_impacts = yes
 	}
 	custom_attributes = {
 		locked_government_type = yes
