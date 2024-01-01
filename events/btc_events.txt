@@ -1430,10 +1430,10 @@ country_event = {
 
 		custom_tooltip = madrid_tt
 		hidden_effect = {
-			POR = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por }
-			IBE = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por }
-			CAS = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas }	
-			SPA = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas }			
+			POR = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+			IBE = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+			CAS = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }	
+			SPA = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }			
 		}
 	}
 }

@@ -353,6 +353,12 @@ daimyo_vassal = {
 	forms_trade_companies = no
 	can_concentrate_development = no
 	can_be_annexed = no
+	joins_overlords_wars = no
+	can_be_co_belligerented = yes    
+	must_accept_cta_from_overlord = yes    
+	opinion_cost_to_join_offensive_wars = 100  
+	opinion_cost_to_join_defensive_wars = 50  
+	opinion_cost_instead_of_favors_cost = yes 
 
 	trust_on_start = 0
 	
@@ -598,6 +604,7 @@ colony = {
 	transfer_trade_power = yes
 	can_concentrate_development = no
 	extend_trading_range = yes
+	overlord_protects_external = yes
 
 	liberty_desire_development_ratio = 0.1
 	opinion_on_subject_integration = 0

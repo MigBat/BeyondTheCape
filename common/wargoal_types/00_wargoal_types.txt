@@ -349,8 +349,8 @@ take_capital_disloyal = {
 		}
 
 		peace_options = {
-			po_demand_provinces
 			po_become_vassal
+			po_demand_provinces
 		}
 	}
 	
@@ -3127,6 +3127,43 @@ wg_war_of_roses = {
 	
 	war_name = "War of the Roses"
 }
+
+btc_conquer_india = {
+	type = take_capital
+
+	attacker = {
+		allowed_provinces = {
+			superregion = india_superregion
+		}
+
+		badboy_factor = 0.75
+		prestige_factor = 1
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_become_vassal
+			po_demand_provinces
+		}
+	}
+	
+	defender = {
+		allowed_provinces = {
+			superregion = india_superregion
+		}
+		
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = EUROPE_INDIA_WAR_NAME
+}
+
+############
 
 ARB_spread_islam_wargoal = {
 	type = superiority

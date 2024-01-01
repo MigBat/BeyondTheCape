@@ -430,6 +430,12 @@
  annex_novgorod:0 "Annex Novgorod"
  annex_novgorod_desc:0 "Novgorod will fall."
  NOVGOROD_WAR_NAME:0 "Novgorod Annexation War"
+ 
+ cb_europeans_india:0 "Conquest of India"
+ cb_europeans_india_desc:0 "The riches of India must be under our control."
+ btc_conquer_india:0 "Occupy Capital"
+ btc_conquer_india_desc:0 "Occupy the Capital province."
+ EUROPE_INDIA_WAR_NAME:0 "$ORDER$$FIRST$ Conquest of India"
 
  crown_colony_long_desc:0 "A Crown Colony has a high amount of direct control from the overlord. They contribute a good amount of money."
 

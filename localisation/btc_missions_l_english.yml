@@ -55,6 +55,11 @@
  btc_enable_belem_tower_tt:0 "Enables the construction of the §YBelém Tower§! in Lisboa."
  btc_enable_pena_palace_tt:0 "Enables the construction of the §YPena Palace§! in Lisboa."
 
+# English Missions #
+
+ gbr_seize_guinea_title:0 "Seize Guinea"
+ gbr_seize_guinea_desc:0 "Other countries have already started looking for the sea route to India and we cannot lag behind. The first step is reaching the sourthern cape of Africa. To do so we need an African base of operations from which to launch our exploration fleets. The Guinean coast will do just fine."
+
 # Netherlands Missions #
 
  discover_portugal_tt:0 "We will discover all provinces owned by §YPortugal§!."

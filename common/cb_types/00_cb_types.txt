@@ -2068,6 +2068,33 @@ cb_war_of_roses = {
 	war_goal = wg_war_of_roses
 }
 
+# Europeans in India
+cb_europeans_india = {
+	prerequisites = {
+		OR = {
+			capital_scope = {
+				continent = europe
+			}
+			overlord = {
+				capital_scope = {
+					continent = europe
+				}				
+			}
+		}
+		any_owned_province = {
+			superregion = india_superregion
+		}
+		FROM = {
+			any_owned_province = {
+				superregion = india_superregion
+			}
+			technology_group = indian
+		}
+	}
+	
+	war_goal = btc_conquer_india
+}
+
 #############
 
 cb_spread_islam = {

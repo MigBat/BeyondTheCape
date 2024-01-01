@@ -1011,6 +1011,15 @@ colonial_la_plata = {
 		}
 		name = "COLONIAL_LA_PLATA_Rio_de_Prata"
 	}
+	names = {
+		trigger = {
+			OR = {
+				tag = CAS
+				tag = SPA
+			}
+		}
+		name = "COLONIAL_LA_PLATA_Argentina"
+	}
 	# Generic
 	names = {
 		trigger = {
@@ -1037,9 +1046,6 @@ colonial_la_plata = {
 			}
 		}
 		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_Chile"
-	}
-	names = {
-		name = "COLONIAL_LA_PLATA_Argentina"
 	}
 	names = {
 		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_La_Plata"
