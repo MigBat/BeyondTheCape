@@ -354,11 +354,14 @@ daimyo_vassal = {
 	can_concentrate_development = no
 	can_be_annexed = no
 	joins_overlords_wars = no
-	can_be_co_belligerented = yes    
+	joins_colonial_wars = no
 	must_accept_cta_from_overlord = yes    
-	opinion_cost_to_join_offensive_wars = 100  
-	opinion_cost_to_join_defensive_wars = 50  
-	opinion_cost_instead_of_favors_cost = yes 
+	favors_cost_to_join_offensive_wars = 10
+	favors_cost_to_join_defensive_wars = 5
+	opinion_cost_to_join_offensive_wars = 150  
+	opinion_cost_to_join_defensive_wars = 100
+	overlord_can_attack = yes
+	can_gain_favors = yes
 
 	trust_on_start = 0
 	

@@ -1,3 +1,25 @@
+
+
+# Iberian Marriages
+royal_marriage = {
+	first = CAS
+	second = POR
+	start_date = 1444.1.1
+	end_date = 1445.1.1
+}
+royal_marriage = {
+	first = ARA
+	second = POR
+	start_date = 1444.1.1
+	end_date = 1445.1.1
+}
+royal_marriage = {
+	first = CAS
+	second = ARA
+	start_date = 1444.1.1
+	end_date = 1445.1.1
+}
+
 # Hungary - Transilvania
 march = {
 	first = HUN

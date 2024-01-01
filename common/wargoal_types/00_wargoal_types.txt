@@ -2386,8 +2386,8 @@ take_capital_take_mandate = {
 		peace_cost_factor = 0.5
 
 		peace_options = {
-			po_demand_provinces
 			po_take_mandate
+			po_demand_provinces
 		}
 
 		country_desc = CHINESE_EMPIRE_COUNTRY

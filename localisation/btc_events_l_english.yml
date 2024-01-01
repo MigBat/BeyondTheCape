@@ -703,3 +703,6 @@
  flavor_por.EVTDESC3271:0 "French Corsairs have been encroaching into the lands rightfully belonging to our colonial holdings in the lands of Brazil. From their hideouts they undermine our sovereignty in the area, prey on our subjects and cargo and disrupt the stability and safety of our colonies. The French crown naturally denies any direct involvment, thus it is in our hands to do something about these wretched pirates. Martim Afonso de Sousa is a tried and tested comander, he already has experience against the French, when he partook in the siege and capture of Fuenterrábia. "
  flavor_por.EVTOPTA3271:0 "This rabble must be hunt down and erradicated"
  flavor_por.EVTOPTB3271:0 "De Sousa should be pragmatic and resourceful"
+
+ estate_privileges_and_agendas_events.2.c:0 "I know what I'm doing, don't approach me about this ever again!"
+ no_bailout_tt:0 "§YYou will never again get this event§!"

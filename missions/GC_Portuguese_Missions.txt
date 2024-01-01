@@ -75,7 +75,6 @@ gc_por_1_a = {
 					}
 				}
 				ENG = {
-					add_historical_friend = POR
 					add_trust = {
 						who = POR
 						value = 30
@@ -86,7 +85,6 @@ gc_por_1_a = {
 					}
 				}
 				ROOT = {
-					add_historical_friend = ENG
 					add_trust = {
 						who = ENG
 						value = 30
@@ -106,7 +104,6 @@ gc_por_1_a = {
 					}
 				}
 				GBR = {
-					add_historical_friend = POR
 					add_trust = {
 						who = POR
 						value = 30
@@ -117,7 +114,6 @@ gc_por_1_a = {
 					}
 				}
 				ROOT = {
-					add_historical_friend = GBR
 					add_trust = {
 						who = GBR
 						value = 30

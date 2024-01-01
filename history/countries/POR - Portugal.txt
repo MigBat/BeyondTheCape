@@ -4,8 +4,12 @@ primary_culture = portugese
 religion = catholic
 technology_group = western
 capital = 227 # Lisboa
+create_marriage = ARA
+create_marriage = CAS
 add_army_professionalism = 0.05
 national_focus = DIP
+historical_friend = ENG
+historical_rival = MOR
 
 
 1385.1.1 = {

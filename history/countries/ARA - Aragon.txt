@@ -9,6 +9,8 @@ historical_friend = SAR
 historical_friend = SIC
 technology_group = western
 capital = 214	# Zaragoza
+create_marriage = POR
+create_marriage = CAS
 add_army_professionalism = 0.05
 
 1396.5.19 = {
