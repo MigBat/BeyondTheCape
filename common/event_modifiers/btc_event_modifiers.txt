@@ -891,3 +891,7 @@ guanches_exploration = {
 guanches_colonisation = {
 	colonists = 1
 }
+
+wattasid_weariness = {
+	can_not_declare_war = yes
+}

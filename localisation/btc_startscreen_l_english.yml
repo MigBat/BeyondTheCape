@@ -105,7 +105,7 @@
  btc_startscreen.65b:0 "Go back"
 
  btc_startscreen.651_t:0 "Potential Hegemons"
- btc_startscreen.651_d:0 "These are countries that have reduced requirements to become hegemon in a specific category. Right now these are the Potential Hegemons:\n\nEconomic Potential Hegemons:\nAge of Discovery: @VEN @BUR\nAge of Reformation: @PER @ERS\nAge of Absolutism: @PER @ERS @MUG @SWE @NED\nAge of Revolutions: @NED\n\nNaval Potential Hegemons:\nAge of Discovery: @POR\nAge of Reformation: @POR @CAS @SPA\nAge of Absolutism: @CAS @SPA @ENG @GBR @AVE\nAge of Revolutions: @ENG @GBR @AVE\n\nMilitary Potential Hegemons:\nAge of Discovery: @TUR @RUM @POL @PLC\nAge of Reformation: @TUR @RUM @POL @PLC @MUG\nAge of Absolutism: @SWE @FRA @MOS @RUS @BRA @PRU\nAge of Revolutions: @FRA @MOS @RUS @BRA @PRU @HAB"
+ btc_startscreen.651_d:0 "These are countries that have reduced requirements to become hegemon in a specific category. Right now these are the Potential Hegemons:\n\nEconomic Potential Hegemons:\nAge of Discovery: @VEN @BUR @MAM\nAge of Reformation: @PER\nAge of Absolutism: @PER @MUG @SWE @NED\nAge of Revolutions: @NED\n\nNaval Potential Hegemons:\nAge of Discovery: @POR @VEN @ARA\nAge of Reformation: @POR @SPA\nAge of Absolutism: @CAS @GBR\nAge of Revolutions: @GBR @DAN @NOR\n\nMilitary Potential Hegemons:\nAge of Discovery: @TUR @POL\nAge of Reformation: @TUR @PLC @MUG\nAge of Absolutism: @SWE @FRA @RUS @PRU\nAge of Revolutions: @FRA @RUS @PRU @HAB\n\nThe §YEmperor of China§! also gets reduced requirements for every hegemon type of every age."
  btc_startscreen.651a:0 "Go back"
 
  show_tutorial_decision_title:0 "Show Tutorial"

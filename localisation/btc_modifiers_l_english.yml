@@ -392,6 +392,8 @@
  desc_guanches_exploration:0 "What undiscovered horizons await us..."
  guanches_colonisation:0 "Guanches Colonisation"
  desc_guanches_colonisation:0 "These islands are ripe for the taking."
+ wattasid_weariness:0 "Wattasid Weariness"
+ desc_wattasid_weariness:0 "We must deal with internal turmoil before we can focus outwards."
 
 #venetian btc modifiers
  btc_ven_ten_emergency_government:0 "Emergency Government"
