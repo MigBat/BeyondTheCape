@@ -616,6 +616,8 @@ categories =  {
 			4815 # Mandala
 			226 
 			2728
+			# BEYOND THE CAPE
+			4966 4967 4968 4969 4970 4971
 		}
 	}	
 	

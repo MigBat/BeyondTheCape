@@ -1,0 +1,70 @@
+economic_hegemon = {
+	allow = {
+		OR = {
+			# Great Power
+			AND = {
+				is_great_power = yes
+				is_potential_hegemon = no
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = halve_hegemony_requirements
+							is_emperor_of_china = yes
+						}
+					}
+					monthly_income = 250 
+				}
+				else = { monthly_income = 500 } 
+				NOT = { any_other_great_power = { monthly_income = root } }
+			}
+			# Discovery Potential
+			AND = {
+				current_age = age_of_discovery
+				is_discovery_eco_hegemon = yes
+				monthly_income = 50
+				most_income_discovery_eco_hegemon = yes
+			}
+			# Refomation Potential
+			AND = {
+				current_age = age_of_reformation
+				is_reformation_eco_hegemon = yes
+				monthly_income = 100
+				# most_income_reformation_eco_hegemon = yes
+			}
+			# Absolutism Potential
+			AND = {
+				current_age = age_of_absolutism
+				is_absolutism_eco_hegemon = yes
+				monthly_income = 150
+				most_income_absolutism_eco_hegemon = yes
+			}
+			# Revolutions Potential
+			AND = {
+				current_age = age_of_revolutions
+				is_revolutions_eco_hegemon = yes
+				monthly_income = 200
+				# most_income_revolutions_eco_hegemon = yes
+			}
+		}
+		NOT = { has_country_modifier = lost_hegemony }
+	}
+	
+	base = {
+		war_exhaustion = -0.1
+		development_cost_modifier = -0.05
+		mercenary_manpower = 1.0
+	}
+	
+	# At max 100% tickup.
+	scale = {
+		mercenary_discipline = 0.10
+		global_trade_goods_size_modifier = 0.25
+		min_autonomy_in_territories = -0.20
+	}
+	
+	max = {
+		governing_capacity_modifier = 0.20
+	}
+	#effect = {} # When a country picks the hegemon
+	#removed_effect = {} # When a country loses the hegemon
+}

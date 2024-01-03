@@ -349,8 +349,8 @@ take_capital_disloyal = {
 		}
 
 		peace_options = {
-			po_demand_provinces
 			po_become_vassal
+			po_demand_provinces
 		}
 	}
 	
@@ -1973,8 +1973,8 @@ annex_country_japan = {
 	type = take_capital
 	
 	attacker = {
-		badboy_factor = 0.75
-		prestige_factor = 1
+		badboy_factor = 1.5
+		prestige_factor = 1.5
 		peace_cost_factor = 1.0	
 		
 		allowed_provinces = {
@@ -2386,8 +2386,8 @@ take_capital_take_mandate = {
 		peace_cost_factor = 0.5
 
 		peace_options = {
-			po_demand_provinces
 			po_take_mandate
+			po_demand_provinces
 		}
 
 		country_desc = CHINESE_EMPIRE_COUNTRY
@@ -3091,6 +3091,79 @@ annex_novgorod = {
 
 	war_name = NOVGOROD_WAR_NAME
 }
+
+wg_war_of_roses = {
+	type = superiority
+	
+	attacker = 	{
+		allowed_provinces = {
+			always = no
+		}
+		allowed_provinces_are_eligible = yes
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_concede_defeat
+		}
+		prov_desc = NO_PROVS
+	}
+	
+	defender = 	{
+		allowed_provinces = {
+			always = no
+		}
+		allowed_provinces_are_eligible = yes
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+		
+		peace_options = {
+			po_concede_defeat
+		}
+		prov_desc = NO_PROVS
+	}
+	
+	war_name = "War of the Roses"
+}
+
+btc_conquer_india = {
+	type = take_capital
+
+	attacker = {
+		allowed_provinces = {
+			superregion = india_superregion
+		}
+
+		badboy_factor = 0.75
+		prestige_factor = 1
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_become_vassal
+			po_demand_provinces
+		}
+	}
+	
+	defender = {
+		allowed_provinces = {
+			superregion = india_superregion
+		}
+		
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = EUROPE_INDIA_WAR_NAME
+}
+
+############
 
 ARB_spread_islam_wargoal = {
 	type = superiority

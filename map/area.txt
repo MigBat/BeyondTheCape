@@ -3747,11 +3747,11 @@ dominica_area = { #5
 }
 
 greater_antilles_area = { #4
-    487 481 491 492
+    487 492 4966 4967
 }
 
 lucayan_area = { #2
-	482 483
+	482 483 481 4971
 }
 
 leeward_islands_area = { #5
@@ -3760,6 +3760,10 @@ leeward_islands_area = { #5
 
 windward_islands_area = { #5
     497 498 499 500 501
+}
+
+leeward_antilles_area = {
+	491 502 4970 4968 4969
 }
 
 transvaal_area = { #4

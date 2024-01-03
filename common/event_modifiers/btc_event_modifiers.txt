@@ -405,10 +405,12 @@ por_brazil_tariffs = {
 }
 
 por_armada = {
-	number_of_cannons_modifier = 1
-	hull_size_modifier = 1
+	number_of_cannons_modifier = 0.75
+	hull_size_modifier = 0.75
 	sailor_maintenance_modifer = 1
+	engagement_cost = 1
 	naval_maintenance_modifier = 0.5
+	light_ship_cost = 0.25
 	is_caravel_modifier = yes
 }
 
@@ -465,17 +467,17 @@ around_africa = {
 }
 
 feitoria = {
-	province_trade_power_value = 5
+	province_trade_power_modifier = 0.5
 	local_ship_repair = 0.15
+	local_defensiveness = 0.15
 	local_governing_cost = 0.25
-	local_fort_maintenance_modifier = -0.3
-	local_defensiveness = -0.15
-	fort_level = -1
+	fort_level = 1
+	picture = "prov_modifier_feitoria"
 }
 
-small_feitoria = {
-	province_trade_power_value = 2
-	local_governing_cost = 0.25
+foreign_feitoria = {
+	tax_income = 2
+	picture = "prov_modifier_feitoria"
 }
 
 opm_diplomacy = {
@@ -552,7 +554,7 @@ estate_slavers_gold_mining = {
 
 slave_garrison = {
 	garrison_growth = 0.25
-	fort_level = 1
+	local_garrison_size = 0.1
 }
 
 slavers_conflict_within_city = {

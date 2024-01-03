@@ -77,10 +77,12 @@ decentralized_indian_state = {
 	}
 
 	trigger = {
-		num_of_provinces_in_states = 40
+		num_of_owned_provinces_with = {
+			value = 40
+		}
 	}
 	
-	global_unrest = 5
+	global_unrest = 8
 }
 
 ###########################################
@@ -106,7 +108,7 @@ fighting_off_european_invaders = {
 					}
 				}
 			}
-			war_with = ROOT
+			offensive_war_with = ROOT
 		}
 	}
 

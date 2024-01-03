@@ -377,46 +377,8 @@ fort_15th = {
 	modifier = {
 		fort_level = 2
 	}
-
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
-		if = {
-			limit = {
-				AND = {
-					owner = {
-						has_government_attribute = can_establish_feitorias
-					}
-					has_port = yes
-					OR = {
-						AND = {
-							continent = africa
-							NOT = { region = maghreb_region }
-							NOT = { region = egypt_region }
-						}
-						AND = {
-							continent = asia
-							NOT = { region = mashriq_region }
-							NOT = { region = east_siberia_region }
-						}
-					}
-				}
-			}
-			add_province_modifier = {
-				name = feitoria
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				has_province_modifier = feitoria
-				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
-				NOT = { has_province_modifier = slave_garrison }
-			}
-			add_province_modifier = {
-				name = slave_garrison
-				duration = -1
-			}
-		}
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 14 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -467,8 +429,6 @@ fort_15th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
-		remove_province_modifier = feitoria
-		remove_province_modifier = slave_garrison
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
@@ -815,43 +775,6 @@ fort_16th = {
 	on_built = {
 		if = {
 			limit = {
-				AND = {
-					owner = {
-						has_government_attribute = can_establish_feitorias
-					}
-					has_port = yes
-					OR = {
-						AND = {
-							continent = africa
-							NOT = { region = maghreb_region }
-							NOT = { region = egypt_region }
-						}
-						AND = {
-							continent = asia
-							NOT = { region = mashriq_region }
-							NOT = { region = east_siberia_region }
-						}
-					}
-				}
-			}
-			add_province_modifier = {
-				name = feitoria
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				has_province_modifier = feitoria
-				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
-				NOT = { has_province_modifier = slave_garrison }
-			}
-			add_province_modifier = {
-				name = slave_garrison
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
 			}
 			FROM = {
@@ -900,8 +823,6 @@ fort_16th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
-		remove_province_modifier = feitoria
-		remove_province_modifier = slave_garrison
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
@@ -1368,43 +1289,6 @@ fort_17th = {
 	on_built = {
 		if = {
 			limit = {
-				AND = {
-					owner = {
-						has_government_attribute = can_establish_feitorias
-					}
-					has_port = yes
-					OR = {
-						AND = {
-							continent = africa
-							NOT = { region = maghreb_region }
-							NOT = { region = egypt_region }
-						}
-						AND = {
-							continent = asia
-							NOT = { region = mashriq_region }
-							NOT = { region = east_siberia_region }
-						}
-					}
-				}
-			}
-			add_province_modifier = {
-				name = feitoria
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				has_province_modifier = feitoria
-				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
-				NOT = { has_province_modifier = slave_garrison }
-			}
-			add_province_modifier = {
-				name = slave_garrison
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
 			}
 			FROM = {
@@ -1453,8 +1337,6 @@ fort_17th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
-		remove_province_modifier = feitoria
-		remove_province_modifier = slave_garrison
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
@@ -1868,43 +1750,6 @@ fort_18th = {
 	on_built = {
 		if = {
 			limit = {
-				AND = {
-					owner = {
-						has_government_attribute = can_establish_feitorias
-					}
-					has_port = yes
-					OR = {
-						AND = {
-							continent = africa
-							NOT = { region = maghreb_region }
-							NOT = { region = egypt_region }
-						}
-						AND = {
-							continent = asia
-							NOT = { region = mashriq_region }
-							NOT = { region = east_siberia_region }
-						}
-					}
-				}
-			}
-			add_province_modifier = {
-				name = feitoria
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				has_province_modifier = feitoria
-				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
-				NOT = { has_province_modifier = slave_garrison }
-			}
-			add_province_modifier = {
-				name = slave_garrison
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
 				FROM = { has_government_attribute = on_fort_built_nobles_loyalty }
 			}
 			FROM = {
@@ -1953,8 +1798,6 @@ fort_18th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
-		remove_province_modifier = feitoria
-		remove_province_modifier = slave_garrison
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod

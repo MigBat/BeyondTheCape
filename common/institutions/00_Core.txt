@@ -1116,6 +1116,8 @@ new_world_i = {
 	can_embrace = {
 		owner = {
 			OR = {
+				has_institution = new_world_i
+				has_country_flag = got_colonialism
 				has_idea_group = exploration_ideas
 				has_idea_group = expansion_ideas
 				num_of_colonists = 1
@@ -2765,8 +2767,11 @@ industrialization = {
 	
 	can_embrace = {
 		owner = {
-			any_owned_province = {
-				trade_goods = coal
+			OR = {
+				has_institution = industrialization
+				any_owned_province = {
+					trade_goods = coal
+				}
 			}
 		}
 	}

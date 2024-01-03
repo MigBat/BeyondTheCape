@@ -152,6 +152,14 @@ country_event = {
 		}
 	}
 
+	option = {	# British Isles Region
+		name = btc_startscreen.3d
+
+		country_event = {
+			id = btc_startscreen.33
+		}
+	}
+
 	option = {	# go back
 		name = btc_startscreen.3c
 
@@ -190,6 +198,24 @@ country_event = {
 
 	option = {	# go back
 		name = btc_startscreen.32a
+
+		country_event = {
+			id = btc_startscreen.3
+		}
+	}
+}
+
+# British Isles Region #
+country_event = {
+	id = btc_startscreen.33
+	title = btc_startscreen.33_t
+	desc = btc_startscreen.33_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.33a
 
 		country_event = {
 			id = btc_startscreen.3
@@ -506,7 +532,33 @@ country_event = {
 		name = btc_startscreen.65a
 
 		country_event = {
+			id = btc_startscreen.651
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.65b
+
+		country_event = {
 			id = btc_startscreen.6
+		}
+	}
+}
+
+# Potential Hegemons #
+country_event = {
+	id = btc_startscreen.651
+	title = btc_startscreen.651_t
+	desc = btc_startscreen.651_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.651a
+
+		country_event = {
+			id = btc_startscreen.65
 		}
 	}
 }

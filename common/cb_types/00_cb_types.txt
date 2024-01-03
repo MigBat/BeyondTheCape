@@ -627,7 +627,7 @@ cb_shogun_annex = {
 				has_country_flag = ikko_ikki_peasants_flag
 			}
 			OR = {
-				num_of_cities = 10
+				num_of_cities = 5
 				is_subject = no
 			}
 		}
@@ -2045,6 +2045,7 @@ cb_naval_superiority = {
 	war_goal = naval_war
 }
 
+# Novgorod Conquest
 cb_novgorod_war = {
 	valid_for_subject = no
 
@@ -2052,6 +2053,46 @@ cb_novgorod_war = {
 	months = 60
 
 	war_goal = annex_novgorod
+}
+
+# War of the Roses
+cb_war_of_roses = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	
+	attacker_disabled_po = {
+		po_demand_provinces
+	}
+
+	war_goal = wg_war_of_roses
+}
+
+# Europeans in India
+cb_europeans_india = {
+	prerequisites = {
+		OR = {
+			capital_scope = {
+				continent = europe
+			}
+			overlord = {
+				capital_scope = {
+					continent = europe
+				}				
+			}
+		}
+		any_owned_province = {
+			superregion = india_superregion
+		}
+		FROM = {
+			any_owned_province = {
+				superregion = india_superregion
+			}
+			technology_group = indian
+		}
+	}
+	
+	war_goal = btc_conquer_india
 }
 
 #############

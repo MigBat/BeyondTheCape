@@ -1,0 +1,69 @@
+naval_hegemon = {
+	allow = {
+		OR = {
+			# Great Power
+			AND = {
+				is_great_power = yes
+				is_potential_hegemon = no
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = halve_hegemony_requirements
+							is_emperor_of_china = yes
+						}
+					}
+					navy_size = 125 
+				}
+				else = { navy_size = 250 } 
+				NOT = { any_other_great_power = { num_of_heavy_ship = root } }
+			}
+			# Discovery Potential
+			AND = {
+				current_age = age_of_discovery
+				is_discovery_nav_hegemon = yes
+				navy_size = 25
+				# most_navy_discovery_nav_hegemon = yes
+			}
+			# Refomation Potential
+			AND = {
+				current_age = age_of_reformation
+				is_reformation_nav_hegemon = yes
+				navy_size = 50
+				most_navy_reformation_nav_hegemon = yes
+			}
+			# Absolutism Potential
+			AND = {
+				current_age = age_of_absolutism
+				is_absolutism_nav_hegemon = yes
+				navy_size = 75
+				most_navy_absolutism_nav_hegemon = yes
+			}
+			# Revolutions Potential
+			AND = {
+				current_age = age_of_revolutions
+				is_revolutions_nav_hegemon = yes
+				navy_size = 100
+				# most_navy_revolutions_nav_hegemon = yes
+			}
+		}
+		NOT = { has_country_modifier = lost_hegemony }
+	}
+
+	base = {
+		global_ship_trade_power = 0.2
+		war_exhaustion = -0.1
+		global_naval_engagement_modifier = 0.10
+	}
+	
+	# At max 100% tickup.
+	scale = {
+		reduced_liberty_desire_on_other_continent = 20
+		global_sailors_modifier = 2.0
+		blockade_efficiency = 2.0
+	}
+	
+	max = {
+		backrow_artillery_damage = 0.20
+	}
+	
+}

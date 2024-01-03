@@ -1250,6 +1250,7 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
+		is_subject = no
 		is_at_war = no
 		OR = {
 			is_year = 1565
@@ -2570,102 +2571,11 @@ province_event = {
 	trigger = {
 		has_province_flag = can_build_feitoria
 		NOT = { has_province_modifier = feitoria }
-		NOT = { has_province_modifier = small_feitoria }
+		owner = { ai = yes }
 	}
 
 	mean_time_to_happen = {
 		days = 1
-	}
-
-	option = {	# Build a fort
-		name = btc_por.134a
-
-		ai_chance = {
-			factor = 0
-		}
-
-		clr_province_flag = can_build_feitoria
-
-		if = {
-			limit = {
-				owner = {
-					NOT = { mil_tech = 14 }
-				}
-			}
-			add_building_construction = {
-				building = fort_15th
-				cost = 0.5
-				speed = 0.5
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					AND = {
-						mil_tech = 14
-						NOT = { mil_tech = 19 }
-					}
-				}
-			}
-			add_building_construction = {
-				building = fort_16th
-				cost = 0.5
-				speed = 0.5
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					AND = {
-						mil_tech = 19
-						NOT = { mil_tech = 24 }
-					}
-				}
-			}
-			add_building_construction = {
-				building = fort_17th
-				cost = 0.5
-				speed = 0.5
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					mil_tech = 24
-				}
-			}
-			add_building_construction = {
-				building = fort_18th
-				cost = 0.5
-				speed = 0.5
-			}
-		}
-		if = {
-			limit = {
-				OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
-			}
-			add_province_modifier = {
-				name = feitoria
-				duration = -1
-			}
-		}
-		custom_tooltip = feitoria_tt
-		# for slavers estate privilege
-		if = {
-			limit = {
-				has_fort_building_trigger = yes
-				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
-			}
-			add_province_modifier = {
-				name = slave_garrison
-				duration = -1
-			}
-		}
 	}
 
 	option = {	# Build a trade post
@@ -2673,13 +2583,44 @@ province_event = {
 
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { treasury = 50 }					
+				}
+			}
+			modifier = {
+				factor = 10
+				has_river_estuary_trigger = yes
+			}
+			modifier = {
+				factor = 10
+				province_has_center_of_trade_of_level = 1
+			}
+			modifier = {
+				factor = 10
+				province_has_center_of_trade_of_level = 2
+			}
+			modifier = {
+				factor = 10
+				province_has_center_of_trade_of_level = 3
+			}
 		}
 		
-		owner = { add_treasury = -25 }
+		owner = { add_treasury = -50 }
 
 		add_province_modifier = {
-			name = small_feitoria
+			name = feitoria
 			duration = -1
+		}
+		if = {
+			limit = {
+				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
+			}
+			add_province_modifier = {
+				name = slave_garrison
+				duration = -1
+			}
 		}
 		clr_province_flag = can_build_feitoria
 	}
@@ -2688,7 +2629,7 @@ province_event = {
 		name = btc_por.134c
 
 		ai_chance = {
-			factor = 0
+			factor = 1
 		}
 
 		clr_province_flag = can_build_feitoria
@@ -2746,7 +2687,6 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		is_year = 1488
 		4150 = {
 			owned_by = ROOT
 			controlled_by = ROOT
@@ -4342,10 +4282,12 @@ province_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
+	hidden = yes
 	
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
+		is_island = no
 		OR = {
 			continent = africa
 			continent = asia
@@ -4377,18 +4319,18 @@ province_event = {
 
 	option = {	# Raise a Padrão
 		name = btc_por.167a
-
-		FROM = { add_treasury = -15 }
-		add_permanent_province_modifier = {
-			name = padrao_raised
-			duration = -1
+		
+		random_list = {
+			40 = {
+				add_permanent_province_modifier = {
+					name = padrao_raised
+					duration = -1
+				}
+				add_permanent_claim = FROM
+				custom_tooltip = padrao_raised_tt
+			}
+			60 = {}
 		}
-		add_permanent_claim = FROM
-		custom_tooltip = padrao_raised_tt
-	}
-
-	option = {	# Keep exploring
-		name = btc_por.167b
 	}
 }
 
@@ -5052,7 +4994,10 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		is_year = 1517
+		had_country_flag = {
+			flag = elvas
+			days = 10000
+		}
 		228 = {
 			owned_by = ROOT
 			controlled_by = ROOT
@@ -5342,3 +5287,66 @@ country_event = {
 		remove_rival = ARA
 	}
 }
+
+province_event = {
+	id = btc_por.177
+	title = btc_por.177_t
+	desc = btc_por.177_d
+
+	hidden = yes
+	
+	trigger = {
+		has_province_modifier = foreign_feitoria
+		if = {
+			limit = { 
+				exists = POR
+			}
+			owner = {
+				NOT = {
+					has_opinion = {
+						who = POR
+						value = 0
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				exists = IBE
+			}
+			owner = {
+				NOT = {
+					has_opinion = {
+						who = IBE
+						value = 0
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = btc_por.177a
+
+		remove_province_modifier = foreign_feitoria
+		if = {
+			limit = { exists = POR }
+			ROOT = {
+				remove_trade_modifier = {
+					who = POR
+					key = portuguese_feitoria
+				}
+			}
+		}
+		if = {
+			limit = { exists = IBE }
+			ROOT = {
+				remove_trade_modifier = {
+					who = IBE
+					key = portuguese_feitoria
+				}
+			}
+		}
+	}
+}
+

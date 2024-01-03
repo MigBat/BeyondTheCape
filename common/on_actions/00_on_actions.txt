@@ -429,6 +429,59 @@ on_war_won = {
 			id = btc_events.11
 		}
 	}
+	# BTC War of the Roses
+	if = {
+		limit = {
+			ROOT = {
+				tag = ENG
+				has_country_flag = at_war
+			}
+			FROM = { 
+				tag = NOL
+			}
+		}
+		ENG = { clr_country_flag = at_war set_country_flag = won_war_of_roses create_union = NOL }
+		NOL = { clr_country_flag = at_war }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = ENG
+				has_country_flag = at_war
+			}
+			FROM = { 
+				tag = WLS
+			}
+		}
+		ENG = { clr_country_flag = at_war set_country_flag = won_war_of_roses create_union = WLS }
+		WLS = { clr_country_flag = at_war }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = NOL
+				has_country_flag = at_war
+			}
+			FROM = { 
+				tag = ENG
+			}
+		}
+		ENG = { clr_country_flag = at_war }
+		NOL = { clr_country_flag = at_war set_country_flag = won_war_of_roses create_union = ENG }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = WLS
+				has_country_flag = at_war
+			}
+			FROM = { 
+				tag = ENG
+			}
+		}
+		ENG = { clr_country_flag = at_war }
+		WLS = { clr_country_flag = at_war set_country_flag = won_war_of_roses create_union = ENG }
+	}
 }
 
 # country
@@ -1369,6 +1422,46 @@ on_diplomatic_annex = {
 				}
 			}
 			remove_estate_privilege = estate_nobles_french_strong_duchies
+		}
+	}
+	if = {
+		limit = {
+			has_government_attribute = need_crownland_to_annex
+		}
+		random_list = {
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_church } }
+						has_estate = estate_church
+					}
+				}
+				give_estate_land_share_massive = {
+					estate = estate_church
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_nobles } }
+						has_estate = estate_nobles
+					}
+				}
+				give_estate_land_share_massive = {
+					estate = estate_nobles
+				}
+			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_burghers } }
+						has_estate = estate_burghers
+					}
+				}
+				give_estate_land_share_massive = {
+					estate = estate_burghers
+				}
+			}
 		}
 	}
 }
@@ -3974,24 +4067,25 @@ on_five_year_pulse_4 = {
 # El Dorado
 # FROM = country doing the exploring, ROOT = province discovered
 on_explore_coast = {
+	events = {
+		btc_por.167	# Padrão event happens
+	}
 	random_events = {
-		20 = exploration_events.1
-		20 = exploration_events.2
-		20 = exploration_events.3
-		20 = exploration_events.4
-		20 = exploration_events.5
-		20 = exploration_events.6
-		20 = exploration_events.7
-		20 = exploration_events.8
-		20 = exploration_events.9
-		20 = exploration_events.10
+		50 = exploration_events.1
+		50 = exploration_events.2
+		50 = exploration_events.3
+		50 = exploration_events.4
+		50 = exploration_events.5
+		50 = exploration_events.6
+		50 = exploration_events.7
+		50 = exploration_events.8
+		50 = exploration_events.9
+		50 = exploration_events.10
 		1 = exploration_events.11
-		20 = exploration_events.12
-		20 = exploration_events.13
-		20 = exploration_events.14
+		50 = exploration_events.12
+		50 = exploration_events.13
+		50 = exploration_events.14
 		1 = exploration_events.15
-		# Beyond the Cape
-		100000 = btc_por.167	# Padrão event is guaranteed to happen in empty provinces if you meet its conditions
 
 		100000 = seven_cities_events.2	# Fountain of youth start
 		100000 = btc_seven_cities.4

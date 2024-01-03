@@ -6,8 +6,9 @@ add_accepted_culture = leonese
 religion = catholic
 technology_group = western
 capital = 219 # Toledo
+create_marriage = POR
+create_marriage = ARA
 national_focus = MIL
-historical_rival = GRA
 
 add_army_professionalism = 0.1
 

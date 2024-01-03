@@ -2651,7 +2651,7 @@ gbr_row_4 = {
 
 	gbr_discover_india = {
 		icon = mission_coromandel_expansion
-		required_missions = { gbr_seize_the_cape }
+		required_missions = { gbr_sail_around_africa }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -3620,9 +3620,40 @@ gbr_row_5 = {
 		}
 	}
 
+	gbr_seize_guinea = {
+		icon = mission_colonial
+		required_missions = { gbr_establish_royal_navy }
+		position = 6
+		provinces_to_highlight = {
+			region = guinea_region
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
+			any_province = {
+				region = guinea_region
+				owned_by = ROOT
+				is_city = yes
+			}
+		}
+		effect = {
+			guinea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
 	gbr_sail_around_africa = {
 		icon = mission_west_african_ports
-		required_missions = { gbr_establish_royal_navy }
+		required_missions = { gbr_seize_guinea }
 		position = 5
 		provinces_to_highlight = {
 			NOT = { has_discovered = ROOT }
@@ -3661,107 +3692,9 @@ gbr_row_5 = {
 		}
 	}
 
-	gbr_seize_the_cape = {
-		icon = mission_colonial
-		required_missions = { gbr_sail_around_africa }
-		position = 6
-		provinces_to_highlight = {
-			OR = {
-				province_id = 833
-				province_id = 1177
-				province_id = 1179
-			}
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = GBR }
-			custom_trigger_tooltip = {
-				tooltip = ned_south_africa_colony.tooltip
-				OR = {
-					833 = {
-						owned_by = ROOT
-						is_city = yes
-					}
-					1177 = {
-						owned_by = ROOT
-						is_city = yes
-					}
-					1179 = {
-						owned_by = ROOT
-						is_city = yes
-					}
-				}
-			}
-		}
-		effect = {
-			random_list = {
-				1 = {
-					trigger = {
-						owns = 833
-						NOT = { owns = 1177 }
-					}
-					833 = {
-						add_building = stock_exchange
-					}
-				}
-				1 = {
-					trigger = {
-						owns = 1179
-						NOT = { owns = 1177 }
-					}
-					1179 = {
-						add_building = stock_exchange
-					}
-				}
-				1 = {
-					trigger = {
-						owns = 1177
-					}
-					1177 = {
-						add_building = stock_exchange
-					}
-				}
-				1 = {
-					trigger = {
-						NOT = { owns = 833 }
-						NOT = { owns = 1177 }
-						NOT = { owns = 1179 }
-					}
-					tooltip = {
-						random_list = {
-							1 = { 833  = { add_building = stock_exchange } }
-							1 = { 1177 = { add_building = stock_exchange } }
-							1 = { 1179 = { add_building = stock_exchange } }
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					1177 = {
-						NOT = {
-							OR = {
-								province_has_center_of_trade_of_level = 1
-								province_has_center_of_trade_of_level = 2
-								province_has_center_of_trade_of_level = 3
-							}
-						}
-					}
-				}
-				1177 = {
-					center_of_trade = 1
-				}
-			}
-		}
-		ai_weight = {
-			factor = 250
-		}
-	}
-
 	gbr_chart_the_southern_sea = {
 		icon = mission_exploration
-		required_missions = { gbr_seize_the_cape }
+		required_missions = { gbr_sail_around_africa }
 		position = 7
 		provinces_to_highlight = {
 			OR = {

@@ -56,6 +56,12 @@
  PROV3194:0 "Pindos"
  PROV3195:0 "Korab"
  PROV4965:0 "East Guinea"
+ PROV4966:0 "Juventud"
+ PROV4967:0 "Cayman Islands"
+ PROV4968:0 "Grenada"
+ PROV4969:0 "Tobago"
+ PROV4970:0 "Margarita"
+ PROV4971:0 "Eleuthera"
 
 # Province Adjectives #
  PROV_ADJ4556:0 "Minhoto"
@@ -86,6 +92,16 @@
  PROV_ADJ4963:0 "Pepperan"
  PROV_ADJ4964:0 "Slavean"
  PROV_ADJ4965:0 "East Guinean"
+ PROV_ADJ4966:0 "Juventudean"
+ PROV_ADJ4967:0 "Cayman"
+ PROV_ADJ4968:0 "Grenadan"
+ PROV_ADJ4969:0 "Tobagoan"
+ PROV_ADJ4970:0 "Margaritan"
+ PROV_ADJ4971:0 "Eleutheran"
+
+ leeward_antilles_area:0 "Leeward Antilles"
+ leeward_antilles_area_name:0 "Aruba"
+ leeward_antilles_area_adj:0 "Aruban"
 
 # Native Policy #
 
@@ -360,7 +376,8 @@
  subject_colonial_region_restriction:0 "You cannot colonize in a colonial region where your overlord has a colonial nation."
  limit_colonize_cape:0 "You need diplomatic tech 9 to colonize this province."
  limit_colonize_interior:0 "You need expansion ideas or the siberian frontier idea to colonize this province."
- limit_colonize_border_province:0 "You cannot colonize provinces in other continents that don't have a direct connection to your capital."
+ limit_colonize_border_province:0 "You cannot colonize provinces that don't have a direct connection to your capital."
+ limit_colonize_alaska:0 "You can only colonize Alaska or provinces with a direct connection to your capital."
  alcacovas_treaty:0 "The Treaty of Alcáçovas prevents you from colonising here."
  tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
  new_tordesillas_portugal:0 "The Treaty of Tordesillas prevents you from colonising here."
@@ -413,6 +430,12 @@
  annex_novgorod:0 "Annex Novgorod"
  annex_novgorod_desc:0 "Novgorod will fall."
  NOVGOROD_WAR_NAME:0 "Novgorod Annexation War"
+ 
+ cb_europeans_india:0 "Conquest of India"
+ cb_europeans_india_desc:0 "The riches of India must be under our control."
+ btc_conquer_india:0 "Occupy Capital"
+ btc_conquer_india_desc:0 "Occupy the Capital province."
+ EUROPE_INDIA_WAR_NAME:0 "$ORDER$$FIRST$ Conquest of India"
 
  crown_colony_long_desc:0 "A Crown Colony has a high amount of direct control from the overlord. They contribute a good amount of money."
 
@@ -501,17 +524,21 @@
 
 #Venetian Maggior Consiglio's issues and tooltips
  btc_ven_eliminate_the_council_of_ten_issue:0 "Eliminate The Council of the Ten"
- btc_ven_curtail_the_council_of_ten_issue:0 "Limit the Council of the Ten to his official functions"
- btc_ven_doge_deposed_by_ten_tt:0 "This decision could led further illegitimate actions to be made by the Council of the Ten"
- btc_ven_maggior_consiglio_trying_to_eliminate_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to eliminate the Ten's council and remove the §Y"Venetian chancery under the council of the Ten's control"§! modifier, but upon enacting this issue you will also lose the possibility to call an emergency Council of the Ten government."
- btc_ven_maggior_consiglio_trying_to_curtail_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to limit the Council of the Ten to its official functions and remove the §Y"Venetian chancery under the council of the Ten's control"§! modifier"
+ btc_ven_curtail_the_council_of_ten_issue:0 "Limit the Council of the Ten to its official functions"
+ btc_ven_doge_deposed_by_ten_tt:0 "This decision could lead further illegitimate actions to be made by the Council of the Ten"
+ btc_ven_maggior_consiglio_trying_to_eliminate_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to eliminate the Council of the Ten and remove the §Y"Venetian chancery under the Council of the Ten's control"§! modifier, but upon enacting this issue you will also lose the possibility to call an Council of the Ten emergency government."
+ btc_ven_maggior_consiglio_trying_to_curtail_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to limit the Council of the Ten to its official functions and remove the §Y"Venetian chancery under the Council of the Ten's control"§! modifier"
 
 #Venice ten council decision 
- btc_ven_ten_council_government_title:0 "Council of the Ten government"
- btc_ven_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, indeed due to its small size is much more efficient than the Maggior Consiglio."
- btc_ven_improved_ten_council_government_title:0 "Improved Council of the Ten government"
- btc_ven_improved_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, indeed due to its small size is much more efficient than the Maggior Consiglio."
-
+ btc_ven_ten_council_government_title:0 "Council of the Ten Government"
+ btc_ven_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, as due to its small size it is much more efficient than the Maggior Consiglio."
+ btc_ven_improved_ten_council_government_title:0 "Improved Council of the Ten Government"
+ btc_ven_improved_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, as due to its small size it is much more efficient than the Maggior Consiglio."
+#####
  btc_gch_discover_island_title:0 "Send an Expedition"
  btc_gch_discover_island_desc:0 "We will send men to charter our surroundings in the hopes of finding new lands to settle on."
  currently_exploring_tt:0 "No expedition is currently underway."
+
+ feitoria_key:0 "Feitoria"
+ foreign_feitoria_key:0 "Feitoria"
+ portuguese_feitoria:0 "Feitoria"

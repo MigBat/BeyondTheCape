@@ -8,6 +8,7 @@ add_accepted_culture = normand
 religion = catholic
 capital = 236 # London
 national_focus = DIP
+historical_friend = POR
 historical_rival = FRA
 
 change_estate_land_share = {
