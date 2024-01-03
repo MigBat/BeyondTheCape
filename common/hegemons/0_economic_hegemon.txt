@@ -22,7 +22,7 @@ economic_hegemon = {
 				current_age = age_of_discovery
 				is_discovery_eco_hegemon = yes
 				monthly_income = 50
-				# most_income_discovery_eco_hegemon = yes
+				most_income_discovery_eco_hegemon = yes
 			}
 			# Refomation Potential
 			AND = {

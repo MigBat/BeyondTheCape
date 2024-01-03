@@ -57,7 +57,7 @@ naval_hegemon = {
 	
 	# At max 100% tickup.
 	scale = {
-		reduced_liberty_desire = 20
+		reduced_liberty_desire_on_other_continent = 20
 		global_sailors_modifier = 2.0
 		blockade_efficiency = 2.0
 	}

@@ -829,7 +829,7 @@ regency_council = {
 }
 
 trade_efficiency = {
-	allowed_voc_indiamen_fraction = 0.25	#At 100% Trade Efficiency you get 25% available VOC Indiamen
+	# allowed_voc_indiamen_fraction = 0.25	#At 100% Trade Efficiency you get 25% available VOC Indiamen
 }
 
 production_efficiency = {
@@ -2131,11 +2131,10 @@ caravel_ship = {
 }
 
 voc_indiamen_ship = {
-	number_of_cannons_modifier = 0.33
+	# number_of_cannons_modifier = 0.33
 	ship_trade_power_modifier = 0.2
 	can_transport_units = yes
 }
-
 
 cossacks_regiment = {
     shock_damage = 0.15

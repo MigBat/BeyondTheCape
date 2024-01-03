@@ -956,8 +956,13 @@ is_potential_hegemon = {
 is_discovery_eco_hegemon = {
 	custom_trigger_tooltip = {
 		tooltip = is_discovery_eco_hegemon_tt
-		is_or_was_tag = {
-			tag = VEN
+		OR = {
+			is_or_was_tag = {
+				tag = VEN
+			}
+			is_or_was_tag = {
+				tag = BUR
+			}
 		}
 	}
 }
