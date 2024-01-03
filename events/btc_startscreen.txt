@@ -532,7 +532,33 @@ country_event = {
 		name = btc_startscreen.65a
 
 		country_event = {
+			id = btc_startscreen.651
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.65b
+
+		country_event = {
 			id = btc_startscreen.6
+		}
+	}
+}
+
+# Potential Hegemons #
+country_event = {
+	id = btc_startscreen.651
+	title = btc_startscreen.651_t
+	desc = btc_startscreen.651_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.651a
+
+		country_event = {
+			id = btc_startscreen.65
 		}
 	}
 }

@@ -405,10 +405,12 @@ por_brazil_tariffs = {
 }
 
 por_armada = {
-	number_of_cannons_modifier = 1
-	hull_size_modifier = 1
+	number_of_cannons_modifier = 0.75
+	hull_size_modifier = 0.75
 	sailor_maintenance_modifer = 1
+	engagement_cost = 1
 	naval_maintenance_modifier = 0.5
+	light_ship_cost = 0.25
 	is_caravel_modifier = yes
 }
 

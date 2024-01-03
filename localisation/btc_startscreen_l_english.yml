@@ -80,7 +80,7 @@
  btc_startscreen.6b:0 "Buildings, Development and Corruption"
  btc_startscreen.6c:0 "War, Devastation and Attrition"
  btc_startscreen.6d:0 "Military Access and Casus Belli"
- btc_startscreen.6e:0 "Institutions, Technology and Ages"
+ btc_startscreen.6e:0 "Institutions, Technology, Ages and Hegemons"
  btc_startscreen.6f:0 "Go back"
 
  btc_startscreen.61_t:0 "Sound Tolls and Slavers Estate"
@@ -99,9 +99,14 @@
  btc_startscreen.64_d:0 "No longer can a country ask any other country in the world for military access. No longer will you see the Ottomans walk through half of Europe to lay siege to Paris. Now you can only ask a neighbour for military access. This will make it so that navies are much more important and you will more often see amphibious assaults. Obviously, this will make your choice of allies much more crucial.\n\nPlease bear in mind that these limitations do not apply to countries in the Holy Roman Empire.\n\nMany unique casus belli have been added, such as the Castilian Civil War casus belli and the Burgundian Conquests casus belli. Most of these are triggered only, meaning that you can only access them under certain conditions. However, there is a new casus belli that you can access any time, provided you finish one of the following idea groups:\n- Exploration ideas.\n- Maritime ideas.\n- Naval ideas.\n\nThis is the Naval War casus belli. You can use it when you have a claim on any country's coastal province and you can only conquer coastal provinces with a claim. The uniqueness of this casus belli is that the warscore is based on naval superiority and blockading ports, giving even more importance to the navy of maritime nations."
  btc_startscreen.64a:0 "Go back"
 
- btc_startscreen.65_t:0 "Institutions, Technology and Ages"
- btc_startscreen.65_d:0 "Institutions have been completely revamped. No longer do we have arbitrary static dates for the start of an institution. Now they have very clear objectives in order to spawn. While this rework is not eurocentric, the chances of it spawning in Europe are higher than in other continents.\n\nAs a result, technologies have also been changed. Now you will see certain technologies need a certain institution, or else the cost to research it is higher. For example, since the Renaissance institution is already present at game start, countries that do not have it will have a harder time researching tech 4.\n\nSince ages were also tied to institutions, the requirements for the start of a new age have also been changed. This rework made it so that each age lasts roughly the same amount of time."
- btc_startscreen.65a:0 "Go back"
+ btc_startscreen.65_t:0 "Institutions, Technology, Ages and Hegemons"
+ btc_startscreen.65_d:0 "Institutions have been completely revamped. No longer do we have arbitrary static dates for the start of an institution. Now they have very clear objectives in order to spawn. While this rework is not eurocentric, the chances of it spawning in Europe are higher than in other continents. Furthermore, institutions such as Colonialism and Industrialization have such requirements that make it almost impossible for the AI to embrace, resulting in a more interesting world where some countries are more technologically advanced than others.\n\nAs a result, technologies have also been changed. Now you will see certain technologies need a certain institution, or else the cost to research it is higher. For example, since the Renaissance institution is already present at game start, countries that do not have it will have a harder time researching tech 4.\n\nSince ages were also tied to institutions, the requirements for the start of a new age have also been changed. This rework made it so that each age lasts roughly the same amount of time.\n\nTo give more flavour to each age and a renewed importance to the Hegemon mechanic, each age now has Potential Hegemons. For more information about them, click below."
+ btc_startscreen.65a:0 "Potential Hegemons"
+ btc_startscreen.65b:0 "Go back"
+
+ btc_startscreen.651_t:0 "Potential Hegemons"
+ btc_startscreen.651_d:0 "These are countries that have reduced requirements to become hegemon in a specific category. Right now these are the Potential Hegemons:\n\nEconomic Potential Hegemons:\nAge of Discovery: @VEN\nAge of Reformation: @PER @ERS\nAge of Absolutism: @PER @ERS @MUG @SWE @NED\nAge of Revolutions: @NED\n\nNaval Potential Hegemons:\nAge of Discovery: @POR\nAge of Reformation: @POR @CAS @SPA\nAge of Absolutism: @CAS @SPA @ENG @GBR @AVE\nAge of Revolutions: @ENG @GBR @AVE\n\nMilitary Potential Hegemons:\nAge of Discovery: @TUR @RUM @POL @PLC\nAge of Reformation: @TUR @RUM @POL @PLC @MUG\nAge of Absolutism: @SWE @FRA @MOS @RUS @BRA @PRU\nAge of Revolutions: @FRA @MOS @RUS @BRA @PRU @HAB"
+ btc_startscreen.651a:0 "Go back"
 
  show_tutorial_decision_title:0 "Show Tutorial"
  show_tutorial_decision_desc:0 "This will show the tutorial of the mod."

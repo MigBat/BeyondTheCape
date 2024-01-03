@@ -1,0 +1,14 @@
+country_decisions = {
+	expedition1 = {
+		major = yes
+		potential = {
+			
+		}
+		allow = {
+			
+		}
+		effect = {
+			
+		}
+	}
+}

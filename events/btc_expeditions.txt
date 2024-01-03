@@ -1,3 +1,15 @@
 namespace = btc_expeditions
 normal_or_historical_nations = yes
 
+country_event = {
+	id = btc_expeditions.1
+	title = btc_expeditions.1_t
+	desc = btc_expeditions.1_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_expeditions.1a
+	}
+}

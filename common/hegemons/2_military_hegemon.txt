@@ -1,31 +1,51 @@
 military_hegemon = {
 	allow = {
-		
-		if = {
-			limit = {
-				NOT = { has_country_flag = halve_hegemony_requirements }
-				NOT = { has_country_flag = fra_enable_mil_hegemony_flag }
-			}
-			army_size = 500
-		}
-		else_if = { 
-			limit = { 
-				is_or_was_tag = { tag = FRA } 
-			}
-			OR = { 
-				army_size = 500 
-				custom_trigger_tooltip = {
-					tooltip = fra_complete_mission_tt
-					OR = {
-						mission_completed = fra_declaratio_gallica
-						has_country_flag = fra_enable_mil_hegemony_flag 
+		OR = {
+			# Great Power
+			AND = {
+				is_great_power = yes
+				is_potential_hegemon = no
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = halve_hegemony_requirements
+							is_emperor_of_china = yes
+						}
 					}
+					army_size = 250 
 				}
+				else = { army_size = 500 } 
+				NOT = { any_other_great_power = { army_size = root } }
+			}
+			# Discovery Potential
+			AND = {
+				current_age = age_of_discovery
+				is_discovery_mil_hegemon = yes
+				army_size = 50
+				most_army_discovery_mil_hegemon = yes
+			}
+			# Refomation Potential
+			AND = {
+				current_age = age_of_reformation
+				is_reformation_mil_hegemon = yes
+				army_size = 100
+				most_army_reformation_mil_hegemon = yes
+			}
+			# Absolutism Potential
+			AND = {
+				current_age = age_of_absolutism
+				is_absolutism_mil_hegemon = yes
+				army_size = 150
+				most_army_absolutism_mil_hegemon = yes
+			}
+			# Revolutions Potential
+			AND = {
+				current_age = age_of_revolutions
+				is_revolutions_mil_hegemon = yes
+				army_size = 200
+				most_army_revolutions_mil_hegemon = yes
 			}
 		}
-		else = { army_size = 250 }
-		is_great_power = yes
-		NOT = { any_other_great_power = { army_size = root } }
 		NOT = { has_country_modifier = lost_hegemony }
 	}
 	

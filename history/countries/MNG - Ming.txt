@@ -75,6 +75,8 @@ if = {
 	set_estate_privilege = estate_eunuchs_delegate_subject_diplomacy_privilege
 }
 
+set_estate_privilege = estate_church_inwards_perfection
+
 
 1368.1.1 = {
 	monarch = {
