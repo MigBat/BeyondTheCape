@@ -2599,7 +2599,7 @@ hokkaido_area = { #5
 }
 
 hokuriku_area = { #3
-	1023 1024 1837
+	1023 1024 1837 4972
 }
 
 kanto_area = { #3 #Western Kanto

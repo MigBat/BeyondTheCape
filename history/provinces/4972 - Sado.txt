@@ -1,0 +1,20 @@
+#4972 - Sado
+
+owner = HNM
+controller = HNM
+culture = japanese
+religion = shinto
+capital = "Sado"
+trade_goods = fish
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = HNM
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = ANU

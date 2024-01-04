@@ -463,6 +463,21 @@ coastal_defence = {
 		allowed_num_of_buildings = 1
 		hostile_fleet_attrition = 2
 	}
+	on_built = {
+		if = {
+			limit = { is_island = yes }
+			add_province_modifier = {
+				name = island_fort
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = { has_province_modifier = island_fort }
+			remove_province_modifier = island_fort
+		}		
+	}
 
 	ai_will_do = {
 		factor = 1
@@ -859,6 +874,21 @@ naval_battery = {
 		block_slave_raid = yes
 		allowed_num_of_buildings = 1
 		local_own_coast_naval_combat_bonus = 1
+	}
+	on_built = {
+		if = {
+			limit = { is_island = yes }
+			add_province_modifier = {
+				name = island_fort
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = { has_province_modifier = island_fort }
+			remove_province_modifier = island_fort
+		}		
 	}
 
 	ai_will_do = {

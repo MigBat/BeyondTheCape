@@ -3246,7 +3246,7 @@
  flavor_jap.60.d:0 "Last year a merchant reported finding silver in the mountains of the Iwami province. The supply of silver seems almost bottomless and the mine that was built has since then become the major source of income for the entire province, and indeed promises to become a major source of income for all of [Root.GetName]."
  flavor_jap.60.a:0 "Excellent!"
  flavor_jap.61.t:0 "Discovery of Gold in Sado"
- flavor_jap.61.d:0 "A new gold deposit has been found on the island of Sado in Echizen province. This mine promises to become one of the major sources of Gold in the archipelago of Japan."
+#  flavor_jap.61.d:0 "A new gold deposit has been found on the island of Sado in Echizen province. This mine promises to become one of the major sources of Gold in the archipelago of Japan."
  flavor_jap.61.a:0 "Excellent!"
  flavor_hsa.EVTNAME1:0 "Georg Giese"
  flavor_hsa.EVTDESC1:0 "The merchant Georg Giese, who formerly worked in London as a member of the Hanseatic League, has returned to Danzig. He is to marry Christine Krüger, daughter of a prestigious Danzig citizen, and is currently looking for a new opportunity."

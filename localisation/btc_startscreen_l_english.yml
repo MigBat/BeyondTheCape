@@ -24,22 +24,42 @@
 
  btc_startscreen.3_t:0 "Other Countries"
  btc_startscreen.3_d:0 "The scope of the mod encompasses the coloniser nations. As such, you will see more nations picking exploration ideas and contesting the Caribbeans. Some countries however, we felt required some extra flavour. Check them below."
- btc_startscreen.3a:0 "Iberian region"
- btc_startscreen.3b:0 "Low Countries region"
- btc_startscreen.3d:0 "British Isles region"
+ btc_startscreen.3a:0 "Iberia"
+ btc_startscreen.3b:0 "Low Countries"
+ btc_startscreen.3d:0 "British Isles"
+ btc_startscreen.3e:0 "Asia"
  btc_startscreen.3c:0 "Go back"
 
- btc_startscreen.31_t:0 "Iberian Region"
+ btc_startscreen.31_t:0 "Iberia"
  btc_startscreen.31_d:0 "Castile has a couple new additions in this mod. Other than the Castilian Civil War overhaul (which is covered in another tutorial section), there are also other interesting events. Let's take a look at them now.\n\nSoon after the game starts, Castile will receive an event regarding the nobility power in Galicia. This will give the provinces in Galicia region increased autonomy. There are two ways to get rid of this modifier.\n\nThe first is through an event that may happen - the Irmandiños Revolts. This will give Castile two choices on how to handle the situation, one of them will remove the modifier.\nThe other way is for the Castilian Civil War disaster to fire, which will remove the modifier from the galician provinces.\n\nAnother string of events is related to Granada, which starts as a tributary to Castile. There will come a time when Granada can decide not to pay the paria, at which point Castile will get an event in which they can choose to declare war on Granada.\n\nAragon also got some love, in the form of a new government called Crown of Aragon that focuses on diplomacy. Sardinia and Sicily now start as junior partners of Aragon, and through the Aragonese mission tree, the rewards for integrating Sardinia, Sicily and Naples is an upgrade of the Crown of Aragon government.\n\nAdditionally, valencian and balearic cultures have been added."
  btc_startscreen.31a:0 "Go back"
 
- btc_startscreen.32_t:0 "Low Countries Region"
+ btc_startscreen.32_t:0 "Low Countries"
  btc_startscreen.32_d:0 "Burgundy has received new events that focus on the conquest of the Low Countries through vassalization, giving a special casus belli that will ensure that the Emperor will not be called to the war you declare.\n\nThe requirements to form The Netherlands have also been changed, with the country no longer requiring 10 provinces to form it. The Dutch Revolt has also been changed slightly, with more rebels spawning. This should ensure that the Netherlands is formed by the AI, either through a Dutch country or through the Dutch Revolution.\n\nThe Netherlands was a very important country during this timeframe and it should appear much more often in the game. Their missions have also been worked on to reflect the rivalry with Portugal, and the possibility to form the VOC. They also have new events and a unique colonisation strategy in Colonial Eastern America using the Patroonschap system. You can find our more about this in their namesake mission."
  btc_startscreen.32a:0 "Go back"
 
- btc_startscreen.33_t:0 "British Isles Region"
+ btc_startscreen.33_t:0 "British Isles"
  btc_startscreen.33_d:0 "The War of the Roses disaster for England has been reworked. Now the candidate you do not choose for the throne will take control of either Wales or Northumberland and fight you for the throne of England. You will be able to play as any of these three countries, and the winner will unite England.\n\nAll Irish nations now start as tributaries to England. During the Age of Reformation, if the state religion of the overlord is different than that of the subject, there is a chance the tributary will declare their independence.\n\nFollowing in the steps of Columbus, John Cabot will approach England to finance a journey to the New World, potentially discovering new lands ripe for the taking."
  btc_startscreen.33a:0 "Go back"
+
+ btc_startscreen.34_t:0 "Asia"
+ btc_startscreen.34_d:0 "Changes to India, China and Japan make the game more challenging. See below what has been changed."
+ btc_startscreen.34a:0 "India"
+ btc_startscreen.34b:0 "China"
+ btc_startscreen.34c:0 "Japan"
+ btc_startscreen.34d:0 "Go back"
+
+ btc_startscreen.341_t:0 "India"
+ btc_startscreen.341_d:0 "All nations with Indian technology will have a triggered modifier that is activated once they own 40 provinces. This modifier gives them +8 unrest for the rest of the game. It also triggers an event chain that will eventually release all your vassals if you do not keep your unrest low. This makes it so that AI India remains fractured as it historically was. In order to get rid of that triggered modifier, one must form either Bharat, Hindustan or Mughals."
+ btc_startscreen.341a:0 "Go back"
+
+ btc_startscreen.342_t:0 "China"
+ btc_startscreen.342_d:0 "The Emperor of China has got some additional bonuses and penalties for high and low mandate. The AI will also pick the inwards perfection priviledge much more often once they grow big enough to represent the population growth of the region. Additionally, all chinese nations (includes releasables) start as historical rivals with eachother, to encourage forming a unified chinese nation, much like Ming is at the beginning of the game, and Qing eventually came to be historically."
+ btc_startscreen.342a:0 "Go back"
+
+ btc_startscreen.343_t:0 "Japan"
+ btc_startscreen.343_d:0 "The Shogun can no longer integrate daimyos and requires favors and a high opinion to call them to war. Daimyos also have increased liberty desire and increased aggressive expansion from taking land from other daimyos. All this makes Japan harder to be formed. Later in the game, when the Portuguese and Dutch have discovered Japan, one daimyo with high opinion of either of these countries will get an event giving them the opportunity to embrace colonialism, which is otherwise normally unobtainable unless you have engaged in colonisation. This daimyo will have the technological edge over the remaining ones, and potentially be able to unite Japan."
+ btc_startscreen.343a:0 "Go back"
 
  btc_startscreen.4_t:0 "Exploration"
  btc_startscreen.4_d:0 "The exploration system has been changed a lot from how it works in vanilla. For starters, exploration ideas no longer have the Quest for the New World idea, so you will not be able to explore just by picking that idea group. However, you will require that idea group if you want to explore.\n\nWhen you reach diplomatic tech 9 while having exploration ideas, an event will fire giving you the ability to hire explorers, conquistadors and sailing the open seas. Portugal and Castile have an advantage here. Portugal already starts with an explorer, and through their mission tree they will be able to acquire new ones. They will, however, be unable to discover the new world and can only sail around Africa.\n\nThey will have the chance to get the Christopher Columbus event if Portugal has exploration ideas and the year is 1488. If Portugal has already discovered the Cape of Good Hope by the time this event fires, the only option will be to reject his offer. Castile will get the event if it has exploration ideas, all provinces in Upper and Lower Andalucia are owned by catholic countries, and Portugal rejected Columbus. This means that either Portugal or Castile will be able to discover the New World before any other country if the conditions are met.\n\nIn case Castile hires Columbus, they will discover a route to the caribbeans, which is no longer a colonial region. Portugal can claim these discoveries and Castile can negotiate with Portugal, resulting in the Treaty of Tordesillas, which will only allow Castile to colonise the New World, and Portugal to colonise the Old World.\n\nThe three native policies have also been changed completely, providing 3 different colonisation strategies.\n\nThe expansion, exploration, maritime and naval idea groups have received slight modifications.\n\nColonial nations can no longer colonize outside their own colonial region, and your non-colonial nation subjects will be unable to colonize in a colonial region where you have a colonial nation. Additionally, if for whatever reason you have two colonial nations in the same colonial region, you have an interaction that allows you to combine them."
@@ -105,7 +125,7 @@
  btc_startscreen.65b:0 "Go back"
 
  btc_startscreen.651_t:0 "Potential Hegemons"
- btc_startscreen.651_d:0 "These are countries that have reduced requirements to become hegemon in a specific category. Right now these are the Potential Hegemons:\n\nEconomic Potential Hegemons:\nAge of Discovery: @VEN @BUR @MAM\nAge of Reformation: @PER\nAge of Absolutism: @PER @MUG @SWE @NED\nAge of Revolutions: @NED\n\nNaval Potential Hegemons:\nAge of Discovery: @POR @VEN @ARA\nAge of Reformation: @POR @SPA\nAge of Absolutism: @CAS @GBR\nAge of Revolutions: @GBR @DAN @NOR\n\nMilitary Potential Hegemons:\nAge of Discovery: @TUR @POL\nAge of Reformation: @TUR @PLC @MUG\nAge of Absolutism: @SWE @FRA @RUS @PRU\nAge of Revolutions: @FRA @RUS @PRU @HAB\n\nThe §YEmperor of China§! also gets reduced requirements for every hegemon type of every age."
+ btc_startscreen.651_d:0 "These are countries that have reduced requirements to become hegemon in a specific category. Right now these are the Potential Hegemons:\n\nEconomic Potential Hegemons:\nAge of Discovery: @VEN @BUR @MAM @HSA\nAge of Reformation: @PER\nAge of Absolutism: @PER @MUG @SWE @NED\nAge of Revolutions: @GBR\n\nNaval Potential Hegemons:\nAge of Discovery: @POR @VEN @ARA\nAge of Reformation: @POR @CAS\nAge of Absolutism: @SPA @NED\nAge of Revolutions: @GBR @DAN @NOR\n\nMilitary Potential Hegemons:\nAge of Discovery: @TUR @POL\nAge of Reformation: @TUR @POL @MUG\nAge of Absolutism: @SWE @FRA @RUS @PRU\nAge of Revolutions: @FRA @RUS @PRU @HAB\n\nThe §YEmperor of China§! also gets reduced requirements for every hegemon type of every age."
  btc_startscreen.651a:0 "Go back"
 
  show_tutorial_decision_title:0 "Show Tutorial"

@@ -1982,6 +1982,7 @@ btc_ven_eliminate_the_council_of_ten_issue = {
 	category = 3
 
 	allow = {
+		tag = VEN
 		has_global_flag = btc_ven_maggior_consiglio_trying_to_eliminate_the_tens
 		NOT = { has_country_modifier = btc_ven_ten_emergency_government }
 	}
@@ -2008,6 +2009,7 @@ btc_ven_curtail_the_council_of_ten_issue = {
 	category = 3
 
 	allow = {
+		tag = VEN
 		has_global_flag = btc_ven_maggior_consiglio_trying_to_curtail_the_tens
 		NOT = { has_country_modifier = btc_ven_ten_emergency_government }
 	}

@@ -48,7 +48,7 @@ categories =  {
 		defence = 1
 		movement_cost = 1.25
 		supply_limit = 2		
-		local_development_cost = 0.5
+		local_development_cost = 1.0
 		nation_designer_cost_multiplier = 0.75		
 		
 		terrain_override = {		
@@ -617,7 +617,7 @@ categories =  {
 			226 
 			2728
 			# BEYOND THE CAPE
-			4966 4967 4968 4969 4970 4971
+			4966 4967 4968 4969 4970 4971 4972
 		}
 	}	
 	

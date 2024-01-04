@@ -246,15 +246,8 @@ can_colonize_province = {
 					OR = {
 						is_colonial_nation = yes
 						is_former_colonial_nation = yes
-						AND = {
-							capital_scope = {
-								continent = europe
-							}
-							OR = {
-								expansion_ideas = 1 
-								has_idea = siberian_frontier
-							}
-						}
+						expansion_ideas = 1 
+						has_idea = siberian_frontier
 					}
 				}
 			}

@@ -341,3 +341,10 @@ vassal = {
 	start_date = 1444.11.11
 	end_date = 1573.7.3
 }
+
+vassal = {
+	first = ASK
+	second = HNM
+	start_date = 1444.11.11
+	end_date = 1573.7.3
+}

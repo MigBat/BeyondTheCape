@@ -828,7 +828,11 @@ voivode_subject = {
 }
 
 island_development = {
-	local_development_cost_modifier = 1
+	local_development_cost_modifier = 0.75
+}
+
+island_fort = {
+	fort_level = 1
 }
 
 #Venice modifiers
@@ -894,4 +898,9 @@ guanches_colonisation = {
 
 wattasid_weariness = {
 	can_not_declare_war = yes
+}
+
+sado_gold = {
+	trade_goods_size = 2
+	local_gold_depletion_chance_modifier = -0.75
 }
