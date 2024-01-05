@@ -358,7 +358,7 @@ country_event = {
 		num_of_ports = 1
 		exists = NED
 
-		NOT = { is_year = 1650 }
+		# NOT = { is_year = 1650 }
 
 		any_active_trade_node = {
 			any_trade_node_member_province = {

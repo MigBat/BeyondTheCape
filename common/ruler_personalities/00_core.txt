@@ -1524,7 +1524,13 @@ expansionist_personality = {
 				technology_group = indian
 			}
 		}
+		modifier = {
+			factor = 0.2
+			same_continent = root
+		}
 	}
+
+	enemy_strength_multiplier = 0.8
 	
 	wants_colonies = yes
 	
