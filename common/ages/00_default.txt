@@ -33,9 +33,11 @@ age_of_discovery = {
 			allow = {
 				capital_scope = {
 					NOT = {
-						continent = europe
-						continent = asia
-						continent = africa
+						OR = {
+							continent = europe
+							continent = asia
+							continent = africa
+						}
 					}
 				}
 			}

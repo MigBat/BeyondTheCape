@@ -656,9 +656,11 @@ country_event = {
 		PER = { is_neighbor_of = TUR }
 		MAM = { is_neighbor_of = TUR }
 		NOT = {
-			PER = { alliance_with = TUR }
-			VEN = { alliance_with = TUR }
-			MAM = { alliance_with = TUR }
+			OR = {
+				PER = { alliance_with = TUR }
+				VEN = { alliance_with = TUR }
+				MAM = { alliance_with = TUR }
+			}
 		}
 		TUR = {
 			owns = 141 # Serbia

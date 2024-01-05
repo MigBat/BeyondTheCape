@@ -375,7 +375,12 @@ venice_merchants_reform = {
 		}
 	}
 	boost_income = yes
-	has_parliament = yes
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
 	#removed factions
 	#factions = {
 		#mr_aristocrats

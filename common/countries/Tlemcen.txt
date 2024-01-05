@@ -1,8 +1,8 @@
 #Country Name: Please see filename.
 
-graphical_culture = muslimgfx
+graphical_culture = southamericagfx
 
-color = { 60  147  16 }
+color = { 1  50  32 }
 revolutionary_colors = { 0  13  0 }
 
 historical_idea_groups = {

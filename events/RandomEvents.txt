@@ -9580,12 +9580,14 @@ country_event = {
 			}
 			coromandel_region = {
 				NOT = {
-					is_core = ROOT
-					owned_by = ROOT
-					owner = {
-						has_country_modifier = dutch_india_trade_co 
-						has_country_flag = trade_company 
-					} 
+					OR = {
+						is_core = ROOT
+						owned_by = ROOT
+						owner = {
+							has_country_modifier = dutch_india_trade_co 
+							has_country_flag = trade_company 
+						} 
+					}
 				}
 				any_neighbor_province = {
 					owned_by = ROOT
@@ -9594,12 +9596,14 @@ country_event = {
 			}
 			west_india_region = {
 				NOT = {
-					is_core = ROOT
-					owned_by = ROOT
-					owner = {
-						has_country_modifier = dutch_india_trade_co 
-						has_country_flag = trade_company 
-					} 
+					OR = {
+						is_core = ROOT
+						owned_by = ROOT
+						owner = {
+							has_country_modifier = dutch_india_trade_co 
+							has_country_flag = trade_company 
+						} 
+					}
 				}
 				any_neighbor_province = {
 					owned_by = ROOT
@@ -9626,13 +9630,15 @@ country_event = {
 					region = west_india_region
 					region = coromandel_region
 				}
-				NOT ={
-					is_core = ROOT
-					owned_by = ROOT
-					owner = {
-						has_country_modifier = dutch_india_trade_co 
-						has_country_flag = trade_company 
-					} 
+				NOT = {
+					OR = {
+						is_core = ROOT
+						owned_by = ROOT
+						owner = {
+							has_country_modifier = dutch_india_trade_co 
+							has_country_flag = trade_company 
+						} 
+					}
 				}
 				any_neighbor_province = {
 					owned_by = ROOT
@@ -11953,8 +11959,10 @@ country_event = {
 			is_free_or_tributary_trigger = yes
 			num_of_cities = 4
 			NOT = {
-				alliance_with = ROOT
-				war_with = ROOT
+				OR = {
+					alliance_with = ROOT
+					war_with = ROOT
+				}
 			}
 		}
 	}

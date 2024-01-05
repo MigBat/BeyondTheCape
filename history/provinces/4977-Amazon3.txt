@@ -1,0 +1,13 @@
+# - Amazon 3
+
+culture = spartan
+religion = animism
+capital = "Amazon 3"
+trade_goods = gold
+hre = no
+base_tax = 10
+base_production = 10
+base_manpower = 10
+native_size = 15
+native_ferocity = 2
+native_hostileness = 6
