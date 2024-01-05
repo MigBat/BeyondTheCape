@@ -6,7 +6,7 @@ religion = shinto
 technology_group = chinese
 capital = 4972	# Sado
 
-1336.1.1 = {
+1436.1.1 = {
 	monarch = {
 		name = "Kataoka"
 		dynasty = "Honma"

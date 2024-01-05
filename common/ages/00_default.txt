@@ -816,8 +816,8 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				fire_damage_received = -0.2
-				shock_damage_received = -0.2
+				yearly_army_professionalism = 0.005
+				land_forcelimit_modifier = 0.1
 			}
 			ai_will_do = {
 				factor = 100

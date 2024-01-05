@@ -65,6 +65,11 @@
  PROV4970:0 "Margarita"
  PROV4971:0 "Eleuthera"
  PROV4972:0 "Sado"
+ PROV4973:0 "South Cyprus"
+ PROV4974:0 "West Crete"
+# Vanilla
+ PROV321:0 "North Cyprus"
+ PROV163:0 "East Crete"
 
 # Province Adjectives #
  PROV_ADJ4556:0 "Minhoto"
@@ -102,10 +107,18 @@
  PROV_ADJ4970:0 "Margaritan"
  PROV_ADJ4971:0 "Eleutheran"
  PROV_ADJ4972:0 "Sadoan"
+ PROV_ADJ4973:0 "South Cipriot"
+ PROV_ADJ4974:0 "West Cretan"
+# Vanilla
+ PROV_ADJ321:0 "North Cipriot"
+ PROV_ADJ163:0 "East Cretan"
 
  leeward_antilles_area:0 "Leeward Antilles"
- leeward_antilles_area_name:0 "Aruba"
- leeward_antilles_area_adj:0 "Aruban"
+ leeward_antilles_area_name:0 "Leeward Antilles"
+ leeward_antilles_area_adj:0 "Leeward Antilles"
+ greek_islands_area:0 "Greek Islands"
+ greek_islands_area:0 "Greek Islands"
+ greek_islands_area:0 "Greek Islands"
 
 # Native Policy #
 
@@ -402,6 +415,7 @@
  ned_establish_first_indian_trade_post_at:0 "This event allows us to establish the @VOC §YDutch East India Company§! in the East Indies as our §YCommercial Enterprise§! subject."
  iberia_colonise_restriction:0 "There are better provinces for us to colonise."
  not_iberia_colonise_restriction:0 "There are better provinces for us to colonise."
+ one_siberian_frontier:0 "You can only have one colony at a time."
 
  CORRUPTION_EXPLANATION:2 "Corruption increases over time due to advisors, unbalanced research, overextension and lack of religious unity. It can be decreased by high stability and being ahead of time in administrative or diplomatic technology. If all else fails you can spend ducats to reduce corruption over time. Corruption can affect all power costs, minimum autonomy as well as spy defense and spy network construction speed."
 

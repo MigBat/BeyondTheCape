@@ -1064,8 +1064,8 @@ macedonia_area = { #5 (Macedonia)
 	148 1853 3001 4702 4780
 }
 
-morea_area = { #4 Central Greece & Crete
-	145 146 163 1773 4701
+morea_area = { #4 Central Greece
+	145 146 1773 4701
 }
 
 northern_greece_area = { #3 #Northern Greece
@@ -1211,6 +1211,10 @@ aegean_archipelago_area = { #4
 	164 320 2348 3003 4700
 }
 
+greek_islands_area = {
+	321 163 4973 4974
+}
+
 kastamonu_area = { #4
 	325 328 2299 2304
 }
@@ -1221,7 +1225,7 @@ karaman_area = { #4
 
 cukurova_area = { #3
 	color = { 50 177 200 }
-	321 327 2302
+	327 2302
 }
 
 aleppo_area = { #4

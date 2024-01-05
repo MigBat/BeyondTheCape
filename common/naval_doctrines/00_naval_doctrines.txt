@@ -222,6 +222,7 @@ dutch_trade_fleet = {
 	country_modifier = {
 		global_ship_trade_power = 0.25
 		range = 0.25
+		ship_power_propagation = 0.1
 	}
 	effect = {}
 	removed_effect = {}
@@ -256,8 +257,9 @@ venetian_arsenal_naval_doctrine = {
 
 	cost = 0.1
 	country_modifier = {
-		number_of_cannons_modifier = 0.1
 		sailor_maintenance_modifer = -0.1
+		ship_recruit_speed = -0.25
+		has_galleass = yes
 	}
 	effect = {}
 	removed_effect = {}

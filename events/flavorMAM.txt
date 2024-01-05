@@ -104,7 +104,10 @@ country_event = {
 		is_at_war = no
 		exists = CYP
 		CYP = { 
-			owns = 321
+			OR = {
+				owns = 321
+				owns = 4973
+			}
 			is_subject = no 
 			is_at_war = no
 			government = monarchy

@@ -348,3 +348,23 @@ vassal = {
 	start_date = 1444.11.11
 	end_date = 1573.7.3
 }
+
+#Hojo - Imagawa & Takeda
+alliance = {
+	first = HJO
+	second = IMG
+	start_date = 1444.1.1
+	end_date = 1568.1.1
+}
+alliance = {
+	first = HJO
+	second = TKD
+	start_date = 1444.1.1
+	end_date = 1568.1.1
+}
+alliance = {
+	first = IMG
+	second = TKD
+	start_date = 1444.1.1
+	end_date = 1568.1.1
+}

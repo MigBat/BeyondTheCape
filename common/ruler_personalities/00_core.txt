@@ -1489,8 +1489,23 @@ expansionist_personality = {
 			has_idea_group = expansion_ideas
 		}
 		modifier = {
-			factor = 0.5
+			factor = 1
+			has_idea_group = colonialism_ideas
+		}
+		modifier = {
+			factor = 1
 			has_country_flag = por_more_likely_to_get_expansionist_flag
+		}
+		modifier = {
+			factor = 10
+			has_idea_group = exploration_ideas
+			OR = {
+				is_or_was_tag = { tag = POR }
+				is_or_was_tag = { tag = CAS }
+				is_or_was_tag = { tag = ENG }
+				is_or_was_tag = { tag = FRA }
+				is_or_was_tag = { tag = NED }
+			}
 		}
 		modifier = {
 			factor = 2 
@@ -1500,8 +1515,14 @@ expansionist_personality = {
 	
 	war_priority = {
 		modifier = {
-			factor = 2
-			primitives = yes
+			factor = 5
+			OR = {
+				technology_group = south_american
+				technology_group = north_american
+				technology_group = andean
+				technology_group = mesoamerican
+				technology_group = indian
+			}
 		}
 	}
 	
