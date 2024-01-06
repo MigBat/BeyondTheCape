@@ -1,0 +1,19 @@
+#4943 - Castelo Branco
+
+owner = POR
+controller = POR
+culture = portugese
+religion = catholic
+capital = "Castelo Branco"
+trade_goods = wool
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = POR
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+extra_cost = 18

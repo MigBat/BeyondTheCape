@@ -79,8 +79,8 @@ trading_city_ideas = {
 
 colonial_ideas = {
 	start = {
-		no_religion_penalty = yes
-		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+		may_establish_frontier = yes
 	}
 	
 	bonus = {
@@ -113,7 +113,6 @@ colonial_ideas = {
 		global_regiment_cost = -0.1
 	}
 	new_frontiers = {
-		auto_explore_adjacent_to_colony = yes
 		global_colonial_growth = 20
 	}
 	liberty_heroes = {

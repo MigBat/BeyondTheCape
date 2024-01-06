@@ -1,0 +1,48 @@
+government = monarchy
+add_government_reform = mandala_reform
+technology_group = chinese
+religion = buddhism
+primary_culture = shan
+capital = 2166 # Dehong
+historical_rival = CZH
+historical_rival = CYI
+historical_rival = SHU
+historical_rival = CDL
+historical_rival = CGS
+historical_rival = YUE
+historical_rival = CXI
+historical_rival = WUU
+historical_rival = TNG
+historical_rival = NNG
+historical_rival = MIN
+historical_rival = CMI
+historical_rival = HUA
+historical_rival = CHC
+historical_rival = YAN
+historical_rival = CSH
+historical_rival = QIN
+historical_rival = QIC
+historical_rival = MNG
+historical_rival = LNG
+historical_rival = JIN
+historical_rival = FRM
+
+1413.1.1 = {
+	monarch = {
+		name = "Renfa"
+		dynasty = "Si"
+		ADM = 2
+		DIP = 2
+		MIL = 5
+		leader = {	
+			name = "Si Renfa"
+			type = general
+			fire = 2
+			shock = 4
+			manuever = 4
+			siege = 0 
+		}
+	}
+}
+
+# mong mao defeated in 1449, though at great cost to the Ming

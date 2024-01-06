@@ -136,7 +136,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# Iberian Region
+	option = {	# Iberia
 		name = btc_startscreen.3a
 
 		country_event = {
@@ -144,7 +144,7 @@ country_event = {
 		}
 	}
 
-	option = {	# Low Countries Region
+	option = {	# Low Countries
 		name = btc_startscreen.3b
 
 		country_event = {
@@ -152,11 +152,19 @@ country_event = {
 		}
 	}
 
-	option = {	# British Isles Region
+	option = {	# British Isles
 		name = btc_startscreen.3d
 
 		country_event = {
 			id = btc_startscreen.33
+		}
+	}
+
+	option = {	# Asia
+		name = btc_startscreen.3e
+
+		country_event = {
+			id = btc_startscreen.34
 		}
 	}
 
@@ -169,7 +177,7 @@ country_event = {
 	}
 }
 
-# Iberian Region #
+# Iberia #
 country_event = {
 	id = btc_startscreen.31
 	title = btc_startscreen.31_t
@@ -187,7 +195,7 @@ country_event = {
 	}
 }
 
-# Low Countries Region #
+# Low Countries #
 country_event = {
 	id = btc_startscreen.32
 	title = btc_startscreen.32_t
@@ -205,7 +213,7 @@ country_event = {
 	}
 }
 
-# British Isles Region #
+# British Isles #
 country_event = {
 	id = btc_startscreen.33
 	title = btc_startscreen.33_t
@@ -219,6 +227,102 @@ country_event = {
 
 		country_event = {
 			id = btc_startscreen.3
+		}
+	}
+}
+
+# Asia #
+country_event = {
+	id = btc_startscreen.34
+	title = btc_startscreen.34_t
+	desc = btc_startscreen.34_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# India
+		name = btc_startscreen.34a
+
+		country_event = {
+			id = btc_startscreen.341
+		}
+	}
+
+	option = {	# China
+		name = btc_startscreen.34b
+
+		country_event = {
+			id = btc_startscreen.342
+		}
+	}
+
+	option = {	# Japan
+		name = btc_startscreen.34c
+
+		country_event = {
+			id = btc_startscreen.343
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.34d
+
+		country_event = {
+			id = btc_startscreen.3
+		}
+	}
+}
+
+# India #
+country_event = {
+	id = btc_startscreen.341
+	title = btc_startscreen.341_t
+	desc = btc_startscreen.341_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.341a
+
+		country_event = {
+			id = btc_startscreen.34
+		}
+	}
+}
+
+# China #
+country_event = {
+	id = btc_startscreen.342
+	title = btc_startscreen.342_t
+	desc = btc_startscreen.342_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.342a
+
+		country_event = {
+			id = btc_startscreen.34
+		}
+	}
+}
+
+# Japan #
+country_event = {
+	id = btc_startscreen.343
+	title = btc_startscreen.343_t
+	desc = btc_startscreen.343_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.343a
+
+		country_event = {
+			id = btc_startscreen.34
 		}
 	}
 }

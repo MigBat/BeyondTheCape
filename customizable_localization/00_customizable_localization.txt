@@ -135,11 +135,13 @@ defined_text = {
         trigger = {
 			religion_group = muslim
 			NOT = {
-				culture_group = eastern_aryan
-				culture_group = hindusthani
-				culture_group = western_aryan
-				culture_group = dravidian
-				culture_group = central_indic
+				OR = {
+					culture_group = eastern_aryan
+					culture_group = hindusthani
+					culture_group = western_aryan
+					culture_group = dravidian
+					culture_group = central_indic
+				}
 			}
         }
 	}
@@ -190,17 +192,19 @@ defined_text = {
         trigger = {
 			NOT = { religion_group = muslim }
 			NOT = {
-				culture_group = east_asian
-				culture_group = eastern_aryan
-				culture_group = hindusthani
-				culture_group = western_aryan
-				culture_group = dravidian
-				culture_group = central_indic
-				culture_group = south_slavic
-				culture_group = british
-				culture = anglois
-				culture_group = french
-				culture_group = germanic
+				OR = {
+					culture_group = east_asian
+					culture_group = eastern_aryan
+					culture_group = hindusthani
+					culture_group = western_aryan
+					culture_group = dravidian
+					culture_group = central_indic
+					culture_group = south_slavic
+					culture_group = british
+					culture = anglois
+					culture_group = french
+					culture_group = germanic
+				}
 			}
         }
 	}
@@ -338,8 +342,10 @@ defined_text = {
 		localisation_key = string_govtname
 		trigger = {
 			NOT = {
-				government = monarchy
-				government = republic
+				OR = {
+					government = monarchy
+					government = republic
+				}
 			}
 		}
 	}

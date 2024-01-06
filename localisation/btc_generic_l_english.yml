@@ -15,6 +15,8 @@
  GCH_ADJ:0 "Guanches"
  CNR:0 "Canaries"
  CNR_ADJ:0 "Canarian"
+ HNM:0 "Honma"
+ HNM_ADJ:0 "Honman"
  
 # Provinces #
  PROV4556:0 "Minho"
@@ -62,6 +64,21 @@
  PROV4969:0 "Tobago"
  PROV4970:0 "Margarita"
  PROV4971:0 "Eleuthera"
+ PROV4972:0 "Sado"
+ PROV4973:0 "South Cyprus"
+ PROV4974:0 "West Crete"
+ PROV4975:0 "Amazon 1"
+ PROV4976:0 "Amazon 2"
+ PROV4977:0 "Amazon 3"
+ PROV4978:0 "Amazon 4"
+ PROV4979:0 "Amazon 5"
+ PROV4980:0 "Amazon 6"
+ PROV4981:0 "Amazon 7"
+ PROV4982:0 "Amazon 8"
+ PROV4983:0 "Amazon 9"
+# Vanilla
+ PROV321:0 "North Cyprus"
+ PROV163:0 "East Crete"
 
 # Province Adjectives #
  PROV_ADJ4556:0 "Minhoto"
@@ -98,10 +115,37 @@
  PROV_ADJ4969:0 "Tobagoan"
  PROV_ADJ4970:0 "Margaritan"
  PROV_ADJ4971:0 "Eleutheran"
+ PROV_ADJ4972:0 "Sadoan"
+ PROV_ADJ4973:0 "South Cipriot"
+ PROV_ADJ4974:0 "West Cretan"
+ PROV_ADJ4975:0 "Amazon 1"
+ PROV_ADJ4976:0 "Amazon 2"
+ PROV_ADJ4977:0 "Amazon 3"
+ PROV_ADJ4978:0 "Amazon 4"
+ PROV_ADJ4979:0 "Amazon 5"
+ PROV_ADJ4980:0 "Amazon 6"
+ PROV_ADJ4981:0 "Amazon 7"
+ PROV_ADJ4982:0 "Amazon 8"
+ PROV_ADJ4983:0 "Amazon 9"
+# Vanilla
+ PROV_ADJ321:0 "North Cipriot"
+ PROV_ADJ163:0 "East Cretan"
 
  leeward_antilles_area:0 "Leeward Antilles"
- leeward_antilles_area_name:0 "Aruba"
- leeward_antilles_area_adj:0 "Aruban"
+ leeward_antilles_area_name:0 "Leeward Antilles"
+ leeward_antilles_area_adj:0 "Leeward Antilles"
+ greek_islands_area:0 "Greek Islands"
+ greek_islands_area:0 "Greek Islands"
+ greek_islands_area:0 "Greek Islands"
+ amazon1_area:0 "Amazon 1"
+ amazon1_area_name:0 "Amazon 1"
+ amazon1_area_adj:0 "Amazon 1"
+ amazon4_area:0 "Amazon 4"
+ amazon4_area_name:0 "Amazon 4"
+ amazon4_area_adj:0 "Amazon 4"
+ amazon7_area:0 "Amazon 7"
+ amazon7_area_name:0 "Amazon 7"
+ amazon7_area_adj:0 "Amazon 7"
 
 # Native Policy #
 
@@ -398,6 +442,7 @@
  ned_establish_first_indian_trade_post_at:0 "This event allows us to establish the @VOC §YDutch East India Company§! in the East Indies as our §YCommercial Enterprise§! subject."
  iberia_colonise_restriction:0 "There are better provinces for us to colonise."
  not_iberia_colonise_restriction:0 "There are better provinces for us to colonise."
+ one_siberian_frontier:0 "You can only have one colony at a time."
 
  CORRUPTION_EXPLANATION:2 "Corruption increases over time due to advisors, unbalanced research, overextension and lack of religious unity. It can be decreased by high stability and being ahead of time in administrative or diplomatic technology. If all else fails you can spend ducats to reduce corruption over time. Corruption can affect all power costs, minimum autonomy as well as spy defense and spy network construction speed."
 

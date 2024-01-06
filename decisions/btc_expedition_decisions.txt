@@ -1,14 +1,14 @@
-country_decisions = {
-	expedition1 = {
-		major = yes
-		potential = {
+# country_decisions = {
+# 	expedition1 = {
+# 		major = yes
+# 		potential = {
 			
-		}
-		allow = {
+# 		}
+# 		allow = {
 			
-		}
-		effect = {
+# 		}
+# 		effect = {
 			
-		}
-	}
-}
+# 		}
+# 	}
+# }

@@ -627,7 +627,7 @@ cb_shogun_annex = {
 				has_country_flag = ikko_ikki_peasants_flag
 			}
 			OR = {
-				num_of_cities = 5
+				num_of_cities = 3
 				is_subject = no
 			}
 		}

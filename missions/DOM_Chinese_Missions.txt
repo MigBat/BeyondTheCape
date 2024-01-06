@@ -6238,7 +6238,12 @@ DOM_Qing_Missions_5 = {
 		provinces_to_highlight = {
 			province_id = 4201
 			OR = {
-				NOT = { owned_by = ROOT is_core = ROOT }
+				NOT = { 
+					AND = {
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+				}
 				has_tax_building_trigger = no
 			}
 		}

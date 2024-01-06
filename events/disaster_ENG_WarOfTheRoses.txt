@@ -73,11 +73,11 @@ country_event = {
 				max_random_mil = 6
 				male = yes
 			}
-			declare_war_with_cb = {
-				casus_belli = cb_war_of_roses
-				who = ROOT
-			}
 			set_country_flag = at_war
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_war_of_roses
+			who = NOL
 		}
 		set_country_flag = at_war
 		
@@ -153,11 +153,11 @@ country_event = {
 				max_random_mil = 6
 				male = yes
 			}
-			declare_war_with_cb = {
-				casus_belli = cb_war_of_roses
-				who = ROOT
-			}
 			set_country_flag = at_war
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_war_of_roses
+			who = WLS
 		}
 		set_country_flag = at_war
 
@@ -271,11 +271,11 @@ country_event = {
 					cavalry = 0.4
 				}
 			}
-			declare_war_with_cb = {
-				casus_belli = cb_war_of_roses
-				who = ROOT
-			}
 			set_country_flag = at_war
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_war_of_roses
+			who = NOL
 		}
 		set_country_flag = at_war
 		
@@ -356,11 +356,11 @@ country_event = {
 					cavalry = 0.4
 				}
 			}
-			declare_war_with_cb = {
-				casus_belli = cb_war_of_roses
-				who = ROOT
-			}
 			set_country_flag = at_war
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_war_of_roses
+			who = WLS
 		}
 		set_country_flag = at_war
 

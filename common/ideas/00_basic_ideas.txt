@@ -1523,10 +1523,6 @@ expansion_ideas = {
 				technology_group = muslim
 			}
 		}
-		modifier = {
-			factor = 0
-			is_colonial_nation = yes
-		}
 	}
 }
 

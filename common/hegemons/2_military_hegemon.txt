@@ -1,50 +1,64 @@
 military_hegemon = {
 	allow = {
-		OR = {
-			# Great Power
-			AND = {
-				is_great_power = yes
-				is_potential_hegemon = no
-				if = {
-					limit = {
-						OR = {
-							has_country_flag = halve_hegemony_requirements
-							is_emperor_of_china = yes
-						}
-					}
-					army_size = 250 
-				}
-				else = { army_size = 500 } 
-				NOT = { any_other_great_power = { army_size = root } }
-			}
-			# Discovery Potential
-			AND = {
-				current_age = age_of_discovery
-				is_discovery_mil_hegemon = yes
-				army_size = 50
-				most_army_discovery_mil_hegemon = yes
-			}
-			# Refomation Potential
-			AND = {
-				current_age = age_of_reformation
-				is_reformation_mil_hegemon = yes
-				army_size = 100
-				most_army_reformation_mil_hegemon = yes
-			}
-			# Absolutism Potential
-			AND = {
-				current_age = age_of_absolutism
-				is_absolutism_mil_hegemon = yes
-				army_size = 150
-				most_army_absolutism_mil_hegemon = yes
-			}
-			# Revolutions Potential
-			AND = {
-				current_age = age_of_revolutions
-				is_revolutions_mil_hegemon = yes
-				army_size = 200
-				most_army_revolutions_mil_hegemon = yes
-			}
+		# Discovery Potential
+		if = {
+			limit = { is_discovery_mil_hegemon = yes current_age = age_of_discovery }
+			army_size = 50
+			most_army_discovery_mil_hegemon = yes
+		}
+		# Reformation Potential
+		else_if = {
+			limit = { is_reformation_mil_hegemon = yes current_age = age_of_reformation }
+			army_size = 100
+			most_army_reformation_mil_hegemon = yes
+		}
+		# Absolutism Potential
+		else_if = {
+			limit = { is_absolutism_mil_hegemon = yes current_age = age_of_absolutism }
+			army_size = 150
+			most_army_absolutism_mil_hegemon = yes
+		}
+		# Revolutions Potential
+		else_if = {
+			limit = { is_revolutions_mil_hegemon = yes current_age = age_of_revolutions }
+			army_size = 200
+			most_army_revolutions_mil_hegemon = yes
+		}
+		# Discovery EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_discovery }
+			army_size = 75
+			NOT = { any_other_great_power = { army_size = root } }
+		}
+		# Reformation EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_reformation }
+			army_size = 125
+			NOT = { any_other_great_power = { army_size = root } }
+		}
+		# Absolutism EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_absolutism }
+			army_size = 175
+			NOT = { any_other_great_power = { army_size = root } }
+		}
+		# Revolutions EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_revolutions }
+			army_size = 225
+			NOT = { any_other_great_power = { army_size = root } }
+		}
+		# Halve Requirements
+		else_if = {
+			limit = { has_country_flag = halve_hegemony_requirements }
+			army_size = 250
+			NOT = { any_other_great_power = { army_size = root } }
+		}
+		# Great Power
+		else = {
+			is_great_power = yes
+			army_size = 500
+			NOT = { any_other_great_power = { army_size = root } }
 		}
 		NOT = { has_country_modifier = lost_hegemony }
 	}

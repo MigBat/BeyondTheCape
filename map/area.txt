@@ -1064,8 +1064,8 @@ macedonia_area = { #5 (Macedonia)
 	148 1853 3001 4702 4780
 }
 
-morea_area = { #4 Central Greece & Crete
-	145 146 163 1773 4701
+morea_area = { #4 Central Greece
+	145 146 1773 4701
 }
 
 northern_greece_area = { #3 #Northern Greece
@@ -1211,6 +1211,10 @@ aegean_archipelago_area = { #4
 	164 320 2348 3003 4700
 }
 
+greek_islands_area = {
+	321 163 4973 4974
+}
+
 kastamonu_area = { #4
 	325 328 2299 2304
 }
@@ -1221,7 +1225,7 @@ karaman_area = { #4
 
 cukurova_area = { #3
 	color = { 50 177 200 }
-	321 327 2302
+	327 2302
 }
 
 aleppo_area = { #4
@@ -2599,7 +2603,7 @@ hokkaido_area = { #5
 }
 
 hokuriku_area = { #3
-	1023 1024 1837
+	1023 1024 1837 4972
 }
 
 kanto_area = { #3 #Western Kanto
@@ -3053,6 +3057,18 @@ amapa_area = { #3
 
 amazon_area = { #4
 	2889 2930 2933 2934
+}
+
+amazon1_area = {
+	4975 4976 4977
+}
+
+amazon4_area = {
+	4978 4979 4980
+}
+
+amazon7_area = {
+	4981 4982 4983
 }
 
 paraguay_area = { #5

@@ -1,50 +1,94 @@
 naval_hegemon = {
 	allow = {
-		OR = {
-			# Great Power
-			AND = {
-				is_great_power = yes
-				is_potential_hegemon = no
-				if = {
-					limit = {
-						OR = {
-							has_country_flag = halve_hegemony_requirements
-							is_emperor_of_china = yes
-						}
-					}
-					navy_size = 125 
-				}
-				else = { navy_size = 250 } 
-				NOT = { any_other_great_power = { num_of_heavy_ship = root } }
+		# Discovery Potential
+		if = {
+			limit = { is_discovery_nav_hegemon = yes current_age = age_of_discovery }
+			OR = {
+				num_of_heavy_ship = 10
+				num_of_galley = 20
 			}
-			# Discovery Potential
-			AND = {
-				current_age = age_of_discovery
-				is_discovery_nav_hegemon = yes
-				navy_size = 25
-				# most_navy_discovery_nav_hegemon = yes
+			most_navy_discovery_nav_hegemon = yes
+		}
+		# Reformation Potential
+		else_if = {
+			limit = { is_reformation_nav_hegemon = yes current_age = age_of_reformation }
+			OR = {
+				num_of_heavy_ship = 10
+				num_of_galley = 20
 			}
-			# Refomation Potential
-			AND = {
-				current_age = age_of_reformation
-				is_reformation_nav_hegemon = yes
-				navy_size = 50
-				most_navy_reformation_nav_hegemon = yes
+			most_navy_reformation_nav_hegemon = yes
+		}
+		# Absolutism Potential
+		else_if = {
+			limit = { is_absolutism_nav_hegemon = yes current_age = age_of_absolutism }
+			OR = {
+				num_of_heavy_ship = 10
+				num_of_galley = 20
 			}
-			# Absolutism Potential
-			AND = {
-				current_age = age_of_absolutism
-				is_absolutism_nav_hegemon = yes
-				navy_size = 75
-				most_navy_absolutism_nav_hegemon = yes
+			most_navy_absolutism_nav_hegemon = yes
+		}
+		# Revolutions Potential
+		else_if = {
+			limit = { is_revolutions_nav_hegemon = yes current_age = age_of_revolutions }
+			OR = {
+				num_of_heavy_ship = 10
+				num_of_galley = 20
 			}
-			# Revolutions Potential
-			AND = {
-				current_age = age_of_revolutions
-				is_revolutions_nav_hegemon = yes
-				navy_size = 100
-				# most_navy_revolutions_nav_hegemon = yes
+			most_navy_revolutions_nav_hegemon = yes
+		}
+		# Discovery EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_discovery }
+			OR = {
+				num_of_heavy_ship = 15
+				num_of_galley = 30
 			}
+			NOT = { any_other_great_power = { navy_size = root } }
+		}
+		# Reformation EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_reformation }
+			OR = {
+				num_of_heavy_ship = 25
+				num_of_galley = 50
+			}
+			NOT = { any_other_great_power = { navy_size = root } }
+		}
+		# Absolutism EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_absolutism }
+			OR = {
+				num_of_heavy_ship = 35
+				num_of_galley = 70
+			}
+			NOT = { any_other_great_power = { navy_size = root } }
+		}
+		# Revolutions EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_revolutions }
+			OR = {
+				num_of_heavy_ship = 45
+				num_of_galley = 90
+			}
+			NOT = { any_other_great_power = { navy_size = root } }
+		}
+		# Halve Requirements
+		else_if = {
+			limit = { has_country_flag = halve_hegemony_requirements }
+			OR = {
+				num_of_heavy_ship = 50
+				num_of_galley = 100
+			}
+			NOT = { any_other_great_power = { navy_size = root } }
+		}
+		# Great Power
+		else = {
+			is_great_power = yes
+			OR = {
+				num_of_heavy_ship = 100
+				num_of_galley = 200
+			}
+			NOT = { any_other_great_power = { navy_size = root } }
 		}
 		NOT = { has_country_modifier = lost_hegemony }
 	}

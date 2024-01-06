@@ -2578,6 +2578,9 @@ gbr_row_4 = {
 					province = 163
 				}
 				add_permanent_claim_province = {
+					province = 4974
+				}
+				add_permanent_claim_province = {
 					province = 142
 				}
 				add_permanent_claim_province = {

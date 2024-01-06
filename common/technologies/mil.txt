@@ -24,7 +24,7 @@ technology = {
 	# Tech 1
 	year = 1390
 	expects_institution = {
-		feudalism = 0.05
+		feudalism = 0.1
 	}
 	
 	infantry_shock		= 	0.1
@@ -77,7 +77,7 @@ technology = {
 	# Tech 2
 	year = 1420
 	expects_institution = {
-		feudalism = 0.1
+		feudalism = 0.2
 	}
 	
 	infantry_shock		= 	0.2
@@ -92,7 +92,7 @@ technology = {
 	# Tech 3
 	year = 1440
 	expects_institution = {
-		feudalism = 0.15
+		feudalism = 0.3
 	}
 	
 	land_morale = 	0.5
@@ -118,7 +118,7 @@ technology = {
 	# Tech 5
 	year = 1466
 	expects_institution = {
-		feudalism = 0.25
+		feudalism = 0.4
 		renaissance = 0.1
 	}
 	
@@ -163,8 +163,8 @@ technology = {
 	# Tech 6
 	year = 1479
 	expects_institution = {
-		feudalism = 0.3
-		renaissance = 0.15
+		feudalism = 0.5
+		renaissance = 0.2
 	}
 	
 	#Arquebus
@@ -198,8 +198,8 @@ technology = {
 	# Tech 7
 	year = 1492
 	expects_institution = {
-		feudalism = 0.35
-		renaissance = 0.2
+		feudalism = 0.5
+		renaissance = 0.3
 		printing_press = 0.1
 	}
 	
@@ -215,8 +215,8 @@ technology = {
 	# Tech 8
 	year = 1505
 	expects_institution = {
-		feudalism = 0.4
-		renaissance = 0.25
+		feudalism = 0.5
+		renaissance = 0.4
 		printing_press = 0.2
 	}
 
@@ -233,8 +233,8 @@ technology = {
 	# Tech 9
 	year = 1518
 	expects_institution = {
-		feudalism = 0.45
-		renaissance = 0.3
+		feudalism = 0.5
+		renaissance = 0.5
 		printing_press = 0.3
 	}
 	
@@ -260,7 +260,7 @@ technology = {
 	year = 1531
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.35
+		renaissance = 0.5
 		printing_press = 0.4
 		new_world_i = 0.1
 	}
@@ -300,7 +300,7 @@ technology = {
 	year = 1544
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.4
+		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.2
 	}
@@ -320,7 +320,7 @@ technology = {
 	year = 1557
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.45
+		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.3
 	}
@@ -374,7 +374,7 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.15
+		manufactories = 0.2
 	}
 	
 	#Star Bastions
@@ -417,7 +417,7 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.3
+		manufactories = 0.4
 	}
 	
 	#Maurician Infantry
@@ -447,7 +447,7 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
+		manufactories = 0.6
 	}
 	
 	#Standardisation of Calibre
@@ -471,8 +471,8 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.15
+		manufactories = 0.8
+		global_trade = 0.2
 	}
 	
 	cavalry_shock		=	1.0
@@ -491,8 +491,8 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.3
+		manufactories = 1
+		global_trade = 0.4
 	}
 	
 	#Carbine
@@ -523,8 +523,8 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
+		manufactories = 1
+		global_trade = 0.6
 	}
 	
 	#Gustavian Infantry
@@ -562,8 +562,8 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
+		manufactories = 1
+		global_trade = 0.8
 		enlightenment = 0.2
 	}
 	
@@ -585,8 +585,8 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
+		manufactories = 1
+		global_trade = 0.8
 		enlightenment = 0.4
 	}
 	
@@ -605,9 +605,9 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 0.6
 	}
 	
 	#Cartridge	(1620)?)
@@ -635,9 +635,9 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 0.8
 	}
 	
 	#Light Cavalry
@@ -683,9 +683,9 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 1
 	}
 	
 	#Covered Way
@@ -703,9 +703,9 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 1
 	}
 	
 	#Metallurgy
@@ -724,9 +724,9 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 1
 		industrialization = 0.2
 	}
 	
@@ -776,9 +776,9 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 1
 		industrialization = 0.4
 	}
 	
@@ -832,10 +832,10 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
-		industrialization = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 1
+		industrialization = 0.6
 	}
 	
 	#Defense in Depth
@@ -852,10 +852,10 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
-		industrialization = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 1
+		industrialization = 0.8
 	}
 	
 	#Impulse Warfare
@@ -889,10 +889,10 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
-		industrialization = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 1
+		industrialization = 1
 	}
 	
 	#Rifle
@@ -909,10 +909,10 @@ technology = {
 		renaissance = 0.5
 		printing_press = 0.5
 		new_world_i = 0.5
-		manufactories = 0.5
-		global_trade = 0.5
-		enlightenment = 0.5
-		industrialization = 0.5
+		manufactories = 1
+		global_trade = 1
+		enlightenment = 1
+		industrialization = 1
 	}
 	
 	#Field Howitzer

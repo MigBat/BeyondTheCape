@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+primary_culture = togoku
+religion = shinto
+technology_group = chinese
+capital = 4972	# Sado
+
+1436.1.1 = {
+	monarch = {
+		name = "Kataoka"
+		dynasty = "Honma"
+		birth_date = 1406.1.1
+#		death_date = 1368.10.31
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

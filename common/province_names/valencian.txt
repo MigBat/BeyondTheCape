@@ -64,7 +64,7 @@
 142 = "PROVINCE142CATALAN"
 146 = "Cetines"
 160 = "PROVINCE160CATALAN"
-163 = "Creta"
+# 163 = "Creta"
 165 = "Berna"
 167 = "Caus"
 169 = "PROVINCE169CATALAN"

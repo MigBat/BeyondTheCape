@@ -418,6 +418,17 @@ gc_tunis_3 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			4974 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 			320 = {
 				if = {
 					limit = {
@@ -430,6 +441,17 @@ gc_tunis_3 = {
 				}
 			}
 			321 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			4973 = {
 				if = {
 					limit = {
 						NOT = {
@@ -448,14 +470,19 @@ gc_tunis_3 = {
 		
 		provinces_to_highlight = {
 			OR = {
+				province_id = 4974
 				province_id = 163
 				province_id = 320
 				province_id = 321
+				province_id = 4973
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
+			4974 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			163 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -463,6 +490,9 @@ gc_tunis_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			321 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4973 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}

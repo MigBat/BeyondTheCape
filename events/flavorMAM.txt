@@ -104,7 +104,10 @@ country_event = {
 		is_at_war = no
 		exists = CYP
 		CYP = { 
-			owns = 321
+			OR = {
+				owns = 321
+				owns = 4973
+			}
 			is_subject = no 
 			is_at_war = no
 			government = monarchy
@@ -653,9 +656,11 @@ country_event = {
 		PER = { is_neighbor_of = TUR }
 		MAM = { is_neighbor_of = TUR }
 		NOT = {
-			PER = { alliance_with = TUR }
-			VEN = { alliance_with = TUR }
-			MAM = { alliance_with = TUR }
+			OR = {
+				PER = { alliance_with = TUR }
+				VEN = { alliance_with = TUR }
+				MAM = { alliance_with = TUR }
+			}
 		}
 		TUR = {
 			owns = 141 # Serbia

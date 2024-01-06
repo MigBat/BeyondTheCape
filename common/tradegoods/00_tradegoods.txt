@@ -707,6 +707,9 @@ gold = {
 			NOT = { area = amapa_area }
 			NOT = { area = ucayali_area }
 			NOT = { area = amazon_area }
+			NOT = { area = amazon1_area }
+			NOT = { area = amazon4_area }
+			NOT = { area = amazon7_area }
 		}
 		modifier = {
 			factor = 0
@@ -1759,6 +1762,18 @@ tropical_wood = {
 			area = amazon_area
 		}
 		modifier = {
+			factor = 1.5
+			area = amazon1_area
+		}
+		modifier = {
+			factor = 1.5
+			area = amazon4_area
+		}
+		modifier = {
+			factor = 1.5
+			area = amazon7_area
+		}
+		modifier = {
 			factor = 0.5
 			OR = {
 				region = malaya_region
@@ -2062,6 +2077,9 @@ gems = {
 			NOT = { area = mato_grosso_area }
 			NOT = { area = pontal_area }
 			NOT = { area = guapore_area }
+			NOT = { area = amazon1_area }
+			NOT = { area = amazon4_area }
+			NOT = { area = amazon7_area }
 		}
 		modifier = {
 			factor = 0
