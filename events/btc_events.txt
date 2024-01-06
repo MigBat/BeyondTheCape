@@ -2125,6 +2125,9 @@ country_event = {
 			}
 			add_years_of_income = -1
 		}
+		else = {
+			set_country_flag = ai_european_india_flag
+		}
 	}
 
 	option = {		# Forcefully establish our presence
@@ -2177,6 +2180,9 @@ country_event = {
 			}
 			add_years_of_income = -1
 		}
+		else = {
+			set_country_flag = ai_european_india_flag
+		}
 	}
 
 	option = {		# Forcefully establish our presence
@@ -2226,6 +2232,9 @@ country_event = {
 				ai = no
 			}
 			add_years_of_income = -1
+		}
+		else = {
+			set_country_flag = ai_european_india_flag
 		}
 	}
 

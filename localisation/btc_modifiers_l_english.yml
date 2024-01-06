@@ -53,6 +53,11 @@
  decentralized_indian_state:0 "Decentralized Indian State"
  desc_decentralized_indian_state:0 "Our country has grown too large and is now plagued by unrest. We must unite the Indian people to avert this."
 
+# Large Daimyo #
+
+ large_daimyo:0 "Large Daimyo"
+ desc_large_daimyo:0 "We have grown too large and are considered a threat to the stability of Japan."
+
 # Fighting Off European Invaders #
 
  fighting_off_european_invaders:0 "Fighting Off European Invaders"

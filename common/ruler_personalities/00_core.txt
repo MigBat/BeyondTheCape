@@ -1515,14 +1515,20 @@ expansionist_personality = {
 	
 	war_priority = {
 		modifier = {
+			factor = 2
+			primitives = yes
+		}
+		modifier = {
 			factor = 5
-			OR = {
-				technology_group = south_american
-				technology_group = north_american
-				technology_group = andean
-				technology_group = mesoamerican
-				technology_group = indian
-			}
+			technology_group = andean
+		}
+		modifier = {
+			factor = 5
+			technology_group = mesoamerican
+		}
+		modifier = {
+			factor = 5
+			technology_group = indian
 		}
 		modifier = {
 			factor = 0.2
@@ -1531,9 +1537,8 @@ expansionist_personality = {
 	}
 
 	enemy_strength_multiplier = 0.8
-	
+	underestimate_ae = yes	
 	wants_colonies = yes
-	
 	wants_avoid_ugly_borders = yes
 	
 	global_colonial_growth = 15
@@ -1704,6 +1709,14 @@ conqueror_personality = {
 				factor = 1
 				MIL = 6
 			}
+			modifier = {
+				factor = 10
+				culture = manchu
+			}
+			modifier = {
+				factor = 10
+				culture = manchu_new
+			}
 		}
 	}
 
@@ -1725,6 +1738,14 @@ conqueror_personality = {
 				factor = 1
 				heir_MIL = 6
 			}
+			modifier = {
+				factor = 10
+				culture = manchu
+			}
+			modifier = {
+				factor = 10
+				culture = manchu_new
+			}
 		}
 	}
 	
@@ -1741,6 +1762,14 @@ conqueror_personality = {
 			modifier = {
 				factor = 1
 				has_country_flag = BYZ_double_conqueror_chance_flag
+			}
+			modifier = {
+				factor = 10
+				culture = manchu
+			}
+			modifier = {
+				factor = 10
+				culture = manchu_new
 			}
 		}
 	}
@@ -3740,6 +3769,12 @@ legendary_conqueror_personality = {
 	years_of_nationalism = -5
 	
 	nation_designer_cost = 10
+
+	war_priority = {
+		modifier = {
+			factor = x
+		}
+	}
 	
 	wants_avoid_ugly_borders = yes
 	

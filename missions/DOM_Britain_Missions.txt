@@ -2654,7 +2654,7 @@ gbr_row_4 = {
 
 	gbr_discover_india = {
 		icon = mission_coromandel_expansion
-		required_missions = { gbr_sail_around_africa }
+		required_missions = { gbr_seize_guinea }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -2759,7 +2759,7 @@ gbr_row_4 = {
 
 	gbr_colonize_the_spice_isles = {
 		icon = mission_rb_colonise_spice_islands
-		required_missions = { gbr_chart_the_southern_sea }
+		required_missions = { gbr_sail_around_africa }
 		position = 8
 		provinces_to_highlight = {
 			OR = {
@@ -3625,7 +3625,7 @@ gbr_row_5 = {
 
 	gbr_seize_guinea = {
 		icon = mission_colonial
-		required_missions = { gbr_establish_royal_navy }
+		required_missions = { gbr_explore_new_world }
 		position = 6
 		provinces_to_highlight = {
 			region = guinea_region

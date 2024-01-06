@@ -2186,6 +2186,7 @@ country_event = {
 			FROM = {
 				country_event = { id = btc_por.128 days = 1 }
 				set_country_flag = deal_accepted
+				set_country_flag = ai_european_india_flag
 			}
 		}
 	}
