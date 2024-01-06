@@ -604,6 +604,10 @@ gc_morocco_3 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = moroccan_unity
+				duration = 3650
+			}
 			algiers_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}

@@ -900,6 +900,11 @@ wattasid_weariness = {
 	can_not_declare_war = yes
 }
 
+moroccan_unity = {
+	land_morale = 0.1
+	global_unrest = -2
+}
+
 sado_gold = {
 	trade_goods_size = 2
 	local_gold_depletion_chance_modifier = -0.75
