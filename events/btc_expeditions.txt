@@ -1,15 +1,200 @@
 namespace = btc_expeditions
 normal_or_historical_nations = yes
 
+# Flying Dutchman - Cape of Good Hope
 country_event = {
 	id = btc_expeditions.1
 	title = btc_expeditions.1_t
 	desc = btc_expeditions.1_d
 	picture = tutorial_picture
 
-	is_triggered_only = yes
+	trigger = {
+		1460 = {	# Cape of Good Hope
+			light_ships_in_province = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
 
 	option = {
 		name = btc_expeditions.1a
+
+		set_country_flag = fly_dutch_1
+	}
+}
+
+# Flying Dutchman - Karimata Strait
+country_event = {
+	id = btc_expeditions.2
+	title = btc_expeditions.2_t
+	desc = btc_expeditions.2_d
+	picture = tutorial_picture
+
+	trigger = {
+		1360 = {	# Karimata Strait
+			light_ships_in_province = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_expeditions.2a
+
+		set_country_flag = fly_dutch_2
+	}
+}
+
+# Flying Dutchman - Bahama Banks
+country_event = {
+	id = btc_expeditions.3
+	title = btc_expeditions.3_t
+	desc = btc_expeditions.3_d
+	picture = tutorial_picture
+
+	trigger = {
+		1503 = {	# Bahama Banks
+			light_ships_in_province = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_expeditions.3a
+
+		set_country_flag = fly_dutch_3
+	}
+}
+
+# Flying Dutchman - Gulf of Honduras
+country_event = {
+	id = btc_expeditions.4
+	title = btc_expeditions.4_t
+	desc = btc_expeditions.4_d
+	picture = tutorial_picture
+
+	trigger = {
+		1513 = {	# Gulf of Honduras
+			light_ships_in_province = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_expeditions.4a
+
+		set_country_flag = fly_dutch_4
+	}
+}
+
+# Flying Dutchman - Windward Islands
+country_event = {
+	id = btc_expeditions.5
+	title = btc_expeditions.5_t
+	desc = btc_expeditions.5_d
+	picture = tutorial_picture
+
+	trigger = {
+		1522 = {	# Windward Islands
+			light_ships_in_province = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_expeditions.5a
+
+		set_country_flag = fly_dutch_5
+	}
+}
+
+# Flying Dutchman - Coast of Holland
+country_event = {
+	id = btc_expeditions.6
+	title = btc_expeditions.6_t
+	desc = btc_expeditions.6_d
+	picture = tutorial_picture
+
+	trigger = {
+		1269 = {	# Coast of Holland
+			light_ships_in_province = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_expeditions.6a
+
+		set_country_flag = fly_dutch_6
+	}
+}
+
+# Flying Dutchman - Ship Location
+country_event = {
+	id = btc_expeditions.7
+	title = btc_expeditions.7_t
+	desc = btc_expeditions.7_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_expeditions.7a
+
+		tooltip = {
+			custom_tooltip = fly_dutch_ending_tt
+			clr_country_flag = fly_dutch_1
+			clr_country_flag = fly_dutch_2
+			clr_country_flag = fly_dutch_3
+			clr_country_flag = fly_dutch_4
+			clr_country_flag = fly_dutch_5
+			clr_country_flag = fly_dutch_6
+			set_country_flag = fly_dutch_ending
+		}
+	}
+}
+
+# Flying Dutchman - South Indian Ocean
+country_event = {
+	id = btc_expeditions.8
+	title = btc_expeditions.8_t
+	desc = btc_expeditions.8_d
+	picture = tutorial_picture
+
+	trigger = {
+		has_country_flag = fly_dutch_ending
+		1633 = {	# South Indian Ocean
+			light_ships_in_province = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_expeditions.8a
+
+		tooltip = {
+			custom_tooltip = fly_dutch_complete_tt
+			set_country_flag = flying_dutchman_upgrade
+			set_global_flag = flying_dutchman_found
+		}
 	}
 }

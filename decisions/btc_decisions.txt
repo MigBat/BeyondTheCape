@@ -598,27 +598,3 @@ country_decisions = {
 	}
 }
 
-# AI European India #
-
-country_decisions = {
-	btc_ai_european_india = {
-		potential = {
-			ai = yes
-			has_country_flag = ai_european_india_flag
-			NOT = { has_country_flag = you_did_it }
-		}
-		allow = {
-			india_superregion = {
-				type = all
-				owned_by = root
-			}
-		}
-		effect = {
-			set_country_flag = you_did_it
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 1000
-	}
-}

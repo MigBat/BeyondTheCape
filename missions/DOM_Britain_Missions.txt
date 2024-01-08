@@ -53,6 +53,12 @@ eng_row_slot_1 = {
 					months = 300
 				}
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_britain_flag
+			}
 		}
 	}
 
@@ -1605,6 +1611,12 @@ gbr_row_3 = {
 			add_permanent_claim_province = {
 				province = 226
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_gibraltar_flag
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -1866,6 +1878,12 @@ gbr_row_3 = {
 					power = 50
 					key = GBR_INDIAN_COASTLINE_CONTROL
 				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_deccan_flag
 			}
 		}
 		ai_weight = {
@@ -2590,6 +2608,12 @@ gbr_row_4 = {
 			226 = {
 				center_of_trade = 1
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_mediterranean_flag
+			}
 		}
 		
 		ai_weight = {
@@ -2811,6 +2835,12 @@ gbr_row_4 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_brunei_flag
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -2903,6 +2933,12 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_hindustan_flag
 			}
 		}
 		ai_weight = {
@@ -3648,6 +3684,12 @@ gbr_row_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_guinea_flag
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -3688,6 +3730,12 @@ gbr_row_5 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_cape_flag
 			}
 		}
 		ai_weight = {
@@ -3820,6 +3868,12 @@ gbr_row_5 = {
 			add_country_modifier = {
 				name = "east_india_trade_rush"
 				duration = 9125
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_bengal_flag
 			}
 		}
 		ai_weight = {

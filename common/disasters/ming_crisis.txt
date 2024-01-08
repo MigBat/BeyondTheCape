@@ -7,9 +7,27 @@ ming_crisis = {
 			current_age = age_of_absolutism
 			current_age = age_of_revolutions
 		}
+		NOT = {
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
 	}
 	
 	can_start = {
+		hidden_trigger = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+			NOT = {
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+				}
+			}			
+		}
 		has_any_disaster = no
 		if = {
 			limit = {	

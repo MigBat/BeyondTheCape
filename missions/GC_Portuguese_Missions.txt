@@ -589,6 +589,12 @@ gc_por_1_c = {
 			2999 = {
 				add_permanent_claim = ROOT
 			}
+			if = {
+				limit = { 
+					ai = yes
+				}
+				set_country_flag = ai_portugal_hormuz_flag
+			}
 		}
 
 		ai_weight = {
@@ -631,6 +637,12 @@ gc_por_1_c = {
 			}
 			395 = {	add_permanent_claim = ROOT }
 			396 = {	add_permanent_claim = ROOT }
+			if = {
+				limit = { 
+					ai = yes
+				}
+				set_country_flag = ai_portugal_mascat_flag
+			}
 		}
 
 		ai_weight = {
@@ -773,6 +785,12 @@ gc_por_2_a = {
 				}
 				add_permanent_claim = ROOT 
 			}
+			if = {
+				limit = { 
+					ai = yes
+				}
+				set_country_flag = ai_portugal_tangier_flag
+			}
 		}
 
 		ai_weight = {
@@ -811,6 +829,12 @@ gc_por_2_a = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_portugal_morocco_flag
 			}
 		}
 
@@ -1098,6 +1122,12 @@ gc_por_2_d = {
 				}
 				add_permanent_claim = ROOT
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_portugal_mozambique_flag
+			}
 		}
 
 		ai_weight = {
@@ -1145,6 +1175,12 @@ gc_por_2_d = {
 			}
 			1190 = {
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_portugal_zimbabwe_flag
 			}
 		}
 
@@ -1647,6 +1683,12 @@ gc_por_3 = {
 				name = por_push_to_india
 				duration = 7300
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_portugal_mombasa_flag
+			}
 		}
 
 		ai_weight = {
@@ -1686,6 +1728,12 @@ gc_por_3 = {
 			}
 			388 = {
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_portugal_aden_flag
 			}
 		}
 
@@ -1735,6 +1783,12 @@ gc_por_3 = {
 			remove_country_modifier = discovery_fervor
 			remove_country_modifier = expensive_spices
 			set_country_flag = discovered_india
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_portugal_malabar_flag
+			}
 		}
 
 		ai_weight = {
@@ -2386,38 +2440,14 @@ gc_por_4_d = {
 				}
 				add_permanent_claim = ROOT
 			}
-			529 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+			529 = { add_permanent_claim = ROOT }
+			4430 = { add_permanent_claim = ROOT }
+			517 = { add_permanent_claim = ROOT }
+			if = {
+				limit = {
+					ai = yes
 				}
-			}
-			4430 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			517 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
+				set_country_flag = ai_portugal_lanka_flag
 			}
 		}
 
@@ -3025,6 +3055,12 @@ gc_por_5_d = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_portugal_burma_flag
 			}
 		}
 

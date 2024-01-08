@@ -1515,7 +1515,7 @@ expansionist_personality = {
 	
 	war_priority = {
 		modifier = {
-			factor = 2
+			factor = 5
 			primitives = yes
 		}
 		modifier = {
@@ -1531,12 +1531,11 @@ expansionist_personality = {
 			technology_group = indian
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			same_continent = root
 		}
 	}
 
-	enemy_strength_multiplier = 0.8
 	underestimate_ae = yes	
 	wants_colonies = yes
 	wants_avoid_ugly_borders = yes

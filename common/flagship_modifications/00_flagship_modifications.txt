@@ -9,6 +9,25 @@ base_flagship_modification = {
     base_modification = yes
 }
 
+flying_dutchman_mod = {
+    trigger = {
+        has_country_flag = flying_dutchman_upgrade
+    }
+    modifier = {
+        number_of_cannons_flagship_modifier = 1
+        flagship_durability = 1
+        naval_attrition_in_fleet_modifier = -1
+        movement_speed_in_fleet_modifier = 1
+        naval_maintenance_flagship_modifier = 1.5
+    }
+    ai_trade_score = {
+        factor = 0
+    }
+    ai_war_score = {
+        factor = 1
+    }
+}
+
 mass_load_cannons = {
     trigger = {
         OR = {

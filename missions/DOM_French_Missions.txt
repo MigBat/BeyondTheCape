@@ -60,6 +60,12 @@ french_missions_1 = {
 				}
 				add_permanent_claim = ROOT 
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_france_brittany_flag
+			}
 		}
 	}
 	
@@ -674,6 +680,12 @@ french_missions_1_Continuation_a = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT 
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_france_sicily_flag
 			}
 		}
 	}	
@@ -4175,6 +4187,12 @@ french_missions_4_normal_continuation = {
 						}
 					}
 				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_france_italy_flag
 			}
 		}
 	}

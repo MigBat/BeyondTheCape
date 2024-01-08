@@ -6,9 +6,27 @@ empire_of_china_nomadic_border = {
 			current_age = age_of_discovery
 			current_age = age_of_reformation
 		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
 	}
 
 	can_start = {
+		hidden_trigger = {
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+			NOT = {
+				OR = {
+					current_age = age_of_absolutism
+					current_age = age_of_revolutions
+				}
+			}			
+		}
 		has_any_disaster = no
 		any_neighbor_country = {
 			is_subject = no

@@ -469,6 +469,12 @@ emp_ned_slot2_indies_branch = {
 			country_event = {
 				id = btc_ned.9
 			}
+			if = {
+				limit = { 
+					ai = yes
+				}
+				set_country_flag = ai_netherlands_lanka_flag
+			}
 		}
 	}
 
@@ -540,6 +546,12 @@ emp_ned_slot2_indies_branch = {
 					province = 833
 				}
 			}
+			if = {
+				limit = { 
+					ai = yes
+				}
+				set_country_flag = ai_netherlands_malacca_flag
+			}
 		}
 	}
 	
@@ -582,6 +594,12 @@ emp_ned_slot2_indies_branch = {
 			add_country_modifier = {
 				name = predatory_trade
 				duration = 18250
+			}
+			if = {
+				limit = { 
+					ai = yes
+				}
+				set_country_flag = ai_netherlands_taiwan_flag
 			}
 		}
 	}
@@ -855,6 +873,12 @@ emp_ned_slot3_branch = {
 					}
 					add_permanent_claim = ROOT
 				}				
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_netherlands_guinea_flag
 			}
 		}
 	}
