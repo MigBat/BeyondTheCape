@@ -494,6 +494,28 @@ country_event = {
 					duration = 3650
 				}
 			}
+			if = {
+				limit = {
+					NOL = { has_country_flag = at_war }
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					friend = NOL
+					win = yes
+				}
+			}
+			if = {
+				limit = {
+					WLS = { has_country_flag = at_war }
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					friend = WLS
+					win = yes
+				}
+			}	
 		}
 	}
 }
@@ -559,6 +581,28 @@ country_event = {
 					duration = 3650
 				}
 			}
+			if = {
+				limit = {
+					NOL = { has_country_flag = at_war }
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					friend = NOL
+					win = yes
+				}
+			}
+			if = {
+				limit = {
+					WLS = { has_country_flag = at_war }
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					friend = WLS
+					win = yes
+				}
+			}	
 		}		
 	}
 }
@@ -783,9 +827,27 @@ country_event = {
 				}
 				NOT = { controlled_by = REB }
 			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 2
+			if = {
+				limit = {
+					NOL = { has_country_flag = at_war }
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					friend = NOL
+					win = yes
+				}
+			}
+			if = {
+				limit = {
+					WLS = { has_country_flag = at_war }
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					friend = WLS
+					win = yes
+				}
 			}			
 			add_province_modifier = {
 				name = rebel_refugees
@@ -1229,7 +1291,7 @@ country_event = {
 					save_event_target_as = the_province
 					spawn_rebels = {
 						type = pretender_rebels
-						size = 1
+						size = 3
 						friend = FROM
 					}
 				}
@@ -1277,7 +1339,7 @@ country_event = {
 					save_event_target_as = the_province
 					spawn_rebels = {
 						type = pretender_rebels
-						size = 1
+						size = 3
 						friend = FROM
 					}
 				}
@@ -1291,7 +1353,7 @@ country_event = {
 			event_target:the_province = {
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 1
+					size = 3
 					friend = FROM
 				}
 			}

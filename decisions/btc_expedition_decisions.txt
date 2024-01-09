@@ -1,15 +1,32 @@
 country_decisions = {
-	exp_flying_dutchman = {
+	flying_dutchman_expedition_start = {
 		major = yes
 		color = { 255 255 255 }
 		potential = {
 			ai = no
-			full_idea_group = exploration_ideas
 			had_global_flag = {
 				flag = golden_age_of_piracy
 				days = 1
 			}
 			NOT = { has_global_flag = flying_dutchman_found }
+			NOT = { has_country_flag = start_flying_dutchman_expedition }
+		}
+		allow = {
+			full_idea_group = exploration_ideas
+		}
+		effect = {
+			custom_tooltip = fly_dutch_event_start_tt
+			set_country_flag = start_flying_dutchman_expedition
+		}
+	}
+}
+
+country_decisions = {
+	exp_flying_dutchman = {
+		major = yes
+		color = { 255 255 255 }
+		potential = {
+			has_country_flag = start_flying_dutchman_expedition
 		}
 		allow = {
 			custom_trigger_tooltip = {

@@ -252,7 +252,7 @@ country_event = {
 
 		define_ruler = {
 			name = "Maciot"
-			dynasty = "de Bï¿½thencourt"
+			dynasty = "de Béthencourt"
 			age = 55
 			religion = catholic
 			culture = normand

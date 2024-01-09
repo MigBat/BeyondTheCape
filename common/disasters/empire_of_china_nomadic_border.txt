@@ -154,6 +154,7 @@ empire_of_china_nomadic_border = {
 	
 	can_end = {
 		OR = {
+			current_age = age_of_absolutism
 			is_emperor_of_china = no
 			NOT = {
 				any_neighbor_country = {

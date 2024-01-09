@@ -4735,8 +4735,8 @@ refused_to_break_alliance = {
 }
 
 refused_to_return_core_favor = {
-	opinion = -10
-	min = -50
+	opinion = -50
+	min = -100
 	yearly_decay = 5
 }
 
@@ -4746,38 +4746,38 @@ reduced_opinion_favor = {
 }
 
 refused_to_reduce_opinion_favor = {
-	opinion = -10
-	min = -50
+	opinion = -50
+	min = -100
 	yearly_decay = 5
 }
 
 refused_to_break_alliance_favor = {
-	opinion = -10
-	min = -50
+	opinion = -50
+	min = -100
 	yearly_decay = 5
 }
 
 refused_to_give_gold_for_favors = {
-	opinion = -10
-	min = -50
+	opinion = -50
+	min = -100
 	yearly_decay = 5
 }
 
 refused_to_give_men_for_favors = {
-	opinion = -10
-	min = -50
+	opinion = -50
+	min = -100
 	yearly_decay = 5
 }
 
 refused_to_give_sailors_for_favors = {
-	opinion = -10
-	min = -50
+	opinion = -50
+	min = -100
 	yearly_decay = 5
 }
 
 refused_to_install_heir_for_favors = {
-	opinion = -10
-	min = -50
+	opinion = -50
+	min = -100
 	yearly_decay = 5
 }
 
@@ -4787,14 +4787,14 @@ opinion_iroquois_affront = {
 }
 
 refused_to_give_trust_for_favors = {
-	opinion = -10
-	min = -50
+	opinion = -50
+	min = -100
 	yearly_decay = 5
 }
 
 refused_to_prepare_for_war_for_favors = {
-	opinion = -10
-	min = -50
+	opinion = -50
+	min = -100
 	yearly_decay = 5
 }
 

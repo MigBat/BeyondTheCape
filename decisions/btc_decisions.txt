@@ -190,6 +190,7 @@ country_decisions = {
 
 country_decisions = {
 	iberian_wedding_information = {
+		major = yes
 		potential = {
 			ai = no
 			OR = {
@@ -243,6 +244,7 @@ country_decisions = {
 
 country_decisions = {
 	cas_por_iberian_wedding_information = {
+		major = yes
 		potential = {
 			ai = no
 			tag = CAS
@@ -277,6 +279,7 @@ country_decisions = {
 
 country_decisions = {
 	cas_ara_iberian_wedding_information = {
+		major = yes
 		potential = {
 			ai = no
 			tag = CAS
@@ -594,6 +597,43 @@ country_decisions = {
 			country_event = {
 				id = btc_gch.3
 			}
+		}
+	}
+}
+
+# Disable Ship Capture #
+
+country_decisions = {
+	btc_disable_ship_capture = {
+		potential = {
+			ai = no
+			NOT = { has_country_modifier = disable_ship_capture }
+		}
+		allow = {
+			NOT = { has_country_modifier = disable_ship_capture }
+		}
+		effect = {
+			add_country_modifier = {
+				name = disable_ship_capture
+				duration = -1
+			}
+		}
+	}
+}
+
+# Enable Ship Capture #
+
+country_decisions = {
+	btc_enable_ship_capture = {
+		potential = {
+			ai = no
+			has_country_modifier = disable_ship_capture
+		}
+		allow = {
+			has_country_modifier = disable_ship_capture
+		}
+		effect = {
+			remove_country_modifier = disable_ship_capture
 		}
 	}
 }

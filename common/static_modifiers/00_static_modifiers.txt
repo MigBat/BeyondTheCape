@@ -1938,6 +1938,7 @@ inward_focus_modifier = {
 	ae_impact = 0.33
 	development_cost_modifier = -0.05
 	defensiveness = 0.15
+	own_territory_dice_roll_bonus = 1
 	fort_maintenance_modifier = -0.2
 	build_cost = -0.05
 	global_unrest = -2

@@ -909,3 +909,6 @@ sado_gold = {
 	trade_goods_size = 2
 	local_gold_depletion_chance_modifier = -0.75
 }
+disable_ship_capture = {
+	capture_ship_chance = -9999
+}

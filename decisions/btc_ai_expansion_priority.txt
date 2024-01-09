@@ -511,9 +511,13 @@ country_decisions = {
 			has_country_flag = ai_england_guinea_flag
 		}
 		allow = {
-			guinea_region = {
+			guinea_coast_area = {
 				type = all
 				owned_by = root
+			}
+			west_africa_coast_area = {
+				type = all
+				owned_by = root	
 			}
 		}
 		effect = {

@@ -584,6 +584,11 @@
 #####
  btc_gch_discover_island_title:0 "Send an Expedition"
  btc_gch_discover_island_desc:0 "We will send men to charter our surroundings in the hopes of finding new lands to settle on."
+ btc_disable_ship_capture_title:0 "Disable Ship Capture"
+ btc_disable_ship_capture_desc:0 "Take this decision if you do not want to capture any ships when you win a naval battle."
+ btc_enable_ship_capture_title:0 "Enable Ship Capture"
+ btc_enable_ship_capture_desc:0 "Take this decision if you want to capture ships when you win a naval battle."
+
  currently_exploring_tt:0 "No expedition is currently underway."
 
  feitoria_key:0 "Feitoria"

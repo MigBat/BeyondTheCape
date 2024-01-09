@@ -129,7 +129,7 @@ war_of_the_roses = {
 		events = {
 		}
 		random_events = { 
-			500 = 0
+			400 = 0
 			100 = war_of_the_roses.2		
 			100 = war_of_the_roses.3		
 			100 = war_of_the_roses.4
