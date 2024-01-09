@@ -782,6 +782,12 @@ emp_ned_slot3_branch = {
 					}
 				}
 			}
+			else_if = {
+				limit = {
+					ai = yes
+				}
+				has_idea_group = exploration_ideas
+			}
 			else = {
 				45 = {
 					trade_share = {
@@ -819,6 +825,12 @@ emp_ned_slot3_branch = {
 						share = 10
 					}
 				}
+			}
+			else_if = {
+				limit = {
+					ai = yes
+				}
+				current_age = age_of_reformation
 			}
 			else = {
 				227 = {
