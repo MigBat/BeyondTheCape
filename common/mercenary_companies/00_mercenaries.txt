@@ -2493,7 +2493,7 @@ merc_british_redcoats = {
 merc_colonial_ordenancas = {
 	regiments_per_development = 0.03
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
-    home_province = 1096
+    home_province = 1111
 	cost_modifier = 0.1
 	min_size = 5 
 	max_size = 5
@@ -2501,7 +2501,7 @@ merc_colonial_ordenancas = {
 	sprites = { dlc011_por_sprite_pack westerngfx_sprite_pack }
 	trigger = { 
 		tag = POR
-		owns = 1096
+		owns = 1111
 		num_of_colonists = 1
         is_allowed_to_recruit_mercenaries = yes
 	}

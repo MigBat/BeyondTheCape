@@ -264,7 +264,7 @@ provincial_production_size = {
 }
 
 knowledge_sharing = {
-	institution_growth = 12
+	institution_growth = 6
 	monthly_russian_modernization = 0.06
 }
 

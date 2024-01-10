@@ -2226,6 +2226,8 @@ country_event = {
 			cede_province = ROOT
 			add_core = ROOT
 		}
+
+		set_country_flag = ai_portugal_goa_flag
 	}
 
 	option = {
@@ -2700,7 +2702,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		months = 60
 	}
 
 	option = {
@@ -4326,7 +4328,6 @@ province_event = {
 					name = padrao_raised
 					duration = -1
 				}
-				add_permanent_claim = FROM
 				custom_tooltip = padrao_raised_tt
 			}
 			60 = {}

@@ -76,6 +76,7 @@
  PROV4981:0 "Amazon 7"
  PROV4982:0 "Amazon 8"
  PROV4983:0 "Amazon 9"
+ PROV4984:0 "Hong Kong"
 # Vanilla
  PROV321:0 "North Cyprus"
  PROV163:0 "East Crete"
@@ -127,6 +128,7 @@
  PROV_ADJ4981:0 "Amazon 7"
  PROV_ADJ4982:0 "Amazon 8"
  PROV_ADJ4983:0 "Amazon 9"
+ PROV_ADJ4984:0 "Hong Konger"
 # Vanilla
  PROV_ADJ321:0 "North Cipriot"
  PROV_ADJ163:0 "East Cretan"
@@ -146,6 +148,9 @@
  amazon7_area:0 "Amazon 7"
  amazon7_area_name:0 "Amazon 7"
  amazon7_area_adj:0 "Amazon 7"
+ canton_area:0 "Canton"
+ canton_area_name:0 "Canton"
+ canton_area_adj:0 "Cantonese"
 
 # Native Policy #
 

@@ -520,6 +520,7 @@ country_event = {
 				area = guangdong_area
 				area = west_guangdong_area
 				area = guangxi_area
+				area = canton_area
 			}
 		}
 	}
@@ -584,6 +585,7 @@ country_event = {
 								area = guangdong_area
 								area = west_guangdong_area
 								area = guangxi_area
+								area = canton_area
 							}
 							OR = {
 								controlled_by = REB

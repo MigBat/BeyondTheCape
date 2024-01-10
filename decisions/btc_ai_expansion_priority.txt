@@ -1,5 +1,26 @@
 # AI Portugal #
 country_decisions = {
+	btc_ai_portugal_goa = {
+		potential = {
+			ai = yes
+			has_country_flag = ai_portugal_goa_flag
+		}
+		allow = {
+			kanara_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			clr_country_flag = ai_portugal_goa_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}
+}
+country_decisions = {
 	btc_ai_portugal_hormuz = {
 		potential = {
 			ai = yes
@@ -252,6 +273,27 @@ country_decisions = {
 
 # AI Netherlands #
 country_decisions = {
+	btc_ai_netherlands_pulicat = {
+		potential = {
+			ai = yes
+			has_country_flag = ai_netherlands_pulicat_flag
+		}
+		allow = {
+			south_carnatic_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			clr_country_flag = ai_netherlands_pulicat_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}
+}
+country_decisions = {
 	btc_ai_netherlands_lanka = {
 		potential = {
 			ai = yes
@@ -353,6 +395,27 @@ country_decisions = {
 }
 
 # AI England #
+country_decisions = {
+	btc_ai_england_masulipatnam = {
+		potential = {
+			ai = yes
+			has_country_flag = ai_england_masulipatnam_flag
+		}
+		allow = {
+			andhra_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			clr_country_flag = ai_england_masulipatnam_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}
+}
 country_decisions = {
 	btc_ai_england_britain = {
 		potential = {
@@ -573,6 +636,27 @@ country_decisions = {
 }
 
 # AI France #
+country_decisions = {
+	btc_ai_france_chandernagore = {
+		potential = {
+			ai = yes
+			has_country_flag = ai_france_chandernagore_flag
+		}
+		allow = {
+			west_bengal_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			clr_country_flag = ai_france_chandernagore_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}
+}
 country_decisions = {
 	btc_ai_france_brittany = {
 		potential = {

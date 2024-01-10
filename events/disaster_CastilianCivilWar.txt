@@ -537,6 +537,15 @@ country_event = {
 			casus_belli = cb_castilian_civil_war
 		}
 
+		if = {
+			limit = {
+				ARA = { has_country_flag = pressed_claim }
+			}
+			ARA = {
+				join_all_defensive_wars_of = CAS
+			}
+		}
+
 		set_country_flag = at_war
 		CAS = {
 			set_country_flag = at_war
@@ -629,6 +638,15 @@ country_event = {
 		declare_war_with_cb = {
 			who = CAS
 			casus_belli = cb_castilian_civil_war
+		}
+
+		if = {
+			limit = {
+				POR = { has_country_flag = pressed_claim }
+			}
+			POR = {
+				join_all_defensive_wars_of = CAS
+			}
 		}
 
 		set_country_flag = at_war
