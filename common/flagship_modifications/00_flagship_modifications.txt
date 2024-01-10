@@ -14,9 +14,9 @@ flying_dutchman_mod = {
         has_country_flag = flying_dutchman_upgrade
     }
     modifier = {
+        naval_attrition_in_fleet_modifier = -1
         number_of_cannons_flagship_modifier = 1
         flagship_durability = 1
-        naval_attrition_in_fleet_modifier = -1
         movement_speed_in_fleet_modifier = 1
         naval_maintenance_flagship_modifier = 1.5
     }
