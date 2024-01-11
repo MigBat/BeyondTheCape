@@ -21,6 +21,31 @@ country_decisions = {
 	}
 }
 country_decisions = {
+	btc_ai_portugal_guinea = {
+		potential = {
+			ai = yes
+			has_country_flag = ai_portugal_guinea_flag
+		}
+		allow = {
+			guinea_coast_area = {
+				type = all
+				owned_by = root
+			}
+			west_africa_coast_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			clr_country_flag = ai_portugal_guinea_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}
+}
+country_decisions = {
 	btc_ai_portugal_hormuz = {
 		potential = {
 			ai = yes
@@ -379,7 +404,11 @@ country_decisions = {
 			has_country_flag = ai_netherlands_guinea_flag
 		}
 		allow = {
-			guinea_region = {
+			guinea_coast_area = {
+				type = all
+				owned_by = root
+			}
+			west_africa_coast_area = {
 				type = all
 				owned_by = root
 			}
@@ -491,20 +520,15 @@ country_decisions = {
 				type = all
 				owned_by = root
 			}
-			aegean_archipelago_area = {
-				type = all
-				owned_by = root
-			}
-			sicily_area = {
-				type = all
-				owned_by = root
-			}
 			corsica_sardinia_area = {
 				type = all
 				owned_by = root
 			}
-			163 = { owned_by = root }
-			4974 = { owned_by = root }
+			greek_islands_area = {
+				type = all
+				owned_by = root
+			}
+			126 = { owned_by = root }
 			142 = { owned_by = root }
 			4698 = { owned_by = root }
 		}
@@ -725,6 +749,54 @@ country_decisions = {
 		}
 		effect = {
 			clr_country_flag = ai_france_italy_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}
+}
+
+# AI Hordes #
+country_decisions = {
+	btc_ai_horde_china = {
+		potential = {
+			ai = yes
+			has_reform = steppe_horde
+		}
+		allow = {
+			china_superregion = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}
+}
+
+# AI Timurids #
+country_decisions = {
+	btc_ai_timurids_mughals = {
+		potential = {
+			ai = yes
+			tag = TIM
+		}
+		allow = {
+			khorasan_region = {
+				type = all
+				owned_by = root				
+			}
+			hindusthan_region = {
+				type = all
+				owned_by = root				
+			}
+		}
+		effect = {
 		}
 		ai_will_do = {
 			factor = 1

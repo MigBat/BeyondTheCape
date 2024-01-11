@@ -3,32 +3,14 @@ ming_crisis = {
 		tag = MNG
 		NOT = { has_country_flag = ming_crisis_happened }
 		normal_or_historical_nations = yes
-		OR = {
-			current_age = age_of_absolutism
-			current_age = age_of_revolutions
-		}
-		NOT = {
-			OR = {
-				current_age = age_of_discovery
-				current_age = age_of_reformation
-			}
-		}
 	}
 	
 	can_start = {
-		hidden_trigger = {
-			OR = {
-				current_age = age_of_absolutism
-				current_age = age_of_revolutions
-			}
-			NOT = {
-				OR = {
-					current_age = age_of_discovery
-					current_age = age_of_reformation
-				}
-			}			
+		current_age = age_of_absolutism
+		OR = {
+			has_any_disaster = no
+			has_disaster = empire_of_china_nomadic_border
 		}
-		has_any_disaster = no
 		if = {
 			limit = {	
 				has_dlc = "Mandate of Heaven"
@@ -50,7 +32,10 @@ ming_crisis = {
 	}
 	
 	can_stop = {
-		has_any_disaster = yes
+		AND = {
+			has_any_disaster = yes	
+			NOT = { has_disaster = empire_of_china_nomadic_border }
+		}
 		if = {
 			limit = {
 				has_dlc = "Mandate of Heaven"

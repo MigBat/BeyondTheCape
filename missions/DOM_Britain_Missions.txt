@@ -864,6 +864,26 @@ gbr_row_slot_2 = {
 			unlock_issue = {
 				issue = the_sugar_act
 			}
+			guinea_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_africa_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_guinea_flag
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -2571,20 +2591,6 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				aegean_archipelago_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				sicily_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 				corsica_sardinia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -2592,11 +2598,15 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				add_permanent_claim_province = {
-					province = 163
+				greek_islands_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT					
 				}
 				add_permanent_claim_province = {
-					province = 4974
+					province = 126
 				}
 				add_permanent_claim_province = {
 					province = 142
@@ -3664,32 +3674,31 @@ gbr_row_5 = {
 		required_missions = { gbr_explore_new_world }
 		position = 6
 		provinces_to_highlight = {
-			region = guinea_region
+			OR = {
+				area = guinea_coast_area
+				area = west_africa_coast_area
+			}
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = GBR }
-			any_province = {
-				region = guinea_region
-				owned_by = ROOT
-				is_city = yes
+			OR = {
+				any_province = {
+					area = guinea_coast_area
+					owned_by = ROOT
+					is_city = yes
+				}
+				any_province = {
+					area = west_africa_coast_area
+					owned_by = ROOT
+					is_city = yes
+				}
 			}
 		}
 		effect = {
-			guinea_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_england_guinea_flag
-			}
+			add_navy_tradition = 10
+			add_prestige = 10
 		}
 		ai_weight = {
 			factor = 250

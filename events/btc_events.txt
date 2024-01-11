@@ -2408,8 +2408,59 @@ country_event = {
 	}
 
 	option = {
-		name = btc_events.40a
+		name = btc_events.41a
 		clr_country_flag = indian_overextension_1
 		clr_country_flag = indian_overextension_2
+	}
+}
+
+# Babur
+country_event = {
+	id = btc_events.42
+	title = btc_events.42_t
+	desc = btc_events.42_d
+	picture = CONQUEROR_eventPicture
+
+	trigger = {
+		tag = TIM
+		is_year = 1500
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = btc_events.42a
+		ai_chance = {
+			factor = 1
+		}
+		
+		define_ruler = {
+			name = "Bâbur"
+			dynasty = "Timurid"
+			age = 18
+			adm = 5	
+			dip = 5	
+			mil = 6
+		}
+		hidden_effect = {
+			add_ruler_personality = legendary_conqueror_personality			
+		}
+		define_ruler_to_general = {
+			fire = 5
+			shock = 5
+			manuever = 3
+			siege = 1
+		}
+	}
+
+	option = {
+		name = btc_events.42b
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
 	}
 }

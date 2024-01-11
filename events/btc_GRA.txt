@@ -14,7 +14,7 @@ country_event = {
 		tag = GRA
 		is_subject_of = CAS
 		is_subject_of_type = tributary_state
-		is_year = 1482
+		NOT = { truce_with = CAS }
 	}
 
 	mean_time_to_happen = {
@@ -26,12 +26,17 @@ country_event = {
 	}
 
 	option = {
-		name = btc_gra.1a
-
-		ai_chance = {
-			factor = 90
+		name = btc_gra.1a	# Pay Paria
+		trigger = {
+			NOT = { is_year = 1482 }
 		}
 
+		ai_chance = {
+			factor = 75
+		}
+		add_truce_with = CAS
+		add_truce_with = POR
+		add_truce_with = ARA
 		add_country_modifier = {
 			name = subject_of_castile
 			duration = 7300
@@ -45,10 +50,10 @@ country_event = {
 	}
 
 	option = {
-		name = btc_gra.1b
+		name = btc_gra.1b	# Don't pay Paria
 
 		ai_chance = {
-			factor = 10
+			factor = 25
 		}
 
 		CAS = { 

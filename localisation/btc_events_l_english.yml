@@ -150,6 +150,10 @@
  btc_events.40_t:0 "Country Fragmentation"
  btc_events.40_d:0 "Our inability to unite the people we rule over has led to numerous declarations of independence. There is nothing we can do now."
  btc_events.40a:0 "Curses!"
+ btc_events.42_t:0 "The Rise of Bâbur"
+ btc_events.42_d:0 "In the complex tapestry of Timurid politics, a significant turning point has emerged. Bâbur, a charismatic and ambitious leader, has maneuvered through the intricate web of court intrigue and regional dynamics, securing his claim to the Timurid throne. This event marks the beginning of a new chapter for the empire, as Bâbur's rise introduces the potential for transformative changes in the political landscape. The destiny of the Timurids now rests on Bâbur's shoulders, as he navigates the challenges of leadership and sets the course for the empire's future. The emergence of a new ruler brings both uncertainty and opportunity, shaping the unfolding narrative of the Timurid dynasty."
+ btc_events.42a:0 "He will lead us to greatness!"
+ btc_events.42b:0 "He is an imposter!"
 
 # Irmandino Revolt #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"

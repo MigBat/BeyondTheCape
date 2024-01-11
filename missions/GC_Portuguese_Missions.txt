@@ -1528,6 +1528,7 @@ gc_por_3 = {
 				manuever = 3
 				siege = 0
 			}
+			set_country_flag = ai_portugal_guinea_flag
 		}
 
 		ai_weight = {
