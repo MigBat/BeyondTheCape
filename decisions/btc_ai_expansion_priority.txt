@@ -804,3 +804,32 @@ country_decisions = {
 		ai_importance = 1000
 	}
 }
+
+# AI Manchu #
+country_decisions = {
+	btc_ai_manchu_manchuria = {
+		potential = {
+			ai = yes
+			OR = {
+				culture = manchu
+				culture = manchu_new
+			}
+		}
+		allow = {
+			manchuria_region = {
+				type = all
+				owned_by = root				
+			}
+			china_superregion = {
+				type = all
+				owned_by = root				
+			}
+		}
+		effect = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}
+}
