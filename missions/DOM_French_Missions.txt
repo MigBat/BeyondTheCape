@@ -803,6 +803,12 @@ french_missions_1_Continuation_a = {
 				name = "fra_colonial_enthusiasm"
 				duration = 7300
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_france_guinea_flag
+			}
 		}
 		ai_weight = {
 			factor = 500

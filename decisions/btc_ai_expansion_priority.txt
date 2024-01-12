@@ -27,14 +27,19 @@ country_decisions = {
 			has_country_flag = ai_portugal_guinea_flag
 		}
 		allow = {
-			guinea_coast_area = {
-				type = all
-				owned_by = root
-			}
-			west_africa_coast_area = {
-				type = all
-				owned_by = root
-			}
+			1096 = { owned_by = root }
+			2241 = { owned_by = root }
+			1139 = { owned_by = root }
+			1306 = { owned_by = root }
+			4962 = { owned_by = root }
+			1097 = { owned_by = root }
+			1167 = { owned_by = root }
+			1172 = { owned_by = root }
+			2258 = { owned_by = root }
+			4949 = { owned_by = root }
+			1182 = { owned_by = root }
+			1183 = { owned_by = root }
+			1449 = { owned_by = root }
 		}
 		effect = {
 			clr_country_flag = ai_portugal_guinea_flag
@@ -404,14 +409,7 @@ country_decisions = {
 			has_country_flag = ai_netherlands_guinea_flag
 		}
 		allow = {
-			guinea_coast_area = {
-				type = all
-				owned_by = root
-			}
-			west_africa_coast_area = {
-				type = all
-				owned_by = root
-			}
+			1177 = { owned_by = root }
 		}
 		effect = {
 			clr_country_flag = ai_netherlands_guinea_flag
@@ -598,14 +596,14 @@ country_decisions = {
 			has_country_flag = ai_england_guinea_flag
 		}
 		allow = {
-			guinea_coast_area = {
-				type = all
-				owned_by = root
-			}
-			west_africa_coast_area = {
-				type = all
-				owned_by = root	
-			}
+			1118 = { owned_by = root }
+			1126 = { owned_by = root }
+			4964 = { owned_by = root }
+			1141 = { owned_by = root }
+			1098 = { owned_by = root }
+			1177 = { owned_by = root }
+			4963 = { owned_by = root }
+			1119 = { owned_by = root }
 		}
 		effect = {
 			clr_country_flag = ai_england_guinea_flag
@@ -749,6 +747,28 @@ country_decisions = {
 		}
 		effect = {
 			clr_country_flag = ai_france_italy_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1000
+	}
+}
+country_decisions = {
+	btc_ai_france_guinea = {
+		potential = {
+			ai = yes
+			has_country_flag = ai_france_guinea_flag
+		}
+		allow = {
+			1151 = { owned_by = root }
+			2242 = { owned_by = root }
+			1163 = { owned_by = root }
+			1164 = { owned_by = root }
+			1165 = { owned_by = root }
+		}
+		effect = {
+			clr_country_flag = ai_france_guinea_flag
 		}
 		ai_will_do = {
 			factor = 1
