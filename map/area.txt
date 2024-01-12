@@ -2912,7 +2912,11 @@ taiwan_area = { #3
 }
 
 guangdong_area = { #5
-	667 668 2156 2157 2158
+	2156 2157 2158
+}
+
+canton_area = {
+	667 668 4984
 }
 
 west_guangdong_area = { #5

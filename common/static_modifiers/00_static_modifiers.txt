@@ -264,7 +264,7 @@ provincial_production_size = {
 }
 
 knowledge_sharing = {
-	institution_growth = 12
+	institution_growth = 6
 	monthly_russian_modernization = 0.06
 }
 
@@ -1934,14 +1934,16 @@ new_order_regiment_mobilized_modifier = {
 inward_focus_modifier = {
 	core_creation = 0.33
 	province_warscore_cost = 1
-	stability_cost_to_declare_war = 1
+	# stability_cost_to_declare_war = 1
 	ae_impact = 0.33
 	development_cost_modifier = -0.05
 	defensiveness = 0.15
+	own_territory_dice_roll_bonus = 1
 	fort_maintenance_modifier = -0.2
 	build_cost = -0.05
 	global_unrest = -2
 	all_estate_loyalty_equilibrium = 0.05
+	can_not_declare_war = yes
 }
 
 outward_focus_modifier = {

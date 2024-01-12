@@ -53,6 +53,12 @@ eng_row_slot_1 = {
 					months = 300
 				}
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_britain_flag
+			}
 		}
 	}
 
@@ -858,6 +864,26 @@ gbr_row_slot_2 = {
 			unlock_issue = {
 				issue = the_sugar_act
 			}
+			guinea_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_africa_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_guinea_flag
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -1605,6 +1631,12 @@ gbr_row_3 = {
 			add_permanent_claim_province = {
 				province = 226
 			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_gibraltar_flag
+			}
 		}
 		ai_weight = {
 			factor = 250
@@ -1866,6 +1898,12 @@ gbr_row_3 = {
 					power = 50
 					key = GBR_INDIAN_COASTLINE_CONTROL
 				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_deccan_flag
 			}
 		}
 		ai_weight = {
@@ -2553,20 +2591,6 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				aegean_archipelago_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				sicily_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 				corsica_sardinia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -2574,11 +2598,15 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				add_permanent_claim_province = {
-					province = 163
+				greek_islands_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT					
 				}
 				add_permanent_claim_province = {
-					province = 4974
+					province = 126
 				}
 				add_permanent_claim_province = {
 					province = 142
@@ -2589,6 +2617,12 @@ gbr_row_4 = {
 			}
 			226 = {
 				center_of_trade = 1
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_mediterranean_flag
 			}
 		}
 		
@@ -2654,7 +2688,7 @@ gbr_row_4 = {
 
 	gbr_discover_india = {
 		icon = mission_coromandel_expansion
-		required_missions = { gbr_sail_around_africa }
+		required_missions = { gbr_seize_guinea }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -2759,7 +2793,7 @@ gbr_row_4 = {
 
 	gbr_colonize_the_spice_isles = {
 		icon = mission_rb_colonise_spice_islands
-		required_missions = { gbr_chart_the_southern_sea }
+		required_missions = { gbr_sail_around_africa }
 		position = 8
 		provinces_to_highlight = {
 			OR = {
@@ -2810,6 +2844,12 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_brunei_flag
 			}
 		}
 		ai_weight = {
@@ -2903,6 +2943,12 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_hindustan_flag
 			}
 		}
 		ai_weight = {
@@ -3625,29 +3671,34 @@ gbr_row_5 = {
 
 	gbr_seize_guinea = {
 		icon = mission_colonial
-		required_missions = { gbr_establish_royal_navy }
+		required_missions = { gbr_explore_new_world }
 		position = 6
 		provinces_to_highlight = {
-			region = guinea_region
+			OR = {
+				area = guinea_coast_area
+				area = west_africa_coast_area
+			}
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = GBR }
-			any_province = {
-				region = guinea_region
-				owned_by = ROOT
-				is_city = yes
+			OR = {
+				any_province = {
+					area = guinea_coast_area
+					owned_by = ROOT
+					is_city = yes
+				}
+				any_province = {
+					area = west_africa_coast_area
+					owned_by = ROOT
+					is_city = yes
+				}
 			}
 		}
 		effect = {
-			guinea_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_navy_tradition = 10
+			add_prestige = 10
 		}
 		ai_weight = {
 			factor = 250
@@ -3688,6 +3739,12 @@ gbr_row_5 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_cape_flag
 			}
 		}
 		ai_weight = {
@@ -3820,6 +3877,12 @@ gbr_row_5 = {
 			add_country_modifier = {
 				name = "east_india_trade_rush"
 				duration = 9125
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				set_country_flag = ai_england_bengal_flag
 			}
 		}
 		ai_weight = {

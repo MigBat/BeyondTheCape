@@ -574,20 +574,6 @@ can_colonize_province = {
 			}
 		}
 	}
-	condition = {
-		tooltip = "one_siberian_frontier"
-		potential = { 
-			FROM = {
-				is_colonial_nation = yes
-				any_owned_province = {
-					is_colony = yes
-				}
-			}
-		}
-		allow = { 
-			always = no
-		}
-	}
 }
 
 can_colonize_province_siberian_frontier = {
@@ -603,6 +589,21 @@ can_colonize_province_siberian_frontier = {
 		}
 		allow = { 
 			always = no
+		}
+	}
+	condition = {
+		tooltip = "colonial_region_restriction"
+		potential = {
+			FROM = {
+				is_colonial_nation = yes
+			}
+		}
+		allow = {
+			FROM = {
+				capital_scope = {
+					colonial_region = ROOT
+				}
+			}
 		}
 	}
 }

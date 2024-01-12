@@ -148,4 +148,9 @@ spriteTypes = {
 		texturefile = "gfx//interface//spanish_navigators.tga"
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_flagship_flying_dutchman_mod"
+		texturefile = "gfx//interface//flying_dutchman_mod.tga"
+		loadType = "INGAME"
+	}
 }

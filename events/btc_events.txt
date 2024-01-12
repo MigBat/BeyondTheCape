@@ -2125,6 +2125,18 @@ country_event = {
 			}
 			add_years_of_income = -1
 		}
+		if = {
+			limit = {
+				ai = yes
+			}
+			543 = {
+				build_to_forcelimit = {
+					infantry = 0.6
+					cavalry = 0.2
+					artillery = 0.2
+				}
+			}	
+		}
 	}
 
 	option = {		# Forcefully establish our presence
@@ -2177,6 +2189,18 @@ country_event = {
 			}
 			add_years_of_income = -1
 		}
+		if = {
+			limit = {
+				ai = yes
+			}
+			561 = {
+				build_to_forcelimit = {
+					infantry = 0.6
+					cavalry = 0.2
+					artillery = 0.2
+				}
+			}	
+		}
 	}
 
 	option = {		# Forcefully establish our presence
@@ -2226,6 +2250,18 @@ country_event = {
 				ai = no
 			}
 			add_years_of_income = -1
+		}
+		if = {
+			limit = {
+				ai = yes
+			}
+			539 = {
+				build_to_forcelimit = {
+					infantry = 0.6
+					cavalry = 0.2
+					artillery = 0.2
+				}
+			}	
 		}
 	}
 
@@ -2408,8 +2444,114 @@ country_event = {
 	}
 
 	option = {
-		name = btc_events.40a
+		name = btc_events.41a
 		clr_country_flag = indian_overextension_1
 		clr_country_flag = indian_overextension_2
+	}
+}
+
+# Babur
+country_event = {
+	id = btc_events.42
+	title = btc_events.42_t
+	desc = btc_events.42_d
+	picture = CONQUEROR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TIM
+		is_year = 1500
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = btc_events.42a
+		ai_chance = {
+			factor = 1
+		}
+		
+		define_ruler = {
+			name = "Bâbur"
+			dynasty = "Timurid"
+			age = 18
+			adm = 5	
+			dip = 5	
+			mil = 6
+		}
+		hidden_effect = {
+			add_ruler_personality = legendary_conqueror_personality			
+		}
+		define_ruler_to_general = {
+			fire = 5
+			shock = 5
+			manuever = 3
+			siege = 1
+		}
+		set_country_flag = had_babur
+		hidden_effect = {
+			if = {
+				limit = {
+					ai = yes
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = ROOT }
+						ai = yes
+						capital_scope = {
+							region = khorasan_region
+						}						
+					}
+					country_event = {
+						id = btc_events.43
+						days = 180
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = btc_events.42b
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
+	}
+}
+
+# Babur has risen (AI only)
+country_event = {
+	id = btc_events.43
+	title = btc_events.43_t
+	desc = btc_events.43_d
+	picture = CONQUEROR_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		tag = TIM
+	}
+
+	option = {
+		name = btc_events.43a
+		ai_chance = {
+			factor = 1
+		}
+		TIM = { vassalize = ROOT }
+
+	}
+
+	option = {
+		name = btc_events.43b
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
 	}
 }

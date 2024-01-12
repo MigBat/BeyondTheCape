@@ -1,8 +1,0 @@
-government = monarchy
-
-add_government_reform = feudalism_reform
-
-religion = catholic
-primary_culture = normand
-technology_group = western
-capital = 366	# Gran Canaria

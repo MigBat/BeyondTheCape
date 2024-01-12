@@ -8,7 +8,7 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	# fire_only_once = yes
 	
 	immediate = {
 		hidden_effect = {
@@ -20,6 +20,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 			random_owned_province = {
@@ -30,6 +31,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 			random_owned_province = {
@@ -40,6 +42,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 			random_owned_province = {
@@ -50,6 +53,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 			random_owned_province = {
@@ -60,6 +64,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 			random_owned_province = {
@@ -70,6 +75,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 			random_owned_province = {
@@ -80,6 +86,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 			random_owned_province = {
@@ -90,6 +97,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 			random_owned_province = {
@@ -100,6 +108,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 			random_owned_province = {
@@ -110,6 +119,7 @@ country_event = {
 				spawn_rebels = {
 					type = anti_tax_rebels 
 					size = 6
+					win = yes
 				}
 			}
 		}
@@ -161,7 +171,7 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	# fire_only_once = yes
 	major = yes
 	
 	trigger = {
@@ -375,7 +385,7 @@ country_event = {
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	# fire_only_once = yes
 	major = yes
 	
 	trigger = {
@@ -490,7 +500,7 @@ country_event = {
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	# fire_only_once = yes
 	major = yes
 	
 	trigger = {
@@ -510,6 +520,7 @@ country_event = {
 				area = guangdong_area
 				area = west_guangdong_area
 				area = guangxi_area
+				area = canton_area
 			}
 		}
 	}
@@ -574,6 +585,7 @@ country_event = {
 								area = guangdong_area
 								area = west_guangdong_area
 								area = guangxi_area
+								area = canton_area
 							}
 							OR = {
 								controlled_by = REB
@@ -783,6 +795,7 @@ country_event = {
 			spawn_rebels = {
 				type = anti_tax_rebels 
 				size = 6
+				win = yes
 			}
 		}
 	}
@@ -1070,6 +1083,7 @@ country_event = {
 					type = nationalist_rebels
 					friend = PREV
 					size = 5
+					win = yes
 				}
 			}
 		}

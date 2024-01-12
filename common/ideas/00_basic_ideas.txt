@@ -1473,10 +1473,11 @@ expansion_ideas = {
 		factor = 0.5
 		modifier = {
 			factor = 10
-			OR = {
-				has_idea_group = exploration_ideas
-				is_colonial_nation = yes
-			}
+			has_idea_group = exploration_ideas
+		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
 		}
 		modifier = {
 			factor = 0
@@ -1484,7 +1485,6 @@ expansion_ideas = {
 				OR = {
 					tag = MOS
 					tag = RUS
-					is_colonial_nation = yes
 				}
 			}
 			NOT = { has_idea_group = exploration_ideas }
@@ -1508,7 +1508,6 @@ expansion_ideas = {
 		modifier = {
 			factor = 0
 			NOT = { has_idea_group = exploration_ideas }
-			NOT = { is_colonial_nation = yes }
 			NOT = {
 				any_owned_province = {
 					has_empty_adjacent_province = yes
@@ -1518,9 +1517,11 @@ expansion_ideas = {
 		modifier = {
 			factor = 0.1
 			NOT = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = muslim
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = muslim
+				}
 			}
 		}
 	}

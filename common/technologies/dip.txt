@@ -117,7 +117,7 @@ technology = { #Shipyards
 	}
 	
 	dock = yes	
-	may_steal_maps = yes
+	may_study_technology = yes
 
 }
 
@@ -171,7 +171,7 @@ technology = { #Carracks & Caravel
 
 	enable = caravela_de_armada
 	enable = nau
-	may_study_technology = yes
+	may_steal_maps = yes
 	
 }
 

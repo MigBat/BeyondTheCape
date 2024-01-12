@@ -76,6 +76,7 @@
  PROV4981:0 "Amazon 7"
  PROV4982:0 "Amazon 8"
  PROV4983:0 "Amazon 9"
+ PROV4984:0 "Hong Kong"
 # Vanilla
  PROV321:0 "North Cyprus"
  PROV163:0 "East Crete"
@@ -127,6 +128,7 @@
  PROV_ADJ4981:0 "Amazon 7"
  PROV_ADJ4982:0 "Amazon 8"
  PROV_ADJ4983:0 "Amazon 9"
+ PROV_ADJ4984:0 "Hong Konger"
 # Vanilla
  PROV_ADJ321:0 "North Cipriot"
  PROV_ADJ163:0 "East Cretan"
@@ -146,6 +148,9 @@
  amazon7_area:0 "Amazon 7"
  amazon7_area_name:0 "Amazon 7"
  amazon7_area_adj:0 "Amazon 7"
+ canton_area:0 "Canton"
+ canton_area_name:0 "Canton"
+ canton_area_adj:0 "Cantonese"
 
 # Native Policy #
 
@@ -380,6 +385,8 @@
  spanish_improved_crows_nest_desc:0 "With a flagship like ours, the enemy will see us coming. By then, it will already be too late for them."
  spanish_navigators:0 "Spanish Navigators"
  spanish_navigators_desc:0 "A Spanish navigator will not only get you to the most distant undiscovered shore, but also, if the winds will it, get you back."
+ flying_dutchman_mod:0 "Flying Dutchman Modification"
+ flying_dutchman_mod_desc:0 "We salvaged parts of the legendary Flying Dutchman and now are able to retrofit them into our own vessels, giving unparalelled dominance at sea."
 
 # Decisions #
  por_upgrade_armada_decision_title:0 "Upgrade the Armada Ships"
@@ -574,7 +581,7 @@
  btc_ven_maggior_consiglio_trying_to_eliminate_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to eliminate the Council of the Ten and remove the §Y"Venetian chancery under the Council of the Ten's control"§! modifier, but upon enacting this issue you will also lose the possibility to call an Council of the Ten emergency government."
  btc_ven_maggior_consiglio_trying_to_curtail_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to limit the Council of the Ten to its official functions and remove the §Y"Venetian chancery under the Council of the Ten's control"§! modifier"
 
-#Venice ten council decision 
+# Venice ten council decision 
  btc_ven_ten_council_government_title:0 "Council of the Ten Government"
  btc_ven_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, as due to its small size it is much more efficient than the Maggior Consiglio."
  btc_ven_improved_ten_council_government_title:0 "Improved Council of the Ten Government"
@@ -582,6 +589,11 @@
 #####
  btc_gch_discover_island_title:0 "Send an Expedition"
  btc_gch_discover_island_desc:0 "We will send men to charter our surroundings in the hopes of finding new lands to settle on."
+ btc_disable_ship_capture_title:0 "Disable Ship Capture"
+ btc_disable_ship_capture_desc:0 "Take this decision if you do not want to capture any ships when you win a naval battle."
+ btc_enable_ship_capture_title:0 "Enable Ship Capture"
+ btc_enable_ship_capture_desc:0 "Take this decision if you want to capture ships when you win a naval battle."
+
  currently_exploring_tt:0 "No expedition is currently underway."
 
  feitoria_key:0 "Feitoria"

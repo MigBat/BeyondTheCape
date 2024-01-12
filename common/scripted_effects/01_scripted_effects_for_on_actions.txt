@@ -3061,6 +3061,10 @@ on_colony_finished_effect = {
 				NOT = { has_country_flag = eng_disabled_colonial_ventures }
 			}
 			NOT = { has_province_flag = had_trade_good_change_event }
+			area_for_scope_province = {
+				type = all
+				NOT = { has_province_flag = area_had_trade_good_change_event }
+			}		
 		}
 		set_province_flag = had_trade_good_change_event
 		province_event = {

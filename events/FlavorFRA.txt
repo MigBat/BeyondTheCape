@@ -119,6 +119,21 @@ country_event = {
 		name = "flavor_fra.EVTOPTA3104"
 		add_stability_or_adm_power = yes
 		add_adm_power = 50
+		if = {
+			limit = {
+				exists = ENG
+				NOT = { exists = GBR }
+				NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
+			}
+			remove_historical_rival = ENG
+		}
+		if = {
+			limit = {
+				exists = GBR
+				NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
+			}
+			remove_historical_rival = GBR
+		}
 	}
 }
 

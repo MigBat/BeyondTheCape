@@ -679,6 +679,7 @@ development_ordinances = {
 
 padrao_raised = {
 	# padrao was raised
+	province_trade_power_value = 0.02
 	picture = "padrao"
 }
 
@@ -747,34 +748,42 @@ tordesillas_claims = {
 }
 
 el_dorado_location = {
+	province_trade_power_value = 0.02
 	picture = "cityofgold"
 }
 
 fountain_of_youth_location = {
+	province_trade_power_value = 0.02
 	picture = "cityofgold"
 }
 
 cibola_location = {
+	province_trade_power_value = 0.02
 	picture = "cityofgold"
 }
 
 norumbega_location = {
+	province_trade_power_value = 0.02
 	picture = "cityofgold"
 }
 
 saguenay_location = {
+	province_trade_power_value = 0.02
 	picture = "cityofgold"
 }
 
 sierra_de_la_plata_location = {
+	province_trade_power_value = 0.02
 	picture = "cityofgold"
 }
 
 city_of_caesars_location = {
+	province_trade_power_value = 0.02
 	picture = "cityofgold"
 }
 
 quivira_location = {
+	province_trade_power_value = 0.02
 	picture = "cityofgold"
 }
 
@@ -829,6 +838,7 @@ voivode_subject = {
 
 island_development = {
 	local_development_cost_modifier = 0.75
+	picture = "island_pic"
 }
 
 island_fort = {
@@ -908,4 +918,18 @@ moroccan_unity = {
 sado_gold = {
 	trade_goods_size = 2
 	local_gold_depletion_chance_modifier = -0.75
+}
+
+disable_ship_capture = {
+	capture_ship_chance = -9999
+}
+
+prestigious_academy = {
+	institution_growth = 3
+	picture = "btc_academy_pic"
+}
+
+paria_tax = {
+	prestige = -0.5
+	#Causes yearly event where you have to pay up
 }

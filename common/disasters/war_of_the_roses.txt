@@ -13,6 +13,7 @@ war_of_the_roses = {
 
 
 	can_start = {
+		is_at_war = no
 		current_age = age_of_discovery
 		OR = {
 			dynasty = York
@@ -34,6 +35,7 @@ war_of_the_roses = {
 	}
 	
 	can_stop = { 
+		is_at_war = yes
 		OR = {
 			has_any_disaster = yes
 			AND = {
@@ -129,7 +131,7 @@ war_of_the_roses = {
 		events = {
 		}
 		random_events = { 
-			500 = 0
+			400 = 0
 			100 = war_of_the_roses.2		
 			100 = war_of_the_roses.3		
 			100 = war_of_the_roses.4

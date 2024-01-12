@@ -7,182 +7,320 @@ country_event = {
 	title = btc_gra.1_t
 	desc = btc_gra.1_d
 	picture = DEBATE_REPUBLICAN_eventPicture
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		tag = GRA
-		is_subject_of = CAS
-		is_subject_of_type = tributary_state
-		is_year = 1482
+		NOT = { is_year = 1480 }
 	}
 
 	mean_time_to_happen = {
 		days = 1
-	}
-
-	immediate = {
-		CAS = { set_country_flag = paria_event_happened }
 	}
 
 	option = {
 		name = btc_gra.1a
 
 		ai_chance = {
-			factor = 90
+			factor = 1
 		}
 
 		add_country_modifier = {
-			name = subject_of_castile
-			duration = 7300
+			name = paria_tax
+			duration = -1
+			desc = paria_tax_desc
 		}
-		CAS = { 
-			country_event = { 
-				id = btc_gra.2 
-				days = 1
-			}
-		}
-	}
-
-	option = {
-		name = btc_gra.1b
-
-		ai_chance = {
-			factor = 10
-		}
-
-		CAS = { 
-			country_event = { 
-				id = btc_gra.3 
-				days = 1
-			}
-		}
+		custom_tooltip = paria_tax_tt
 	}
 }
 
-# Paria Paid
+# The end of the Paria Tax
 country_event = {
 	id = btc_gra.2
 	title = btc_gra.2_t
 	desc = btc_gra.2_d
-	picture = CORRUPTION_eventPicture
-
+	picture = GOOD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = btc_gra.2a
+		if = {
+			limit = { has_country_modifier = paria_tax }
+			remove_country_modifier = paria_tax
+			add_stability_or_adm_power = yes
+		}
+		else = {
+			every_country = {
+				limit = { has_country_modifier = paria_tax }
+				remove_country_modifier = paria_tax
+				add_stability_or_adm_power = yes
+			}
+		}
 
-		add_opinion = {
-			who = GRA
-			modifier = paria_paid	# +100
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
 
-# Paria Not Paid
+# The yearly Paria Tax
 country_event = {
 	id = btc_gra.3
 	title = btc_gra.3_t
 	desc = btc_gra.3_d
-	picture = BANKRUPCY_eventPicture
-
+	picture = CORRUPTION_eventPicture
 	is_triggered_only = yes
 
-	option = {
-		name = btc_gra.3a
-
-		ai_chance = {
-			factor = 1
-		}
-
-		every_province = {
-			limit = {
-				owned_by = GRA
-			}
-			add_permanent_claim = ROOT
-		}
-		add_country_modifier = {
-			name = finish_reconquista
-			duration = 1825
-		}
-		if = {
-			limit = { 
-				ai = yes
-			}
-			declare_war_with_cb = {
-				casus_belli = cb_annex
-				who = GRA
-			}
-		}
-	}
-
-	option = {
-		name = btc_gra.3b
-
-		ai_chance = {
-			factor = 0
-		}
-
-		add_prestige = -10
-	}
-}
-
-# Granada no longer pays tribute
-country_event = {
-	id = btc_gra.4
-	title = btc_gra.4_t
-	desc = btc_gra.4_d
-	picture = BANKRUPCY_eventPicture
-
 	trigger = {
-		tag = CAS
-		NOT = { has_country_flag = paria_event_happened }
-		GRA = {
-			NOT = { is_subject_of = ROOT }
+		NOT = { has_global_flag = end_of_the_paria_tax }
+		has_country_modifier = paria_tax
+		225 = {
+			owner = {
+				NOT = { war_with = ROOT }
+			}
 		}
 	}
-
-	fire_only_once = yes
 
 	mean_time_to_happen = {
 		days = 1
 	}
+    
+    immediate = {
+        hidden_effect = {
+            export_to_variable = {
+                which = gra_tribute_to_pay
+                value = monthly_income
+                who = ROOT
+            }
+            multiply_variable = {
+                which = gra_tribute_to_pay
+                value = 2
+            }
+        }
+    }
 
+	#Pay the Annual Tribute
 	option = {
-		name = btc_gra.4a
-
+		name = btc_gra.3a
+		custom_tooltip = btc_gra.3a_tt
+		hidden_effect = {
+			225 = {
+				owner = {
+					country_event = {
+						id = btc_gra.4
+					}
+				}
+			}
+		}
 		ai_chance = {
 			factor = 1
-		}
-
-		every_province = {
-			limit = {
-				owned_by = GRA
-			}
-			add_permanent_claim = ROOT
-		}
-		add_country_modifier = {
-			name = finish_reconquista
-			duration = 1825
-		}
-		if = {
-			limit = { 
-				ai = yes
-			}
-			declare_war_with_cb = {
-				casus_belli = cb_annex
-				who = GRA
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { years_of_income = 0.3 }
+					225 = {
+						owner = {
+							OR = {
+								is_at_war = yes
+								NOT = { manpower_percentage = 0.5 }
+								NOT = { mil_power_cost = 50 }
+							}
+						}
+					}
+				}
 			}
 		}
 	}
 
+	#Refuse to pay the Annual Tribute
 	option = {
-		name = btc_gra.4b
-
+		name = btc_gra.3b
+		custom_tooltip = btc_gra.3b_tt
+		hidden_effect = {
+			225 = {
+				owner = {
+					country_event = {
+						id = btc_gra.5
+					}
+				}
+			}
+		}
 		ai_chance = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				years_of_income = 0.3
+				225 = {
+					owner = {
+						is_at_war = no
+						manpower_percentage = 0.5
+						mil_power_cost = 50
+					}
+				}
+			}
+		}
+	}
+}
+
+# FROM pays Tribute
+country_event = {
+	id = btc_gra.4
+	title = btc_gra.4_t
+	desc = btc_gra.4_d
+	picture = TRIBUTE_TO_TATARS_eventPicture
+	is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            export_to_variable = {
+                which = gra_tribute_to_pay
+                value = monthly_income
+                who = FROM
+            }
+            multiply_variable = {
+                which = gra_tribute_to_pay
+                value = 3
+            }
+        }
+    }
+
+	option = {
+		name = btc_gra.4a
+		transfer_treasury = {
+			giver = FROM
+			taker = ROOT
+			variable = gra_tribute_to_pay
+			custom_tooltip = btc_gra.4a_tt
 		}
 
-		add_prestige = -10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# FROM refuses to pay Tribute
+country_event = {
+	id = btc_gra.5
+	title = btc_gra.5_t
+	desc = btc_gra.5_d
+	picture = TRIBUTE_TO_TATARS_eventPicture
+	is_triggered_only = yes
+
+	#Retaliate against them!
+	option = {
+		name = btc_gra.5a
+		mil_power_cost = 50
+		add_yearly_manpower = -0.2
+		custom_tooltip = btc_gra.5a_tt
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = btc_gra.6
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					is_at_war = yes
+					NOT = { manpower_percentage = 0.5 }
+					NOT = { mil_power_cost = 50 }
+				}
+			}
+		}
+	}
+
+	#We have to live without it
+	option = {
+		name = btc_gra.5b
+		add_prestige = -5
+		add_legitimacy = -5
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = no
+				manpower_percentage = 0.5
+				mil_power_cost = 50
+			}
+			modifier = {
+				factor = 0
+				truce_with = ROOT
+			}
+		}
+	}
+}
+
+# FROM retaliates!
+country_event = {
+	id = btc_gra.6
+	title = btc_gra.6_t
+	desc = btc_gra.6_d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = btc_gra.6a
+		custom_tooltip = btc_gra.6a_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					area = upper_andalucia_area
+				}
+				remove_loot = {
+					who = FROM
+					amount = 5
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+
+# The end of the Paria Tax
+country_event = {
+	id = btc_gra.7
+	title = btc_gra.7_t
+	desc = btc_gra.7_d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	trigger = {
+		has_country_modifier = paria_tax
+		controls = 225
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = btc_gra.2a
+		set_global_flag = end_of_the_paria_tax
+		if = {
+			limit = { has_country_modifier = paria_tax }
+			remove_country_modifier = paria_tax
+			add_stability_or_adm_power = yes
+		}
+		else = {
+			every_country = {
+				limit = { has_country_modifier = paria_tax }
+				remove_country_modifier = paria_tax
+				add_stability_or_adm_power = yes
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
 	}
 }

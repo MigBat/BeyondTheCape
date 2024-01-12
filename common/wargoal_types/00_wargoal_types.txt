@@ -2974,6 +2974,7 @@ superiority_castilian_civil_war = {
 
 		peace_options = {
 			po_concede_defeat
+			po_gold
 		}
 		prov_desc = NO_PROVS
 	}
@@ -2988,8 +2989,8 @@ superiority_castilian_civil_war = {
 		peace_cost_factor = 1
 		
 		peace_options = {
-			po_return_cores
 			po_concede_defeat
+			po_gold
 		}
 		prov_desc = NO_PROVS
 	}

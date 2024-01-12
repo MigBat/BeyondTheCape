@@ -223,6 +223,33 @@ singapore_sound = {
 	province_trade_power_value = 5
 }
 
+cas_paria_tax = { 
+	potential = { 
+		NOT = { has_global_flag = end_of_the_paria_tax }
+	}
+	trigger = {
+		owner = {
+			tag = CAS
+		}
+		exists = GRA
+		custom_trigger_tooltip = {
+			tooltip = cas_paria_tax_tt
+			NOT = { has_global_flag = end_of_the_paria_tax }
+		}
+	}
+	on_deactivation = {
+		hidden_effect = {
+			set_global_flag = end_of_the_paria_tax
+		}
+		owner = {
+			country_event = {
+				id = btc_gra.2
+			}
+		}
+	}
+	global_tax_income = 24
+}
+
 
 catholic_rome = {
 	potential = {

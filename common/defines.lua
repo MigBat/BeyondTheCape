@@ -204,7 +204,7 @@ NDiplomacy = {
 	JUSTIFY_TRADE_CONFLICT_COST = 10,
 	INFILTRATE_ADMINISTRATION_COST = 40,
 	SABOTAGE_REPUTATION_COST = 60,
-	STEAL_MAPS_COST = 50,
+	STEAL_MAPS_COST = 70,
 	SUPPORT_REBELS_COST = 30,
 	SOW_DISCONTENT_COST = 80,
 	AGITATE_FOR_LIBERTY_COST = 90,
@@ -417,7 +417,7 @@ NDiplomacy = {
 
 	FORCE_BREAK_ALLIANCE_TRUCE_YEARS = 10,			-- Length of truce imposed by Break Alliance.
 	FORCE_END_RIVALRY_YEARS = 15,					-- Years until you can re-add a Rival after being forced to remove them by peace treaty.
-	DECLINE_FAVOR_ACTION_STAB_HIT = 1,				-- stability lost for refusing a favor action
+	DECLINE_FAVOR_ACTION_STAB_HIT = 0,				-- stability lost for refusing a favor action
 	TRIBUTE_BASE_CASH = 0.125,						-- Tributary State: Part of yearly income given in tribute
 	TRIBUTE_BASE_ADM = 0.03,						-- Tributary State: Part Adm tribute, mulitplied by total development
 	TRIBUTE_BASE_DIP = 0.03,						-- Tributary State: Part Dip tribute, mulitplied by total development
@@ -1286,7 +1286,7 @@ NMilitary = {
 	NATIVE_FEROCITY_IMPACT = 0.05,					-- how many percentage each ferocity gives in combat bonus
 	GALLEY_BONUS_INLAND_SEA = 1.0,
 	GALLEY_BONUS_COASTAL_SEA = 0.5,
-	GALLEY_DICE_MALLUS_HIGH_SEA = 0,				-- Malus dice roll when not fighting in inland sea.
+	GALLEY_DICE_MALLUS_HIGH_SEA = 1,				-- Malus dice roll when not fighting in inland sea.
 	INSUFFICIENT_SUPPORT = -1.0,
 	SIEGE_MEMORY = 11,
 	SIEGE_MEMORY_SCALED = 0.5,						-- per fort level
@@ -1322,7 +1322,7 @@ NMilitary = {
 	CAVALRY_BREAKTHROUGH = 1.0,						-- Between 0 and 1
 
 	INFANTRY_SPEED = 0.7, 							-- _MDEF_INFANTRY_SPEED = 10,
-	CAVALRY_SPEED = 0.7, 							-- _MDEF_CAVALRY_SPEED = 10,
+	CAVALRY_SPEED = 0.8, 							-- _MDEF_CAVALRY_SPEED = 10,
 	ARTILLERY_SPEED = 0.7, 							-- _MDEF_ARTILLERY_SPEED = 10,
 
 	INFANTRY_COST = 10.0, 							-- _MDEF_INFANTRY_COST = 10,
@@ -1430,7 +1430,7 @@ NMilitary = {
 	NAVAL_BASE_ENGAGEMENT_WIDTH = 5,   		-- Number of ships that can fire per round
 	HEAVY_SHIP_COMBAT_WIDTH = 3,
 	LIGHT_SHIP_COMBAT_WIDTH = 1,
-	GALLEY_COMBAT_WIDTH = 1,
+	GALLEY_COMBAT_WIDTH = 0.75,
 	TRANSPORT_COMBAT_WIDTH = 1,
 	NAVAL_CASUALTY_MIN_MORALE_DAMAGE = 0.2,
 	CAPTURED_SHIP_STRENGTH = 0.3,
@@ -1635,7 +1635,7 @@ NAI = {
 	EDICT_VALUE_THRESHOLD = 120, -- The higher this value, the less the AI will use Edicts
 	EDICT_VALUE_THRESHOLD_MULTIPLY_DEFICIT = 10, -- Change to above threshold in case of running deficit
 	EDICT_VALUE_THRESHOLD_MULTIPLY_LOW_INCOME = 3, -- Change to above threshold in case of low income
-	PRESS_THEM_FURTHER = 0, -- This makes AI that has been promised land require that the enemy is pressed further if they think it is possible. Set to 1 to activate
+	PRESS_THEM_FURTHER = 1, -- This makes AI that has been promised land require that the enemy is pressed further if they think it is possible. Set to 1 to activate
 	CALL_ACCEPTANCE_COALITION_VS_SUBJECT = -60, -- Acceptance penalty when an AI's Tributary (or currently non-existing Subject type with similar mechanic) calls to war against someone who is in a coalition against them
 	WANT_TRIBUTARY_LOST_MANDATE = 10, -- How important it is for Celestial Emperor to make tributaries out of neighbors.
 	NOMINAL_ARMY_SIZE_MULTIPLIER = 1.1, -- This will multiply with the AI's desired regiment count per unit. Does not affect total size of all armies 
@@ -2070,8 +2070,8 @@ NAI = {
 	DIPLOMATIC_ACTION_CURRY_FAVORS_ALLIANCE_FACTOR = 4, 
 
 
-	INVADING_BRAVERY = 1.0,									-- If (defender strength) / (invader strength) > INVADING_BRAVERY, the AI won't attempt a naval invasion
-	INVADING_MAX_AWAY_RATIO = 0.45,							-- AI will never send more than this ratio to invade (Measured in strength)
+	INVADING_BRAVERY = 2.0,									-- If (defender strength) / (invader strength) > INVADING_BRAVERY, the AI won't attempt a naval invasion
+	INVADING_MAX_AWAY_RATIO = 0.75,							-- AI will never send more than this ratio to invade (Measured in strength)
 	INVASION_FLEET_DISTANCE_PENALTY = 0.2,					-- Lower number makes AI more likely to select ships far away for transports
 	INVASION_FLEET_MISSION_PENALTY = 1.0,					-- Lower number makes AI more likely to select ships for transports that are busy with missions
 	INVASION_HOME_FLEET_PENALTY = 3.0,						-- Multiplied by triangular travel distance, only for home fleets

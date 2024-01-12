@@ -15,6 +15,11 @@ is_city = yes
 add_core = SIC
 add_core = NAP
 
+add_permanent_province_modifier = {
+	name = prestigious_academy
+	duration = -1
+}
+
 
 
 discovered_by = western

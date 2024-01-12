@@ -1,14 +1,75 @@
-# country_decisions = {
-# 	expedition1 = {
-# 		major = yes
-# 		potential = {
-			
-# 		}
-# 		allow = {
-			
-# 		}
-# 		effect = {
-			
-# 		}
-# 	}
-# }
+country_decisions = {
+	flying_dutchman_expedition_start = {
+		major = yes
+		color = { 255 255 255 }
+		potential = {
+			ai = no
+			had_global_flag = {
+				flag = golden_age_of_piracy
+				days = 1
+			}
+			NOT = { has_global_flag = flying_dutchman_found }
+			NOT = { has_country_flag = start_flying_dutchman_expedition }
+		}
+		allow = {
+			full_idea_group = exploration_ideas
+		}
+		effect = {
+			custom_tooltip = fly_dutch_event_start_tt
+			set_country_flag = start_flying_dutchman_expedition
+		}
+	}
+}
+
+country_decisions = {
+	exp_flying_dutchman = {
+		major = yes
+		color = { 255 255 255 }
+		potential = {
+			has_country_flag = start_flying_dutchman_expedition
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = fly_dutch_intro_tt
+				has_country_flag = fly_dutch_1
+				has_country_flag = fly_dutch_2
+				has_country_flag = fly_dutch_3
+				has_country_flag = fly_dutch_4
+				has_country_flag = fly_dutch_5
+				has_country_flag = fly_dutch_6
+			}
+			custom_trigger_tooltip = {
+				tooltip = fly_dutch_1_tt
+				has_country_flag = fly_dutch_1
+			}
+			custom_trigger_tooltip = {
+				tooltip = fly_dutch_2_tt
+				has_country_flag = fly_dutch_2
+			}
+			custom_trigger_tooltip = {
+				tooltip = fly_dutch_3_tt
+				has_country_flag = fly_dutch_3
+			}
+			custom_trigger_tooltip = {
+				tooltip = fly_dutch_4_tt
+				has_country_flag = fly_dutch_4
+			}
+			custom_trigger_tooltip = {
+				tooltip = fly_dutch_5_tt
+				has_country_flag = fly_dutch_5
+			}
+			custom_trigger_tooltip = {
+				tooltip = fly_dutch_6_tt
+				has_country_flag = fly_dutch_6
+			}
+		}
+		effect = {
+			custom_tooltip = fly_dutch_event_tt
+			hidden_effect = {
+				country_event = {
+					id = btc_expeditions.7
+				}		
+			}
+		}
+	}
+}
