@@ -838,6 +838,7 @@ voivode_subject = {
 
 island_development = {
 	local_development_cost_modifier = 0.75
+	picture = "island_pic"
 }
 
 island_fort = {
@@ -918,6 +919,17 @@ sado_gold = {
 	trade_goods_size = 2
 	local_gold_depletion_chance_modifier = -0.75
 }
+
 disable_ship_capture = {
 	capture_ship_chance = -9999
+}
+
+prestigious_academy = {
+	institution_growth = 3
+	picture = "btc_academy_pic"
+}
+
+paria_tax = {
+	prestige = -0.5
+	#Causes yearly event where you have to pay up
 }

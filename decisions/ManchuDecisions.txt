@@ -111,6 +111,7 @@ country_decisions = {
 				}
 				grant_independence = yes
 			}
+			add_ruler_personality = legendary_conqueror_personality
 			hidden_effect = {
 				every_province = {
 					limit = {
@@ -172,6 +173,46 @@ country_decisions = {
 					NOT = { has_idea_group = MCH_ideas }
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					ai = yes
+					NOT = { tag = MHX }
+					exists = MHX
+				}
+				vassalize = MHX
+			}
+			if = {
+				limit = {
+					ai = yes
+					NOT = { tag = MJZ }
+					exists = MJZ
+				}
+				vassalize = MJZ
+			}
+			if = {
+				limit = {
+					ai = yes
+					NOT = { tag = MYR }
+					exists = MYR
+				}
+				vassalize = MYR
+			}
+			if = {
+				limit = {
+					ai = yes
+					NOT = { tag = EJZ }
+					exists = EJZ
+				}
+				vassalize = EJZ
+			}
+			if = {
+				limit = {
+					ai = yes
+					NOT = { tag = NHX }
+					exists = NHX
+				}
+				vassalize = NHX
 			}
 		}
 		ai_will_do = {

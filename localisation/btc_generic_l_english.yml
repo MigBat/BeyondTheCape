@@ -581,7 +581,7 @@
  btc_ven_maggior_consiglio_trying_to_eliminate_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to eliminate the Council of the Ten and remove the §Y"Venetian chancery under the Council of the Ten's control"§! modifier, but upon enacting this issue you will also lose the possibility to call an Council of the Ten emergency government."
  btc_ven_maggior_consiglio_trying_to_curtail_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to limit the Council of the Ten to its official functions and remove the §Y"Venetian chancery under the Council of the Ten's control"§! modifier"
 
-#Venice ten council decision 
+# Venice ten council decision 
  btc_ven_ten_council_government_title:0 "Council of the Ten Government"
  btc_ven_ten_council_government_desc:0 "The Council of the Ten is in charge of ruling the country in emergency times, as due to its small size it is much more efficient than the Maggior Consiglio."
  btc_ven_improved_ten_council_government_title:0 "Improved Council of the Ten Government"

@@ -80,13 +80,13 @@ union = {
 	end_date = 1457.1.1
 }
 
-dependency = {
-	subject_type = "tributary_state"
-	first = CAS
-	second = GRA
-	start_date = 1444.1.1
-	end_date = 1475.1.1
-}
+# dependency = {
+# 	subject_type = "tributary_state"
+# 	first = CAS
+# 	second = GRA
+# 	start_date = 1444.1.1
+# 	end_date = 1475.1.1
+# }
 
 dependency = {
 	subject_type = "tributary_state"

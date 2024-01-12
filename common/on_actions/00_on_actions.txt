@@ -18,6 +18,8 @@ on_startup = {
 		flavor_fra.206 # Setup the general for missions
 		flavor_geo.1 # Disaster info
 		flavor_mam.111 # Mamluks-Syria relations
+		# Beyond the Cape
+		btc_gra.1
 	}
 	on_startup_effect = yes
 	on_startup_dlc_cleanup_effect = yes
@@ -2269,6 +2271,8 @@ on_monthly_pulse = {
 on_yearly_pulse = {
 	events = {
 		flavor_mos.3 #Yearly Tatar Yoke Tribute
+		# Beyond the Cape
+		btc_gra.3
 	}
 }
 on_yearly_pulse_2 = {
