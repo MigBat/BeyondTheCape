@@ -57,8 +57,10 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no			
-			owns_core_province = 2108		#Huncun	
-			owns_core_province = 730		#Girin
+			OR = {
+				owns_core_province = 2108		#Huncun	
+				owns_core_province = 730		#Girin
+			}
 			730 = {							#Girin
 				is_state = yes
 			}		
@@ -71,7 +73,7 @@ country_decisions = {
 						culture = manchu
 					}
 				}
-				value = 10
+				value = 20
 			}
 		}
 		effect = {

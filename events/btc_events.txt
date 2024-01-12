@@ -2491,6 +2491,7 @@ country_event = {
 			manuever = 3
 			siege = 1
 		}
+		set_country_flag = had_babur
 		hidden_effect = {
 			if = {
 				limit = {

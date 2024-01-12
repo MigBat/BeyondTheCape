@@ -231,6 +231,7 @@ cas_paria_tax = {
 		owner = {
 			tag = CAS
 		}
+		exists = GRA
 		custom_trigger_tooltip = {
 			tooltip = cas_paria_tax_tt
 			NOT = { has_global_flag = end_of_the_paria_tax }

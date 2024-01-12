@@ -785,6 +785,7 @@ country_decisions = {
 		potential = {
 			ai = yes
 			tag = TIM
+			has_country_flag = had_babur
 		}
 		allow = {
 			khorasan_region = {
