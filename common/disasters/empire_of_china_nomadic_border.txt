@@ -164,7 +164,7 @@ empire_of_china_nomadic_border = {
 		land_forcelimit_modifier = -0.5
 		global_manpower_modifier = -0.5
 		global_monthly_devastation = 0.08
-	}	
+	}		
 	
 	
 	on_start = empire_of_china_nomadic_border_events.1

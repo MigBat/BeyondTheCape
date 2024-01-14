@@ -21,14 +21,7 @@ po_castilian_civil_war = {
 	requires_is_allowed = yes # If set to "yes", treaty will only be visible when explicitly allowed by casus belli. If not, it will be available but cost diplomatic power.
 	
 	is_visible = { # Defaults to equivalent of "always = yes"
-		ROOT = { 
-			OR = {
-				tag = POR
-				tag = ARA
-			}
-			offensive_war_with = CAS
-			has_country_flag = at_war 
-		}
+		always = yes
 	}
 	is_allowed = { # Defaults to equivalent of "always = yes"
 		ROOT = { 

@@ -133,63 +133,53 @@ feudalism = {
 	embracement_speed = {
 		modifier = {
 			factor = -0.2
-			owner = { technology_group = eastern }
-		}
-		modifier = {
-			factor = -0.3
-			owner = { technology_group = ottoman }
+			owner = { 
+				OR = {
+					technology_group = eastern 
+					technology_group = ottoman
+					technology_group = muslim
+				}
+			}
 		}
 		modifier = {
 			factor = -0.4
-			owner = { technology_group = muslim }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = indian }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = chinese }
+			owner = { 
+				OR = {
+					technology_group = indian 
+					technology_group = chinese
+				}
+			}
 		}
 		modifier = {
 			factor = -0.6
-			owner = { technology_group = east_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = central_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = nomad_group }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = sub_saharan }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = mesoamerican }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = andean }
+			owner = { 
+				OR = {
+					technology_group = east_african 
+					technology_group = central_african
+					technology_group = nomad_group
+					technology_group = sub_saharan
+				}
+			}
 		}
 		modifier = {
 			factor = -0.8
-			owner = { technology_group = north_american }
+			owner = { 
+				OR = {
+					technology_group = mesoamerican 
+					technology_group = andean
+				}
+			}
 		}
 		modifier = {
-			factor = -0.8
-			owner = { technology_group = south_american }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = aboriginal_tech }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = polynesian_tech }
+			factor = -1.0
+			owner = { 
+				OR = {
+					technology_group = north_american 
+					technology_group = south_american
+					technology_group = aboriginal_tech
+					technology_group = polynesian_tech
+				}
+			}
 		}
 		modifier = {
 			factor = 0.6
@@ -459,63 +449,53 @@ renaissance = {
 	embracement_speed = {
 		modifier = {
 			factor = -0.2
-			owner = { technology_group = eastern }
-		}
-		modifier = {
-			factor = -0.3
-			owner = { technology_group = ottoman }
+			owner = { 
+				OR = {
+					technology_group = eastern 
+					technology_group = ottoman
+					technology_group = muslim
+				}
+			}
 		}
 		modifier = {
 			factor = -0.4
-			owner = { technology_group = muslim }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = indian }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = chinese }
+			owner = { 
+				OR = {
+					technology_group = indian 
+					technology_group = chinese
+				}
+			}
 		}
 		modifier = {
 			factor = -0.6
-			owner = { technology_group = east_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = central_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = nomad_group }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = sub_saharan }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = mesoamerican }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = andean }
+			owner = { 
+				OR = {
+					technology_group = east_african 
+					technology_group = central_african
+					technology_group = nomad_group
+					technology_group = sub_saharan
+				}
+			}
 		}
 		modifier = {
 			factor = -0.8
-			owner = { technology_group = north_american }
+			owner = { 
+				OR = {
+					technology_group = mesoamerican 
+					technology_group = andean
+				}
+			}
 		}
 		modifier = {
-			factor = -0.8
-			owner = { technology_group = south_american }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = aboriginal_tech }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = polynesian_tech }
+			factor = -1.0
+			owner = { 
+				OR = {
+					technology_group = north_american 
+					technology_group = south_american
+					technology_group = aboriginal_tech
+					technology_group = polynesian_tech
+				}
+			}
 		}
 		modifier = {
 			scale = yes
@@ -826,65 +806,54 @@ printing_press = {
 	embracement_speed = {
 		modifier = {
 			factor = -0.2
-			owner = { technology_group = eastern }
-		}
-		modifier = {
-			factor = -0.3
-			owner = { technology_group = ottoman }
+			owner = { 
+				OR = {
+					technology_group = eastern 
+					technology_group = ottoman
+					technology_group = muslim
+				}
+			}
 		}
 		modifier = {
 			factor = -0.4
-			owner = { technology_group = muslim }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = indian }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = chinese }
+			owner = { 
+				OR = {
+					technology_group = indian 
+					technology_group = chinese
+				}
+			}
 		}
 		modifier = {
 			factor = -0.6
-			owner = { technology_group = east_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = central_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = nomad_group }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = sub_saharan }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = mesoamerican }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = andean }
+			owner = { 
+				OR = {
+					technology_group = east_african 
+					technology_group = central_african
+					technology_group = nomad_group
+					technology_group = sub_saharan
+				}
+			}
 		}
 		modifier = {
 			factor = -0.8
-			owner = { technology_group = north_american }
+			owner = { 
+				OR = {
+					technology_group = mesoamerican 
+					technology_group = andean
+				}
+			}
 		}
 		modifier = {
-			factor = -0.8
-			owner = { technology_group = south_american }
+			factor = -1.0
+			owner = { 
+				OR = {
+					technology_group = north_american 
+					technology_group = south_american
+					technology_group = aboriginal_tech
+					technology_group = polynesian_tech
+				}
+			}
 		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = aboriginal_tech }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = polynesian_tech }
-		}
-
 		modifier = {
 			factor = 0.05
 			scale = yes
@@ -1701,63 +1670,53 @@ manufactories = {
 	embracement_speed = {
 		modifier = {
 			factor = -0.2
-			owner = { technology_group = eastern }
-		}
-		modifier = {
-			factor = -0.3
-			owner = { technology_group = ottoman }
+			owner = { 
+				OR = {
+					technology_group = eastern 
+					technology_group = ottoman
+					technology_group = muslim
+				}
+			}
 		}
 		modifier = {
 			factor = -0.4
-			owner = { technology_group = muslim }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = indian }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = chinese }
+			owner = { 
+				OR = {
+					technology_group = indian 
+					technology_group = chinese
+				}
+			}
 		}
 		modifier = {
 			factor = -0.6
-			owner = { technology_group = east_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = central_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = nomad_group }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = sub_saharan }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = mesoamerican }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = andean }
+			owner = { 
+				OR = {
+					technology_group = east_african 
+					technology_group = central_african
+					technology_group = nomad_group
+					technology_group = sub_saharan
+				}
+			}
 		}
 		modifier = {
 			factor = -0.8
-			owner = { technology_group = north_american }
+			owner = { 
+				OR = {
+					technology_group = mesoamerican 
+					technology_group = andean
+				}
+			}
 		}
 		modifier = {
-			factor = -0.8
-			owner = { technology_group = south_american }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = aboriginal_tech }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = polynesian_tech }
+			factor = -1.0
+			owner = { 
+				OR = {
+					technology_group = north_american 
+					technology_group = south_american
+					technology_group = aboriginal_tech
+					technology_group = polynesian_tech
+				}
+			}
 		}
 		modifier = {
 			factor = 0.3
@@ -2326,65 +2285,54 @@ global_trade = {
 	embracement_speed = {
 		modifier = {
 			factor = -0.2
-			owner = { technology_group = eastern }
-		}
-		modifier = {
-			factor = -0.3
-			owner = { technology_group = ottoman }
+			owner = { 
+				OR = {
+					technology_group = eastern 
+					technology_group = ottoman
+					technology_group = muslim
+				}
+			}
 		}
 		modifier = {
 			factor = -0.4
-			owner = { technology_group = muslim }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = indian }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = chinese }
+			owner = { 
+				OR = {
+					technology_group = indian 
+					technology_group = chinese
+				}
+			}
 		}
 		modifier = {
 			factor = -0.6
-			owner = { technology_group = east_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = central_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = nomad_group }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = sub_saharan }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = mesoamerican }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = andean }
+			owner = { 
+				OR = {
+					technology_group = east_african 
+					technology_group = central_african
+					technology_group = nomad_group
+					technology_group = sub_saharan
+				}
+			}
 		}
 		modifier = {
 			factor = -0.8
-			owner = { technology_group = north_american }
+			owner = { 
+				OR = {
+					technology_group = mesoamerican 
+					technology_group = andean
+				}
+			}
 		}
 		modifier = {
-			factor = -0.8
-			owner = { technology_group = south_american }
+			factor = -1.0
+			owner = { 
+				OR = {
+					technology_group = north_american 
+					technology_group = south_american
+					technology_group = aboriginal_tech
+					technology_group = polynesian_tech
+				}
+			}
 		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = aboriginal_tech }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = polynesian_tech }
-		}
-	
 		modifier = {
 			factor = 0.1 #Not scaled
 			province_trade_power = 15
@@ -2690,63 +2638,53 @@ enlightenment = {
 	embracement_speed = {
 		modifier = {
 			factor = -0.2
-			owner = { technology_group = eastern }
-		}
-		modifier = {
-			factor = -0.3
-			owner = { technology_group = ottoman }
+			owner = { 
+				OR = {
+					technology_group = eastern 
+					technology_group = ottoman
+					technology_group = muslim
+				}
+			}
 		}
 		modifier = {
 			factor = -0.4
-			owner = { technology_group = muslim }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = indian }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = chinese }
+			owner = { 
+				OR = {
+					technology_group = indian 
+					technology_group = chinese
+				}
+			}
 		}
 		modifier = {
 			factor = -0.6
-			owner = { technology_group = east_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = central_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = nomad_group }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = sub_saharan }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = mesoamerican }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = andean }
+			owner = { 
+				OR = {
+					technology_group = east_african 
+					technology_group = central_african
+					technology_group = nomad_group
+					technology_group = sub_saharan
+				}
+			}
 		}
 		modifier = {
 			factor = -0.8
-			owner = { technology_group = north_american }
+			owner = { 
+				OR = {
+					technology_group = mesoamerican 
+					technology_group = andean
+				}
+			}
 		}
 		modifier = {
-			factor = -0.8
-			owner = { technology_group = south_american }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = aboriginal_tech }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = polynesian_tech }
+			factor = -1.0
+			owner = { 
+				OR = {
+					technology_group = north_american 
+					technology_group = south_american
+					technology_group = aboriginal_tech
+					technology_group = polynesian_tech
+				}
+			}
 		}
 		modifier = {
 			factor = 0.2
@@ -3193,63 +3131,53 @@ industrialization = {
 	embracement_speed = {
 		modifier = {
 			factor = -0.2
-			owner = { technology_group = eastern }
-		}
-		modifier = {
-			factor = -0.3
-			owner = { technology_group = ottoman }
+			owner = { 
+				OR = {
+					technology_group = eastern 
+					technology_group = ottoman
+					technology_group = muslim
+				}
+			}
 		}
 		modifier = {
 			factor = -0.4
-			owner = { technology_group = muslim }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = indian }
-		}
-		modifier = {
-			factor = -0.5
-			owner = { technology_group = chinese }
+			owner = { 
+				OR = {
+					technology_group = indian 
+					technology_group = chinese
+				}
+			}
 		}
 		modifier = {
 			factor = -0.6
-			owner = { technology_group = east_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = central_african }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = nomad_group }
-		}
-		modifier = {
-			factor = -0.6
-			owner = { technology_group = sub_saharan }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = mesoamerican }
-		}
-		modifier = {
-			factor = -0.7
-			owner = { technology_group = andean }
+			owner = { 
+				OR = {
+					technology_group = east_african 
+					technology_group = central_african
+					technology_group = nomad_group
+					technology_group = sub_saharan
+				}
+			}
 		}
 		modifier = {
 			factor = -0.8
-			owner = { technology_group = north_american }
+			owner = { 
+				OR = {
+					technology_group = mesoamerican 
+					technology_group = andean
+				}
+			}
 		}
 		modifier = {
-			factor = -0.8
-			owner = { technology_group = south_american }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = aboriginal_tech }
-		}
-		modifier = {
-			factor = -1
-			owner = { technology_group = polynesian_tech }
+			factor = -1.0
+			owner = { 
+				OR = {
+					technology_group = north_american 
+					technology_group = south_american
+					technology_group = aboriginal_tech
+					technology_group = polynesian_tech
+				}
+			}
 		}
 		#Split between RB and non-RB for these four as RB gives more possibilities for spread (so higher for non-RB to compensate
 		modifier = {
