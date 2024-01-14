@@ -177,7 +177,7 @@ country_event = {
 	trigger = {
 		NOT = { exists = CSH }
 		num_of_owned_provinces_with = {
-			value = 10
+			value = 3
 			region = north_china_region
 			controlled_by = REB
 		}
@@ -391,7 +391,7 @@ country_event = {
 	trigger = {
 		NOT = { exists = CDL }
 		num_of_owned_provinces_with = {
-			value = 10
+			value = 3
 			region = xinan_region
 			controlled_by = REB
 		}
@@ -509,7 +509,7 @@ country_event = {
 			NOT = { exists = YUE }
 		}
 		num_of_owned_provinces_with = {
-			value = 10
+			value = 3
 			region = south_china_region
 			controlled_by = REB
 		}

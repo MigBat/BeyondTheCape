@@ -2329,6 +2329,8 @@ country_event = {
 		}
 		1111 = {
 			change_trade_goods = slaves
+			change_culture = root
+			change_religion = root
 		}
 	}
 
@@ -2590,8 +2592,11 @@ province_event = {
 	goto = ROOT
 
 	trigger = {
+		area_for_scope_province = {
+			type = all
+			NOT = { has_province_modifier = feitoria }	
+		}
 		has_province_flag = can_build_feitoria
-		NOT = { has_province_modifier = feitoria }
 		owner = { ai = yes }
 	}
 

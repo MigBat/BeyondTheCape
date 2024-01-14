@@ -161,8 +161,9 @@ empire_of_china_nomadic_border = {
 		imperial_mandate = -0.3
 		reduced_liberty_desire = -25
 		land_morale = -0.15
-		land_forcelimit_modifier = -0.3
-		global_manpower_modifier = -0.3
+		land_forcelimit_modifier = -0.5
+		global_manpower_modifier = -0.5
+		global_monthly_devastation = 0.08
 	}	
 	
 	

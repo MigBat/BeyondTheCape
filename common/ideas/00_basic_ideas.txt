@@ -1438,6 +1438,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
+		cb_on_primitives = yes
 		treasure_fleet_income = 0.25
 		monthly_portuguese_saudade = 0.075
 	}

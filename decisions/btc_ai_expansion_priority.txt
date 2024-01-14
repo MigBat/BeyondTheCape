@@ -804,7 +804,6 @@ country_decisions = {
 	btc_ai_timurids_mughals = {
 		potential = {
 			ai = yes
-			tag = TIM
 			has_country_flag = had_babur
 		}
 		allow = {

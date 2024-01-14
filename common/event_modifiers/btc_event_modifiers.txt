@@ -67,6 +67,7 @@ quest_for_the_new_world = {
 
 resist_reconquista = {
 	local_warscore_cost_modifier = 2
+	local_core_creation = 1
 	local_missionary_strength = -0.02
 }
 
@@ -476,7 +477,7 @@ feitoria = {
 }
 
 foreign_feitoria = {
-	tax_income = 2
+	tax_income = 6
 	picture = "prov_modifier_feitoria"
 }
 

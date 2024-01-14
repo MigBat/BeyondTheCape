@@ -599,3 +599,7 @@
  feitoria_key:0 "Feitoria"
  foreign_feitoria_key:0 "Feitoria"
  portuguese_feitoria:0 "Feitoria"
+
+ no_renaissace_tt:0 "Renaissace cannot be embraced."
+ no_colonialism_tt:0 "Colonialism cannot be embraced."
+ no_industrialization_tt:0 "Industrialization cannot be embraced."

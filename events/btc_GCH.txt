@@ -9,6 +9,13 @@ country_event = {
 	picture = iberian_NATIVES_eventPicture
 
 	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = POR
+			tag = CAS
+		}
+	}
 
 	# Castile vassal
 	option = {

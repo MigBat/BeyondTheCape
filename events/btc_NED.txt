@@ -321,14 +321,49 @@ country_event = {
 	}
 }
 
-# [Root.Province.GetName] to Commercial Enterprise
-province_event = {
+# Give Provinces to Commercial Enterprise
+country_event = {
 	id = btc_ned.2
 	title = btc_ned.2_t
 	desc = btc_ned.2_d
 	picture = 16_Trade_Company_eventPicture
 
-	is_triggered_only = yes
+	trigger = {
+		ROOT = {
+			has_subject_of_type = commercial_enterprise
+		}
+		any_owned_province = {
+			OR = {
+				superregion = india_superregion
+				superregion = east_indies_superregion
+				superregion = china_superregion
+				region = japan_region
+				region = korea_region
+				region = arabia_region
+			}
+			NOT = { has_province_flag = direct_admin_province }	
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		every_owned_province = {
+			limit = {
+				OR = {
+					superregion = india_superregion
+					superregion = east_indies_superregion
+					superregion = china_superregion
+					region = japan_region
+					region = korea_region
+					region = arabia_region
+				}		
+				NOT = { has_province_flag = direct_admin_province }				
+			}
+			save_event_target_as = give_to_voc_province
+		}
+	}
 
 	option = {	# Give it to our commercial enterprise
 		name = btc_ned.2a
@@ -343,7 +378,9 @@ province_event = {
 					is_subject_of = root
 				}
 			}
-			cede_province = VOC			
+			event_target:give_to_voc_ = {
+				cede_province = VOC	
+			}	
 		}
 		else_if = {
 			limit = {
@@ -351,12 +388,18 @@ province_event = {
 					is_subject_of = root
 				}
 			}
-			cede_province = EIC
+			event_target:give_to_voc_ = {
+				cede_province = EIC	
+			}	
 		}
 	}
 
 	option = {	# Administer it directly
 		name = btc_ned.2b
+
+		event_target:give_to_voc_province = {
+			set_province_flag = direct_admin_province
+		}
 
 		ai_chance = {
 			factor = 0
