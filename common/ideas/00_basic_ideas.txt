@@ -1355,6 +1355,7 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
+		num_of_pronoiars = 1
 		monthly_portuguese_saudade = -0.05
 	}
 	mass_army = {
@@ -1438,7 +1439,6 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
-		cb_on_primitives = yes
 		treasure_fleet_income = 0.25
 		monthly_portuguese_saudade = 0.075
 	}

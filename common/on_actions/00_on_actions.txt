@@ -329,30 +329,30 @@ on_war_won = {
 		}
 	}
 	# BEYOND THE CAPE #
-	if = {
-		limit = {
-			ROOT = {
-				tag = POR
-				has_country_flag = at_war
-			}
-			FROM = { tag = CAS }
-		}
-		country_event = {
-			id = castilian_civil_war.12	# Portugal wins civil war
-		}
-	}
-	if = {
-		limit = {
-			ROOT = {
-				tag = ARA
-				has_country_flag = at_war
-			}
-			FROM = { tag = CAS }
-		}
-		country_event = {
-			id = castilian_civil_war.13	# Aragon wins civil war
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		ROOT = {
+	# 			tag = POR
+	# 			has_country_flag = at_war
+	# 		}
+	# 		FROM = { tag = CAS }
+	# 	}
+	# 	country_event = {
+	# 		id = castilian_civil_war.12	# Portugal wins civil war
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		ROOT = {
+	# 			tag = ARA
+	# 			has_country_flag = at_war
+	# 		}
+	# 		FROM = { tag = CAS }
+	# 	}
+	# 	country_event = {
+	# 		id = castilian_civil_war.13	# Aragon wins civil war
+	# 	}
+	# }
 	if = {
 		limit = {
 			ROOT = {
@@ -4723,26 +4723,6 @@ on_convert_by_trade_policy = {
 # province
 # FROM = old owner
 on_province_owner_change = {
-	if = {
-		limit = {
-			AND = {
-				owner = {
-					has_subject_of_type = commercial_enterprise
-				}
-				OR = {
-					superregion = india_superregion
-					superregion = east_indies_superregion
-					superregion = china_superregion
-					region = japan_region
-					region = korea_region
-					region = arabia_region
-				}
-			}
-		}
-		province_event = {
-			id = btc_ned.2
-		}
-	}
 
 	events = {
 		japan.1			#Fall of the current Shogun

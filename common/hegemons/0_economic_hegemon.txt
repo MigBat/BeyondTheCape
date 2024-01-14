@@ -1,5 +1,6 @@
 economic_hegemon = {
 	allow = {
+		is_great_power = yes
 		# Discovery Potential
 		if = {
 			limit = { is_discovery_eco_hegemon = yes current_age = age_of_discovery }
@@ -54,9 +55,8 @@ economic_hegemon = {
 			monthly_income = 250
 			NOT = { any_other_great_power = { monthly_income = root } }
 		}
-		# Great Power
+		# Normal Great Power
 		else = {
-			is_great_power = yes
 			monthly_income = 500
 			NOT = { any_other_great_power = { monthly_income = root } }
 		}

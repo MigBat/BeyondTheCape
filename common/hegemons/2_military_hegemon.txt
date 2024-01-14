@@ -1,5 +1,6 @@
 military_hegemon = {
 	allow = {
+		is_great_power = yes
 		# Discovery Potential
 		if = {
 			limit = { is_discovery_mil_hegemon = yes current_age = age_of_discovery }
@@ -56,7 +57,6 @@ military_hegemon = {
 		}
 		# Great Power
 		else = {
-			is_great_power = yes
 			army_size = 500
 			NOT = { any_other_great_power = { army_size = root } }
 		}
