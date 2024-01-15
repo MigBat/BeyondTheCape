@@ -253,7 +253,5 @@ great_explorer_personality = {
 	allow = {
 		always = no 
 	}
-	ship_durability = 0.05
-	naval_attrition = -0.15
-	exploration_mission_range_in_fleet_modifier = 0.1
+	naval_attrition = -0.2
 }

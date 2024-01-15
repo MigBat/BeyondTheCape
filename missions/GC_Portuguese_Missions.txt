@@ -1654,13 +1654,15 @@ gc_por_3 = {
 					has_discovered = ROOT
 				}
 			}
-			light_ship_fraction = 0.25
+			if = {
+				limit = { ai = yes }
+				light_ship_fraction = 0.25
+			}
 			if = {
 				limit = { ai = no }
-        light_ship_fraction = 0.5
+        		light_ship_fraction = 0.5
 				has_naval_doctrine = any
 			}
-
 		}
 	
 		effect = {
@@ -1679,6 +1681,20 @@ gc_por_3 = {
 				manuever = 6
 				siege = 4
 				trait = great_explorer_personality
+			}
+			tooltip = {
+				227 = {
+					create_flagship = {
+						type = heavy_ship
+						name = "Bérrio"
+					}
+				}				
+			}
+			set_country_flag = por_no_flagship_mod
+			hidden_effect = {
+				country_event = {
+					id = btc_por.178
+				}
 			}
 			add_country_modifier = {
 				name = por_push_to_india

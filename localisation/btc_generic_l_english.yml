@@ -172,6 +172,9 @@
  fez_area:0 "Fez"
  kaabu_area:0 "Kaabu"
 
+ sea_of_storms_region:0 "Sea of Storms"
+ sea_of_storms_superregion:0 "Sea of Storms"
+
 # Trade Nodes #
  lisboa:0 "Lisboa"
  london:0 "London"

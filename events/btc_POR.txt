@@ -325,7 +325,7 @@ country_event = {
 	}
 }
 
-# Marquï¿½s de Pombal
+# Marqu?s de Pombal
 
 country_event = {
 	id = btc_por.4
@@ -340,7 +340,7 @@ country_event = {
 		
 		define_advisor = {
 			type = statesman
-			name = "Marquï¿½s of Pombal"
+			name = "Marquês of Pombal"
 			skill = 3
 			cost_multiplier = 0.25
 		}
@@ -617,7 +617,7 @@ country_event = {
 		}
 	}
 	
-	option = {	# The Marquï¿½s has the situation under control
+	option = {	# The Marqu?s has the situation under control
 		name = btc_por.7E
 		
 		highlight = yes
@@ -780,8 +780,8 @@ country_event = {
 		
 		set_capital = 227
 		227 = {
-			change_province_name = "Belï¿½m"
-			rename_capital = "Belï¿½m"
+			change_province_name = "Belém"
+			rename_capital = "Belém"
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
@@ -3080,7 +3080,7 @@ country_event = {
 	}
 }
 
-# Joï¿½o Vaz Corte Real #
+# Jo?o Vaz Corte Real #
 
 country_event = {
 	id = btc_por.144
@@ -3487,7 +3487,7 @@ country_event = {
 	}
 }
 
-# PÃªro da CovilhÃ£ #
+# Pêro da Covilhã #
 
 country_event = {
 	id = btc_por.152
@@ -3510,7 +3510,7 @@ country_event = {
 	}
 }
 
-# A Report From PÃªro da CovilhÃ£ #
+# A Report From Pêro da Covilhã #
 
 country_event = {
 	id = btc_por.153
@@ -3602,7 +3602,7 @@ country_event = {
 	}
 }
 
-# We Have Found PÃªro da CovilhÃ£ #
+# We Have Found Pêro da Covilhã #
 
 country_event = {
 	id = btc_por.154
@@ -3818,7 +3818,7 @@ country_event = {
 	}
 }
 
-# Luis de CamÃµes #
+# Luis de Camões #
 
 country_event = {
 	id = btc_por.156
@@ -3861,7 +3861,7 @@ country_event = {
 		days = 18250
 	}
 
-	option = {	# As armas e os barÃµes assinalados
+	option = {	# As armas e os barões assinalados
 		name = btc_por.156a
 
 		hidden_effect = {
@@ -3927,7 +3927,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# Passaram ainda alÃ©m da Taprobana
+	option = {	# Passaram ainda além da Taprobana
 		name = btc_por.159a
 
 		hidden_effect = {
@@ -3949,7 +3949,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# Em perigos e guerras esforÃ§ados
+	option = {	# Em perigos e guerras esforçados
 		name = btc_por.160a
 
 		hidden_effect = {
@@ -3971,7 +3971,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# Mais do que prometia a forÃ§a humana
+	option = {	# Mais do que prometia a força humana
 		name = btc_por.161a
 
 		hidden_effect = {
@@ -4005,7 +4005,7 @@ country_event = {
 	}
 }
 
-# Os LusÃ­adas #
+# Os Lusíadas #
 
 country_event = {
 	id = btc_por.163
@@ -4128,7 +4128,7 @@ country_event = {
 		}
 	}
 
-	option = {	# PedrogÃ£o ash
+	option = {	# Pedrogão ash
 		name = btc_por.165e
 
 		change_country_color = {
@@ -4299,7 +4299,7 @@ country_event = {
 	}
 }
 
-# PadrÃ£o in $PROVINCENAME$
+# Padrão in $PROVINCENAME$
 
 province_event = {
 	id = btc_por.167
@@ -4343,7 +4343,7 @@ province_event = {
 		days = 1
 	}
 
-	option = {	# Raise a PadrÃ£o
+	option = {	# Raise a Padrão
 		name = btc_por.167a
 		
 		random_list = {
@@ -5153,7 +5153,7 @@ country_event = {
 	}
 }
 
-# The Treaty of AlcÃ¡Ã§ovas (POR)#
+# The Treaty of Alcáçovas (POR)#
 
 country_event = {
 	id = btc_por.173
@@ -5191,7 +5191,7 @@ country_event = {
 	}
 }
 
-# The Treaty of AlcÃ¡Ã§ovas (CAS)#
+# The Treaty of Alcáçovas (CAS)#
 
 country_event = {
 	id = btc_por.174
@@ -5372,6 +5372,26 @@ province_event = {
 				}
 			}
 		}
+	}
+}
+
+country_event = {
+	id = btc_por.178
+	title = btc_por.178_t
+	desc = btc_por.178_d
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = btc_por.178a
+		227 = {
+			create_flagship = {
+				type = heavy_ship
+				name = "Bérrio"
+			}
+		}
+		clr_country_flag = por_no_flagship_mod
 	}
 }
 
