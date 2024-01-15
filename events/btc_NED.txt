@@ -836,3 +836,41 @@ country_event = {
 		add_prestige = -5
 	}
 }
+
+# Reestablish The Patroonschap
+country_event = {
+	id = btc_ned.11
+	title = btc_ned.11_t
+	desc = btc_ned.11_d
+	picture = CORRUPTION_eventPicture
+
+	hidden = yes
+	trigger = {
+		is_colonial_nation_of = NED
+		capital_scope = {
+			colonial_region = colonial_eastern_america
+		}
+		overlord = {
+			has_country_flag = patroonschap_system
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_ned.11a
+
+		every_owned_province = {
+			limit = {
+				NOT = { has_province_modifier = ned_patroonschap }
+				colonial_region = colonial_eastern_america
+			}
+			add_province_modifier = {
+				name = ned_patroonschap
+				duration = -1
+			}
+		}
+	}
+}

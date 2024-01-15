@@ -91,7 +91,7 @@ estate_slavers_build_manufactory_in_y = {
 	}
 	fail_if = {
 		event_target:agenda_province = {
-			OR = {
+			AND = {
 				NOT = { owned_by = root }
 				NOT = { owner = { is_colonial_nation_of = root } }
 			}
