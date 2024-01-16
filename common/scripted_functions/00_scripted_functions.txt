@@ -156,6 +156,17 @@ can_burn_colony = {
 
 can_colonize_province = {
 	condition = {
+		tooltip = "cape_restrict"
+		potential = { 
+			NOT = { dip_tech = 17 }
+		}
+		allow = { 
+			NOT = { 
+				area = cape_of_good_hope_area
+			}
+		}
+	}
+	condition = {
 		tooltip = "iberia_colonise_restriction"
 		potential = { 
 			NOT = { is_year = 1650 }

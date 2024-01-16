@@ -1388,6 +1388,39 @@ carribeans_region = {
 }
 
 #Sea Regions
+
+# Sea Wastelands
+
+north_atlantic_wasteland = {
+	areas = {
+		north_atlantic_1
+		north_atlantic_2
+		north_atlantic_3
+		north_atlantic_4
+	}
+}
+
+south_atlantic_wasteland = {
+	areas = {
+		south_atlantic_1
+		south_atlantic_2
+	}
+}
+
+indian_ocean_wasteland = {
+	areas = {
+		indian_ocean_1
+		indian_ocean_2
+	}
+}
+
+pacific_ocean_wasteland = {
+	areas = {
+		pacific_ocean_1
+		pacific_ocean_2
+	}
+}
+
 baltic_sea_region = {
 	areas = {
 		baltic_area

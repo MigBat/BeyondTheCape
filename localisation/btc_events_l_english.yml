@@ -559,6 +559,10 @@
  btc_por.176b:0 "Allow shared custody of the young King."
  exiled_leonor:0 "Exiled Leonor"
  welcomed_leonor:0 "Welcomed Leonor"
+ btc_por.178_t:0 "The Cape Route"
+ btc_por.178_d:0 "Our brave explorers have rounded the southern tip of Africa, proving once and for all that India is reacheable by sea. All we need to do now is get there. Decades of sailing the Atlantic have allowed us to discover the most optimal path to reach the Indian Ocean, taking advantage of what we have called §YTrade Winds§!."
+ btc_por.178a:0 "Onwards to India!"
+ cape_route_tt:0 "The Cape Route is found."
 
 # Granada Paria #
 

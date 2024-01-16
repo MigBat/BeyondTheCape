@@ -175,6 +175,26 @@
  sea_of_storms_region:0 "Sea of Storms"
  sea_of_storms_superregion:0 "Sea of Storms"
 
+ north_atlantic_1:0 "Atlantic Depths"
+ north_atlantic_2:0 "Atlantic Depths"
+ north_atlantic_3:0 "Atlantic Depths"
+ north_atlantic_4:0 "Atlantic Depths"
+ south_atlantic_1:0 "Atlantic Depths"
+ south_atlantic_2:0 "Atlantic Depths"
+ indian_ocean_1:0 "Indian Depths"
+ indian_ocean_2:0 "Indian Depths"
+ pacific_ocean_1:0 "Pacific Depths"
+ pacific_ocean_2:0 "Pacific Depths"
+
+ north_atlantic_wasteland:0 "Atlantic Depths"
+ south_atlantic_wasteland:0 "Atlantic Depths"
+ indian_ocean_wasteland:0 "Indian Depths"
+ pacific_ocean_wasteland:0 "Pacific Depths"
+
+ atlantic_wasteland:0 "Atlantic Depths"
+ indian_wasteland:0 "Indian Depths"
+ pacific_wasteland:0 "Pacific Depths"
+
 # Trade Nodes #
  lisboa:0 "Lisboa"
  london:0 "London"
@@ -453,6 +473,7 @@
  iberia_colonise_restriction:0 "There are better provinces for us to colonise."
  not_iberia_colonise_restriction:0 "There are better provinces for us to colonise."
  one_siberian_frontier:0 "You can only have one colony at a time."
+ cape_restrict:0 "You need Diplomatic tech 17 to colonise here."
 
  CORRUPTION_EXPLANATION:2 "Corruption increases over time due to advisors, unbalanced research, overextension and lack of religious unity. It can be decreased by high stability and being ahead of time in administrative or diplomatic technology. If all else fails you can spend ducats to reduce corruption over time. Corruption can affect all power costs, minimum autonomy as well as spy defense and spy network construction speed."
 

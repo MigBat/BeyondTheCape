@@ -5273,7 +5273,7 @@ country_event = {
 	option = {	# Infante Pedro shall remain the sole custodian
 		name = btc_por.176a
 		ai_chance = {
-			factor = 1
+			factor = 7
 		}
 
 		add_estate_loyalty = {
@@ -5292,7 +5292,14 @@ country_event = {
 	option = {	# Allow shared custody of the young King
 		name = btc_por.176b
 		ai_chance = {
-			factor = 0
+			factor = 3
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = ARA
+					ARA = { is_rival = ROOT }
+				}
+			}
 		}
 
 		add_estate_loyalty = {
@@ -5379,19 +5386,33 @@ country_event = {
 	id = btc_por.178
 	title = btc_por.178_t
 	desc = btc_por.178_d
+	picture = SHIP_SAILING_eventPicture
 
-	hidden = yes
 	is_triggered_only = yes
 
 	option = {
 		name = btc_por.178a
+
 		227 = {
 			create_flagship = {
 				type = heavy_ship
-				name = "Bérrio"
+				name = "São Gabriel"
 			}
 		}
-		clr_country_flag = por_no_flagship_mod
+		add_country_modifier = {
+			name = por_push_to_india
+			duration = 7300
+		}
+		custom_tooltip = cape_route_tt
+		hidden_effect = {
+			discover_province = 1597
+			discover_province = 1598
+			discover_province = 1604
+			discover_province = 1603
+			discover_province = 1586
+			discover_province = 1600
+			clr_country_flag = por_no_flagship_mod			
+		}
 	}
 }
 
