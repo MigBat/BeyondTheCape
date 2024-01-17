@@ -169,7 +169,7 @@ country_event = {
 	title = btc_expeditions.7_t
 	desc = btc_expeditions.7_d
 	picture = btc_flying_dutchman_picture
-	goto = 1633
+	goto = 1637
 
 	fire_only_once = yes
 
@@ -177,7 +177,7 @@ country_event = {
 
 	option = {
 		name = btc_expeditions.7a
-		goto = 1633
+		goto = 1637
 
 		custom_tooltip = fly_dutch_ending_tt
 		clr_country_flag = fly_dutch_1
@@ -201,7 +201,7 @@ country_event = {
 
 	trigger = {
 		has_country_flag = fly_dutch_ending
-		1633 = {	# South Indian Ocean
+		1637 = {	# South Indian Ocean
 			light_ships_in_province = ROOT
 		}
 	}

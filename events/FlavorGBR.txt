@@ -26,6 +26,8 @@ country_event = {
 			name = gbr_isolation_policy
 			duration = 9125
 		}
+		remove_historical_rival = FRA
+		FRA = { remove_historical_rival = ROOT }
 		ai_chance = {
 			factor = 1
 		}

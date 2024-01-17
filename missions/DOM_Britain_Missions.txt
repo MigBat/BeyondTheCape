@@ -2082,6 +2082,8 @@ ave_row_3 = {
 				type = dip
 				amount = 1
 			}
+			remove_historical_rival = FRA
+			FRA = { remove_historical_rival = ROOT }
 		}
 		ai_weight = {
 			factor = 250
