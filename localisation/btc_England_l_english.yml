@@ -1,30 +1,4 @@
-﻿l_english:
-
- # England Colonial Countries #
- EAU:0 "Australasia"
- EAU_ADJ:0 "Australasian"
- EBZ:0 "British Reach"
- EBZ_ADJ:0 "British Reachean"
- ECA:0 "Pacifica"
- ECA_ADJ:0 "Pacifican"
- ECN:0 "Canada"
- ECN_ADJ:0 "Canadian"
- ECS:0 "Northumbrian Territories"
- ECS_ADJ:0 "Northumbrian"
- ECO:0 "British Guiana"
- ECO_ADJ:0 "Guianan"
- EEA:0 "New Britannia"
- EEA_ADJ:0 "Britannian"
- ELP:0 "The Argentine"
- ELP_ADJ:0 "Argentine"
- ELO:0 "Royal Dominion"
- ELO_ADJ:0 "Dominion"
- EMX:0 "Edwardia"
- EMX_ADJ:0 "Edwardian"
- EPR:0 "Southern Range"
- EPR_ADJ:0 "Southern Range"
- 
-  
+﻿l_english:  
  
  #Modifiers
  discipline_for_the_marines_acts_modifier:0 "Discipline For The Marines Act"
