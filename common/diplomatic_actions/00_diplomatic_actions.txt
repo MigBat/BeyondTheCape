@@ -757,3 +757,79 @@ sharemap = {
 		allow = { always = no }
 	}
 }
+
+knowledge_sharing = {
+	condition = {
+		tooltip = no_renaissance_tt
+		potential = {
+			is_institution_enabled = renaissance
+			FROM = {
+				NOT = {	# cannot embrace feudalism
+					AND = {
+						has_institution = renaissance 
+						has_institution = feudalism 
+						NOT = { government = native }
+						NOT = { government = tribal }
+					}
+				}
+			}
+		}
+		allow = { always = no }
+	}
+	condition = {
+		tooltip = no_colonialism_tt
+		potential = {
+			is_institution_enabled = new_world_i
+			FROM = {
+				NOT = {	# cannot embrace colonialism
+					AND = {
+						has_institution = new_world_i
+						has_country_flag = got_colonialism
+						has_idea_group = exploration_ideas
+						has_idea_group = expansion_ideas
+						num_of_colonists = 1
+						has_idea = siberian_frontier
+						is_colonial_nation = yes
+						has_subject_of_type = colony
+						has_subject_of_type = crown_colony
+						has_subject_of_type = self_governing_colony
+						has_subject_of_type = private_enterprise
+						AND = {
+							capital_scope = {
+								OR = {
+									continent = europe
+									continent = africa
+									continent = asia
+								}
+							}
+							any_owned_province = {
+								OR = {
+									continent = north_america
+									continent = south_america
+								}
+							}
+						}
+					}	
+				}
+			}
+		}
+		allow = { always = no }
+	}
+	condition = {
+		tooltip = no_industrialization_tt
+		potential = {
+			is_institution_enabled = industrialization
+			FROM = {
+				NOT = {	# cannot embrace industrialization
+					AND = {
+						has_institution = industrialization
+						any_owned_province = {
+							trade_goods = coal
+						}
+					}						
+				}
+			}
+		}
+		allow = { always = no }
+	}
+}

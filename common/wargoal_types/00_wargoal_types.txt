@@ -2973,6 +2973,7 @@ superiority_castilian_civil_war = {
 		peace_cost_factor = 1
 
 		peace_options = {
+			po_castilian_civil_war
 			po_concede_defeat
 			po_gold
 		}

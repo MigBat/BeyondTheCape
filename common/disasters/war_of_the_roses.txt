@@ -35,8 +35,8 @@ war_of_the_roses = {
 	}
 	
 	can_stop = { 
-		is_at_war = yes
 		OR = {
+			is_at_war = yes
 			has_any_disaster = yes
 			AND = {
 				has_heir = yes

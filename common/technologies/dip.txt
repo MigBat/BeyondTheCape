@@ -67,7 +67,7 @@ technology = { #The Early Carrack
 
 	naval_morale			=	0.1
 	naval_maintenance		= 	0.1
-	range					= 	100
+	range					= 	50
 	trade_efficiency 		= 	0.02
 	global_colonial_growth	= 	10
 	may_build_flagships = yes
@@ -108,37 +108,22 @@ technology = { #Basic Financial Instruments
 	coastal_defence = yes
 }
 
-technology = { #Shipyards
+technology = { #Docks
 	# Tech 6
 	year = 1479
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.3
 	}
-	
+	range = 50
 	dock = yes	
 	may_study_technology = yes
 
 }
 
-technology = { #Naval Ambitions
+technology  = { #Shipyards
 	# Tech 7
 	year = 1492
-	expects_institution = {
-		feudalism = 0.5
-		renaissance = 0.4
-		printing_press = 0.1
-	}
-	
-	naval_morale			= 0.3
-	range					= 115
-	impressment_offices 	= yes
-	naval_engagement_width = 10
-}
-
-technology  = { #Docks
-	# Tech 8
-	year = 1505
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -152,6 +137,21 @@ technology  = { #Docks
 	trade_range				=	10
 	naval_morale			=	0.2
 
+}
+
+technology = { #Naval Ambitions
+	# Tech 8
+	year = 1505
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.4
+		printing_press = 0.1
+	}
+	
+	naval_morale			= 0.3
+	range					= 50
+	impressment_offices 	= yes
+	naval_engagement_width = 10
 }
 
 technology = { #Carracks & Caravel

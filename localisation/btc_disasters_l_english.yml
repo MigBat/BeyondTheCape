@@ -95,11 +95,20 @@
  supported_us:0 "Supported us"
  iberian_wedding:0 "Iberian wedding"
  cas_civil_war_end_tt:0 "Either the civil war has ended, one of the countries did not pursue the claim, or the rebels enforced their demands."
+
+ po_castilian_civil_war:0 "Enforce [Root.Consort.GetName]'s claim"
+ PEACE_po_castilian_civil_war:0 "Enforce [Root.Consort.GetName]'s claim"
+ CB_ALLOWED_po_castilian_civil_war:0 "Enforce [Root.Consort.GetName]'s claim"
+ po_castilian_civil_war_desc:0 "[Root.Consort.GetName] becomes the ruler of Castile."
+
+# War of the Roses #
+
  cb_war_of_roses:0 "War of the Roses"
  cb_war_of_roses_desc:0 "Following the death of our monarch our kingdom is being torn apart by supporters of two junior branches of the royal dynasty."
  wg_war_of_roses:0 "Show superiority in the War of the Roses"
  wg_war_of_roses_desc:0 "Show superiority in the War of the Roses"
  country_won_war_of_roses_tt:0 "England, Wales or Northumberland won the war."
+
  war_of_the_roses.1.c:0 "The King in the North!"
  war_of_the_roses.1.e:0 "Hen Wlad Fy Nhadau."
 

@@ -11,6 +11,7 @@ base_flagship_modification = {
 
 flying_dutchman_mod = {
     trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }
         has_country_flag = flying_dutchman_upgrade
     }
     modifier = {
@@ -86,6 +87,7 @@ trade_route_map = {
 
 command_aftercastle = {
     trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }
         OR = {
             NOT = {
                 OR = {
@@ -109,6 +111,9 @@ command_aftercastle = {
 }
 
 improved_crows_nest = {
+    trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }        
+    }
 	modifier = {
         flagship_naval_engagement_modifier = 3
         naval_maintenance_flagship_modifier = 0.5
@@ -122,6 +127,9 @@ improved_crows_nest = {
 }
 
 mortars = {
+    trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }        
+    }
 	modifier = {
         blockade_impact_on_siege_in_fleet_modifier = 1
         naval_maintenance_flagship_modifier = 1
@@ -135,6 +143,9 @@ mortars = {
 }
 
 standardized_signal_book = {
+    trigger = {
+        # NOT = { has_country_flag = por_no_flagship_mod }        
+    }
 	modifier = {
         movement_speed_in_fleet_modifier = 1
         naval_maintenance_flagship_modifier = 0.5
@@ -156,6 +167,9 @@ standardized_signal_book = {
 }
 
 hull_sheating = {
+    trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }
+    }
 	modifier = {
         flagship_durability = 0.5
         naval_maintenance_flagship_modifier = 0.5
@@ -193,6 +207,27 @@ spanish_hull_sheating = {
     }
 }
 
+portuguese_navigators = {
+    trigger = {
+        has_country_flag = por_no_flagship_mod
+        normal_or_historical_nations = yes
+    }
+	modifier = {
+        exploration_mission_range_in_fleet_modifier = 0.5
+        naval_maintenance_flagship_modifier = 0.5
+	}
+    ai_trade_score = {
+        factor = 1
+        modifier = {
+            factor = 10
+            tag = POR
+        }
+    }
+    ai_war_score = {
+        factor = 0
+    }
+}
+
 spanish_navigators = {
    trigger = {
 		OR = {
@@ -202,7 +237,7 @@ spanish_navigators = {
        normal_or_historical_nations = yes
    }
 	modifier = {
-       exploration_mission_range_in_fleet_modifier = 1.25
+       exploration_mission_range_in_fleet_modifier = 0.5
        naval_maintenance_flagship_modifier = 0.5
 	}
    ai_trade_score = {
@@ -220,6 +255,7 @@ spanish_navigators = {
 
 portuguese_bombardier = {
     trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }
 		OR = {
 			tag = POR
 			tag = BRZ
@@ -244,6 +280,7 @@ portuguese_bombardier = {
 
 portuguese_trade_route_map = {
     trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }
 		OR = {
 			tag = POR
 			tag = BRZ
@@ -322,6 +359,7 @@ spanish_treasure_fleet = {
 
 portuguese_mass_load_cannons = {
     trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }
         OR = {
             tag = POR
             tag = BRZ
@@ -376,6 +414,7 @@ dutch_courage = {
 
 portuguese_corps_of_fusiliers = {
     trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }
 		OR = {
 			tag = POR
 			tag = BRZ
@@ -465,6 +504,7 @@ scandinavian_flag_officers = {
 
 flag_officers = {
     trigger = {
+        # NOT = { has_country_flag = por_no_flagship_mod }
         OR = {
             NOT = {
                 OR = {
@@ -489,6 +529,9 @@ flag_officers = {
 }
 
 spare_jolly_roger = {
+    trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }        
+    }
     modifier = {
         privateering_efficiency_in_fleet_modifier = 0.25
         naval_maintenance_flagship_modifier = 0.5
@@ -510,6 +553,9 @@ spare_jolly_roger = {
 }
 
 captains_log = {
+    trigger = {
+        NOT = { has_country_flag = por_no_flagship_mod }        
+    }
     modifier = {
         naval_tradition_in_fleet_modifier = 1
         prestige_from_battles_in_fleet_modifier = 1

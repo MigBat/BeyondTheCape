@@ -1,5 +1,6 @@
 naval_hegemon = {
 	allow = {
+		is_great_power = yes
 		# Discovery Potential
 		if = {
 			limit = { is_discovery_nav_hegemon = yes current_age = age_of_discovery }
@@ -83,7 +84,6 @@ naval_hegemon = {
 		}
 		# Great Power
 		else = {
-			is_great_power = yes
 			OR = {
 				num_of_heavy_ship = 100
 				num_of_galley = 200

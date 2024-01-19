@@ -33,19 +33,19 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.1a
 
-		owner = { add_dip_power = -25 }
+		FROM = { add_dip_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.1b
 
-		owner = { add_mil_power = -25 }
+		FROM = { add_mil_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.1c
 
-		owner = { add_adm_power = -25 }
+		FROM = { add_adm_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 }
@@ -85,19 +85,19 @@ province_event = {
 	option = {	# Good option
 		name = btc_seven_cities.2a
 
-		owner = { add_adm_power = -25 }
+		FROM = { add_adm_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.2b
 
-		owner = { add_army_tradition = -5 }
+		FROM = { add_army_tradition = -5 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.2c
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 }
@@ -137,19 +137,19 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.3a
 
-		owner = { add_dip_power = -10 }
+		FROM = { add_dip_power = -10 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.3b
 
-		owner = { add_dip_power = -30 }
+		FROM = { add_dip_power = -30 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.3c
 
-		owner = { add_dip_power = -20 }
+		FROM = { add_dip_power = -20 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }
@@ -187,19 +187,19 @@ province_event = {
 	option = {	# Bad option
 		name = btc_seven_cities.4a
 
-		owner = { add_dip_power = -25 }
+		FROM = { add_dip_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.4b
 
-		owner = { add_mil_power = -25 }
+		FROM = { add_mil_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.4c
 
-		owner = { add_adm_power = -25 }
+		FROM = { add_adm_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 }
@@ -239,19 +239,19 @@ province_event = {
 	option = {	# Bad option
 		name = btc_seven_cities.5a
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.5b
 
-		owner = { add_sailors = -1000 }
+		FROM = { add_sailors = -1000 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.5c
 
-		owner = { add_legitimacy = -5 }
+		FROM = { add_legitimacy = -5 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 }
@@ -291,19 +291,19 @@ province_event = {
 	option = {	# Good option
 		name = btc_seven_cities.6a
 
-		owner = { add_navy_tradition = -5 }
+		FROM = { add_navy_tradition = -5 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.6b
 
-		owner = { add_prestige = -10 }
+		FROM = { add_prestige = -10 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.6c
 
-		owner = { change_government_reform_progress = -10 }
+		FROM = { change_government_reform_progress = -10 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 }
@@ -341,13 +341,13 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.7a
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.7b
 
-		owner = { 
+		FROM = { 
 			add_estate_loyalty = {
 				estate = estate_nobles
 				loyalty = -5
@@ -358,7 +358,7 @@ province_event = {
 	option = {	# Good option
 		name = btc_seven_cities.7c
 
-		owner = { add_prestige = -10 }
+		FROM = { add_prestige = -10 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }
@@ -398,19 +398,19 @@ province_event = {
 	option = {	# Bad option
 		name = btc_seven_cities.8a
 
-		owner = { add_papal_influence = -5 }
+		FROM = { add_papal_influence = -5 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.8b
 
-		owner = { add_legitimacy = -5 }
+		FROM = { add_legitimacy = -5 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.8c
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }
@@ -450,19 +450,19 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.9a
 
-		owner = { add_mil_power = -25 }
+		FROM = { add_mil_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.9b
 
-		owner = { add_adm_power = -25 }
+		FROM = { add_adm_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.9c
 
-		owner = { add_dip_power = -25 }
+		FROM = { add_dip_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 }
@@ -500,19 +500,19 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.10a
 
-		owner = { add_adm_power = -25 }
+		FROM = { add_adm_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.10b
 
-		owner = { add_mil_power = -25 }
+		FROM = { add_mil_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.10c
 
-		owner = { add_dip_power = -25 }
+		FROM = { add_dip_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }
@@ -552,19 +552,19 @@ province_event = {
 	option = {	# Bad option
 		name = btc_seven_cities.11a
 
-		owner = { add_dip_power = -10 }
+		FROM = { add_dip_power = -10 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.11b
 
-		owner = { add_dip_power = -25 }
+		FROM = { add_dip_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.11c
 
-		owner = { add_dip_power = -50 }
+		FROM = { add_dip_power = -50 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 }
@@ -604,19 +604,19 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.12a
 
-		owner = { add_prestige = -15 }
+		FROM = { add_prestige = -15 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.12b
 
-		owner = { add_prestige = -10 }
+		FROM = { add_prestige = -10 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.12c
 
-		owner = { add_prestige = -5 }
+		FROM = { add_prestige = -5 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }
@@ -654,19 +654,19 @@ province_event = {
 	option = {	# Good option
 		name = btc_seven_cities.13a
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.13b
 
-		owner = { add_adm_power = -15 }
+		FROM = { add_adm_power = -15 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.13c
 
-		owner = { add_adm_power = -30 }
+		FROM = { add_adm_power = -30 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 }
@@ -706,19 +706,19 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.14a
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.14b
 
-		owner = { add_dip_power = -25 }
+		FROM = { add_dip_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.14c
 
-		owner = { add_mil_power = -25 }
+		FROM = { add_mil_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 }
@@ -758,19 +758,19 @@ province_event = {
 	option = {	# Bad option
 		name = btc_seven_cities.15a
 
-		owner = { add_dip_power = -20 }
+		FROM = { add_dip_power = -20 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.15b
 
-		owner = { add_dip_power = -35 }
+		FROM = { add_dip_power = -35 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.15c
 
-		owner = { add_dip_power = -50 }
+		FROM = { add_dip_power = -50 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 }
@@ -808,19 +808,19 @@ province_event = {
 	option = {	# Good option
 		name = btc_seven_cities.16a
 
-		owner = { add_mil_power = -25 }
+		FROM = { add_mil_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.16b
 
-		owner = { add_mil_power = -20 }
+		FROM = { add_mil_power = -20 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.16c
 
-		owner = { add_mil_power = -30 }
+		FROM = { add_mil_power = -30 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 }
@@ -860,19 +860,19 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.17a
 
-		owner = { add_mil_power = -30 }
+		FROM = { add_mil_power = -30 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.17b
 
-		owner = { add_dip_power = -30 }
+		FROM = { add_dip_power = -30 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.17c
 
-		owner = { add_adm_power = -30 }
+		FROM = { add_adm_power = -30 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }
@@ -912,19 +912,19 @@ province_event = {
 	option = {	# Bad option
 		name = btc_seven_cities.18a
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.18b
 
-		owner = { add_manpower = -0.5 add_sailors = -500 }
+		FROM = { add_manpower = -0.5 add_sailors = -500 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.18c
 
-		owner = { add_sailors = -1000 }
+		FROM = { add_sailors = -1000 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 }
@@ -962,19 +962,19 @@ province_event = {
 	option = {	# Good option
 		name = btc_seven_cities.19a
 
-		owner = { add_prestige = -10 }
+		FROM = { add_prestige = -10 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.19b
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.19c
 
-		owner = { add_legitimacy = -5 }
+		FROM = { add_legitimacy = -5 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 }
@@ -1014,19 +1014,19 @@ province_event = {
 	option = {	# Bad option
 		name = btc_seven_cities.20a
 
-		owner = { add_mil_power = -1 }
+		FROM = { add_mil_power = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.20b
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.20c
 
-		owner = { add_prestige = -10 }
+		FROM = { add_prestige = -10 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 }
@@ -1066,19 +1066,19 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.21a
 
-		owner = { add_adm_power = -30 }
+		FROM = { add_adm_power = -30 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.21b
 
-		owner = { add_treasury = -50 }
+		FROM = { add_treasury = -50 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.21c
 
-		owner = { add_mil_power = -30 }
+		FROM = { add_mil_power = -30 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }
@@ -1116,19 +1116,19 @@ province_event = {
 	option = {	# Ok option
 		name = btc_seven_cities.22a
 
-		owner = { add_dip_power = -30 }
+		FROM = { add_dip_power = -30 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Bad option
 		name = btc_seven_cities.22b
 
-		owner = { add_dip_power = -40 }
+		FROM = { add_dip_power = -40 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.22c
 
-		owner = { add_dip_power = -20 }
+		FROM = { add_dip_power = -20 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }
@@ -1168,19 +1168,19 @@ province_event = {
 	option = {	# Bad option
 		name = btc_seven_cities.23a
 
-		owner = { add_manpower = -1 }
+		FROM = { add_manpower = -1 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.23b
 
-		owner = { add_adm_power = -25 }
+		FROM = { add_adm_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.23c
 
-		owner = { add_mil_power = -25 }
+		FROM = { add_mil_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }
@@ -1220,19 +1220,19 @@ province_event = {
 	option = {	# Bad option
 		name = btc_seven_cities.24a
 
-		owner = { add_adm_power = -25 }
+		FROM = { add_adm_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 0 } } }
 	}
 	option = {	# Ok option
 		name = btc_seven_cities.24b
 
-		owner = { add_dip_power = -25 }
+		FROM = { add_dip_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 1 } } }
 	}
 	option = {	# Good option
 		name = btc_seven_cities.24c
 
-		owner = { add_mil_power = -25 }
+		FROM = { add_mil_power = -25 }
 		FROM = { hidden_effect = { change_variable = { which = searchPoints value = 2 } } }
 	}
 }

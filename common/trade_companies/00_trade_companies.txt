@@ -956,7 +956,7 @@ trade_company_novgorod = {
 	
 	provinces = {
 		30 32 309 4124 33 34 1961 
-		274 275 1960 4148 #pskov_area
+		274 1960 4148 #pskov_area
 		310 311 1959 2749 4260 #novgorod_area
 		294 1752 4243 4248 4249  #tver_area
 		301 1778 4255 #ryazan_area

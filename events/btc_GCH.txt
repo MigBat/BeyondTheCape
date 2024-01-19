@@ -9,13 +9,20 @@ country_event = {
 	picture = iberian_NATIVES_eventPicture
 
 	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = POR
+			tag = CAS
+		}
+	}
 
 	# Castile vassal
 	option = {
 		name = btc_gch.1a
 
 		ai_chance = {
-			factor = 7
+			factor = 8
 		}
 
 		CAS = { vassalize = GCH }
@@ -28,7 +35,7 @@ country_event = {
 		name = btc_gch.1b
 
 		ai_chance = {
-			factor = 2
+			factor = 1
 		}
 
 		POR = { vassalize = GCH }

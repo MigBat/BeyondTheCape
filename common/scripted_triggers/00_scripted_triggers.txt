@@ -1161,6 +1161,7 @@ most_income_discovery_eco_hegemon = {
 			tooltip = is_discovery_eco_hegemon_tt
 			NOT = { tag = ROOT }
 			is_discovery_eco_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { monthly_income = ROOT }
 	}
@@ -1172,6 +1173,7 @@ most_income_reformation_eco_hegemon = {
 			tooltip = is_reformation_eco_hegemon_tt
 			NOT = { tag = ROOT }
 			is_reformation_eco_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { monthly_income = ROOT }
 	}
@@ -1183,6 +1185,7 @@ most_income_absolutism_eco_hegemon = {
 			tooltip = is_absolutism_eco_hegemon_tt
 			NOT = { tag = ROOT }
 			is_absolutism_eco_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { monthly_income = ROOT }
 	}
@@ -1194,6 +1197,7 @@ most_income_revolutions_eco_hegemon = {
 			tooltip = is_revolutions_eco_hegemon_tt
 			NOT = { tag = ROOT }
 			is_revolutions_eco_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { monthly_income = ROOT }
 	}
@@ -1205,6 +1209,7 @@ most_navy_discovery_nav_hegemon = {
 			tooltip = is_discovery_nav_hegemon_tt
 			NOT = { tag = ROOT }
 			is_discovery_nav_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { navy_size = ROOT }
 	}
@@ -1216,6 +1221,7 @@ most_navy_reformation_nav_hegemon = {
 			tooltip = is_reformation_nav_hegemon_tt
 			NOT = { tag = ROOT }
 			is_reformation_nav_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { navy_size = ROOT }
 	}
@@ -1227,6 +1233,7 @@ most_navy_absolutism_nav_hegemon = {
 			tooltip = is_absolutism_nav_hegemon_tt
 			NOT = { tag = ROOT }
 			is_absolutism_nav_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { navy_size = ROOT }
 	}
@@ -1238,6 +1245,7 @@ most_navy_revolutions_nav_hegemon = {
 			tooltip = is_revolutions_nav_hegemon_tt
 			NOT = { tag = ROOT }
 			is_revolutions_nav_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { navy_size = ROOT }
 	}
@@ -1249,6 +1257,7 @@ most_army_discovery_mil_hegemon = {
 			tooltip = is_discovery_mil_hegemon_tt
 			NOT = { tag = ROOT }
 			is_discovery_mil_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { army_size = ROOT }
 	}
@@ -1260,6 +1269,7 @@ most_army_reformation_mil_hegemon = {
 			tooltip = is_reformation_mil_hegemon_tt
 			NOT = { tag = ROOT }
 			is_reformation_mil_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { army_size = ROOT }
 	}
@@ -1271,6 +1281,7 @@ most_army_absolutism_mil_hegemon = {
 			tooltip = is_absolutism_mil_hegemon_tt
 			NOT = { tag = ROOT }
 			is_absolutism_mil_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { army_size = ROOT }
 	}
@@ -1282,6 +1293,7 @@ most_army_revolutions_mil_hegemon = {
 			tooltip = is_revolutions_mil_hegemon_tt
 			NOT = { tag = ROOT }
 			is_revolutions_mil_hegemon = yes
+			is_great_power = yes
 		}
 		NOT = { army_size = ROOT }
 	}

@@ -36,7 +36,10 @@ on_startup = {
 	if = {
 		limit =  {
 			capital_scope = {
-				region = maghreb_region
+				OR = {
+					region = maghreb_region
+					area = upper_andalucia_area
+				}
 			}
 			NOT = { tag = GCH }
 			NOT = { has_country_flag = resisting_reconquista }
@@ -326,30 +329,30 @@ on_war_won = {
 		}
 	}
 	# BEYOND THE CAPE #
-	if = {
-		limit = {
-			ROOT = {
-				tag = POR
-				has_country_flag = at_war
-			}
-			FROM = { tag = CAS }
-		}
-		country_event = {
-			id = castilian_civil_war.12	# Portugal wins civil war
-		}
-	}
-	if = {
-		limit = {
-			ROOT = {
-				tag = ARA
-				has_country_flag = at_war
-			}
-			FROM = { tag = CAS }
-		}
-		country_event = {
-			id = castilian_civil_war.13	# Aragon wins civil war
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		ROOT = {
+	# 			tag = POR
+	# 			has_country_flag = at_war
+	# 		}
+	# 		FROM = { tag = CAS }
+	# 	}
+	# 	country_event = {
+	# 		id = castilian_civil_war.12	# Portugal wins civil war
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		ROOT = {
+	# 			tag = ARA
+	# 			has_country_flag = at_war
+	# 		}
+	# 		FROM = { tag = CAS }
+	# 	}
+	# 	country_event = {
+	# 		id = castilian_civil_war.13	# Aragon wins civil war
+	# 	}
+	# }
 	if = {
 		limit = {
 			ROOT = {
@@ -2257,14 +2260,7 @@ on_siberian_pulse = {
 on_monthly_pulse = {
 	events = {
 		btc_por.133	#Monthly saudade calculation
-	}
-	events = {
 		btc_por.155	#Monthly capital saudade calculation
-	}
-	# events = {
-	# 	btc_events.5	#Monthly OPM diplo calculation
-	# }
-	events = {
 		btc_events.14	#Monthly settler pool calculation
 	}
 }
@@ -4727,6 +4723,7 @@ on_convert_by_trade_policy = {
 # province
 # FROM = old owner
 on_province_owner_change = {
+
 	events = {
 		japan.1			#Fall of the current Shogun
 		flavor_tur.207	#Victory over the Knights
@@ -5736,26 +5733,26 @@ on_conquest = {
 		}
 		set_province_flag = can_build_feitoria
 	}
-	if = {
-		limit = {
-			AND = {
-				owner = {
-					has_subject_of_type = commercial_enterprise
-				}
-				OR = {
-					superregion = india_superregion
-					superregion = east_indies_superregion
-					superregion = china_superregion
-					region = japan_region
-					region = korea_region
-					region = arabia_region
-				}
-			}
-		}
-		province_event = {
-			id = btc_ned.2
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		AND = {
+	# 			owner = {
+	# 				has_subject_of_type = commercial_enterprise
+	# 			}
+	# 			OR = {
+	# 				superregion = india_superregion
+	# 				superregion = east_indies_superregion
+	# 				superregion = china_superregion
+	# 				region = japan_region
+	# 				region = korea_region
+	# 				region = arabia_region
+	# 			}
+	# 		}
+	# 	}
+	# 	province_event = {
+	# 		id = btc_ned.2
+	# 	}
+	# }
 }
 
 on_country_creation = {

@@ -1654,13 +1654,15 @@ gc_por_3 = {
 					has_discovered = ROOT
 				}
 			}
-			light_ship_fraction = 0.25
+			if = {
+				limit = { ai = yes }
+				light_ship_fraction = 0.25
+			}
 			if = {
 				limit = { ai = no }
-        light_ship_fraction = 0.5
+        		light_ship_fraction = 0.5
 				has_naval_doctrine = any
 			}
-
 		}
 	
 		effect = {
@@ -1680,9 +1682,9 @@ gc_por_3 = {
 				siege = 4
 				trait = great_explorer_personality
 			}
-			add_country_modifier = {
-				name = por_push_to_india
-				duration = 7300
+			set_country_flag = por_no_flagship_mod
+			country_event = {
+				id = btc_por.178
 			}
 			if = {
 				limit = {

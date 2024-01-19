@@ -8,7 +8,6 @@ unlock_cult = roog_cult
 unlock_cult = nyame_cult
 religious_school = maliki_school
 capital = 4565 # Tenerife
-fixed_capital = 4565 # Cannot move capital away from this province & no power cost to move to it
 
 1444.1.1 = {
 	monarch = {

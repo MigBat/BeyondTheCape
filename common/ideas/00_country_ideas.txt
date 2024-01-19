@@ -752,8 +752,8 @@ SPA_ideas = {
 		monthly_fervor_increase = 0.5
 	}
 	conquest_of_paradise = {
-		idea_claim_colonies = yes
-		global_colonial_growth = 15
+		cb_on_primitives = yes
+		global_colonial_growth = 20
 	}
 	spa_casa_de_contracion = {
 		envoy_travel_time = -0.33

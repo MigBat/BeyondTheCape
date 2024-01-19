@@ -73,7 +73,7 @@ country_decisions = {
 						culture = manchu
 					}
 				}
-				value = 20
+				value = 15
 			}
 		}
 		effect = {
@@ -183,6 +183,7 @@ country_decisions = {
 					exists = MHX
 				}
 				vassalize = MHX
+				add_historical_friend = MHX
 			}
 			if = {
 				limit = {
@@ -191,6 +192,7 @@ country_decisions = {
 					exists = MJZ
 				}
 				vassalize = MJZ
+				add_historical_friend = MJZ
 			}
 			if = {
 				limit = {
@@ -199,6 +201,7 @@ country_decisions = {
 					exists = MYR
 				}
 				vassalize = MYR
+				add_historical_friend = MYR
 			}
 			if = {
 				limit = {
@@ -207,6 +210,7 @@ country_decisions = {
 					exists = EJZ
 				}
 				vassalize = EJZ
+				add_historical_friend = EJZ
 			}
 			if = {
 				limit = {
@@ -215,6 +219,7 @@ country_decisions = {
 					exists = NHX
 				}
 				vassalize = NHX
+				add_historical_friend = NHX
 			}
 		}
 		ai_will_do = {

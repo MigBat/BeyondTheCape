@@ -1550,7 +1550,7 @@ country_event = {
 	option = {
 		name = "flavor_nor.32.a"
 		add_navy_tradition = 15
-		north_atlantic_region = {
+		denmark_strait_area = {
 			discover_country = ROOT
 		}
 		greenland_area = {
