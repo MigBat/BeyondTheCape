@@ -252,11 +252,12 @@ colonial_canada = {
 
 	provinces = {
 		1010 1008 1009 1011 1006 1005 1004 1007 1002 1003 1000 999 998 1001 992 991 989 988 987
-		993 990 994 986 985 984 995 996 997 981 980 983 982 1813 2004 2005 2012 2015 2016 2017 2018
-		2511 2568 2569 2570 2571 2572 2573 2574 2575 2576 2577 2578 2579 2580 2581 2582 2583 2584 2585 2586 2587 2588
+		993 990 994 986 985 984 995 996 983 982 1813 2004 2005 2012 2015 2016 2017 2018
+		2511 2568 2569 2570 2571 2572 2576 2577 2578 2579 2580 2581 2582 2583 2584 2585 2586 2587 2588
 		2589 2590 2591 2592 2593 2594 2595 2596 2597 2598 2599 2600 2601 2602 2603 2670 2671
 		4890 4891 4892 4893 4894 4895 4896 4897 4902 4919 4920
-		   
+		# BTC #
+		# 981 980 2573 997 2575 2574
 	}
 
 	# Specific
@@ -372,15 +373,15 @@ colonial_canada = {
 		}
 		name = "COLONIAL_CANADA_Sakechi"
 	}
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-		}
-		name = "COLONIAL_CANADA_Newfoundland"
-	}
+	# names = {
+	# 	trigger = {
+	# 		OR = {
+	# 			tag = GBR
+	# 			tag = ENG
+	# 		}
+	# 	}
+	# 	name = "COLONIAL_CANADA_Newfoundland"
+	# }
 	names = {
 		trigger = {
 			OR = {
@@ -414,15 +415,15 @@ colonial_canada = {
 		}
 		name = "COLONIAL_CANADA_Lavrador"
 	}
-	names = {
-		trigger = {
-			OR = {
-				primary_culture = castillian
-				primary_culture = aragonese
-			}
-		}
-		name = "COLONIAL_CANADA_Labrador"
-	}
+	# names = {
+	# 	trigger = {
+	# 		OR = {
+	# 			primary_culture = castillian
+	# 			primary_culture = aragonese
+	# 		}
+	# 	}
+	# 	name = "COLONIAL_CANADA_Labrador"
+	# }
 	names = {
 		trigger = {
 			OR = {
@@ -531,12 +532,12 @@ colonial_canada = {
 	names = {
 		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
 	}
-	names = {
-		name = "COLONIAL_CANADA_Newfoundland"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Labrador"
-	}
+	# names = {
+	# 	name = "COLONIAL_CANADA_Newfoundland"
+	# }
+	# names = {
+	# 	name = "COLONIAL_CANADA_Labrador"
+	# }
 	names = {
 		name = "COLONIAL_CANADA_Nova_Scotia"
 	}
@@ -614,7 +615,8 @@ colonial_eastern_america = {
 		4887 918 
 		919 2528 920 4884 2529
 		921 2530
-		944 945 2521 2522 942 943 2523 2524 4922 2519 2520 4904 915 916 917 4903 912 913 914 4899 911 4898 2518 2517 910 #Moved over from vanilla Louisiana CR													  
+		944 945 2521 2522 942 943 2523 2524 4922 2519 2520 4904 915 916 917 4903 912 913 914 4899 911 4898 2518 2517 910 #Moved over from vanilla Louisiana CR				
+		4954									  
 	}
 
 	# Specific
@@ -2463,7 +2465,6 @@ colonial_brazil = {
 		749 752 2886 2923 2924 2925 2926 2927 #Maranhao
 		747 748 2890 2928 2929 2930 2933 2934 2935 #Grao-Para
 		2889   2938 #Guyana
-		4975 4976 4977 4978 4979 4980 4981 4982 4983
 	}
 
 	# Specific

@@ -1135,109 +1135,89 @@ dom_cas_missions_2_b = {
 		}
 	}
 	has_country_shield = yes
-	
+
 	dom_ara_intervene_castile = {
 		icon = mission_intervene_in_castile
-		required_missions = {  }
+		required_missions = { }
 		position = 1
-		provinces_to_highlight = {
-			OR = {
-				area = castille_area 
-				area = toledo_area 
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
+		
 		trigger = {
-			OR = { 
-				CAS = { is_subject_of = ROOT }
-				AND = {
-					castille_area = {
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-					}
-					toledo_area = {
-						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
-					}
-				}
-				AND = {
-					alliance_with = CAS 
-					marriage_with = CAS 
-					if = {
-						limit = { has_dlc = "Leviathan" ai = no }
-						CAS = {
-							trust = {
-								who = ROOT 
-								value = 60 
-							}
-						}
-					}
+			custom_trigger_tooltip = {
+				tooltip = intervene_in_castile_tooltip
+				OR = {
+					is_year = 1500
+					has_country_flag = won_castilian_civil_war
+					has_country_flag = lost_war
+					has_country_flag = disregarded_claim
 				}
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = ara_iberian_struggle_modifier #Greetings to the CK3 team <3
-				duration = 7300
+			custom_tooltip = ara_win_war_tt
+			tooltip = {
+				add_prestige = 20
+				iberia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 			}
-			if = {
-				limit = { 
-					CAS = {
+			custom_tooltip = ara_lose_war_tt
+			tooltip = {
+				add_country_modifier = {
+					name = ara_iberian_struggle_modifier
+					duration = 7300
+				}
+			}
+			custom_tooltip = ara_no_war_tt
+			tooltip = {
+				add_country_modifier = {
+					name = proudly_alone
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
 						OR = {
-							is_subject_of = ROOT 
-							alliance_with = ROOT 
+							has_country_flag = won_castilian_civil_war
+							is_year = 1500
 						}
 					}
-				}
-				add_historical_friend = CAS 
-				CAS = { add_historical_friend = ROOT }
-			}
-			else = { custom_tooltip = ara_if_cas_dip_tt } 
-			
-			if = {
-				limit = {
-					exists = POR
-					valid_for_personal_unions_trigger = yes
-					POR = {
-						valid_for_personal_unions_trigger = yes
+					add_prestige = 20
+					iberia_region = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
 					}
 				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = POR
-				}
-			}
-			else = {
-				alentejo_area = {
+				if = {
 					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
+						has_country_flag = lost_war
 					}
-					add_permanent_claim = ROOT
+					add_country_modifier = {
+						name = ara_iberian_struggle_modifier
+						duration = 7300
+					}
 				}
-				beieras_area = {
+				if = {
 					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
+						has_country_flag = disregarded_claim
 					}
-					add_permanent_claim = ROOT
-				}
-				estremadura_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
+					add_country_modifier = {
+						name = proudly_alone
+						duration = -1
 					}
-					add_permanent_claim = ROOT
-				}
-				norte_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -2990,6 +2970,8 @@ dom_cas_missions_4 = {
 			OR = {
 				area = beieras_area
 				area = alentejo_area
+				area = norte_area
+				area = estremadura_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT  }
 		}
@@ -3000,6 +2982,14 @@ dom_cas_missions_4 = {
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 			alentejo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			norte_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			estremadura_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT 
 			}

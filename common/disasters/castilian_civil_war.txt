@@ -100,7 +100,7 @@ castilian_civil_war = {
 		global_unrest = 7
 		land_forcelimit_modifier = -0.65
 		global_manpower_modifier = -0.65
-		discipline = -0.05
+		can_not_declare_war = yes
 	}	
 	
 	on_start = castilian_civil_war.1

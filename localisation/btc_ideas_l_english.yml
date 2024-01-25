@@ -1,12 +1,10 @@
 ﻿l_english:
 
-# Portuguese Ideas #
+# Portugal #
  experienced_sailors:0 "Experienced Sailors"
  experienced_sailors_desc:0 "Every finger is a fishhook. That's how you tell a true sailor!"
  por_india_armadas:0 "India Armadas"
  por_india_armadas_desc:0 "The India Armadas were dispatched on an annual basis from Portugal to India. Armed with state of the art naval artillery, these fleets were prepared to defend their cargo from any possible threat, as well as enforce the Portuguese will overseas by any means necessary."
- legacy_of_the_navigator:0 "Legacy of the Navigator"
- legacy_of_the_navigator_desc:1 "Henry the Navigator was the third son of John I of Portugal. Knowing he would never be King, he spent his life promoting exploration and sea craft, funding expeditions, gathering knowledge about naval matters, and encouraging advances in naval technology. This legacy is still with us today and continues to inspire our sailors and admirals to push themselves to greater deeds."
  por_feitoria_system:0 "Feitoria System"
  por_feitoria_system_desc:0 "A well established network of trade ports across the African continent allowed the Portuguese to protect their world-spanning trade routes from India and the Far-East to Europe and the Americas."
  por_bandeirantes:0 "Encourage the Bandeirantes"
@@ -17,24 +15,13 @@
  por_cacadores_desc:0 "Caçadores, or "Hunters", were elite regiments of light infantry. Trained in sharpshooting and assymetrical warfare and equiped in uniforms of natural colours, as opposed to the bright blue Portuguese regular uniforms, to properly camouflage with the landscape."
  por_casa_da_india:0 "Casa da Índia"
  por_casa_da_india_desc:0 "The Casa da Índia was a Portuguese state-run commercial organization. It regulated international trade and the Portuguese Empire's territories, colonies, and factories across Asia and Africa."
-
-# British Ideas #
+# England #
  integrated_highland_regiments:0 "Integrated Highland Regiments"
  integrated_highland_regiments_desc:0 "The northern rabble may be simple in their ways, but one cannot deny their ferocity in the battlefield. If introduced to proper British discipline, they could prove to be a formidable force."
- the_british_parliament:0 "Parliament of Great Britain"
- the_british_parliament_desc:0 "We have a long history of parliamentarism in our country, and with the creation of the Parliament of Great Britain it is only natural that we continue the traditions of the English and Scottish parliaments."
-
-# Scottish Ideas #
- resist_the_english:0 "Resist The English"
- resist_the_english_desc:0 "Scotland has been subjugated by the cruel rule of the English in the past, never again shall a proud sctosman shine the boots of a pompous English overlord."
- comets:0 "Scottish Enlightenment"
- comets_desc:0 "Sharing the humanist and rational outlook of the Western Enlightenment of the same time period, the thinkers of the Scottish Enlightenment asserted the importance of human reason combined with a rejection of any authority that could not be justified by reason."
-
-# Moroccan Ideas #
+# Morocco #
  mor_colaborate_with_the_tribes:0 "Collaborate with the Tribes"
  mor_colaborate_with_the_tribes_desc:0 "The nomadic tribes that travel across our lands are our nominal subjects, but no matter our efforts we cannot dissassociate them from their own people and traditions. We could plunge our country into chaos and strife trying to force these people into our way of life, or we could work with our differences and use their strenghts to our advantage."
-
-# Dutch East India Company Ideas #
+# VOC #
  VOC_ideas:0 "Dutch East India Ideas"
  VOC_ideas_start:0 "Dutch East India Traditions"
  VOC_ideas_bonus:0 "Dutch East India Ambition"
@@ -52,9 +39,7 @@
  voc_colonial_monopoly_desc:0 "The Company's activity in the East Indies creates the conditions for a natural monopoly, as a result of chartering the business to the merchants and extracting huge rents of them with very low operating costs."
  voc_colonial_exploitation:0 "Colonial Exploitation"
  voc_colonial_exploitation_desc:0 "The combination of large investment capitals with low-cost labor determines the natural expansion of plantations directed towards the export of goods as a means of further increasing the wealth of the East India Company."
-
-# Iberian Ideas #
-
+# Iberia #
  IBE_ideas:0 "Iberian Ideas"
  IBE_ideas_start:0 "Iberian Traditions"
  IBE_ideas_bonus:0 "Iberian Ambition"
@@ -72,9 +57,7 @@
  ibe_eternal_reconquista_desc:0 "The idea of Iberia was forged in the fire and blood of the Reconquista, a colossal effort in which the free Christians of the peninsula waged a nearly impossible war against the overwhelming armies of the invading Saracen. Now the Saracen is vanquished, but many former Christian lands in Africa and the Holy Land are still under the boot of the infidel. This Holy War transcends all borders and peoples, and our efforts will only end when all the world knows of the word of our lord and saviour Jesus Christ."
  ibe_fifth_empire:0 "Fifth Empire"
  ibe_fifth_empire_desc:0 "First, came the Assyrians who dominated all, but they could not tame the unknown, so they declined and faded to history. Then came the Persians, who dominated all, but they could not tame the unknown, so they declined and faded to history. Then came the Greeks, who dominated all, but they could not tame the unknown, so they declined and faded to history. Then came the Romans, who dominated all, but they could not tame the unknown, so they declined and faded to history. And finally, came the Portuguese, who have tamed the unknown, and guided by the Lord himself are poised to spread the word of God and unite the kingdom of Heaven to the kingdom of Earth."
-
-# Guanches ideas
-
+# Guanches #
  GCH_ideas:0 "Guanches Ideas"
  GCH_ideas_start:0 "Guanches Traditions"
  GCH_ideas_bonus:0 "Guanches Ambition"

@@ -89,7 +89,9 @@ country_event = {
 		}
 		hidden_effect = {
 			discover_province = 1564
-			discover_province = 1565
+			discover_province = 1497
+			discover_province = 1496
+			discover_province = 1493
 			discover_province = 1495
 			discover_province = 980
 		}
@@ -109,7 +111,7 @@ country_event = {
 
 	trigger = {
 		culture = irish
-		is_subject_of_type = tributary_state
+		is_subject = yes
 		overlord = {
 			is_or_was_tag = {
 				tag = ENG
@@ -119,7 +121,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 12
 	}
 
 	option = {

@@ -2041,7 +2041,7 @@ country_event = {
 	}
 }
 
-# Cape of Good Hope #
+# The Viceroy of India #
 
 country_event = {
 	id = btc_por.125
@@ -2053,17 +2053,27 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		has_discovered = 1460
+		any_owned_province = {
+			superregion = india_superregion
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
 	}
 
 	option = {
 		name = btc_por.125a
 
-		add_prestige = 10
-		add_navy_tradition = 5
-		1460 = {
-			change_province_name = "Cape of Good Hope"
+		define_admiral = {
+			name = "Francisco de Almeida"
+			shock = 5
+			fire = 4
+			manuever = 2
+			siege = 4
+			trait = naval_gunner_personality
 		}
+		custom_tooltip = mamluk_war_tooltip
 	}
 }
 
@@ -2260,15 +2270,6 @@ country_event = {
 		add_permanent_claim = 2030
 		custom_tooltip = mare_clausum_tt
 		set_country_flag = mare_clausum
-		define_explorer = {
-			name = "Francisco de Almeida"
-			shock = 5
-			fire = 4
-			manuever = 2
-			siege = 4
-			trait = naval_gunner_personality
-		}
-		custom_tooltip = mamluk_war_tooltip
 	}
 }
 
@@ -3179,7 +3180,7 @@ country_event = {
 		name = btc_por.146a
 
 		ai_chance = {
-			factor = 10
+			factor = 1
 		}
 
 		add_stability = -2
@@ -3255,7 +3256,7 @@ country_event = {
 		name = btc_por.146b
 
 		ai_chance = {
-			factor = 90
+			factor = 9
 		}
 
 		add_stability = -1
@@ -3268,7 +3269,7 @@ country_event = {
 		}
 		every_country = {
 			limit = {
-				religion_group = muslim
+				religion = sunni
 				is_subject = no
 				total_own_and_non_tributary_subject_development = 100
 				NOT = { tag = event_target:owner_of_medina }
@@ -3423,7 +3424,7 @@ country_event = {
 		name = btc_por.150b
 
 		ai_chance = {
-			factor = 0
+			factor = 9
 		}
 
 		add_prestige = -25
@@ -4347,14 +4348,14 @@ province_event = {
 		name = btc_por.167a
 		
 		random_list = {
-			40 = {
+			50 = {
 				add_permanent_province_modifier = {
 					name = padrao_raised
 					duration = -1
 				}
 				custom_tooltip = padrao_raised_tt
 			}
-			60 = {}
+			50 = {}
 		}
 	}
 }
@@ -5236,7 +5237,12 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = tordesillas_por
-		NOT = { 1584 = { has_discovered = ROOT } }
+		NOT = { 
+			AND = {
+				1584 = { has_discovered = ROOT } 
+				1597 = { has_discovered = ROOT } 
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -5247,6 +5253,9 @@ country_event = {
 		name = btc_por.175a
 
 		1584 = {
+			discover_country = ROOT
+		}
+		1597 = {
 			discover_country = ROOT
 		}
 	}
@@ -5382,37 +5391,37 @@ province_event = {
 	}
 }
 
-country_event = {
-	id = btc_por.178
-	title = btc_por.178_t
-	desc = btc_por.178_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_por.178
+# 	title = btc_por.178_t
+# 	desc = btc_por.178_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = btc_por.178a
+# 	option = {
+# 		name = btc_por.178a
 
-		227 = {
-			create_flagship = {
-				type = heavy_ship
-				name = "São Gabriel"
-			}
-		}
-		add_country_modifier = {
-			name = por_push_to_india
-			duration = 7300
-		}
-		custom_tooltip = cape_route_tt
-		hidden_effect = {
-			discover_province = 1597
-			discover_province = 1598
-			discover_province = 1604
-			discover_province = 1603
-			discover_province = 1586
-			discover_province = 1600
-			clr_country_flag = por_no_flagship_mod			
-		}
-	}
-}
+# 		227 = {
+# 			create_flagship = {
+# 				type = heavy_ship
+# 				name = "São Gabriel"
+# 			}
+# 		}
+# 		add_country_modifier = {
+# 			name = por_push_to_india
+# 			duration = 7300
+# 		}
+# 		custom_tooltip = cape_route_tt
+# 		hidden_effect = {
+# 			discover_province = 1597
+# 			discover_province = 1598
+# 			discover_province = 1604
+# 			discover_province = 1603
+# 			discover_province = 1586
+# 			discover_province = 1600
+# 			clr_country_flag = por_no_flagship_mod			
+# 		}
+# 	}
+# }
 

@@ -1143,10 +1143,6 @@ nor_circumnavigate_the_world_slot = {
 					south_atlantic_region = { NOT = { has_discovered = ROOT } }
 				}
 				AND = {
-					region = sea_of_storms_region
-					sea_of_storms_region = { NOT = { has_discovered = ROOT } }
-				}
-				AND = {
 					region = west_indian_ocean_region
 					west_indian_ocean_region = { NOT = { has_discovered = ROOT } }
 				}
@@ -1202,7 +1198,6 @@ nor_circumnavigate_the_world_slot = {
 				}
 				west_african_sea_region = { has_discovered = ROOT }
 				south_atlantic_region = { has_discovered = ROOT }
-				sea_of_storms_region = { has_discovered = ROOT }
 				west_indian_ocean_region = { has_discovered = ROOT }
 				OR = {
 					east_indian_ocean_region = { has_discovered = ROOT }

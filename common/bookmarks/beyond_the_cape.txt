@@ -11,7 +11,6 @@ bookmark =
 	country = CAS
 	country = ARA
 	country = ENG
-	country = GCH
 	country = BUR
 	country = HOL
 	country = NOR

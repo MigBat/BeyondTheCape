@@ -2960,8 +2960,8 @@ war_empire_cb_wgt = {
 
 # BEYOND THE CAPE #
 
-superiority_castilian_civil_war = {
-	type = superiority
+wg_castilian_civil_war = {
+	type = take_capital
 	
 	attacker = 	{
 		allowed_provinces = {

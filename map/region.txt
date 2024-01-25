@@ -187,8 +187,9 @@ iberia_region = {
 		galicia_area
 		baleares_area
 		extremadura_area
-		norte_area
+		# BTC #
 		estremadura_area
+		norte_area
 		cantabria_area
 	}
 }
@@ -299,6 +300,7 @@ carpathia_region = {
 
 egypt_region = {
 	areas = {
+		lower_nubia_area
 		cyrenaica_area
 		gulf_of_arabia_area
 		al_wahat_area
@@ -328,6 +330,7 @@ maghreb_region = {
 		tripolitania_area
 		barbary_coast_area
 		macaronesia_area
+		# BTC #
 		fez_area
 		tangier_area
 	}
@@ -343,7 +346,6 @@ mashriq_region = {
 		trans_jordan_area
 		syrian_desert_area
 		aleppo_area
-		shahrizor_area
 	}
 }
 
@@ -361,6 +363,7 @@ anatolia_region = {
 		ankara_area
 		aegean_archipelago_area
 		germiyan_area
+		# BTC #
 		greek_islands_area
 	}
 }
@@ -377,6 +380,7 @@ persia_region = {
 		persian_gulf_coast
 		tabriz_area
 		khuzestan_area
+		shahrizor_area
 		mogostan_area
 	}
 }
@@ -445,7 +449,9 @@ niger_region = {
 		massina_area
 		manding_area
 		jenne_area
+		# BTC #
 		futa_jallon_area
+		# tekrur_area
 	}
 	monsoon = {
 		00.06.01
@@ -462,7 +468,9 @@ guinea_region = {
 		west_africa_coast_area
 		jolof_area
 		sao_tome_area
+		# BTC #
 		kaabu_area
+		# futa_jallon_area
 	}
 	monsoon = {
 		00.06.01
@@ -483,6 +491,7 @@ sahel_region = {
 		baghena_area
 		niger_bend_area
 		east_azbin_area
+		# BTC #
 		tekrur_area
 	}
 	monsoon = {
@@ -503,7 +512,6 @@ horn_of_africa_region = {
 		majarteen_area
 		mogadishu_area
 		red_sea_coast_area
-		lower_nubia_area
 		upper_nubia_area
 		sennar_area
 		dongola_area
@@ -572,12 +580,14 @@ kongo_region = {
 	areas = {
 		coastal_kongo
 		kongo_area
-		angola_area
 		matamba_area
 		lower_kasai
 		kasai_area
-		namibia_area
+		# BTC #
+		angola_area
 		inner_angola_area
+		namibia_area
+		# angola_namibia_area
 	}
 	monsoon = {
 		00.02.01
@@ -632,7 +642,6 @@ west_siberia_region = {
 		ob_area
 		central_siberia_area
 		tunguska_area
-		irkutsk_area
 		ishim_area
 		kara_area
 		aqmola_area
@@ -647,6 +656,7 @@ east_siberia_region = {
 		kamchatka_area
 		buryatia_area
 		kolyma_area
+		irkutsk_area
 	}
 }
 
@@ -894,6 +904,7 @@ south_china_region = {
 		south_jiangsu_area
 		hunan_area
 		guangxi_area
+		# BTC #
 		canton_area
 	}
 	monsoon = {
@@ -952,9 +963,6 @@ brazil_region = {
 		guapore_area
 		ceara_area
 		west_sao_paolo_area
-		amazon1_area
-		amazon4_area
-		amazon7_area
 	}
 	monsoon = {
 		00.12.01
@@ -1273,7 +1281,10 @@ california_region = {
 		california_area
 		baja_california_area
 		arizona_area
+		colorado_plateau_area
+		new_mexico_area
 		central_valley_area
+		apacheria_area
 		northern_california_area
 		sonora_area
 	}
@@ -1341,9 +1352,6 @@ rio_grande_region = {
 		llano_estacado_area
 		chihuahua_area
 		texas_plains_area
-		colorado_plateau_area
-		new_mexico_area
-		apacheria_area
 	}
 	monsoon = {
 		00.06.01
@@ -1379,6 +1387,7 @@ carribeans_region = {
 		leeward_islands_area
 		windward_islands_area
 		lucayan_area
+		# BTC #
 		leeward_antilles_area
 	}
 	monsoon = {
@@ -1388,39 +1397,6 @@ carribeans_region = {
 }
 
 #Sea Regions
-
-# Sea Wastelands
-
-north_atlantic_wasteland = {
-	areas = {
-		north_atlantic_1
-		north_atlantic_2
-		north_atlantic_3
-		north_atlantic_4
-	}
-}
-
-south_atlantic_wasteland = {
-	areas = {
-		south_atlantic_1
-		south_atlantic_2
-	}
-}
-
-indian_ocean_wasteland = {
-	areas = {
-		indian_ocean_1
-		indian_ocean_2
-	}
-}
-
-pacific_ocean_wasteland = {
-	areas = {
-		pacific_ocean_1
-		pacific_ocean_2
-	}
-}
-
 baltic_sea_region = {
 	areas = {
 		baltic_area
@@ -1479,6 +1455,7 @@ west_african_sea_region = {
 west_indian_ocean_region = {
 	areas = {
 		western_indian_ocean_area
+		swahili_coast_sea_area
 	}
 }
 
@@ -1525,6 +1502,7 @@ east_china_sea_region = {
 north_west_pacific_region = {
 	areas = {
 		east_pacific_ocean_area
+		berring_sea_area
 	}
 }
 
@@ -1547,7 +1525,6 @@ north_east_pacific_region = {
 	areas = {
 		north_pacific_area
 		north_pacific_coast_area
-		berring_sea_area
 		gulf_of_alaska_area
 	}
 }
@@ -1570,13 +1547,7 @@ atlantic_south_america_region = {
 south_atlantic_region = {
 	areas = {
 		south_atlantic_area
-	}
-}
-
-sea_of_storms_region = {
-	areas = {
 		skeleton_coast_area
 		cape_of_storms_area
-		swahili_coast_sea_area
 	}
 }

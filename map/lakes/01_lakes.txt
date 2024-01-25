@@ -1,0 +1,71 @@
+#Flathead Lake
+lake = {
+	triangle_strip = { 921 1995 923 2008 971 1989 971 2000 }
+	height = 21
+}
+
+#Lake Tahoe 1
+lake = {
+	triangle_strip = { 864 1830 866 1840 874 1827 876 1836 }
+	height = 21
+}
+
+#Lake Tuz
+lake = {
+	triangle_strip = { 3581 1802 3584 1871 3597 1800 3598 1814 }
+	height = 21
+}
+
+#Issyk-Kul
+lake = {
+	triangle_strip = { 4347 1872 4346 1887 4387 1875 4388 1893 }
+	height = 21
+}
+
+#Bosten Lake
+lake = {
+	triangle_strip = { 4535 1866 4534 1877 4551 1866 4550 1876 }
+	height = 21
+}
+
+#Mongolian Lakes
+lake = {
+	triangle_strip = { 4625 1989 4633 2060 4662 1985 4667 2054 }
+	height = 21
+}
+
+#Lake Toba
+lake = {
+	triangle_strip = { 4743 1137 4746 1146 4759 1129 4761 1135 }
+	height = 21
+}
+
+#Lake Abaya
+lake = {
+	triangle_strip = { 3661 1189 3659 1198 3678 1204 3672 1212 }
+	height = 21
+}
+
+#Lake Victoria
+lake = {
+	triangle_strip = { 3551 1036 3567 1128 3605 1034 3625 1114 }
+	height = 21
+}
+
+#Rutanzige
+lake = {
+	triangle_strip = { 3513 1077 3518 1094 3527 1077 3530 1090 }
+	height = 21
+}
+
+#Lake Eyasi 2
+lake = {
+	triangle_strip = { 3611 1021 3614 1034 3635 1021 3636 1031 }
+	height = 21
+}
+
+#Lake Tanganyika
+lake = {
+	triangle_strip = { 3492 912 3514 1042 3526 881 3580 951 }
+	height = 21
+}

@@ -1,8 +1,5 @@
 ﻿l_english:
 
- GAIN_HEGEMON_US_2:0 "We have proclaimed ourselves as the $HEGEMONY$. We are certain that we can be one of the dominant powers of the world and create a lasting legacy!"
-
-#  is_potential_hegemon_tt:0 "Is a §JPotential Hegemon§!"
  is_discovery_eco_hegemon_tt:0 "Is a §YAge of Discovery§! §JPotential Economic Hegemon§!"
  is_discovery_nav_hegemon_tt:0 "Is a §YAge of Discovery§! §JPotential Naval Hegemon§!"
  is_discovery_mil_hegemon_tt:0 "Is a §YAge of Discovery§! §JPotential Military Hegemon§!"
@@ -15,15 +12,3 @@
  is_revolutions_eco_hegemon_tt:0 "Is a §YAge of Revolutions§! §JPotential Economic Hegemon§!"
  is_revolutions_nav_hegemon_tt:0 "Is a §YAge of Revolutions§! §JPotential Naval Hegemon§!"
  is_revolutions_mil_hegemon_tt:0 "Is a §YAge of Revolutions§! §JPotential Military Hegemon§!"
-#  most_income_discovery_eco_hegemon_tt:0 "Higher income than every §YAge of Discovery§! §JPotential Economic Hegemons§!"
-#  most_income_reformation_eco_hegemon_tt:0 "Higher income than every §YAge of Reformation§! §JPotential Economic Hegemons§!"
-#  most_income_absolutism_eco_hegemon_tt:0 "Higher income than every §YAge of Absolutism§! §JPotential Economic Hegemons§!"
-#  most_income_revolutions_eco_hegemon_tt:0 "Higher income than every §YAge of Revolutions§! §JPotential Economic Hegemons§!"
-#  most_navy_discovery_nav_hegemon_tt:0 "More ships than every §YAge of Discovery§! §JPotential Naval Hegemons§!"
-#  most_navy_reformation_nav_hegemon_tt:0 "More ships than every §YAge of Reformation§! §JPotential Naval Hegemons§!"
-#  most_navy_absolutism_nav_hegemon_tt:0 "More ships than every §YAge of Absolutism§! §JPotential Naval Hegemons§!"
-#  most_navy_revolutions_nav_hegemon_tt:0 "More ships than every §YAge of Revolutions§! §JPotential Naval Hegemons§!"
-#  most_army_discovery_mil_hegemon_tt:0 "Larger army than every §YAge of Discovery§! §JPotential Military Hegemons§!"
-#  most_army_reformation_mil_hegemon_tt:0 "Larger army than every §YAge of Reformation§! §JPotential Military Hegemons§!"
-#  most_army_absolutism_mil_hegemon_tt:0 "Larger army than every §YAge of Absolutism§! §JPotential Military Hegemons§!"
-#  most_army_revolutions_mil_hegemon_tt:0 "Larger army than every §YAge of Revolutions§! §JPotential Military Hegemons§!"

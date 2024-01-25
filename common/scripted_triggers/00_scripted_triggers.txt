@@ -3939,9 +3939,6 @@ is_not_eligible_for_trade_good_gold = {
 			NOT = { area = amapa_area }
 			NOT = { area = ucayali_area }
 			NOT = { area = amazon_area }
-			NOT = { area = amazon1_area }
-			NOT = { area = amazon4_area }
-			NOT = { area = amazon7_area }
 		}
 		AND = {
 			is_random_new_world = yes
@@ -4440,9 +4437,6 @@ is_not_eligible_for_trade_good_gems = {
 			NOT = { area = mato_grosso_area }
 			NOT = { area = pontal_area }
 			NOT = { area = guapore_area }
-			NOT = { area = amazon1_area }
-			NOT = { area = amazon4_area }
-			NOT = { area = amazon7_area }
 		}
 		AND = {
 			is_random_new_world = yes

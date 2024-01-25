@@ -429,7 +429,7 @@ country_event = {
 
 		set_country_flag = battle_of_diu
 
-		define_conquistador = {
+		define_general = {
 			name = "Afonso de Albuquerque"
 			fire = 5
 			shock = 5
@@ -517,7 +517,7 @@ country_event = {
 
 		set_country_flag = battle_of_diu
 
-		define_conquistador = {
+		define_general = {
 			name = "Afonso de Albuquerque"
 			fire = 5
 			shock = 5
@@ -584,6 +584,7 @@ country_event = {
 		MOR = { clr_country_flag = war_of_three_kings }
 
 		remove_rival = MOR
+		add_historical_friend = MOR
 
 		MOR = {
 			change_religion = catholic
@@ -606,6 +607,7 @@ country_event = {
 					modifier = war_of_three_kings
 				}
 				remove_rival = POR
+				add_historical_friend = POR
 			}
 			else = {
 				create_alliance = IBE
@@ -614,6 +616,7 @@ country_event = {
 					modifier = war_of_three_kings
 				}
 				remove_rival = IBE
+				add_historical_friend = IBE
 			}
 			capital_scope = {
 				change_religion = catholic	
@@ -1250,18 +1253,14 @@ country_event = {
 			trait = great_explorer_personality
 		}
 		hidden_effect = {
+			discover_province = 1578
 			discover_province = 1580
 			discover_province = 1583
 			discover_province = 1575
 			discover_province = 1526
-			discover_province = 1503	
-			discover_province = 1524
-			discover_province = 1525		
-		}
-		discover_province = 2659		
-		create_colony_mission_reward = {
-			province = 2659
-		}
+			discover_province = 1524	
+			discover_province = 2659
+		}		
 		add_country_modifier = {
 			name = discovered_caribbean
 			duration = 5475
@@ -1285,14 +1284,13 @@ country_event = {
 			trait = great_explorer_personality
 		}
 		hidden_effect = {
+			discover_province = 1578
 			discover_province = 1580
 			discover_province = 1583
 			discover_province = 1575
-			discover_province = 1574
-			discover_province = 1504
-			discover_province = 1503
-			discover_province = 1524
-			discover_province = 1525			
+			discover_province = 1526
+			discover_province = 1524	
+			discover_province = 2659		
 		}
 		add_country_modifier = {
 			name = discovered_caribbean
@@ -1869,12 +1867,14 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
+		is_subject = yes
 		has_country_flag = requested_independence
+		is_at_war = no
 		NOT = { truce_with = ROOT }
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 6
 	}
 	
 	option = {	# Today we regain our freedom!
@@ -2076,6 +2076,13 @@ country_event = {
 			if = {
 				limit = {
 					is_island = yes
+					NOT = { 
+						OR = {
+							province_has_center_of_trade_of_level = 1 
+							province_has_center_of_trade_of_level = 2
+							province_has_center_of_trade_of_level = 3 
+						}
+					}
 				}
 				add_permanent_province_modifier = {
 					name = island_development
@@ -2117,6 +2124,7 @@ country_event = {
 
 		543 = { cede_province = ROOT }
 		add_claim = 543
+		add_core = 543
 		add_prestige = 10
 		if = {
 			limit = {
@@ -2181,6 +2189,7 @@ country_event = {
 
 		561 = { cede_province = ROOT }
 		add_claim = 561
+		add_core = 561
 		add_prestige = 10
 		if = {
 			limit = {
@@ -2243,6 +2252,7 @@ country_event = {
 
 		539 = { cede_province = ROOT }
 		add_claim = 539
+		add_core = 539
 		add_prestige = 10
 		if = {
 			limit = {

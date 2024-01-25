@@ -1,5 +1,9 @@
 ﻿l_english:
 
+ # Vanilla Events #
+ estate_privileges_and_agendas_events.2.c:0 "I know what I'm doing, don't approach me about this ever again!"
+ no_bailout_tt:0 "§YYou will never again get this event§!"
+
  # Slavers #
  estate_slavers:0 "Slavers"
  estate_slavers_desc:0 "This estate represents the merchants that specialize in the slave trade, acquiring them in the western coast of Africa, and selling them to the highest bidder. The usual fate of these slaves is to be sold to plantation owners in the New World, working there for the rest of their lives. This practice of sending slaves from Africa to the New World has come to be known as the Atlantic Slave Trade."

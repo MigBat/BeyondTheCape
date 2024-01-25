@@ -1,27 +1,56 @@
 ﻿l_english:
 
- henry_the_navigator_tt:0 "This modifer will last until the death of the navigator advisor."
- merc_english_longbowmen:0 "§REnglish Longbowmen§!"
- merc_british_redcoats:0 "§RBritish Redcoats§!"
- port_english_alliance_tt:0 "The §YEnglish Longbowmen§! mercenary company becomes available to hire.\n§YIf the alliance is broken, we will lose this modifier and mercenary company.§!"
- mamluk_war_tooltip:0 "§YBecome the dominant trade power in the Gulf of Aden while Francisco de Almeida is alive to unlock unique events.§!"
-
+# QFTNW #
  btc_events.1_t:0 "Quest for the New World"
  btc_events.1_d:0 "We now have the technology and funding to undertake the greatest adventures of 10 generations. Let us sail west in search of new lands and riches!"
  btc_events.1a:0 "A new horizon"
-
- is_colonizer_tt:0 "They are a coloniser nation."
-
- merc_colonial_ordenancas:0 "§GColonial Ordenanças§!"
- merc_knights_of_christ:0 "§YKnights of Christ§!"
- merc_knights_of_avis:0 "§YKnights of Avis§!"
- merc_knights_of_calatrava:0 "§YKnights of Calatrava§!"
- merc_knights_of_santiago:0 "§YKnights of Santiago§!"
- merc_knights_of_alcantara:0 "§YKnights of Alcántara§!"
- merc_knights_of_montesa:0 "§YKnights of Montesa§!"
- merc_knights_of_san_juan:0 "§YKnights of San Juan§!"
-
-# At Game Start #
+# Settler Pool #
+ maxNumOfSettlers:0 "Maximum Number of Settlers"
+ usedSettlers:0 "Used Settlers"
+ freeSettlers:0 "Free Settlers"
+ numOfColonies:0 "Colonies"
+ settler_pool_tt:0 "Our §Y[Root.maxNumOfSettlers.GetName]§! is [Root.maxNumOfSettlers.GetValue].\nWe currently have [Root.numOfColonies.GetValue] §Y[Root.numOfColonies.GetName]§!, causing our §Y[Root.usedSettlers.GetName]§! to be [Root.usedSettlers.GetValue].\nWe have [Root.freeSettlers.GetValue] §Y[Root.freeSettlers.GetName]§!."
+ no_settlers:0 "No Settlers"
+ desc_no_settlers:0 "We no settlers available for colonizing."
+ very_low_settlers:0 "Very Low Settlers"
+ desc_very_low_settlers:0 "We have almost no settlers available for colonizing."
+ low_settlers:0 "Low Settlers"
+ desc_low_settlers:0 "We have few settlers available for colonizing."
+ some_settlers:0 "Some Settlers"
+ desc_some_settlers:0 "We have some settlers available for colonizing."
+ many_settlers:0 "Many Settlers"
+ desc_many_settlers:0 "We have many settlers available for colonizing."
+ add_settlers_tt:0 "500 settlers will be added to the settler pool for §Y5§! years"
+# Venice #
+ btc_ven_doge_deposed_by_ten_tt:0 "This decision could lead further illegitimate actions to be made by the Council of the Ten"
+ btc_ven_maggior_consiglio_trying_to_eliminate_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to eliminate the Council of the Ten and remove the §Y"Venetian chancery under the Council of the Ten's control"§! modifier, but upon enacting this issue you will also lose the possibility to call an Council of the Ten emergency government."
+ btc_ven_maggior_consiglio_trying_to_curtail_the_tens_tt:0 "This choice will allow you to enact an issue in Maggior Consiglio to limit the Council of the Ten to its official functions and remove the §Y"Venetian chancery under the Council of the Ten's control"§! modifier"
+ btc_ven.2_t:0 "Deposing the Doge"
+ btc_ven.2_d:0 "The Council of the Ten is in charge of ruling the country in emergency situations. In fact, its smallness is perfect for governing the country in a more efficient way. Despite this, if the council gets too much power it may transform our wonderful democracy into a tyrannical oligarchy. So it's no wonder that the Maggior Consiglio only rarely resorts to giving them power. Unluckily, these days our government and society are in the middle of the nobles' infights for power and influence and many think that the Doge is to blame for our situation due to his weak attitude. So the members of theCouncil of Ten and other important political figures want to depose the Doge and give power to the council, to fix the situation. But the Maggior Consiglio is mostly against a Council of the Ten's emergency government. Obviously something could be made, even against republican values, to safeguard the safety of the nation. This could set a precedent to further tyrannical actions made by the Council."
+ btc_ven.2_a:0 "Depose the Doge!"
+ btc_ven.2_b:0 "We cannot go against the decision of the Maggior Consiglio."
+ btc_ven.3_t:0 "The Ducal Chancery"
+ btc_ven.3_d:0 "The Ducal chancery is in charge of creating, stocking, modifying and sometimes destroying all administrative related documents, and as such it has an important function in our country administration management. Usually everyone in charge of it would be elected directly by the Maggior Consiglio, much like every other government related role. But due to the increasing power of the Council of the Ten, they managed to take control of it without any opposition. This is not only a problem for the democratic values of our government, but also a thorn in the side of our administration. In fact, managing Venice's chancery is not an easy task and requires many educated and experienced administrators, which the Council is seemingly failing to employ. So until the chancery's control is given back to the Maggior Consiglio or the Council learns how to run it efficently, we can expext a drastic worsening of our administration."
+ btc_ven.3_a:0 "Damn them!"
+ btc_ven.4_t:0 "The Powers of The Council of the Ten"
+ btc_ven.4_d:0 "The Maggior Consiglio is getting exceedingly worried of the growing power of the Council of the Ten. After the Doge's deposition and taking control of the Chancery by their hands, the Consiglio fears this conduct may cause other tyrannical actions and even lead to a dictatorship. Obviously their worries are widely exaggerated, and the Council of the Ten probably wouldn't be able to take more power under the strict eye of the Maggior Consiglio, restraining the Council to their official functions - or even eliminating it. But it should also be noted that the Council has improved in running the Chancery, and without the strict and limitating control of the Maggior Consiglio the administration has become more efficient than ever before, so maybe leaving the Council of the Ten unopposed would be a good option for our nation, despite it being against our republican values."
+ btc_ven.4_a:0 "We should eliminate the Council of the Ten for the sake of our republican values."
+ btc_ven.4_b:0 "We should limit the Council of the Ten to its official functions."
+ btc_ven.4_c:0 "We should leave the Council of the Ten unopposed."
+# England #
+ btc_england.1_t:0 "John Cabot Petitions The [Root.Monarch.GetTitle]!"
+ btc_england.1_d:0 "John Cabot, or Zuan Chabotto, has recently sought refuge in [Root.Country.GetName], fleeing debts accrued in his native Venice. Looking for work, he's petitioned [Root.Monarch.GetName] to grant him funding and a royal patent to assemble a fleet in search of a northern passage to Asia. While some of the court believes he's just looking for an easy payout, many others point to rumours of a recent successful voyage by a fellow Italian, Cristoffa Corombo"
+ btc_england.1a:0 "Grant him funding"
+ btc_england.1b:0 "Arrest this fraud and seize his assets"
+ btc_england.2_t:0 "John Cabot Returns!"
+ btc_england.2_d:0 "Suprising many, Cabot's ship returned to harbour, battered and leaking, but still seaworthy. Allegedly, he sailed for more than a month without seeing even a mere island, but on the 47th day, he discovered a winding shore that stretched as far as the eye could see, covered in steep cliffs and windswept grassy plains. Although he was too hesitant to venture more than a crossbow's length from the ship, apparently he sighted the remains of a fire, suggesting the presence of some Asians."
+ btc_england.2a:0 "Steep cliffs? Windswept grassy plains? Sounds more like Ireland than India!"
+ btc_england.3_t:0 "Irish Religious Revolts"
+ btc_england.3_d:0 "The English follow a different religion to our own. Our people find themselves oppressed. This cannot go on for much longer."
+ btc_england.3a:0 "We shall be ruled by the English no longer!"
+ btc_england.3b:0 "The situation works as it is."
+# Other #
+ mamluk_war_tooltip:0 "§YBecome the dominant trade power in the Gulf of Aden while Francisco de Almeida is alive to unlock unique events.§!"
  btc_events.2_t:0 "Resisting the Iberian Push"
  btc_events.2_d:0 "The Portuguese have already conquered Ceuta. We must unite to stop the Iberians from entering our heartland, and expel them from our lands."
  btc_events.2a:0 "Stand strong!"
@@ -31,8 +60,6 @@
  btc_events.4_t:0 "Galician Nobles Rule the Region"
  btc_events.4_d:0 "Galicia is isolated from the rest of the kingdom due to its mountainous territory and geographical location, a situation which the Galician nobility reinforced politically."
  btc_events.4a:0 "One day we will subdue them."
-
-# Other Events #
  btc_events.7_t:0 "The Portuguese Have Grown Too Powerful"
  btc_events.7_d:0 "The continued presence of Portugal in the Indian Ocean has gone from a nuisance to a real problem. We are losing money each year and our neighbours are biding their time, hungry for our fertile lands. We must do something before it is too late - maybe it already is..."
  btc_events.7a:0 "This ends now."
@@ -154,8 +181,7 @@
  btc_events.42_d:0 "In the complex tapestry of Timurid politics, a significant turning point has emerged. Bâbur, a charismatic and ambitious leader, has maneuvered through the intricate web of court intrigue and regional dynamics, securing his claim to the Timurid throne. This event marks the beginning of a new chapter for the empire, as Bâbur's rise introduces the potential for transformative changes in the political landscape. The destiny of the Timurids now rests on Bâbur's shoulders, as he navigates the challenges of leadership and sets the course for the empire's future. The emergence of a new ruler brings both uncertainty and opportunity, shaping the unfolding narrative of the Timurid dynasty."
  btc_events.42a:0 "He will lead us to greatness!"
  btc_events.42b:0 "He is an imposter!"
-
-# Irmandino Revolt #
+# Irmandinos #
  btc_irmandinos.1_t:0 "Irmandiños Revolt"
  btc_irmandinos.1_d:0 "Increasing economic and social pressures are affecting the lower classes in Galician society. Many of the peasants and artisans are struggling to make ends meet in a region dominated by a powerful and wealthy nobility. In response to these conditions, the Irmandade das Marés was formed, drawing support from a wide range of social classes, advocating for greater suppport for the poor and marginalized. They started sieging our forts in Galicia and the nobility is asking for our help in stopping them. This could prove to be a good opportunity to weaken the nobles of the region. Should we allow the rebels to have their way, we could establish a direct administration there."
  btc_irmandinos.1a:0 "Help the local nobility fight the peasantry"
@@ -170,8 +196,7 @@
  btc_irmandinos.4_d:0 "The nobles of Galicia are currently fighting a peasant revolt and Castile has failed to protect them. Now they call for aid. What is Portugal's decision?"
  btc_irmandinos.4a:0 "And Portugal will answer!"
  btc_irmandinos.4b:0 "Let us not get involved"
-
-# Lisbon Earthquake #
+# Portugal #
  lisbon_earthquake:0 "The coast of Portugal and Morocco are devastated, particularly the Estremadura area"
  btc_por.1_t:0 "The Great Earthquake of $YEAR$"
  btc_por.1_d:0 "On this day, a devastating earthquake struck the city of Lisbon, capital of Portugal. The quake was felt as far away as Morocco and caused widespread damage, destroying many buildings and claiming countless lives. Survivors describe the ground heaving up and down like waves, and buildings collapsing like sandcastles. The death toll is estimated to be in the thousands, and the city is left in a state of chaos and despair. The aftershocks continue to rattle the city, and the people of Lisbon must come together to rebuild their homes and their lives in the wake of this terrible tragedy."
@@ -227,8 +252,6 @@
  btc_por.94_t:0 "Baixa Pombalina"
  btc_por.94_d:0 "The project is complete. The result is a grand and spacious district that features wide boulevards, grand plazas, and elegant buildings. The district was built according to a strict set of guidelines and emphasized safety, hygiene, and urban planning, making this one of the first planned urban developments in Europe."
  btc_por.94A:0 "Baixa pombalina is built"
-
-# Portuguese Events #
  btc_por.100_t:0 "Epistola de Victoria Contra Infideles Habita"
  btc_por.100_d:0 "The faithful of the Lord have vanquished the invading infidels from our land, but some of their ilk still lurk amidst us, hiding in the shadows, scheming and deceiving while practicing their own wicked ways. We have won the holy war, but our holy task will never be completed while they still wander free amongst us. They must be sent back to the desert from whence they came!"
  btc_por.100a:0 "Expel the Mouriscos"
@@ -327,9 +350,9 @@
  btc_por.124_t:0 "Jerónimos Monastery"
  btc_por.124_d:0 "The Jerónimos Monastery is an awe-inspiring example of Manueline architecture, a style that blends Gothic, Renaissance, and maritime elements. The monastery is a symbol of Portugal's wealth and power during the Age of Discovery. Its ornate cloisters, intricate stone carvings, and stunning vaulted ceilings make it a true masterpiece of Portuguese architecture."
  btc_por.124a:0 "It will show our faith."
- btc_por.125_t:0 "The Cape of Storms"
- btc_por.125_d:0 "After years of preparation and brave exploration, we have finally achieved a great milestone in our quest for a sea route to India. Our explorers have successfully passed the treacherous waters of the Cape of Storms, located at the southernmost tip of Africa."
- btc_por.125a:0 "We shall name this place as..."
+ btc_por.125_t:0 "The Viceroy of India"
+ btc_por.125_d:0 "Now that we own some land in India, Francisco de Almeida has been appointed as viceroy of the portuguese territories there. He has been tasked with fortifying the region and establishing a trade hegemony in the Indian Ocean."
+ btc_por.125a:0 "It all begins here."
  btc_por.126_t:0 "End of the Anglo-Portuguese Alliance"
  btc_por.126_d:0 "Our alliance with the english has run its course, and so do the benefits that came with it."
  btc_por.126a:0 "A pity..."
@@ -349,7 +372,6 @@
  btc_por.134_t:0 "Establish Feitoria"
  btc_por.134_d:0 "Now that we have successfully integrated [Root.Province.GetName], we can establish a feitoria to assert our dominance over the region."
  btc_por.134a:0 "Build a fort."
- feitoria_tt:0 "[Root.Province.GetName] gets '§YFortified Feitoria§!' until the end of the game, giving the following effects:\nLocal Trade Power: §G+5.00§!\nFort Level:§R-1§!\nLocal Defensiveness: §R-15.0%§!\nLocal Ship Repair: §G+15.0%§!\nProvince Governing Cost: §R+25.0%§!\nLocal Fort Maintenance: §G-30.0%§!"
  btc_por.134b:0 "Build a trade post."
  btc_por.134c:0 "It is too expensive."
  btc_por.135_t:0 "Sugar and Slaves in São Tomé"
@@ -431,7 +453,6 @@
  btc_por.154a:0 "He serves our purposes well there."
  btc_por.154b:0 "Let's negotiate for his safe return."
  discover_prester_john:0 "Portugal discovers every Ethiopian province."
- # Luis de Camoes
  btc_por.156_t:0 "Luís de Camões"
  btc_por.156_d:0 "Luís Vaz de Camões was born in Lisboa and raised in Coimbra, where he studied history, cosmography and classic and modern literature. At twenty years of age he moved to Lisbon, before completing his studies. His family was poor, but being noble, he could be admitted to the court of [Root.Monarch.GetName] where he established fruitful intellectual contacts and began his career as a poet."
  btc_por.156a:0 "As armas e os barões assinalados"
@@ -559,13 +580,11 @@
  btc_por.176b:0 "Allow shared custody of the young King."
  exiled_leonor:0 "Exiled Leonor"
  welcomed_leonor:0 "Welcomed Leonor"
- btc_por.178_t:0 "The Cape Route"
- btc_por.178_d:0 "Our brave explorers have rounded the southern tip of Africa, proving once and for all that India is reacheable by sea. All we need to do now is get there. Decades of sailing the Atlantic have allowed us to discover the most optimal path to reach the Indian Ocean, taking advantage of what we have called §YTrade Winds§!."
- btc_por.178a:0 "Onwards to India!"
- cape_route_tt:0 "The Cape Route is found."
-
-# Granada Paria #
-
+#  btc_por.178_t:0 "The Cape Route"
+#  btc_por.178_d:0 "Our brave explorers have rounded the southern tip of Africa, proving once and for all that India is reacheable by sea. All we need to do now is get there. Decades of sailing the Atlantic have allowed us to discover the most optimal path to reach the Indian Ocean, taking advantage of what we have called §YTrade Winds§!."
+#  btc_por.178a:0 "Onwards to India!"
+#  cape_route_tt:0 "The Cape Route is found."
+# Granada #
  btc_gra.1_t:0 "Paria Tax"
  btc_gra.1_d:0 "Parias are a form of tribute paid by the taifas of al-Andalus to the Christian kingdoms of the north. They were a form of protection money established by treaty. The payee owed the tributary military protection against foes both Islamic and Christian. Usually the original exaction was forced, either by a large razzia or the threat of one, or as the cost of supporting one Islamic party against another."
  btc_gra.1a:0 "This paria cannot contain the [Root.GovernmentName] forever..."
@@ -595,11 +614,8 @@
  btc_gra.6a_tt:0 "Every owned province in the §YUpper Andalucia§! region gets looted, losing §R5§! ¤ and transferring it to §Y[From.GetName]§!"
  btc_gra.7_t:0 "End of the Paria Tax"
  btc_gra.7_d:0 "Through changes of the balance of power between the Castilians and the [Root.GetAdjective] state, the Paria Tax has become impossible to be enforced. Once an enforced tribute, the demands of the Castilians is now a relic of the past."
-
  cas_paria_tax_tt:0 "The province has never been owned by a country which is NOT Castile @CAS."
-
-# Guanches Events #
-
+# Guanches #
  btc_gch.1_t:0 "Decide on our Fate"
  btc_gch.1_d:0 "The time has come. Inspired by the Gods, we have chosen our next course of action."
  btc_gch.1a:0 "Become a vassal of Castile."
@@ -626,9 +642,7 @@
  btc_gch.6_t:0 "Kingdom of the Canaries"
  btc_gch.6_d:0 "We have left behind our primitive traditions and embraced true advancement with the help of the iberians. From this day forth, we are a catholic kingdom."
  btc_gch.6a:0 "Huzza!"
-
-# Netherlands Events #
-
+# Netherlands #
  btc_ned.1a.tt:0 "§Y[Root.GetName]§! releases the §YDutch East India Company§! in §YEast India§!.\n§YThe Dutch East India Company§! becomes a §YCommercial Enterprise§! subject of §Y[Root.GetName]§!."
  btc_ned.1_t:0 "Vereenigde Oost-Indische Compagnie"
  btc_ned.1_d:0 "The Dutch East India Company, also known as the Vereenigde Oost-Indische Compagnie (VOC), was founded in 1602 as a joint-stock company in the Netherlands. Its primary objective was to establish and maintain a monopoly on trade between the Netherlands and the East Indies, which encompassed present-day Indonesia, Malaysia, and parts of Southeast Asia. The company sought to profit from the lucrative spice trade, particularly in spices like cloves, nutmeg, and pepper."
@@ -673,61 +687,10 @@
  btc_ned.10a:0 "Establish the Patroonschap System."
  btc_ned.10b:0 "Let's stick to traditional colonization."
  patroonschap_system_tooltip:0 "In the §YEastern America§! colonial region, you can only colonize provinces that have §YCenters of Trade§! or §YEstuaries§!."
-
-# Aragon Events #
-
+# Aragon #
  btc_ara.1_t:0 "The Crown Capital"
  btc_ara.1_d:0 "With a domain as vast and diverse as ours, perhaps it would be wise to consider a new capital. There are 3 strong candidates for this honour, each with its own merit. In the end, it is up to you to choose from where you will rule Aragon."
  btc_ara.1a:0 "Rule from Naples"
  btc_ara.1b:0 "Rule from Barcelona"
  btc_ara.1c:0 "Rule from Valencia"
  btc_ara.1d:0 "Remain in Zaragoza"
-
-# Venice Events #
-
-#Venetian flavour vanilla events modifications
- flavor_ven.15.d:0 "The safety and prosperity of Venice has always relied upon its location in its lagoon. In 1501, in an effort to reduce the silting up of the lagoon, the Maggior Consiglio formed a committee to deflect the rivers flowing into the lagoon, a committee known as the 'Savi alle Acque'. Their success over the years saved the Serenissima from disaster and extended the prosperity of the city.\nWhat shall we do?"
- desc_ven_council_of_ten_strong:0 "While originally intended to only deal with dangers to the republican system the Council of Ten has been given quite far reaching powers to do what the Maggior Consiglio can't. Some feel this has been a step too far, however, and paradoxically the Council of Ten itself might be the greatest threat to the representative system currently."
- ven_expanded_council:0 "Expansion of the Maggior Consiglio of Venice"
- desc_ven_nobility_bought:0 "In order to counteract the decreasing numbers of nobles in our republic and the Maggior Consiglio we have begun to give out membership in exchange for a large sum of money."
- flavor_ven.24.d:0 "With over a thousand hereditary memberships, the Maggior Consiglio of Venice is perhaps not always the quickest and most efficient governing body. It is therefore not surprising that the much greater flexibility of the small Council of Ten, originally intended to safeguard the republic from plots and conspiracies, has led to them assuming more and more power.\nBy increasing its own power, however, the Council of Ten decreases the influence of the more representative Maggior Consiglio. Many of the families on the Maggior Consiglio feel things have gone too far as while new members of the Ten are elected each year the positions are often monopolized by a small clique of old Aristocrat families. Reforms have been proposed to curtail the power of the Ten by limiting their influence to emergencies as was originally intended."
- flavor_ven.25.d:0 "The reforms to rein in the Council of Ten has calmed many of the members of the Maggior Consiglio but in effect the Ten still exert a great deal of authority that they formally should not have. Given how inefficient the Maggior Consiglio with its countless members can be at times this is, however, not necessarily a bad thing..."
- flavor_ven.26.t:0 "Expansion of the Maggior Consiglio."
- flavor_ven.26.d:0 "The Maggior Consiglio is the body from which the members of the various councils, the Doge and the Venetian Senate are elected. It is this council with over a thousand members that the Venetian system is built upon and by allowing all of these nobles their say our Republic is more representative than any other state we know of. A powerful council is the best safeguard against any other government institutions becoming too powerful, including the office of the Doge itself.\nSome feel we should expand the council even further to encompass all nobles over a certain age while others feel that many voices in one place might stifle the day-to-day government."
- flavor_ven.26.a:0 "Enlarge the Maggior Consiglio."
- flavor_ven.27.d:0 "As positions on the Maggior Consiglio are hereditary there is always the possibility of a noble family retaining their vote after having lost their fortunes and all other influence. As we cannot expect such noble families to labor for their living the Venetian state traditionally affords them small pensions to live on.\nWith the chaotic political situation in the east, the fall of the Byzantine Empire and the loss of Venetian influence in parts of the Eastern Mediterranean, this group of poor nobles have been growing quickly. The great number of impoverished nobles are known to spend their pensions on gambling in or near the Campo San Barnaba and some will even sell their votes to anyone willing to pay. Sometimes referred to as Barnabotti, after the Campo in which they reside, this group is still not a great problem. If this development continues, however, it might well undermine the Maggior Consiglio and unduly increase the power of those with the money to pay for votes."
- flavor_ven.30.d:0 "Our city has always been at danger of great epidemics and as another plague outbreak washes over northern Italy, Venice has been hit unusually hard. Almost one third of our population has been lost. The disease strikes at poor and rich alike and we have lost many men of quality. The number of nobles on the Maggior Consiglio has also decreased sharply shaking the political foundation of our Republic."
- flavor_ven.31.d:0 "Ever since the Great Plague of the 1630s we have had problems filling the positions of the Venetian government. Conferring nobility on new people must be done with care, however, as any new member of the Maggior Consiglio will have a vote a dramatic amount of newcomers might lead to entirely unpredictable results. It has been suggested that the best way to vet candidates for membership is to try their willingness to contribute to the state. A number of richer families might be ennobled if they contribute a good sum to the treasury. Those without wealth are simply not the kind of people we would want to decide the fate of our Republic."
- flavor_ven.38.t:0 "Dissolution of the Maggior Consiglio"
- flavor_ven.38.d:0 "As Venice leaves republicanism behind her the Maggior Consiglio is disbanded."
-
-# Venetian Council of the Ten events chain
- btc_ven.2_t:0 "Deposing the Doge"
- btc_ven.2_d:0 "The Council of the Ten is in charge of ruling the country in emergency situations. In fact, its smallness is perfect for governing the country in a more efficient way. Despite this, if the council gets too much power it may transform our wonderful democracy into a tyrannical oligarchy. So it's no wonder that the Maggior Consiglio only rarely resorts to giving them power. Unluckily, these days our government and society are in the middle of the nobles' infights for power and influence and many think that the Doge is to blame for our situation due to his weak attitude. So the members of theCouncil of Ten and other important political figures want to depose the Doge and give power to the council, to fix the situation. But the Maggior Consiglio is mostly against a Council of the Ten's emergency government. Obviously something could be made, even against republican values, to safeguard the safety of the nation. This could set a precedent to further tyrannical actions made by the Council."
- btc_ven.2_a:0 "Depose the Doge!"
- btc_ven.2_b:0 "We cannot go against the decision of the Maggior Consiglio."
- btc_ven.3_t:0 "The Ducal Chancery"
- btc_ven.3_d:0 "The Ducal chancery is in charge of creating, stocking, modifying and sometimes destroying all administrative related documents, and as such it has an important function in our country administration management. Usually everyone in charge of it would be elected directly by the Maggior Consiglio, much like every other government related role. But due to the increasing power of the Council of the Ten, they managed to take control of it without any opposition. This is not only a problem for the democratic values of our government, but also a thorn in the side of our administration. In fact, managing Venice's chancery is not an easy task and requires many educated and experienced administrators, which the Council is seemingly failing to employ. So until the chancery's control is given back to the Maggior Consiglio or the Council learns how to run it efficently, we can expext a drastic worsening of our administration."
- btc_ven.3_a:0 "Damn them!"
- btc_ven.4_t:0 "The Powers of The Council of the Ten"
- btc_ven.4_d:0 "The Maggior Consiglio is getting exceedingly worried of the growing power of the Council of the Ten. After the Doge's deposition and taking control of the Chancery by their hands, the Consiglio fears this conduct may cause other tyrannical actions and even lead to a dictatorship. Obviously their worries are widely exaggerated, and the Council of the Ten probably wouldn't be able to take more power under the strict eye of the Maggior Consiglio, restraining the Council to their official functions - or even eliminating it. But it should also be noted that the Council has improved in running the Chancery, and without the strict and limitating control of the Maggior Consiglio the administration has become more efficient than ever before, so maybe leaving the Council of the Ten unopposed would be a good option for our nation, despite it being against our republican values."
- btc_ven.4_a:0 "We should eliminate the Council of the Ten for the sake of our republican values."
- btc_ven.4_b:0 "We should limit the Council of the Ten to its official functions."
- btc_ven.4_c:0 "We should leave the Council of the Ten unopposed."
-
-# Changes from vanilla localisation #
-
- flavor_por.EVTOPTA11:0 "Broker a deal with the local ruler"
- flavor_por.EVTOPTB11:0 "Forcefully establish our presence"
- flavor_guj.7.d:0 "In a dangerous world it is sometimes good to have contacts that can protect you. With the arrival of the Portuguese in the Indian Ocean it seems uncertain if anyone can be safe at sea anymore. We have received repeated reports of shipping being raided by Christian ships lately. These pirates threaten the trade that our Sultanate lives from and must be stopped. Perhaps it would be wise to contact the Sultan of Constantinople to discuss a possible alliance against these Christian pirates?"
- portugal_discovers_india.tooltip:0 "§Y[Root.GetName]§! has discovered Malabar Coast, Goa, and any province in the Coromandel region."
- flavor_spa.EVTDESC1:0 "Explorer Christopher Columbus made two attempts to convince the King of Portugal, [POR.Monarch.GetName], to finance an expedition to try and find a western route to the Orient. After being rejected the second time, Columbus turned his efforts towards the [Root.GetAdjective] Crown. Backed up by Italian investors, Columbus hopes to convince King [Root.Monarch.GetName] to agree to the expedition."
- flavor_por.EVTOPTC1:0 "We have already reached the Indian Ocean. Reject his proposal."
- flavor_por.EVTNAME3271:0 "Corsair activities in Brazil"
- flavor_por.EVTDESC3271:0 "French Corsairs have been encroaching into the lands rightfully belonging to our colonial holdings in the lands of Brazil. From their hideouts they undermine our sovereignty in the area, prey on our subjects and cargo and disrupt the stability and safety of our colonies. The French crown naturally denies any direct involvment, thus it is in our hands to do something about these wretched pirates. Martim Afonso de Sousa is a tried and tested comander, he already has experience against the French, when he partook in the siege and capture of Fuenterrábia. "
- flavor_por.EVTOPTA3271:0 "This rabble must be hunt down and erradicated"
- flavor_por.EVTOPTB3271:0 "De Sousa should be pragmatic and resourceful"
- flavor_jap.61.d:0 "A new gold deposit has been found on the island of Sado. This mine promises to become one of the major sources of Gold in the archipelago of Japan."
-
- estate_privileges_and_agendas_events.2.c:0 "I know what I'm doing, don't approach me about this ever again!"
- no_bailout_tt:0 "§YYou will never again get this event§!"

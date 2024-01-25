@@ -268,5 +268,27 @@ country_event = {
 			mil = 3
 			male = yes
 		}
+		define_consort = {
+			name = "María"
+			dynasty = "de Teguise"
+			age = 55
+			religion = catholic
+			culture = GCH
+			adm = 1
+			dip = 2
+			mil = 0
+			female = yes
+		}
+		define_heir = {
+			name = "Rodrigo"
+			dynasty = "de Béthencourt"
+			age = 30
+			religion = catholic
+			culture = normand
+			adm = 3
+			dip = 2
+			mil = 4
+			male = yes
+		}
 	}
 }

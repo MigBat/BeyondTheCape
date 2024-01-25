@@ -1683,9 +1683,20 @@ gc_por_3 = {
 				trait = great_explorer_personality
 			}
 			set_country_flag = por_no_flagship_mod
-			country_event = {
-				id = btc_por.178
+			227 = {
+				create_flagship = {
+					type = heavy_ship
+					name = "São Gabriel"
+				}
 			}
+			clr_country_flag = por_no_flagship_mod	
+			add_country_modifier = {
+				name = por_push_to_india
+				duration = 7300
+			}
+			# country_event = {
+			# 	id = btc_por.178
+			# }
 			if = {
 				limit = {
 					ai = yes
