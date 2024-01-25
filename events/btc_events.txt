@@ -161,6 +161,7 @@ province_event = {
 	id = btc_events.6
 	title = btc_events.6_t
 	desc = btc_events.6_d
+	picture = mission_placeholder
 
 	hidden = yes
 	
@@ -747,6 +748,7 @@ province_event = {
 	id = btc_events.15
 	title = btc_events.15_t
 	desc = btc_events.15_d
+	picture = mission_placeholder
 
 	hidden = yes
 	
@@ -764,8 +766,8 @@ province_event = {
 				has_terrain = glacier
 				has_terrain = desert
 				has_climate = arctic
-				has_climate = severe_monsoon
-				has_climate = severe_winter
+				has_monsoon = severe_monsoon
+				has_winter = severe_winter
 			}
 		}
 	}
@@ -890,6 +892,7 @@ country_event = {
 	id = btc_events.14
 	title = btc_events.14_t
 	desc = btc_events.14_d
+	picture = mission_placeholder
 
 	hidden = yes
 
@@ -2064,6 +2067,7 @@ country_event = {
 	id = btc_events.33
 	title = btc_events.33_t
 	desc = btc_events.33_d
+	picture = mission_placeholder
 
 	fire_only_once = yes
 	is_triggered_only = yes

@@ -33,7 +33,7 @@ entity = {
 	pdxmesh = "btc_SANJUAN_cavalry_horse_01_mesh"
 }
 
-entity = {
-	name = "gnup_cavalry_saber"
-	pdxmesh = "gnup_cavalry_saber_mesh"
-}
+# entity = {
+# 	name = "gnup_cavalry_saber"
+# 	pdxmesh = "gnup_cavalry_saber_mesh"
+# }

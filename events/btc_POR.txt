@@ -2347,6 +2347,7 @@ country_event = {
 	id = btc_por.133
 	title = btc_por.133_t
 	desc = btc_por.133_d
+	picture = mission_placeholder
 
 	is_triggered_only = yes
 	hidden = yes
@@ -3682,6 +3683,7 @@ country_event = {
 	id = btc_por.155
 	title = btc_por.155_t
 	desc = btc_por.155_d
+	picture = mission_placeholder
 
 	is_triggered_only = yes
 	hidden = yes
@@ -4306,10 +4308,10 @@ province_event = {
 	id = btc_por.167
 	title = btc_por.167_t
 	desc = btc_por.167_d
-	picture = COURT_eventPicture
+	picture = mission_placeholder
 
 	is_triggered_only = yes
-	hidden = yes
+	# hidden = yes
 	
 	trigger = {
 		has_dlc = "El Dorado"
@@ -4318,26 +4320,14 @@ province_event = {
 		OR = {
 			continent = africa
 			continent = asia
-			area = maranhao_area
-			area = piaui_area
-			area = ceara_area
-			area = sao_francisco_area
-			area = pernambuco_area
-			area = bahia_area
-			area = diamantina_area
-			area = minas_gerais_area
-			area = rio_de_janeiro_area
+			region = brazil_region
 		}
-		area_for_scope_province = {
-			type = all
-			NOT = { has_province_modifier = padrao_raised }	
-		}
-		FROM = { 
-			OR = {
-				has_ruler_modifier = padrao_ordinances 
-				has_country_modifier = padrao_ordinances
-			}
-		}
+		# FROM = { 
+		# 	OR = {
+		# 		has_ruler_modifier = padrao_ordinances 
+		# 		has_country_modifier = padrao_ordinances
+		# 	}
+		# }
 	}
 
 	mean_time_to_happen = {
@@ -4353,7 +4343,6 @@ province_event = {
 					name = padrao_raised
 					duration = -1
 				}
-				custom_tooltip = padrao_raised_tt
 			}
 			50 = {}
 		}
@@ -4921,6 +4910,7 @@ country_event = {
 	id = btc_por.170
 	title = btc_por.170_t
 	desc = btc_por.170_d
+	picture = mission_placeholder
 
 	is_triggered_only = yes
 	hidden = yes
@@ -5333,6 +5323,7 @@ province_event = {
 	id = btc_por.177
 	title = btc_por.177_t
 	desc = btc_por.177_d
+	picture = mission_placeholder
 
 	hidden = yes
 	

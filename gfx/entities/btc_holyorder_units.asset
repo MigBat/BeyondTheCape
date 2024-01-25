@@ -34,7 +34,7 @@ entity = {
 
 	attach = { 
 		name = "rider_weapon"
-		Right_hand_node = "gnup_cavalry_saber" 
+		Right_hand_node = "cupb_saber_entity" 
 	}
 }
 
@@ -74,7 +74,7 @@ entity = {
 
 	attach = { 
 		name = "rider_weapon"
-		Right_hand_node = "gnup_cavalry_saber" 
+		Right_hand_node = "cupb_saber_entity" 
 	}
 }
 
@@ -114,7 +114,7 @@ entity = {
 
 	attach = { 
 		name = "rider_weapon"
-		Right_hand_node = "gnup_cavalry_saber" 
+		Right_hand_node = "cupb_saber_entity" 
 	}
 }
 
@@ -154,7 +154,7 @@ entity = {
 
 	attach = { 
 		name = "rider_weapon"
-		Right_hand_node = "gnup_cavalry_saber" 
+		Right_hand_node = "cupb_saber_entity" 
 	}
 }
 
@@ -194,7 +194,7 @@ entity = {
 
 	attach = { 
 		name = "rider_weapon"
-		Right_hand_node = "gnup_cavalry_saber" 
+		Right_hand_node = "cupb_saber_entity" 
 	}
 }
 
@@ -234,7 +234,7 @@ entity = {
 
 	attach = { 
 		name = "rider_weapon"
-		Right_hand_node = "gnup_cavalry_saber" 
+		Right_hand_node = "cupb_saber_entity" 
 	}
 }
 
@@ -274,6 +274,6 @@ entity = {
 
 	attach = { 
 		name = "rider_weapon"
-		Right_hand_node = "gnup_cavalry_saber" 
+		Right_hand_node = "cupb_saber_entity" 
 	}
 }

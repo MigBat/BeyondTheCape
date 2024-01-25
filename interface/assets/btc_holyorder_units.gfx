@@ -1,11 +1,11 @@
 objectTypes = {
 
-	pdxmesh = {
-		name = "gnup_cavalry_saber_mesh"
-		file = "gfx/models/Units/gnup_cavalry_saber.mesh"			
+	# pdxmesh = {
+	# 	name = "gnup_cavalry_saber_mesh"
+	# 	file = "gfx/models/Units/gnup_cavalry_saber.mesh"			
 		
-		scale = 0.5
-	}
+	# 	scale = 0.5
+	# }
 
 	pdxmesh = {
 		name = "btc_AVIS_cavalry_01_mesh"

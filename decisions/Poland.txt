@@ -21,7 +21,6 @@ country_decisions = {
 		allow = {
 			is_core = 257
 			is_at_war = no
-			age = 1
 		}
 		effect = {
 			set_country_flag = relocated_capital_warsawa

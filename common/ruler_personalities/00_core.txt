@@ -1490,10 +1490,6 @@ expansionist_personality = {
 		}
 		modifier = {
 			factor = 1
-			has_idea_group = colonialism_ideas
-		}
-		modifier = {
-			factor = 1
 			has_country_flag = por_more_likely_to_get_expansionist_flag
 		}
 		modifier = {
