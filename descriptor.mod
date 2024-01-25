@@ -1,0 +1,18 @@
+version="1"
+tags={
+	"Balance"
+	"Map"
+	"Missions And Decisions"
+	"Events"
+	"National Ideas"
+	"Fixes"
+	"Sound"
+	"Historical"
+	"Trade"
+	"Loading Screen"
+}
+name="Beyond the Cape BETA"
+replace_path="gfx/loadingscreens"
+picture="thumbnail.png"
+supported_version="1.36.*"
+remote_file_id="3121940838"
