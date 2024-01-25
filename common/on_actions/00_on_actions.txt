@@ -1148,8 +1148,8 @@ on_siege_lost_province =  {
 		limit = {
 			FROM = {
 				NOT = { tag = REB }
+				NOT = { owns = ROOT }
 			}
-			NOT = { owns = ROOT }
 			development = 4
 			OR = {
 				NOT = { has_province_flag = dev_reduced_recently }
@@ -4067,9 +4067,9 @@ on_five_year_pulse_4 = {
 # El Dorado
 # FROM = country doing the exploring, ROOT = province discovered
 on_explore_coast = {
-	events = {
-		btc_por.167	# Padrão event happens
-	}
+	log = "on_explore_coast happened: [Root.GetName]"
+    log = "on_explore_coast happened for [From.GetName]"
+	events = { btc_por.167 }
 	random_events = {
 		50 = exploration_events.1
 		50 = exploration_events.2
