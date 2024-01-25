@@ -478,11 +478,6 @@ consort_has_bad_mil_personality = {
 can_have_center_of_reformation_trigger = { #Province Scope
 	#$RELIGION$ needs to match the religion of the center that is being spawned.
 	continent = europe
-	printing_press = 100
-	OR = {
-		has_building = temple
-		has_building = cathedral
-	}
 	OR = {
 		religion = protestant
 		religion = catholic
@@ -3939,9 +3934,6 @@ is_not_eligible_for_trade_good_gold = {
 			NOT = { area = amapa_area }
 			NOT = { area = ucayali_area }
 			NOT = { area = amazon_area }
-			NOT = { area = amazon1_area }
-			NOT = { area = amazon4_area }
-			NOT = { area = amazon7_area }
 		}
 		AND = {
 			is_random_new_world = yes
@@ -4440,9 +4432,6 @@ is_not_eligible_for_trade_good_gems = {
 			NOT = { area = mato_grosso_area }
 			NOT = { area = pontal_area }
 			NOT = { area = guapore_area }
-			NOT = { area = amazon1_area }
-			NOT = { area = amazon4_area }
-			NOT = { area = amazon7_area }
 		}
 		AND = {
 			is_random_new_world = yes

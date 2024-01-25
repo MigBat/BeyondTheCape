@@ -1,7 +1,11 @@
 ﻿l_english:
- 
- quest_for_the_new_world:0 "Quest for the New World"
- desc_quest_for_the_new_world:0 "We have developed the technology required to explore the uncharted deep waters of the ocean."
+
+ large_trade_company:0 "Large Trade Company"
+ huge_colonial_nation:0 "Prominent Colony"
+ strait_engagement_width:0 "Strait"
+ discipline_for_the_marines_acts_modifier:0 "Discipline For The Marines Act"
+ army_reform_acts_modifier:0 "Army Reform Act"
+ improved_man_of_war:0 "Improved Royal Ship Act"
  resist_reconquista:0 "Resist Reconquista"
  desc_resist_reconquista:0 "We will double our efforts to keep the christians at bay."
  gibraltar_sound:0 "Gibraltar Sound"
@@ -35,46 +39,32 @@
  desc_island_development:0 "This province is an island, increasing its development cost. Building a coastal defense here will increase the fort level by 1."
  island_fort:0 "Island Fortifications"
  desc_island_fort:0 "Being a small island, our coastal defenses are such that they effectively function as a small fort."
-
 # Spice Wars #
-
  por_spice_monopoly_wars_triggered_modifier:0 "The Spice Monopoly Conflict"
  desc_por_spice_monopoly_wars_triggered_modifier:0 "We've made our way to the Indian Ocean. Now it is time to claim its riches for ourselves."
  mam_spice_monopoly_wars_triggered_modifier:0 "The Spice Monopoly Conflict"
  desc_mam_spice_monopoly_wars_triggered_modifier:0 "The Portuguese have circumvented Africa and established a presence in the Indian Ocean, disrupting the ancient Silk Road trade that is so profitable to us."
-
 # Ottoman Silk Road Monopoly #
-
  ottoman_silk_road_monopoly:0 "Ottoman Silk Road Monopoly"
  desc_ottoman_silk_road_monopoly:0 "With the fall of Constantinople to the Turks, the Ottomans have effectively established a monopoly on the important Silk Road, the main trade route between Asia and Europe. Consequently, they are charging european catholic nations extra ducats for these foreign goods."
-
 # Decentralized Indian State #
-
  decentralized_indian_state:0 "Decentralized Indian State"
  desc_decentralized_indian_state:0 "Our country has grown too large and is now plagued by unrest. We must unite the Indian people to avert this."
-
 # Large Daimyo #
-
  large_daimyo:0 "Large Daimyo"
  desc_large_daimyo:0 "We have grown too large and are considered a threat to the stability of Japan."
-
 # Fighting Off European Invaders #
-
  fighting_off_european_invaders:0 "Fighting Off European Invaders"
  desc_fighting_off_european_invaders:0 "Invaders from another continent have landed at our shores. We must repel them at all costs and protect our people."
-
 # Fighting Spirit #
-
  fighting_spirit:0 "Fighting Spirit"
  desc_fighting_spirit:0 "We may be small but we pack a mean punch! Let them come!"
- 
 # Irmandino Revolts #
  galician_revolts:0 "Galician Revolts"
  desc_galician_revolts:0 "We are aiding the local nobles."
  strong_nobility:0 "Strong Nobility"
  desc_strong_nobility:0 "The nobility has a great say in local matters."
  galicia_vassal:0 "Castile releases Galicia as a vassal."
-
 # Portuguese Missions #
  port_wine:0 "Port Wine"
  desc_port_wine:0 "The famous Port wine is produced here, in the valleys of the Douro river."
@@ -117,9 +107,6 @@
  desc_adopting_tercios:0 "The process of adoption of this new way of warfare cannot be done overnight."
  portuguese_tercios:0 "Portuguese Terços"
  desc_portuguese_tercios:0 "While proven to be useful in the past, the Spanish square has become too outdated to be used as a reliable formation on a battlefield where artillery and handguns become ever more widespread. While the name "Terço" is a tradition at this point, it is important to move on with the times and include a much more generous amount of gunmen in the formation."
-#  por_brazil_colonial:0 "Degredados"
-#  por_brazil_colonial_desc:0 "Degredados, meaning "Outlaws" were convicted criminals abandoned at the edge of the Portuguese overseas stations and forced to live among the locals and learn their language, in order to serve as intrepreters in the future."
-
 # Portuguese Events #
  massive_earthquake:0 "Massive Earthquake"
  desc_massive_earthquake:0 "A massive earthquake has struck the city."
@@ -240,8 +227,6 @@
  desc_extra_flagship:0 "The pride of our navy now has a rival."
  mare_clausum:0 "Mare Clausum"
  desc_mare_clausum:0 "The Pope has decreed that the Indian Ocean is righfully the property of the Kingdom of Portugal. Naturally, it's up to the Portuguese to enforce their borders from the disrespectful infidels."
-#  mini_mare_clausum:0 "Legacy of Albuquerque"
-#  desc_mini_mare_clausum:0 "Albuquerque's plan bore fruit, and we have effectively establish a monopoly in the Indian Ocean."
  port_wine:0 "Port Wine"
  desc_port_wine:0 "The famous Port wine is produced here, in the valleys of the Douro river."
  methuen_treaty:0 "Methuen Treaty"
@@ -338,6 +323,13 @@
  padrao_raised_tt:0 "Once Portugal finishes colonizing the province, they can choose what trade good it will produce."
  explored_coast:0 "Recently Explored Coast"
  desc_explored_coast:0 "We've recently had an event while exploring a coastal province."
+ por_push_to_india:0 "Push to India"
+ desc_por_push_to_india:0 "Upon reaching the Zanzibar coast, local Muslim merchants can serve as reliable and experienced guides to the way to India"
+ rooting_out_corsairs:0 "Rooting out Corsairs"
+ desc_rooting_out_corsairs:0 "Hunting down and eliminating French corsairs"
+ negotiating_with_corsairs:0 "Negotiating with Corsairs"
+ desc_negotiating_with_corsairs:0 "Striking a benefitial bargain with the French corsairs"
+# Seven Cities #
  el_dorado_location:0 "El Dorado Location"
  desc_el_dorado_location:0 "El Dorado is located somewhere in this province"
  fountain_of_youth_location:0 "Fountain of Youth Location"
@@ -354,26 +346,16 @@
  desc_city_of_caesars_location:0 "The City of the Caesars is located somewhere in this province"
  quivira_location:0 "Quivira Location"
  desc_quivira_location:0 "Quivira is located somewhere in this province"
+# Other #
  discovered_caribbean:0 "New World Discovered"
  desc_discovered_caribbean:0 "Our people are ecstactic at the discovery of a new continent!"
- rooting_out_corsairs:0 "Rooting out Corsairs"
- desc_rooting_out_corsairs:0 "Hunting down and eliminating French corsairs"
- negotiating_with_corsairs:0 "Negotiating with Corsairs"
- desc_negotiating_with_corsairs:0 "Striking a benefitial bargain with the French corsairs"
- por_push_to_india:0 "Push to India"
- desc_por_push_to_india:0 "Upon reaching the Zanzibar coast, local Muslim merchants can serve as reliable and experienced guides to the way to India"
  castilian_civil_war_no_stab_loss:0 "Castilian Succession Ongoing"
  desc_castilian_civil_war_no_stab_loss:0 "The succession of the Castilian crown is not yet resolved."
  subject_of_castile:0 "Subject of Castile"
  desc_subject_of_castile:0 "Our people are outraged that we continue being protected by Castile."
-
-# Other Events #
  paria_paid:0 "Paria Paid"
  opm_diplomacy:0 "Extra Diplomat"
  desc_opm_diplomacy:0 "As a small country, it is paramount we focus on keeping good diplomatic relations with our neighbours."
-#  btc_triangle_trade:0 "Atlantic Slave Trade"
-#  desc_btc_triangle_trade:0 "The exploitation of land and resources in the New World colonies led to an extensive use of slave labor."
-#  triangle_happened_tt:0 "The Triangle Trade event has happened"
  finish_reconquista:0 "Finish the Reconquista"
  desc_finish_reconquista:0 "This has gone on for far too long. Let us end this charade once and for all!"
  stole_mohamed:0 "They have dessecrated the body of the Prophet!"
@@ -409,8 +391,7 @@
  desc_disable_ship_capture:0 "You won't capture any ships while this modifier exists."
  prestigious_academy:0 "Prestigious Academy"
  desc_prestigious_academy:0 "One of the oldest institutions of higher learning in the world is located here."
-
-#venetian btc modifiers
+# Venice #
  btc_ven_ten_emergency_government:0 "Emergency Government"
  desc_btc_ven_ten_emergency_government:0 "Council of the Ten's emergency government."
  btc_ven_ten_take_control_of_the_chancery:0 "Chancery Control"
@@ -423,6 +404,6 @@
  desc_btc_ven_tens_improved_control_of_the_chancery:0 "Council of the Ten's improved control of the Venetian chancery."
  btc_ven_ten_improved_emergency_government:0 "Improved Emergency Government"
  desc_btc_ven_ten_improved_emergency_government:0 "Improved Council of the Ten's emergency government."
-
+# Granada #
  cas_paria_tax:0 "Paria Tax"
  desc_cas_paria_tax:0 "\n§RHas to pay a Tribute to §Y[225.Owner.GetName]§! every year or has to face the wrath of the Castilians.§!\n\nWith the reconquista heavily swinging in the christians' favor, the Castilians have kept a firm grip over the muslim subjects. Under the guidance of the Emirate of Granada, the muslims pay their tribute to the Emir of Granada who then forwards it to the King of [225.GetName]. The tribute is manageable, but its very existence is a humiliation for any self-respecting muslim who yearns to continue the legacy of the Caliphate.\n\n§YThis modifier gets removed if [225.GetName] loses the 'Paria Tax' modifier.§!"

@@ -213,7 +213,7 @@ portuguese_navigators = {
         normal_or_historical_nations = yes
     }
 	modifier = {
-        exploration_mission_range_in_fleet_modifier = 0.5
+        exploration_mission_range_in_fleet_modifier = 0.75
         naval_maintenance_flagship_modifier = 0.5
 	}
     ai_trade_score = {
@@ -237,7 +237,7 @@ spanish_navigators = {
        normal_or_historical_nations = yes
    }
 	modifier = {
-       exploration_mission_range_in_fleet_modifier = 0.5
+       exploration_mission_range_in_fleet_modifier = 0.75
        naval_maintenance_flagship_modifier = 0.5
 	}
    ai_trade_score = {

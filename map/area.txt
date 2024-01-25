@@ -3,58 +3,6 @@
 #Sea Areas:
 #No restriction on size.
 
-# Sea Wastelands
-north_atlantic_1 = {
-	color = { 0 0 0 }
-	1496 1497 1498 1610
-}
-
-north_atlantic_2 = {
-	color = { 0 0 0 }
-	1568 1582
-}
-
-north_atlantic_3 = {
-	color = { 0 0 0 }
-	1574 1504 1571
-}
-
-north_atlantic_4 = {
-	color = { 0 0 0 }
-	1576 1577 1581 1579 1578
-}
-
-south_atlantic_1 = {
-	color = { 0 0 0 }
-	1596 1591 1590 1589 1588 1593 1592 1606 1608 1609 1599 1605
-}
-
-south_atlantic_2 = {
-	color = { 0 0 0 }
-	1585 1601 1602
-}
-
-indian_ocean_1 = {
-	color = { 0 0 0 }
-	1625 1628 1631 1632 1633 1634 1639 1640 1643 1641
-}
-
-indian_ocean_2 = {
-	color = { 0 0 0 }
-	1647 1646 1623 1624 1622 1620 1617 1618
-}
-
-pacific_ocean_1 = {
-	color = { 0 0 0 }
-	1688 1683 1685 1686 1684 1687 1668 1689 1714 1690 1670 1672 1671
-}
-
-pacific_ocean_2 = {
-	color = { 0 0 0 }
-	1735 1736 1740 1716 1707 1701 1708 1711 1733 1738 1737 1741 1712 1709 1703 
-	1705 1706 1718 1717 1730 1719 1731 1720 1729 1721 1727 1724 1722 1723
-}
-#############
 western_mediterrenean_area = {
 	1293 1294 1295 1296 1297 1298 1300 1301 1302 1303 1304 1305 1307
 }
@@ -108,22 +56,19 @@ bay_of_bengal_area = {
 }
 
 eastern_indian_ocean_area = {
-	1350 1351 1352 1353 1354
-	# 1641 1623 1624 1622
+	1350 1351 1352 1353 1354 1420 1622 1623 1624 1641 1642 1644
 }
 
 western_indian_ocean_area = {
- 	1450 1453 1454 1455 1616 1619 1621 1626 1627 1629 1630
-	# 1625 1628 1620 1617 1618
+ 	1450 1453 1454 1455 1616 1617 1618 1619 1620 1621 1625 1626 1627 1628 1629 1630
 }
 
 south_indian_ocean_area = {
-	1636 1637 1638 1645 1644 1642
-	# 1631 1632 1633 1634 1639 1640 1643 1647 1646
+	1417 1418 1419 1632 1631 1633 1634 1636 1637 1638 1639 1640 1643 1645 1646 1647 3010
 }
 
 great_australian_bight_area = {
-	1413 1415 1414 1416 1422 1635 1420 1419 1418 1417
+	1415 1414 1416 1422 1635
 }
 
 swahili_coast_sea_area = {
@@ -155,19 +100,20 @@ sea_of_okhotsk_area = {
 }
 
 berring_sea_area = {
-	1445 1562 1677 1678 1680
+	1442 1443 1444 1445 1667 1668 1679 1678 3008 3009
 }
 
 tasman_sea_area = {
-	1421 1423 1424 1425 1426 1427 1428 1429
+	1421 1423 1424 1425 1426 1427 1428 1429 1690 1723 3011
 }
 
 coral_sea_area = {
-	1405 1406 1407 1411 1412
+	1405 1406 1407 1411 1412 1430 1431 1432 1726
 }
 
 philipine_sea_area = {
-	1396 1397 1439 1402 1403 1435 1436 1437 1438 1390 1391 1404 1440 4224 4357 4358
+	1396 1397 1439 1402 1403 1435 1436 1437 1438 1390 1391 1404 1440 4224
+	4357 4358
 }
 
 banda_arafura_seas_area = {
@@ -175,7 +121,7 @@ banda_arafura_seas_area = {
 }
 
 gulf_of_alaska_area = {
-	1558 1559 1560 1561 1681 1682
+	1558 1559 1560 1561 1681 1682 1562 1677 1680 3007 3006 3005 3004
 }
 
 sea_of_grau_area = {
@@ -207,8 +153,7 @@ gulf_of_mexico_area = {
 }
 
 sea_of_labrador_area = {
-	1483 1484 1493 1494 1495 
-	# 1496 
+	1483 1484 1493 1494 1495 1496 
 }
 
 hudson_bay_sea_area = {
@@ -217,7 +162,8 @@ hudson_bay_sea_area = {
 
 denmark_strait_area = {
 	1477 1480 1481 1482 1924
-	# 1610
+	# BTC #
+	4976
 }
 
 gulf_of_guinea_sea_area = {
@@ -233,23 +179,19 @@ skeleton_coast_area = {
 }
 
 east_pacific_ocean_area = {
-	1430 1431 1432 1433 1434 1442 1443 1444 1666 1667 1669 1673 1674 1675 1676 1679 1691 1698 1734
-	# 1668 1670 1672 1671
+	1433 1434 1666 1669 1670 1671 1672 1673 1674 1675 1676 1683 1691 1692 1698 1733 1734
 }
 
 polynesian_triangle_area = {
-	1713 1725 1726 1728 1732 1739 
-	# 1735 1733 1738 1731 1720 1729 1721 1727 1724 1722 1723
+	1693 1697 1699 1713 1720 1721 1722 1724 1725 1727 1728 1729 1731 1732 1735 1736 1737 1738 1739 
 }
 
 south_pacific_area = {
-	1700 1702 1704 1710
-	# 1736 1740 1716 1707 1701 1708 1711 1737 1741 1712 1709 1703 1705 1706 1718 1717 1730 1719
+	1700 1701 1702 1703 1704 1705 1706 1707 1708 1709 1710 1711 1712 1716 1717 1718 1719 1730 1740 1741
 }
 
 north_pacific_area = {
-	1693 1694 1695 1696 1699 1715 1692 1697
-	# 1688 1683 1685 1686 1684 1687 1689 1714 1690
+	1684 1685 1686 1687 1688 1689 1694 1695 1696 1714 1715 
 }
 
 north_pacific_coast_area = {
@@ -257,13 +199,11 @@ north_pacific_coast_area = {
 }
 
 coast_of_brazil_sea_area = {
-	1530 1531 1532 1533 1534 1584
-	# 1596 1591 1590 1592
+	1530 1531 1532 1533 1534 1584 1590 1591 1592 1596
 }
 
 coast_of_guyana_area = {
-	1527 1528 1529
-	# 1576 1577
+	1527 1528 1529 1576 1577
 }
 
 celtic_sea_area = {
@@ -271,18 +211,17 @@ celtic_sea_area = {
 }
 
 west_african_coast_sea_area = {
-	1467 1468 1469 1470 1471 1472
-	# 1579 1578
+	1413 1467 1468 1469 1470 1471 1472 1578 1579 1597
+	# BTC #
+	4977
 }
 
 south_atlantic_area = {
-	1597 1598 1600 1603 1604 1586
-	# 1606 1608 1609 1585 1601 1602 1605 1599
+	1585 1586 1598 1599 1600 1601 1602 1603 1604 1605 1606 1608 1609 1610
 }
 
 argentine_sea_area = {
-	1535 1536 1537 1538 1587 1594 1595 1607
-	# 1589 1588 1593
+	1535 1536 1537 1538 1587 1588 1589 1593 1594 1595 1607
 }
 
 gulf_of_st_lawrence_area = {
@@ -290,18 +229,15 @@ gulf_of_st_lawrence_area = {
 }
 
 gulf_stream_area = {
-	1492 1499 1500 1501 1502 1570
-	# 1504 1571
+	1492 1499 1500 1501 1502 1504 1570 1571
 }
 
 sargasso_sea_area = {
-	1526 1569 1572 1573 1575 1583
-	# 1568 1582 1574 1581
+	1526 1568 1569 1572 1573 1574 1575 1580 1581 1582 1583
 }
 
 north_atlantic_area = {
-	1283 1286 1287 1290 1291 1292 1478 1479 1563 1565 1564 1566 1567 1580
-	# 1497 1498
+	1283 1286 1287 1290 1291 1292 1478 1479 1497 1498 1563 1565 1564 1566 1567
 }
 
 bahama_channel_area = {
@@ -328,7 +264,7 @@ bahama_channel_area = {
 #}
 
 #north_american_lake_area = {
-#	1658 1659 1660 1661 1662 1663 1664 1665 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1923 1918 1919 1920 1921 1922 4940 4941
+#	1658 1659 1660 1661 1662 1663 1664 1665 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916 1917 1923 1918 1919 1921 1922
 #}
 
 #central_european_lakes_area = {
@@ -358,6 +294,8 @@ brittany_area = { #5
 
 normandy_area = { #4
 	167 168 1879 4385
+	# BTC #
+	4953
 }
 
 provence_area = { #3
@@ -477,16 +415,18 @@ upper_andalucia_area = { #4
 }
 
 castille_area = { #5
-	color = { 243 235 28 }
-	217 2755 4551 4789 2751
+	color = { 58 58 207 }
+	217 2755 4551 4789
 }
 
 toledo_area = { #5
-	219 221 2754 4547
+	219 221 2751 2754 4547
 }
 
 asturias_area = { #4
-	215 1745 4552 1746
+	4552 1746 215
+	# BTC #
+	# 1745
 }
 
 galicia_area = { #4
@@ -502,25 +442,37 @@ basque_country = { #3
 }
 
 leon_area = { #3
-	color = { 58 58 207 }
-	208 216 4553 4954
+	color = { 243 235 28 }
+	208 216 4553
+	# BTC #
+	# 207 
 }
 
 extremadura_area = {
-	4788 218 1747 4955
+	4788 218 1747
+	# BTC #
+	4955
 }
 
 beieras_area = { #4
-	228 1851 4943
+	228 1851
+	# 231 232 4556
+	# BTC #
+	4943
 }
 
 alentejo_area = { #5
-	229 230 4150
+	229 230 4150 
+	# 227 4787
 }
 
 macaronesia_area = { #3
-	366 367 368 4565 4944
+	366 367 368 4565 
+	# BTC #
+	4944
 }
+
+# BTC #
 
 estremadura_area = {
 	227 4787 4942
@@ -528,6 +480,10 @@ estremadura_area = {
 
 norte_area = {
 	231 232 4556
+}
+
+cantabria_area = {
+	207 1745
 }
 
 ########################################
@@ -752,12 +708,12 @@ curonia_area = { #3
 	35 39 1935
 }
 
-east_prussia_area = { #4
-	40 41 767 2958
+east_prussia_area = { #5
+	40 41 767 2958 42
 }
 
-west_prussia_area = { #4
-	42 43 1841 2997
+west_prussia_area = { #3 (South West Prussia)
+	2997 43 1841
 }
 
 wielkopolska_area = { #5
@@ -845,7 +801,7 @@ crimea_area = { #4
 }
 
 white_ruthenia_area = { #3
-	292 771 4246 275
+	292 771 4246
 }
 
 minsk_area = { #4
@@ -891,7 +847,7 @@ novgorod_area = { #5
 }
 
 pskov_area = { #4
-	274 1960 4148
+	274 275 1960 4148
 }
 
 vologda_area = { #3
@@ -1132,8 +1088,10 @@ macedonia_area = { #5 (Macedonia)
 	148 1853 3001 4702 4780
 }
 
-morea_area = { #4 Central Greece
+morea_area = { #4 Central Greece & Crete
 	145 146 1773 4701
+	# BTC #
+	# 163
 }
 
 northern_greece_area = { #3 #Northern Greece
@@ -1232,7 +1190,7 @@ armenia_area = { #5
 
 shirvan_area = { #5 #Northern Azerbaijan
 	color = { 225 231 53 }
-	421 4299 4305 4340
+	421 424 4299 4305 4340
 }
 
 circassia_area = { #4
@@ -1279,10 +1237,6 @@ aegean_archipelago_area = { #4
 	164 320 2348 3003 4700
 }
 
-greek_islands_area = {
-	321 163 4973 4974
-}
-
 kastamonu_area = { #4
 	325 328 2299 2304
 }
@@ -1294,6 +1248,8 @@ karaman_area = { #4
 cukurova_area = { #3
 	color = { 50 177 200 }
 	327 2302
+	# BTC #
+	#321
 }
 
 aleppo_area = { #4
@@ -1347,6 +1303,11 @@ al_jazira_area = { #5
 	407 411 2309 2314 4292
 }
 
+# BTC #
+
+greek_islands_area = {
+	321 163 4973 4974
+}
 
 ########################################
 # Arabia				               #
@@ -1392,6 +1353,8 @@ upper_yemen_area = { #3
 
 yemen_area = { #Lower Yemen #
 	388 2345 4280
+	# BTC #
+	4978
 }
 
 hadramut_area = { #3
@@ -1502,7 +1465,9 @@ north_saharan_area = { #5
 }
 
 tafilalt_area = { #3
-	346 349 2460 4961
+	346 349 2460
+	# BTC #
+	4961
 }
 
 sus_area = { #4
@@ -1514,25 +1479,30 @@ southern_morocco_area = { #3
 }
 
 western_morocco_area = { #3
-	342 345 2469 4564 4563
+	342 345 2469 4564
 }
 
 marrekesh_area = { #3
 	344 2467 2468
+	# BTC #
+	# 343
 }
 
 northern_morocco_area = { #5
-	335 4561 4958 4959
+	335 4561
+	# BTC #
+	4958 4959
+	# 334 1751 4563
 }
 
-#BEYOND THE CAPE#
+# BTC #
 
 tangier_area = {
 	4956 334 1751
 }
 
 fez_area = {
-	343 4957 4960
+	343 4957 4960 4563
 }
 
 ########################################
@@ -1874,7 +1844,10 @@ cap_verde_area = { #2
 }
 
 jolof_area = { #4
-	1112 1113 1116 2242 1151
+	1112 1113 1116 
+	# BTC #
+	# 2239
+	2242 1151
 }
 
 tekrur_area = { #4
@@ -1886,17 +1859,14 @@ baghena_area = { #4
 }
 
 manding_area = { #4
-    1121 1124 2248
+    1120 1121 1124 2248
 }
 
 futa_jallon_area = { #3
-    1117 2238 1120
-}
-
-# Beyond the Cape #
-
-kaabu_area = {
-	2239 2241 1114
+    1117 2238
+	# BTC #
+	1120
+	# 1114
 }
 
 massina_area = { #4
@@ -1916,11 +1886,16 @@ upper_volta_area = { #5
 }
 
 kong_area = { #4
-    1122 1125 2252 2253 2255
+    1122 1125 2252 2253
+	# BTC #
+	2255
 }
 
 lower_volta_area = { #5
-    1138 2254 2256 2267 2257
+    1138 2254 2256 2267
+	# BTC #
+	2257
+	# 2255
 }
 
 lower_niger_area = { #5
@@ -1969,22 +1944,33 @@ atacora_oueme_area = { #5
 
 gulf_of_guinea_area = { #4
     1163 1164 1165
+	# BTC #
+	# 1151
+	4969
 }
 
 benin_area = { #4
-	1147 2289 2290 2294
+	1147 2289 2290 2294 
 }
 
 sao_tome_area = { #2
-	1097 1306 4962
+	1097 1306
+	# BTC #
+	4962
 }
 
 west_africa_coast_area = { #5
-    1126 1139 2258 4964 1141
+    1126 1139 1141 2258 
+	# BTC #
+	4964
+	# 2257
 }
 
 guinea_coast_area = { #4
-	1118 4963 1119
+    1118 1119
+	# BTC #
+	4963
+	# 2241 2242
 }
 
 south_atlantic_islands_area = { #2
@@ -1992,7 +1978,9 @@ south_atlantic_islands_area = { #2
 }
 
 matamba_area = { #3
-	2948 4082 4084 1171
+	2948 4082 4084
+	# BTC #
+	1171
 }
 
 coastal_kongo = { #5
@@ -2003,12 +1991,9 @@ kongo_area = { #5
 	798 1169 1170 1901 2949
 }
 
-angola_namibia_area = {
-}
-
-angola_area = { #5
-	1167 1172 4949
-}
+# angola_namibia_area = { #5  
+# 	# 1167 1172 1098 1174 1171
+# }
 
 cape_of_good_hope_area = { #5
 	833 1175 1177 1179 1180
@@ -2018,20 +2003,23 @@ south_african_plateau_area = { #5
 	1176 1178 2856 2880 2864
 }
 
-# BEYOND THE CAPE #
-
-namibia_area = {
-	1098 1174
-}
+# BTC #
 
 inner_angola_area = {
 	4950 4951 4952 4947 4948
 }
 
-cantabria_area = {
-	207 1745 4953
+angola_area = {
+	1167 1172 4949
 }
 
+namibia_area = {
+	1098 1174
+}
+
+kaabu_area = {
+	2239 2241 1114
+}
 
 ########################################
 # Greater Persia		               #
@@ -2137,7 +2125,7 @@ isfahan_area = { #3
 }
 
 tabriz_area = { #4 Central Azerbaijan
-	416 2206 2207 4304 424
+	416 2206 2207 4304
 }
 
 tabarestan_area = { #5
@@ -2156,8 +2144,8 @@ sind_sagar_area = { #3
 	2077 2078 4511
 }
 
-oudh_area = { #5
-	523 2094 4494 4495 4497
+oudh_area = { #4
+	523 2094 4494 4495
 }
 
 katehar_area = { #3
@@ -2172,9 +2160,9 @@ upper_doab_area = { #3
 	522 2060 2062
 }
 
-lower_doab_area = { #4
+lower_doab_area = { #5
 	color = { 212 199 59 }
-	524 556 2063 4496
+	524 556 2063 4496 4497
 }
 
 lahore_area = { #5 (approximate Lahore Subah)
@@ -2674,7 +2662,9 @@ hokkaido_area = { #5
 }
 
 hokuriku_area = { #3
-	1023 1024 1837 4972
+	1023 1024 1837
+	# BTC #
+	4972
 }
 
 kanto_area = { #3 #Western Kanto
@@ -2728,7 +2718,7 @@ saigoku_area = { #4 #Sanyodo
 ########################################
 
 kamchatka_area = { #5
-	1034 1035 1038 1041 2440
+	1034 1035 1038 2440
 }
 
 kolyma_area = { #5
@@ -2736,39 +2726,39 @@ kolyma_area = { #5
 }
 
 okhotsk_area = { #4
-	1043 1044 1047 1052
+	1043 1044 1047 1041 
 }
 
 yakutia_area = { #5
-	1045 1051 1054 2435 2437
+	1045 1054 2435 2437 2438
 }
 
 sakha_area = { #3
-	1042 1046 2438
+	1042 1046 1051 1052
 }
 
 buryatia_area = { #5
-	1055 1056 1057 1058 2446
+	1056 1057 1058 2446
 }
 
 tunguska_area = { #5
-	1059 1061 2431 2432 2436  
+	1061 2431 2432 1062 2443
 }
 
 central_siberia_area = { #5
-	1064 1067 1068 1070 2430
+	1067 1068 2430 2445 
 }
 
 kara_area = { #5
-	1069 1072 1073 2445 4691
+	1069 1072 1073 2429 4691
 }
 
 ob_area = { #4
-	480 2428 2429 2433 
+	2428 1064 1065 1070 2433
 }
 
 irkutsk_area = { #5
-	1060 1062 1063 2442 2443
+	1060 2442 2436 1055 1059 
 }
 
 perm_area = { #5
@@ -2788,7 +2778,7 @@ syr_darya_area = { #4
 }
 
 yrtesh_area = { #5
-	1071 2434 4687 4688 4689
+	480 1071 2434 4687 4688 4689
 }
 
 ishim_area = { #5
@@ -2877,7 +2867,7 @@ altai_sayan_area = { #3
 }
 
 tannu_uriankhai_area = {#3
-	716 1065 1066 4679
+	716 1063 1066 4679
 }
 
 central_mongolia_area = { #3
@@ -2984,10 +2974,8 @@ taiwan_area = { #3
 
 guangdong_area = { #5
 	2156 2157 2158
-}
-
-canton_area = {
-	667 668 4984
+	# BTC #
+	# 667 668
 }
 
 west_guangdong_area = { #5
@@ -3048,6 +3036,12 @@ gansu_area = { #5 (East Gansu)
 
 west_gansu_area = { #4 
 	707 708 2182 2184
+}
+
+# BTC #
+
+canton_area = {
+	667 668 4975
 }
 
 ########################################
@@ -3134,18 +3128,6 @@ amazon_area = { #4
 	2889 2930 2933 2934
 }
 
-amazon1_area = {
-	4975 4976 4977
-}
-
-amazon4_area = {
-	4978 4979 4980
-}
-
-amazon7_area = {
-	4981 4982 4983
-}
-
 paraguay_area = { #5
 	775 776 799 2882 2883
 }
@@ -3199,7 +3181,9 @@ banda_oriental_area = { #5
 }
 
 guyana_area = { #4
-	502 743 744 2803 
+	743 744 2803 
+	# BTC #
+	# 502
 }
 
 suriname_area = { #3
@@ -3344,6 +3328,8 @@ hudson_valley_area = { #4
 
 new_york_area = { #3 NEW
     965 2558 2639
+	# BTC #
+	4954
 }
 
 delaware_valley_area = { #4
@@ -3542,8 +3528,8 @@ texas_plains_area = { #4 NEW
     886 2500 4909 4910
 }
 
-oregon_area = { #3
-    872 2482 2483
+oregon_area = { #4
+    872 2481 2482 2483
 }
 
 columbia_river_area = { #4
@@ -3713,12 +3699,12 @@ california_area = { #5
     868 869 2021 2476 4637
 }
  
-central_valley_area = { #5
-    870 2478 2479 4635 4636
+central_valley_area = { #4
+    870 2478 4635 4636
 }
 
 northern_california_area = { #5
-    871 2477 2480 2481 4638
+    871 2477 2479 2480 4638
 }
 
 baja_california_area = { #4
@@ -3838,11 +3824,16 @@ dominica_area = { #5
 }
 
 greater_antilles_area = { #4
-    487 492 4966 4967
+    487 492
+	# BTC #
+	4966 4967
+	# 481 491
 }
 
 lucayan_area = { #2
-	482 483 481 4971
+	482 483
+	# BTC #
+	481 4971
 }
 
 leeward_islands_area = { #5
@@ -3853,12 +3844,14 @@ windward_islands_area = { #5
     497 498 499 500 501
 }
 
-leeward_antilles_area = {
-	491 502 4970 4968 4969
-}
-
 transvaal_area = { #4
 	4781 4782 4783 4784
+}
+
+# BTC #
+
+leeward_antilles_area = {
+	491 502 4970 4968
 }
 
 #############################
@@ -3866,6 +3859,129 @@ transvaal_area = { #4
 #############################
 
 #The areas below are used within other scripts and should be not deleted
+
+great_moluccas_area = {
+
+}
+
+khorasan_area = {
+}
+
+libyan_desert_area = {
+	 
+}
+
+gharbia_area = {
+}
+
+sharqiya_area = {
+}
+
+central_egypt_area = {
+}
+
+upper_egypt_area = {
+}
+
+eastern_mediterrenean_islands_area = {
+}
+
+western_aegean_area = {
+}
+
+odishi_area = {
+}
+
+georgia_area = {
+}
+
+rakka_area = {
+}
+
+south_kurdistan_area = {
+}
+
+east_china_sea_islands_area = {
+
+}
+
+east_african_islands_area = {
+	 
+}
+
+arabian_sea_islands_area = {
+	 
+}
+
+baltic_islands_area = {
+	 
+}
+
+east_altishahr_area = {
+
+}
+
+amnok_area = {
+
+}
+
+north_korea_area = {
+
+}
+
+hejaz_area = {
+
+}
+
+sarat_area = {
+	
+}
+
+ad_dahna_area = {
+}
+
+najd_area = {
+
+}
+
+northern_england_area = {
+}
+
+mercia_area = { 
+}
+
+eastern_ireland_area = {
+}
+
+western_ireland_area = {
+}
+
+
+seine_area = {
+}
+
+luxemburg_liege_area = {
+}
+
+coromandel_area = {
+}
+
+carnatic_area = {
+
+}
+
+kerala_area = {
+
+}
+maharashtra_area = {
+
+}
+gujarat_area = { }
+
+central_doab_area = {
+}
+
+nepalese_area = { }
 
 pomerelia_area = { }
 
@@ -3878,5 +3994,7 @@ netherlands_area = { }
 indonesian_islands_area = {  }
 
 iceland_area = { }
+
+ceram_area = { }
 
 south_laos_area = { }

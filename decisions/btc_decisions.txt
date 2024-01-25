@@ -211,10 +211,10 @@ country_decisions = {
 				NOT = { CAS = { prestige = ROOT } }
 				prestige = 100
 			}
-			OR = {
-				NOT = { CAS = { legitimacy = ROOT } }
-				legitimacy = 100
-			}
+			# OR = {
+			# 	NOT = { CAS = { legitimacy = ROOT } }
+			# 	legitimacy = 100
+			# }
 			OR = {
 				NOT = { CAS = { stability = ROOT } }
 				stability = 3
@@ -238,6 +238,9 @@ country_decisions = {
 		}
 
 		effect = {
+			country_event = {
+				id = castilian_civil_war.29
+			}
 		}
 	}
 }
@@ -258,10 +261,10 @@ country_decisions = {
 					prestige = POR
 					NOT = { POR = { prestige = 100 } }
 				}
-				OR = {
-					legitimacy = POR
-					NOT = { POR = { legitimacy = 100 } }
-				}
+				# OR = {
+				# 	legitimacy = POR
+				# 	NOT = { POR = { legitimacy = 100 } }
+				# }
 				OR = {
 					stability = POR
 					NOT = { POR = { stability = 3 } }
@@ -273,6 +276,9 @@ country_decisions = {
 		}
 
 		effect = {
+			country_event = {
+				id = castilian_civil_war.28
+			}
 		}
 	}
 }
@@ -293,10 +299,10 @@ country_decisions = {
 					prestige = ARA
 					NOT = { ARA = { prestige = 100 } }
 				}
-				OR = {
-					legitimacy = ARA
-					NOT = { ARA = { legitimacy = 100 } }
-				}
+				# OR = {
+				# 	legitimacy = ARA
+				# 	NOT = { ARA = { legitimacy = 100 } }
+				# }
 				OR = {
 					stability = ARA
 					NOT = { ARA = { stability = 3 } }
@@ -308,6 +314,9 @@ country_decisions = {
 		}
 
 		effect = {
+			country_event = {
+				id = castilian_civil_war.28
+			}
 		}
 	}
 }
@@ -489,39 +498,39 @@ country_decisions = {
 
 # Hire Navigator
 
-country_decisions = {
-	hire_navigator = {
-		potential = {
-			ai = no
-			mission_completed = btc_por_sagres
-			OR = {
-				had_country_flag = {
-					flag = hired_navigator
-					days = 1825
-				}
-				NOT = { has_country_flag = 1st_nav_decision }
-			}
-		}
-		allow = {
-			has_estate_privilege = estate_burghers_naval_school_right
-			mission_completed = btc_por_sagres
-			owns = 230
-			navy_tradition = 5
-		}
-		effect = {
-			define_advisor = {
-				type = navigator
-				skill = 1
-				discount = yes
-				location = 230
-			}
-			add_navy_tradition = -5
-			clr_country_flag = hired_navigator
-			set_country_flag = hired_navigator
-			set_country_flag = 1st_nav_decision
-		}
-	}
-}
+# country_decisions = {
+# 	hire_navigator = {
+# 		potential = {
+# 			ai = no
+# 			mission_completed = btc_por_sagres
+# 			OR = {
+# 				had_country_flag = {
+# 					flag = hired_navigator
+# 					days = 1825
+# 				}
+# 				NOT = { has_country_flag = 1st_nav_decision }
+# 			}
+# 		}
+# 		allow = {
+# 			has_estate_privilege = estate_burghers_naval_school_right
+# 			mission_completed = btc_por_sagres
+# 			owns = 230
+# 			navy_tradition = 5
+# 		}
+# 		effect = {
+# 			define_advisor = {
+# 				type = navigator
+# 				skill = 1
+# 				discount = yes
+# 				location = 230
+# 			}
+# 			add_navy_tradition = -5
+# 			clr_country_flag = hired_navigator
+# 			set_country_flag = hired_navigator
+# 			set_country_flag = 1st_nav_decision
+# 		}
+# 	}
+# }
 
 #Venetian decisions
 

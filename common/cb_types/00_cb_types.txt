@@ -1976,7 +1976,7 @@ cb_castilian_civil_war = {
 		po_become_vassal
 	}
 
-	war_goal = superiority_castilian_civil_war
+	war_goal = wg_castilian_civil_war
 }
 
 # Tomb of Mohamed #

@@ -1970,7 +1970,7 @@ cb_castilian_civil_war = {
 		po_demand_provinces
 	}
 
-	war_goal = superiority_castilian_civil_war
+	war_goal = wg_castilian_civil_war
 }
 
 # Tomb of Mohamed #
@@ -2064,7 +2064,7 @@ cb_castilian_civil_war = {
 		po_demand_provinces
 	}
 
-	war_goal = superiority_castilian_civil_war
+	war_goal = wg_castilian_civil_war
 }
 
 # War of the Roses

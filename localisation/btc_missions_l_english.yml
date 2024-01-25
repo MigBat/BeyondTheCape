@@ -1,6 +1,6 @@
 ﻿l_english:
 
-# Portuguese Missions #
+# Portugal #
  btc_por_madeira_sugar_title:0 "Madeira Sugar"
  btc_por_madeira_sugar_desc:0 "João Gonçalves Zarco was the first to set foot in Madeira, claiming it for Portugal. As this fertile land proves ideal for the cultivation of sugar, we must build sugar plantations and attract skilled workers to develop the island."
  btc_por_coimbra_university_title:0 "Coimbra University"
@@ -54,33 +54,31 @@
  btc_por_legacy_of_albuquerque_desc:0 "The Portuguese led military campaigns towards the Islamic world. As stated by Afonso de Albuquerque: “The first goal of the rally around the Islamic world, is to storm the Prophet’s Mosque and take the remains of the Prophet Muhammad as a bargaining chip to recover Jerusalem from the Muslims”."
  btc_enable_belem_tower_tt:0 "Enables the construction of the §YBelém Tower§! in Lisboa."
  btc_enable_pena_palace_tt:0 "Enables the construction of the §YPena Palace§! in Lisboa."
-
-# English Missions #
-
+ miss_discover_cape_of_storms:0 "§Y[Root.GetName]§! has discovered the southern tip of Africa."
+ por_angola_mission_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province producing §YSlaves§! in the §YCongo§! region."
+ henry_the_navigator_tt:0 "This modifer will last until the death of the navigator advisor."
+ port_english_alliance_tt:0 "The §YEnglish Longbowmen§! mercenary company becomes available to hire.\n§YIf the alliance is broken, we will lose this modifier and mercenary company.§!"
+# England #
  gbr_seize_guinea_title:0 "Seize Guinea"
  gbr_seize_guinea_desc:0 "Other countries have already started looking for the sea route to India and we cannot lag behind. The first step is reaching the sourthern cape of Africa. To do so we need an African base of operations from which to launch our exploration fleets. The Guinean coast will do just fine."
-
-# Netherlands Missions #
-
+# Netherlands #
  discover_portugal_tt:0 "We will discover all provinces owned by §YPortugal§!."
  wic_claims_on_portugal:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YGuinea§! region owned by §YPortugal§!."
  voc_claims_on_portugal:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YEast Indies§! super region owned by §YPortugal§!."
-#  emp_ned_baltic_bulk_trades_title:0 "Control Home Trade"
-#  emp_ned_baltic_bulk_trades_desc:0 "For our nation to prosper we need money. Luckily we are in a great geographic position from which we can control trade coming from various destinations. By establishing a majority of the trade share in the area, we will secure the necessary capital for new journeys abroad."
  emp_ned_invest_in_the_rich_trade_title:1 "Invest in the Rich Trades"
  emp_ned_invest_in_the_rich_trade_desc:0 "There's richer commerce out there for us to become part of. The Portuguese are avid traders and explorers and they keep their secrets safe and hidden. Who knows what riches they know of? If we establish a commercial presence in their markets, our merchants will surely learn of new opportunities."
  btc_ned_mare_liberum_title:0 "Mare Liberum"
  btc_ned_mare_liberum_desc:0 "Grotius formulated the new principle that the sea was international territory and all nations were free to use it for seafaring trade. The disputation was directed towards the Portuguese Mare clausum policy and their claim of monopoly on the East Indian Trade."
  btc_ned_patroonschap_title:0 "The Patroonschap"
  btc_ned_patroonschap_desc:0 "Patroonschappen are entities with local government and land ownership, responsible to the director-general of the colony. Although they could intervene formally, in practice directors-general have little influence over the Patroonschap."
+# Aragon #
 
-# Aragon Missions #
-
+ ara_win_war_tt:0 "If we §YEnforce Isabella's Claim§!, or the year is §Y1500§!, we will get the following rewards:"
+ ara_lose_war_tt:0 "\nIf lose the §YCastilian War of Succession§!, or we do not §YEnforce Isabella's Claim§!, we will get the following rewards:"
+ ara_no_war_tt:0 "\nIf we do not participate in the §YCastilian War of Succession§! we will get the following rewards:"
  btc_ara_sicily_title:0 "Integrate the Islands"
  btc_ara_sicily_desc:0 "Sicily and Sardinia are subject to Aragonese rule, but we do not rule them directly. They must be fully integrated into Aragon."
-
-# Guanches Missions #
-
+# Guanches #
  btc_gch_fate_of_guanches_title:0 "Fate of the Guanches"
  btc_gch_fate_of_guanches_desc:0 "For decades we have been the target of portuguese and castilian raids. They have relentlessly tried to take our islands, and have done so successfully in the east. We must turn to the Gods for guidance in these desperate times."
  gch_choice_affects_missions_tt:0 "§YWe will gain new missions based on how we choose to complete this task§!"
@@ -102,9 +100,7 @@
  btc_gch_discover_all_islands_title:0 "Within our Reach"
  btc_gch_discover_all_islands_desc:0 "Understanding our limitations is a key quality of leadership. Let us go as far as we can, and then we will learn what we need to improve ourselves."
  gch_done_exploring_all_tt:0 "§YDiscovered all nearby lands§!"
-
-# Iberian Missions #
-
+# Iberia #
  btc_ibe_caribbean_title:0 "Dominate the Caribbean"
  btc_ibe_caribbean_desc:0 "The Caribbean is the entrance to the New World. The first step towards achieving continental domination is controlling the islands. All of them must be under ours."
  btc_ibe_colonies_title:0 "Control the New World"
@@ -138,39 +134,3 @@
  ibe_religious_missionary_tt:0 "Every non-[Root.Religion.GetName] province in the world gets §Y+5%§! missionary strength."
  ibe_reduce_autonomy_religion_tt:0 "Every [Root.Religion.GetName] province in the world gets §Y-10%§! monthly autonomy."
  ibe_reduce_unrest_religion_tt:0 "Every [Root.Religion.GetName] province in the world gets §Y-1§! unrest."
-
-# Changes from vanilla localisation #
-
- dom_portugal_reform_navy_desc:0 "Dom Henrique, Duke of Viseu, the uncle of king Afonso V, is best known for promoting Portugal's exploration efforts in West Africa and reforming its Navy, sponsoring a new type of ship, the Caravel. Now we must go one step further and once again design a new fighting ship, the Galleon."
- noble_resilience_desc:0 "The various mercenary groups of this continent are often headed by lesser nobles. By befriending the nobility, we can make use of their network of contacts to seek out more and larger groups of mercenary soldiers."
- organised_construction_desc:0 "The need to upgrade the infrastructure of our government is a costly business, if we structure the process correctly we can do this cheaper."
- smithian_economics_desc:0 "By opposing mercantilism and restricting the state's influence in economic matters, we shall support a free market that will increase our overall production efficiency."
- conquest_of_paradise:0 "Conquest of Paradise"
- conquest_of_paradise_desc:0 "Following the light of the sun, we left the Old World."
- devout_catholisism:0 "Devout Catholicism"
- resist_the_english:0 "Resist The English"
- resist_the_english_desc:0 "Scotland has been subjugated by the cruel rule of the English in the past, never again shall a proud sctosman shine the boots of a pompous English overlord."
- protection_of_the_little_folk:0 "Almughavars"
- protection_of_the_little_folk_desc:0 "Almogavars were lightly clad, quick-moving frontiersmen and foot-soldiers. They hailed originally from the Kingdom of Aragon and the Principality of Catalonia."
- gal_xunta_xeral_de_galiza:0 "Xunta Xeral de Galiza"
- gal_xunta_xeral_de_galiza_desc:0 "The Xunta was an assembly of the Kingdom's Estates, who could petition the King for modifying or approving laws. The Xunta was also recognized as the voice and representative of the Kingdom, and the depositary of its will, traditions and rights. Although originally meant to represent the the Clergy, Nobility and Bourgeoisie, it quickly became monopolized by the bourgeoisie and lesser nobility (fidalgos)."
- gal_of_corn_and_potato:0 "Introduction of Corn and Potato crops"
- gal_of_corn_and_potato_desc:0 "Trade with the New World has introduced two new crops which are very suitable for the Galician climate, corn and potato, these two crops quickly became the most widespread elements in Galician agriculuture, which sustained a populational boom that made Galicia the most densely populated region on the Iberian Peninsula, up to three times higher than the Spanish average."
- gal_costa_da_morte:0 "Costa da Morte"
- gal_costa_da_morte_desc:0 "The Atlantic is a harsh mistress, and only the sturdiest vessels may survive her harrowing embrace. and the rugged and rocky Galician coast make it an expecially dangerous place for ships traveling close to shore, these are a few of the reasons why the Galician coast is famously known as "The Coast of Death". "
- gal_galician_enlightenment:0 "Galician Enlightenment"
- gal_galician_enlightenment_desc:0 "By the rise of Enlightenment ideas, Galicia became a hotspot of Enlightnement thought, especially in regards to new economic thought, free market, rationalism and materialism, with the foundation of institutions such as the "Economic Societies", "Academy of Agriculture" and the "Royal Maritime Consulate" who advocated and practiced these new ideals."
- gal_rexurdimento:0 "Rexurdimento"
- gal_rexurdimento_desc:0 "Having been subjugated by Castile for many centuries, Castilian had become the language of the cities and of the bourgeoisie, dominating literary and business use, while Galician had become a largely rural language without a live literary tradition. The Rexurdimento was the movement to revitalise and officialise the Galician language as the one and true language of the Galician Kingdom."
- gal_irmandinos:0 "Irmandiños"
- gal_irmandinos_desc:0 "If there is any lesson to be drawn from the destructive Irmandiños civil war that ravenged our county, is that the quickest way to break an enemy's resistence, is to tear down its fortress. If these peasants were able to bring down over a hundred of our forts, we have much to learn from them." 
- gc_por_portugal_discovers_south_america_title:0 "Colonize Brazil"
- gc_por_portugal_discovers_south_america_desc:0 "The fertile land in Brazil would be an excellent place to begin a new colonial venture."
- miss_discover_caribbean:0 "§Y[Root.GetName]§! has discovered any province in the Caribbean region."
- swe_colonize_delaware_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every §YCenter of Trade§! or province with an §YEstuary§! in §YCaribbean§! region."
- nor_discover_new_world_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province with a §YCenter of Trade§! or with an §YEstuary§! in §YColonial Eastern America§!, §YColonial Canada§!, §YColonial Mexico§! and §YCaribbean§! region."
- por_triangle_trade_mission_tooltip:0 "Every province in §YKongo§!,§YGuinea§! and §YNiger§! producing §YSlaves§! gets '§YTriangle Trade§!' for §Y20 years§!, giving the following effects:\nGoods Produced: §G+10%§!"
- gc_por_colonise_west_africa_title:0 "Go Further South"
- gc_por_triangle_trade_title:0 "Portuguese Slave Trade"
- triangle_trade_key:0 "Portuguese Slave Trade"
- miss_colonize_west_africa:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the Guinea region that is not in the Cap Verde area."

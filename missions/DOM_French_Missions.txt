@@ -17,10 +17,12 @@ french_missions_1 = {
 		provinces_to_highlight = { 
 			area = normandy_area 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { province_id = 4953 }
 		}
 		trigger = { 
 			normandy_area = { 
 				type = all 
+				NOT = { province_id = 4953 }
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}

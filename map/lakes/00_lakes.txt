@@ -1,0 +1,180 @@
+#Great Bear Lake 1
+lake = {
+	triangle_strip = { 853 2473 858 2490 876 2468 881 2485 }
+	height = 20
+}
+
+#Great Bear Lake 2
+lake = {
+	triangle_strip = { 809 2448 812 2458 822 2445 825 2455 }
+	height = 20
+}
+
+#Lake Athabasca 1
+lake = {
+	triangle_strip = { 1048 2260 1051 2267 1062 2258 1064 2265 }
+	height = 20
+}
+
+#Lake Athabasca 2
+lake = {
+	triangle_strip = { 1101 2261 1104 2276 1114 2257 1117 2272 }
+	height = 20
+}
+
+#Lake Reindeer 1
+lake = {
+	triangle_strip = { 1164 2269 1169 2286 1187 2264 1192 2281 }
+	height = 20
+}
+
+#Lake Reindeer 2
+lake = {
+	triangle_strip = { 1087 2201 1092 2218 1110 2196 1115 2213 }
+	height = 20
+}
+
+#Lake Reindeer 3
+lake = {
+	triangle_strip = { 1117 2149 1112 2166 1140 2144 1145 2161 }
+	height = 20
+}
+
+#Lake Reindeer 4
+lake = {
+	triangle_strip = { 1144 2213 1158 2240 1159 2169 1202 2217 }
+	height = 20
+}
+
+#God's Lake 1
+lake = {
+	triangle_strip = { 1330 2062 1332 2072 1342 2061 1343 2070 }
+	height = 20
+}
+
+#God's Lake 2
+lake = {
+	triangle_strip = { 1367 2058 1371 2070 1385 2058 1391 2070 }
+	height = 20
+}
+
+#Lake of the Woods/Rainy Lake
+lake = {
+	triangle_strip = { 1296 2016 1306 2046 1353 2003 1356 2014 }
+	height = 20
+}
+
+#Lake Superior
+lake = {
+	triangle_strip = { 1381 2013 1382 2022 1392 2012 1393 2019 }
+	height = 20
+}
+
+#Minnesota Lakes
+lake = {
+	triangle_strip = { 1295 1998 1312 2008 1327 1953 1339 1961 }
+	height = 20
+}
+
+#Lake Manicougan
+lake = {
+	triangle_strip = { 1677 2037 1672 2055 1706 2066 1698 2076 }
+	height = 20
+}
+
+#Lake Bienville
+lake = {
+	triangle_strip = { 1684 2144 1687 2156 1714 2151 1715 2163 }
+	height = 20
+}
+
+#Lake Michikamau
+lake = {
+	triangle_strip = { 1846 2122 1850 2147 1874 2120 1877 2133 }
+	height = 20
+}
+
+#Venezuelan Lake
+lake = {
+	triangle_strip = { 1786 1270 1788 1275 1794 1269 1796 1275 }
+	height = 20
+}
+
+
+#Storavan
+lake = {
+	triangle_strip = { 3295 2455 3301 2463 3322 2446 3325 2453 }
+	height = 20
+}
+
+#Storsjon
+lake = {
+	triangle_strip = { 3220 2349 3226 2362 3253 2331 3262 2344 }
+	height = 20
+}
+
+#Storsjon
+lake = {
+	triangle_strip = { 3220 2349 3226 2362 3253 2331 3262 2344 }
+	height = 20
+}
+
+#Lake Constance
+lake = {
+	triangle_strip = { 3152 1987 3152 1995 3171 1984 3171 1991 }
+	height = 20
+}
+
+#Lake Geneva
+lake = {
+	triangle_strip = { 3103 1958 3105 1968 3119 1961 3120 1967 }
+	height = 20
+}
+
+#Lake Balkash
+lake = {
+	triangle_strip = { 4309 1929 4285 1972 4468 1945 4514 2019 }
+	height = 20
+}
+
+#Lake Baikal
+lake = {
+	triangle_strip = { 4771 2047 4775 2084 4933 2078 4956 2185 }
+	height = 20
+}
+
+#Hulun Lake
+lake = {
+	triangle_strip = { 5074 1981 5069 2021 5098 1990 5095 2035 }
+	height = 20
+}
+
+#Lake Albert
+lake = {
+	triangle_strip = { 3534 1103 3532 1121 3559 1123 3556 1138 }
+	height = 20
+}
+
+#Lake Turkana
+lake = {
+	triangle_strip = { 3630 1128 3627 1179 3658 1133 3658 1182 }
+	height = 20
+}
+
+#Lake Eyasi 1
+lake = {
+	triangle_strip = { 3631 1039 3629 1056 3642 1041 3643 1059 }
+	height = 20
+}
+
+#Lake Malawi
+lake = {
+	triangle_strip = { 3608 821 3591 930 3636 811 3613 920 }
+	height = 20
+}
+
+#New Zealand Lake
+lake = {
+	triangle_strip = { 6116 369 6119 379 6126 368 6129 377 }
+	height = 20
+}

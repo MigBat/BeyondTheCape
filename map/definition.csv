@@ -365,7 +365,7 @@ province;red;green;blue;x;x
 364;52;120;255;Gaza;x
 365;180;122;0;Sinai;x
 366;52;124;64;The Canarias;x
-367;180;126;128;São Miguel;x
+367;180;126;128;The Azores;x
 368;52;128;192;Madeira;x
 369;180;130;255;Orkney;x
 370;52;132;0;Reykjavik;x
@@ -1478,7 +1478,7 @@ province;red;green;blue;x;x
 1477;100;251;251;Western Coast of Iceland;x
 1478;101;201;201;Northeastern Atlantic;x
 1479;102;201;251;Rockall;x
-1480;23;118;145;Denmark Strait;x
+1480;103;121;251;Denmark Strait;x
 1481;104;251;251;Eastern Coast of Greenland;x
 1482;105;201;201;Western Coast of Greenland;x
 1483;106;201;251;Labrador Strait;x
@@ -1936,7 +1936,7 @@ province;red;green;blue;x;x
 1935;52;0;240;Semigallia;x
 1936;55;0;0;Kovno;x
 1937;65;0;250;Grodno;x
-1938;75;0;25;Wizna;x 
+1938;75;0;25;Wizna;x
 1939;85;0;225;Leczyca;x
 1940;95;0;50;Belz;x
 1941;105;0;200;Turov;x
@@ -2237,7 +2237,7 @@ province;red;green;blue;x;x
 2236;131;211;134;Bojnord;x
 2237;160;109;157;Tekrur;x
 2238;80;73;160;Kantor;x
-2239;120;75;185;Siine;x 
+2239;120;75;185;Siine;x
 2240;120;137;132;Galam;x
 2241;200;111;182;Beafada;x
 2242;240;69;110;Karou;x
@@ -2248,8 +2248,8 @@ province;red;green;blue;x;x
 2247;80;117;83;Walata;x
 2248;120;119;108;Do;x
 2249;160;151;133;Sibiridugu;x
-2250;160;77;210;Bendugu;x 
-2251;80;61;184;Bagoe;x 
+2250;160;77;210;Bendugu;x
+2251;80;61;184;Bagoe;x
 2252;200;117;235;Lobi;x
 2253;160;121;133;Gwiriko;x
 2254;240;125;232;Bonoman;x
@@ -2275,8 +2275,8 @@ province;red;green;blue;x;x
 2274;160;145;234;Agades;x
 2275;120;125;161;Tenere;x
 2276;80;123;136;Itesan;x
-2277;240;161;86;Kawar;x 
-2278;240;149;110;Kebbi;x 
+2277;240;161;86;Kawar;x
+2278;240;149;110;Kebbi;x
 2279;120;155;185;Daura;x
 2280;160;157;210;Biram;x
 2281;200;159;235;Rano;x
@@ -2287,7 +2287,7 @@ province;red;green;blue;x;x
 2286;240;131;236;Logone;x
 2287;40;163;11;Kotoko;x
 2288;40;133;82;Yao;x
-2289;40;71;135;Ondo;x 
+2289;40;71;135;Ondo;x
 2290;240;81;86;Ijebu;x
 2291;120;87;161;Ketu;x
 2292;140;145;232;Moshi;x
@@ -2657,7 +2657,7 @@ province;red;green;blue;x;x
 2656;108;31;196;Camaguey;x
 2657;234;31;145;Colima;x
 2658;6;15;95;Maguana;x
-2659;132;16;46;Magua;"x 	"
+2659;132;16;46;Magua;x
 2660;69;31;246;Managua;x
 2661;195;31;196;Uluas;x
 2662;27;141;145;Olancho;x
@@ -3188,13 +3188,13 @@ province;red;green;blue;x;x
 3187;207;140;136;Unused174;
 3188;207;140;137;Unused175;
 3189;207;140;138;Unused176;
-3190;219;32;0;Taurus Mountains;x
-3191;219;32;1;Carpathians2;x
-3192;219;32;2;Tatras;x
-3193;219;32;3;Sudetes;x
-3194;219;32;4;Pindos Mountains;x
-3195;219;32;5;Korab Mountains;x
-3196;219;32;6;UnusedLand6;x
+3190;219;32;0;UnusedLand0;
+3191;219;32;1;UnusedLand1;
+3192;219;32;2;UnusedLand2;
+3193;219;32;3;UnusedLand3;
+3194;219;32;4;UnusedLand4;
+3195;219;32;5;UnusedLand5;
+3196;219;32;6;UnusedLand6;
 3197;219;32;7;UnusedLand7;
 3198;219;32;8;UnusedLand8;
 3199;219;32;9;UnusedLand9;
@@ -3608,16 +3608,16 @@ province;red;green;blue;x;x
 3607;225;25;207;RNW;
 3608;225;25;208;RNW;
 3609;225;25;209;RNW;
-3610;225;25;200;RNW;
-3611;225;25;201;RNW;
-3612;225;25;202;RNW;
-3613;225;25;203;RNW;
-3614;225;25;204;RNW;
-3615;225;25;205;RNW;
-3616;225;25;206;RNW;
-3617;225;25;207;RNW;
-3618;225;25;208;RNW;
-3619;225;25;209;RNW;
+3610;225;25;210;RNW;
+3611;225;25;211;RNW;
+3612;225;25;212;RNW;
+3613;225;25;213;RNW;
+3614;225;25;214;RNW;
+3615;225;25;215;RNW;
+3616;225;25;216;RNW;
+3617;225;25;217;RNW;
+3618;225;25;218;RNW;
+3619;225;25;219;RNW;
 3620;100;10;120;RNW;
 3621;100;10;121;RNW;
 3622;100;10;122;RNW;
@@ -4940,7 +4940,7 @@ province;red;green;blue;x;x
 4939;210;80;11;Te Moana-a-Toi;x
 4940;29;216;197;Lake Tulare;x
 4941;30;216;201;Lake Cahuilla;x
-4942;255;28;50;Set�bal;x
+4942;255;28;50;Setubal;x
 4943;51;35;126;Castelo Branco;x
 4944;36;110;7;Terceira;x
 4945;57;248;0;West Guinea;x
@@ -4951,8 +4951,8 @@ province;red;green;blue;x;x
 4950;184;116;27;Moxico;x
 4951;252;170;77;Cubango;x
 4952;172;246;167;Cunene;x
-4953;255;99;40;Navia;x
-4954;206;187;81;Cabreira;x
+4953;255;99;40;Channel Islands;x
+4954;206;187;81;Long Island;x
 4955;86;132;159;Mérida;x
 4956;0;192;76;Arzila;x
 4957;53;18;173;Ksar El-Kebir;x
@@ -4967,19 +4967,13 @@ province;red;green;blue;x;x
 4966;253;210;182;Juventud;x
 4967;112;93;88;Cayman Islands;x
 4968;236;236;235;Grenada;x
-4969;166;179;142;Tobago;x
+4969;166;179;142;Cogo;x
 4970;163;165;8;Margarita;x
 4971;95;176;198;Eleuthera;x
 4972;159;181;102;Sado;x
 4973;164;244;211;South Cyprus;x
 4974;139;92;44;West Crete;x
-4975;125;135;63;Amazon1;x
-4976;120;108;219;Amazon2;x
-4977;62;103;85;Amazon3;x
-4978;198;218;243;Amazon4;x
-4979;62;71;243;Amazon5;x
-4980;233;192;225;Amazon6;x
-4981;170;211;192;Amazon7;x
-4982;130;120;93;Amazon8;x
-4983;42;39;106;Amazon9;x
-4984;175;125;122;Hong Kong;x
+4975;175;125;122;Hong Kong;x
+4976;215;246;252;Greenland Approach;x
+4977;203;121;251;Bojador Shoals;x
+4978;157;158;204;Abyan;x

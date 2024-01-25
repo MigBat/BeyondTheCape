@@ -48,11 +48,12 @@ categories =  {
 		defence = 1
 		movement_cost = 1.25
 		supply_limit = 2		
-		local_development_cost = 1.0
+		local_development_cost = 0.5
 		nation_designer_cost_multiplier = 0.75		
 		
 		terrain_override = {		
 			1034 1035 1104 1105 2074 2128 2129 2025 2440 2574
+			1038 #Typus
 		}
 	}
 
@@ -79,7 +80,6 @@ categories =  {
 			
 			115 117 118 121 1862
 			
-			224
 			
 			916 917 920 925 930 2532
 			
@@ -94,7 +94,7 @@ categories =  {
 			1868 68 77 70 65 78 1841 266 
 			255 254 258 259 260 134 151 152 1767 1954 150 268 280 1876
 			
-			 243 245 248 
+			243 245 248 
 			410 415 2310
 			
 			186 90 92 88 182 12 14 6 289 2407 290 279 4538
@@ -146,7 +146,6 @@ categories =  {
 		supply_limit = 4
 		local_development_cost = 0.2
 		nation_designer_cost_multiplier = 0.9
-		combat_width = -0.2
 		
 		terrain_override = { 
 			2 4 8 9 11 18 29 30 31 315 4123 4124 # Sweden
@@ -160,6 +159,10 @@ categories =  {
 			960 1109 
 			1026 4187 #Japan
 			312 #Eastern Europe
+			
+			4151 1777 1776 313 4152 19 32 1961 4259 
+			314 305 1067 1780 2431 1061 
+			2445 1069 1070 1073 1059 2430 2436 2437 1045 2438 1051 2434 4114 4113 4258 1958 #Typus
 		}                                      
 	}
 	
@@ -175,17 +178,12 @@ categories =  {
 		local_development_cost = 0.25
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
-		combat_width = -0.25
 		
 		terrain_override = {
-			228 4943 4555 4558 4554 4556 #Portugal 
-			
-			1751 4561 335 2470 4789 
-			
 			508 509 511 515 525 527 530 545 550 554 557 1947 2036 
 			2037 2040 2043 2056 2058 2069 2070 2071 2080 2090 2092 2097
 			
-			105 106 107 111 1774 1844 4739
+			105 106 107 111 1774 1844 1746 4739
 			
 			1827 63
 			
@@ -215,6 +213,7 @@ categories =  {
 			4046 4050 4063 4066 4068 4069 4070 4072 4098 4102 #Central Africa
 			156 1951 #Carpathians
 			4144 4145 4164 #Scandinavia
+			232 #Iberia
 			733 2694 2742 2744 4229 4231 #Korea
 			1018 1025 1029 1820 1830 1832 1843 1852 4180 4183 4185 4188 4191 4192 #Japan
 			4239 #Balkans
@@ -222,8 +221,8 @@ categories =  {
 			4449 4483 4484 4485 4491 4492 4493 4511 #North India
 			521 548 559 740 4430 4434 4453 4459 4462 4465 4466 4467 4480 4500 #Central India
 			518 529 531 533 538 1949 2027 2030 2032 2083 2089 4414 4420 4425 4426 4427 4429 #South India
-			4788 # new for 1.28
-			2479 210 4546 1748 # Changed for 1.28
+			4552 # new for 1.28
+			2479 # Changed for 1.28
 			2992 4694 4695 4696 4777 # France and Italy 1.30
 			4307 4702 4705 4779 # 1.30 Greece and Bulgaria
 			2956 4707 4715 4744 #Germany
@@ -234,6 +233,8 @@ categories =  {
 			4840 # Mandala
 			
 			4856
+			
+			2439 1036 16 #Typus
 		}
 	}
 
@@ -249,10 +250,8 @@ categories =  {
 		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.9
 		supply_limit = 6
-		combat_width = -0.2
 		
 		terrain_override = {
-			231 # Portugal
 			206 1851 # Spain
 			374 375 376 4118 4119 4120 4121 #Ireland
 			129 4755 4757 4703 # Balkans
@@ -297,7 +296,7 @@ categories =  {
 			240 244 4372 4377 4378 4379 4380 #Britain
 			4381 4387 4389 #France & Low Countries
 			4541 4537 4535 2963 4544 4543 4524 # New PLC provinces
-			# new iberia provinces 1.28
+			4555 4558 # new iberia provinces 1.28
 			# 1.29 Manchu
 			4658 4659 4660 4654 4663
 			4697 # France 1.30
@@ -321,10 +320,9 @@ categories =  {
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
-		combat_width = -0.5
 		
 		terrain_override = {
-			207 1745 4551 2987 2989 4953 4954 211 4953 # Spain
+			210	226 # Spain
 			139 1831 143 138 4175  #Balkans
 			158 1952 #Hungary
 			4236 #Slovakia
@@ -369,7 +367,7 @@ categories =  {
 			4348
 			4404 # Burma
 			4514 4515 4516 4517 4518 4519 4520 4521 #tibet
-			2467 # new provinces 1.28
+			4546 # new provinces 1.28
 			829 
 			4601 4602 #new provinces 1.28 mesoamerica
 			# 1.29 Manchuria
@@ -402,7 +400,7 @@ categories =  {
 		
 		terrain_override = {
 			2666 # North America
-			213 4553 209 #Spain
+			213 218 219 #Spain
 			526 #India
 			417 4341 #Iran
 			593 2376 2391 2394  #Sout East Asia
@@ -410,8 +408,8 @@ categories =  {
 			136 4174  # Balkans	
 
 			373 # Ireland			
-		
-			149 229
+					
+			149 1747 229
 			1943 1942 131
 			
 			516 517 539 543 552 549 562 572 1948 2046 2055 2057 2059 2061 2062 2081 
@@ -438,7 +436,7 @@ categories =  {
 			
 			703 704 726 730 2110 2113
 			42 457 458
-			4150 4942 #Iberia
+			4150 #Iberia
 			1017 1012 1019 1023 1024 1818 1825 1837 1839 1847 4359 4360 #Japan
 			737 1013 1845 4227 4230 #Korea
 			4394 # Burma
@@ -461,7 +459,6 @@ categories =  {
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.8
 		supply_limit = 5
-		combat_width = -0.25
 		
 		terrain_override = {
 			1237 1245 2703 #South East Asia
@@ -472,7 +469,7 @@ categories =  {
 			486 490 743 745 748 826 835 840 846 848 2630 2637 2641 2647 2654 2655 2659 2664 2819 2927
 			
 			582 2397 2398 579 2402 1815 590 2403 2400 589 602 1817 2389 2388 592 591 2404 843
-			789 1181 1182 1183 2952
+			789 1151 1181 1182 1183 2952
 			
 			616 2372 610 2377
 			756 759 757 765 2894 2896 2914 2929 
@@ -504,10 +501,8 @@ categories =  {
 		local_development_cost = 0.25
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
-		combat_width = -0.25
 
 		terrain_override = {
-			4787 #Portugal
 			1860 #England
 			96 #Netherlands
 			4738 #Aquilea
@@ -614,10 +609,10 @@ categories =  {
 			387 4279 #Tihama al yemen
 			
 			4815 # Mandala
-			226 
+			
 			2728
-			# BEYOND THE CAPE
-			4966 4967 4968 4969 4970 4971 4972
+			
+			1997 #Fix Midway in Typus
 		}
 	}	
 	
@@ -634,20 +629,22 @@ categories =  {
 		allowed_num_of_buildings = 1
 
 		terrain_override = {
-			218 219
-			221 1750 214 
-			2754 215 2999 # Spain
+			1749 224
+			221 1750 220 214 
+			1748 2754
+			225
 			2297 327 2313 411 2199 2208 464 4314 2300 4308 4309 #Turkey and Caucasus
 			420 421 425 2203 2307 4307 #Caucasus
 			428  454 442 441 1973 444 446 450 453 2213 2214 2215 2227 2228 4343 4337 #Iran, Transoxiana & Balkh
 			504 505 519 528 541 569 2031 2051 2052 2053 2054 2065 2067 2072
-			
+			 2999
 			751 752 753 790 799 858 882 2476 2498 2614 2620 2643 2668 2842 2854 2865 
 			2868 2878 2883 2885 2915 2917 2922 
 			750 2863
 			1178 2764 2768 2797 2798 2801 2864
 			754 755 786 862 868 876 1809 2492 2507 2619 2667 2846 2861 2912 2913 2921 
 			1172 2682 2503 2068
+			
 			322
 			2308 407 337 1849 2309 377
 			2356 2364
@@ -663,7 +660,7 @@ categories =  {
 			4549 4562 4563 4564 4547 4557# new provinces 1.28
 			4628 4630 # new provinces Mesoamerica 1.28
 			
-			2736 4863 4861 4855 1094 2733 4949
+			2736 4863 4861 4855 1094 2733
 		}
 	}
 
@@ -679,16 +676,13 @@ categories =  {
 		local_defensiveness = 0.1
 		local_development_cost = 0.2
 		nation_designer_cost_multiplier = 0.9	
-		combat_width = -0.25
 
 		terrain_override = {
-			232 #Portugal
-			343 344 1746 
-			520 536 542 544 578 2035 2077 2079 2085 2087 2093 4957 4961
+			520 536 542 544 578 2035 2077 2079 2085 2087 2093
 			850 852 853 2018 2621 2622 2623 2626 2628 2629 2644 2646 2645 
 			588 2401 2301 324 1224 
 			869 2006 2019 2483 2488 2496 2501 2624
-			336 339 340 346 348 349 351 1171 1184 1185 1188 1207 1208 1211 1218 1219 1227 1882 2274 2454 2458 2459 2462 2463 
+			335 336 339 340 346 348 349 351 1171 1184 1185 1188 1207 1208 1211 1218 1219 1227 1751 1882 2274 2454 2458 2459 2462 2463 
 			2464 2465 2756 2757 2758 2762 2763 2766 2770 2771 2772 2778 2779 2781 2787 2792 2950 2951
 			326 329 332 418 1846 
 			2303
@@ -697,9 +691,9 @@ categories =  {
 			1773 127 1247
 			1766
 			319 2298 
-			371 163 321 4973 4974
+			371 163 321
 			661 662 673 674 675 678 705
-			2131 2132 2133 2134 2135 2165 2167 2168 2170 2748 2183 2468
+			2131 2132 2133 2134 2135 2165 2167 2168 2170 2748 2183 
 			3001 4176 #Balkans
 			4199 #Greater China
 			145 365 378 2209 2235 2313 4293 4294 4295 4298 4313 #Middle East
@@ -710,16 +704,14 @@ categories =  {
 			4110 #Scotland
 			23 24 370 2752 #Norway
 			154 162 263 1318 2960 2968 2970 4238 #Central Europe
-			228 2755 2751 2990 #Iberia
+			216 228 2755 2989 #Iberia
 			323 2202 4299 4305 #Anatolia and Caucasus
 			736 1047 4228  #Korea & Manchuria
 			2986 4391 #Italy & France
 			4406 4398 # Burma
 			4422 4436 4464 #Central India
-			4566 208 # new provinces 1.28
+			4561 4566 4553 # new provinces 1.28
 			4669 4701 4699 4780 # 1.30 Greece and Bulgaria
-
-			4947 4948
 		}
 	}
 
@@ -757,7 +749,7 @@ categories =  {
 			4618 4619 #Mesoamerica 1.28
 			4836 2383 4829
 			
-			1092 4851 1094 4850 4846 4881 1151 2242 4950 4951 4952
+			1092 4851 1094 4850 4846 4881
 		}		
 	}
 	

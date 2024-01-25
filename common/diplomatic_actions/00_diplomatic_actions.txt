@@ -700,11 +700,18 @@ milaccess = {
 	condition = {
 		tooltip = does_not_border_tt
 		potential = {
-			FROM = { NOT = { is_neighbor_of = ROOT }}
+			FROM = { 
+				NOT = { 
+					is_neighbor_of = ROOT
+				}
+			}
 		}
 		allow = {
 			OR = {
 				FROM = { alliance_with = ROOT }
+				any_subject_country = {
+					is_neighbor_of = FROM
+				}
 				AND = {
 					ROOT = { is_part_of_hre = yes }
 					FROM = { is_part_of_hre = yes }
