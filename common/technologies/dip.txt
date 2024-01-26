@@ -115,7 +115,6 @@ technology = { #Docks
 		feudalism = 0.5
 		renaissance = 0.3
 	}
-	range = 50
 	dock = yes	
 	may_study_technology = yes
 
@@ -134,6 +133,7 @@ technology  = { #Shipyards
 	num_accepted_cultures = 1
 	shipyard = yes
 
+	range = 50
 	trade_range				=	10
 	naval_morale			=	0.2
 

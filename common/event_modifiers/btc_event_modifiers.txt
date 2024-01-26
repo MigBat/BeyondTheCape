@@ -397,7 +397,7 @@ portuguese_tercios = {
 
 por_sagres = {
 	dip_tech_cost_modifier = -0.05
-	navy_tradition = 1
+	navy_tradition = 0.25
 }
 
 por_brazil_tariffs = {

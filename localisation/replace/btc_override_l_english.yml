@@ -156,6 +156,7 @@
  gc_por_triangle_trade_title:0 "Portuguese Slave Trade"
  triangle_trade_key:0 "Portuguese Slave Trade"
  miss_colonize_west_africa:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the Guinea region that is not in the Cap Verde area."
+ gbr_end_the_french_conflict_at:0 "Does not own any province other than §Y[87.GetName]§! and §Y[4953.GetName]§! in the region §YFrance§!"
 # Monuments #
  belem_tower:0 "Belém Tower"
 # Special Units #

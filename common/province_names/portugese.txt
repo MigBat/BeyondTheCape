@@ -30,7 +30,7 @@
 344 = "Marraquexe"
 335 = "Melilha"
 346 = "Tafilate"
-366 = "Ilhas Canárias"
+366 = "Grande Canária"
 356 = "Bengazi"
 357 = "Derna"
 358 = "Alexandria"
@@ -235,7 +235,7 @@
 4963 = "Costa da Pimenta"
 1119 = "Costa do Grão"
 2258 = "Axim"
-4964 = "Costa dos escravos"
+4964 = "Costa dos Escravos"
 1141 = "Forte de São João Baptista de Ajudá"
 2290 = "Jebu"
 2294 = "Cabo Formoso" #might be left as it is, maybe not
@@ -665,7 +665,7 @@
 980 = "Esquenoate" #It's called "Esquenoat", but the "te" is a natural prolongation of a lone ending "t".
 981 = "Terra Nova" #Because the brits only translated the original name given by the portuguese.
 2574 = "Cabo Branco"
-2575 = "Rio Grande do Norte"#in the maps it's only "Rio Grande", but I wanted to distinguish from the brazilian estate.
+2575 = "Rio Grande do Norte" #in the maps it's only "Rio Grande", but I wanted to distinguish from the brazilian estate.
 997 = "Terra de Lavrador" #This area was discovered by João Fernandes Lavrador. "Labrador" is an adaptation of his name. Also the dog breed with the same name comes from this area.
 996 = "Terra de João Vaz" #Also from the portuguese explorer João Vaz Côrte Real.
 2576 = "Maluas" #Funny name on the maps.

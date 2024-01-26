@@ -2600,7 +2600,7 @@ gc_por_5_a = {
 			230 = {
 				add_province_modifier = {
 					name = por_sagres
-					duration = 5475
+					duration = -1
 				}
 			}
 			add_country_modifier = {
