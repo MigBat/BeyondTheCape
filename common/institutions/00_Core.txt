@@ -680,7 +680,7 @@ printing_press = {
 		stability_cost_modifier = -0.05
 	}
 
-	trade_company_efficiency = 0.8
+	trade_company_efficiency = 0.6
 
 	historical_start_date = 1457.1.1
 	historical_start_province = 78 #Mainz
@@ -1121,7 +1121,7 @@ new_world_i = {
 		global_prov_trade_power_modifier = 0.10
 	}
 
-	trade_company_efficiency = 0.6
+	trade_company_efficiency = 0.8
 
 
 	historical_start_date = 1500.1.1
@@ -1553,7 +1553,7 @@ manufactories = {
 		global_trade_goods_size_modifier = 0.1
 	}
 
-	trade_company_efficiency = 1.25
+	trade_company_efficiency = 1.0
 
 	historical_start_date = 1650.1.1
 	historical_start_province = 183 #Paris
@@ -2108,7 +2108,7 @@ global_trade = {
 		merchants = 1
 	}
 
-	trade_company_efficiency = 1.0
+	trade_company_efficiency = 1.25
 
 	historical_start_date = 1600.1.1
 	historical_start_province = 97 #Holland
