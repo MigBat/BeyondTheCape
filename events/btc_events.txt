@@ -1248,12 +1248,42 @@ country_event = {
 
 		add_prestige = 10
 		define_explorer = {
-			name = "NAME_CRISTOBAL_COLON"
+			name = "Cristóbal Colón"
 			fire = 2
 			shock = 2
 			manuever = 6
 			siege = 0
 			trait = great_explorer_personality
+		}
+		set_country_flag = cas_no_flagship_mod
+		if = {
+			limit = {
+				227 = {
+					owned_by = ROOT
+				}
+			}
+			227 = {
+				create_flagship = {
+					type = heavy_ship
+					name = "Santa María"
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				create_flagship = {
+					type = heavy_ship
+					name = "Santa María"
+				}
+			}
+		}
+		clr_country_flag = cas_no_flagship_mod	
+		add_country_modifier = {
+			name = legacy_of_columbus
+			duration = -1
 		}
 		hidden_effect = {
 			discover_province = 1578
@@ -1285,6 +1315,36 @@ country_event = {
 			manuever = 6
 			siege = 0
 			trait = great_explorer_personality
+		}
+		set_country_flag = por_no_flagship_mod
+		if = {
+			limit = {
+				224 = {
+					owned_by = ROOT
+				}
+			}
+			224 = {
+				create_flagship = {
+					type = heavy_ship
+					name = "Santa Maria"
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				create_flagship = {
+					type = heavy_ship
+					name = "Santa Maria"
+				}
+			}
+		}
+		clr_country_flag = por_no_flagship_mod	
+		add_country_modifier = {
+			name = legacy_of_columbus
+			duration = -1
 		}
 		hidden_effect = {
 			discover_province = 1578
@@ -2599,5 +2659,95 @@ country_event = {
 		}
 
 		add_prestige = -10
+	}
+}
+
+# Give Malaria
+country_event = {
+	id = btc_events.44
+	title = btc_events.44_t
+	desc = btc_events.44_d
+	picture = CONQUEROR_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		capital_scope = {
+			NOT = {
+				continent = africa
+			}
+		}
+		any_owned_province = {
+			continent = africa
+			has_port = no
+			NOT = {
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					region = guinea_region
+					region = south_africa_region
+					area = lower_zambezi_area
+					area = inner_angola_area
+				}
+			}
+			NOT = { has_province_modifier = malaria }
+		}
+	}
+
+	option = {
+		name = btc_events.44a
+		
+		every_owned_province = {
+			limit = {
+				continent = africa
+				has_port = no
+				NOT = {
+					OR = {
+						region = maghreb_region
+						region = egypt_region
+						region = guinea_region
+						region = south_africa_region
+						area = lower_zambezi_area
+						area = inner_angola_area
+					}
+				}
+				NOT = { has_province_modifier = malaria }
+			}
+			add_province_modifier = {
+				name = malaria
+				duration = -1
+			}
+		}
+	}
+}
+
+# Remove Malaria
+country_event = {
+	id = btc_events.45
+	title = btc_events.45_t
+	desc = btc_events.45_d
+	picture = CONQUEROR_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		capital_scope = {
+			continent = africa
+		}
+		any_owned_province = {
+			continent = africa
+			has_province_modifier = malaria
+		}
+	}
+
+	option = {
+		name = btc_events.44a
+		
+		every_owned_province = {
+			limit = {
+				has_province_modifier = malaria
+			}
+			remove_province_modifier = malaria
+		}
 	}
 }

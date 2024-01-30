@@ -401,6 +401,7 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
+		
 		ab_mughal_artillery = {
 			allow = {
 				tag = MUG

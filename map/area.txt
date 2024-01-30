@@ -162,8 +162,6 @@ hudson_bay_sea_area = {
 
 denmark_strait_area = {
 	1477 1480 1481 1482 1924
-	# BTC #
-	4976
 }
 
 gulf_of_guinea_sea_area = {
@@ -212,8 +210,6 @@ celtic_sea_area = {
 
 west_african_coast_sea_area = {
 	1413 1467 1468 1469 1470 1471 1472 1578 1579 1597
-	# BTC #
-	4977
 }
 
 south_atlantic_area = {
@@ -242,6 +238,16 @@ north_atlantic_area = {
 
 bahama_channel_area = {
 	1503 1505 1524 1525
+}
+
+# BTC #
+
+greenland_icecaps_area = {
+	4976
+}
+
+bojador_shoals_area = {
+	4977
 }
 
 #Lakes:

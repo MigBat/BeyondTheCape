@@ -331,3 +331,14 @@
 # Modifiers #
  quest_for_the_new_world:0 "Quest for the New World"
  desc_quest_for_the_new_world:0 "We have developed the technology required to explore the uncharted deep waters of the ocean."
+# Inland Seas #
+ INLAND_SEA_DESC:1 "This is a shallow sea, Galleys will be more effective here, doing 100% more damage in combat against other non-Galleys."
+ GALLEY_BONUS_INLAND_SEA_DESC:0 "Galleys do $VAL|%=+1$ more damage against non-galleys in the shallow seas."
+ GALLEY_BONUS_NOT_INLAND_SEA_DESC:1 "This is NOT a shallow sea or a coastal sea and galleys will get a $VAL|%=+1$ dice penalty here."
+ START_PIRATEHUNT_MISSION_DESC:0 "Sending a fleet to hunt pirates will reduce the efficiency of Privateers in that Trade Node. Galleys can only hunt in shallow seas."
+ PIRATE_HUNT_NAVY_NO_SHIPS:0 "You need to have heavy ships, light ships or galleys to pirate hunt. Galleys can only hunt into the shallow seas and transports cannot do it at all."
+ HINT_GALLEYS_TEXT:0 "Galleys are cheap warships that are very cost-effective in shallow seas, where they receive a 100% bonus to damage dealt to non-galleys. You can hover the mouse over a sea-zone to view the tooltip and see whether it is a shallow sea or not. The Mediterranean is one example of a shallow sea."
+ LOADING_TIP_70:0 "Galleys excel when fighting in the shallow seas.\nExamples are the Baltic, the Mediterranean and the Black Sea."
+ inland_ocean:0 "Shallow Sea"
+ GALLEY_BONUS_NOT_INLAND_SEA_NO_MALUS_DESC:0 "This is NOT a shallow sea or a coastal sea and galleys will not get a damage bonus here."
+ TUT_BAS_CHAPTER03_PAGE06_TEXT:1 "Heavy Ships are large warships that excel in combat. Light Ships are faster ships that are mainly used to protect your trade, but are also useful for exploration. Galleys are cheaper warships that should be used in shallow seas. Lastly there are also transport ships to ferry your troops over water.§W"

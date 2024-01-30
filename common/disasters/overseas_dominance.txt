@@ -12,7 +12,7 @@ overseas_dominance = {
 			value = 100
 		}
 		variable_arithmetic_trigger = {
-			custom_tooltip = territory_provinces_5_times_state_provinces
+			custom_tooltip = territory_provinces_4_times_state_provinces
 			export_to_variable = {
 				which = numOfStateProvinces
 				value = trigger_value:num_of_provinces_in_states
@@ -21,7 +21,7 @@ overseas_dominance = {
 				which = numOfTerritoryProvinces
 				value = trigger_value:num_of_provinces_in_territories
 			}
-			multiply_variable = { which = numOfStateProvinces value = 5 }
+			multiply_variable = { which = numOfStateProvinces value = 4 }
 			
 			check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
 		}
@@ -39,6 +39,91 @@ overseas_dominance = {
 		modifier = {
 			factor = 1
 			variable_arithmetic_trigger = {
+				custom_tooltip = territory_provinces_4_times_state_provinces
+				export_to_variable = {
+					which = numOfStateProvinces
+					value = trigger_value:num_of_provinces_in_states
+				}
+				export_to_variable = {
+					which = numOfTerritoryProvinces
+					value = trigger_value:num_of_provinces_in_territories
+				}
+				multiply_variable = { which = numOfStateProvinces value = 4 }
+				
+				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
+				custom_tooltip = territory_provinces_4.2_times_state_provinces
+				export_to_variable = {
+					which = numOfStateProvinces
+					value = trigger_value:num_of_provinces_in_states
+				}
+				export_to_variable = {
+					which = numOfTerritoryProvinces
+					value = trigger_value:num_of_provinces_in_territories
+				}
+				multiply_variable = { which = numOfStateProvinces value = 4.2 }
+				
+				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
+				custom_tooltip = territory_provinces_4.4_times_state_provinces
+				export_to_variable = {
+					which = numOfStateProvinces
+					value = trigger_value:num_of_provinces_in_states
+				}
+				export_to_variable = {
+					which = numOfTerritoryProvinces
+					value = trigger_value:num_of_provinces_in_territories
+				}
+				multiply_variable = { which = numOfStateProvinces value = 4.4 }
+				
+				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
+				custom_tooltip = territory_provinces_4.6_times_state_provinces
+				export_to_variable = {
+					which = numOfStateProvinces
+					value = trigger_value:num_of_provinces_in_states
+				}
+				export_to_variable = {
+					which = numOfTerritoryProvinces
+					value = trigger_value:num_of_provinces_in_territories
+				}
+				multiply_variable = { which = numOfStateProvinces value = 4.6 }
+				
+				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
+				custom_tooltip = territory_provinces_4.8_times_state_provinces
+				export_to_variable = {
+					which = numOfStateProvinces
+					value = trigger_value:num_of_provinces_in_states
+				}
+				export_to_variable = {
+					which = numOfTerritoryProvinces
+					value = trigger_value:num_of_provinces_in_territories
+				}
+				multiply_variable = { which = numOfStateProvinces value = 4.8 }
+				
+				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
 				custom_tooltip = territory_provinces_5_times_state_provinces
 				export_to_variable = {
 					which = numOfStateProvinces
@@ -49,91 +134,6 @@ overseas_dominance = {
 					value = trigger_value:num_of_provinces_in_territories
 				}
 				multiply_variable = { which = numOfStateProvinces value = 5 }
-				
-				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
-			}
-		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = territory_provinces_5.2_times_state_provinces
-				export_to_variable = {
-					which = numOfStateProvinces
-					value = trigger_value:num_of_provinces_in_states
-				}
-				export_to_variable = {
-					which = numOfTerritoryProvinces
-					value = trigger_value:num_of_provinces_in_territories
-				}
-				multiply_variable = { which = numOfStateProvinces value = 5.2 }
-				
-				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
-			}
-		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = territory_provinces_5.4_times_state_provinces
-				export_to_variable = {
-					which = numOfStateProvinces
-					value = trigger_value:num_of_provinces_in_states
-				}
-				export_to_variable = {
-					which = numOfTerritoryProvinces
-					value = trigger_value:num_of_provinces_in_territories
-				}
-				multiply_variable = { which = numOfStateProvinces value = 5.4 }
-				
-				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
-			}
-		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = territory_provinces_5.6_times_state_provinces
-				export_to_variable = {
-					which = numOfStateProvinces
-					value = trigger_value:num_of_provinces_in_states
-				}
-				export_to_variable = {
-					which = numOfTerritoryProvinces
-					value = trigger_value:num_of_provinces_in_territories
-				}
-				multiply_variable = { which = numOfStateProvinces value = 5.6 }
-				
-				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
-			}
-		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = territory_provinces_5.8_times_state_provinces
-				export_to_variable = {
-					which = numOfStateProvinces
-					value = trigger_value:num_of_provinces_in_states
-				}
-				export_to_variable = {
-					which = numOfTerritoryProvinces
-					value = trigger_value:num_of_provinces_in_territories
-				}
-				multiply_variable = { which = numOfStateProvinces value = 5.8 }
-				
-				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
-			}
-		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = territory_provinces_6_times_state_provinces
-				export_to_variable = {
-					which = numOfStateProvinces
-					value = trigger_value:num_of_provinces_in_states
-				}
-				export_to_variable = {
-					which = numOfTerritoryProvinces
-					value = trigger_value:num_of_provinces_in_territories
-				}
-				multiply_variable = { which = numOfStateProvinces value = 6 }
 				
 				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
 			}

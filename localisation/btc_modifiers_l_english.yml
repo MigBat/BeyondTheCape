@@ -1,7 +1,9 @@
 ﻿l_english:
 
  large_trade_company:0 "Large Trade Company"
+ desc_large_trade_company:0 "This trade company has many cities."
  huge_colonial_nation:0 "Prominent Colony"
+ desc_huge_colonial_nation:0 "This colony has many cities."
  strait_engagement_width:0 "Strait"
  discipline_for_the_marines_acts_modifier:0 "Discipline For The Marines Act"
  army_reform_acts_modifier:0 "Army Reform Act"
@@ -329,6 +331,8 @@
  desc_rooting_out_corsairs:0 "Hunting down and eliminating French corsairs"
  negotiating_with_corsairs:0 "Negotiating with Corsairs"
  desc_negotiating_with_corsairs:0 "Striking a benefitial bargain with the French corsairs"
+ portuguese_resilience:0 "Portuguese Resilience"
+ desc_portuguese_resilience:0 "These are proud and stubborn people. They won't allow their land to be taken without a proper fight."
 # Seven Cities #
  el_dorado_location:0 "El Dorado Location"
  desc_el_dorado_location:0 "El Dorado is located somewhere in this province"
@@ -391,6 +395,17 @@
  desc_disable_ship_capture:0 "You won't capture any ships while this modifier exists."
  prestigious_academy:0 "Prestigious Academy"
  desc_prestigious_academy:0 "One of the oldest institutions of higher learning in the world is located here."
+ too_many_eyalets:0 "Too Many Eyalets"
+ desc_too_many_eyalets:0 "We have more than 3 eyalets, creating difficulties in their administration."
+ too_many_core_eyalets:0 "Too Many Core Eyalets"
+ desc_too_many_core_eyalets:0 "We have more than 3 core eyalets, creating difficulties in their administration."
+ malaria:0 "Malaria"
+ desc_malaria:0 "This province is afflicted with malaria, rendering it virtually useless."
+ legacy_of_columbus:0 "Legacy of Columbus"
+ desc_legacy_of_columbus:0 "The great explorer Columbus encouraged our country to invest further into naval endeavours."
+ legacy_of_magellan:0 "Legacy of Magellan"
+ desc_legacy_of_magellan:0 "The great explorer Magellan encouraged our country to invest further into naval endeavours."
+ built_feitoria:0 "Built a Feitoria in our lands"
 # Venice #
  btc_ven_ten_emergency_government:0 "Emergency Government"
  desc_btc_ven_ten_emergency_government:0 "Council of the Ten's emergency government."
@@ -407,3 +422,5 @@
 # Granada #
  cas_paria_tax:0 "Paria Tax"
  desc_cas_paria_tax:0 "\n§RHas to pay a Tribute to §Y[225.Owner.GetName]§! every year or has to face the wrath of the Castilians.§!\n\nWith the reconquista heavily swinging in the christians' favor, the Castilians have kept a firm grip over the muslim subjects. Under the guidance of the Emirate of Granada, the muslims pay their tribute to the Emir of Granada who then forwards it to the King of [225.GetName]. The tribute is manageable, but its very existence is a humiliation for any self-respecting muslim who yearns to continue the legacy of the Caliphate.\n\n§YThis modifier gets removed if [225.GetName] loses the 'Paria Tax' modifier.§!"
+ paria_tax:0 "Paria Tax"
+ desc_paria_tax:0 "We are paying the paria tax to §Y[225.Owner.GetName]§! every year."

@@ -1683,10 +1683,28 @@ gc_por_3 = {
 				trait = great_explorer_personality
 			}
 			set_country_flag = por_no_flagship_mod
-			227 = {
-				create_flagship = {
-					type = heavy_ship
-					name = "São Gabriel"
+			if = {
+				limit = {
+					227 = {
+						owned_by = ROOT
+					}
+				}
+				227 = {
+					create_flagship = {
+						type = heavy_ship
+						name = "São Gabriel"
+					}
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_port = yes
+					}
+					create_flagship = {
+						type = heavy_ship
+						name = "São Gabriel"
+					}
 				}
 			}
 			clr_country_flag = por_no_flagship_mod	

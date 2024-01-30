@@ -2977,12 +2977,27 @@ country_event = { #San Lorenzo de El Escorial
 	}
 }
 
+## Beyond the Cape ##
+
 country_event = { #Ferdinand Magellan
 	id = flavor_spa.199
 	title = flavor_spa.199.t
 	desc = flavor_spa.199.d
 	picture = HARBOUR_eventPicture
-	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	trigger = {
+		is_or_was_tag = { tag = CAS } 
+		is_subject = no
+		NOT = { has_country_flag = had_magellan_event_flag }
+		POR = { has_country_flag = turned_down_magellan }
+		full_idea_group = exploration_ideas
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
 	
 	immediate = {
 		set_country_flag = had_magellan_event_flag
@@ -2991,14 +3006,44 @@ country_event = { #Ferdinand Magellan
 	option = { 
 		name = flavor_spa.199.a 
 		
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 9 }
 		define_explorer = {
-			name = "Ferdinand Magellan"
+			name = "Fernando de Magallanes"
 			fire = 4 
 			shock = 4 
 			manuever = 6
 			siege = 1
 			trait = great_explorer_personality
+		}
+		set_country_flag = cas_no_flagship_mod
+		if = {
+			limit = {
+				224 = {
+					owned_by = ROOT
+				}
+			}
+			224 = {
+				create_flagship = {
+					type = heavy_ship
+					name = "Victoria"
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				create_flagship = {
+					type = heavy_ship
+					name = "Victoria"
+				}
+			}
+		}
+		clr_country_flag = cas_no_flagship_mod	
+		add_country_modifier = {
+			name = legacy_of_magellan
+			duration = -1
 		}
 		if = {
 			limit = { has_dlc = "Rule Britannia" }
@@ -3009,7 +3054,7 @@ country_event = { #Ferdinand Magellan
 	
 	option = {
 		name = flavor_spa.199.b 
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 1 }
 		add_prestige_or_monarch_power = { amount = 15 } 
 		if = {
 			limit = { has_estate = estate_church }
@@ -3018,48 +3063,8 @@ country_event = { #Ferdinand Magellan
 				loyalty = 20 
 			}
 		}
-		if = {
-			limit = { 
-				OR = { 
-					tag = SPA 
-					tag = CAS
-				}
-				POR = { 
-					NOT = { has_country_flag = had_magellan_event_flag }
-				}
-			}
-			POR = { 
-				country_event = { id = flavor_spa.199 }
-			}
-		}
-		else_if = {
-			limit = { 
-				tag = POR 
-				SPA = { 
-					exists = yes 
-					NOT = { has_country_flag = had_magellan_event_flag }
-				}
-			}
-			SPA = { 
-				country_event = { id = flavor_spa.199 }
-			}
-		}
-		else_if = {
-			limit = { 
-				tag = POR 
-				CAS = { 
-					exists = yes 
-					NOT = { has_country_flag = had_magellan_event_flag }
-				}
-			}
-			CAS = { 
-				country_event = { id = flavor_spa.199 }
-			}
-		}
 	}			
 }
-	
-## Beyond the Cape ##
 
 # Christopher Columbus
 country_event = {

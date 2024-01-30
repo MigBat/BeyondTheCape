@@ -31,7 +31,7 @@ country_event = {
 			duration = -1
 			desc = paria_tax_desc
 		}
-		custom_tooltip = paria_tax_tt
+		custom_tooltip = btc_gra.1a_tt
 	}
 }
 

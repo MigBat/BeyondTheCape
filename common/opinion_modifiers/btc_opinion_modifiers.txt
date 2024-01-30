@@ -123,3 +123,8 @@ gave_us_ships = {
 	opinion = 100
 	yearly_decay = 2
 }
+
+built_feitoria = {
+	opinion = 10
+	yearly_decay = 0
+}

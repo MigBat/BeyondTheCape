@@ -191,6 +191,7 @@ iberia_region = {
 		estremadura_area
 		norte_area
 		cantabria_area
+		macaronesia_area
 	}
 }
 
@@ -329,7 +330,7 @@ maghreb_region = {
 		western_morocco_area
 		tripolitania_area
 		barbary_coast_area
-		macaronesia_area
+		# macaronesia_area
 		# BTC #
 		fez_area
 		tangier_area
@@ -1549,5 +1550,19 @@ south_atlantic_region = {
 		south_atlantic_area
 		skeleton_coast_area
 		cape_of_storms_area
+	}
+}
+
+# BTC #
+
+greenland_icecaps_region = {
+	areas = {
+		greenland_icecaps_area
+	}
+}
+
+bojador_shoals_region = {
+	areas = {
+		bojador_shoals_area
 	}
 }

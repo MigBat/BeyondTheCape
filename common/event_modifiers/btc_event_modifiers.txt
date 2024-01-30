@@ -922,7 +922,7 @@ sado_gold = {
 }
 
 disable_ship_capture = {
-	capture_ship_chance = -9999
+	capture_ship_chance = -999999
 }
 
 prestigious_academy = {
@@ -933,4 +933,36 @@ prestigious_academy = {
 paria_tax = {
 	prestige = -0.5
 	#Causes yearly event where you have to pay up
+}
+
+too_many_eyalets = {
+	liberty_desire_from_subject_development = 2
+	administrative_efficiency = -0.2
+}
+
+too_many_core_eyalets = {
+	liberty_desire_from_subject_development = 2
+	administrative_efficiency = -0.2
+}
+
+portuguese_resilience = {
+	local_core_creation = 1
+}
+
+malaria = {
+	local_production_efficiency = -0.9
+	local_tax_modifier = -0.9
+	province_trade_power_modifier = -0.9
+	local_development_cost_modifier = 2
+	local_colonial_growth = -150
+	local_colony_cost_modifier = 1
+	picture = "malaria"
+}
+
+legacy_of_columbus = {
+	max_flagships = 1
+}
+
+legacy_of_magellan = {
+	max_flagships = 1
 }

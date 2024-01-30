@@ -369,12 +369,14 @@ territory_core = {
 	local_missionary_strength = -0.02
 	min_local_autonomy = 90
 	local_governing_cost = -0.75
+	supply_limit_modifier = -0.75
 }
 
 territory_non_core = {
 	local_missionary_strength = -0.02
 	min_local_autonomy = 90
 	local_governing_cost = -0.75
+	supply_limit_modifier = -0.75
 }
 
 march_bonus = {

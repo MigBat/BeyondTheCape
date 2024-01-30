@@ -87,3 +87,8 @@
  leeward_antilles_area:0 "Leeward Antilles"
  greek_islands_area:0 "Greek Islands"
  canton_area:0 "Canton"
+ greenland_icecaps_area:0 "Greenland Icecaps"
+ bojador_shoals_area:0 "Bojador Shoals"
+# REGIONS #
+ greenland_icecaps_region:0 "Greenland Icecaps"
+ bojador_shoals_region:0 "Bojador Shoals"

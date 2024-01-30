@@ -5369,6 +5369,12 @@ province_event = {
 					key = portuguese_feitoria
 				}
 			}
+			owner = {
+				remove_opinion = {
+					who = POR
+					modifier = built_feitoria
+				}
+			}
 		}
 		if = {
 			limit = { exists = IBE }
@@ -5378,41 +5384,143 @@ province_event = {
 					key = portuguese_feitoria
 				}
 			}
+			owner = {
+				remove_opinion = {
+					who = IBE
+					modifier = built_feitoria
+				}
+			}
 		}
 	}
 }
 
-# country_event = {
-# 	id = btc_por.178
-# 	title = btc_por.178_t
-# 	desc = btc_por.178_d
-# 	picture = SHIP_SAILING_eventPicture
+country_event = {
+	id = btc_por.178
+	title = btc_por.178_t
+	desc = btc_por.178_d
+	picture = CONQUEST_eventPicture
 
-# 	is_triggered_only = yes
+	is_triggered_only = yes
 
-# 	option = {
-# 		name = btc_por.178a
+	option = {
+		name = btc_por.178a
 
-# 		227 = {
-# 			create_flagship = {
-# 				type = heavy_ship
-# 				name = "São Gabriel"
-# 			}
-# 		}
-# 		add_country_modifier = {
-# 			name = por_push_to_india
-# 			duration = 7300
-# 		}
-# 		custom_tooltip = cape_route_tt
-# 		hidden_effect = {
-# 			discover_province = 1597
-# 			discover_province = 1598
-# 			discover_province = 1604
-# 			discover_province = 1603
-# 			discover_province = 1586
-# 			discover_province = 1600
-# 			clr_country_flag = por_no_flagship_mod			
-# 		}
-# 	}
-# }
+		custom_tooltip = portuguese_resilience_tt
+		hidden_effect = {
+			norte_area = {
+				add_province_modifier = {
+					name = portuguese_resilience
+					duration = -1
+				}
+			}
+			beieras_area = {
+				add_province_modifier = {
+					name = portuguese_resilience
+					duration = -1
+				}
+			}
+			estremadura_area = {
+				add_province_modifier = {
+					name = portuguese_resilience
+					duration = -1
+				}
+			}
+			alentejo_area = {
+				add_province_modifier = {
+					name = portuguese_resilience
+					duration = -1
+				}
+			}			
+		}	
+	}
+}
+
+country_event = { #Ferdinand Magellan
+	id = btc_por.179
+	title = flavor_spa.199.t
+	desc = flavor_spa.199.d
+	picture = HARBOUR_eventPicture
+
+	fire_only_once = yes 
+
+	trigger = {
+		is_or_was_tag = { tag = POR } 
+		is_subject = no
+		NOT = { has_country_flag = had_magellan_event_flag }
+		full_idea_group = exploration_ideas
+		is_year = 1517
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_country_flag = had_magellan_event_flag
+	}
+	
+	option = {
+		name = flavor_spa.199.b
+
+		ai_chance = { factor = 9 }
+		add_prestige_or_monarch_power = { amount = 5 } 
+		set_country_flag = turned_down_magellan
+	}
+	
+	option = { 
+		name = flavor_spa.199.a
+
+		trigger = {
+			NOT = {
+				moluccas_region = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		add_country_modifier = {
+			name = legacy_of_magellan
+			duration = -1
+		}
+		ai_chance = { factor = 1 }
+		define_explorer = {
+			name = "Fernão de Magalhães"
+			fire = 4 
+			shock = 4 
+			manuever = 6
+			siege = 1
+			trait = great_explorer_personality
+		}
+		set_country_flag = por_no_flagship_mod
+		if = {
+			limit = {
+				227 = {
+					owned_by = ROOT
+				}
+			}
+			227 = {
+				create_flagship = {
+					type = heavy_ship
+					name = "Vitória"
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				create_flagship = {
+					type = heavy_ship
+					name = "Vitória"
+				}
+			}
+		}
+		clr_country_flag = por_no_flagship_mod	
+		if = {
+			limit = { has_dlc = "Rule Britannia" }
+			change_innovativeness = 2
+		}
+		else = { add_adm_power = 25 add_dip_power = 25 }
+	}			
+}
 

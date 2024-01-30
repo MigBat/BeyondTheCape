@@ -3428,16 +3428,6 @@ dom_cas_missions_4_c = {
 				}
 				add_prestige_or_monarch_power = { amount = 10 }
 			}
-			
-			if = {
-				limit = { 
-					POR = { 
-						NOT = { mission_completed = dom_portugal_exploration_ideas }
-					}
-				}
-				custom_tooltip = cas_race_portugal_event_tt
-				country_event = { id = flavor_spa.199 }
-			}
 		}
 	}
 	
