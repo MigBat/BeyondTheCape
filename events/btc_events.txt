@@ -2686,8 +2686,13 @@ country_event = {
 					region = egypt_region
 					region = guinea_region
 					region = south_africa_region
-					area = lower_zambezi_area
-					area = inner_angola_area
+					area = lower_zambezi_area	# mozambique
+					area = inner_angola_area	# angola
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
 				}
 			}
 			NOT = { has_province_modifier = malaria }
@@ -2707,8 +2712,13 @@ country_event = {
 						region = egypt_region
 						region = guinea_region
 						region = south_africa_region
-						area = lower_zambezi_area
-						area = inner_angola_area
+						area = lower_zambezi_area	# mozambique
+						area = inner_angola_area	# angola
+						# Madagascar
+						area = sakalava_area
+						area = betsimasaraka_area
+						area = southern_madagascar
+						area = madagascar_highlands_area
 					}
 				}
 				NOT = { has_province_modifier = malaria }
@@ -2735,7 +2745,6 @@ country_event = {
 			continent = africa
 		}
 		any_owned_province = {
-			continent = africa
 			has_province_modifier = malaria
 		}
 	}

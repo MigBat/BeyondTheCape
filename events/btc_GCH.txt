@@ -99,23 +99,115 @@ country_event = {
 				cede_province = ROOT
 				add_core = ROOT
 				change_culture = berber
-				change_religion = shamanism
+				change_religion = animism
 			}
 			4565 = { remove_core = ROOT }
 			decolonize = 4565
-			europe = {
+			every_province = {
 				undiscover_country = ROOT
 			}
-			africa = {
+			every_province = {
+				undiscover_country = ROOT
+			}
+			east_china_sea_region = {
+				undiscover_country = ROOT
+			}
+			south_china_sea_region = {
+				undiscover_country = ROOT
+			}
+			east_indian_ocean_region = {
+				undiscover_country = ROOT
+			}
+			arabian_sea_region = {
+				undiscover_country = ROOT
+			}
+			west_indian_ocean_region = {
 				undiscover_country = ROOT
 			}
 			north_atlantic_region = {
 				undiscover_country = ROOT
 			}
+			baltic_sea_region = {
+				undiscover_country = ROOT
+			}
 			west_african_sea_region = {
 				undiscover_country = ROOT
 			}
-			undiscover_province = 1648
+			mediterrenean_region = {
+				undiscover_country = ROOT
+			}
+			1250 = {
+				undiscover_country = ROOT
+			}
+			1251 = {
+				undiscover_country = ROOT
+			}
+			2953 = {
+				undiscover_country = ROOT
+			}
+			1977 = {
+				undiscover_country = ROOT
+			}
+			1887 = {
+				undiscover_country = ROOT
+			}
+			1883 = {
+				undiscover_country = ROOT
+			}
+			1889 = {
+				undiscover_country = ROOT
+			}
+			1890 = {
+				undiscover_country = ROOT
+			}
+			1325 = {
+				undiscover_country = ROOT
+			}
+			2471 = {
+				undiscover_country = ROOT
+			}
+			1899 = {
+				undiscover_country = ROOT
+			}
+			1891 = {
+				undiscover_country = ROOT
+			}
+			1892 = {
+				undiscover_country = ROOT
+			}
+			1893 = {
+				undiscover_country = ROOT
+			}
+			1894 = {
+				undiscover_country = ROOT
+			}
+			1326 = {
+				undiscover_country = ROOT
+			}
+			1327 = {
+				undiscover_country = ROOT
+			}
+			3617 = {
+				undiscover_country = ROOT
+			}
+			4138 = {
+				undiscover_country = ROOT
+			}
+			1653 = {
+				undiscover_country = ROOT
+			}
+			4137 = {
+				undiscover_country = ROOT
+			}
+			3618 = {
+				undiscover_country = ROOT
+			}
+			4136 = {
+				undiscover_country = ROOT
+			}
+			4013 = {
+				undiscover_country = ROOT
+			}
 			501 = {
 				discover_country = ROOT
 			}
@@ -134,6 +226,7 @@ country_event = {
 			4565 = {
 				undiscover_country = ROOT
 			}
+			GCH = { change_technology_group = high_american }
 		}
 		set_country_flag = gch_discover_islands
 	}
@@ -164,7 +257,7 @@ country_event = {
 			}
 			country_event = {
 				id = btc_gch.4
-				days = 180
+				days = 90
 			}
 			set_country_flag = exploration_in_progress
 		}

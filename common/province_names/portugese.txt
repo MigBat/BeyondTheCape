@@ -87,7 +87,7 @@
 2002 = "Ilhas Galápagos"
 
 1987 = "Ilhas da Sociedade"
-1725 = "Arquipélago de Tuamotu"
+1725 = "Tuamotu"
 1238 = "Ilhas Salomão"
 2025 = "Geórgia do Sul"
 1095 = "Malvinas"
@@ -174,7 +174,7 @@
 209 = "Biscaia"
 4552 = "Palência"
 4789 = "Segóvia"
-4557 = "Castel'de Aiube" #The name derives from the arabic for "qal'a 'Ayyub", that means "castle of Aiube", so,I simply translated it to portuguese 
+4557 = "Castelo de Aiube" #The name derives from the arabic for "qal'a 'Ayyub", that means "castle of Aiube", so,I simply translated it to portuguese 
 4549 = "Xátiva"
 220 = "Valência"
 
@@ -188,8 +188,8 @@
 2468 = "Tédula"
 345 = "Safim" #Again, Abda is a province by itself, not a city
 2470 = "Mogador" #Haha is a berber tribal federation,and the biggest city I found is Essaouira, but in medieval charts it was called Mogador by the portuguese.
-1110 = "Santa Cruz do Cabo de Gué" # it was a major portuguese stronghold in the area, more than Agadir
-347 = "Santa Cruz do Mar Pequeno" # firstly colonized by the spanish in 1478, but later abandoned. Couldn't find other more...interesting names.
+1110 = "Santa Cruz do Cabo" # it was a major portuguese stronghold in the area, more than Agadir
+347 = "Santa Cruz do Mar" # firstly colonized by the spanish in 1478, but later abandoned. Couldn't find other more...interesting names.
 2464 = "Uarzazate" # Ouarzazate is in french.
 2466 = "Dra" # Technically speaking, Draa is in fact a river, but no big settlement is near the game province area.
  
@@ -236,7 +236,7 @@
 1119 = "Costa do Grão"
 2258 = "Axim"
 4964 = "Costa dos Escravos"
-1141 = "Forte de São João Baptista de Ajudá"
+1141 = "São João de Ajudá"
 2290 = "Jebu"
 2294 = "Cabo Formoso" #might be left as it is, maybe not
 
@@ -244,7 +244,7 @@
 4078 = "Maiombe"
 4079 = "Angoio"
 4080 = "Soio"
-1167 = "Vila de São Paulo de Luanda"
+1167 = "Luanda"
 1168 = "Bamba" #Couldn't find an actual name between maps, so i went for the portuguese name of the kingdom.
 4949 = "Mossungo-Bitoto"
 
@@ -255,9 +255,9 @@
 789 = "Terra dos Fumos" # Accordingly to the Fern?o Vaz Dourado maps
 1182 = "Matola"
 1193 = "Praça de Santiago"
-4032 = "Praça de Santo Agostinho"
+4032 = "Praça de Agostinho"
 4031 = "Terra Delgada"
-1194 = "Terra de Santo André"
+1194 = "Santo André"
 4022 = "Cadi" # according to the atlas of FVD
 4028 = "São Sebastião"
 4029 = "São Romão"
@@ -283,7 +283,7 @@
 2790 = "Mete"
 1230 = "Maçuá"
 1232 = "Suaquém"
-2324 = "Aguada de Miguel Carvalho" #Saddly, it wasn't the first thing I've read...:(
+2324 = "Aguada" #Saddly, it wasn't the first thing I've read...:(
 
 #Middle East and Persia
 #Arabia
@@ -496,11 +496,11 @@
 
 1236 = "Nova Lusitânia"
 1986 = "Nova Galiza"
-1239 = "Arquipélago Del'Rei D.João II"
+1239 = "Arquipélago Del'Rei"
 1242 = "Ilha da Boavista"
 4938 = "Gaia do Pacífico"
 4937 = "Ilha da Maia Marítima"
-1244 = "Ilhas da Nossa Senhora da Conceição"
+1244 = "Ilhas da Conceição"
 1241 = "Quiribati"
 1991 = "Ilhas da Boa Viagem"
 1993 = "Ilhas dos Pintados"
@@ -1139,7 +1139,7 @@
 2837 = "Santa Catarina"
 794 = "Alava" #One of the many towns that were created in this area.
 2882 = "Forte Bragança"
-776 = " Vila Real d'Conceição"
+776 = "Vila Real d'Conceição"
 775 = "Assunção"
 2855 = "Candelária"
 2853 = "Guaviravi" #The town had the same name as the river. This is the river.

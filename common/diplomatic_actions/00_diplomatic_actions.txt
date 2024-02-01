@@ -773,7 +773,6 @@ knowledge_sharing = {
 			FROM = {
 				NOT = {	# cannot embrace feudalism
 					AND = {
-						has_institution = renaissance 
 						has_institution = feudalism 
 						NOT = { government = native }
 						NOT = { government = tribal }

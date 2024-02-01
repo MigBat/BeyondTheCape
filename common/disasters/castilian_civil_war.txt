@@ -29,7 +29,7 @@ castilian_civil_war = {
 	can_start = {
 		is_at_war = no
 		has_any_disaster = no
-		has_heir = yes
+		# has_heir = yes
 		OR = {
 			has_regency = yes
 			NOT = { heir_claim = 80 }

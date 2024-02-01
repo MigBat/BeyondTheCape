@@ -977,8 +977,15 @@ guiTypes = {
 			}	
 
 			guiButtonType = {
+				name ="fortified_feitoria_button"
+				quadTextureSprite = "GFX_fortified_feitoria_button"
+				position = { x = 140 y = 328 }
+				scripted = yes
+			}	
+
+			guiButtonType = {
 				name ="foreign_feitoria_button"
-				quadTextureSprite = "GFX_feitoria_button"
+				quadTextureSprite = "GFX_foreign_feitoria_button"
 				position = { x = 140 y = 328 }
 				scripted = yes
 			}		

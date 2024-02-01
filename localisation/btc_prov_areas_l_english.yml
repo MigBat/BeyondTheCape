@@ -38,6 +38,7 @@
  PROV4976:0 "Greenland Icecaps"
  PROV4977:0 "Bojador Shoals"
  PROV4978:0 "Abyan"
+ PROV4979:0 "Saga"
 # ADJECTIVES #
  PROV_ADJ4942:0 "Setubaler"
  PROV_ADJ4943:0 "Beixa Baixan" 
@@ -74,6 +75,7 @@
  PROV_ADJ4974:0 "West Cretan"
  PROV_ADJ4975:0 "Hong Konger"
  PROV_ADJ4978:0 "Abyan"
+ PROV_ADJ4979:0 "Sagan"
 # AREAS #
  norte_area:0 "Norte"
  estremadura_area:0 "Estremadura"
@@ -89,6 +91,8 @@
  canton_area:0 "Canton"
  greenland_icecaps_area:0 "Greenland Icecaps"
  bojador_shoals_area:0 "Bojador Shoals"
+ south_atlantic_depths_area:0 "South Atlantic Depths"
 # REGIONS #
  greenland_icecaps_region:0 "Greenland Icecaps"
  bojador_shoals_region:0 "Bojador Shoals"
+ south_atlantic_depths_region:0 "South Atlantic Depths"

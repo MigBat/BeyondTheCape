@@ -160,35 +160,6 @@ monarchy = {
 				legacy_of_timur_reform
 			}
 		}
-		bureaucracy = {
-			reforms = {
-				centralize_reform
-				centralize_empire_reform
-				decentralize_reform
-				examination_system_reform
-				expand_imperial_court_reform
-				limit_imperial_court_reform
-				regional_council_reform
-				representation_of_the_crown_reform
-				liberte_reform
-				egalite_reform
-				fraternite_reform
-				#Visible but locked
-				penal_colonies_reform
-				#Invisible until unlocked
-				sidhi_recruitment
-				corvee_reform
-				council_of_the_indies_reform
-				#1.35
-				ottoman_provincial_government_system_reform
-				namestnik_reform
-				consulate_of_the_sea
-				#1.36
-				restore_the_master_of_offices_reform
-				court_of_art_and_culture_reform
-				integrated_ottoman_officials
-			}
-		}
 		state_and_religion = {
 			reforms = {
 				papal_embassy_reform
@@ -229,6 +200,35 @@ monarchy = {
 				#1.36
 				legacy_of_the_safavid_reform
 				state_madrasas_reform
+			}
+		}
+		bureaucracy = {
+			reforms = {
+				centralize_reform
+				centralize_empire_reform
+				decentralize_reform
+				examination_system_reform
+				expand_imperial_court_reform
+				limit_imperial_court_reform
+				regional_council_reform
+				representation_of_the_crown_reform
+				liberte_reform
+				egalite_reform
+				fraternite_reform
+				#Visible but locked
+				penal_colonies_reform
+				#Invisible until unlocked
+				sidhi_recruitment
+				corvee_reform
+				council_of_the_indies_reform
+				#1.35
+				ottoman_provincial_government_system_reform
+				namestnik_reform
+				consulate_of_the_sea
+				#1.36
+				restore_the_master_of_offices_reform
+				court_of_art_and_culture_reform
+				integrated_ottoman_officials
 			}
 		}
 		military_doctrines = {

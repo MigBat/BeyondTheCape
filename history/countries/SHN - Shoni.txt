@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = kyushuan
 religion = shinto
 technology_group = chinese
-capital = 4182	# Hizen
+capital = 4979	# NewHizen
 
 1336.4.11 = {
 	monarch = {

@@ -1566,3 +1566,9 @@ bojador_shoals_region = {
 		bojador_shoals_area
 	}
 }
+
+south_atlantic_depths_region = {
+	areas = {
+		south_atlantic_depths_area
+	}
+}

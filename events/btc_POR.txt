@@ -3442,9 +3442,8 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		151 = {
-			owned_by = TUR
-		}
+		has_country_modifier = ottoman_silk_road_monopoly
+		has_idea_group = exploration_ideas
 		NOT = { has_country_flag = discovered_india }
 	}
 
@@ -5290,15 +5289,12 @@ country_event = {
 
 	option = {	# Allow shared custody of the young King
 		name = btc_por.176b
+		trigger = {
+			NOT = { is_rival = ARA }
+			NOT = { ARA = { is_rival = ROOT } }
+		}
 		ai_chance = {
 			factor = 3
-			modifier = {
-				factor = 0
-				OR = {
-					is_rival = ARA
-					ARA = { is_rival = ROOT }
-				}
-			}
 		}
 
 		add_estate_loyalty = {
@@ -5401,6 +5397,11 @@ country_event = {
 	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+	}
 
 	option = {
 		name = btc_por.178a

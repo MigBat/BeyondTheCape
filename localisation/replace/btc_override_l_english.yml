@@ -84,6 +84,7 @@
  PROV2241:0 "Bissau"
  PROV2242:0 "Gorée"
  PROV1151:0 "Ndar"
+ PROV4182:0 "Nagasaki"
 # Province Adjectives #
  PROV_ADJ1151:0 "Ndaran"
  PROV_ADJ2241:0 "Bissauan"
@@ -91,6 +92,7 @@
  PROV_ADJ4556:0 "Minhoto"
  PROV_ADJ321:0 "North Cipriot"
  PROV_ADJ163:0 "East Cretan"
+ PROV_ADJ4182:0 "Nagasaker"
 # Native Policies #
  native_policy_coexist:0 "Native Cooperation Policy"
  native_policy_coexist_desc:0 "We will foster good relationships with the natives. This will eliminate chances of uprisings happening, as well as possible claims on native land owned by other colonizers."
@@ -100,6 +102,7 @@
  native_policy_hostile_desc:0 "We will send slaves to our colonies. This will allow them to grow faster, but chances of native revolts happening are higher."
 # Trade Nodes #
  english_channel:0 "Low Countries"
+ ohio:0 "Great Lakes"
 # Trade Companies #
  trade_company_sevilla:0 "Castilian Charter"
  TRADE_COMPANY_SEVILLA_Root_Culture_GetName:0 "[Root.Culture.GetName] Castilian Company"
@@ -155,7 +158,7 @@
  gc_por_colonise_west_africa_title:0 "Go Further South"
  gc_por_triangle_trade_title:0 "Portuguese Slave Trade"
  triangle_trade_key:0 "Portuguese Slave Trade"
- miss_colonize_west_africa:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the Guinea region that is not in the Cap Verde area."
+ miss_colonize_west_africa:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the West Africa Coast area."
  gbr_end_the_french_conflict_at:0 "Does not own any province other than §Y[87.GetName]§! and §Y[4953.GetName]§! in the region §YFrance§!"
 # Monuments #
  belem_tower:0 "Belém Tower"

@@ -2,7 +2,7 @@ po_castilian_civil_war = {
 	category = 6
 	power_projection = humiliated_rival
 	power_cost_base = 1.0
-	prestige_base = 1.0 # Base factor for prestige gain and loss. Scales with war score cost.
+	prestige_base = 0.5 # Base factor for prestige gain and loss. Scales with war score cost.
 	ae_base = 0.35
 	warscore_cost = {
 		# Which of the giver's provinces' war score costs are included and by how much. All entries default to 0. Any combination of entries can be used. Try negative values at your own risk.
@@ -38,6 +38,7 @@ po_castilian_civil_war = {
 			limit = { 
 				ROOT = { tag = POR }
 			}
+			set_country_flag = yes_iberian_union
 			country_event = {
 				id = castilian_civil_war.12
 			}
@@ -46,6 +47,7 @@ po_castilian_civil_war = {
 			limit = { 
 				ROOT = { tag = ARA }
 			}
+			set_country_flag = yes_iberian_union
 			country_event = {
 				id = castilian_civil_war.13
 			}

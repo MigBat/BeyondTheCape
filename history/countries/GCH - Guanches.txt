@@ -1,11 +1,8 @@
 government = tribal
 add_government_reform = native_clan_council_reform
 primary_culture = berber
-religion = shamanism
-technology_group = sub_saharan
-unlock_cult = yemoja_cult
-unlock_cult = roog_cult
-unlock_cult = nyame_cult
+religion = animism
+technology_group = muslim
 religious_school = maliki_school
 capital = 4565 # Tenerife
 

@@ -329,30 +329,48 @@ on_war_won = {
 		}
 	}
 	# BEYOND THE CAPE #
-	# if = {
-	# 	limit = {
-	# 		ROOT = {
-	# 			tag = POR
-	# 			has_country_flag = at_war
-	# 		}
-	# 		FROM = { tag = CAS }
-	# 	}
-	# 	country_event = {
-	# 		id = castilian_civil_war.12	# Portugal wins civil war
-	# 	}
-	# }
-	# if = {
-	# 	limit = {
-	# 		ROOT = {
-	# 			tag = ARA
-	# 			has_country_flag = at_war
-	# 		}
-	# 		FROM = { tag = CAS }
-	# 	}
-	# 	country_event = {
-	# 		id = castilian_civil_war.13	# Aragon wins civil war
-	# 	}
-	# }
+	if = {
+		limit = {
+			ROOT = {
+				tag = POR
+				has_country_flag = at_war
+				NOT = { has_country_flag = yes_iberian_union }
+			}
+			FROM = { tag = CAS }
+			ARA = { has_country_flag = at_war }
+		}
+		ARA = {
+			country_event = {
+				id = castilian_civil_war.16	# Aragon and Castile win civil war
+			}
+		}
+		CAS = {
+			country_event = {
+				id = castilian_civil_war.16	# Aragon and Castile win civil war
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = ARA
+				has_country_flag = at_war
+				NOT = { has_country_flag = yes_iberian_union }
+			}
+			FROM = { tag = CAS }
+			POR = { has_country_flag = at_war }
+		}
+		POR = {
+			country_event = {
+				id = castilian_civil_war.15	# Portugal and Castile win civil war
+			}
+		}
+		CAS = {
+			country_event = {
+				id = castilian_civil_war.15	# Portugal and Castile win civil war
+			}
+		}
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -4863,13 +4881,21 @@ on_province_owner_change = {
 		limit = {
 			NOT = { has_province_modifier = malaria }
 			has_port = no
-			OR = {
-				region = maghreb_region
-				region = egypt_region
-				region = guinea_region
-				region = south_africa_region
-				area = lower_zambezi_area
-				area = inner_angola_area
+			continent = africa
+			NOT = {
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					region = guinea_region
+					region = south_africa_region
+					area = lower_zambezi_area	# mozambique
+					area = inner_angola_area	# angola
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
+				}
 			}
 			owner = {
 				capital_scope = {
@@ -5782,13 +5808,21 @@ on_conquest = {
 		limit = {
 			NOT = { has_province_modifier = malaria }
 			has_port = no
-			OR = {
-				region = maghreb_region
-				region = egypt_region
-				region = guinea_region
-				region = south_africa_region
-				area = lower_zambezi_area
-				area = inner_angola_area
+			continent = africa
+			NOT = {
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					region = guinea_region
+					region = south_africa_region
+					area = lower_zambezi_area	# mozambique
+					area = inner_angola_area	# angola
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
+				}
 			}
 			owner = {
 				capital_scope = {
@@ -6019,14 +6053,20 @@ on_colony_established = {
 				}
 			}
 			has_port = no
+			continent = africa
 			NOT = {
 				OR = {
 					region = maghreb_region
 					region = egypt_region
 					region = guinea_region
 					region = south_africa_region
-					area = inner_angola_area
-					area = lower_zambezi_area
+					area = lower_zambezi_area	# mozambique
+					area = inner_angola_area	# angola
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
 				}
 			}
 		}

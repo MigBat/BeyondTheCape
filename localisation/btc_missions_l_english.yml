@@ -100,6 +100,7 @@
  btc_gch_discover_all_islands_title:0 "Within our Reach"
  btc_gch_discover_all_islands_desc:0 "Understanding our limitations is a key quality of leadership. Let us go as far as we can, and then we will learn what we need to improve ourselves."
  gch_done_exploring_all_tt:0 "§YDiscovered all nearby lands§!"
+ guanches_exploration_tt:0 "Unlocks §YExploration§! ideas"
 # Iberia #
  btc_ibe_caribbean_title:0 "Dominate the Caribbean"
  btc_ibe_caribbean_desc:0 "The Caribbean is the entrance to the New World. The first step towards achieving continental domination is controlling the islands. All of them must be under ours."

@@ -17,9 +17,8 @@ flying_dutchman_mod = {
     }
     modifier = {
         naval_attrition_in_fleet_modifier = -1
-        number_of_cannons_flagship_modifier = 1
+        number_of_cannons_flagship_modifier = 0.5
         flagship_durability = 1
-        movement_speed_in_fleet_modifier = 1
         naval_maintenance_flagship_modifier = 1.5
     }
     ai_trade_score = {

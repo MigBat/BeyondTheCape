@@ -5,6 +5,7 @@ custom_button = {
 	potential = {
 		FROM = { has_government_attribute = can_establish_feitorias  }
 		NOT = { has_province_modifier = feitoria }
+		NOT = { has_province_modifier = fortified_feitoria }
 		owned_by = FROM
 		has_port = yes
 		OR = {
@@ -23,7 +24,10 @@ custom_button = {
 	trigger = {
 		area_for_scope_province = {
 			type = all
-			NOT = { has_province_modifier = feitoria }	
+			OR = {
+				NOT = { has_province_modifier = feitoria }	
+				NOT = { has_province_modifier = fortified_feitoria }	
+			}
 		}
 	}
 	effect = {
@@ -34,6 +38,25 @@ custom_button = {
 		FROM = { add_years_of_income = -0.2 }
 	}
 	tooltip = feitoria_key
+}
+
+custom_button = {
+	name = fortified_feitoria_button
+	potential = {
+		FROM = { has_government_attribute = can_establish_feitorias  }
+		has_province_modifier = feitoria
+	}
+	trigger = {
+	}
+	effect = {
+		remove_province_modifier = feitoria
+		add_province_modifier = {
+			name = fortified_feitoria
+			duration = -1
+		}
+		FROM = { add_years_of_income = -0.4 }
+	}
+	tooltip = fortified_feitoria_key
 }
 
 custom_button = {
