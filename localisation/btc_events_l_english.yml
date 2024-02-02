@@ -687,6 +687,13 @@
  btc_ned.10a:0 "Establish the Patroonschap System."
  btc_ned.10b:0 "Let's stick to traditional colonization."
  patroonschap_system_tooltip:0 "In the §YEastern America§! colonial region, you can only colonize provinces that have §YCenters of Trade§! or §YEstuaries§!."
+ btc_ned.12_t:0 "The Nippon Struggle"
+ btc_ned.12_d:0 "Portugal currently is the only european country allowed to trade with the conservative japanese, having been gifted the small port of Nagasaki from where to conduct their commercial activities. The arrival of the dutch has sparked competition between the two countries to decide which one is worthy of trading with Japan, having made it clear that they will not allow more than one european nation on their island."
+ btc_ned.12a:0 "We are the worthy ones."
+ nippon_struggle_tt:0 "If Netherlands is the strongest trade power in Nippon for a considerable amount of time, control over Nagasaki will be given to them."
+ btc_ned.13_t:0 "The Island of Dejima"
+ btc_ned.13_d:0 "We have proven to be the best choice of european nation for the japanese to trade with, and thus we have been awarded the port city of Dejima."
+ btc_ned.13a:0 "It is ours!"
 # Aragon #
  btc_ara.1_t:0 "The Crown Capital"
  btc_ara.1_d:0 "With a domain as vast and diverse as ours, perhaps it would be wise to consider a new capital. There are 3 strong candidates for this honour, each with its own merit. In the end, it is up to you to choose from where you will rule Aragon."

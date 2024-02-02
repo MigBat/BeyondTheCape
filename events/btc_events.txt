@@ -2364,16 +2364,6 @@ country_event = {
 			region = japan_region
 		}
 		OR = {
-			has_opinion = {
-				who = POR
-				value = 100
-			}
-			has_opinion = {
-				who = NED
-				value = 100
-			}
-		}
-		OR = {
 			POR = {
 				has_opinion = {
 					who = ROOT

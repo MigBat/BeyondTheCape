@@ -347,6 +347,7 @@ country_event = {
 
 		change_tag = CNR
 		change_religion = catholic
+		change_technology_group = western
 		change_government = monarchy
 		add_government_reform = feudalism_reform
 
