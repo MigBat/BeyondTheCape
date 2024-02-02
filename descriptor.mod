@@ -1,4 +1,4 @@
-version="1"
+version="2.0"
 tags={
 	"Balance"
 	"Map"
@@ -11,8 +11,8 @@ tags={
 	"Trade"
 	"Loading Screen"
 }
-name="Beyond the Cape BETA"
+name="Beyond the Cape"
 replace_path="gfx/loadingscreens"
 picture="thumbnail.png"
 supported_version="1.36.*"
-remote_file_id="3121940838"
+remote_file_id="2966858781"

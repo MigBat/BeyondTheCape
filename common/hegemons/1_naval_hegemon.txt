@@ -8,7 +8,17 @@ naval_hegemon = {
 				num_of_heavy_ship = 10
 				num_of_galley = 20
 			}
-			most_navy_discovery_nav_hegemon = yes
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_discovery_nav_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_navy_discovery_nav_hegemon = yes
+			}
 		}
 		# Reformation Potential
 		else_if = {
@@ -17,7 +27,17 @@ naval_hegemon = {
 				num_of_heavy_ship = 10
 				num_of_galley = 20
 			}
-			most_navy_reformation_nav_hegemon = yes
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_reformation_nav_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_navy_reformation_nav_hegemon = yes
+			}
 		}
 		# Absolutism Potential
 		else_if = {
@@ -26,7 +46,17 @@ naval_hegemon = {
 				num_of_heavy_ship = 10
 				num_of_galley = 20
 			}
-			most_navy_absolutism_nav_hegemon = yes
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_absolutism_nav_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_navy_absolutism_nav_hegemon = yes
+			}
 		}
 		# Revolutions Potential
 		else_if = {
@@ -35,7 +65,17 @@ naval_hegemon = {
 				num_of_heavy_ship = 10
 				num_of_galley = 20
 			}
-			most_navy_revolutions_nav_hegemon = yes
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_revolutions_nav_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_navy_revolutions_nav_hegemon = yes
+			}
 		}
 		# Discovery EOC
 		else_if = {
