@@ -15,14 +15,25 @@ french_missions_1 = {
 		required_missions = { 	} 
 		position = 1 
 		provinces_to_highlight = { 
-			area = normandy_area 
+			OR = { 
+				province_id = 167
+				province_id = 168
+				province_id = 1879
+				province_id = 4385
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
-			NOT = { province_id = 4953 }
 		}
 		trigger = { 
-			normandy_area = { 
-				type = all 
-				NOT = { province_id = 4953 }
+			167 = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			168 = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			1879 = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4385 = { 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}

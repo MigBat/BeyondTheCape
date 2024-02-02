@@ -941,7 +941,7 @@ eyalet = {
 
 	liberty_desire_development_ratio = 0.1
 	liberty_desire_same_dynasty = -5.0
-	pays_overlord = 1.25
+	pays_overlord = 0.0
 	forcelimit_to_overlord = 0.2						# Percent of subject FL to use as base for modifiers
 	naval_forcelimit_to_overlord = 0.2					# Percent of subject FL to use as base for modifiers
 	manpower_to_overlord = 0.2							# Percent of subject FL to use as base for modifiers
@@ -983,6 +983,30 @@ eyalet = {
 	modifier_subject = {
 		modifier = eyalet_modifier
 	}
+	modifier_overlord = {
+		trigger = {
+			overlord = {
+				num_subjects_of_type_with_liberty_desire = {
+					type = eyalet
+					liberty_desire = 0
+					value = 3
+				}
+			}
+		}
+		modifier = too_many_eyalets
+	}
+	modifier_overlord = {
+		trigger = {
+			overlord = {
+				num_subjects_of_type_with_liberty_desire = {
+					type = core_eyalet
+					liberty_desire = 0
+					value = 3
+				}
+			}
+		}
+		modifier = too_many_core_eyalets
+	}
 
 	overlord_opinion_modifier = is_eyalet
 	subject_opinion_modifier = is_eyalet
@@ -1003,7 +1027,7 @@ core_eyalet = {
 
 	liberty_desire_development_ratio = 0.1
 	liberty_desire_same_dynasty = -5.0
-	pays_overlord = 1.5
+	pays_overlord = 0.0
 	forcelimit_to_overlord = 0.33						# Percent of subject FL to use as base for modifiers
 	naval_forcelimit_to_overlord = 0.33					# Percent of subject FL to use as base for modifiers
 	manpower_to_overlord = 0.33							# Percent of subject FL to use as base for modifiers

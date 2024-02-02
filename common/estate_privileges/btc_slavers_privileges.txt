@@ -433,7 +433,7 @@ estate_slavers_feitoria_defenses = {
 	influence = 0.1
 	is_valid = {
 		any_owned_province = {
-			has_province_modifier = feitoria
+			has_province_modifier = fortified_feitoria
 		}
 	}
 	can_select = {
@@ -444,7 +444,7 @@ estate_slavers_feitoria_defenses = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					has_province_modifier = feitoria
+					has_province_modifier = fortified_feitoria
 				}
 				add_province_modifier = {
 					name = slave_garrison

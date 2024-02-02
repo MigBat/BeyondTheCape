@@ -14,28 +14,6 @@ btc_gch_1_a = {
 		position = 1
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = choose_cult_tt
-				OR = {
-					has_adopted_cult = yemoja_cult
-					has_adopted_cult = roog_cult
-					has_adopted_cult = nyame_cult
-					has_adopted_cult = cwezi_cult
-					has_adopted_cult = central_african_ancestor_cult
-					has_adopted_cult = mwari_cult
-					has_adopted_cult = enkai_cult
-					has_adopted_cult = waaq_cult
-					has_adopted_cult = zanahary_cult
-					has_adopted_cult = christianity_cult
-					has_adopted_cult = islam_cult
-					has_adopted_cult = buddhism_cult
-					has_adopted_cult = dharmic_cult
-					has_adopted_cult = south_central_american_cult
-					has_adopted_cult = norse_cult
-					has_adopted_cult = jewish_cult
-					has_adopted_cult = zoroastrian_cult
-				}
-			}
 		}
 
 		effect = {
@@ -215,6 +193,7 @@ btc_gch_caribbean = {
 			}
 		}
 		effect = { 
+			custom_tooltip = guanches_exploration_tt
 			add_country_modifier = {
 				name = guanches_exploration
 				duration = -1

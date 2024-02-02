@@ -369,12 +369,16 @@ territory_core = {
 	local_missionary_strength = -0.02
 	min_local_autonomy = 90
 	local_governing_cost = -0.75
+	supply_limit_modifier = -0.75
+	regiment_recruit_speed = 1
 }
 
 territory_non_core = {
 	local_missionary_strength = -0.02
 	min_local_autonomy = 90
 	local_governing_cost = -0.75
+	supply_limit_modifier = -0.75
+	regiment_recruit_speed = 1
 }
 
 march_bonus = {
@@ -570,7 +574,6 @@ in_trade_company = {
 	local_missionary_strength = -0.2
 	local_institution_spread = 0.10
 	local_governing_cost = 0.25
-	regiment_recruit_speed = 1
 }
 
 left_trade_company = {
@@ -1772,12 +1775,12 @@ native_policy_coexist = {
 }
 
 native_policy_trade = {
-	native_assimilation = 0.5
 	colony_development_boost = 1
 }
 
 native_policy_hostile = {	
 	native_uprising_chance = 0.5
+	native_assimilation = 0.5
 	global_colonial_growth = 15
 	colonist_placement_chance = 0.05
 	expel_minorities_cost = -0.5

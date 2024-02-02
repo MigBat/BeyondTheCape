@@ -1225,37 +1225,45 @@ new_world_i = {
 					tooltip = had_columbus_tt
 					has_country_flag = had_columbus
 				}
-				has_any_exploration_idea = yes
-			}
-			#at least three provinces colonised or colonising in caribbean, or have a subject colony
-			OR = {
-				num_of_owned_provinces_with = {
-					OR = {
-						continent = north_america
-						continent = south_america
-					}
-					value = 5
+				custom_trigger_tooltip = {
+					tooltip = has_exporation_idea_tt
+					has_any_exploration_idea = yes
 				}
-				any_subject_country = {
-					OR = {
-						is_subject_of_type = colony
-						is_subject_of_type = crown_colony
-						is_subject_of_type = private_enterprise
-						is_subject_of_type = self_governing_colony
-					}
-					capital_scope = {
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_discovered_new_world_tt
+				OR = {
+					north_america = { has_discovered = PREV }
+					south_america = { has_discovered = PREV }
+					new_world = { has_discovered = PREV }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = own_or_subject_has_colony_or_5_province_tt
+				OR = {
+					num_of_owned_provinces_with = {
 						OR = {
 							continent = north_america
 							continent = south_america
-							continent = new_world
+						}
+						value = 5
+					}
+					any_subject_country = {
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+						capital_scope = {
+							OR = {
+								continent = north_america
+								continent = south_america
+								continent = new_world
+							}
 						}
 					}
 				}
-			}
-			OR = {
-				north_america = { has_discovered = PREV }
-				south_america = { has_discovered = PREV }
-				new_world = { has_discovered = PREV }
 			}
 		}
 	}

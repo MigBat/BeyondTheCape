@@ -68,7 +68,7 @@ santiago_order_headquarters = {
 		holy_order = santiago_order
 	}
 
-	local_manpower_modifier = 0.05
+	local_manpower_modifier = 0.1
 	local_development_cost_modifier = -0.05
 }
 
@@ -107,7 +107,7 @@ alcantara_order_headquarters = {
 		holy_order = alcantara_order
 	}
 
-	local_build_time = -0.2
+	local_fort_maintenance_modifier = -0.5
 	local_development_cost_modifier = -0.05
 }
 

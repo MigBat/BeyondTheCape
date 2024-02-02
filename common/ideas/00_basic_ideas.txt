@@ -959,6 +959,15 @@ exploration_ideas = {
 	category = DIP
 	important = yes
 
+	trigger = {
+		if = {
+			limit = {
+				tag = GCH
+			}
+			has_country_modifier = guanches_exploration
+		}
+	}
+
 	bonus = {
 		cb_on_overseas = yes
 		monthly_portuguese_saudade = 0.075

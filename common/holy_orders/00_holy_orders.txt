@@ -174,7 +174,7 @@ jesuit_order = {
         }
     }
     modifier = {
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.1
     }
     ai_priority = {
         factor = 2
@@ -482,6 +482,62 @@ alcantara_order = {
     localization = holy_order
 }
 
+# BEYOND THE CAPE #
+
+christ_order = {
+    icon = GFX_holy_order_christ
+    trigger = {
+    	OR = { 
+			AND = { 
+				culture_group = iberian
+				religion = catholic
+			}
+			has_country_flag = enable_holy_orders_flag 
+		}
+		religion_group = christian
+		OR = { 
+			primary_culture = portugese
+			primary_culture = brazilian
+		}
+    }
+    color = { 230 9 20 }
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+        add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+    }
+    modifier = {
+        local_sailors_modifier = 0.1
+		ship_recruit_speed = -0.15
+    }
+    ai_priority = {
+        factor = 5
+        modifier = {
+            factor = 0
+            has_port = no
+        }
+        modifier = {
+            factor = 1000
+            area = estremadura_area
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                area = alentejo_area
+                area = extremadura_area
+                area = castille_area
+                area = toledo_area
+                area = valencia_area
+                area = sicily_area
+            }
+        }
+    }
+    localization = holy_order
+}
+
 avis_order = {
     icon = GFX_holy_order_avis
     trigger = {
@@ -761,7 +817,7 @@ santiago_order = {
         }
     }
     modifier = {
-		local_manpower_modifier = 0.05
+		local_manpower_modifier = 0.1
 		local_hostile_movement_speed = -0.1
     }
     ai_priority = {
@@ -1093,63 +1149,6 @@ du_si = {
     }
     localization = coordinator_office
 }
-
-# BEYOND THE CAPE #
-
-christ_order = {
-    icon = GFX_holy_order_christ
-    trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
-		OR = { 
-			primary_culture = portugese
-			primary_culture = brazilian
-		}
-    }
-    color = { 230 9 20 }
-    cost = 50
-    cost_type = mil_power
-    per_province_effect = {
-        add_base_manpower = 1
-    }
-    per_province_abandon_effect = {
-        add_base_manpower = -1
-    }
-    modifier = {
-        local_sailors_modifier = 0.1
-		ship_recruit_speed = -0.15
-    }
-    ai_priority = {
-        factor = 5
-        modifier = {
-            factor = 0
-            has_port = no
-        }
-        modifier = {
-            factor = 1000
-            area = estremadura_area
-        }
-        modifier = {
-            factor = 0
-            OR = {
-                area = alentejo_area
-                area = extremadura_area
-                area = castille_area
-                area = toledo_area
-                area = valencia_area
-                area = sicily_area
-            }
-        }
-    }
-    localization = holy_order
-}
-
 
 kashifs = {
     icon = GFX_holy_order_kashifs

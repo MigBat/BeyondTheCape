@@ -397,7 +397,7 @@ portuguese_tercios = {
 
 por_sagres = {
 	dip_tech_cost_modifier = -0.05
-	navy_tradition = 1
+	navy_tradition = 0.25
 }
 
 por_brazil_tariffs = {
@@ -468,17 +468,24 @@ around_africa = {
 }
 
 feitoria = {
-	province_trade_power_modifier = 0.5
-	local_ship_repair = 0.15
-	local_defensiveness = 0.15
+	province_trade_power_value = 2
 	local_governing_cost = 0.25
-	fort_level = 1
+	local_ship_repair = 0.1
 	picture = "prov_modifier_feitoria"
+}
+
+fortified_feitoria = {
+	province_trade_power_value = 2
+	local_ship_repair = 0.2
+	local_defensiveness = 0.15
+	local_governing_cost = 0.5
+	fort_level = 1
+	picture = "prov_modifier_fortified_feitoria"
 }
 
 foreign_feitoria = {
 	tax_income = 6
-	picture = "prov_modifier_feitoria"
+	picture = "prov_modifier_foreign_feitoria"
 }
 
 opm_diplomacy = {
@@ -680,7 +687,7 @@ development_ordinances = {
 
 padrao_raised = {
 	# padrao was raised
-	province_trade_power_value = 0.02
+	province_trade_power_value = 0.001
 	picture = "padrao"
 }
 
@@ -905,6 +912,8 @@ guanches_exploration = {
 
 guanches_colonisation = {
 	colonists = 1
+	global_colonial_growth = 30
+	colonist_placement_chance = 0.15
 }
 
 wattasid_weariness = {
@@ -922,7 +931,7 @@ sado_gold = {
 }
 
 disable_ship_capture = {
-	capture_ship_chance = -9999
+	capture_ship_chance = -999999
 }
 
 prestigious_academy = {
@@ -933,4 +942,36 @@ prestigious_academy = {
 paria_tax = {
 	prestige = -0.5
 	#Causes yearly event where you have to pay up
+}
+
+too_many_eyalets = {
+	liberty_desire_from_subject_development = 2
+	administrative_efficiency = -0.2
+}
+
+too_many_core_eyalets = {
+	liberty_desire_from_subject_development = 2
+	administrative_efficiency = -0.2
+}
+
+portuguese_resilience = {
+	local_core_creation = 1
+}
+
+malaria = {
+	local_production_efficiency = -0.9
+	local_tax_modifier = -0.9
+	province_trade_power_value = 0.001
+	local_development_cost_modifier = 2
+	local_colonial_growth = -150
+	local_colony_cost_modifier = 1
+	picture = "malaria"
+}
+
+legacy_of_columbus = {
+	max_flagships = 1
+}
+
+legacy_of_magellan = {
+	max_flagships = 1
 }

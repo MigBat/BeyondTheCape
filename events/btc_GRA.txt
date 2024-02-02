@@ -10,15 +10,6 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	trigger = {
-		tag = GRA
-		NOT = { is_year = 1480 }
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	option = {
 		name = btc_gra.1a
 
@@ -31,7 +22,7 @@ country_event = {
 			duration = -1
 			desc = paria_tax_desc
 		}
-		custom_tooltip = paria_tax_tt
+		custom_tooltip = btc_gra.1a_tt
 	}
 }
 
@@ -115,21 +106,10 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 9
 			modifier = {
 				factor = 0
-				OR = {
-					NOT = { years_of_income = 0.3 }
-					225 = {
-						owner = {
-							OR = {
-								is_at_war = yes
-								NOT = { manpower_percentage = 0.5 }
-								NOT = { mil_power_cost = 50 }
-							}
-						}
-					}
-				}
+				is_year = 1480
 			}
 		}
 	}
@@ -149,17 +129,6 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				years_of_income = 0.3
-				225 = {
-					owner = {
-						is_at_war = no
-						manpower_percentage = 0.5
-						mil_power_cost = 50
-					}
-				}
-			}
 		}
 	}
 }
@@ -212,13 +181,25 @@ country_event = {
 	#Retaliate against them!
 	option = {
 		name = btc_gra.5a
-		mil_power_cost = 50
-		add_yearly_manpower = -0.2
-		custom_tooltip = btc_gra.5a_tt
-		hidden_effect = {
-			FROM = {
-				country_event = {
-					id = btc_gra.6
+		
+		if = {
+			limit = {
+				is_year = 1480
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_annex
+				who = GRA
+			}
+		}
+		else = {
+			mil_power_cost = 50
+			add_yearly_manpower = -0.2
+			custom_tooltip = btc_gra.5a_tt
+			hidden_effect = {
+				FROM = {
+					country_event = {
+						id = btc_gra.6
+					}
 				}
 			}
 		}
@@ -227,11 +208,7 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				OR = {
-					is_at_war = yes
-					NOT = { manpower_percentage = 0.5 }
-					NOT = { mil_power_cost = 50 }
-				}
+				is_at_war = yes
 			}
 		}
 	}
@@ -247,8 +224,6 @@ country_event = {
 			modifier = {
 				factor = 0
 				is_at_war = no
-				manpower_percentage = 0.5
-				mil_power_cost = 50
 			}
 			modifier = {
 				factor = 0

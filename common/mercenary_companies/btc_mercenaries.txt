@@ -1,0 +1,317 @@
+merc_english_longbowmen = {
+	regiments_per_development = 0.03
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    home_province = 231
+	cost_modifier = 0.25
+	counts_towards_force_limit = no
+	min_size = 5 
+	max_size = 10
+	no_additional_manpower_from_max_size = yes
+	sprites = { dlc001_eng_sprite_pack dlc028_eng_sprite_pack westerngfx_sprite_pack }
+	trigger = { 
+		has_country_modifier = por_english_alliance
+        is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+    modifier = {
+        infantry_fire = 0.5
+		fire_damage_received = -0.1
+    }
+}
+
+merc_british_redcoats = {
+	regiments_per_development = 0.03
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    home_province = 231
+	cost_modifier = 0.25
+	counts_towards_force_limit = no
+	min_size = 5 
+	max_size = 10
+	no_additional_manpower_from_max_size = yes
+	sprites = { dlc042_eng_sprite_pack westerngfx_sprite_pack }
+	trigger = { 
+		has_country_modifier = por_english_alliance
+        is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+	}
+    modifier = {
+        fire_damage = 0.15
+		discipline = 0.025
+    }
+}
+
+merc_colonial_ordenancas = {
+	regiments_per_development = 0.03
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    home_province = 1111
+	cost_modifier = 0.1
+	min_size = 5 
+	max_size = 5
+	no_additional_manpower_from_max_size = yes
+	sprites = { dlc011_por_sprite_pack westerngfx_sprite_pack }
+	trigger = { 
+		tag = POR
+		owns = 1111
+		num_of_colonists = 1
+        is_allowed_to_recruit_mercenaries = yes
+	}
+    modifier = {
+		transport_attrition = -1
+    }
+}
+
+merc_knights_of_christ = {
+	regiments_per_development = 0.03
+    home_province = 4787
+	cost_modifier = 0.25
+	cavalry_weight = 1
+	min_size = 4 
+	max_size = 8
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no
+	sprites = { christ_order_sprite_pack }
+	trigger = {
+		owns = 4787
+		4787 = {
+			holy_order = christ_order
+		}
+        is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+    modifier = {
+		cav_to_inf_ratio = 1
+		movement_speed = 0.2
+		cavalry_shock = 1
+    }
+}
+
+merc_knights_of_avis = {
+	regiments_per_development = 0.03
+    home_province = 4150
+	cost_modifier = 0.25
+	cavalry_weight = 1
+	min_size = 4 
+	max_size = 8
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no
+	sprites = { avis_order_sprite_pack }
+	trigger = {
+		owns = 4150
+		4150 = {
+			holy_order = avis_order
+		}
+        is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+    modifier = {
+		cav_to_inf_ratio = 1
+		movement_speed = 0.2
+		morale_damage = 0.2
+    }
+}
+
+merc_knights_of_calatrava = {
+	regiments_per_development = 0.03
+    home_province = 2754
+	cost_modifier = 0.25
+	cavalry_weight = 1
+	min_size = 4 
+	max_size = 8
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no
+	sprites = { calatrava_order_sprite_pack }
+	trigger = {
+		owns = 2754
+		2754 = {
+			holy_order = calatrava_order
+		}
+        is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+    modifier = {
+		cav_to_inf_ratio = 1
+		movement_speed = 0.2
+		cavalry_power = 0.2
+    }
+}
+
+merc_knights_of_santiago = {
+	regiments_per_development = 0.03
+    home_province = 2751
+	cost_modifier = 0.25
+	cavalry_weight = 1
+	min_size = 4 
+	max_size = 8
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no
+	sprites = { santiago_order_sprite_pack }
+	trigger = {
+		owns = 2751
+		2751 = {
+			holy_order = santiago_order
+		}
+        is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+    modifier = {
+		cav_to_inf_ratio = 1
+		movement_speed = 0.2
+		shock_damage = 0.2
+    }
+}
+
+merc_knights_of_montesa = {
+	regiments_per_development = 0.03
+    home_province = 4549
+	cost_modifier = 0.25
+	cavalry_weight = 1
+	min_size = 4 
+	max_size = 8
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no
+	sprites = { montesa_order_sprite_pack }
+	trigger = {
+		owns = 4549
+		4549 = {
+			holy_order = montesa_order
+		}
+        is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+    modifier = {
+		cav_to_inf_ratio = 1
+		movement_speed = 0.2
+		cavalry_flanking = 0.5
+    }
+}
+
+merc_knights_of_alcantara = {
+	regiments_per_development = 0.03
+    home_province = 4788
+	cost_modifier = 0.25
+	cavalry_weight = 1
+	min_size = 4 
+	max_size = 8
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no
+	sprites = { alcantara_order_sprite_pack }
+	trigger = {
+		owns = 4788
+		4788 = {
+			holy_order = alcantara_order
+		}
+        is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+    modifier = {
+		cav_to_inf_ratio = 1
+		movement_speed = 0.2
+		discipline = 0.05
+    }
+}
+
+merc_knights_of_san_juan = {
+	regiments_per_development = 0.03
+    home_province = 126
+	cost_modifier = 0.25
+	cavalry_weight = 1
+	min_size = 4 
+	max_size = 8
+	no_additional_manpower_from_max_size = yes
+	counts_towards_force_limit = no
+	sprites = { san_juan_order_sprite_pack }
+	trigger = {
+		owns = 126
+		126 = {
+			holy_order = san_juan_order
+		}
+        is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+	}
+    modifier = {
+		cav_to_inf_ratio = 1
+		movement_speed = 0.2
+		cavalry_fire = 1
+    }
+}

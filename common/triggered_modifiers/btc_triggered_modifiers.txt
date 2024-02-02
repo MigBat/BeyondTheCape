@@ -1,0 +1,145 @@
+###########################################
+# BEYOND THE CAPE - Ottoman Silk Road Monopoly
+###########################################
+ottoman_silk_road_monopoly = {
+	potential = {
+		capital_scope = {
+			continent = europe
+		}
+		NOT = { tag = TUR }
+		NOT = { tag = VEN }
+		religion = catholic
+		NOT = { has_country_modifier = east_indian_trade_route }
+	}
+
+	trigger = {
+		OR = {
+			AND = {
+				151 = {
+					owned_by = TUR
+				}
+				316 = {
+					owned_by = TUR
+				}
+			}
+			AND = {
+				4779 = {
+					owned_by = TUR
+				}
+				2296 = {
+					owned_by = TUR
+				}
+			}
+		}
+	}
+
+	trade_efficiency = -0.05	
+}
+
+###########################################
+# BEYOND THE CAPE - Large Daimyo
+###########################################
+large_daimyo = {
+	potential = {
+		OR = {
+			has_reform = daimyo
+			AND = {
+				tag = SOO
+				has_government_attribute = is_pirate_republic_reform
+			}
+			has_country_flag = ikko_ikki_peasants_flag
+		}
+	}
+
+	trigger = {
+		num_of_cities = 3
+	}
+	
+	diplomatic_reputation = -2
+}
+
+###########################################
+# BEYOND THE CAPE - Decentralized Indian State
+###########################################
+decentralized_indian_state = {
+	potential = {
+		technology_group = indian
+		NOT = {
+			OR = {
+				tag = HIN
+				tag = BHA
+				tag = MUG
+			}
+		}
+	}
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 40
+		}
+	}
+	
+	global_unrest = 8
+}
+
+###########################################
+# BEYOND THE CAPE - Fighting Off European Invaders
+###########################################
+fighting_off_european_invaders = {
+	potential = {
+		technology_group = north_american
+	}
+
+	trigger = {
+		any_country = {
+			OR = {
+				capital_scope = {
+					continent = europe
+				}
+				AND = {
+					is_colonial_nation = yes
+					overlord = {
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+			}
+			offensive_war_with = ROOT
+		}
+	}
+
+	land_morale = 0.15
+	morale_damage_received = -0.15
+	land_forcelimit_modifier = 0.5
+	land_maintenance_modifier = -0.75
+}
+
+###########################################
+# BEYOND THE CAPE - Fighting Spirit
+###########################################
+fighting_spirit = {
+	potential = {
+		ai = yes
+		OR = {
+			tag = POR
+			tag = NED
+		}
+	}
+
+	trigger = {
+		NOT = { num_of_provinces_in_states = 21 }
+		any_neighbor_country = {
+			capital_scope = {
+				continent = europe
+			}
+			offensive_war_with = ROOT
+		}
+	}
+
+	hostile_attrition = 3
+	land_morale = 0.15
+	morale_damage_received = -0.25
+	land_forcelimit_modifier = 0.5
+	global_manpower_modifier = 0.5
+}

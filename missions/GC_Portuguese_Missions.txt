@@ -1543,11 +1543,10 @@ gc_por_3 = {
 		position = 6
 		
 		provinces_to_highlight = {
-			region = guinea_region
+			area = west_africa_coast_area
 			OR = {
 				is_city = no
 				NOT = { owned_by = ROOT }
-				NOT = { area = cap_verde_area }
 			}
 			has_discovered = ROOT
 		}
@@ -1561,10 +1560,9 @@ gc_por_3 = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_west_africa
-				guinea_region = {
+				west_africa_coast_area = {
 					owned_by = ROOT
 					is_city = yes
-					NOT = { area = cap_verde_area }
 				}
 			}
 		}
@@ -1683,10 +1681,28 @@ gc_por_3 = {
 				trait = great_explorer_personality
 			}
 			set_country_flag = por_no_flagship_mod
-			227 = {
-				create_flagship = {
-					type = heavy_ship
-					name = "São Gabriel"
+			if = {
+				limit = {
+					227 = {
+						owned_by = ROOT
+					}
+				}
+				227 = {
+					create_flagship = {
+						type = heavy_ship
+						name = "São Gabriel"
+					}
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_port = yes
+					}
+					create_flagship = {
+						type = heavy_ship
+						name = "São Gabriel"
+					}
 				}
 			}
 			clr_country_flag = por_no_flagship_mod	
@@ -2600,7 +2616,7 @@ gc_por_5_a = {
 			230 = {
 				add_province_modifier = {
 					name = por_sagres
-					duration = 5475
+					duration = -1
 				}
 			}
 			add_country_modifier = {

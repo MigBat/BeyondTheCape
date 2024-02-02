@@ -108,6 +108,44 @@ emp_ned_slot1_branch = {
 				add_base_production = 2
 				add_base_manpower = 2
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						exists = POR
+						4182 = { owned_by = POR }
+					}
+					ROOT = {
+						country_event = {
+							id = btc_ned.12
+							days = 10
+						}
+					}
+					POR = {
+						country_event = {
+							id = btc_ned.12
+							days = 10
+						}
+					}
+				}
+				if = {
+					limit = { 
+						exists = IBE
+						4182 = { owned_by = IBE }
+					}
+					ROOT = {
+						country_event = {
+							id = btc_ned.12
+							days = 10
+						}
+					}
+					IBE = {
+						country_event = {
+							id = btc_ned.12
+							days = 10
+						}
+					}
+				}
+			}
 		}
 	}
 	

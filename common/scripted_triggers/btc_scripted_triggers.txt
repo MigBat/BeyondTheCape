@@ -1,0 +1,377 @@
+has_slavers_trade_good_trigger = {
+	OR = {
+		trade_goods = coffee
+		trade_goods = cotton
+		trade_goods = sugar
+		trade_goods = tobacco
+		trade_goods = tea
+		trade_goods = cocoa
+		trade_goods = slaves
+	}
+}
+
+is_potential_hegemon = {
+	OR = {
+		is_discovery_eco_hegemon = yes
+		is_discovery_nav_hegemon = yes
+		is_discovery_mil_hegemon = yes
+		is_reformation_eco_hegemon = yes
+		is_reformation_nav_hegemon = yes
+		is_reformation_mil_hegemon = yes
+		is_absolutism_eco_hegemon = yes
+		is_absolutism_nav_hegemon = yes
+		is_absolutism_mil_hegemon = yes
+		is_revolutions_eco_hegemon = yes
+		is_revolutions_nav_hegemon = yes
+		is_revolutions_mil_hegemon = yes
+	}	
+}
+
+is_discovery_eco_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = VEN
+		}
+		is_or_was_tag = {
+			tag = BUR
+		}
+		is_or_was_tag = {
+			tag = MAM
+		}
+	}
+}
+
+is_discovery_nav_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = POR
+		}
+		is_or_was_tag = {
+			tag = VEN
+		}
+		is_or_was_tag = {
+			tag = ARA
+		}
+	}
+}
+
+is_discovery_mil_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = TUR
+		}
+		is_or_was_tag = {
+			tag = RUM
+		}
+		is_or_was_tag = {
+			tag = POL
+		}
+		is_or_was_tag = {
+			tag = PLC
+		}
+	}
+}
+
+is_reformation_eco_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = PER
+		}
+		is_or_was_tag = {
+			tag = ERS
+		}
+	}
+}
+
+is_reformation_nav_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = POR
+		}
+		is_or_was_tag = {
+			tag = CAS
+		}
+		is_or_was_tag = {
+			tag = SPA
+		}
+	}
+}
+
+is_reformation_mil_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = TUR
+		}
+		is_or_was_tag = {
+			tag = RUM
+		}
+		is_or_was_tag = {
+			tag = POL
+		}
+		is_or_was_tag = {
+			tag = PLC
+		}
+		is_or_was_tag = {
+			tag = MUG
+		}
+	}	
+}
+
+is_absolutism_eco_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = PER
+		}
+		is_or_was_tag = {
+			tag = ERS
+		}
+		is_or_was_tag = {
+			tag = MUG
+		}
+		is_or_was_tag = {
+			tag = SWE
+		}
+		is_or_was_tag = {
+			tag = NED
+		}
+	}
+}
+
+is_absolutism_nav_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = CAS
+		}
+		is_or_was_tag = {
+			tag = SPA
+		}
+		is_or_was_tag = {
+			tag = ENG
+		}
+		is_or_was_tag = {
+			tag = GBR
+		}
+		is_or_was_tag = {
+			tag = AVE
+		}
+	}	
+}
+
+is_absolutism_mil_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = SWE
+		}
+		is_or_was_tag = {
+			tag = FRA
+		}
+		is_or_was_tag = {
+			tag = MOS
+		}
+		is_or_was_tag = {
+			tag = RUS
+		}
+		is_or_was_tag = {
+			tag = BRA
+		}
+		is_or_was_tag = {
+			tag = PRU
+		}
+	}	
+}
+
+is_revolutions_eco_hegemon = {
+	is_or_was_tag = {
+		tag = NED
+	}
+}
+
+is_revolutions_nav_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = ENG
+		}
+		is_or_was_tag = {
+			tag = GBR
+		}
+		is_or_was_tag = {
+			tag = AVE
+		}
+		is_or_was_tag = {
+			tag = DAN
+		}
+		is_or_was_tag = {
+			tag = NOR
+		}
+		is_or_was_tag = {
+			tag = SCA
+		}
+	}	
+}
+
+is_revolutions_mil_hegemon = {
+	OR = {
+		is_or_was_tag = {
+			tag = FRA
+		}
+		is_or_was_tag = {
+			tag = MOS
+		}
+		is_or_was_tag = {
+			tag = RUS
+		}
+		is_or_was_tag = {
+			tag = BRA
+		}
+		is_or_was_tag = {
+			tag = PRU
+		}
+		is_or_was_tag = {
+			tag = HAB
+		}
+	}	
+}
+
+most_income_discovery_eco_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_discovery_eco_hegemon_tt
+			NOT = { tag = ROOT }
+			is_discovery_eco_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { monthly_income = ROOT }
+	}
+}
+
+most_income_reformation_eco_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_reformation_eco_hegemon_tt
+			NOT = { tag = ROOT }
+			is_reformation_eco_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { monthly_income = ROOT }
+	}
+}
+
+most_income_absolutism_eco_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_absolutism_eco_hegemon_tt
+			NOT = { tag = ROOT }
+			is_absolutism_eco_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { monthly_income = ROOT }
+	}
+}
+
+most_income_revolutions_eco_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_revolutions_eco_hegemon_tt
+			NOT = { tag = ROOT }
+			is_revolutions_eco_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { monthly_income = ROOT }
+	}
+}
+
+most_navy_discovery_nav_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_discovery_nav_hegemon_tt
+			NOT = { tag = ROOT }
+			is_discovery_nav_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { navy_size = ROOT }
+	}
+}
+
+most_navy_reformation_nav_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_reformation_nav_hegemon_tt
+			NOT = { tag = ROOT }
+			is_reformation_nav_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { navy_size = ROOT }
+	}
+}
+
+most_navy_absolutism_nav_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_absolutism_nav_hegemon_tt
+			NOT = { tag = ROOT }
+			is_absolutism_nav_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { navy_size = ROOT }
+	}
+}
+
+most_navy_revolutions_nav_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_revolutions_nav_hegemon_tt
+			NOT = { tag = ROOT }
+			is_revolutions_nav_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { navy_size = ROOT }
+	}
+}
+
+most_army_discovery_mil_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_discovery_mil_hegemon_tt
+			NOT = { tag = ROOT }
+			is_discovery_mil_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { army_size = ROOT }
+	}
+}
+
+most_army_reformation_mil_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_reformation_mil_hegemon_tt
+			NOT = { tag = ROOT }
+			is_reformation_mil_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { army_size = ROOT }
+	}
+}
+
+most_army_absolutism_mil_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_absolutism_mil_hegemon_tt
+			NOT = { tag = ROOT }
+			is_absolutism_mil_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { army_size = ROOT }
+	}
+}
+
+most_army_revolutions_mil_hegemon = {
+	any_country = {
+		custom_trigger_tooltip = {
+			tooltip = is_revolutions_mil_hegemon_tt
+			NOT = { tag = ROOT }
+			is_revolutions_mil_hegemon = yes
+			is_great_power = yes
+		}
+		NOT = { army_size = ROOT }
+	}
+}

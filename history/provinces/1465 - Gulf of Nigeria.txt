@@ -10,7 +10,6 @@ discovered_by = KON
 discovered_by = JOL
 discovered_by = NDO
 discovered_by = BEN
-discovered_by = GCH
 
 
 1472.1.1 = { discovered_by = POR }

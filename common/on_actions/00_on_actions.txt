@@ -46,8 +46,8 @@ on_startup = {
 		}
 		country_event = { id = btc_events.2 }
 	}
-	# Island Development
 	country_event = { id = btc_events.33 }
+	country_event = { id = btc_por.178 }
 }
 
 # country
@@ -329,30 +329,48 @@ on_war_won = {
 		}
 	}
 	# BEYOND THE CAPE #
-	# if = {
-	# 	limit = {
-	# 		ROOT = {
-	# 			tag = POR
-	# 			has_country_flag = at_war
-	# 		}
-	# 		FROM = { tag = CAS }
-	# 	}
-	# 	country_event = {
-	# 		id = castilian_civil_war.12	# Portugal wins civil war
-	# 	}
-	# }
-	# if = {
-	# 	limit = {
-	# 		ROOT = {
-	# 			tag = ARA
-	# 			has_country_flag = at_war
-	# 		}
-	# 		FROM = { tag = CAS }
-	# 	}
-	# 	country_event = {
-	# 		id = castilian_civil_war.13	# Aragon wins civil war
-	# 	}
-	# }
+	if = {
+		limit = {
+			ROOT = {
+				tag = POR
+				has_country_flag = at_war
+				NOT = { has_country_flag = yes_iberian_union }
+			}
+			FROM = { tag = CAS }
+			ARA = { has_country_flag = at_war }
+		}
+		ARA = {
+			country_event = {
+				id = castilian_civil_war.16	# Aragon and Castile win civil war
+			}
+		}
+		CAS = {
+			country_event = {
+				id = castilian_civil_war.16	# Aragon and Castile win civil war
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = ARA
+				has_country_flag = at_war
+				NOT = { has_country_flag = yes_iberian_union }
+			}
+			FROM = { tag = CAS }
+			POR = { has_country_flag = at_war }
+		}
+		POR = {
+			country_event = {
+				id = castilian_civil_war.15	# Portugal and Castile win civil war
+			}
+		}
+		CAS = {
+			country_event = {
+				id = castilian_civil_war.15	# Portugal and Castile win civil war
+			}
+		}
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -1179,6 +1197,12 @@ on_siege_lost_province =  {
 # root = location, from = country that abandons colony
 # Fired right before the colony is abandoned.
 on_abandon_colony = {
+	if = {
+		limit = {
+			has_province_modifier = malaria
+		}
+		remove_province_modifier = malaria
+	}
 }
 
 # province
@@ -2269,6 +2293,7 @@ on_yearly_pulse = {
 		flavor_mos.3 #Yearly Tatar Yoke Tribute
 		# Beyond the Cape
 		btc_gra.3
+		btc_tur.1
 	}
 }
 on_yearly_pulse_2 = {
@@ -4851,6 +4876,51 @@ on_province_owner_change = {
 			duration = -1
 		}
 	}
+	# BTC #
+	if = {
+		limit = {
+			NOT = { has_province_modifier = malaria }
+			has_port = no
+			continent = africa
+			NOT = {
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					region = guinea_region
+					region = south_africa_region
+					area = lower_zambezi_area	# mozambique
+					area = inner_angola_area	# angola
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
+				}
+			}
+			owner = {
+				capital_scope = {
+					NOT = {
+						continent = africa
+					}
+				}
+			}
+		}
+		add_province_modifier = {
+			name = malaria
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_province_modifier = malaria
+			owner = {
+				capital_scope = {
+					continent = africa
+				}
+			}
+		}
+		remove_province_modifier = malaria
+	}
 }
 
 # country
@@ -5109,6 +5179,7 @@ on_add_pasha = {
 			add_province_modifier = { name = the_provincial_system duration = -1 }
 		}
 	}
+
 }
 
 # THIS = One province in the state
@@ -5733,26 +5804,50 @@ on_conquest = {
 		}
 		set_province_flag = can_build_feitoria
 	}
-	# if = {
-	# 	limit = {
-	# 		AND = {
-	# 			owner = {
-	# 				has_subject_of_type = commercial_enterprise
-	# 			}
-	# 			OR = {
-	# 				superregion = india_superregion
-	# 				superregion = east_indies_superregion
-	# 				superregion = china_superregion
-	# 				region = japan_region
-	# 				region = korea_region
-	# 				region = arabia_region
-	# 			}
-	# 		}
-	# 	}
-	# 	province_event = {
-	# 		id = btc_ned.2
-	# 	}
-	# }
+	if = {
+		limit = {
+			NOT = { has_province_modifier = malaria }
+			has_port = no
+			continent = africa
+			NOT = {
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					region = guinea_region
+					region = south_africa_region
+					area = lower_zambezi_area	# mozambique
+					area = inner_angola_area	# angola
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
+				}
+			}
+			owner = {
+				capital_scope = {
+					NOT = {
+						continent = africa
+					}
+				}
+			}
+		}
+		add_province_modifier = {
+			name = malaria
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				capital_scope = {
+					continent = africa
+				}
+			}
+			has_province_modifier = malaria
+		}
+		remove_province_modifier = malaria
+	}
 }
 
 on_country_creation = {
@@ -5950,6 +6045,36 @@ on_estate_removed = {
 
 ##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
 on_colony_established = {
+	if = {
+		limit = {
+			FROM = {
+				capital_scope = {
+					NOT = { continent = africa }
+				}
+			}
+			has_port = no
+			continent = africa
+			NOT = {
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					region = guinea_region
+					region = south_africa_region
+					area = lower_zambezi_area	# mozambique
+					area = inner_angola_area	# angola
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
+				}
+			}
+		}
+		add_province_modifier = {
+			name = malaria
+			duration = -1
+		}
+	}
 }
 
 #scope = new country, FROM = parent country
@@ -6025,10 +6150,13 @@ on_centralized_state = {
 
 #ROOT = country
 monarch_on_shipwreck = {
+	ROOT = { kill_ruler = yes }
 }
 heir_on_shipwreck = {
+	ROOT = { kill_heir = { allow_new_heir = yes }}
 }
 consort_on_shipwreck = {
+	ROOT = { kill_consort = yes }
 }
 
 #ROOT = country

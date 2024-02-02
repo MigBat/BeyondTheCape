@@ -874,3 +874,71 @@ country_event = {
 		}
 	}
 }
+
+# The Nippon Struggle
+country_event = {
+	id = btc_ned.12
+	title = btc_ned.12_t
+	desc = btc_ned.12_d
+	picture = 18_Trade_Company_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_ned.12a
+		custom_tooltip = nippon_struggle_tt
+	}
+}
+
+# The Island of Dejima
+country_event = {
+	id = btc_ned.13
+	title = btc_ned.13_t
+	desc = btc_ned.13_d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = POR
+			tag = IBE
+		}
+	}
+
+	trigger = {
+		tag = NED
+		mission_completed = emp_ned_dutch_formosa
+		4182 = {
+			NOT = { 
+				owned_by = ROOT
+			}
+		}
+		if = {
+			limit = {
+				4182 = {
+					OR = {
+						owned_by = POR
+						owned_by = IBE
+					}
+				}
+			}
+			1376 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = btc_ned.13a
+
+		4182 = { cede_province = ROOT }
+		add_claim = 4182
+		add_core = 4182
+		add_prestige = 10
+	}
+}
