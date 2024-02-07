@@ -151,7 +151,7 @@ buccaneer_personality = {
 	allow = {
 		is_admiral = yes
 	}
-	privateer_efficiency = 0.15
+	privateer_efficiency = 0.025
 }
 
 prize_hunter_personality = {

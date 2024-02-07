@@ -1492,7 +1492,7 @@ got_the_art_of_insults = {	#Permanent
 }
 
 got_global_piracy = {	#Permanent
-	privateer_efficiency = 0.33
+	privateer_efficiency = 0.075
 	trade_range_modifier = 0.33
 	range = 0.33
 }
@@ -1542,7 +1542,7 @@ got_the_buccaneers_focus = {
 
 got_the_smugglers_focus = {
 	pr_smugglers_influence = 0.2
-	privateer_efficiency = 0.25
+	privateer_efficiency = 0.05
 	trade_efficiency = 0.15
 }
 
@@ -3743,7 +3743,7 @@ mor_conquest_of_kanem = {
 }
 
 mor_barbary_pirate_coast = {
-	privateer_efficiency = 0.2
+	privateer_efficiency = 0.05
 }
 
 mor_north_sea_corsairs = {
@@ -3838,7 +3838,7 @@ tun_med_conquest_east = {
 }
 
 tun_barbary_pirates = {
-	privateer_efficiency = 0.2
+	privateer_efficiency = 0.05
 }
 
 tun_morocco = {
@@ -3958,7 +3958,7 @@ portuguese_surat_modifier = {
 # Berber missions
 
 berber_fleet = {
-	privateer_efficiency = 0.2
+	privateer_efficiency = 0.05
 }
 
 berber_piracy = {
@@ -3999,7 +3999,7 @@ pirate_triangle_trade = {
 }
 
 pirate_a_pirate_fleet = {
-	privateer_efficiency = 0.3
+	privateer_efficiency = 0.075
 	naval_maintenance_modifier = -0.1
 }
 
@@ -5825,7 +5825,7 @@ pap_latin_patriarch_of_jerusalem = {
 
 # Peasant missions
 likedeelers_modifier = {
-	privateer_efficiency = 0.30
+	privateer_efficiency = 0.075
 }
 
 hemmingstedt_victory = {
@@ -6195,7 +6195,7 @@ maj_trade_modifier = {
 }
 
 maj_privateer_china = {
-	privateer_efficiency = 0.33
+	privateer_efficiency = 0.075
 }
 
 maj_china_trade = {
@@ -7551,7 +7551,7 @@ gen_hoa_build_temples_modifier = {
 
 gen_hoa_trade_navy_modifier = {
 	global_ship_trade_power = 0.1
-	privateer_efficiency = 0.2
+	privateer_efficiency = 0.05
 }
 
 gen_hoa_control_coastline_modifier = {

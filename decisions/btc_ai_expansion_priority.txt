@@ -263,6 +263,7 @@ country_decisions = {
 				owned_by = root
 			}
 			529 = { owned_by = root }
+			4980 = { owned_by = root }
 			4430 = { owned_by = root }
 			517 = { owned_by = root }
 		}

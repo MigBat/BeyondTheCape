@@ -3233,10 +3233,10 @@ french_missions_3_normal_continued = {
 		required_missions = { fra_dutch_coast fra_hudson_bay_fur fra_british_isles } 
 		position = 13
 		provinces_to_highlight = {
-			province_id = 1744 
+			province_id = 1269 
 		}
 		trigger = {
-			1744 = { 
+			1269 = { 
 				trade_share = {
 					country = ROOT 
 					share = 75
@@ -3260,12 +3260,12 @@ french_missions_3_normal_continued = {
 			custom_tooltip = fra_merc_per_province_tt
 			if = { 
 				limit = { 
-					1744 = { highest_value_trade_node = yes }
+					1269 = { highest_value_trade_node = yes }
 				}
 				hidden_effect = { 
 					every_owned_province = {
 						limit = { 
-							same_trade_node_as = 1744
+							same_trade_node_as = 1269
 							province_has_center_of_trade_of_level = 1 
 						}
 						owner = { add_mercantilism = 1 }
@@ -6334,7 +6334,7 @@ french_rev_missions_5 = {
 		required_missions = { fra_national_bank fra_great_britain }
 		position = 23 
 		trigger = {
-			1744 = { #Channel
+			1269 = { #Channel
 				trade_node_value = 1000
 			}
 			full_idea_group = trade_ideas 

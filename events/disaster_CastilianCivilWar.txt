@@ -1832,6 +1832,10 @@ country_event = {
 		}
 	}
 
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	option = {
 		name = "castilian_civil_war.31a"
 

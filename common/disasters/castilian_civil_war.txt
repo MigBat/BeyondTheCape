@@ -30,6 +30,11 @@ castilian_civil_war = {
 		is_at_war = no
 		has_any_disaster = no
 		# has_heir = yes
+		custom_trigger_tooltip = {
+			tooltip = enrique_doesnt_exist_tt
+			NOT = { has_heir_flag = is_enrique_flag }
+			NOT = { has_ruler_flag = is_enrique_flag }
+		}
 		OR = {
 			has_regency = yes
 			NOT = { heir_claim = 80 }

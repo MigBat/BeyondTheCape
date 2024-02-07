@@ -69,17 +69,43 @@ decentralized_indian_state = {
 				tag = HIN
 				tag = BHA
 				tag = MUG
+				tag = DEC
+				tag = MAR
+				tag = RJP
+				tag = NAG
 			}
 		}
 	}
 
 	trigger = {
 		num_of_owned_provinces_with = {
-			value = 40
+			value = 35
 		}
 	}
 	
 	global_unrest = 8
+}
+
+###########################################
+# BEYOND THE CAPE - Culture Clash
+###########################################
+culture_clash = {
+	potential = {
+		tag = POR
+	}
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 21
+			NOT = { culture = root }
+			is_overseas = no
+		}
+	}
+	
+	manpower_recovery_speed = -0.2
+	reinforce_speed = -0.2
+	production_efficiency = -0.1
+	min_autonomy_in_territories = 0.1
 }
 
 ###########################################

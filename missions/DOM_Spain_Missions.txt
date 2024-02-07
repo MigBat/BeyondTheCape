@@ -1445,7 +1445,7 @@ dom_cas_missions_2_c = {
 			province_id = 224
 		}
 		trigger = {
-			224 = { 
+			1293 = { 
 				trade_share = {
 					country = ROOT 
 					share = 70

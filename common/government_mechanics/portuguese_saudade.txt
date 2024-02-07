@@ -19,6 +19,7 @@ portuguese_saudade_mechanic = {
 					global_foreign_trade_power = 0.15
 					allowed_marine_fraction = 0.15
 					land_forcelimit_modifier = -0.2
+					range = 1
 				}
 			}
 

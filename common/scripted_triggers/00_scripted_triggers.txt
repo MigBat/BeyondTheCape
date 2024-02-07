@@ -1761,16 +1761,15 @@ is_trade_node_province = {
 			province_id = 1652
 			province_id = 1975
 			province_id = 45
-			province_id = 174
-			province_id = 224
+			province_id = 1293
 			province_id = 186
 			province_id = 1295
 			province_id = 1298
 			province_id = 1308
-			province_id = 1744
-			province_id = 227
+			province_id = 1269
+			province_id = 1292
 			province_id = 236
-			province_id = 174
+			province_id = 1276
 		}
 	}
 }
@@ -1844,7 +1843,7 @@ is_not_inland_trade_node_province = {
 #Province scope
 is_european_trade_node_province = {
 	OR = {
-		province_id = 224
+		province_id = 1293
 		province_id = 1295
 		province_id = 1298
 		province_id = 1308
@@ -1858,22 +1857,22 @@ is_european_trade_node_province = {
 		province_id = 45
 		province_id = 1876
 		province_id = 186
-		province_id = 1744
-		province_id = 174
+		province_id = 1269
+		province_id = 1276
 		province_id = 1975
 		province_id = 1926
 		province_id = 33
 		province_id = 1652
 		province_id = 1082
 		province_id = 464
-		province_id = 227
+		province_id = 1292
 		province_id = 236
 	}
 }
 
 european_trade_node_scope = {
-	224 = { $trigger$ }
-	227 = { $trigger$ }
+	1293 = { $trigger$ }
+	1292 = { $trigger$ }
 	1295 = { $trigger$ }
 	1298 = { $trigger$ }
 	1308 = { $trigger$ }
@@ -1887,9 +1886,9 @@ european_trade_node_scope = {
 	45 = { $trigger$ }
 	1876 = { $trigger$ }
 	186 = { $trigger$ }
-	1744 = { $trigger$ }
+	1269 = { $trigger$ }
 	236 = { $trigger$ }
-	174 = { $trigger$ }
+	1276 = { $trigger$ }
 	1975 = { $trigger$ }
 	1926 = { $trigger$ }
 	33 = { $trigger$ }

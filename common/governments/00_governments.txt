@@ -229,6 +229,8 @@ monarchy = {
 				restore_the_master_of_offices_reform
 				court_of_art_and_culture_reform
 				integrated_ottoman_officials
+				# DD #
+				dom_ned_great_council_of_mechelen_reform
 			}
 		}
 		military_doctrines = {

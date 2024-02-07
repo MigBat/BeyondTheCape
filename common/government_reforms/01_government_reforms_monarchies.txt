@@ -2859,7 +2859,7 @@ mughal_government = {
 			cavalry_power = 0.1
 		}
 		maghrebi = {
-			privateer_efficiency = 0.25
+			privateer_efficiency = 0.05
 		}
 		malay = {
 			merchants = 1

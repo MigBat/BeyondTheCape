@@ -1,0 +1,274 @@
+#Netherlands
+
+ned_leuven_faculty = {
+	advisor_pool = 1
+	advisor_cost = -0.1
+}
+ned_franeker_faculty = {
+	advisor_pool = 1
+	advisor_cost = -0.1
+}
+ned_harderwijk_faculty = {
+	advisor_pool = 1
+	advisor_cost = -0.1
+}
+
+ned_erasmus_protestant = {
+	global_heretic_missionary_strength = 0.05
+	monthly_fervor_increase = 1 
+	monthly_church_power = 0.02 
+	global_religious_conversion_resistance = -0.1
+}
+
+ned_erasmus_middle = {
+	religious_unity = 0.10
+	tolerance_heretic = 1
+}
+
+ned_erasmus_catholic = {
+	global_heretic_missionary_strength = 0.05
+	papal_influence = 0.5 
+	global_religious_conversion_resistance = 0.1
+}
+
+ned_doopsgezind = {
+	monthly_church_power = 0.02 
+	#
+}
+
+dom_utr_legacy_of_pope = {
+	papal_influence = 1
+}
+
+dom_utr_bishop_of_munster = {
+	papal_influence = 0.5
+}
+
+dom_utr_bishop_of_liege = {
+	papal_influence = 0.5
+	num_accepted_cultures = 1
+}
+
+ned_statist_influences = {
+	republican_tradition = 0.5 
+	#statists_influence = 1 #dont know if exists
+	#statists = 1
+}
+
+ned_burgher_influences = {
+	burghers_influence_modifier = 0.1 
+	burghers_loyalty_modifier = 0.1 
+}
+
+ned_orangist_influences = {
+	prestige = 0.5
+	#orangists_influence = 1 #dont know if exists
+	#orangists = 1
+}
+
+ned_hagenpreken_modifier = {
+	global_heretic_missionary_strength = 0.05
+	missionaries = 1 
+}
+
+ned_religious_tolerance = {
+	religious_unity = 0.25	
+	global_religious_conversion_resistance = 0.1
+	tolerance_heretic = 1
+}
+
+ned_religious_persecution = {
+	global_religious_conversion_resistance = -0.2
+	missionaries = 1
+	tolerance_heretic = -1
+}
+
+ned_reunited_friesland = {
+	republican_tradition = 1
+	prestige = 1
+}
+
+ned_big_prosperous_burghers = {
+	burghers_loyalty_modifier = 0.05
+	nobles_loyalty_modifier = 0.05
+}
+
+dom_gel_diplomatic_ties = {
+	heir_chance = 0.25
+	reduced_liberty_desire = 10
+}
+
+dom_gel_expansion_goal = {
+ 	ae_impact = -0.1
+	core_creation = -0.1
+}
+
+ned_kaapstad = {
+	range = 0.20
+	global_colonial_growth = 5
+}
+
+ned_seabeggars = {
+	allowed_marine_fraction = 0.1 
+	land_forcelimit = 3
+}
+
+bur_subjects_pissed = {
+	vassal_income = -0.1
+	reduced_liberty_desire = -10 
+}
+
+ned_wish_for_liberty = {
+	liberty_desire = 5
+	land_morale = 0.025
+}
+
+ned_leo_belgicus = { 
+	num_accepted_cultures = 1
+	global_manpower_modifier = 0.10
+	land_morale = 0.05
+}
+dom_fri_magna_frisia_mod = { 
+	global_manpower_modifier = 0.10
+	land_morale = 0.05
+}
+
+dom_gel_grand_dynasty = {
+	legitimacy = 0.1
+	diplomatic_reputation = 1
+	reasons_to_elect = 10
+}
+
+hol_straubing_heritage_mod = {
+	diplomatic_reputation = 1
+	reasons_to_elect = 10
+}
+
+hol_king_william_mod = {
+	legitimacy = 0.1
+	diplomatic_reputation = 1
+}
+
+ned_nordic_lumber = {
+	flagship_cost = -0.1 
+	heavy_ship_cost = -0.1
+	global_ship_recruit_speed = -0.1
+}
+
+ned_sugar_enterprise = {
+	monthly_favor_modifier = 0.1 
+	unjustified_demands = -0.1
+	#reduced_stab_impacts = yes 
+}
+
+ned_tobacco_enterprise = {
+	reduced_stab_impacts = yes 
+}
+
+voc_investments_moluccas = {
+	trade_company_investment_cost = -0.1
+	center_of_trade_upgrade_cost = -0.1 
+}
+
+ned_5_admiralities = {
+	max_flagships = 2 #4
+}
+
+ned_japanese_friend = {
+	allowed_samurai_fraction = 0.1
+	has_samurai = yes
+}
+
+ned_japanese_dutch_friendship = {
+	global_institution_spread = 0.1
+	embracement_cost = -0.1
+}
+
+fri_zuiderzee_pirates = {
+	privateer_efficiency = 0.2 
+	capture_ship_chance = 0.1 
+}
+efr_pirate_homebase = {
+	privateer_efficiency = 0.2 
+	capture_ship_chance = 0.1 
+}
+
+golden_inlet_secured = {
+	#trade_value = 5
+	province_trade_power_modifier = 0.1 
+}
+
+hol_amsterdamse_grachten_mod = {
+	#trade_value = 5
+	local_production_efficiency = 0.1 
+	local_development_cost = -0.1
+}
+
+antwerp_golden_age_mod = {
+	#trade_value = 5
+	local_development_cost = -0.1
+	province_trade_power_modifier = 0.1 
+}
+
+groot_privilege_mod = {
+	reduced_liberty_desire = 5
+}
+
+delfts_blauw_mod = {
+	trade_goods_size = 1
+}
+
+maori_dutch_trade = {
+	production_efficiency = 0.05 
+	global_institution_spread = 0.1 
+}
+
+maori_subject = {
+	production_efficiency = 0.05 
+	liberty_desire = -10 
+}
+
+argentine_silver_mines = {
+	treasure_fleet_income = 0.1 
+}
+
+brazil_tropical_wood = {
+	build_cost = -0.1 
+}
+
+columbian_coffee = {
+	global_institution_spread = 0.1 
+}
+
+dom_twente_pride = {
+	global_manpower_modifier = 0.5
+	land_morale = 0.05
+}
+
+holland_not_granted_hainaut_mod = {
+	liberty_desire = 25	
+}
+
+clerical_influence_bur_mod = {
+	diplomatic_reputation = 1
+}
+
+clerical_justice_bur_mod = {
+	papal_influence_from_cardinals = 1.0 
+	devotion = 1
+	curia_powers_cost = -0.1 
+}
+
+zeeland_bans_slaves = {
+	diplomatic_reputation = 1
+}
+
+middelburgsche_Commercie_Compagnie = {
+	production_efficiency = 0.0025
+}
+
+malacca_voc_boost_mod = {
+	naval_attrition = -0.1 
+	naval_morale = 0.1 
+	is_voc_indiamen_modifier = yes 
+}

@@ -70,6 +70,7 @@ trade_company_west_india = {
 		517 2036 4430 #tapti_area
 		503 2053 4456 4480 #patan_area
 		516 2051 2054 4512 4457 #ahmedabad_area
+		4980
 	}
 	
 	# Generic

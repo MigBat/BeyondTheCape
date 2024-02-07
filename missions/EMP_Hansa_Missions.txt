@@ -713,7 +713,7 @@ hanseatic_britain_tree = {
 		position = 5
 
 		provinces_to_highlight = {
-			province_id = 1744
+			province_id = 1269
 		}
 
 		trigger = {
@@ -735,13 +735,13 @@ hanseatic_britain_tree = {
 							value = 125
 						}
 					}
-					1744 = {
+					1269 = {
 						trade_share = {
 							country = root
 							share = 25
 						}
 					}
-					1744 = {
+					1269 = {
 						privateer_power = {
 							country = root
 							share = 25
@@ -750,7 +750,7 @@ hanseatic_britain_tree = {
 				}
 			}
 			else = {
-				1744 = {
+				1269 = {
 					OR = {
 						trade_share = {
 							country = root
@@ -766,7 +766,7 @@ hanseatic_britain_tree = {
 		}
 
 		effect = {
-			1744 = {
+			1269 = {
 				add_trade_modifier = {
 					who = root
 					duration = 7300

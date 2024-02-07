@@ -48,7 +48,10 @@
  desc_mam_spice_monopoly_wars_triggered_modifier:0 "The Portuguese have circumvented Africa and established a presence in the Indian Ocean, disrupting the ancient Silk Road trade that is so profitable to us."
 # Ottoman Silk Road Monopoly #
  ottoman_silk_road_monopoly:0 "Ottoman Silk Road Monopoly"
- desc_ottoman_silk_road_monopoly:0 "With the fall of Constantinople to the Turks, the Ottomans have effectively established a monopoly on the important Silk Road, the main trade route between Asia and Europe. Consequently, they are charging european catholic nations extra ducats for these foreign goods."
+ desc_ottoman_silk_road_monopoly:0 "By controlling both margins of the Sea of Marmara, the Ottomans have effectively established a monopoly on the important Silk Road, the main trade route between Asia and Europe. Consequently, they are charging european catholic nations extra ducats for these foreign goods."
+# Culture Clash #
+ culture_clash:0 "Culture Clash"
+ desc_culture_clash:0 "Too much of the core of our country is dominated by foreigners. This has caused general unhappiness and inefficiency throughout our realm."
 # Decentralized Indian State #
  decentralized_indian_state:0 "Decentralized Indian State"
  desc_decentralized_indian_state:0 "Our country has grown too large and is now plagued by unrest. We must unite the Indian people to avert this."

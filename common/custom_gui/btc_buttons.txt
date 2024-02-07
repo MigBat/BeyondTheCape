@@ -88,9 +88,9 @@ custom_button = {
 		}
 		area_for_scope_province = {
 			type = all
+			owned_by = owner
 			NOT = { has_province_modifier = foreign_feitoria }	
 		}
-		range = FROM
 	}
 	effect = {
 		add_province_modifier = {

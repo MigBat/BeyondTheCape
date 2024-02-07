@@ -16257,7 +16257,7 @@ tortuga_island = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			privateer_efficiency = 0.2
+			privateer_efficiency = 0.05
 			capture_ship_chance = 0.1
 		}
 		on_upgraded = {
@@ -16278,7 +16278,7 @@ tortuga_island = {
 			blockade_force_required = 1
 		}
 		country_modifiers = {
-			privateer_efficiency = 0.33
+			privateer_efficiency = 0.075
 			power_projection_from_insults = 0.5
 			capture_ship_chance = 0.2
 		}
@@ -16300,7 +16300,7 @@ tortuga_island = {
 			blockade_force_required = 1
 		}
 		country_modifiers = {
-			privateer_efficiency = 0.5
+			privateer_efficiency = 0.1
 			power_projection_from_insults = 1
 			capture_ship_chance = 0.3
 		}
@@ -17088,7 +17088,7 @@ visby_city = {
 		area_modifier = {
 		}
 		country_modifiers = {		
-			privateer_efficiency = 0.2	
+			privateer_efficiency = 0.05
 		}
 		on_upgraded = {
 		}
@@ -17108,7 +17108,7 @@ visby_city = {
 		area_modifier = {
 		}
 		country_modifiers = {		
-			privateer_efficiency = 0.33
+			privateer_efficiency = 0.075
 			global_own_trade_power = 0.15
 		}
 		on_upgraded = {
@@ -17129,7 +17129,7 @@ visby_city = {
 		area_modifier = {
 		}
 		country_modifiers = {		
-			privateer_efficiency = 0.5
+			privateer_efficiency = 0.1
 			global_own_trade_power = 0.25
 		}
 		on_upgraded = {

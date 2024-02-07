@@ -914,7 +914,7 @@ country_event = { #
 		NOT = { is_year = 1455 }
 		tag = HSA 
 		NOT = {
-			1744 = {
+			1269 = {
 				trade_share = {
 					country = ROOT 
 					share = 10
@@ -959,7 +959,7 @@ country_event = { #
 			owner = {
 				save_event_target_as = fu_owner_of_amsterdam
 			}
-			1744 = {
+			1269 = {
 				add_trade_modifier = {
 					who = event_target:fu_owner_of_amsterdam 
 					duration = 5475

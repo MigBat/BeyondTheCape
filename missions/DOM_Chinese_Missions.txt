@@ -7089,14 +7089,14 @@ DOM_Qing_Missions_5_b = {
 				}
 				if = { 
 					limit = { 
-						174 = {
+						1276 = {
 							trade_share = {
 								country = ROOT 
 								share = 25 
 							}
 						}
 					}
-					174 = { 
+					1276 = { 
 						every_trade_node_member_country = {
 							limit = { 
 								NOT = { tag = ROOT } 
@@ -7119,14 +7119,14 @@ DOM_Qing_Missions_5_b = {
 				}
 				if = { 
 					limit = { 
-						224 = {
+						1293 = {
 							trade_share = {
 								country = ROOT 
 								share = 25 
 							}
 						}
 					}
-					224 = { 
+					1293 = { 
 						every_trade_node_member_country = {
 							limit = { 
 								NOT = { tag = ROOT } 

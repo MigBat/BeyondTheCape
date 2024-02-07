@@ -508,7 +508,7 @@ swe_scandinavian_colonialism_mission_slot = {
 				limit = {
 					ai = yes
 				}
-				4163 = { light_ships_in_province = 3 }
+				owns_or_non_sovereign_subject_of = 23
 			}
 			else = {
 				owns_or_non_sovereign_subject_of = 23

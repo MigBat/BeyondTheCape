@@ -331,7 +331,8 @@
 4430 = "Damão"
 
 #Deccan
-529 = "Bombaim" #Tana is called Bombaim in the portuguese charts
+4980 = "Bombaim"
+529 = "Tana" #Tana is called Bombaim in the portuguese charts
 530 = "Dabul"
 4429 = "Carapatão" #The original name doesn't appear on the maps, but the closest one seems to be this one.
 4427 = "Onor"

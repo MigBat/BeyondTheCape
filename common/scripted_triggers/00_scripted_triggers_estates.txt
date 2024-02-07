@@ -28,6 +28,8 @@ has_any_estates = {
 			has_estate = estate_janissaries
 			has_estate = estate_eunuchs
 			has_estate = estate_slavers
+			has_estate = estate_peasants
+			has_estate = estate_trade_company
 			has_estate = estate_qizilbash
 			has_estate = estate_ghulams
 		}

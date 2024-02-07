@@ -121,7 +121,7 @@ banda_arafura_seas_area = {
 }
 
 gulf_of_alaska_area = {
-	1558 1559 1560 1561 1681 1682 1562 1677 1680 3007 3006 3005 3004
+	1558 1559 1560 1561 1681 1682 1562 1677 1680 3007 3006 3005
 }
 
 sea_of_grau_area = {
@@ -157,7 +157,7 @@ sea_of_labrador_area = {
 }
 
 hudson_bay_sea_area = {
-	1485 1486 1487 1488 1489
+	1485 1486 1487 1488 1489 3004
 }
 
 denmark_strait_area = {
@@ -2330,6 +2330,8 @@ kongu_area = {
 
 konkan_area = { #4
 	529 530 2089 4429
+	# BTC #
+	4980
 }
 
 desh_area = { #3

@@ -2077,6 +2077,7 @@ cb_war_of_roses = {
 # Europeans in India
 cb_europeans_india = {
 	prerequisites = {
+		ai = yes
 		OR = {
 			capital_scope = {
 				continent = europe

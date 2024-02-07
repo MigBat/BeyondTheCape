@@ -2,8 +2,7 @@ government = tribal
 add_government_reform = native_clan_council_reform
 primary_culture = berber
 religion = animism
-technology_group = muslim
-religious_school = maliki_school
+technology_group = sub_saharan
 capital = 4565 # Tenerife
 
 1444.1.1 = {

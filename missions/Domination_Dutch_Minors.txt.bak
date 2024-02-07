@@ -1,0 +1,4236 @@
+dom_ned_holland_1_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = HOL
+			AND = {
+				tag = NED
+				NOT = {
+					OR = { 
+						was_tag = BUR was_tag = FRI was_tag = EFR 
+						was_tag = UTR was_tag = GEL was_tag = FLA 
+						was_tag = BRB was_tag = GRN
+					}
+				}
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	hol_amsterdamse_grachten = { #
+		icon = mission_rb_hanseatic_east #icon wip
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			province_id = 97
+		}
+		
+		trigger = {
+			if = {
+				limit = { 
+				97 = { 
+					NOT = {
+					owned_by = ROOT
+					}
+				}
+				}
+				97 = {
+					owned_by = ROOT
+				}
+			}
+			97 = {
+				has_building = workshop
+			}
+			97 = {
+				development = 25
+			}
+		}
+		effect = {
+			97 = {
+				change_trade_goods = gems
+				add_province_modifier = {
+					name = hol_amsterdamse_grachten_mod
+					duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_flanders_1_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FLA
+			AND = {
+				tag = NED
+				was_tag = FLA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	fla_golden_inlet = {
+		icon = mission_golden_inlet
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			province_id = 90
+		}
+		
+		trigger = {
+			if = {
+				limit = { 
+				90 = { 
+					NOT = {
+					owned_by = ROOT
+					}
+				}
+				}
+				90 = {
+					owned_by = ROOT
+				}
+			}
+			OR = { 
+			90 = {
+				development = 30
+				has_building = marketplace
+			}
+			AND = {
+				90 = {
+					province_has_center_of_trade_of_level = 2 
+				}
+				is_year = 1600
+			}
+			}
+		}
+		effect = {
+			90 = {
+			add_province_modifier = {
+				name = golden_inlet_secured
+				duration = -1
+			}
+			}
+			custom_tooltip = tooltip_wip
+			add_prestige_or_monarch_power = { amount = 10 }
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	fla_house_of_dampierre = {
+		icon = mission_thirty_years_war #placeholder
+		required_missions = { fla_gulden_sporen }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 88
+				province_id = 1866
+			}
+		}
+		
+		trigger = {	
+			if = {
+				limit = { 
+					is_subject = yes 
+					overlord = {
+						owns_or_non_sovereign_subject_of = 88
+					}
+				}
+				OR = {
+					AND = {
+						owns_or_non_sovereign_subject_of = 88
+						owns_or_non_sovereign_subject_of = 1866
+					}
+					custom_trigger_tooltip = {
+						tooltip = overlord_50_favors_tt
+						overlord = {
+							owes_favors = { 
+								who = ROOT
+								value = 50
+							}
+						}
+					}
+				}
+			}
+			else = {
+				owns_or_non_sovereign_subject_of = 88
+				owns_or_non_sovereign_subject_of = 1866
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			if = {
+				limit = {
+					is_subject = yes
+					overlord = {
+						owns_or_non_sovereign_subject_of = 91						
+					}
+				}
+				OVERLORD = {
+					country_event_with_insight = {
+						id = dutch_domination.27
+						insight_tooltip = subject_demands_provinces_tt
+					}
+				}
+				#Fix later hainaut
+				#tooltip = {
+				#	91 = {
+				#		cede_province = ROOT
+				#	}
+				#}
+			}
+			else = {
+				add_legitimacy = 25
+			}
+			picardy_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}	
+}
+
+dom_ned_brabant_1_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BRB
+			tag = ANW
+			AND = {
+				tag = NED
+				was_tag = BRB
+				was_tag = ANW
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	brb_port_of_antwerp = { #
+		icon = mission_early_game_buildings
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			#OR = {
+				province_id = 1744
+			#}
+		}
+		
+		trigger = {	
+			if = {
+				limit = { 
+				1744 = { 
+					NOT = {
+					owned_by = ROOT
+					}
+				}
+				}
+				1744 = {
+					owned_by = ROOT
+				}
+			}
+			OR = { 
+			1744 = {
+				development = 25
+				has_building = marketplace
+			}
+			AND = {
+				1744 = {
+					province_has_center_of_trade_of_level = 2 
+				}
+				is_year = 1600
+			}
+			}
+		}
+		effect = {
+			1744 = {
+				change_trade_goods = glass
+				add_province_modifier = {
+					name = antwerp_golden_age_mod
+					duration = -1
+				}
+			}
+			custom_tooltip = tooltip_wip
+			add_prestige_or_monarch_power = { amount = 10 }
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_slot2_group = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = NED tag = UTR tag = GEL tag = HOL tag = FLA tag = BRB tag = HAI tag = LUX tag = LIE tag = BEL tag = ZEE tag = IJS
+		}
+		NOT = {
+			OR = {
+				was_tag = FRI
+				was_tag = EFR
+				was_tag = GRN
+				was_tag = VOC
+				was_tag = BUR
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_ned_the_burgundians = { #positive / negative relations with burgundy
+		icon = conquer_burgundy
+		required_missions = { }
+		position = 1
+		completed_by = 1445.1.1 #basically after startdate of 1444
+		
+		provinces_to_highlight = {
+			is_capital = yes
+			owned_by = BUR
+			NOT = {
+				BUR = {
+					OR = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = insulted
+						}
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
+						}
+					}
+				}
+			}
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					BUR = {
+						exists = YES
+					}
+				}
+				OR = {
+				BUR = {
+					custom_trigger_tooltip = {
+						tooltip = has_been_insulted_by_root
+						OR = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = insulted
+							}
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = scornfully_insulted
+							}
+						}
+					}
+				}
+				BUR = {
+					has_opinion = {
+						who = root
+						value = 100
+					}				
+				}
+				}
+			}
+			else = {
+				num_of_allies = 2
+			}
+		}
+		
+		effect = {
+			custom_tooltip = fra_revolving_missions_based_on_choice
+			if = {
+				limit = {
+					BUR = {
+						exists = yes
+					}
+				}
+				#1.36
+				if = {
+					limit = {
+						OR = {
+							is_subject_of = BUR
+							tag = HOL
+							tag = BRB
+							tag = FLA
+							tag = LUX
+						}
+					}
+					#friendship
+					custom_tooltip = ned_branch_sub_tt
+					if = {
+						limit = {
+							BUR = {
+								has_opinion = {
+									who = root
+									value = 100
+								}				
+							}
+						}
+						custom_tooltip = BONUS_REWARD_YES
+						set_country_flag = ned_join_burgundy
+					}
+					else = { custom_tooltip = BONUS_REWARD_NO }
+					custom_tooltip = ned_branch_sub_effect_tt
+					#enemies
+					custom_tooltip = ned_branch_sub_2_tt
+					if = {
+						limit = {
+							BUR = {
+								custom_trigger_tooltip = {
+									tooltip = has_been_insulted_by_root
+									OR = {
+										has_opinion_modifier = {
+											who = ROOT
+											modifier = insulted
+										}
+										has_opinion_modifier = {
+											who = ROOT
+											modifier = scornfully_insulted
+										}
+									}
+								}
+							}
+						}
+						set_country_flag = ned_reject_burgundy
+						hidden_effect = {
+							add_country_modifier = {
+								name = ned_wish_for_liberty
+								duration = 9125
+							}
+						}
+						custom_tooltip = BONUS_REWARD_YES
+					}
+					else = { custom_tooltip = BONUS_REWARD_NO }
+					swap_non_generic_missions = yes
+					custom_tooltip = ned_branch_sub_2_effect_tt
+					tooltip = {
+						add_country_modifier = {
+							name = ned_wish_for_liberty
+							duration = 9125
+						}
+					}
+				}
+				else = {
+					#friendship
+					custom_tooltip = ned_branch_border_effect_tt
+					if = {
+						limit = {
+							BUR = {
+								has_opinion = {
+									who = root
+									value = 100
+								}				
+							}
+						}
+						custom_tooltip = BONUS_REWARD_YES
+						set_country_flag = ned_join_burgundy
+						set_country_flag = mission_branch_bur_friend
+						hidden_effect = {
+							BUR = { 
+								country_event = { 
+									id = dutch_domination.14
+									days = 30
+									random = 15
+								}
+							}
+						}
+					}
+					else = { custom_tooltip = BONUS_REWARD_NO }
+					custom_tooltip = ned_branch_border_missions_tt
+					custom_tooltip = pol_impact_future_missions_tt
+					#enemies
+					custom_tooltip = ned_branch_border_effect_2_tt
+					if = {
+						limit = {
+							BUR = {
+								custom_trigger_tooltip = {
+									tooltip = has_been_insulted_by_root
+									OR = {
+										has_opinion_modifier = {
+											who = ROOT
+											modifier = insulted
+										}
+										has_opinion_modifier = {
+											who = ROOT
+											modifier = scornfully_insulted
+										}
+									}
+								}
+							}
+						}
+						set_country_flag = mission_branch_bur_foe
+						custom_tooltip = BONUS_REWARD_YES
+					}
+					else = { custom_tooltip = BONUS_REWARD_NO }
+					custom_tooltip = ned_branch_border_missions_2_tt
+					swap_non_generic_missions = yes
+				}
+			}
+			else = {
+				add_prestige = 10
+			}
+			hidden_effect = {
+				country_event = {
+					id = dutch_domination.13
+					days = 1
+				}
+			}
+			#hidden_effect = {
+			#country_event = {
+			#	id = dutch_domination.131
+			#	days = 30
+			#}
+			#}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_subject_1_group = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			burgundian_union_tags = yes
+			AND = {
+				tag = NED
+				OR = {
+					was_tag = HOL
+					was_tag = FLA
+					was_tag = BRB
+					was_tag = HAI
+					was_tag = LUX
+					was_tag = ZEE
+					AND = {
+						was_tag = GEL 
+						has_country_flag = dom_gel_subject_of_burgundians
+					}
+				}
+			}
+			AND = {
+				tag = GEL 
+				has_country_flag = dom_gel_subject_of_burgundians
+			}
+			AND = {
+				tag = NED
+				NOT = {
+					OR = { 
+						was_tag = FRI was_tag = EFR was_tag = UTR was_tag = GEL was_tag = BUR was_tag = GRN
+					}
+				}
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_ned_groot_privilege = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = { dom_ned_the_burgundians }
+		position = 2
+		completed_by = 1477.2.11
+		
+		trigger = {
+			if = {
+				limit = { is_subject = yes }
+				treasury = 300
+				NOT = { num_of_loans = 1 }
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = ned_burgundy_war_loans_tt
+						overlord = { is_at_war = yes num_of_loans = 1 }
+					}
+					AND = {
+						OR = {
+						diplomat = 2
+						statesman = 2
+						}
+						overlord = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							} 
+						}
+					}
+				}
+			}
+			else = {
+				treasury = 300
+				NOT = { num_of_loans = 1 }
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			if = { 
+				limit = { is_subject = yes } 
+				custom_tooltip = ned_subject_of_tt
+				overlord = {
+				country_event_with_insight = {
+					id = dutch_domination.11
+					insight_tooltip = bur_subjectgold_accept_tt
+				}
+				}
+				tooltip = {
+				add_treasury = -300 
+				overlord = {
+					add_treasury = 300
+				}
+				if = {
+					limit = {
+						is_subject_of = BUR
+						BUR = {
+							has_reform = dom_ned_great_council_of_mechelen_reform
+						}
+					}
+					tooltip = {
+						BUR = {
+							add_country_modifier = {
+								name = groot_privilege_mod
+								duration = 7300
+							}
+							remove_government_reform = dom_ned_great_council_of_mechelen_reform
+						}
+					}
+				}
+				add_favors = {
+						who = OVERLORD
+						amount = 25
+					}
+				add_trust = {
+					who = OVERLORD
+					value = 25
+					mutual = yes
+				}
+				}
+				custom_tooltip = bur_subjectgold_reject_tt
+				tooltip = {
+					overlord = {
+					add_country_modifier = {
+						name = bur_subjects_pissed
+						duration = 7300
+					}
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_ned_eedverbond_der_edelen = {
+		icon = friends_in_high_places
+		required_missions = { dom_ned_groot_privilege }
+		position = 3
+		completed_by = 1567.2.8
+		
+		provinces_to_highlight = {
+			is_capital = yes
+			OR = {
+				owned_by = FLA
+				owned_by = BRB
+				owned_by = HOL
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			if = {
+				limit = { is_subject = yes }
+					if = { 
+						limit = { NOT = { tag = FLA } }
+					OR = {
+						FLA = {
+							is_subject = yes 
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+						}
+						FLA = {
+							exists = no
+						}
+						}
+					}
+					if = { 
+						limit = { NOT = { tag = BRB } }
+						OR = {
+						BRB = {
+							is_subject = yes 
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+						}
+						BRB = {
+							exists = no
+						}
+						}
+					}
+					if = { 
+						limit = { NOT = { tag = HOL } }
+						OR = {
+						HOL = {
+							is_subject = yes 
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+						}
+						HOL = {
+							exists = no
+						}
+						}
+					}
+				}
+				else = {
+					power_projection = 50
+					legitimacy_equivalent = 95
+				}
+		}
+		effect = {
+			if = {
+			limit = { is_subject = yes }
+			custom_tooltip = ned_subject_of_tt
+			if = { limit = { NOT = { tag = FLA } FLA = { exists = yes }  } 
+				reverse_add_opinion = {
+					who = FLA
+					modifier = united_low_countries_front
+				}
+			}
+			if = { limit = { NOT = { tag = HOL } HOL = { exists = yes }  } 
+				reverse_add_opinion = {
+					who = HOL
+					modifier = united_low_countries_front
+				}
+			}
+			if = { limit = { NOT = { tag = BRB } BRB = { exists = yes }  } 
+				reverse_add_opinion = {
+					who = BRB
+					modifier = united_low_countries_front
+				}
+			}
+			overlord = {
+			country_event_with_insight = {
+				id = dutch_domination.12
+				insight_tooltip = bur_subject_coalition_tt
+			}
+			}
+			custom_tooltip = mission_alternatively_tt
+			}
+			tooltip = {
+				if = { limit = { NOT = { tag = FLA }  } 
+				if = { limit = { FLA = { exists = yes }  } 
+					add_casus_belli = {
+						target = FLA
+						type = cb_claim_throne
+						months = -1
+					}
+				}
+				else = {
+					add_permanent_claim = 1865
+					add_permanent_claim = 90
+					add_permanent_claim = 4769
+				}
+				}
+				if = { limit = { NOT = { tag = BRB }  } 
+				if = { limit = { BRB = { exists = yes }  } 
+					add_casus_belli = {
+						target = BRB
+						type = cb_claim_throne
+						months = -1
+					}
+				}
+				else = {
+					add_permanent_claim = 92
+					add_permanent_claim = 95
+					add_permanent_claim = 1744
+					add_permanent_claim = 4770
+				}
+				}
+				if = { limit = { NOT = { tag = HOL } }
+				if = { limit = { HOL = { exists = yes } } 
+					add_casus_belli = {
+						target = HOL
+						type = cb_claim_throne
+						months = -1
+					}
+				}
+				else = {
+					add_permanent_claim = 96
+					add_permanent_claim = 4383
+					add_permanent_claim = 97
+				}
+				}
+			}
+			hidden_effect = {
+				if = {
+				limit = { is_subject = no }
+					if = { limit = { NOT = { tag = FLA }  } 
+					if = { limit = { FLA = { exists = yes }  } 
+						add_casus_belli = {
+							target = FLA
+							type = cb_claim_throne
+							months = -1
+						}
+					}
+					else = {
+						add_permanent_claim = 1865
+						add_permanent_claim = 90
+						add_permanent_claim = 4769
+					}
+					}
+					if = { limit = { NOT = { tag = BRB }  }
+					if = { limit = { BRB = { exists = yes } } 
+						add_casus_belli = {
+							target = BRB
+							type = cb_claim_throne
+							months = -1
+						}
+					}
+					else = {
+						add_permanent_claim = 92
+						add_permanent_claim = 95
+						add_permanent_claim = 1744
+						add_permanent_claim = 4770
+					}
+					}
+					if = { limit = { NOT = { tag = HOL }  }
+					if = { limit = { HOL = { exists = yes }  } 
+						add_casus_belli = {
+							target = HOL
+							type = cb_claim_throne
+							months = -1
+						}
+					}
+					else = {
+						add_permanent_claim = 96
+						add_permanent_claim = 4383
+						add_permanent_claim = 97
+					}
+					}
+				}				
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+domination_dutch_slot_3_branching_unknown = { 
+	slot = 3
+	generic = no
+	ai = yes	
+	potential = {
+		OR = {
+			burgundian_union_tags = yes
+			AND = {
+				tag = NED
+				OR = {
+					was_tag = HOL
+					was_tag = FLA
+					was_tag = BRB
+					was_tag = HAI
+					was_tag = LUX
+					was_tag = ZEE
+				}
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = ned_reject_burgundy }
+		NOT = { has_country_flag = ned_join_burgundy }
+	}
+	has_country_shield = yes
+	
+	dom_ned_mission_sub_unknown = {
+		icon = mission_unknown_mission  
+		required_missions = { dom_ned_groot_privilege } 
+		position = 3
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = { 		
+			custom_tooltip = ned_branch_sub_tt
+			custom_tooltip = ned_branch_sub_effect_tt
+			custom_tooltip = ned_branch_sub_2_tt
+			custom_tooltip = ned_branch_sub_2_effect_tt
+		}
+	}
+}
+
+domination_dutch_slot_3_branching_reject_bur = { 
+	slot = 3
+	generic = no
+	ai = yes	
+	potential = {
+		OR = {
+			burgundian_union_tags = yes
+			AND = {
+				tag = NED
+				NOT = {
+					OR = { 
+						was_tag = FRI was_tag = EFR was_tag = UTR was_tag = GEL was_tag = BUR # was_tag = GRN
+					}
+				}
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = ned_join_burgundy }
+		OR = {
+			has_country_flag = ned_reject_burgundy
+			AND = {
+				tag = NED
+				NOT = {
+					OR = { 
+						was_tag = FRI was_tag = EFR was_tag = UTR was_tag = GEL # was_tag = GRN
+					}
+				}
+			}
+		}
+	}
+	has_country_shield = yes
+	
+	dom_ned_plakaat_van_verlatinghe = {
+		icon = mission_plc_governance_act 
+		required_missions = { dom_ned_groot_privilege }
+		position = 3
+		completed_by = 1581.7.26
+		
+		trigger = {
+			if = {
+				limit = { is_subject_of = BUR has_dlc = "The Cossacks" has_dlc = "Leviathan"  }
+				OR = {
+					AND = {
+						BUR = {
+							owes_favors = { 
+								who = ROOT
+								value = 100
+							}
+						}
+						trust = { who = BUR value = 75 }
+					}
+					army_strength = {
+						who = BUR
+						value = 0.75
+					}
+				}
+			}
+			else_if = {
+				limit = { is_subject = yes }
+				NOT = {
+					OVERLORD = {							
+						army_strength = {
+							who = ROOT
+							value = 1.50
+						}
+					}
+				}
+			}
+			else = {
+				army_size = 25
+				legitimacy_equivalent = 90
+				prestige = 25
+			}
+		}
+		effect = {
+			add_manpower = 5 #flavor_bur.10, flavor_bur.16 the dutch rebellion hre incident
+			custom_tooltip = dom_ned_unlock_revolt_tt
+			custom_tooltip = dom_ned_todo_dutch_revolt_disaster_tt
+			# = {
+			country_event_with_insight = {
+				id = dutch_domination.22
+				insight_tooltip = verlatinghe_event_tt
+			}
+			if = { 
+				limit = { is_subject = yes }
+				custom_tooltip = ned_subject_of_tt #dom_ned_bur_liberty_tt
+				tooltip = {
+					grant_independence = yes
+				}
+				custom_tooltip = mission_alternatively_tt
+			}
+			tooltip = {
+				add_mil_power = 250
+			}
+			hidden_effect = {
+			if = { 
+				limit = { is_subject_of = BUR } 
+				if = {
+					limit = {
+						BUR = {
+							owes_favors = { 
+								who = ROOT
+								value = 100
+							}
+						}
+						trust = { who = BUR value = 75 }
+					}
+					#country_event_with_insight = { #Request independance
+					#	id = dutch_domination.8
+					#	insight_tooltip = ned_control_state_tt
+					#}
+					grant_independence = yes
+					add_favors = {
+						who = BUR
+						amount = -100
+					}
+				}
+				if = {
+					limit = {
+						army_strength = {
+							who = BUR
+							value = 0.75
+						}
+					}
+					grant_independence = yes
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject = yes
+					NOT = {
+						OVERLORD = {							
+							army_strength = {
+								who = ROOT
+								value = 1.50
+							}
+						}
+					}
+				}
+				grant_independence = yes
+			}
+			else = {
+				add_mil_power = 250
+			}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+domination_dutch_slot_3_branching_chose_bur = { 
+	slot = 3
+	generic = no
+	ai = yes	
+	potential = {
+		OR = {
+			burgundian_union_tags = yes
+			AND = {
+				tag = NED
+				OR = {
+					was_tag = HOL
+					was_tag = FLA
+					was_tag = BRB
+					was_tag = HAI
+					was_tag = LUX
+					was_tag = BUR
+					# was_tag = ZEE
+					AND = {
+						was_tag = GEL 
+						has_country_flag = dom_gel_subject_of_burgundians
+					}
+				}
+			}
+			AND = {
+				tag = GEL 
+				has_country_flag = dom_gel_subject_of_burgundians
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = ned_reject_burgundy }
+		has_country_flag = ned_join_burgundy
+	}
+	has_country_shield = yes
+	
+	dom_ned_burgundian_netherlands = {
+		icon = mission_plc_governance_act 
+		required_missions = { dom_ned_groot_privilege }
+		position = 3
+		
+		trigger = {
+			if = {
+				limit = { is_subject_of = BUR }
+				OR = {
+					AND = {
+						total_development = BUR
+						is_subject_of = BUR
+					}
+					AND = {
+						BUR = {
+							owes_favors = { 
+								who = ROOT
+								value = 100
+							}
+						}
+						trust = { who = BUR value = 75 }
+					}
+				}
+			}
+			#
+			else = {
+				total_development = 150
+			}
+		}
+		effect = {
+			if = { 
+				limit = { is_subject_of = BUR }
+				hidden_effect = {
+				BUR = {
+					set_country_flag = Prevent_Burgundian_Intheritance_Flag
+				}
+				country_event = {
+					id = dutch_domination.98
+					days = 1
+				}
+				#BUR = { exile_ruler_as = { name = bur_ned_exiled_ruler } exile_heir_as = bur_ned_exiled_heir } #exile_consort_as = bur_ned_exiled_consort  }
+				#set_ruler = bur_ned_exiled_ruler
+				#set_heir = bur_ned_exiled_heir
+				#Event now handles it
+				}
+				custom_tooltip = sub_becomes_senior_tt
+				tooltip = {
+					create_union = BUR
+					add_government_reform = burgundian_state_reform
+				}
+			}
+			else_if = {
+				limit = {
+				is_subject = yes
+				}
+				grant_independence = yes
+				custom_tooltip = bur_state_reform_tt
+			}
+			else = {
+				add_adm_power = 100
+				custom_tooltip = bur_state_reform_tt
+			}
+			custom_tooltip = dom_ned_enable_construction_palace_tt
+			hidden_effect = {
+				92 = { 
+					add_great_project = {
+						type = palace_of_coudenberg
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_gelre_friend_1_group = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = GEL
+			AND = {
+				tag = NED
+				was_tag = GEL
+			}
+		}
+		has_country_flag = mission_branch_bur_friend
+		NOT = { has_country_flag = mission_branch_bur_foe }
+		NOT = { has_country_flag = dom_gel_subject_of_burgundians }
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_gel_title_of_gelre = { #add choice to take money or not
+		icon = dominant_economy
+		required_missions = { dom_ned_the_burgundians }
+		position = 2
+		#completed_by = 1470 or something
+		
+		trigger = {
+			OR = {
+			custom_trigger_tooltip = {
+				tooltip = title_gelre_tt
+				OR = {
+					BUR = { exists = yes is_subject = no treasury = 300 }
+					HAB = { exists = yes OR = { any_owned_province = { region = low_countries_region } BUR = { is_subject_of = HAB } } treasury = 300 }
+					SPA = { exists = yes OR = { any_owned_province = { region = low_countries_region } BUR = { is_subject_of = SPA } } treasury = 300 }	
+				}
+			}
+				treasury = 500 #placeholder
+			}
+		}
+		effect = {
+			#tooltip = {
+			#	add_mil_power = 100
+			#	add_legitimacy = 10
+			#}
+			if = {
+				limit = { treasury = 500 } #placeholder
+				add_mil_power = 100
+				add_legitimacy = 10
+			}
+			else = {
+			tooltip = {
+				BUR = {
+					country_event_with_insight = {
+						id = dom_guelders.5
+						insight_tooltip = dom_gel_offer_gold_tt
+					}
+				}
+				add_treasury = 300
+			}
+			custom_tooltip = dom_gel_next_monarch_death_tt
+			hidden_effect = {
+			if = { limit = { BUR = { exists = yes is_subject = no treasury = 300 } } 
+				BUR = {
+					country_event_with_insight = {
+					id = dom_guelders.5
+					insight_tooltip = dom_gel_offer_gold_tt
+					}
+				}
+			}
+			if = { limit = { HAB = { exists = yes OR = { any_owned_province = { region = low_countries_region } BUR = { is_subject_of = HAB } } treasury = 300 }  	} 
+				HAB = {
+					country_event_with_insight = {
+					id = dom_guelders.5
+					insight_tooltip = dom_gel_offer_gold_tt
+					}
+				}
+			}
+			if = { limit = { SPA = { exists = yes OR = { any_owned_province = { region = low_countries_region } BUR = { is_subject_of = SPA } } treasury = 300 }	} 
+				SPA = {
+					country_event_with_insight = {
+					id = dom_guelders.5
+					insight_tooltip = dom_gel_offer_gold_tt
+					}
+				}
+			}
+			}
+			}
+		}
+		ai_weight = {
+			factor = 50000	#Historical mission
+		}
+	}
+	
+	dom_gel_fate_of_gelre = {  #historical mission related to wars regarding gelre independance against Burgundy/Austria/Spain
+		icon = mission_conquer_50_development
+		required_missions = { dom_gel_title_of_gelre }
+		position = 3
+		#completed_by = 1568.5.23 #look up groot_privilege
+		
+		trigger = {		
+			OR = {
+				is_subject_of = BUR
+				is_subject_of = SPA
+				is_subject_of = HAB
+				army_size = 25
+			}
+		}
+		effect = {
+			#if war = 
+			trigger_mission_award_tooltip = {
+				trigger = army_size
+				triggervalue = 25
+				tooltip = dom_gel_fate_of_gelre_tt
+			}
+			tooltip = {
+				unlock_merc_company = {
+					merc_company = merc_arumer_zwarte_hoop
+					free_merc = yes
+				}
+			}
+			custom_tooltip = mission_alternatively_tt
+			tooltip = {
+				swap_non_generic_missions = yes
+				custom_tooltip = pol_impact_future_missions_tt 
+				set_country_flag = dom_gel_subject_of_burgundians
+			}
+			hidden_effect = {
+			if = {
+				limit = {
+					army_size = 25
+				}
+				unlock_merc_company = {
+					merc_company = merc_arumer_zwarte_hoop
+					free_merc = yes
+				}
+			}
+			#if subject
+			if = {
+				limit = {
+					OR = {
+						is_subject_of = BUR
+						is_subject_of = SPA
+						is_subject_of = HAB
+					}
+				}
+				set_country_flag = dom_gel_subject_of_burgundians
+				custom_tooltip = pol_impact_future_missions_tt
+				swap_non_generic_missions = yes
+			}
+			#reset missions
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_gelre_fight_1_group = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = GEL
+			was_tag = GEL
+		}
+		NOT = { has_country_flag = mission_branch_bur_friend }
+		has_country_flag = mission_branch_bur_foe
+		NOT = { has_country_flag = dom_gel_subject_of_burgundians }
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_gel_powerful_friends = {  #historical mission related to wars regarding gelre independance against Burgundy/Austria/Spain
+		icon = mission_conquer_50_development
+		required_missions = { dom_ned_the_burgundians }
+		position = 2
+		#completed_by = 1568.5.23 #look up groot_privilege
+		
+		trigger = {		
+			#OR = {
+			#	war_with = BUR 
+			#	war_with = SPA
+			#	war_with = HAB
+			#}
+			OR = {
+			if = {
+				limit = { BUR = { exists = yes is_subject = no } }
+				BUR = {
+					any_rival_country = {
+						alliance_with = GEL
+					}
+				}
+			}
+			#else = {
+				#any_country = { 
+				#	limit = {
+				#		num_of_owned_provinces_with = { 
+				#			region = low_countries_region 
+				#			value = 8 
+				#		} 
+				#		NOT = { OR = { primary_culture = dutch primary_culture = frisian primary_culture = flemish } }
+				#	}
+			else_if = {
+				limit = { SPA = { exists = yes is_subject = no } }				
+				SPA = {
+					any_rival_country = {
+						alliance_with = GEL
+					}
+				}
+			}
+			else_if = {
+				limit = { HAB = { exists = yes is_subject = no } }				
+				HAB = {
+					any_rival_country = {
+						alliance_with = GEL
+					}
+				}
+			}
+			army_size = 25
+			}
+		}
+		effect = {
+			define_general = {
+				shock = 3
+				fire = 2
+				manuever = 4
+				siege = 4
+				name = "Maarten van Rossum"
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_gel_guelders_wars = {  #historical mission related to wars regarding gelre independance against Burgundy/Austria/Spain
+		icon = mission_conquer_50_development
+		required_missions = { dom_gel_powerful_friends }
+		position = 3
+		#completed_by = 1568.5.23 #look up groot_privilege
+		
+		provinces_to_highlight = {
+			OWNER = {
+				total_development = 250
+				war_with = ROOT
+			}
+		}
+		
+		trigger = {
+			any_war_enemy_country = {
+				total_development = 250
+			}
+			custom_trigger_tooltip = {
+				tooltip = control_3_enemy_provinces
+				any_war_enemy_country = {
+					total_development = 250
+					num_of_owned_provinces_with = {
+						value = 3
+						controlled_by = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			unlock_merc_company = {
+				merc_company = merc_arumer_zwarte_hoop
+				free_merc = yes
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_gelre_1_group = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = GEL
+			was_tag = GEL
+		}
+		NOT = { has_country_flag = mission_branch_bur_friend }
+		NOT = { has_country_flag = mission_branch_bur_foe }
+		NOT = { has_country_flag = dom_gel_subject_of_burgundians }
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_gel_mission_unknown = {
+		icon = mission_unknown_mission  
+		required_missions = { dom_ned_the_burgundians } 
+		position = 2
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = { 		
+			custom_tooltip = dom_gel_if_branching_tt
+		}
+	}
+	
+	dom_gel_guelders_wars_unknown = {  #historical mission related to wars regarding gelre independance against Burgundy/Austria/Spain
+		icon = assert_our_sovereignty
+		required_missions = { dom_gel_mission_unknown }
+		position = 3
+		#completed_by = 1568.5.23 #look up groot_privilege
+		
+		trigger = {		
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			unlock_merc_company = {
+				merc_company = merc_arumer_zwarte_hoop
+				free_merc = yes
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_gelre_2_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = GEL
+			AND = {
+				tag = NED
+				was_tag = GEL
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = dom_gel_subject_of_burgundians } #temporary
+	}
+	has_country_shield = yes
+	
+	dom_gel_dynastic_ties = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		#completed_by = 1568.5.23 #look up groot_privilege
+		
+		trigger = {
+			OR = {
+				num_of_royal_marriages = 2
+				grown_by_development = 15
+			}
+			#legitimacy_equivalent = 95 removing this, uncertain if it bugs the AI
+		}
+		effect = {
+			trigger_mission_award_tooltip = {
+				tooltip = dom_gel_if_complete_diplomatically
+				trigger = num_of_royal_marriages
+				triggervalue = 2
+			}
+			tooltip = {
+				add_casus_belli = {
+					target = KLE
+					type = cb_claim_throne
+					months = -1
+				}
+				add_country_modifier = {
+					name = dom_gel_diplomatic_ties
+					duration = 7300
+				}
+			}			
+			trigger_mission_award_tooltip = {
+				tooltip = dom_gel_if_complete_50_dev
+				trigger = grown_by_development
+				triggervalue = 15
+			}
+			tooltip = {
+				add_permanent_claim = 2975
+				add_country_modifier = {
+					name = dom_gel_expansion_goal
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				if = { limit = { num_of_royal_marriages = 2 }
+					add_country_modifier = {
+						name = dom_gel_diplomatic_ties
+						duration = 7300
+					}
+				}
+				if = { limit = { grown_by_development = 15 }
+					add_country_modifier = {
+						name = dom_gel_expansion_goal
+						duration = 7300
+					}
+				}
+				if = { limit = { KLE = { exists = yes } marriage_with = KLE  num_of_royal_marriages = 2 }
+					add_casus_belli = {
+						target = KLE
+						type = cb_claim_throne
+						months = -1
+					}
+				}
+				else = {
+					add_permanent_claim = 2975
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_gel_kleefland = { #bit fantasy of a what if scenario relating to unions with Julich and Cleves and dynastic ties
+		icon = mission_build_up_to_force_limit
+		required_missions = { dom_gel_dynastic_ties }
+		position = 2
+		#completed_by = 
+		provinces_to_highlight = {
+			province_id = 2975
+		}
+		
+		trigger = {
+			owns_or_non_sovereign_subject_of = 2975 
+		}
+		effect = {
+			if = { limit = { BRG = { exists = yes } } 
+				add_casus_belli = {
+					target = BRG
+					type = cb_claim_throne
+					months = -1
+				}
+			}
+			else = {
+				add_permanent_claim = 2975
+			}
+		}
+		ai_weight = {
+			factor = 250	#Semi-Historical mission, but would be fun to see gelre try and claim Cleves
+		}
+	}
+	
+	dom_gel_julich_union = {  #bit fantasy of a what if scenario relating to unions with Julich and Cleves and dynastic ties
+		icon = mission_intervene_in_castile
+		required_missions = { dom_gel_kleefland }
+		position = 3
+		#completed_by = 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4768
+				province_id = 84
+			}
+		}
+		
+		trigger = {			
+			owns_or_non_sovereign_subject_of = 4768
+			owns_or_non_sovereign_subject_of = 84
+		}
+		effect = {
+			#add_country_modifier = { chance to inherit, chance of heir? } 
+			#if = { 
+			#	limit = { is_subject = yes } 
+			#	add_manpower = 5
+			#}
+			#else = {
+			#	add_prestige = 25
+			#	add_legitimacy = 25
+			#}
+			add_prestige_or_monarch_power = { amount = 25 }
+			add_country_modifier = {
+				name = dom_gel_grand_dynasty
+				duration = 7300
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_gel_imperial_ambitions = {  #Imperial Ambitions
+		icon = mission_empire
+		required_missions = { dom_gel_julich_union dom_gel_nijmegen }
+		position = 4
+		#completed_by = 
+		
+		trigger = {
+			OR = {
+				is_emperor = yes
+				government_rank = 3
+			}
+		}
+		effect = {
+			custom_tooltip = tooltip_wip
+			#add_country_modifier = { chance to inherit, chance of heir? } 
+			#if = { 
+			#	limit = { is_subject = yes } 
+			#	add_manpower = 5000
+			#}
+			#else = {
+			#	add_prestige = 25
+			#	add_legitimacy = 25
+			#}			
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_gelre_3_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = GEL
+			AND = {
+				tag = NED
+				was_tag = GEL
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_gel_secure_the_trade = {
+		icon = mission_high_income
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			OR = {
+				4383 = {
+					devastation = 75
+				}
+				#99 = {
+					#development = 9
+				#}
+				1269 = { #Channel
+					trade_share = {
+						country = ROOT
+						share = 10
+					}
+				}
+				home_trade_node = {
+					all_trade_node_member_country = {
+						OR = {
+							primary_culture = dutch
+							primary_culture = flemish
+							primary_culture = frisian
+						}
+					}
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 5
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			99 = {
+				#center_of_trade = 1
+				add_province_modifier = {
+					name = growing_trade_hub
+					duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_gel_nijmegen = {
+		icon = mission_nijmegen
+		required_missions = { dom_gel_secure_the_trade }
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 99
+		}
+		
+		trigger = {
+			99 = {
+				development = 20
+				#has buildings
+			}
+		}
+		effect = {
+			custom_tooltip = tooltip_wip
+			add_prestige_or_monarch_power = { amount = 25 }
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+#dom_ned_utrecht_branch1_group = {
+#	slot = 4
+#	generic = no
+#	ai = yes
+#	potential = {
+#		OR = {
+#			tag = UTR
+#			AND = {
+#				tag = NED
+#				was_tag = UTR
+#			}
+#		}
+
+#		NOT = { has_country_flag = mission_branch_bur_friend }
+#		NOT = { has_country_flag = mission_branch_bur_foe }
+#		NOT = { map_setup = map_setup_random }
+#	}
+#	has_country_shield = yes
+#	
+#	dom_utr_mission_unknown = {
+#		icon = mission_unknown_mission  
+#		required_missions = { dom_ned_the_burgundians } 
+#		position = 2
+#		trigger = {
+#			custom_trigger_tooltip = {
+#				tooltip = selectable_mission_trigger_tt
+#				always = no
+#			}
+#		}
+#		effect = {
+#			custom_tooltip = ned_branch_sub_tt
+#			custom_tooltip = cleric_burgundy_tt
+#			custom_tooltip = ned_branch_sub_2_tt
+#			custom_tooltip = excommune_burgundy_tt
+#		}
+#	}
+#}
+#
+#dom_ned_utrecht_branch2_group = {
+#	slot = 4
+#	generic = no
+#	ai = yes
+#	potential = {
+#		OR = {
+#			tag = UTR
+#			AND = {
+#				tag = NED
+#				was_tag = UTR
+#			}
+#		}
+
+#		has_country_flag = mission_branch_bur_friend
+#		NOT = { has_country_flag = mission_branch_bur_foe }
+#		NOT = { map_setup = map_setup_random }
+#	}
+#	has_country_shield = yes
+#	
+#	dom_utr_burgundian_cleric = {
+#		icon = mission_religious
+#		required_missions = { dom_ned_the_burgundians } 
+#		position = 2
+#		trigger = {
+#			if = {
+#				limit = {
+#					is_subject_of = BUR
+#				}
+#				BUR = {					
+#					has_opinion = {
+#						who = ROOT
+#						value = 100
+#					}
+#				}
+#			}
+#			else_if = {
+#				limit = {
+#					BUR = {
+#						exists = yes
+#					}
+#				}				
+#				OR = {
+#					AND = {
+#						alliance_with = BUR
+#						dynasty = BUR
+#					}
+#					is_subject_of = BUR
+#				}
+#			}
+#			else = {
+#				inquisitor = 3
+#			}
+#			devotion = 95
+#		}
+#		effect = {
+#			add_papal_influence = 10
+#			#add modifier
+#		}
+#	}
+#}
+#
+#dom_ned_utrecht_branch3_group = {
+#	slot = 4
+#	generic = no
+#	ai = yes
+#	potential = {
+#		OR = {
+#			tag = UTR
+#			AND = {
+#				tag = NED
+#				was_tag = UTR
+#			}
+#		}
+
+#		NOT = { has_country_flag = mission_branch_bur_friend }
+#		has_country_flag = mission_branch_bur_foe
+#		NOT = { map_setup = map_setup_random }
+#	}
+#	has_country_shield = yes
+#	
+#	dom_utr_burgundian_excommunication = {
+#		icon = mission_religious
+#		required_missions = { dom_ned_the_burgundians } 
+#		position = 2
+#		trigger = {
+#			if = {
+#				limit = {
+#					BUR = { exists = yes }
+#				}
+#				BUR = {
+#					is_excommunicated = yes 
+#				}
+#			}
+#			else = {
+#				estate_loyalty = {
+#					estate = estate_church
+#					loyalty = 60
+#				}
+#			}
+#		}
+#		effect = {
+#			add_devotion = 25
+#			add_papal_influence = 10
+#		}
+#	}
+#}
+
+dom_ned_utrecht_1_group = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = UTR
+			AND = {
+				tag = NED
+				was_tag = UTR
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_utr_religious_matters = {
+		icon = mission_religious
+		required_missions = { dom_ned_the_burgundians } 
+		position = 2
+		
+		provinces_to_highlight = {
+			is_capital = yes
+			owned_by = BUR
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					BUR = {
+						exists = yes
+					}
+				}
+				OR = {
+					if = {
+						limit = {
+							is_subject_of = BUR
+						}
+						BUR = {					
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+					}
+					else = {
+						OR = {
+							AND = {
+								alliance_with = BUR
+								dynasty = BUR
+							}
+							is_subject_of = BUR
+						}
+					}
+					BUR = {
+						is_excommunicated = yes 
+					}
+				}
+			}			
+			else = {
+				inquisitor = 3
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+			devotion = 95
+		}
+		effect = {
+			if = {
+				limit = {
+					BUR = {
+						exists = yes
+					}
+				}
+				custom_tooltip = bur_excommunicated_tt
+				if = {
+					limit = {						
+						BUR = {
+							is_excommunicated = yes 
+						}
+					}
+					custom_tooltip = BONUS_REWARD_YES
+				}
+				else = {
+					custom_tooltip = BONUS_REWARD_NO
+				}
+				tooltip = {
+					add_country_modifier = {
+						name = clerical_justice_bur_mod
+						duration = 7300
+					}
+					add_devotion = 25
+				}				
+				custom_tooltip = bur_friendship_tt
+				if = {
+					limit = {						
+						if = {
+							limit = {
+								is_subject_of = BUR
+							}
+							BUR = {					
+								has_opinion = {
+									who = ROOT
+									value = 100
+								}
+							}
+						}
+						else = {
+							OR = {
+								AND = {
+									alliance_with = BUR
+									dynasty = BUR
+								}
+								is_subject_of = BUR
+							}
+						}
+					}
+					custom_tooltip = BONUS_REWARD_YES
+				}
+				else = {
+					custom_tooltip = BONUS_REWARD_NO
+				}
+				tooltip = {
+					add_country_modifier = {
+						name = clerical_influence_bur_mod
+						duration = 7300
+					}
+					reverse_add_opinion = {
+						who = BUR
+						modifier = clerical_influence_bur
+					}
+				}
+				hidden_effect = {					
+					if = {
+						limit = {						
+							BUR = {
+								is_excommunicated = yes 
+							}
+						}
+						add_country_modifier = {
+							name = clerical_justice_bur_mod
+							duration = 7300
+						}
+						add_devotion = 25
+					}
+					if = {
+						limit = {						
+							if = {
+								limit = {
+									is_subject_of = BUR
+								}
+								BUR = {					
+									has_opinion = {
+										who = ROOT
+										value = 100
+									}
+								}
+							}
+							else = {
+								OR = {
+									AND = {
+										alliance_with = BUR
+										dynasty = BUR
+									}
+									is_subject_of = BUR
+								}
+							}
+						}
+						add_country_modifier = {
+							name = clerical_influence_bur_mod
+							duration = 7300
+						}
+						reverse_add_opinion = {
+							who = BUR
+							modifier = clerical_influence_bur
+						}
+					}
+				}
+			}
+			add_papal_influence = 10
+			#add modifier
+		}
+	}
+	
+	dom_utr_papal_control = { 
+		icon = mission_pol_negotiate_nunciature
+		required_missions = { }
+		position = 3
+		
+		trigger = {
+			is_papal_controller = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = dom_utr_legacy_of_pope
+				duration = -1
+			}
+			add_prestige_or_monarch_power = { amount = 25 }
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_utrecht_2_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = UTR
+			AND = {
+				tag = NED
+				was_tag = UTR
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	dom_utr_reclaim_north_east = { #
+		icon = mission_build_up_to_force_limit
+		required_missions = {  }
+		position = 1
+		#completed_by =
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 99
+				province_id = 100
+				province_id = 4382
+			}
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 2 #out of 21 (but at least 7 are not ruled by Burgundy at start)
+				OR = {
+					province_id = 99
+					province_id = 100
+					province_id = 4382
+				}
+				is_core = this
+			}
+		}
+		effect = {
+			add_papal_influence = 50
+			add_permanent_claim = 2973
+			add_permanent_claim = 56
+			add_permanent_claim = 86
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_utr_expand_into_munster = { #
+		icon = mission_noble_council
+		required_missions = { dom_utr_reclaim_north_east }
+		position = 2
+		#completed_by =
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 56
+				province_id = 2973
+				province_id = 86
+			}
+		}
+		
+		trigger = {
+			OR = {
+			#potentially add a diplomatic means
+				AND = {
+					owns_or_non_sovereign_subject_of = 56
+					owns_or_non_sovereign_subject_of = 2973
+					owns_or_non_sovereign_subject_of = 86
+				}
+				overlord_of = MUN 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dom_utr_bishop_of_munster
+				duration = -1
+			}
+			if = { limit = { LIE = { exists = yes } } 
+				add_casus_belli = {
+					target = LIE
+					type = cb_claim_throne
+					months = -1
+				}
+			}
+			else = {
+				add_permanent_claim = 93
+				add_permanent_claim = 2974
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_utr_conquer_liege = { #1.36 combine modifiers
+		icon = mission_cannons_firing
+		required_missions = { dom_utr_expand_into_munster }
+		position = 3
+		#completed_by =
+		#1464.1.1 = { hre = yes } # East Frisia raised to the status of Imperial Count in 1464 by Emperor Frederick III
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 93
+				province_id = 2974
+			}
+		}
+		
+		trigger = {
+			OR = {
+				AND ={
+				owns_or_non_sovereign_subject_of = 93
+				owns_or_non_sovereign_subject_of = 2974
+				}
+				overlord_of = LIE
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dom_utr_bishop_of_liege
+				duration = -1
+			}
+			#something fun in the future
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_utr_archbishopric = { 
+		icon = mission_alliances
+		required_missions = { dom_utr_conquer_liege dom_utr_papal_control dom_utr_domstad }
+		position = 3
+		#completed_by =
+		#1464.1.1 = { hre = yes } # East Frisia raised to the status of Imperial Count in 1464 by Emperor Frederick III
+				
+		trigger = {
+			if = {
+				limit = { is_part_of_hre = yes }
+				OR = {
+					is_elector = yes
+					treasury = 6000
+				}
+			}
+			else = {
+				total_development = 300
+			}
+		}
+		effect = {
+			add_government_reform = dutch_theocracy_reform
+			set_government_rank = 2
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_utrecht_3_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = UTR
+			AND = {
+				tag = NED
+				was_tag = UTR
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	dom_utr_ijssel_cities = {
+		icon = mission_high_income
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			province_id = 4381
+		}
+		
+		trigger = {
+			4381 = {
+				NOT = {
+				unrest = 0
+				}
+			}
+			4381 = {
+				base_production = 6
+			}
+			if = {
+				limit = {
+					HSA = { exists = yes }
+				}
+				HSA = {
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+				}
+			}
+			else = {
+				1269 = { #Channel
+					trade_share = {
+						country = ROOT
+						share = 10
+					}
+				}				
+			}
+		}
+		effect = {
+			4381 = {
+				#center_of_trade = 1
+				add_province_modifier = {
+					name = growing_trade_hub
+					duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_utr_domstad = {
+		icon = mission_domstad
+		required_missions = { dom_utr_ijssel_cities }
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 98
+		}
+		
+		trigger = {
+			98 = {
+				has_building = temple
+				development = 20
+			}
+		}
+		effect = {
+			98 = {
+				add_building = cathedral
+			}
+			if = { limit = { 98 = { has_cardinal = no } }
+				98 = {
+					add_cardinal = yes 				
+				}
+				else = {
+					random_owned_province = {
+						limit = { has_cardinal = no } 
+						add_cardinal = yes 
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}	
+
+dom_ned_holland_2_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = HOL
+			AND = {
+				tag = NED
+				was_tag = HOL
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	hol_factional_twisten = { #
+		icon = mission_hollandflag
+		required_missions = { }
+		position = 1
+		
+		#provinces_to_highlight = {
+		#	OR = {
+		#		province_id = 97
+		#		province_id = 4141
+		#		province_id = 13
+		#		province_id = 55
+		#	}
+		#}
+		
+		trigger = {	
+			OR = {
+				NOT = {
+					has_country_modifier = holland_civil_strife
+				}
+				NOT = {
+					is_subject_of = BUR
+				}
+			}
+			stability = 1
+		}
+		effect = {
+			remove_country_modifier = holland_civil_strife
+			if = {
+				limit = {
+					91 = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					}
+				}
+				91 = {
+				add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					1743 = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					}
+				}
+				1743 = {
+				add_permanent_claim = ROOT
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	hol_reunify_with_hainaut = { #
+		icon = mission_hainautflag
+		required_missions = { hol_factional_twisten }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 91
+				province_id = 1743
+			}
+		}
+		
+		trigger = {
+			if = {
+				limit = { 
+					is_subject = yes 
+					overlord = {
+						owns_or_non_sovereign_subject_of = 91						
+					}
+				}
+				OR = {
+					AND = {
+						owns_or_non_sovereign_subject_of = 91
+						owns_or_non_sovereign_subject_of = 1743
+					}
+					custom_trigger_tooltip = {
+						tooltip = overlord_50_favors_tt
+						overlord = {
+							owes_favors = { 
+								who = ROOT
+								value = 50
+							}
+						}
+					}
+				}
+			}
+			else = {
+				owns_or_non_sovereign_subject_of = 91
+				owns_or_non_sovereign_subject_of = 1743
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			if = {
+				limit = {
+					is_subject = yes
+					overlord = {
+						owns_or_non_sovereign_subject_of = 91						
+					}
+				}
+				OVERLORD = {
+					country_event_with_insight = {
+						id = dutch_domination.27
+						insight_tooltip = subject_demands_provinces_tt
+					}
+				}
+				#Fix later hainaut
+				#tooltip = {
+				#	91 = {
+				#		cede_province = ROOT
+				#	}
+				#}
+			}
+			else = {
+				add_legitimacy = 25
+			}
+			lower_bavaria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_bavaria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_bavaria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#event: demand hainaut
+			#country_event_with_insight = {
+			#	id = dutch_domination.21
+			#	insight_tooltip = hol_straubing_tt
+			#}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}	
+	
+	hol_straubing_heritage = { #
+		icon = duchy_of_bavaria
+		required_missions = { hol_reunify_with_hainaut }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				#province_id = 2956
+				area = lower_bavaria_area
+				area = upper_bavaria_area
+				area = east_bavaria_area
+				#province_id = 100
+				#province_id = 4382
+			}
+		}
+		
+		trigger = {	
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4
+				OR = {
+					area = lower_bavaria_area
+					area = upper_bavaria_area
+					area = east_bavaria_area
+				}
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = { amount = 10 }
+			add_country_modifier = {
+				name = hol_straubing_heritage_mod
+				duration = 7300
+			}
+			#event option to reclaim straubing?
+			country_event_with_insight = {
+				id = dutch_domination.21
+				insight_tooltip = hol_straubing_tt
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}	
+}
+
+dom_ned_holland_3_end_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = HOL
+			AND = {
+				tag = NED
+				was_tag = HOL
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	hol_king_of_germany = { #
+		icon = mission_empire
+		required_missions = { hol_straubing_heritage }
+		position = 4
+		
+		trigger = {	
+			is_emperor = yes
+		}
+		effect = {
+			#modify duration instead, will look later into code
+			add_country_modifier = {
+				name = hol_king_william_mod
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_brabant_2_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BRB
+			AND = {
+				tag = NED
+				was_tag = BRB
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	brb_hertog_jan = { #
+		icon = establish_oktoberfest
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			#OR = {
+				province_id = 1742
+			#}
+		}
+		
+		trigger = {
+			GEL = {
+				OR = {
+					exists = no
+				}
+			}
+			owns_core_province = 1742
+		}
+		effect = {
+			1742 = {
+				#change_province_name = "Limburg"
+				rename_capital = "Maastricht"
+			}
+			wallonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_brabant_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			brabant_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_rhineland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					85 = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					}
+				}
+				85 = {
+				add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					2975 = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					}
+				}
+				2975 = {
+				add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = hertog_jan_tt
+			every_owned_province = {
+				limit = {
+					trade_goods = grain
+				}
+				add_province_modifier = {
+					name = demand_for_beer
+					duration = 7300
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	brb_nederlotharingen = {
+		icon = mission_brabantflag
+		required_missions = { brb_hertog_jan }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = north_brabant_area
+				area = brabant_area
+				area = wallonia_area
+				area = lower_rhineland_area
+				province_id = 85
+				province_id = 2975
+			}
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 12
+				OR = {
+					area = north_brabant_area
+					area = brabant_area
+					area = wallonia_area
+					area = lower_rhineland_area
+					province_id = 85
+					province_id = 2975
+				}
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = { amount = 10 }
+			add_mil_power = 100
+			custom_tooltip = has_subject_elector_tt
+			if = {
+				limit = {
+					any_subject_country = {
+						is_elector = yes
+					}
+				}
+				custom_tooltip = BONUS_REWARD_YES
+			}
+			else = { custom_tooltip = BONUS_REWARD_NO }
+			custom_tooltip = request_the_electorate_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						any_subject_country = {
+							is_elector = yes
+						}
+					}
+					clr_country_flag = tried_to_get_elector_role
+					set_country_flag = tried_to_get_elector_role
+					emperor = {
+						country_event = {
+							id = hre_event.11
+						}
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	brb_united_lotharingia = {
+		icon = the_crown_of_lothair
+		required_missions = { brb_nederlotharingen }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = alsace_area
+						area = lower_rhineland_area
+						area = north_rhine_area
+						area = lorraine_area
+						area = wallonia_area
+						area = brabant_area
+						area = north_brabant_area
+						area = holland_area
+						area = frisia_area
+					}
+					NOT = {
+						ROOT = {
+							num_of_owned_provinces_with = {
+								value = 25 #out of 34
+								is_core = root
+								OR = {
+									area = alsace_area
+									area = lower_rhineland_area
+									area = north_rhine_area
+									area = lorraine_area
+									area = wallonia_area
+									area = brabant_area
+									area = north_brabant_area
+									area = holland_area
+									area = frisia_area
+								}
+							}
+						}
+					}
+				}
+				province_id = 1878
+				province_id = 189
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+
+		trigger = {
+			is_at_war = no
+			owns_core_province = 1878
+			owns_core_province = 189
+			num_of_owned_provinces_with = {
+				value = 25 #out of 34
+				is_core = root
+				OR = {
+					area = alsace_area
+					area = lower_rhineland_area
+					area = north_rhine_area
+					area = lorraine_area
+					area = wallonia_area
+					area = brabant_area
+					area = north_brabant_area
+					area = holland_area
+					area = frisia_area
+				}
+			}
+			is_free_or_tributary_trigger = yes
+
+			#just in case (but hidden for a normal run)
+			if = {
+				limit = {
+					NOT = { tag = LOT }
+					OR = {
+						exists = LOT
+						is_nomad = yes
+						normal_or_historical_nations = no
+						#was_never_end_game_tag_trigger = no
+						AND = {
+							ai = yes
+							is_playing_custom_nation = yes
+						}
+						#is_colonial_nation = yes
+						#AND = {
+						#	is_former_colonial_nation = yes
+						#	ai = yes
+						#}
+					}
+				}
+				NOT = { exists = LOT }
+				is_nomad = no
+				normal_or_historical_nations = yes
+				#was_never_end_game_tag_trigger = yes
+				OR = {
+					ai = no
+					is_playing_custom_nation = no
+				}
+				#is_colonial_nation = no
+				#OR = {
+				#	is_former_colonial_nation = no
+				#	AND = {
+				#		is_former_colonial_nation = yes
+				#		ai = no
+				#	}
+				#}
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = { amount = 25 }
+			country_event = { id = new_flavour_bur.4 }
+			custom_tooltip = dom_ned_lotharingian_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						BUR = { exists = yes is_subject_of = ROOT }
+					}
+				BUR = {
+				change_primary_culture = lotharingian
+				set_ruler_culture = lotharingian
+				if = {
+					limit = { has_heir = yes }
+					set_heir_culture = lotharingian
+				}
+				if = {
+					limit = { has_consort = yes }
+					set_consort_culture = lotharingian
+				}
+				every_subject_country = {
+					limit = {
+						primary_culture = burgundian
+					}
+					change_primary_culture = lotharingian
+				}
+				every_province = {
+					limit = {
+						culture = burgundian
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					change_culture = lotharingian
+				}
+				}
+				}
+				else = {
+					every_subject_country = {
+						limit = {
+							primary_culture = burgundian
+						}
+						change_primary_culture = lotharingian
+					}
+					every_province = {
+						limit = {
+							culture = burgundian
+							owner = {
+								OR = {
+									tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						change_culture = lotharingian
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_flanders_2_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FLA
+			AND = {
+				tag = NED
+				was_tag = FLA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	fla_gulden_sporen = { #House of Dampierre
+		icon = mercenary_companies #mission_thirty_years_war
+		required_missions = { }
+		position = 1
+				
+		trigger = {	
+			army_tradition = 60
+			OR = {
+				barracks = 1
+				has_mil_advisor_2 = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					181 = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					}
+				}
+				181 = {
+				add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					191 = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					}
+				}
+				191 = {
+				add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					193 = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					}
+				}
+				193 = {
+				add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					4764 = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					}
+				}
+				4764 = {
+				add_permanent_claim = ROOT
+				}
+			}
+			custom_tooltip = tooltip_wip
+			add_prestige_or_monarch_power = { amount = 10 }
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	fla_county_of_burgundy = { #House of Dampierre
+		icon = mission_unite_home_region
+		required_missions = { fla_gulden_sporen }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 181
+				province_id = 191
+				province_id = 193
+				province_id = 4764
+			}
+		}
+		
+		trigger = {	
+			owns_or_non_sovereign_subject_of = 181
+			owns_or_non_sovereign_subject_of = 191
+			owns_or_non_sovereign_subject_of = 193
+			owns_or_non_sovereign_subject_of = 4764		
+		}
+		effect = {
+			custom_tooltip = tooltip_wip
+			country_event = {
+				id = dutch_domination.28
+			}
+			add_prestige_or_monarch_power = { amount = 25 }
+			#fix later
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_flanders_branch_2_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FLA
+			AND = {
+				tag = NED
+				was_tag = FLA
+			}
+		}
+		NOT = { has_country_flag = mission_branch_flanders_france }
+		NOT = { has_country_flag = mission_branch_flanders_crusader }
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	dom_fla_mission_branch_unknown_1 = {
+		icon = mission_unknown_mission  
+		required_missions = { fla_county_of_burgundy fla_house_of_dampierre } 
+		position = 3
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = { 
+			custom_tooltip = fla_if_choose_france_tt
+			custom_tooltip = fla_if_choose_crusader_1_tt
+		}
+	}
+}
+
+dom_ned_flanders_branch_3_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FLA
+			AND = {
+				tag = NED
+				was_tag = FLA
+			}
+		}
+		NOT = { has_country_flag = mission_branch_flanders_france }
+		NOT = { has_country_flag = mission_branch_flanders_crusader }
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	dom_fla_mission_branch_unknown_2 = {
+		icon = mission_unknown_mission  
+		required_missions = { dom_fla_mission_branch_unknown_1 } 
+		position = 4
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = { 
+			custom_tooltip = fla_if_choose_france_tt
+			custom_tooltip = fla_if_choose_crusader_1_tt
+		}
+	}
+}
+
+dom_ned_flanders_france_2_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FLA
+			AND = {
+				tag = NED
+				was_tag = FLA
+			}
+		}
+		has_country_flag = mission_branch_flanders_france
+		NOT = { has_country_flag = mission_branch_flanders_crusader }
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	fla_march_to_the_seine = {
+		icon = the_hundred_years_war
+		required_missions = { fla_county_of_burgundy fla_house_of_dampierre }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = champagne_area
+				area = picardy_area
+				area = lorraine_area
+				province_id = 182
+			}			
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8
+				OR = {
+					area = champagne_area
+					area = picardy_area
+					area = lorraine_area
+					province_id = 182
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = tooltip_wip
+			add_prestige_or_monarch_power = { amount = 25 }
+			france_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_ned_flanders_france_3_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FLA
+			AND = {
+				tag = NED
+				was_tag = FLA
+			}
+		}
+		has_country_flag = mission_branch_flanders_france
+		NOT = { has_country_flag = mission_branch_flanders_crusader }
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	fla_kingdom_of_france = {
+		icon = king_of_france #centralize_france
+		required_missions = { fla_march_to_the_seine }
+		position = 4
+		
+		provinces_to_highlight = {
+			#OR = {
+				region = france_region
+			#}
+		}
+		
+		trigger = {
+			OR = {
+				france_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				custom_trigger_tooltip = {
+					tooltip = no100devfrance_tt
+					NOT = {
+						any_country = {
+							culture_group = french
+							total_development = 100
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = fra_destroyed_tt
+			if = {
+				limit = {
+					NOT = {
+						any_country = {
+							culture_group = french
+							total_development = 100
+						}
+					}
+				}
+				custom_tooltip = BONUS_REWARD_YES
+			}
+			else = { custom_tooltip = BONUS_REWARD_NO }
+			custom_tooltip = fra_conquered_tt
+			if = {
+				limit = {
+					france_region = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				custom_tooltip = BONUS_REWARD_YES
+			}
+			else = { custom_tooltip = BONUS_REWARD_NO }
+			tooltip = {
+				add_accepted_culture = dutch
+				add_accepted_culture = flemish
+				#add_accepted_culture = frisian
+				change_tag = FRA
+			}
+			custom_tooltip = france_formed_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						france_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+					add_accepted_culture = dutch
+					add_accepted_culture = flemish
+					#add_accepted_culture = frisian
+					change_tag = FRA
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}
+
+dom_fla_4_crusader_kings = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		OR = {
+			tag = FLA
+			AND = {
+				tag = NED
+				was_tag = FLA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = mission_branch_flanders_crusader
+		NOT = { has_country_flag = mission_branch_flanders_france }
+		has_dlc = "Domination"
+	}
+	has_country_shield = yes
+	
+	dom_fla_protector_catholicism = {
+		icon = shield_of_christendom
+		required_missions = { }
+		position = 4
+		trigger = { 
+			religion = catholic 
+			is_defender_of_faith = yes 
+			OR = { 
+				custom_trigger_tooltip = {
+					tooltip = fra_stronger_than_any_cath_tt
+					NOT = {
+						any_country = {
+							religion = catholic 
+							army_size = ROOT  
+						}
+					}
+				}
+				is_papal_controller = yes 
+			}
+		}
+		effect = { 
+			add_ruler_modifier = {
+				name = fra_catholic_head_of_state_modifier
+				duration = -1 
+			}
+			custom_tooltip = fra_religious_cb_on_every_muslim_gp_tt
+			every_known_country = {
+				limit = { 
+					religion_group = muslim 
+					OR = { 
+						total_development = 300
+						is_great_power = yes 
+					}
+				}
+				ROOT = {
+					add_casus_belli = {
+						target = PREV
+						type = cb_crusade_pheasants
+						months = 120
+					}
+				}
+			}
+		}
+	}
+	
+	dom_fla_shield_of_outremer = { 
+		icon = kingdom_of_heaven
+		required_missions = { dom_fla_protector_catholicism dom_fla_pilgrimage_jerusalem } 
+		position = 5
+		provinces_to_highlight = { 
+			OR = { 
+				area = palestine_area 
+				area = trans_jordan_area 
+				area = syria_area 
+				area = aleppo_area 
+			}
+			OR = { 
+				NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				NOT = { religion = catholic } 
+			}
+		}
+		trigger = { 
+			palestine_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+				religion = catholic 
+			}
+			trans_jordan_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+				religion = catholic 
+			}
+			aleppo_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+				religion = catholic 
+			}
+			syria_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+				religion = catholic 
+			}
+			if = { 
+				limit = { 
+					KOJ = { is_subject_of = ROOT } 
+				}
+				KOJ = { 
+					has_opinion = {
+						who = ROOT 
+						value = 190
+					}
+					grown_by_development = 200
+				}
+			}
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = fra_fervent_call_to_arms_modifier
+				duration = 7300
+			}
+			if = { 
+				limit = { 
+					has_dlc = "Golden Century" 
+					religion_group = christian 
+				}
+				custom_tooltip = fra_if_we_complete_mission_while_allied_or_subject_and_175_opinion_and_100_trust_access_to_holy_orders_tt
+			}
+			hidden_effect = { 
+				if = { 
+					limit = {
+						has_dlc = "Golden Century" 
+						OR = { 
+							has_dlc = "Emperor"
+							has_dlc = "Rights of Man"
+						}
+						OR = { 
+							any_ally = { 
+								culture_group = iberian 
+								has_opinion = {
+									who = ROOT 
+									value = 190
+								}
+								trust = { who = ROOT value = 100 }
+							}
+							any_subject_country = { 
+								culture_group = iberian 
+								has_opinion = {
+									who = ROOT 
+									value = 190
+								}
+								trust = { who = ROOT value = 100 }
+							}
+						}
+					}
+					set_country_flag = enable_holy_orders_flag
+				}
+			}
+			if = {
+				limit = { 
+					KOJ = { is_subject_of = ROOT } 
+				}
+				KOJ = { 
+					override_country_name = OUT
+					set_country_flag = KOJ_overriden_name_flag #For Elfryc :) 
+					set_country_flag = has_overriden_name_flag
+				}
+			}	
+		}
+    }
+}
+
+dom_fla_3_crusader_kings = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		OR = {
+			tag = FLA
+			AND = {
+				tag = NED
+				was_tag = FLA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = mission_branch_flanders_crusader
+		NOT = { has_country_flag = mission_branch_flanders_france }
+		has_dlc = "Domination"
+	}
+	has_country_shield = yes
+
+	dom_fla_pilgrimage_jerusalem = { 
+		icon = levantine_missions
+		required_missions = { } 
+		position = 4
+		provinces_to_highlight = { 
+			area = palestine_area 
+			NOT = { 
+				OR = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+					religion = catholic 
+				}
+			}
+		}
+		trigger = { 
+			palestine_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+				religion = catholic 
+			}
+			if = { 
+				limit = { has_dlc = "Leviathan" } 
+				379 = { 
+					has_great_project = { 
+						type = holy_city_jerusalem
+						tier = 3 
+					}
+				}
+			}
+			else = { 
+				379 = { development = 25 } 
+			}
+			379 = { has_tax_building_trigger = yes } 
+		}
+		effect = { 
+			country_event = { id = flavor_fra.205 }
+			custom_tooltip = fra_event_insight_205_tt
+			
+			if = {
+				limit = { 
+					is_defender_of_faith_of_tier = 5 
+				}
+				add_country_modifier = {
+					name = fra_sword_of_christianity_modifier
+					duration = -1 
+				}
+			}
+			else_if = {
+				limit = { 
+					is_defender_of_faith_of_tier = 4 
+				}
+				add_country_modifier = {
+					name = fra_sword_of_christianity_modifier2
+					duration = -1 
+				}
+			}
+			else_if = {
+				limit = { 
+					is_defender_of_faith_of_tier = 3 
+				}
+				add_country_modifier = {
+					name = fra_sword_of_christianity_modifier3
+					duration = 9125 
+				}
+			}
+			else_if = {
+				limit = { 
+					is_defender_of_faith_of_tier = 2 
+				}
+				add_country_modifier = {
+					name = fra_sword_of_christianity_modifier4
+					duration = 9125 
+				}
+			}
+			else_if = {
+				limit = { 
+					is_defender_of_faith_of_tier = 1
+				}
+				add_country_modifier = {
+					name = fra_sword_of_christianity_modifier5
+					duration = 9125 
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dlc = "Emperor" 
+					religion = catholic 
+				}
+				custom_tooltip = fra_scaling_dotf_reward_tt
+			}	
+		}
+	}
+}
+
+dom_ned_luxembourg_2_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LUX
+			AND = {
+				tag = BEL
+				was_tag = LUX
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_lux_resolve_succession = {
+		icon = mission_noble_council
+		required_missions = { }
+		position = 1
+				
+		trigger = {	
+			OR = {
+				NOT = {
+					has_country_modifier = dom_lux_multiple_suc_claims
+				}
+				NOT = {
+					is_subject_of = BUR
+				}
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+			if = {
+				limit = {
+					exists = BOH
+					valid_for_personal_unions_trigger = yes
+					BOH = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = -1
+					target = BOH
+				}
+			}
+			else = {
+				bohemia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				moravia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				erzgebirge_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_lux_bohemian_kingdom = {
+		icon = mission_unite_home_region
+		required_missions = { dom_lux_resolve_succession }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = bohemia_area
+				area = moravia_area
+				area = erzgebirge_area
+			}
+		}
+		
+		trigger = {	
+			OR = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 7
+				OR = {
+					area = bohemia_area
+					area = moravia_area
+					area = erzgebirge_area
+				}
+			}
+			BOH = {
+				is_subject_of = ROOT
+			}
+			}
+		}
+		effect = {
+			custom_tooltip = tooltip_wip #fix later
+			add_prestige_or_monarch_power = { amount = 25 }
+			if = {
+				limit = {
+					exists = HUN
+					valid_for_personal_unions_trigger = yes
+					HUN = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 600
+					target = HUN
+				}
+			}
+			else = {
+				transdanubia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				slovakia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				alfold_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				transylvania_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				southern_transylvania_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				slavonia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				croatia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				east_adriatic_coast_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	dom_lux_hungarian_claims = {
+		icon = king_of_hungary
+		required_missions = { dom_lux_bohemian_kingdom }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = transdanubia_area
+				area = slovakia_area
+				area = alfold_area
+				area = transylvania_area
+				area = southern_transylvania_area
+				area = slavonia_area
+				area = croatia_area
+				area = east_adriatic_coast_area
+			}			
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 15
+					OR = {
+						area = transdanubia_area
+						area = slovakia_area
+						area = alfold_area
+						area = transylvania_area
+						area = southern_transylvania_area
+						area = slavonia_area
+						area = croatia_area
+						area = east_adriatic_coast_area
+					}
+				}
+				HUN = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = tooltip_wip
+			add_prestige_or_monarch_power = { amount = 25 }
+		}
+	}
+}
+
+dom_ned_luxembourg_3_end_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LUX
+			AND = {
+				# tag = BEL
+				was_tag = LUX
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_lux_holy_roman_empire = {
+		icon = centralized_empire #centralize_france
+		required_missions = { dom_lux_hungarian_claims }
+		position = 4
+				
+		trigger = {
+			is_emperor = yes			
+		}
+		effect = {
+			custom_tooltip = tooltip_wip
+			add_prestige_or_monarch_power = { amount = 25 }
+			#fix later
+		}
+	}
+}
+
+dom_ned_zeeland_1_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			# tag = ZEE
+			AND = {
+				tag = NED
+				# was_tag = ZEE
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_zee_port_of_vlissingen = {
+		icon = mission_noble_council
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			province_id = 96
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				has_building = dock
+			}
+		}
+				
+		trigger = {	
+			if = {
+				limit = { 
+				96 = { 
+					NOT = {
+					owned_by = ROOT
+					}
+				}
+				}
+				96 = {
+					owned_by = ROOT
+				}
+			}
+			96 = {
+				has_building = dock
+			}
+			96 = {
+				base_production = 6
+			}
+		}
+		effect = {
+			custom_tooltip = tooltip_wip #fix later
+			add_dip_power = 100
+			change_government_reform_progress = 50
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_zee_colonial_ambitions = {
+		icon = mission_settlers_north_america
+		required_missions = { dom_zee_port_of_vlissingen }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = suriname_area
+				area = guyana_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {	
+			if = {
+				limit = {
+					is_random_new_world = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = ned_discovered_new_world
+					new_world = {
+						has_discovered = ROOT
+					}
+				}
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					OR = {
+						area = suriname_area
+						area = guyana_area
+					}
+					is_city = yes
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = tooltip_wip
+			
+		}
+	}
+
+	dom_zee_nieuw_zeeland = {
+		icon = mission_rb_conquer_wales #mission_oceania_dev_capital
+		required_missions = { dom_zee_colonial_ambitions }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = te_waipounamu_area
+				area = te_ika_a_maui_waho_area
+				area = te_ika_a_maui_hauauru_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			te_waipounamu_area = { 
+				type = all
+				has_discovered = ROOT
+			}
+			te_ika_a_maui_waho_area = { 
+				type = all
+				has_discovered = ROOT
+			}
+			te_ika_a_maui_hauauru_area = { 
+				type = all
+				has_discovered = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = tooltip_wip
+			add_prestige_or_monarch_power = { amount = 25 }
+		}
+	}
+}
+
+dom_ned_zeeland_2_end_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = ZEE
+			AND = {
+				tag = NED
+				was_tag = ZEE
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_zee_zeelandic_slavetrade = {
+		icon = mission_unknown_mission
+		required_missions = { }
+		position = 3
+		
+		provinces_to_highlight = {
+			trade_goods = slaves
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			OR = {
+				trading_part = {
+					trade_goods = slaves
+					value = 0.01
+				}
+				has_country_modifier = the_abolish_slavery_act
+			}
+		}
+		effect = {
+			custom_tooltip = banned_slaves_tt
+			if = {
+				limit = {		
+					has_country_modifier = the_abolish_slavery_act
+				}
+				custom_tooltip = BONUS_REWARD_YES
+			}
+			else = {
+				custom_tooltip = BONUS_REWARD_NO
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = zeeland_bans_slaves
+					duration = 3650
+				}
+				add_prestige = 10				
+			}
+			#tooltip = {
+			#add_country_modifier = {
+			# name = Middelburgsche Commercie Compagnie
+			# duration = -1
+			#}
+			#}
+			custom_tooltip = fra_alternatively_tt			
+			if = {
+				limit = {
+					trading_part = {
+						trade_goods = slaves
+						value = 0.01
+					}
+				}
+				custom_tooltip = BONUS_REWARD_YES
+			}
+			else = {
+				custom_tooltip = BONUS_REWARD_NO
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = middelburgsche_Commercie_Compagnie
+					duration = 3650
+				}
+				add_treasury = 100
+			}
+			#tooltip = {
+			#}
+			if = {
+				limit = {
+					trading_part = {
+						trade_goods = slaves
+						value = 0.01
+					}					
+				}
+				add_country_modifier = {
+					name = middelburgsche_Commercie_Compagnie
+					duration = 3650
+				}
+				add_treasury = 100
+			}
+			if = {
+				limit = {
+					has_country_modifier = the_abolish_slavery_act
+				}
+				add_prestige = 10
+				add_country_modifier = {
+					name = zeeland_bans_slaves
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+
+dom_ned_overijssel_1_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = IJS
+			AND = {
+				tag = NED
+				was_tag = IJS
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	dom_ijs_ijssel_cities = {
+		icon = mission_high_income
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			province_id = 4381
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = { base_production = 6 }
+			}
+		}
+		
+		trigger = {
+			4381 = {
+				base_production = 6
+			}
+			if = {
+				limit = {
+					HSA = { exists = yes }
+				}
+				HSA = {
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+				}
+			}
+			else = {
+				1269 = { #Channel
+					trade_share = {
+						country = ROOT
+						share = 5
+					}
+				}				
+			}
+		}
+		effect = {
+			4381 = {
+				center_of_trade = 1
+			}
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}	
+	
+	dom_ijs_imperial_recognition = { #
+		icon = mission_early_modern_university
+		required_missions = { dom_ijs_ijssel_cities }
+		position = 2
+		
+		trigger = {			
+			has_reform = free_city
+		}
+		effect = {
+			4381 = {
+				add_building = trade_depot
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1				
+				rename_capital = "Zwolle"
+			}
+			#country_event_with_insight = {
+			#	id = dutch_domination.13
+			#	insight_tooltip = dom_ijs_imperial_city
+			#}			
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+	
+	dom_ijs_twente_pride = { #
+		icon = mission_early_modern_university
+		required_missions = { }
+		position = 3
+		
+		trigger = {	
+			OR = {
+				accepted_culture = hannoverian
+				accepted_culture = lower_saxon
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dom_twente_pride
+				duration = -1
+			}
+			#country_event_with_insight = {
+			#	id = dutch_domination.13
+			#	insight_tooltip = dom_ijs_imperial_city
+			#}			
+		}
+		ai_weight = {
+			factor = 500	#Historical mission
+		}
+	}
+}

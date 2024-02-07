@@ -801,7 +801,7 @@ golden_age_of_piracy = {
 			privateer_power = { country = ROOT share = 1 }
 		}
 	}
-	privateer_efficiency = 0.2
+	privateer_efficiency = 0.05
 }
 
 ######################################

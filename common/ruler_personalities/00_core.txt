@@ -3489,7 +3489,7 @@ legendary_pirate_personality = {
 			factor = -2
 		}
 	}
-	privateer_efficiency = 0.25
+	privateer_efficiency = 0.05
 	leader_naval_shock = 2
 	navy_tradition_decay = -0.01
 	
