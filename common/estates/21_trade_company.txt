@@ -1,6 +1,6 @@
 estate_trade_company =
 {
-	icon = 21
+	icon = 18
 
 	# If true, country will get estate
 	trigger = {	

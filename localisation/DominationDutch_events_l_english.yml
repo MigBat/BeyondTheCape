@@ -3,10 +3,10 @@
  ### ### ###
  #Events
  
- dutch_domination.20.t: "Dutch Domination"
- dutch_domination.20.d: "Welcome to the §GDutch Domination§! Mod \n\n This is still a new mod and as I see it, still in §RBeta§!, if you find any bugs you can post them in the mod page description. If you have any other feedback feel free to post it there as well. \n Welcome to the newest build. This build includes missions for every dutch minor and a ton of new colonial missions. They are bound to be a bit buggy at times, so feel free to report them."
- dutch_domination.20.a: "Use Modded Missions"
- dutch_domination.20.b: "Use Vanilla Missions"
+#  dutch_domination.20.t: "Dutch Domination"
+#  dutch_domination.20.d: "Welcome to the §GDutch Domination§! Mod \n\n This is still a new mod and as I see it, still in §RBeta§!, if you find any bugs you can post them in the mod page description. If you have any other feedback feel free to post it there as well. \n Welcome to the newest build. This build includes missions for every dutch minor and a ton of new colonial missions. They are bound to be a bit buggy at times, so feel free to report them."
+#  dutch_domination.20.a: "Use Modded Missions"
+#  dutch_domination.20.b: "Use Vanilla Missions"
  
  dutch_domination.EVTNAME1: "The United Netherlands?"
  dutch_domination.EVTOPTA1: "Unity all the lowlands"
@@ -37,7 +37,7 @@
  dutch_domination.EVTOPTA5: "Fascinating."
  dutch_domination.EVTOPTB5: "Persecute"
  dutch_domination.EVTDESC3: "With our state coming into being further we must settle the debate around religion. Will we tolerate defiation from our Faith or should we persecute wrong-thinkers."
- dutch_domination.EVTDESC5: "It's come to our attention that a group of Preachers from Zürich have reached our nation and are preaching about rebaptizing oneselves. How shall we handle them?"
+ dutch_domination.EVTDESC5: "It has come to our attention that a group of Preachers from Zürich have reached our nation and are preaching about rebaptizing oneselves. How shall we handle them?"
  
  dutch_domination.EVTNAME7: "Willem Barentsz and Het Behouden Huys"
  dutch_domination.EVTDESC7: "The Northwestern and Northeastern Passages to Asia were a theoretical pathway, which both the Dutch and other nations believed existed and could help them bypass lands held by Portugal and Spain. After a few earlier attempts to find the Northeastern Passage to the Asia, Willem Barentsz went past the Norwegian Sea, past Spitsbergen and made it to the Murman Sea, reaching Nova Zembla. The Ice was too thick however and he was forced to shelter for Winter. Sadly he didn't survive his return home."
@@ -86,8 +86,8 @@
  dutch_domination.12.b: "Refuse their outragious demands."
  
  dutch_domination.13.t: "The Burgundians"
- dutch_domination.13.desc: "The last decades have made the dukes of Burgundy a powerful actor in our region. With states like Holland, Flanders and Brabant falling under it's control and it's ambitions seemingly unlimited, we must now act to make sure our nation survives the ambitions of Burgundy."
- dutch_domination.13.a: "Find common ground with Burgundy and seek it's protection."
+ dutch_domination.13.desc: "The last decades have made the dukes of Burgundy a powerful actor in our region. With states like Holland, Flanders and Brabant falling under its control and its ambitions seemingly unlimited, we must now act to make sure our nation survives the ambitions of Burgundy."
+ dutch_domination.13.a: "Find common ground with Burgundy and seek its protection."
  dutch_domination.13.b: "Challenge the Burgundians."
  dutch_domination.13.d: "Liberate ourselves from this Oppressor."
  dutch_domination.13.c: "Cooperate with Burgundy."
@@ -119,7 +119,7 @@
  dutch_domination.18.b: "We shall defend our influence over Utrecht"
  
  dutch_domination.19.t: "Treaty of Breda"
- dutch_domination.19.d: "The Treaty of Breda was signed on 31 July of 1667 to conclude the Peace between the English and it's opponents in the Second Anglo-Dutch War. It resulted in the Dutch effectively trading New Netherlands including New Amsterdam to the English and they would hold on to Surinam."
+ dutch_domination.19.d: "The Treaty of Breda was signed on 31 July of 1667 to conclude the Peace between the English and its opponents in the Second Anglo-Dutch War. It resulted in the Dutch effectively trading New Netherlands including New Amsterdam to the English and they would hold on to Surinam."
  dutch_domination.19.a: "We must prioritize New Netherlands over Surinam."
  dutch_domination.19.b: "New Netherlands is a lost cause, Surinam is too lucrative."
  dutch_domination.19.c: "We shall claim both."

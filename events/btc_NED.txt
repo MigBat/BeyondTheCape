@@ -908,7 +908,7 @@ country_event = {
 
 	trigger = {
 		tag = NED
-		mission_completed = emp_ned_dutch_formosa
+		mission_completed = dom_ned_dutch_formosa
 		4182 = {
 			NOT = { 
 				owned_by = ROOT

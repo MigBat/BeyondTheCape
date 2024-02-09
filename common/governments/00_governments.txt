@@ -121,6 +121,8 @@ monarchy = {
 				pronoiar_monarchy_reform #custom nation
 				#Egypt 
 				egyptian_government_reform
+				#
+				erfstadhouder_monarchy_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -625,6 +627,10 @@ republic = {
 				japanese_divine_empire
 				#Mamluks
 				egyptian_government_reform
+				#
+				hansa_free_city_reform
+				peasants_chiefdom
+				bataafs_republiek
 			}
 		}
 		republican_virtues = {
@@ -1189,6 +1195,8 @@ theocracy = {
 				sisterhood_of_jeanne_darc_reform
 				#Egypt
 				egyptian_government_reform
+				#
+				new_jerusalem_reform
 			}
 		}
 		internal_vs_external_mission = {

@@ -1,0 +1,405 @@
+namespace = dutch_revolt_disasters
+#normal_or_historical_nations = yes
+#https://imgur.com/a/pmEhA
+#mission_selector
+
+country_event = { #dutch wars of religion
+	id = dutch_revolt_disasters.1
+	title = "dutch_revolt_disasters.1.t"
+	desc = "dutch_revolt_disasters.1.desc"
+	#desc = {
+	#	trigger = {
+	#		religion = catholic
+	#	}
+	#	desc = french_wars_of_religion.1.desc.catholic
+	#}
+	#desc = {
+	#	trigger = {
+	#		NOT = { religion = catholic }
+	#	}
+	#	desc = french_wars_of_religion.1.desc.not_catholic
+	#}
+	picture = BATTLE_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "dutch_revolt_disasters.1.a"
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = "dutch_revolt_disasters.1.b"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Lutheran Rebels rise up
+	id = dutch_revolt_disasters.2
+	title = "dutch_revolt_disasters.2.t"
+	desc = "dutch_revolt_disasters.2.desc"
+	#desc = {
+	#	trigger = {
+	#		religion = catholic
+	#	}
+	#	desc = french_wars_of_religion.1.desc.catholic
+	#}
+	#desc = {
+	#	trigger = {
+	#		NOT = { religion = catholic }
+	#	}
+	#	desc = french_wars_of_religion.1.desc.not_catholic
+	#}
+	picture = BATTLE_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			region = low_countries_region
+			religion = protestant
+		}
+		NOT = {
+			religion = protestant
+		}
+	}
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "dutch_revolt_disasters.2.a"
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			limit = {
+				region = low_countries_region
+				religion = protestant
+			}
+			spawn_rebels = {
+				size = 3
+				type = religious_rebels
+				separatists_target = NED
+				religion = protestant
+			}
+		}
+	}
+	option = {
+		name = "dutch_revolt_disasters.2.b"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Anabaptist Rebels rise up
+	id = dutch_revolt_disasters.3
+	title = "dutch_revolt_disasters.3.t"
+	desc = "dutch_revolt_disasters.3.desc"
+	#desc = {
+	#	trigger = {
+	#		religion = catholic
+	#	}
+	#	desc = french_wars_of_religion.1.desc.catholic
+	#}
+	#desc = {
+	#	trigger = {
+	#		NOT = { religion = catholic }
+	#	}
+	#	desc = french_wars_of_religion.1.desc.not_catholic
+	#}
+	picture = BATTLE_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			region = low_countries_region
+			religion = anabaptist
+		}
+		NOT = {
+			religion = anabaptist
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "dutch_revolt_disasters.3.a"
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			limit = {
+				region = low_countries_region
+				religion = anabaptist
+			}
+			spawn_rebels = {
+				size = 3
+				type = religious_rebels
+				separatists_target = NED
+				religion = anabaptist
+			}
+		}
+	}
+	option = {
+		name = "dutch_revolt_disasters.3.b"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Calvinist Rebels rise up
+	id = dutch_revolt_disasters.4
+	title = "dutch_revolt_disasters.4.t"
+	desc = "dutch_revolt_disasters.4.desc"
+	#desc = {
+	#	trigger = {
+	#		religion = catholic
+	#	}
+	#	desc = french_wars_of_religion.1.desc.catholic
+	#}
+	#desc = {
+	#	trigger = {
+	#		NOT = { religion = catholic }
+	#	}
+	#	desc = french_wars_of_religion.1.desc.not_catholic
+	#}
+	picture = BATTLE_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			region = low_countries_region
+			religion = reformed
+		}
+		NOT = {
+			religion = reformed
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "dutch_revolt_disasters.4.a"
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			limit = {
+				region = low_countries_region
+				religion = reformed
+			}
+			spawn_rebels = {
+				size = 3
+				type = religious_rebels
+				separatists_target = NED
+				religion = reformed
+			}
+		}
+	}
+	option = {
+		name = "dutch_revolt_disasters.4.b"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Anglican? Rebels rise up
+	id = dutch_revolt_disasters.5
+	title = "dutch_revolt_disasters.5.t"
+	desc = "dutch_revolt_disasters.5.desc"
+	#desc = {
+	#	trigger = {
+	#		religion = catholic
+	#	}
+	#	desc = french_wars_of_religion.1.desc.catholic
+	#}
+	#desc = {
+	#	trigger = {
+	#		NOT = { religion = catholic }
+	#	}
+	#	desc = french_wars_of_religion.1.desc.not_catholic
+	#}
+	picture = BATTLE_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			region = low_countries_region
+			religion = anglican
+		}
+		NOT = {
+			religion = anglican
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = "dutch_revolt_disasters.5.a"
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			limit = {
+				region = low_countries_region
+				religion = anglican
+			}
+			spawn_rebels = {
+				size = 3
+				type = religious_rebels
+				separatists_target = NED
+				religion = anglican
+			}
+		}
+	}
+	option = {
+		name = "dutch_revolt_disasters.5.b"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Sack of random province
+	id = dutch_revolt_disasters.6
+	title = "dutch_revolt_disasters.6.t"
+	desc = "dutch_revolt_disasters.6.desc"
+	#desc = {
+	#	trigger = {
+	#		religion = catholic
+	#	}
+	#	desc = french_wars_of_religion.1.desc.catholic
+	#}
+	#desc = {
+	#	trigger = {
+	#		NOT = { religion = catholic }
+	#	}
+	#	desc = french_wars_of_religion.1.desc.not_catholic
+	#}
+	picture = BATTLE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = {
+				land_maintenance = 0.95
+			}
+			is_bankrupt = yes 
+		}
+		any_owned_province = {
+			region = low_countries_region
+			OR = {
+			infantry_in_province = ROOT
+			cavalry_in_province = ROOT
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				region = low_countries_region
+				OR = {
+				infantry_in_province = ROOT
+				cavalry_in_province = ROOT
+				}
+			}
+			kill_units = {
+				who = ROOT
+			}
+			spawn_rebels = { #unpaid armies start pillaging
+				size = 3
+				type = noble_rebels 
+				unrest = 5
+				win = yes
+			}
+			add_devastation = 5
+		}
+	}
+	
+	option = {
+		name = "dutch_revolt_disasters.6.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Sack of antwerp
+	id = dutch_revolt_disasters.7
+	title = "dutch_revolt_disasters.7.t"
+	desc = "dutch_revolt_disasters.7.desc"
+	#desc = {
+	#	trigger = {
+	#		religion = catholic
+	#	}
+	#	desc = french_wars_of_religion.1.desc.catholic
+	#}
+	#desc = {
+	#	trigger = {
+	#		NOT = { religion = catholic }
+	#	}
+	#	desc = french_wars_of_religion.1.desc.not_catholic
+	#}
+	picture = BATTLE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = {
+				land_maintenance = 0.95
+			}
+			is_bankrupt = yes 
+		}
+		owns = 1744 #antwerpen
+		any_owned_province = {
+			region = low_countries_region
+			OR = {
+			infantry_in_province = ROOT
+			cavalry_in_province = ROOT
+			}
+		}
+		NOT = {
+			has_rebel_faction = noble_rebels #avoid double armies
+		}
+	}
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				1744 = { province_has_center_of_trade_of_level = 3 }
+			}
+			1744 = {
+				add_center_of_trade_level = -1
+			}
+		}
+		1744 = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+			add_devastation = 5
+			spawn_rebels = { #unpaid armies start pillaging
+				size = 3
+				type = noble_rebels 
+				unrest = 5
+				win = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "dutch_revolt_disasters.7.a"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #end dutch wars of religion
+	id = dutch_revolt_disasters.100
+	title = "dutch_revolt_disasters.100.t"
+	desc = "dutch_revolt_disasters.100.desc"
+	#desc = {
+	#	trigger = {
+	#		religion = catholic
+	#	}
+	#	desc = french_wars_of_religion.1.desc.catholic
+	#}
+	#desc = {
+	#	trigger = {
+	#		NOT = { religion = catholic }
+	#	}
+	#	desc = french_wars_of_religion.1.desc.not_catholic
+	#}
+	picture = DIPLOMACY_eventPicture
+	
+	#hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "dutch_revolt_disasters.100.a"
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = "dutch_revolt_disasters.100.b"
+		ai_chance = { factor = 1 }
+	}
+}

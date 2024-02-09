@@ -13,7 +13,7 @@
  hol_land_of_migrants:0 "Het Land van Migranten"
  hol_land_of_migrants_desc:0 "Holland has throughout history been a safehaven for many groups of people. These migrants brought with them many inventions and knowledge. They helped Holland become the most important Region of the Netherlands and would propel the Netherlands to become a World Power."
  hol_swampy_land:0 "Marshes of Holland"
- hol_swampy_land_desc:0 "Much of Holland was covered in marshes and large amounts of peatbog. The land was hostile to anyone not familiar with it's surrounding allowing the Count of Holland to easily ambush many of his enemies."
+ hol_swampy_land_desc:0 "Much of Holland was covered in marshes and large amounts of peatbog. The land was hostile to anyone not familiar with its surrounding allowing the Count of Holland to easily ambush many of his enemies."
  hol_monding_rivieren:0 "Rivierendelta"
  hol_monding_rivieren_desc:0 "Holland was located at the mouth of the River Delta of the Rhine, Scheldt and Meuse. These rivers would at times change course and were excellent for Trading as they allowed the cities further up the river to be connected to the North Sea. By exploiting this strategic location we can become very powerful."
  hol_dutch_courage:0 "Dutch Courage"
@@ -27,7 +27,7 @@
  voc_east_india_monopolies:0 "East India Monopoly"
  voc_east_india_monopolies_desc:0 "This Company was founded by unifying all the seperate trades in the East Indies and granting this company a monopoly."
  voc_right_to_wage_war:0 "Right to wage War"
- voc_right_to_wage_war_desc:0 "This company wasn't limited to just trading with natives or other colonies, it was allowed to use force if necessary to further it's trade."
+ voc_right_to_wage_war_desc:0 "This company wasn't limited to just trading with natives or other colonies, it was allowed to use force if necessary to further its trade."
  
  #Groningen
  GRN_ideas: "Groninger Ideas"
@@ -40,7 +40,7 @@
  grn_melting_pot: "Friso-Saxon Melting Pot"
  grn_melting_pot_desc: "With both Frisians and Saxons living in our region, it has become a true melting pot, taking elements of both and forming them into a new unique identity."
  grn_adelaar: "Groningse Rijksadelaar"
- grn_adelaar_desc: "The Imperial Eagle was coopted by the City to attempt to gain some recognition of it's unique independence."
+ grn_adelaar_desc: "The Imperial Eagle was coopted by the City to attempt to gain some recognition of its unique independence."
  grn_religious_stronghold: "Religious Stronghold"
  grn_religious_stronghold_desc: "When the Protestant Revolution spread to the country, we remained steadfast in our beliefs."
  grn_bommen_berend: "Bommen Berend"

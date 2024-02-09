@@ -620,11 +620,11 @@ preview_mission_branch_2 = {
 }
 preview_mission_branch_3 = {
 	#NED_REL
-	# if = {
-	# 	limit = { can_preview_mission_of_key_and_batch = { key = NED_REL batch = $batch$ } }
-	# 	set_country_flag = ned_chose_doopgsgezind
-	# 	custom_tooltip = ned_preview_anabaptist_missions
-	# }
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = NED_REL batch = $batch$ } }
+		set_country_flag = ned_chose_doopgsgezind
+		custom_tooltip = ned_preview_anabaptist_missions
+	}
 	#NED_COL
 	if = {
 		limit = { can_preview_mission_of_key_and_batch = { key = NED_COL batch = $batch$ } }

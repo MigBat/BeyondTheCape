@@ -39,6 +39,7 @@
  PROV4977:0 "Bojador Shoals"
  PROV4978:0 "Abyan"
  PROV4979:0 "Saga"
+ PROV4980:0 "Mumbai"
 # ADJECTIVES #
  PROV_ADJ4942:0 "Setubaler"
  PROV_ADJ4943:0 "Beixa Baixan" 
@@ -76,6 +77,7 @@
  PROV_ADJ4975:0 "Hong Konger"
  PROV_ADJ4978:0 "Abyan"
  PROV_ADJ4979:0 "Sagan"
+ PROV_ADJ4980:0 "Mumbaian"
 # AREAS #
  norte_area:0 "Norte"
  estremadura_area:0 "Estremadura"

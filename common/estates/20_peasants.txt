@@ -1,6 +1,6 @@
 estate_peasants =
 {
-	icon = 20
+	icon = 17
 
 	# If true, country will get estate
 	trigger = {	

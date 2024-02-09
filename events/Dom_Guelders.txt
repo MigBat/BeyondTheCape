@@ -1,0 +1,231 @@
+namespace = dom_guelders
+#normal_or_historical_nations = yes
+#https://imgur.com/a/pmEhA
+#mission_selector
+
+country_event = {
+	id = dom_guelders.1
+	title = "dom_guelders.EVTNAME1"
+	desc = "dom_guelders.EVTDESC1"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			region = low_countries_region
+		}
+	}
+	
+	immediate = {
+		#set_global_flag = dutch_revolt
+		#set_country_flag = dutch_revolt_target # used in incident
+	}
+	
+	option = {
+		name = "dom_guelders.1.a"
+		add_stability = -2
+		
+		#define_general = {
+		#	shock = 3
+		#	fire = 2
+		#	manuever = 4
+		#	siege = 4
+		#	name = "Maarten van Rossum"
+		#}
+		
+		99 = {
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 3
+				win = yes
+				leader = "Maarten van Rossum"
+				separatists_target = GEL
+			}
+			#set_province_flag = ned_rebels_start_flag
+		}
+		random_owned_province = {
+			limit = {
+				#NOT = { has_province_flag = ned_rebels_start_flag }
+				OR = {
+					province_id = 100
+					province_id = 1742
+					province_id = 1931
+					province_id = 4381
+					province_id = 4382
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				friend = GEL
+			}
+			#set_province_flag = ned_rebels_start_flag
+			set_province_flag = dutch_revolt
+		}
+		custom_tooltip = dutch_revolt_tt
+		#hidden_effect = {
+		#	low_countries_region = {
+		#		limit = {
+		#			owned_by = ROOT
+		#			OR = {
+		#				culture = dutch
+		#				culture = frisian
+		#				culture = flemish
+		#				NOT = { religion = ROOT }
+		#			}
+		#		}
+		#		add_province_modifier = {
+		#			name = "dutch_revolt_modifier"
+		#			duration = -1 # removed via the on_end event
+		#		}
+		#	}
+		#}
+	}
+}
+
+country_event = {
+	id = dom_guelders.2
+	title = "dom_guelders.EVTNAME2"
+	desc = "dom_guelders.2.desca"
+	#desc = "dom_guelders.2.descb"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_guelders_wars
+		}
+	}
+	
+	option = {
+		name = "dom_guelders.2.a" 
+		ai_chance = { factor = 1 }
+		add_prestige = 10
+		add_stability = 1
+	}
+}
+
+country_event = { #Burgundy> Gelre Claim Throne
+	id = dom_guelders.5
+	title = "dom_guelders.5.t"
+	desc = "dom_guelders.5.d"
+	picture = COURT_eventPicture
+	
+	major = yes
+	major_trigger = {
+		tag = GEL
+	}
+	is_triggered_only = yes
+		
+	option = { #accept
+		ai_chance = { 
+			factor = 4
+		}
+		name = "dom_guelders.5.a" #
+		FROM = {
+			add_treasury = 300
+			set_ruler_flag = dom_gel_ruler_who_took_money
+			set_country_flag = dom_gel_accepted_money
+		}
+		custom_tooltip = dom_gel_next_monarch_death_tt
+		add_treasury = -300 
+		#add_truce_with = GEL
+		#add_casus_belli = {
+		#	type = cb_restore_personal_union #cb_restore_personal_union
+		#	months = -1
+		#	target = GEL
+		#}
+		custom_tooltip = burgundy_warning_mission_tt
+		hidden_effect = {
+		complete_mission = dom_ned_bur_duchy_of_gelre
+		}
+	}
+	option = { #reject
+		ai_chance = { 
+			factor = 1
+		}
+		name = "dom_guelders.5.b" #
+		add_truce_with = GEL
+		#secondary effect
+	}
+}
+
+country_event = { #Gelre > Burgundy Claim Throne
+	id = dom_guelders.6
+	title = "dom_guelders.6.t"
+	desc = "dom_guelders.5.Gelre_Desc"
+	picture = COURT_eventPicture
+	
+	major = yes
+	major_trigger = {
+		tag = BUR
+	}
+	is_triggered_only = yes
+		
+	option = { #accept
+		ai_chance = { 
+			factor = 4
+		}
+		name = "dom_guelders.6.a" #
+		add_treasury = 300
+		custom_tooltip = dom_gel_next_monarch_death_tt
+		set_ruler_flag = dom_gel_ruler_who_took_money
+		set_country_flag = dom_gel_accepted_money
+		FROM = { 
+			add_treasury = -300 
+			#add_casus_belli = {
+			#	type = cb_restore_personal_union #cb_restore_personal_union
+			#	months = -1
+			#	target = GEL
+			#}
+		}
+		custom_tooltip = gelre_warning_mission_tt
+		hidden_effect = {
+			complete_mission = dom_gel_title_of_gelre
+		}
+	}
+	option = { #reject
+		ai_chance = { 
+			factor = 1
+		}
+		name = "dom_guelders.6.b" #
+		add_truce_with = BUR
+		#secondary effect
+	}
+}
+
+country_event = { #Gelre forms union
+	id = dom_guelders.7
+	title = "dom_guelders.7.t"
+	desc = "dom_guelders.7.desc"
+	picture = COURT_eventPicture
+	
+	major = yes
+	major_trigger = {
+		tag = BUR
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		tag = GEL
+		NOT = {
+			has_ruler_flag = dom_gel_ruler_who_took_money
+		}
+		has_country_flag = dom_gel_accepted_money
+	}
+	
+	option = {
+		ai_chance = { 
+			factor = 1
+		}
+		name = "dom_guelders.7.a" #
+		BUR = {
+			create_union = GEL
+		}
+		clr_country_flag = dom_gel_accepted_money
+	}
+}

@@ -1729,9 +1729,9 @@ dom_ned_exploration_start_3_group = {
 			define_admiral = {
 				name = "Piet Hein"
 				fire = 5
-				shock = 5
-				manuever = 5
-				siege = 5
+				shock = 3
+				manuever = 3
+				siege = 2
 			}
 		}
 	}
@@ -2253,4 +2253,101 @@ dom_ned_exploration_start_5_group = {
 			add_mercantilism = 2
 		}
 	}	
+
+	btc_ned_mare_liberum = {
+	icon = mission_establish_high_seas_navy
+	required_missions = { dom_ned_indonesia_cot }
+	# position = 8
+	completed_by = 1660.1.1
+
+	trigger = {
+		if = {
+			limit = {
+				ai = yes
+			navy_size = 150
+			}
+		}
+		else = {
+			navy_size = 200
+		}
+	}
+
+	effect = {
+		add_country_modifier = {
+			name = mare_liberum
+			duration = 18250
+		}
+		4346 = {
+			remove_trade_modifier = {
+				who = POR
+				key = spice_trade_monopoly
+			}	
+		}
+		4346 = {
+			remove_trade_modifier = {
+				who = IBE
+				key = spice_trade_monopoly
+			}	
+		}
+		1334 = {
+			remove_trade_modifier = {
+				who = POR
+				key = spice_trade_monopoly
+			}	
+		}
+		1334 = {
+			remove_trade_modifier = {
+				who = IBE
+				key = spice_trade_monopoly
+			}	
+		}
+		1340 = {
+			remove_trade_modifier = {
+				who = POR
+				key = spice_trade_monopoly
+			}		
+		}
+		1340 = {
+			remove_trade_modifier = {
+				who = IBE
+				key = spice_trade_monopoly
+			}		
+		}
+		504 = {
+			remove_trade_modifier = {
+				who = POR
+				key = spice_trade_monopoly
+			}			
+		}
+		504 = {
+			remove_trade_modifier = {
+				who = IBE
+				key = spice_trade_monopoly
+			}			
+		}
+		1343 = {
+			remove_trade_modifier = {
+				who = POR
+				key = spice_trade_monopoly
+			}		
+		}
+		1343 = {
+			remove_trade_modifier = {
+				who = IBE
+				key = spice_trade_monopoly
+			}		
+		}
+		1361 = {
+			remove_trade_modifier = {
+				who = POR
+				key = spice_trade_monopoly
+			}			
+		}
+		1361 = {
+			remove_trade_modifier = {
+				who = IBE
+				key = spice_trade_monopoly
+			}			
+		}
+	}
 }

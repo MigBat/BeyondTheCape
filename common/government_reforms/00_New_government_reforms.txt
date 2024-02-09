@@ -152,47 +152,47 @@ hansa_free_city_reform = {
 	#duration = 4
 }
 
-# new_jerusalem_reform = {
-# 	icon = "war_against_the_world" #"rioting_burning_2"
-# 	allow_normal_conversion = yes
-# 	#disallowed_trade_goods = { slaves }
-# 	potential = {
-# 		OR = {
-# 			has_unlocked_government_reform = {
-# 				government_reform = new_jerusalem_reform
-# 			}
-# 			have_had_reform = new_jerusalem_reform
-# 			has_reform = new_jerusalem_reform
-# 		}
-# 		religion = anabaptist
-# 	}
-# 	trigger = {
-# 		OR = {
-# 			is_playing_custom_nation = yes
-# 			has_reform = new_jerusalem_reform
-# 		}
-# 	}
-# 	modifiers = {
-# 		years_of_nationalism = -5
-# 		global_missionary_strength = 0.02
-# 		manpower_in_true_faith_provinces = 0.33
-# 		cb_on_religious_enemies = yes
-# 		tolerance_own = 2
-# 		governing_capacity_modifier = -0.5
-# 	}
-# 	conditional = {
-# 		allow = { has_dlc = "Rights of Man" }
-# 		government_abilities = {
-# 			militarization_mechanic
-# 		}
-# 	}
-# 	rulers_can_be_generals = yes
-# 	heirs_can_be_generals = yes
-# 	custom_attributes = {
-# 		gives_war_against_the_world_tooltip_dummy = yes
-# 		gain_monarch_power_from_force_converting = yes
-# 	}	
-# }
+new_jerusalem_reform = {
+	icon = "war_against_the_world" #"rioting_burning_2"
+	allow_normal_conversion = yes
+	#disallowed_trade_goods = { slaves }
+	potential = {
+		OR = {
+			has_unlocked_government_reform = {
+				government_reform = new_jerusalem_reform
+			}
+			have_had_reform = new_jerusalem_reform
+			has_reform = new_jerusalem_reform
+		}
+		religion = anabaptist
+	}
+	trigger = {
+		OR = {
+			is_playing_custom_nation = yes
+			has_reform = new_jerusalem_reform
+		}
+	}
+	modifiers = {
+		years_of_nationalism = -5
+		global_missionary_strength = 0.02
+		manpower_in_true_faith_provinces = 0.33
+		cb_on_religious_enemies = yes
+		tolerance_own = 2
+		governing_capacity_modifier = -0.5
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		government_abilities = {
+			militarization_mechanic
+		}
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	custom_attributes = {
+		gives_war_against_the_world_tooltip_dummy = yes
+		gain_monarch_power_from_force_converting = yes
+	}	
+}
 
 dom_ned_great_council_of_mechelen_reform = {
 	icon = "castle"

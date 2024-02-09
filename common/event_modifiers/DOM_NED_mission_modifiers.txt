@@ -268,7 +268,7 @@ middelburgsche_Commercie_Compagnie = {
 }
 
 malacca_voc_boost_mod = {
-	naval_attrition = -0.1 
-	naval_morale = 0.1 
+	naval_attrition = -0.15
+	naval_morale = 0.05
 	is_voc_indiamen_modifier = yes 
 }

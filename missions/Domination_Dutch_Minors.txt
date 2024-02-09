@@ -855,7 +855,10 @@ domination_dutch_slot_3_branching_unknown = {
 	ai = yes	
 	potential = {
 		OR = {
-			burgundian_union_tags = yes
+			AND = {
+				burgundian_union_tags = yes
+				NOT = { tag = ZEE }
+			}
 			AND = {
 				tag = NED
 				OR = {

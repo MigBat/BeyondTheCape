@@ -1075,7 +1075,10 @@ dom_walloon_conquest2_group = {
 	ai = yes
 	potential = {
 		OR = {
-			walloon_tags = yes
+			AND = {
+				walloon_tags = yes
+				NOT = { tag = LUX }
+			}
 			AND = {
 				tag = BEL
 				NOT_was_flemish_tag = yes				

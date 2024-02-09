@@ -2,6 +2,7 @@ country_decisions = {
 
 	found_voc = {
 		potential = {
+			always = no
 			tag = NED
 			normal_or_historical_nations = yes
 			OR = {
@@ -67,6 +68,7 @@ country_decisions = {
 	
 	development_of_amsterdam = {
 		potential = {
+			always = no
 			OR = {
 				tag = HOL
 				tag = NED

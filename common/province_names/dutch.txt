@@ -20,7 +20,7 @@
 96 = "Zeeland"
 98 = "Utrecht"
 99 = "Gelre"
-100 = "Friesland"
+100 = { "Friesland" "Leeuwarden" }
 134 = "Wenen"
 168 = "Normandië"
 182 = "Vermandland"
@@ -112,6 +112,8 @@
 782 = "Vuurland"
 367 = "Azoren"
 1995 = "Micronesië"
+
+4382 = { "Groningen" "Groningen" }
 
 1174 = "Walvisbaai"
 1141 = "Fida"

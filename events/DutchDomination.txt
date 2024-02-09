@@ -359,10 +359,6 @@ country_event = { #anabaptist
 	
 	is_triggered_only = yes
 	
-	trigger = {
-		
-	}
-	
 	option = {
 		name = "dutch_domination.EVTOPTA4" #
 		custom_tooltip = pol_impact_future_missions_tt 
