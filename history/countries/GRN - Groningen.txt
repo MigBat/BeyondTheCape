@@ -1,0 +1,21 @@
+government = republic
+government_rank = 1
+mercantilism = 0.1
+primary_culture = frisian
+add_accepted_culture = hannoverian
+add_accepted_culture = lower_saxon
+religion = catholic
+technology_group = western
+capital = 4382	# Groningen
+fixed_capital = 4382
+
+
+1399.1.1 = {
+	monarch = {
+		name = "Stadstaat"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

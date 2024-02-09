@@ -278,10 +278,10 @@ dan_secure_baltic_mission_slot = {
 		position = 5
 		required_missions = { dan_the_sound_toll }
 		provinces_to_highlight = {
-			province_id = 1744
+			province_id = 1269
 		}
 		trigger = {
-			1744 = {
+			1269 = {
 				is_strongest_trade_power = ROOT
 				trade_share = {
 					country = ROOT
@@ -719,7 +719,7 @@ dan_trade_and_colonial_mission_slot = {
 		trigger = {
 			OR = {
 				has_institution = new_world_i
-				has_country_modifier = quest_for_the_new_world
+				dip_tech = 9
 			}
 			share_of_starting_income = 1.5
 			is_in_deficit = no

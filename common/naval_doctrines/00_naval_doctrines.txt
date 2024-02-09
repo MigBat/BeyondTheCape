@@ -239,7 +239,7 @@ norse_raid_fleet = {
 
 	cost = 0.1
 	country_modifier = {
-		privateer_efficiency = 0.33
+		privateer_efficiency = 0.075
 		movement_speed_in_fleet_modifier = 3
 	}
 	effect = {}
@@ -351,7 +351,7 @@ maghrebi_corsairs = {
 
 	cost = 0.1
 	country_modifier = {
-		privateer_efficiency = 0.25
+		privateer_efficiency = 0.05
 		may_perform_slave_raid = yes
 		available_province_loot = 0.5
 	}

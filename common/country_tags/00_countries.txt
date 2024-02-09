@@ -1099,10 +1099,3 @@ ISR = "countries/Israel.txt"
 #HAH = countries/Hashshashin.txt
 #TEM = countries/KnightsTemplar.txt
 #TRL = countries/Trapalanda.txt
-
-#BEYOND THE CAPE#
-IBE = "countries/Iberia.txt"
-VOC = "countries/DutchEastIndiaCompany.txt"
-GCH = "countries/Guanches.txt"
-CNR = "countries/Canaries.txt"
-HNM = "countries/Honma.txt"

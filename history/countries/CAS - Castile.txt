@@ -101,6 +101,7 @@ change_estate_land_share = {
 		limit = { has_dlc = "Domination" }
 		set_estate_privilege = estate_nobles_factionalist_nobility
 	}
+	set_heir_flag = is_enrique_flag
 }
 
 1447.8.17 = {

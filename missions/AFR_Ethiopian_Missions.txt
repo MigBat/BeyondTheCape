@@ -122,7 +122,7 @@ ethiopia_european_slot = {
 		position = 4
 		provinces_to_highlight = {
 			OR = {
-				province_id = 224	#Sevilla Trade
+				province_id = 1293	#Sevilla Trade
 				province_id = 1295	#Valencia Trade
 				province_id = 1298	#Genoa Trade
 				province_id = 1308	#Venice Trade
@@ -131,7 +131,7 @@ ethiopia_european_slot = {
 		}
 		trigger = {
 			OR = {
-				224 = {
+				1293 = {
 					trade_share = {
 						country = ROOT
 						share = 5

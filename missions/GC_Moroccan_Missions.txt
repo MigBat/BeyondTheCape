@@ -441,11 +441,11 @@ gc_morocco_2 = {
 		position = 2
 		
 		provinces_to_highlight = {
-			province_id = 224
+			province_id = 1293
 		}
 		
 		trigger = {
-			224 = {
+			1293 = {
 				privateer_power = {
 					country = ROOT
 					share = 25

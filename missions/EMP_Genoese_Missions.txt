@@ -201,8 +201,8 @@ emp_gen_missions_general_2 = {
 							province_id = 1308
 						}
 						AND = {
-							NOT = { 224 = { is_strongest_trade_power = ROOT } }
-							province_id = 224
+							NOT = { 1293 = { is_strongest_trade_power = ROOT } }
+							province_id = 1293
 						}
 						AND = {
 							NOT = { 1110 = { is_strongest_trade_power = ROOT } }
@@ -243,7 +243,7 @@ emp_gen_missions_general_2 = {
 								amount = 6
 								1298 = { is_strongest_trade_power = ROOT }
 								1308 = { is_strongest_trade_power = ROOT }
-								224 = { is_strongest_trade_power = ROOT }
+								1293 = { is_strongest_trade_power = ROOT }
 								1110 = { is_strongest_trade_power = ROOT }
 								137 = { is_strongest_trade_power = ROOT }
 								341 = { is_strongest_trade_power = ROOT }
@@ -278,7 +278,7 @@ emp_gen_missions_general_2 = {
 				amount = 6
 				1298 = { is_strongest_trade_power = ROOT }
 				1308 = { is_strongest_trade_power = ROOT }
-				224 = { is_strongest_trade_power = ROOT }
+				1293 = { is_strongest_trade_power = ROOT }
 				1110 = { is_strongest_trade_power = ROOT }
 				137 = { is_strongest_trade_power = ROOT }
 				341 = { is_strongest_trade_power = ROOT }

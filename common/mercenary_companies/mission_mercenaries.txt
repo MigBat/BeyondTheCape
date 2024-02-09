@@ -1,0 +1,19 @@
+#Mission Mercs
+merc_arumer_zwarte_hoop = {
+    regiments_per_development = 0.02
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    home_province = 100 #Friesland
+    cost_modifier = 0.25
+	sprites = { dlc028_ned_sprite_pack dlc042_ned_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_unlocked_merc_company = {
+			merc_company = merc_arumer_zwarte_hoop
+		}
+	}
+    modifier = {
+        reserves_organisation = 0.05
+		land_morale = 0.1
+		movement_speed = 0.25
+	}
+}

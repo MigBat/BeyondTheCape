@@ -1010,7 +1010,7 @@ gc_por_2_c = {
 			1531 = {
 				is_strongest_trade_power = ROOT
 			}
-			227 = {
+			1292 = {
 				is_strongest_trade_power = ROOT
 			}
 		}
@@ -1071,10 +1071,7 @@ gc_por_2_d = {
 		completed_by = 1530.1.1
 		
 		provinces_to_highlight = {
-			OR = {
-				province_id = 1202
-				province_id = 1203
-			}
+			province_id = 1202
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
 		}
@@ -1089,8 +1086,16 @@ gc_por_2_d = {
 			1202 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1203 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			if = {
+				limit = {
+					ai = no
+				}
+				1203 = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						has_province_modifier = foreign_feitoria
+					}
+				}
 			}
 		}
 	
@@ -1099,6 +1104,9 @@ gc_por_2_d = {
 			add_prestige_or_monarch_power = { amount = 15 }
 			add_years_of_income = 1 
 
+			1202 = {
+				add_core = ROOT
+			}
 			1201 = {
 				add_permanent_claim = ROOT
 			}
@@ -1198,6 +1206,7 @@ gc_por_2_d = {
 			OR = {
 				area = zimbabwe_area
 				area = butua_area
+				area = lower_zambezi_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1208,6 +1217,10 @@ gc_por_2_d = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			butua_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_zambezi_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1581,6 +1594,10 @@ gc_por_3 = {
 			country_event = {
 				id = btc_por.152
 			}
+			add_country_modifier = {
+				name = por_push_to_india
+				duration = 7300
+			}
 		}
 
 		ai_weight = {
@@ -1670,7 +1687,7 @@ gc_por_3 = {
 				add_permanent_claim = ROOT
 			}
 			1203 = {
-				add_permanent_claim = ROOT
+				add_claim = ROOT
 			}
 			define_explorer = {
 				name = "Vasco da Gama"
@@ -1706,10 +1723,6 @@ gc_por_3 = {
 				}
 			}
 			clr_country_flag = por_no_flagship_mod	
-			add_country_modifier = {
-				name = por_push_to_india
-				duration = 7300
-			}
 			# country_event = {
 			# 	id = btc_por.178
 			# }
@@ -1780,11 +1793,11 @@ gc_por_3 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = portugal_discovers_india.tooltip
-				coromandel_region = {
-					has_discovered = ROOT
-				}
-				2030 = {
+				kanara_area = {
 					has_discovered = POR
+				}
+				malabar_area = {
+					has_discovered = POR					
 				}
 				1339 = {
 					has_discovered = POR
@@ -2446,13 +2459,21 @@ gc_por_4_d = {
 		
 		provinces_to_highlight = {
 			area = malabar_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_province_modifier = foreign_feitoria
+				}
+			}
 		}
 		
 		trigger = {
 			malabar_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_province_modifier = foreign_feitoria
+				}
 			}
 		}
 		effect = {
@@ -2470,6 +2491,7 @@ gc_por_4_d = {
 				}
 				add_permanent_claim = ROOT
 			}
+			4980 = { add_permanent_claim = ROOT }
 			529 = { add_permanent_claim = ROOT }
 			4430 = { add_permanent_claim = ROOT }
 			517 = { add_permanent_claim = ROOT }
@@ -3041,22 +3063,43 @@ gc_por_5_d = {
 		
 		provinces_to_highlight = {
 			OR = {
+				province_id = 4980
 				province_id = 529
 				province_id = 4430
 				province_id = 517
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { 
+				OR = {
+					has_province_modifier = foreign_feitoria
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
 		}
 		
 		trigger = {
+			4980 = {
+				OR = {
+					has_province_modifier = foreign_feitoria
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
 			529 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_province_modifier = foreign_feitoria
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			4430 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_province_modifier = foreign_feitoria
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			517 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_province_modifier = foreign_feitoria
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = {
@@ -3108,17 +3151,28 @@ gc_por_5_d = {
 				area = arakan_area
 				area = lower_burma_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {
+				OR = {
+					has_province_modifier = foreign_feitoria
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
 		}
 		
 		trigger = {
 			arakan_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_province_modifier = foreign_feitoria
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			lower_burma_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_province_modifier = foreign_feitoria
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = {

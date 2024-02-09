@@ -1,5 +1,3 @@
-
-
 # Iberian Marriages
 royal_marriage = {
 	first = CAS
@@ -367,4 +365,70 @@ alliance = {
 	second = TKD
 	start_date = 1444.1.1
 	end_date = 1568.1.1
+}
+
+# Indian alliances #
+alliance = {
+	first = KLT
+	second = MAB
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+alliance = {
+	first = KLT
+	second = KOC
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+alliance = {
+	first = KLT
+	second = MAD
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+alliance = {
+	first = KOC
+	second = MAB
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+alliance = {
+	first = MAD
+	second = MAB
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+alliance = {
+	first = KOC
+	second = MAD
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+# Kilwa Alliances #
+alliance = {
+	first = ZAN
+	second = MBA
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+alliance = {
+	first = ZAN
+	second = MLI
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+alliance = {
+	first = ZAN
+	second = PTE
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+# Burgundy #
+union = {
+	first = BUR
+	second = LUX
+	start_date = 1444.1.1
+	end_date = 1477.1.1
 }

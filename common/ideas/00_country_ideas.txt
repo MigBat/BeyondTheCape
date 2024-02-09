@@ -563,7 +563,7 @@ ICE_ideas = {
 
 GOT_ideas = {
 	start = {
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 		core_creation = -0.15
 	}
 	
@@ -816,50 +816,50 @@ CAS_ideas = {
 	}
 }
 
-NED_ideas = {
-	start = {
-		global_sailors_modifier = 0.25
-		naval_forcelimit_modifier = 0.50
-	}
+# NED_ideas = {
+# 	start = {
+# 		global_sailors_modifier = 0.25
+# 		naval_forcelimit_modifier = 0.50
+# 	}
 	
-	bonus = {
-		trade_efficiency = 0.2
-	}
+# 	bonus = {
+# 		trade_efficiency = 0.2
+# 	}
 
-	trigger = {
-		OR = {
-			tag = NED
-			tag = HOL
-		}
-	}
-	free = yes		#will be added at load.
+# 	trigger = {
+# 		OR = {
+# 			tag = NED
+# 			tag = HOL
+# 		}
+# 	}
+# 	free = yes		#will be added at load.
 	
-	dutch_trading_spirit = {
-		merchants = 1
-	}
-	instructie_voor_de_admiraliteiten = {
-		leader_naval_fire = 2
-		allowed_marine_fraction = 0.25
-	}
-	amsterdam_wisselbank = {
-		inflation_reduction = 0.1
-		interest = -0.25
-	}
-	army_sappers = {
-		siege_ability = 0.10
-		defensiveness = 0.15
-	}
-	platoon_fire = {
-		infantry_fire = 0.5
-		infantry_power = 0.1
-	}
-	polders = {
-		development_cost = -0.1
-	}
-	embrace_humanism = {
-		tolerance_heretic = 3
-	}
-}
+# 	dutch_trading_spirit = {
+# 		merchants = 1
+# 	}
+# 	instructie_voor_de_admiraliteiten = {
+# 		leader_naval_fire = 2
+# 		allowed_marine_fraction = 0.25
+# 	}
+# 	amsterdam_wisselbank = {
+# 		inflation_reduction = 0.1
+# 		interest = -0.25
+# 	}
+# 	army_sappers = {
+# 		siege_ability = 0.10
+# 		defensiveness = 0.15
+# 	}
+# 	platoon_fire = {
+# 		infantry_fire = 0.5
+# 		infantry_power = 0.1
+# 	}
+# 	polders = {
+# 		development_cost = -0.1
+# 	}
+# 	embrace_humanism = {
+# 		tolerance_heretic = 3
+# 	}
+# }
 
 FRA_ideas = {
 	start = {
@@ -1667,48 +1667,48 @@ IBE_ideas = {
 	}
 }
 
-VOC_ideas = {
-	start = {
-		global_prov_trade_power_modifier = 0.2
-		no_religion_penalty = yes
-	}
+# VOC_ideas = {
+# 	start = {
+# 		global_prov_trade_power_modifier = 0.2
+# 		no_religion_penalty = yes
+# 	}
 
-	bonus = {
-		global_trade_power = 0.15
-	}
+# 	bonus = {
+# 		global_trade_power = 0.15
+# 	}
 	
-	trigger = {
-		tag = VOC
-	}
-	free = yes		#will be added at load.
+# 	trigger = {
+# 		tag = VOC
+# 	}
+# 	free = yes		#will be added at load.
 
-	voc_governors_general = {
-		global_unrest = -1
-		governing_capacity_modifier = 0.1
-	}
-	voc_indian_trade = {
-		global_trade_goods_size_modifier = 0.15
-	}
-	voc_chartered_merchants = {
-		merchants = 1
-		placed_merchant_power = 10
-	}
-	voc_presidency_armies = {
-		global_manpower_modifier = 0.1
-		global_sailors_modifier = 0.2
-	}
-	voc_intercontinental_trade = {
-		trade_steering = 0.25
-		trade_range_modifier = 0.1
-	}
-	voc_colonial_monopoly = {
-		trade_efficiency = 0.1
-	}
-	voc_colonial_exploitation = {
-		trade_company_investment_cost = -0.1
-		build_cost = -0.1
-	}
-}
+# 	voc_governors_general = {
+# 		global_unrest = -1
+# 		governing_capacity_modifier = 0.1
+# 	}
+# 	voc_indian_trade = {
+# 		global_trade_goods_size_modifier = 0.15
+# 	}
+# 	voc_chartered_merchants = {
+# 		merchants = 1
+# 		placed_merchant_power = 10
+# 	}
+# 	voc_presidency_armies = {
+# 		global_manpower_modifier = 0.1
+# 		global_sailors_modifier = 0.2
+# 	}
+# 	voc_intercontinental_trade = {
+# 		trade_steering = 0.25
+# 		trade_range_modifier = 0.1
+# 	}
+# 	voc_colonial_monopoly = {
+# 		trade_efficiency = 0.1
+# 	}
+# 	voc_colonial_exploitation = {
+# 		trade_company_investment_cost = -0.1
+# 		build_cost = -0.1
+# 	}
+# }
 
 GCH_ideas = {
 	start = {
@@ -3309,7 +3309,7 @@ NOV_ideas = {
 	}
 	exploration_tradition = {
 		navy_tradition = 1
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 	}
 	baltic_shipyard = {
 		light_ship_cost = -0.20
@@ -5133,7 +5133,7 @@ CYP_ideas = {
 	}
 	raid_turkish_commerce = {
 		embargo_efficiency = 0.1
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 	}
 }
 
@@ -6095,7 +6095,7 @@ MON_ideas = {
 	}
 	mon_idea_4 = {
 		embargo_efficiency = 0.1
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 	}
 	mon_idea_5 = {
 		navy_tradition = 1
@@ -6779,7 +6779,7 @@ NAX_ideas = {
 	}
 	archipelago_of_opportunities = {
 		embargo_efficiency = 0.1	
-		privateer_efficiency = 0.25
+		privateer_efficiency = 0.05
 	}
 	legacy_of_crusaders = {
 		army_tradition = 0.5
@@ -6853,7 +6853,7 @@ POM_ideas = {
 	
 	pom_idea_1 = {
 		embargo_efficiency = 0.1
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 	}
 	pom_idea_2 = {
 		merchants = 1
@@ -8122,7 +8122,7 @@ ARK_ideas = {
 		merchants = 1
 	}
 	ark_magh_and_ferenghi = {
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 		sailor_maintenance_modifer = -0.05
 	}
 	ark_buddhist_sultans = {
@@ -9657,7 +9657,7 @@ BTS_ideas = {
 	malagasy_pirate_ports = {
 		#Also used in Malagasy Ideas.
 		embargo_efficiency = 0.1
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 	}
 	bts_indivisable_many = {
 		global_unrest = -1
@@ -10030,7 +10030,7 @@ PAT_ideas = {
 		spy_offence = 0.2
 	}
 	lian_dao_qian_band = {
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 		capture_ship_chance = 0.1
 	}
 	pat_entrepot = {
@@ -10614,7 +10614,7 @@ DTT_ideas = {
 	}
 	dtt_expert_wreckers = {
 		capture_ship_chance = 0.1
-		privateer_efficiency = 0.2
+		privateer_efficiency = 0.05
 	}
 	dtt_levees = {
 		development_cost = -0.1
@@ -11643,7 +11643,7 @@ KNO_ideas = {
 	}
 	kno_murakami_suigun = {
 		capture_ship_chance = 0.1
-		privateer_efficiency = 0.2
+		privateer_efficiency = 0.05
 	}
 }
 
@@ -13275,7 +13275,7 @@ ALH_ideas = {
 	}
 	alh_legacy_of_rahmah_ibn_jabir = {
 		navy_tradition = 1
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 	}
 }
 
@@ -13574,7 +13574,7 @@ CEB_ideas = {
 	}
 	ceb_place_for_trading = {
 		embargo_efficiency = 0.1	
-		privateer_efficiency = 0.25
+		privateer_efficiency = 0.05
 	}
 	ceb_befriend_the_europeans = {
 		global_institution_spread = 0.1
@@ -13934,7 +13934,7 @@ MCM_ideas = {
 	}
 	mcm_pirate_haven = {
 		navy_tradition = 1
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 	}
 	mcm_enemies_everywhere = {
 		spy_offence = 0.2
@@ -14212,7 +14212,7 @@ CRN_ideas = {
 	}
 	crn_pirates_of_penzance = {
 		capture_ship_chance = 0.1
-		privateer_efficiency = 0.2
+		privateer_efficiency = 0.05
 	}
 	crn_royalist_army = {
 		land_forcelimit_modifier = 0.2
@@ -14552,7 +14552,7 @@ GEL_ideas = {
 
 EFR_ideas = {
 	start = {
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 		heir_chance = 0.5
 	}
 	
@@ -15379,7 +15379,7 @@ MOR_ideas = {
 	free = yes
 	mor_pirate_republics = {
 		sailor_maintenance_modifer = -0.1
-		privateer_efficiency = 0.25
+		privateer_efficiency = 0.05
 	}
 	mor_powerful_viziers = {
 		same_culture_advisor_cost = -0.2
@@ -15426,7 +15426,7 @@ TUN_ideas = {
 	}
 	corsairs = {
 		navy_tradition = 1
-		privateer_efficiency = 0.10
+		privateer_efficiency = 0.025
 	}
 	tun_attract_foreign_pirates = {
 		global_sailors_modifier = 0.25
@@ -15699,7 +15699,7 @@ SNA_ideas = {
 	}
 	SNA_take_what_is_yours = {
 		light_ship_cost = -0.1
-		privateer_efficiency = 0.1
+		privateer_efficiency = 0.025
 	}
 	SNA_uniting_the_outlaws = {
 		land_forcelimit_modifier = 0.25
@@ -15852,7 +15852,7 @@ SOO_ideas = {
 		naval_morale = 0.2
 	}
 	soo_bahan_ship = {
-		privateer_efficiency = 0.2
+		privateer_efficiency = 0.05
 	}
 	soo_tough_negotiator = {
 		diplomatic_reputation = 1
@@ -16071,7 +16071,7 @@ NRM_ideas = {
 		range = 0.2
 	}
 	nrm_viking_raids = {
-		privateer_efficiency = 0.15
+		privateer_efficiency = 0.025
 	}
 	nrm_naval_invasion = {
 		siege_blockade_progress = 1
@@ -17226,7 +17226,7 @@ PLB_ideas = {
 	}
 	plb_controlling_the_strait = {
 		embargo_efficiency = 0.05
-		privateer_efficiency = 0.4
+		privateer_efficiency = 0.1
 	}
 	plb_center_of_the_dynasty = {
 		improve_relation_modifier = 0.1

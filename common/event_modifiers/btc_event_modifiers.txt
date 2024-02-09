@@ -94,7 +94,7 @@ respected_merchants = {
 }
 
 aggressive_mercantilism = {
-	privateer_efficiency = 0.25
+	privateer_efficiency = 0.05
 	blockade_efficiency = 0.2
 	embargo_efficiency = 0.15
 	trade_efficiency = -0.1
@@ -806,7 +806,7 @@ mare_liberum = {
 
 predatory_trade = {
 	embargo_efficiency = 0.5
-	privateer_efficiency = 0.33
+	privateer_efficiency = 0.075
 	mercantilism_cost = -0.25
 }
 

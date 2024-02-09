@@ -22,10 +22,6 @@ overseas_dominance = {
 				value = trigger_value:num_of_provinces_in_territories
 			}
 			multiply_variable = { which = numOfStateProvinces value = 3 }
-			export_to_variable = {
-				which = test
-				value = trigger_value:
-			}
 			check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
 		}
 	}

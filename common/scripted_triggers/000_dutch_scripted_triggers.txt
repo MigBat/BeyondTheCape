@@ -1,0 +1,116 @@
+all_low_countries_tags = {
+	OR = {
+		 tag = LOO tag = ANW tag = IJS 
+		tag = ZEE tag = LBG tag = ARS 
+		tag = NAM tag = CMB tag = GRN tag = BEL
+		tag = UTR tag = GEL tag = HOL 
+		tag = FLA tag = BRB
+		tag = HAI tag = LUX tag = LIE
+		tag = FRI tag = EFR 
+		tag = VOC
+		tag = BUR tag = NED tag = LOT
+		AND = {
+			is_playing_custom_nation = yes 
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				primary_culture = frisian
+				primary_culture = limburgish
+			}
+		}
+	}
+}
+
+#	tag = NED tag = BEL tag = LOT #Formables
+#	tag = HOL tag = UTR tag = GEL #Dutch
+#	tag = FRI tag = EFR tag = GRN #Frisian
+#	tag = FLA tag = BRB tag = LOO tag = ANW #Flemish
+#	tag = IJS tag = ZEE tag = LBG #Dutch Releasables
+#	tag = HAI tag = LIE tag = LUX #Wallonian Vanilla
+#	tag = NAM tag = CMB tag = ARS #Wallonian Modded
+#	tag = VOC #Colonial
+
+dutch_minor_tags = {
+	OR = {
+		tag = LOO tag = ANW tag = IJS 
+		tag = ZEE tag = LBG tag = GRN
+		tag = UTR tag = GEL tag = HOL 
+		tag = FLA tag = BRB
+		tag = FRI tag = EFR 
+		AND = {
+			is_playing_custom_nation = yes 
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				primary_culture = frisian
+				primary_culture = limburgish
+			}
+		}
+	}
+}
+
+flemish_tags = {
+	OR = {
+		tag = LOO tag = ANW was_tag = LOO was_tag = ANW
+		tag = FLA tag = BRB
+		AND = {
+			tag = NED
+			OR = {
+				was_tag = FLA was_tag = BRB
+			}
+		}
+	}
+}
+
+NOT_was_flemish_tag = {
+	NOT = {
+		OR = {
+			was_tag = LOO was_tag = ANW
+			was_tag = FLA was_tag = BRB
+		}
+	}
+}
+
+netherlands_tags = {
+	OR = {
+		tag = IJS tag = ZEE tag = LBG tag = GRN
+		tag = UTR tag = GEL tag = HOL
+		tag = FRI tag = EFR
+		AND = {
+			is_playing_custom_nation = yes 
+			OR = {
+				primary_culture = dutch
+				primary_culture = frisian
+			}
+		}
+	}
+}
+
+frisian_tags = {
+	OR = {
+		tag = FRI tag = EFR tag = GRN
+		AND = {
+			is_playing_custom_nation = yes 
+			primary_culture = frisian
+		}
+	}
+}
+
+walloon_tags = {
+	OR = {
+		tag = HAI tag = LUX tag = LIE tag = ARS tag = NAM tag = CMB
+	}
+}
+
+burgundian_union_tags = {
+	OR = {
+		tag = HOL tag = FLA	tag = BRB 
+		tag = HAI tag = LUX tag = ZEE
+	}
+}
+
+low_countries_end_tags = {
+	OR = {
+		tag = NED tag = LOT tag = BEL
+	}
+}

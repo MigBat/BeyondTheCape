@@ -2181,7 +2181,7 @@ council_of_captains_reform = {
 	}
 	modifiers = {
 		pr_captains_influence = 0.1
-		privateer_efficiency = 0.33
+		privateer_efficiency = 0.075
 	}
 	ai = {
 		factor = 2.5
@@ -2254,7 +2254,7 @@ the_pirate_ways_reform = {
 		has_government_attribute = is_pirate_republic_reform
 	}
 	modifiers = {
-		privateer_efficiency = 0.25
+		privateer_efficiency = 0.05
 		land_morale = 0.1
 		naval_morale = 0.1
 		naval_maintenance_modifier = -0.10

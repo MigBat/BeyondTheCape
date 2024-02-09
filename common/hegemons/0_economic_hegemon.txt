@@ -5,25 +5,65 @@ economic_hegemon = {
 		if = {
 			limit = { is_discovery_eco_hegemon = yes current_age = age_of_discovery }
 			monthly_income = 50
-			most_income_discovery_eco_hegemon = yes
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_discovery_eco_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_income_discovery_eco_hegemon = yes
+			}
 		}
 		# Reformation Potential
 		else_if = {
 			limit = { is_reformation_eco_hegemon = yes current_age = age_of_reformation }
 			monthly_income = 100
-			most_income_reformation_eco_hegemon = yes
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_reformation_eco_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_income_reformation_eco_hegemon = yes
+			}
 		}
 		# Absolutism Potential
 		else_if = {
 			limit = { is_absolutism_eco_hegemon = yes current_age = age_of_absolutism }
 			monthly_income = 150
-			most_income_absolutism_eco_hegemon = yes
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_absolutism_eco_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_income_absolutism_eco_hegemon = yes
+			}
 		}
 		# Revolutions Potential
 		else_if = {
 			limit = { is_revolutions_eco_hegemon = yes current_age = age_of_revolutions }
 			monthly_income = 200
-			most_income_revolutions_eco_hegemon = yes
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_revolutions_eco_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_income_revolutions_eco_hegemon = yes
+			}
 		}
 		# Discovery EOC
 		else_if = {

@@ -108,7 +108,7 @@ pirate_1 = {
 			OR = {
 				province_id = 1466
 				province_id = 1531
-				province_id = 224
+				province_id = 1293
 			}
 		}
 		
@@ -126,7 +126,7 @@ pirate_1 = {
 					}
 				}
 				OR = {
-					224 = {
+					1293 = {
 						privateer_power = {
 							country = ROOT
 							share = 25
@@ -148,7 +148,7 @@ pirate_1 = {
 							share = 25
 						}
 					}
-					224 = {
+					1293 = {
 						privateer_power = {
 							country = ROOT
 							share = 25

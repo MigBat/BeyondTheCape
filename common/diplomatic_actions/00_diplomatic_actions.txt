@@ -839,3 +839,14 @@ knowledge_sharing = {
 		allow = { always = no }
 	}
 }
+
+grant_freecity = {
+	condition = {
+		tooltip = NOT_PEASANT_REPUBLIC
+		potential = {
+		}
+		allow = {
+			FROM = { NOT = { has_reform = peasants_republic } }
+		}
+	}
+}

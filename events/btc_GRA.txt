@@ -192,7 +192,6 @@ country_event = {
 			}
 		}
 		else = {
-			mil_power_cost = 50
 			add_yearly_manpower = -0.2
 			custom_tooltip = btc_gra.5a_tt
 			hidden_effect = {

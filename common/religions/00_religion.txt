@@ -846,6 +846,141 @@ christian = {
 		}
 	}
 	
+	anabaptist = {
+		color = { 244 150 150 }
+		icon = 30
+		allowed_conversion = {
+			reformed
+			protestant
+			catholic
+		}
+		
+		allowed_center_conversion = {
+			catholic
+		}
+		country = {
+			global_heretic_missionary_strength = 0.02
+			colonists = 1
+			envoy_travel_time = -0.2 
+		}
+		
+		country_as_secondary = {
+			colonists = 1 
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			anabaptist_diplomacy_aspect
+			american_expedition_aspect
+			rebaptize_ruler_aspect
+			promote_adult_baptism_aspect
+			anabaptist_dissolve_monasteries_aspect
+			icons_of_anabaptism_aspect
+		}
+		aspects_name = PROTESTANT_ASPECTS
+		
+		
+		#hre_heretic_religion = yes
+		
+		will_get_center = { #Refered to even for initial CoR Spawn
+			#any_owned_province = {
+			#	can_have_center_of_reformation_trigger = {
+			#		RELIGION = anabaptist
+			#	}
+			#}
+			always = yes
+		}
+		on_convert = {
+			change_religion = anabaptist
+			add_prestige = -100
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = revocation_of_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+	
+			if = {
+				limit = {
+					has_country_flag = reformation_money
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = anabaptist
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							can_have_center_of_reformation_trigger = {
+								RELIGION = anabaptist
+							}
+						}
+						change_religion = anabaptist
+						add_reform_center = anabaptist
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = reformation_money }
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = anabaptist
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				add_years_of_income = 1.0
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							can_have_center_of_reformation_trigger = {
+								RELIGION = anabaptist
+							}
+						}
+						change_religion = anabaptist
+						add_reform_center = anabaptist
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
+			}
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+			set_country_flag = reformation_money
+			every_known_country = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_demote_pope
+					}
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = opinion_demote_pope
+				}
+			}
+		}
+		
+		heretic = { ANAHERETIC1 ANAHERETIC2 ANAHERETIC3 }
+		
+		date = 1527.1.1
+	}
+	
 	harmonized_modifier = harmonized_christian
 	
 	crusade_name = CRUSADE

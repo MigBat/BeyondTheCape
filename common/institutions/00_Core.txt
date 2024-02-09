@@ -438,6 +438,9 @@ renaissance = {
 	can_embrace = {
 		owner = { 
 			OR = {
+				any_owned_province = {
+					renaissance = 100
+				}
 				has_institution = renaissance 
 				has_institution = feudalism 
 				NOT = { government = native }
@@ -1276,6 +1279,9 @@ new_world_i = {
 			OR = {
 				hidden_trigger = {
 					has_country_flag = got_colonialism				
+				}
+				any_owned_province = {
+					new_world_i = 100
 				}
 				has_institution = new_world_i
 				has_idea_group = exploration_ideas
@@ -3127,6 +3133,9 @@ industrialization = {
 	can_embrace = {
 		owner = {
 			OR = {
+				any_owned_province = {
+					industrialization = 100
+				}
 				has_institution = industrialization
 				any_owned_province = {
 					trade_goods = coal

@@ -35,7 +35,42 @@ custom_button = {
 			name = feitoria
 			duration = -1
 		}
-		FROM = { add_years_of_income = -0.2 }
+		FROM = { 
+			if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				add_treasury = -20
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				add_treasury = -40
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				add_treasury = -60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+					NOT = { dip_tech = 15 }
+				}
+				add_treasury = -80
+			}
+			else_if = {
+				limit = {
+					dip_tech = 15
+				}
+				add_treasury = -100
+			}
+		}
 	}
 	tooltip = feitoria_key
 }
@@ -54,7 +89,42 @@ custom_button = {
 			name = fortified_feitoria
 			duration = -1
 		}
-		FROM = { add_years_of_income = -0.4 }
+		FROM = { 
+			if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				add_treasury = -60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				add_treasury = -120
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				add_treasury = -180
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+					NOT = { dip_tech = 15 }
+				}
+				add_treasury = -240
+			}
+			else_if = {
+				limit = {
+					dip_tech = 15
+				}
+				add_treasury = -300
+			}
+		}
 	}
 	tooltip = fortified_feitoria_key
 }
@@ -88,9 +158,9 @@ custom_button = {
 		}
 		area_for_scope_province = {
 			type = all
+			owned_by = owner
 			NOT = { has_province_modifier = foreign_feitoria }	
 		}
-		range = FROM
 	}
 	effect = {
 		add_province_modifier = {
@@ -109,7 +179,43 @@ custom_button = {
 				modifier = built_feitoria
 			}
 		}
-		FROM = { add_years_of_income = -0.2 }
+		
+		FROM = { 
+			if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				add_treasury = -20
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				add_treasury = -40
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				add_treasury = -60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+					NOT = { dip_tech = 15 }
+				}
+				add_treasury = -80
+			}
+			else_if = {
+				limit = {
+					dip_tech = 15
+				}
+				add_treasury = -100
+			}
+		}
 	}
 	tooltip = foreign_feitoria_key
 }

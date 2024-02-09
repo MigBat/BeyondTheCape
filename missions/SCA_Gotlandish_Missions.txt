@@ -961,18 +961,18 @@ got_republic_slot_1 = {
 		required_missions = { got_republic_dominate_lubeck_trace }
 
 		provinces_to_highlight = {
-			province_id = 1744
+			province_id = 1269
 		}
 
 		trigger = {
 			OR = {
-				1744 = {
+				1269 = {
 					trade_share = {
 						country = root
 						share = 25
 					}
 				}
-				1744 = {
+				1269 = {
 					privateer_power = {
 						country = root
 						share = 25
@@ -983,7 +983,7 @@ got_republic_slot_1 = {
 
 		effect = {
 			add_mercantilism = 10
-			1744 = {
+			1269 = {
 				add_trade_modifier = {
 					who = root
 					duration = -1
@@ -1911,7 +1911,7 @@ got_pirate_slot_3 = {
 					}
 				}
 				AND = {
-					province_id = 1744
+					province_id = 1269
 					NOT = {
 						privateer_power = {
 							country = ROOT
@@ -1928,7 +1928,7 @@ got_pirate_slot_3 = {
 					share = 25
 				}
 			}
-			1744 = {
+			1269 = {
 				privateer_power = {
 					country = ROOT
 					share = 10

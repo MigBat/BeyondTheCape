@@ -3001,7 +3001,7 @@ country_event = {
 	id = btc_por.141
 	title = btc_por.141_t
 	desc = btc_por.141_d
-	picture = BAD_POPE_eventPicture
+	picture = FLAGSHIP_SUNK_eventPicture
 
 	is_triggered_only = yes
 
@@ -3030,7 +3030,7 @@ country_event = {
 	id = btc_por.142
 	title = btc_por.142_t
 	desc = btc_por.142_d
-	picture = FLAGSHIP_SUNK_eventPicture
+	picture = PAY_POPE_eventPicture
 
 	is_triggered_only = yes
 
@@ -4337,13 +4337,51 @@ province_event = {
 		name = btc_por.167a
 		
 		random_list = {
-			40 = {
+			30 = {
+				trigger = {
+					NOT = {
+						OR = {
+							has_river_estuary_trigger = yes
+							province_has_center_of_trade_of_level = 1
+							province_has_center_of_trade_of_level = 2
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}
 				add_permanent_province_modifier = {
 					name = padrao_raised
 					duration = -1
 				}
+				FROM = {
+					add_government_power = {
+						mechanic_type = portuguese_saudade_mechanic
+						power_type = portuguese_saudade
+						value = 1
+					}
+				}
 			}
-			60 = {}
+			70 = {
+				trigger = {
+					OR = {
+						has_river_estuary_trigger = yes
+						province_has_center_of_trade_of_level = 1
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+					}
+				}
+				add_permanent_province_modifier = {
+					name = padrao_raised
+					duration = -1
+				}
+				FROM = {
+					add_government_power = {
+						mechanic_type = portuguese_saudade_mechanic
+						power_type = portuguese_saudade
+						value = 1
+					}
+				}
+			}
+			50 = {}
 		}
 	}
 }

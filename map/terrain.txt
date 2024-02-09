@@ -627,7 +627,7 @@ categories =  {
 			
 			1997 #Fix Midway in Typus
 			# BTC #
-			1097 4182
+			1097 4182 4980
 		}
 	}	
 	

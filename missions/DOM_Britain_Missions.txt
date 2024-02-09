@@ -1030,7 +1030,7 @@ ave_row_slot_2 = {
 			}
 		}	
 		effect = {
-			174 = {
+			1276 = {
 				add_trade_modifier = {
 					who = root
 					duration = 5475

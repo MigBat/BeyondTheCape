@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_diplomats_of_anabaptism_aspect"
+		texturefile = "gfx/interface/church_aspects_anglicanism/diplomats_of_the_reformation_aspect_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_american_anabaptists_icon"
+		texturefile = "gfx/interface/progress_of_the_supreme_governor_icon.dds"
+	}
+}	
+
+
+
