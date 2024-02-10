@@ -1,0 +1,168 @@
+namespace = btc_ideas_startup
+
+country_event = {
+    id = btc_ideas_startup.1
+    
+    title = ""
+    desc = ""
+    picture = BIG_BOOK_eventPicture
+    
+    hidden = yes
+    is_triggered_only = yes
+    
+    trigger = {
+        NOT = {
+            has_country_flag = btc_removed_ideagroup_flag
+        }
+        NOT = {
+            is_year = 1445
+        }
+    }
+    
+    immediate = {
+        set_country_flag = btc_removed_ideagroup_flag
+    }
+    
+    option = {
+        name = ""
+        ai_chance = {
+            factor = 1
+        }
+        
+        ## T1 adm
+        if = {
+            limit = {
+                has_idea_group = religious_ideas
+            }
+            remove_idea_group = religious_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = innovativeness_ideas
+            }
+            remove_idea_group = innovativeness_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = economic_ideas
+            }
+            remove_idea_group = economic_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = infrastructure_ideas
+            }
+            remove_idea_group = infrastructure_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = aristocracy_ideas
+            }
+            remove_idea_group = aristocracy_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = plutocracy_ideas
+            }
+            remove_idea_group = plutocracy_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = horde_gov_ideas
+            }
+            remove_idea_group = horde_gov_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = theocracy_gov_ideas
+            }
+            remove_idea_group = theocracy_gov_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = indigenous_ideas
+            }
+            remove_idea_group = indigenous_ideas
+        }
+        
+        ## T1 dip
+        if = {
+            limit = {
+                has_idea_group = trade_ideas
+            }
+            remove_idea_group = trade_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = maritime_ideas
+            }
+            remove_idea_group = maritime_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = court_ideas
+            }
+            remove_idea_group = court_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = imperialism_ideas
+            }
+            remove_idea_group = imperialism_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = exploration_ideas
+            }
+            remove_idea_group = exploration_ideas
+        }
+        
+        ## T1 mil
+        if = {
+            limit = {
+                has_idea_group = naval_ideas
+            }
+            remove_idea_group = naval_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = mercenary_ideas
+            }
+            remove_idea_group = mercenary_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = quantity_ideas
+            }
+            remove_idea_group = quantity_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = defensive_ideas
+            }
+            remove_idea_group = defensive_ideas
+        }
+        
+        if = {
+            limit = {
+                has_idea_group = offensive_ideas
+            }
+            remove_idea_group = offensive_ideas
+        }
+    }
+}

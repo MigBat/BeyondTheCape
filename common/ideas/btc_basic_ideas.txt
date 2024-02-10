@@ -20,7 +20,7 @@ religious_ideas = {
 
 	bonus = {
 		cb_on_religious_enemies = yes
-		# monthly_portuguese_saudade = 0.075
+		monthly_portuguese_saudade = 0.075
 	}
 
 	missionary_schools = {
@@ -108,15 +108,15 @@ innovativeness_ideas = {
 	bonus = {
 		embracement_cost = -0.1
 		innovativeness_gain = 0.5
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
-	patron_of_art  = {
-		global_institution_spread = 0.25
-	}
-	empiricism = {
+	patron_of_art = {
 		prestige = 1
 		monthly_splendor = 1
+	}
+	empiricism = {
+		global_institution_spread = 0.25
 	}
 	scientific_revolution = {
 		global_tax_modifier = 0.05
@@ -128,10 +128,10 @@ innovativeness_ideas = {
 		tolerance_heathen = 1
 		harmonization_speed = 0.25
 	}
-	optimism = {
+	expanded_policies = {
 		reform_progress_growth = 0.15
 	}
-	expanded_policies = {
+	optimism = {
 		technology_cost = -0.1
 	}
 
@@ -191,7 +191,7 @@ economic_ideas = {
 
 	bonus = {
 		state_governing_cost = -0.1
-		# monthly_portuguese_saudade = -0.075
+		monthly_portuguese_saudade = -0.075
 	}
 
 	agrarian1 = {
@@ -213,7 +213,7 @@ economic_ideas = {
 	}
 	agrarian6 = {
 		cavalry_cost = -0.1
-		cav_to_inf_ratio = 0.15
+		cav_to_inf_ratio = 0.1
  	}
 	agrarian7 = {
 		global_allowed_num_of_buildings = 1
@@ -254,14 +254,14 @@ infrastructure_ideas = {
 
 	bonus = {
 		reform_progress_growth = 0.15
-		# monthly_portuguese_saudade = -0.075
+		monthly_portuguese_saudade = -0.075
 	}
 
 	urban1 = {
 		global_tax_modifier = 0.15
 	}
 	urban2 = {
-		development_cost = -0.1
+		development_cost_modifier = -0.1
 	}
 	urban3 = {
 		expand_infrastructure_cost_modifier = -0.25
@@ -317,11 +317,12 @@ aristocracy_ideas = {
 		nobles_loyalty_modifier = 0.1
 		rajput_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 	
 	noble_knights = {
-		cavalry_power = 0.15
+		cavalry_power = 0.1
+		cav_to_inf_ratio = 0.1
 	}
 	serfdom = {
 		army_tradition_from_battle = 1
@@ -347,7 +348,7 @@ aristocracy_ideas = {
 	
 
 	ai_will_do = {
-		factor = 3.75
+		factor = 2
 		modifier = {
 			factor = 1.25
 			has_global_modifier_value = {
@@ -391,7 +392,7 @@ plutocracy_ideas = {
 		global_prov_trade_power_modifier = 0.25
 		burghers_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
 	tradition_of_payment = {
@@ -420,7 +421,7 @@ plutocracy_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 3.75
+		factor = 2
 		modifier = {
 			factor = 1.25
 			trade_income_percentage = 0.4
@@ -451,16 +452,16 @@ horde_gov_ideas = {
 	trigger = {
 		has_government_attribute = enables_horde_idea_group
 	}
-	
+
 	bonus = {
 		cavalry_power = 0.25
 		nomadic_tribes_loyalty_modifier = 0.1
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 	
 	horse_lords = {
 		cavalry_cost = -0.33
-		cav_to_inf_ratio = 0.10
+		cav_to_inf_ratio = 0.15
 	}
 	beyond_the_sun = {
 		ae_impact = -0.1
@@ -505,7 +506,7 @@ theocracy_gov_ideas = {
 		church_loyalty_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.1
 		brahmins_muslim_loyalty_modifier = 0.1
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
 	servants_of_god = {
@@ -535,7 +536,7 @@ theocracy_gov_ideas = {
 		prestige_from_land = 0.5
 	}
 	ai_will_do = {
-		factor = 3.75
+		factor = 2
 		modifier = {
 			factor = 0
 			has_idea_group = humanist_ideas
@@ -574,7 +575,7 @@ indigenous_ideas = {
 
 	bonus = {
 		global_institution_spread = 0.25
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
 	indigenous_bountiful_land = {
@@ -613,7 +614,7 @@ trade_ideas = {
 
 	bonus = {
 		trade_steering = 0.2
-		# monthly_portuguese_saudade = 0.05
+		monthly_portuguese_saudade = 0.05
 	}
 
 	shrewd_commerce_practise = {
@@ -688,10 +689,10 @@ maritime_ideas = {
 	bonus = {
 		sea_repair = yes
 		ship_power_propagation = 0.4
-		# monthly_portuguese_saudade = 0.075
+		monthly_portuguese_saudade = 0.075
 	}
 
-	merchant_traditions = {
+	ships_penny = {
 		ship_trade_power_modifier = 0.2
 	}
 	merchant_marine = {
@@ -706,15 +707,15 @@ maritime_ideas = {
 		global_sailors_modifier = 0.5
 		allowed_marine_fraction = 0.25
 	}
-	ships_penny = {
+	naval_fighting_instruction = {
 		blockade_efficiency = 0.5
-		privateer_efficiency = 0.25
+		privateer_efficiency = 0.05
 	}
 	sea_hawks = {
 		naval_forcelimit_modifier = 0.25
 		global_naval_engagement_modifier = 0.1
 	}
-	naval_fighting_instruction = {
+	merchant_traditions = {
 		movement_speed_in_fleet_modifier = 1
 		naval_tradition_from_trade = 1
 	}
@@ -781,14 +782,14 @@ maritime_ideas = {
 	}
 }
 
-# Cultural
+# Artistic
 
 court_ideas = {
 	category = DIP
 
 	bonus = {
 		all_estate_loyalty_equilibrium = 0.05
-		# monthly_portuguese_saudade = -0.075
+		monthly_portuguese_saudade = -0.075
 	}
 	
 	long_echo = {
@@ -847,7 +848,7 @@ imperialism_ideas = {
 	bonus = {
 		vassal_forcelimit_bonus = 0.25
 		vassal_naval_forcelimit_bonus = 0.1
-		# monthly_portuguese_saudade = -0.075
+		monthly_portuguese_saudade = -0.075
 	}
 	
 	imperialism1 = {
@@ -864,7 +865,7 @@ imperialism_ideas = {
 	}
 	imperialism5 = {
 		accept_vassalization_reasons = 10
-		reduced_liberty_desire_on_same_continent = -0.1
+		reduced_liberty_desire_on_same_continent = 10
 	}
 	imperialism6 = {
 		ae_impact = -0.1
@@ -903,11 +904,17 @@ exploration_ideas = {
 
 	trigger = {
 		num_of_ports = 1
+		if = {
+			limit = {
+				tag = GCH
+			}
+			has_country_modifier = guanches_exploration
+		}
 	}
 
 	bonus = {
 		cb_on_overseas = yes
-		# monthly_portuguese_saudade = 0.075
+		monthly_portuguese_saudade = 0.075
 	}
 
 	overseas_exploration = {
@@ -1019,13 +1026,15 @@ exploration_ideas = {
 			NOT = { tag = POR }
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			capital_scope = {
 				NOT = {
-					region = france_region
-					region = iberia_region
-					region = british_isles_region
-					region = low_countries_region
+					OR = {
+						region = france_region
+						region = iberia_region
+						region = british_isles_region
+						region = low_countries_region
+					}
 				}
 			}
 			NOT = { technology_group = high_american }
@@ -1084,9 +1093,9 @@ exploration_ideas = {
 				tag = POR
 				tag = CAS
 				tag = SPA
+				tag = ENG
 				tag = GBR
 				tag = NED
-				tag = ENG
 				tag = FRA
 				tag = KUR
 			}
@@ -1108,12 +1117,13 @@ naval_ideas = {
 
 	bonus = {
 		siege_blockade_progress = 1
-		naval_morale = 0.1
-		# monthly_portuguese_saudade = 0.05
+		global_naval_barrage_cost = -0.2
+		monthly_portuguese_saudade = 0.05
 	}
 
 	improved_rams = {
 		galley_power = 0.25
+		naval_morale = 0.1
 	}
 	boarding_parties = {
 		leader_naval_shock = 1
@@ -1132,12 +1142,12 @@ naval_ideas = {
 		allowed_marine_fraction = 0.25
 	}
 	naval_glory = {
-		disengagement_chance = 0.15
-		sunk_ship_morale_hit_recieved = -0.33
-	}
-	superior_seamanship = {
 		prestige_from_naval = 1
 		global_naval_engagement_modifier = 0.1
+	}
+	superior_seamanship= {
+		disengagement_chance = 0.15
+		sunk_ship_morale_hit_recieved = -0.33
 	}
 
 	ai_will_do = {
@@ -1169,7 +1179,7 @@ naval_ideas = {
 			has_government_attribute = is_pirate_republic_reform
 		}
 		modifier = {
-			factor = 1000
+			factor = 100
 			OR = {
 				tag = GBR
 				tag = ENG
@@ -1191,6 +1201,7 @@ naval_ideas = {
 				tag = MAM
 				tag = TUR
 				tag = VIJ
+				tag = POR
 			}
 		}
 		modifier = {
@@ -1207,6 +1218,10 @@ naval_ideas = {
 				NOT = { adm_tech = 9 }
 			}
 		}
+		modifier = {
+			factor = 0
+			tag = RUS
+		}
 	}
 }
 
@@ -1222,7 +1237,7 @@ mercenary_ideas = {
 
 	bonus = {
 		allow_mercenary_drill = yes
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
 	organised_mercenary_payment = {
@@ -1268,7 +1283,7 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.25
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
 	enforced_service = {
@@ -1284,7 +1299,7 @@ quantity_ideas = {
 		global_manpower_modifier = 0.25
 	}
 	camp_followers = {
-		reinforce_speed = -0.1
+		reinforce_speed = 0.1
 		global_regiment_recruit_speed = -0.1
 	}
 	expanded_supply_trains = {
@@ -1350,32 +1365,32 @@ defensive_ideas = {
 
 	bonus = {
 		global_defender_dice_roll_bonus = 1
-		# monthly_portuguese_saudade = -0.075
+		monthly_portuguese_saudade = -0.075
 	}
 
 	defensive_mentality = {
 		fort_maintenance_modifier = -0.15
 	}
-	battlefield_commisions = {
+	defensive2 = {
 		defensiveness = 0.2
 	}
 	improved_manuever = {
 		leader_land_manuever = 1
 	}
-	military_drill = {
+	defensive4 = {
 		shock_damage_received = -0.05
 	}
 	improved_foraging = {
 		garrison_size = 0.4
-		global_garrison_growth = 0.5
+		global_garrison_growth = 0.25
 	}
 	regimental_system = {
 		fire_damage_received = -0.05
 		regiment_manpower_usage = -0.1
 	}
 	supply_trains = {
-		hostile_attrition = 2
-		max_hostile_attrition = 2
+		hostile_attrition = 1
+		max_hostile_attrition = 1
 	}
 
 	#until_the_last_man = {
@@ -1463,26 +1478,26 @@ offensive_ideas = {
 
 	bonus = {
 		global_attacker_dice_roll_bonus = 1
-		# monthly_portuguese_saudade = 0.05
+		monthly_portuguese_saudade = 0.05
 	}
 
-	bayonet_leaders = {
+	superior_firepower = {
 		artillery_cost = -0.1
 	}
 	national_conscripts = {
 		leader_siege = 1
 	}
-	superior_firepower = {
+	bayonet_leaders = {
 		movement_speed = 0.1
 	}
-	glorious_arms = {
+	grand_army = {
 		land_attrition = -0.1
 	}
 	engineer_corps = {
 		siege_ability = 0.20
 	}
-	grand_army = {
-		morale_damage = 0.15
+	glorious_arms = {
+		morale_damage = 0.1
 	}
 	napoleonic_warfare = {
 		army_tradition_from_battle = 1
@@ -1577,7 +1592,7 @@ nationalist_ideas = {
 	bonus = {
 		expel_minorities_cost = -0.4
 		culture_conversion_cost = -0.2
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
 	nationalist1 = {
@@ -1652,7 +1667,7 @@ humanist_ideas = {
 
 	bonus = {
 		idea_cost = -0.1
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
 	local_traditions = {
@@ -1737,7 +1752,7 @@ meritocracy_ideas = {
 	bonus = {
 		yearly_corruption = -0.15
 		all_power_cost = -0.1
-		# monthly_portuguese_saudade = -0.075
+		monthly_portuguese_saudade = -0.075
 	}
 
 	meritocracy1 = {
@@ -1827,30 +1842,31 @@ expansion_ideas = {
 	}
 
 	bonus = {
+		cb_on_primitives = yes
 		administrative_efficiency = 0.05
-		# monthly_portuguese_saudade = 0.075
+		monthly_portuguese_saudade = 0.075
 	}
 
-	additional_colonists = {
+	expansion1 = {
 		global_unrest = -2
 		harmonization_speed = 0.25
 	}
 	additional_merchants = {
 		merchants = 1
 	}
-	faster_colonists = {
+	expansion3 = {
 		governing_capacity_modifier = 0.2
 	}
-	vice_roys  = {
+	expansion4  = {
 		global_rebel_suppression_efficiency = 0.5
  	}
-	additional_diplomats = {
+	expansion5 = {
 		state_governing_cost = -0.1
 	}
 	general_colonization_law  = {
 		core_creation = -0.25
 	}
-	competetive_merchants  = {
+	expansion7  = {
 		colonists = 1
 	}
 
@@ -1858,10 +1874,11 @@ expansion_ideas = {
 		factor = 0.5
 		modifier = {
 			factor = 10
-			OR = {
-				has_idea_group = exploration_ideas
-				is_colonial_nation = yes
-			}
+			has_idea_group = exploration_ideas
+		}
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
 		}
 		modifier = {
 			factor = 0
@@ -1869,7 +1886,6 @@ expansion_ideas = {
 				OR = {
 					tag = MOS
 					tag = RUS
-					is_colonial_nation = yes
 				}
 			}
 			NOT = { has_idea_group = exploration_ideas }
@@ -1893,7 +1909,6 @@ expansion_ideas = {
 		modifier = {
 			factor = 0
 			NOT = { has_idea_group = exploration_ideas }
-			NOT = { is_colonial_nation = yes }
 			NOT = {
 				any_owned_province = {
 					has_empty_adjacent_province = yes
@@ -1903,9 +1918,11 @@ expansion_ideas = {
 		modifier = {
 			factor = 0.1
 			NOT = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = muslim
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = muslim
+				}
 			}
 		}
 	}
@@ -1931,7 +1948,7 @@ mercantilism_ideas = {
 
 	bonus = {
 		province_trade_power_modifier = 0.15
-		# monthly_portuguese_saudade = -0.075
+		monthly_portuguese_saudade = -0.075
 	}
 
 	mercantilism1 = { 
@@ -1941,7 +1958,7 @@ mercantilism_ideas = {
 		global_own_trade_power = 0.2
 	}
 	mercantilism3 = { 
-		center_of_trade_upgrade_cost = -0.02
+		center_of_trade_upgrade_cost = -0.2
  	}												
 	mercantilism4 = {
 		embargo_efficiency = 0.3
@@ -2019,7 +2036,7 @@ free_trade_ideas = {
 
 	bonus = {
 		idea_cost = -0.1
-		# monthly_portuguese_saudade = -0.075
+		monthly_portuguese_saudade = -0.075
 	}
 
 	freetrade1 = { 
@@ -2106,7 +2123,7 @@ spy_ideas = {
 	bonus = {
 		rebel_support_efficiency = 1
 		spy_action_cost_modifier = -0.2
-		# monthly_portuguese_saudade = 0.05
+		monthly_portuguese_saudade = 0.05
 	}
 	
 	claim_fabrication = {
@@ -2132,7 +2149,7 @@ spy_ideas = {
 	}
 	
 	privateers = {
-		privateer_efficiency = 0.33
+		privateer_efficiency = 0.075
 		capture_ship_chance = 0.25
 	}
 	
@@ -2172,7 +2189,8 @@ colonialism_ideas = {
 	}
 
 	bonus = {
-		reduced_liberty_desire_on_other_continent = -10
+		reduced_liberty_desire_on_other_continent = 10
+		monthly_portuguese_saudade = 0.075
 	}
 
 	colonialism1 = {
@@ -2202,13 +2220,9 @@ colonialism_ideas = {
 
 	ai_will_do = {
 		factor = 3.5
-		modifier = {
-			factor = 2
-			has_strong_mil_national_ideas = yes 
-		}
 		modifier = { 
 			factor = 0.75
-			NOT = { monthly_mil = 8 }
+			NOT = { monthly_dip = 8 }
 		}
 		modifier = { 
 			factor = 1.05
@@ -2216,39 +2230,23 @@ colonialism_ideas = {
 		}
 		modifier = { 
 			factor = 1.05
-			national_focus = MIL 
+			national_focus = DIP
 		}
 		modifier = { 
 			factor = 1.1
-			personality = ai_militarist  
+			personality = ai_colonialist  
 		}
-		modifier = { 
-			factor = 1.25
-			OR = { 
-				has_global_modifier_value = { 
-					which = infantry_power 
-					value = 0.2
-				}
-				has_global_modifier_value = { 
-					which = cavalry_power 
-					value = 0.25
-				}
-				has_global_modifier_value = { 
-					which = artillery_power 
-					value = 0.1
-				}
-				has_global_modifier_value = { 
-					which = heavy_ship_power 
-					value = 0.1
-				}
-				has_global_modifier_value = { 
-					which = galley_power 
-					value = 0.15
-				}
-				has_global_modifier_value = { 
-					which = army_tradition
-					value = 0.01
-				}
+		modifier = {
+			factor = 100
+			OR = {
+				tag = POR
+				tag = CAS
+				tag = SPA
+				tag = GBR
+				tag = NED
+				tag = ENG
+				tag = FRA
+				tag = KUR
 			}
 		}
 	}
@@ -2273,10 +2271,11 @@ standing_army_ideas = {
 	bonus = {
 		possible_mil_policy = 1
 		yearly_army_professionalism = 0.005
+		monthly_portuguese_saudade = -0.05
 	}
 
 	standingarmy1 = {
-		army_tradition = 0.005
+		army_tradition = 0.5
 		drill_gain_modifier = 0.5
 	}
 	standingarmy2 = {
@@ -2374,7 +2373,7 @@ firepower_ideas = {
 
 	bonus = {
 		fire_damage = 0.1
-		# monthly_portuguese_saudade = -0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
 	firepower1 = {
@@ -2480,28 +2479,29 @@ quality_ideas = {
 
 	bonus = {
 		shock_damage = 0.1
+		monthly_portuguese_saudade = 0.05
 	}
 
-	private_to_marshal = {
+	bravery1 = {
 		morale_damage_received = -0.1
 	}
-	quality_education = {
+	bravery2 = {
 		artillery_barrage_cost = -0.25
 		assault_fort_ability = 0.25
 	}
-	finest_of_horses = {
+	bravery3 = {
 		leader_land_shock = 1
 	}
-	escort_ships = {
+	bravery4 = {
 		infantry_cost = -0.1
 	}
-	naval_drill = {
+	bravery5 = {
 		infantry_shock = 0.5
 	}
-	copper_bottoms = {
+	bravery6 = {
 		cavalry_cost = -0.1
 	}
-	massed_battery = {
+	bravery7 = {
 		cavalry_shock = 0.5
 	}
 
@@ -2581,6 +2581,7 @@ logistics_ideas = {
 
 	bonus = {
 		reserves_organisation = 0.3
+		monthly_portuguese_saudade = 0.05
 	}
 
 	logistics1 = {
@@ -2668,30 +2669,31 @@ administrative_ideas = {
 
 	bonus = {
 		possible_policy = 1
+		monthly_portuguese_saudade = -0.05
 	}
 
-	mass_army = {
+	commandeconomy1 = {
 		global_tax_modifier = 0.2
 	}
-	the_young_can_serve = {
+	commandeconomy2 = {
 		national_focus_years = -10
 		build_time = -0.2
 	}
-	enforced_service = {
+	commandeconomy3 = {
 		mercantilism_cost = -0.15
 	}
-	camp_followers = {
+	commandeconomy4 = {
 		inflation_action_cost = -0.1
 	}
-	reinforcement_drafts = {
+	commandeconomy5 = {
 		move_capital_cost_modifier = -0.6
 		great_project_upgrade_cost = -0.3
 	}
-	the_old_and_infirm = {
+	commandeconomy6 = {
 		stability_cost_modifier = -0.25
 		war_exhaustion_cost = -0.15
 	}
-	expanded_supply_trains = {
+	commandeconomy7 = {
 		max_absolutism = 5
 		max_revolutionary_zeal = 5
 		autonomy_change_time = -0.4
@@ -2756,6 +2758,7 @@ liberalism_ideas = {
 
 	bonus = {
 		free_policy = 1
+		monthly_portuguese_saudade = 0.05
 	}
 
 	liberalism1 = {
@@ -2844,7 +2847,7 @@ influence_ideas = {
 
 	bonus = {
 		accept_vassalization_reasons = 20
-		# monthly_portuguese_saudade = 0.075
+		monthly_portuguese_saudade = 0.075
 	}
 
 	tribute_system = {
@@ -2911,7 +2914,7 @@ diplomatic_ideas = {
 	bonus = {
 		reduced_stab_impacts = yes
 		stability_cost_to_declare_war = -1
-		# monthly_portuguese_saudade = 0.05
+		monthly_portuguese_saudade = 0.05
 	}
 	
 	grand_banquets = {
@@ -2990,13 +2993,14 @@ decisive_battle_ideas = {
 
 	bonus = {
 		discipline = 0.05
+		monthly_portuguese_saudade = -0.05
 	}
 
 	decisivebattle1 = {
 		military_tactics = 0.05
 	}
 	decisivebattle2 = {
-		morale_damage = 0.2
+		morale_damage = 0.15
 	}
 	decisivebattle3 = {
 		prestige_from_land = 1
@@ -3085,24 +3089,27 @@ war_of_attrition_ideas = {
 	bonus = {
 		siege_ability = 0.1
 		defensiveness = 0.15
+		monthly_portuguese_saudade = -0.075
 	}
 
 	warofattrition1 = {
 		war_exhaustion = -0.05
-		global_monthly_devastation = -0.05
+		global_monthly_devastation = -0.1
 	}
 	warofattrition2 = {
 		blockade_efficiency = 0.3
-		available_province_loot = 0.3
+		available_province_loot = 1
 	}
 	warofattrition3 = {
-		hostile_attrition = 1
+		hostile_attrition = 2
+		max_hostile_attrition = 2
 	}
 	warofattrition4 = {
 		shock_damage_received = -0.1
+		global_garrison_growth = 0.25
 	}
 	warofattrition5 = {
-		land_morale = 0.05
+		land_attrition = -0.2
 		recover_navy_morale_speed = 0.15
 	}
 	warofattrition6 = {
@@ -3111,6 +3118,7 @@ war_of_attrition_ideas = {
 	}
 	warofattrition7 = {
 		fire_damage_received = -0.1
+		garrison_size = 0.4
 	}
 
 	ai_will_do = {

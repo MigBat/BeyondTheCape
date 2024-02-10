@@ -1,0 +1,5 @@
+on_startup = {
+    events = {
+        btc_ideas_startup.1
+    }
+}
