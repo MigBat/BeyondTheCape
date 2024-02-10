@@ -1,0 +1,60 @@
+has_tier_1_adm_idea = {
+	OR = {
+		has_idea_group = religious_ideas
+		has_idea_group = innovativeness_ideas
+		has_idea_group = economic_ideas
+		has_idea_group = infrastructure_ideas
+		has_idea_group = aristocracy_ideas
+		has_idea_group = plutocracy_ideas
+		has_idea_group = horde_gov_ideas
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = indigenous_ideas
+	}
+}
+
+has_tier_1_dip_idea = {
+	OR = {
+		has_idea_group = trade_ideas
+		has_idea_group = maritime_ideas
+		has_idea_group = court_ideas
+		has_idea_group = imperialism_ideas
+		has_idea_group = exploration_ideas
+	}
+}
+
+has_tier_1_mil_idea = {
+	OR = {
+		has_idea_group = naval_ideas
+		has_idea_group = mercenary_ideas
+		has_idea_group = quantity_ideas
+		has_idea_group = defensive_ideas
+		has_idea_group = offensive_ideas	
+	}
+}
+
+has_tier_2_adm_idea = {
+	OR = {
+		has_idea_group = nationalist_ideas
+		has_idea_group = humanist_ideas
+		has_idea_group = meritocracy_ideas
+		has_idea_group = expansion_ideas
+	}
+}
+
+has_tier_2_dip_idea = {
+	OR = {
+		has_idea_group = mercantilism_ideas
+		has_idea_group = free_trade_ideas
+		has_idea_group = spy_ideas
+		has_idea_group = colonialism_ideas
+	}
+}
+
+has_tier_2_mil_idea = {
+	OR = {
+		has_idea_group = standing_army_ideas
+		has_idea_group = firepower_ideas
+		has_idea_group = quality_ideas
+		has_idea_group = logistics_ideas
+	}
+}
