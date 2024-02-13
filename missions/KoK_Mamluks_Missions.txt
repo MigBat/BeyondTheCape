@@ -793,7 +793,7 @@ mam_missions_2 = {
 			# else = {
 			# 	4316 = { add_base_production = 3 }
 			# }
-			add_country_flag = btc_unlocked_suez_transportation
+			set_country_flag = btc_unlocked_suez_transportation
 			add_mercantilism = 3
 		}
 	}
