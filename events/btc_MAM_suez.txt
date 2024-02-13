@@ -1,0 +1,129 @@
+namespace = btc_mam_suez
+
+province_event = {
+	id = btc_mam_suez.1
+
+	title = ""
+	desc = ""
+	picture = BIG_BOOK_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		if = {
+			limit = {
+				province_id = 4316
+			}
+
+			province_event = {
+				id = btc_mam_suez.2
+			}
+		}
+
+		if = {
+			limit = {
+				province_id = 2315
+			}
+
+			province_event = {
+				id = btc_mam_suez.3
+			}
+		}
+	}
+}
+
+## Sharqiya -> as-Suways
+province_event = {
+	id = btc_mam_suez.2
+	
+	title = ""
+	desc = ""
+	picture = BIG_BOOK_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		province_id = 4316
+		controlled_by = ROOT
+
+		2315 = {
+			owned_by = ROOT
+			controlled_by = ROOT
+		}
+
+		owner = {
+			has_country_flag = btc_unlocked_suez_transportation
+		}
+
+		has_province_flag = btc_move_ships
+
+		OR = {
+			heavy_ships_in_province = ROOT
+			light_ships_in_province = ROOT
+			galleys_in_province = ROOT
+			transports_in_province = ROOT
+		}
+	}
+
+	option = {
+		name = ""
+        ai_chance = {
+            factor = 1
+        }
+
+		btc_move_ship = {
+			from = 4316
+			to = 2315
+		}
+	}
+}
+
+
+## Sharqiya <- as-Suways
+province_event = {
+	id = btc_mam_suez.3
+	
+	title = ""
+	desc = ""
+	picture = BIG_BOOK_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		province_id = 2315
+		controlled_by = ROOT
+
+		4316 = {
+			owned_by = ROOT
+			controlled_by = ROOT
+		}
+
+		owner = {
+			has_country_flag = btc_unlocked_suez_transportation
+		}
+
+		has_province_flag = btc_move_ships
+
+		OR = {
+			heavy_ships_in_province = ROOT
+			light_ships_in_province = ROOT
+			galleys_in_province = ROOT
+			transports_in_province = ROOT
+		}
+	}
+
+	option = {
+		name = ""
+        ai_chance = {
+            factor = 1
+        }
+
+		btc_move_ship = {
+			from = 2315
+			to = 4316
+		}
+	}
+}
