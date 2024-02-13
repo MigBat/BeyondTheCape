@@ -990,6 +990,20 @@ guiTypes = {
 				scripted = yes
 			}		
 
+			guiButtonType = {
+				name = "btc_enable_move_ships"
+				quadTextureSprite = "GFX_feitoria_button"
+				position = { x = 140 y = 328 }
+				scripted = yes
+			}	
+
+			guiButtonType = {
+				name = "btc_disable_move_ships"
+				quadTextureSprite = "GFX_fortified_feitoria_button"
+				position = { x = 140 y = 328 }
+				scripted = yes
+			}	
+
 			### CLAIMS
 			instantTextBoxType = {
 				name = "claims_title"
