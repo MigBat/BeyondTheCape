@@ -344,33 +344,3 @@ burgundy_dutch_subjects_6 = {
 	
 	diplomatic_upkeep = 6
 }
-###########################################
-exploration_modifier_1 = {
-	potential = {
-		NOT = {
-			is_year = 1500
-		}
-		dip_tech = 3
-	}
-
-	trigger = {
-		always = yes
-	}
-	global_colonial_growth = -15
-	range = 0.25 #base needs more
-}
-exploration_modifier_2 = {
-	potential = {
-		is_year = 1500
-		NOT = {
-			is_year = 1600
-		}
-	}
-
-	trigger = {
-		always = yes
-	}
-
-	global_colonial_growth = -5
-	range = 0.25 #base needs more
-}

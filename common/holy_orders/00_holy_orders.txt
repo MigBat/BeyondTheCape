@@ -148,6 +148,7 @@ hieronymites = {
 jesuit_order = {
     icon = GFX_holy_order_jesuits
     trigger = {
+        has_global_flag = jesuits_formed
     	OR = { 
 			AND = { 
 				culture_group = iberian

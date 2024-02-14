@@ -29,7 +29,6 @@ castilian_civil_war = {
 	can_start = {
 		is_at_war = no
 		has_any_disaster = no
-		# has_heir = yes
 		custom_trigger_tooltip = {
 			tooltip = enrique_doesnt_exist_tt
 			NOT = { has_heir_flag = is_enrique_flag }
@@ -44,8 +43,8 @@ castilian_civil_war = {
 	}
 	
 	can_stop = {
-		is_at_war = yes
 		OR = {
+			is_at_war = yes
 			has_any_disaster = yes
 			is_lesser_in_union = yes
 			NOT = { government = monarchy }

@@ -2750,3 +2750,21 @@ country_event = {
 		}
 	}
 }
+
+# Jesuit Holy Order
+country_event = {
+	id = btc_events.46
+	title = btc_events.46_t
+	desc = btc_events.46_d
+	picture = JESUIT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = btc_events.46a
+
+		custom_tooltip = jesuits_formed_tt
+		set_global_flag = jesuits_formed
+	}
+}

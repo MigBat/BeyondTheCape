@@ -68,6 +68,7 @@ difficulty_hard_ai = {
 	interest = -1
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.15
+
 }
 
 difficulty_very_hard_ai = {
@@ -183,6 +184,7 @@ land_province = {
 	local_manpower_modifier = 0.25			#25% of manpower.
 	local_has_musketeers = yes
 	local_has_streltsy = yes
+	local_has_mamluks = yes
 }
 
 mild_winter = {
@@ -580,6 +582,7 @@ left_trade_company = {
 	trade_goods_size_modifier = -2.0
 }
 
+
 scorched_earth = {
 	local_hostile_attrition = 5
 	local_hostile_movement_speed = -0.5
@@ -632,6 +635,7 @@ ai_nation = {
 	diplomats = 1 							# ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
 	free_leader_pool = 1					# ai needs to have enough pool for 1 general & 1 admiral
 	sailors_recovery_speed = 0.25
+	colony_cost_modifier = -0.5
 }
 
 
@@ -2141,6 +2145,7 @@ voc_indiamen_ship = {
 	ship_trade_power_modifier = 0.2
 	can_transport_units = yes
 }
+
 
 cossacks_regiment = {
     shock_damage = 0.15

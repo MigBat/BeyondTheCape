@@ -1115,6 +1115,68 @@ dom_cas_missions_2 = {
 			}
 		}
 	}
+
+	btc_cas_societas_jesu = {
+		icon = mission_societas_jesu
+		required_missions = { }
+		position = 7
+
+		trigger = {
+			religion = catholic
+			has_country_modifier = counter_reformation
+			has_institution = new_world_i
+			PAP = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					POR = {
+						NOT = { mission_completed = btc_por_societas_jesu }
+					}
+				}
+				custom_tooltip = cas_race_portugal_event_tt
+				define_advisor = {
+					type = theologian
+					skill = 3
+					name = "Ignatius of Loyola"
+					age = 50
+					location = 227
+					cost_multiplier = 0.25
+					culture = basque
+					religion = catholic
+				}
+				country_event = {
+					id = btc_events.46
+				}
+			}
+			else = {
+				define_advisor = {
+					type = theologian
+					skill = 2
+					name = "Ignatius of Loyola"
+					age = 50
+					location = 227
+					cost_multiplier = 0.25
+					culture = basque
+					religion = catholic
+				}
+			}
+			custom_tooltip = enable_propogate_religion_in_abrahamic_provinces_tt
+			hidden_effect = {
+				set_country_flag = can_propagate_religion_in_abrahamic_provinces
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
 }
 
 dom_cas_missions_2_b = {
@@ -1909,8 +1971,10 @@ dom_cas_missions_3 = {
 					POR = {
 						valid_for_personal_unions_trigger = yes
 						NOT = { 
-							alliance_with = ROOT 
-							marriage_with = ROOT 
+							OR = {
+								alliance_with = ROOT 
+								marriage_with = ROOT 
+							}
 						}
 					}
 				}
@@ -4494,8 +4558,18 @@ dom_cas_missions_5_c = {
 			if = {
 				limit = {
 					AND = {
-						CAS = { has_country_flag = tordesillas_cas }
-						POR = { has_country_flag = tordesillas_por }
+						CAS = { 
+							OR = {
+								has_country_flag = tordesillas_cas 
+								has_country_flag = terra_nova_cas
+							}
+						}
+						POR = { 
+							OR = {
+								has_country_flag = tordesillas_por 
+								has_country_flag = terra_nova_por
+							}
+						}
 					}
 				}
 				ROOT = {

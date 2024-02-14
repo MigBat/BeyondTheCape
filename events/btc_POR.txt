@@ -99,7 +99,112 @@ country_event = {
 				name = massive_earthquake
 				duration = -1
 			}
-			remove_province_modifier = ribeira_palace
+			if = {
+				limit = {
+					owner = {
+						NOT = {
+							has_country_flag = monumental_best
+						}
+					}
+				}
+				random_list = {
+					32 = {
+						remove_province_modifier = ribeira_palace_mod				
+						remove_province_modifier = jeronimos_monastery_mod			
+						remove_province_modifier = tower_of_belem_mod			
+						remove_province_modifier = mafra_convent_mod			
+						remove_province_modifier = pena_palace_mod		
+						destroy_great_project = {
+							type = ribeira_palace
+						}		
+						destroy_great_project = {
+							type = jeronimos_monastery
+						}	
+						destroy_great_project = {
+							type = belem_tower
+						}	
+						destroy_great_project = {
+							type = mafra_convent
+						}	
+						destroy_great_project = {
+							type = pena_palace
+						}		
+						owner = {
+							clr_country_flag = has_ribeira_palace
+							clr_country_flag = has_jeronimos_monastery
+							clr_country_flag = has_belem_tower
+							clr_country_flag = has_mafra_convent
+							clr_country_flag = has_pena_palace
+						}
+					}
+					48 = {
+						remove_province_modifier = ribeira_palace_mod				
+						remove_province_modifier = jeronimos_monastery_mod			
+						remove_province_modifier = tower_of_belem_mod			
+						remove_province_modifier = mafra_convent_mod
+						destroy_great_project = {
+							type = ribeira_palace
+						}		
+						destroy_great_project = {
+							type = jeronimos_monastery
+						}	
+						destroy_great_project = {
+							type = belem_tower
+						}	
+						destroy_great_project = {
+							type = mafra_convent
+						}			
+						owner = {
+							clr_country_flag = has_ribeira_palace
+							clr_country_flag = has_jeronimos_monastery
+							clr_country_flag = has_belem_tower
+							clr_country_flag = has_mafra_convent
+						}			
+					}
+					72 = {
+						remove_province_modifier = ribeira_palace_mod				
+						remove_province_modifier = jeronimos_monastery_mod			
+						remove_province_modifier = tower_of_belem_mod	
+						destroy_great_project = {
+							type = ribeira_palace
+						}		
+						destroy_great_project = {
+							type = jeronimos_monastery
+						}	
+						destroy_great_project = {
+							type = belem_tower
+						}	
+						owner = {
+							clr_country_flag = has_ribeira_palace
+							clr_country_flag = has_jeronimos_monastery
+							clr_country_flag = has_belem_tower
+						}						
+					}
+					108 = {
+						remove_province_modifier = ribeira_palace_mod				
+						remove_province_modifier = jeronimos_monastery_mod	
+						destroy_great_project = {
+							type = ribeira_palace
+						}		
+						destroy_great_project = {
+							type = jeronimos_monastery
+						}	
+						owner = {
+							clr_country_flag = has_ribeira_palace
+							clr_country_flag = has_jeronimos_monastery
+						}					
+					}
+					162 = {
+						remove_province_modifier = ribeira_palace_mod	
+						destroy_great_project = {
+							type = ribeira_palace
+						}		
+						owner = {
+							clr_country_flag = has_ribeira_palace
+						}					
+					}
+				}
+			}
 		}
 		set_country_flag = lisbon_earthquake_happened
 		custom_tooltip = lisbon_earthquake
@@ -886,16 +991,7 @@ country_event = {
 	desc = btc_por.100_d
 	picture = POPE_PREACHING_eventPicture
 
-	fire_only_once = yes
-
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		is_year = 1495
-	}
-
-	mean_time_to_happen = {
-		months = 60
-	}
+	is_triggered_only = yes
 
 	option = {	# Expel the Mouriscos
 		name = btc_por.100a
@@ -1012,30 +1108,46 @@ country_event = {
 	}
 }
 
-# Death of the Infante #
+# Pena Palace #
 
 country_event = {
 	id = btc_por.102
 	title = btc_por.102_t
 	desc = btc_por.102_d
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = great_building_picture
 
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		NOT = { is_advisor_employed = 617 }
-		has_country_modifier = por_henry_cheaper
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = btc_por.102a
+		trigger = {
+			has_dlc = "Leviathan"
+		}
 
-		remove_country_modifier = por_henry_cheaper
+		add_treasury = -500
+
+		custom_tooltip = btc_enable_pena_palace_tt
+		hidden_effect = {
+			227 = {
+				add_great_project = {
+					type = pena_palace
+					instant = yes
+				}
+			}		
+			set_country_flag = has_pena_palace
+		}
+	}
+
+	option = {
+		name = btc_por.102b
+
+		add_treasury = -500
+		227 = {
+			add_province_modifier = {
+				name = pena_palace_mod
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -1913,11 +2025,31 @@ country_event = {
 
 	option = {
 		name = btc_por.120a
+		trigger = {
+			has_dlc = "Leviathan"
+		}
 
-		add_treasury = -400
+		add_treasury = -200
+
+		custom_tooltip = btc_enable_ribeira_palace_tt
+		hidden_effect = {
+			227 = {
+				add_great_project = {
+					type = ribeira_palace
+					instant = yes
+				}
+			}		
+			set_country_flag = has_ribeira_palace
+		}
+	}
+
+	option = {
+		name = btc_por.120b
+
+		add_treasury = -200
 		227 = {
 			add_province_modifier = {
-				name = ribeira_palace
+				name = ribeira_palace_mod
 				duration = -1
 			}
 		}
@@ -1969,11 +2101,31 @@ country_event = {
 
 	option = {
 		name = btc_por.122a
+		trigger = {
+			has_dlc = "Leviathan"
+		}
+
+		add_treasury = -500
+
+		custom_tooltip = btc_enable_mafra_convent_tt
+		hidden_effect = {
+			227 = {
+				add_great_project = {
+					type = mafra_convent
+					instant = yes
+				}
+			}		
+			set_country_flag = has_mafra_convent
+		}
+	}
+
+	option = {
+		name = btc_por.122b
 
 		add_treasury = -500
 		227 = {
 			add_province_modifier = {
-				name = mafra_palace
+				name = mafra_convent_mod
 				duration = -1
 			}
 		}
@@ -1992,18 +2144,11 @@ country_event = {
 
 	option = {
 		name = btc_por.123a
-		
-		add_treasury = -100
-		227 = {
-			add_province_modifier = {
-				name = tower_of_belem
-				duration = -1
-			}
+		trigger = {
+			has_dlc = "Leviathan"
 		}
-	}
-
-	option = {
-		name = btc_por.123b
+		
+		add_treasury = -200
 		
 		custom_tooltip = btc_enable_belem_tower_tt
 		hidden_effect = {
@@ -2014,6 +2159,18 @@ country_event = {
 				}
 			}		
 			set_country_flag = has_belem_tower	
+		}
+	}
+
+	option = {
+		name = btc_por.123b
+		
+		add_treasury = -200
+		227 = {
+			add_province_modifier = {
+				name = tower_of_belem_mod
+				duration = -1
+			}
 		}
 	}
 }
@@ -2030,11 +2187,31 @@ country_event = {
 
 	option = {
 		name = btc_por.124a
+		trigger = {
+			has_dlc = "Leviathan"
+		}
 
-		add_treasury = -300
+		add_treasury = -200
+
+		custom_tooltip = btc_enable_jeronimos_monastery_tt
+		hidden_effect = {
+			227 = {
+				add_great_project = {
+					type = jeronimos_monastery
+					instant = yes
+				}
+			}		
+			set_country_flag = has_jeronimos_monastery	
+		}
+	}
+
+	option = {
+		name = btc_por.124b
+
+		add_treasury = -200
 		227 = {
 			add_province_modifier = {
-				name = jeronimos_monastery
+				name = jeronimos_monastery_mod
 				duration = -1
 			}
 		}
@@ -5560,6 +5737,79 @@ country_event = { #Ferdinand Magellan
 			change_innovativeness = 2
 		}
 		else = { add_adm_power = 25 add_dip_power = 25 }
+	}			
+}
+
+country_event = {
+	id = btc_por.180
+	title = btc_por.180_t
+	desc = btc_por.180_d
+	picture = HARBOUR_eventPicture
+
+	fire_only_once = yes 
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = { 
+		name = btc_por.180a
+
+		define_advisor = {
+			type = navigator
+			skill = 3
+			name = "Henrique o Navegador"
+			age = 50
+			location = 230
+			cost_multiplier = 0.33
+			culture = portugese
+			religion = catholic
+		}
+
+		define_advisor = {
+			type = philosopher
+			skill = 2
+			name = "Fernão Lopes"
+			age = 59
+			location = 4150
+			cost_multiplier = 0.33
+			culture = portugese
+			religion = catholic
+		}
+
+		define_advisor = {
+			type = commandant
+			skill = 1
+			name = "Pedro de Coimbra"
+			age = 15
+			location = 1851
+			cost_multiplier = 0.33
+			culture = portugese
+			religion = catholic
+		}
+	}			
+}
+
+country_event = {
+	id = btc_por.181
+	title = btc_por.181_t
+	desc = btc_por.181_d
+	picture = PROTESTANT_RELIGIOUS_TENSIONS_eventPicture
+
+	trigger = {
+		is_or_was_tag = { tag = POR }
+		is_year = 1495
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = { 
+		name = btc_por.181a
+
+		set_country_flag = lisbon_massacre_flag
+		227 = {
+			add_unrest = 5
+		}
 	}			
 }
 

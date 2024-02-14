@@ -34,7 +34,7 @@ philosopher = {
 	# Bonus
 	prestige = 1
 	skill_scaled_modifier = {
-		trigger = { }
+		trigger = { owner = { NOT = { employed_advisor = { name = "Fernão Lopes" } } } }
 		modifier = { yearly_corruption = 0.04 }
 	}
 	skill_scaled_modifier = {
@@ -286,7 +286,7 @@ artist = {
 	# Bonus
 	stability_cost_modifier = -0.10
 	skill_scaled_modifier = {
-		trigger = { }
+		trigger = { owner = { NOT = { employed_advisor = { name = "Luís de Camões" } } } }
 		modifier = { yearly_corruption = 0.04 }
 	}
 	skill_scaled_modifier = {
@@ -1535,7 +1535,7 @@ navigator = {
 	# Bonus
 	range = 0.20
 	skill_scaled_modifier = {
-		trigger = { }
+		trigger = { owner = { NOT = { employed_advisor = { name = "Henrique o Navegador" } } } }
 		modifier = { yearly_corruption = 0.04 }
 	}
 	skill_scaled_modifier = {
@@ -1772,7 +1772,7 @@ commandant = {
 	# Bonus
 	discipline = 0.05
 	skill_scaled_modifier = {
-		trigger = { }
+		trigger = { owner = { NOT = { employed_advisor = { name = "Pedro de Coimbra" } } } }
 		modifier = { yearly_corruption = 0.04 }
 	}
 	skill_scaled_modifier = {
