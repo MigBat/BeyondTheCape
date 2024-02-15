@@ -936,7 +936,7 @@ sado_gold = {
 }
 
 disable_ship_capture = {
-	capture_ship_chance = -999999
+	capture_ship_chance = -1000
 }
 
 prestigious_academy = {
@@ -987,4 +987,5 @@ monumental_good = {
 	all_estate_possible_privileges = 1
 	governing_capacity_modifier = 0.25
 	max_absolutism = 50
+	picture = "btc_monument_pic"
 }

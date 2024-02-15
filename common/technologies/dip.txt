@@ -125,8 +125,8 @@ technology  = { #Shipyards
 	year = 1492
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.5
-		printing_press = 0.2
+		renaissance = 0.4
+		printing_press = 0.1
 	}
 
 	
@@ -144,8 +144,8 @@ technology = { #Naval Ambitions
 	year = 1505
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.4
-		printing_press = 0.1
+		renaissance = 0.5
+		printing_press = 0.2
 	}
 	
 	naval_morale			= 0.3

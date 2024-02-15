@@ -225,11 +225,19 @@ custom_button = {
 				value = 75
 			}
 		}
-		area_for_scope_province = {
-			type = all
-			owned_by = owner
-			NOT = { has_province_modifier = foreign_feitoria }	
+		owner = {
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 5
+					has_province_modifier = foreign_feitoria
+				}
+			}
 		}
+		# area_for_scope_province = {
+		# 	type = all
+		# 	owned_by = owner
+		# 	NOT = { has_province_modifier = foreign_feitoria }	
+		# }
 		FROM = { 
 			if = {
 				limit = {

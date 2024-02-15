@@ -10,6 +10,10 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
+	trigger = {
+		tag = GRA
+	}
+
 	option = {
 		name = btc_gra.1a
 
@@ -163,6 +167,10 @@ country_event = {
 			variable = gra_tribute_to_pay
 			custom_tooltip = btc_gra.4a_tt
 		}
+		add_opinion = {
+			who = FROM
+			modifier = paria_paid
+		}
 
 		ai_chance = {
 			factor = 1
@@ -185,6 +193,14 @@ country_event = {
 		if = {
 			limit = {
 				is_year = 1480
+			}
+			GRA = {
+				every_owned_province = {
+					limit = {
+						has_province_modifier = resist_reconquista
+					}
+					remove_province_modifier = resist_reconquista
+				}
 			}
 			declare_war_with_cb = {
 				casus_belli = cb_annex

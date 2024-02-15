@@ -257,8 +257,17 @@ can_colonize_province = {
 					OR = {
 						is_colonial_nation = yes
 						is_former_colonial_nation = yes
-						expansion_ideas = 1 
+						expansion_ideas = 1
 						has_idea = siberian_frontier
+						if = {
+							limit = {
+								has_global_flag = btc_ideas_submod
+							}
+							colonialism_ideas = 1
+						}
+						else = {
+							expansion_ideas = 1
+						}
 					}
 				}
 			}

@@ -689,6 +689,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_great_project_jeronimos_monastery"	
+		texturefile = "gfx//interface//great_projects//great_project_jeronimos_monastery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_mafra_convent"	
+		texturefile = "gfx//interface//great_projects//great_project_mafra_convent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_ribeira_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_ribeira_palace.dds"
+	}
+
+	spriteType = {
 		name = "GFX_great_project_santiago_cathedral"	
 		texturefile = "gfx//interface//great_projects//great_project_santiago_cathedral.dds"
 	}

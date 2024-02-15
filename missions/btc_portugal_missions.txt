@@ -42,7 +42,7 @@ gc_por_1_a = {
 						junior_union_with = ENG
 						senior_union_with = ENG
 					}
-					is_rival = ENG
+					# is_rival = ENG
 					NOT = { exists = ENG }
 				}
 			}
@@ -60,7 +60,7 @@ gc_por_1_a = {
 						junior_union_with = GBR
 						senior_union_with = GBR
 					}
-					is_rival = GBR
+					# is_rival = GBR
 				}
 			}
 		}
@@ -781,7 +781,10 @@ gc_por_2_a = {
 						}
 					}
 				}
-				add_mil_power = 100
+				add_mil_power = -100
+			}
+			country_event = {
+				id = btc_por.178
 			}
 		}
 
@@ -1037,17 +1040,18 @@ gc_por_2_b = {
 		
 		trigger = {
 			1516 = { privateer_power = { share = 25 country = ROOT } }
-			has_global_flag = golden_age_of_piracy
+			has_country_modifier = golden_age_of_piracy
 		}
 		
 		effect = {
 			define_admiral = {
 				name = "Bartolomeu Português"
 				shock = 2
-				fire = 4
+				fire = 2
 				manuever = 4
 				trait = buccaneer_personality
 			}
+			add_navy_tradition = 15
 		}
 
 		ai_weight = {
@@ -1592,7 +1596,7 @@ gc_por_3 = {
 						}
 					}
 				}
-				add_dip_power = 100
+				add_dip_power = -100
 			}
 			if = {
 				limit = {
@@ -1807,6 +1811,10 @@ gc_por_3 = {
 				}
 				add_prestige_or_monarch_power = { amount = 10 }
 			}
+			add_country_modifier = {
+				name = por_push_to_india
+				duration = -1
+			}
 		}
 
 		ai_weight = {
@@ -1846,23 +1854,8 @@ gc_por_3 = {
 		}
 	
 		effect = {
-			add_prestige = 5
+			add_prestige_or_monarch_power = { amount = 20 }
 			add_navy_tradition = 5
-			define_explorer = {
-				name = "Bartolomeu Dias"
-				shock = 2
-				fire = 3
-				manuever = 4
-				siege = 1
-				trait = level_headed_personality
-			}
-			country_event = {
-				id = btc_por.152
-			}
-			add_country_modifier = {
-				name = por_push_to_india
-				duration = 7300
-			}
 		}
 
 		ai_weight = {
@@ -1907,7 +1900,17 @@ gc_por_3 = {
 					key = ivory_coast_ambition
 				}
 			}
-			else = { add_prestige_or_monarch_power = { amount = 15 } }
+			define_explorer = {
+				name = "Bartolomeu Dias"
+				shock = 2
+				fire = 3
+				manuever = 4
+				siege = 1
+				trait = level_headed_personality
+			}
+			country_event = {
+				id = btc_por.152
+			}
 		}
 
 		ai_weight = {
@@ -2082,6 +2085,7 @@ gc_por_3 = {
 				change_innovativeness = 2
 			}
 			remove_country_modifier = discovery_fervor
+			remove_country_modifier = por_push_to_india
 			remove_country_modifier = expensive_spices
 			set_country_flag = discovered_india
 			if = {
@@ -2298,14 +2302,6 @@ gc_por_3 = {
 				}
 				set_government_rank = 3
 			}
-			custom_tooltip = btc_enable_pena_palace_tt
-			hidden_effect = {
-				227 = {
-					add_great_project = {
-						type = pena_palace
-					}
-				}				
-			}
 			add_prestige_or_monarch_power = { amount = 50 }
 			add_power_projection = { 
 				type = 25_permanent_power_projection
@@ -2370,8 +2366,9 @@ gc_por_4_a = {
 						}
 					}
 				}
-				add_adm_power = 100
+				add_adm_power = -100
 			}
+			add_prestige = 15
 		}
 
 		ai_weight = {
@@ -2511,6 +2508,9 @@ gc_por_4_a = {
 		}
 
 		effect = {
+			country_event = {
+				id = btc_por.102
+			}
 		}
 
 		ai_weight = {
@@ -2962,6 +2962,9 @@ gc_por_5_a = {
 				culture = portugese
 				religion = catholic
 			}
+			country_event = {
+				id = flavor_por.3269
+			}
 		}
 
 		ai_weight = {
@@ -2975,8 +2978,7 @@ gc_por_5_a = {
 		position = 4
 
 		trigger = {
-			religion = catholic
-			has_country_modifier = counter_reformation
+			has_country_modifier = the_societas_jesu
 			has_institution = new_world_i
 			PAP = {
 				has_opinion = {

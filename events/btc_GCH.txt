@@ -106,9 +106,6 @@ country_event = {
 			every_province = {
 				undiscover_country = ROOT
 			}
-			every_province = {
-				undiscover_country = ROOT
-			}
 			east_china_sea_region = {
 				undiscover_country = ROOT
 			}
@@ -342,7 +339,7 @@ country_event = {
 	picture = GOOD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 	
-	option = {	#We trade for the goods.
+	option = {	
 		name = btc_gch.6a
 
 		change_tag = CNR
@@ -350,6 +347,12 @@ country_event = {
 		change_technology_group = western
 		change_government = monarchy
 		add_government_reform = feudalism_reform
+
+		hidden_effect = {
+			africa = {
+				undiscover_country = ROOT
+			}
+		}
 
 		define_ruler = {
 			name = "Maciot"

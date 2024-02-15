@@ -98,7 +98,7 @@
  mafra_convent_mod:0 "Mafra Convent"
  desc_mafra_convent_mod:0 "A sumptuous building for those favoured by God."
  pena_palace_mod:0 "Pena Palace"
- desc_pena_palace_mod:0 ""
+ desc_pena_palace_mod:0 "A vibrant and whimsical masterpiece of a palace."
  tower_of_belem_mod:0 "Tower of Belém"
  desc_tower_of_belem_mod:0 "A symbol of our achievements, and a protector of the river."
  jeronimos_monastery_mod:0 "Jerónimos Monastery"
@@ -414,7 +414,7 @@
  desc_legacy_of_magellan:0 "The great explorer Magellan encouraged our country to invest further into naval endeavours."
  built_feitoria:0 "Built a Feitoria in our lands"
  monumental_good:0 "Monumental City"
- desc_monumental_good:0 ""
+ desc_monumental_good:0 "An awe-inspiring city."
 # Venice #
  btc_ven_ten_emergency_government:0 "Emergency Government"
  desc_btc_ven_ten_emergency_government:0 "Council of the Ten's emergency government."
