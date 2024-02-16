@@ -160,6 +160,7 @@
  triangle_trade_key:0 "Portuguese Slave Trade"
  miss_colonize_west_africa:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the West Africa Coast area."
  gbr_end_the_french_conflict_at:0 "Does not own any province other than §Y[87.GetName]§! and §Y[4953.GetName]§! in the region §YFrance§!"
+ por_japan_mission_tooltip:0 "If [Root.GetName] has good relations with the owner of §YNagasaki§!, the §YPortuguese Nagasaki§! event happens\nElse Gain §G3.00§! Mercantilism"
 # Monuments #
  belem_tower:0 "Belém Tower"
 # Special Units #

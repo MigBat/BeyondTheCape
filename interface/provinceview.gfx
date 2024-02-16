@@ -773,6 +773,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/foreign_feitoria_button.dds"
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_suez_enable"
+		texturefile = "gfx/interface/suez_enable.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_suez_disable"
+		texturefile = "gfx/interface/suez_disable.dds"
+		loadType = "INGAME"
+	}
 	###
 
 	spriteType = {

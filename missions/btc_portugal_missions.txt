@@ -224,8 +224,14 @@ gc_por_1_a = {
 		required_missions = { gc_por_intervene_in_castile gc_conquer_the_north_african_coast }
 		position = 5
 		trigger = {
+			1851 = {
+				has_great_project = {
+					type = batalha_monastery
+					tier = 2
+				}
+			}
 			num_of_owned_provinces_with = {
-				value = 3
+				value = 5
 				province_has_current_tech_fort_trigger = yes
 				is_state = yes
 			}
@@ -253,6 +259,12 @@ gc_por_1_a = {
 		required_missions = { btc_por_tercios_system }
 		position = 6
 		trigger = {
+			1851 = {
+				has_great_project = {
+					type = batalha_monastery
+					tier = 3
+				}
+			}
 			army_tradition = 40
 			army_professionalism = 0.3
 			employed_advisor = {
@@ -964,7 +976,9 @@ gc_por_2_a = {
 		position = 6
 
 		trigger = {
-			num_of_marines = 10
+			num_of_marines = 20
+			num_of_galleon = 10
+			has_country_modifier = por_fullrigged
 		}
 
 		effect = {
