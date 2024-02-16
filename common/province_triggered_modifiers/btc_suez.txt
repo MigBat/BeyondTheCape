@@ -1,5 +1,5 @@
 btc_move_next_ship = {
-	#hidden = yes
+	hidden = yes
 
 	potential = {
 		always = yes

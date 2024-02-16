@@ -19,16 +19,27 @@ custom_button = {
 			NOT = {
 				has_province_flag = btc_move_ships
 			}
+			4316 = {
+				owned_by = FROM
+				controlled_by = FROM
+			}
+			2315 = {
+				owned_by = FROM
+				controlled_by = FROM
+			}
 		}
-
-		4316 = {
-			owned_by = FROM
-			controlled_by = FROM
+		
+		custom_trigger_tooltip = {
+			tooltip = province_has_ships_tt
+			OR = {
+				heavy_ships_in_province = ROOT
+				light_ships_in_province = ROOT
+				galleys_in_province = ROOT
+				transports_in_province = ROOT
+			}
 		}
-		2315 = {
-			owned_by = ROOT
-			controlled_by = ROOT
-		}
+		4316 = { is_blockaded = no }
+		2315 = { is_blockaded = no }
     }
     effect = {
 		set_province_flag = btc_move_ships
