@@ -1144,6 +1144,10 @@ dom_cas_missions_2 = {
 					culture = basque
 					religion = catholic
 				}
+				custom_tooltip = enable_propogate_religion_in_abrahamic_provinces_tt
+				hidden_effect = {
+					set_country_flag = can_propagate_religion_in_abrahamic_provinces
+				}
 				country_event = {
 					id = btc_events.46
 				}
@@ -1160,9 +1164,9 @@ dom_cas_missions_2 = {
 					religion = catholic
 				}
 			}
-			custom_tooltip = enable_propogate_religion_in_abrahamic_provinces_tt
+			custom_tooltip = enable_propogate_religion_effect_tt
 			hidden_effect = {
-				set_country_flag = can_propagate_religion_in_abrahamic_provinces
+				set_country_flag = can_use_propagate_religion
 			}
 		}
 

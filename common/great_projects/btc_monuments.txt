@@ -226,8 +226,11 @@ jeronimos_monastery = {
 		}
 		conditional_modifier = {
 			trigger = { 
-				owner = {
-					has_country_flag = monumental_best
+				custom_trigger_tooltip = {
+					tooltip = has_monumental_best
+					owner = {
+						has_country_flag = monumental_best
+					}
 				}
 			}
 			modifier = { 
@@ -338,8 +341,11 @@ ribeira_palace = {
 		}
 		conditional_modifier = {
 			trigger = { 
-				owner = {
-					has_country_flag = monumental_best
+				custom_trigger_tooltip = {
+					tooltip = has_monumental_best
+					owner = {
+						has_country_flag = monumental_best
+					}
 				}
 			}
 			modifier = { 
@@ -450,8 +456,11 @@ mafra_convent = {
 		}
 		conditional_modifier = {
 			trigger = { 
-				owner = {
-					has_country_flag = monumental_best
+				custom_trigger_tooltip = {
+					tooltip = has_monumental_best
+					owner = {
+						has_country_flag = monumental_best
+					}
 				}
 			}
 			modifier = { 
@@ -712,7 +721,7 @@ pena_palace = { #Replaced by Belém Tower, as requested by community
 	#can we build it?
 	build_trigger = {
 		FROM = {
-			mission_completed = btc_por_fifth_empire
+			has_country_flag = has_pena_palace
 		}
 	}
 
@@ -869,8 +878,11 @@ pena_palace = { #Replaced by Belém Tower, as requested by community
 		}
 		conditional_modifier = {
 			trigger = { 
-				owner = {
-					has_country_flag = monumental_best
+				custom_trigger_tooltip = {
+					tooltip = has_monumental_best
+					owner = {
+						has_country_flag = monumental_best
+					}
 				}
 			}
 			modifier = { 
@@ -991,8 +1003,11 @@ belem_tower = {
 		}
 		conditional_modifier = {
 			trigger = { 
-				owner = {
-					has_country_flag = monumental_best
+				custom_trigger_tooltip = {
+					tooltip = has_monumental_best
+					owner = {
+						has_country_flag = monumental_best
+					}
 				}
 			}
 			modifier = { 

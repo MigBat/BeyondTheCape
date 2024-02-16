@@ -289,16 +289,19 @@ european_sugar = {
 ribeira_palace_mod = {
 	reform_progress_growth = 0.1
 	legitimacy = 0.1
+	picture = "ribeira"
 }
 
 mafra_convent_mod = {
 	prestige_decay = -0.01
 	yearly_absolutism = 0.5
+	picture = "mafra"
 }
 
 pena_palace_mod = {
 	stability_cost_modifier = -0.1
 	governing_capacity = 50
+	picture = "pena"
 }
 
 sponsored_shipbuilding = {
@@ -308,11 +311,13 @@ sponsored_shipbuilding = {
 tower_of_belem_mod = {
 	prestige = 0.1
 	hostile_fleet_attrition = 5
+	picture = "belem"
 }
 
 jeronimos_monastery_mod = {
 	church_loyalty_modifier = 0.05
 	naval_morale = 0.05
+	picture = "jeronimos"
 }
 
 black_swords = {

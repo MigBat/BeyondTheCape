@@ -829,6 +829,7 @@ dom_ned_exploration_start_2_group = {
 			has_discovered = ROOT
 		}
 		trigger = {
+			exploration_ideas = 1
 			OR = {
 				1177 = { colonysize = 1 }
 				AND = {

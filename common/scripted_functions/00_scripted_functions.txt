@@ -252,6 +252,7 @@ can_colonize_province = {
 	condition = {
 		tooltip = "limit_colonize_interior"
 		potential = {
+			NOT = { has_global_flag = btc_ideas_submod }
 			FROM = {
 				NOT = {
 					OR = {
@@ -259,15 +260,29 @@ can_colonize_province = {
 						is_former_colonial_nation = yes
 						expansion_ideas = 1
 						has_idea = siberian_frontier
-						if = {
-							limit = {
-								has_global_flag = btc_ideas_submod
-							}
-							colonialism_ideas = 1
-						}
-						else = {
-							expansion_ideas = 1
-						}
+						expansion_ideas = 1
+					}
+				}
+			}
+		}
+		allow = {
+			ROOT = {
+				has_port = yes
+			}
+		}
+	}
+	condition = {
+		tooltip = "limit_colonize_interior_submod"
+		potential = {
+			has_global_flag = btc_ideas_submod
+			FROM = {
+				NOT = {
+					OR = {
+						is_colonial_nation = yes
+						is_former_colonial_nation = yes
+						expansion_ideas = 1
+						has_idea = siberian_frontier
+						colonialism_ideas = 1
 					}
 				}
 			}

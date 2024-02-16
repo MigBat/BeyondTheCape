@@ -153,7 +153,11 @@ country_event = {
 						}	
 						destroy_great_project = {
 							type = mafra_convent
-						}			
+						}
+						add_great_project_tier = {
+							type = pena_palace
+							tier = -2
+						}
 						owner = {
 							clr_country_flag = has_ribeira_palace
 							clr_country_flag = has_jeronimos_monastery
@@ -174,6 +178,14 @@ country_event = {
 						destroy_great_project = {
 							type = belem_tower
 						}	
+						add_great_project_tier = {
+							type = mafra_convent
+							tier = -2
+						}
+						add_great_project_tier = {
+							type = pena_palace
+							tier = -2
+						}
 						owner = {
 							clr_country_flag = has_ribeira_palace
 							clr_country_flag = has_jeronimos_monastery
@@ -189,6 +201,18 @@ country_event = {
 						destroy_great_project = {
 							type = jeronimos_monastery
 						}	
+						add_great_project_tier = {
+							type = belem_tower
+							tier = -2
+						}
+						add_great_project_tier = {
+							type = mafra_convent
+							tier = -2
+						}
+						add_great_project_tier = {
+							type = pena_palace
+							tier = -2
+						}
 						owner = {
 							clr_country_flag = has_ribeira_palace
 							clr_country_flag = has_jeronimos_monastery
@@ -198,7 +222,23 @@ country_event = {
 						remove_province_modifier = ribeira_palace_mod	
 						destroy_great_project = {
 							type = ribeira_palace
-						}		
+						}			
+						add_great_project_tier = {
+							type = jeronimos_monastery
+							tier = -2
+						}
+						add_great_project_tier = {
+							type = belem_tower
+							tier = -2
+						}
+						add_great_project_tier = {
+							type = mafra_convent
+							tier = -2
+						}
+						add_great_project_tier = {
+							type = pena_palace
+							tier = -2
+						}
 						owner = {
 							clr_country_flag = has_ribeira_palace
 						}					
@@ -1124,8 +1164,6 @@ country_event = {
 			has_dlc = "Leviathan"
 		}
 
-		add_treasury = -500
-
 		custom_tooltip = btc_enable_pena_palace_tt
 		hidden_effect = {
 			227 = {
@@ -1141,9 +1179,9 @@ country_event = {
 	option = {
 		name = btc_por.102b
 
-		add_treasury = -500
+		add_treasury = -200
 		227 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = pena_palace_mod
 				duration = -1
 			}
@@ -2029,8 +2067,6 @@ country_event = {
 			has_dlc = "Leviathan"
 		}
 
-		add_treasury = -200
-
 		custom_tooltip = btc_enable_ribeira_palace_tt
 		hidden_effect = {
 			227 = {
@@ -2048,7 +2084,7 @@ country_event = {
 
 		add_treasury = -200
 		227 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = ribeira_palace_mod
 				duration = -1
 			}
@@ -2105,8 +2141,6 @@ country_event = {
 			has_dlc = "Leviathan"
 		}
 
-		add_treasury = -500
-
 		custom_tooltip = btc_enable_mafra_convent_tt
 		hidden_effect = {
 			227 = {
@@ -2122,9 +2156,9 @@ country_event = {
 	option = {
 		name = btc_por.122b
 
-		add_treasury = -500
+		add_treasury = -200
 		227 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = mafra_convent_mod
 				duration = -1
 			}
@@ -2148,8 +2182,6 @@ country_event = {
 			has_dlc = "Leviathan"
 		}
 		
-		add_treasury = -200
-		
 		custom_tooltip = btc_enable_belem_tower_tt
 		hidden_effect = {
 			227 = {
@@ -2167,7 +2199,7 @@ country_event = {
 		
 		add_treasury = -200
 		227 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = tower_of_belem_mod
 				duration = -1
 			}
@@ -2191,8 +2223,6 @@ country_event = {
 			has_dlc = "Leviathan"
 		}
 
-		add_treasury = -200
-
 		custom_tooltip = btc_enable_jeronimos_monastery_tt
 		hidden_effect = {
 			227 = {
@@ -2210,7 +2240,7 @@ country_event = {
 
 		add_treasury = -200
 		227 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = jeronimos_monastery_mod
 				duration = -1
 			}
@@ -5783,6 +5813,7 @@ country_event = {
 	}			
 }
 
+# Lisbon Massacre
 country_event = {
 	id = btc_por.181
 	title = btc_por.181_t
@@ -5795,7 +5826,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 24
 	}
 	
 	option = { 
