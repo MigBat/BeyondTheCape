@@ -990,20 +990,6 @@ guiTypes = {
 				scripted = yes
 			}		
 
-			guiButtonType = {
-				name = "btc_enable_move_ships"
-				quadTextureSprite = "GFX_suez_enable"
-				position = { x = 140 y = 328 }
-				scripted = yes
-			}	
-
-			guiButtonType = {
-				name = "btc_disable_move_ships"
-				quadTextureSprite = "GFX_suez_disable"
-				position = { x = 140 y = 328 }
-				scripted = yes
-			}	
-
 			### CLAIMS
 			instantTextBoxType = {
 				name = "claims_title"

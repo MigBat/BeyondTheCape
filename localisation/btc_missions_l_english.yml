@@ -175,3 +175,6 @@
  ibe_religious_missionary_tt:0 "Every non-[Root.Religion.GetName] province in the world gets §Y+5%§! missionary strength."
  ibe_reduce_autonomy_religion_tt:0 "Every [Root.Religion.GetName] province in the world gets §Y-10%§! monthly autonomy."
  ibe_reduce_unrest_religion_tt:0 "Every [Root.Religion.GetName] province in the world gets §Y-1§! unrest."
+
+# Mamluks #
+ allow_suez_transportation_tt:0 "Allows transportation of ships to and from §Y[4316.GetName]§! and §Y[2315.GetName]§!."
