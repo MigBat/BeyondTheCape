@@ -697,6 +697,51 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "mission_fernao_lopes"
+		texturefile = "gfx/interface/missions/mission_fernao_lopes.dds"
+	}
+
+	spriteType = {
+		name = "mission_pedro_coimbra"
+		texturefile = "gfx/interface/missions/mission_pedro_coimbra.dds"
+	}
+
+	spriteType = {
+		name = "mission_camoes"
+		texturefile = "gfx/interface/missions/mission_camoes.dds"
+	}
+
+	spriteType = {
+		name = "mission_monumental_city"
+		texturefile = "gfx/interface/missions/mission_monumental_city.dds"
+	}
+
+	spriteType = {
+		name = "mission_pena_palace"
+		texturefile = "gfx/interface/missions/mission_pena_palace.dds"
+	}
+
+	spriteType = {
+		name = "mission_societas_jesu"
+		texturefile = "gfx/interface/missions/mission_societas_jesu.dds"
+	}
+
+	spriteType = {
+		name = "mission_inquisition"
+		texturefile = "gfx/interface/missions/mission_inquisition.dds"
+	}
+
+	spriteType = {
+		name = "mission_jews_and_moriscos"
+		texturefile = "gfx/interface/missions/mission_jews_and_moriscos.dds"
+	}
+
+	spriteType = {
+		name = "mission_francis_xavier"
+		texturefile = "gfx/interface/missions/mission_francis_xavier.dds"
+	}
+
+	spriteType = {
 		name = "mission_madeira_sugar"
 		texturefile = "gfx/interface/missions/mission_madeira_sugar.dds"
 	}

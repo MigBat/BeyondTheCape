@@ -29,6 +29,41 @@ custom_button = {
 				NOT = { has_province_modifier = fortified_feitoria }	
 			}
 		}
+		FROM = { 
+			if = {
+				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				treasury = 20
+			}
+			else_if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				treasury = 40
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				treasury = 60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				treasury = 80
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+				}
+				treasury = 100
+			}
+		}
 	}
 	effect = {
 		add_province_modifier = {
@@ -38,35 +73,34 @@ custom_button = {
 		FROM = { 
 			if = {
 				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				add_treasury = -20
+			}
+			else_if = {
+				limit = {
 					dip_tech = 7
 					NOT = { dip_tech = 9 }
 				}
-				add_treasury = -20
+				add_treasury = -40
 			}
 			else_if = {
 				limit = {
 					dip_tech = 9
 					NOT = { dip_tech = 11 }
 				}
-				add_treasury = -40
+				add_treasury = -60
 			}
 			else_if = {
 				limit = {
 					dip_tech = 11
 					NOT = { dip_tech = 13 }
 				}
-				add_treasury = -60
-			}
-			else_if = {
-				limit = {
-					dip_tech = 13
-					NOT = { dip_tech = 15 }
-				}
 				add_treasury = -80
 			}
 			else_if = {
 				limit = {
-					dip_tech = 15
+					dip_tech = 13
 				}
 				add_treasury = -100
 			}
@@ -82,6 +116,41 @@ custom_button = {
 		has_province_modifier = feitoria
 	}
 	trigger = {
+		FROM = { 
+			if = {
+				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				treasury = 60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				treasury = 120
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				treasury = 180
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				treasury = 240
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+				}
+				treasury = 300
+			}
+		}
 	}
 	effect = {
 		remove_province_modifier = feitoria
@@ -92,35 +161,34 @@ custom_button = {
 		FROM = { 
 			if = {
 				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				add_treasury = -60
+			}
+			else_if = {
+				limit = {
 					dip_tech = 7
 					NOT = { dip_tech = 9 }
 				}
-				add_treasury = -60
+				add_treasury = -120
 			}
 			else_if = {
 				limit = {
 					dip_tech = 9
 					NOT = { dip_tech = 11 }
 				}
-				add_treasury = -120
+				add_treasury = -180
 			}
 			else_if = {
 				limit = {
 					dip_tech = 11
 					NOT = { dip_tech = 13 }
 				}
-				add_treasury = -180
-			}
-			else_if = {
-				limit = {
-					dip_tech = 13
-					NOT = { dip_tech = 15 }
-				}
 				add_treasury = -240
 			}
 			else_if = {
 				limit = {
-					dip_tech = 15
+					dip_tech = 13
 				}
 				add_treasury = -300
 			}
@@ -150,16 +218,60 @@ custom_button = {
 		}
 	}
 	trigger = {
+		owner = { NOT = { capital_scope = { continent = europe } } }
 		owner = {
 			has_opinion = {
 				who = FROM
 				value = 75
 			}
 		}
-		area_for_scope_province = {
-			type = all
-			owned_by = owner
-			NOT = { has_province_modifier = foreign_feitoria }	
+		owner = {
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 5
+					has_province_modifier = foreign_feitoria
+				}
+			}
+		}
+		# area_for_scope_province = {
+		# 	type = all
+		# 	owned_by = owner
+		# 	NOT = { has_province_modifier = foreign_feitoria }	
+		# }
+		FROM = { 
+			if = {
+				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				treasury = 20
+			}
+			else_if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				treasury = 40
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				treasury = 60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				treasury = 80
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+				}
+				treasury = 100
+			}
 		}
 	}
 	effect = {
@@ -183,35 +295,34 @@ custom_button = {
 		FROM = { 
 			if = {
 				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				add_treasury = -20
+			}
+			else_if = {
+				limit = {
 					dip_tech = 7
 					NOT = { dip_tech = 9 }
 				}
-				add_treasury = -20
+				add_treasury = -40
 			}
 			else_if = {
 				limit = {
 					dip_tech = 9
 					NOT = { dip_tech = 11 }
 				}
-				add_treasury = -40
+				add_treasury = -60
 			}
 			else_if = {
 				limit = {
 					dip_tech = 11
 					NOT = { dip_tech = 13 }
 				}
-				add_treasury = -60
-			}
-			else_if = {
-				limit = {
-					dip_tech = 13
-					NOT = { dip_tech = 15 }
-				}
 				add_treasury = -80
 			}
 			else_if = {
 				limit = {
-					dip_tech = 15
+					dip_tech = 13
 				}
 				add_treasury = -100
 			}

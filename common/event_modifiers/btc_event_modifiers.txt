@@ -286,28 +286,38 @@ european_sugar = {
 	trade_goods_size = 2
 }
 
-ribeira_palace = {
+ribeira_palace_mod = {
 	reform_progress_growth = 0.1
 	legitimacy = 0.1
+	picture = "ribeira"
 }
 
-mafra_palace = {
+mafra_convent_mod = {
 	prestige_decay = -0.01
 	yearly_absolutism = 0.5
+	picture = "mafra"
+}
+
+pena_palace_mod = {
+	stability_cost_modifier = -0.1
+	governing_capacity = 50
+	picture = "pena"
 }
 
 sponsored_shipbuilding = {
 	global_ship_cost = -0.25
 }
 
-tower_of_belem = {
+tower_of_belem_mod = {
 	prestige = 0.1
 	hostile_fleet_attrition = 5
+	picture = "belem"
 }
 
-jeronimos_monastery = {
+jeronimos_monastery_mod = {
 	church_loyalty_modifier = 0.05
 	naval_morale = 0.05
+	picture = "jeronimos"
 }
 
 black_swords = {
@@ -369,10 +379,10 @@ por_english_alliance = {
 	army_tradition = 0.25
 }
 
-por_henry_cheaper = {
-	dip_advisor_cost = -0.5
-	yearly_corruption = -0.12
-}
+# por_henry_cheaper = {
+# 	dip_advisor_cost = -0.5
+# 	yearly_corruption = -0.12
+# }
 
 pinhal_leiria = {
 	naval_maintenance_modifier = -0.1
@@ -931,7 +941,7 @@ sado_gold = {
 }
 
 disable_ship_capture = {
-	capture_ship_chance = -999999
+	capture_ship_chance = -1000
 }
 
 prestigious_academy = {
@@ -974,4 +984,13 @@ legacy_of_columbus = {
 
 legacy_of_magellan = {
 	max_flagships = 1
+}
+
+monumental_good = {
+	no_stability_loss_on_monarch_death = yes
+	ship_recruit_speed = -0.5
+	all_estate_possible_privileges = 1
+	governing_capacity_modifier = 0.25
+	max_absolutism = 50
+	picture = "btc_monument_pic"
 }

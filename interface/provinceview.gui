@@ -990,6 +990,20 @@ guiTypes = {
 				scripted = yes
 			}		
 
+			guiButtonType = {
+				name = "btc_enable_move_ships"
+				quadTextureSprite = "GFX_suez_enable"
+				position = { x = 140 y = 328 }
+				scripted = yes
+			}	
+
+			guiButtonType = {
+				name = "btc_disable_move_ships"
+				quadTextureSprite = "GFX_suez_disable"
+				position = { x = 140 y = 328 }
+				scripted = yes
+			}	
+
 			### CLAIMS
 			instantTextBoxType = {
 				name = "claims_title"
@@ -2876,12 +2890,42 @@ guiTypes = {
 			moveable = 0
 			Orientation = "UPPER_LEFT"
 
+			iconType = {
+				name = "monuments_window_bg"
+				spriteType = "GFX_provinceview_great_projects_bg_full"
+				position = { x= 0 y = -62 }
+			}
+
+			instantTextBoxType = {
+				name = "monuments_header_label"
+				position = { x = 30 y = -31 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "LEDGER_GREAT_PROJECTS"
+				maxWidth = 256
+				maxHeight = 32
+				format = left
+			}
+
+			instantTextBoxType = {
+				name = "no_monuments_text"
+				position = { x = 51 y = 70 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 2 y = 2}
+				text = "NO_MONUMENTS_IN_THIS_PROVINCE_TEXT"
+				maxWidth = 240
+				maxHeight = 100
+				format = center
+			}
+
 			#### GREAT PROJECTS WINDOW
 			windowType = {
 				name = "great_projects_window"
 				backGround=""
-				position = { x=15 y=-105 }
-				size = { x=475 y=210 }
+				position = { x=14 y=115 }
+				size = { x=475 y=177 }
 				dontRender = ""
 				horizontalBorder= ""
 				verticalBorder= ""
@@ -2898,21 +2942,21 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "header_label"
-					position = { x = 16 y = 29 }
+					position = { x = 16 y = 31 }
 					textureFile = ""
 					font = "vic_22"
 					borderSize = {x = 2 y = 2}
 					text = "LEDGER_GREAT_PROJECTS"
-					maxWidth = 256 
+					maxWidth = 256
 					maxHeight = 32
 					format = left
 				}
-				
+
 				smoothListboxType = {
 					name = "great_projects_list"
-					position = { x = 7 y = 55 }
+					position = { x = 7 y = 60 }
 					backGround=""
-					size = { x = 300 y = 180 }
+					size = { x = 298 y = 575 }
 					spacing = 2
 					scrollbartype = "standardlistbox_slider"
 					borderSize = { x = 0 y = 0 }
@@ -2922,7 +2966,7 @@ guiTypes = {
 			windowType = {
 				name = "general_buildings_window"
 				backGround=""
-				position = { x=1 y=115 }
+				position = { x=320 y=115 }
 				size = { x=475 y=480 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -2967,7 +3011,7 @@ guiTypes = {
 			windowType = {
 				name = "province_values_window"
 				backGround=""
-				position = { x=4 y=354 }
+				position = { x=323 y=354 }
 				size = { x=475 y=480 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -3000,7 +3044,7 @@ guiTypes = {
 					buttonFont = "vic_18"
 					Orientation = "UPPER_LEFT"
 				}
-                
+
 				guiButtonType =
 				{
 					name ="reduce_infrastructure_button"
@@ -3013,7 +3057,7 @@ guiTypes = {
 					buttonFont = "vic_18"
 					Orientation = "UPPER_LEFT"
 				}
-                
+
 				iconType =
 				{
 					name ="naval_forcelimit_icon"
@@ -3053,7 +3097,7 @@ guiTypes = {
 					maxHeight = 20
 					format = right
 				}
-				
+
 				iconType =
 				{
 					name = "province_governing_cost_icon"
@@ -3061,7 +3105,7 @@ guiTypes = {
 					position = { x= 224 y = 82  }
 					Orientation = "UPPER_LEFT"
 				}
-				
+
 				instantTextBoxType = {
 					name = "capacity_value"
 					position = { x = 253 y = 87 }
@@ -3162,7 +3206,7 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 				}
-	
+
 				iconType =
 				{
 					name ="build_allowed_icon"
@@ -3347,8 +3391,8 @@ guiTypes = {
 			windowType = {
 				name = "natives_buildings_window"
 				backGround=""
-				position = {  x=1 y=209 }
-				size = { x=475 y=270 }
+				position = { x=325 y=209 }
+				size = { x=475 y=480 }
 				dontRender = ""
 				horizontalBorder= ""
 				verticalBorder= ""
@@ -3477,12 +3521,12 @@ guiTypes = {
 						maxHeight = 20
 						format = center
 					}
-					
-					
-				
-	
-				
-					
+
+
+
+
+
+
 					iconType =
 					{
 						name ="governing_capacity_icon"
@@ -3491,7 +3535,7 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 						scale = 0.75
 					}
-					
+
 					instantTextBoxType = {
 						name = "capacity_value"
 						position = { x = 237 y = 0 }
@@ -3572,8 +3616,8 @@ guiTypes = {
 			windowType = {
 				name = "natives_buildings_window_large"
 				backGround=""
-				position = {  x=1 y=150 }
-				size = { x=475 y=270 }
+				position = { x=325 y=-105 }
+				size = { x=475 y=480 }
 				dontRender = ""
 				horizontalBorder= ""
 				verticalBorder= ""
@@ -3584,7 +3628,7 @@ guiTypes = {
 				iconType =
 				{
 					name ="provinceview_native_building_bg_large"
-					spriteType = "GFX_select_building_small_bg2"
+					spriteType = "GFX_select_building_large_bg"
 					position = { x= 6 y = 0 }
 				}
 
@@ -3628,7 +3672,7 @@ guiTypes = {
 					name = "buildings"
 					position = { x = 12 y = 67 }
 					backGround=""
-					size = { x=365 y = 210}
+					size = { x=365 y = 572}
 					Orientation = "UPPER_LEFT"
 					horizontal = 0
 					spacing = 0
@@ -3641,7 +3685,7 @@ guiTypes = {
 				windowType = {
 					name = "province_values_window"
 					backGround=""
-					position = { x=0 y=-310 }
+					position = { x=0 y=0 }
 					size = { x=475 y=586 }
 					dontRender = ""
 					horizontalBorder= ""
@@ -3702,9 +3746,9 @@ guiTypes = {
 						format = center
 					}
 
-	
-				
-				
+
+
+
 					iconType =
 					{
 						name ="governing_capacity_icon"
@@ -3712,7 +3756,7 @@ guiTypes = {
 						position = { x= 212 y = 599 }
 						Orientation = "UPPER_LEFT"
 					}
-					
+
 					instantTextBoxType = {
 						name = "capacity_value"
 						position = { x = 245 y = 600 }
@@ -3724,7 +3768,7 @@ guiTypes = {
 						maxHeight = 20
 						format = right
 					}
-	
+
 					iconType =
 					{
 						name ="build_allowed_icon"
@@ -3790,7 +3834,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "building_close_button"
-				position = { x = 304 y = 120 }
+				position = { x = 300 y = -37 }
 				quadTextureSprite ="GFX_closebutton2"
 				clicksound = close_window
 			}
@@ -4632,12 +4676,12 @@ guiTypes = {
 
 	positionType = {
 		name = "building_close_button_natives"
-		position = { x = 382 y = 200 }
+		position = { x = 350 y = -83 }
 	}
 
 	positionType = {
 		name = "building_close_button_natives_large"
-		position = { x = 382 y = 140 }
+		position = { x = 350 y = -83 }
 	}
 
 	positionType = {
@@ -4668,7 +4712,7 @@ guiTypes = {
 
 
 	#### GREAT PROJECT ENTRY
-	windowType = 
+	windowType =
 	{
 		name = "great_project_entry"
 		backGround=""
@@ -4679,14 +4723,14 @@ guiTypes = {
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullScreen = no
-		
-		iconType = 
+
+		iconType =
 		{
 			name ="great_project_pic"
 			spriteType = "GFX_great_project_place_holder"
 			position = { x = 0 y = 0 }
 		}
-		
+
 
 		instantTextBoxType = {
 			name = "name_label"
@@ -4724,7 +4768,7 @@ guiTypes = {
 			{
 				name ="great_project_progress"
 				spriteType = "GFX_provinceView_progressbar"
-				position = { x = 10 y = 19 }
+				position = { x = 8 y = 19 }
 			}
 
 			iconType =
@@ -4872,7 +4916,7 @@ guiTypes = {
 			}
 		}
 	}
-	
+
 	### UNIQUE BUILDING ENTRY
 
 	positionType = {
@@ -6446,7 +6490,7 @@ guiTypes = {
 		}
 
 
-		
+
 		iconType = {
 			name = "naval_defense_banner"
 			position = { x = 240 y = 291 }
@@ -6507,8 +6551,8 @@ guiTypes = {
 			position = { x = 312 y = 332 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
-		
-		
+
+
 
 
 		iconType = {
@@ -6901,7 +6945,7 @@ guiTypes = {
 				spriteType = "GFX_edicts_bg_overlay"
 				position = { x = 484 y = -20 }
 			}
-			
+
 			instantTextBoxType = {
 				name = "edicts_list_title"
 				position = { x = 520 y = 14 }

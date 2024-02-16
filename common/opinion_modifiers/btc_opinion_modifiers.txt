@@ -46,7 +46,8 @@ ignored_our_affairs = {
 }
 
 paria_paid = {
-	opinion = 100
+	opinion = 50
+	yearly_decay = 25
 }
 
 gifted_hanno = {

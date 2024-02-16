@@ -213,9 +213,9 @@ west_african_coast_sea_area = {
 }
 
 south_atlantic_area = {
-	1586 1598 1599 1600 1602 1603 1604 1605 1606 1608 1609 1610
+	1586 1598 1599 1600 1603 1604 1605 1606 1608 1609 1610
 	# BTC #
-	# 1585 1601
+	# 1585 1601 1602
 }
 
 argentine_sea_area = {
@@ -253,7 +253,7 @@ bojador_shoals_area = {
 }
 
 south_atlantic_depths_area = {
-	1585 1601
+	1585 1601 1602
 }
 
 #Lakes:

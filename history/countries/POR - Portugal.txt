@@ -79,7 +79,7 @@ historical_rival = MOR
 
 1434.1.1 = { leader = {	name = "Afonso Gonçalves Baldaia" type = explorer	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1437.12.31 } }
 
-1435.1.1 = { leader = {	name = "Earl of Avranches"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
+1435.1.1 = { leader = {	name = "Álvaro Vaz de Almada"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
 
 1438.9.10 = {
 	monarch = {

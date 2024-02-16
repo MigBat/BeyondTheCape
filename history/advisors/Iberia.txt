@@ -74,16 +74,16 @@ advisor = {
 	death_date = 1431.4.1 #death
 }
 
-advisor = {
-	advisor_id = 614
-	name = "Fernão Lopes" #Notable portugese chronicler. Wrote the History of Portugal based on oral expression.
-	location = 227 #Lisboa
-	discount = yes
-	skill = 2
-	type = artist 
-	date = 1410.1.1 #30 years old
-	death_date = 1459.12.31 #Died
-}
+# advisor = {
+# 	advisor_id = 614
+# 	name = "Fernão Lopes" #Notable portugese chronicler. Wrote the History of Portugal based on oral expression.
+# 	location = 227 #Lisboa
+# 	discount = yes
+# 	skill = 2
+# 	type = artist 
+# 	date = 1410.1.1 #30 years old
+# 	death_date = 1459.12.31 #Died
+# }
 
 advisor = {
 	advisor_id = 616
@@ -96,16 +96,16 @@ advisor = {
 	death_date = 1467.1.1 #death
 }
 
-advisor = {
-	advisor_id = 617
-	name = "Henrique o Navegador" #promoted early Portugese efforts to explore an African route to Asia
-	location = 230 #Algarve 
-	discount = yes
-	skill = 3
-	type = navigator
-	date = 1424.3.4 #30 years old
-	death_date = 1460.11.13 #death
-}
+# advisor = {
+# 	advisor_id = 617
+# 	name = "Henrique o Navegador" #promoted early Portugese efforts to explore an African route to Asia
+# 	location = 230 #Algarve 
+# 	discount = yes
+# 	skill = 3
+# 	type = navigator
+# 	date = 1424.3.4 #30 years old
+# 	death_date = 1460.11.13 #death
+# }
 
 advisor = {
 	advisor_id = 618

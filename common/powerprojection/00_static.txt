@@ -71,11 +71,11 @@ supporting_rebels_in_rival = {
 }
 
 warned_rival = {
-	power = 0
+	power = 3
 }
 
 guarantee_neighbour_of_rival = {
-	power = 0
+	power = 3
 }
 
 current_age_power_projection = {
@@ -88,8 +88,8 @@ is_hegemon = {
 }
 
 allied_to_hegemon = {
-	power = -20
-	min = -20
+	power = -10
+	min = -10
 }
 
 ##################################

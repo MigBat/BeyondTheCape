@@ -9,6 +9,25 @@ castilian_civil_war = {
 		is_free_or_tributary_trigger = yes
 		exists = ARA
 		exists = POR
+		government = monarchy
+		normal_or_historical_nations = yes
+		uses_doom = no
+	}
+
+	can_start = {
+		is_at_war = no
+		has_any_disaster = no
+		custom_trigger_tooltip = {
+			tooltip = enrique_doesnt_exist_tt
+			NOT = { has_heir_flag = is_enrique_flag }
+			NOT = { has_ruler_flag = is_enrique_flag }
+		}
+		OR = {
+			has_regency = yes
+			NOT = { heir_claim = 80 }
+			has_female_heir = yes
+		}
+		is_lesser_in_union = no
 		ARA = {
 			is_free_or_tributary_trigger = yes
 			has_regency = no
@@ -21,31 +40,11 @@ castilian_civil_war = {
 			is_female = no
 			government = monarchy
 		}
-		government = monarchy
-		normal_or_historical_nations = yes
-		uses_doom = no
-	}
-
-	can_start = {
-		is_at_war = no
-		has_any_disaster = no
-		# has_heir = yes
-		custom_trigger_tooltip = {
-			tooltip = enrique_doesnt_exist_tt
-			NOT = { has_heir_flag = is_enrique_flag }
-			NOT = { has_ruler_flag = is_enrique_flag }
-		}
-		OR = {
-			has_regency = yes
-			NOT = { heir_claim = 80 }
-			has_female_heir = yes
-		}
-		is_lesser_in_union = no
 	}
 	
 	can_stop = {
-		is_at_war = yes
 		OR = {
+			is_at_war = yes
 			has_any_disaster = yes
 			is_lesser_in_union = yes
 			NOT = { government = monarchy }

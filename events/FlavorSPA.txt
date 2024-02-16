@@ -2810,6 +2810,9 @@ country_event = { #The Infantes of Aragon
 	
 	option = { 
 		name = flavor_spa.18.a 
+		ai_chance = {
+			factor = 1
+		}
 		set_country_flag = cas_royalist_flag
 		add_stability = -1
 		random_owned_province = {
@@ -2819,7 +2822,7 @@ country_event = { #The Infantes of Aragon
 			}
 			spawn_rebels = {
 				type = noble_rebels
-				size = 3
+				size = 2
 				win = yes 
 				should_take_capital = yes
 			}
@@ -2841,6 +2844,9 @@ country_event = { #The Infantes of Aragon
 	
 	option = { 
 		name = flavor_spa.18.b
+		ai_chance = {
+			factor = 0
+		}
 		set_country_flag = cas_infantes_flag
 		
 		random_owned_province = {
@@ -3081,9 +3087,12 @@ country_event = {
 		NOT = { has_country_modifier = quest_for_the_new_world }
 		NOT = { has_global_flag = columbus_happened }
 		NOT = { has_country_flag = turned_down_columbus }
-		iberia_region = {
-			type = all
-			NOT = { owner = { religion_group = muslim } }
+		OR = {
+			iberia_region = {
+				type = all
+				NOT = { owner = { religion_group = muslim } }
+			}
+			is_year = 1494
 		}
 		POR = { has_country_flag = turned_down_columbus }
 		has_idea_group = exploration_ideas

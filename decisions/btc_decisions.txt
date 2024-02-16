@@ -498,39 +498,30 @@ country_decisions = {
 
 # Hire Navigator
 
-# country_decisions = {
-# 	hire_navigator = {
-# 		potential = {
-# 			ai = no
-# 			mission_completed = btc_por_sagres
-# 			OR = {
-# 				had_country_flag = {
-# 					flag = hired_navigator
-# 					days = 1825
-# 				}
-# 				NOT = { has_country_flag = 1st_nav_decision }
-# 			}
-# 		}
-# 		allow = {
-# 			has_estate_privilege = estate_burghers_naval_school_right
-# 			mission_completed = btc_por_sagres
-# 			owns = 230
-# 			navy_tradition = 5
-# 		}
-# 		effect = {
-# 			define_advisor = {
-# 				type = navigator
-# 				skill = 1
-# 				discount = yes
-# 				location = 230
-# 			}
-# 			add_navy_tradition = -5
-# 			clr_country_flag = hired_navigator
-# 			set_country_flag = hired_navigator
-# 			set_country_flag = 1st_nav_decision
-# 		}
-# 	}
-# }
+country_decisions = {
+	hire_navigator = {
+		potential = {
+			mission_completed = btc_por_sagres
+		}
+		allow = {
+			NOT = { has_advisor_type_in_pool = navigator }
+			NOT = { employed_advisor = { type = navigator } }
+			has_estate_privilege = estate_burghers_naval_school_right
+			mission_completed = btc_por_sagres
+			owns = 230
+			navy_tradition = 10
+		}
+		effect = {
+			define_advisor = {
+				type = navigator
+				skill = 1
+				discount = yes
+				location = 230
+			}
+			add_navy_tradition = -10
+		}
+	}
+}
 
 #Venetian decisions
 

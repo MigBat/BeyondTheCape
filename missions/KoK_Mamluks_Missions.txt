@@ -774,25 +774,27 @@ mam_missions_2 = {
 			is_at_war = no			
 		}
 		effect = {
-			if = {
-				limit = { 
-					has_dlc = "Leviathan" 
-					4316 = {
-						NOT = {
-							has_great_project = { 
-								type = suez_canal 
-								tier = 3 
-							}
-						}
-					}
-					NOT = { adm_tech = 22 }
-				}
-				country_event = { id = flavor_mam.115 }
-				custom_tooltip = flavor_mam.115_tt
-			}
-			else = {
-				4316 = { add_base_production = 3 }
-			}
+			# if = {
+			# 	limit = { 
+			# 		has_dlc = "Leviathan" 
+			# 		4316 = {
+			# 			NOT = {
+			# 				has_great_project = { 
+			# 					type = suez_canal 
+			# 					tier = 3 
+			# 				}
+			# 			}
+			# 		}
+			# 		NOT = { adm_tech = 22 }
+			# 	}
+			# 	country_event = { id = flavor_mam.115 }
+			# 	custom_tooltip = flavor_mam.115_tt
+			# }
+			# else = {
+			# 	4316 = { add_base_production = 3 }
+			# }
+			custom_tooltip = allow_suez_transportation_tt
+			set_country_flag = btc_unlocked_suez_transportation
 			add_mercantilism = 3
 		}
 	}

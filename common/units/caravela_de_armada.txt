@@ -6,7 +6,7 @@ base_cannons = 15
 blockade = 10
 
 sail_speed = 11
-trade_power = 4.0
+trade_power = 3.0
 
 sailors = 75
 
