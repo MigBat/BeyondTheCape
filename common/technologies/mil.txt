@@ -103,8 +103,8 @@ technology = {
 	# Tech 4
 	year = 1453
 	expects_institution = {
-		feudalism = 0.2
-		renaissance = 0.05
+		feudalism = 0.4
+		renaissance = 0.1
 	}
 
 	#Pike Square
@@ -118,8 +118,8 @@ technology = {
 	# Tech 5
 	year = 1466
 	expects_institution = {
-		feudalism = 0.4
-		renaissance = 0.1
+		feudalism = 0.5
+		renaissance = 0.2
 	}
 	
 	#Standardised Pikes
@@ -164,7 +164,7 @@ technology = {
 	year = 1479
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.2
+		renaissance = 0.3
 	}
 	
 	#Arquebus
@@ -199,7 +199,7 @@ technology = {
 	year = 1492
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.3
+		renaissance = 0.4
 		printing_press = 0.1
 	}
 	
@@ -216,7 +216,7 @@ technology = {
 	year = 1505
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.4
+		renaissance = 0.5
 		printing_press = 0.2
 	}
 

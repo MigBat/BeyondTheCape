@@ -352,9 +352,6 @@ country_decisions = {
 				id = dutch_domination.23
 				insight_tooltip = ned_commission_art_tt
 			}
-			#country_event = {
-			#	id = dutch_domination.23
-			#}
 		}
 		ai_will_do = {
 			factor = 0
@@ -366,6 +363,7 @@ country_decisions = {
 		color = { 255 162 25 }
 		major = yes
 		potential = {
+			mission_completed = dom_ned_plakaat_van_verlatinghe
 			OR = {
 				primary_culture = dutch
 				primary_culture = flemish
@@ -435,9 +433,6 @@ country_decisions = {
 				who = OVERLORD
 				casus_belli = cb_independence_war
 			}
-			#country_event = {
-			#	id = dutch_domination.23
-			#}
 		}
 		ai_will_do = {
 			factor = 0

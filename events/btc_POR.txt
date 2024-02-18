@@ -5447,6 +5447,15 @@ country_event = {
 		custom_tooltip = alcacovas_treaty_tt
 		hidden_effect = {
 			CAS = { set_country_flag = alcacovas_treaty }
+			if = {
+				limit = {
+					NOT = { has_country_flag = won_war }
+				}
+				country_event = {
+					id = castilian_civil_war.14	# Castile wins civil war
+					days = 3
+				}
+			}
 		}
 	}
 
@@ -5456,8 +5465,20 @@ country_event = {
 			factor = 0
 		}
 
-		add_years_of_income = -1
-		POR = { add_years_of_income = 1 }
+		add_years_of_income = -3
+		POR = { add_years_of_income = 3 }
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = won_war }
+				}
+				country_event = {
+					id = castilian_civil_war.14	# Castile wins civil war
+					days = 3
+				}
+			}		
+		}
 	}
 }
 
@@ -5819,6 +5840,8 @@ country_event = {
 	title = btc_por.181_t
 	desc = btc_por.181_d
 	picture = PROTESTANT_RELIGIOUS_TENSIONS_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
