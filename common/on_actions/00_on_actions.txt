@@ -354,6 +354,22 @@ on_war_won = {
 	if = {
 		limit = {
 			ROOT = {
+				tag = POR
+				has_country_flag = at_war
+				NOT = { has_country_flag = yes_iberian_union }
+			}
+			FROM = { tag = CAS }
+			ARA = { NOT = { has_country_flag = at_war } }
+		}
+		CAS = {
+			country_event = {
+				id = castilian_civil_war.14	# Castile wins civil war
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
 				tag = ARA
 				has_country_flag = at_war
 				NOT = { has_country_flag = yes_iberian_union }
@@ -369,6 +385,22 @@ on_war_won = {
 		CAS = {
 			country_event = {
 				id = castilian_civil_war.15	# Portugal and Castile win civil war
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = ARA
+				has_country_flag = at_war
+				NOT = { has_country_flag = yes_iberian_union }
+			}
+			FROM = { tag = CAS }
+			POR = { NOT = { has_country_flag = at_war } }
+		}
+		CAS = {
+			country_event = {
+				id = castilian_civil_war.14	# Castile wins civil war
 			}
 		}
 	}
