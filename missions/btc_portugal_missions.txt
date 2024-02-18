@@ -1216,20 +1216,9 @@ gc_por_2_d = {
 				}
 			}
 
-			if = {
-				limit = {
-					1202 = {
-						NOT = { owned_by = ROOT }
-						controlled_by = ROOT
-					}
-					ROOT = {
-						war_with = event_target:owner_of_mombasa
-					}
-				}
-				1202 = {
-					cede_province = ROOT
-					add_core = ROOT
-				}
+			1202 = {
+				cede_province = ROOT
+				add_core = ROOT
 			}
 			1201 = {
 				add_permanent_claim = ROOT
