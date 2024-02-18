@@ -972,74 +972,11 @@ domination_dutch_slot_3_branching_reject_bur = {
 		}
 		effect = {
 			add_manpower = 5 #flavor_bur.10, flavor_bur.16 the dutch rebellion hre incident
+			add_mil_power = 100
 			custom_tooltip = dom_ned_unlock_revolt_tt
-			custom_tooltip = dom_ned_todo_dutch_revolt_disaster_tt
-			# = {
 			country_event_with_insight = {
 				id = dutch_domination.22
 				insight_tooltip = verlatinghe_event_tt
-			}
-			if = { 
-				limit = { is_subject = yes }
-				custom_tooltip = ned_subject_of_tt #dom_ned_bur_liberty_tt
-				tooltip = {
-					grant_independence = yes
-				}
-				custom_tooltip = mission_alternatively_tt
-			}
-			tooltip = {
-				add_mil_power = 250
-			}
-			hidden_effect = {
-			if = { 
-				limit = { is_subject_of = BUR } 
-				if = {
-					limit = {
-						BUR = {
-							owes_favors = { 
-								who = ROOT
-								value = 100
-							}
-						}
-						trust = { who = BUR value = 75 }
-					}
-					#country_event_with_insight = { #Request independance
-					#	id = dutch_domination.8
-					#	insight_tooltip = ned_control_state_tt
-					#}
-					grant_independence = yes
-					add_favors = {
-						who = BUR
-						amount = -100
-					}
-				}
-				if = {
-					limit = {
-						army_strength = {
-							who = BUR
-							value = 0.75
-						}
-					}
-					grant_independence = yes
-				}
-			}
-			else_if = {
-				limit = {
-					is_subject = yes
-					NOT = {
-						OVERLORD = {							
-							army_strength = {
-								who = ROOT
-								value = 1.50
-							}
-						}
-					}
-				}
-				grant_independence = yes
-			}
-			else = {
-				add_mil_power = 250
-			}
 			}
 		}
 		ai_weight = {
