@@ -1188,7 +1188,7 @@ gc_por_2_d = {
 				}
 			}
 			1202 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				controlled_by = ROOT
 			}
 			if = {
 				limit = {
@@ -1208,8 +1208,28 @@ gc_por_2_d = {
 			add_prestige_or_monarch_power = { amount = 15 }
 			add_years_of_income = 1 
 
-			1202 = {
-				add_core = ROOT
+			hidden_effect = {
+				1202 = {
+					owner = {
+						save_event_target_as = owner_of_mombasa
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					1202 = {
+						NOT = { owned_by = ROOT }
+						controlled_by = ROOT
+					}
+					ROOT = {
+						war_with = event_target:owner_of_mombasa
+					}
+				}
+				1202 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
 			}
 			1201 = {
 				add_permanent_claim = ROOT
