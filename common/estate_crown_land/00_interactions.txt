@@ -490,6 +490,8 @@ interaction = {
 					has_disaster = estate_rajput_disaster
 					has_disaster = estate_vaisyas_disaster
 					has_disaster = estate_slavers_disaster
+					has_disaster = estate_trade_company_disaster
+					has_disaster = estate_peasants_disaster
 				}
 			}
 		}
@@ -532,6 +534,8 @@ interaction = {
 					has_disaster = estate_rajput_disaster
 					has_disaster = estate_vaisyas_disaster
 					has_disaster = estate_slavers_disaster
+					has_disaster = estate_trade_company_disaster
+					has_disaster = estate_peasants_disaster
 					has_disaster_progress = {
 						disaster = estate_brahmins_disaster
 						value = 5
@@ -578,6 +582,14 @@ interaction = {
 					}
 					has_disaster_progress = {
 						disaster = estate_slavers_disaster
+						value = 5
+					}
+					has_disaster_progress = {
+						disaster = estate_trade_company_disaster
+						value = 5
+					}
+					has_disaster_progress = {
+						disaster = estate_peasants_disaster
 						value = 5
 					}
 				}
@@ -644,6 +656,8 @@ interaction = {
 				has_disaster = estate_rajput_disaster
 				has_disaster = estate_vaisyas_disaster
 				has_disaster = estate_slavers_disaster
+				has_disaster = estate_trade_company_disaster
+				has_disaster = estate_peasants_disaster
 				has_disaster_progress = {
 					disaster = estate_brahmins_disaster
 					value = 5
@@ -690,6 +704,14 @@ interaction = {
 				}
 				has_disaster_progress = {
 					disaster = estate_slavers_disaster
+					value = 5
+				}
+				has_disaster_progress = {
+					disaster = estate_trade_company_disaster
+					value = 5
+				}
+				has_disaster_progress = {
+					disaster = estate_peasants_disaster
 					value = 5
 				}
 			}

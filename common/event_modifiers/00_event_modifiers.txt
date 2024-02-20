@@ -4785,9 +4785,7 @@ ven_council_of_ten_strong = {
 
 #Netherlands
 ned_house_of_elzevir = {
-	trade_goods_size = 0.5
-	local_institution_spread = 0.05
-	prestige = 0.5
+	local_institution_spread = 0.15
 }
 
 ned_shipbuilding_industry = {
