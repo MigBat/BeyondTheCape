@@ -1,0 +1,56 @@
+custom_button = {
+    name = btc_ideas_show_idea_hints
+    potential = {
+        NOT = {
+            has_country_flag = btc_showing_ideas_hint
+        }
+    }
+    trigger = {
+        hidden_trigger = {
+            NOT = {
+                has_country_flag = btc_showing_ideas_hint
+            }
+        }
+    }
+    effect = {
+        set_country_flag = btc_showing_ideas_hint
+    }
+    tooltip = btc_ideas_show_idea_hints_title
+}
+
+custom_button = {
+    name = btc_ideas_hide_idea_hints
+    potential = {
+        has_country_flag = btc_showing_ideas_hint
+    }
+    trigger = {
+        hidden_trigger = {
+            has_country_flag = btc_showing_ideas_hint
+        }
+    }
+    effect = {
+        clr_country_flag = btc_showing_ideas_hint
+    }
+    tooltip = btc_ideas_hide_idea_hints_title
+}
+
+custom_icon = {
+    name = domesticpanel_bg
+    potential = {
+        always = yes
+    }
+    frame = {
+        number = 1
+        trigger = {
+            NOT = {
+                has_country_flag = btc_showing_ideas_hint
+            }
+        }
+    }
+    frame = {
+        number = 2
+        trigger = {
+            has_country_flag = btc_showing_ideas_hint
+        }
+    }
+}

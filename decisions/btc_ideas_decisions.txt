@@ -1,0 +1,51 @@
+country_decisions = {
+	hire_explorer_decision = {
+		potential = {
+			has_idea = exploration1
+			NOT = { has_country_modifier = quest_for_the_new_world }
+		}
+		allow = {
+			NOT = { num_of_explorers = 1 }
+		}
+		effect = {
+			add_dip_power = -50
+			if = {
+				limit = {
+					NOT = { navy_tradition = 25 }
+				}
+				create_explorer = {
+					tradition = 20
+				}
+			}
+			else_if = {
+				limit = {
+					navy_tradition = 25
+					NOT = { navy_tradition = 50 }
+				}
+				create_explorer = {
+					tradition = 40
+				}
+			}
+			else_if = {
+				limit = {
+					navy_tradition = 50
+					NOT = { navy_tradition = 75 }
+				}
+				create_explorer = {
+					tradition = 60
+				}
+			}
+			else_if = {
+				limit = {
+					navy_tradition = 75
+				}
+				create_explorer = {
+					tradition = 80
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}

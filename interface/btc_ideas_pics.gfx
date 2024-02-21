@@ -1,0 +1,27 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "btc_full_ideas_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_full_ideas_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_adm_category_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_adm_category_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_dip_category_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_dip_category_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_mil_category_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_mil_category_picture.dds"
+		alwaystransparent = yes
+	}
+
+}

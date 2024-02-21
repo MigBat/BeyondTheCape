@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_provinceview_great_projects_bg_full"
-		textureFile = "gfx/interface/great_projects/provinceview_great_projects_bg_full.dds"
-	}
-}

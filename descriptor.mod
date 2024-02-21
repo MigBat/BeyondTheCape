@@ -1,18 +1,14 @@
-version="1"
+version="1.0.0"
 tags={
-	"Balance"
-	"Map"
-	"Missions And Decisions"
-	"Events"
 	"National Ideas"
-	"Fixes"
-	"Sound"
-	"Historical"
-	"Trade"
-	"Loading Screen"
 }
-name="Beyond the Cape BETA"
-replace_path="gfx/loadingscreens"
+name="Beyond the Cape: Ideas BETA"
+dependencies={
+	"Beyond the Cape"
+	"Beyond the Cape BETA"
+}
+replace_path="ideas"
+replace_path="policies"
 picture="thumbnail.png"
 supported_version="1.36.*"
-remote_file_id="3121940838"
+remote_file_id="3122839484"

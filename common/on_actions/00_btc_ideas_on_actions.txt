@@ -1,0 +1,6 @@
+on_startup = {
+    set_global_flag = btc_ideas_submod
+    events = {
+        btc_ideas_startup.1
+    }
+}

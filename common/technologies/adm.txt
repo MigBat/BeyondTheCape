@@ -63,6 +63,7 @@ technology = { #Medieval Administration
 		feudalism = 0.3
 	}
 
+	allowed_idea_groups = 1
 	production_efficiency	=	0.02
 	may_support_rebels = yes
 }
@@ -88,7 +89,6 @@ technology = { #National Ideas
 		renaissance = 0.2
 	}
 
-	allowed_idea_groups = 1
 	production_efficiency	 =	0.02
 }
 
@@ -100,6 +100,7 @@ technology = { #Workshop
 		renaissance = 0.3
 	}
 
+	allowed_idea_groups = 2
 	#Workshop
 	farm_estate = yes
 	workshop = yes
@@ -114,9 +115,6 @@ technology = { #Renaissance Thought
 		renaissance = 0.4
 		printing_press = 0.1
 	}
-	
-	#Noble Republic
-	allowed_idea_groups = 2	
 }
 
 technology = { #Courthouse
@@ -142,6 +140,7 @@ technology = { #The Scythe
 		printing_press = 0.3
 	}
 	
+	allowed_idea_groups = 3
 	#The Scythe
 	production_efficiency 	=	0.02
 	
@@ -158,7 +157,6 @@ technology = { #Modern Theocracy
 		new_world_i = 0.1
 	}
 	
-	allowed_idea_groups = 3
 	theocratic_government = yes
 }
 
@@ -187,6 +185,7 @@ technology = { #Early Modern Administration
 		new_world_i = 0.3
 	}
 	
+	allowed_idea_groups = 4
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
 	governing_capacity = 50
@@ -219,7 +218,6 @@ technology = { #Scientific Experimentation
 	}
 	
 	plantations = yes
-	allowed_idea_groups	= 4
 }
 
 technology = { #Military Administration
@@ -233,6 +231,7 @@ technology = { #Military Administration
 		manufactories = 0.4
 	}
 	
+	allowed_idea_groups = 5
 	may_force_march = yes
 	soldier_households = yes
 }
@@ -285,7 +284,7 @@ technology = { #National Sovereignty
 		global_trade = 0.4
 	}
 	
-	allowed_idea_groups	= 5
+	allowed_idea_groups	= 6
 }
 
 technology = { #Cathedral
@@ -334,6 +333,7 @@ technology = { #Land Clearance
 		enlightenment = 0.4
 	}
 	
+	allowed_idea_groups = 7
 	#Land Clearance
 	production_efficiency 	=	0.02
 	furnace = yes
@@ -352,7 +352,6 @@ technology = { #The Constitution
 		enlightenment = 0.6
 	}
 	
-	allowed_idea_groups = 6
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
@@ -389,6 +388,7 @@ technology = { #Bonds and Tontines
 		enlightenment = 1
 	}
 	
+	allowed_idea_groups = 8
 	counting_house = yes  
 	governing_capacity = 150
 }
@@ -423,8 +423,6 @@ technology = { #Separation of Powers
 		enlightenment = 1
 		industrialization = 0.2
 	}
-	
-	allowed_idea_groups 	= 	7
 }
 
 technology = { #Modern Bureaucracy
@@ -441,6 +439,7 @@ technology = { #Modern Bureaucracy
 		industrialization = 0.4
 	}
 
+	allowed_idea_groups = 9
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1	
 	governing_capacity = 150
@@ -478,7 +477,6 @@ technology = { #Rights of Man
 		industrialization = 0.8
 	}
 
-	allowed_idea_groups = 8
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }
@@ -497,6 +495,7 @@ technology = { #Advanced Production
 		industrialization = 1
 	}
 	
+	allowed_idea_groups = 10
 	#Improved Draft Animals
 	production_efficiency 	=	0.02
 }
