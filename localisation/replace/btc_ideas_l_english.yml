@@ -1,7 +1,16 @@
 ﻿l_english:
-# UI
+# Miscellaneous
+ btc_ideas_startup_unlock_ideas:0 "Unlock Idea Groups"
+ btc_ideas_startup_unlock_ideas_desc:0 "Unlock all idea groups?"
+ btc_ideas_startup_unlock_ideas_yes:0 "Yes"
+ btc_ideas_startup_unlock_ideas_no:0 "No"
+
  btc_ideas_show_idea_hints_title:0 "Show Idea Diagram"
  btc_ideas_hide_idea_hints_title:0 "Hide Idea Diagram"
+
+ btc_ideas_diagram_empty:0 ""
+ btc_ideas_diagram_deselected:0 "£ideas£"
+ btc_ideas_diagram_ok:0 "Ok."
 
 # vanilla changes #
  superior_firepower:0 "Mass Firepower"
@@ -67,6 +76,25 @@
  decisive_battle_ideas:0 "Decisive Battle Ideas"
  decisive_battle_ideas_bonus:0 "Full Decisive Battle"
 
+## TIER 1 ADM ##
+# Aristocratic
+ btc_ideas_diagram_aristocratic_1:0 "Noble Knights"
+ btc_ideas_diagram_aristocratic_2:0 "Serfdom"
+ btc_ideas_diagram_aristocratic_3:0 "Noble Resilience"
+ btc_ideas_diagram_aristocratic_4:0 "Noble Officers"
+ btc_ideas_diagram_aristocratic_5:0 "International Nobility"
+ btc_ideas_diagram_aristocratic_6:0 "Rightful Conquest"
+ btc_ideas_diagram_aristocratic_7:0 "Local Nobility"
+ btc_ideas_diagram_aristocratic_bonus:0 "Aristocratic Bonus"
+# Plutocratic
+ btc_ideas_diagram_plutocratic_1:0 "Tradition Of Payment"
+ btc_ideas_diagram_plutocratic_2:0 "Abolished Serfdom"
+ btc_ideas_diagram_plutocratic_3:0 "Bill Of Rights"
+ btc_ideas_diagram_plutocratic_4:0 "Free Merchants"
+ btc_ideas_diagram_plutocratic_5:0 "Free Subjects"
+ btc_ideas_diagram_plutocratic_6:0 "Free Cities"
+ btc_ideas_diagram_plutocratic_7:0 "Emancipation"
+ btc_ideas_diagram_plutocratic_bonus:0 "Plutocratic Bonus"
 # Agrarian #
  agrarian1:0 "Bountiful Harvests"
  agrarian1_desc:0 "Harness the agricultural abundance of your nation. Augmenting the size and diversity of your trade goods, establishing your nation as a key player in the global market."

@@ -1,0 +1,724 @@
+namespace = btc_ideas_diagram
+
+## TIER 1 ADM ##
+
+# Aristocratic
+country_event = {
+	id = btc_ideas_diagram.1
+
+	# The key of the idea group, to keep the same locale key
+	title = aristocracy_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		# `group`: The name used in the locale, in this case `btc_ideas_diagram_aristocratic_1` to `btc_ideas_diagram_aristocratic_7` and `btc_ideas_diagram_aristocratic_bonus`
+		btc_ideas_tooltip_for_group = { group = "aristocratic" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Plutocratic
+country_event = {
+	id = btc_ideas_diagram.2
+
+	title = plutocracy_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "plutocratic" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Horde
+country_event = {
+	id = btc_ideas_diagram.3
+
+	title = horde_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "horde" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Theocratic
+country_event = {
+	id = btc_ideas_diagram.4
+
+	title = theocracy_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "theocratic" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Indigenous
+country_event = {
+	id = btc_ideas_diagram.5
+
+	title = indigenous_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "indigenous" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Religious
+country_event = {
+	id = btc_ideas_diagram.6
+
+	title = religious_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "religious" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Innovative
+country_event = {
+	id = btc_ideas_diagram.7
+
+	title = innovativeness_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "innovative" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Agrarian
+country_event = {
+	id = btc_ideas_diagram.8
+
+	title = economic_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "agrarian" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Urban
+country_event = {
+	id = btc_ideas_diagram.9
+
+	title = infrastructure_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "urban" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+## TIER 1 DIP ##
+
+# Caravan
+country_event = {
+	id = btc_ideas_diagram.10
+
+	title = trade_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "caravan" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Maritime
+country_event = {
+	id = btc_ideas_diagram.11
+
+	title = maritime_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "maritime" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Cultural
+country_event = {
+	id = btc_ideas_diagram.12
+
+	title = court_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "cultural" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Imperialism
+country_event = {
+	id = btc_ideas_diagram.13
+
+	title = imperialism_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "imperialism" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Exploration
+country_event = {
+	id = btc_ideas_diagram.14
+
+	title = exploration_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "exploration" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+## TIER 1 MIL ##
+
+# Naval
+country_event = {
+	id = btc_ideas_diagram.15
+
+	title = naval_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "naval" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Mercenary
+country_event = {
+	id = btc_ideas_diagram.16
+
+	title = mercenary_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "mercenary" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Mobilisation
+country_event = {
+	id = btc_ideas_diagram.17
+
+	title = quantity_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "mobilisation" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Defensive
+country_event = {
+	id = btc_ideas_diagram.18
+
+	title = defensive_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "defensive" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Offensive
+country_event = {
+	id = btc_ideas_diagram.19
+
+	title = offensive_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "offensive" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+## TIER 2 ADM ##
+
+# Nationalist
+country_event = {
+	id = btc_ideas_diagram.20
+
+	title = nationalist_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "nationalist" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Humanist
+country_event = {
+	id = btc_ideas_diagram.21
+
+	title = humanist_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "humanist" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Meritocratic
+country_event = {
+	id = btc_ideas_diagram.22
+
+	title = meritocracy_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "meritocratic" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Expansion
+country_event = {
+	id = btc_ideas_diagram.23
+
+	title = expansion_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "expansion" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+## TIER 2 DIP ##
+
+# Mercantilism
+country_event = {
+	id = btc_ideas_diagram.24
+
+	title = mercantilism_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "mercantilism" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Free Trade
+country_event = {
+	id = btc_ideas_diagram.25
+
+	title = free_trade_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "free_trade" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Espionage
+country_event = {
+	id = btc_ideas_diagram.26
+
+	title = spy_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "espionage" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Colonialism
+country_event = {
+	id = btc_ideas_diagram.27
+
+	title = colonialism_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "colonialism" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+## TIER 2 MIL ##
+
+# Standing Army
+country_event = {
+	id = btc_ideas_diagram.28
+
+	title = standing_army_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "standing_army" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Firepower
+country_event = {
+	id = btc_ideas_diagram.29
+
+	title = firepower_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "firepower" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Bravery
+country_event = {
+	id = btc_ideas_diagram.30
+
+	title = quality_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "bravery" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Logistics
+country_event = {
+	id = btc_ideas_diagram.31
+
+	title = logistics_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "logistics" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+## TIER 3 ADM ##
+
+# Interventionalism
+country_event = {
+	id = btc_ideas_diagram.32
+
+	title = administrative_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "interventionalism" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Liberalism
+country_event = {
+	id = btc_ideas_diagram.33
+
+	title = liberalism_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "liberalism" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+## TIER 3 DIP ##
+
+# Influence
+country_event = {
+	id = btc_ideas_diagram.34
+
+	title = influence_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "influence" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# Coercive Diplomacy
+country_event = {
+	id = btc_ideas_diagram.35
+
+	title = diplomatic_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "coercive_diplomacy" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+## TIER 3 MIL ##
+
+# Decisive Battle
+country_event = {
+	id = btc_ideas_diagram.36
+
+	title = decisive_battle_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "decisive_battle" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}
+
+# War of Attrition
+country_event = {
+	id = btc_ideas_diagram.37
+
+	title = war_of_attrition_ideas
+	desc = btc_ideas_diagram_empty
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		btc_ideas_tooltip_for_group = { group = "war_of_attrition" }
+	}
+
+	option = {
+		name = "btc_ideas_diagram_ok"
+	}
+}

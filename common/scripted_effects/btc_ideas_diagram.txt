@@ -1,0 +1,44 @@
+btc_ideas_tooltip_for_group = {
+	tooltip = {
+		add_country_modifier = {
+			name = btc_ideas_diagram_$group$_1
+			duration = -1
+			desc = btc_ideas_diagram_deselected
+		}
+		add_country_modifier = {
+			name = btc_ideas_diagram_$group$_2
+			duration = -1
+			desc = btc_ideas_diagram_deselected
+		}
+		add_country_modifier = {
+			name = btc_ideas_diagram_$group$_3
+			duration = -1
+			desc = btc_ideas_diagram_deselected
+		}
+		add_country_modifier = {
+			name = btc_ideas_diagram_$group$_4
+			duration = -1
+			desc = btc_ideas_diagram_deselected
+		}
+		add_country_modifier = {
+			name = btc_ideas_diagram_$group$_5
+			duration = -1
+			desc = btc_ideas_diagram_deselected
+		}
+		add_country_modifier = {
+			name = btc_ideas_diagram_$group$_6
+			duration = -1
+			desc = btc_ideas_diagram_deselected
+		}
+		add_country_modifier = {
+			name = btc_ideas_diagram_$group$_7
+			duration = -1
+			desc = btc_ideas_diagram_deselected
+		}
+		add_country_modifier = {
+			name = btc_ideas_diagram_$group$_bonus
+			duration = -1
+			desc = btc_ideas_diagram_deselected
+		}
+	}
+}

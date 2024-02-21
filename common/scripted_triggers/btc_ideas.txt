@@ -1,0 +1,223 @@
+btc_can_unlock_government_idea_group = {
+	OR = {
+		has_government_attribute = enables_$government$_idea_group
+		has_country_flag = btc_unlocked_all_idea_groups
+	}
+}
+
+btc_can_unlock_idea_group = {
+	OR = {
+		has_country_flag = btc_unlocked_all_idea_groups
+		AND = {
+			## TIER 1 ADM ##
+			[[government] OR = {
+				has_government_attribute = enables_aristocratic_idea_group
+				has_government_attribute = enables_plutocratic_idea_group
+				has_government_attribute = enables_horde_idea_group
+				has_government_attribute = enables_divine_idea_group
+				has_government_attribute = enables_natives_idea_group
+			} ]
+			[[religious] NOT = { has_idea_group = innovativeness_ideas } ]
+			[[innovative] NOT = { has_idea_group = religious_ideas } ]
+			[[agrarian] NOT = { has_idea_group = infrastructure_ideas } ]
+			[[urban] NOT = { has_idea_group = economic_ideas } ]
+
+			## TIER 1 DIP ##
+			[[caravan] always = yes ]
+			[[maritime] AND = {
+				primitives = no
+				num_of_ports = 1
+			} ]
+			[[cultural] always = yes ]
+			[[imperialism] always = yes ]
+			[[exploration] AND = { 
+				num_of_ports = 1
+				OR = {
+					has_idea_group = naval_ideas
+					AND = {
+						ai = no
+						mission_completed = btc_por_henry_the_navigator
+					}
+				}
+				if = {
+					limit = {
+						tag = GCH
+					}
+					has_country_modifier = guanches_exploration
+				}
+			} ]
+
+			## TIER 1 MIL ##
+			[[naval] AND = {
+				primitives = no
+				num_of_ports = 1
+			} ]
+			[[mercenary] AND = {
+				NOT = { has_idea_group = quantity_ideas }
+				NOT = { has_idea_group = standing_army_ideas }
+			} ]
+			[[mobilisation] AND = {
+				NOT = { has_idea_group = mercenary_ideas }
+				NOT = { has_idea_group = firepower_ideas }
+				NOT = { has_idea_group = quality_ideas }
+			} ]
+			[[defensive] NOT = { has_idea_group = offensive_ideas } ]
+			[[offensive] NOT = { has_idea_group = defensive_ideas } ]
+
+			## TIER 2 ADM ##
+			[[nationalist] AND = {
+				NOT = { has_idea_group = humanist_ideas }
+				has_tier_1_adm_idea = yes
+				OR = {
+					has_tier_1_dip_idea = yes
+					has_tier_1_mil_idea = yes
+				}
+			} ]
+			[[humanist] AND = {
+				NOT = { has_idea_group = nationalist_ideas }
+				has_tier_1_adm_idea = yes
+				OR = {
+					has_tier_1_dip_idea = yes
+				}
+			} ]
+			[[meritocracy] AND = {
+				NOT = { has_idea_group = aristocracy_ideas }
+				NOT = { has_idea_group = plutocracy_ideas }
+				NOT = { has_idea_group = horde_gov_ideas }
+				NOT = { has_idea_group = theocracy_gov_ideas }
+				NOT = { has_idea_group = indigenous_ideas }
+				has_tier_1_adm_idea = yes
+				OR = {
+					has_tier_1_dip_idea = yes
+					has_tier_1_mil_idea = yes
+				}
+			} ]
+			[[expansion] OR = {
+				AND = {
+					has_tier_1_adm_idea = yes
+					OR = {
+						has_tier_1_dip_idea = yes
+						has_tier_1_mil_idea = yes
+					}
+				}
+				has_idea_group = exploration_ideas
+			} ]
+
+			## TIER 2 DIP ##
+			[[mercantilism] AND = {
+				OR = {
+					has_idea_group = maritime_ideas
+					has_idea_group = trade_ideas
+				}
+				OR = {
+					has_tier_1_adm_idea = yes
+					has_tier_1_mil_idea = yes
+				}
+			} ]
+			[[free_trade] AND = {
+				OR = {
+					has_idea_group = maritime_ideas
+					has_idea_group = trade_ideas
+				}
+				OR = {
+					has_tier_1_adm_idea = yes
+					has_tier_1_mil_idea = yes
+				}
+			} ]
+			[[espionage] AND = {
+				has_tier_1_dip_idea = yes
+				OR = {
+					has_tier_1_adm_idea = yes
+					has_tier_1_mil_idea = yes
+				}
+			} ]
+			[[colonialism] AND = {
+				has_idea_group = naval_ideas
+				OR = {
+					has_idea_group = exploration_ideas
+					has_idea_group = expansion_ideas
+				}
+			} ]
+
+			## TIER 2 MIL ##
+			[[standing_army] AND = {
+				NOT = { has_idea_group = mercenary_ideas }
+				has_tier_1_mil_idea = yes
+				OR = {
+					has_tier_1_adm_idea = yes
+					has_tier_1_dip_idea = yes
+				}
+			} ]
+			[[firepower] AND = {
+				has_idea_group = naval_ideas
+				NOT = { has_idea_group = quantity_ideas }
+				NOT = { has_idea_group = quality_ideas }
+				OR = {
+					has_tier_1_adm_idea = yes
+					has_tier_1_dip_idea = yes
+				}
+			} ]
+			[[bravery] AND = {
+				OR = {
+					has_idea_group = defensive_ideas
+					has_idea_group = offensive_ideas
+				}
+				NOT = { has_idea_group = quantity_ideas }
+				NOT = { has_idea_group = firepower_ideas }
+				OR = {
+					has_tier_1_adm_idea = yes
+					has_tier_1_dip_idea = yes
+				}
+			} ]
+			[[logistics] AND = {
+				has_tier_1_mil_idea = yes
+				OR = {
+					has_tier_1_adm_idea = yes
+					has_tier_1_dip_idea = yes
+				}
+			} ]
+
+			## TIER 3 ADM ##
+			[[interventionism] AND = {
+				NOT = { has_idea_group = liberalism_ideas }
+				has_tier_2_adm_idea = yes
+				OR = {
+					has_idea_group = nationalist_ideas
+					has_idea_group = mercantilism_ideas
+				}
+			} ]
+			[[liberalism] AND = {
+				NOT = { has_idea_group = administrative_ideas }
+				has_tier_2_adm_idea = yes
+				OR = {
+					has_idea_group = humanist_ideas
+					has_idea_group = free_trade_ideas
+				}
+			} ]
+
+			## TIER 3 DIP ##
+			[[influence] AND = {
+				NOT = { has_idea_group = diplomatic_ideas }
+				has_idea_group = court_ideas
+				has_tier_2_dip_idea = yes
+			} ]
+			[[coercive_diplomacy] AND = {
+				NOT = { has_idea_group = influence_ideas }
+				has_idea_group = imperialism_ideas
+				has_tier_2_dip_idea = yes
+			} ]
+
+			## TIER 3 MIL ##
+			[[decisive_battle] AND = {
+				NOT = { has_idea_group = war_of_attrition_ideas }
+				has_idea_group = offensive_ideas
+				has_tier_2_mil_idea = yes
+			} ]
+			[[war_of_attrition] AND = {
+				NOT = { has_idea_group = decisive_battle_ideas }
+				has_idea_group = defensive_ideas
+				has_tier_2_mil_idea = yes
+			} ]
+		}
+	}
+}

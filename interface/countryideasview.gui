@@ -67,6 +67,239 @@ guiTypes = {
 			quadTextureSprite ="GFX_btc_ideas_hint_button_highlighted"
 			scripted = yes
 		}
+
+		## ---- BTC Ideas: Help: Buttons ----
+
+		guiButtonType = {
+			name = btc_ideas_diagram_government
+			position = { x = 608 y = 138 } # In file: x = 1742, y = 150
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_agrarian
+			position = { x = 608 y = 178 } # In file: x = 1742, y = 190
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_urban
+			position = { x = 608 y = 218 } # In file: x = 1742, y = 230
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_religious
+			position = { x = 608 y = 258 } # In file: x = 1742, y = 270
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_innovative
+			position = { x = 608 y = 298 } # In file: x = 1742, y = 310
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_caravan
+			position = { x = 608 y = 338 } # In file: x = 1742, y = 350
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_maritime
+			position = { x = 608 y = 378 } # In file: x = 1742, y = 390
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_cultural
+			position = { x = 608 y = 418 } # In file: x = 1742, y = 430
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_imperialism
+			position = { x = 608 y = 458 } # In file: x = 1742, y = 470
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_exploration
+			position = { x = 608 y = 498 } # In file: x = 1742, y = 510
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_naval
+			position = { x = 608 y = 538 } # In file: x = 1742, y = 550
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_mobilisation
+			position = { x = 608 y = 578 } # In file: x = 1742, y = 590
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_mercenary
+			position = { x = 608 y = 618 } # In file: x = 1742, y = 630
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_offensive
+			position = { x = 608 y = 658 } # In file: x = 1742, y = 670
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_defensive
+			position = { x = 608 y = 698 } # In file: x = 1742, y = 710
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_meritocratic
+			position = { x = 767 y = 138 } # In file: x = 1901, y = 150
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_nationalist
+			position = { x = 767 y = 178 } # In file: x = 1901, y = 190
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_humanist
+			position = { x = 767 y = 218 } # In file: x = 1901, y = 230
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_espionage
+			position = { x = 767 y = 298 } # In file: x = 1901, y = 310
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_mercantilism
+			position = { x = 767 y = 338 } # In file: x = 1901, y = 350
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_free_trade
+			position = { x = 767 y = 378 } # In file: x = 1901, y = 390
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_logistics
+			position = { x = 767 y = 458 } # In file: x = 1901, y = 470
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_expansion
+			position = { x = 767 y = 498 } # In file: x = 1901, y = 510
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_colonialism
+			position = { x = 767 y = 538 } # In file: x = 1901, y = 550
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_firepower
+			position = { x = 767 y = 578 } # In file: x = 1901, y = 590
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_bravery
+			position = { x = 767 y = 618 } # In file: x = 1901, y = 630
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_standing_army
+			position = { x = 767 y = 658 } # In file: x = 1901, y = 670
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_interventionalism
+			position = { x = 926 y = 178 } # In file: x = 2060, y = 190
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_liberalism
+			position = { x = 926 y = 218 } # In file: x = 2060, y = 230
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_influence
+			position = { x = 926 y = 418 } # In file: x = 2060, y = 430
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_coercive_diplomacy
+			position = { x = 926 y = 458 } # In file: x = 2060, y = 470
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_decisive_battle
+			position = { x = 926 y = 658 } # In file: x = 2060, y = 670
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = btc_ideas_diagram_war_of_attrition
+			position = { x = 926 y = 698 } # In file: x = 2060, y = 710
+			quadTextureSprite = "GFX_btc_ideas_diagram_button"
+			scripted = yes
+		}
 		
 		### ------- Unique ideas -------	
 				

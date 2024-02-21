@@ -166,3 +166,29 @@ country_event = {
         }
     }
 }
+
+# Event to unlock all idea groups
+country_event = {
+    id = btc_ideas_startup.2
+    
+    title = btc_ideas_startup_unlock_ideas
+    desc = btc_ideas_startup_unlock_ideas_desc
+    picture = BIG_BOOK_eventPicture
+    
+    is_triggered_only = yes
+
+    option = {
+        name = btc_ideas_startup_unlock_ideas_yes
+        
+        set_country_flag = btc_unlocked_all_idea_groups
+    }
+
+    option = {
+        name = btc_ideas_startup_unlock_ideas_no
+        ai_chance = {
+            factor = 1
+        }
+
+        clr_country_flag = btc_unlocked_all_idea_groups
+    }
+}

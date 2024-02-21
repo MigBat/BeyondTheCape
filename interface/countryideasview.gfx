@@ -99,4 +99,12 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		loadType = "INGAME"
 	}
+
+	spriteType = {
+		name = "GFX_btc_ideas_diagram_button"
+		texturefile = "gfx//interface//ideaview//btc_ideas_diagram_frame.dds"
+		noOfFrames = 4
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
 }

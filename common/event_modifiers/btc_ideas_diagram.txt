@@ -1,0 +1,1167 @@
+## TIER 1 ADM ##
+
+# Aristocratic
+btc_ideas_diagram_aristocratic_1 = {
+	cavalry_power = 0.1
+	cav_to_inf_ratio = 0.1
+}
+btc_ideas_diagram_aristocratic_2 = {
+	army_tradition_from_battle = 1
+	army_tradition_decay = -0.01
+}
+btc_ideas_diagram_aristocratic_3 = {
+	governing_capacity_modifier = 0.1
+}
+btc_ideas_diagram_aristocratic_4 = {
+	naval_tradition_from_battle = 1
+	navy_tradition_decay = -0.01
+}
+btc_ideas_diagram_aristocratic_5 = {
+	unjustified_demands = -0.25
+	fabricate_claims_cost = -0.5
+}
+btc_ideas_diagram_aristocratic_6 = {
+	army_tradition = 0.5
+}
+btc_ideas_diagram_aristocratic_7 = {
+	legitimacy = 1
+}
+btc_ideas_diagram_aristocratic_bonus = {
+	heir_chance = 0.5
+	nobles_loyalty_modifier = 0.1
+	rajput_loyalty_modifier = 0.1
+	maratha_loyalty_modifier = 0.1
+	monthly_portuguese_saudade = -0.05
+}
+
+# Plutocratic
+btc_ideas_diagram_plutocratic_1 = {
+	mercenary_cost = -0.2
+	global_regiment_cost = -0.05
+}
+btc_ideas_diagram_plutocratic_2 = {
+	land_morale = 0.10
+	global_unrest = -1
+}
+btc_ideas_diagram_plutocratic_3 = {
+	monthly_reform_progress = 0.1
+}
+btc_ideas_diagram_plutocratic_4 = {
+	merchants = 1
+}
+btc_ideas_diagram_plutocratic_5 = {
+	global_trade_goods_size_modifier = 0.1
+}
+btc_ideas_diagram_plutocratic_6 = {
+	caravan_power = 0.25
+	development_cost = -0.05
+}
+btc_ideas_diagram_plutocratic_7 = {
+	manpower_recovery_speed = 0.2
+}
+btc_ideas_diagram_plutocratic_bonus = {
+	global_prov_trade_power_modifier = 0.25
+	burghers_loyalty_modifier = 0.1
+	vaisyas_loyalty_modifier = 0.1
+	monthly_portuguese_saudade = -0.05
+}
+
+# Horde
+btc_ideas_diagram_horde_1 = {
+	cavalry_cost = -0.33
+	cav_to_inf_ratio = 0.15
+}
+btc_ideas_diagram_horde_2 = {
+	ae_impact = -0.1
+}
+btc_ideas_diagram_horde_3 = {
+	religious_unity = 0.25
+}
+btc_ideas_diagram_horde_4 = {
+	land_attrition = -0.2
+}
+btc_ideas_diagram_horde_5 = {
+	global_unrest = -1
+	horde_unity = 0.5
+}
+btc_ideas_diagram_horde_6 = {	
+	caravan_power = 0.20
+}
+btc_ideas_diagram_horde_7 = {
+	num_accepted_cultures = 2
+}
+btc_ideas_diagram_horde_bonus = {
+	cavalry_power = 0.25
+	nomadic_tribes_loyalty_modifier = 0.1
+	monthly_portuguese_saudade = -0.05
+}
+
+# Theocracy
+btc_ideas_diagram_theocratic_1 = {
+	devotion = 1
+	legitimacy = 0.5
+	development_cost = -0.05
+}
+btc_ideas_diagram_theocratic_2 = {
+	fire_damage_received = -0.1
+}
+btc_ideas_diagram_theocratic_3 = {
+	leader_cost = -0.1
+	war_exhaustion_cost = -0.33
+}
+btc_ideas_diagram_theocratic_4 = {
+	morale_damage_received = -0.1
+}
+btc_ideas_diagram_theocratic_5 = {
+	enforce_religion_cost = -0.3
+	culture_conversion_cost = -0.1
+}
+btc_ideas_diagram_theocratic_6 = {
+	global_unrest = -2
+}
+btc_ideas_diagram_theocratic_7 = {
+	manpower_in_true_faith_provinces = 0.15
+	prestige_from_land = 0.5
+}
+btc_ideas_diagram_theocratic_bonus = {
+	global_heretic_missionary_strength = 0.01
+	church_loyalty_modifier = 0.1
+	brahmins_hindu_loyalty_modifier = 0.1
+	brahmins_muslim_loyalty_modifier = 0.1
+	monthly_portuguese_saudade = -0.05
+}
+
+# Indigenous
+btc_ideas_diagram_indigenous_1 = {
+	tribal_development_growth = 0.015
+	development_cost = -0.05
+}
+btc_ideas_diagram_indigenous_2 = {
+	hostile_attrition = 1
+}
+btc_ideas_diagram_indigenous_3 = {
+	monthly_reform_progress_modifier = 0.25
+}
+btc_ideas_diagram_indigenous_4 = {
+	land_morale = 0.10
+}
+btc_ideas_diagram_indigenous_5 = {
+	global_manpower_modifier = 0.15
+}
+btc_ideas_diagram_indigenous_6 = {
+	idea_cost = -0.1
+}
+btc_ideas_diagram_indigenous_7 = {
+	province_warscore_cost = -0.2
+}
+btc_ideas_diagram_indigenous_bonus = {
+	global_institution_spread = 0.25
+	monthly_portuguese_saudade = -0.05
+}
+
+# Religious
+btc_ideas_diagram_religious_1 = {
+	missionaries = 1
+}
+btc_ideas_diagram_religious_2 = { 
+	manpower_in_true_faith_provinces = 0.1
+}
+btc_ideas_diagram_religious_3 = {
+	global_missionary_strength = 0.03
+}
+btc_ideas_diagram_religious_4 = {
+	tolerance_own = 2
+}
+btc_ideas_diagram_religious_5 = {
+	prestige_per_development_from_conversion = 0.1
+	papal_influence = 2
+	devotion = 0.25
+	monthly_fervor_increase = 0.25
+	church_power_modifier = 0.1
+	monthly_piety_accelerator = 0.001
+	yearly_karma_decay = 0.1
+	yearly_doom_reduction = 1
+	yearly_authority = 0.15
+	yearly_patriarch_authority = 0.005
+}
+btc_ideas_diagram_religious_6 = {
+	reverse_relation_with_same_religion = 10
+}
+btc_ideas_diagram_religious_7 = {
+	missionary_maintenance_cost = -0.5
+	brahmins_hindu_loyalty_modifier = 0.1
+	church_loyalty_modifier = 0.1
+}
+btc_ideas_diagram_religious_bonus = {
+	cb_on_religious_enemies = yes
+	monthly_portuguese_saudade = 0.075
+}
+
+# Innovative
+btc_ideas_diagram_innovative_1 = {
+	prestige = 1
+	monthly_splendor = 1
+}
+btc_ideas_diagram_innovative_2 = {
+	technology_cost = -0.1
+	global_institution_spread = 0.25
+}
+btc_ideas_diagram_innovative_3 = {
+	idea_cost = -0.1
+}
+btc_ideas_diagram_innovative_4 = {
+	tolerance_heretic = 1
+}
+btc_ideas_diagram_innovative_5 = {
+	tolerance_heathen = 1
+	harmonization_speed = 0.25
+}
+btc_ideas_diagram_innovative_6 = {
+	reform_progress_growth = 0.15
+}
+btc_ideas_diagram_innovative_7 = {
+	free_policy = 1
+}
+btc_ideas_diagram_innovative_bonus = {
+	embracement_cost = -0.1
+	innovativeness_gain = 0.5
+	monthly_portuguese_saudade = -0.05
+}
+
+# Agrarian
+btc_ideas_diagram_agrarian_1 = {
+	global_trade_goods_size = 0.25
+}
+btc_ideas_diagram_agrarian_2 = {
+	development_cost = -0.1
+}
+btc_ideas_diagram_agrarian_3 = {
+	expand_administration_cost = -1
+}
+btc_ideas_diagram_agrarian_4 = {
+	global_manpower_modifier = 0.1
+	manpower_recovery_speed = 0.1
+}
+btc_ideas_diagram_agrarian_5 = {
+	global_unrest = -1
+	global_monthly_devastation = -0.1
+}
+btc_ideas_diagram_agrarian_6 = {
+	cavalry_cost = -0.1
+	cav_to_inf_ratio = 0.1
+}
+btc_ideas_diagram_agrarian_7 = {
+	global_allowed_num_of_buildings = 1
+}
+btc_ideas_diagram_agrarian_bonus = {
+	state_governing_cost = -0.1
+	monthly_portuguese_saudade = -0.075
+}
+
+# Urban
+btc_ideas_diagram_urban_1 = {
+	global_tax_modifier = 0.15
+}
+btc_ideas_diagram_urban_2 = {
+	development_cost_modifier = -0.1
+}
+btc_ideas_diagram_urban_3 = {
+	expand_infrastructure_cost_modifier = -0.25
+}
+btc_ideas_diagram_urban_4 = {
+	global_institution_spread = 0.2
+}
+btc_ideas_diagram_urban_5 = {
+	global_autonomy = -0.05
+}
+btc_ideas_diagram_urban_6 = {
+	# adm_tech_cost_modifier = -0.1
+	center_of_trade_upgrade_cost = -0.15
+}
+btc_ideas_diagram_urban_7 = {
+	build_cost = -0.1
+}
+btc_ideas_diagram_urban_bonus = {
+	reform_progress_growth = 0.15
+	monthly_portuguese_saudade = -0.075
+}
+
+## TIER 1 DIP ##
+
+# Caravan
+btc_ideas_diagram_caravan_1 = {
+	caravan_power = 0.25
+}
+btc_ideas_diagram_caravan_2 = {
+	trade_range_modifier = 0.3
+}
+btc_ideas_diagram_caravan_3 = {
+	merchants = 1
+}
+btc_ideas_diagram_caravan_4 = {
+	movement_speed = 0.05
+	global_supply_limit_modifier = 0.2
+}
+btc_ideas_diagram_caravan_5 = {
+	placed_merchant_power = 15
+}
+btc_ideas_diagram_caravan_6 = {
+	leader_land_manuever = 1
+	cavalry_cost = -0.1
+}
+btc_ideas_diagram_caravan_7 = {
+	global_trade_power = 0.1
+}
+btc_ideas_diagram_caravan_bonus = {
+	trade_steering = 0.2
+	monthly_portuguese_saudade = 0.05
+}
+
+# Maritime
+btc_ideas_diagram_maritime_1 = {
+	ship_trade_power_modifier = 0.2
+}
+btc_ideas_diagram_maritime_2 = {
+	range = 0.15
+	trade_range_modifier = 0.15
+}
+btc_ideas_diagram_maritime_3 = {
+	global_ship_repair = 0.1
+	sailor_maintenance_modifer = -0.1
+}
+btc_ideas_diagram_maritime_4 = {
+	global_sailors_modifier = 0.5
+	allowed_marine_fraction = 0.25
+}
+btc_ideas_diagram_maritime_5 = {
+	blockade_efficiency = 0.5
+	privateer_efficiency = 0.05
+}
+btc_ideas_diagram_maritime_6 = {
+	naval_forcelimit_modifier = 0.25
+	global_naval_engagement_modifier = 0.1
+}
+btc_ideas_diagram_maritime_7 = {
+	movement_speed_in_fleet_modifier = 1
+	naval_tradition_from_trade = 1
+}
+btc_ideas_diagram_maritime_bonus = {
+	sea_repair = yes
+	ship_power_propagation = 0.4
+	monthly_portuguese_saudade = 0.075
+}
+
+# Cultural
+btc_ideas_diagram_cultural_1 = {
+	prestige = 1
+	monthly_splendor = 2
+}
+btc_ideas_diagram_cultural_2 = {
+	global_unrest = -1
+}
+btc_ideas_diagram_cultural_3 = {
+	diplomatic_reputation = 1
+}
+btc_ideas_diagram_cultural_4 = {
+	stability_cost_modifier = -0.15
+	war_exhaustion_cost = -0.1
+}
+btc_ideas_diagram_cultural_5 = {
+	diplomatic_annexation_cost = -0.05
+	culture_conversion_cost = -0.15
+}
+btc_ideas_diagram_cultural_6 = {
+	reform_progress_growth = 0.1
+}
+btc_ideas_diagram_cultural_7 = {
+	legitimacy = 0.5
+	imperial_authority = 0.05
+	imperial_mandate = 0.1
+}
+btc_ideas_diagram_cultural_bonus = {
+	all_estate_loyalty_equilibrium = 0.05
+	monthly_portuguese_saudade = -0.075
+}
+
+# Imperialism
+btc_ideas_diagram_imperialism_1 = {
+	can_chain_claim = yes
+}
+btc_ideas_diagram_imperialism_2 = {
+	diplomatic_upkeep = 1
+}
+btc_ideas_diagram_imperialism_3 = {
+	vassal_income = 0.25
+}
+btc_ideas_diagram_imperialism_4 = {
+	province_warscore_cost = -0.1
+}
+btc_ideas_diagram_imperialism_5 = {
+	accept_vassalization_reasons = 10
+	reduced_liberty_desire_on_same_continent = 10
+}
+btc_ideas_diagram_imperialism_6 = {
+	ae_impact = -0.1
+	annexation_relations_impact = -0.05
+}
+btc_ideas_diagram_imperialism_7 = {
+	can_claim_states = yes 
+}
+btc_ideas_diagram_imperialism_bonus = {
+	vassal_forcelimit_bonus = 0.25
+	vassal_naval_forcelimit_bonus = 0.1
+	monthly_portuguese_saudade = -0.075
+}
+
+# Exploration
+btc_ideas_diagram_exploration_1 = {
+	# can hire explorers
+	movement_speed_in_fleet_modifier = 1
+}
+btc_ideas_diagram_exploration_2 = {
+	range = 0.5
+}
+btc_ideas_diagram_exploration_3	= {
+	naval_attrition = -0.15
+	transport_attrition = -0.25
+}
+btc_ideas_diagram_exploration_4 = {
+	naval_forcelimit_modifier = 0.25
+	min_autonomy_in_territories = -0.1
+}
+btc_ideas_diagram_exploration_5 = {
+	colonists = 1
+}
+btc_ideas_diagram_exploration_6 = {
+	global_colonial_growth = 15
+	colonist_placement_chance = 0.1
+}
+btc_ideas_diagram_exploration_7 = {
+	trade_company_governing_cost = -0.1
+	trade_company_investment_cost = -0.1
+}
+btc_ideas_diagram_exploration_bonus = {
+	cb_on_overseas = yes
+	monthly_portuguese_saudade = 0.075
+}
+
+## TIER 1 MIL ##
+
+# Naval
+btc_ideas_diagram_naval_1 = {
+	galley_power = 0.25
+	naval_morale = 0.1
+}
+btc_ideas_diagram_naval_2 = {
+	leader_naval_shock = 1
+	landing_penalty = -1
+}
+btc_ideas_diagram_naval_3 = {
+	ship_durability = 0.1
+	heavy_ship_power = 0.20
+}
+btc_ideas_diagram_naval_4 = {
+	leader_naval_fire = 1
+	navy_tradition = 1
+}
+btc_ideas_diagram_naval_5 = {
+	sailors_recovery_speed = 0.25
+	allowed_marine_fraction = 0.25
+}
+btc_ideas_diagram_naval_6 = {
+	prestige_from_naval = 1
+	global_naval_engagement_modifier = 0.1
+}
+btc_ideas_diagram_naval_7 = {
+	disengagement_chance = 0.15
+	sunk_ship_morale_hit_recieved = -0.33
+}
+btc_ideas_diagram_naval_bonus = {
+	siege_blockade_progress = 1
+	global_naval_barrage_cost = -0.2
+	monthly_portuguese_saudade = 0.05
+}
+
+# Mercenary
+btc_ideas_diagram_mercenary_1 = {
+	mercenary_cost = -0.3
+}
+btc_ideas_diagram_mercenary_2 = {
+	merc_maintenance_modifier = -0.2
+}
+btc_ideas_diagram_mercenary_3 = {
+	war_taxes_cost_modifier = -0.5
+	loot_amount = 0.3
+}
+btc_ideas_diagram_mercenary_4 = {
+	mil_advisor_cost = -0.25
+	merc_leader_army_tradition = 0.5
+}
+btc_ideas_diagram_mercenary_5 = { 
+	mercenary_manpower = 0.25
+}
+btc_ideas_diagram_mercenary_6 = {
+	possible_condottieri = 1 
+	merc_independent_from_trade_range = yes
+}
+btc_ideas_diagram_mercenary_7 = {
+	mercenary_discipline = 0.05
+}
+btc_ideas_diagram_mercenary_bonus = {
+	allow_mercenary_drill = yes
+	monthly_portuguese_saudade = -0.05
+}
+
+# Mobilisation
+btc_ideas_diagram_mobilisation_1 = {
+	global_regiment_cost = -0.1
+}
+btc_ideas_diagram_mobilisation_2 = {
+	land_maintenance_modifier = -0.15
+}
+btc_ideas_diagram_mobilisation_3 = {
+	reinforce_cost_modifier = -0.2
+}
+btc_ideas_diagram_mobilisation_4 = {
+	global_manpower_modifier = 0.25
+}
+btc_ideas_diagram_mobilisation_5 = {
+	reinforce_speed = 0.1
+	global_regiment_recruit_speed = -0.1
+}
+btc_ideas_diagram_mobilisation_6 = {
+	global_sailors_modifier = 0.2
+}
+btc_ideas_diagram_mobilisation_7 = {
+	manpower_recovery_speed = 0.15
+}
+btc_ideas_diagram_mobilisation_bonus = {
+	land_forcelimit_modifier  = 0.25
+	monthly_portuguese_saudade = -0.05
+}
+
+# Defensive
+btc_ideas_diagram_defensive_1 = {
+	land_morale = 0.1
+}
+btc_ideas_diagram_defensive_2 = {
+	army_tradition_from_battle = 1
+}
+btc_ideas_diagram_defensive_3 = {
+	leader_land_manuever = 1
+}
+btc_ideas_diagram_defensive_4 = {
+	shock_damage_received = -0.1
+	fire_damage_received = -0.1
+}
+btc_ideas_diagram_defensive_5 = {
+	military_tactics = 0.15
+}
+btc_ideas_diagram_defensive_6 = {
+	regiment_manpower_usage = -0.1
+}
+btc_ideas_diagram_defensive_7 = {
+	reinforce_speed = 0.2
+}
+btc_ideas_diagram_defensive_bonus = {
+	global_defender_dice_roll_bonus = 1
+	monthly_portuguese_saudade = -0.075
+}
+
+# Offensive
+btc_ideas_diagram_offensive_1 = {
+	artillery_cost = -0.1
+}
+btc_ideas_diagram_offensive_2 = {
+	leader_siege = 1
+}
+btc_ideas_diagram_offensive_3 = {
+	movement_speed = 0.1
+}
+btc_ideas_diagram_offensive_4 = {
+	land_attrition = -0.1
+}
+btc_ideas_diagram_offensive_5 = {
+	siege_ability = 0.2
+}
+btc_ideas_diagram_offensive_6 = {
+	morale_damage = 0.1
+}
+btc_ideas_diagram_offensive_7 = {
+	army_tradition_from_battle = 1
+}
+btc_ideas_diagram_offensive_bonus = {
+	assault_fort_ability = 0.1
+	assault_fort_cost_modifier = -1
+	monthly_portuguese_saudade = 0.05
+}
+
+## TIER 2 ADM ##
+
+# Nationalist
+btc_ideas_diagram_nationalist_1 = {
+	same_culture_advisor_cost = -0.2
+}
+btc_ideas_diagram_nationalist_2 = {
+	manpower_in_culture_group_provinces = 0.1
+	rival_border_fort_maintenance = -0.3
+}
+btc_ideas_diagram_nationalist_3 = {
+	prestige_decay = -0.01
+	monthly_splendor = 2
+}
+btc_ideas_diagram_nationalist_4 = {
+	manpower_in_accepted_culture_provinces = 0.15
+}
+btc_ideas_diagram_nationalist_5 = {
+	enemy_core_creation = 0.33
+}
+btc_ideas_diagram_nationalist_6 = {
+	own_territory_dice_roll_bonus = 1
+	all_estate_loyalty_equilibrium = 0.05
+}
+btc_ideas_diagram_nationalist_7 = {
+	manpower_in_own_culture_provinces = 0.2
+}
+btc_ideas_diagram_nationalist_bonus = {
+	expel_minorities_cost = -0.4
+	culture_conversion_cost = -0.2
+	monthly_portuguese_saudade = -0.05
+}
+
+# Humanist
+btc_ideas_diagram_humanist_1 = {
+	religious_unity = 0.2
+	yearly_harmony = 0.25
+}
+btc_ideas_diagram_humanist_2 = {
+	tolerance_heretic = 2
+	tolerance_of_heretics_capacity = 1 
+}
+btc_ideas_diagram_humanist_3 = {
+	promote_culture_cost = -0.33
+	num_accepted_cultures = 2
+}
+btc_ideas_diagram_humanist_4 = {
+	tolerance_heathen = 2
+	tolerance_of_heathens_capacity = 1
+}
+btc_ideas_diagram_humanist_5 = {
+	improve_relation_modifier = 0.1
+	diplomatic_reputation = 1
+}
+btc_ideas_diagram_humanist_6 = {
+	years_of_nationalism = -10
+}
+btc_ideas_diagram_humanist_7 = {
+	free_dip_policy = 1
+}
+btc_ideas_diagram_humanist_bonus = {
+	idea_cost = -0.1
+	monthly_portuguese_saudade = -0.05
+}
+
+# Meritocratic
+btc_ideas_diagram_meritocratic_1 = {
+	advisor_pool = 2
+	advisor_cost = -0.15
+}
+btc_ideas_diagram_meritocratic_2 = {
+	heir_chance = 0.25
+	monthly_heir_claim_increase = 0.1
+}
+btc_ideas_diagram_meritocratic_3 = {
+	admiral_cost = -0.25
+	general_cost = -0.25
+}
+btc_ideas_diagram_meritocratic_4 = {
+	special_unit_forcelimit = 0.15
+	free_maintenance_on_expl_conq = yes
+}
+btc_ideas_diagram_meritocratic_5 = {
+	state_governing_cost = -0.15
+}
+btc_ideas_diagram_meritocratic_6 = {
+	diplomats = 1
+	legitimacy = 1
+	horde_unity = 1
+	meritocracy = 1
+	devotion = 1
+	republican_tradition = 0.2
+}
+btc_ideas_diagram_meritocratic_7 = {
+	yearly_corruption = -0.15
+	all_power_cost = -0.1
+}
+btc_ideas_diagram_meritocratic_bonus = {
+	may_recruit_female_generals = yes	
+	female_advisor_chance = 0.5
+	monthly_portuguese_saudade = -0.075
+}
+
+# Expansion
+btc_ideas_diagram_expansion_1 = {
+	global_unrest = -2
+	harmonization_speed = 0.25
+}
+btc_ideas_diagram_expansion_2 = {
+	claim_duration = 0.25
+}
+btc_ideas_diagram_expansion_3 = {
+	governing_capacity_modifier = 0.25
+}
+btc_ideas_diagram_expansion_4  = {
+	global_rebel_suppression_efficiency = 0.5
+	harsh_treatment_cost = -0.5
+}
+btc_ideas_diagram_expansion_5 = {
+	autonomy_change_time = -0.25
+}
+btc_ideas_diagram_expansion_6  = {
+	core_creation = -0.2
+}
+btc_ideas_diagram_expansion_7  = {
+	envoy_travel_time = -0.2
+}
+btc_ideas_diagram_expansion_bonus = {
+	administrative_efficiency = 0.05
+	monthly_portuguese_saudade = 0.075
+}
+
+## TIER 2 DIP ##
+
+# Mercantilism
+btc_ideas_diagram_mercantilism_1 = { 
+	mercantilism_cost = -0.25
+}
+btc_ideas_diagram_mercantilism_2 = {
+	global_own_trade_power = 0.2
+}
+btc_ideas_diagram_mercantilism_3 = { 
+	center_of_trade_upgrade_cost = -0.2
+}												
+btc_ideas_diagram_mercantilism_4 = {
+	embargo_efficiency = 0.3
+}
+btc_ideas_diagram_mercantilism_5 = {
+	justify_trade_conflict_cost = -0.5
+}
+btc_ideas_diagram_mercantilism_6 = {
+	trade_goods_size_modifier = 0.1
+}
+btc_ideas_diagram_mercantilism_7 = {
+	production_efficiency = 0.1
+}
+btc_ideas_diagram_mercantilism_bonus = {
+	province_trade_power_modifier = 0.15
+	monthly_portuguese_saudade = -0.075
+}
+
+# Free Trade
+btc_ideas_diagram_free_trade_1 = { 
+	merchants = 1
+}
+btc_ideas_diagram_free_trade_2 = {
+	global_foreign_trade_power = 0.2
+}
+btc_ideas_diagram_free_trade_3 = { 
+	global_institution_spread = 0.2
+}												
+btc_ideas_diagram_free_trade_4 = {
+	trade_efficiency = 0.1
+}
+btc_ideas_diagram_free_trade_5 = {
+	interest = -0.5
+}
+btc_ideas_diagram_free_trade_6 = {
+	global_trade_power = 0.2
+}
+btc_ideas_diagram_free_trade_7 = {
+	placed_merchant_power = 15
+	burghers_loyalty_modifier = 0.05
+}
+btc_ideas_diagram_free_trade_bonus = {
+	idea_cost = -0.1
+	monthly_portuguese_saudade = -0.075
+}
+
+# Espionage
+btc_ideas_diagram_espionage_1 = {
+	spy_offence = 0.5
+}
+btc_ideas_diagram_espionage_2 = {
+	siege_ability = 0.1
+}
+btc_ideas_diagram_espionage_3 = {
+	ae_impact = -0.2
+}	
+btc_ideas_diagram_espionage_4 = {
+	global_spy_defence = 0.33
+	yearly_corruption = -0.2
+}
+btc_ideas_diagram_espionage_5 = {
+	diplomats = 1
+	advisor_cost = -0.15
+}
+btc_ideas_diagram_espionage_6 = {
+	privateer_efficiency = 0.075
+	capture_ship_chance = 0.25
+}
+btc_ideas_diagram_espionage_7 = {
+	accept_vassalization_reasons = 15
+	monthly_favor_modifier = 0.33
+}
+btc_ideas_diagram_espionage_bonus = {
+	rebel_support_efficiency = 1
+	spy_action_cost_modifier = -0.2
+	monthly_portuguese_saudade = 0.05
+}
+
+# Colonialism
+btc_ideas_diagram_colonialism_1 = {
+	colonists = 1
+}
+btc_ideas_diagram_colonialism_2 = {
+	native_uprising_chance = -0.5
+	native_assimilation = 0.5
+}
+btc_ideas_diagram_colonialism_3 = {
+	global_colonial_growth = 40
+	colonist_placement_chance = 0.1
+}
+btc_ideas_diagram_colonialism_4 = {
+	colonial_subject_type_upgrade_cost_modifier = -0.4
+	colonial_type_change_cost_modifier = -0.4
+}
+btc_ideas_diagram_colonialism_5 = {
+	colonists = 1
+	cb_on_primitives = yes
+}
+btc_ideas_diagram_colonialism_6 = {
+	diplomats = 1
+	envoy_travel_time = -0.2
+}
+btc_ideas_diagram_colonialism_7 = {
+	treasure_fleet_income = 0.25
+	global_tariffs = 0.15
+}
+btc_ideas_diagram_colonialism_bonus = {
+	reduced_liberty_desire_on_other_continent = 10
+	monthly_portuguese_saudade = 0.075
+}
+
+## TIER 2 MIL ##
+
+# Standing Army
+btc_ideas_diagram_standing_army_1 = {
+	army_tradition = 0.5
+	drill_gain_modifier = 0.5
+}
+btc_ideas_diagram_standing_army_2 = {
+	special_unit_forcelimit = 0.3
+	special_unit_cost_modifier = -0.2
+}
+btc_ideas_diagram_standing_army_3 = {
+	infantry_power = 0.05
+	allowed_marine_fraction = 0.1
+}
+btc_ideas_diagram_standing_army_4 = {
+	cavalry_power = 0.05
+	cav_to_inf_ratio = 0.1
+}
+btc_ideas_diagram_standing_army_5 = {
+	artillery_power = 0.05
+	artillery_levels_available_vs_fort = 1
+}
+btc_ideas_diagram_standing_army_6 = {
+	army_tradition_decay = -0.005
+	drill_decay_modifier = -0.3
+}
+btc_ideas_diagram_standing_army_7 = {
+	discipline = 0.05
+}
+btc_ideas_diagram_standing_army_bonus = {
+	possible_mil_policy = 1
+	yearly_army_professionalism = 0.005
+	monthly_portuguese_saudade = -0.05
+}
+
+# Firepower
+btc_ideas_diagram_firepower_1 = {
+	number_of_cannons_modifier = 0.1
+}
+btc_ideas_diagram_firepower_2 = {
+	artillery_level_modifier = 0.5
+}
+btc_ideas_diagram_firepower_3 = {
+	leader_land_fire = 1
+}
+btc_ideas_diagram_firepower_4 = {
+	infantry_fire = 0.5
+}
+btc_ideas_diagram_firepower_5 = {
+	artillery_power = 0.1
+}
+btc_ideas_diagram_firepower_6 = {
+	artillery_fire = 0.5
+}
+btc_ideas_diagram_firepower_7 = {
+	backrow_artillery_damage = 0.1
+}
+btc_ideas_diagram_firepower_bonus = {
+	fire_damage = 0.1
+	monthly_portuguese_saudade = -0.05
+}
+
+# Bravery
+btc_ideas_diagram_bravery_1 = {
+	morale_damage_received = -0.1
+}
+btc_ideas_diagram_bravery_2 = {
+	artillery_barrage_cost = -0.25
+	assault_fort_ability = 0.2
+}
+btc_ideas_diagram_bravery_3 = {
+	leader_land_shock = 1
+}
+btc_ideas_diagram_bravery_4 = {
+	infantry_cost = -0.15
+}
+btc_ideas_diagram_bravery_5 = {
+	infantry_shock = 0.5
+}
+btc_ideas_diagram_bravery_6 = {
+	cavalry_cost = -0.1
+}
+btc_ideas_diagram_bravery_7 = {
+	cavalry_shock = 0.5
+}
+btc_ideas_diagram_bravery_bonus = {
+	shock_damage = 0.1
+	monthly_portuguese_saudade = 0.05
+}
+
+# Logistics
+btc_ideas_diagram_logistics_1 = {
+	land_attrition = -0.2
+}
+btc_ideas_diagram_logistics_2 = {
+	movement_speed = 0.1
+	regiment_recruit_speed = -0.1
+}
+btc_ideas_diagram_logistics_3 = {
+	morale_damage_received = -0.1
+}
+btc_ideas_diagram_logistics_4 = {
+	global_naval_engagement_modifier = 0.15
+}
+btc_ideas_diagram_logistics_5 = {
+	global_supply_limit_modifier = 0.4
+}
+btc_ideas_diagram_logistics_6 = {
+	cavalry_flanking = 0.5
+}
+btc_ideas_diagram_logistics_7 = {
+	general_cost = -0.1
+	free_leader_pool = 2
+}
+btc_ideas_diagram_logistics_bonus = {
+	reserves_organisation = 0.3
+	monthly_portuguese_saudade = 0.05
+}
+
+## TIER 3 ADM ##
+
+# Interventionalism
+btc_ideas_diagram_interventionalism_1 = {
+	global_tax_modifier = 0.25
+}
+btc_ideas_diagram_interventionalism_2 = {
+	national_focus_years = -10
+	build_time = -0.25
+}
+btc_ideas_diagram_interventionalism_3 = {
+	mercantilism_cost = -0.2
+}
+btc_ideas_diagram_interventionalism_4 = {
+	inflation_action_cost = -0.2
+}
+btc_ideas_diagram_interventionalism_5 = {
+	great_project_upgrade_time = -0.2
+	great_project_upgrade_cost = -0.33
+}
+btc_ideas_diagram_interventionalism_6 = {
+	stability_cost_modifier = -0.25
+	war_exhaustion_cost = -0.15
+}
+btc_ideas_diagram_interventionalism_7 = {
+	max_absolutism = 5
+	yearly_absolutism = 1
+	max_revolutionary_zeal = 5
+	yearly_revolutionary_zeal = 1
+	autonomy_change_time = -0.5
+}
+btc_ideas_diagram_interventionalism_bonus = {
+	possible_policy = 1
+	monthly_portuguese_saudade = -0.05
+}
+
+# Liberalism
+btc_ideas_diagram_liberalism_1 = {
+	global_prosperity_growth = 0.25
+	global_trade_goods_size_modifier = 0.15
+}
+btc_ideas_diagram_liberalism_2 = {
+	development_cost_modifier = -0.1
+}
+btc_ideas_diagram_liberalism_3 = {
+	production_efficiency = 0.15
+}
+btc_ideas_diagram_liberalism_4 = {
+	inflation_reduction = 0.075
+	interest = -0.5
+}
+btc_ideas_diagram_liberalism_5 = {
+	idea_cost = -0.1
+	innovativeness_gain = 0.33
+}
+btc_ideas_diagram_liberalism_6 = {
+	global_unrest = -1
+	burghers_loyalty_modifier = 0.1
+}
+btc_ideas_diagram_liberalism_7 = {
+	state_maintenance_modifier = -0.33
+}
+btc_ideas_diagram_liberalism_bonus = {
+	free_policy = 1
+	monthly_portuguese_saudade = 0.05
+}
+
+## TIER 3 DIP ##
+
+# Influence
+btc_ideas_diagram_influence_1 = {
+	diplomatic_upkeep = 2
+}
+btc_ideas_diagram_influence_2 = {
+	diplomats = 1
+	improve_relation_modifier = 0.25
+}
+btc_ideas_diagram_influence_3 = {
+	diplomatic_reputation = 2
+}
+btc_ideas_diagram_influence_4 = {
+	discovered_relations_impact = -0.5
+	years_to_integrate_personal_union = -15
+}
+btc_ideas_diagram_influence_5 = {
+	transfer_trade_power_reasons = 50
+	monthly_favor_modifier = 0.2
+}
+btc_ideas_diagram_influence_6 = {
+	allow_client_states = yes
+	vassal_income = 0.25
+}
+btc_ideas_diagram_influence_7 = {
+	reduced_liberty_desire = -10
+	liberty_desire_from_subject_development = -0.1
+}
+btc_ideas_diagram_influence_bonus = {
+	accept_vassalization_reasons = 20
+	monthly_portuguese_saudade = 0.075
+}
+
+# Coercive Diplomacy
+btc_ideas_diagram_coercive_diplomacy_1 = {
+	rebel_support_efficiency = 0.6
+	embargo_efficiency = 0.4
+}
+btc_ideas_diagram_coercive_diplomacy_2 = {
+	diplomats = 1
+	power_projection_from_insults = 0.5
+}
+btc_ideas_diagram_coercive_diplomacy_3 = {
+	can_transfer_vassal_wargoal = yes
+}
+btc_ideas_diagram_coercive_diplomacy_4 = {
+	diplomatic_annexation_cost = -0.15
+}
+btc_ideas_diagram_coercive_diplomacy_5  = {
+	province_warscore_cost = -0.15
+	unjustified_demands = -0.5
+}
+btc_ideas_diagram_coercive_diplomacy_6 = {
+	vassal_forcelimit_bonus = 0.75
+	vassal_naval_forcelimit_bonus = 0.15
+}
+btc_ideas_diagram_coercive_diplomacy_7 = {
+	fabricate_claims_cost = -0.35
+	ae_impact = -0.05
+}
+btc_ideas_diagram_coercive_diplomacy_bonus = {
+	reduced_stab_impacts = yes
+	stability_cost_to_declare_war = -1
+	monthly_portuguese_saudade = 0.05
+}
+
+## TIER 3 MIL ##
+
+# Decisive Battle
+btc_ideas_diagram_decisive_battle_1 = {
+	global_attacker_dice_roll_bonus = 1
+}
+btc_ideas_diagram_decisive_battle_2 = {
+	morale_damage = 0.2
+}
+btc_ideas_diagram_decisive_battle_3 = {
+	prestige_from_land = 1
+	prestige_from_naval = 1
+}
+btc_ideas_diagram_decisive_battle_4 = {
+	naval_morale = 0.1
+}
+btc_ideas_diagram_decisive_battle_5 = {
+	global_naval_engagement_modifier = 0.1
+}
+btc_ideas_diagram_decisive_battle_6 = {
+	sunk_ship_morale_hit_recieved = -0.3
+}
+btc_ideas_diagram_decisive_battle_7 = {
+	warscore_from_battles_modifier = 1
+}
+btc_ideas_diagram_decisive_battle_bonus = {
+	discipline = 0.1
+	monthly_portuguese_saudade = -0.05
+}
+
+# War of Attrition
+btc_ideas_diagram_war_of_attrition_1 = {
+	defensiveness = 0.5
+}
+btc_ideas_diagram_war_of_attrition_2 = {
+	blockade_efficiency = 0.5
+}
+btc_ideas_diagram_war_of_attrition_3 = {
+	war_exhaustion = -0.05
+	global_monthly_devastation = -0.1
+}
+btc_ideas_diagram_war_of_attrition_4 = {
+	global_garrison_growth = 0.25
+}
+btc_ideas_diagram_war_of_attrition_5 = {
+	land_attrition = -0.2
+	recover_navy_morale_speed = 0.15
+}
+btc_ideas_diagram_war_of_attrition_6 = {
+	reinforce_speed = 0.15
+	regiment_manpower_usage = -0.1
+}
+btc_ideas_diagram_war_of_attrition_7 = {
+	garrison_size = 0.5
+	garrison_damage = 0.25
+}
+btc_ideas_diagram_war_of_attrition_bonus = {
+	hostile_attrition = 2
+	max_hostile_attrition = 2
+	monthly_portuguese_saudade = -0.075
+}

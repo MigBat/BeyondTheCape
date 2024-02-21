@@ -1,0 +1,1278 @@
+custom_button = {
+    name = btc_ideas_diagram_government
+    potential = {
+		has_country_flag = btc_showing_ideas_hint
+    }
+    trigger = {
+        hidden_trigger = {
+            always = yes
+        }
+    }
+    effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						btc_can_unlock_government_idea_group = { government = aristocratic }
+						has_idea_group = aristocracy_ideas
+					}
+				}
+				country_event = {
+					id = btc_ideas_diagram.1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						btc_can_unlock_government_idea_group = { government = plutocratic }
+						has_idea_group = plutocracy_ideas
+					}
+				}
+				country_event = {
+					id = btc_ideas_diagram.2
+				}
+			}
+		}
+    }
+    tooltip = btc_ideas_diagram_empty
+    frame = {
+        number = 2
+        trigger = {
+            OR = {
+				has_idea_group = aristocracy_ideas
+				has_idea_group = plutocracy_ideas
+				has_idea_group = horde_gov_ideas
+				has_idea_group = theocracy_gov_ideas
+				has_idea_group = indigenous_ideas
+			}
+        }
+    }
+	frame = {
+        number = 1
+        trigger = {
+			btc_can_unlock_idea_group = { government = yes }
+        }
+    }
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+    name = btc_ideas_diagram_agrarian
+    potential = {
+		has_country_flag = btc_showing_ideas_hint
+    }
+    trigger = {
+        hidden_trigger = {
+            always = yes
+        }
+    }
+    effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.8
+			}
+		}
+    }
+	tooltip = btc_ideas_diagram_empty
+    frame = {
+        number = 2
+        trigger = {
+            has_idea_group = economic_ideas
+        }
+    }
+	frame = {
+        number = 1
+        trigger = {
+			btc_can_unlock_idea_group = { agrarian = yes }
+        }
+    }
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+    name = btc_ideas_diagram_urban
+    potential = {
+		has_country_flag = btc_showing_ideas_hint
+    }
+    trigger = {
+        hidden_trigger = {
+            always = yes
+        }
+    }
+    effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.9
+			}
+		}
+    }
+	tooltip = btc_ideas_diagram_empty
+    frame = {
+        number = 2
+        trigger = {
+            has_idea_group = infrastructure_ideas
+        }
+    }
+	frame = {
+        number = 1
+        trigger = {
+			btc_can_unlock_idea_group = { urban = yes }
+        }
+    }
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_religious
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.6
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = religious_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { religious = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_innovative
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.7
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = innovativeness_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { innovative = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_caravan
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.10
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = trade_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { caravan = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_maritime
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.11
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = maritime_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { maritime = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_cultural
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.12
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = court_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { cultural = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_imperialism
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.13
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = imperialism_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { imperialism = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_exploration
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.14
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = exploration_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { exploration = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_naval
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.15
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = naval_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { naval = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_mercenary
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.16
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = mercenary_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { mercenary = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_mobilisation
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.17
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = quantity_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { mobilisation = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_defensive
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.18
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = defensive_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { defensive = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_offensive
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.19
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = offensive_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { offensive = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_nationalist
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.20
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = nationalist_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { nationalist = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_humanist
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.21
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = humanist_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { humanist = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_meritocratic
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.22
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = meritocracy_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { meritocracy = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_expansion
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.23
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = expansion_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { expansion = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_mercantilism
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.24
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = mercantilism_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { mercantilism = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_free_trade
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.25
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = free_trade_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { free_trade = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_espionage
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.26
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = spy_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { espionage = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_colonialism
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.27
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = colonialism_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { colonialism = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_standing_army
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.28
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = standing_army_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { standing_army = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_firepower
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.29
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = firepower_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { firepower = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_bravery
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.30
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = quality_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { bravery = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_logistics
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.31
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = logistics_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { logistics = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_interventionalism
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.32
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = administrative_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { interventionism = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_liberalism
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.33
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = liberalism_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { liberalism = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_influence
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.34
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = influence_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { influence = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_coercive_diplomacy
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.35
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = diplomatic_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { coercive_diplomacy = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_decisive_battle
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.36
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = decisive_battle_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { decisive_battle = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+custom_button = {
+	name = btc_ideas_diagram_war_of_attrition
+	potential = {
+		has_country_flag = btc_showing_ideas_hint
+	}
+	trigger = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = btc_ideas_diagram.37
+			}
+		}
+	}
+	tooltip = btc_ideas_diagram_empty
+	frame = {
+		number = 2
+		trigger = {
+			has_idea_group = war_of_attrition_ideas
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			btc_can_unlock_idea_group = { war_of_attrition = yes }
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			always = yes
+		}
+	}
+}
