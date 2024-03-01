@@ -2078,13 +2078,13 @@ gc_por_3 = {
 			custom_trigger_tooltip = {
 				tooltip = portugal_discovers_india.tooltip
 				kanara_area = {
-					has_discovered = POR
+					has_discovered = ROOT
 				}
 				malabar_area = {
-					has_discovered = POR					
+					has_discovered = ROOT					
 				}
 				1339 = {
-					has_discovered = POR
+					has_discovered = ROOT
 				}
 			}
 		}
@@ -2142,7 +2142,10 @@ gc_por_3 = {
 			add_navy_tradition = 5
 			if = {
 				limit = {
-					tag = POR
+					OR = {
+						tag = POR
+						tag = IBE
+					}
 					religion = catholic
 				}
 				country_event = { id = more_flavor_por.5 }
