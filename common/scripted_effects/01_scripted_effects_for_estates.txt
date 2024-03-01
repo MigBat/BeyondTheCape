@@ -160,6 +160,28 @@ each_estate_effect = {
 	}
 	if = {
 		limit = {
+			has_estate = estate_peasants
+		}
+		[[effect]
+			$effect$
+		]
+		[[peasants_effect]
+			$peasants_effect$
+		]
+	}
+	if = {
+		limit = {
+			has_estate = estate_trade_company
+		}
+		[[effect]
+			$effect$
+		]
+		[[trade_company_effect]
+			$trade_company_effect$
+		]
+	}
+	if = {
+		limit = {
 			has_estate = estate_qizilbash
 		}
 		[[effect]
@@ -3834,6 +3856,26 @@ pick_random_estate_if_present = {
 		}
 		1 = { 
 			trigger = {
+				has_estate = estate_peasants
+				NOT = { has_country_flag = estate_peasants_$flag$ }
+			}
+			set_country_flag = estate_peasants_$flag$
+			[[estate_action]
+			$estate_action$ = estate_peasants
+			]
+		}
+		1 = { 
+			trigger = {
+				has_estate = estate_trade_company
+				NOT = { has_country_flag = estate_trade_company_$flag$ }
+			}
+			set_country_flag = estate_trade_company_$flag$
+			[[estate_action]
+			$estate_action$ = estate_trade_company
+			]
+		}
+		1 = { 
+			trigger = {
 				has_estate = estate_qizilbash
 				NOT = { has_country_flag = estate_qizilbash_$flag$ }
 			}
@@ -4042,6 +4084,8 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries } }	add_estate_loyalty = { estate = estate_janissaries		 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs } }		add_estate_loyalty = { estate = estate_eunuchs			 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers } }		add_estate_loyalty = { estate = estate_slavers			 loyalty = 15 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_peasants } }		add_estate_loyalty = { estate = estate_peasants		 	 loyalty = 15 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_trade_company } }	add_estate_loyalty = { estate = estate_trade_company	 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_qizilbash } }		add_estate_loyalty = { estate = estate_qizilbash		 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ghulams } }		add_estate_loyalty = { estate = estate_ghulams			 loyalty = 15 } }
 		}
@@ -4060,6 +4104,8 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries } }	add_estate_loyalty = { estate = estate_janissaries		 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs } }		add_estate_loyalty = { estate = estate_eunuchs			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_slavers } }		add_estate_loyalty = { estate = estate_slavers		 	 loyalty = 20 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_peasants } }		add_estate_loyalty = { estate = estate_peasants			 loyalty = 20 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_trade_company } }	add_estate_loyalty = { estate = estate_trade_company	 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_qizilbash } }		add_estate_loyalty = { estate = estate_qizilbash		 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ghulams } }		add_estate_loyalty = { estate = estate_ghulams			 loyalty = 20 } }
 		}
@@ -4758,6 +4804,13 @@ add_estate_loyalty_by_class_dip = {
 			loyalty = $loyalty$
 		}
 	}
+	if = {
+		limit = { has_estate = estate_trade_company }
+		add_estate_loyalty = {
+			estate = estate_trade_company
+			loyalty = $loyalty$
+		}
+	}
 }
 add_estate_loyalty_by_class_mil = {
 	if = {
@@ -4813,6 +4866,13 @@ add_estate_loyalty_by_class_mil = {
 		limit = { has_estate = estate_ghulams }
 		add_estate_loyalty = {
 			estate = estate_ghulams
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_peasants }
+		add_estate_loyalty = {
+			estate = estate_peasants
 			loyalty = $loyalty$
 		}
 	}
@@ -6466,3 +6526,103 @@ clr_grand_vizier_flags = {
 	clr_country_flag = selected_grand_vizier_from_estate_ghulams
 	clr_country_flag = selected_grand_vizier_from_all
 }
+
+## BTC ##
+
+estate_action_CALL_DIET_PEASANTS = {
+	add_prestige = -5
+	add_estate_loyalty = {
+		estate = estate_peasants
+		loyalty = 15
+	}
+	add_estate_influence_modifier = {
+		estate = estate_peasants
+		desc = EST_VAL_DIET_HELD
+		influence = 10
+		duration = 7300
+	}
+	auto_complete_estate_agenda = {
+		estate = estate_peasants
+	}
+}
+estate_action_DEMAND_MORE_TROOPS_PEASANTS = {
+	#estate_action_yearly_manpower = {
+	#	estate = estate_nobles
+	#}
+	estate_action_scaling_modifier = {
+		estate = estate_peasants
+		name = DEMAND_MORE_TROOPS_NOBLES
+		duration = 7300
+	}
+	add_estate_loyalty = {
+		estate = estate_peasants
+		loyalty = -15
+	}
+}
+add_estate_peasants_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_peasants
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_peasants_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_peasants
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = -10
+		}
+	}
+}
+add_estate_trade_company_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_trade_company
+		}
+		add_estate_loyalty = {
+			estate = estate_trade_company
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_trade_company_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_trade_company
+		}
+		add_estate_loyalty = {
+			estate = estate_trade_company
+			loyalty = -10
+		}
+	}
+}
+
+#
+
+scaled_estate_peasants_land_share_effect = {
+	scaled_estate_land_share_add_effect = { estate = estate_peasants }
+}
+
+scaled_estate_peasants = {
+	scaled_estate_land_share_reduce_effect = { estate = estate_peasants }
+}
+
+scaled_estate_trade_company_land_share_effect = {
+	scaled_estate_land_share_add_effect = { estate = estate_trade_company }
+}
+
+scaled_estate_trade_company = {
+	scaled_estate_land_share_reduce_effect = { estate = estate_trade_company }
+}
+
+#
+
+on_completed_agenda_effect_estate_peasants = {}
+on_completed_agenda_effect_estate_trade_company = {}

@@ -783,7 +783,6 @@ country_event = {
 		add_dip_power = 100
 		add_prestige = 5
 		97 = {
-			change_trade_goods = paper
 			add_province_modifier = {
 				name = "ned_house_of_elzevir"
 				duration = -1

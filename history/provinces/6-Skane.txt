@@ -24,6 +24,11 @@ discovered_by = muslim
 discovered_by = ottoman
 add_province_triggered_modifier = oresund_sound
 
+add_permanent_province_modifier = {
+	name = prestigious_academy
+	duration = -1
+}
+
 
 1525.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Prelude to 'Grevefejden'(Sören Norrby)
 1525.5.10 = { revolt = {} controller = DAN } # Sören Norrby is defeated

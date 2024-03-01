@@ -8,7 +8,6 @@ efr_cirksena = {
 
 fluyt_tradeship = {
 	light_ship_power = -0.8
-	naval_forcelimit_modifier = 0.25
 	global_ship_trade_power = 1.0
 }
 

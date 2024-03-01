@@ -18,10 +18,10 @@
  #TRADE COMPANIES
  estate_trade_company: "Trade Companies"
  estate_trade_company_desc: "Trade Companies are large enterprises focused on overseas trade. Especially in Western Europe they held a decent influence over the country."
- trade_company_loyalty_modifier: "Trade Company Loyalty Equilibrium"
- trade_company_influence_modifier: "Trade Company Influence"`
+ trade_company_loyalty_modifier: "Trade Companies Loyalty Equilibrium"
+ trade_company_influence_modifier: "Trade Companies Influence"
  trade_companies_privilege_slots: "Trade Companies Max Privileges"
- estate_trade_companies_ownership: "Trade Companies Land Ownership"
+ estate_trade_company_ownership: "Trade Companies Land Ownership"
  
  
  #Peasantry Privileges
@@ -34,17 +34,17 @@
  estate_peasants_armed_citizenry: "Armed Citizenry"
  estate_peasants_armed_citizenry_desc: "Local Inhabitants have been defending the country and have gotten experienced with running the armed defences."
  estate_peasants_levies: "Local Levies"
- #estate_peasants_levies_desc:
+ estate_peasants_levies_desc: "Local Levies"
  estate_peasants_advisors: "Rural Advisory Board"
  #estate_peasants_advisors_desc: "Rural Advisory Board"
  estate_peasants_monopoly_of_metals: "Monopoly of Metals"
  estate_peasants_monopoly_of_metals_effect_tooltip: "§RNo income from §YIron§! or §YCopper§!§!"
  estate_peasants_monopoly_of_metals_mod: "Monopoly on Mining and Smelting"
- #estate_peasants_monopoly_of_metals_desc: "Monopoly of Metals"
+ estate_peasants_monopoly_of_metals_mod_desc: "Monopoly on Mining and Smelting"
  estate_peasants_monopoly_of_livestock: "Monopoly of Livestock"
  estate_peasants_monopoly_of_livestock_effect_tooltip: "§RNo income from §YLivestock§!§!"
  estate_peasants_monopoly_of_livestock_mod: "Monopoly on Livestock"
- #estate_peasants_monopoly_of_metals_desc: "Monopoly of Metals"
+ estate_peasants_monopoly_of_metals_desc: "Monopoly of Metals"
  estate_peasants_diet_right: "Gather Upstalbeam"
  upstalbeam_unlocked_tt: "Requires the completion of the mission: §YReunite the Upstalbeam§! "
  #estate_peasants_diet_right_desc: "Gather Opstalboom"
@@ -59,12 +59,12 @@
  #Trade Company Privileges
  estate_trade_company_free_reign: "Free Reign"
  estate_trade_company_free_reign_desc: "By allowing the Trade Companies free reign in their lands, they are far more likely to be loyal."
- estate_trade_company_land_rights: "Trade Company Land Rights"
+ estate_trade_company_land_rights: "Trade Companies Land Rights"
  estate_trade_company_land_rights_desc: "The Trade Companies have been requesting land from the Crown to exploit the land and increase revenue."
- estate_trade_company_exploration_expedition: "Trade Company Expeditions"
- #estate_trade_company_exploration_expedition_desc: "The Trade Companies have been requesting land from the Crown to exploit the land and increase revenue."
+ estate_trade_company_exploration_expedition: "Trade Companies Expeditions"
+ estate_trade_company_exploration_expedition_desc: "The Trade Companies have been requesting land from the Crown to exploit the land and increase revenue."
  estate_trade_company_establish_the_voc_vessels: "Charter the VOC Vessels"
- #estate_trade_company_establish_the_voc_vessels_desc: "Establish the VOC Vessels"
+ estate_trade_company_establish_the_voc_vessels_desc: "Establish the VOC Vessels"
  estate_trade_company_charter_voc: "Vereenigde Oostindische Compagnie"
  estate_trade_company_charter_wic: "Westindische Compagnie"
  

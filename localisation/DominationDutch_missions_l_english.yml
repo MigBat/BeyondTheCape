@@ -840,7 +840,7 @@
  desc_frisians_satisfied:0 "Frisians Satisfied"
 
  bataafs_republiek:0 "Bataafs Republiek"
- desc_bataafs_republiek:0 "Bataafs Republiek"
+ bataafs_republiek_desc:0 "Bataafs Republiek"
 
  malacca_voc_boost_mod:0 "Improved VOC Ships"
- desc_malacca_voc_boost_mod:0 "Improved VOC Ships"
+ malacca_voc_boost_mod_desc:0 "Improved VOC Ships"
