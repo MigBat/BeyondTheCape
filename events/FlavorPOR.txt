@@ -6,165 +6,192 @@ namespace = flavor_por
 normal_or_historical_nations = yes
 
 # Colonial Policy
+country_event = {
+	id = flavor_por.3266
+	title = "flavor_por.EVTNAME3266"
+	desc = "flavor_por.EVTDESC3266"
+	picture = COLONIZATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		colony = 1
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	
+	option = {		# Every man make his own fortune
+		name = "flavor_por.EVTOPTA3266"
+		ai_chance = { factor = 75 }
+		add_corruption = 1
+		add_country_modifier = {
+			name = colonial_policy
+			duration = -1
+		}
+	}
+	option = {		# Demand less corruption
+		name = "flavor_por.EVTOPTB3266"
+		ai_chance = { factor = 25 }
+		if = {
+			limit = {
+				corruption = 0.01
+			}
+			add_corruption = -1
+		}
+		if = {
+			limit = {
+				NOT = {
+					corruption = 1
+				}
+			}
+			add_country_modifier = {
+				name = less_colonial_corruption
+				duration = -1
+			}
+		}
+	}
+}
+
+# The Duke of Coimbra
 # country_event = {
-# 	id = flavor_por.3266
-# 	title = "flavor_por.EVTNAME3266"
-# 	desc = "flavor_por.EVTDESC3266"
-# 	picture = COLONIZATION_eventPicture
+# 	id = flavor_por.3267
+# 	title = "flavor_por.EVTNAME3267"
+# 	desc = "flavor_por.EVTDESC3267"
+# 	picture = COURT_eventPicture
+
 
 # 	fire_only_once = yes
 
 # 	trigger = {
 # 		tag = POR
-# 		colony = 1
+# 		has_regency = no #Regency has to have ended
+# 		NOT = { is_year = 1460 }
 # 	}
 
 # 	mean_time_to_happen = {
-# 		months = 120
+# 		months = 12
 # 	}
 	
 	
-# 	option = {		# Every man make his own fortune
-# 		name = "flavor_por.EVTOPTA3266"
+# 	option = {		# The King is tricked
+# 		name = "flavor_por.EVTOPTA3267"
 # 		ai_chance = { factor = 75 }
-# 		add_corruption = 1
-# 		add_country_modifier = {
-# 			name = colonial_policy
+# 		add_stability_or_adm_power = yes
+# 	}
+# 	option = {		# The Duke survives and assists the King
+# 		name = "flavor_por.EVTOPTB3267"
+# 		ai_chance = { factor = 25 }
+# 		add_ruler_modifier = {
+# 			name = duke_of_coimbra
 # 			duration = -1
 # 		}
 # 	}
-# 	option = {		# Demand less corruption
-# 		name = "flavor_por.EVTOPTB3266"
-# 		ai_chance = { factor = 25 }
-# 		if = {
-# 			limit = {
-# 				corruption = 0.01
-# 			}
-# 			add_corruption = -1
+# }
+
+# Commercial Conflict in the Indian Ocean
+# country_event = {
+# 	id = flavor_por.3268
+# 	title = "flavor_por.EVTNAME3268"
+# 	desc = "flavor_por.EVTDESC3268"
+# 	picture = MERCHANTS_TALKING_eventPicture
+
+# 	fire_only_once = yes
+
+
+# 	trigger = {
+# 		tag = POR
+# 		any_active_trade_node = {
+# 			province_id = 4346	# Gulf of Aden
+# 			has_merchant = prev
 # 		}
-# 		if = {
+# 	}
+
+# 	mean_time_to_happen = {
+# 		months = 12
+# 	}
+	
+	
+# 	option = {		# Forcefully control the spice trade
+# 		name = "flavor_por.EVTOPTA3268"
+# 		ai_chance = { factor = 10 }
+# 		random_active_trade_node = {
 # 			limit = {
-# 				NOT = {
-# 					corruption = 1
-# 				}
+# 				province_id = 4346	# Gulf of Aden
 # 			}
-# 			add_country_modifier = {
-# 				name = less_colonial_corruption
+			
+# 			add_trade_modifier = {
+# 				who = root
 # 				duration = -1
+# 				power = 25
+# 				key = portuguese_privateers
+# 			}			
+# 		}
+# 	}
+# 	option = {		# Seek better relations in the region
+# 		name = "flavor_por.EVTOPTB3268"
+# 		ai_chance = { factor = 0 }
+# 		custom_tooltip = flavor_por.3268.b.tt
+# 		hidden_effect = {
+# 			random_active_trade_node = {
+# 				limit = {
+# 					province_id = 4346	# Gulf of Aden
+# 				}
+# 				every_trade_node_member_country = {
+# 					add_opinion = {
+# 						who = ROOT
+# 						modifier = careful_trade_expansion
+# 					}
+# 				}
 # 			}
 # 		}
 # 	}
 # }
 
-# The Duke of Coimbra
+
+# The Holy Inquisition
 country_event = {
-	id = flavor_por.3267
-	title = "flavor_por.EVTNAME3267"
-	desc = "flavor_por.EVTDESC3267"
-	picture = COURT_eventPicture
+	id = flavor_por.3269
+	title = "flavor_por.EVTNAME3269"
+	desc = "flavor_por.EVTDESC3269"
+	picture = POPE_PREACHING_eventPicture
 
 
 	fire_only_once = yes
 
 	trigger = {
 		tag = POR
-		has_regency = no #Regency has to have ended
-		NOT = { is_year = 1460 }
+		religion = catholic
+		exists = PAP
+		is_year = 1500
+		NOT = { is_year = 1600 }
 	}
 
 	mean_time_to_happen = {
-		months = 3
+		months = 120
 	}
 	
+
 	
-	option = {		# The King is tricked
-		name = "flavor_por.EVTOPTA3267"
+	option = {		# 
+		name = "flavor_por.EVTOPTA3269"
 		ai_chance = { factor = 75 }
-		add_stability = 1
-		227 = {
-			spawn_rebels = {
-				size = 1
-				type = noble_rebels
-			}
-		}
-		change_ruler_stat = {
-			type = mil
-			amount = 2
-		} 
-		add_ruler_personality = strict_personality
-		remove_ruler_personality = expansionist_personality
-		add_ruler_modifier = {
-			name = duke_of_braganza
-			duration = -1
+		add_papal_influence = 20
+		add_country_modifier = {
+			name = narrowminded_modifier
+			duration = 3650
 		}
 	}
-	option = {		# The Duke survives and assists the King
-		name = "flavor_por.EVTOPTB3267"
+	option = {		# 
+		name = "flavor_por.EVTOPTB3269"
 		ai_chance = { factor = 25 }
-		change_ruler_stat = {
-			type = dip
-			amount = 2
-		}
-		add_ruler_modifier = {
-			name = duke_of_coimbra
-			duration = -1
-		}
-	}
-}
-
-# Commercial Conflict in the Indian Ocean
-country_event = {
-	id = flavor_por.3268
-	title = "flavor_por.EVTNAME3268"
-	desc = "flavor_por.EVTDESC3268"
-	picture = MERCHANTS_TALKING_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = POR
-		any_active_trade_node = {
-			province_id = 4346	# Gulf of Aden
-			has_merchant = prev
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-	
-	
-	option = {		# Forcefully control the spice trade
-		name = "flavor_por.EVTOPTA3268"
-		ai_chance = { factor = 10 }
-		random_active_trade_node = {
-			limit = {
-				province_id = 4346	# Gulf of Aden
-			}
-			
-			add_trade_modifier = {
-				who = root
-				duration = 18250
-				power = 25
-				key = portuguese_privateers
-			}		
-		}
-	}
-	option = {		# Seek better relations in the region
-		name = "flavor_por.EVTOPTB3268"
-		ai_chance = { factor = 0 }
-		custom_tooltip = flavor_por.3268.b.tt
-		hidden_effect = {
-			random_active_trade_node = {
-				limit = {
-					province_id = 4346	# Gulf of Aden
-				}
-				every_trade_node_member_country = {
-					add_opinion = {
-						who = ROOT
-						modifier = careful_trade_expansion
-					}
-				}
+		PAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = no_holy_inquisition
 			}
 		}
 	}
@@ -182,7 +209,7 @@ country_event = {
 
 	trigger = {
 		tag = POR
-		is_year = 1525
+		is_year = 1530
 		NOT = { is_year = 1580 }
 		brazil_region = {
 			country_or_vassal_holds = POR
@@ -194,40 +221,73 @@ country_event = {
 	}
 	
 	
-	option = {		# Kill them
+	option = {		# Appoint de Sousa
 		name = "flavor_por.EVTOPTA3271"
-		ai_chance = { factor = 75 }
-		define_general = {
-			name = "Martim de Sousa"
-			shock = 3
-			fire = 4
-			manuever = 5
-			siege = 0
-		}
-		add_mil_power = -75
-		add_years_of_income = -0.2
 		add_country_modifier = {
-			name = rooting_out_corsairs
-			duration = 1460
+			name = governor_de_sousa
+			duration = 3650
 		}
+	}
+}
 
+# King Sebastião's Expedition to North Africa
+country_event = {
+	id = flavor_por.3272
+	title = "flavor_por.EVTNAME3272"
+	desc = "flavor_por.EVTDESC3272"
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+
+	trigger = {
+		tag = POR
+		is_year = 1500
+		religion = catholic
+		is_free_or_tributary_trigger = yes
+		MOR = {
+			exists = yes
+			num_of_ports = 1
+			religion_group = muslim
+			is_free_or_tributary_trigger = yes
+			NOT = { war_with = POR }
+			NOT = { truce_with = POR }
+			NOT = { alliance_with = POR }
+		}
 	}
 
-	option = {		# Negotiate
-		name = "flavor_por.EVTOPTB3271"
-		ai_chance = { factor = 25 }
-		define_advisor = {
-			type = colonial_governor
-			name = "Martim de Sousa"
-			skill = 2
-			cost_multiplier = 0.5
+	mean_time_to_happen = {
+		months = 100
+	}
+
+	
+	option = {		# Crusade against the Heretics in Africa
+		name = "flavor_por.EVTOPTA3272"
+		ai_chance = { factor = 90 }
+		
+		add_papal_influence = 10
+		MOR = {
+			every_owned_province = {
+				limit = {
+					is_in_capital_area = yes
+					has_port = yes
+				}
+				add_claim = POR
+			}
 		}
-		add_dip_power = -75
-		add_years_of_income = -0.2
-		add_country_modifier = {
-			name = negotiating_with_corsairs
-			duration = 1460
+	
+		
+		MOR = {
+			add_opinion = {
+				who = ROOT
+				modifier = prepares_crusade
+			}
 		}
+	}
+	option = {		# We should focus elsewhere
+		name = "flavor_por.EVTOPTB3272"
+		ai_chance = { factor = 0 }
+		add_prestige = -1
 	}
 }
 
@@ -264,6 +324,106 @@ country_event = {
 	}
 }
 
+# The Meuthen Agreement
+country_event = {
+	id = flavor_por.3275
+	title = "flavor_por.EVTNAME3275"
+	desc = "flavor_por.EVTDESC3275"
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		is_year = 1650
+		is_at_war = no
+		OR = {
+			exists = GBR
+			exists = ENG
+		}
+		iberia_region = {
+			owned_by = ROOT
+			has_port = yes
+		}
+		NOT = { war_with = ENG }
+		NOT = { is_rival = ENG }
+		NOT = { war_with = GBR }
+		NOT = { is_rival = GBR }
+	}
+
+	mean_time_to_happen = {
+		months = 100
+	}
+
+	
+	option = {		# Accept the Agreement
+		name = "flavor_por.EVTOPTA3275"
+		ai_chance = { factor = 75 }
+		if = {
+			limit = {
+				exists = GBR
+			}
+			GBR = {
+				add_opinion = {
+					who = ROOT
+					modifier = accepted_meuthen_agreement
+				}
+			}
+			set_country_flag = meuthen_agreement
+		}
+		if = {
+			limit = {
+				exists = ENG
+				NOT = { has_country_flag = meuthen_agreement }
+			}
+			ENG = {
+				add_opinion = {
+					who = ROOT
+					modifier = accepted_meuthen_agreement
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				region = iberia_region
+				has_port = yes
+			}
+			add_base_tax = 1
+		}
+		clr_country_flag = meuthen_agreement
+	}
+	option = {		# Denounce the Agreement
+		name = "flavor_por.EVTOPTB3275"
+		ai_chance = { factor = 25 }
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				exists = GBR
+			}
+			GBR = {
+				add_opinion = {
+					who = ROOT
+					modifier = denounced_meuthen_agreement
+				}
+			}
+			set_country_flag = meuthen_agreement
+		}
+		if = {
+			limit = {
+				exists = ENG
+				NOT = { has_country_flag = meuthen_agreement }
+			}
+			ENG = {
+				add_opinion = {
+					who = ROOT
+					modifier = denounced_meuthen_agreement
+				}
+			}
+		}
+		clr_country_flag = meuthen_agreement
+	}
+}
+
 # Count da Ericeira
 country_event = {
 	id = flavor_por.3276
@@ -293,6 +453,315 @@ country_event = {
 			discount = yes
 			skill = 2
 		}
+	}
+}
+
+# Earthquake destroy Lisboa
+country_event = {
+	id = flavor_por.3278	
+	title = "flavor_por.EVTNAME3278"
+	desc = "flavor_por.EVTDESC3278"
+	picture = REVOLUTION_eventPicture
+	
+	
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		owns = 227	# Lisboa
+		is_year = 1700
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+
+	
+	option = {		# 
+		name = "flavor_por.EVTOPTA3278"
+		227 = {
+			add_devastation = 100
+			add_province_modifier = {
+				name = earthquake
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Marquês de Pombal
+country_event = {
+	id = flavor_por.3279
+	title = "flavor_por.EVTNAME3279"
+	desc = "flavor_por.EVTDESC3279"
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		is_year = 1729
+		NOT = { is_year = 1777 }
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	immediate = {
+		set_country_flag = POR_de_pombal
+	}
+	
+	option = {		# An Excellent Minister!
+		name = "EXCELLENTMINISTER"
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+
+# The Tavoras Conspiracy
+country_event = {
+	id = flavor_por.3280
+	title = "flavor_por.EVTNAME3280"
+	desc = "flavor_por.EVTDESC3280"
+	picture = ASSASSINATION_eventPicture
+
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		iberia_region = {
+			owned_by = POR
+		}
+		had_country_flag = {
+			flag = POR_de_pombal
+			days = 1000
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 64
+	}
+
+	
+	option = {		# Crush the Opposition
+		name = "flavor_por.EVTOPTA3280"
+		ai_chance = { factor = 75 }
+		random_owned_province = {
+			limit = {
+				region = iberia_region
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+	option = {		# Be Lenient
+		name = "flavor_por.EVTOPTB3280"
+		ai_chance = { factor = 25 }
+		add_legitimacy = -25
+		add_republican_tradition = -25
+	}
+}
+
+# The Expulsion of Marquês de Pombal
+country_event = {
+	id = flavor_por.3281
+	title = "flavor_por.EVTNAME3281"
+	desc = "flavor_por.EVTDESC3281"
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	
+
+	trigger = {
+		tag = POR
+		iberia_region = {
+			owned_by = POR
+		}
+		
+		had_country_flag = {
+			flag = POR_de_pombal
+			days = 3000
+		}		
+	}
+
+	mean_time_to_happen = {
+		months = 32
+	}
+	immediate = {
+		clr_country_flag = POR_de_pombal
+	}
+
+	
+	option = {		# Expel him
+		name = "flavor_por.EVTOPTA3281"
+		ai_chance = { factor = 75 }
+		add_ruler_modifier = {
+			name = reactionary_policies
+			duration = -1
+		}
+	}
+	option = {		# Let the 'Great Marquês' rule
+		name = "flavor_por.EVTOPTB3281"
+		ai_chance = { factor = 25 }
+		every_owned_province = {
+			limit = {
+				region = iberia_region
+				is_capital = no
+			}
+			add_local_autonomy = 10
+		}
+	}
+}
+
+# Christopher Columbus	
+# Beyond the Cape exploration
+country_event = {
+	id = flavor_por.1
+	title = "flavor_por.EVTNAME1"
+	desc = "flavor_por.EVTDESC1"
+	picture = SHIP_SAILING_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		exploration_ideas = 2
+		NOT = { has_global_flag = columbus_happened }
+		is_year = 1470
+		OR = {
+			NOT = {
+				north_america = {
+					has_discovered = ROOT
+				}
+			}
+			NOT = {
+				south_america = {
+					has_discovered = ROOT
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {		# Reject his proposal
+		name = "flavor_por.EVTOPTA1"
+		ai_chance = { factor = 75 }
+		set_country_flag = turned_down_columbus
+		if = {
+			limit = {
+				exists = SPA
+				SPA = { has_country_modifier = quest_for_the_new_world }
+			}
+			SPA = {
+				country_event = { id = flavor_spa.1 days = 10 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = SPA }
+				exists = CAS
+				CAS = { has_country_modifier = quest_for_the_new_world }
+			}
+			CAS = {
+				country_event = { id = flavor_spa.1 days = 10 }
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = SPA }
+						NOT = { exists = CAS }
+					}
+					AND = {
+						CAS = { NOT = { has_country_modifier = quest_for_the_new_world } }
+						SPA = { NOT = { has_country_modifier = quest_for_the_new_world } }
+					}
+				}
+				any_known_country = {
+					has_country_modifier = quest_for_the_new_world
+					religion = catholic
+				}
+			}
+			random_known_country = {
+				limit = {
+					NOT = { has_country_flag = turned_down_columbus }
+					religion = catholic
+					has_country_modifier = quest_for_the_new_world
+				}
+				country_event = { id = flavor_spa.1 }
+			}
+		}
+	}
+	option = {		# Hire Columbus
+		name = "flavor_por.EVTOPTB1"
+		ai_chance = { factor = 25 }
+		set_global_flag = columbus_happened
+		add_years_of_income = -0.10
+		define_explorer = {
+			name = "Cristóvão Colombo"
+			fire = 2
+			shock = 2
+			manuever = 6
+			siege = 0
+		}
+	}
+}
+
+# Atlantic Slave Trade
+country_event = {
+	id = flavor_por.2
+	title = "flavor_por.EVTNAME2"
+	desc = "flavor_por.EVTDESC2"
+	picture = NATIVES_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		colony = 1
+		south_america = {
+			country_or_vassal_holds = ROOT
+		}
+		OR = {
+			guinea_region = {
+				owned_by = ROOT
+			}
+			south_africa_region = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+
+	option = {		# Encourage slave trade from Africa
+		name = "flavor_por.EVTOPTA2"
+		ai_chance = { factor = 90 }
+		add_country_modifier = {
+			name = african_slaves
+			duration = 18250
+		}
+	}
+	option = {		# The Crown should not get involved
+		name = "flavor_por.EVTOPTB2"
+		ai_chance = { factor = 10 }
+		add_prestige = 10
 	}
 }
 
@@ -342,6 +811,43 @@ country_event = {
 	}
 }
 
+# Portuguese East India Company
+country_event = {
+	id = flavor_por.4
+	title = "flavor_por.EVTNAME4"
+	desc = "flavor_por.EVTDESC4"
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_dlc = "Golden Century" }
+				tag = POR
+				has_country_modifier = india_trade_co
+			}
+			has_country_flag = por_india_mission_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+
+
+	option = {		# We need an East India Company
+		name = "flavor_por.EVTOPTA4"
+		add_mercantilism = 10
+		add_country_modifier = {
+			name = "portuguese_india_trade_co"
+			duration = -1
+		}
+	}
+}
+
 # Capture of Santa Catarina
 country_event = {
 	id = flavor_por.5
@@ -357,7 +863,7 @@ country_event = {
 		num_of_ports = 1
 		exists = NED
 
-		# NOT = { is_year = 1650 }
+		NOT = { is_year = 1650 }
 
 		any_active_trade_node = {
 			any_trade_node_member_province = {
@@ -405,7 +911,7 @@ country_event = {
 	option = {		# Request the return of the cargo!
 		name = "flavor_por.EVTOPTA5"
 		ai_chance = { factor = 90 }
-		add_years_of_income = -0.5
+		add_prestige = 10
 		hidden_effect = {
 			NED = { country_event = { id = flavor_por.6 days = 10 } }
 		}
@@ -413,8 +919,7 @@ country_event = {
 	option = {		# Recognize their right
 		name = "flavor_por.EVTOPTB5"
 		ai_chance = { factor = 10 }
-		add_prestige = -20
-		add_years_of_income = -0.5
+		add_prestige = -10
 	}
 }
 
@@ -439,7 +944,6 @@ country_event = {
 		name = "flavor_por.EVTOPTB6"
 		ai_chance = { factor = 10 }
 		add_prestige = -10
-		add_dip_power = 15
 		hidden_effect = {
 			POR = { country_event = { id = flavor_por.7 days = 10 } }
 		}
@@ -457,7 +961,7 @@ country_event = {
 
 	option = {		# Very well
 		name = "flavor_por.EVTOPTA7"
-		add_years_of_income = 0.4
+		add_years_of_income = 0.5
 	}
 }
 
@@ -480,474 +984,106 @@ country_event = {
 	}
 }
 
-# Jerónimos Monastery
-#country_event = {
-#	id = flavor_por.10
-#	title = "flavor_por.EVTNAME10"
-#	desc = "flavor_por.EVTDESC10"
-#	picture = ST_PETERS_CHURCH_eventPicture
-#	
-#	
-#	fire_only_once = yes
-#	
-#	
-#	trigger = {
-#		tag = POR
-#		is_year = 1490
-#		NOT = { is_year = 1520 }
-#	}
-#
-#	mean_time_to_happen = {
-#		months = 60
-#	}
-#	
-#	
-#	option = {		# It will show our Glory
-#		name = "flavor_por.EVTOPTA10"
-#		ai_chance = { factor = 90 }
-#		add_years_of_income = -0.25
-#		add_papal_influence = 20
-#	}
-#	option = {		# It's too expensive
-#		name = "flavor_por.EVTOPTB10"
-#		ai_chance = { factor = 10 }
-#		add_prestige = -1
-#	}
-#}
-
-### BEYOND THE CAPE ###
-
-# The Holy Inquisition
-country_event = {
-	id = flavor_por.3269
-	title = "flavor_por.EVTNAME3269"
-	desc = "flavor_por.EVTDESC3269"
-	picture = POPE_PREACHING_eventPicture
-
-	is_triggered_only = yes
-	
-	option = {		# 
-		name = "flavor_por.EVTOPTA3269"
-		ai_chance = { factor = 75 }
-		add_papal_influence = 20
-		add_stability = 1
-		add_country_modifier = {
-			name = narrowminded_modifier
-			duration = 3650
-		}
-	}
-	option = {		# 
-		name = "flavor_por.EVTOPTB3269"
-		ai_chance = { factor = 25 }
-		add_papal_influence = -40
-		PAP = {
-			add_opinion = {
-				who = ROOT
-				modifier = no_holy_inquisition
-			}
-		}
-	}
-}
-
-# # King Sebastião's Expedition to North Africa
-# country_event = {
-# 	id = flavor_por.3272
-# 	title = "flavor_por.EVTNAME3272"
-# 	desc = "flavor_por.EVTDESC3272"
-# 	picture = SHIP_SAILING_eventPicture
-
-# 	fire_only_once = yes
-
-
-# 	trigger = {
-# 		tag = POR
-# 		is_year = 1500
-# 		religion = catholic
-# 		is_free_or_tributary_trigger = yes
-# 		MOR = {
-# 			exists = yes
-# 			num_of_ports = 1
-# 			religion_group = muslim
-# 			is_free_or_tributary_trigger = yes
-# 			NOT = { war_with = POR }
-# 			NOT = { truce_with = POR }
-# 			NOT = { alliance_with = POR }
-# 		}
-# 	}
-
-# 	mean_time_to_happen = {
-# 		months = 100
-# 	}
-	
-# 	option = {		# Crusade against the Heretics in Africa
-# 		name = "flavor_por.EVTOPTA3272"
-# 		ai_chance = { factor = 90 }
-		
-# 		add_papal_influence = 10
-# 		MOR = {
-# 			every_owned_province = {
-# 				limit = {
-# 					is_in_capital_area = yes
-# 					has_port = yes
-# 				}
-# 				add_claim = POR
-# 			}
-# 		}
-		
-# 		MOR = {
-# 			add_opinion = {
-# 				who = ROOT
-# 				modifier = prepares_crusade
-# 			}
-# 		}
-# 	}
-# 	option = {		# We should focus elsewhere
-# 		name = "flavor_por.EVTOPTB3272"
-# 		ai_chance = { factor = 0 }
-# 		add_prestige = -1
-# 	}
-# }
-
-# The Meuthen Agreement
-#country_event = {
-#	id = flavor_por.3275
-#	title = "flavor_por.EVTNAME3275"
-#	desc = "flavor_por.EVTDESC3275"
-#	picture = DIPLOMACY_eventPicture
-#
-#	fire_only_once = yes
-#
-#	trigger = {
-#		tag = POR
-#		is_year = 1650
-#		is_at_war = no
-#		OR = {
-#			exists = GBR
-#			exists = ENG
-#		}
-#		iberia_region = {
-#			owned_by = ROOT
-#			has_port = yes
-#		}
-#		NOT = { war_with = ENG }
-#		NOT = { is_rival = ENG }
-#		NOT = { war_with = GBR }
-#		NOT = { is_rival = GBR }
-#	}
-#
-#	mean_time_to_happen = {
-#		months = 100
-#	}
-#
-#	
-#	option = {		# Accept the Agreement
-#		name = "flavor_por.EVTOPTA3275"
-#		ai_chance = { factor = 75 }
-#		if = {
-#			limit = {
-#				exists = GBR
-#			}
-#			GBR = {
-#				add_opinion = {
-#					who = ROOT
-#					modifier = accepted_meuthen_agreement
-#				}
-#			}
-#			set_country_flag = meuthen_agreement
-#		}
-#		if = {
-#			limit = {
-#				exists = ENG
-#				NOT = { has_country_flag = meuthen_agreement }
-#			}
-#			ENG = {
-#				add_opinion = {
-#					who = ROOT
-#					modifier = accepted_meuthen_agreement
-#				}
-#			}
-#		}
-#		random_owned_province = {
-#			limit = {
-#				region = iberia_region
-#				has_port = yes
-#			}
-#			add_base_tax = 1
-#		}
-#		clr_country_flag = meuthen_agreement
-#	}
-#	option = {		# Denounce the Agreement
-#		name = "flavor_por.EVTOPTB3275"
-#		ai_chance = { factor = 25 }
-#		add_stability_or_adm_power = yes
-#		if = {
-#			limit = {
-#				exists = GBR
-#			}
-#			GBR = {
-#				add_opinion = {
-#					who = ROOT
-#					modifier = denounced_meuthen_agreement
-#				}
-#			}
-#			set_country_flag = meuthen_agreement
-#		}
-#		if = {
-#			limit = {
-#				exists = ENG
-#				NOT = { has_country_flag = meuthen_agreement }
-#			}
-#			ENG = {
-#				add_opinion = {
-#					who = ROOT
-#					modifier = denounced_meuthen_agreement
-#				}
-#			}
-#		}
-#		clr_country_flag = meuthen_agreement
-#	}
-#}
-
-# Earthquake destroy Lisboa
-#country_event = {
-#	id = flavor_por.3278	
-#	title = "flavor_por.EVTNAME3278"
-#	desc = "flavor_por.EVTDESC3278"
-#	picture = REVOLUTION_eventPicture
-#	
-#	
-#	fire_only_once = yes
-#	trigger = {
-#		tag = POR
-#		owns = 227	# Lisboa
-#		is_year = 1700
-#	}
-#	
-#	mean_time_to_happen = {
-#		months = 2000
-#	}
-#	
-#
-#	
-#	option = {		# 
-#		name = "flavor_por.EVTOPTA3278"
-#		227 = {
-#			add_devastation = 100
-#			add_province_modifier = {
-#				name = earthquake
-#				duration = 3650
-#			}
-#		}
-#	}
-#}
-
-# Marquês de Pombal
-#country_event = {
-#	id = flavor_por.3279
-#	title = "flavor_por.EVTNAME3279"
-#	desc = "flavor_por.EVTDESC3279"
-#	picture = ADVISOR_eventPicture
-#
-#	fire_only_once = yes
-#
-#	trigger = {
-#		tag = POR
-#		is_year = 1729
-#		NOT = { is_year = 1777 }
-#	}
-#
-#	mean_time_to_happen = {
-#		months = 30
-#	}
-#
-#	immediate = {
-#		set_country_flag = POR_de_pombal
-#	}
-#	
-#	option = {		# An Excellent Minister!
-#		name = "EXCELLENTMINISTER"
-#		add_adm_power = 100
-#		add_dip_power = 100
-#		add_mil_power = 100
-#	}
-#}
-
-# The Tavoras Conspiracy
-country_event = {
-	id = flavor_por.3280
-	title = "flavor_por.EVTNAME3280"
-	desc = "flavor_por.EVTDESC3280"
-	picture = ASSASSINATION_eventPicture
-
-	fire_only_once = yes
-	
-	trigger = {
-		tag = POR
-		227 = {
-			owned_by = POR
-			NOT = { has_province_flag = massive_earthquake }
-		}
-		OR = {
-			has_country_flag = pombal_1
-			has_country_flag = pombal_2
-			has_country_flag = pombal_3
-		}
-
-	}
-
-	immediate = {
-		clr_country_flag = pombal_1
-		clr_country_flag = pombal_2
-		clr_country_flag = pombal_3
-	}
-
-	mean_time_to_happen = {
-		months = 64
-	}
-
-	
-	option = {		# Crush the Opposition
-		name = "flavor_por.EVTOPTA3280"
-		ai_chance = { factor = 75 }
-		random_owned_province = {
-			limit = {
-				region = iberia_region
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = noble_rebels
-				size = 2
-			}
-		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -15
-		}
-		set_country_flag = tavoras
-	}
-	option = {		# Be Lenient
-		name = "flavor_por.EVTOPTB3280"
-		ai_chance = { factor = 25 }
-		add_legitimacy = -25
-		add_republican_tradition = -25
-		add_absolutism = -15
-		set_country_flag = tavoras
-	}
-}
-
-# The Expulsion of Marquês de Pombal
-country_event = {
-	id = flavor_por.3281
-	title = "flavor_por.EVTNAME3281"
-	desc = "flavor_por.EVTDESC3281"
-	picture = CIVIL_WAR_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = POR
-		227 = {
-			owned_by = POR
-		}
-		has_country_flag = tavoras
-	}
-
-	immediate = { clr_country_flag = tavoras }
-
-	mean_time_to_happen = {
-		months = 64
-	}
-
-	option = {		# Expel him
-		name = "flavor_por.EVTOPTA3281"
-		ai_chance = { factor = 75 }
-		add_ruler_modifier = {
-			name = reactionary_policies
-			duration = -1
-		}
-	}
-	option = {		# Let the 'Great Marquês' rule
-		name = "flavor_por.EVTOPTB3281"
-		ai_chance = { factor = 25 }
-		every_owned_province = {
-			limit = {
-				region = iberia_region
-				is_capital = no
-			}
-			add_local_autonomy = 10
-		}
-	}
-}
-
-# Atlantic Slave Trade
-#country_event = {
-#	id = flavor_por.2
-#	title = "flavor_por.EVTNAME2"
-#	desc = "flavor_por.EVTDESC2"
-#	picture = NATIVES_eventPicture
-#	
-#	
-#	fire_only_once = yes
-#	
-#	trigger = {
-#		tag = POR
-#		colony = 1
-#		south_america = {
-#			country_or_vassal_holds = ROOT
-#		}
-#		OR = {
-#			guinea_region = {
-#				owned_by = ROOT
-#			}
-#			south_africa_region = {
-#				owned_by = ROOT
-#			}
-#		}
-#	}
-#
-#	mean_time_to_happen = {
-#		months = 100
-#	}
-#	
-#
-#	option = {		# Encourage slave trade from Africa
-#		name = "flavor_por.EVTOPTA2"
-#		ai_chance = { factor = 90 }
-#		add_country_modifier = {
-#			name = african_slaves
-#			duration = 18250
-#		}
-#	}
-#	option = {		# The Crown should not get involved
-#		name = "flavor_por.EVTOPTB2"
-#		ai_chance = { factor = 10 }
-#		add_prestige = 10
-#	}
-#}
-
 # The Tower of Belém
-#country_event = {
-#	id = flavor_por.9
-#	title = "flavor_por.EVTNAME9"
-#	desc = "flavor_por.EVTDESC9"
-#	picture = FORT_eventPicture
-#	
-#	fire_only_once = yes
-#	
-#	is_triggered_only = yes
-#
-#	option = {		# It must be built
-#		name = "flavor_por.EVTOPTA9"
-#		
-#		add_treasury = -50
-#		227 = {
-#			add_permanent_province_modifier = {
-#				name = the_tower_or_belem
-#				duration = -1
-#			}
-#		}
-#	}
-#}
+country_event = {
+	id = flavor_por.9
+	title = "flavor_por.EVTNAME9"
+	desc = "flavor_por.EVTDESC9"
+	picture = FORT_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		owns = 227 # Lisboa
+		is_year = 1490
+		NOT = { is_year = 1520 }
+	}
+
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+
+	option = {		# It must be built
+		name = "flavor_por.EVTOPTA9"
+		ai_chance = { 
+			factor = 90 
+			modifier = {
+				factor = 0
+				AND = {
+					NOT = { treasury = 500 }
+					has_dlc = "Leviathan"
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Leviathan"
+			}
+			add_treasury = -500
+			227 = {
+				set_great_project_tier_1 = {
+					type = belem_tower
+				}
+				add_permanent_province_modifier = {
+					name = the_tower_or_belem
+					duration = -1
+				}
+			}
+		}
+		else = {
+			add_treasury = -50
+			227 = {
+				add_permanent_province_modifier = {
+					name = the_tower_or_belem
+					duration = -1
+				}
+			}
+		}
+	}
+	option = {		# We have other priorities
+		name = "flavor_por.EVTOPTB9"
+		ai_chance = { factor = 10 }
+		add_prestige = -1
+	}
+}
+
+# Jerónimos Monastery
+country_event = {
+	id = flavor_por.10
+	title = "flavor_por.EVTNAME10"
+	desc = "flavor_por.EVTDESC10"
+	picture = ST_PETERS_CHURCH_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = POR
+		is_year = 1490
+		NOT = { is_year = 1520 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	
+	option = {		# It will show our Glory
+		name = "flavor_por.EVTOPTA10"
+		ai_chance = { factor = 90 }
+		add_years_of_income = -0.25
+		add_papal_influence = 20
+	}
+	option = {		# It's too expensive
+		name = "flavor_por.EVTOPTB10"
+		ai_chance = { factor = 10 }
+		add_prestige = -1
+	}
+}
 
 # Vasco da Gama in India
 country_event = {
@@ -958,193 +1094,37 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {		# Broker a deal with the local ruler
+	option = {		# Glorious!
 		name = "flavor_por.EVTOPTA11"
-
+		trigger = {
+			2030 = {
+				owner = {
+					ai = yes
+				}
+			}
+		}
 		ai_chance = {
 			factor = 90
-		}
-
-		2030 = {
-			owner = {
-				country_event = { id = btc_por.127 days = 1 }
+			modifier = {
+				factor = 0
+				overextension_percentage = 1.5
 			}
 		}
-		add_years_of_income = -1
+		2030 = { cede_province = POR }
+		add_claim = 2030
 		add_prestige = 10
 	}
-
-	option = {		# Forcefully establish our presence
+	option = {		# Glorious!
 		name = "flavor_por.EVTOPTB11"
-
-		ai_chance = {
-			factor = 10
+		trigger = {
+			2030 = {
+				owner = {
+					ai = no
+				}
+			}
 		}
-		
-		add_permanent_claim = 2030
+		ai_chance = { factor = 10 }
+		add_claim = 2030
 		add_prestige = 10
-		custom_tooltip = mare_clausum_tt
-		set_country_flag = mare_clausum
 	}
 }
-
-# Christopher Columbus
-country_event = {
-	id = flavor_por.1
-	title = "flavor_por.EVTNAME1"
-	desc = "flavor_por.EVTDESC1"
-	picture = SHIP_SAILING_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = POR
-		NOT = { has_country_modifier = quest_for_the_new_world }
-		NOT = { has_global_flag = columbus_happened }
-		NOT = { has_country_flag = turned_down_columbus }
-		is_year = 1488
-		has_idea_group = exploration_ideas
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {		# Reject his proposal
-		name = "flavor_por.EVTOPTA1"
-		trigger = {
-			NOT = { has_discovered = 1460 }
-		}
-		ai_chance = { factor = 1 }
-
-		set_country_flag = turned_down_columbus
-	}
-	
-	option = {		# Hire Columbus
-		name = "flavor_por.EVTOPTB1"
-		
-		ai_chance = { factor = 0 }
-
-		trigger = {
-			NOT = { has_discovered = 1460 }
-		}
-
-		add_years_of_income = -0.10
-		set_global_flag = columbus_happened
-		set_country_flag = had_columbus
-		custom_tooltip = columbus_voyage
-		hidden_effect = {
-			ROOT = {
-				country_event = {
-					id = btc_events.17
-					days = 90
-				}
-			}
-		}
-	}
-
-	option = {		# We have already reached the indian ocean
-		name = "flavor_por.EVTOPTC1"
-		trigger = {
-			has_discovered = 1460
-		}
-		ai_chance = { factor = 1 }
-		add_prestige = 5
-
-		set_country_flag = turned_down_columbus
-	}
-}
-
-# Portuguese East India Company
-country_event = {
-	id = flavor_por.4
-	title = "flavor_por.EVTNAME4"
-	desc = "flavor_por.EVTDESC4"
-	picture = MERCHANTS_TALKING_eventPicture
-	
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			AND = {
-				NOT = { has_dlc = "Golden Century" }
-				tag = POR
-				has_country_modifier = india_trade_co
-			}
-			has_country_flag = por_india_mission_flag
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-	
-
-
-	option = {		# We need an East India Company
-		name = "flavor_por.EVTOPTA4"
-		add_mercantilism = 10
-		add_country_modifier = {
-			name = "portuguese_india_trade_co"
-			duration = -1
-		}
-		227 = {
-			upgrade_building = { trade = yes }
-		}
-	}
-}
-
-# Colonial Policy
-
-country_event = {
-	id = flavor_por.3266
-	title = "flavor_por.EVTNAME3266"
-	desc = "flavor_por.EVTDESC3266"
-	picture = COLONIZATION_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = POR
-		colony = 1
-	}
-
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	
-	option = {		# Every man make his own fortune
-		name = "flavor_por.EVTOPTA3266"
-		ai_chance = { factor = 75 }
-		add_country_modifier = {
-			name = colonial_policy
-			duration = -1
-		}
-	}
-	option = {		# Demand less corruption
-		name = "flavor_por.EVTOPTB3266"
-		ai_chance = { factor = 25 }
-		if = {
-			limit = {
-				corruption = 1
-			}
-			add_corruption = -1
-			add_adm_power = -100
-			add_dip_power = -25
-		}
-		if = {
-			limit = {
-				NOT = {
-					corruption = 1
-				}
-			}
-			add_country_modifier = {
-				name = less_colonial_corruption
-				duration = -1
-			}
-		}
-	}
-}
-

@@ -9,6 +9,8 @@
 
 #ideas in the group can have effect = {} and removed_effect = {}
 
+### BEYOND THE CAPE - PRIVATEER CHANGES ###
+
 aristocracy_ideas = {
 	category = MIL
 
@@ -17,7 +19,6 @@ aristocracy_ideas = {
 		nobles_loyalty_modifier = 0.1
 		rajput_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = -0.05
 	}
 
 	trigger = {
@@ -84,14 +85,6 @@ aristocracy_ideas = {
 			factor = 1.25
 			has_idea_group = spy_ideas 
 		}
-		modifier = {
-			factor = 100
-			OR = {
-				tag = POL
-				tag = LIT
-				tag = PLC
-			}
-		}
 	}
 }
 
@@ -103,7 +96,6 @@ plutocracy_ideas = {
 		global_prov_trade_power_modifier = 0.25
 		burghers_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = -0.05
 	}
 
 	trigger = {
@@ -166,7 +158,6 @@ horde_gov_ideas = {
 	bonus = {
 		cavalry_power = 0.25
 		nomadic_tribes_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = -0.05
 	}
 	
 	trigger = {
@@ -214,7 +205,6 @@ theocracy_gov_ideas = {
 		church_loyalty_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.1
 		brahmins_muslim_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = -0.05
 	}
 	
 	trigger = {
@@ -280,7 +270,6 @@ indigenous_ideas = {
 
 	bonus = {
 		global_institution_spread = 0.25
-		monthly_portuguese_saudade = -0.05
 	}
 
 	trigger = {
@@ -320,7 +309,6 @@ innovativeness_ideas = {
 
 	bonus = {
 		advisor_cost = -0.2
-		monthly_portuguese_saudade = -0.05
 	}
 
 	patron_of_art  = {
@@ -400,7 +388,6 @@ religious_ideas = {
 		culture_conversion_cost = -0.25
 		brahmins_hindu_loyalty_modifier = 0.1
 		church_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = 0.075
 	}
 
 	missionary_schools = {
@@ -430,7 +417,6 @@ religious_ideas = {
 	}
 	religious_tradition = {
 		reverse_relation_with_same_religion = 10
-		religious_unity = 0.10
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
@@ -483,7 +469,6 @@ spy_ideas = {
 	bonus = {
 		rebel_support_efficiency = 1
 		spy_action_cost_modifier = -0.2
-		monthly_portuguese_saudade = 0.05
 	}
 	
 	claim_fabrication = {
@@ -543,7 +528,6 @@ diplomatic_ideas = {
 	category = DIP
 	bonus = {
 		reduced_stab_impacts = yes
-		monthly_portuguese_saudade = 0.05
 	}
 	
 	grand_banquets = {
@@ -593,7 +577,7 @@ offensive_ideas = {
 
 	bonus = {
 		recover_army_morale_speed = 0.1
-		monthly_portuguese_saudade = 0.05
+		qizilbash_loyalty_modifier = 0.1
 	}
 
 	bayonet_leaders = {
@@ -697,7 +681,6 @@ defensive_ideas = {
 	bonus = {
 		hostile_attrition = 1
 		max_hostile_attrition = 1 
-		monthly_portuguese_saudade = -0.075
 	}
 
 	battlefield_commisions = {
@@ -722,6 +705,35 @@ defensive_ideas = {
 	}
 	improved_foraging = {
 		garrison_size = 0.33
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = ned_buffed_forts_flag
+					}
+					every_owned_province = {
+						limit = {
+							region = low_countries_region
+							has_fort_building_trigger = yes
+						}
+						remove_province_modifier = ned_low_countries_fort_buff
+						add_province_modifier = {
+							name = ned_low_countries_fort_buff_buffed
+							duration = -1
+							hidden = yes
+						}
+					}
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = ned_low_countries_fort_buff_buffed }
+					remove_province_modifier = ned_low_countries_fort_buff_buffed
+				}
+			}
+		}
 	}
 
 	#until_the_last_man = {
@@ -795,13 +807,6 @@ defensive_ideas = {
 			factor = 1.25
 			is_march = yes
 		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				tag = MOS
-				tag = RUS
-			}
-		}
 	}
 }
 
@@ -814,7 +819,6 @@ trade_ideas = {
 		burghers_loyalty_modifier = 0.1
 		jains_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = 0.05
 	}
 
 	shrewd_commerce_practise = {
@@ -883,7 +887,6 @@ economic_ideas = {
 
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
-		monthly_portuguese_saudade = -0.075
 	}
 
 	bureaucracy = { 
@@ -892,22 +895,22 @@ economic_ideas = {
 	national_bank = {
 		inflation_reduction = 0.1
 	}
-	smithian_economics = { 
-		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
-		production_efficiency = 0.1 				#for eco ideas are done so via on_actions 
- 	}												#for the loans and via the buildings file for the dev from manufactories! happy modding 
+	merchant_passes = {
+		merchants = 1
+	}
 	efficient_mining = {
 		gold_depletion_chance_modifier = -0.25
-	}
-	nationalistic_enthusiasm = {
-		land_maintenance_modifier = -0.05
 	}
 	debt_and_loans = {
 		interest = -0.5
 	}
-	merchant_passes = {
-		merchants = 1
+	nationalistic_enthusiasm = {
+		land_maintenance_modifier = -0.05
 	}
+	smithian_economics = { 
+		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
+		production_efficiency = 0.1					#for eco ideas are done so via on_actions 
+ 	}	
 
 	ai_will_do = {
 		factor = 0.35
@@ -954,210 +957,184 @@ economic_ideas = {
 	}
 }
 
-# Beyond the Cape rework #
-exploration_ideas = {
-	category = DIP
-	important = yes
+# Beyond the Cape ideas
+# exploration_ideas = {
+# 	category = DIP
+# 	important = yes
 
-	trigger = {
-		if = {
-			limit = {
-				tag = GCH
-			}
-			has_country_modifier = guanches_exploration
-		}
-	}
+# 	bonus = {
+# 		cb_on_primitives = yes
+# 	}
 
-	bonus = {
-		cb_on_overseas = yes
-		monthly_portuguese_saudade = 0.075
-	}
+# 	quest_for_the_new_world	= {
+# 		may_explore = yes
+# 		naval_attrition = -0.1
+# 	}
+# 	colonial_ventures = {
+# 		colonists = 1
+# 		effect = { remove_temporary_colonist = yes }
+# 	}
+# 	overseas_exploration = {
+# 		range = 0.5
+# 	}
+# 	land_of_opportunity = {
+# 		global_colonial_growth = 10
+# 	}
+# 	factories = {
+# 		trade_company_governing_cost = -0.1
+# 		trade_company_investment_cost = -0.1
+# 	}
+# 	free_colonies = {
+# 		colonist_placement_chance = 0.1
+# 	}
+# 	global_empire = {
+# 		naval_forcelimit_modifier = 0.25
+# 		treasure_fleet_income = 0.25
+# 	}
 
-	overseas_exploration = {
-		range = 0.5
-	}
-
-	colonial_ventures = {
-		colonists = 1
-	}
-
-	land_of_opportunity = {
-		global_colonial_growth = 10
-	}
-
-	experienced_sailors	= {
-		naval_attrition = -0.1
-		transport_attrition = -0.1
-	}
-
-	free_colonies = {
-		colonist_placement_chance = 0.1
-	}
-
-	factories = {
-		trade_company_governing_cost = -0.1
-		trade_company_investment_cost = -0.1
-	}
-	
-	global_empire = {
-		naval_forcelimit_modifier = 0.25
-		min_autonomy_in_territories = -0.1
-	}
-
-	ai_will_do = {
-		factor = 0.75
-		modifier = {
-			factor = 0
-			is_colonial_nation = yes
-		}
-		modifier = {
-			factor = 0
-			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			is_subject = yes
-		}		
-		modifier = {
-			factor = 0
-			primitives = yes
-		}
-		modifier = {
-			factor = 0
-			current_age = age_of_revolutions #too late
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_province = {
-					has_port = yes
-					sea_zone = {
-						NOT = { area = eastern_mediterrenean_area }
-					}
-				}
-			}
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				} 
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				any_owned_province = {
-					has_port = yes
-					sea_zone = {
-						OR = {
-							NOT = { region = mediterrenean_region }
-							province_id = 1293 #Gibraltar
-							province_id = 1294 #Almeria
-						}
-						NOT = { area = red_sea_area }
-						NOT = { area = baltic_area }
-					}
-				}
-			}
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				} 
-			}
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_ports = 3 }
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { has_institution = renaissance }
-			NOT = { tag = POR }
-		}
-		modifier = {
-			factor = 0.1
-			capital_scope = {
-				NOT = {
-					OR = {
-						region = france_region
-						region = iberia_region
-						region = british_isles_region
-						region = low_countries_region
-					}
-				}
-			}
-			NOT = { technology_group = high_american }
-		}
-		modifier = {
-			factor = 10
-			capital_scope = {
-				region = france_region
-				region = iberia_region
-				region = british_isles_region
-				region = low_countries_region
-			}
-		}
-		modifier = {
-			factor = 0.1
-			tag = ARA
-		}
-		modifier = {
-			factor = 0.1
-			tag = PRO
-		}
-		modifier = {
-			factor = 0
-			NOT = { adm_tech = 6 }
-			NOT = { tag = POR }
-		}
-		modifier = {
-			factor = 0
-			NOT = { adm_tech = 9 }
-			NOT = { tag = POR }
-			NOT = { tag = CAS }
-		}
-		modifier = {
-			factor = 10
-			technology_group = high_american
-		}
-		modifier = {
-			factor = 1.5
-			num_of_ports = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_ports = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_ports = 15
-		}
-		modifier = {
-			factor = 1.5
-			num_of_ports = 20
-		}
-		modifier = {
-			factor = 1000
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = SPA
-				tag = GBR
-				tag = NED
-				tag = ENG
-				tag = FRA
-				tag = KUR
-			}
-		}
-	}
-}
+# 	ai_will_do = {
+# 		factor = 1
+# 		modifier = {
+# 			factor = 0
+# 			is_colonial_nation = yes
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			is_tribal = yes
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			is_subject = yes
+# 		}		
+# 		modifier = {
+# 			factor = 0
+# 			primitives = yes
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			current_age = age_of_revolutions #too late
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			NOT = {
+# 				any_owned_province = {
+# 					has_port = yes
+# 					sea_zone = {
+# 						NOT = { area = eastern_mediterrenean_area }
+# 					}
+# 				}
+# 			}
+# 			NOT = { 
+# 				any_owned_province = { 
+# 					is_in_capital_area = yes
+# 					has_empty_adjacent_province = yes
+# 				} 
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 0.5
+# 			NOT = {
+# 				any_owned_province = {
+# 					has_port = yes
+# 					sea_zone = {
+# 						OR = {
+# 							NOT = { region = mediterrenean_region }
+# 							province_id = 1293 #Gibraltar
+# 							province_id = 1294 #Almeria
+# 						}
+# 						NOT = { area = red_sea_area }
+# 						NOT = { area = baltic_area }
+# 					}
+# 				}
+# 			}
+# 			NOT = { 
+# 				any_owned_province = { 
+# 					is_in_capital_area = yes
+# 					has_empty_adjacent_province = yes
+# 				} 
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			NOT = { num_of_ports = 3 }
+# 			NOT = { 
+# 				any_owned_province = { 
+# 					is_in_capital_area = yes
+# 					has_empty_adjacent_province = yes
+# 				}
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			NOT = { has_institution = renaissance }
+# 			NOT = { tag = POR }
+# 			NOT = { tag = CAS }
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			capital_scope = {
+# 				NOT = {
+# 					region = france_region
+# 					region = iberia_region
+# 					region = british_isles_region
+# 					region = low_countries_region
+# 				}
+# 			}
+# 			NOT = { technology_group = high_american }
+# 		}
+# 		modifier = {
+# 			factor = 0.5
+# 			tag = ARA
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			NOT = { is_year = 1490 }
+# 			capital_scope = {
+# 				NOT = {
+# 					region = iberia_region
+# 				}
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 10
+# 			technology_group = high_american
+# 		}
+# 		modifier = {
+# 			factor = 2.0
+# 			num_of_ports = 5
+# 		}
+# 		modifier = {
+# 			factor = 2.0
+# 			num_of_ports = 10
+# 		}
+# 		modifier = {
+# 			factor = 2.0
+# 			num_of_ports = 15
+# 		}
+# 		modifier = {
+# 			factor = 2.0
+# 			num_of_ports = 20
+# 		}
+# 		modifier = {
+# 			factor = 1000
+# 			OR = {
+# 				tag = POR
+# 				tag = CAS
+# 				tag = SPA
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 2
+# 			OR = {
+# 				tag = GBR
+# 				tag = NED
+# 				tag = ENG
+# 				tag = FRA
+# 				tag = KUR
+# 			}
+# 		}
+# 	}
+# }
 
 
 maritime_ideas = {
@@ -1170,7 +1147,6 @@ maritime_ideas = {
 	bonus = {
 		sea_repair = yes
 		movement_speed_in_fleet_modifier = 1 
-		monthly_portuguese_saudade = 0.075
 	}
 
 	merchant_traditions = {
@@ -1270,7 +1246,7 @@ quality_ideas = {
 	bonus = {
 		discipline = 0.05
 		janissaries_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = -0.05
+		ghulams_loyalty_modifier = 0.1
 	}
 
 	private_to_marshal = {
@@ -1365,7 +1341,6 @@ quantity_ideas = {
 	bonus = {
 		land_forcelimit_modifier  = 0.33
 		num_of_pronoiars = 1
-		monthly_portuguese_saudade = -0.05
 	}
 	mass_army = {
 		global_manpower_modifier = 0.33
@@ -1432,13 +1407,6 @@ quantity_ideas = {
 				has_idea_group = economic_ideas
 			}
 		}
-		modifier = {
-			factor = 3
-			OR = {
-				tag = MOS
-				tag = RUS
-			}
-		}
 	}
 }
 
@@ -1448,8 +1416,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
-		treasure_fleet_income = 0.25
-		monthly_portuguese_saudade = 0.075
+ 		min_autonomy_in_territories = -0.1
 	}
 
 	additional_colonists = {
@@ -1483,26 +1450,16 @@ expansion_ideas = {
 		factor = 0.5
 		modifier = {
 			factor = 10
-			has_idea_group = exploration_ideas
-		}
-		modifier = {
-			factor = 0
-			is_colonial_nation = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				OR = {
-					tag = MOS
-					tag = RUS
-				}
+			OR = {
+				has_idea_group = exploration_ideas
+				is_colonial_nation = yes
 			}
-			NOT = { has_idea_group = exploration_ideas }
 		}
 		modifier = {
 			factor = 5
 			OR = {
 				tag = CAS
+				tag = POR
 				tag = SPA
 			}
 		}
@@ -1518,6 +1475,7 @@ expansion_ideas = {
 		modifier = {
 			factor = 0
 			NOT = { has_idea_group = exploration_ideas }
+			NOT = { is_colonial_nation = yes }
 			NOT = {
 				any_owned_province = {
 					has_empty_adjacent_province = yes
@@ -1527,11 +1485,9 @@ expansion_ideas = {
 		modifier = {
 			factor = 0.1
 			NOT = {
-				OR = {
-					technology_group = western
-					technology_group = eastern
-					technology_group = muslim
-				}
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
 			}
 		}
 	}
@@ -1544,7 +1500,6 @@ administrative_ideas = {
 	bonus = {
 		governing_capacity_modifier = 0.2
 		eunuchs_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = -0.075
 	}
 
 	administrative_council = {
@@ -1618,7 +1573,6 @@ humanist_ideas = {
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
 		brahmins_muslim_loyalty_modifier = 0.1
 		dhimmi_loyalty_modifier = 0.1
-		monthly_portuguese_saudade = -0.05
 	}
 
 	local_traditions = {
@@ -1686,7 +1640,6 @@ influence_ideas = {
 
 	bonus = {
 		unjustified_demands = -0.5
-		monthly_portuguese_saudade = 0.075
 	}
 
 	tribute_system = {
@@ -1746,7 +1699,6 @@ naval_ideas = {
 	bonus = {
 		global_naval_barrage_cost = -1
 		disengagement_chance = 0.15
-		monthly_portuguese_saudade = 0.05
 	}
 
 	boarding_parties = {
@@ -1805,45 +1757,6 @@ naval_ideas = {
 			factor = 10
 			has_government_attribute = is_pirate_republic_reform
 		}
-		modifier = {
-			factor = 1000
-			OR = {
-				tag = GBR
-				tag = ENG
-				tag = TUN
-				tag = HOL
-				tag = NED
-				tag = CAS
-				tag = SPA
-				tag = ARA
-				tag = DAN
-				tag = NOR
-				tag = VEN
-				tag = KOR
-				tag = MLC
-				tag = MNG
-				tag = BNG
-				tag = MAJ
-				tag = GUJ
-				tag = MAM
-				tag = TUR
-				tag = VIJ
-			}
-		}
-		modifier = {
-			factor = 0
-			AND = {
-				tag = NED
-				NOT = { has_idea_group = exploration_ideas }
-			}
-		}
-		modifier = {
-			factor = 0
-			AND = {
-				tag = TUR
-				NOT = { adm_tech = 9 }
-			}
-		}
 	}
 }
 
@@ -1859,7 +1772,7 @@ court_ideas = {
 		meritocracy = 0.25 
 		imperial_mandate = 0.1
 		imperial_authority = 0.05
-		monthly_portuguese_saudade = -0.075
+		monthly_cultural_unity = 0.5
 	}
 	
 	long_echo = {
@@ -1916,7 +1829,6 @@ mercenary_ideas = {
 	bonus = {
 		mercenary_discipline = 0.05
 		possible_condottieri = 1 
-		monthly_portuguese_saudade = -0.05
 	}
 
 	organised_mercenary_payment = {
@@ -1955,7 +1867,6 @@ infrastructure_ideas = {
 
 	bonus = {
 		development_cost = -0.1
-		monthly_portuguese_saudade = -0.075
 	}
 
 	state_efficiency = {

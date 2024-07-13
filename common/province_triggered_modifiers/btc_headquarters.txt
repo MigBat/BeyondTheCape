@@ -1,0 +1,90 @@
+christ_order_headquarters = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		holy_order = christ_order
+	}
+
+	local_sailors_modifier = 0.1
+	local_development_cost_modifier = -0.05
+}
+
+avis_order_headquarters = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		holy_order = avis_order
+	}
+
+	local_defensiveness = 0.15
+	local_development_cost_modifier = -0.05
+}
+
+santiago_order_headquarters = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		holy_order = santiago_order
+	}
+
+	local_manpower_modifier = 0.1
+	local_development_cost_modifier = -0.05
+}
+
+montesa_order_headquarters = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		holy_order = montesa_order
+	}
+
+	local_garrison_size = 0.25
+	local_development_cost_modifier = -0.05
+}
+
+calatrava_order_headquarters = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		holy_order = calatrava_order
+	}
+
+	local_defender_dice_roll_bonus = 1
+	local_development_cost_modifier = -0.05
+}
+
+alcantara_order_headquarters = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		holy_order = alcantara_order
+	}
+
+	local_fort_maintenance_modifier = -0.5
+	local_development_cost_modifier = -0.05
+}
+
+san_juan_order_headquarters = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		holy_order = san_juan_order
+	}
+
+	local_monthly_devastation = -0.25
+	local_development_cost_modifier = -0.05
+}

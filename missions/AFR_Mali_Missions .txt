@@ -228,6 +228,7 @@ mali_tolerance_slot = {
 }
 
 #Colonization missions
+# Beyond the Cape exploration
 mali_colonization_slot = {
 	slot = 1
 	generic = no
@@ -486,7 +487,6 @@ mali_trade_slot = {
 		position = 5
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1292
 				province_id = 1293
 				province_id = 1295
 				province_id = 1298
@@ -500,12 +500,6 @@ mali_trade_slot = {
 		}
 		trigger = {
 			OR = {
-				1292 = {
-					trade_share = {
-						country = ROOT
-						share = 10
-					}
-				}
 				1293 = {
 					trade_share = {
 						country = ROOT
@@ -1002,7 +996,7 @@ mali_empire_slot = {
 	}
 	has_country_shield = yes
 
-	#Conquer DjennÃ©
+	#Conquer Djenné
 	mal_retake_the_mosque = {
 		icon = mission_mosque
 		required_missions = { mal_fighting_musa }

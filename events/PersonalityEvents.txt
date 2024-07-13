@@ -2796,6 +2796,7 @@ country_event = {
 }
 
 # A Down-to-Earth Sailor
+# Beyond the Cape exploration
 country_event = {
 	id = personality_events.43
 	title = "personality_events.43.t"

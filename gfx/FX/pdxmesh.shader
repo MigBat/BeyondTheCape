@@ -484,7 +484,7 @@ PixelShader =
 	[[
 		float4 GetAtlasColor( float2 TexCoord )
 		{
-			// Cantons for Colonial Flags Mod
+			// BEYOND THE CAPE
 			
 			float zoomFactor = 1;
 			

@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 emp_france_missions_1 = {
 	slot = 1
 	generic = no
@@ -268,6 +270,7 @@ emp_france_missions_1 = {
 		}
 	}
 }
+# Beyond the Cape exploration
 emp_france_missions_1_b = {
 	slot = 1
 	generic = no
@@ -339,9 +342,12 @@ emp_france_missions_1_b = {
 			}
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				region = carribeans_region
+			custom_trigger_tooltip = {
+				tooltip = fra_carib_colony.tooltip
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					region = carribeans_region
+				}
 			}
 			OR = {
 				custom_trigger_tooltip = {
@@ -870,13 +876,6 @@ emp_france_missions_2 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				cantabria_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
 				leon_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -912,7 +911,6 @@ emp_france_missions_2 = {
 				area = castille_area
 				area = toledo_area
 				area = asturias_area
-				area = cantabria_area
 				area = leon_area
 				area = extremadura_area
 				area = basque_country
@@ -929,10 +927,6 @@ emp_france_missions_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			asturias_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cantabria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

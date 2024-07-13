@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "raid_coast_privilege"
+		texturefile = "gfx/interface/privileges/raid_coast_privilege.dds"
+	}
+
+	spriteType = {
+		name = "privilege_gold"
+		texturefile = "gfx/interface/privileges/privilege_gold.dds"
+	}
+
+	spriteType = {
+		name = "prosperity_privilege"
+		texturefile = "gfx/interface/privileges/prosperity_privilege.dds"
+	}
+
+	spriteType = {
+		name = "privilege_fidalgos"
+		texturefile = "gfx/interface/privileges/privilege_fidalgos.dds"
+	}
+}

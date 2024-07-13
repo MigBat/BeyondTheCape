@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 french_missions_1 = {
 	slot = 1
 	generic = no
@@ -15,25 +17,12 @@ french_missions_1 = {
 		required_missions = { 	} 
 		position = 1 
 		provinces_to_highlight = { 
-			OR = { 
-				province_id = 167
-				province_id = 168
-				province_id = 1879
-				province_id = 4385
-			}
+			area = normandy_area 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
-			167 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			168 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			1879 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			4385 = { 
+			normandy_area = { 
+				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}
@@ -72,12 +61,6 @@ french_missions_1 = {
 					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT 
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_france_brittany_flag
 			}
 		}
 	}
@@ -149,9 +132,6 @@ french_missions_1 = {
 					BUR = { ai = yes }
 				} 
 				custom_tooltip = fra_if_bur_subject_and_emperor_dlc_tt
-				tooltip = { 
-					country_event = { id = incidents_bur_inheritance.501 } 
-				}
 				custom_tooltip = fra_alternatively_10_dev_spread_and_tt 
 				tooltip = { 
 					add_country_modifier = { 
@@ -170,15 +150,8 @@ french_missions_1 = {
 					}
 				}
 			}
-			hidden_effect = { 
-				if = {
-					limit = { 
-						BUR = { is_subject_of = ROOT } 
-						has_dlc = "Emperor"
-					}
-					country_event = { id = incidents_bur_inheritance.501 } 
-				}
-				else_if = { 
+			hidden_effect = {
+				if = { 
 					limit = { 
 						OR = {  
 							NOT = { has_dlc = "Emperor" } 
@@ -694,12 +667,6 @@ french_missions_1_Continuation_a = {
 				}
 				add_permanent_claim = ROOT 
 			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_france_sicily_flag
-			}
 		}
 	}	
 
@@ -815,12 +782,6 @@ french_missions_1_Continuation_a = {
 			add_country_modifier = {
 				name = "fra_colonial_enthusiasm"
 				duration = 7300
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_france_guinea_flag
 			}
 		}
 		ai_weight = {
@@ -940,7 +901,7 @@ french_missions_1_Continuation_a = {
 				limit = { is_random_new_world = no }
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					region = guinea_region 
-					value = 1
+					value = 5 
 				}
 			}
 			else = { mercantilism = 25 }
@@ -1956,20 +1917,97 @@ french_missions_2_Continuation_b = {
 		required_missions = { dom_fra_france_discovers_north_america } 
 		position = 10 
 		provinces_to_highlight = { 
-			region = carribeans_region
+			region = carribeans_region 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				region = carribeans_region
-				is_city = yes
+			if = {
+				limit = { 
+					is_random_new_world = no 
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					region = carribeans_region
+					is_city = yes
+				}
+			}
+			else = {
+				any_subject_country = {
+					custom_trigger_tooltip = {
+						tooltip = any_type_colony_tt
+						OR = {
+							is_subject_of_type = colony 
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+					}
+				}
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = fra_colonial_rush_modifier 
-				duration = 7300 
+			if = {
+				limit = { 
+					any_subject_country = {
+						OR = {
+							is_subject_of_type = colony 
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+						capital_scope = {
+							region = carribeans_region
+						}
+					}
+				}
+				random_province = { 
+					limit = { 
+						owner = { 
+							is_subject_of = ROOT 
+							OR = {
+								is_subject_of_type = colony 
+								is_subject_of_type = crown_colony
+								is_subject_of_type = private_enterprise
+								is_subject_of_type = self_governing_colony
+							}
+						}
+						is_capital = yes 
+					}
+					add_base_tax = 2 
+					add_base_production = 2 
+					add_base_manpower = 2 
+				}
+				random_subject_country = {
+					limit = { 
+						OR = {
+							is_subject_of_type = colony 
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+						capital_scope = {
+							region = carribeans_region
+						}
+					}
+					add_country_modifier = {
+						name = fra_colonial_rush_modifier 
+						duration = 7300 
+					}
+				}
+			}
+			else = { 
+				custom_tooltip = fra_subject_haiti_gains_following_tt
+				tooltip = {
+					capital_scope = { 
+						add_base_tax = 2 
+						add_base_production = 2 
+						add_base_manpower = 2 
+					}
+					add_country_modifier = {
+						name = fra_colonial_rush_modifier 
+						duration = 7300 
+					}
+				}
 			}
 		}
 	}
@@ -3252,7 +3290,7 @@ french_missions_3_normal_continued = {
 		}
 		effect = {
 			1272 = { change_province_name = "La Manche" }
-			1269 = { change_province_name = "Basse-Côte" }
+			1269 = { change_province_name = "Basse-C�te" }
 			add_country_modifier = {
 				name = fra_channel_dominance_modifier
 				duration = -1 
@@ -3940,8 +3978,8 @@ french_missions_4_italian = {
 						duration = -1 
 						hidden = yes 
 					}
-					set_country_flag = general_flag_for_FU_Rome_flag
-					add_ruler_personality = fu_papal_puppetmaster_personality
+					set_country_flag = general_flag_Rome_flag
+					add_ruler_personality = papal_puppetmaster_personality
 				}
 			}
 		}
@@ -4207,12 +4245,6 @@ french_missions_4_normal_continuation = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_france_italy_flag
-			}
 		}
 	}
 	
@@ -4418,7 +4450,7 @@ french_missions_4_normal_continuation = {
 					duration = -1 
 				}
 				PAP = { 
-					override_country_name = FU_KINGDOM_OF_GOD 
+					override_country_name = EU_KINGDOM_OF_GOD 
 					set_country_flag = is_kingdom_of_god_flag
 					add_country_modifier = { 
 						name = fra_suzerainty_italy_modifier
@@ -4460,7 +4492,7 @@ french_missions_4_normal_continuation = {
 						duration = -1 
 					}
 					PAP = { 
-						override_country_name = FU_KINGDOM_OF_GOD 
+						override_country_name = EU_KINGDOM_OF_GOD 
 						set_country_flag = is_kingdom_of_god_flag
 						set_country_flag = has_overriden_name_flag
 						add_country_modifier = { 
@@ -5287,7 +5319,7 @@ french_missions_5_normal = {
 						}
 						add_permanent_claim = ROOT 
 					}
-					set_country_flag = fu_gain_25_random_pp_and_10_pi_per_bull_flag
+					set_country_flag = gain_25_random_pp_and_10_pi_per_bull_flag
 				}
 			}
 			swap_non_generic_missions = yes 

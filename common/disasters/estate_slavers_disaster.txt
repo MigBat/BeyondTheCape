@@ -114,8 +114,8 @@ estate_slavers_disaster = {
 		global_ship_trade_power = -0.5
 	}
 
-	on_start = estate_disasters.30
-	on_end = estate_disasters.31
+	on_start = btc_estate_disasters.1
+	on_end = btc_estate_disasters.2
 	
 	on_monthly = {
 	}

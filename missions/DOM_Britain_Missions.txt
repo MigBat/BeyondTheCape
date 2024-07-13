@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 ##Made by Ogele 'Comrade Flan'
 
 #English Section
@@ -52,12 +54,6 @@ eng_row_slot_1 = {
 					type = cb_vassalize_mission
 					months = 300
 				}
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_england_britain_flag
 			}
 		}
 	}
@@ -833,7 +829,7 @@ gbr_row_slot_2 = {
 			NOT = { has_discovered = ROOT }
 		}
 		trigger = {
-			has_idea_group = exploration_ideas
+			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
@@ -863,26 +859,6 @@ gbr_row_slot_2 = {
 			}
 			unlock_issue = {
 				issue = the_sugar_act
-			}
-			guinea_coast_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			west_africa_coast_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_england_guinea_flag
 			}
 		}
 		ai_weight = {
@@ -1499,7 +1475,6 @@ gbr_row_3 = {
 					region = france_region
 					owned_by = ROOT
 					NOT = { province_id = 87 }
-					NOT = { province_id = 4953 }
 				}
 				owned_by = FRA
 			}
@@ -1516,7 +1491,6 @@ gbr_row_3 = {
 					NOT = {
 						any_owned_province = {
 							NOT = { province_id = 87 }
-							NOT = { province_id = 4953 }
 							region = france_region
 						}
 					}
@@ -1533,10 +1507,6 @@ gbr_row_3 = {
 							has_trade_building_trigger = yes
 						}
 					}
-				}
-				AND = {
-					ai = yes
-					is_year = 1500
 				}
 			}
 		}	
@@ -1623,21 +1593,24 @@ gbr_row_3 = {
 			create_explorer = {
 				tradition = 50
 			}
-			# add_country_modifier = {
-			# 	name = gbr_exploration_spirit
-			# 	duration = 9125
-			# }
+			add_country_modifier = {
+				name = gbr_exploration_spirit
+				duration = 9125
+			}
 			unlock_issue = {
 				issue = act_of_exploration
 			}
-			add_permanent_claim_province = {
-				province = 226
-			}
-			if = {
+		
+			126 = { add_permanent_claim = ROOT }
+			163 = { add_permanent_claim = ROOT }
+			321 = { add_permanent_claim = ROOT }
+			4559 = { add_permanent_claim = ROOT }
+			corsica_sardinia_area = { 
 				limit = {
-					ai = yes
+					NOT = { is_core = EIC }
+					NOT = { is_permanent_claim = EIC }
 				}
-				set_country_flag = ai_england_gibraltar_flag
+				add_permanent_claim = ROOT 
 			}
 		}
 		ai_weight = {
@@ -1901,12 +1874,6 @@ gbr_row_3 = {
 					key = GBR_INDIAN_COASTLINE_CONTROL
 				}
 			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_england_deccan_flag
-			}
 		}
 		ai_weight = {
 			factor = 250
@@ -2084,8 +2051,6 @@ ave_row_3 = {
 				type = dip
 				amount = 1
 			}
-			remove_historical_rival = FRA
-			FRA = { remove_historical_rival = ROOT }
 		}
 		ai_weight = {
 			factor = 250
@@ -2578,11 +2543,25 @@ gbr_row_4 = {
 		required_missions = { gbr_establish_royal_navy }
 		position = 5
 		provinces_to_highlight = {
-			province_id = 226
+			OR = {
+				province_id = 126
+				province_id = 163
+				province_id = 321
+				province_id = 4559
+				area = corsica_sardinia_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_or_non_sovereign_subject_of = 226
+			not_in_mission_preview_mode = { key = GBR }
+			owns_or_non_sovereign_subject_of = 126
+			owns_or_non_sovereign_subject_of = 163
+			owns_or_non_sovereign_subject_of = 321
+			owns_or_non_sovereign_subject_of = 4559
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_dip_power = 100
@@ -2595,22 +2574,22 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				corsica_sardinia_area = {
+				aegean_archipelago_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				greek_islands_area = {
+				sicily_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
-					add_permanent_claim = ROOT					
+					add_permanent_claim = ROOT
 				}
 				add_permanent_claim_province = {
-					province = 126
+					province = 163
 				}
 				add_permanent_claim_province = {
 					province = 142
@@ -2619,14 +2598,14 @@ gbr_row_4 = {
 					province = 4698
 				}
 			}
-			226 = {
+			126 = {
 				center_of_trade = 1
 			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_england_mediterranean_flag
+			163 = {
+				center_of_trade = 1
+			}
+			321 = {
+				center_of_trade = 1
 			}
 		}
 		
@@ -2657,12 +2636,13 @@ gbr_row_4 = {
 			has_discovered = ROOT
 		}		
 		trigger = { 
+			not_in_mission_preview_mode = { key = GBR }
 			if = {
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
 					tooltip = english_colony_in_the_carribean.tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 1
+						value = 5
 						region = carribeans_region
 						is_city = yes
 					}
@@ -2692,7 +2672,7 @@ gbr_row_4 = {
 
 	gbr_discover_india = {
 		icon = mission_coromandel_expansion
-		required_missions = { gbr_seize_guinea }
+		required_missions = { gbr_seize_the_cape }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -2797,7 +2777,7 @@ gbr_row_4 = {
 
 	gbr_colonize_the_spice_isles = {
 		icon = mission_rb_colonise_spice_islands
-		required_missions = { gbr_sail_around_africa }
+		required_missions = { gbr_chart_the_southern_sea }
 		position = 8
 		provinces_to_highlight = {
 			OR = {
@@ -2848,12 +2828,6 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_england_brunei_flag
 			}
 		}
 		ai_weight = {
@@ -2947,12 +2921,6 @@ gbr_row_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_england_hindustan_flag
 			}
 		}
 		ai_weight = {
@@ -3673,45 +3641,9 @@ gbr_row_5 = {
 		}
 	}
 
-	gbr_seize_guinea = {
-		icon = mission_colonial
-		required_missions = { gbr_explore_new_world }
-		position = 6
-		provinces_to_highlight = {
-			OR = {
-				area = guinea_coast_area
-				area = west_africa_coast_area
-			}
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = GBR }
-			OR = {
-				any_province = {
-					area = guinea_coast_area
-					owned_by = ROOT
-					is_city = yes
-				}
-				any_province = {
-					area = west_africa_coast_area
-					owned_by = ROOT
-					is_city = yes
-				}
-			}
-		}
-		effect = {
-			add_navy_tradition = 10
-			add_prestige = 10
-		}
-		ai_weight = {
-			factor = 250
-		}
-	}
-
 	gbr_sail_around_africa = {
 		icon = mission_west_african_ports
-		required_missions = { gbr_seize_guinea }
+		required_missions = { gbr_establish_royal_navy }
 		position = 5
 		provinces_to_highlight = {
 			NOT = { has_discovered = ROOT }
@@ -3723,7 +3655,6 @@ gbr_row_5 = {
 		}
 		trigger = { 
 			not_in_mission_preview_mode = { key = GBR }
-			has_idea_group = exploration_ideas
 			custom_trigger_tooltip = {
 				tooltip = gbr_sail_around_africa_ct
 				east_africa_region = {
@@ -3737,18 +3668,90 @@ gbr_row_5 = {
 			}
 		}	
 		effect = {
-			cape_of_good_hope_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			create_colony_mission_reward = {
+				province = 1177
 			}
-			if = {
-				limit = {
-					ai = yes
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	gbr_seize_the_cape = {
+		icon = mission_colonial
+		required_missions = { gbr_sail_around_africa }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				province_id = 833
+				province_id = 1177
+				province_id = 1179
+			}
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
+			custom_trigger_tooltip = {
+				tooltip = ned_south_africa_colony.tooltip
+				OR = {
+					833 = {
+						owned_by = ROOT
+						is_city = yes
+					}
+					1177 = {
+						owned_by = ROOT
+						is_city = yes
+					}
+					1179 = {
+						owned_by = ROOT
+						is_city = yes
+					}
 				}
-				set_country_flag = ai_england_cape_flag
+			}
+		}
+		effect = {
+			random_list = {
+				1 = {
+					trigger = {
+						owns = 833
+						NOT = { owns = 1177 }
+					}
+					833 = {
+						add_building = stock_exchange
+					}
+				}
+				1 = {
+					trigger = {
+						owns = 1179
+						NOT = { owns = 1177 }
+					}
+					1179 = {
+						add_building = stock_exchange
+					}
+				}
+				1 = {
+					trigger = {
+						owns = 1177
+					}
+					1177 = {
+						add_building = stock_exchange
+					}
+				}
+				1 = {
+					trigger = {
+						NOT = { owns = 833 }
+						NOT = { owns = 1177 }
+						NOT = { owns = 1179 }
+					}
+					tooltip = {
+						random_list = {
+							1 = { 833  = { add_building = stock_exchange } }
+							1 = { 1177 = { add_building = stock_exchange } }
+							1 = { 1179 = { add_building = stock_exchange } }
+						}
+					}
+				}
 			}
 		}
 		ai_weight = {
@@ -3758,7 +3761,7 @@ gbr_row_5 = {
 
 	gbr_chart_the_southern_sea = {
 		icon = mission_exploration
-		required_missions = { gbr_sail_around_africa }
+		required_missions = { gbr_seize_the_cape }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -3881,12 +3884,6 @@ gbr_row_5 = {
 			add_country_modifier = {
 				name = "east_india_trade_rush"
 				duration = 9125
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				set_country_flag = ai_england_bengal_flag
 			}
 		}
 		ai_weight = {
@@ -4286,12 +4283,12 @@ gbr_ave_row_1 = {
 				limit = { is_random_new_world = no }
 				OR = {
 					province_id = 1500
-					province_id = 236
+					province_id = 1269
 				}
 				has_discovered = ROOT
 			}
 			else = {
-				province_id = 236
+				province_id = 1269
 			}
 		}		
 		trigger = {
@@ -4303,7 +4300,7 @@ gbr_ave_row_1 = {
 						share = 40
 					}
 				}
-				236 = {
+				1269 = {
 					highest_value_trade_node = yes
 					trade_share = {
 						country = ROOT
@@ -4312,7 +4309,7 @@ gbr_ave_row_1 = {
 				}
 			}
 			else = {
-				236 = {
+				1269 = {
 					highest_value_trade_node = yes
 					trade_share = {
 						country = ROOT
@@ -4341,16 +4338,16 @@ gbr_ave_row_1 = {
 		}
 		position = 12
 		provinces_to_highlight = {
-			province_id = 236
+			province_id = 1269
 		}		
 		trigger = { 
-			236 = {
+			1269 = {
 				is_strongest_trade_power = ROOT
 			}
-			236 = {
+			1269 = {
 				highest_value_trade_node = yes
 			}
-			236 = {
+			1269 = {
 				trade_node_value = 500
 			}
 			reform_level = 8

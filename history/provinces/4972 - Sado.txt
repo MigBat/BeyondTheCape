@@ -1,7 +1,7 @@
 #4972 - Sado
 
-owner = HNM
-controller = HNM
+owner = UES
+controller = UES
 culture = japanese
 religion = shinto
 capital = "Sado"
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = HNM
+add_core = UES
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA

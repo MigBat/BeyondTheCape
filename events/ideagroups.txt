@@ -3049,7 +3049,7 @@ country_event = {
 	}
 }
 
-# Our Army's �lan strikes fear into the enemy
+# Our Army's ï¿½lan strikes fear into the enemy
 country_event = {
 	id = ideagroups.707
 	title = "EVTNAME6312"
@@ -3077,7 +3077,7 @@ country_event = {
 	id = ideagroups.708
 	title = "EVTNAME6313"
 	desc = "EVTDESC6313"
-	picture = btc_fort_eventPicture
+	picture = FORT_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -3262,7 +3262,7 @@ country_event = {
 # Defensive Ideas
 #######################################
 
-# Aristocrats don�t want to serve
+# Aristocrats donï¿½t want to serve
 country_event = {
 	id = ideagroups.800   
 	title = "EVTNAME833"
@@ -3321,7 +3321,7 @@ country_event = {
 	id = ideagroups.802
 	title = "EVTNAME835"
 	desc = "EVTDESC835"
-	picture = btc_fort_eventPicture
+	picture = FORT_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -3562,7 +3562,7 @@ country_event = {
 	id = ideagroups.809
 	title = "EVTNAME6319"
 	desc = "EVTDESC6319"
-	picture = btc_fort_eventPicture
+	picture = FORT_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -5127,7 +5127,8 @@ country_event = {
 # Exploration Ideas
 #######################################
 
-# Colonist Rush
+# Colonist Rush	
+# Beyond the Cape exploration
 country_event = {
 	id = ideagroups.1200
 	title = "EVTNAME6136"
@@ -7202,7 +7203,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = influence_ideas
+		has_idea_group = spy_ideas
 		NOT = { has_country_modifier = "just_causes" }
 	}
 
@@ -8255,7 +8256,7 @@ country_event = {
 	id = ideagroups.1928
 	title = ideagroups.1928.t
 	desc = ideagroups.1928.d
-	picture = btc_fort_eventPicture
+	picture = FORT_eventPicture
 	is_triggered_only = yes
 	goto = seat_of_power_prov
 	trigger = {
@@ -8592,7 +8593,7 @@ country_event = {
 	id = ideagroups.1918
 	title = ideagroups.1918.t
 	desc = ideagroups.1918.d
-	picture = btc_fort_eventPicture
+	picture = FORT_eventPicture
 	is_triggered_only = yes
 	
 	trigger = {

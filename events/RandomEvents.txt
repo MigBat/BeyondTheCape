@@ -4024,7 +4024,7 @@ country_event = {
 	id = 5085
 	title = "EVTNAME5085"
 	desc = "EVTDESC5085"
-	picture = btc_fort_eventPicture
+	picture = FORT_eventPicture
 	
 	is_triggered_only = yes
 
@@ -5461,6 +5461,7 @@ country_event = {
 			}
 			add_republican_tradition = 5
 			add_corruption = -2
+			add_years_of_income = -0.3
 		}
 		if = {
 			limit = {
@@ -7264,7 +7265,7 @@ country_event = {
 	id = 737
 	title = "EVTNAME737"
 	desc = "EVTDESC737"
-	picture = btc_fort_eventPicture
+	picture = FORT_eventPicture
 	goto = local_fortification_expert_province
 
 	is_triggered_only = yes
@@ -7874,6 +7875,7 @@ country_event = {
 		NOT = {
 			has_country_modifier = warriors_do_not_read_books
 		}
+		NOT = { has_country_flag = warriors_can_read_books }
 	}
 	
 	mean_time_to_happen = {
@@ -8121,6 +8123,7 @@ country_event = {
 }
 
 # Colonists boost or Conquistador
+# Beyond the Cape exploration
 country_event = {
 	id = 862
 	title = "EVTNAME862"
@@ -9397,6 +9400,7 @@ country_event = {
 }
 
 # Merchant Expedition
+# Beyond the Cape exploration
 country_event = {
 	id = 881
 	title = "EVTNAME881"
@@ -9580,14 +9584,12 @@ country_event = {
 			}
 			coromandel_region = {
 				NOT = {
-					OR = {
-						is_core = ROOT
-						owned_by = ROOT
-						owner = {
-							has_country_modifier = dutch_india_trade_co 
-							has_country_flag = trade_company 
-						} 
-					}
+					is_core = ROOT
+					owned_by = ROOT
+					owner = {
+						has_country_modifier = dutch_india_trade_co 
+						has_country_flag = trade_company 
+					} 
 				}
 				any_neighbor_province = {
 					owned_by = ROOT
@@ -9596,14 +9598,12 @@ country_event = {
 			}
 			west_india_region = {
 				NOT = {
-					OR = {
-						is_core = ROOT
-						owned_by = ROOT
-						owner = {
-							has_country_modifier = dutch_india_trade_co 
-							has_country_flag = trade_company 
-						} 
-					}
+					is_core = ROOT
+					owned_by = ROOT
+					owner = {
+						has_country_modifier = dutch_india_trade_co 
+						has_country_flag = trade_company 
+					} 
 				}
 				any_neighbor_province = {
 					owned_by = ROOT
@@ -9630,15 +9630,13 @@ country_event = {
 					region = west_india_region
 					region = coromandel_region
 				}
-				NOT = {
-					OR = {
-						is_core = ROOT
-						owned_by = ROOT
-						owner = {
-							has_country_modifier = dutch_india_trade_co 
-							has_country_flag = trade_company 
-						} 
-					}
+				NOT ={
+					is_core = ROOT
+					owned_by = ROOT
+					owner = {
+						has_country_modifier = dutch_india_trade_co 
+						has_country_flag = trade_company 
+					} 
 				}
 				any_neighbor_province = {
 					owned_by = ROOT
@@ -10212,8 +10210,6 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
-					culture = valencian
-					culture = balearic
 				}
 			}
 		}
@@ -10234,8 +10230,6 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
-					culture = valencian
-					culture = balearic
 				}
 			}
 		}
@@ -10258,6 +10252,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10279,6 +10274,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10334,8 +10330,6 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
-						culture = valencian
-						culture = balearic
 					}
 				}
 			}
@@ -10353,8 +10347,6 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
-						culture = valencian
-						culture = balearic
 					}
 				}
 			}
@@ -10375,6 +10367,7 @@ country_event = {
 						culture = normand
 						culture = gascon
 						culture = burgundian
+						culture = anglois
 					}
 				}
 			}
@@ -10394,6 +10387,7 @@ country_event = {
 						culture = normand
 						culture = gascon
 						culture = burgundian
+						culture = anglois
 					}
 				}
 			}
@@ -10462,8 +10456,6 @@ country_event = {
 							culture = galician
 							culture = andalucian
 							culture = basque
-							culture = valencian
-							culture = balearic
 						}
 					}
 				}
@@ -10478,8 +10470,6 @@ country_event = {
 							culture = galician
 							culture = andalucian
 							culture = basque
-							culture = valencian
-							culture = balearic
 						}
 					}
 					save_event_target_as = mexican_province
@@ -10499,8 +10489,6 @@ country_event = {
 							culture = galician
 							culture = andalucian
 							culture = basque
-							culture = valencian
-							culture = balearic
 						}
 					}
 				}
@@ -10515,8 +10503,6 @@ country_event = {
 							culture = galician
 							culture = andalucian
 							culture = basque
-							culture = valencian
-							culture = balearic
 						}
 					}
 					save_event_target_as = platinean_province
@@ -10539,6 +10525,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 				}
@@ -10555,6 +10542,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 					save_event_target_as = quebecois_province
@@ -10576,6 +10564,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 				}
@@ -10591,6 +10580,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 					save_event_target_as = louisianans_province
@@ -10689,8 +10679,6 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
-					culture = valencian
-					culture = balearic
 				}
 			}
 			culture_group = iberian
@@ -10718,8 +10706,6 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
-						culture = valencian
-						culture = balearic
 					}
 				}
 				change_culture = mexican
@@ -10739,8 +10725,6 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
-					culture = valencian
-					culture = balearic
 				}
 			}
 			culture_group = iberian
@@ -10768,8 +10752,6 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
-					culture = valencian
-					culture = balearic
 				}
 			}
 			culture_group = iberian
@@ -10797,8 +10779,6 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
-						culture = valencian
-						culture = balearic
 					}
 				}
 				change_culture = platinean
@@ -10818,8 +10798,6 @@ country_event = {
 					culture = galician
 					culture = andalucian
 					culture = basque
-					culture = valencian
-					culture = balearic
 				}
 			}
 			culture_group = iberian
@@ -10850,6 +10828,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10872,6 +10851,7 @@ country_event = {
 						culture = normand
 						culture = gascon
 						culture = burgundian
+						culture = anglois
 					}
 				}
 				change_culture = quebecois
@@ -10894,6 +10874,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 			ai = no
@@ -10920,6 +10901,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10944,8 +10926,6 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
-						culture = valencian
-						culture = balearic
 					}
 				}
 				change_culture = louisianans
@@ -10967,6 +10947,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 			ai = no
@@ -11959,10 +11940,8 @@ country_event = {
 			is_free_or_tributary_trigger = yes
 			num_of_cities = 4
 			NOT = {
-				OR = {
-					alliance_with = ROOT
-					war_with = ROOT
-				}
+				alliance_with = ROOT
+				war_with = ROOT
 			}
 		}
 	}
@@ -12914,8 +12893,43 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6428"
-		add_years_of_income = 1.0
-		add_inflation = 1
+		if = {
+			limit = {
+				has_dlc = "Leviathan"
+				any_owned_province = {
+					has_great_project = {
+						type = golden_kremnica
+						tier = 2
+					}
+				}
+				NOT = {
+					any_owned_province = {
+						has_great_project = {
+							type = golden_kremnica
+							tier = 3
+						}
+					}
+				}
+			}
+			add_years_of_income = 1.5
+			add_inflation = 1
+		}
+		else_if = {
+			limit = {
+				any_owned_province = {
+					has_great_project = {
+						type = golden_kremnica
+						tier = 3
+					}
+				}
+			}
+			add_years_of_income = 2
+			add_inflation = 1
+		}
+		else = {
+			add_years_of_income = 1.0
+			add_inflation = 1
+		}
 	}
 }
 

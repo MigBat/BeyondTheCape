@@ -1,0 +1,116 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "HOUSE_OF_TRADE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/HOUSE_OF_TRADE_eventPicture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "great_building_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/great_building_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_fort_eventPicture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_fort_eventPicture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "tutorial_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/tutorial_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "saudade_decision_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/saudade_decision_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "saudade_army_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/saudade_army_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "saudade_navy_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/saudade_navy_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_desert_caravan_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_desert_caravan_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_eye_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_eye_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_borges_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_borges_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_goa_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_goa_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_macau_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_macau_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_shipwreck_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_shipwreck_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_lusiadas_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_lusiadas_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_camoes_sebastiao_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_camoes_sebastiao_picture.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "portugal_monarchy_flag"
+		texturefile = "gfx/event_pictures/btc_event_pictures/portugal_monarchy_flag.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "pepe"
+		texturefile = "gfx/event_pictures/btc_event_pictures/pepe.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "btc_flying_dutchman_picture"
+		texturefile = "gfx/event_pictures/btc_event_pictures/btc_flying_dutchman_picture.dds"
+		alwaystransparent = yes
+	}
+}

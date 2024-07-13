@@ -31,7 +31,7 @@ country_event = {
 	}
 }
 
-# Morocco defend against Iberians #
+# Morocco and Granada defend against Iberians #
 
 country_event = {
 	id = btc_events.2
@@ -40,6 +40,7 @@ country_event = {
 	picture = RELIGIOUS_WARS_eventPicture
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = btc_events.2a
@@ -50,111 +51,31 @@ country_event = {
 				duration = 18250
 			}
 		}
-		set_country_flag = resisting_reconquista
 	}
 }
 
-# Granada defend against Castile #
+# Galician Nobles rule the region #
 
 # country_event = {
-# 	id = btc_events.3
-# 	title = btc_events.3_t
-# 	desc = btc_events.3_d
-# 	picture = RELIGIOUS_WARS_eventPicture
+# 	id = btc_events.4
+# 	title = btc_events.4_t
+# 	desc = btc_events.4_d
+# 	picture = CORRUPTION_eventPicture
 
 # 	fire_only_once = yes
 
 # 	trigger = {
-# 		tag = GRA
+# 		tag = CAS
 # 	}
 
 # 	option = {
-# 		name = btc_events.3a
+# 		name = btc_events.4a
 
-# 		upper_andalucia_area = {
+# 		galicia_area = {
 # 			add_province_modifier = {
-# 				name = resist_reconquista
-# 				duration = 10950
-# 			}
-# 		}
-# 	}
-# }
-
-# Galician Nobles rule the region #
-
-country_event = {
-	id = btc_events.4
-	title = btc_events.4_t
-	desc = btc_events.4_d
-	picture = CORRUPTION_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = CAS
-	}
-
-	option = {
-		name = btc_events.4a
-
-		galicia_area = {
-			add_province_modifier = {
-				name = strong_nobility
-				duration = -1
-			}
-		}
-	}
-}
-
-# Monthly OPM Diplo Calculation #
-
-# country_event = {
-# 	id = btc_events.5
-# 	title = btc_events.5_t
-# 	desc = btc_events.5_d
-
-# 	is_triggered_only = yes
-# 	hidden = yes
-
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
-
-# 	option = {
-# 		name = btc_events.5a
-
-# 		trigger = {
-# 			AND = {
-# 				num_of_cities = 1
-# 				NOT = { num_of_cities = 2 }
-# 			}
-# 		}
-
-# 		if = {
-# 			limit = {
-# 				NOT = {
-# 					has_country_modifier = opm_diplomacy
-# 				}
-# 			}
-# 			add_country_modifier = {
-# 				name = opm_diplomacy
+# 				name = strong_nobility
 # 				duration = -1
 # 			}
-# 		}
-# 	}
-
-# 	option = {
-# 		name = btc_events.5b
-
-# 		trigger = {
-# 			num_of_cities = 2
-# 		}
-
-# 		if = {
-# 			limit = {
-# 				has_country_modifier = opm_diplomacy
-# 			}
-# 			remove_country_modifier = opm_diplomacy
 # 		}
 # 	}
 # }

@@ -5,6 +5,7 @@ ahead_of_time = {
 	trade_efficiency = 0.2
 	monthly_russian_modernization = 0.05
 	yearly_corruption = -0.05
+	ahead_of_time_benefit_dip = 1
 	burghers_influence_modifier = -0.1
 }
 
@@ -133,7 +134,7 @@ technology  = { #Shipyards
 	num_accepted_cultures = 1
 	shipyard = yes
 
-	range = 50
+	# range = 50
 	trade_range				=	10
 	naval_morale			=	0.2
 
@@ -149,7 +150,7 @@ technology = { #Naval Ambitions
 	}
 	
 	naval_morale			= 0.3
-	range					= 50
+	range					= 60
 	impressment_offices 	= yes
 	naval_engagement_width = 10
 }

@@ -61,9 +61,9 @@
  miss_discover_cape_of_storms:0 "§Y[Root.GetName]§! has discovered the southern tip of Africa."
  por_angola_mission_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province producing §YSlaves§! in the §YCongo§! region."
  henry_the_navigator_tt:0 "This modifer will last until the death of the navigator advisor."
- port_english_alliance_tt:0 "The §YEnglish Longbowmen§! mercenary company becomes available to hire.\n§YIf the alliance is broken, we will lose this modifier and mercenary company.§!"
+ port_english_alliance_tt:0 "Unlocks the §REnglish Longbowmen§! mercenary company\n\n§MIf the alliance is broken, we will lose this modifier and mercenary company.§!"
  allow_exploration_ideas_tt:0 "Unlocks §YExploration§! ideas"
- henrique_advisor_tt:0 "Has hired §YHenrique o Navegador§! as an advisor. §MThis advisor does not increase corruption§!."
+ henrique_advisor_tt:0 "Has hired §YHenrique o Navegador§! as an advisor"
  pedro_advisor_tt:0 "Has hired §YPedro de Coimbra§! as an advisor. §MThis advisor does not increase corruption§!."
  fernao_advisor_tt:0 "Has hired §YFernão Lopes§! as an advisor. §MThis advisor does not increase corruption§!."
 

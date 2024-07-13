@@ -1,0 +1,1880 @@
+custom_window = {
+	name = spice_trade_conflict_click
+	potential = { 
+
+	}
+}
+
+custom_button = {
+	name = spice_trade_conflict_open_button
+	potential = { }
+	trigger = { }
+	effect = {
+		if = {
+			limit = {
+				has_country_flag = open_spice_trade_conflict_window_flag
+			}
+			clr_country_flag = open_spice_trade_conflict_window_flag
+		}
+		else = {
+			set_country_flag = open_spice_trade_conflict_window_flag
+		}
+	}
+	tooltip = spice_trade_conflict_button_tt
+}
+
+###
+
+custom_window = {
+	name = spice_trade_conflict_window
+	potential = {
+		has_country_flag = open_spice_trade_conflict_window_flag
+	}
+}
+
+custom_text_box = {
+	name = spice_trade_conflict_label
+	potential = { always = yes }
+}
+
+custom_icon = {
+	name = spice_trade_info
+	potential = { always = yes }
+	tooltip = spice_trade_conflict_info_tt
+}
+
+custom_text_box = {
+	name = participants_info_label
+	potential = { always = yes }
+}
+
+custom_icon = {
+	name = participants_info
+	potential = { always = yes }
+	tooltip = participants_info_tt
+}
+
+custom_text_box = {
+	name = victory_info_label
+	potential = { always = yes }
+}
+
+custom_icon = {
+	name = victory_info
+	potential = { always = yes }
+	tooltip = victory_info_tt
+}
+
+custom_text_box = {
+	name = trade_nodes_info_label
+	potential = { always = yes }
+}
+
+custom_icon = {
+	name = trade_nodes_info
+	potential = { always = yes }
+	tooltip = trade_nodes_info_tt
+}
+
+custom_text_box = {
+	name = mare_clausum_info_label
+	potential = { always = yes }
+}
+
+custom_icon = {
+	name = mare_clausum_info
+	potential = { always = yes }
+	tooltip = mare_clausum_info_tt
+}
+
+custom_icon = {
+    name = ivory_zanzibar_map
+    potential = { }
+	tooltip = zanzibar_points_tt
+}
+
+custom_icon = {
+	name = zanzibar_glow
+    potential = {
+		has_saved_global_event_target = zanzibar_1
+	}
+}
+
+custom_shield = {
+	name = zanzibar_1
+    potential = {
+		has_saved_global_event_target = zanzibar_1
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = zanzibar_1
+    open_country = yes
+}
+
+custom_icon = {
+    name = coffee_aden_map
+    potential = { }
+	tooltip = aden_points_tt
+}
+
+custom_icon = {
+	name = aden_glow
+    potential = {
+		has_saved_global_event_target = aden_1
+	}
+}
+
+custom_shield = {
+	name = aden_1
+    potential = {
+		has_saved_global_event_target = aden_1
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = aden_1
+    open_country = yes
+}
+
+custom_icon = {
+    name = silk_hormuz_map
+    potential = { }
+	tooltip = hormuz_points_tt
+}
+
+custom_icon = {
+	name = hormuz_glow
+    potential = {
+		has_saved_global_event_target = hormuz_1
+	}
+}
+
+custom_shield = {
+	name = hormuz_1
+    potential = {
+		has_saved_global_event_target = hormuz_1
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = hormuz_1
+    open_country = yes
+}
+
+custom_icon = {
+    name = spices_india_map
+    potential = { }
+	tooltip = india_points_tt
+}
+
+custom_icon = {
+	name = india_glow
+    potential = {
+		has_saved_global_event_target = india_1
+	}
+}
+
+custom_shield = {
+	name = india_1
+    potential = {
+		has_saved_global_event_target = india_1
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = india_1
+    open_country = yes
+}
+
+custom_icon = {
+    name = nutmeg_malaca_map
+    potential = { }
+	tooltip = malacca_points_tt
+}
+
+custom_icon = {
+	name = malaca_glow
+    potential = {
+		has_saved_global_event_target = malaca_1
+	}
+}
+
+custom_shield = {
+	name = malaca_1
+    potential = {
+		has_saved_global_event_target = malaca_1
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = malaca_1
+    open_country = yes
+}
+
+custom_button = {
+    name = spice_trade_conflict_close_button
+    potential = { }
+    trigger = { }
+    effect = {
+		clr_country_flag = open_spice_trade_conflict_window_flag
+	}
+	tooltip = ""
+}
+
+custom_shield = {
+	name = join_mamluks_button
+	potential = {
+		has_saved_global_event_target = mam_spice_trade
+		NOT = { tag = event_target:por_spice_trade }
+		NOT = { tag = event_target:mam_spice_trade }
+		NOT = { has_country_flag = is_mam_ally }
+		NOT = { has_country_flag = is_por_ally }
+		NOT = { has_saved_global_event_target = por_ally_24 }
+	}
+	open_country = no
+	global_event_target = mam_spice_trade
+	tooltip = join_mamluks_tt
+	trigger = {}
+	effect = {
+		set_mam_supporter = yes
+		REB = {
+			PREV = {
+				set_variable = {
+					which = monthly_mare_clausum_amount
+					which = PREV
+				}
+				set_variable = {
+					which = total_mare_clausum_amount
+					which = PREV
+				}
+			}
+		}
+	}
+}
+
+custom_shield = {
+	name = mamluks_button
+	potential = {
+		OR = {
+			tag = event_target:por_spice_trade
+			tag = event_target:mam_spice_trade
+			has_country_flag = is_mam_ally
+			has_country_flag = is_por_ally
+			has_saved_global_event_target = mam_ally_24
+		}
+	}
+	open_country = yes
+	global_event_target = mam_spice_trade
+	tooltip = mamluk_supporters_tt
+	trigger = {}
+	effect = {}
+}
+
+custom_shield = {
+	name = join_portugal_button
+	potential = {
+		has_saved_global_event_target = por_spice_trade
+		NOT = { tag = event_target:por_spice_trade }
+		NOT = { tag = event_target:mam_spice_trade }
+		NOT = { has_country_flag = is_mam_ally }
+		NOT = { has_country_flag = is_por_ally }
+		NOT = { has_saved_global_event_target = por_ally_24 }
+	}
+	open_country = no
+	global_event_target = por_spice_trade
+	tooltip = join_portugal_tt
+	trigger = {}
+	effect = {
+		set_por_supporter = yes
+		REB = {
+			PREV = {
+				set_variable = {
+					which = monthly_mare_clausum_amount
+					which = PREV
+				}
+				set_variable = {
+					which = total_mare_clausum_amount
+					which = PREV
+				}
+			}
+		}
+	}
+}
+
+custom_shield = {
+	name = portugal_button
+	potential = {
+		OR = {
+			tag = event_target:por_spice_trade
+			tag = event_target:mam_spice_trade
+			has_country_flag = is_mam_ally
+			has_country_flag = is_por_ally
+			has_saved_global_event_target = mam_ally_24
+		}
+	}
+	open_country = yes
+	global_event_target = por_spice_trade
+	tooltip = portugal_supporters_tt
+	trigger = {}
+	effect = {}
+}
+
+custom_icon = {
+	name = spice_trade_conflict_progress
+	potential = { always = yes }
+	frame_variable = total_mare_clausum_amount
+	tooltip = mare_clausum_amount_tt
+}
+
+custom_icon = {
+    name = dark_armillary_sphere
+    potential = { NOT = { has_global_flag = gaining_mare_clausum_flag } NOT = { has_global_flag = full_mare_clausum_flag } }
+	tooltip = declare_mare_clausum_tt
+}
+
+custom_icon = {
+    name = light_armillary_sphere
+    potential = { has_global_flag = gaining_mare_clausum_flag NOT = { has_global_flag = full_mare_clausum_flag } }
+	tooltip = declare_mare_clausum_tt
+}
+
+custom_button = {
+    name = full_armillary_sphere
+    potential = { has_global_flag = full_mare_clausum_flag }
+    trigger = { tag = event_target:por_spice_trade }
+    effect = {
+	}
+	tooltip = declare_mare_clausum_tt
+}
+
+custom_icon = {
+	name = glow_armillary_sphere
+	potential = { has_global_flag = full_mare_clausum_flag }
+}
+
+custom_icon = {
+	name = spice_trade_conflict_progress_frame
+	potential = { always = yes }
+}
+
+custom_icon = {
+	name = treshold_0
+	potential = { always = yes }
+	tooltip = treshold_0_tt
+}
+
+custom_icon = {
+	name = treshold_20
+	potential = { always = yes }
+	frame = {
+		number = 1
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 20
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 20
+			}
+		}
+	}
+	tooltip = treshold_20_tt
+}
+
+custom_icon = {
+	name = treshold_40
+	potential = { always = yes }
+	frame = {
+		number = 1
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 40
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 40
+			}
+		}
+	}
+	tooltip = treshold_40_tt
+}
+
+custom_icon = {
+	name = treshold_60
+	potential = { always = yes }
+	frame = {
+		number = 1
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 60
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 60
+			}
+		}
+	}
+	tooltip = treshold_60_tt
+}
+
+custom_icon = {
+	name = treshold_80
+	potential = { always = yes }
+	frame = {
+		number = 1
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 80
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 80
+			}
+		}
+	}
+	tooltip = treshold_80_tt
+}
+
+custom_icon = {
+	name = win_battles_objective
+	potential = { always = yes }
+	tooltip = win_battles_objective_tt
+	frame = {
+		number = 1
+		trigger = {
+			event_target:mam_spice_trade = {
+				has_country_flag = mam_win_battles_objective_flag
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			event_target:mam_spice_trade = {
+				NOT = { has_country_flag = mam_win_battles_objective_flag }
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = sink_ships_objective
+	potential = { always = yes }
+	tooltip = sink_ships_objective_tt
+	frame = {
+		number = 1
+		trigger = {
+			event_target:mam_spice_trade = {
+				has_country_flag = mam_sink_ships_objective_flag
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			event_target:mam_spice_trade = {
+				NOT = { has_country_flag = mam_sink_ships_objective_flag }
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = get_supporters_objective
+	potential = { always = yes }
+	tooltip = get_supporters_objective_tt
+	frame = {
+		number = 1
+		trigger = {
+			event_target:mam_spice_trade = {
+				has_country_flag = mam_get_supporters_objective_flag
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			event_target:mam_spice_trade = {
+				NOT = { has_country_flag = mam_get_supporters_objective_flag }
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = win_war_objective
+	potential = { always = yes }
+	tooltip = win_war_objective_tt
+	frame = {
+		number = 1
+		trigger = {
+			event_target:mam_spice_trade = {
+				has_country_flag = mam_win_war_objective_flag
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			event_target:mam_spice_trade = {
+				NOT = { has_country_flag = mam_win_war_objective_flag }
+			}
+		}
+	}
+}
+
+custom_button = {
+    name = defeat_portugal_button
+    potential = { always = yes }
+    trigger = { 
+		tag = event_target:mam_spice_trade 
+		has_country_flag = mam_get_supporters_objective_flag
+		has_country_flag = mam_win_battles_objective_flag
+		has_country_flag = mam_win_war_objective_flag
+		has_country_flag = mam_sink_ships_objective_flag
+	}
+    effect = {
+		set_country_flag = test_flag
+	}
+	tooltip = defeat_portugal_tt
+}
+
+custom_icon = {
+	name = zanzibar_ability
+	potential = { always = yes }
+	tooltip = zanzibar_node_ability_tt
+	frame = {
+		number = 1
+		trigger = {
+			OR = {
+				# For Mamluks
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					# If Mamluks have more points in node
+					REB = {
+						NOT = {
+							check_variable = {
+								which = zanzibar_por_alliance_points
+								which = zanzibar_mam_alliance_points
+							}
+						}
+					}
+					# Making sure Mamluks have points
+					REB = {
+						check_variable = {
+							which = zanzibar_mam_alliance_points
+							value = 1
+						}
+					}
+					# Making sure both countries don't have same points
+					NOT = {
+						REB = {
+							check_variable = {
+								which = zanzibar_por_alliance_points
+								which = zanzibar_mam_alliance_points
+							}
+							check_variable = {
+								which = zanzibar_mam_alliance_points
+								which = zanzibar_por_alliance_points
+							}
+						}
+					}
+				}
+				# For Portugal
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					# If Portugal has more points in node
+					REB = {
+						NOT = {
+							check_variable = {
+								which = zanzibar_mam_alliance_points
+								which = zanzibar_por_alliance_points
+							}
+						}
+					}
+					# Making sure Portugal has more points
+					REB = {
+						check_variable = {
+							which = zanzibar_por_alliance_points
+							value = 1
+						}
+					}
+					# Making sure both countries don't have same points
+					NOT = {
+						REB = {
+							check_variable = {
+								which = zanzibar_por_alliance_points
+								which = zanzibar_mam_alliance_points
+							}
+							check_variable = {
+								which = zanzibar_mam_alliance_points
+								which = zanzibar_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			OR = {
+				# For Mamluks
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					OR = {
+						# If Mamluks have no points in node
+						REB = {
+							NOT = {
+								check_variable = {
+									which = zanzibar_mam_alliance_points
+									value = 1
+								}
+							}
+						}
+						# If Portugal has more points in node
+						REB = {
+							NOT = {
+								check_variable = {
+									which = zanzibar_mam_alliance_points
+									which = zanzibar_por_alliance_points
+								}
+							}
+						}
+						# If both have same points in node
+						REB = {
+							check_variable = {
+								which = zanzibar_por_alliance_points
+								which = zanzibar_mam_alliance_points
+							}
+							check_variable = {
+								which = zanzibar_mam_alliance_points
+								which = zanzibar_por_alliance_points
+							}
+						}
+					}
+				}
+				# For Portugal
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					OR = {
+						# If Portugal has no points in node
+						REB = {
+							NOT = {
+								check_variable = {
+									which = zanzibar_por_alliance_points
+									value = 1
+								}
+							}
+						}
+						# If Mamluks has more points in node
+						REB = {
+							NOT = {
+								check_variable = {
+									which = zanzibar_por_alliance_points
+									which = zanzibar_mam_alliance_points
+								}
+							}
+						}
+						# If both have same points in node
+						REB = {
+							check_variable = {
+								which = zanzibar_por_alliance_points
+								which = zanzibar_mam_alliance_points
+							}
+							check_variable = {
+								which = zanzibar_mam_alliance_points
+								which = zanzibar_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = aden_ability
+	potential = { always = yes }
+	tooltip = aden_node_ability_tt
+	frame = {
+		number = 1
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					REB = {
+						NOT = {
+							check_variable = {
+								which = aden_por_alliance_points
+								which = aden_mam_alliance_points
+							}
+						}
+					}
+					REB = {
+						check_variable = {
+							which = aden_mam_alliance_points
+							value = 1
+						}
+					}
+					NOT = {
+						REB = {
+							check_variable = {
+								which = aden_por_alliance_points
+								which = aden_mam_alliance_points
+							}
+							check_variable = {
+								which = aden_mam_alliance_points
+								which = aden_por_alliance_points
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					REB = {
+						NOT = {
+							check_variable = {
+								which = aden_mam_alliance_points
+								which = aden_por_alliance_points
+							}
+						}
+					}
+					REB = {
+						check_variable = {
+							which = aden_por_alliance_points
+							value = 1
+						}
+					}
+					NOT = {
+						REB = {
+							check_variable = {
+								which = aden_por_alliance_points
+								which = aden_mam_alliance_points
+							}
+							check_variable = {
+								which = aden_mam_alliance_points
+								which = aden_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					OR = {
+						REB = {
+							NOT = {
+								check_variable = {
+									which = aden_mam_alliance_points
+									value = 1
+								}
+							}
+						}
+						REB = {
+							NOT = {
+								check_variable = {
+									which = aden_mam_alliance_points
+									which = aden_por_alliance_points
+								}
+							}
+						}
+						REB = {
+							check_variable = {
+								which = aden_por_alliance_points
+								which = aden_mam_alliance_points
+							}
+							check_variable = {
+								which = aden_mam_alliance_points
+								which = aden_por_alliance_points
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					OR = {
+						REB = {
+							NOT = {
+								check_variable = {
+									which = aden_por_alliance_points
+									value = 1
+								}
+							}
+						}
+						REB = {
+							NOT = {
+								check_variable = {
+									which = aden_por_alliance_points
+									which = aden_mam_alliance_points
+								}
+							}
+						}
+						REB = {
+							check_variable = {
+								which = aden_por_alliance_points
+								which = aden_mam_alliance_points
+							}
+							check_variable = {
+								which = aden_mam_alliance_points
+								which = aden_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = hormuz_ability
+	potential = { always = yes }
+	tooltip = hormuz_node_ability_tt
+	frame = {
+		number = 1
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					REB = {
+						NOT = {
+							check_variable = {
+								which = hormuz_por_alliance_points
+								which = hormuz_mam_alliance_points
+							}
+						}
+					}
+					REB = {
+						check_variable = {
+							which = hormuz_mam_alliance_points
+							value = 1
+						}
+					}
+					NOT = {
+						REB = {
+							check_variable = {
+								which = hormuz_por_alliance_points
+								which = hormuz_mam_alliance_points
+							}
+							check_variable = {
+								which = hormuz_mam_alliance_points
+								which = hormuz_por_alliance_points
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					REB = {
+						NOT = {
+							check_variable = {
+								which = hormuz_mam_alliance_points
+								which = hormuz_por_alliance_points
+							}
+						}
+					}
+					REB = {
+						check_variable = {
+							which = hormuz_por_alliance_points
+							value = 1
+						}
+					}
+					NOT = {
+						REB = {
+							check_variable = {
+								which = hormuz_por_alliance_points
+								which = hormuz_mam_alliance_points
+							}
+							check_variable = {
+								which = hormuz_mam_alliance_points
+								which = hormuz_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					OR = {
+						REB = {
+							NOT = {
+								check_variable = {
+									which = hormuz_mam_alliance_points
+									value = 1
+								}
+							}
+						}
+						REB = {
+							NOT = {
+								check_variable = {
+									which = hormuz_mam_alliance_points
+									which = hormuz_por_alliance_points
+								}
+	
+							}
+						}
+						REB = {
+							check_variable = {
+								which = hormuz_por_alliance_points
+								which = hormuz_mam_alliance_points
+							}
+							check_variable = {
+								which = hormuz_mam_alliance_points
+								which = hormuz_por_alliance_points
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					OR = {
+						REB = {
+							NOT = {
+								check_variable = {
+									which = hormuz_por_alliance_points
+									value = 1
+								}
+							}
+						}
+						REB = {
+							NOT = {
+								check_variable = {
+									which = hormuz_por_alliance_points
+									which = hormuz_mam_alliance_points
+								}
+							}
+						}
+						REB = {
+							check_variable = {
+								which = hormuz_por_alliance_points
+								which = hormuz_mam_alliance_points
+							}
+							check_variable = {
+								which = hormuz_mam_alliance_points
+								which = hormuz_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = coromandel_ability
+	potential = { always = yes }
+	tooltip = coromandel_node_ability_tt
+	frame = {
+		number = 1
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					REB = {
+						NOT = {
+							check_variable = {
+								which = coromandel_por_alliance_points
+								which = coromandel_mam_alliance_points
+							}
+						}
+					}
+					REB = {
+						check_variable = {
+							which = coromandel_mam_alliance_points
+							value = 1
+						}
+					}
+					NOT = {
+						REB = {
+							check_variable = {
+								which = coromandel_por_alliance_points
+								which = coromandel_mam_alliance_points
+							}
+							check_variable = {
+								which = coromandel_mam_alliance_points
+								which = coromandel_por_alliance_points
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					REB = {
+						NOT = {
+							check_variable = {
+								which = coromandel_mam_alliance_points
+								which = coromandel_por_alliance_points
+							}
+						}
+					}
+					REB = {
+						check_variable = {
+							which = coromandel_por_alliance_points
+							value = 1
+						}
+					}
+					NOT = {
+						REB = {
+							check_variable = {
+								which = coromandel_por_alliance_points
+								which = coromandel_mam_alliance_points
+							}
+							check_variable = {
+								which = coromandel_mam_alliance_points
+								which = coromandel_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					OR = {
+						REB = {
+							NOT = {
+								check_variable = {
+									which = coromandel_mam_alliance_points
+									value = 1
+								}
+							}
+						}
+						REB = {
+							NOT = {
+								check_variable = {
+									which = coromandel_mam_alliance_points
+									which = coromandel_por_alliance_points
+								}
+							}
+						}
+						REB = {
+							check_variable = {
+								which = coromandel_por_alliance_points
+								which = coromandel_mam_alliance_points
+							}
+							check_variable = {
+								which = coromandel_mam_alliance_points
+								which = coromandel_por_alliance_points
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					OR = {
+						REB = {
+							NOT = {
+								check_variable = {
+									which = coromandel_por_alliance_points
+									value = 1
+								}
+							}
+						}
+						REB = {
+							NOT = {
+								check_variable = {
+									which = coromandel_por_alliance_points
+									which = coromandel_mam_alliance_points
+								}
+							}
+						}
+						REB = {
+							check_variable = {
+								which = coromandel_por_alliance_points
+								which = coromandel_mam_alliance_points
+							}
+							check_variable = {
+								which = coromandel_mam_alliance_points
+								which = coromandel_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = malacca_ability
+	potential = { always = yes }
+	tooltip = malacca_node_ability_tt
+	frame = {
+		number = 1
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					REB = {
+						NOT = {
+							check_variable = {
+								which = malacca_por_alliance_points
+								which = malacca_mam_alliance_points
+							}
+						}
+					}
+					REB = {
+						check_variable = {
+							which = malacca_mam_alliance_points
+							value = 1
+						}
+					}
+					NOT = {
+						REB = {
+							check_variable = {
+								which = malacca_por_alliance_points
+								which = malacca_mam_alliance_points
+							}
+							check_variable = {
+								which = malacca_mam_alliance_points
+								which = malacca_por_alliance_points
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					REB = {
+						NOT = {
+							check_variable = {
+								which = malacca_mam_alliance_points
+								which = malacca_por_alliance_points
+							}
+						}
+					}
+					REB = {
+						check_variable = {
+							which = malacca_por_alliance_points
+							value = 1
+						}
+					}
+					NOT = {
+						REB = {
+							check_variable = {
+								which = malacca_por_alliance_points
+								which = malacca_mam_alliance_points
+							}
+							check_variable = {
+								which = malacca_mam_alliance_points
+								which = malacca_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+					OR = {
+						REB = {
+							NOT = {
+								check_variable = {
+									which = malacca_mam_alliance_points
+									value = 1
+								}
+							}
+						}
+						REB = {
+							NOT = {
+								check_variable = {
+									which = malacca_mam_alliance_points
+									which = malacca_por_alliance_points
+								}
+							}
+						}
+						REB = {
+							check_variable = {
+								which = malacca_por_alliance_points
+								which = malacca_mam_alliance_points
+							}
+							check_variable = {
+								which = malacca_mam_alliance_points
+								which = malacca_por_alliance_points
+							}
+						}
+					}
+				}
+				AND = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+					OR = {
+						REB = {
+							NOT = {
+								check_variable = {
+									which = malacca_por_alliance_points
+									value = 1
+								}
+							}
+						}
+						REB = {
+							NOT = {
+								check_variable = {
+									which = malacca_por_alliance_points
+									which = malacca_mam_alliance_points
+								}
+							}
+						}
+						REB = {
+							check_variable = {
+								which = malacca_por_alliance_points
+								which = malacca_mam_alliance_points
+							}
+							check_variable = {
+								which = malacca_mam_alliance_points
+								which = malacca_por_alliance_points
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = node_ability_frame
+	potential = { always = yes }
+}
+
+# supporter shields #
+
+custom_shield = {
+	name = mamluk_ally_1
+    potential = {
+		has_saved_global_event_target = mam_ally_1
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_1
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_2
+    potential = {
+		has_saved_global_event_target = mam_ally_2
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_2
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_3
+    potential = {
+		has_saved_global_event_target = mam_ally_3
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_3
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_4
+    potential = {
+		has_saved_global_event_target = mam_ally_4
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_4
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_5
+    potential = {
+		has_saved_global_event_target = mam_ally_5
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_5
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_6
+    potential = {
+		has_saved_global_event_target = mam_ally_6
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_6
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_7
+    potential = {
+		has_saved_global_event_target = mam_ally_7
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_7
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_8
+    potential = {
+		has_saved_global_event_target = mam_ally_8
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_8
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_9
+    potential = {
+		has_saved_global_event_target = mam_ally_9
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_9
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_10
+    potential = {
+		has_saved_global_event_target = mam_ally_10
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_10
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_11
+    potential = {
+		has_saved_global_event_target = mam_ally_11
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_11
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_12
+    potential = {
+		has_saved_global_event_target = mam_ally_12
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_12
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_13
+    potential = {
+		has_saved_global_event_target = mam_ally_13
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_13
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_14
+    potential = {
+		has_saved_global_event_target = mam_ally_14
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_14
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_15
+    potential = {
+		has_saved_global_event_target = mam_ally_15
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_15
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_16
+    potential = {
+		has_saved_global_event_target = mam_ally_16
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_16
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_17
+    potential = {
+		has_saved_global_event_target = mam_ally_17
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_17
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_18
+    potential = {
+		has_saved_global_event_target = mam_ally_18
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_18
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_19
+    potential = {
+		has_saved_global_event_target = mam_ally_19
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_19
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_20
+    potential = {
+		has_saved_global_event_target = mam_ally_20
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_20
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_21
+    potential = {
+		has_saved_global_event_target = mam_ally_21
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_21
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_22
+    potential = {
+		has_saved_global_event_target = mam_ally_22
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_22
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_23
+    potential = {
+		has_saved_global_event_target = mam_ally_23
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_23
+    open_country = yes
+}
+
+custom_shield = {
+	name = mamluk_ally_24
+    potential = {
+		has_saved_global_event_target = mam_ally_24
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = mam_ally_24
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_1
+    potential = {
+		has_saved_global_event_target = por_ally_1
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_1
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_2
+    potential = {
+		has_saved_global_event_target = por_ally_2
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_2
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_3
+    potential = {
+		has_saved_global_event_target = por_ally_3
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_3
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_4
+    potential = {
+		has_saved_global_event_target = por_ally_4
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_4
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_5
+    potential = {
+		has_saved_global_event_target = por_ally_5
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_5
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_6
+    potential = {
+		has_saved_global_event_target = por_ally_6
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_6
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_7
+    potential = {
+		has_saved_global_event_target = por_ally_7
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_7
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_8
+    potential = {
+		has_saved_global_event_target = por_ally_8
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_8
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_9
+    potential = {
+		has_saved_global_event_target = por_ally_9
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_9
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_10
+    potential = {
+		has_saved_global_event_target = por_ally_10
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_10
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_11
+    potential = {
+		has_saved_global_event_target = por_ally_11
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_11
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_12
+    potential = {
+		has_saved_global_event_target = por_ally_12
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_12
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_13
+    potential = {
+		has_saved_global_event_target = por_ally_13
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_13
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_14
+    potential = {
+		has_saved_global_event_target = por_ally_14
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_14
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_15
+    potential = {
+		has_saved_global_event_target = por_ally_15
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_15
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_16
+    potential = {
+		has_saved_global_event_target = por_ally_16
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_16
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_17
+    potential = {
+		has_saved_global_event_target = por_ally_17
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_17
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_18
+    potential = {
+		has_saved_global_event_target = por_ally_18
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_18
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_19
+    potential = {
+		has_saved_global_event_target = por_ally_19
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_19
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_20
+    potential = {
+		has_saved_global_event_target = por_ally_20
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_20
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_21
+    potential = {
+		has_saved_global_event_target = por_ally_21
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_21
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_22
+    potential = {
+		has_saved_global_event_target = por_ally_22
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_22
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_23
+    potential = {
+		has_saved_global_event_target = por_ally_23
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_23
+    open_country = yes
+}
+
+custom_shield = {
+	name = portugal_ally_24
+    potential = {
+		has_saved_global_event_target = por_ally_24
+	}
+	effect = {}
+	trigger = {}
+    global_event_target = por_ally_24
+    open_country = yes
+}

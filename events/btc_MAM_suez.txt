@@ -2,15 +2,15 @@ namespace = btc_mam_suez
 
 province_event = {
 	id = btc_mam_suez.1
-
-	title = ""
-	desc = ""
+	title = btc_mam_suez.1.t
+	desc = btc_mam_suez.1.d
 	picture = BIG_BOOK_eventPicture
 
 	hidden = yes
 	is_triggered_only = yes
 
 	option = {
+		name = btc_mam_suez.1a
 		if = {
 			limit = {
 				province_id = 4316
@@ -36,9 +36,8 @@ province_event = {
 ## Sharqiya -> as-Suways
 province_event = {
 	id = btc_mam_suez.2
-	
-	title = ""
-	desc = ""
+	title = btc_mam_suez.2.t
+	desc = btc_mam_suez.2.d
 	picture = BIG_BOOK_eventPicture
 
 	hidden = yes
@@ -68,7 +67,7 @@ province_event = {
 	}
 
 	option = {
-		name = ""
+		name = btc_mam_suez.2a
         ai_chance = {
             factor = 1
         }
@@ -84,9 +83,8 @@ province_event = {
 ## Sharqiya <- as-Suways
 province_event = {
 	id = btc_mam_suez.3
-	
-	title = ""
-	desc = ""
+	title = btc_mam_suez.3.t
+	desc = btc_mam_suez.3.d
 	picture = BIG_BOOK_eventPicture
 
 	hidden = yes
@@ -116,7 +114,7 @@ province_event = {
 	}
 
 	option = {
-		name = ""
+		name = btc_mam_suez.3a
         ai_chance = {
             factor = 1
         }

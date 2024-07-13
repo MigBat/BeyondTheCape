@@ -177,7 +177,7 @@ PixelShader =
 			float4 TexColor = tex2D( SimpleTexture, v.vTexCoord);
 						
 						
-			// Cantons for Colonial Flags Mod	
+			// BEYOND THE CAPE	
 			if( FieldCutoff == 0.5 ) { // aka if flag is colonial
 				
 				float zoomFactor = 1.0 / 15; // 0.0666...
@@ -224,7 +224,7 @@ PixelShader =
 		float4 main( VS_FLAG_OUTPUT v ) : PDX_COLOR
 		{
 			
-			// Cantons for Colonial Flags Mod	
+			// BEYOND THE CAPE
 			if( v.vTexCoordFlag.x > 0.5 || v.vTexCoordFlag.y > 0.5 )
 				return CustomColor3 * v.vFillColor;
 			

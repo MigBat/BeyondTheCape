@@ -1,0 +1,302 @@
+custom_button = {
+	name = feitoria_button
+	potential = {
+		can_build_feitoria_in_province = yes
+	}
+	trigger = {
+		area_for_scope_province = {
+			type = all
+			OR = {
+				NOT = { has_province_modifier = feitoria }	
+				NOT = { has_province_modifier = fortified_feitoria }	
+			}
+		}
+		FROM = { 
+			if = {
+				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				treasury = 20
+			}
+			else_if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				treasury = 40
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				treasury = 60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				treasury = 80
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+				}
+				treasury = 100
+			}
+		}
+	}
+	effect = {
+		add_province_modifier = {
+			name = feitoria
+			duration = -1
+		}
+		FROM = { 
+			if = {
+				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				add_treasury = -20
+			}
+			else_if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				add_treasury = -40
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				add_treasury = -60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				add_treasury = -80
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+				}
+				add_treasury = -100
+			}
+		}
+	}
+	tooltip = feitoria_key
+}
+
+custom_button = {
+	name = fortified_feitoria_button
+	potential = {
+		FROM = { 
+			has_government_attribute = can_establish_feitorias  
+			mission_completed = btc_fortified_feitorias
+		}
+		has_province_modifier = feitoria
+	}
+	trigger = {
+		FROM = { 
+			if = {
+				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				treasury = 60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				treasury = 120
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				treasury = 180
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				treasury = 240
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+				}
+				treasury = 300
+			}
+		}
+	}
+	effect = {
+		remove_province_modifier = feitoria
+		add_province_modifier = {
+			name = fortified_feitoria
+			duration = -1
+		}
+		FROM = { 
+			if = {
+				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				add_treasury = -60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				add_treasury = -120
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				add_treasury = -180
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				add_treasury = -240
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+				}
+				add_treasury = -300
+			}
+		}
+	}
+	tooltip = fortified_feitoria_key
+}
+
+custom_button = {
+	name = foreign_feitoria_button
+	potential = {
+		can_build_foreign_feitoria_in_province = yes
+	}
+	trigger = {
+		owner = { NOT = { capital_scope = { continent = europe } } }
+		owner = {
+			has_opinion = {
+				who = FROM
+				value = 75
+			}
+		}
+		owner = {
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 5
+					has_province_modifier = foreign_feitoria
+				}
+			}
+		}
+		# area_for_scope_province = {
+		# 	type = all
+		# 	owned_by = owner
+		# 	NOT = { has_province_modifier = foreign_feitoria }	
+		# }
+		FROM = { 
+			if = {
+				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				treasury = 20
+			}
+			else_if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				treasury = 40
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				treasury = 60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				treasury = 80
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+				}
+				treasury = 100
+			}
+		}
+	}
+	effect = {
+		add_province_modifier = {
+			name = foreign_feitoria
+			duration = -1
+		}
+		add_trade_modifier = {
+			who = FROM
+			duration = -1
+			power = 5
+			key = portuguese_feitoria
+		}
+		owner = {
+			add_opinion = {
+				who = FROM
+				modifier = built_feitoria
+			}
+		}
+		
+		FROM = { 
+			if = {
+				limit = {
+					NOT = { dip_tech = 7 }
+				}
+				add_treasury = -20
+			}
+			else_if = {
+				limit = {
+					dip_tech = 7
+					NOT = { dip_tech = 9 }
+				}
+				add_treasury = -40
+			}
+			else_if = {
+				limit = {
+					dip_tech = 9
+					NOT = { dip_tech = 11 }
+				}
+				add_treasury = -60
+			}
+			else_if = {
+				limit = {
+					dip_tech = 11
+					NOT = { dip_tech = 13 }
+				}
+				add_treasury = -80
+			}
+			else_if = {
+				limit = {
+					dip_tech = 13
+				}
+				add_treasury = -100
+			}
+		}
+	}
+	tooltip = foreign_feitoria_key
+}

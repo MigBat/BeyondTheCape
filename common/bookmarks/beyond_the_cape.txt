@@ -8,12 +8,12 @@ bookmark =
 	default = yes
 	
 	country = POR
-	country = CAS
-	country = ARA
-	country = ENG
-	country = BUR
-	country = HOL
-	country = NOR
+	# country = CAS
+	# country = ARA
+	# country = ENG
+	# country = BUR
+	# country = HOL
+	# country = NOR
 	
 	easy_country = POR
 }

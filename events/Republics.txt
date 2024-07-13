@@ -111,7 +111,6 @@ country_event = {
 				has_government_attribute = cannot_become_dictatorship
 			}
 		}
-        NOT = { has_reform = peasants_republic }
 	}
 	
 	mean_time_to_happen = {
@@ -756,6 +755,7 @@ country_event = {
 }
 
 # Trade Expansion
+# Beyond the Cape exploration
 country_event = {
 	id = republics.15
 	title = "EVTNAME9551"
@@ -3194,6 +3194,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = {
+			limit = {
+				has_country_flag = ned_buff_statists_candidates_flag
+			}
+			is_statists_in_power = no
+		}
 		NOT = { 
 			has_country_modifier = planned_coup_timer
 		}

@@ -100,13 +100,13 @@
 
  # Disasters #
 
- estate_disasters.30.t:0 "The Slavers Seize Power"
- estate_disasters.30.d:0 "$MONARCH$ has allowed the Slavers of $COUNTRY$ to grow too powerful and now they have made their move. Making use of their many hard-earned privileges as well as the many debts owed to them, they have effectively seized the reins of government and turned the $MONARCHTITLE$ into little more than their puppet."
- estate_disasters.30.a:0 "We should have seen this coming..."
- estate_disasters.30.a.tt:0 "[Root.GetName] will now be controlled by the §YSlavers§! until the §Y'Curtail the Slavers'§! decision is taken."
- estate_disasters.31.t:0 "The Slavers Curtailed"
- estate_disasters.31.d:0 "We have finally managed to break our reliance on the Slavers, reclaiming control over all important state functions and reducing these peddlers to their rightful confines within the city walls."
- estate_disasters.31.a:0 "The $MONARCHTITLE$ is back in control."
+ btc_estate_disasters.1.t:0 "The Slavers Seize Power"
+ btc_estate_disasters.1.d:0 "$MONARCH$ has allowed the Slavers of $COUNTRY$ to grow too powerful and now they have made their move. Making use of their many hard-earned privileges as well as the many debts owed to them, they have effectively seized the reins of government and turned the $MONARCHTITLE$ into little more than their puppet."
+ btc_estate_disasters.1.a:0 "We should have seen this coming..."
+ btc_estate_disasters.1.a.tt:0 "[Root.GetName] will now be controlled by the §YSlavers§! until the §Y'Curtail the Slavers'§! decision is taken."
+ btc_estate_disasters.2.t:0 "The Slavers Curtailed"
+ btc_estate_disasters.2.d:0 "We have finally managed to break our reliance on the Slavers, reclaiming control over all important state functions and reducing these peddlers to their rightful confines within the city walls."
+ btc_estate_disasters.2.a:0 "The $MONARCHTITLE$ is back in control."
  EST_CRUSHED_SLAVERS:0 "The Slavers have been curtailed"
  estate_slavers_disaster:0 "Slaver Guilds Coup"
  estate_slavers_disaster_desc:0 "The cities and guilds have grown so powerful they assumed de facto control over our country. Real power now lies in the hands of a small group of wealthy Slavers."
@@ -151,3 +151,9 @@
 
  growing_slave_trade:0 "Slave Trade"
  desc_growing_slave_trade:1 "Our efforts to secure more sources of slaves have not gone unnoticed by the domestic slave merchants. Confident that the state is looking after their interests, they have been unusually forthcoming with any taxes or fees they are required to pay."
+
+##############
+
+ estate_nobles_fidalgos: "Fidalgos"
+ estate_nobles_fidalgos_desc: "Fidalgos are nobles, clad head to toe in an expensive full set of armor, always at the top commanding positions and forming the spearhead of assaults. Their honor code values heroic personal deeds over tactics and the taking of booty and prizes over the achievement of strategic objectives, as well as an emphasis on hand-to-hand combat. No one is able to refuse an engagement, however rash, without accusations of cowardice. Only bravery of the most explicit kind will suffice."
+ can_remove_fidalgos_tt: "Has passed the "§JRevoke Fidalgos Privilege§!" Cortes issue."

@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 country_decisions = {
 
 	west_indies_nation = {

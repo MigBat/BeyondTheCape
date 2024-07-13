@@ -99,6 +99,7 @@ PixelShader =
 	[[
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
+		// BEYOND THE CAPE
 			
 
 			float2 TexCoord = v.vTexCoord.xy;
@@ -126,6 +127,7 @@ PixelShader =
 	[[
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
+		// BEYOND THE CAPE
 			
 
 			float2 TexCoord = v.vTexCoord.xy;
@@ -154,6 +156,7 @@ PixelShader =
 	[[
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
+		// BEYOND THE CAPE
 			
 
 			float2 TexCoord = v.vTexCoord.xy;
@@ -182,6 +185,7 @@ PixelShader =
 	[[
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
+		// BEYOND THE CAPE
 			
 
 			float2 TexCoord = v.vTexCoord.xy;
@@ -212,6 +216,7 @@ PixelShader =
 	[[
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
+		// BEYOND THE CAPE
 			
 
 			float2 TexCoord = v.vTexCoord.xy;
@@ -242,6 +247,7 @@ PixelShader =
 	[[
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
+		// BEYOND THE CAPE
 			
 			
 			float2 TexCoord = v.vTexCoord.xy;
@@ -273,6 +279,7 @@ PixelShader =
 	[[
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
+		// BEYOND THE CAPE
 			
 
 			float2 TexCoord = v.vTexCoord.xy;
@@ -304,6 +311,7 @@ PixelShader =
 	[[
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
+		// BEYOND THE CAPE
 			
 
 			float2 TexCoord = v.vTexCoord.xy;

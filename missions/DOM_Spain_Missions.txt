@@ -1,3 +1,6 @@
+### BTC changes: caribbean region ###
+### BTC changes: california region ###
+
 dom_cas_missions_1 = {
 	slot = 1
 	generic = no
@@ -23,18 +26,9 @@ dom_cas_missions_1 = {
 		# free mission
 
 		trigger = {
-			if = {
-				limit = {
-					ai = yes
-				}
-				army_size_percentage = 0.5
-				navy_size_percentage = 0.5
-			}
-			else = {
-				army_size_percentage = 1
-				navy_size_percentage = 1
-				num_of_generals = 1
-			}
+			army_size_percentage = 1
+			navy_size_percentage = 1
+			num_of_generals = 1
 		}
 
 		effect = {
@@ -60,16 +54,6 @@ dom_cas_missions_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
-			4565 = {
-				if = {
-					limit = {
-						NOT = {
-							is_core = ROOT
-						}
-					}
-					add_core = ROOT
-				}
-			}
 		}
 	}
 	
@@ -93,47 +77,23 @@ dom_cas_missions_1 = {
 		effect = {
 			set_country_flag = fate_of_granada_mission_flag 
 			country_event = { id = flavor_spa.8 }
-		}
-	}
-	
-	gc_cas_spa_iberia_christian2 = {
-		icon = mission_religious
-		required_missions = { gc_cas_spa_reconquista_one2 }
-		completed_by = 1511.1.1
-		position = 3
-		provinces_to_highlight = {
-			region = iberia_region
-			NOT = { religion_group = ROOT }
-		}
-
-		trigger = {
-			iberia_region = {
-				type = all
-				religion_group = ROOT
+			126 = {
+				add_permanent_claim = ROOT
 			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "spa_rb_christian_iberia"
-				duration = 5475
-			}
-			
-			if = { 
-				limit = { has_estate = estate_church }
-				add_estate_loyalty = {
-					estate = estate_church 
-					loyalty = 20 
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
+				add_permanent_claim = ROOT
 			}
-			add_prestige_or_monarch_power = { amount = 10 }
 		}
 	}
 	
 	gc_cas_spa_reconquista_four2 = {
 		icon = mission_assemble_an_army
-		required_missions = { gc_cas_spa_iberia_christian2 }
-		position = 4
+		required_missions = { gc_cas_spa_reconquista_one2 }
+		position = 3
 		provinces_to_highlight = {
 			area = northern_morocco_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -165,6 +125,40 @@ dom_cas_missions_1 = {
 				}
 				add_claim = ROOT
 			}
+		}
+	}
+	
+	gc_cas_spa_iberia_christian2 = {
+		icon = mission_religious
+		required_missions = { gc_cas_spa_reconquista_four2 }
+		completed_by = 1511.1.1
+		position = 4
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = { religion_group = ROOT }
+		}
+
+		trigger = {
+			iberia_region = {
+				type = all
+				religion_group = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "spa_rb_christian_iberia"
+				duration = 5475
+			}
+			
+			if = { 
+				limit = { has_estate = estate_church }
+				add_estate_loyalty = {
+					estate = estate_church 
+					loyalty = 20 
+				}
+			}
+			add_prestige_or_monarch_power = { amount = 10 }
 		}
 	}
 	
@@ -422,13 +416,6 @@ dom_cas_missions_1_b = {
 				add_permanent_claim = ROOT
 			}
 			asturias_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			cantabria_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -1108,72 +1095,6 @@ dom_cas_missions_2 = {
 			}
 		}
 	}
-
-	btc_cas_societas_jesu = {
-		icon = mission_societas_jesu
-		required_missions = { }
-		position = 7
-
-		trigger = {
-			religion = catholic
-			has_country_modifier = counter_reformation
-			has_institution = new_world_i
-			PAP = {
-				has_opinion = {
-					who = ROOT
-					value = 100
-				}
-			}
-		}
-
-		effect = {
-			if = {
-				limit = {
-					POR = {
-						NOT = { mission_completed = btc_por_societas_jesu }
-					}
-				}
-				custom_tooltip = cas_race_portugal_event_tt
-				define_advisor = {
-					type = theologian
-					skill = 3
-					name = "Ignatius of Loyola"
-					age = 50
-					location = 227
-					cost_multiplier = 0.25
-					culture = basque
-					religion = catholic
-				}
-				custom_tooltip = enable_propogate_religion_in_abrahamic_provinces_tt
-				hidden_effect = {
-					set_country_flag = can_propagate_religion_in_abrahamic_provinces
-				}
-				country_event = {
-					id = btc_events.46
-				}
-			}
-			else = {
-				define_advisor = {
-					type = theologian
-					skill = 2
-					name = "Ignatius of Loyola"
-					age = 50
-					location = 227
-					cost_multiplier = 0.25
-					culture = basque
-					religion = catholic
-				}
-			}
-			custom_tooltip = enable_propogate_religion_effect_tt
-			hidden_effect = {
-				set_country_flag = can_use_propagate_religion
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
 }
 
 dom_cas_missions_2_b = {
@@ -1194,89 +1115,95 @@ dom_cas_missions_2_b = {
 		}
 	}
 	has_country_shield = yes
-
+	
 	dom_ara_intervene_castile = {
 		icon = mission_intervene_in_castile
-		required_missions = { }
+		required_missions = {  }
 		position = 1
-		
+		provinces_to_highlight = {
+			OR = {
+				area = castille_area 
+				area = toledo_area 
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = intervene_in_castile_tooltip
-				OR = {
-					is_year = 1500
-					has_country_flag = won_castilian_civil_war
-					has_country_flag = lost_war
-					has_country_flag = disregarded_claim
+			OR = { 
+				CAS = { is_subject_of = ROOT }
+				AND = {
+					castille_area = {
+						type = all 
+						country_or_non_sovereign_subject_holds = ROOT 
+					}
+					toledo_area = {
+						type = all 
+						country_or_non_sovereign_subject_holds = ROOT 
+					}
+				}
+				AND = {
+					alliance_with = CAS 
+					marriage_with = CAS 
+					if = {
+						limit = { has_dlc = "Leviathan" ai = no }
+						CAS = {
+							trust = {
+								who = ROOT 
+								value = 60 
+							}
+						}
+					}
 				}
 			}
 		}
 		effect = {
-			custom_tooltip = ara_win_war_tt
-			tooltip = {
-				add_prestige = 20
-				iberia_region = {
+			add_country_modifier = {
+				name = ara_iberian_struggle_modifier #Greetings to the CK3 team <3
+				duration = 7300
+			}
+			if = {
+				limit = { 
+					CAS = {
+						OR = {
+							is_subject_of = ROOT 
+							alliance_with = ROOT 
+						}
+					}
+				}
+				add_historical_friend = CAS 
+				CAS = { add_historical_friend = ROOT }
+			}
+			else = { custom_tooltip = ara_if_cas_dip_tt } 
+			
+			if = {
+				limit = {
+					exists = POR
+					valid_for_personal_unions_trigger = yes
+					POR = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = POR
+				}
+			}
+			else = {
+				alentejo_area = {
 					limit = {
-						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				beieras_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
 					}
 					add_permanent_claim = ROOT
 				}
 			}
-			custom_tooltip = ara_lose_war_tt
-			tooltip = {
-				add_country_modifier = {
-					name = ara_iberian_struggle_modifier
-					duration = 7300
-				}
-			}
-			custom_tooltip = ara_no_war_tt
-			tooltip = {
-				add_country_modifier = {
-					name = proudly_alone
-					duration = -1
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = { 
-						OR = {
-							has_country_flag = won_castilian_civil_war
-							is_year = 1500
-						}
-					}
-					add_prestige = 20
-					iberia_region = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-				}
-				if = {
-					limit = {
-						has_country_flag = lost_war
-					}
-					add_country_modifier = {
-						name = ara_iberian_struggle_modifier
-						duration = 7300
-					}
-				}
-				if = {
-					limit = {
-						has_country_flag = disregarded_claim
-					}
-					add_country_modifier = {
-						name = proudly_alone
-						duration = -1
-					}
-				}
-			}
-		}
-
-		ai_weight = {
-			factor = 250
 		}
 	}
 	
@@ -1288,8 +1215,6 @@ dom_cas_missions_2_b = {
 			OR = {
 				area = alentejo_area
 				area = beieras_area
-				area = estremadura_area
-				area = norte_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1302,14 +1227,6 @@ dom_cas_missions_2_b = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			beieras_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			estremadura_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			norte_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1430,7 +1347,6 @@ dom_cas_missions_2_b = {
 				area = languedoc_area
 				area = guyenne_area
 				area = pyrenees_area
-				area = provence_area 
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1438,10 +1354,6 @@ dom_cas_missions_2_b = {
 		}
 		
 		trigger = {
-			provence_area = {
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
 			savoy_dauphine_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1501,7 +1413,7 @@ dom_cas_missions_2_c = {
 		required_missions = { spa_sevilla_port gc_cas_spa_plus_ultra2 }
 		position = 8
 		provinces_to_highlight = {
-			province_id = 224
+			province_id = 1293
 		}
 		trigger = {
 			1293 = { 
@@ -1968,10 +1880,8 @@ dom_cas_missions_3 = {
 					POR = {
 						valid_for_personal_unions_trigger = yes
 						NOT = { 
-							OR = {
-								alliance_with = ROOT 
-								marriage_with = ROOT 
-							}
+							alliance_with = ROOT 
+							marriage_with = ROOT 
 						}
 					}
 				}
@@ -2674,7 +2584,7 @@ dom_cas_missions_3_c = {
 		required_missions = { gc_cas_spa_plus_ultra2 }
 		position = 8
 		provinces_to_highlight = {
-			region = carribeans_region
+			region = carribeans_region 
 			NOT = { has_discovered = ROOT }
 		}
 		trigger = {
@@ -2702,41 +2612,6 @@ dom_cas_missions_3_c = {
 			add_country_modifier = {
 				name = "spa_hispaniola_discovered"
 				duration = 5475
-			}
-			la_plata_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			colombia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			east_cuba_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			cuba_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			dominica_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -3031,8 +2906,6 @@ dom_cas_missions_4 = {
 			OR = {
 				area = beieras_area
 				area = alentejo_area
-				area = norte_area
-				area = estremadura_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT  }
 		}
@@ -3043,14 +2916,6 @@ dom_cas_missions_4 = {
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 			alentejo_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			norte_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			estremadura_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
@@ -3229,14 +3094,13 @@ dom_cas_missions_4_b = {
 			naval_forcelimit = 30
 			navy_size_percentage = 0.9
 			num_of_admirals = 1
-			owns = 213
 		}
 		effect = {
 			add_country_modifier = {
 				name = ara_med_claim_modifier
 				duration = 5475
 			}
-			213 = {
+			capital_scope = {
 				add_building = shipyard 
 				add_base_production = 1
 			}
@@ -3488,6 +3352,16 @@ dom_cas_missions_4_c = {
 					amount = 2
 				}
 				add_prestige_or_monarch_power = { amount = 10 }
+			}
+			
+			if = {
+				limit = { 
+					POR = { 
+						NOT = { mission_completed = dom_portugal_exploration_ideas }
+					}
+				}
+				custom_tooltip = cas_race_portugal_event_tt
+				country_event = { id = flavor_spa.199 }
 			}
 		}
 	}
@@ -4023,93 +3897,10 @@ dom_cas_missions_5_b = {
 		}
 	}
 	has_country_shield = yes
-
-	btc_ara_sicily = {
-		icon = mission_unite_home_region
-		required_missions = {  }
-		position = 1
-		provinces_to_highlight = {
-			OR = {
-				area = sicily_area
-				area = western_sicily_area
-				province_id = 127
-				province_id = 4735
-				province_id = 2986
-			}
-			NOT = {
-				owned_by = ROOT
-			}
-		}
-		trigger = {
-			sicily_area = {
-				type = all
-				owned_by = ROOT
-			}
-			western_sicily_area = {
-				type = all
-				owned_by = ROOT
-			}
-			127 = {
-				owned_by = ROOT
-			}
-			4735 = {
-				owned_by = ROOT
-			}
-			2986 = {
-				owned_by = ROOT
-			}
-		}
-		effect = {
-			2986 = {
-				add_base_tax = 1
-				add_base_manpower = 1
-				add_base_production = 1
-			}
-			125 = {
-				add_base_tax = 1
-				add_base_manpower = 1
-				add_base_production = 1
-			}
-			add_accepted_culture = sicilian
-			add_accepted_culture = sardinian
-			calabria_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			apulia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			naples_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			120 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-		}
-	}
 	
 	gc_ara_naples2 = {
 		icon = mission_unite_home_region
-		required_missions = { btc_ara_sicily }
+		required_missions = {  }
 		position = 2
 		provinces_to_highlight = {
 			OR = {
@@ -4179,9 +3970,6 @@ dom_cas_missions_5_b = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
-			country_event = {
-				id = btc_ara.1
 			}
 		}
 	}
@@ -4459,33 +4247,24 @@ dom_cas_missions_5_c = {
 		required_missions = {  }
 		position = 7
 		provinces_to_highlight = {
-			province_id = 1466
+			OR = {
+				AND = {
+					region = guinea_region
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				province_id = 1466
+			}
 			has_discovered = ROOT
 		}
 
 		trigger = {
-			1466 = { has_discovered = ROOT }
-			if = {
-				limit = {
-					ai = yes
-				}
-				1466 = {	# Ivory Coast
-					trade_share = {
-						country = ROOT
-						share = 5
-					}
-				}
+			guinea_region = {
+				owned_by = ROOT
 			}
-			else = {
-				1466 = {	# Ivory Coast
-					trade_share = {
-						country = ROOT
-						share = 10
-					}
-				}
+			1466 = {
+				is_strongest_trade_power = ROOT
 			}
 		}
-
 		effect = {
 			add_mercantilism = 2
 			
@@ -4551,36 +4330,6 @@ dom_cas_missions_5_c = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			if = {
-				limit = {
-					AND = {
-						CAS = { 
-							OR = {
-								has_country_flag = tordesillas_cas 
-								has_country_flag = terra_nova_cas
-							}
-						}
-						POR = { 
-							OR = {
-								has_country_flag = tordesillas_por 
-								has_country_flag = terra_nova_por
-							}
-						}
-					}
-				}
-				ROOT = {
-					country_event = {
-						id = btc_events.21
-					}
-				}
-				hidden_effect = {
-					POR = {
-						country_event = {
-							id = btc_events.21
-						}
-					}				
-				}
 			}
 		}
 	}
@@ -4673,10 +4422,7 @@ dom_cas_missions_5_c = {
 		trigger = {
 			if = {
 				limit = {
-					AND = {
-						has_dlc = "Rights of Man"
-						ai = no
-					}
+					has_dlc = "Rights of Man"
 				}
 				484 = {
 					country_or_non_sovereign_subject_holds = ROOT

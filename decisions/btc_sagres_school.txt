@@ -1,0 +1,98 @@
+country_decisions = {
+	hire_navigator = {
+		potential = {
+			mission_completed = btc_sagres_school
+			230 = { 
+				owned_by = ROOT
+				has_province_modifier = por_sagres 
+			}
+		}
+		allow = {
+			NOT = { has_advisor_type_in_pool = navigator }
+			NOT = { employed_advisor = { type = navigator } }
+			has_estate_privilege = estate_burghers_naval_school_right
+			navy_tradition = 10
+		}
+		effect = {
+			define_advisor = {
+				type = navigator
+				skill = 1
+				discount = yes
+				location = 230
+			}
+			add_navy_tradition = -10
+		}
+	}
+
+	pero_escobar = {
+		potential = {
+			mission_completed = btc_sagres_school
+			230 = { 
+				owned_by = ROOT
+				has_province_modifier = por_sagres 
+			}
+			NOT = { has_country_flag = had_escobar }
+		}
+		allow = {
+			has_idea_group = exploration_ideas
+		}
+		effect = {
+			define_explorer = {
+				name = "Pero Escobar"
+				shock = 2
+				fire = 1
+				manuever = 4
+			}
+			set_country_flag = had_escobar
+		}
+	}
+
+	diogo_cao = {
+		potential = {
+			mission_completed = btc_sagres_school
+			230 = { 
+				owned_by = ROOT
+				has_province_modifier = por_sagres 
+			}
+			NOT = { has_country_flag = had_cao }
+		}
+		allow = {
+			2258 = {
+				owned_by = ROOT
+				is_city = yes
+			}
+		}
+		effect = {
+			define_explorer = {
+				name = "Diogo Cão"
+				shock = 2
+				fire = 2
+				manuever = 4
+			}
+			set_country_flag = had_cao
+		}
+	}
+
+	bartolomeu_dias = {
+		potential = {
+			mission_completed = btc_sagres_school
+			230 = { 
+				owned_by = ROOT
+				has_province_modifier = por_sagres 
+			}
+			NOT = { has_country_flag = had_dias }
+		}
+		allow = {
+			dip_tech = 8
+		}
+		effect = {
+			define_explorer = {
+				name = "Bartolomeu Dias"
+				shock = 2
+				fire = 2
+				manuever = 5
+			}
+			set_country_flag = had_dias
+		}
+	}
+}

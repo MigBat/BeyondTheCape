@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 granada_development_missions = {
 	slot = 1
 	generic = no
@@ -608,13 +610,6 @@ adu_slot_2_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			cantabria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			leon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -656,15 +651,12 @@ adu_slot_2_missions = {
 			OR = {
 				area = galicia_area
 				area = asturias_area
-				area = cantabria_area
 				area = leon_area
 				area = extremadura_area
 				area = basque_country
 				area = catalonia_area
 				area = alentejo_area
 				area = beieras_area
-				area = norte_area
-				area = estremadura_area
 			}
 			NOT = {
 				owned_by = ROOT
@@ -678,11 +670,6 @@ adu_slot_2_missions = {
 				is_core = ROOT
 			}
 			asturias_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			cantabria_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -713,16 +700,6 @@ adu_slot_2_missions = {
 				is_core = ROOT
 			}
 			beieras_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			norte_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			estremadura_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -988,20 +965,6 @@ granada_slot_3_missions = {
 					}
 					add_permanent_claim = ROOT
 				}
-				norte_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				estremadura_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 		}
 		
@@ -1032,8 +995,6 @@ andalusia_slot_3_missions = {
 			OR = {
 				area = alentejo_area
 				area = beieras_area
-				area = norte_area
-				area = estremadura_area
 			}
 			NOT = {
 				owned_by = ROOT
@@ -1047,16 +1008,6 @@ andalusia_slot_3_missions = {
 				is_core = ROOT
 			}
 			beieras_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			norte_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			estremadura_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -1165,7 +1116,7 @@ andalusia_slot_3_missions_c = {
 		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
+				value = 5
 				region = carribeans_region
 				is_city = yes
 			}
@@ -1409,8 +1360,6 @@ andalusia_slot_4_missions = {
 				area = northern_morocco_area
 				area = marrekesh_area
 				area = western_morocco_area
-				area = tangier_area
-				area = fez_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1425,14 +1374,6 @@ andalusia_slot_4_missions = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			western_morocco_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			tangier_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			fez_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1801,28 +1742,6 @@ granada_slot_5_missions = {
 					add_permanent_claim = ROOT
 				}
 				western_morocco_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-						}
-						NOT = {
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				tangier_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-						}
-						NOT = {
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				fez_area = {
 					limit = {
 						NOT = {
 							owned_by = ROOT

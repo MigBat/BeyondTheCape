@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 ##############################
 # Gotland Flavor Events
 #                            
@@ -52,7 +54,7 @@ country_event = {
 			add_stability_or_adm_power = yes
 		}
 		ai_chance = {
-			factor = 0
+			factor = 1
 		}
 	}
 	
@@ -81,7 +83,7 @@ country_event = {
 			add_stability_or_adm_power = yes
 		}
 		ai_chance = {
-			factor = 1
+			factor = 9
 		}
 	}
 }
@@ -852,7 +854,7 @@ country_event = {
 		name = flavor_got.37.a
 		add_prestige = 20
 		ai_chance = {
-			factor = 0
+			factor = 1
 		}
 	}
 	
@@ -915,7 +917,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 0
+			factor = 1
 		}
 	}
 	
@@ -944,7 +946,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 9
 		}
 	}
 }

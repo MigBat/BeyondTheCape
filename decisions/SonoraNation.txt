@@ -1,3 +1,5 @@
+### BTC changes: california region ###
+
 country_decisions = {
 
 	sonora_nation = {
@@ -27,13 +29,8 @@ country_decisions = {
 					}
 				}
 			}
-			OR = {
-				sonora_area = {
-					owned_by = ROOT
-				}
-				baja_california_area = {
-					owned_by = ROOT
-				}
+			california_region = {
+				owned_by = ROOT
 			}
 			OR = {
 				ai = no

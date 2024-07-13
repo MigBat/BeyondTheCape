@@ -1,0 +1,32 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_feitoria_button"
+		texturefile = "gfx/interface/feitoria_button.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_fortified_feitoria_button"
+		texturefile = "gfx/interface/fortified_feitoria_button.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_foreign_feitoria_button"
+		texturefile = "gfx/interface/foreign_feitoria_button.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_suez_enable"
+		texturefile = "gfx/interface/suez_enable.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_suez_disable"
+		texturefile = "gfx/interface/suez_disable.dds"
+		loadType = "INGAME"
+	}
+}

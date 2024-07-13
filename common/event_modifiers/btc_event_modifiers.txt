@@ -1,20 +1,197 @@
-### BEYOND THE CAPE ###
-
-mourning_the_dead = {
-	local_unrest = -1
+quest_for_the_new_world = {
+	may_explore = yes
 }
 
-reconstruction_efforts = {
+prestigious_academy = {
+	institution_growth = 3
+	picture = "btc_academy_pic"
+}
+
+strait_engagement_width = {
+	local_naval_engagement_modifier = -0.5
+}
+
+el_dorado_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+fountain_of_youth_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+cibola_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+norumbega_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+saguenay_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+sierra_de_la_plata_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+city_of_caesars_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+quivira_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+feitoria = {
+	province_trade_power_value = 2
+	local_governing_cost = 0.25
+	local_ship_repair = 0.1
+	picture = "prov_modifier_feitoria"
+}
+
+fortified_feitoria = {
+	province_trade_power_value = 2
+	local_ship_repair = 0.2
+	local_defensiveness = 0.15
+	local_governing_cost = 0.5
+	fort_level = 1
+	picture = "prov_modifier_fortified_feitoria"
+}
+
+foreign_feitoria = {
+	tax_income = 6
+	picture = "prov_modifier_foreign_feitoria"
+}
+
+por_english_alliance = {
+	drill_gain_modifier = 0.25
+	army_tradition = 0.25
+}
+
+high_saudade_1 = {
+	monthly_portuguese_saudade = 0.05
+}
+high_saudade_2 = {
+	monthly_portuguese_saudade = 0.1
+}
+high_saudade_3 = {
+	monthly_portuguese_saudade = 0.15
+}
+low_saudade_1 = {
+	monthly_portuguese_saudade = -0.05
+}
+low_saudade_2 = {
+	monthly_portuguese_saudade = -0.1
+}
+low_saudade_3 = {
+	monthly_portuguese_saudade = -0.15
+}
+
+capital_1 = {
+	monthly_portuguese_saudade = -0.05
+}
+capital_2 = {
+	monthly_portuguese_saudade = -0.1
+}
+capital_3 = {
+	monthly_portuguese_saudade = -0.15
+}
+capital_4 = {
+	monthly_portuguese_saudade = -0.2
+}
+capital_5 = {
+	monthly_portuguese_saudade = -0.25
+}
+capital_6 = {
+	monthly_portuguese_saudade = -0.3
+}
+
+feitoria = {
+	province_trade_power_value = 2
+	local_governing_cost = 0.25
+	local_ship_repair = 0.1
+	picture = "prov_modifier_feitoria"
+}
+
+fortified_feitoria = {
+	province_trade_power_value = 2
+	local_ship_repair = 0.2
+	local_defensiveness = 0.15
+	local_governing_cost = 0.5
+	fort_level = 1
+	picture = "prov_modifier_fortified_feitoria"
+}
+
+foreign_feitoria = {
+	tax_income = 6
+	picture = "prov_modifier_foreign_feitoria"
+}
+
+estate_slavers_monopoly_of_slaves_mod = {
+	local_production_efficiency = -10
+}
+
+estate_slavers_plantation_production = {
+	trade_goods_size = 1
 	local_unrest = 2
-	local_tax_modifier = 0.15
 }
 
-recovery_efforts = {
-	local_monthly_devastation = -1
+estate_slavers_gold_mining = {
+	trade_goods_size = 1
+	local_unrest = 2
 }
 
-increased_recovery_efforts = {
-	local_monthly_devastation = -2
+slave_garrison = {
+	garrison_growth = 0.25
+	local_garrison_size = 0.1
+}
+
+slavers_conflict_within_city = {
+	local_unrest = 8
+}
+
+slavers_thankful_guilds = {
+	local_unrest = -2
+	trade_goods_size = 0.5
+}
+
+slaver_administration = {
+	cannons_for_hunting_pirates_in_fleet = 1
+	yearly_corruption = -0.02
+}
+
+slavers_addressing_social_banditry = {
+	local_autonomy = 0.5
+	local_production_efficiency = -0.66
+}
+
+slavers_social_banditry_modifier = {
+	province_trade_power_modifier = -0.33
+}
+
+growing_slave_trade = {
+	global_tax_income = 10
+}
+
+slaves_for_colonists = {
+	native_uprising_chance = 0.5
+}
+
+slave_builders = {
+	build_time = -0.2
+}
+
+slave_oarsmen = {
+	galley_cost = -0.5
 }
 
 massive_earthquake = {
@@ -25,12 +202,29 @@ massive_earthquake = {
 	local_monthly_devastation = 1
 }
 
+mourning_the_dead = {
+	local_unrest = -1
+}
+
+reconstruction_efforts = {
+	local_unrest = 2
+	local_tax_modifier = 0.15
+}
+
 relocated_capital = {
 	local_unrest = 5
 }
 
 show_of_force = {
 	local_unrest = 5
+}
+
+recovery_efforts = {
+	local_monthly_devastation = -1
+}
+
+increased_recovery_efforts = {
+	local_monthly_devastation = -2
 }
 
 building_new_capital = {
@@ -61,16 +255,6 @@ baixa_pombalina = {
 	development_cost_modifier = -0.2
 }
 
-quest_for_the_new_world = {
-	may_explore = yes
-}
-
-resist_reconquista = {
-	local_warscore_cost_modifier = 2
-	local_core_creation = 1
-	local_missionary_strength = -0.02
-}
-
 anti_islamic_society = {
 	tolerance_of_heathens_capacity = -1
 	innovativeness_gain = -0.25
@@ -88,7 +272,7 @@ anti_semitic_society = {
 }
 
 respected_merchants = {
-	placed_merchant_power = 3
+	placed_merchant_power = 2
 	global_foreign_trade_power = 0.05
 	diplomatic_reputation = 0.5
 }
@@ -98,6 +282,36 @@ aggressive_mercantilism = {
 	blockade_efficiency = 0.2
 	embargo_efficiency = 0.15
 	trade_efficiency = -0.1
+}
+
+ribeira_palace_mod = {
+	reform_progress_growth = 0.1
+	legitimacy = 0.1
+	picture = "ribeira"
+}
+
+mafra_convent_mod = {
+	prestige_decay = -0.01
+	yearly_absolutism = 0.5
+	picture = "mafra"
+}
+
+pena_palace_mod = {
+	stability_cost_modifier = -0.1
+	governing_capacity = 50
+	picture = "pena"
+}
+
+tower_of_belem_mod = {
+	prestige = 0.1
+	hostile_fleet_attrition = 5
+	picture = "belem"
+}
+
+jeronimos_monastery_mod = {
+	church_loyalty_modifier = 0.05
+	naval_morale = 0.05
+	picture = "jeronimos"
 }
 
 atlantic_slave_trade = {
@@ -118,12 +332,6 @@ regulated_slave_trade = {
 
 weak_control = {
 	yearly_corruption = 0.3
-}
-
-por_push_to_india = {
-	range = 0.3
-	naval_morale = 0.05
-	navy_tradition = 0.25
 }
 
 strong_feitorias = {
@@ -163,12 +371,13 @@ decadent_fervor = {
 }
 
 inefficient_indian_trade = {
-	trade_efficiency = -0.10
+	trade_efficiency = -0.15
 	yearly_corruption = 0.1
 }
 
 privatization_of_the_indian_trade = {
 	global_trade_power = -0.25
+	treasure_fleet_income = -0.5
 }
 
 war_of_survival = {
@@ -203,6 +412,10 @@ ostentatious_public_works = {
 impressive_embassies  = {
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.25
+}
+
+port_wine = {
+	trade_goods_size = 2
 }
 
 trade_deficit = {
@@ -269,181 +482,8 @@ emancipated_colonies = {
 	global_tariffs = -0.75
 }
 
-port_wine = {
-	trade_goods_size = 2
-}
-
-galician_revolts = {
-	global_unrest = 5
-}
-
-strong_nobility = {
-	min_local_autonomy = 50
-	local_defensiveness = -0.5
-}
-
-european_sugar = {
-	trade_goods_size = 2
-}
-
-ribeira_palace_mod = {
-	reform_progress_growth = 0.1
-	legitimacy = 0.1
-	picture = "ribeira"
-}
-
-mafra_convent_mod = {
-	prestige_decay = -0.01
-	yearly_absolutism = 0.5
-	picture = "mafra"
-}
-
-pena_palace_mod = {
-	stability_cost_modifier = -0.1
-	governing_capacity = 50
-	picture = "pena"
-}
-
-sponsored_shipbuilding = {
-	global_ship_cost = -0.25
-}
-
-tower_of_belem_mod = {
-	prestige = 0.1
-	hostile_fleet_attrition = 5
-	picture = "belem"
-}
-
-jeronimos_monastery_mod = {
-	church_loyalty_modifier = 0.05
-	naval_morale = 0.05
-	picture = "jeronimos"
-}
-
-black_swords = {
-	shock_damage = 0.15
-	assault_fort_ability = 0.25
-	is_marine_modifier = yes 
-}
-
-way_to_india = {
-	range = 0.5
-}
-
-# mare_clausum = {
-# 	transport_attrition = -0.15
-# 	naval_morale = 0.1
-# 	siege_ability = 0.1
-# 	land_morale = 0.1
-# 	warscore_cost_vs_other_religion = -0.15
-# }
-
-# mini_mare_clausum = {
-# 	transport_attrition = -0.15
-# 	siege_ability = 0.1
-# 	warscore_cost_vs_other_religion = -0.1
-# }
-
-mariners_astrolabe = {
-	movement_speed_in_fleet_modifier = 1
-}
-
-proudly_alone = {
-	stability_cost_modifier = -0.1
-}
-
-portuguese_exploration = {
-	free_navy_leader_pool = 2
-	colony_cost_modifier = -0.5
-}
-
 coimbra_university = {
 	global_institution_spread = 0.1
-}
-
-por_caravels = {
-	allowed_caravel_fraction = 0.2
-	has_caravel = yes
-	light_ship_power = 0.15
-}
-
-por_galleons = {
-	allowed_galleon_fraction = 0.1
-	has_galleon = yes
-	# heavy_ship_cannons = 0.1
-}
-
-por_english_alliance = {
-	leader_land_fire = 1
-	drill_gain_modifier = 0.25
-	army_tradition = 0.25
-}
-
-# por_henry_cheaper = {
-# 	dip_advisor_cost = -0.5
-# 	yearly_corruption = -0.12
-# }
-
-pinhal_leiria = {
-	naval_maintenance_modifier = -0.1
-}
-
-tercios = {
-	allowed_tercio_fraction = 0.15
-	has_tercio = yes
-}
-
-adopting_tercios = {
-	reinforce_speed = -0.2
-	morale_damage_received = 0.05
-	is_tercio_modifier = yes
-}
-
-portuguese_tercios = {
-	fire_damage = 0.1
-	morale_damage = 0.1
-	is_tercio_modifier = yes
-}
-
-por_sagres = {
-	dip_tech_cost_modifier = -0.05
-	navy_tradition = 0.25
-}
-
-por_brazil_tariffs = {
-	colonist_placement_chance = 0.15
-	global_tariffs = 0.15
-}
-
-por_armada = {
-	number_of_cannons_modifier = 0.75
-	hull_size_modifier = 0.75
-	sailor_maintenance_modifer = 1
-	engagement_cost = 1
-	naval_maintenance_modifier = 0.5
-	light_ship_cost = 0.25
-	is_caravel_modifier = yes
-}
-
-por_fullrigged = {
-	heavy_ship_power = -0.1
-	can_transport_units = yes
-	is_galleon_modifier = yes
-}
-
-spa_fullrigged = {
-	cannons_for_hunting_pirates_in_fleet = 1
-	is_galleon_modifier = yes
-}
-
-ven_galeazza = {
-	hull_size_modifier = 1
-	movement_speed_in_fleet_modifier = -1 
-	is_galleass_modifier = yes
-}
-
-extra_flagship = {
-	max_flagships = 1
 }
 
 homeland_focus = {
@@ -452,54 +492,6 @@ homeland_focus = {
 
 overseas_focus = {
 	monthly_portuguese_saudade = 1
-}
-
-high_saudade_1 = {
-	monthly_portuguese_saudade = 0.05
-}
-high_saudade_2 = {
-	monthly_portuguese_saudade = 0.1
-}
-high_saudade_3 = {
-	monthly_portuguese_saudade = 0.15
-}
-low_saudade_1 = {
-	monthly_portuguese_saudade = -0.05
-}
-low_saudade_2 = {
-	monthly_portuguese_saudade = -0.1
-}
-low_saudade_3 = {
-	monthly_portuguese_saudade = -0.15
-}
-
-around_africa = {
-	range = 1.0
-}
-
-feitoria = {
-	province_trade_power_value = 2
-	local_governing_cost = 0.25
-	local_ship_repair = 0.1
-	picture = "prov_modifier_feitoria"
-}
-
-fortified_feitoria = {
-	province_trade_power_value = 2
-	local_ship_repair = 0.2
-	local_defensiveness = 0.15
-	local_governing_cost = 0.5
-	fort_level = 1
-	picture = "prov_modifier_fortified_feitoria"
-}
-
-foreign_feitoria = {
-	tax_income = 6
-	picture = "prov_modifier_foreign_feitoria"
-}
-
-opm_diplomacy = {
-	diplomatic_upkeep = 1
 }
 
 slave_plantations = {
@@ -512,6 +504,10 @@ mass_slave_plantations = {
 	local_unrest = 10
 }
 
+proudly_alone = {
+	stability_cost_modifier = -0.1
+}
+
 gave_hanno = {
 	papal_influence = 1
 }
@@ -521,127 +517,28 @@ kept_hanno = {
 	legitimacy = 0.25
 }
 
-gave_ganda = {
-	papal_influence = 1
-}
-
 kept_ganda = {
 	prestige = 0.5
 	legitimacy = 0.25
 }
 
-ibe_pax_iberica = {
-	administrative_efficiency = 0.05
-}
-
-ibe_reduce_autonomy_religion = {
-	local_autonomy = -0.1
-}
-
-ibe_reduce_unrest_religion = {
-	local_unrest = -1
-}
-
-ibe_religious_missionary = {
-	local_missionary_strength = 0.05
-}
-
-popes_papa = {
+gave_ganda = {
 	papal_influence = 1
 }
 
-finish_reconquista = {
-	land_morale = 0.1
-	warscore_cost_vs_other_religion = -0.25
-	global_manpower_modifier = 0.2
-}
-
-estate_slavers_monopoly_of_slaves_mod = {
-	local_production_efficiency = -10
-}
-
-estate_slavers_plantation_production = {
-	trade_goods_size = 1
-	local_unrest = 2
-}
-
-estate_slavers_gold_mining = {
-	trade_goods_size = 1
-	local_unrest = 2
-}
-
-slave_garrison = {
-	garrison_growth = 0.25
-	local_garrison_size = 0.1
-}
-
-slavers_conflict_within_city = {
-	local_unrest = 8
-}
-
-slavers_thankful_guilds = {
-	local_unrest = -2
-	trade_goods_size = 0.5
-}
-
-slaver_administration = {
-	cannons_for_hunting_pirates_in_fleet = 1
-	yearly_corruption = -0.02
-}
-
-slavers_addressing_social_banditry = {
-	local_autonomy = 0.5
-	local_production_efficiency = -0.66
-}
-
-slavers_social_banditry_modifier = {
-	province_trade_power_modifier = -0.33
-}
-
-growing_slave_trade = {
-	global_tax_income = 10
-}
-
-duke_of_braganza = {
-	land_morale = 0.1
-	military_tactics = 0.1
-	war_exhaustion = -0.02
-}
-
-huge_colonial_nation = {
-	diplomatic_reputation = 0.5
-	monthly_splendor = 1
+pinhal_leiria = {
+	naval_maintenance_modifier = -0.1
 }
 
 discovery_fervor = {
 	global_sailors_modifier = 0.1
 	global_manpower_modifier = -0.1
-	range = 0.1
+	range = 0.25
 	core_creation = 0.5
-	global_colonial_growth = 15
 }
 
 expensive_spices = {
 	trade_efficiency = -0.05
-}
-
-capital_1 = {
-	monthly_portuguese_saudade = -0.05
-}
-capital_2 = {
-	monthly_portuguese_saudade = -0.1
-}
-capital_3 = {
-	monthly_portuguese_saudade = -0.15
-}
-capital_4 = {
-	monthly_portuguese_saudade = -0.2
-}
-capital_5 = {
-	monthly_portuguese_saudade = -0.25
-}
-capital_6 = {
-	monthly_portuguese_saudade = -0.3
 }
 
 lusiadas = {
@@ -650,59 +547,65 @@ lusiadas = {
 	army_tradition_decay = -0.01
 }
 
-portugal_succession_crisis = {
-	legitimacy = -1
-	land_morale = -0.1
-	naval_morale = -0.1
-}
-
-reduced_saudade = {
-	monthly_portuguese_saudade = -0.5
-}
-
-large_trade_company = {
-	merchants = 2
-	global_trade_power = 0.1
-	naval_forcelimit = 5
-}
-
-production_ordinances = {
-	production_efficiency = 0.1
-}
-
-tax_ordinances = {
-	global_tax_modifier = 0.1
-}
-
-trade_ordinances = {
-	trade_efficiency = 0.1
-}
-
-tariff_ordinances = {
-	global_tariffs = 0.1
-}
-
-padrao_ordinances = {
-	# can place padroes
-	picture = "padrao"
-}
-
-diplomatic_ordinances = {
-	diplomatic_reputation = 1
-}
-
-development_ordinances = {
-	development_cost_modifier = -0.05
-}
-
 padrao_raised = {
 	# padrao was raised
-	province_trade_power_value = 0.001
+	province_trade_power_value = 0.01
 	picture = "padrao"
 }
 
-explored_coast = {
-	# had recent explore coast event
+island_fort = {
+	fort_level = 1
+}
+
+black_swords = {
+	shock_damage = 0.15
+	assault_fort_ability = 0.25
+	is_marine_modifier = yes 
+}
+
+espingardas = {
+	fire_damage = 0.15
+	assault_fort_ability = 0.25
+	is_marine_modifier = yes 
+}
+
+mariners_astrolabe = {
+	movement_speed_in_fleet_modifier = 1
+}
+
+ocean_currents = {
+	range = 0.25
+}
+
+por_caravels = {
+	allowed_caravel_fraction = 0.2
+	has_caravel = yes
+}
+
+por_upgraded_caravels = {
+	number_of_cannons_modifier = 0.75
+	hull_size_modifier = 0.75
+	sailor_maintenance_modifer = 1
+	engagement_cost = 1
+	naval_maintenance_modifier = 0.5
+	light_ship_cost = 0.25
+	is_caravel_modifier = yes
+}
+
+por_galleons = {
+	allowed_galleon_fraction = 0.1
+	has_galleon = yes
+}
+
+por_upgraded_galleons = {
+	can_transport_units = yes
+	is_galleon_modifier = yes
+}
+
+resist_reconquista = {
+	local_warscore_cost_modifier = 2
+	local_core_creation = 1
+	local_missionary_strength = -0.02
 }
 
 dev_decreased_recently = {
@@ -713,284 +616,116 @@ dev_increased_recently = {
 	local_prosperity_growth = 0.01
 }
 
-no_settlers = {
-	global_colonial_growth = -50
-	colonist_placement_chance = -0.1
-	colony_cost_modifier = 0.5
+madeira_sugar = {
+	trade_goods_size = 2
 }
 
-very_low_settlers = {
-	global_colonial_growth = -25
-	colonist_placement_chance = -0.05
+btc_cruzado = {
+	interest = -0.5
+	inflation_reduction = 0.15
 }
 
-low_settlers = {
-	global_colonial_growth = -10
+padrao_real = {
+	global_spy_defence = 0.5
 }
 
-some_settlers = {
-	global_colonial_growth = 10
-	colonist_placement_chance = 0.05
+port_wine_production = {
+	trade_goods_size = 5
 }
 
-many_settlers = {
-	global_colonial_growth = 25
-	colonist_placement_chance = 0.1
+port_wine_storage = {
+	province_trade_power_value = 5
 }
 
-slaves_for_colonists = {
-	native_uprising_chance = 0.5
+por_sagres = {
+	dip_tech_cost_modifier = -0.05
+	navy_tradition = 0.25
 }
 
-slave_builders = {
-	build_time = -0.2
+zanzibar_node_bonus_por = {
+	may_perform_slave_raid = yes
+	coast_raid_range = 2
 }
 
-slave_oarsmen = {
-	galley_cost = -0.5
+aden_node_bonus_por = {
+	trade_steering = 0.25
 }
 
-strait_engagement_width = {
-	local_naval_engagement_modifier = -0.5
+hormuz_node_bonus_por = {
+	defensiveness = 0.5
 }
 
-tripitaka_koreana = {
-	harmonization_speed = 0.1
-	yearly_karma_decay = 0.01
-	monthly_splendor = 1
+coromandel_node_bonus_por = {
+	army_tradition = 0.5
+}
+
+malacca_node_bonus_por = {
+	navy_tradition = 0.5
+}
+
+zanzibar_node_bonus_mam = {
+	trade_range_modifier = 0.5
+}
+
+aden_node_bonus_mam = {
+	land_morale = 0.1
+}
+
+hormuz_node_bonus_mam = {
+	tolerance_own = 1
+}
+
+coromandel_node_bonus_mam = {
+	tolerance_heathen = 1
+	tolerance_heretic = 1
+}
+
+malacca_node_bonus_mam = {
 	technology_cost = -0.1
 }
 
-tordesillas_claims = {
-	global_colonial_growth = 15
+btc_pirate_hunt = {
+	block_slave_raid = yes
 }
 
-el_dorado_location = {
-	province_trade_power_value = 0.02
-	picture = "cityofgold"
+elvas_fort = {
+	local_defensiveness = 0.25
+	garrison_size = 0.2
 }
 
-fountain_of_youth_location = {
-	province_trade_power_value = 0.02
-	picture = "cityofgold"
+por_tercos = {
+	allowed_tercio_fraction = 0.15
+	has_tercio = yes
 }
 
-cibola_location = {
-	province_trade_power_value = 0.02
-	picture = "cityofgold"
+por_adopting_tercos = {
+	reinforce_speed = -0.2
+	morale_damage_received = 0.05
+	is_tercio_modifier = yes
 }
 
-norumbega_location = {
-	province_trade_power_value = 0.02
-	picture = "cityofgold"
-}
-
-saguenay_location = {
-	province_trade_power_value = 0.02
-	picture = "cityofgold"
-}
-
-sierra_de_la_plata_location = {
-	province_trade_power_value = 0.02
-	picture = "cityofgold"
-}
-
-city_of_caesars_location = {
-	province_trade_power_value = 0.02
-	picture = "cityofgold"
-}
-
-quivira_location = {
-	province_trade_power_value = 0.02
-	picture = "cityofgold"
-}
-
-discovered_caribbean = {
-	global_colonial_growth = 25
-}
-
-mare_liberum = {
-	trade_efficiency = 0.05
-	placed_merchant_power = 5
-}
-
-predatory_trade = {
-	embargo_efficiency = 0.5
-	privateer_efficiency = 0.075
-	mercantilism_cost = -0.25
-}
-
-ned_patroonschap = {
-	min_local_autonomy = 10
-	local_tax_modifier = -0.5
-	province_trade_power_value = 3
-	trade_goods_size_modifier = 0.3
-}
-
-discipline_for_the_marines_acts_modifier = {
-	morale_damage = 0.05
+por_improved_tercos = {
 	fire_damage = 0.1
-	fire_damage_received = -0.1
-	is_marine_modifier = yes
+	morale_damage = 0.1
+	is_tercio_modifier = yes
 }
 
-army_reform_acts_modifier = {
-	artillery_fire = 1
+jogo_do_pau = {
+	infantry_shock = 0.25
 }
 
-improved_man_of_war = {
-	ship_durability = 0.15
-	is_man_of_war_modifier = yes
+ginetes = {
+	cavalry_fire = 1
 }
 
-english_push_for_new_world = {
-	colonists = 1
-	range = 0.25
-	global_colonial_growth = 10
+casa_da_guine = {
+	trade_company_investment_cost = -0.2
 }
 
-voivode_subject = {
-	land_forcelimit = -3
-	liberty_desire = -0.2
+explored_coast = {
+	# had recent explore coast event
 }
 
-island_development = {
-	local_development_cost_modifier = 0.75
-	picture = "island_pic"
-}
-
-island_fort = {
-	fort_level = 1
-}
-
-#Venice modifiers
-btc_ven_ten_emergency_government = {
-	republican_tradition = -1
-	stability_cost_modifier = -0.15
-	global_foreign_trade_power = -0.5
-	war_exhaustion_cost = -0.5
-	manpower_recovery_speed = 0.5
-	interest = -2
-}
-
-btc_ven_ten_take_control_of_the_chancery = {
-	republican_tradition = -0.5
-	country_admin_power = -1
-	core_creation = 0.25
-}
-
-btc_ven_ten_council_eliminated = {
-	republican_tradition = 0.3
-}
-
-btc_ven_ten_council_restored_to_previous_functions = {
-	republican_tradition = 0.10
-}
-
-btc_ven_tens_improved_control_of_the_chancery = {
-	republican_tradition = -0.3
-	global_autonomy = -0.02
-	core_creation = -0.1
-}
-
-btc_ven_ten_improved_emergency_government = {
-	republican_tradition = -1
-	stability_cost_modifier = -0.2
-	global_foreign_trade_power = -0.25
-	war_exhaustion_cost = -0.65
-	manpower_recovery_speed = 0.6
-	interest = -2
-}
-
-##
-
-castilian_civil_war_no_stab_loss = {
-	no_stability_loss_on_monarch_death = yes
-}
-
-subject_of_castile = {
-	global_unrest = 5
-}
-
-revenge_on_iberia = {
-	warscore_cost_vs_other_religion = -0.5	
-}
-
-guanches_exploration = {
-	may_explore = yes
-}
-
-guanches_colonisation = {
-	colonists = 1
-	global_colonial_growth = 30
-	colonist_placement_chance = 0.15
-}
-
-wattasid_weariness = {
-	can_not_declare_war = yes
-}
-
-moroccan_unity = {
-	land_morale = 0.1
-	global_unrest = -2
-}
-
-sado_gold = {
-	trade_goods_size = 2
-	local_gold_depletion_chance_modifier = -0.75
-}
-
-disable_ship_capture = {
-	capture_ship_chance = -1000
-}
-
-prestigious_academy = {
-	institution_growth = 3
-	picture = "btc_academy_pic"
-}
-
-paria_tax = {
-	prestige = -0.5
-	#Causes yearly event where you have to pay up
-}
-
-too_many_eyalets = {
-	liberty_desire_from_subject_development = 2
-	administrative_efficiency = -0.2
-}
-
-too_many_core_eyalets = {
-	liberty_desire_from_subject_development = 2
-	administrative_efficiency = -0.2
-}
-
-portuguese_resilience = {
-	local_core_creation = 1
-}
-
-malaria = {
-	local_production_efficiency = -0.9
-	local_tax_modifier = -0.9
-	province_trade_power_value = 0.001
-	local_development_cost_modifier = 2
-	local_colonial_growth = -150
-	local_colony_cost_modifier = 1
-	picture = "malaria"
-}
-
-legacy_of_columbus = {
-	max_flagships = 1
-}
-
-legacy_of_magellan = {
-	max_flagships = 1
-}
-
-monumental_good = {
-	no_stability_loss_on_monarch_death = yes
-	ship_recruit_speed = -0.5
-	all_estate_possible_privileges = 1
-	governing_capacity_modifier = 0.25
-	max_absolutism = 50
-	picture = "btc_monument_pic"
+duke_of_braganca = {
+	min_local_autonomy = 20
 }

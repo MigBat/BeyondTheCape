@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 eng_british_conquest = {
 
 	slot = 1
@@ -607,7 +609,7 @@ eng_exploration_americas = {
 			custom_trigger_tooltip = {
 			tooltip = english_colony_in_the_carribean.tooltip
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 1
+					value = 5
 					region = carribeans_region
 					is_city = yes
 				}
@@ -707,7 +709,7 @@ eng_indian_ocean_exploration = {
 	england_discovers_india = {
 		icon = mission_junk_boat
 		required_missions = { }
-		position = 7
+		position = 6
 		completed_by = 1579.1.1
 		
 		trigger = {
@@ -879,12 +881,12 @@ eng_british_cot_dominance = {
 		position = 8
 		
 		provinces_to_highlight = {
-			province_id = 236
+			province_id = 1269
 			has_discovered = ROOT
 		}
 		
 		trigger = { 
-			236 = {
+			1269 = {
 				is_strongest_trade_power = ROOT
 			}
 		}

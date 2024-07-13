@@ -1,0 +1,59 @@
+namespace = btc_goldspices
+
+country_event = {
+	id = btc_goldspices.1
+	title = btc_goldspices.1.t
+	desc = btc_goldspices.1.d
+	picture = BURGHER_ESTATE_eventPicture
+
+	trigger = {
+		is_subject_of_type = commercial_enterprise
+		any_owned_province = {
+			trade_goods = spices
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+
+	option = {
+		name = btc_goldspices.1.a
+		
+		every_owned_province = {
+			limit = {
+				trade_goods = spices
+			}
+			change_trade_goods = goldspices
+		}
+	}
+}
+
+country_event = {
+	id = btc_goldspices.2
+	title = btc_goldspices.2.t
+	desc = btc_goldspices.2.d
+	picture = BURGHER_ESTATE_eventPicture
+
+	trigger = {
+		NOT = { is_subject_of_type = commercial_enterprise }
+		any_owned_province = {
+			trade_goods = goldspices
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+
+	option = {
+		name = btc_goldspices.2.a
+		
+		every_owned_province = {
+			limit = {
+				trade_goods = goldspices
+			}
+			change_trade_goods = spices
+		}
+	}
+}

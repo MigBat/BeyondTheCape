@@ -75,6 +75,9 @@ country_event = {
 				name = "birthplace_of_the_renaissance"
 				duration = -1
 			}
+			hidden_effect = {
+				save_global_event_target_as = birthplace_of_the_renaissance
+			}
 		}
 		hidden_effect = {
 			every_country = {
@@ -546,6 +549,22 @@ country_event = {
 			}
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = yua_guaranteed_printing_press
+				}
+				capital_scope = {
+					add_institution_embracement = {
+						which = printing_press
+						value = 100
+					}
+				}
+			}
+		}
+	}
 }
 
 country_event = {
@@ -617,6 +636,17 @@ country_event = {
 				add_institution_embracement = {
 					which = "printing_press"
 					value = 25
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = yua_guaranteed_printing_press
+			}
+			capital_scope = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
 				}
 			}
 		}
@@ -1564,6 +1594,7 @@ country_event = {
 #Colonialism
 
 #Colonial Charter
+# Beyond the Cape exploration
 country_event = {
 	id = institution_events.20
 	title = institution_events.20.t
@@ -2428,7 +2459,7 @@ country_event = {
 			area = {
 				limit = {
 					owned_by = ROOT
-					NOT = { printing_press = 100 }
+					#NOT = { printing_press = 100 }
 				}
 				add_institution_embracement = {
 					which = printing_press
@@ -3181,7 +3212,7 @@ country_event = {
 	}
 }
 
-#Healthy Criticism? - Coffee Houses / KaragÃ¶z Etc
+#Healthy Criticism? - Coffee Houses / Karagöz Etc
 province_event = {
 	id = institution_events.73
 	title = institution_events.73.t #Healthy Criticism?

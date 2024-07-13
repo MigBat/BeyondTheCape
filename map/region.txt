@@ -1450,7 +1450,7 @@ west_african_sea_region = {
 	areas = {
 		west_african_coast_sea_area
 		gulf_of_guinea_sea_area
-		skeleton_coast_area
+		# skeleton_coast_area
 	}
 }
 
@@ -1550,8 +1550,7 @@ south_atlantic_region = {
 	areas = {
 		south_atlantic_area
 		cape_of_storms_area
-		# BTC #
-		# skeleton_coast_area
+		skeleton_coast_area
 	}
 }
 

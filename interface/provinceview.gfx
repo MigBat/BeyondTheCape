@@ -757,34 +757,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/city_state_button.dds"
 	}
 
-	# BEYOND THE CAPE #
-	spriteType = {
-		name = "GFX_feitoria_button"
-		texturefile = "gfx/interface/feitoria_button.dds"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_fortified_feitoria_button"
-		texturefile = "gfx/interface/fortified_feitoria_button.dds"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_foreign_feitoria_button"
-		texturefile = "gfx/interface/foreign_feitoria_button.dds"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_suez_enable"
-		texturefile = "gfx/interface/suez_enable.dds"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_suez_disable"
-		texturefile = "gfx/interface/suez_disable.dds"
-		loadType = "INGAME"
-	}
-	###
-
 	spriteType = {
 		name = "GFX_tradecompany_indicators"
 		texturefile = "gfx/interface/tradecompany_indicators.dds"
@@ -1008,14 +980,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 32
+		noOfFrames = 33
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_resource_icon_small"
 		texturefile = "gfx//interface//resources_small.dds"
-		noOfFrames = 32
+		noOfFrames = 33
 		loadType = "INGAME"
 	}
 
@@ -1028,7 +1000,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon_transparent"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 32
+		noOfFrames = 33
 		loadType = "INGAME"
 		
 		alwaystransparent = yes

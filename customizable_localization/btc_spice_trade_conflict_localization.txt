@@ -1,0 +1,265 @@
+defined_text = {
+	name = GetMareClausumModifiersPor
+	random = no
+
+	text = {
+		localisation_key = mare_clausum_modifiers_por
+		trigger = {
+		}
+	}
+}
+
+defined_text = {
+	name = GetMareClausumModifiersMam
+	random = no
+
+	text = {
+		localisation_key = mare_clausum_modifiers_mam
+		trigger = {
+		}
+	}
+}
+
+defined_text = {
+	name = GetMareClausumRangePor
+	random = no
+	text = {
+		localisation_key = mare_clausum_modifiers_por_range_0_20
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 20
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = mare_clausum_modifiers_por_range_20_40
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 20
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 40
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = mare_clausum_modifiers_por_range_40_60
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 40
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 60
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = mare_clausum_modifiers_por_range_60_80
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 60
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 80
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = mare_clausum_modifiers_por_range_80_100
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 80
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetMareClausumRangeMam
+	random = no
+	text = {
+		localisation_key = mare_clausum_modifiers_mam_range_0_20
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 20
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = mare_clausum_modifiers_mam_range_20_40
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 20
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 40
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = mare_clausum_modifiers_mam_range_40_60
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 40
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 60
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = mare_clausum_modifiers_mam_range_60_80
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 60
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 80
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = mare_clausum_modifiers_mam_range_80_100
+		trigger = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 80
+			}
+			NOT = {
+				check_variable = {
+					which = total_mare_clausum_amount
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetObjective1Status
+	random = no
+	text = {
+		localisation_key = objective1_complete
+		trigger = {
+			event_target:mam_spice_trade = {
+				has_country_flag = mam_win_battles_objective_flag
+			}
+		}
+	}
+	text = {
+		localisation_key = objective1_not_complete
+		trigger = {
+			event_target:mam_spice_trade = {
+				NOT = { has_country_flag = mam_win_battles_objective_flag }
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetObjective2Status
+	random = no
+	text = {
+		localisation_key = objective2_complete
+		trigger = {
+			event_target:mam_spice_trade = {
+				has_country_flag = mam_sink_ships_objective_flag
+			}
+		}
+	}
+	text = {
+		localisation_key = objective2_not_complete
+		trigger = {
+			event_target:mam_spice_trade = {
+				NOT = { has_country_flag = mam_sink_ships_objective_flag }
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetObjective3Status
+	random = no
+	text = {
+		localisation_key = objective3_complete
+		trigger = {
+			event_target:mam_spice_trade = {
+				has_country_flag = mam_get_supporters_objective_flag
+			}
+		}
+	}
+	text = {
+		localisation_key = objective3_not_complete
+		trigger = {
+			event_target:mam_spice_trade = {
+				NOT = { has_country_flag = mam_get_supporters_objective_flag }
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetObjective4Status
+	random = no
+	text = {
+		localisation_key = objective4_complete
+		trigger = {
+			event_target:mam_spice_trade = {
+				has_country_flag = mam_win_war_objective_flag
+			}
+		}
+	}
+	text = {
+		localisation_key = objective4_not_complete
+		trigger = {
+			event_target:mam_spice_trade = {
+				NOT = { has_country_flag = mam_win_war_objective_flag }
+			}
+		}
+	}
+}

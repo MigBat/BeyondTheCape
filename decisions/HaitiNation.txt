@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 country_decisions = {
 
 	haiti_nation = {

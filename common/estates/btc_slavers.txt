@@ -5,28 +5,33 @@ estate_slavers = {
 
 	# If true, country will get estate
 	trigger = {
-		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-			value = 5
-			OR = {
-				superregion = north_america_superregion
-				superregion = central_america_superregion
-				superregion = south_america_superregion
+		OR = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				OR = {
+					superregion = north_america_superregion
+					superregion = central_america_superregion
+					superregion = south_america_superregion
+				}
+				OR = {
+					trade_goods = cocoa
+					trade_goods = coffee
+					trade_goods = cotton
+					trade_goods = sugar
+					trade_goods = tea
+					trade_goods = tobacco
+				}
 			}
-			OR = {
-				trade_goods = cocoa
-				trade_goods = coffee
-				trade_goods = cotton
-				trade_goods = sugar
-				trade_goods = tea
-				trade_goods = tobacco
-			}
+			mission_completed = btc_arguin
 		}
 		OR = {
 			any_owned_province = {
 				OR = {
 					trade_goods = slaves
-					region = guinea_region
-					region = kongo_region
+					AND = {
+						region = guinea_region
+						region = kongo_region
+					}
 				}
 			}
 			1466 = {	# Ivory Coast

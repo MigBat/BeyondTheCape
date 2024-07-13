@@ -153,7 +153,7 @@ gulf_of_mexico_area = {
 }
 
 sea_of_labrador_area = {
-	1483 1484 1493 1494 1495 1496 
+	1483 1484 1493 1494 1495 1496 1481 1482 1924
 }
 
 hudson_bay_sea_area = {
@@ -161,7 +161,7 @@ hudson_bay_sea_area = {
 }
 
 denmark_strait_area = {
-	1477 1480 1481 1482 1924
+	1477 1480
 }
 
 gulf_of_guinea_sea_area = {
@@ -169,7 +169,7 @@ gulf_of_guinea_sea_area = {
 }
 
 cape_of_storms_area = {
-	1459 1460
+	1459 1460 1586 1600 1603 1604
 }
 
 skeleton_coast_area = {
@@ -213,7 +213,7 @@ west_african_coast_sea_area = {
 }
 
 south_atlantic_area = {
-	1586 1598 1599 1600 1603 1604 1605 1606 1608 1609 1610
+	1598 1599 1605 1606 1608 1609 1610
 	# BTC #
 	# 1585 1601 1602
 }

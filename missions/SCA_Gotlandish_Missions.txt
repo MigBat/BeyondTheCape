@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 #Gotland Monarchy missions
 got_monarchy_slot_1 = {
 	slot = 1
@@ -804,7 +806,7 @@ got_republic_slot_1 = {
 			OR = {
 				has_river_estuary_trigger = yes
 				province_has_center_of_trade_of_level = 1
-				has_province_modifier = oresund_sound
+				has_province_modifier = sound_toll
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -817,7 +819,7 @@ got_republic_slot_1 = {
 						OR = {
 							has_river_estuary_trigger = yes
 							province_has_center_of_trade_of_level = 1
-							has_province_modifier = oresund_sound
+							has_province_modifier = sound_toll
 						}
 						value = 3
 					}
@@ -828,7 +830,7 @@ got_republic_slot_1 = {
 					OR = {
 						has_river_estuary_trigger = yes
 						province_has_center_of_trade_of_level = 1
-						has_province_modifier = oresund_sound
+						has_province_modifier = sound_toll
 					}
 					value = 3
 				}
@@ -1549,7 +1551,7 @@ got_pirate_slot_1_new_world = {
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = carribeans_region
-				value = 1
+				value = 5
 			}
 		}
 		effect = {
@@ -2214,7 +2216,7 @@ got_pirate_slot_4 = {
 		provinces_to_highlight = {
 			continent = europe
 			OR = {
-				has_province_modifier = oresund_sound
+				has_province_modifier = sound_toll
 				has_river_estuary_trigger = yes
 				province_has_center_of_trade_of_level = 1
 			}
@@ -2225,7 +2227,7 @@ got_pirate_slot_4 = {
 			num_of_owned_provinces_with = {
 				continent = europe
 				OR = {
-					has_province_modifier = oresund_sound
+					has_province_modifier = sound_toll
 					has_river_estuary_trigger = yes
 					province_has_center_of_trade_of_level = 1
 				}
@@ -2351,13 +2353,7 @@ got_pirate_slot_4 = {
 					province = 163
 				}
 				add_permanent_claim_province = {
-					province = 4974
-				}
-				add_permanent_claim_province = {
 					province = 321
-				}
-				add_permanent_claim_province = {
-					province = 4973
 				}
 				add_permanent_claim_province = {
 					province = 4698
@@ -2543,7 +2539,7 @@ got_pirate_slot_5 = {
 						add_historical_friend = ROOT
 						define_ruler = {
 							force_republican_names = yes
-							dynasty = "StÃ¶rtebeker"
+							dynasty = "Störtebeker"
 							culture = pommeranian
 						}
 						add_republican_tradition = 50

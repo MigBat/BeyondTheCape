@@ -1,0 +1,1695 @@
+set_mam_supporter = {
+	if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_1 }
+		}
+		save_global_event_target_as = mam_ally_1
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_2 }
+		}
+		save_global_event_target_as = mam_ally_2
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_3 }
+		}
+		save_global_event_target_as = mam_ally_3
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_4 }
+		}
+		save_global_event_target_as = mam_ally_4
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_5 }
+		}
+		save_global_event_target_as = mam_ally_5
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_6 }
+		}
+		save_global_event_target_as = mam_ally_6
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_7 }
+		}
+		save_global_event_target_as = mam_ally_7
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_8 }
+		}
+		save_global_event_target_as = mam_ally_8
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_9 }
+		}
+		save_global_event_target_as = mam_ally_9
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_10 }
+		}
+		save_global_event_target_as = mam_ally_10
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_11 }
+		}
+		save_global_event_target_as = mam_ally_11
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_12 }
+		}
+		save_global_event_target_as = mam_ally_12
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_13 }
+		}
+		save_global_event_target_as = mam_ally_13
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_14 }
+		}
+		save_global_event_target_as = mam_ally_14
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_15 }
+		}
+		save_global_event_target_as = mam_ally_15
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_16 }
+		}
+		save_global_event_target_as = mam_ally_16
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_17 }
+		}
+		save_global_event_target_as = mam_ally_17
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_18 }
+		}
+		save_global_event_target_as = mam_ally_18
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_19 }
+		}
+		save_global_event_target_as = mam_ally_19
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_20 }
+		}
+		save_global_event_target_as = mam_ally_20
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_21 }
+		}
+		save_global_event_target_as = mam_ally_21
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_22 }
+		}
+		save_global_event_target_as = mam_ally_22
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_23 }
+		}
+		save_global_event_target_as = mam_ally_23
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_24 }
+		}
+		save_global_event_target_as = mam_ally_24
+		set_country_flag = is_mam_ally
+	}
+}
+
+set_por_supporter = {
+	if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_1 }
+		}
+		save_global_event_target_as = por_ally_1
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_2 }
+		}
+		save_global_event_target_as = por_ally_2
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_3 }
+		}
+		save_global_event_target_as = por_ally_3
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_4 }
+		}
+		save_global_event_target_as = por_ally_4
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_5 }
+		}
+		save_global_event_target_as = por_ally_5
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_6 }
+		}
+		save_global_event_target_as = por_ally_6
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_7 }
+		}
+		save_global_event_target_as = por_ally_7
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_8 }
+		}
+		save_global_event_target_as = por_ally_8
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_9 }
+		}
+		save_global_event_target_as = por_ally_9
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_10 }
+		}
+		save_global_event_target_as = por_ally_10
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_11 }
+		}
+		save_global_event_target_as = por_ally_11
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_12 }
+		}
+		save_global_event_target_as = por_ally_12
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_13 }
+		}
+		save_global_event_target_as = por_ally_13
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_14 }
+		}
+		save_global_event_target_as = por_ally_14
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_15 }
+		}
+		save_global_event_target_as = por_ally_15
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_16 }
+		}
+		save_global_event_target_as = por_ally_16
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_17 }
+		}
+		save_global_event_target_as = por_ally_17
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_18 }
+		}
+		save_global_event_target_as = por_ally_18
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_19 }
+		}
+		save_global_event_target_as = por_ally_19
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_20 }
+		}
+		save_global_event_target_as = por_ally_20
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_21 }
+		}
+		save_global_event_target_as = por_ally_21
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_22 }
+		}
+		save_global_event_target_as = por_ally_22
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_23 }
+		}
+		save_global_event_target_as = por_ally_23
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_24 }
+		}
+		save_global_event_target_as = por_ally_24
+		set_country_flag = is_por_ally
+	}
+}
+
+own_por_alliance_points_calc_zanzibar = {
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_por_alliance_points_calc_aden = {
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_por_alliance_points_calc_hormuz = {
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_por_alliance_points_calc_coromandel = {
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_por_alliance_points_calc_malacca = {
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_zanzibar = {
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_aden = {
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_hormuz = {
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_coromandel = {
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_malacca = {
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+next_por_ally = {
+	if = {
+		limit = {
+			tag = event_target:por_spice_trade
+			has_saved_global_event_target = por_ally_1
+		}
+		event_target:por_ally_1 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_1
+			has_saved_global_event_target = por_ally_2
+		}
+		event_target:por_ally_2 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_2
+			has_saved_global_event_target = por_ally_3
+		}
+		event_target:por_ally_3 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_3
+			has_saved_global_event_target = por_ally_4
+		}
+		event_target:por_ally_4 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_4
+			has_saved_global_event_target = por_ally_5
+		}
+		event_target:por_ally_5 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_5
+			has_saved_global_event_target = por_ally_6
+		}
+		event_target:por_ally_6 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_6
+			has_saved_global_event_target = por_ally_7
+		}
+		event_target:por_ally_7 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_7
+			has_saved_global_event_target = por_ally_8
+		}
+		event_target:por_ally_8 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_8
+			has_saved_global_event_target = por_ally_9
+		}
+		event_target:por_ally_9 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_9
+			has_saved_global_event_target = por_ally_10
+		}
+		event_target:por_ally_10 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_10
+			has_saved_global_event_target = por_ally_11
+		}
+		event_target:por_ally_11 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_11
+			has_saved_global_event_target = por_ally_12
+		}
+		event_target:por_ally_12 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_12
+			has_saved_global_event_target = por_ally_13
+		}
+		event_target:por_ally_13 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_13
+			has_saved_global_event_target = por_ally_14
+		}
+		event_target:por_ally_14 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_14
+			has_saved_global_event_target = por_ally_15
+		}
+		event_target:por_ally_15 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_15
+			has_saved_global_event_target = por_ally_16
+		}
+		event_target:por_ally_16 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_16
+			has_saved_global_event_target = por_ally_17
+		}
+		event_target:por_ally_17 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_17
+			has_saved_global_event_target = por_ally_18
+		}
+		event_target:por_ally_18 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_18
+			has_saved_global_event_target = por_ally_19
+		}
+		event_target:por_ally_19 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_19
+			has_saved_global_event_target = por_ally_20
+		}
+		event_target:por_ally_20 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_20
+			has_saved_global_event_target = por_ally_21
+		}
+		event_target:por_ally_21 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_21
+			has_saved_global_event_target = por_ally_22
+		}
+		event_target:por_ally_22 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_22
+			has_saved_global_event_target = por_ally_23
+		}
+		event_target:por_ally_23 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:por_ally_23
+			has_saved_global_event_target = por_ally_24
+		}
+		event_target:por_ally_24 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+}
+
+next_mam_ally = {
+	if = {
+		limit = {
+			tag = event_target:mam_spice_trade
+			has_saved_global_event_target = mam_ally_1
+		}
+		event_target:mam_ally_1 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_1
+			has_saved_global_event_target = mam_ally_2
+		}
+		event_target:mam_ally_2 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_2
+			has_saved_global_event_target = mam_ally_3
+		}
+		event_target:mam_ally_3 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_3
+			has_saved_global_event_target = mam_ally_4
+		}
+		event_target:mam_ally_4 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_4
+			has_saved_global_event_target = mam_ally_5
+		}
+		event_target:mam_ally_5 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_5
+			has_saved_global_event_target = mam_ally_6
+		}
+		event_target:mam_ally_6 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_6
+			has_saved_global_event_target = mam_ally_7
+		}
+		event_target:mam_ally_7 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_7
+			has_saved_global_event_target = mam_ally_8
+		}
+		event_target:mam_ally_8 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_8
+			has_saved_global_event_target = mam_ally_9
+		}
+		event_target:mam_ally_9 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_9
+			has_saved_global_event_target = mam_ally_10
+		}
+		event_target:mam_ally_10 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_10
+			has_saved_global_event_target = mam_ally_11
+		}
+		event_target:mam_ally_11 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_11
+			has_saved_global_event_target = mam_ally_12
+		}
+		event_target:mam_ally_12 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_12
+			has_saved_global_event_target = mam_ally_13
+		}
+		event_target:mam_ally_13 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_13
+			has_saved_global_event_target = mam_ally_14
+		}
+		event_target:mam_ally_14 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_14
+			has_saved_global_event_target = mam_ally_15
+		}
+		event_target:mam_ally_15 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_15
+			has_saved_global_event_target = mam_ally_16
+		}
+		event_target:mam_ally_16 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_16
+			has_saved_global_event_target = mam_ally_17
+		}
+		event_target:mam_ally_17 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_17
+			has_saved_global_event_target = mam_ally_18
+		}
+		event_target:mam_ally_18 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_18
+			has_saved_global_event_target = mam_ally_19
+		}
+		event_target:mam_ally_19 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_19
+			has_saved_global_event_target = mam_ally_20
+		}
+		event_target:mam_ally_20 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_20
+			has_saved_global_event_target = mam_ally_21
+		}
+		event_target:mam_ally_21 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_21
+			has_saved_global_event_target = mam_ally_22
+		}
+		event_target:mam_ally_22 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_22
+			has_saved_global_event_target = mam_ally_23
+		}
+		event_target:mam_ally_23 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+	if = {
+		limit = {
+			tag = event_target:mam_ally_23
+			has_saved_global_event_target = mam_ally_24
+		}
+		event_target:mam_ally_24 = {
+			country_event = {
+				id = btc_spice_trade.2
+			}
+		}
+	}
+}
+
+set_government_power_variable = {
+	hidden_effect = { set_variable = { which = mare_clausum_copy which = $variable$ } }
+
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 83886.08 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 41943.04 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 20971.52 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 10485.76 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 5242.88 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 2621.44 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 1310.72 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 655.36 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 327.68 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 163.84 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 81.92 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 40.96 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 20.48 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 10.24 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 5.12 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 2.56 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 1.28 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.64 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.32 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.16 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.08 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.04 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.02 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.01 }
+}
+
+add_government_power_variable = {
+	if = {
+		limit = {
+			check_variable = { which = mare_clausum_copy value = $num$ }
+		}
+		hidden_effect = { subtract_variable = { which = mare_clausum_copy value = $num$ } }
+		add_government_power = {
+			mechanic_type = $mechanic_name$
+			power_type = $power_name$
+			value = +$num$
+		}
+	}
+}
+
+check_mare_clausum_modifiers = {
+
+	set_variable = {
+		which = mare_clausum_por_dip_rep
+		which = total_mare_clausum_amount
+	}
+	divide_variable = {
+		which = mare_clausum_por_dip_rep
+		value = 100
+	}
+	multiply_variable = {
+		which = mare_clausum_por_dip_rep
+		value = 2
+	}
+
+	set_variable = {
+		which = mare_clausum_por_priv_eff
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_por_ship_prop
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_por_bloc_eff
+		value = 50
+	}
+	set_variable = {
+		which = mare_clausum_por_light_ca
+		value = 50
+	}
+	set_variable = {
+		which = mare_clausum_por_cot_cost
+		value = 25	# NEGATIVE
+	}
+	set_variable = {
+		which = mare_clausum_por_asslt_fort
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_por_siege_bloc
+		value = 1
+	}
+	set_variable = {
+		which = mare_clausum_por_ship_spd
+		value = 1
+	}
+	set_variable = {
+		which = mare_clausum_por_merch_pwr
+		value = 50
+	}
+
+	set_variable = {
+		which = mare_clausum_mam_imprv_rel
+		value = 100
+	}
+	subtract_variable = {
+		which = mare_clausum_mam_imprv_rel
+		which = total_mare_clausum_amount
+	}
+	multiply_variable = {
+		which = mare_clausum_mam_imprv_rel
+		value = 50
+	}
+	divide_variable = {
+		which = mare_clausum_mam_imprv_rel
+		value = 100
+	}
+
+	set_variable = {
+		which = mare_clausum_mam_global_dvst
+		value = 0.25	# NEGATIVE
+	}
+	set_variable = {
+		which = mare_clausum_mam_hunt_pirates
+		value = 100
+	}
+	set_variable = {
+		which = mare_clausum_mam_own_coast
+		value = 1
+	}
+	set_variable = {
+		which = mare_clausum_mam_eng_width
+		value = 20
+	}
+	set_variable = {
+		which = mare_clausum_mam_trade_pwr
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_mam_garr_size
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_mam_garr_grwth
+		value = 66
+	}
+	set_variable = {
+		which = mare_clausum_mam_naval_fl
+		value = 50
+	}
+	set_variable = {
+		which = mare_clausum_mam_galley_ca
+		value = 25
+	}
+}

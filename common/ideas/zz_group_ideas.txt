@@ -79,8 +79,8 @@ trading_city_ideas = {
 
 colonial_ideas = {
 	start = {
-		auto_explore_adjacent_to_colony = yes
-		may_establish_frontier = yes
+		development_cost = -0.1
+		no_religion_penalty = yes
 	}
 	
 	bonus = {
@@ -104,7 +104,6 @@ colonial_ideas = {
 	}
 	manufacturing_center = {
 		build_cost = -0.1
-		development_cost = -0.1
 	}
 	free_thinkers = {
 		idea_cost = -0.1
@@ -113,6 +112,7 @@ colonial_ideas = {
 		global_regiment_cost = -0.1
 	}
 	new_frontiers = {
+		auto_explore_adjacent_to_colony = yes
 		global_colonial_growth = 20
 	}
 	liberty_heroes = {
@@ -124,7 +124,7 @@ colonial_ideas = {
 barbary_pirate_ideas = {
 	start = {
 		galley_power = 0.2
-		privateer_efficiency = 0.05
+		privateer_efficiency = 0.2
 	}
 	bonus = {
 		legitimacy = 1
@@ -285,7 +285,7 @@ berber_ideas = {
 	}
 	corsairs = {
 		navy_tradition = 1
-		privateer_efficiency = 0.025
+		privateer_efficiency = 0.10
 	}
 	tuareg_cavalry = {
 		cavalry_power = 0.10
@@ -605,7 +605,7 @@ mindanao_ideas = {
 	}
 	mindanao_pirates_of_mindanao = {
 		embargo_efficiency = 0.1	
-		privateer_efficiency = 0.05
+		privateer_efficiency = 0.25
 	}
 }
 
@@ -1229,7 +1229,7 @@ sumatran_ideas = {
 	}
 	spice_pirates = {
 		light_ship_power = 0.10
-		privateer_efficiency = 0.025
+		privateer_efficiency = 0.15
 	}
 	center_of_scholarship = {
 		advisor_cost = -0.15

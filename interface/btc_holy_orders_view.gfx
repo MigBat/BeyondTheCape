@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_holy_order_christ"
+		texturefile = "gfx/interface/holy_orders/dlc/golden_century/christ.dds"
+		noOfFrames = 4
+	}
+}

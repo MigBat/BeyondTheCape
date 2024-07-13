@@ -77,8 +77,6 @@
  desc_methuen_treaty:0 "This treaty gives increased cooperation with english merchants"
  came_to_our_aid:0 "Came to our aid"
  forsaken_us:0 "Forsaken us"
- european_sugar:0 "European Sugar"
- desc_european_sugar:0 "This is one of the largest european sugar production sites."
  portuguese_exploration:0 "Portuguese Exploration"
  desc_portuguese_exploration:0 "Many talented seamen originate from our country."
  sponsored_shipbuilding:0 "Sponsored Shipbuilding"
@@ -215,9 +213,9 @@
  desc_portuguese_exploration:0 "We are raising many talented explorers who will chart the seas for us."
  por_sagres:0 "Sagres School of Navigation"
  desc_por_sagres:0 "The school brought together scholars, sailors, and cartographers to work on improving navigational techniques and developing new tools and instruments for use at sea."
- por_caravels:0 "Navigation Techniques"
+ por_caravels:0 "Armada Ship"
  desc_por_caravels:0 "The Infante has overseen revolutionary advancements in the nautical area, developing a vessel that can sail against the wind, the Armada. We shall make use of it to achieve our ambitions."
- por_galleons:0 "High-Seas Navy"
+ por_galleons:0 "Full-Rigged Ship"
  desc_por_galleons:0 "One of the most significant developments of the first half of the 16th century was the Full-Rigged ship, a variant of heavy ships with reinforced hull and extra cannons."
  por_english_alliance:0 "English Military Alliance"
  desc_por_english_alliance:0 "It is cordially agreed that if, in time to come, one of the kings or his heir shall need the support of the other, or his help, and in order to get such assistance applies to his ally in lawful manner, the ally shall be bound to give aid and succour to the other, so far as he is able (without any deceit, fraud, or pretence) to the extent required by the danger to his ally's realms, lands, domains, and subjects; and he shall be firmly bound by these present alliances to do this." 
@@ -240,8 +238,8 @@
  desc_methuen_treaty:0 "This treaty gives increased cooperation with english merchants"
  came_to_our_aid:0 "Came to our aid"
  forsaken_us:0 "Forsaken us"
- european_sugar:0 "European Sugar"
- desc_european_sugar:0 "This is one of the largest european sugar production sites."
+ madeira_sugar:0 "Madeira Sugar"
+ desc_madeira_sugar:0 "This is one of the largest european sugar production sites."
  portuguese_exploration:0 "Portuguese Exploration"
  desc_portuguese_exploration:0 "Many talented seamen originate from our country."
  sponsored_shipbuilding:0 "Sponsored Shipbuilding"
@@ -433,3 +431,58 @@
  desc_cas_paria_tax:0 "\n§RHas to pay a Tribute to §Y[225.Owner.GetName]§! every year or has to face the wrath of the Castilians.§!\n\nWith the reconquista heavily swinging in the christians' favor, the Castilians have kept a firm grip over the muslim subjects. Under the guidance of the Emirate of Granada, the muslims pay their tribute to the Emir of Granada who then forwards it to the King of [225.GetName]. The tribute is manageable, but its very existence is a humiliation for any self-respecting muslim who yearns to continue the legacy of the Caliphate.\n\n§YThis modifier gets removed if [225.GetName] loses the 'Paria Tax' modifier.§!"
  paria_tax:0 "Paria Tax"
  desc_paria_tax:0 "We are paying the paria tax to §Y[225.Owner.GetName]§! every year."
+
+##############
+
+ btc_cruzado: "Cruzado"
+ desc_btc_cruzado: "Portuguese currency named after the cross engraved on the coin."
+
+ padrao_real: "Padrão Real"
+ desc_padrao_real: "The secret master map of all Portuguese discoveries, protected from foreign and commercial spies."
+
+ port_wine_production: "Port Wine Vineyards"
+ desc_port_wine_production: "Douro grapes are grown and processed here. Once produced, port is then fortified with aguardente. It is stored in barrels."
+
+ port_wine_storage: "Port Wine Cellars"
+ desc_port_wine_storage: "Barrels of port come down the Douro river in rabelo boats, docking at Porto. Here the barrels are stored in cellars, aged, and brought to market ready for export."
+
+ elvas_fort: "Elvas Fortification"
+ desc_elvas_fort: ""
+
+ btc_pirate_hunt: "Corsair Defenses"
+ desc_btc_pirate_hunt: ""
+
+ jogo_do_pau: "Jogo do Pau"
+ desc_jogo_do_pau: ""
+
+ espingardas: "Espingardas"
+ desc_espingardas: ""
+
+ ginetes: "Ginetes"
+ desc_ginetes: ""
+
+ ocean_currents: "Study of Currents"
+ desc_ocean_currents: ""
+
+ por_upgraded_caravels: "Enlarged Armadas"
+ desc_por_upgraded_caravels: ""
+
+ por_upgraded_galleons: "Full-Rigged Transports"
+ desc_por_upgraded_galleons: ""
+
+ por_tercos: "Terços"
+ desc_por_tercos: ""
+
+ por_adopting_tercos: "Adopting Terços"
+ desc_por_adopting_tercos: ""
+
+ por_improved_tercos: "Improved Terços"
+ desc_por_improved_tercos: ""
+
+ btc_portugal_bacalhau: "Bacalhau Cuisine Traditions"
+
+ casa_da_guine: "Casa da Guiné"
+ desc_casa_da_guine: ""
+
+ duke_of_braganca: "Duke of Bragança"
+ desc_duke_of_braganca: ""

@@ -1,3 +1,5 @@
+### BTC changes: california region ###
+
 japanse_missions_sea = {
 	slot = 1
 	generic = no
@@ -687,7 +689,7 @@ japanse_missions_the_empire = {
 		required_missions = { JAP_secure_the_pacific }
 		
 		provinces_to_highlight = {
-			area = california_area
+			region = california_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -706,12 +708,12 @@ japanse_missions_the_empire = {
 			else = {
 				custom_trigger_tooltip = {
 					tooltip = JAP_californian_colonization
-					california_area = {
+					california_region = {
 						has_discovered = ROOT
 					}
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 1
-						area = california_area
+						region = california_region
 						is_city = yes
 					}
 				}

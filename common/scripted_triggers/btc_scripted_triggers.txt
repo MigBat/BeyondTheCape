@@ -10,368 +10,189 @@ has_slavers_trade_good_trigger = {
 	}
 }
 
-is_potential_hegemon = {
+can_build_feitoria_in_province = {
+	FROM = { has_government_attribute = can_establish_feitorias  }
+	NOT = { has_province_modifier = feitoria }
+	NOT = { has_province_modifier = fortified_feitoria }
 	OR = {
-		is_discovery_eco_hegemon = yes
-		is_discovery_nav_hegemon = yes
-		is_discovery_mil_hegemon = yes
-		is_reformation_eco_hegemon = yes
-		is_reformation_nav_hegemon = yes
-		is_reformation_mil_hegemon = yes
-		is_absolutism_eco_hegemon = yes
-		is_absolutism_nav_hegemon = yes
-		is_absolutism_mil_hegemon = yes
-		is_revolutions_eco_hegemon = yes
-		is_revolutions_nav_hegemon = yes
-		is_revolutions_mil_hegemon = yes
-	}	
-}
-
-is_discovery_eco_hegemon = {
+		owned_by = FROM
+		owned_by = CDI
+	}
+	has_port = yes
 	OR = {
-		is_or_was_tag = {
-			tag = VEN
+		AND = {
+			continent = africa
+			NOT = { region = maghreb_region }
+			NOT = { 
+				AND = {
+					region = egypt_region 
+					NOT = { area = gulf_of_arabia_area }
+				}
+			}
 		}
-		is_or_was_tag = {
-			tag = BUR
-		}
-		is_or_was_tag = {
-			tag = MAM
+		AND = {
+			continent = asia
+			NOT = { region = mashriq_region }
+			NOT = { region = east_siberia_region }
 		}
 	}
 }
 
-is_discovery_nav_hegemon = {
+can_build_foreign_feitoria_in_province = {
+	FROM = { has_government_attribute = can_establish_feitorias  }
+	NOT = { has_province_modifier = foreign_feitoria }
+	NOT = { 
+		OR = {
+			owned_by = FROM 
+			owned_by = CDI 
+		}
+	}
+	has_port = yes
 	OR = {
-		is_or_was_tag = {
-			tag = POR
+		AND = {
+			continent = africa
+			NOT = { region = maghreb_region }
+			NOT = { 
+				AND = {
+					region = egypt_region 
+					NOT = { area = gulf_of_arabia_area }
+				}
+			}
 		}
-		is_or_was_tag = {
-			tag = VEN
-		}
-		is_or_was_tag = {
-			tag = ARA
+		AND = {
+			continent = asia
+			NOT = { region = mashriq_region }
+			NOT = { region = east_siberia_region }
 		}
 	}
 }
 
-is_discovery_mil_hegemon = {
+strait_engagement_width_province = {
 	OR = {
-		is_or_was_tag = {
-			tag = TUR
-		}
-		is_or_was_tag = {
-			tag = RUM
-		}
-		is_or_was_tag = {
-			tag = POL
-		}
-		is_or_was_tag = {
-			tag = PLC
-		}
+		province_id = 1258	# Oresund
+		province_id = 1293	# Strait of Gibraltar
+		province_id = 1320	# Sea or Marmara
+		province_id = 1330	# Straits of Obokk
+		province_id = 1334	# Straits of Hormuz
+		province_id = 1355	# Straits of Lombok
+		province_id = 1361	# Straits of Johor
+		province_id = 1379	# Tatar Straits
+		province_id = 1397	# Gulf of Leyte
+		province_id = 1522	# Windward Islands
+		province_id = 1523	# Lesser Antilles
 	}
 }
 
-is_reformation_eco_hegemon = {
+oresund_sound_province = {
 	OR = {
-		is_or_was_tag = {
-			tag = PER
-		}
-		is_or_was_tag = {
-			tag = ERS
-		}
+		province_id = 6		# Skane
+		province_id = 12	# Sjaelland
+		province_id = 14	# Fyn
+		province_id = 1983	# Lolland
+		province_id = 4142	# Aarhus
+		province_id = 4149	# Kolding
 	}
 }
 
-is_reformation_nav_hegemon = {
+bosphoros_sound_province = {
 	OR = {
-		is_or_was_tag = {
-			tag = POR
-		}
-		is_or_was_tag = {
-			tag = CAS
-		}
-		is_or_was_tag = {
-			tag = SPA
-		}
+		province_id = 151	# Constantinople
+		province_id = 316	# Kocaeli
+		province_id = 317	# Hudavendigar
+		province_id = 2296	# Biga
+		province_id = 4779	# Gallipoli
 	}
 }
 
-is_reformation_mil_hegemon = {
+gibraltar_sound_province = {
 	OR = {
-		is_or_was_tag = {
-			tag = TUR
-		}
-		is_or_was_tag = {
-			tag = RUM
-		}
-		is_or_was_tag = {
-			tag = POL
-		}
-		is_or_was_tag = {
-			tag = PLC
-		}
-		is_or_was_tag = {
-			tag = MUG
-		}
-	}	
+		province_id = 226	# Gibraltar
+		province_id = 1751	# Ceuta
+	}
 }
 
-is_absolutism_eco_hegemon = {
+arab_sound_province = {
 	OR = {
-		is_or_was_tag = {
-			tag = PER
-		}
-		is_or_was_tag = {
-			tag = ERS
-		}
-		is_or_was_tag = {
-			tag = MUG
-		}
-		is_or_was_tag = {
-			tag = SWE
-		}
-		is_or_was_tag = {
-			tag = NED
-		}
+		province_id = 387	# Mokha
+		province_id = 1215	# Tajura
 	}
 }
 
-is_absolutism_nav_hegemon = {
+persian_sound_province = {
 	OR = {
-		is_or_was_tag = {
-			tag = CAS
-		}
-		is_or_was_tag = {
-			tag = SPA
-		}
-		is_or_was_tag = {
-			tag = ENG
-		}
-		is_or_was_tag = {
-			tag = GBR
-		}
-		is_or_was_tag = {
-			tag = AVE
-		}
-	}	
+		province_id = 398	# Qawasim
+		province_id = 2999	# Hormuz
+	}
 }
 
-is_absolutism_mil_hegemon = {
+singapore_sound_province = {
 	OR = {
-		is_or_was_tag = {
-			tag = SWE
-		}
-		is_or_was_tag = {
-			tag = FRA
-		}
-		is_or_was_tag = {
-			tag = MOS
-		}
-		is_or_was_tag = {
-			tag = RUS
-		}
-		is_or_was_tag = {
-			tag = BRA
-		}
-		is_or_was_tag = {
-			tag = PRU
-		}
-	}	
-}
-
-is_revolutions_eco_hegemon = {
-	is_or_was_tag = {
-		tag = NED
+		province_id = 597	# Johor
+		province_id = 620	# Siak
+		province_id = 4815	# Singapore
 	}
 }
 
-is_revolutions_nav_hegemon = {
+prestigious_academy_province = {
 	OR = {
-		is_or_was_tag = {
-			tag = ENG
-		}
-		is_or_was_tag = {
-			tag = GBR
-		}
-		is_or_was_tag = {
-			tag = AVE
-		}
-		is_or_was_tag = {
-			tag = DAN
-		}
-		is_or_was_tag = {
-			tag = NOR
-		}
-		is_or_was_tag = {
-			tag = SCA
-		}
-	}	
+		province_id = 46	# Rostock
+		province_id = 62	# Leipzig
+		province_id = 77	# Heidelberg
+		province_id = 103	# Piedmont
+		province_id = 113	# Ferrara
+		province_id = 115	# Pisa
+		province_id = 117	# Siena
+		province_id = 118	# Roma
+		province_id = 131	# Napoli
+		province_id = 124	# Messina
+		province_id = 134	# Wien
+		province_id = 183	# Paris
+		province_id = 196	# Toulouse
+		province_id = 200	# Languedoc
+		province_id = 201	# Provence
+		province_id = 215	# Valladolid
+		province_id = 216	# Salamanca
+		province_id = 227	# Lisboa
+		province_id = 237	# Oxford
+		province_id = 248	# Lothian
+		province_id = 262	# Krakow
+		province_id = 266	# Prague
+		province_id = 2976	# Umbria
+		province_id = 4370	# Cambridge
+		province_id = 4728	# Pavia
+		province_id = 4729	# Padova
+		province_id = 4730	# Bologna
+	}
 }
 
-is_revolutions_mil_hegemon = {
+part_of_spice_trade_conflict = {
 	OR = {
-		is_or_was_tag = {
-			tag = FRA
-		}
-		is_or_was_tag = {
-			tag = MOS
-		}
-		is_or_was_tag = {
-			tag = RUS
-		}
-		is_or_was_tag = {
-			tag = BRA
-		}
-		is_or_was_tag = {
-			tag = PRU
-		}
-		is_or_was_tag = {
-			tag = HAB
-		}
-	}	
-}
-
-most_income_discovery_eco_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_discovery_eco_hegemon_tt
-			NOT = { tag = ROOT }
-			is_discovery_eco_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { monthly_income = ROOT }
+		tag = event_target:por_spice_trade
+		tag = event_target:mam_spice_trade
+		has_country_flag = is_por_ally
+		has_country_flag = is_mam_ally
 	}
 }
 
-most_income_reformation_eco_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_reformation_eco_hegemon_tt
-			NOT = { tag = ROOT }
-			is_reformation_eco_hegemon = yes
-			is_great_power = yes
+can_participate_in_spice_war = {
+	any_owned_province = {
+		OR = {
+			trade_company_region = trade_company_east_africa
+			trade_company_region = trade_company_gulf_of_aden
+			trade_company_region = trade_company_alexandria
+			trade_company_region = trade_company_basra
+			trade_company_region = trade_company_hormuz
+			trade_company_region = trade_company_west_india
+			trade_company_region = trade_company_coromandel
+			trade_company_region = trade_company_east_india
+			trade_company_region = trade_company_indonesia
+			trade_company_region = trade_company_east_africa
+			trade_company_region = trade_company_east_africa
+			trade_company_region = trade_company_east_africa
+			trade_company_region = trade_company_east_africa
+			trade_company_region = trade_company_east_africa
+			trade_company_region = trade_company_east_africa
+			trade_company_region = trade_company_east_africa
 		}
-		NOT = { monthly_income = ROOT }
-	}
-}
-
-most_income_absolutism_eco_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_absolutism_eco_hegemon_tt
-			NOT = { tag = ROOT }
-			is_absolutism_eco_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { monthly_income = ROOT }
-	}
-}
-
-most_income_revolutions_eco_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_revolutions_eco_hegemon_tt
-			NOT = { tag = ROOT }
-			is_revolutions_eco_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { monthly_income = ROOT }
-	}
-}
-
-most_navy_discovery_nav_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_discovery_nav_hegemon_tt
-			NOT = { tag = ROOT }
-			is_discovery_nav_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { navy_size = ROOT }
-	}
-}
-
-most_navy_reformation_nav_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_reformation_nav_hegemon_tt
-			NOT = { tag = ROOT }
-			is_reformation_nav_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { navy_size = ROOT }
-	}
-}
-
-most_navy_absolutism_nav_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_absolutism_nav_hegemon_tt
-			NOT = { tag = ROOT }
-			is_absolutism_nav_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { navy_size = ROOT }
-	}
-}
-
-most_navy_revolutions_nav_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_revolutions_nav_hegemon_tt
-			NOT = { tag = ROOT }
-			is_revolutions_nav_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { navy_size = ROOT }
-	}
-}
-
-most_army_discovery_mil_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_discovery_mil_hegemon_tt
-			NOT = { tag = ROOT }
-			is_discovery_mil_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { army_size = ROOT }
-	}
-}
-
-most_army_reformation_mil_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_reformation_mil_hegemon_tt
-			NOT = { tag = ROOT }
-			is_reformation_mil_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { army_size = ROOT }
-	}
-}
-
-most_army_absolutism_mil_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_absolutism_mil_hegemon_tt
-			NOT = { tag = ROOT }
-			is_absolutism_mil_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { army_size = ROOT }
-	}
-}
-
-most_army_revolutions_mil_hegemon = {
-	any_country = {
-		custom_trigger_tooltip = {
-			tooltip = is_revolutions_mil_hegemon_tt
-			NOT = { tag = ROOT }
-			is_revolutions_mil_hegemon = yes
-			is_great_power = yes
-		}
-		NOT = { army_size = ROOT }
 	}
 }

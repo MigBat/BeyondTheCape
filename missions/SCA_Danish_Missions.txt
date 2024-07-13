@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 dan_secure_baltic_mission_slot = {
 	slot = 1
 	generic = no
@@ -206,7 +208,7 @@ dan_secure_baltic_mission_slot = {
 		}
 	}
 
-	dan_the_sound_toll = {	#Dominate Northsea, Baltic and LÃ¼beck trade
+	dan_the_sound_toll = {	#Dominate Northsea, Baltic and Lübeck trade
 		icon = mission_the_sound_toll
 		position = 4
 		required_missions = { 
@@ -522,6 +524,7 @@ dan_rnw_mission_slot = {
 	}
 }
 
+# Beyond the Cape exploration
 dan_trade_and_colonial_mission_slot = {
 	slot = 2
 	generic = no
@@ -599,12 +602,7 @@ dan_trade_and_colonial_mission_slot = {
 			owns_or_non_sovereign_subject_of = 35
 		}
 		effect = {
-			add_accepted_culture_or_dip_power = { culture = estonian dip_reward = yes }
-			add_country_modifier = {
-				name = dan_estonian_culture_accepted
-				duration = -1
-				desc = dan_estonian_culture_accepted_tt
-			}
+			add_accepted_culture_or_dip_power = { culture = estonian free = yes}
 			custom_tooltip = dan_livonian_order_tt
 			hidden_effect = {
 				every_owned_province = {
@@ -719,9 +717,9 @@ dan_trade_and_colonial_mission_slot = {
 		trigger = {
 			OR = {
 				has_institution = new_world_i
-				dip_tech = 9
+				has_country_modifier = quest_for_the_new_world
 			}
-			share_of_starting_income = 1.5
+			share_of_starting_income = 2
 			is_in_deficit = no
 			is_bankrupt = no
 		}
@@ -912,7 +910,7 @@ dan_caribbeans_mission_slot = {
 			owns_or_non_sovereign_subject_of = 493
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = carribeans_region
-				value = 1
+				value = 5
 			}
 		}
 		effect = {
@@ -4157,6 +4155,10 @@ dan_sca_conquest_slot_2 = {
 					}
 				}
 				add_dip_power = 100
+				add_country_modifier = {
+					name = "swe_germanic_alliance"
+					duration = 9125
+				}
 				mecklenburg_area = {
 					limit = {
 						is_permanent_claim = ROOT
@@ -4242,7 +4244,7 @@ dan_sca_conquest_slot_3 = {
 			}
 			add_accepted_culture_or_dip_power = {
 				culture = prussian
-				dip_reward = yes
+				value = 100
 			}
 		}
 	}

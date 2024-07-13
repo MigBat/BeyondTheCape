@@ -1,0 +1,174 @@
+can_make_state = {
+	condition = {
+		tooltip = "NO_OVERSEAS_STATE"
+		potential = {
+			ROOT = {
+				is_overseas = yes
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_colonize_province = {
+	condition = {
+		tooltip = "alcacovas_treaty"
+		potential = {
+			FROM = {
+				has_country_flag = alcacovas_treaty
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						continent = south_america
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "tordesillas_portugal"
+		potential = {
+			FROM = {
+				has_country_flag = tordesillas_por
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							continent = north_america							
+							NOT = { 
+								OR = {
+									area = newfoundland_area
+									area = labrador_area
+								}
+							}
+						}
+						AND = {
+							continent = south_america
+							NOT = {
+								OR = {
+									area = maranhao_area
+									area = piaui_area
+									area = ceara_area
+									area = sao_francisco_area
+									area = pernambuco_area
+									area = bahia_area
+									area = diamantina_area
+									area = minas_gerais_area
+									area = rio_de_janeiro_area
+									area = grao_para_area
+									area = pontal_area
+									area = goias_area
+									area = sao_paolo_area
+								}
+							}
+						}
+						region = moluccas_region
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "tordesillas_castile"
+		potential = {
+			FROM = {
+				has_country_flag = tordesillas_cas
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						continent = asia
+						area = maranhao_area
+						area = piaui_area
+						area = ceara_area
+						area = sao_francisco_area
+						area = pernambuco_area
+						area = bahia_area
+						area = diamantina_area
+						area = minas_gerais_area
+						area = rio_de_janeiro_area
+						area = grao_para_area
+						area = pontal_area
+						area = goias_area
+						area = sao_paolo_area
+						region = moluccas_region
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "zaragoza_portugal"
+		potential = {
+			FROM = {
+				has_country_flag = zaragoza_por
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							continent = north_america
+							NOT = { 
+								OR = {
+									area = newfoundland_area
+									area = labrador_area
+								}
+							}
+						}
+						AND = {
+							continent = south_america
+							NOT = {
+								region = brazil_region
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "zaragoza_castile"
+		potential = {
+			FROM = {
+				has_country_flag = zaragoza_cas
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						AND = {
+							continent = asia
+							NOT = {
+								OR = {
+									area = luzon_area
+									area = southern_luzon_area
+									area = visayas_area
+									area = mindanao_area
+									area = west_mindanao_area
+									area = palawan_area
+								}
+							}
+						}
+						region = brazil_region
+					}
+				}
+			}
+		}
+	}
+}

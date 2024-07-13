@@ -1,0 +1,187 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_spice_trade_conflict_bg"
+		texturefile = "gfx/interface/spice_trade_conflict/spice_trade_conflict_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_frontend_continue_bg_sideways"
+		texturefile = "gfx/interface/spice_trade_conflict/frontend_continue_bg_sideways.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_ivory_zanzibar_map"
+		texturefile = "gfx/interface/spice_trade_conflict/ivory_zanzibar_map.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_coffee_aden_map"
+		texturefile = "gfx/interface/spice_trade_conflict/coffee_aden_map.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_silk_hormuz_map"
+		texturefile = "gfx/interface/spice_trade_conflict/silk_hormuz_map.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_spices_india_map"
+		texturefile = "gfx/interface/spice_trade_conflict/spices_india_map.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_nutmeg_malaca_map"
+		texturefile = "gfx/interface/spice_trade_conflict/nutmeg_malaca_map.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_spice_trade_conflict_map"
+		texturefile = "gfx/interface/spice_trade_conflict/spice_trade_conflict_map.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_spice_trade_conflict_frame"
+		texturefile = "gfx/interface/spice_trade_conflict/spice_trade_conflict_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_glow_armillary_sphere"
+		texturefile = "gfx/interface/spice_trade_conflict/glow_armillary_sphere.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_dark_armillary_sphere"
+		texturefile = "gfx/interface/spice_trade_conflict/dark_armillary_sphere.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_armillary_sphere"
+		texturefile = "gfx/interface/spice_trade_conflict/light_armillary_sphere.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_inverted_army_professionalism_bar_frame"
+		texturefile = "gfx/interface/spice_trade_conflict/inverted_pa_progress_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+	spriteType = {
+		name = "GFX_naval_battles_objective"
+		texturefile = "gfx/interface/spice_trade_conflict/naval_battles_objective.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_sink_ships_objective"
+		texturefile = "gfx/interface/spice_trade_conflict/sink_ships_objective.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_get_supporters_objective"
+		texturefile = "gfx/interface/spice_trade_conflict/get_supporters_objective.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_win_war_objective"
+		texturefile = "gfx/interface/spice_trade_conflict/win_war_objective.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_defeat_portugal_button"
+		texturefile = "gfx/interface/spice_trade_conflict/defeat_portugal_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+	spriteType = {
+		name = "GFX_node_ability_frame"
+		texturefile = "gfx/interface/spice_trade_conflict/node_ability_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+	spriteType = {
+		name = "GFX_zanzibar_ability"
+		texturefile = "gfx/interface/spice_trade_conflict/zanzibar_ability.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_aden_ability"
+		texturefile = "gfx/interface/spice_trade_conflict/aden_ability.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_hormuz_ability"
+		texturefile = "gfx/interface/spice_trade_conflict/hormuz_ability.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_coromandel_ability"
+		texturefile = "gfx/interface/spice_trade_conflict/coromandel_ability.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_malacca_ability"
+		texturefile = "gfx/interface/spice_trade_conflict/malacca_ability.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_treshold"
+		texturefile = "gfx/interface/spice_trade_conflict/treshold.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+}

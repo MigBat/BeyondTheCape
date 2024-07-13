@@ -1,3 +1,5 @@
+### BEYOND THE CAPE - PRIVATEER CHANGES ###
+
 republic_mechanic = {
 	basic_reform = yes
 	republican_name = yes
@@ -14,6 +16,13 @@ republic_mechanic = {
 		burghers_influence_modifier = 0.15
 		vaisyas_influence_modifier = 0.15
 		max_absolutism = -40
+	}
+	# Beyond the Cape - spice trade conflict
+	conditional = {
+		allow = { }
+		government_abilities = {
+			mare_clausum_ui_hidden_mechanic
+		}
 	}
 
 	valid_for_nation_designer = no
@@ -204,9 +213,7 @@ prussian_republic_reform = {
 					have_had_reform = prussian_theocratic_reform
 				}
 			}
-			has_unlocked_government_reform = {
-				government_reform = prussian_republic_reform
-			}
+			has_unlocked_government_reform = { government_reform = prussian_republic_reform }
 		}
 	}
 	trigger = {
@@ -227,9 +234,7 @@ prussian_republic_reform = {
 					have_had_reform = prussian_theocratic_reform
 				}
 			}
-			has_unlocked_government_reform_tooltip = {
-				government_reform = prussian_republic_reform
-			}
+			has_unlocked_government_reform = { government_reform = prussian_republic_reform }
 		}
 	}
 	valid_for_nation_designer = yes
@@ -324,6 +329,7 @@ merchants_reform = {
 		enables_aristocratic_idea_group = no
 		is_merchant_republic = yes
 		elections_increase_factions_influence = yes
+		locked_government_type = yes
 	}
 	ai = {
 		factor = 0.75 #generic
@@ -355,6 +361,7 @@ merchants_reform = {
 venice_merchants_reform = {
 	icon = "trading_city"
 	allow_normal_conversion = yes
+	lock_level_when_selected = yes
 	modifiers = {
 		max_absolutism = -10
 		merchants = 1
@@ -375,18 +382,11 @@ venice_merchants_reform = {
 		}
 	}
 	boost_income = yes
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-		has_parliament = yes
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
 	}
-	#removed factions
-	#factions = {
-		#mr_aristocrats
-		#mr_traders
-		#mr_guilds
-	#}
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -411,7 +411,16 @@ venice_merchants_reform = {
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
 	}
+	conditional = {
+		allow = {
+			has_dlc = "Winds of Change"
+		}
+		government_abilities = {
+			council_of_ten
+		}
+	}
 	custom_attributes = {
+		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		lottery_election = yes
@@ -1632,6 +1641,8 @@ trade_company_government = {
 		enables_estate_burghers = yes
 		is_merchant_republic = yes
 		elections_increase_factions_influence = yes
+		# Beyond the Cape #
+		force_admiral_leader = yes
 	}
 	conditional = {
 		allow = {
@@ -1724,7 +1735,12 @@ roman_republic_government = {
 	nation_designer_cost = 100
 	potential = {
 		has_dlc = "Domination"
-		primary_culture = roman 
+		primary_culture = roman
+		OR = {
+			tag = ROM
+			tag = BYZ
+			is_playing_custom_nation = yes
+		}
 	}
 	modifiers = {
 		administrative_efficiency = 0.05
@@ -1899,9 +1915,11 @@ dutch_republic = {
 	}
 	conditional = {
 		allow = {
-			has_dlc = "Res Publica"
+			OR = {
+				has_dlc = "Res Publica"
+				has_dlc = "Winds of Change"
+			}
 		}
-
 		states_general_mechanic = {
 			statists = {
 				naval_forcelimit_modifier = 0.10
@@ -1979,6 +1997,7 @@ cossacks_reform = {
 		cav_to_inf_ratio = 0.25
 		governing_capacity = 50
 		allowed_cossack_fraction = 0.25
+		move_capital_cost_modifier = -0.75
 	}
 
 	conditional = {
@@ -1995,6 +2014,34 @@ cossacks_reform = {
 	}
 
 	duration = 4
+}
+
+city_alliance_reform = {
+	icon = "land_christian_sun_reform"
+	allow_normal_conversion = no
+	potential = {
+		religion = nahuatl
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		global_unrest = -1
+		reduced_liberty_desire = 5
+	}
+	effect = {
+		hidden_effect = {
+			remove_country_modifier = the_fifth_sun
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = the_fifth_sun
+		}
+	}
+	
+	government_abilities = {
+		blood_gathering_mechanic
+	}
 }
 
 #Republican Virtues
@@ -2528,7 +2575,6 @@ consolidate_power_in_cities_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_reform = venice_merchants_reform
 			has_reform = merchants_reform
 			has_reform = veche_republic
 			has_reform = great_veche_republic
@@ -2536,7 +2582,6 @@ consolidate_power_in_cities_reform = {
 	}
 	trigger = {
 		OR = {
-			has_reform = venice_merchants_reform
 			has_reform = merchants_reform
 			has_reform = veche_republic
 			has_reform = great_veche_republic
@@ -4053,33 +4098,26 @@ millenarian_theocracy_reform = {
 	}
 }
 
- #BTC Italian government reforms
-
- btc_ven_improve_the_council_of_the_ten_reform = {
-	icon = "council"
+ven_promissione_ducale_reform = {
+	icon = "ven_promissione_ducale_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_reform = venice_merchants_reform
+		OR = {
+			has_unlocked_government_reform = { government_reform = ven_promissione_ducale_reform }
+			have_had_reform = ven_promissione_ducale_reform
+		}
 	}
 	trigger = {
-		
-		has_reform = venice_merchants_reform
-        NOT = { has_country_modifier = btc_ven_ten_council_eliminated}
-	  }
-	modifiers = {
-		max_absolutism = 10
-		max_absolutism_effect = 0.1
+		is_or_was_tag = { tag = VEN }
+		government = republic
 	}
-	custom_attributes = {
-		improved_ten_council = yes
+	modifiers = {
+		yearly_corruption = -0.25
+		candidate_random_bonus = 1
+		monthly_authority_power = 0.1
+
 	}
 	ai = {
 		factor = 10
-		modifier = {
-			factor = 0
-			NOT = {
-				num_of_cities = 25
-			}
-		}
 	}
 }

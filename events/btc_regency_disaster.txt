@@ -1,0 +1,397 @@
+namespace = portuguese_regency
+
+# Start event
+country_event = {
+	id = portuguese_regency.1
+	title = portuguese_regency.1_t
+	desc = portuguese_regency.1_d
+	picture = MONARCH_CHILD_WITH_REGENT_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_portuguese_regency_disaster
+			set_variable = {
+				which = afonso_alignment
+				value = 0
+			}
+		}
+	}
+
+	option = {
+		name = portuguese_regency.1a
+		add_stability = -1
+	}
+}
+
+# Choose wife of king
+country_event = {
+	id = portuguese_regency.2
+	title = portuguese_regency.2_t
+	desc = portuguese_regency.2_d
+	picture = ROYAL_COUPLE_FUTURE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_regency = yes
+	}
+
+	# daughter of pedro
+	option = {
+		name = portuguese_regency.2a
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = 1
+			}			
+		}
+
+		set_country_flag = isabel_of_coimbra
+		custom_tooltip = isabel_de_coimbra_tt
+	}
+
+	# daughter of afonso
+	option = {
+		name = portuguese_regency.2b
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = -1
+			}			
+		}
+
+		set_country_flag = beatriz_de_braganca
+		custom_tooltip = beatriz_de_braganca_tt
+	}
+}
+
+# Leonor returns
+country_event = {
+	id = portuguese_regency.3
+	title = portuguese_regency.3_t
+	desc = portuguese_regency.3_d
+	picture = QUEEN_AND_MALE_HEIR_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_regency = yes
+	}
+
+	# poison her
+	option = {
+		name = portuguese_regency.3a
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = 1
+			}			
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+	}
+
+	# welcome her
+	option = {
+		name = portuguese_regency.3b
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = -1
+			}			
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = -10
+			duration = 7300
+		}
+		define_advisor = {
+			type = diplomat
+			skill = 2
+			name = "Leonor of Aragon"
+			cost_multiplier = 0.25
+			female = yes
+			culture = aragonese
+			age = 45
+		}
+	}
+}
+
+# Sons of Afonso military titles
+country_event = {
+	id = portuguese_regency.4
+	title = portuguese_regency.4_t
+	desc = portuguese_regency.4_d
+	picture = KNIGHTS_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_regency = yes
+	}
+
+	# grant pedros sons
+	option = {
+		name = portuguese_regency.4a
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = 1
+			}			
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+	}
+
+	# grant afonsos sons
+	option = {
+		name = portuguese_regency.4b
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = -1
+			}			
+		}
+		
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = 10
+			duration = 7300
+		}
+	}
+}
+
+# Develop province
+country_event = {
+	id = portuguese_regency.5
+	title = portuguese_regency.5_t
+	desc = portuguese_regency.5_d
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_regency = yes
+	}
+
+	# Develop Coimbra
+	option = {
+		name = portuguese_regency.5a
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = 1
+			}			
+		}
+
+		random_list = {
+			1 = { add_adm_power = 50 }
+			1 = { add_dip_power = 50 }
+			1 = { add_mil_power = 50 }
+		}
+	}
+
+	# Develop Bragança
+	option = {
+		name = portuguese_regency.5b
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = -1
+			}			
+		}
+
+		232 = {
+			random_list = {
+				1 = { add_base_tax = 1 }
+				1 = { add_base_production = 1 }
+				1 = { add_base_manpower = 1 }
+			}
+		}
+	}
+}
+
+# King comes of age
+country_event = {
+	id = portuguese_regency.10
+	title = portuguese_regency.10_t
+	desc = {
+		trigger = {
+			check_variable = { which = afonso_alignment value = 0 }
+		}
+		desc = portuguese_regency.10_d1
+	}
+	desc = {
+		trigger = {
+			NOT = { check_variable = { which = afonso_alignment value = 0 } }
+		}
+		desc = portuguese_regency.10_d2
+	}
+	picture = KINGS_CHOICE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	# Bragança plots
+	option = {
+		name = portuguese_regency.10a
+
+		trigger = {
+			check_variable = {
+				which = afonso_alignment
+				value = 0
+			}
+		}
+
+		kill_leader = {
+			type = "Álvaro Vaz de Almada"
+		}
+		1851 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+				win = yes
+				leader = "Pedro"
+				leader_dynasty = "de Avis"
+				should_take_capital = yes
+			}
+		}
+		set_country_flag = braganca_plot
+	}
+
+	# Bragança appeased
+	option = {
+		name = portuguese_regency.10b
+
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = afonso_alignment
+					value = 0
+				}
+			}
+		}
+
+		232 = {
+			add_province_modifier = {
+				name = duke_of_braganca
+				duration = -1
+			}
+		}
+		set_country_flag = braganca_appeased
+	}
+}
+
+country_event = {
+	id = portuguese_regency.100
+	title = portuguese_regency.100_t
+	desc = {
+		trigger = {
+			has_country_flag = braganca_plot
+		}
+		desc = portuguese_regency.100_d1
+	}
+	desc = {
+		trigger = {
+			has_country_flag = braganca_appeased
+		}
+		desc = portuguese_regency.100_d2
+	}
+	picture = KING_DOING_GREAT_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = portuguese_regency.100a
+
+		trigger = {
+			has_country_flag = braganca_plot
+		}
+
+		add_stability = 1
+
+		define_advisor = {
+			type = commandant
+			skill = 2
+			name = "Afonso de Bragança"
+			location = 232
+			cost_multiplier = 0.25
+			age = 70
+		}
+		if = {
+			limit = {
+				employed_advisor = {
+					name = "Henrique o Navegador"
+				}
+			}
+			remove_advisor = navigator
+		}
+		change_ruler_stat = {
+			type = mil
+			amount = 2
+		} 
+		add_ruler_personality = strict_personality
+		remove_ruler_personality = expansionist_personality
+	}
+
+	option = {
+		name = portuguese_regency.100b
+
+		trigger = {
+			has_country_flag = braganca_appeased
+		}
+
+		add_stability = 1
+
+		define_advisor = {
+			type = treasurer
+			skill = 2
+			name = "Infante Pedro"
+			location = 1851
+			cost_multiplier = 0.25
+			age = 57
+		}
+		define_advisor = {
+			type = commandant
+			skill = 2
+			name = "Afonso de Bragança"
+			location = 232
+			cost_multiplier = 0.25
+			age = 71
+		}
+		change_ruler_stat = {
+			type = dip
+			amount = 1
+		} 
+		change_ruler_stat = {
+			type = mil
+			amount = 1
+		} 
+	}
+}

@@ -1118,7 +1118,10 @@ country_event = {
 	trigger = {
 		is_or_was_tag = { tag = POR }
 		exploration_ideas = 1
-		num_of_trade_companies = 3
+		OR = {
+			num_of_trade_companies = 3
+			CDI = { is_subject_of = ROOT }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1130,7 +1133,7 @@ country_event = {
 
 		add_mercantilism = -4
 
-		add_country_modifier = {	# +3 merchant power, +5% trade power abroad, +1 diplomatic rep
+		add_country_modifier = {	# +2 merchant power, +5% trade power abroad, +1 diplomatic rep
 			name = respected_merchants
 			duration = -1
 		}
@@ -1141,7 +1144,7 @@ country_event = {
 
 		add_mercantilism = 4
 
-		add_country_modifier = {	# +25% privateering eff, +20% blockade eff, +15% embargo eff, -10% trade eff 
+		add_country_modifier = {	# +5% privateering eff, +20% blockade eff, +15% embargo eff, -10% trade eff 
 			name = aggressive_mercantilism
 			duration = -1
 		}
@@ -1201,12 +1204,14 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		south_america_superregion = {
-			owned_by = ROOT
+		num_of_provinces_owned_or_owned_by_subjects_with = {
+			value = 1
+			region = south_africa_region
 			is_city = yes
 		}
-		south_africa_region = {
-			owned_by = ROOT
+		num_of_provinces_owned_or_owned_by_subjects_with = {
+			value = 1
+			superregion = south_america_superregion
 			is_city = yes
 		}
 	}
@@ -1300,7 +1305,10 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		num_of_trade_companies = 5
+		OR = {
+			num_of_trade_companies = 5
+			CDI = { is_subject_of = ROOT }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1398,32 +1406,34 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		is_subject = no
-		is_at_war = no
-		OR = {
-			is_year = 1565
-			has_country_modifier = lusiadas
-		}
-		religion = catholic
-		MOR = {
-			exists = yes
-			religion_group = muslim
-			is_free_or_tributary_trigger = yes
-			NOT = { war_with = ROOT }
-			NOT = { truce_with = ROOT }
-			NOT = { alliance_with = ROOT }
-		}
-	}
+	is_triggered_only = yes	# TODO MISSION TREE
 
-	mean_time_to_happen = {
-		months = 60
-		modifier = {
-			factor = 0.01
-			has_country_modifier = lusiadas
-		}
-	}
+	# trigger = {
+	# 	is_or_was_tag = { tag = POR }
+	# 	is_subject = no
+	# 	is_at_war = no
+	# 	OR = {
+	# 		is_year = 1565
+	# 		has_country_modifier = lusiadas
+	# 	}
+	# 	religion = catholic
+	# 	MOR = {
+	# 		exists = yes
+	# 		religion_group = muslim
+	# 		is_free_or_tributary_trigger = yes
+	# 		NOT = { war_with = ROOT }
+	# 		NOT = { truce_with = ROOT }
+	# 		NOT = { alliance_with = ROOT }
+	# 	}
+	# }
+
+	# mean_time_to_happen = {
+	# 	months = 60
+	# 	modifier = {
+	# 		factor = 0.01
+	# 		has_country_modifier = lusiadas
+	# 	}
+	# }
 
 	option = {	# By the grace of God!
 		name = btc_por.107a
@@ -1436,13 +1446,6 @@ country_event = {
 		}
 		set_country_flag = war_of_three_kings
 		MOR = { set_country_flag = war_of_three_kings }
-
-		# MOR = {
-		# 	add_opinion = {
-		# 		who = ROOT
-		# 		modifier = prepares_crusade
-		# 	}
-		# }
 
 		add_estate_influence_modifier = {
 			estate = estate_church
@@ -1496,24 +1499,7 @@ country_event = {
 		is_or_was_tag = { tag = POR }
 		is_year = 1568
 		NOT = { dip_tech = 15 }
-		OR = {
-			trade_company_coromandel = { 
-				owned_by = ROOT
-				is_city = yes
-			}
-			trade_company_deccan = {
-				owned_by = ROOT
-				is_city = yes
-			}
-			trade_company_east_india = {
-				owned_by = ROOT
-				is_city = yes
-			}
-			trade_company_west_india = {
-				owned_by = ROOT
-				is_city = yes
-			}
-		}
+		CDI = { is_subject_of = ROOT }
 	}
 
 	mean_time_to_happen = {
@@ -1527,6 +1513,12 @@ country_event = {
 			name = inefficient_indian_trade	# -15% trade eff, +0.1 yearly corruption
 			duration = 36500
 		}
+		CDI = {
+			add_country_modifier = {
+				name = inefficient_indian_trade	# -15% trade eff, +0.1 yearly corruption
+				duration = 36500
+			}
+		}
 	}
 
 	option = {	# perhaps it's time to sell it to the highest bidder
@@ -1536,8 +1528,14 @@ country_event = {
 		add_prestige = -20
 
 		add_country_modifier = {
-			name = privatization_of_the_indian_trade	# -20% global trade power
+			name = privatization_of_the_indian_trade	# -25% global trade power, -50% treasure fleet income
 			duration = 7300
+		}
+		CDI = {
+			add_country_modifier = {
+				name = privatization_of_the_indian_trade	# -25% global trade power, -50% treasure fleet income
+				duration = 7300
+			}
 		}
 	}
 }
@@ -1716,24 +1714,26 @@ country_event = {
 	desc = btc_por.113_d
 	picture = DIPLOMACY_eventPicture
 
-	fire_only_once = yes
+	is_triggered_only = yes	# TODO DECISIONS
 
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		AND = {
-			231 = { owned_by = ROOT }
-			232 = { owned_by = ROOT }
-		}
-		is_year = 1690
-		OR = {
-			exists = ENG
-			exists = GBR
-		}
-	}
+	# fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 60
-	}
+	# trigger = {
+	# 	is_or_was_tag = { tag = POR }
+	# 	AND = {
+	# 		231 = { owned_by = ROOT }
+	# 		232 = { owned_by = ROOT }
+	# 	}
+	# 	is_year = 1690
+	# 	OR = {
+	# 		exists = ENG
+	# 		exists = GBR
+	# 	}
+	# }
+
+	# mean_time_to_happen = {
+	# 	months = 60
+	# }
 
 	option = {	# Signed the treaty
 		name = btc_por.113a
@@ -2250,39 +2250,39 @@ country_event = {
 
 # The Viceroy of India #
 
-country_event = {
-	id = btc_por.125
-	title = btc_por.125_t
-	desc = btc_por.125_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_por.125
+# 	title = btc_por.125_t
+# 	desc = btc_por.125_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		any_owned_province = {
-			superregion = india_superregion
-		}
-	}
+# 	trigger = {
+# 		is_or_was_tag = { tag = POR }
+# 		any_owned_province = {
+# 			superregion = india_superregion
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {
-		name = btc_por.125a
+# 	option = {
+# 		name = btc_por.125a
 
-		define_admiral = {
-			name = "Francisco de Almeida"
-			shock = 5
-			fire = 4
-			manuever = 2
-			siege = 4
-			trait = naval_gunner_personality
-		}
-		custom_tooltip = mamluk_war_tooltip
-	}
-}
+# 		define_admiral = {
+# 			name = "Francisco de Almeida"
+# 			shock = 5
+# 			fire = 4
+# 			manuever = 2
+# 			siege = 4
+# 			trait = naval_gunner_personality
+# 		}
+# 		custom_tooltip = mamluk_war_tooltip
+# 	}
+# }
 
 # End of Anglo-Portuguese Alliance #
 
@@ -2372,111 +2372,96 @@ country_event = {
 	}
 }
 
-# Portuguese purchase of Goa (owner) #
-
+# Portuguese purchase of Goa?? (owner) #
+# TODO localization
 country_event = {
 	id = btc_por.127
 	title = btc_por.127_t
 	desc = btc_por.127_d
 	picture = PORTUGUESE_MERCHANTS_eventPicture
 
-	fire_only_once = yes
-	is_triggered_only = yes
+	trigger = {
+		capital_scope = {
+			superregion = india_superregion
+		}
+		any_owned_province = {
+			has_province_modifier = foreign_feitoria
+			NOT = { has_province_flag = btc_deal_rejected_flag }
+		}
+		POR = { has_country_flag = btc_looking_for_deal_flag }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_province_modifier = foreign_feitoria	
+					NOT = { has_province_flag = btc_deal_rejected_flag }				
+				}
+				save_event_target_as = btc_deal_province
+			}
+		}
+	}
 
 	option = {
 		name = btc_por.127a
 
-		ai_chance = { 
-			factor = 15 
-			modifier = {
-				factor = 1000
-				FROM = {
-					ai = yes
-				}
-			}
+		ai_chance = { factor = 0.3 }
+
+		add_treasury = 200
+		set_global_flag = btc_deal_accepted_flag
+
+		event_target:btc_deal_province = {
+			cede_province = POR
+			add_core = POR
+			remove_province_modifier = foreign_feitoria
+			add_province_modifier = {
+				name = feitoria
+				duration = -1
+			}			
 		}
-		trigger = {
-			2030 = {
-				is_capital = no
-			}
-		}
-		
-		2030 = {
-			cede_province = FROM
-			add_core = FROM
-		}
-		add_years_of_income = 1
-		hidden_effect = {
-			FROM = {
-				country_event = { id = btc_por.128 days = 1 }
-				set_country_flag = deal_accepted
-			}
-		}
+
+		POR = { country_event = { id =  btc_por.128 } }
 	}
 
 	option = {
 		name = btc_por.127b
 
-		ai_chance = { factor = 85 }
+		ai_chance = { factor = 0.7 }
 		add_prestige = 5
-		hidden_effect = {
-			FROM = {
-				country_event = { id = btc_por.128 days = 1 }
-				set_country_flag = deal_rejected
-			}
+
+		event_target:btc_deal_province = {
+			set_province_flag = btc_deal_rejected_flag			
 		}
 	}
 }
 
 # Portuguese purchase of Goa (POR) #
-
 country_event = {
 	id = btc_por.128
 	title = btc_por.128_t
 	desc = btc_por.128_d
 	picture = PORTUGUESE_MERCHANTS_eventPicture
 
-	fire_only_once = yes
 	is_triggered_only = yes
 
-	option = {
-		name = btc_por.128a
+	option = { 
+		name = btc_por.128a 
 		trigger = {
-			has_country_flag = deal_accepted
+			has_global_flag = btc_deal_accepted_flag
 		}
-		
-		clr_country_flag = deal_accepted
-		2030 = {
-			cede_province = ROOT
-			add_core = ROOT
-		}
-		if = {
-			limit = {
-				ai = yes
-			}
-			2030 = {
-				build_to_forcelimit = {
-					infantry = 0.6
-					cavalry = 0.2
-					artillery = 0.2
-				}
-			}	
-		}
-
-		set_country_flag = ai_portugal_goa_flag
 	}
 
-	option = {
+	option = { 
 		name = btc_por.128b
 		trigger = {
-			has_country_flag = deal_rejected
+			NOT = { has_global_flag = btc_deal_accepted_flag }
 		}
-		
-		clr_country_flag = deal_rejected
-		add_years_of_income = 1
-		add_permanent_claim = 2030
-		custom_tooltip = mare_clausum_tt
-		set_country_flag = mare_clausum
+		custom_tooltip = keep_looking_tt
 	}
 }
 
@@ -2792,84 +2777,83 @@ country_event = {
 }
 
 # Establish Feitoria #
+# province_event = {
+# 	id = btc_por.134
+# 	title = btc_por.134_t
+# 	desc = btc_por.134_d
+# 	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+# 	goto = ROOT
 
-province_event = {
-	id = btc_por.134
-	title = btc_por.134_t
-	desc = btc_por.134_d
-	picture = CARIBBEAN_PIRATE_FORT_eventPicture
-	goto = ROOT
+# 	trigger = {
+# 		area_for_scope_province = {
+# 			type = all
+# 			NOT = { has_province_modifier = feitoria }	
+# 		}
+# 		has_province_flag = can_build_feitoria
+# 		owner = { ai = yes }
+# 	}
 
-	trigger = {
-		area_for_scope_province = {
-			type = all
-			NOT = { has_province_modifier = feitoria }	
-		}
-		has_province_flag = can_build_feitoria
-		owner = { ai = yes }
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	option = {	# Build a trade post
+# 		name = btc_por.134b
 
-	option = {	# Build a trade post
-		name = btc_por.134b
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				owner = {
-					NOT = { treasury = 50 }					
-				}
-			}
-			modifier = {
-				factor = 10
-				has_river_estuary_trigger = yes
-			}
-			modifier = {
-				factor = 10
-				province_has_center_of_trade_of_level = 1
-			}
-			modifier = {
-				factor = 10
-				province_has_center_of_trade_of_level = 2
-			}
-			modifier = {
-				factor = 10
-				province_has_center_of_trade_of_level = 3
-			}
-		}
+# 		ai_chance = {
+# 			factor = 1
+# 			modifier = {
+# 				factor = 0
+# 				owner = {
+# 					NOT = { treasury = 50 }					
+# 				}
+# 			}
+# 			modifier = {
+# 				factor = 10
+# 				has_river_estuary_trigger = yes
+# 			}
+# 			modifier = {
+# 				factor = 10
+# 				province_has_center_of_trade_of_level = 1
+# 			}
+# 			modifier = {
+# 				factor = 10
+# 				province_has_center_of_trade_of_level = 2
+# 			}
+# 			modifier = {
+# 				factor = 10
+# 				province_has_center_of_trade_of_level = 3
+# 			}
+# 		}
 		
-		owner = { add_treasury = -50 }
+# 		owner = { add_treasury = -50 }
 
-		add_province_modifier = {
-			name = feitoria
-			duration = -1
-		}
-		if = {
-			limit = {
-				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
-			}
-			add_province_modifier = {
-				name = slave_garrison
-				duration = -1
-			}
-		}
-		clr_province_flag = can_build_feitoria
-	}
+# 		add_province_modifier = {
+# 			name = feitoria
+# 			duration = -1
+# 		}
+# 		if = {
+# 			limit = {
+# 				owner = { has_estate_privilege = estate_slavers_feitoria_defenses }
+# 			}
+# 			add_province_modifier = {
+# 				name = slave_garrison
+# 				duration = -1
+# 			}
+# 		}
+# 		clr_province_flag = can_build_feitoria
+# 	}
 
-	option = {	# Don't build it
-		name = btc_por.134c
+# 	option = {	# Don't build it
+# 		name = btc_por.134c
 
-		ai_chance = {
-			factor = 1
-		}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		clr_province_flag = can_build_feitoria
-	}
-}
+# 		clr_province_flag = can_build_feitoria
+# 	}
+# }
 
 # Sugar and Slaves in Sao Tome #
 
@@ -2912,64 +2896,25 @@ country_event = {
 
 # Fortress of Elvas #
 
-country_event = {
-	id = btc_por.136
-	title = btc_por.136_t
-	desc = btc_por.136_d
-	picture = btc_fort_eventPicture
+# country_event = {
+# 	id = btc_por.136
+# 	title = btc_por.136_t
+# 	desc = btc_por.136_d
+# 	picture = btc_fort_eventPicture
 
-	fire_only_once = yes
+# 	is_triggered_only = yes
 
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		4150 = {
-			owned_by = ROOT
-			controlled_by = ROOT
-			AND = {
-				NOT = { has_building = fort_15th }
-				NOT = { has_building = fort_16th }
-				NOT = { has_building = fort_17th }
-				NOT = { has_building = fort_18th }
-			}
-		}
-	}
+# 	option = {
+# 		name = btc_por.136a
 
-	mean_time_to_happen = {
-		months = 60
-	}
-
-	option = {
-		name = btc_por.136a
-
-		set_country_flag = elvas
-
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { treasury = 50 }
-			}
-		}
-
-		4150 = {
-			add_building_construction = {
-				building = fort_15th
-				cost = 0.25
-				speed = 0.5
-			}
-			add_province_modifier = {
-				name = local_fortress
-				duration = -1
-			}
-		}
-	}
-
-	option = {
-		name = btc_por.136b
-		
-		add_prestige = -1
-	}
-}
+# 		4150 = {
+# 			add_province_modifier = {
+# 				name = local_fortress
+# 				duration = -1
+# 			}
+# 		}
+# 	}
+# }
 
 # Miguel da Paz #
 
@@ -2984,8 +2929,7 @@ country_event = {
 	trigger = {
 		tag = POR
 		is_year = 1500
-		has_country_flag = lost_war
-		NOT = { has_country_flag = won_castilian_civil_war }
+		CAS = { has_country_flag = alcacovas_treaty }
 	}
 
 	mean_time_to_happen = {
@@ -3088,10 +3032,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	option = {	# Gift it to the Pope
 		name = btc_por.139a
 
@@ -3150,10 +3090,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	option = {	# Gift it to the Pope
 		name = btc_por.140a
 
@@ -3171,18 +3107,6 @@ country_event = {
 					}
 				}
 			}
-			# random = {
-			# 	chance = 80
-			# 	country_event = {
-			# 		id = btc_por.141
-			# 	}
-			# }
-			# random = {
-			# 	chance = 20
-			# 	country_event = {
-			# 		id = btc_por.142
-			# 	}
-			# }
 		}
 	}
 	
@@ -3291,37 +3215,41 @@ country_event = {
 
 # Jo?o Vaz Corte Real #
 
-country_event = {
-	id = btc_por.144
-	title = btc_por.144_t
-	desc = btc_por.144_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_por.144
+# 	title = btc_por.144_t
+# 	desc = btc_por.144_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	is_triggered_only = yes
+# 	trigger = {
+# 		is_year = 1470
+# 		tag = POR
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		months = 240
+# 	}
 
-	option = {	# Great
-		name = btc_por.144a
+# 	option = {	# Great
+# 		name = btc_por.144a
 
-		newfoundland_area = {
-			limit = {
-				NOT = { is_core = ROOT }
-				NOT = { is_permanent_claim = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		labrador_area = {
-			limit = {
-				NOT = { is_core = ROOT }
-				NOT = { is_permanent_claim = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-	}
-}
+# 		newfoundland_area = {
+# 			limit = {
+# 				NOT = { is_core = ROOT }
+# 				NOT = { is_permanent_claim = ROOT }
+# 			}
+# 			add_permanent_claim = ROOT
+# 		}
+# 		labrador_area = {
+# 			limit = {
+# 				NOT = { is_core = ROOT }
+# 				NOT = { is_permanent_claim = ROOT }
+# 			}
+# 			add_permanent_claim = ROOT
+# 		}
+# 		POR = { add_country_flag = corte_real_discover_flag }
+# 	}
+# }
 
 # Tomb of Mohamed #
 
@@ -3333,10 +3261,6 @@ country_event = {
 
 	is_triggered_only = yes
 	major = yes
-
-	mean_time_to_happen = {
-		days = 1
-	}
 
 	option = {	# We've done it
 		name = btc_por.145a
@@ -3412,43 +3336,13 @@ country_event = {
 		}
 
 		event_target:owner_of_jerusalem = {
-			379 = {
-				if = {
-					limit = {
-						exists = POR
-					}
-					cede_province = POR
-				}
-				else = {
-					cede_province = IBE
-				}
-			}
+			379 = { cede_province = FROM }
 		}
 		event_target:owner_of_gaza = {
-			364 = {
-				if = {
-					limit = {
-						exists = POR
-					}
-					cede_province = POR
-				}
-				else = {
-					cede_province = IBE
-				}
-			}
+			364 = { cede_province = FROM }
 		}
 		event_target:owner_of_jaffa = {
-			1854 = {
-				if = {
-					limit = {
-						exists = POR
-					}
-					cede_province = POR
-				}
-				else = {
-					cede_province = IBE
-				}
-			}
+			1854 = { cede_province = FROM }
 		}
 
 		ROOT = {
@@ -3487,23 +3381,23 @@ country_event = {
 				days = 3
 			}
 		}
-		every_country = {
-			limit = {
-				OR = {
-					AND = {
-						religion_group = christian
-						is_subject = no
-						total_own_and_non_tributary_subject_development = 150
-						NOT = { is_or_was_tag = { tag = POR } }
-					}
-					tag = PAP
-				}
-			}
-			country_event = {
-				id = btc_por.150
-				days = 3
-			}
-		}
+		# every_country = {
+		# 	limit = {
+		# 		OR = {
+		# 			AND = {
+		# 				religion_group = christian
+		# 				is_subject = no
+		# 				total_own_and_non_tributary_subject_development = 150
+		# 				NOT = { is_or_was_tag = { tag = POR } }
+		# 			}
+		# 			tag = PAP
+		# 		}
+		# 	}
+		# 	country_event = {
+		# 		id = btc_por.150
+		# 		days = 3
+		# 	}
+		# }
 	}
 }
 
@@ -3598,46 +3492,46 @@ country_event = {
 
 # The Portuguese Crusade #
 
-country_event = {
-	id = btc_por.150
-	title = btc_por.150_t
-	desc = btc_por.150_d
-	picture = RELIGIOUS_WARS_eventPicture
+# country_event = {
+# 	id = btc_por.150
+# 	title = btc_por.150_t
+# 	desc = btc_por.150_d
+# 	picture = RELIGIOUS_WARS_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {	# A true epic!
-		name = btc_por.150a
+# 	option = {	# A true epic!
+# 		name = btc_por.150a
 
-		ai_chance = {
-			factor = 1
-		}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		if = {
-			limit = {
-				exists = POR
-			}
-			join_all_offensive_wars_of = POR
-		}
-		else = {
-			join_all_offensive_wars_of = IBE
-		}
-	}
+# 		if = {
+# 			limit = {
+# 				exists = POR
+# 			}
+# 			join_all_offensive_wars_of = POR
+# 		}
+# 		else = {
+# 			join_all_offensive_wars_of = IBE
+# 		}
+# 	}
 
-	option = {	# A true epic... but we won't join
-		name = btc_por.150b
+# 	option = {	# A true epic... but we won't join
+# 		name = btc_por.150b
 
-		ai_chance = {
-			factor = 9
-		}
+# 		ai_chance = {
+# 			factor = 9
+# 		}
 
-		add_prestige = -25
-	}
-}
+# 		add_prestige = -25
+# 	}
+# }
 
 # The Silk Road Crisis #
 
@@ -3651,7 +3545,7 @@ country_event = {
 		is_or_was_tag = { tag = POR }
 		has_country_modifier = ottoman_silk_road_monopoly
 		has_idea_group = exploration_ideas
-		NOT = { has_country_flag = discovered_india }
+		NOT = { mission_completed = btc_india }
 	}
 
 	fire_only_once = yes
@@ -3675,10 +3569,6 @@ country_event = {
 			name = expensive_spices
 			duration = -1
 		}
-		# hidden_effect = {
-		# 	set_country_flag = discovery_excitement			
-		# }
-		# custom_tooltip = discovery_excitement_tt
 	}
 
 	option = {	# Not with 100 caravels could we do this. It is folly.
@@ -4356,157 +4246,157 @@ country_event = {
 
 # The Ordinances of [Root.Monarch.GetName]
 
-country_event = {
-	id = btc_por.166
-	title = btc_por.166_t
-	desc = btc_por.166_d
-	picture = COURT_eventPicture
+# country_event = {
+# 	id = btc_por.166
+# 	title = btc_por.166_t
+# 	desc = btc_por.166_d
+# 	picture = COURT_eventPicture
 
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		NOT = { has_ruler_modifier = production_ordinances }
-		NOT = { has_ruler_modifier = tax_ordinances }
-		NOT = { has_ruler_modifier = trade_ordinances }
-		NOT = { has_ruler_modifier = tariff_ordinances }
-		NOT = { has_ruler_modifier = padrao_ordinances }
-		NOT = { has_ruler_modifier = diplomatic_ordinances }
-		NOT = { has_ruler_modifier = development_ordinances }
-		NOT = { has_ruler_flag = no_ordinances }
-		has_regency = no
-	}
+# 	trigger = {
+# 		is_or_was_tag = { tag = POR }
+# 		NOT = { has_ruler_modifier = production_ordinances }
+# 		NOT = { has_ruler_modifier = tax_ordinances }
+# 		NOT = { has_ruler_modifier = trade_ordinances }
+# 		NOT = { has_ruler_modifier = tariff_ordinances }
+# 		NOT = { has_ruler_modifier = padrao_ordinances }
+# 		NOT = { has_ruler_modifier = diplomatic_ordinances }
+# 		NOT = { has_ruler_modifier = development_ordinances }
+# 		NOT = { has_ruler_flag = no_ordinances }
+# 		has_regency = no
+# 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
+# 	mean_time_to_happen = {
+# 		months = 1
+# 	}
 
-	immediate = {
-		clr_country_flag = had_perm_ordinances_event
-	}
+# 	immediate = {
+# 		clr_country_flag = had_perm_ordinances_event
+# 	}
 
-	option = {
-		name = btc_por.166a
+# 	option = {
+# 		name = btc_por.166a
 
-		trigger = {
-			NOT = {
-				has_country_modifier = production_ordinances
-			}
-		}
+# 		trigger = {
+# 			NOT = {
+# 				has_country_modifier = production_ordinances
+# 			}
+# 		}
 
-		add_adm_power = -100
-		change_government_reform_progress = -25
-		add_ruler_modifier = {
-			name = production_ordinances
-		}
-	}
+# 		add_adm_power = -100
+# 		change_government_reform_progress = -25
+# 		add_ruler_modifier = {
+# 			name = production_ordinances
+# 		}
+# 	}
 
-	option = {
-		name = btc_por.166b
+# 	option = {
+# 		name = btc_por.166b
 
-		trigger = {
-			NOT = {
-				has_country_modifier = tax_ordinances
-			}
-		}
+# 		trigger = {
+# 			NOT = {
+# 				has_country_modifier = tax_ordinances
+# 			}
+# 		}
 
-		add_adm_power = -100
-		change_government_reform_progress = -25
-		add_ruler_modifier = {
-			name = tax_ordinances
-		}
-	}
+# 		add_adm_power = -100
+# 		change_government_reform_progress = -25
+# 		add_ruler_modifier = {
+# 			name = tax_ordinances
+# 		}
+# 	}
 
-	option = {
-		name = btc_por.166c
+# 	option = {
+# 		name = btc_por.166c
 
-		trigger = {
-			NOT = {
-				has_country_modifier = trade_ordinances
-			}
-		}
+# 		trigger = {
+# 			NOT = {
+# 				has_country_modifier = trade_ordinances
+# 			}
+# 		}
 
-		add_dip_power = -100
-		change_government_reform_progress = -25
-		add_ruler_modifier = {
-			name = trade_ordinances
-		}
-	}
+# 		add_dip_power = -100
+# 		change_government_reform_progress = -25
+# 		add_ruler_modifier = {
+# 			name = trade_ordinances
+# 		}
+# 	}
 
-	option = {
-		name = btc_por.166d
+# 	option = {
+# 		name = btc_por.166d
 
-		trigger = {
-			any_subject_country = {
-				is_colonial_nation = yes
-			}
-			NOT = {
-				has_country_modifier = tariff_ordinances
-			}
-		}
+# 		trigger = {
+# 			any_subject_country = {
+# 				is_colonial_nation = yes
+# 			}
+# 			NOT = {
+# 				has_country_modifier = tariff_ordinances
+# 			}
+# 		}
 
-		add_dip_power = -100
-		change_government_reform_progress = -25
-		add_ruler_modifier = {
-			name = tariff_ordinances
-		}
-	}
+# 		add_dip_power = -100
+# 		change_government_reform_progress = -25
+# 		add_ruler_modifier = {
+# 			name = tariff_ordinances
+# 		}
+# 	}
 
-	option = {
-		name = btc_por.166f
+# 	option = {
+# 		name = btc_por.166f
 
-		trigger = {
-			num_of_explorers = 1
-			NOT = {
-				has_country_modifier = padrao_ordinances
-			}
-		}
+# 		trigger = {
+# 			num_of_explorers = 1
+# 			NOT = {
+# 				has_country_modifier = padrao_ordinances
+# 			}
+# 		}
 
-		add_dip_power = -100
-		change_government_reform_progress = -25
-		add_ruler_modifier = {
-			name = padrao_ordinances
-		}
-		custom_tooltip = padrao_tt
-	}
+# 		add_dip_power = -100
+# 		change_government_reform_progress = -25
+# 		add_ruler_modifier = {
+# 			name = padrao_ordinances
+# 		}
+# 		custom_tooltip = padrao_tt
+# 	}
 
-	option = {
-		name = btc_por.166g
+# 	option = {
+# 		name = btc_por.166g
 
-		trigger = {
-			NOT = {
-				has_country_modifier = diplomatic_ordinances
-			}
-		}
+# 		trigger = {
+# 			NOT = {
+# 				has_country_modifier = diplomatic_ordinances
+# 			}
+# 		}
 
-		add_dip_power = -100
-		change_government_reform_progress = -25
-		add_ruler_modifier = {
-			name = diplomatic_ordinances
-		}
-	}
+# 		add_dip_power = -100
+# 		change_government_reform_progress = -25
+# 		add_ruler_modifier = {
+# 			name = diplomatic_ordinances
+# 		}
+# 	}
 
-	option = {
-		name = btc_por.166h
+# 	option = {
+# 		name = btc_por.166h
 
-		trigger = {
-			NOT = {
-				has_country_modifier = development_ordinances
-			}
-		}
+# 		trigger = {
+# 			NOT = {
+# 				has_country_modifier = development_ordinances
+# 			}
+# 		}
 
-		add_adm_power = -100
-		change_government_reform_progress = -25
-		add_ruler_modifier = {
-			name = development_ordinances
-		}
-	}
+# 		add_adm_power = -100
+# 		change_government_reform_progress = -25
+# 		add_ruler_modifier = {
+# 			name = development_ordinances
+# 		}
+# 	}
 
-	option = {
-		name = btc_por.166e
+# 	option = {
+# 		name = btc_por.166e
 
-		add_prestige = -10
-		set_ruler_flag = no_ordinances
-	}
-}
+# 		add_prestige = -10
+# 		set_ruler_flag = no_ordinances
+# 	}
+# }
 
 # Padrão in $PROVINCENAME$
 
@@ -4521,19 +4411,15 @@ province_event = {
 	
 	trigger = {
 		has_dlc = "El Dorado"
-		is_empty = yes
+		# is_empty = yes
 		is_island = no
-		OR = {
-			continent = africa
-			continent = asia
-			region = brazil_region
-		}
-		FROM = { 
-			OR = {
-				has_ruler_modifier = padrao_ordinances 
-				has_country_modifier = padrao_ordinances
-			}
-		}
+		# OR = {
+		# 	continent = africa
+		# 	continent = asia
+		# 	region = brazil_region
+		# }
+		is_wasteland = no
+		FROM = { mission_completed = btc_padroes }
 	}
 
 	mean_time_to_happen = {
@@ -4542,50 +4428,66 @@ province_event = {
 
 	option = {	# Raise a Padrão
 		name = btc_por.167a
-		
+
 		random_list = {
-			30 = {
+			10 = {
 				trigger = {
-					NOT = {
-						OR = {
-							has_river_estuary_trigger = yes
-							province_has_center_of_trade_of_level = 1
-							province_has_center_of_trade_of_level = 2
-							province_has_center_of_trade_of_level = 3
-						}
-					}
+					FROM = { has_country_flag = padrao_chance_1 }
 				}
 				add_permanent_province_modifier = {
 					name = padrao_raised
 					duration = -1
 				}
+				add_permanent_claim = FROM
 				FROM = {
 					add_government_power = {
 						mechanic_type = portuguese_saudade_mechanic
 						power_type = portuguese_saudade
 						value = 1
 					}
+					clr_country_flag = padrao_chance_1
+					clr_country_flag = padrao_chance_2
+					clr_country_flag = padrao_chance_3
 				}
 			}
-			70 = {
+			15 = {
 				trigger = {
-					OR = {
-						has_river_estuary_trigger = yes
-						province_has_center_of_trade_of_level = 1
-						province_has_center_of_trade_of_level = 2
-						province_has_center_of_trade_of_level = 3
-					}
+					FROM = { has_country_flag = padrao_chance_2 }
 				}
 				add_permanent_province_modifier = {
 					name = padrao_raised
 					duration = -1
 				}
+				add_permanent_claim = FROM
 				FROM = {
 					add_government_power = {
 						mechanic_type = portuguese_saudade_mechanic
 						power_type = portuguese_saudade
 						value = 1
 					}
+					clr_country_flag = padrao_chance_1
+					clr_country_flag = padrao_chance_2
+					clr_country_flag = padrao_chance_3
+				}
+			}
+			25 = {
+				trigger = {
+					FROM = { has_country_flag = padrao_chance_3 }
+				}
+				add_permanent_province_modifier = {
+					name = padrao_raised
+					duration = -1
+				}
+				add_permanent_claim = FROM
+				FROM = {
+					add_government_power = {
+						mechanic_type = portuguese_saudade_mechanic
+						power_type = portuguese_saudade
+						value = 1
+					}
+					clr_country_flag = padrao_chance_1
+					clr_country_flag = padrao_chance_2
+					clr_country_flag = padrao_chance_3
 				}
 			}
 			50 = {}
@@ -5038,272 +4940,272 @@ province_event = {
 
 # Portuguese Ordinances
 
-country_event = {
-	id = btc_por.169
-	title = btc_por.169_t
-	desc = btc_por.169_d
-	picture = COURT_eventPicture
+# country_event = {
+# 	id = btc_por.169
+# 	title = btc_por.169_t
+# 	desc = btc_por.169_d
+# 	picture = COURT_eventPicture
 
-	trigger = {
-		months_of_ruling = 360
-		OR = {
-			has_ruler_modifier = production_ordinances
-			has_ruler_modifier = tax_ordinances
-			has_ruler_modifier = trade_ordinances
-			has_ruler_modifier = tariff_ordinances
-			has_ruler_modifier = padrao_ordinances
-			has_ruler_modifier = diplomatic_ordinances
-			has_ruler_modifier = development_ordinances
-		}
-		NOT = { has_country_flag = had_perm_ordinances_event }
-	}
+# 	trigger = {
+# 		months_of_ruling = 360
+# 		OR = {
+# 			has_ruler_modifier = production_ordinances
+# 			has_ruler_modifier = tax_ordinances
+# 			has_ruler_modifier = trade_ordinances
+# 			has_ruler_modifier = tariff_ordinances
+# 			has_ruler_modifier = padrao_ordinances
+# 			has_ruler_modifier = diplomatic_ordinances
+# 			has_ruler_modifier = development_ordinances
+# 		}
+# 		NOT = { has_country_flag = had_perm_ordinances_event }
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	immediate = {
-		set_country_flag = had_perm_ordinances_event
-	}
+# 	immediate = {
+# 		set_country_flag = had_perm_ordinances_event
+# 	}
 
-	option = {
-		name = btc_por.169a
+# 	option = {
+# 		name = btc_por.169a
 
-		if = {
-			limit = {
-				has_ruler_modifier = production_ordinances
-			}
-			add_adm_power = -100
-			change_government_reform_progress = -25
-			set_country_flag = permanent_ordinances
-			set_country_flag = permanent_production_ordinances
-			custom_tooltip = production_ordinances_tt
-		}
-		if = {
-			limit = {
-				has_ruler_modifier = tax_ordinances
-			}
-			add_adm_power = -100
-			change_government_reform_progress = -25
-			set_country_flag = permanent_ordinances
-			set_country_flag = permanent_tax_ordinances
-			custom_tooltip = tax_reduction
-		}
-		if = {
-			limit = {
-				has_ruler_modifier = trade_ordinances
-			}
-			add_dip_power = -100
-			change_government_reform_progress = -25
-			set_country_flag = permanent_ordinances
-			set_country_flag = permanent_trade_ordinances
-			custom_tooltip = trade_ordinances_tt
-		}
-		if = {
-			limit = {
-				has_ruler_modifier = tariff_ordinances
-			}
-			add_dip_power = -100
-			change_government_reform_progress = -25
-			set_country_flag = permanent_ordinances
-			set_country_flag = permanent_tariff_ordinances
-			custom_tooltip = tariff_ordinances_tt
-		}
-		if = {
-			limit = {
-				has_ruler_modifier = padrao_ordinances
-			}
-			add_dip_power = -100
-			change_government_reform_progress = -25
-			set_country_flag = permanent_ordinances
-			set_country_flag = permanent_padrao_ordinances
-			custom_tooltip = padrao_ordinances_tt
-		}
-		if = {
-			limit = {
-				has_ruler_modifier = diplomatic_ordinances
-			}
-			add_dip_power = -100
-			change_government_reform_progress = -25
-			set_country_flag = permanent_ordinances
-			set_country_flag = permanent_diplomatic_ordinances
-			custom_tooltip = diplomatic_ordinances_tt
-		}
-		if = {
-			limit = {
-				has_ruler_modifier = development_ordinances
-			}
-			add_adm_power = -100
-			change_government_reform_progress = -25
-			set_country_flag = permanent_ordinances
-			set_country_flag = permanent_development_ordinances
-			custom_tooltip = development_ordinances_tt
-		}
-	}
+# 		if = {
+# 			limit = {
+# 				has_ruler_modifier = production_ordinances
+# 			}
+# 			add_adm_power = -100
+# 			change_government_reform_progress = -25
+# 			set_country_flag = permanent_ordinances
+# 			set_country_flag = permanent_production_ordinances
+# 			custom_tooltip = production_ordinances_tt
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_ruler_modifier = tax_ordinances
+# 			}
+# 			add_adm_power = -100
+# 			change_government_reform_progress = -25
+# 			set_country_flag = permanent_ordinances
+# 			set_country_flag = permanent_tax_ordinances
+# 			custom_tooltip = tax_reduction
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_ruler_modifier = trade_ordinances
+# 			}
+# 			add_dip_power = -100
+# 			change_government_reform_progress = -25
+# 			set_country_flag = permanent_ordinances
+# 			set_country_flag = permanent_trade_ordinances
+# 			custom_tooltip = trade_ordinances_tt
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_ruler_modifier = tariff_ordinances
+# 			}
+# 			add_dip_power = -100
+# 			change_government_reform_progress = -25
+# 			set_country_flag = permanent_ordinances
+# 			set_country_flag = permanent_tariff_ordinances
+# 			custom_tooltip = tariff_ordinances_tt
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_ruler_modifier = padrao_ordinances
+# 			}
+# 			add_dip_power = -100
+# 			change_government_reform_progress = -25
+# 			set_country_flag = permanent_ordinances
+# 			set_country_flag = permanent_padrao_ordinances
+# 			custom_tooltip = padrao_ordinances_tt
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_ruler_modifier = diplomatic_ordinances
+# 			}
+# 			add_dip_power = -100
+# 			change_government_reform_progress = -25
+# 			set_country_flag = permanent_ordinances
+# 			set_country_flag = permanent_diplomatic_ordinances
+# 			custom_tooltip = diplomatic_ordinances_tt
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_ruler_modifier = development_ordinances
+# 			}
+# 			add_adm_power = -100
+# 			change_government_reform_progress = -25
+# 			set_country_flag = permanent_ordinances
+# 			set_country_flag = permanent_development_ordinances
+# 			custom_tooltip = development_ordinances_tt
+# 		}
+# 	}
 
-	option = {
-		name = btc_por.169b
+# 	option = {
+# 		name = btc_por.169b
 
-		add_prestige = -10
-	}
-}
+# 		add_prestige = -10
+# 	}
+# }
 
-# Permanent ordinances
+# # Permanent ordinances
 
-country_event = {
-	id = btc_por.170
-	title = btc_por.170_t
-	desc = btc_por.170_d
-	picture = mission_placeholder
+# country_event = {
+# 	id = btc_por.170
+# 	title = btc_por.170_t
+# 	desc = btc_por.170_d
+# 	picture = mission_placeholder
 
-	is_triggered_only = yes
-	hidden = yes
+# 	is_triggered_only = yes
+# 	hidden = yes
 
-	option = {
-		name = btc_por.170a
+# 	option = {
+# 		name = btc_por.170a
 
-		if = {
-			limit = {
-				has_country_flag = permanent_production_ordinances
-			}
-			add_country_modifier = {
-				name = production_ordinances
-				duration = -1
-			}
-			clr_country_flag = permanent_production_ordinances
-			clr_country_flag = permanent_ordinances
-		}
-		if = {
-			limit = {
-				has_country_flag = permanent_tax_ordinances
-			}
-			add_country_modifier = {
-				name = tax_ordinances
-				duration = -1
-			}
-			clr_country_flag = permanent_tax_ordinances
-			clr_country_flag = permanent_ordinances
-		}
-		if = {
-			limit = {
-				has_country_flag = permanent_trade_ordinances
-			}
-			add_country_modifier = {
-				name = trade_ordinances
-				duration = -1
-			}
-			clr_country_flag = permanent_trade_ordinances
-			clr_country_flag = permanent_ordinances
-		}
-		if = {
-			limit = {
-				has_country_flag = permanent_tariff_ordinances
-			}
-			add_country_modifier = {
-				name = tariff_ordinances
-				duration = -1
-			}
-			clr_country_flag = permanent_tariff_ordinances
-			clr_country_flag = permanent_ordinances
-		}
-		if = {
-			limit = {
-				has_country_flag = permanent_padrao_ordinances
-			}
-			add_country_modifier = {
-				name = padrao_ordinances
-				duration = -1
-			}
-			clr_country_flag = permanent_padrao_ordinances
-			clr_country_flag = permanent_ordinances
-		}
-		if = {
-			limit = {
-				has_country_flag = permanent_diplomatic_ordinances
-			}
-			add_country_modifier = {
-				name = diplomatic_ordinances
-				duration = -1
-			}
-			clr_country_flag = permanent_diplomatic_ordinances
-			clr_country_flag = permanent_ordinances
-		}
-		if = {
-			limit = {
-				has_country_flag = permanent_development_ordinances
-			}
-			add_country_modifier = {
-				name = development_ordinances
-				duration = -1
-			}
-			clr_country_flag = permanent_development_ordinances
-			clr_country_flag = permanent_ordinances
-		}
-	}
-}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = permanent_production_ordinances
+# 			}
+# 			add_country_modifier = {
+# 				name = production_ordinances
+# 				duration = -1
+# 			}
+# 			clr_country_flag = permanent_production_ordinances
+# 			clr_country_flag = permanent_ordinances
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = permanent_tax_ordinances
+# 			}
+# 			add_country_modifier = {
+# 				name = tax_ordinances
+# 				duration = -1
+# 			}
+# 			clr_country_flag = permanent_tax_ordinances
+# 			clr_country_flag = permanent_ordinances
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = permanent_trade_ordinances
+# 			}
+# 			add_country_modifier = {
+# 				name = trade_ordinances
+# 				duration = -1
+# 			}
+# 			clr_country_flag = permanent_trade_ordinances
+# 			clr_country_flag = permanent_ordinances
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = permanent_tariff_ordinances
+# 			}
+# 			add_country_modifier = {
+# 				name = tariff_ordinances
+# 				duration = -1
+# 			}
+# 			clr_country_flag = permanent_tariff_ordinances
+# 			clr_country_flag = permanent_ordinances
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = permanent_padrao_ordinances
+# 			}
+# 			add_country_modifier = {
+# 				name = padrao_ordinances
+# 				duration = -1
+# 			}
+# 			clr_country_flag = permanent_padrao_ordinances
+# 			clr_country_flag = permanent_ordinances
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = permanent_diplomatic_ordinances
+# 			}
+# 			add_country_modifier = {
+# 				name = diplomatic_ordinances
+# 				duration = -1
+# 			}
+# 			clr_country_flag = permanent_diplomatic_ordinances
+# 			clr_country_flag = permanent_ordinances
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = permanent_development_ordinances
+# 			}
+# 			add_country_modifier = {
+# 				name = development_ordinances
+# 				duration = -1
+# 			}
+# 			clr_country_flag = permanent_development_ordinances
+# 			clr_country_flag = permanent_ordinances
+# 		}
+# 	}
+# }
 
 # Fortress of Almeida #
 
-country_event = {
-	id = btc_por.171
-	title = btc_por.171_t
-	desc = btc_por.171_d
-	picture = btc_fort_eventPicture
+# country_event = {
+# 	id = btc_por.171
+# 	title = btc_por.171_t
+# 	desc = btc_por.171_d
+# 	picture = btc_fort_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		had_country_flag = {
-			flag = elvas
-			days = 10000
-		}
-		228 = {
-			owned_by = ROOT
-			controlled_by = ROOT
-			AND = {
-				NOT = { has_building = fort_15th }
-				NOT = { has_building = fort_16th }
-				NOT = { has_building = fort_17th }
-				NOT = { has_building = fort_18th }
-			}
-		}
-	}
+# 	trigger = {
+# 		is_or_was_tag = { tag = POR }
+# 		had_country_flag = {
+# 			flag = elvas
+# 			days = 10000
+# 		}
+# 		228 = {
+# 			owned_by = ROOT
+# 			controlled_by = ROOT
+# 			AND = {
+# 				NOT = { has_building = fort_15th }
+# 				NOT = { has_building = fort_16th }
+# 				NOT = { has_building = fort_17th }
+# 				NOT = { has_building = fort_18th }
+# 			}
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 120
-	}
+# 	mean_time_to_happen = {
+# 		months = 120
+# 	}
 
-	option = {
-		name = btc_por.171a
+# 	option = {
+# 		name = btc_por.171a
 
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { treasury = 50 }
-			}
-		}
+# 		ai_chance = {
+# 			factor = 1
+# 			modifier = {
+# 				factor = 0
+# 				NOT = { treasury = 50 }
+# 			}
+# 		}
 
-		228 = {
-			add_building_construction = {
-				building = fort_15th
-				cost = 0.25
-				speed = 0.5
-			}
-			add_province_modifier = {
-				name = local_fortress
-				duration = -1
-			}
-		}
-	}
+# 		228 = {
+# 			add_building_construction = {
+# 				building = fort_15th
+# 				cost = 0.25
+# 				speed = 0.5
+# 			}
+# 			add_province_modifier = {
+# 				name = local_fortress
+# 				duration = -1
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = btc_por.171b
+# 	option = {
+# 		name = btc_por.171b
 		
-		add_prestige = -1
-	}
-}
+# 		add_prestige = -1
+# 	}
+# }
 
 # Reconsider the Alliance with Portugal #
 
@@ -5319,10 +5221,7 @@ country_event = {
 		hidden_effect = {
 			random_ally = {
 				limit = {
-					OR = {
-						war_with = POR
-						war_with = IBE
-					}
+					war_with = POR
 				}
 				save_event_target_as = ally_war_portugal
 			}			
@@ -5338,20 +5237,8 @@ country_event = {
 
 		break_alliance = event_target:ally_war_portugal
 
-		if = {
-			limit = {
-				exists = POR
-			}
-			create_alliance = POR
-			join_all_defensive_wars_of = POR
-		}
-		else_if = {
-			limit = {
-				exists = IBE
-			}
-			create_alliance = IBE
-			join_all_defensive_wars_of = IBE
-		}
+		create_alliance = POR
+		join_all_defensive_wars_of = POR
 	}
 
 	option = {	# Our decision is final
@@ -5361,225 +5248,208 @@ country_event = {
 			factor = 0
 		}
 		
-		if = {
-			limit = {
-				exists = POR
-			}
-			POR = { 
-				country_event = {
-					id = btc_por.126
-					days = 3
-				} 	
-				set_country_flag = england_rejected_alliance
-			}
-		}
-		else_if = {
-			limit = {
-				exists = IBE
-			}
-			IBE = { 
-				country_event = {
-					id = btc_por.126
-					days = 3
-				} 	
-				set_country_flag = england_rejected_alliance
-			}
+		POR = { 
+			country_event = {
+				id = btc_por.126
+				days = 3
+			} 	
+			set_country_flag = england_rejected_alliance
 		}
 	}
 }
 
 # The Treaty of Alcáçovas (POR)#
 
-country_event = {
-	id = btc_por.173
-	title = btc_por.173_t
-	desc = btc_por.173_d
-	picture = DIPLOMACY_eventPicture
+# country_event = {
+# 	id = btc_por.173
+# 	title = btc_por.173_t
+# 	desc = btc_por.173_d
+# 	picture = DIPLOMACY_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Propose the Treaty
-		name = btc_por.173a
-		ai_chance = {
-			factor = 1
-		}
+# 	option = {	# Propose the Treaty
+# 		name = btc_por.173a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		CAS = { 
-			country_event = {
-				id = btc_por.174
-				days = 3
-			} 
-		}
-		custom_tooltip = alcacovas_treaty_tt
-	}
+# 		CAS = { 
+# 			country_event = {
+# 				id = btc_por.174
+# 				days = 3
+# 			} 
+# 		}
+# 		custom_tooltip = alcacovas_treaty_tt
+# 	}
 
-	option = {	# We have other priorities
-		name = btc_por.173b
-		ai_chance = {
-			factor = 0
-		}
+# 	option = {	# We have other priorities
+# 		name = btc_por.173b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 
-		add_country_modifier = {
-			name = proudly_alone
-			duration = -1
-		}
-	}
-}
+# 		add_country_modifier = {
+# 			name = proudly_alone
+# 			duration = -1
+# 		}
+# 	}
+# }
 
 # The Treaty of Alcáçovas (CAS)#
 
-country_event = {
-	id = btc_por.174
-	title = btc_por.174_t
-	desc = btc_por.174_d
-	picture = DIPLOMACY_eventPicture
+# country_event = {
+# 	id = btc_por.174
+# 	title = btc_por.174_t
+# 	desc = btc_por.174_d
+# 	picture = DIPLOMACY_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	major = yes
+# 	major = yes
 
-	option = {	# Sign the Treaty
-		name = btc_por.174a
-		ai_chance = {
-			factor = 1
-		}
+# 	option = {	# Sign the Treaty
+# 		name = btc_por.174a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		custom_tooltip = alcacovas_treaty_tt
-		hidden_effect = {
-			CAS = { set_country_flag = alcacovas_treaty }
-			if = {
-				limit = {
-					NOT = { has_country_flag = won_war }
-				}
-				country_event = {
-					id = castilian_civil_war.14	# Castile wins civil war
-					days = 3
-				}
-			}
-		}
-	}
+# 		custom_tooltip = alcacovas_treaty_tt
+# 		hidden_effect = {
+# 			CAS = { set_country_flag = alcacovas_treaty }
+# 			if = {
+# 				limit = {
+# 					NOT = { has_country_flag = won_war }
+# 				}
+# 				country_event = {
+# 					id = castilian_civil_war.14	# Castile wins civil war
+# 					days = 3
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {	# Compensate Portugal financially
-		name = btc_por.174b
-		ai_chance = {
-			factor = 0
-		}
+# 	option = {	# Compensate Portugal financially
+# 		name = btc_por.174b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 
-		add_years_of_income = -3
-		POR = { add_years_of_income = 3 }
+# 		add_years_of_income = -3
+# 		POR = { add_years_of_income = 3 }
 
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = won_war }
-				}
-				country_event = {
-					id = castilian_civil_war.14	# Castile wins civil war
-					days = 3
-				}
-			}		
-		}
-	}
-}
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					NOT = { has_country_flag = won_war }
+# 				}
+# 				country_event = {
+# 					id = castilian_civil_war.14	# Castile wins civil war
+# 					days = 3
+# 				}
+# 			}		
+# 		}
+# 	}
+# }
 
 # In Search of New Lands #
 
-country_event = {
-	id = btc_por.175
-	title = btc_por.175_t
-	desc = btc_por.175_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_por.175
+# 	title = btc_por.175_t
+# 	desc = btc_por.175_d
+# 	picture = SHIP_SAILING_eventPicture
 	
-	trigger = {
-		has_country_flag = tordesillas_por
-		NOT = { 
-			AND = {
-				1584 = { has_discovered = ROOT } 
-				1597 = { has_discovered = ROOT } 
-			}
-		}
-	}
+# 	trigger = {
+# 		has_country_flag = tordesillas_por
+# 		NOT = { 
+# 			AND = {
+# 				1584 = { has_discovered = ROOT } 
+# 				1597 = { has_discovered = ROOT } 
+# 			}
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 3650
-	}
+# 	mean_time_to_happen = {
+# 		days = 3650
+# 	}
 
-	option = {	# New Lands
-		name = btc_por.175a
+# 	option = {	# New Lands
+# 		name = btc_por.175a
 
-		1584 = {
-			discover_country = ROOT
-		}
-		1597 = {
-			discover_country = ROOT
-		}
-	}
-}
+# 		1584 = {
+# 			discover_country = ROOT
+# 		}
+# 		1597 = {
+# 			discover_country = ROOT
+# 		}
+# 	}
+# }
 
 # Leonor of Aragon #
 
-country_event = {
-	id = btc_por.176
-	title = btc_por.176_t
-	desc = btc_por.176_d
-	picture = QUEEN_AND_MALE_HEIR_eventPicture
+# country_event = {
+# 	id = btc_por.176
+# 	title = btc_por.176_t
+# 	desc = btc_por.176_d
+# 	picture = QUEEN_AND_MALE_HEIR_eventPicture
 	
-	trigger = {
-		tag = POR
-	}
+# 	trigger = {
+# 		tag = POR
+# 	}
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {	# Infante Pedro shall remain the sole custodian
-		name = btc_por.176a
-		ai_chance = {
-			factor = 7
-		}
+# 	option = {	# Infante Pedro shall remain the sole custodian
+# 		name = btc_por.176a
+# 		ai_chance = {
+# 			factor = 7
+# 		}
 
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = 10
-		}
+# 		add_estate_loyalty = {
+# 			estate = estate_nobles
+# 			loyalty = 10
+# 		}
 
-		ARA = {
-			add_opinion = {
-				who = ROOT
-				modifier = exiled_leonor
-			}
-		}
-	}
+# 		ARA = {
+# 			add_opinion = {
+# 				who = ROOT
+# 				modifier = exiled_leonor
+# 			}
+# 		}
+# 	}
 
-	option = {	# Allow shared custody of the young King
-		name = btc_por.176b
-		trigger = {
-			NOT = { is_rival = ARA }
-			NOT = { ARA = { is_rival = ROOT } }
-		}
-		ai_chance = {
-			factor = 3
-		}
+# 	option = {	# Allow shared custody of the young King
+# 		name = btc_por.176b
+# 		trigger = {
+# 			NOT = { is_rival = ARA }
+# 			NOT = { ARA = { is_rival = ROOT } }
+# 		}
+# 		ai_chance = {
+# 			factor = 3
+# 		}
 
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -10
-		}
+# 		add_estate_loyalty = {
+# 			estate = estate_nobles
+# 			loyalty = -10
+# 		}
 
-		ARA = {
-			add_opinion = {
-				who = ROOT
-				modifier = welcomed_leonor
-			}
-			add_historical_friend = ROOT
-			remove_rival = ROOT
-		}
-		add_historical_friend = ARA
-		remove_rival = ARA
-	}
-}
+# 		ARA = {
+# 			add_opinion = {
+# 				who = ROOT
+# 				modifier = welcomed_leonor
+# 			}
+# 			add_historical_friend = ROOT
+# 			remove_rival = ROOT
+# 		}
+# 		add_historical_friend = ARA
+# 		remove_rival = ARA
+# 	}
+# }
 
 province_event = {
 	id = btc_por.177
@@ -5604,187 +5474,156 @@ province_event = {
 				}
 			}
 		}
-		if = {
-			limit = { 
-				exists = IBE
-			}
-			owner = {
-				NOT = {
-					has_opinion = {
-						who = IBE
-						value = 0
-					}
-				}
-			}
-		}
 	}
 
 	option = {
 		name = btc_por.177a
 
 		remove_province_modifier = foreign_feitoria
-		if = {
-			limit = { exists = POR }
-			ROOT = {
-				remove_trade_modifier = {
-					who = POR
-					key = portuguese_feitoria
-				}
-			}
-			owner = {
-				remove_opinion = {
-					who = POR
-					modifier = built_feitoria
-				}
+		ROOT = {
+			remove_trade_modifier = {
+				who = POR
+				key = portuguese_feitoria
 			}
 		}
-		if = {
-			limit = { exists = IBE }
-			ROOT = {
-				remove_trade_modifier = {
-					who = IBE
-					key = portuguese_feitoria
-				}
-			}
-			owner = {
-				remove_opinion = {
-					who = IBE
-					modifier = built_feitoria
-				}
+		owner = {
+			remove_opinion = {
+				who = POR
+				modifier = built_feitoria
 			}
 		}
 	}
 }
 
-country_event = {
-	id = btc_por.178
-	title = btc_por.178_t
-	desc = btc_por.178_d
-	picture = CONQUEST_eventPicture
+# country_event = {
+# 	id = btc_por.178
+# 	title = btc_por.178_t
+# 	desc = btc_por.178_d
+# 	picture = CONQUEST_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = btc_por.178a
+# 	option = {
+# 		name = btc_por.178a
 
-		custom_tooltip = portuguese_resilience_tt
-		hidden_effect = {
-			norte_area = {
-				add_province_modifier = {
-					name = portuguese_resilience
-					duration = -1
-				}
-			}
-			beieras_area = {
-				add_province_modifier = {
-					name = portuguese_resilience
-					duration = -1
-				}
-			}
-			estremadura_area = {
-				add_province_modifier = {
-					name = portuguese_resilience
-					duration = -1
-				}
-			}
-			alentejo_area = {
-				add_province_modifier = {
-					name = portuguese_resilience
-					duration = -1
-				}
-			}			
-		}	
-	}
-}
+# 		custom_tooltip = portuguese_resilience_tt
+# 		hidden_effect = {
+# 			norte_area = {
+# 				add_province_modifier = {
+# 					name = portuguese_resilience
+# 					duration = -1
+# 				}
+# 			}
+# 			beieras_area = {
+# 				add_province_modifier = {
+# 					name = portuguese_resilience
+# 					duration = -1
+# 				}
+# 			}
+# 			estremadura_area = {
+# 				add_province_modifier = {
+# 					name = portuguese_resilience
+# 					duration = -1
+# 				}
+# 			}
+# 			alentejo_area = {
+# 				add_province_modifier = {
+# 					name = portuguese_resilience
+# 					duration = -1
+# 				}
+# 			}			
+# 		}	
+# 	}
+# }
 
-country_event = { #Ferdinand Magellan
-	id = btc_por.179
-	title = flavor_spa.199.t
-	desc = flavor_spa.199.d
-	picture = HARBOUR_eventPicture
+# country_event = { #Ferdinand Magellan
+# 	id = btc_por.179
+# 	title = flavor_spa.199.t
+# 	desc = flavor_spa.199.d
+# 	picture = HARBOUR_eventPicture
 
-	fire_only_once = yes 
+# 	fire_only_once = yes 
 
-	trigger = {
-		is_or_was_tag = { tag = POR } 
-		is_subject = no
-		NOT = { has_country_flag = had_magellan_event_flag }
-		full_idea_group = exploration_ideas
-		is_year = 1517
-	}
+# 	trigger = {
+# 		is_or_was_tag = { tag = POR } 
+# 		is_subject = no
+# 		NOT = { has_country_flag = had_magellan_event_flag }
+# 		full_idea_group = exploration_ideas
+# 		is_year = 1517
+# 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
+# 	mean_time_to_happen = {
+# 		days = 30
+# 	}
 	
-	immediate = {
-		set_country_flag = had_magellan_event_flag
-	}
+# 	immediate = {
+# 		set_country_flag = had_magellan_event_flag
+# 	}
 	
-	option = {
-		name = flavor_spa.199.b
+# 	option = {
+# 		name = flavor_spa.199.b
 
-		ai_chance = { factor = 9 }
-		add_prestige_or_monarch_power = { amount = 5 } 
-		set_country_flag = turned_down_magellan
-	}
+# 		ai_chance = { factor = 9 }
+# 		add_prestige_or_monarch_power = { amount = 5 } 
+# 		set_country_flag = turned_down_magellan
+# 	}
 	
-	option = { 
-		name = flavor_spa.199.a
+# 	option = { 
+# 		name = flavor_spa.199.a
 
-		trigger = {
-			NOT = {
-				moluccas_region = {
-					has_discovered = ROOT
-				}
-			}
-		}
-		add_country_modifier = {
-			name = legacy_of_magellan
-			duration = -1
-		}
-		ai_chance = { factor = 1 }
-		define_explorer = {
-			name = "Fernão de Magalhães"
-			fire = 4 
-			shock = 4 
-			manuever = 6
-			siege = 1
-			trait = great_explorer_personality
-		}
-		set_country_flag = por_no_flagship_mod
-		if = {
-			limit = {
-				227 = {
-					owned_by = ROOT
-				}
-			}
-			227 = {
-				create_flagship = {
-					type = heavy_ship
-					name = "Vitória"
-				}
-			}
-		}
-		else = {
-			random_owned_province = {
-				limit = {
-					has_port = yes
-				}
-				create_flagship = {
-					type = heavy_ship
-					name = "Vitória"
-				}
-			}
-		}
-		clr_country_flag = por_no_flagship_mod	
-		if = {
-			limit = { has_dlc = "Rule Britannia" }
-			change_innovativeness = 2
-		}
-		else = { add_adm_power = 25 add_dip_power = 25 }
-	}			
-}
+# 		trigger = {
+# 			NOT = {
+# 				moluccas_region = {
+# 					has_discovered = ROOT
+# 				}
+# 			}
+# 		}
+# 		add_country_modifier = {
+# 			name = legacy_of_magellan
+# 			duration = -1
+# 		}
+# 		ai_chance = { factor = 1 }
+# 		define_explorer = {
+# 			name = "Fernão de Magalhães"
+# 			fire = 4 
+# 			shock = 4 
+# 			manuever = 6
+# 			siege = 1
+# 			trait = great_explorer_personality
+# 		}
+# 		set_country_flag = por_no_flagship_mod
+# 		if = {
+# 			limit = {
+# 				227 = {
+# 					owned_by = ROOT
+# 				}
+# 			}
+# 			227 = {
+# 				create_flagship = {
+# 					type = heavy_ship
+# 					name = "Vitória"
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			random_owned_province = {
+# 				limit = {
+# 					has_port = yes
+# 				}
+# 				create_flagship = {
+# 					type = heavy_ship
+# 					name = "Vitória"
+# 				}
+# 			}
+# 		}
+# 		clr_country_flag = por_no_flagship_mod	
+# 		if = {
+# 			limit = { has_dlc = "Rule Britannia" }
+# 			change_innovativeness = 2
+# 		}
+# 		else = { add_adm_power = 25 add_dip_power = 25 }
+# 	}			
+# }
 
 country_event = {
 	id = btc_por.180
@@ -5804,30 +5643,8 @@ country_event = {
 			skill = 3
 			name = "Henrique o Navegador"
 			age = 50
-			location = 230
-			cost_multiplier = 0.33
-			culture = portugese
-			religion = catholic
-		}
-
-		define_advisor = {
-			type = philosopher
-			skill = 2
-			name = "Fernão Lopes"
-			age = 59
-			location = 4150
-			cost_multiplier = 0.33
-			culture = portugese
-			religion = catholic
-		}
-
-		define_advisor = {
-			type = commandant
-			skill = 1
-			name = "Pedro de Coimbra"
-			age = 15
-			location = 1851
-			cost_multiplier = 0.33
+			location = 231
+			cost_multiplier = 0.25
 			culture = portugese
 			religion = catholic
 		}
@@ -5835,30 +5652,30 @@ country_event = {
 }
 
 # Lisbon Massacre
-country_event = {
-	id = btc_por.181
-	title = btc_por.181_t
-	desc = btc_por.181_d
-	picture = PROTESTANT_RELIGIOUS_TENSIONS_eventPicture
+# country_event = {
+# 	id = btc_por.181
+# 	title = btc_por.181_t
+# 	desc = btc_por.181_d
+# 	picture = PROTESTANT_RELIGIOUS_TENSIONS_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		is_year = 1495
-	}
+# 	trigger = {
+# 		is_or_was_tag = { tag = POR }
+# 		is_year = 1495
+# 	}
 
-	mean_time_to_happen = {
-		months = 24
-	}
+# 	mean_time_to_happen = {
+# 		months = 24
+# 	}
 	
-	option = { 
-		name = btc_por.181a
+# 	option = { 
+# 		name = btc_por.181a
 
-		set_country_flag = lisbon_massacre_flag
-		227 = {
-			add_unrest = 5
-		}
-	}			
-}
+# 		set_country_flag = lisbon_massacre_flag
+# 		227 = {
+# 			add_unrest = 5
+# 		}
+# 	}			
+# }
 

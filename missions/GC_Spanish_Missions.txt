@@ -1,3 +1,6 @@
+### BTC changes: caribbean region ###
+### BTC changes: california region ###
+
 gc_spain_1 = {
 	slot = 1
 	generic = no
@@ -15,8 +18,6 @@ gc_spain_1 = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -117,8 +118,6 @@ gc_spain_1_b = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -328,8 +327,6 @@ gc_spain_2 = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -474,8 +471,6 @@ gc_spain_2_b = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -768,8 +763,6 @@ gc_spain_3 = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -977,8 +970,6 @@ gc_spain_3_b = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -1442,8 +1433,6 @@ gc_spain_4 = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -1735,8 +1724,6 @@ gc_spain_4_b = {
 		tag = SPA
 		NOT = { primary_culture = aragonese }
 		NOT = { primary_culture = catalan }
-		NOT = { primary_culture = valencian }
-		NOT = { primary_culture = balearic }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1943,8 +1930,6 @@ gc_spain_4_c = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -1998,8 +1983,6 @@ gc_spain_4_d = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -2183,8 +2166,6 @@ gc_castile_spain_5 = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }
@@ -2241,8 +2222,6 @@ gc_spain_5_a = {
 		tag = SPA
 		NOT = { primary_culture = aragonese }
 		NOT = { primary_culture = catalan }
-		NOT = { primary_culture = valencian }
-		NOT = { primary_culture = balearic }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -2427,8 +2406,6 @@ gc_spain_5_c = {
 				tag = SPA
 				NOT = { primary_culture = aragonese }
 				NOT = { primary_culture = catalan }
-				NOT = { primary_culture = valencian }
-				NOT = { primary_culture = balearic }
 			}
 		}
 		NOT = { map_setup = map_setup_random }

@@ -91,7 +91,7 @@ castilian_civil_war = {
 		custom_trigger_tooltip = {
 			tooltip = cas_civil_war_end_tt
 			OR = {
-				has_country_flag = civil_war_ended
+				NOT = { has_country_flag = at_war }
 				has_country_flag = no_contest
 				has_country_flag = cas_civil_war_rebels_won
 			}
@@ -102,8 +102,8 @@ castilian_civil_war = {
 	
 	modifier = {
 		global_unrest = 7
-		land_forcelimit_modifier = -0.65
-		global_manpower_modifier = -0.65
+		# land_forcelimit_modifier = -0.5
+		# global_manpower_modifier = -0.5
 		can_not_declare_war = yes
 	}	
 	

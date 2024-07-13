@@ -5,6 +5,8 @@
 # written by Sara Wendel-Örtqvist
 ########################################
 
+# BEYOND THE CAPE - exploration #
+
 namespace = exploration_events
 
 # Ordeal in $PROVINCENAME$
@@ -449,7 +451,7 @@ province_event = {
 	option = {
 		name = exploration_events.9.b
 		FROM = {
-			add_prestige = 5
+			add_prestige = 10
 		}
 		change_native_hostileness = 2
 	}
@@ -490,14 +492,14 @@ province_event = {
 	option = {
 		name = exploration_events.10.a
 		FROM = {
-			add_years_of_income = -0.15
+			add_years_of_income = -0.25
 			add_dip_power = 50
 		}
 	}
 	option = {
 		name = exploration_events.10.b
 		FROM = {
-			add_years_of_income = 0.15
+			add_years_of_income = 0.25
 		}
 		change_native_hostileness = 1
 		change_native_ferocity = 1
@@ -505,47 +507,38 @@ province_event = {
 }
 
 # A Scattering of Poison
-province_event = {
-	id = exploration_events.11
-	title = exploration_events.11.t
-	desc = exploration_events.11.d
-	picture = GUARDED_TREASURE_eventPicture
-	goto = root
+# province_event = {
+# 	id = exploration_events.11
+# 	title = exploration_events.11.t
+# 	desc = exploration_events.11.d
+# 	picture = GUARDED_TREASURE_eventPicture
+# 	goto = root
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	trigger = {
-		has_dlc = "El Dorado"
-		is_empty = yes
-		OR = {
-			native_ferocity = 5
-			native_hostileness = 5
-		}
-		FROM = { NOT = { has_country_modifier = explored_coast } }
-	}
+# 	trigger = {
+# 		has_dlc = "El Dorado"
+# 		is_empty = yes
+# 		OR = {
+# 			native_ferocity = 5
+# 			native_hostileness = 5
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 	
-	immediate = {
-		kill_leader = {
-			type = explorer
-		}
-		hidden_effect = {
-			FROM = {
-				add_country_modifier = {
-					name = explored_coast
-					duration = 20
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		kill_leader = {
+# 			type = explorer
+# 		}
+# 	}
 	
-	option = {
-		name = exploration_events.11.a
-	}
-}
+# 	option = {
+# 		name = exploration_events.11.a
+# 	}
+# }
 
 # Drunk explorer
 province_event = {
@@ -642,7 +635,7 @@ province_event = {
 	option = {
 		name = exploration_events.13.b
 		FROM = {
-			add_adm_power = 25
+			add_adm_power = 50
 		}
 	}
 }
@@ -700,58 +693,46 @@ province_event = {
 	option = {
 		name = exploration_events.14.b
 		FROM = {
-			add_adm_power = 25
+			add_adm_power = 50
 		}
 	}
 }
 
 # Dead on Arrival
-province_event = {
-	id = exploration_events.15
-	title = exploration_events.15.t
-	desc = exploration_events.15.d
-	picture = COASTLINE_MAP_eventPicture
-	goto = root
+# province_event = {
+# 	id = exploration_events.15
+# 	title = exploration_events.15.t
+# 	desc = exploration_events.15.d
+# 	picture = COASTLINE_MAP_eventPicture
+# 	goto = root
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	trigger = {
-		has_dlc = "El Dorado"
-		is_empty = no
-		owner = {
-			OR = {
-				technology_group = sub_saharan
-				technology_group = north_american
-				technology_group = mesoamerican
-				technology_group = south_american
-				technology_group = andean
-			}
-		}
-		FROM = { NOT = { has_country_modifier = explored_coast } }
-	}
+# 	trigger = {
+# 		has_dlc = "El Dorado"
+# 		is_empty = no
+# 		owner = {
+# 			OR = {
+# 				technology_group = sub_saharan
+# 				technology_group = north_american
+# 				technology_group = mesoamerican
+# 				technology_group = south_american
+# 				technology_group = andean
+# 			}
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		hidden_effect = {
-			FROM = {
-				add_country_modifier = {
-					name = explored_coast
-					duration = 20
-				}
-			}
-		}
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 	
-	option = {
-		name = exploration_events.15.a
-		kill_leader = {
-			type = explorer
-		}
-	}
-}
+# 	option = {
+# 		name = exploration_events.15.a
+# 		kill_leader = {
+# 			type = explorer
+# 		}
+# 	}
+# }
 
 # Circumnavigation - Magellan's Voyage
 country_event = {
@@ -844,7 +825,7 @@ country_event = {
 	
 	option = {
 		name = exploration_events.16.a
-		add_prestige = 100
+		add_prestige_or_monarch_power = { amount = 100 }
 		add_navy_tradition = 40
 		
 		if = {
@@ -857,16 +838,16 @@ country_event = {
 				duration = -1 
 			}
 		}
-		
+		# Beyond the Cape missions
 		hidden_effect = {
 			if = {
 				limit = { 
 					NOT = { tag = POR }
 					POR = { 
-						NOT = { mission_completed = dom_portugal_circumnavigation }
+						NOT = { mission_completed = btc_circumnavigation }
 					}
 				}
-				POR = { complete_mission = dom_portugal_circumnavigation }
+				POR = { complete_mission = btc_circumnavigation }
 			}
 		}
 	}
@@ -892,7 +873,7 @@ country_event = {
 	
 	option = {
 		name = exploration_events.17.a
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_navy_tradition = 10
 		
 		if = {

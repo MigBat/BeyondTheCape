@@ -1,3 +1,6 @@
+### BTC changes: caribbean region ###
+### BTC changes: california region ###
+
 nor_colonialism_mission_slot = {
 	slot = 1
 	generic = no
@@ -214,7 +217,7 @@ nor_colonialism_mission_slot = {
 		provinces_to_highlight = {}
 		trigger = {
 			if = {
-				limit = { has_dlc = "Golden Century" ai = no}
+				limit = { has_dlc = "Golden Century" }
 				has_flagship = yes
 			}
 			num_of_explorers = 1
@@ -643,6 +646,7 @@ nor_colonize_random_new_world_slot = {
 	}
 }
 
+# Beyond the Cape exploration
 nor_conquest_mission_slot = {
 	slot = 2
 	generic = no
@@ -729,22 +733,21 @@ nor_conquest_mission_slot = {
 		required_missions = {  }
 		provinces_to_highlight = {}
 		trigger = {
-			if = {
-				limit = { ai = no }
-				OR = {
-					num_of_heavy_ship = 5
-					num_of_light_ship = 8
-				}
-			}
-			else = {
-				OR = {
-					num_of_heavy_ship = 3
-					num_of_light_ship = 5
-				}
+			OR = {
+				num_of_heavy_ship = 5
+				num_of_light_ship = 8
 			}
 		}
 		effect = {
-			create_admiral = {
+			if = {
+				limit = {
+					is_random_new_world = no
+				}
+				country_event = {
+					id = flavor_nor.32
+				}
+			}
+			create_explorer = {
 				tradition = 100
 			}
 			add_navy_tradition = 10
@@ -757,21 +760,13 @@ nor_conquest_mission_slot = {
 		required_missions = { nor_build_navy }
 		provinces_to_highlight = {}
 		trigger = {
-			# OR = {
-			# 	has_country_modifier = quest_for_the_new_world
-			# 	has_idea = call_of_our_forefathers
-			# }
-			if = {
-				limit = {
-					ai = yes
-				}
-				share_of_starting_income = 1.2
+			OR = {
+				has_country_modifier = quest_for_the_new_world
+				has_idea = call_of_our_forefathers
 			}
-			else = {
-				share_of_starting_income = 1.5
-				is_in_deficit = no
-				NOT = { num_of_loans = 1 }
-			}
+			share_of_starting_income = 1.5
+			is_in_deficit = no
+			NOT = { num_of_loans = 1 }
 		}
 		effect = {
 			capital_scope = {
@@ -782,17 +777,6 @@ nor_conquest_mission_slot = {
 			add_country_modifier = {
 				name = nor_sailors_of_norway
 				duration = 9125
-			}
-			create_explorer = {
-				tradition = 100
-			}
-			if = {
-				limit = {
-					is_random_new_world = no
-				}
-				country_event = {
-					id = flavor_nor.32
-				}
 			}
 		}
 	}
@@ -933,7 +917,6 @@ nor_colonize_middle_america_slot = {
 		trigger = {
 			if = {
 				limit = {
-					ai = no
 					OR = {
 						1104 = { is_empty = yes }
 						1105 = { is_empty = yes }
@@ -962,31 +945,13 @@ nor_colonize_middle_america_slot = {
 					}
 				}
 			}
-			else_if = {
-				limit = {
-					ai = no
-				}
+			else = {
 				owns_or_non_sovereign_subject_of = 1104
 				owns_or_non_sovereign_subject_of = 1105
-			}
-			if = {
-				limit = {
-					ai = yes
-				}
-				has_discovered = 1104
-				has_discovered = 1105
 			}
 		}
 		effect = {
 			if = {
-				limit = {
-					ai = yes
-				}
-				country_event = {
-					id = flavor_nor.33
-				}
-			}
-			else_if = {
 				limit = {
 					OR = {
 						1104 = {
@@ -1471,7 +1436,7 @@ nor_dominate_colonialism_slot = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = carribeans_region
 				is_city = yes
-				value = 10
+				value = 15
 			}
 		}
 		effect = {
@@ -3775,7 +3740,7 @@ nor_sca_conquest = {
 			OR = {
 				province_has_center_of_trade_of_level = 1
 				has_river_estuary_trigger = yes
-				has_province_modifier = oresund_sound
+				has_province_modifier = sound_toll
 			}
 			has_port = yes
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -3804,7 +3769,7 @@ nor_sca_conquest = {
 					OR = {
 						province_has_center_of_trade_of_level = 1
 						has_river_estuary_trigger = yes
-						has_province_modifier = oresund_sound
+						has_province_modifier = sound_toll
 					}
 					has_port = yes
 				}

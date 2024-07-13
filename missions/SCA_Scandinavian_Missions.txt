@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 #Swedish Conquest missions
 sca_conquqest_slot_1 = {
 	slot = 1

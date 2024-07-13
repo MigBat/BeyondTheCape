@@ -1,3 +1,5 @@
+### BTC changes: caribbean region ###
+
 french_missions_north = {
 	slot = 1
 	generic = no
@@ -265,6 +267,7 @@ french_mission_slot_2 = {
 	}
 }
 
+# Beyond the Cape exploration
 french_missions_colonial = {
 	slot = 3
 	generic = no
@@ -338,7 +341,7 @@ french_missions_colonial = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
+				value = 5
 				region = carribeans_region
 			}
 			OR = {

@@ -1,0 +1,89 @@
+﻿l_english:
+ spice_trade_conflict_button_tt: "Spice Trade Conflict\n--------------\n§OMare Clausum§! progress: §Y[Root.total_mare_clausum_amount.GetValue]§!"
+ spice_trade_conflict_label: "Spice Trade Conflict"
+ participants_info_label: "Participants"
+ victory_info_label: "Victory"
+ trade_nodes_info_label: "Trade Nodes"
+ mare_clausum_info_label: "Mare Clausum"
+
+ join_mamluks_tt: "Support §Y[mam_spice_trade.GetName]§!\n\n§RThis cannot be undone.§!"
+ join_portugal_tt: "Support §Y[por_spice_trade.GetName]§!\n\n§RThis cannot be undone.§!"
+
+ mamluk_supporters_tt: "§Y[mam_spice_trade.GetName]§! Supporters\n\n§RYou have already joined a side§!"
+ portugal_supporters_tt: "§Y[por_spice_trade.GetName]§! Supporters\n\n§RYou have already joined a side§!"
+
+ monthly_mare_clausum_amount: "Monthly Mare Clausum"
+ total_mare_clausum_amount: "Total Mare Clausum"
+
+ mare_clausum_amount_tt: "§OMare Clausum§! progress: §Y[Root.total_mare_clausum_amount.GetValue]§!\n--------------\nLast month's progress: §Y[Root.monthly_mare_clausum_amount.GetValue]§!\n--------------\n§Y[por_spice_trade.GetName]§! gains Diplomatic Reputation as §OMare Clausum§! increases.\n§Y[mam_spice_trade.GetName]§! gains Improve Relations as §OMare Clausum§! decreases.\n--------------\n[Root.GetMareClausumModifiersPor][Root.GetMareClausumRangePor][Root.GetMareClausumModifiersMam][Root.GetMareClausumRangeMam]"
+
+ mare_clausum_modifiers_por: "Current progress gives §Y[por_spice_trade.GetName]§! and its supporters the following effects:\nDiplomatic Reputation: §G+[Root.mare_clausum_por_dip_rep.GetValue]§!\n"
+ mare_clausum_modifiers_por_range_0_20: "Privateer Efficiency: §G+[Root.mare_clausum_por_priv_eff.GetValue]%§!\n"
+ mare_clausum_modifiers_por_range_20_40: "Assault Fort ability: §G+[Root.mare_clausum_por_asslt_fort.GetValue]%§!\nShip Tradepower Propagation: §G+[Root.mare_clausum_por_ship_prop.GetValue]%§!\n"
+ mare_clausum_modifiers_por_range_40_60: "Assault Fort ability: §G+[Root.mare_clausum_por_asslt_fort.GetValue]%§!\nBlockade Impact on Siege: §G+[Root.mare_clausum_por_siege_bloc.GetValue]§!\nBlockade Efficiency: §G+[Root.mare_clausum_por_bloc_eff.GetValue]%§!\n"
+ mare_clausum_modifiers_por_range_60_80: "Assault Fort ability: §G+[Root.mare_clausum_por_asslt_fort.GetValue]%§!\nBlockade Impact on Siege: §G+[Root.mare_clausum_por_siege_bloc.GetValue]§!\nFleet Movement Speed: §G+[Root.mare_clausum_por_ship_spd.GetValue]§!\nLight Ship Combat Ability: §G+[Root.mare_clausum_por_light_ca.GetValue]%§!\n"
+ mare_clausum_modifiers_por_range_80_100: "Assault Fort ability: §G+[Root.mare_clausum_por_asslt_fort.GetValue]%§!\nBlockade Impact on Siege: §G+[Root.mare_clausum_por_siege_bloc.GetValue]§!\nFleet Movement Speed: §G+[Root.mare_clausum_por_ship_spd.GetValue]§!\nPlaced Merchant Power Modifier: §G+[Root.mare_clausum_por_merch_pwr.GetValue]%§!\nCenter of Trade Upgrade Cost: §G-[Root.mare_clausum_por_cot_cost.GetValue]%§!\n"
+
+ mare_clausum_modifiers_mam: "\nCurrent progress gives §Y[mam_spice_trade.GetName]§! and its supporters the following effects:\nImprove Relations: §G+[Root.mare_clausum_mam_imprv_rel.GetValue]%§!\n"
+ mare_clausum_modifiers_mam_range_0_20: "Global Monthly Devastation: §G-[Root.mare_clausum_mam_global_dvst.GetValue]§!\n"
+ mare_clausum_modifiers_mam_range_20_40: "Garrison Size: §G+[Root.mare_clausum_mam_garr_size.GetValue]%§!\nFleet Hunt Pirates Efficiency: §G+[Root.mare_clausum_mam_hunt_pirates.GetValue]%§!\n"
+ mare_clausum_modifiers_mam_range_40_60: "Garrison Size: §G+[Root.mare_clausum_mam_garr_size.GetValue]%§!\nGlobal Garrison Growth: §G+[Root.mare_clausum_mam_garr_grwth.GetValue]%§!\nNaval Combat Bonus off owned coast: §G+[Root.mare_clausum_mam_own_coast.GetValue]§!\n"
+ mare_clausum_modifiers_mam_range_60_80: "Garrison Size: §G+[Root.mare_clausum_mam_garr_size.GetValue]%§!\nGlobal Garrison Growth: §G+[Root.mare_clausum_mam_garr_grwth.GetValue]%§!\nNaval Force Limit Modifier: §G+[Root.mare_clausum_mam_naval_fl.GetValue]%§!\nGlobal Naval Engagement Modifier: §G+[Root.mare_clausum_mam_eng_width.GetValue]%§!\n"
+ mare_clausum_modifiers_mam_range_80_100: "Garrison Size: §G+[Root.mare_clausum_mam_garr_size.GetValue]%§!\nGlobal Garrison Growth: §G+[Root.mare_clausum_mam_garr_grwth.GetValue]%§!\nNaval Force Limit Modifier: §G+[Root.mare_clausum_mam_naval_fl.GetValue]%§!\nGalley Combat Ability: §G+[Root.mare_clausum_mam_galley_ca.GetValue]%§!\nGlobal Trade Power: §G+[Root.mare_clausum_mam_trade_pwr.GetValue]%§!\n"
+
+ treshold_0_tt: "§Y[por_spice_trade.GetName]§! and its supporters require control over §Y1§! trade node to make §OMare Clausum§! progress.\n--------------\nTemporary effect until reaching §Y20§! §OMare Clausum§!:\n§Y[por_spice_trade.GetName]§! side gets Privateer Efficiency: §G+[Root.mare_clausum_por_priv_eff.GetValue]%§!\n§Y[mam_spice_trade.GetName]§! side gets Global Monthly Devastation: §G-[Root.mare_clausum_mam_global_dvst.GetValue]§!\n"
+ treshold_20_tt: "When §Y20§! §OMare Clausum§! progress is gained, §Y[por_spice_trade.GetName]§! and its supporters will require control over §Y2§! trade nodes to make further progress.\n--------------\nPermanent effects from this threshold on:\n§Y[por_spice_trade.GetName]§! side gets Assault Fort ability: §G+[Root.mare_clausum_por_asslt_fort.GetValue]%§!\n§Y[mam_spice_trade.GetName]§! side gets Garrison Size: §G+[Root.mare_clausum_mam_garr_size.GetValue]%§!\n--------------\nTemporary effect until reaching §Y40§! §OMare Clausum§!:\n§Y[por_spice_trade.GetName]§! side gets Ship Tradepower Propagation: §G+[Root.mare_clausum_por_ship_prop.GetValue]%§!\n§Y[mam_spice_trade.GetName]§! side gets Fleet Hunt Pirates Efficiency: §G+[Root.mare_clausum_mam_hunt_pirates.GetValue]%§!\n"
+ treshold_40_tt: "When §Y40§! §OMare Clausum§! progress is gained, §Y[por_spice_trade.GetName]§! and its supporters will require control over §Y3§! trade nodes to make further progress.\n--------------\nPermanent effects from this threshold on:\n§Y[por_spice_trade.GetName]§! side gets Blockade Impact on Siege: §G+[Root.mare_clausum_por_siege_bloc.GetValue]§!\n§Y[mam_spice_trade.GetName]§! side gets Global Garrison Growth: §G+[Root.mare_clausum_mam_garr_grwth.GetValue]%§!\n--------------\nTemporary effect until reaching §Y60§! §OMare Clausum§!:\n§Y[por_spice_trade.GetName]§! side gets Blockade Efficiency: §G+[Root.mare_clausum_por_bloc_eff.GetValue]%§!\n§Y[mam_spice_trade.GetName]§! side gets Naval Combat Bonus off owned coast: §G+[Root.mare_clausum_mam_own_coast.GetValue]§!\n"
+ treshold_60_tt: "When §Y60§! §OMare Clausum§! progress is gained, §Y[por_spice_trade.GetName]§! and its supporters will require control over §Y4§! trade nodes to make further progress.\n--------------\nPermanent effects from this threshold on:\n§Y[por_spice_trade.GetName]§! side gets Fleet Movement Speed: §G+[Root.mare_clausum_por_ship_spd.GetValue]§!\n§Y[mam_spice_trade.GetName]§! side gets Naval Force Limit Modifier: §G+[Root.mare_clausum_mam_naval_fl.GetValue]%§!\n--------------\nTemporary effect until reaching §Y80§! §OMare Clausum§!:\n§Y[por_spice_trade.GetName]§! side gets Light Ship Combat Ability: §G+[Root.mare_clausum_por_light_ca.GetValue]%§!\n§Y[mam_spice_trade.GetName]§! side gets Global Naval Engagement Modifier: §G+[Root.mare_clausum_mam_eng_width.GetValue]%§!\n"
+ treshold_80_tt: "When §Y80§! §OMare Clausum§! progress is gained, §Y[por_spice_trade.GetName]§! and its supporters will require control over §Yall§! trade nodes to make further progress.\n--------------\nPermanent effects from this threshold on:\n§Y[por_spice_trade.GetName]§! side gets Placed Merchant Power Modifier: §G+[Root.mare_clausum_por_merch_pwr.GetValue]%§!\n§Y[mam_spice_trade.GetName]§! side gets Galley Combat Ability: §G+[Root.mare_clausum_mam_galley_ca.GetValue]%§!\n--------------\nTemporary effect until reaching §Y100§! §OMare Clausum§!:\n§Y[por_spice_trade.GetName]§! side gets Center of Trade Upgrade Cost: §G-[Root.mare_clausum_por_cot_cost.GetValue]%§!\n§Y[mam_spice_trade.GetName]§! side gets Global Trade Power: §G+[Root.mare_clausum_mam_trade_pwr.GetValue]%§!\n"
+
+ mare_clausum_bar_hidden: "Mare Clausum"
+
+ declare_mare_clausum_tt: "§ODeclare Mare Clausum§!\n\nYou need §Y100§! §OMare Clausum§! progress to end the conflict."
+ defeat_portugal_tt: "§ODefeat [por_spice_trade.GetName]§!\n\nComplete all §Y4§! objectives to end the conflict."
+
+ zanzibar_node_ability_tt: "§MZanzibar Node Ability§!\n--------------\nIf the §Y[por_spice_trade.GetName]§! supporters control this node, §Y[por_spice_trade.GetName]§! gets:\nMay Raid Coasts\nCoastal Raiding Range: §G+2§!\n\nIf the §Y[mam_spice_trade.GetName]§! supporters control this node, §Y[mam_spice_trade.GetName]§! gets:\nTrade Range: §G+50%§!"
+ aden_node_ability_tt: "§MGulf of Aden Node Ability§!\n--------------\nIf the §Y[por_spice_trade.GetName]§! supporters control this node, §Y[por_spice_trade.GetName]§! gets:\nTrade Steering: §G+25%§!\n\nIf the §Y[mam_spice_trade.GetName]§! supporters control this node, §Y[mam_spice_trade.GetName]§! gets:\nMorale of Armies: §G+10%§!"
+ hormuz_node_ability_tt: "§MHormuz Node Ability§!\n--------------\nIf the §Y[por_spice_trade.GetName]§! supporters control this node, §Y[por_spice_trade.GetName]§! gets:\nFort Defense: §G+50%§!\n\nIf the §Y[mam_spice_trade.GetName]§! supporters control this node, §Y[mam_spice_trade.GetName]§! gets:\nTolerance of the True Faith: §G+1§!"
+ coromandel_node_ability_tt: "§MCoromandel Node Ability§!\n--------------\nIf the §Y[por_spice_trade.GetName]§! supporters control this node, §Y[por_spice_trade.GetName]§! gets:\nYearly Army Tradition: §G+0.5§!\n\nIf the §Y[mam_spice_trade.GetName]§! supporters control this node, §Y[mam_spice_trade.GetName]§! gets:\nTolerance of Heathens: §G+1§!\nTolerance of Heretics: §G+1§!"
+ malacca_node_ability_tt: "§MMalacca Node Ability§!\n--------------\nIf the §Y[por_spice_trade.GetName]§! supporters control this node, §Y[por_spice_trade.GetName]§! gets:\nYearly Navy Tradition: §G+0.5§!\n\nIf the §Y[mam_spice_trade.GetName]§! supporters control this node, §Y[mam_spice_trade.GetName]§! gets:\nTechnology Cost: §G-10%§!"
+
+ zanzibar_node_bonus_por: "Zanzibar Node Bonus"
+ aden_node_bonus_por: "Aden Node Bonus"
+ hormuz_node_bonus_por: "Hormuz Node Bonus"
+ coromandel_node_bonus_por: "Coromandel Node Bonus"
+ malacca_node_bonus_por: "Malacca Node Bonus"
+ zanzibar_node_bonus_mam: "Zanzibar Node Bonus"
+ aden_node_bonus_mam: "Aden Node Bonus"
+ hormuz_node_bonus_mam: "Hormuz Node Bonus"
+ coromandel_node_bonus_mam: "Coromandel Node Bonus"
+ malacca_node_bonus_mam: "Malacca Node Bonus"
+
+ win_battles_objective_tt: "§MWin Battles§!\n\n@[mam_spice_trade.GetTag] Win §Y10§! land or naval battles against §Y[por_spice_trade.GetName]§!.\n--------------\n[Root.GetObjective1Status]"
+ sink_ships_objective_tt: "§MSink Ships§!\n\n@[mam_spice_trade.GetTag] Sink §Y10§! Portuguese ships.\n--------------\n[Root.GetObjective2Status]"
+ get_supporters_objective_tt: "§MGather Supporters§!\n\n@[mam_spice_trade.GetTag] Get a total of at least §Y10§! supporters.\n--------------\n[Root.GetObjective3Status]"
+ win_war_objective_tt: "§MEnforce Demands§!\n\n@[mam_spice_trade.GetTag] Win a war against §Y[por_spice_trade.GetName]§!.\n--------------\n[Root.GetObjective4Status]"
+
+ objective1_not_complete: "§RObjective Incomplete§! £no£"
+ objective1_complete: "§GObjective Complete§! £yes£"
+ objective2_not_complete: "§RObjective Incomplete§! £no£"
+ objective2_complete: "§GObjective Complete§! £yes£"
+ objective3_not_complete: "§RObjective Incomplete§! £no£"
+ objective3_complete: "§GObjective Complete§! £yes£"
+ objective4_not_complete: "§RObjective Incomplete§! £no£"
+ objective4_complete: "§GObjective Complete§! £yes£"
+
+ zanzibar_points_tt: "§MZanzibar Node§!\n--------------\n§Y[por_spice_trade.GetName]§! points: §Y[REB.zanzibar_por_alliance_points.GetValue]§!\n§Y[mam_spice_trade.GetName]§! points: §Y[REB.zanzibar_mam_alliance_points.GetValue]§!"
+ aden_points_tt: "§MGulf of Aden Node§!\n--------------\n§Y[por_spice_trade.GetName]§! points: §Y[REB.aden_por_alliance_points.GetValue]§!\n§Y[mam_spice_trade.GetName]§! points: §Y[REB.aden_mam_alliance_points.GetValue]§!"
+ hormuz_points_tt: "§MHormuz Node§!\n--------------\n§Y[por_spice_trade.GetName]§! points: §Y[REB.hormuz_por_alliance_points.GetValue]§!\n§Y[mam_spice_trade.GetName]§! points: §Y[REB.hormuz_mam_alliance_points.GetValue]§!"
+ india_points_tt: "§MCoromandel Node§!\n--------------\n§Y[por_spice_trade.GetName]§! points: §Y[REB.coromandel_por_alliance_points.GetValue]§!\n§Y[mam_spice_trade.GetName]§! points: §Y[REB.coromandel_mam_alliance_points.GetValue]§!"
+ malacca_points_tt: "§MMalacca Node§!\n--------------\n§Y[por_spice_trade.GetName]§! points: §Y[REB.malacca_por_alliance_points.GetValue]§!\n§Y[mam_spice_trade.GetName]§! points: §Y[REB.malacca_mam_alliance_points.GetValue]§!"
+
+ spice_trade_conflict_info_tt: "§YThe Spice Trade Conflict§! is based around §Ytrade§! and §Ynaval supremacy§!. It represents the difficulties §Y[por_spice_trade.GetName]§! faces upon entering the §MIndian Ocean§! and trying to exert control of its trade, as well as the difficulties of the regional trade powers to keep §Y[por_spice_trade.GetName]§! from doing so.\n\nFor centuries, the spice trade has been dominated by §YVenice§!, effectively having its monopoly in Europe due to their arrangements with the §YOttomans§! and the §Y[mam_spice_trade.GetName]§!. This changes now, with §Y[por_spice_trade.GetName]§! attempting to have their own monopoly over the coveted spices, and enforcing their §OMare Clausum§! policy - a hegemony and monopoly over trade in the §MIndian Ocean§!."
+
+ participants_info_tt: "There are two sides: the §Y[mam_spice_trade.GetName]§! supporters, and the §Y[por_spice_trade.GetName]§! supporters. Possible participants are countries that own provinces in coastal §MIndian Ocean§! trade nodes, namely:§M\n- Malacca\n- Bengal\n- Coromandel\n- Gujarat\n- Hormuz\n- Basra\n- Alexandria\n- Gulf of Aden\n- Zanzibar§!\n\nThere are some special participants, such as §YVenice§! and the §YOttomans§!.\n\nPlayers can join whichever side they prefer. AI will decide based on the opinion they have of sides' leaders.\n\nTo gather supporters, the leaders will require either §Y25§! opinion with a country or for said country to have §Y-15§! opinion of the other side's leader."
+ victory_info_tt: "There are two ways to end the conflict, one for §Y[por_spice_trade.GetName]§! and one for the §Y[mam_spice_trade.GetName]§!.\n\n§Y[por_spice_trade.GetName]§! needs to reach §Y100§! §OMare Clausum§! progress and unlock the §Oarmillary sphere§! (you can see it at the end of the progress bar above the map).\n\n§Y[mam_spice_trade.GetName]§! need to complete their §Mobjectives§! (the 4 images above the progress bar) which unlock the §Ospices icon§! (to the left of said images).\n\nWhen the conflict ends, the winning side will get some permanent bonuses, and the losing side some negative temporary (but long) modifiers."
+ trade_nodes_info_tt: "There are §Y5§! key trade nodes in this conflict, the ones you see coloured on the map. These are the nodes which control where and whether trade leaves or stays in the §MIndian Ocean§!. Hover over them for more specific info.\n\n§YPortuguese control§! over a node generates 1 §OMare Clausum§! progress, whereas §Y[mam_spice_trade.GetName]§ control§! generates -1 §OMare Clausum§! progress.\n\nEvery month, the controller of each node is calculated by a points system and the total points accumulated per month is added to the §OMare Clausum§! progress.\n\nA country gets points in a node based on how much trade share they have there. Here is how it works:\n- §Y5%§! share: §Y1§! point\n- §Y10%§! share: §Y2§! points\n- §Y25%§! share: §Y3§! points\n- §Y50%§! share: §Y4§! points\n\nThe points of every supporter and leader on one side are summed up and compared against the points of the other side. Whoever has more points gains §Ycontrol§! over the node.\n\n§YControl§! over a node grants either leader a bonus, different for each of them and different for each trade node. You can see them on the bottom of the map. Hover over the images to see the bonuses and who gets them.\n§RThese bonuses do not apply to the supporters.§!"
+ mare_clausum_info_tt: "The §OMare Clausum§! progress bar has §Y4 thresholds§!. When one is reached, an important event is triggered that will intensify the conflict.\n\nAdditionally, in order for the progress bar to increase further, for each §Ythreshold§! one more trade node will need to be controlled by the §Y[por_spice_trade.GetName]§! side. For example, to get §OMare Clausum§! progress from §Y0§! to §Y20§!, §Y[por_spice_trade.GetName]§! only needs to control one trade node, however they will need to control two to reach §Y40§!."
+ 
+ 

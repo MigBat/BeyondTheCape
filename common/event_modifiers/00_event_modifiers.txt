@@ -2,6 +2,8 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+### BEYOND THE CAPE - PRIVATEER CHANGES ###
+
 national_bank_interest = {
 	interest = -0.5
 }
@@ -1126,7 +1128,7 @@ the_sheikh_ul_islam = {
 }
 
 muslim_enforced_religion = {
-	global_heretic_missionary_strength = 0.01
+	global_heretic_missionary_strength = 0.02
 	religion = yes
 }
 
@@ -1242,13 +1244,13 @@ religious_sect_tolerance = {
 }
 
 the_haridasa_movement = {
-	global_missionary_strength = 0.01
+	global_missionary_strength = 0.02
 	stability_cost_modifier = -0.10
 	religion = yes
 }
 
 the_advaita_movement = {
-	global_missionary_strength = 0.01
+	global_missionary_strength = 0.02
 	global_unrest = -1
 	religion = yes
 }
@@ -1515,12 +1517,12 @@ rebel_sentiment = {
 
 
 conversion_zeal = {
-	global_heretic_missionary_strength = 0.03
+	global_heretic_missionary_strength = 0.10
 	missionary_maintenance_cost = -0.33
 }
 
 religious_zeal_at_conv = {
-	local_missionary_strength = -0.05
+	local_missionary_strength = -1
 }
 
 
@@ -1666,12 +1668,12 @@ hangeul_alphabet = {
 	global_unrest = 1
 }
 
-# tripitaka_koreana = {
-# 	harmonization_speed = 0.1
-# 	yearly_karma_decay = 0.01
-# 	monthly_splendor = 1
-# 	institution_growth = 3
-# }
+tripitaka_koreana = {
+	harmonization_speed = 0.1
+	yearly_karma_decay = 0.01
+	monthly_splendor = 1
+	local_institution_spread = 1
+}
 
 tripitaka_koreana_defenses = {
 	fort_level = 1
@@ -1686,7 +1688,8 @@ hangeul_alphabet_revoked = {
 the_righteous_army = {
 	global_tax_modifier = -0.1
 	land_morale = 0.1
-	hostile_attrition = 5
+	hostile_attrition = 3
+	max_hostile_attrition = 3
 }
 
 the_righteous_army_cd = {}
@@ -1782,14 +1785,8 @@ innovative_modifier = {
 }
 
 narrowminded_modifier = {
-	global_unrest = -1
-	global_missionary_strength = 0.02
-	stability_cost_modifier = -0.15
-	papal_influence = 1
-	tolerance_heretic = -2
-	global_institution_spread = -0.2
-	yearly_innovativeness = -0.25
-	technology_cost = 0.1
+	technology_cost = 0.05
+	global_missionary_strength = 0.01
 }
 
 mercantilism_modifier = {
@@ -1842,7 +1839,7 @@ spice_islands_modifier = { #Main entrepots of the Mollucas, point of origin for 
 	trade_goods_size = 3.0
 }
 
-skanemarket = { #SkÃ¥nemarknaden - Biggest Herring Market in Europe
+skanemarket = { #Skånemarknaden - Biggest Herring Market in Europe
 	trade_goods_size = 2
 }
 
@@ -1923,6 +1920,7 @@ important_natural_harbor = {
 #Tradepost
 trade_post_modifier = {
 	province_trade_power_value = 10
+	monthly_authority_power = -0.01
 	#naval_forcelimit = 1
 	picture = "province_trade_power_value"
 }
@@ -3436,13 +3434,11 @@ bavarian_jesuits = {
 }
 
 colonial_policy = {
-	global_colonial_growth = 15
-	yearly_corruption = 0.3
+	global_colonial_growth = 10
 }
 
 less_colonial_corruption = {
-	global_tariffs = 0.05
-	native_assimilation = 0.15
+	global_tariffs = 0.10
 }
 
 duke_of_coimbra = {
@@ -3454,26 +3450,8 @@ portuguese_privateers = {
 	province_trade_power_value = 5
 }
 
-# governor_de_sousa = {
-# 	global_colonial_growth = 30
-# }
-
-rooting_out_corsairs = {
-	trade_efficiency = -0.05
-	global_tariffs = -0.15
-	army_tradition = 1
-	navy_tradition = 1
-	manpower_recovery_speed = -0.5
-	land_maintenance_modifier = 0.2
-}
-
-negotiating_with_corsairs = {
-	trade_efficiency = -0.05
-	global_tariffs = -0.15
-	mercenary_cost = -0.2
-	merc_maintenance_modifier = -0.15
-	diplomatic_reputation = 1
-	yearly_corruption = 0.5
+governor_de_sousa = {
+	global_colonial_growth = 30
 }
 
 earthquake = {
@@ -3664,10 +3642,6 @@ pol_zebrzydowski_rebellion_flag = {
 	global_unrest = 10
 	stability_cost_modifier = 0.25
 	global_trade_goods_size_modifier = -0.25
-}
-
-plc_polish_lithuanian_union = {
-	num_accepted_cultures = 1
 }
 
 economic_development_of_mazovia = {
@@ -4305,7 +4279,7 @@ regimental_pride = {
 }
 
 prepared_defence = {
-	hostile_attrition = 1
+	hostile_attrition = 0.5
 }
 
 to_the_last_man = {
@@ -4772,20 +4746,23 @@ ven_expanded_council = {
 
 ven_ten_restrained = {
 	republican_tradition = 0.1 #By stopping a single institution from exercising too much power
-	stability_cost_modifier = 0.1 #Inefficient Government
+	stability_cost_modifier = 0.2 #Inefficient Government
 	mr_aristocrats_influence = -0.05
+	monthly_authority_power = -0.05
 }
 
 ven_council_of_ten_strong = {
 	mr_aristocrats_influence = 0.05
-	#global_tax_modifier = 0.1
-	global_autonomy = -0.05
-	republican_tradition = -1 #By giving a single institution much larger influence than any other.
+	monthly_authority_power = 0.05
+	all_estate_loyalty_equilibrium = 0.1
+	republican_tradition = -0.05 #By giving a single institution much larger influence than any other.
 }
 
 #Netherlands
 ned_house_of_elzevir = {
-	local_institution_spread = 0.15
+	trade_goods_size = 0.5
+	local_institution_spread = 0.05
+	prestige = 0.5
 }
 
 ned_shipbuilding_industry = {
@@ -5903,7 +5880,7 @@ rogue_privateer = {
 }
 
 employed_pirates = {
-	privateer_efficiency = 0.05
+	privateer_efficiency = 0.025
 }
 
 supported_republic_feud = {
@@ -5911,7 +5888,7 @@ supported_republic_feud = {
 }
 
 denied_knowledge_privateer = {
-	privateer_efficiency = -0.2
+	privateer_efficiency = -0.05
 }
 
 merchants_prepare_war = {
@@ -7043,6 +7020,7 @@ new_world_company = {
 }
 
 new_world_missions = {
+	native_uprising_chance = -0.5
 	native_assimilation = 0.5
 }
 
@@ -8346,7 +8324,7 @@ defended_denmark = {
 #KOR
 
 korean_frontier = {
-	local_hostile_attrition = 5
+	local_hostile_attrition = 3
 }
 
 #Pap
@@ -11554,7 +11532,7 @@ estate_dhimmi_lighter_dhimmi_taxes_privilege_mod = {
 
 estate_dhimmi_manpower_mod = {
 	religion = yes
-	local_manpower_modifier = 0.3
+	local_manpower_modifier = 0.2
 }
 
 estate_maratha_levies_for_muslims_mod = {
@@ -14035,6 +14013,18 @@ embraced_passive_conversion_methods = {
 	religion = yes
 }
 
+#Theodoro rewards
+feo_buffed_freedom_of_steppes_mod = {
+	local_unrest = -2
+}
+feo_cossack_self_governance_buff_mod = {
+	local_state_maintenance_modifier = -0.1
+	local_religious_unity_contribution = -1
+}
+feo_upgrade_prime_herding_rights_mod = {
+	local_manpower_modifier = 0.1
+}
+
 #Grand Vizier Modifiers
 grand_vizier_philosopher = {
 	yearly_corruption = -0.05
@@ -14142,6 +14132,18 @@ grand_vizier_grand_captain = {
 	siege_ability = 0.1
 }
 
+estate_church_TIM_promote_ijazah_scaling = {
+	yearly_innovativeness = 0.5
+}
+
+TIM_full_army_trad = {
+	army_tradition = 1 
+}
+
+TIM_full_army_prof = {
+	yearly_army_professionalism = 0.01 
+}
+
 #Perisna Influence Counter
 used_persian_influece_interaction_1 = { influence_to_vassal_elevation_cost = -20 }
 used_persian_influece_interaction_2 = { influence_to_vassal_elevation_cost = -40 }
@@ -14165,8 +14167,8 @@ used_persian_influece_interaction_19 = { influence_to_vassal_elevation_cost = -3
 used_persian_influece_interaction_20 = { influence_to_vassal_elevation_cost = -400 }
 
 #Permanently Accepted Culture (until demoted)
-free_slot_for_armenian = { num_accepted_cultures = 1 }
-free_slot_for_georgian = { num_accepted_cultures = 1 }
-free_slot_for_turkish = { num_accepted_cultures = 1 }
-free_slot_for_al_iraqiya_arabic = { num_accepted_cultures = 1 }
-free_slot_for_al_suryah_arabic = { num_accepted_cultures = 1 }
+#free_slot_for_armenian = { num_accepted_cultures = 1 }
+#free_slot_for_georgian = { num_accepted_cultures = 1 }
+#free_slot_for_turkish = { num_accepted_cultures = 1 }
+#free_slot_for_al_iraqiya_arabic = { num_accepted_cultures = 1 }
+#free_slot_for_al_suryah_arabic = { num_accepted_cultures = 1 }

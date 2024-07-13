@@ -1004,6 +1004,8 @@ guiTypes = {
 				scripted = yes
 			}	
 
+			####
+
 			### CLAIMS
 			instantTextBoxType = {
 				name = "claims_title"
@@ -2890,6 +2892,7 @@ guiTypes = {
 			moveable = 0
 			Orientation = "UPPER_LEFT"
 
+			# BEYOND THE CAPE #
 			iconType = {
 				name = "monuments_window_bg"
 				spriteType = "GFX_provinceview_great_projects_bg_full"
@@ -2919,11 +2922,13 @@ guiTypes = {
 				maxHeight = 100
 				format = center
 			}
+			####
 
 			#### GREAT PROJECTS WINDOW
 			windowType = {
 				name = "great_projects_window"
 				backGround=""
+				# BTC #		
 				position = { x=14 y=115 }
 				size = { x=475 y=177 }
 				dontRender = ""
@@ -2942,20 +2947,24 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "header_label"
+					# BTC #		
 					position = { x = 16 y = 31 }
 					textureFile = ""
 					font = "vic_22"
 					borderSize = {x = 2 y = 2}
 					text = "LEDGER_GREAT_PROJECTS"
+					# BTC #		
 					maxWidth = 256
 					maxHeight = 32
 					format = left
 				}
-
+				
 				smoothListboxType = {
 					name = "great_projects_list"
+					# BTC #
 					position = { x = 7 y = 60 }
 					backGround=""
+					# BTC #
 					size = { x = 298 y = 575 }
 					spacing = 2
 					scrollbartype = "standardlistbox_slider"
@@ -2966,6 +2975,7 @@ guiTypes = {
 			windowType = {
 				name = "general_buildings_window"
 				backGround=""
+				# BTC #
 				position = { x=320 y=115 }
 				size = { x=475 y=480 }
 				dontRender = ""
@@ -3011,6 +3021,7 @@ guiTypes = {
 			windowType = {
 				name = "province_values_window"
 				backGround=""
+				# BTC #
 				position = { x=323 y=354 }
 				size = { x=475 y=480 }
 				dontRender = ""
@@ -3044,7 +3055,7 @@ guiTypes = {
 					buttonFont = "vic_18"
 					Orientation = "UPPER_LEFT"
 				}
-
+                
 				guiButtonType =
 				{
 					name ="reduce_infrastructure_button"
@@ -3057,7 +3068,7 @@ guiTypes = {
 					buttonFont = "vic_18"
 					Orientation = "UPPER_LEFT"
 				}
-
+                
 				iconType =
 				{
 					name ="naval_forcelimit_icon"
@@ -3097,7 +3108,7 @@ guiTypes = {
 					maxHeight = 20
 					format = right
 				}
-
+				
 				iconType =
 				{
 					name = "province_governing_cost_icon"
@@ -3105,7 +3116,7 @@ guiTypes = {
 					position = { x= 224 y = 82  }
 					Orientation = "UPPER_LEFT"
 				}
-
+				
 				instantTextBoxType = {
 					name = "capacity_value"
 					position = { x = 253 y = 87 }
@@ -3206,7 +3217,7 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 				}
-
+	
 				iconType =
 				{
 					name ="build_allowed_icon"
@@ -3391,6 +3402,7 @@ guiTypes = {
 			windowType = {
 				name = "natives_buildings_window"
 				backGround=""
+				# BTC #
 				position = { x=325 y=209 }
 				size = { x=475 y=480 }
 				dontRender = ""
@@ -3521,12 +3533,12 @@ guiTypes = {
 						maxHeight = 20
 						format = center
 					}
-
-
-
-
-
-
+					
+					
+				
+	
+				
+					
 					iconType =
 					{
 						name ="governing_capacity_icon"
@@ -3535,7 +3547,7 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 						scale = 0.75
 					}
-
+					
 					instantTextBoxType = {
 						name = "capacity_value"
 						position = { x = 237 y = 0 }
@@ -3616,6 +3628,7 @@ guiTypes = {
 			windowType = {
 				name = "natives_buildings_window_large"
 				backGround=""
+				# BTC #
 				position = { x=325 y=-105 }
 				size = { x=475 y=480 }
 				dontRender = ""
@@ -3628,6 +3641,7 @@ guiTypes = {
 				iconType =
 				{
 					name ="provinceview_native_building_bg_large"
+					# BTC #
 					spriteType = "GFX_select_building_large_bg"
 					position = { x= 6 y = 0 }
 				}
@@ -3672,6 +3686,7 @@ guiTypes = {
 					name = "buildings"
 					position = { x = 12 y = 67 }
 					backGround=""
+					# BTC #
 					size = { x=365 y = 572}
 					Orientation = "UPPER_LEFT"
 					horizontal = 0
@@ -3685,6 +3700,7 @@ guiTypes = {
 				windowType = {
 					name = "province_values_window"
 					backGround=""
+					# BTC #
 					position = { x=0 y=0 }
 					size = { x=475 y=586 }
 					dontRender = ""
@@ -3746,9 +3762,9 @@ guiTypes = {
 						format = center
 					}
 
-
-
-
+	
+				
+				
 					iconType =
 					{
 						name ="governing_capacity_icon"
@@ -3756,7 +3772,7 @@ guiTypes = {
 						position = { x= 212 y = 599 }
 						Orientation = "UPPER_LEFT"
 					}
-
+					
 					instantTextBoxType = {
 						name = "capacity_value"
 						position = { x = 245 y = 600 }
@@ -3768,7 +3784,7 @@ guiTypes = {
 						maxHeight = 20
 						format = right
 					}
-
+	
 					iconType =
 					{
 						name ="build_allowed_icon"
@@ -3834,6 +3850,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "building_close_button"
+				# BTC #
 				position = { x = 300 y = -37 }
 				quadTextureSprite ="GFX_closebutton2"
 				clicksound = close_window
@@ -4676,11 +4693,13 @@ guiTypes = {
 
 	positionType = {
 		name = "building_close_button_natives"
+		# BTC #
 		position = { x = 350 y = -83 }
 	}
 
 	positionType = {
 		name = "building_close_button_natives_large"
+		# BTC #
 		position = { x = 350 y = -83 }
 	}
 
@@ -4712,7 +4731,7 @@ guiTypes = {
 
 
 	#### GREAT PROJECT ENTRY
-	windowType =
+	windowType = 
 	{
 		name = "great_project_entry"
 		backGround=""
@@ -4723,14 +4742,14 @@ guiTypes = {
 		horizontalBorder= ""
 		verticalBorder= ""
 		fullScreen = no
-
-		iconType =
+		
+		iconType = 
 		{
 			name ="great_project_pic"
 			spriteType = "GFX_great_project_place_holder"
 			position = { x = 0 y = 0 }
 		}
-
+		
 
 		instantTextBoxType = {
 			name = "name_label"
@@ -4768,6 +4787,7 @@ guiTypes = {
 			{
 				name ="great_project_progress"
 				spriteType = "GFX_provinceView_progressbar"
+				# BTC #
 				position = { x = 8 y = 19 }
 			}
 
@@ -4916,7 +4936,7 @@ guiTypes = {
 			}
 		}
 	}
-
+	
 	### UNIQUE BUILDING ENTRY
 
 	positionType = {
@@ -6490,7 +6510,7 @@ guiTypes = {
 		}
 
 
-
+		
 		iconType = {
 			name = "naval_defense_banner"
 			position = { x = 240 y = 291 }
@@ -6551,8 +6571,8 @@ guiTypes = {
 			position = { x = 312 y = 332 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
-
-
+		
+		
 
 
 		iconType = {
@@ -6671,9 +6691,8 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000�"
+			text = "2000¤"
 		}
-
 	}
 
 	windowType =
@@ -6945,7 +6964,7 @@ guiTypes = {
 				spriteType = "GFX_edicts_bg_overlay"
 				position = { x = 484 y = -20 }
 			}
-
+			
 			instantTextBoxType = {
 				name = "edicts_list_title"
 				position = { x = 520 y = 14 }

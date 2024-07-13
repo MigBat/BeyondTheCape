@@ -1,0 +1,19 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portuguese_saudade_frame"
+		texturefile = "gfx/interface/government_mechanics/portuguese_saudade/portuguese_saudade_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	progressbartype = {
+		name = "GFX_single_government_power_bar_portuguese_saudade"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/portuguese_saudade/portuguese_saudade_navy.dds"
+		textureFile2 = "gfx/interface/government_mechanics/portuguese_saudade/portuguese_saudade_army.dds"
+		size = { x = 274 y = 110 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+}

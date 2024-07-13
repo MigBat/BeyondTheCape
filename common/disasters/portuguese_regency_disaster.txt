@@ -1,0 +1,46 @@
+portuguese_regency = {
+	potential = {
+		NOT = { has_country_flag = had_portuguese_regency_disaster }
+		uses_doom = no
+		is_free_or_tributary_trigger = yes
+		normal_or_historical_nations = yes
+		tag = POR
+	}
+	
+	can_start = {
+		has_any_disaster = no
+	}
+	
+	can_stop = { 
+		has_any_disaster = yes
+	}
+	
+	progress = {
+		modifier = {
+			factor = 100
+			tag = POR
+		}
+	}
+	
+	can_end = {
+		mission_completed = btc_illustrious
+	}
+
+	modifier = {
+		can_not_declare_war = yes
+		stability_cost_modifier = 1
+	}
+
+	on_start = portuguese_regency.1
+	on_end = portuguese_regency.100
+
+	on_monthly = {
+		random_events = {
+			50 = portuguese_regency.2
+			50 = portuguese_regency.3
+			50 = portuguese_regency.4
+			50 = portuguese_regency.5
+			150 = 0	
+		}
+	}
+}

@@ -97,6 +97,7 @@ PixelShader =
 	[[
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
+		// BEYOND THE CAPE
 			
 			
 			float2 TexCoord = v.vTexCoord0.xy;
@@ -127,6 +128,7 @@ PixelShader =
 
 	MainCode PixelShaderOver
 	[[
+	// BEYOND THE CAPE
 		
 		
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
@@ -158,6 +160,7 @@ PixelShader =
 
 	MainCode PixelShader
 	[[
+	// BEYOND THE CAPE
 		
 		
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
@@ -187,6 +190,7 @@ PixelShader =
 
 	MainCode PixelShaderDown
 	[[
+	// BEYOND THE CAPE
 		
 		
 		float4 main( VS_OUTPUT v ) : PDX_COLOR

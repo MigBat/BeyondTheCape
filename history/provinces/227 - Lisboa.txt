@@ -21,11 +21,6 @@ extra_cost = 26
 center_of_trade = 2
 
 add_permanent_province_modifier = {
-	name = prestigious_academy
-	duration = -1
-}
-
-add_permanent_province_modifier = {
 	name = tagus_estuary_modifier
 	duration = -1
 }

@@ -3,6 +3,7 @@ guiTypes = {
 		name = "great_powers"
 		backGround="great_powers_bg"
 		position = { x=-274 y= -340 }	
+		# BTC #
 		size = { x=548 y=811 }
 		moveable = 1
 		dontRender = ""
@@ -90,6 +91,7 @@ guiTypes = {
 			name = "gp_list"
 			position = { x = 60 y = 119 }
 			backGround=""
+			# BTC #
 			size = { x=475  y = 450}
 			spacing = 2
 			scrollbartype = "standardlistbox_slider"
@@ -98,6 +100,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 				name = "hegemony_label"
+				# BTC #
 				position = { x = 126 y = 521 }
 				textureFile = ""
 				font = "vic_18"
@@ -112,6 +115,7 @@ guiTypes = {
 		
 		OverlappingElementsBoxType = {
 			name = "hegemons"
+			# BTC #
 			position = { x = -63 y = 550 }
 			size = { x = 600 y = 300 }
 			Orientation = "UPPER_LEFT"
@@ -121,6 +125,7 @@ guiTypes = {
 		
 		guiButtonType = {
 				name = "close_button"
+				# BTC #
 				position = { x=200 y = 705}
 				quadTextureSprite ="button_type_1"	
 				tooltip = ""
@@ -207,6 +212,7 @@ guiTypes = {
 				borderSize = {x = 4 y = 2}
 				maxWidth =45
 				maxHeight = 100	
+				# BTC #
 				format = left
 			}		
 		
@@ -217,7 +223,7 @@ guiTypes = {
 	windowType = {
 		name = "hegemony_entry"
 		backGround=""
-		position = { x= 0 y= 0 }	
+		position = { x= 0 y=0 }	
 		size = { x=128 y= 128 }
 		moveable = 0
 		dontRender = ""

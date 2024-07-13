@@ -1,0 +1,342 @@
+btc_por_leiria_woods = {
+	# unique category for portuguese issues
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		owns = 1851
+		1851 = {
+			NOT = { has_province_modifier = pinhal_leiria }
+		}
+	}
+	effect = {
+		1851 = {
+			add_permanent_province_modifier = {
+				name = pinhal_leiria
+				duration = -1
+			}
+		}
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_madeira_sugar = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		owns = 368
+		368 = {
+			trade_goods = sugar
+			NOT = { has_province_modifier = madeira_sugar }
+		}
+	}
+	effect = {
+		368 = {
+			add_permanent_province_modifier = {
+				name = madeira_sugar
+				duration = -1
+			}
+		}
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_cruzado = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		NOT = { has_country_flag = had_cruzado_flag }
+	}
+	effect = {
+		add_country_modifier = {
+			name = btc_cruzado
+			duration = 36525
+		}
+		set_country_flag = had_cruzado_flag
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_coimbra_university = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		current_age = age_of_reformation
+		owns = 227
+		owns = 1851
+		227 = {
+			has_province_modifier = prestigious_academy
+		}
+		1851 = {
+			NOT = { has_province_modifier = prestigious_academy }
+			NOT = { has_province_modifier = coimbra_university }
+		}
+	}
+	effect = {
+		227 = { remove_province_modifier = prestigious_academy }
+		1851 = { 
+			add_permanent_province_modifier = {
+				name = prestigious_academy
+				duration = -1
+			}
+			add_permanent_province_modifier = {
+				name = coimbra_university
+				duration = -1
+			}
+		}
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_padrao_real = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		mission_completed = btc_india
+		NOT = { has_country_modifier = padrao_real }
+	}
+	effect = {
+		add_country_modifier = {
+			name = padrao_real
+			duration = -1
+		}
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_jews_and_moriscos = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		mission_completed = btc_castile
+		NOT = { has_country_flag = jews_moriscos_flag }
+	}
+	effect = {
+		country_event = {
+			id = btc_por.100
+		}
+		set_country_flag = jews_moriscos_flag
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_inquisition = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		current_age = age_of_reformation
+		NOT = { has_country_flag = had_inquisition_flag }
+	}
+	effect = {
+		add_papal_influence = 20
+		add_stability = 1
+		add_country_modifier = {
+			name = narrowminded_modifier
+			duration = 3650
+		}
+		set_country_flag = had_inquisition_flag
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_padroado = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		mission_completed = btc_good_hope
+		NOT = { has_country_modifier = por_padroado }
+	}
+	effect = {
+		add_country_modifier = {
+			name = por_padroado
+			duration = -1
+		}
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_methuen = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		current_age = age_of_absolutism
+		alliance_with = ENG
+		228 = {
+			NOT = { has_province_modifier = port_wine_production }
+		}
+		231 = {
+			NOT = { has_province_modifier = port_wine_storage }
+		}
+	}
+	effect = {
+		228 = {
+			add_permanent_province_modifier = {
+				name = port_wine_production
+				duration = -1
+			}
+		}
+		231 = {
+			add_permanent_province_modifier = {
+				name = port_wine_storage
+				duration = -1
+			}
+		}
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_arts_letters = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		1851 = { has_province_modifier = coimbra_university }
+		NOT = { has_country_modifier = por_arts_and_letters }
+	}
+	effect = {
+		add_country_modifier = {
+			name = por_arts_and_letters
+			duration = 3650
+		}
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_lisboa_silk = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		is_institution_enabled = industrialization
+		227 = { NOT = { trade_goods = silk } }
+	}
+	effect = {
+		227 = {
+			change_trade_goods = silk
+		}
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_montantes = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		has_estate_privilege = estate_nobles_fidalgos
+		NOT = { has_country_flag = montantes_flag }
+	}
+	effect = {
+		custom_tooltip = montantes_tt
+		set_country_flag = montantes_flag
+	}
+	chance = {
+		factor = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_reformed_fidalgos = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		has_estate_privilege = estate_nobles_fidalgos
+		NOT = { has_country_flag = reformed_fidalgos_flag }
+	}
+	effect = {
+		custom_tooltip = reformed_fidalgos_tt
+		set_country_flag = reformed_fidalgos_flag
+	}
+	chance = {
+		factor = 0.1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+btc_por_end_fidalgos = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		has_estate_privilege = estate_nobles_fidalgos
+		NOT = { has_country_flag = can_remove_fidalgos_flag }
+	}
+	effect = {
+		custom_tooltip = can_remove_fidalgos_cortes_tt
+		set_country_flag = can_remove_fidalgos_flag
+	}
+	chance = {
+		factor = 0.4
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

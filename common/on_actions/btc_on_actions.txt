@@ -1,0 +1,245 @@
+on_startup = {
+	set_global_flag = beyond_the_cape
+	events = {
+		btc_startup.1
+		btc_remove_natives.1
+	}
+	POR = { country_event = { id = btc_por.180 } }
+	MOR = { country_event = { id = btc_events.2 } }
+	GRA = { country_event = { id = btc_events.2 } }
+	### SPICE TRADE CONFLICT ###
+	POR = { save_global_event_target_as = por_spice_trade }
+	MAM = { save_global_event_target_as = mam_spice_trade }
+}
+
+on_monthly_pulse = {
+	events = {
+		btc_saudade.1	#Monthly saudade calculation
+		btc_saudade.2	#Monthly capital saudade calculation
+		# btc_events.14	#Monthly settler pool calculation
+		btc_spice_trade.1
+	}
+}
+
+on_revoke_estate_land = {
+	if = {
+		limit = {
+			has_estate = estate_slavers
+			owner = {
+				NOT = {
+					estate_loyalty = {
+						estate = estate_slavers
+						loyalty = 40
+					}
+				}
+			}
+		}
+		spawn_rebels = {
+			type = particularist_rebels
+			size = 1
+		}
+		province_event = { id = slavers_estate_events.4 }
+	}	
+}
+
+on_conquest = {
+	if = {
+		limit = {
+			owner = { 
+				OR = {
+					has_estate_privilege = estate_slavers_gold_mine_slaves
+					has_country_flag = can_estate_slavers_gold_mine_slaves
+				}
+			}
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+			NOT = { has_province_modifier = estate_slavers_gold_mining }
+			trade_goods = gold
+		}
+		add_province_modifier = {	# +1 local goods produced +2 local unrest
+			name = estate_slavers_gold_mining
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = { 
+				OR = {
+					has_estate_privilege = estate_slavers_boost_production_in_colony
+					has_country_flag = can_estate_slavers_boost_production_in_colony
+				}
+			}
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+			NOT = { has_province_modifier = estate_slavers_plantation_production }
+			OR = {
+				trade_goods = sugar
+				trade_goods = cocoa
+				trade_goods = cotton
+				trade_goods = coffee
+				trade_goods = tea
+				trade_goods = tobacco
+			}
+		}
+		add_province_modifier = {	# +1 local goods produced +2 local unrest
+			name = estate_slavers_plantation_production
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			province_id = 230
+			FROM = { tag =  POR }
+		}
+		FROM = { swap_non_generic_missions = yes }
+	}
+}
+
+on_war_won = {
+	if = {
+		limit = {
+			ROOT = { has_country_flag = at_war }
+		}
+		CAS = { clr_country_flag = at_war }
+		POR = { clr_country_flag = at_war }
+		ARA = { clr_country_flag = at_war }
+	}
+}
+
+on_new_monarch = {
+	if = {
+		limit = {
+			tag = PAP
+			CDI = { is_subject_of = POR	}
+			POR = {	NOT = { has_country_flag = hanno_elephant }}
+		}
+		POR = { country_event = { id = btc_por.139 }}
+	}	
+}
+
+on_siege_won_country = {
+	if = {
+		limit = {
+			ROOT = {
+				NOT = { has_country_flag = took_mohamed }
+			}
+			is_in_war = {
+				attacker_leader = ROOT
+				casus_belli = cb_get_mohamed
+			}
+			FROM = {
+				province_id = 384
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = btc_por.145
+			}
+			set_country_flag = took_mohamed
+		}
+	}	
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					province_id = 1201
+					province_id = 2999
+					province_id = 388
+					province_id = 2030
+					province_id = 596
+				}
+			}
+			any_army = {
+				general_with_name = "Afonso de Albuquerque"
+				location = {
+					OR = {
+						province_id = 1201
+						province_id = 2999
+						province_id = 388
+						province_id = 2030
+						province_id = 596
+					}
+				}
+			}
+		}
+		FROM = {
+			cede_province = ROOT
+			add_devastation = 50
+		}
+	}
+}
+
+on_explore_coast = {
+	events = { btc_por.167 }
+	random_list = {
+		5 = { set_country_flag = padrao_chance_3 }
+		10 = { set_country_flag = padrao_chance_2 }
+		15 = { set_country_flag = padrao_chance_1 }
+		70 = {}
+	}
+}
+
+on_battle_won_country = {
+	if = {
+		limit = {
+			tag = event_target:mam_spice_trade
+			FROM = { tag = event_target:por_spice_trade }
+			has_saved_global_event_target = mam_spice_trade
+		}
+		change_variable = {
+			which = mam_battles_won
+			value = 1
+		}
+		change_variable = {
+			which = mam_ships_sunk
+			which = naval_units_killed
+		}
+	}
+}
+
+on_new_monarch = {
+	if = {
+		limit = {
+			has_disaster = portuguese_regency
+		}
+		country_event = {
+			id = portuguese_regency.10
+		}
+		if = {
+			limit = {
+				has_country_flag = isabel_de_coimbra
+			}
+			define_consort = {
+				name = "Isabel"
+				dynasty = "de Coimbra"
+				female = yes
+				country_of_origin = ROOT
+				age = 15
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = beatriz_de_braganca
+			}
+			define_consort = {
+				name = "Beatriz"
+				dynasty = "de Bragança"
+				female = yes
+				country_of_origin = ROOT
+				age = 15
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
+		}
+	}
+}
