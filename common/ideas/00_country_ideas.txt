@@ -1712,7 +1712,7 @@ BRA_ideas = {
 # 	}
 # }
 
-
+# BEYOND THE CAPE - ginetes
 POL_ideas = {
 	start = {
 		cavalry_cost = -0.1
@@ -1741,7 +1741,7 @@ POL_ideas = {
 	}
 	winged_hussars = {
 		cavalry_power = 0.3
-		can_recruit_hussars = yes
+		# can_recruit_hussars = yes
 	}
 	wojsko_komputoe = {
 		global_regiment_cost = -0.10
@@ -1754,6 +1754,7 @@ POL_ideas = {
 	}
 }
 
+# BEYOND THE CAPE - ginetes
 LIT_ideas = {
 	start = {
 		manpower_recovery_speed = 0.15
@@ -1784,7 +1785,7 @@ LIT_ideas = {
 	}
 	lithuanian_hussars = {
 		cavalry_power = 0.25
-		can_recruit_hussars = yes
+		# can_recruit_hussars = yes
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
@@ -1794,6 +1795,7 @@ LIT_ideas = {
 	}
 }
 
+# BEYOND THE CAPE - ginetes
 LIT2_ideas = {
 	start = {
 		manpower_recovery_speed = 0.15
@@ -1825,7 +1827,7 @@ LIT2_ideas = {
 	}
 	lithuanian_hussars = {
 		cavalry_power = 0.25
-		can_recruit_hussars = yes
+		# can_recruit_hussars = yes
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
@@ -1835,6 +1837,7 @@ LIT2_ideas = {
 	}
 }
 
+# BEYOND THE CAPE - ginetes
 PLC_ideas = {
 	start = {
 		nobles_loyalty_modifier = 0.1
@@ -1863,7 +1866,7 @@ PLC_ideas = {
 	}
 	winged_hussars = { 
 		cavalry_power = 0.3
-		can_recruit_hussars = yes
+		# can_recruit_hussars = yes
 	}
 	plc_refine_our_golden_liberty = { #Same for all of them
 		country_admin_power = 1 
@@ -1876,6 +1879,7 @@ PLC_ideas = {
 	}
 }
 
+# BEYOND THE CAPE - ginetes
 PLC_LIT_ideas = {
 	start = {
 		global_manpower_modifier = 0.25
@@ -1908,7 +1912,7 @@ PLC_LIT_ideas = {
 	}
 	lithuanian_hussars = {
 		cavalry_power = 0.25
-		can_recruit_hussars = yes 
+		# can_recruit_hussars = yes 
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
@@ -2448,7 +2452,7 @@ HUN_ideas = {
 	}
 }
 
-
+# BEYOND THE CAPE - samurai
 JAP_ideas = {
 	start = {
 		stability_cost_modifier = -0.1
@@ -2466,8 +2470,8 @@ JAP_ideas = {
 	
 	reformed_land_holding = {
 		global_manpower_modifier = 0.2
-		allowed_samurai_fraction = 0.15
-		has_samurai = yes 
+		# allowed_samurai_fraction = 0.15
+		# has_samurai = yes 
 	}
 	jap_unification_under_the_emperor = {
 		global_unrest = -2

@@ -395,3 +395,34 @@ country_event = {
 		} 
 	}
 }
+
+# New King house bragança fate
+country_event = {
+	id = portuguese_regency.101
+	title = portuguese_regency.101_t
+	desc = portuguese_regency.101_d
+	picture = NOBLE_ESTATE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = portuguese_regency.101a
+
+		232 = {
+			remove_province_modifier = duke_of_braganca
+			spawn_rebels = {
+				type = noble_rebels
+				win = yes
+				size = 3
+				unrest = 10
+				should_take_capital = yes
+			}
+		}
+	}
+
+	option = {
+		name = portuguese_regency.101b
+
+		add_treasury = 100
+	}
+}

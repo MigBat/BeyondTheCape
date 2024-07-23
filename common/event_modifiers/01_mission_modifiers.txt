@@ -7714,9 +7714,10 @@ pol_modernized_army_2_modifier = {
 	army_tradition = 0.5
 	leader_land_fire = 1 
 }
+# BEYOND THE CAPE - ginetes
 pol_elite_hussar_cavalry_modifier = { 
 	fire_damage_received = -0.2
-	is_hussars_modifier = yes 
+	# is_hussars_modifier = yes 
 }
 pol_elite_hussar_cavalry_2_modifier = { 
 	cavalry_power = 0.1 
@@ -9346,9 +9347,9 @@ fra_toulon_dockyards_modifier = {
 	ship_recruit_speed = -0.1
 }
 
+# BEYOND THE CAPE - musketeers
 fra_musketeers_modifier = {
-	has_musketeer = yes 
-	allowed_musketeer_fraction = 0.15
+	infantry_fire = 0.25
 }
 
 fra_catholic_supremacy_modifier = {	
@@ -9684,9 +9685,10 @@ jap_shogoki_modifier = {
 	heavy_ship_power = 0.2
 }
 
+# BEYOND THE CAPE - samurai #
 jap_reformed_samurai_modifier = {
 	fire_damage = 0.1 
-	is_samurai_modifier = yes 
+	# is_samurai_modifier = yes 
 }
 
 jap_marine_samurai_modifier = {
@@ -10035,10 +10037,11 @@ eoc_expanded_palace_bureaucracy_modifier = {
 	advisor_cost = -0.2
 }
 
-jap_grant_samurai_modifier = {
-	has_samurai = yes 
-	allowed_samurai_fraction = 0.1
-}
+# BEYOND THE CAPE - samurai #
+# jap_grant_samurai_modifier = {
+# 	has_samurai = yes 
+# 	allowed_samurai_fraction = 0.1
+# }
 
 allow_local_banners_modifier = {
 	local_has_banners = yes

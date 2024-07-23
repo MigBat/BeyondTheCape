@@ -16,8 +16,9 @@ on_monthly_pulse = {
 	events = {
 		btc_saudade.1	#Monthly saudade calculation
 		btc_saudade.2	#Monthly capital saudade calculation
-		# btc_events.14	#Monthly settler pool calculation
+		btc_events.14	#Monthly settler pool calculation
 		btc_spice_trade.1
+		btc_spice_trade.102
 	}
 }
 
@@ -97,6 +98,61 @@ on_conquest = {
 		}
 		FROM = { swap_non_generic_missions = yes }
 	}
+	if = {
+		limit = {
+			NOT = { has_province_modifier = malaria }
+			has_port = no
+			continent = africa
+			NOT = {
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					region = guinea_region
+					region = south_africa_region
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
+					if = {
+						limit = {
+							NOT = { mission_completed = btc_slaves }
+						}
+						area = inner_angola_area
+						area = matamba_area
+					}
+					if = {
+						limit = {
+							NOT = { mission_completed = btc_sofala }
+						}
+						area = lower_zambezi_area
+					}
+				}
+			}
+			owner = {
+				capital_scope = {
+					NOT = {
+						continent = africa
+					}
+				}
+			}
+		}
+		add_province_modifier = {
+			name = malaria
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				capital_scope = {
+					continent = africa
+				}
+			}
+			has_province_modifier = malaria
+		}
+		remove_province_modifier = malaria
+	}
 }
 
 on_war_won = {
@@ -108,17 +164,6 @@ on_war_won = {
 		POR = { clr_country_flag = at_war }
 		ARA = { clr_country_flag = at_war }
 	}
-}
-
-on_new_monarch = {
-	if = {
-		limit = {
-			tag = PAP
-			CDI = { is_subject_of = POR	}
-			POR = {	NOT = { has_country_flag = hanno_elephant }}
-		}
-		POR = { country_event = { id = btc_por.139 }}
-	}	
 }
 
 on_siege_won_country = {
@@ -176,10 +221,10 @@ on_siege_won_country = {
 on_explore_coast = {
 	events = { btc_por.167 }
 	random_list = {
-		5 = { set_country_flag = padrao_chance_3 }
-		10 = { set_country_flag = padrao_chance_2 }
-		15 = { set_country_flag = padrao_chance_1 }
-		70 = {}
+		10 = { set_country_flag = padrao_chance_3 }
+		15 = { set_country_flag = padrao_chance_2 }
+		25 = { set_country_flag = padrao_chance_1 }
+		50 = {}
 	}
 }
 
@@ -201,7 +246,47 @@ on_battle_won_country = {
 	}
 }
 
+on_monarch_death = {
+	if = {
+		limit = { 
+			has_country_flag = miguel_da_paz_exists
+			NOT = { has_heir_flag = miguel_da_paz }
+			NOT = { has_ruler_flag = miguel_da_paz }
+		}
+		country_event = { id = btc_por.138 }
+	}
+}
+
 on_new_monarch = {
+	if = {
+		limit = {
+			has_country_flag = miguel_da_paz_exists
+		}
+		clr_country_flag = miguel_da_paz_exists
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = CAS
+		}
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = ARA
+		}
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = SPA
+		}
+	}
+	if = {
+		limit = {
+			tag = PAP
+			CDI = { is_subject_of = POR	}
+			POR = {	NOT = { has_country_flag = hanno_elephant }}
+		}
+		POR = { country_event = { id = btc_por.139 }}
+	}
 	if = {
 		limit = {
 			has_disaster = portuguese_regency
@@ -241,5 +326,145 @@ on_new_monarch = {
 				amount = 1
 			}
 		}
+	}
+	if = {
+		limit = {
+			232 = {
+				owned_by = ROOT
+				has_province_modifier = duke_of_braganca
+			}
+		}
+		country_event = {
+			id = portuguese_regency.101
+		}
+	}
+}
+
+on_abandon_colony = {
+	if = {
+		limit = {
+			has_province_modifier = malaria
+		}
+		remove_province_modifier = malaria
+	}
+}
+
+on_colony_established = {
+	if = {
+		limit = {
+			FROM = {
+				capital_scope = {
+					NOT = { continent = africa }
+				}
+			}
+			has_port = no
+			continent = africa
+			NOT = {
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					region = guinea_region
+					region = south_africa_region
+					area = lower_zambezi_area	# mozambique
+					area = inner_angola_area	# angola
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
+				}
+			}
+		}
+		add_province_modifier = {
+			name = malaria
+			duration = -1
+		}
+	}
+}
+
+on_province_owner_change = {
+	if = {
+		limit = {
+			NOT = { has_province_modifier = malaria }
+			has_port = no
+			continent = africa
+			NOT = {
+				OR = {
+					region = maghreb_region
+					region = egypt_region
+					region = guinea_region
+					region = south_africa_region
+					area = lower_zambezi_area	# mozambique
+					area = inner_angola_area	# angola
+					# Madagascar
+					area = sakalava_area
+					area = betsimasaraka_area
+					area = southern_madagascar
+					area = madagascar_highlands_area
+				}
+			}
+			owner = {
+				capital_scope = {
+					NOT = {
+						continent = africa
+					}
+				}
+			}
+		}
+		add_province_modifier = {
+			name = malaria
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_province_modifier = malaria
+			owner = {
+				capital_scope = {
+					continent = africa
+				}
+			}
+		}
+		remove_province_modifier = malaria
+	}
+}
+
+on_circumnavigation = {
+	if = {
+		limit = {
+			tag = POR
+			OR = {
+				CAS = { NOT = { has_country_flag = circumnavigation_done } }
+				SPA = { NOT = { has_country_flag = circumnavigation_done } }
+			}
+		}
+		set_country_flag = moluccas_por
+	}
+	if = {
+		limit = {
+			OR = {
+				tag = CAS
+				tag = SPA
+			}
+			POR = { NOT = { has_country_flag = circumnavigation_done } }
+		}
+		set_country_flag = moluccas_cas
+	}
+}
+
+on_annexed = {
+	if = {
+		limit = {
+			FROM = { has_country_flag = is_mam_ally }
+		}
+		shuffle_participants_mam = { scope = FROM }
+		FROM = { clr_country_flag = is_mam_ally }
+	}
+	if = {
+		limit = {
+			FROM = { has_country_flag = is_por_ally }
+		}
+		shuffle_participants_por = { scope = FROM }
+		FROM = { clr_country_flag = is_por_ally }
 	}
 }

@@ -81,3 +81,15 @@
  expand_casa_india_far_east_title:0 "Expand the Casa da India in the Far East"
  expand_casa_india_far_east_desc:0 "We have lands in the Far East that should be granted to the Casa da India."
  btc_por_cede_provinces_to_casa_india_far_east:0 "We will grant all of our provinces in the §YFar East§! to the §Y[CDI.GetName]§!."
+
+ pero_escobar_title: "Pero Escobar"
+ pero_escobar_desc: ""
+ diogo_cao_title: "Diogo Cão"
+ diogo_cao_desc: ""
+ bartolomeu_dias_title: "Bartolomeu Dias"
+ bartolomeu_dias_desc: ""
+
+ divert_nile: "Divert Nile"
+ divert_nile_desc: ""
+ restore_nile: "Restore Nile"
+ restore_nile_desc: ""

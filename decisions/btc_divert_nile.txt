@@ -1,0 +1,53 @@
+country_decisions = {
+	divert_nile = {
+		potential = {
+			ai = no
+			is_in_war = {
+				attacker_leader = ROOT
+				casus_belli = cb_get_mohamed
+			}
+			hidden_trigger = {
+				NOT = { has_country_modifier = waiting_for_nile_divert }				
+			}
+		}
+		allow = {
+			2321 = { controlled_by = ROOT }
+			360 = { controlled_by = ROOT }
+		}
+		effect = {
+			country_event = {
+				id = btc_por.187
+				days = 365
+			}
+			add_country_modifier = {
+				hidden = yes
+				name = waiting_for_nile_divert
+				duration = 400
+			}
+		}
+	}
+	restore_nile = {
+		potential = {
+			any_owned_province = {
+				has_province_modifier = nile_diverted
+			}
+			hidden_trigger = {
+				NOT = { has_country_modifier = waiting_for_nile_restoration }				
+			}
+		}
+		allow = {
+			360 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			country_event = {
+				id = btc_por.188
+				days = 365
+			}
+			add_country_modifier = {
+				hidden = yes
+				name = waiting_for_nile_restoration
+				duration = 400
+			}
+		}
+	}
+}

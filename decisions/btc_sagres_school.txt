@@ -25,6 +25,7 @@ country_decisions = {
 	}
 
 	pero_escobar = {
+		color = { 255 215 0 }
 		potential = {
 			mission_completed = btc_sagres_school
 			230 = { 
@@ -48,6 +49,7 @@ country_decisions = {
 	}
 
 	diogo_cao = {
+		color = { 255 215 0 }
 		potential = {
 			mission_completed = btc_sagres_school
 			230 = { 
@@ -74,6 +76,7 @@ country_decisions = {
 	}
 
 	bartolomeu_dias = {
+		color = { 255 215 0 }
 		potential = {
 			mission_completed = btc_sagres_school
 			230 = { 
@@ -86,6 +89,9 @@ country_decisions = {
 			dip_tech = 8
 		}
 		effect = {
+			country_event = {
+				id = btc_por.152	# Pedro Covilha
+			}
 			define_explorer = {
 				name = "Bartolomeu Dias"
 				shock = 2
@@ -93,6 +99,37 @@ country_decisions = {
 				manuever = 5
 			}
 			set_country_flag = had_dias
+		}
+	}
+
+	# Disable Ship Capture #
+	btc_disable_ship_capture = {
+		potential = {
+			ai = no
+			NOT = { has_country_modifier = disable_ship_capture }
+		}
+		allow = {
+			NOT = { has_country_modifier = disable_ship_capture }
+		}
+		effect = {
+			add_country_modifier = {
+				name = disable_ship_capture
+				duration = -1
+			}
+		}
+	}
+
+	# Enable Ship Capture #
+	btc_enable_ship_capture = {
+		potential = {
+			ai = no
+			has_country_modifier = disable_ship_capture
+		}
+		allow = {
+			has_country_modifier = disable_ship_capture
+		}
+		effect = {
+			remove_country_modifier = disable_ship_capture
 		}
 	}
 }

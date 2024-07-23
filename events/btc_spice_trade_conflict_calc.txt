@@ -12,6 +12,7 @@ country_event = {
 
 	trigger = {
 		tag = event_target:por_spice_trade
+		has_global_flag = spice_trade_conflict_enabled
 	}
 
 	immediate = {
@@ -86,16 +87,26 @@ country_event = {
 				value = 0
 			}
 			set_variable = {
-				which = monthly_mare_clausum_amount
+				which = num_por_controlled_nodes
 				value = 0
 			}
 			set_variable = {
-				which = num_por_control_nodes
+				which = num_mam_controlled_nodes
+				value = 0
+			}
+			set_variable = {
+				which = monthly_mare_clausum_amount
 				value = 0
 			}
 		}
-		event_target:por_spice_trade = { country_event = { id = btc_spice_trade.2 } }
-		event_target:mam_spice_trade = { country_event = { id = btc_spice_trade.2 } }
+		every_country = {
+			limit = {
+				participates_in_spice_trade_conflict = yes
+			}
+			country_event = { id = btc_spice_trade.2 }
+		}
+		# event_target:por_spice_trade = { country_event = { id = btc_spice_trade.2 } }
+		# event_target:mam_spice_trade = { country_event = { id = btc_spice_trade.2 } }
 		event_target:por_spice_trade = { country_event = { id = btc_spice_trade.3 days = 3 } }
 	}
 }
@@ -123,7 +134,7 @@ country_event = {
 		own_por_alliance_points_calc_hormuz = yes
 		own_por_alliance_points_calc_coromandel = yes
 		own_por_alliance_points_calc_malacca = yes
-		next_por_ally = yes
+		# next_por_ally = yes
 	}
 
 	option = {
@@ -140,7 +151,7 @@ country_event = {
 		own_mam_alliance_points_calc_hormuz = yes
 		own_mam_alliance_points_calc_coromandel = yes
 		own_mam_alliance_points_calc_malacca = yes
-		next_mam_ally = yes
+		# next_mam_ally = yes
 	}
 }
 
@@ -152,16 +163,27 @@ country_event = {
 
 	hidden = yes
 	is_triggered_only = yes
+	# trigger = {
+	# 	tag = event_target:por_spice_trade
+	# 	has_global_flag = all_por_ally_calc
+	# 	has_global_flag = all_mam_ally_calc
+	# }
+
+	# immediate = {
+	# 	clr_global_flag = all_por_ally_calc
+	# 	clr_global_flag = all_mam_ally_calc
+	# }
 
 	option = {
 		name = btc_spice_trade.3a
 
+		clear_global_event_target = zanzibar_1
+		clear_global_event_target = aden_1
+		clear_global_event_target = hormuz_1
+		clear_global_event_target = india_1
+		clear_global_event_target = malaca_1
+		
 		REB = {
-			clear_global_event_target = zanzibar_1
-			clear_global_event_target = aden_1
-			clear_global_event_target = hormuz_1
-			clear_global_event_target = india_1
-			clear_global_event_target = malaca_1
 			# Zanzibar
 			if = {
 				limit = {
@@ -172,8 +194,12 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = 1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
+					which = num_por_controlled_nodes
 					value = 1
 				}
 				event_target:mam_spice_trade = {
@@ -191,10 +217,6 @@ country_event = {
 						}						
 					}
 				}
-				change_variable = {
-					which = num_por_control_nodes
-					value = 1
-				}
 			}
 			if = {
 				limit = {
@@ -205,9 +227,13 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = -1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
-					value = -1
+					which = num_mam_controlled_nodes
+					value = 1
 				}
 				event_target:por_spice_trade = {
 					remove_country_modifier = zanzibar_node_bonus_por
@@ -235,8 +261,12 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = 1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
+					which = num_por_controlled_nodes
 					value = 1
 				}
 				event_target:mam_spice_trade = {
@@ -254,10 +284,6 @@ country_event = {
 						}						
 					}
 				}
-				change_variable = {
-					which = num_por_control_nodes
-					value = 1
-				}
 			}
 			if = {
 				limit = {
@@ -268,9 +294,13 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = -1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
-					value = -1
+					which = num_mam_controlled_nodes
+					value = 1
 				}
 				event_target:por_spice_trade = {
 					remove_country_modifier = aden_node_bonus_por
@@ -298,8 +328,12 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = 1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
+					which = num_por_controlled_nodes
 					value = 1
 				}
 				event_target:mam_spice_trade = {
@@ -317,10 +351,6 @@ country_event = {
 						}						
 					}
 				}
-				change_variable = {
-					which = num_por_control_nodes
-					value = 1
-				}
 			}
 			if = {
 				limit = {
@@ -331,9 +361,13 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = -1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
-					value = -1
+					which = num_mam_controlled_nodes
+					value = 1
 				}
 				event_target:por_spice_trade = {
 					remove_country_modifier = hormuz_node_bonus_por
@@ -361,8 +395,12 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = 1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
+					which = num_por_controlled_nodes
 					value = 1
 				}
 				event_target:mam_spice_trade = {
@@ -380,10 +418,6 @@ country_event = {
 						}						
 					}
 				}
-				change_variable = {
-					which = num_por_control_nodes
-					value = 1
-				}
 			}
 			if = {
 				limit = {
@@ -394,9 +428,13 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = -1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
-					value = -1
+					which = num_mam_controlled_nodes
+					value = 1
 				}
 				event_target:por_spice_trade = {
 					remove_country_modifier = coromandel_node_bonus_por
@@ -424,8 +462,12 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = 1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
+					which = num_por_controlled_nodes
 					value = 1
 				}
 				event_target:mam_spice_trade = {
@@ -443,10 +485,6 @@ country_event = {
 						}						
 					}
 				}
-				change_variable = {
-					which = num_por_control_nodes
-					value = 1
-				}
 			}
 			if = {
 				limit = {
@@ -457,9 +495,13 @@ country_event = {
 						}
 					}
 				}
+				# change_variable = {
+				# 	which = monthly_mare_clausum_amount
+				# 	value = -1
+				# }
 				change_variable = {
-					which = monthly_mare_clausum_amount
-					value = -1
+					which = num_mam_controlled_nodes
+					value = 1
 				}
 				event_target:por_spice_trade = {
 					remove_country_modifier = malacca_node_bonus_por
@@ -477,22 +519,18 @@ country_event = {
 					}
 				}
 			}
-	
-			# Total Mare Clausum
+
+			# Monthly Mare Clausum Amount
 			if = {
 				limit = {
 					check_variable = {
 						which = total_mare_clausum_amount
 						value = 100
 					}
-					check_variable = {
-						which = monthly_mare_clausum_amount
-						value = 1
-					}
 				}
-				set_variable = {
+				subtract_variable = {
 					which = monthly_mare_clausum_amount
-					value = 0
+					which = num_mam_controlled_nodes
 				}
 			}
 			if = {
@@ -509,27 +547,25 @@ country_event = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						check_variable = {
-							which = monthly_mare_clausum_amount
-							value = 2
-						}
-					}
-					set_variable = {
-						which = monthly_mare_clausum_amount
-						value = 1
-					}
-				}
-				if = {
-					limit = { 
-						check_variable = {
-							which = num_por_control_nodes
+							which = num_por_controlled_nodes
 							value = 5
 						}
 					}
 					set_variable = {
 						which = monthly_mare_clausum_amount
-						value = 1
+						which = num_por_controlled_nodes
+					}
+					subtract_variable = {
+						which = monthly_mare_clausum_amount
+						value = 4
+					}
+				}
+				else = {
+					subtract_variable = {
+						which = monthly_mare_clausum_amount
+						which = num_mam_controlled_nodes
 					}
 				}
 			}
@@ -547,27 +583,25 @@ country_event = {
 					}
 				}
 				if = {
-					limit = { 
+					limit = {
 						check_variable = {
-							which = monthly_mare_clausum_amount
-							value = 3
-						}
-					}
-					set_variable = {
-						which = monthly_mare_clausum_amount
-						value = 2
-					}
-				}
-				if = {
-					limit = { 
-						check_variable = {
-							which = num_por_control_nodes
+							which = num_por_controlled_nodes
 							value = 4
 						}
 					}
 					set_variable = {
 						which = monthly_mare_clausum_amount
-						value = 1
+						which = num_por_controlled_nodes
+					}
+					subtract_variable = {
+						which = monthly_mare_clausum_amount
+						value = 3
+					}
+				}
+				else = {
+					subtract_variable = {
+						which = monthly_mare_clausum_amount
+						which = num_mam_controlled_nodes
 					}
 				}
 			}
@@ -587,25 +621,23 @@ country_event = {
 				if = {
 					limit = {
 						check_variable = {
-							which = monthly_mare_clausum_amount
-							value = 4
-						}
-					}
-					set_variable = {
-						which = monthly_mare_clausum_amount
-						value = 3
-					}
-				}
-				if = {
-					limit = { 
-						check_variable = {
-							which = num_por_control_nodes
+							which = num_por_controlled_nodes
 							value = 3
 						}
 					}
 					set_variable = {
 						which = monthly_mare_clausum_amount
-						value = 1
+						which = num_por_controlled_nodes
+					}
+					subtract_variable = {
+						which = monthly_mare_clausum_amount
+						value = 2
+					}
+				}
+				else = {
+					subtract_variable = {
+						which = monthly_mare_clausum_amount
+						which = num_mam_controlled_nodes
 					}
 				}
 			}
@@ -625,25 +657,23 @@ country_event = {
 				if = {
 					limit = {
 						check_variable = {
-							which = monthly_mare_clausum_amount
-							value = 5
-						}
-					}
-					set_variable = {
-						which = monthly_mare_clausum_amount
-						value = 4
-					}
-				}
-				if = {
-					limit = { 
-						check_variable = {
-							which = num_por_control_nodes
+							which = num_por_controlled_nodes
 							value = 2
 						}
 					}
 					set_variable = {
 						which = monthly_mare_clausum_amount
+						which = num_por_controlled_nodes
+					}
+					subtract_variable = {
+						which = monthly_mare_clausum_amount
 						value = 1
+					}
+				}
+				else = {
+					subtract_variable = {
+						which = monthly_mare_clausum_amount
+						which = num_mam_controlled_nodes
 					}
 				}
 			}
@@ -659,17 +689,28 @@ country_event = {
 							value = 20
 						}
 					}
-					check_variable = {
-						which = num_por_control_nodes
-						value = 1
+				}
+				if = {
+					limit = {
+						check_variable = {
+							which = num_por_controlled_nodes
+							value = 1
+						}
+					}
+					set_variable = {
+						which = monthly_mare_clausum_amount
+						which = num_por_controlled_nodes
 					}
 				}
-				set_variable = {
-					which = monthly_mare_clausum_amount
-					value = 1
+				else = {
+					subtract_variable = {
+						which = monthly_mare_clausum_amount
+						which = num_mam_controlled_nodes
+					}
 				}
 			}
 	
+			# Total Mare Clausum Amount
 			change_variable = {
 				which = total_mare_clausum_amount
 				which = monthly_mare_clausum_amount
@@ -701,6 +742,18 @@ country_event = {
 					value = 100
 				}
 				set_global_flag = full_mare_clausum_flag
+			}
+			if = {
+				limit = {
+					has_global_flag = full_mare_clausum_flag
+					NOT = {
+						check_variable = {
+							which = total_mare_clausum_amount
+							value = 100
+						}
+					}
+				}
+				clr_global_flag = full_mare_clausum_flag
 			}
 	
 			if = {
@@ -849,5 +902,442 @@ country_event = {
 		name = btc_spice_trade.7a
 
 		set_country_flag = mam_get_supporters_objective_flag
+	}
+}
+
+# Mamluks win spice trade conflict
+country_event = {
+	id = btc_spice_trade.10
+	title = btc_spice_trade.10.t
+	desc = btc_spice_trade.10.d
+	picture = FORT_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			btc_spice_trade_clear_stuff = yes
+		}
+	}
+
+	option = {
+		name = btc_spice_trade.10a
+
+		trigger = {
+			OR = {
+				tag = event_target:mam_spice_trade
+				has_country_flag = is_mam_ally
+			}
+		}
+
+		add_country_modifier = {
+			name = mam_win_spice_trade_conflict
+			duration = 36500
+		}
+		1448 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = mamluk_spice_trade
+			}
+		}
+		4346 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = mamluk_spice_trade
+			}
+		}
+		1334 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = mamluk_spice_trade
+			}
+		}
+		1340 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = mamluk_spice_trade
+			}
+		}
+		1361 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = mamluk_spice_trade
+			}
+		}
+	}
+
+	option = {
+		name = btc_spice_trade.10b
+
+		trigger = {
+			OR = {
+				tag = event_target:por_spice_trade
+				has_country_flag = is_por_ally
+			}
+		}
+
+		add_country_modifier = {
+			name = por_lose_spice_trade_conflict
+			duration = 18250
+		}
+	}
+}
+
+# Portugal wins spice trade conflict
+country_event = {
+	id = btc_spice_trade.11
+	title = btc_spice_trade.11.t
+	desc = btc_spice_trade.11.d
+	picture = FORT_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			btc_spice_trade_clear_stuff = yes
+		}
+	}
+
+	option = {
+		name = btc_spice_trade.11a
+
+		trigger = {
+			OR = {
+				tag = event_target:por_spice_trade
+				has_country_flag = is_por_ally
+			}
+		}
+
+		add_country_modifier = {
+			name = por_win_spice_trade_conflict
+			duration = 36500
+		}
+		1448 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = portugal_spice_trade
+			}
+		}
+		4346 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = portugal_spice_trade
+			}
+		}
+		1334 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = portugal_spice_trade
+			}
+		}
+		1340 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = portugal_spice_trade
+			}
+		}
+		1361 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 25
+				key = portugal_spice_trade
+			}
+		}
+	}
+
+	option = {
+		name = btc_spice_trade.11b
+
+		trigger = {
+			OR = {
+				tag = event_target:mam_spice_trade
+				has_country_flag = is_mam_ally
+			}
+		}
+
+		add_country_modifier = {
+			name = mam_lose_spice_trade_conflict
+			duration = 18250
+		}
+	}
+}
+
+country_event = {
+	id = btc_spice_trade.20
+	title = btc_spice_trade.20.t
+	desc = btc_spice_trade.20.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		part_of_spice_trade_conflict = yes
+	}
+
+	trigger = {
+		1308 = {
+			has_most_province_trade_power = ROOT
+		}
+		REB = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 20
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_spice_trade.20a
+
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_historical_friend = event_target:mam_spice_trade
+		event_target:mam_spice_trade = {
+			add_historical_friend = ROOT
+		}
+		add_historical_rival = event_target:por_spice_trade
+		event_target:por_spice_trade = {
+			add_historical_rival = ROOT
+		}
+		set_mam_supporter = yes
+		hidden_effect = {
+			REB = {
+				PREV = {
+					set_variable = {
+						which = monthly_mare_clausum_amount
+						which = PREV
+					}
+					set_variable = {
+						which = total_mare_clausum_amount
+						which = PREV
+					}
+				}
+			}
+		}
+
+		event_target:mam_spice_trade = {
+			add_country_modifier = {
+				name = ven_mam_forcelimit
+				duration = -1
+			}
+			random_owned_province = {
+				limit = {
+					controlled_by = ROOT
+					OR = {
+						area = gulf_of_arabia_area
+						region = arabia_region
+						region = horn_of_africa_region
+					}
+				}
+				build_to_forcelimit = {
+					galley = 0.9
+					heavy_ship = 0.1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = btc_spice_trade.20b
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = btc_spice_trade.21
+	title = btc_spice_trade.21.t
+	desc = btc_spice_trade.21.d
+	picture = KINGS_CHOICE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		part_of_spice_trade_conflict = yes
+	}
+	
+	trigger = {
+		primary_culture = persian
+		4341 = {
+			has_most_province_trade_power = ROOT
+		}
+		REB = {
+			check_variable = {
+				which = total_mare_clausum_amount
+				value = 40
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_spice_trade.21a
+
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_historical_friend = event_target:por_spice_trade
+		event_target:por_spice_trade = {
+			add_historical_friend = ROOT
+		}
+		add_historical_rival = event_target:mam_spice_trade
+		event_target:mam_spice_trade = {
+			add_historical_rival = ROOT
+		}
+		set_por_supporter = yes
+		hidden_effect = {
+			REB = {
+				PREV = {
+					set_variable = {
+						which = monthly_mare_clausum_amount
+						which = PREV
+					}
+					set_variable = {
+						which = total_mare_clausum_amount
+						which = PREV
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = btc_spice_trade.21b
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = btc_spice_trade.100
+	title = btc_spice_trade.100.t
+	desc = btc_spice_trade.100.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		any_province = {
+			superregion = india_superregion
+			country_or_non_sovereign_subject_holds = POR
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			ROOT = { save_global_event_target_as = por_spice_trade }
+			358 = {	# Alexandria
+				strongest_trade_power = {
+					save_global_event_target_as = mam_spice_trade
+				}
+			}
+		}
+	}
+
+	option = {
+		name = btc_spice_trade.100a
+		
+		custom_tooltip = spice_trade_conflict_enabled_tt
+		hidden_effect = {
+			set_global_flag = spice_trade_conflict_enabled
+			every_country = {
+				limit = {
+					NOT = { tag = root }
+					part_of_spice_trade_conflict = yes
+				}
+				country_event = {
+					id = btc_spice_trade.101
+				}
+			}			
+		}
+	}
+}
+
+country_event = {
+	id = btc_spice_trade.101
+	title = btc_spice_trade.101.t
+	desc = btc_spice_trade.101.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = btc_spice_trade.101a
+		
+		custom_tooltip = spice_trade_conflict_enabled_tt
+	}
+}
+
+country_event = {
+	id = btc_spice_trade.102
+	title = btc_spice_trade.102.t
+	desc = btc_spice_trade.102.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	trigger = {
+		is_free_or_tributary_trigger = no
+		NOT = { is_subject_of_type = trade_protectorate }
+		OR = {
+			has_country_flag = is_mam_ally 
+			has_country_flag = is_por_ally
+		}
+	}
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = btc_spice_trade.102a
+		
+		if = {
+			limit = {
+				ROOT = { has_country_flag = is_mam_ally }
+			}
+			shuffle_participants_mam = { scope = ROOT }
+			clr_country_flag = is_mam_ally
+		}
+		if = {
+			limit = {
+				ROOT = { has_country_flag = is_por_ally }
+			}
+			shuffle_participants_por = { scope = ROOT }
+			clr_country_flag = is_por_ally
+		}
 	}
 }

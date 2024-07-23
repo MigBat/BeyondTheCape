@@ -411,11 +411,14 @@ btc_por_navy1 = {
 
 	btc_ginetes = {
 		icon = mission_ginetes
-		required_missions = { btc_jogo_do_pau btc_tangier }
+		required_missions = { btc_tangier }
 		position = 6
 		provinces_to_highlight = { }		
 		trigger = { 
-			num_of_cavalry = 10
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.1
+			}
 		}	
 		effect = { 
 			add_country_modifier = {
@@ -757,6 +760,24 @@ btc_por_navy5 = {
 			custom_tooltip = port_english_alliance_tt
 		}
 	}
+
+	btc_cacadores = {
+		icon = mission_cacadores
+		required_missions = { btc_england }
+		position = 5
+		provinces_to_highlight = { }		
+		trigger = {
+			NOT = { current_age = age_of_discovery }
+			NOT = { current_age = age_of_reformation }
+			army_professionalism = 1
+		}	
+		effect = {
+			add_country_modifier = {
+				name = por_cacadores
+				duration = -1
+			}
+		}
+	}
 }
 
 btc_por_navy5a = {
@@ -779,9 +800,12 @@ btc_por_navy5a = {
 		provinces_to_highlight = { }		
 		trigger = {
 			mission_completed = btc_good_hope
+			brazil_region = { has_discovered = ROOT }
 		}	
 		effect = { 
-
+			country_event = {
+				id = btc_por.182
+			}
 		}
 	}
 
@@ -795,9 +819,10 @@ btc_por_navy5a = {
 				marriage_with = ARA
 				marriage_with = CAS
 			}
+			has_consort = yes
 		}	
 		effect = { 
-			
+			country_event = { id = btc_por.137 }
 		}
 	}
 
@@ -805,12 +830,34 @@ btc_por_navy5a = {
 		icon = mission_magellan
 		required_missions = { btc_miguel }
 		position = 8
-		provinces_to_highlight = { }		
-		trigger = {
-			mission_completed = btc_spice
-		}	
-		effect = { 
-			
+		provinces_to_highlight = { }	
+		trigger = { 
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = achievement_magellans_voyage_tooltip
+					has_country_flag = circumnavigation_first
+				}
+				custom_trigger_tooltip = {
+					tooltip = second_circumnavigation_tt
+					has_country_flag = circumnavigation_done
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = moluccas_por_cas_tt
+			if = {
+				limit = { has_country_flag = circumnavigation_first }
+				add_country_modifier = {
+					name = por_first_circumnavigation_modifier
+					duration = -1 
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = por_first_circumnavigation_modifier
+					duration = 9125
+				}
+			}
 		}
 	}
 }
@@ -939,7 +986,7 @@ btc_por_africa1 = {
 
 	btc_caribbean = {
 		icon = mission_colonize_the_caribbean
-		required_missions = { btc_labrador }
+		required_missions = { btc_brazil }
 		position = 10
 		provinces_to_highlight = { }		
 		trigger = {	
@@ -949,18 +996,26 @@ btc_por_africa1 = {
 			}
 		}	
 		effect = {
-			random_province = {
-				limit = {
-					region = carribeans_region
-					is_island = yes
-					is_empty = yes
+			custom_tooltip = random_seven_cities_tt
+			hidden_effect = {
+				random_province = {
+					limit = {
+						region = carribeans_region
+						is_island = yes
+						is_empty = yes
+					}
+					change_culture = root
+					change_religion = root
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					change_trade_goods = gold
+					add_permanent_claim = FROM
+					save_event_target_as = por_carib_island
 				}
-				change_culture = root
-				change_religion = root
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
-				add_permanent_claim = FROM
+				create_colony_mission_reward = {
+					province = event_target:por_carib_island
+				}
 			}
 		}
 	}
@@ -1305,22 +1360,8 @@ btc_por_africa3 = {
 			}
 		}	
 		effect = {
-			hidden_effect = { 
-				discover_province = 1586 
-				discover_province = 1600 
-				discover_province = 1603 
-				discover_province = 1604 
-			}
 			custom_tooltip = por_navigator_flagship_mod_tt
 			set_country_flag = por_navigator_flagship_mod
-			define_explorer = {
-				name = "Vasco da Gama"
-				shock = 3
-				fire = 4
-				manuever = 6
-				siege = 4
-				trait = great_explorer_personality
-			}
 		}
 	}
 }
@@ -1382,14 +1423,13 @@ btc_por_africa4 = {
 		required_missions = { btc_kongo btc_sao_tome }
 		position = 11
 		provinces_to_highlight = {
-			region = kongo_region
+			area = angola_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				region = kongo_region
-				is_city = yes
+			angola_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}	
 		effect = {
@@ -1411,6 +1451,13 @@ btc_por_africa4 = {
 					duration = -1
 				}
 			}
+			angola_area = {
+				add_permanent_claim = ROOT
+			}
+			matamba_area = {
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = inner_angola_malaria_tt
 		}
 	}
 }
@@ -1477,17 +1524,73 @@ btc_por_africa5 = {
 		required_missions = { btc_good_hope }
 		position = 12
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {	
+			ETH = { 
+				any_owned_province = {
+					has_discovered = ROOT
+				} 
+			}
+		}	
+		effect = {
+			ETH = {
+				remove_fow = 24
+			}
+			1099 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	btc_socotra = {
+		icon = mission_socotra
+		required_missions = { btc_prester_john }
+		position = 13
+		provinces_to_highlight = {
+			province_id = 1099
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}		
+		trigger = {
+			1099 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			4346 = {
+				add_trade_modifier = {
+					who = root
+					duration = 3650
+					power = 25
+					key = portuguese_privateers
+				}	
+			}
+		}
 	}
 
 	btc_ethiopia = {
 		icon = prester_john
-		required_missions = { btc_prester_john }
-		position = 13
+		required_missions = { btc_socotra }
+		position = 14
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {
+			alliance_with = ETH
+			marriage_with = ETH
+			1099 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			add_historical_friend = ETH
+			ETH = { add_historical_friend = ROOT }
+			MAM = { remove_fow = 24	}
+			1099 = {
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+				cawa_infantry = ROOT
+			}
+		}
 	}
 }
 
@@ -1528,6 +1631,7 @@ btc_por_india1 = {
 					name = por_makeshift_defenses
 					duration = -1
 				}
+				add_center_of_trade_level = 1
 			}
 			quelimane_area = {
 				add_permanent_claim = ROOT
@@ -1560,12 +1664,19 @@ btc_por_india1 = {
 			}
 		}	
 		effect = {
+			1186 = {
+				add_building_construction = {
+					building = shipyard
+					cost = 0
+				}
+			}
 			1187 = {
 				add_permanent_claim = ROOT
 			}
 			1191 = {
 				add_permanent_claim = ROOT
 			}
+			custom_tooltip = lower_zambezi_malaria_tt
 		}
 	}
 
@@ -1589,6 +1700,9 @@ btc_por_india1 = {
 			}
 		}	
 		effect = {
+			1191 = {
+				add_center_of_trade_level = 1
+			}
 			1190 = {
 				add_permanent_claim = ROOT
 			}
@@ -1596,6 +1710,9 @@ btc_por_india1 = {
 				add_permanent_claim = ROOT				
 			}
 			butua_area = {
+				add_permanent_claim = ROOT
+			}
+			limpopo_area = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -1613,23 +1730,6 @@ btc_por_india2 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
-	btc_socotra = {
-		icon = mission_socotra
-		required_missions = { btc_malindi }
-		position = 13
-		provinces_to_highlight = {
-			province_id = 1099
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
-		}		
-		trigger = {
-			1099 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}	
-		effect = {
-		}
-	}
 
 	btc_hormuz = {
 		icon = mission_portuguese_oman
@@ -1654,6 +1754,10 @@ btc_por_india2 = {
 					name = por_makeshift_defenses
 					duration = -1
 				}
+				add_center_of_trade_level = 1
+			}
+			400 = {
+				add_permanent_claim = ROOT
 			}
 			395 = {
 				add_permanent_claim = ROOT
@@ -1667,9 +1771,6 @@ btc_por_india2 = {
 			399 = {
 				add_permanent_claim = ROOT
 			}
-			400 = {
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 
@@ -1678,7 +1779,27 @@ btc_por_india2 = {
 		required_missions = { btc_hormuz }
 		position = 17
 		provinces_to_highlight = { }		
-		trigger = {	}	
+		trigger = {	
+			400 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_province_modifier = feitoria
+					has_province_modifier = fortified_feitoria
+				}
+			}
+			395 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			396 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			398 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			399 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
 		effect = { }
 	}
 
@@ -1704,9 +1825,34 @@ btc_por_india3 = {
 	}
 	has_country_shield = yes
 
+	btc_vasco_da_gama = {
+		icon = mission_vasco_da_gama
+		required_missions = { btc_good_hope }
+		position = 12
+		provinces_to_highlight = { }		
+		trigger = {
+			has_flagship = yes
+		}	
+		effect = {
+			define_explorer = {
+				name = "Vasco da Gama"
+				shock = 3
+				fire = 4
+				manuever = 6
+				siege = 4
+				trait = great_explorer_personality
+			}
+			custom_tooltip = cape_route_tt
+			hidden_effect = { 
+				discover_province = 1586 
+				discover_province = 1603 
+			}
+		}
+	}
+
 	btc_india = {
 		icon = mission_vasco_gama
-		required_missions = { btc_good_hope }
+		required_missions = { btc_vasco_da_gama }
 		position = 13
 		provinces_to_highlight = { }		
 		trigger = {	
@@ -1726,12 +1872,13 @@ btc_por_india3 = {
 		effect = {
 			custom_tooltip = btc_purchase_indian_province_tt
 			add_prestige = 50
-			if = {
-				limit = {
-					in_golden_age = yes
-				}
-				extend_golden_age = 120
-			}
+			extend_golden_age = 120
+			# if = {
+			# 	limit = {
+			# 		in_golden_age = yes
+			# 	}
+			# 	extend_golden_age = 120
+			# }
 		}
 	}
 
@@ -1759,6 +1906,13 @@ btc_por_india3 = {
 			596 = {
 				add_permanent_claim = ROOT
 			}
+			define_admiral = {
+				name = "Trist?o da Cunha"
+				shock = 6
+				fire = 3
+				manuever = 4
+				siege = 2
+			}
 			define_general = {
 				name = "Afonso de Albuquerque"
 				fire = 4
@@ -1767,13 +1921,7 @@ btc_por_india3 = {
 				siege = 6
 				trait = lion_of_the_seas_personality
 			}
-			define_admiral = {
-				name = "Trist?o da Cunha"
-				shock = 6
-				fire = 3
-				manuever = 4
-				siege = 2
-			}
+			custom_tooltip = albuquerque_ability_tt
 		} 
 	}
 
@@ -1800,6 +1948,7 @@ btc_por_india3 = {
 					name = por_makeshift_defenses
 					duration = -1
 				}
+				add_center_of_trade_level = 1
 			}
 			387 = {
 				add_permanent_claim = ROOT
@@ -1821,7 +1970,6 @@ btc_por_india3 = {
 				limit = {
 					has_leader = "Afonso de Albuquerque"
 				}
-				custom_tooltip = btc_muhammad_suez_plans_tt
 				if = {
 					limit = {
 						CDI = {
@@ -1846,7 +1994,19 @@ btc_por_india3 = {
 					}
 				}
 			}
-
+			hidden_effect = {
+				384 = {
+					owner = {
+						save_event_target_as = owner_of_medina
+					}
+				}
+			}
+			add_casus_belli = {
+				type = cb_get_mohamed
+				target = event_target:owner_of_medina
+				months = 60
+			}
+			custom_tooltip = divert_nile_tt
 		}
 	}
 
@@ -1856,7 +2016,22 @@ btc_por_india3 = {
 		position = 17
 		provinces_to_highlight = { }		
 		trigger = {	}	
-		effect = { }
+		effect = {
+			extend_golden_age = 120
+			custom_tooltip = add_cartaz_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_modifier = fortified_feitoria
+					}
+					add_province_modifier = {
+						name = cartaz
+						duration = -1
+					}
+				}				
+			}
+			custom_tooltip = enable_cartaz_tt
+		}
 	}
 }
 
@@ -1895,6 +2070,7 @@ btc_por_india4 = {
 					name = por_makeshift_defenses
 					duration = -1
 				}
+				add_center_of_trade_level = 1
 			}
 			johor_area = {
 				add_permanent_claim = ROOT
@@ -1998,6 +2174,7 @@ btc_por_india5 = {
 					name = por_makeshift_defenses
 					duration = -1
 				}
+				add_center_of_trade_level = 1
 			}
 			lanka_area = {
 				add_permanent_claim = ROOT
@@ -2029,7 +2206,23 @@ btc_por_india5 = {
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}	
-		effect = { }
+		effect = {
+			4455 = {
+				add_permanent_claim = ROOT
+			}
+			4430 = {
+				add_permanent_claim = ROOT
+			}
+			529 = {
+				add_permanent_claim = ROOT
+			}
+			2089 = {
+				add_permanent_claim = ROOT
+			}
+			4980 = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 
 	btc_bombay = {
@@ -2101,7 +2294,41 @@ btc_por_east1 = {
 		required_missions = { btc_spice }
 		position = 19
 		provinces_to_highlight = { }		
-		trigger = {	}	
+		trigger = {
+			trading_bonus = {
+				trade_goods = cloves
+				value = yes
+			}
+		}	
+		effect = {
+			367 = { change_trade_goods = cloves } 
+		}
+	}
+
+	btc_formosa = {
+		icon = dutch_formosa
+		required_missions = { btc_china }
+		position = 20
+		provinces_to_highlight = { }		
+		trigger = {	
+			taiwan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = { }
+	}
+
+	btc_haidao = {
+		icon = mission_pirate_fleet
+		required_missions = { btc_formosa }
+		position = 21
+		provinces_to_highlight = { }		
+		trigger = {
+			1371 = { privateer_power = { share = 20 country = ROOT } }
+			684 = { privateer_power = { share = 20 country = ROOT } }
+			4233 = { privateer_power = { share = 20 country = ROOT } }
+		}	
 		effect = { }
 	}
 }
@@ -2163,7 +2390,11 @@ btc_por_east3 = {
 		required_missions = { btc_famosa }
 		position = 18
 		provinces_to_highlight = { }		
-		trigger = {	}	
+		trigger = {
+			molluca_area = {
+				has_discovered = ROOT					
+			}
+		}	
 		effect = { }
 	}
 
@@ -2207,8 +2438,8 @@ btc_por_east4 = {
 	}
 	has_country_shield = yes
 
-	btc_circumnavigation = {
-		icon = mission_explore_the_world
+	btc_sunda = {
+		icon = mnd_maj_sunda_relations
 		required_missions = { btc_spice }
 		position = 19
 		provinces_to_highlight = { }		
@@ -2216,12 +2447,52 @@ btc_por_east4 = {
 		effect = { }
 	}
 
-	btc_haidao = {
-		icon = mission_pirate_fleet
-		required_missions = { btc_china }
+	btc_ambon = {
+		icon = mission_placeholder
+		required_missions = { btc_sunda }
 		position = 20
 		provinces_to_highlight = { }		
 		trigger = {	}	
+		effect = { }
+	}
+}
+
+btc_por_east5 = {
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+	potential = {
+		tag = POR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_australia = {
+		icon = mission_australia
+		required_missions = { btc_spice }
+		position = 19
+		provinces_to_highlight = { }		
+		trigger = {
+			australia_region = {
+				has_discovered = ROOT
+			}
+		}	
+		effect = { }
+	}
+
+	btc_platypus = {
+		icon = mission_paradox
+		required_missions = { btc_australia }
+		position = 20
+		provinces_to_highlight = { }		
+		trigger = {	
+			australia_region = {
+				type = all
+				has_discovered = ROOT
+			}
+		}	
 		effect = { }
 	}
 }
@@ -2245,8 +2516,18 @@ btc_por_xavier1 = {
 		required_missions = { btc_societa_jesu }
 		position = 23
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {	
+			calc_true_if = {
+				all_province = {
+					superregion = southern_africa_superregion
+					religion = ROOT
+				}
+				amount = 10
+			}
+		}		
+		effect = {
+			add_papal_influence = 20
+		}
 	}
 }
 
@@ -2267,8 +2548,18 @@ btc_por_xavier2 = {
 		required_missions = { btc_societa_jesu }
 		position = 23
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {	
+			calc_true_if = {
+				all_province = {
+					superregion = india_superregion
+					religion = ROOT
+				}
+				amount = 10
+			}
+		}	
+		effect = {
+			add_papal_influence = 20
+		}
 	}
 }
 
@@ -2289,8 +2580,35 @@ btc_por_xavier3 = {
 		required_missions = { }
 		position = 22
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {
+			has_country_modifier = the_societas_jesu
+			has_institution = new_world_i
+			PAP = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+		effect = { 
+			define_advisor = {
+				type = theologian
+				skill = 2
+				name = "Francisco Xavier"
+				age = 35
+				location = 227
+				cost_multiplier = 0.25
+				culture = basque
+				religion = catholic
+			}
+			custom_tooltip = enable_propogate_religion_effect_tt
+			hidden_effect = {
+				set_country_flag = can_use_propagate_religion
+			}
+			country_event = {
+				id = btc_events.46
+			}
+		}
 	}
 
 	btc_xavier_indonesia = {
@@ -2298,8 +2616,18 @@ btc_por_xavier3 = {
 		required_missions = { btc_societa_jesu }
 		position = 23
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {	
+			calc_true_if = {
+				all_province = {
+					superregion = east_indies_superregion
+					religion = ROOT
+				}
+				amount = 10
+			}
+		}	
+		effect = {
+			add_papal_influence = 20
+		}
 	}
 
 	btc_xavier = {
@@ -2308,7 +2636,12 @@ btc_por_xavier3 = {
 		position = 24
 		provinces_to_highlight = { }		
 		trigger = {	}	
-		effect = { }
+		effect = {
+			add_country_modifier = {
+				name = legacy_of_francis_xavier
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -2329,8 +2662,18 @@ btc_por_xavier4 = {
 		required_missions = { btc_societa_jesu }
 		position = 23
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {	
+			calc_true_if = {
+				all_province = {
+					superregion = china_superregion
+					religion = ROOT
+				}
+				amount = 10
+			}
+		}	
+		effect = {
+			add_papal_influence = 20
+		}
 	}
 }
 
@@ -2351,8 +2694,18 @@ btc_por_xavier5 = {
 		required_missions = { btc_societa_jesu }
 		position = 23
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {	
+			calc_true_if = {
+				all_province = {
+					superregion = far_east_superregion
+					religion = ROOT
+				}
+				amount = 10
+			}
+		}		
+		effect = {
+			add_papal_influence = 20
+		}
 	}
 }
 
@@ -2375,8 +2728,27 @@ btc_por_lisboa1 = {
 		required_missions = { }
 		position = 25
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {
+			mission_completed = btc_casa_india
+			227 = {
+				owned_by = ROOT
+				development = 20
+			}
+			treasury = 200
+		}	
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = lisbon_earthquake_happened
+				}
+				add_prestige = 10
+			}
+			else = {
+				country_event = {
+					id = btc_por.120
+				}
+			}
+		}
 	}
 }
 
@@ -2397,8 +2769,36 @@ btc_por_lisboa2 = {
 		required_missions = { }
 		position = 25
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {
+			mission_completed = btc_casa_india
+			227 = {
+				owned_by = ROOT
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+				if = {
+					limit = {
+						owner = { ai = no }
+					}
+					num_of_times_expanded_infrastructure = 1
+				}
+			}
+			treasury = 200
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = lisbon_earthquake_happened
+				}
+				add_prestige = 10
+			}
+			else = {
+				country_event = {
+					id = btc_por.124
+				}
+			}
+		}
 	}
 }
 
@@ -2419,8 +2819,30 @@ btc_por_lisboa3 = {
 		required_missions = { }
 		position = 25
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {
+			mission_completed = btc_casa_india
+			227 = {
+				owned_by = ROOT
+				OR = {
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
+			}
+			treasury = 200
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = lisbon_earthquake_happened
+				}
+				add_prestige = 10
+			}
+			else = {
+				country_event = {
+					id = btc_por.123
+				}
+			}
+		}
 	}
 
 	btc_monumental = {
@@ -2428,8 +2850,148 @@ btc_por_lisboa3 = {
 		required_missions = { btc_ribeira btc_jeronimos btc_belem btc_mafra btc_pena }
 		position = 26
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {
+			OR = {
+				if = { 
+					limit = { has_dlc = "Leviathan" }
+					custom_trigger_tooltip = {
+						tooltip = monumental1_tt
+						227 = {
+							has_great_project = {
+								type = ribeira_palace
+								tier = 3
+							}
+							has_great_project = {
+								type = jeronimos_monastery
+								tier = 3
+							}
+							has_great_project = {
+								type = belem_tower
+								tier = 3
+							}
+							has_great_project = {
+								type = mafra_convent
+								tier = 3
+							}
+							has_great_project = {
+								type = pena_palace
+								tier = 3
+							}
+						}
+					}
+				}
+				else = {
+					custom_trigger_tooltip = {
+						tooltip = monumental2_tt
+						227 = {
+							has_province_modifier = ribeira_palace_mod
+							has_province_modifier = jeronimos_monastery_mod
+							has_province_modifier = tower_of_belem_mod
+							has_province_modifier = mafra_convent_mod
+							has_province_modifier = pena_palace_mod
+							num_of_times_expanded_infrastructure = 4
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = monumental3_tt
+					has_country_flag = lisbon_earthquake_happened
+					227 = {
+						NOT = {
+							has_province_modifier = massive_earthquake
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { 
+					has_dlc = "Leviathan"
+				}
+				custom_tooltip = monumental1_eff
+				tooltip = {	
+					add_country_modifier = {
+						name = monumental_good
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = monumental2_eff
+				tooltip = {	
+					add_country_modifier = {
+						name = monumental_good
+						duration = -1
+					}
+				}
+			}
+			custom_tooltip = monumental3_eff
+			tooltip = {		
+				add_prestige = 10
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_dlc = "Leviathan"
+						227 = {
+							has_great_project = {
+								type = ribeira_palace
+								tier = 3
+							}
+							has_great_project = {
+								type = jeronimos_monastery
+								tier = 3
+							}
+							has_great_project = {
+								type = belem_tower
+								tier = 3
+							}
+							has_great_project = {
+								type = mafra_convent
+								tier = 3
+							}
+							has_great_project = {
+								type = pena_palace
+								tier = 3
+							}
+						}
+					}
+					add_country_modifier = {
+						name = monumental_good
+						duration = -1
+					}
+					set_country_flag = monumental_best
+				}
+				else_if = {
+					limit = { 
+						227 = {
+							has_province_modifier = ribeira_palace_mod
+							has_province_modifier = jeronimos_monastery_mod
+							has_province_modifier = tower_of_belem_mod
+							has_province_modifier = mafra_convent_mod
+							has_province_modifier = pena_palace_mod
+							num_of_times_expanded_infrastructure = 4
+						}
+					}
+					add_country_modifier = {
+						name = monumental_good
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = { 
+						has_country_flag = lisbon_earthquake_happened
+						227 = {
+							NOT = {
+								has_province_modifier = massive_earthquake
+							}
+						}						
+					}
+					add_prestige = 10
+				}
+			}
+		}
 	}
 }
 
@@ -2450,8 +3012,27 @@ btc_por_lisboa4 = {
 		required_missions = { }
 		position = 25
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {
+			227 = {
+				owned_by = ROOT
+				num_of_times_expanded_infrastructure = 2
+			}
+			absolutism = 50
+			treasury = 500
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = lisbon_earthquake_happened
+				}
+				add_prestige = 10
+			}
+			else = {
+				country_event = {
+					id = btc_por.122
+				}
+			}
+		}
 	}
 }
 
@@ -2472,7 +3053,25 @@ btc_por_lisboa5 = {
 		required_missions = { }
 		position = 25
 		provinces_to_highlight = { }		
-		trigger = {	}	
-		effect = { }
+		trigger = {
+			227 = {
+				owned_by = ROOT
+				num_of_times_expanded_infrastructure = 3
+			}
+			treasury = 500
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = lisbon_earthquake_happened
+				}
+				add_prestige = 10
+			}
+			else = {
+				country_event = {
+					id = btc_por.102
+				}
+			}
+		}
 	}
 }

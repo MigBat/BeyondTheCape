@@ -49,7 +49,7 @@
 517 = "Surate"
 522 = "Deli"
 667 = "Cantão"
-684 = "Liampó"
+684 = "Hancheu"
 1096 = "Cabo Verde"
 1099 = "Socotorá"
 1097 = "Fernando Pó"
@@ -87,7 +87,7 @@
 2002 = "Ilhas Galápagos"
 
 1987 = "Ilhas da Sociedade"
-1725 = "Tuamotu"
+1725 = "Arquipélago de Tuamotu"
 1238 = "Ilhas Salomão"
 2025 = "Geórgia do Sul"
 1095 = "Malvinas"
@@ -131,6 +131,8 @@
 4766 = "Verdum"
 189 = "Lorena"
 188 = "Métis"
+168 = "Cadomus"
+4385 = "Cherburgo"
 
 #Itália
 2982 = "Siracusa"
@@ -174,7 +176,7 @@
 209 = "Biscaia"
 4552 = "Palência"
 4789 = "Segóvia"
-4557 = "Castelo de Aiube" #The name derives from the arabic for "qal'a 'Ayyub", that means "castle of Aiube", so,I simply translated it to portuguese 
+4557 = "Castel'de Aiube" #The name derives from the arabic for "qal'a 'Ayyub", that means "castle of Aiube", so,I simply translated it to portuguese 
 4549 = "Xátiva"
 220 = "Valência"
 
@@ -188,8 +190,8 @@
 2468 = "Tédula"
 345 = "Safim" #Again, Abda is a province by itself, not a city
 2470 = "Mogador" #Haha is a berber tribal federation,and the biggest city I found is Essaouira, but in medieval charts it was called Mogador by the portuguese.
-1110 = "Santa Cruz do Cabo" # it was a major portuguese stronghold in the area, more than Agadir
-347 = "Santa Cruz do Mar" # firstly colonized by the spanish in 1478, but later abandoned. Couldn't find other more...interesting names.
+1110 = "Santa Cruz do Cabo de Gué" # it was a major portuguese stronghold in the area, more than Agadir
+347 = "Santa Cruz do Mar Pequeno" # firstly colonized by the spanish in 1478, but later abandoned. Couldn't find other more...interesting names.
 2464 = "Uarzazate" # Ouarzazate is in french.
 2466 = "Dra" # Technically speaking, Draa is in fact a river, but no big settlement is near the game province area.
  
@@ -236,7 +238,7 @@
 1119 = "Costa do Grão"
 2258 = "Axim"
 4964 = "Costa dos Escravos"
-1141 = "São João de Ajudá"
+1141 = "Forte de São João Baptista de Ajudá"
 2290 = "Jebu"
 2294 = "Cabo Formoso" #might be left as it is, maybe not
 
@@ -255,9 +257,9 @@
 789 = "Terra dos Fumos" # Accordingly to the Fern?o Vaz Dourado maps
 1182 = "Matola"
 1193 = "Praça de Santiago"
-4032 = "Praça de Agostinho"
+4032 = "Praça de Santo Agostinho"
 4031 = "Terra Delgada"
-1194 = "Santo André"
+1194 = "Terra de Santo André"
 4022 = "Cadi" # according to the atlas of FVD
 4028 = "São Sebastião"
 4029 = "São Romão"
@@ -283,7 +285,7 @@
 2790 = "Mete"
 1230 = "Maçuá"
 1232 = "Suaquém"
-2324 = "Aguada" #Saddly, it wasn't the first thing I've read...:(
+2324 = "Aguada de Miguel Carvalho" #Saddly, it wasn't the first thing I've read...
 
 #Middle East and Persia
 #Arabia
@@ -331,8 +333,7 @@
 4430 = "Damão"
 
 #Deccan
-4980 = "Bombaim"
-529 = "Tana" #Tana is called Bombaim in the portuguese charts
+529 = "Bombaim" #Tana is called Bombaim in the portuguese charts
 530 = "Dabul"
 4429 = "Carapatão" #The original name doesn't appear on the maps, but the closest one seems to be this one.
 4427 = "Onor"
@@ -497,11 +498,11 @@
 
 1236 = "Nova Lusitânia"
 1986 = "Nova Galiza"
-1239 = "Arquipélago Del'Rei"
+1239 = "Arquipélago Del'Rei D.João II"
 1242 = "Ilha da Boavista"
 4938 = "Gaia do Pacífico"
 4937 = "Ilha da Maia Marítima"
-1244 = "Ilhas da Conceição"
+1244 = "Ilhas da Nossa Senhora da Conceição"
 1241 = "Quiribati"
 1991 = "Ilhas da Boa Viagem"
 1993 = "Ilhas dos Pintados"
@@ -518,6 +519,29 @@
 2154 = "Taipé"
 738 = "Tainam"
 2155 = "Formosa"
+4975 = "Tamão"
+669 = "Fucheu"
+1829 = "Chincheo" #As depicted in the maps of FVD.
+2156 = "Chabaqueo" #Also as depicted in the maps of FVD, also by cross-referencing.
+2157 = "Huichiu"
+665 = "Chiuchim" #According to the maps of jan huygen van linschoten.
+2159 = "Leicheu"
+666 = "Chingou" #666, the number of the beast, Hell and fire was spawned to be released....
+2160 = "Ainão"
+2161 = "Limcheu"
+1824 = "Bucheu"
+2149 = "Liampó"
+2148 = "Chauxim"
+1822 = "Sucheu"
+2145 = "Chinquião" #From the maps of JHVL.
+1821 = "Nanquim"
+685 = "Iangcheu"
+2142 = "Huaim"
+4196 = "Haicheu"
+690 = "Chingcheu"
+2139 = "Laicheu"
+2138 = "Ribeira Brava" #Wuding is a river with strong currents.
+695 = "Heijão"
 
 #Philipines
 655 = "Palauã"
@@ -526,7 +550,7 @@
 4348 = "Ifugão"
 2698 = "Cidade de São Carlos"
 4349 = "Lagoa de Taluão"
-2699 = "Nova Tavira" #The spaniards called Naga, the main city around, Nueva Cáceres, so I did the same in pt.
+2699 = "Nova Mértola" #The spaniards called Naga, the main city around, Nueva Cáceres, so I did the same in pt.
 654 = "Sámar"
 4353 = "Silásia" #From the maps.
 4350 = "Mindouro"
@@ -592,7 +616,8 @@
 4311 = "Afioncaraquissar"
 1848 = "Burdur"
 2298 = "Antália"
-321 = "Chipre"
+321 = "Nicósia"
+4973 = "Famagusta"
 319 = "Mula"
 4309 = "Aidem"
 318 = "Esmirna"
@@ -643,6 +668,8 @@
 152 = "Varasdim" #Adaptation of the OG "Varazd".
 131 = "Zagrebe"
 4752 = "Riéca"
+163 = "Heraclião"
+4974 = "Chania"
 
 #Austria
 130 = "Ístria"
@@ -732,7 +759,7 @@
 2593 = "Lago da Mata" #Literally the translation of french and english sources.
 1008 = "Rio Vermelho"
 1010 = "Terra do Infante"
-1011 = "Cinogoulim" #Adaptation of "Kinougeoulini.
+1011 = "Cinogoulim" #Adaptation of "Kinougeoulini".
 4920 = "Vadopabina" #Adaptation of "Wadopabina".
 2598 = "Ixabine" #Adaptation of "Ye Xa Yabine".
 2597 = "Sascachevão"
@@ -816,6 +843,16 @@
 953 = "Marilândia"
 2554 = "Delauare"
 2553 = "Potomaque"
+957 = "Vale dos Cisnes" #Adapted from the first colony in the area, the dutch colony of "Zwaanendael", meaning "Swan valley".
+2552 = "Manaoques" #Adaptation of "Manahoc".
+4889 = "Monetões" #Adaptation of the other name of the Mohetan tribe, Moneton.
+951 = "Pedras Brancas" #Direct translation of the native name.
+2555 = "Forte Carvalho" #From the french "Fort Du Quesne", being it etymologicaly from the norman "du chêne", meaning "of the oak".
+2556 = "Onojutas"
+4875 = "Velhicanos"
+4876 = "Susqueana" #Adaptation of the river name "Susquehanna".
+2557 = "Quadroque" #From the Captain John Smith's map.
+4954 = "Ilha Longa"
 
 #Louisiana
 893 = "Nova Lisboa"
@@ -1069,6 +1106,11 @@
 499 = "Santa Lúcia"
 500 = "São Vicente"
 502 = "Trindade"
+4966 "Ilha de Pinas" #Name from the maps of FVD, also named "ilha de pinhas" in modern portuguese.
+4967 "Ilhas Caimão"
+4968 "Granada"
+4970 "Ilha Margarita"
+4971 "Ciguate" #Today's Eleuthera was called Cigateo up to the 16th century, being its name "Ciguate" in the portuguese maps.
 
 #Colombia
 837 = "Nicarágua"
@@ -1140,7 +1182,7 @@
 2837 = "Santa Catarina"
 794 = "Alava" #One of the many towns that were created in this area.
 2882 = "Forte Bragança"
-776 = "Vila Real d'Conceição"
+776 = " Vila Real d'Conceição"
 775 = "Assunção"
 2855 = "Candelária"
 2853 = "Guaviravi" #The town had the same name as the river. This is the river.
@@ -1621,3 +1663,31 @@
 4083 = "Xinje"
 4092 = "Mussumba"
 4093 = "Luena"
+
+#Japão
+1015 = "Ilhas Léquias" #Riukyu was called "lequia" by the portuguese.
+4180 = "Fiunga" #As it's described in a doc from the Universidade Lusíada.
+4182 = "Nagasáqui"
+1818 = "Facata"
+4186 = "Hiro" #From the maps of FVD.
+1820 = "Aua"
+4183 = "Iuami"
+1825 = "Geixu" #Adaptation of the other name for the Aki province "Geishu".
+4184 = "Bizene"
+4187 = "Quichu"
+1832 = "Iamato"
+1020 = "Quioto"
+1030 = "Bixu" #Adaptation of the other designation of the province, that is, "Bishu".
+4360 = "Sanxu"
+4188 = "Xinano"
+1029 = "Coxu"
+1843 = "Joxu"
+1028 = "Buxu"
+4190 = "Fusa"
+4191 = "Ximotsuque"
+1026 = "Ricuxo"
+4193 = "Oxima"
+1847 = "Sumuncuros" #Adaptation of the indigenous group of the area, the sum-un-kur.
+1031 = "Peniuncuros"
+1852 = "Menasuncuros"
+1032 = "Ilhas Curilhas"

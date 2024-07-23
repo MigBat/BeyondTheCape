@@ -169,30 +169,36 @@ part_of_spice_trade_conflict = {
 	OR = {
 		tag = event_target:por_spice_trade
 		tag = event_target:mam_spice_trade
-		has_country_flag = is_por_ally
 		has_country_flag = is_mam_ally
+		has_country_flag = is_por_ally
+		any_owned_province = {
+			OR = {
+				trade_company_region = trade_company_east_africa
+				trade_company_region = trade_company_gulf_of_aden
+				trade_company_region = trade_company_alexandria
+				trade_company_region = trade_company_basra
+				trade_company_region = trade_company_hormuz
+				trade_company_region = trade_company_west_india
+				trade_company_region = trade_company_coromandel
+				trade_company_region = trade_company_east_india
+				trade_company_region = trade_company_indonesia
+				trade_company_region = trade_company_east_africa
+				trade_company_region = trade_company_east_africa
+				trade_company_region = trade_company_east_africa
+				trade_company_region = trade_company_east_africa
+				trade_company_region = trade_company_east_africa
+				trade_company_region = trade_company_east_africa
+				trade_company_region = trade_company_east_africa
+			}
+		}	
 	}
 }
 
-can_participate_in_spice_war = {
-	any_owned_province = {
-		OR = {
-			trade_company_region = trade_company_east_africa
-			trade_company_region = trade_company_gulf_of_aden
-			trade_company_region = trade_company_alexandria
-			trade_company_region = trade_company_basra
-			trade_company_region = trade_company_hormuz
-			trade_company_region = trade_company_west_india
-			trade_company_region = trade_company_coromandel
-			trade_company_region = trade_company_east_india
-			trade_company_region = trade_company_indonesia
-			trade_company_region = trade_company_east_africa
-			trade_company_region = trade_company_east_africa
-			trade_company_region = trade_company_east_africa
-			trade_company_region = trade_company_east_africa
-			trade_company_region = trade_company_east_africa
-			trade_company_region = trade_company_east_africa
-			trade_company_region = trade_company_east_africa
-		}
+participates_in_spice_trade_conflict = {
+	OR = {
+		tag = event_target:por_spice_trade
+		tag = event_target:mam_spice_trade
+		has_country_flag = is_mam_ally
+		has_country_flag = is_por_ally
 	}
 }

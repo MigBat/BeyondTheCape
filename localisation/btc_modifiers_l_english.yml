@@ -484,5 +484,35 @@
  casa_da_guine: "Casa da Guiné"
  desc_casa_da_guine: ""
 
- duke_of_braganca: "Duke of Bragança"
+ duke_of_braganca: "House Bragança"
  desc_duke_of_braganca: ""
+
+ por_cacadores: "Caçadores"
+ desc_por_cacadores: ""
+
+ legacy_of_francis_xavier: "Legacy of Francisco Xavier"
+ desc_legacy_of_francis_xavier: ""
+
+ nile_diverted: "Nile Diverted"
+ desc_nile_diverted: "The Nile river has been diverted! It no longer blesses our crops here..."
+
+ montante_swords: "Montantes"
+ desc_montante_swords: ""
+
+ mam_win_spice_trade_conflict: "Won the Spice Trade Conflict"
+ desc_mam_win_spice_trade_conflict: ""
+
+ por_win_spice_trade_conflict: "Won the Spice Trade Conflict"
+ desc_por_win_spice_trade_conflict: ""
+
+ mam_lose_spice_trade_conflict: "Lost the Spice Trade Conflict"
+ desc_mam_lose_spice_trade_conflict: ""
+
+ por_lose_spice_trade_conflict: "Lost the Spice Trade Conflict"
+ desc_por_lose_spice_trade_conflict: ""
+
+ cartaz: "Cartaz"
+ desc_cartaz: ""
+
+ ven_mam_forcelimit: "Venice Naval Support"
+ desc_ven_mam_forcelimit: ""

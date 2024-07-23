@@ -729,7 +729,7 @@ categories =  {
 			4561 4566 4553 # new provinces 1.28
 			4669 4701 4699 4780 # 1.30 Greece and Bulgaria
 			# BTC #
-			4949 1172 1167
+			4949 1172 1167 4943
 		}
 	}
 

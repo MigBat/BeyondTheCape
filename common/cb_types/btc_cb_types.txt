@@ -15,3 +15,17 @@ cb_castilian_civil_war = {
 
 	war_goal = wg_castilian_civil_war
 }
+
+cb_get_mohamed = {
+	valid_for_subject = no
+	holy_war = yes
+	is_triggered_only = yes
+	months = 60
+
+	prerequisites = {
+		NOT = { religion_group = FROM }
+		NOT = {	has_matching_religion = FROM }
+	}
+
+	war_goal = superiority_crusade
+}

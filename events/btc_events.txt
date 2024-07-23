@@ -152,520 +152,520 @@ province_event = {
 
 # The Portuguese Have Grown Too Powerful #
 
-country_event = {
-	id = btc_events.7
-	title = btc_events.7_t
-	desc = btc_events.7_d
-	picture = SAD_MERCHANT_eventPicture
+# country_event = {
+# 	id = btc_events.7
+# 	title = btc_events.7_t
+# 	desc = btc_events.7_d
+# 	picture = SAD_MERCHANT_eventPicture
 
-	fire_only_once = yes
-	major = yes
+# 	fire_only_once = yes
+# 	major = yes
 
-	trigger = {
-		tag = MAM
-		has_country_flag = MAM_POR_conflict
-		is_at_war = no
-		OR = {
-			exists = POR
-			exists = IBE
-		}
-		owns = 2315
-		4346 = {				#Gulf of Aden
-			OR = {
-				is_strongest_trade_power = POR
-				is_strongest_trade_power = IBE
-			}
-		}
-	}
+# 	trigger = {
+# 		tag = MAM
+# 		has_country_flag = MAM_POR_conflict
+# 		is_at_war = no
+# 		OR = {
+# 			exists = POR
+# 			exists = IBE
+# 		}
+# 		owns = 2315
+# 		4346 = {				#Gulf of Aden
+# 			OR = {
+# 				is_strongest_trade_power = POR
+# 				is_strongest_trade_power = IBE
+# 			}
+# 		}
+# 	}
 	
-	mean_time_to_happen = {
-		months = 3
-	}
+# 	mean_time_to_happen = {
+# 		months = 3
+# 	}
 	
-	option = {
-		name = btc_events.7a
-		ai_chance = { factor = 90 }
+# 	option = {
+# 		name = btc_events.7a
+# 		ai_chance = { factor = 90 }
 
-		if = {
-			limit = {
-				exists = POR
-			}
-			POR = {
-				declare_war_with_cb = {
-					casus_belli = cb_trade_war_triggered
-					who = MAM
-				}	
-			}
-		}
-		else_if = {
-			limit = {
-				exists = IBE
-			}
-			IBE = {
-				declare_war_with_cb = {
-					casus_belli = cb_trade_war_triggered
-					who = MAM
-				}
-			}
-		}			
-	}
+# 		if = {
+# 			limit = {
+# 				exists = POR
+# 			}
+# 			POR = {
+# 				declare_war_with_cb = {
+# 					casus_belli = cb_trade_war_triggered
+# 					who = MAM
+# 				}	
+# 			}
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				exists = IBE
+# 			}
+# 			IBE = {
+# 				declare_war_with_cb = {
+# 					casus_belli = cb_trade_war_triggered
+# 					who = MAM
+# 				}
+# 			}
+# 		}			
+# 	}
 
-	option = {
-		name = btc_events.7b
-		add_prestige = -25
-		4346 = {
-			add_trade_modifier = {
-				who = root
-				duration = 3650
-				power = -5
-				key = surrender_the_trade
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = btc_events.7b
+# 		add_prestige = -25
+# 		4346 = {
+# 			add_trade_modifier = {
+# 				who = root
+# 				duration = 3650
+# 				power = -5
+# 				key = surrender_the_trade
+# 			}
+# 		}
+# 	}
+# }
 
 # Lourenço de Almeida #
 
-country_event = {
-	id = btc_events.8
-	title = btc_events.8_t
-	desc = btc_events.8_d
-	picture = BANKRUPTCY_eventPicture
+# country_event = {
+# 	id = btc_events.8
+# 	title = btc_events.8_t
+# 	desc = btc_events.8_d
+# 	picture = BANKRUPTCY_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Send a letter apologising
-		name = btc_events.8a
+# 	option = {	# Send a letter apologising
+# 		name = btc_events.8a
 
-		ai_chance = {
-			factor = 90
-		}
+# 		ai_chance = {
+# 			factor = 90
+# 		}
 
-		add_prestige = 10
+# 		add_prestige = 10
 
-		set_country_flag = killed_lourenco
+# 		set_country_flag = killed_lourenco
 
-		if = {
-			limit = {
-				exists = POR
-			}
-			POR = {
-				country_event = {
-					id = btc_events.9
-					days = 1
-				}
-			}
-		}
-		else = {
-			IBE = {
-				country_event = {
-					id = btc_events.9
-					days = 1
-				}
-			}
-		}
+# 		if = {
+# 			limit = {
+# 				exists = POR
+# 			}
+# 			POR = {
+# 				country_event = {
+# 					id = btc_events.9
+# 					days = 1
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			IBE = {
+# 				country_event = {
+# 					id = btc_events.9
+# 					days = 1
+# 				}
+# 			}
+# 		}
 		
-	}
+# 	}
 
-	option = {	# He got no less than what he deserved
-		name = btc_events.8b
+# 	option = {	# He got no less than what he deserved
+# 		name = btc_events.8b
 
-		ai_chance = {
-			factor = 10
-		}
+# 		ai_chance = {
+# 			factor = 10
+# 		}
 		
-		add_legitimacy = 10
+# 		add_legitimacy = 10
 
-		set_country_flag = killed_lourenco
+# 		set_country_flag = killed_lourenco
 
-		if = {
-			limit = {
-				exists = POR
-			}
-			POR = {
-				country_event = {
-					id = btc_events.9
-					days = 1
-				}
-			}
-		}
-		else = {
-			IBE = {
-				country_event = {
-					id = btc_events.9
-					days = 1
-				}
-			}
-		}
-	}
-}
+# 		if = {
+# 			limit = {
+# 				exists = POR
+# 			}
+# 			POR = {
+# 				country_event = {
+# 					id = btc_events.9
+# 					days = 1
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			IBE = {
+# 				country_event = {
+# 					id = btc_events.9
+# 					days = 1
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
 # A Son's Blood #
 
-country_event = {
-	id = btc_events.9
-	title = btc_events.9_t
-	desc = btc_events.9_d
-	picture = NAVAL_MILITARY_eventPicture
+# country_event = {
+# 	id = btc_events.9
+# 	title = btc_events.9_t
+# 	desc = btc_events.9_d
+# 	picture = NAVAL_MILITARY_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Send Albuquerque to retrieve him at once
-		name = btc_events.9a
+# 	option = {	# Send Albuquerque to retrieve him at once
+# 		name = btc_events.9a
 
-		ai_chance = {
-			factor = 90
-		}
+# 		ai_chance = {
+# 			factor = 90
+# 		}
 
-		custom_tooltip = get_francisco_tt
+# 		custom_tooltip = get_francisco_tt
 
-		set_country_flag = get_francisco
-	}
+# 		set_country_flag = get_francisco
+# 	}
 
-	option = {	# Send Albuquerque to assist him
-		name = btc_events.9b
+# 	option = {	# Send Albuquerque to assist him
+# 		name = btc_events.9b
 
-		ai_chance = {
-			factor = 10
-		}
+# 		ai_chance = {
+# 			factor = 10
+# 		}
 
-		custom_tooltip = keep_francisco_tt
+# 		custom_tooltip = keep_francisco_tt
 
-		set_country_flag = keep_francisco
-		add_legitimacy = -20
-	}
-}
+# 		set_country_flag = keep_francisco
+# 		add_legitimacy = -20
+# 	}
+# }
 
 # Battle of Diu #
 
-country_event = {
-	id = btc_events.10
-	title = btc_events.10_t
-	desc = btc_events.10_d
-	picture = FLAGSHIP_SUNK_eventPicture
+# country_event = {
+# 	id = btc_events.10
+# 	title = btc_events.10_t
+# 	desc = btc_events.10_d
+# 	picture = FLAGSHIP_SUNK_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = btc_events.10a
+# 	option = {
+# 		name = btc_events.10a
 
-		trigger = {
-			has_country_flag = get_francisco
-		}
+# 		trigger = {
+# 			has_country_flag = get_francisco
+# 		}
 
-		set_country_flag = battle_of_diu
+# 		set_country_flag = battle_of_diu
 
-		define_general = {
-			name = "Afonso de Albuquerque"
-			fire = 5
-			shock = 5
-			manuever = 4
-			siege = 2
-			trait = master_of_arms_personality
-		}
-		kill_leader = { type = "Francisco de Almeida" }
+# 		define_general = {
+# 			name = "Afonso de Albuquerque"
+# 			fire = 5
+# 			shock = 5
+# 			manuever = 4
+# 			siege = 2
+# 			trait = master_of_arms_personality
+# 		}
+# 		kill_leader = { type = "Francisco de Almeida" }
 
-		if = {
-			limit = {
-				OR = {
-					HOL = {
-						NOT = { mission_completed = btc_ned_mare_liberum }
-					}
-					NED = {
-						NOT = { mission_completed = btc_ned_mare_liberum }
-					}
-					ROOT = {
-						NOT = { mission_completed = btc_por_legacy_of_albuquerque }
-					}
-				}
-			}
-			4346 = {
-				remove_trade_modifier = {
-					who = root
-					key = portuguese_privateers
-				}
-				add_trade_modifier = {
-					who = root
-					duration = -1
-					power = 25
-					key = spice_trade_monopoly
-				}		
-			}
-			1334 = {
-				add_trade_modifier = {
-					who = root
-					duration = -1
-					power = 25
-					key = spice_trade_monopoly
-				}		
-			}
-			1340 = {
-				add_trade_modifier = {
-					who = root
-					duration = -1
-					power = 25
-					key = spice_trade_monopoly
-				}			
-			}
-			504 = {
-				add_trade_modifier = {
-					who = root
-					duration = -1
-					power = 25
-					key = spice_trade_monopoly
-				}			
-			}
-			1343 = {
-				add_trade_modifier = {
-					who = root
-					duration = -1
-					power = 25
-					key = spice_trade_monopoly
-				}		
-			}
-			1361 = {
-				add_trade_modifier = {
-					who = root
-					duration = -1
-					power = 25
-					key = spice_trade_monopoly
-				}			
-			}
-		}
-	}
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					HOL = {
+# 						NOT = { mission_completed = btc_ned_mare_liberum }
+# 					}
+# 					NED = {
+# 						NOT = { mission_completed = btc_ned_mare_liberum }
+# 					}
+# 					ROOT = {
+# 						NOT = { mission_completed = btc_por_legacy_of_albuquerque }
+# 					}
+# 				}
+# 			}
+# 			4346 = {
+# 				remove_trade_modifier = {
+# 					who = root
+# 					key = portuguese_privateers
+# 				}
+# 				add_trade_modifier = {
+# 					who = root
+# 					duration = -1
+# 					power = 25
+# 					key = spice_trade_monopoly
+# 				}		
+# 			}
+# 			1334 = {
+# 				add_trade_modifier = {
+# 					who = root
+# 					duration = -1
+# 					power = 25
+# 					key = spice_trade_monopoly
+# 				}		
+# 			}
+# 			1340 = {
+# 				add_trade_modifier = {
+# 					who = root
+# 					duration = -1
+# 					power = 25
+# 					key = spice_trade_monopoly
+# 				}			
+# 			}
+# 			504 = {
+# 				add_trade_modifier = {
+# 					who = root
+# 					duration = -1
+# 					power = 25
+# 					key = spice_trade_monopoly
+# 				}			
+# 			}
+# 			1343 = {
+# 				add_trade_modifier = {
+# 					who = root
+# 					duration = -1
+# 					power = 25
+# 					key = spice_trade_monopoly
+# 				}		
+# 			}
+# 			1361 = {
+# 				add_trade_modifier = {
+# 					who = root
+# 					duration = -1
+# 					power = 25
+# 					key = spice_trade_monopoly
+# 				}			
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = btc_events.10b
+# 	option = {
+# 		name = btc_events.10b
 
-		trigger = {
-			has_country_flag = keep_francisco
-		}
+# 		trigger = {
+# 			has_country_flag = keep_francisco
+# 		}
 
-		set_country_flag = battle_of_diu
+# 		set_country_flag = battle_of_diu
 
-		define_general = {
-			name = "Afonso de Albuquerque"
-			fire = 5
-			shock = 5
-			manuever = 4
-			siege = 2
-			trait = master_of_arms_personality
-		}
+# 		define_general = {
+# 			name = "Afonso de Albuquerque"
+# 			fire = 5
+# 			shock = 5
+# 			manuever = 4
+# 			siege = 2
+# 			trait = master_of_arms_personality
+# 		}
 
-		4346 = {
-			remove_trade_modifier = {
-				who = root
-				key = portuguese_privateers
-			}
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = 25
-				key = spice_trade_monopoly
-			}		
-		}
-		1334 = {
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = 25
-				key = spice_trade_monopoly
-			}			
-		}
-		1340 = {
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = 25
-				key = spice_trade_monopoly
-			}		
-		}
-		504 = {
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = 25
-				key = spice_trade_monopoly
-			}		
-		}
-	}
-}
+# 		4346 = {
+# 			remove_trade_modifier = {
+# 				who = root
+# 				key = portuguese_privateers
+# 			}
+# 			add_trade_modifier = {
+# 				who = root
+# 				duration = -1
+# 				power = 25
+# 				key = spice_trade_monopoly
+# 			}		
+# 		}
+# 		1334 = {
+# 			add_trade_modifier = {
+# 				who = root
+# 				duration = -1
+# 				power = 25
+# 				key = spice_trade_monopoly
+# 			}			
+# 		}
+# 		1340 = {
+# 			add_trade_modifier = {
+# 				who = root
+# 				duration = -1
+# 				power = 25
+# 				key = spice_trade_monopoly
+# 			}		
+# 		}
+# 		504 = {
+# 			add_trade_modifier = {
+# 				who = root
+# 				duration = -1
+# 				power = 25
+# 				key = spice_trade_monopoly
+# 			}		
+# 		}
+# 	}
+# }
 
 # We've Won the War of the Three Kings #
 
-country_event = {
-	id = btc_events.11
-	title = btc_events.11_t
-	desc = btc_events.11_d
-	picture = RELIGIOUS_WARS_eventPicture
+# country_event = {
+# 	id = btc_events.11
+# 	title = btc_events.11_t
+# 	desc = btc_events.11_d
+# 	picture = RELIGIOUS_WARS_eventPicture
 
-	is_triggered_only = yes
-	major = yes
+# 	is_triggered_only = yes
+# 	major = yes
 
-	option = {
-		name = btc_events.11a
+# 	option = {
+# 		name = btc_events.11a
 
-		POR = { clr_country_flag = war_of_three_kings }
-		IBE = { clr_country_flag = war_of_three_kings }
-		MOR = { clr_country_flag = war_of_three_kings }
+# 		POR = { clr_country_flag = war_of_three_kings }
+# 		IBE = { clr_country_flag = war_of_three_kings }
+# 		MOR = { clr_country_flag = war_of_three_kings }
 
-		remove_rival = MOR
-		add_historical_friend = MOR
+# 		remove_rival = MOR
+# 		add_historical_friend = MOR
 
-		MOR = {
-			change_religion = catholic
-			define_ruler = {
-				name = "Abu Abdallah"
-				age = 35
-				dynasty = Saadi
-				adm = 2
-				dip = 4
-				mil = 4
-			}
-			kill_heir = {}
-			if = {
-				limit = {
-					exists = POR
-				}
-				create_alliance = POR
-				add_opinion = {
-					who = POR
-					modifier = war_of_three_kings
-				}
-				remove_rival = POR
-				add_historical_friend = POR
-			}
-			else = {
-				create_alliance = IBE
-				add_opinion = {
-					who = IBE
-					modifier = war_of_three_kings
-				}
-				remove_rival = IBE
-				add_historical_friend = IBE
-			}
-			capital_scope = {
-				change_religion = catholic	
-				set_province_flag = is_catholic					
-			}
-			custom_tooltip = catholic_morocco_tt
-			hidden_effect = {
-				every_owned_province = {
-					random_province_in_state = {
-						limit = {
-							NOT = { has_province_flag = is_catholic }	
-							NOT = { religion = catholic }
-						}
-						change_religion = catholic	
-						set_province_flag = is_catholic		
-					}
-					random_province_in_state = {
-						limit = {
-							NOT = { has_province_flag = is_catholic }		
-							NOT = { religion = catholic }
-						}
-						change_religion = catholic	
-						set_province_flag = is_catholic		
-					}
-					random_province_in_state = {
-						limit = {
-							NOT = { has_province_flag = is_catholic }		
-							NOT = { religion = catholic }
-						}
-						change_religion = catholic	
-						set_province_flag = is_catholic		
-					}
-					random_province_in_state = {
-						limit = {
-							NOT = { has_province_flag = is_catholic }		
-							NOT = { religion = catholic }
-						}
-						change_religion = catholic	
-						set_province_flag = is_catholic		
-					}
-					random_province_in_state = {
-						limit = {
-							NOT = { has_province_flag = is_catholic }		
-							NOT = { religion = catholic }
-						}
-						change_religion = catholic	
-						set_province_flag = is_catholic		
-					}
-				}
-			}
-		}
-	}
-}
+# 		MOR = {
+# 			change_religion = catholic
+# 			define_ruler = {
+# 				name = "Abu Abdallah"
+# 				age = 35
+# 				dynasty = Saadi
+# 				adm = 2
+# 				dip = 4
+# 				mil = 4
+# 			}
+# 			kill_heir = {}
+# 			if = {
+# 				limit = {
+# 					exists = POR
+# 				}
+# 				create_alliance = POR
+# 				add_opinion = {
+# 					who = POR
+# 					modifier = war_of_three_kings
+# 				}
+# 				remove_rival = POR
+# 				add_historical_friend = POR
+# 			}
+# 			else = {
+# 				create_alliance = IBE
+# 				add_opinion = {
+# 					who = IBE
+# 					modifier = war_of_three_kings
+# 				}
+# 				remove_rival = IBE
+# 				add_historical_friend = IBE
+# 			}
+# 			capital_scope = {
+# 				change_religion = catholic	
+# 				set_province_flag = is_catholic					
+# 			}
+# 			custom_tooltip = catholic_morocco_tt
+# 			hidden_effect = {
+# 				every_owned_province = {
+# 					random_province_in_state = {
+# 						limit = {
+# 							NOT = { has_province_flag = is_catholic }	
+# 							NOT = { religion = catholic }
+# 						}
+# 						change_religion = catholic	
+# 						set_province_flag = is_catholic		
+# 					}
+# 					random_province_in_state = {
+# 						limit = {
+# 							NOT = { has_province_flag = is_catholic }		
+# 							NOT = { religion = catholic }
+# 						}
+# 						change_religion = catholic	
+# 						set_province_flag = is_catholic		
+# 					}
+# 					random_province_in_state = {
+# 						limit = {
+# 							NOT = { has_province_flag = is_catholic }		
+# 							NOT = { religion = catholic }
+# 						}
+# 						change_religion = catholic	
+# 						set_province_flag = is_catholic		
+# 					}
+# 					random_province_in_state = {
+# 						limit = {
+# 							NOT = { has_province_flag = is_catholic }		
+# 							NOT = { religion = catholic }
+# 						}
+# 						change_religion = catholic	
+# 						set_province_flag = is_catholic		
+# 					}
+# 					random_province_in_state = {
+# 						limit = {
+# 							NOT = { has_province_flag = is_catholic }		
+# 							NOT = { religion = catholic }
+# 						}
+# 						change_religion = catholic	
+# 						set_province_flag = is_catholic		
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
 # Battle of Alcácer Quibir #
 
-country_event = {
-	id = btc_events.12
-	title = btc_events.12_t
-	desc = btc_events.12_d
-	picture = WOUNDED_SOLDIERS_eventPicture
+# country_event = {
+# 	id = btc_events.12
+# 	title = btc_events.12_t
+# 	desc = btc_events.12_d
+# 	picture = WOUNDED_SOLDIERS_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = btc_events.12a
+# 	option = {
+# 		name = btc_events.12a
 
-		POR = { clr_country_flag = war_of_three_kings }
-		MOR = { clr_country_flag = war_of_three_kings }
+# 		POR = { clr_country_flag = war_of_three_kings }
+# 		MOR = { clr_country_flag = war_of_three_kings }
 
-		kill_ruler = yes
-		white_peace = MOR
-		add_stability = -2
-		add_country_modifier = {
-			name = portugal_succession_crisis
-			duration = 1825
-		}
-	}
-}
+# 		kill_ruler = yes
+# 		white_peace = MOR
+# 		add_stability = -2
+# 		add_country_modifier = {
+# 			name = portugal_succession_crisis
+# 			duration = 1825
+# 		}
+# 	}
+# }
 
 # The Portuguese Succession #
 
-country_event = {
-	id = btc_events.13
-	title = btc_events.13_t
-	desc = btc_events.13_d
-	picture = DISCIPLINED_SOLDIERS_eventPicture
+# country_event = {
+# 	id = btc_events.13
+# 	title = btc_events.13_t
+# 	desc = btc_events.13_d
+# 	picture = DISCIPLINED_SOLDIERS_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-		POR = {
-			has_country_modifier = portugal_succession_crisis
-		}
-	}
+# 	trigger = {
+# 		OR = {
+# 			tag = CAS
+# 			tag = SPA
+# 		}
+# 		POR = {
+# 			has_country_modifier = portugal_succession_crisis
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 60
-	}
+# 	mean_time_to_happen = {
+# 		days = 60
+# 	}
 
-	option = {	# Seize this opportunity
-		name = btc_events.13a
+# 	option = {	# Seize this opportunity
+# 		name = btc_events.13a
 
-		declare_war_with_cb = {
-			casus_belli = cb_restore_personal_union
-			who = POR
-		}
-	}
+# 		declare_war_with_cb = {
+# 			casus_belli = cb_restore_personal_union
+# 			who = POR
+# 		}
+# 	}
 
-	option = {	# We will bide our time
-		name = btc_events.13b
+# 	option = {	# We will bide our time
+# 		name = btc_events.13b
 
-		add_casus_belli = {
-			type = cb_restore_personal_union
-			target = POR
-			months = 60
-		}
-	}
-}
+# 		add_casus_belli = {
+# 			type = cb_restore_personal_union
+# 			target = POR
+# 			months = 60
+# 		}
+# 	}
+# }
 
 # Increase dev with high prosperity
 
@@ -1147,314 +1147,314 @@ country_event = {
 }
 
 # Land Sighted!
-country_event = {
-	id = btc_events.17
-	title = btc_events.17_t
-	desc = btc_events.17_d
-	picture = EP_ISLAND_eventPicture
+# country_event = {
+# 	id = btc_events.17
+# 	title = btc_events.17_t
+# 	desc = btc_events.17_d
+# 	picture = EP_ISLAND_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = btc_events.17a
+# 	option = {
+# 		name = btc_events.17a
 
-		trigger = {
-			tag = CAS
-		}
+# 		trigger = {
+# 			tag = CAS
+# 		}
 
-		hidden_effect = {
-			POR = {
-				country_event = {
-					id = btc_events.18
-					days = 30
-				}
-			}
-		}
+# 		hidden_effect = {
+# 			POR = {
+# 				country_event = {
+# 					id = btc_events.18
+# 					days = 30
+# 				}
+# 			}
+# 		}
 
-		add_prestige = 10
-		define_explorer = {
-			name = "Cristóbal Colón"
-			fire = 2
-			shock = 2
-			manuever = 6
-			siege = 0
-			trait = great_explorer_personality
-		}
-		set_country_flag = cas_no_flagship_mod
-		if = {
-			limit = {
-				227 = {
-					owned_by = ROOT
-				}
-			}
-			227 = {
-				create_flagship = {
-					type = heavy_ship
-					name = "Santa María"
-				}
-			}
-		}
-		else = {
-			random_owned_province = {
-				limit = {
-					has_port = yes
-				}
-				create_flagship = {
-					type = heavy_ship
-					name = "Santa María"
-				}
-			}
-		}
-		clr_country_flag = cas_no_flagship_mod	
-		add_country_modifier = {
-			name = legacy_of_columbus
-			duration = -1
-		}
-		hidden_effect = {
-			discover_province = 1578
-			discover_province = 1580
-			discover_province = 1583
-			discover_province = 1575
-			discover_province = 1526
-			discover_province = 1524	
-			discover_province = 2659
-		}		
-		add_country_modifier = {
-			name = discovered_caribbean
-			duration = 5475
-		}
-	}
+# 		add_prestige = 10
+# 		define_explorer = {
+# 			name = "Cristóbal Colón"
+# 			fire = 2
+# 			shock = 2
+# 			manuever = 6
+# 			siege = 0
+# 			trait = great_explorer_personality
+# 		}
+# 		set_country_flag = cas_no_flagship_mod
+# 		if = {
+# 			limit = {
+# 				227 = {
+# 					owned_by = ROOT
+# 				}
+# 			}
+# 			227 = {
+# 				create_flagship = {
+# 					type = heavy_ship
+# 					name = "Santa María"
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			random_owned_province = {
+# 				limit = {
+# 					has_port = yes
+# 				}
+# 				create_flagship = {
+# 					type = heavy_ship
+# 					name = "Santa María"
+# 				}
+# 			}
+# 		}
+# 		clr_country_flag = cas_no_flagship_mod	
+# 		add_country_modifier = {
+# 			name = legacy_of_columbus
+# 			duration = -1
+# 		}
+# 		hidden_effect = {
+# 			discover_province = 1578
+# 			discover_province = 1580
+# 			discover_province = 1583
+# 			discover_province = 1575
+# 			discover_province = 1526
+# 			discover_province = 1524	
+# 			discover_province = 2659
+# 		}		
+# 		add_country_modifier = {
+# 			name = discovered_caribbean
+# 			duration = 5475
+# 		}
+# 	}
 
-	option = {
-		name = btc_events.17b
+# 	option = {
+# 		name = btc_events.17b
 
-		trigger = {
-			tag = POR
-		}
+# 		trigger = {
+# 			tag = POR
+# 		}
 
-		add_prestige = 10
-		define_explorer = {
-			name = "Cristóvão Colombo"
-			fire = 2
-			shock = 2
-			manuever = 6
-			siege = 0
-			trait = great_explorer_personality
-		}
-		set_country_flag = por_no_flagship_mod
-		if = {
-			limit = {
-				224 = {
-					owned_by = ROOT
-				}
-			}
-			224 = {
-				create_flagship = {
-					type = heavy_ship
-					name = "Santa Maria"
-				}
-			}
-		}
-		else = {
-			random_owned_province = {
-				limit = {
-					has_port = yes
-				}
-				create_flagship = {
-					type = heavy_ship
-					name = "Santa Maria"
-				}
-			}
-		}
-		clr_country_flag = por_no_flagship_mod	
-		add_country_modifier = {
-			name = legacy_of_columbus
-			duration = -1
-		}
-		hidden_effect = {
-			discover_province = 1578
-			discover_province = 1580
-			discover_province = 1583
-			discover_province = 1575
-			discover_province = 1526
-			discover_province = 1524	
-			discover_province = 2659		
-		}
-		add_country_modifier = {
-			name = discovered_caribbean
-			duration = 5475
-		}
-	}
-}
+# 		add_prestige = 10
+# 		define_explorer = {
+# 			name = "Cristóvão Colombo"
+# 			fire = 2
+# 			shock = 2
+# 			manuever = 6
+# 			siege = 0
+# 			trait = great_explorer_personality
+# 		}
+# 		set_country_flag = por_no_flagship_mod
+# 		if = {
+# 			limit = {
+# 				224 = {
+# 					owned_by = ROOT
+# 				}
+# 			}
+# 			224 = {
+# 				create_flagship = {
+# 					type = heavy_ship
+# 					name = "Santa Maria"
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			random_owned_province = {
+# 				limit = {
+# 					has_port = yes
+# 				}
+# 				create_flagship = {
+# 					type = heavy_ship
+# 					name = "Santa Maria"
+# 				}
+# 			}
+# 		}
+# 		clr_country_flag = por_no_flagship_mod	
+# 		add_country_modifier = {
+# 			name = legacy_of_columbus
+# 			duration = -1
+# 		}
+# 		hidden_effect = {
+# 			discover_province = 1578
+# 			discover_province = 1580
+# 			discover_province = 1583
+# 			discover_province = 1575
+# 			discover_province = 1526
+# 			discover_province = 1524	
+# 			discover_province = 2659		
+# 		}
+# 		add_country_modifier = {
+# 			name = discovered_caribbean
+# 			duration = 5475
+# 		}
+# 	}
+# }
 
 # The Treaty of Tordesillas (POR)
-country_event = {
-	id = btc_events.18
-	title = btc_events.18_t
-	desc = btc_events.18_d
-	picture = DIPLOMAT_INTERROGATION_eventPicture
+# country_event = {
+# 	id = btc_events.18
+# 	title = btc_events.18_t
+# 	desc = btc_events.18_d
+# 	picture = DIPLOMAT_INTERROGATION_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Contest castilian discovery
-		name = btc_events.18a
-		ai_chance = {
-			factor = 1
-		}
+# 	option = {	# Contest castilian discovery
+# 		name = btc_events.18a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		custom_tooltip = tordesillas_por_tt
-		hidden_effect = {
-			CAS = {
-				country_event = {
-					id = btc_events.19
-					days = 30
-				}
-			}
-		}
-	}
+# 		custom_tooltip = tordesillas_por_tt
+# 		hidden_effect = {
+# 			CAS = {
+# 				country_event = {
+# 					id = btc_events.19
+# 					days = 30
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {	# Let them have it
-		name = btc_events.18b
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
+# 	option = {	# Let them have it
+# 		name = btc_events.18b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 	}
+# }
 
 # The Treaty of Tordesillas (CAS)
-country_event = {
-	id = btc_events.19
-	title = btc_events.19_t
-	desc = btc_events.19_d
-	picture = DIPLOMACY_eventPicture
+# country_event = {
+# 	id = btc_events.19
+# 	title = btc_events.19_t
+# 	desc = btc_events.19_d
+# 	picture = DIPLOMACY_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Negotiate with the Portuguese
-		name = btc_events.19a
-		ai_chance = {
-			factor = 1
-		}
+# 	option = {	# Negotiate with the Portuguese
+# 		name = btc_events.19a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		custom_tooltip = tordesillas_cas_tt
-		hidden_effect = {
-			CAS = {
-				country_event = {
-					id = btc_events.20
-					days = 30
-				}
-			}
-			POR = {
-				country_event = {
-					id = btc_events.20
-					days = 30
-				}
-			}
-		}
-	}
+# 		custom_tooltip = tordesillas_cas_tt
+# 		hidden_effect = {
+# 			CAS = {
+# 				country_event = {
+# 					id = btc_events.20
+# 					days = 30
+# 				}
+# 			}
+# 			POR = {
+# 				country_event = {
+# 					id = btc_events.20
+# 					days = 30
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {	# Those lands are ours
-		name = btc_events.19b
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
+# 	option = {	# Those lands are ours
+# 		name = btc_events.19b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 	}
+# }
 
 # The Treaty of Tordesillas
-country_event = {
-	id = btc_events.20
-	title = btc_events.20_t
-	desc = btc_events.20_d
-	picture = DIPLOMACY_SIGNING_eventPicture
+# country_event = {
+# 	id = btc_events.20
+# 	title = btc_events.20_t
+# 	desc = btc_events.20_d
+# 	picture = DIPLOMACY_SIGNING_eventPicture
 
-	major = yes
+# 	major = yes
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Our interests have been assured
-		name = btc_events.20a
+# 	option = {	# Our interests have been assured
+# 		name = btc_events.20a
 
-		POR = {
-			add_country_modifier = {
-				name = tordesillas_claims
-				duration = -1
-			}
-		}
-		CAS = {
-			add_country_modifier = {
-				name = tordesillas_claims
-				duration = -1
-			}
-		}
+# 		POR = {
+# 			add_country_modifier = {
+# 				name = tordesillas_claims
+# 				duration = -1
+# 			}
+# 		}
+# 		CAS = {
+# 			add_country_modifier = {
+# 				name = tordesillas_claims
+# 				duration = -1
+# 			}
+# 		}
 
-		custom_tooltip = tordesillas_tt
-		hidden_effect = {
-			POR = { set_country_flag = tordesillas_por }
-			CAS = { 
-				clr_country_flag = alcacovas_treaty
-				set_country_flag = tordesillas_cas 
-			}			
-		}
-	}
-}
+# 		custom_tooltip = tordesillas_tt
+# 		hidden_effect = {
+# 			POR = { set_country_flag = tordesillas_por }
+# 			CAS = { 
+# 				clr_country_flag = alcacovas_treaty
+# 				set_country_flag = tordesillas_cas 
+# 			}			
+# 		}
+# 	}
+# }
 
 # The Treaty of Madrid
-country_event = {
-	id = btc_events.21
-	title = btc_events.21_t
-	desc = btc_events.21_d
-	picture = DIPLOMACY_SIGNING_eventPicture
+# country_event = {
+# 	id = btc_events.21
+# 	title = btc_events.21_t
+# 	desc = btc_events.21_d
+# 	picture = DIPLOMACY_SIGNING_eventPicture
 
-	major = yes
+# 	major = yes
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# The Treaty of Tordesillas has been revised
-		name = btc_events.21a
+# 	option = {	# The Treaty of Tordesillas has been revised
+# 		name = btc_events.21a
 
-		custom_tooltip = madrid_tt
-		hidden_effect = {
-			POR = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
-			IBE = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
-			CAS = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }	
-			SPA = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }			
-		}
-	}
-}
+# 		custom_tooltip = madrid_tt
+# 		hidden_effect = {
+# 			POR = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+# 			IBE = { set_country_flag = new_tordesillas_por clr_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+# 			CAS = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }	
+# 			SPA = { set_country_flag = new_tordesillas_cas clr_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }			
+# 		}
+# 	}
+# }
 
 # Claims in Terra Nova
-country_event = {
-	id = btc_events.22
-	title = btc_events.22_t
-	desc = btc_events.22_d
-	picture = DIPLOMACY_SIGNING_eventPicture
+# country_event = {
+# 	id = btc_events.22
+# 	title = btc_events.22_t
+# 	desc = btc_events.22_d
+# 	picture = DIPLOMACY_SIGNING_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	major = yes
+# 	major = yes
 
-	trigger = {
-		has_country_flag = tordesillas_por
-		NOT = { has_country_flag = terra_nova_por }
-		mission_completed = gc_por_discover_african_coast
-		newfoundland_area = {
-			has_discovered = ROOT
-		}
-	}
+# 	trigger = {
+# 		has_country_flag = tordesillas_por
+# 		NOT = { has_country_flag = terra_nova_por }
+# 		mission_completed = gc_por_discover_african_coast
+# 		newfoundland_area = {
+# 			has_discovered = ROOT
+# 		}
+# 	}
 
-	option = {	# Amend the Treaty
-		name = btc_events.22a
+# 	option = {	# Amend the Treaty
+# 		name = btc_events.22a
 
-		custom_tooltip = terra_nova_claim_tt
-		hidden_effect = {
-			POR = { set_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
-			IBE = { set_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
-			CAS = { set_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }	
-			SPA = { set_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }			
-		}
-	}
-}
+# 		custom_tooltip = terra_nova_claim_tt
+# 		hidden_effect = {
+# 			POR = { set_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+# 			IBE = { set_country_flag = terra_nova_por clr_country_flag = tordesillas_por }
+# 			CAS = { set_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }	
+# 			SPA = { set_country_flag = terra_nova_cas clr_country_flag = tordesillas_cas }			
+# 		}
+# 	}
+# }
 
 # # Pirates of Rugen Incident
 # country_event = {
@@ -1747,305 +1747,305 @@ country_event = {
 # }
 
 # Muscovy declares war on Novgorod
-country_event = {
-	id = btc_events.27
-	title = btc_events.27_t
-	desc = btc_events.27_d
-	picture = BATTLE_eventPicture
+# country_event = {
+# 	id = btc_events.27
+# 	title = btc_events.27_t
+# 	desc = btc_events.27_d
+# 	picture = BATTLE_eventPicture
 
-	trigger = {
-		tag = MOS
-		is_year = 1445
-		mission_completed = mos_rus_build_up_army
-		NOT = { has_country_flag = had_declare_war_novgorod }
-	}
+# 	trigger = {
+# 		tag = MOS
+# 		is_year = 1445
+# 		mission_completed = mos_rus_build_up_army
+# 		NOT = { has_country_flag = had_declare_war_novgorod }
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	immediate = {
-		hidden_effect = {
-			set_country_flag = had_declare_war_novgorod
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			set_country_flag = had_declare_war_novgorod
+# 		}
+# 	}
 	
-	option = {	# Time to end this charade
-		name = btc_events.27a
+# 	option = {	# Time to end this charade
+# 		name = btc_events.27a
 
-		ai_chance = {
-			factor = 1
-		}
-		declare_war_with_cb = {
-			casus_belli = cb_novgorod_war
-			who = NOV
-		}
-	}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
+# 		declare_war_with_cb = {
+# 			casus_belli = cb_novgorod_war
+# 			who = NOV
+# 		}
+# 	}
 	
-	option = {	# The time is not right
-		name = btc_events.27b
+# 	option = {	# The time is not right
+# 		name = btc_events.27b
 
-		ai_chance = {
-			factor = 0
-		}
-		add_prestige = -5
-	}
-}
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		add_prestige = -5
+# 	}
+# }
 
 # Subject Demands Independence
-country_event = {
-	id = btc_events.28
-	title = btc_events.28_t
-	desc = btc_events.28_d
-	picture = BATTLE_eventPicture
+# country_event = {
+# 	id = btc_events.28
+# 	title = btc_events.28_t
+# 	desc = btc_events.28_d
+# 	picture = BATTLE_eventPicture
 
-	trigger = {
-		any_subject_country = {
-			liberty_desire = 100
-			NOT = { has_country_flag = requested_independence }
-			NOT = { truce_with = ROOT }
-		}
-	}
+# 	trigger = {
+# 		any_subject_country = {
+# 			liberty_desire = 100
+# 			NOT = { has_country_flag = requested_independence }
+# 			NOT = { truce_with = ROOT }
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 60
-	}
+# 	mean_time_to_happen = {
+# 		months = 60
+# 	}
 
-	immediate = {
-		hidden_effect = {
-			random_country = {
-				limit = {
-					is_subject_of = ROOT
-					liberty_desire = 100
-				}
-				set_country_flag = requested_independence
-				save_event_target_as = target_subject
-			}
-		}
-	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			random_country = {
+# 				limit = {
+# 					is_subject_of = ROOT
+# 					liberty_desire = 100
+# 				}
+# 				set_country_flag = requested_independence
+# 				save_event_target_as = target_subject
+# 			}
+# 		}
+# 	}
 	
-	option = {	# Their lands belong to us
-		name = btc_events.28a
-		ai_chance = {
-			factor = 1
-		}
+# 	option = {	# Their lands belong to us
+# 		name = btc_events.28a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		add_opinion = {
-			who = event_target:target_subject
-			modifier = refused_independence
-		}
-	}
+# 		add_opinion = {
+# 			who = event_target:target_subject
+# 			modifier = refused_independence
+# 		}
+# 	}
 	
-	option = {	# Grant them independence
-		name = btc_events.28b
-		ai_chance = {
-			factor = 0
-		}
-		event_target:target_subject = {
-			grant_independence = yes
-		}
-	}
-}
+# 	option = {	# Grant them independence
+# 		name = btc_events.28b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		event_target:target_subject = {
+# 			grant_independence = yes
+# 		}
+# 	}
+# }
 
 # War for Independence
-country_event = {
-	id = btc_events.29
-	title = btc_events.29_t
-	desc = btc_events.29_d
-	picture = BATTLE_eventPicture
+# country_event = {
+# 	id = btc_events.29
+# 	title = btc_events.29_t
+# 	desc = btc_events.29_d
+# 	picture = BATTLE_eventPicture
 
-	trigger = {
-		is_subject = yes
-		has_country_flag = requested_independence
-		is_at_war = no
-		NOT = { truce_with = ROOT }
-	}
+# 	trigger = {
+# 		is_subject = yes
+# 		has_country_flag = requested_independence
+# 		is_at_war = no
+# 		NOT = { truce_with = ROOT }
+# 	}
 
-	mean_time_to_happen = {
-		months = 6
-	}
+# 	mean_time_to_happen = {
+# 		months = 6
+# 	}
 	
-	option = {	# Today we regain our freedom!
-		name = btc_events.29a
-		ai_chance = {
-			factor = 1
-		}
+# 	option = {	# Today we regain our freedom!
+# 		name = btc_events.29a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		clr_country_flag = requested_independence
+# 		clr_country_flag = requested_independence
 
-		if = {
-			limit = {
-				OR = {
-					is_subject_of_type = colony
-					is_subject_of_type = crown_colony
-					is_subject_of_type = self_governing_colony
-					is_subject_of_type = private_enterprise
-				}
-			}
-			declare_war_with_cb = {
-				casus_belli = cb_colonial_independence_war
-				who = overlord
-			}
-		}
-		else = {
-			declare_war_with_cb = {
-				casus_belli = cb_independence_war
-				who = overlord
-			}
-		}
-	}
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					is_subject_of_type = colony
+# 					is_subject_of_type = crown_colony
+# 					is_subject_of_type = self_governing_colony
+# 					is_subject_of_type = private_enterprise
+# 				}
+# 			}
+# 			declare_war_with_cb = {
+# 				casus_belli = cb_colonial_independence_war
+# 				who = overlord
+# 			}
+# 		}
+# 		else = {
+# 			declare_war_with_cb = {
+# 				casus_belli = cb_independence_war
+# 				who = overlord
+# 			}
+# 		}
+# 	}
 	
-	option = {	# The time is not right
-		name = btc_events.29b
-		ai_chance = {
-			factor = 0
-		}
-		add_prestige = -5
-	}
-}
+# 	option = {	# The time is not right
+# 		name = btc_events.29b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 		add_prestige = -5
+# 	}
+# }
 
 # Fighting Off Portuguese Hegemony
-country_event = {
-	id = btc_events.30
-	title = btc_events.30_t
-	desc = btc_events.30_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_events.30
+# 	title = btc_events.30_t
+# 	desc = btc_events.30_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	trigger = {
-		tag = VEN
-		any_country = {
-			has_country_modifier = mam_spice_monopoly_wars_triggered_modifier
-			NOT = { has_country_flag = got_ships_from_venice }
-		}
-	}
+# 	trigger = {
+# 		tag = VEN
+# 		any_country = {
+# 			has_country_modifier = mam_spice_monopoly_wars_triggered_modifier
+# 			NOT = { has_country_flag = got_ships_from_venice }
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 3
-	}
+# 	mean_time_to_happen = {
+# 		months = 3
+# 	}
 	
-	option = {	# Support them
-		name = btc_events.30a
-		ai_chance = {
-			factor = 1
-		}
+# 	option = {	# Support them
+# 		name = btc_events.30a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		add_years_of_income = -0.25
+# 		add_years_of_income = -0.25
 
-		random_country = {
-			limit = {
-				has_country_modifier = mam_spice_monopoly_wars_triggered_modifier
-			}
-			save_event_target_as = country_gets_venice_ships
-		}
+# 		random_country = {
+# 			limit = {
+# 				has_country_modifier = mam_spice_monopoly_wars_triggered_modifier
+# 			}
+# 			save_event_target_as = country_gets_venice_ships
+# 		}
 
-		event_target:country_gets_venice_ships = {
-			set_country_flag = got_ships_from_venice
-			add_opinion = {
-				who = VEN
-				modifier = gave_us_ships
-			}
-			country_event = {
-				id = btc_events.31
-				days = 1
-			}
-		}
-	}
+# 		event_target:country_gets_venice_ships = {
+# 			set_country_flag = got_ships_from_venice
+# 			add_opinion = {
+# 				who = VEN
+# 				modifier = gave_us_ships
+# 			}
+# 			country_event = {
+# 				id = btc_events.31
+# 				days = 1
+# 			}
+# 		}
+# 	}
 	
-	option = {	# We don't have the funds
-		name = btc_events.30b
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
+# 	option = {	# We don't have the funds
+# 		name = btc_events.30b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
+# 	}
+# }
 
 # Support From Venice
-country_event = {
-	id = btc_events.31
-	title = btc_events.31_t
-	desc = btc_events.31_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_events.31
+# 	title = btc_events.31_t
+# 	desc = btc_events.31_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = {	# We shall put these ships to good use
-		name = btc_events.31a
+# 	option = {	# We shall put these ships to good use
+# 		name = btc_events.31a
 
-		random_owned_province = {
-			limit = {
-				has_port = yes
-				OR = {
-					area = basra_area
-					area = gulf_of_arabia_area
-					region = horn_of_africa_region
-					region = arabia_region
-					region = persia_region
-					region = khorasan_region
-					region = west_india_region
-					region = coromandel_region
-					region = deccan_region
-				}
-			}
-			add_unit_construction = {
-				type = galley
-				amount = 50
-				speed = 0.01
-				cost = 0
-			}
-		}
-	}
-}
+# 		random_owned_province = {
+# 			limit = {
+# 				has_port = yes
+# 				OR = {
+# 					area = basra_area
+# 					area = gulf_of_arabia_area
+# 					region = horn_of_africa_region
+# 					region = arabia_region
+# 					region = persia_region
+# 					region = khorasan_region
+# 					region = west_india_region
+# 					region = coromandel_region
+# 					region = deccan_region
+# 				}
+# 			}
+# 			add_unit_construction = {
+# 				type = galley
+# 				amount = 50
+# 				speed = 0.01
+# 				cost = 0
+# 			}
+# 		}
+# 	}
+# }
 
 # Ladislaus Unites Habsburg Territory
-country_event = {
-	id = btc_events.32
-	title = btc_events.32_t
-	desc = btc_events.32_d
-	picture = DIPLOMACY_SIGNING_eventPicture
+# country_event = {
+# 	id = btc_events.32
+# 	title = btc_events.32_t
+# 	desc = btc_events.32_d
+# 	picture = DIPLOMACY_SIGNING_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		tag = HAB
-		has_country_flag = hab_ladislaus_postumus_heir
-		is_year = 1456
-	}
+# 	trigger = {
+# 		tag = HAB
+# 		has_country_flag = hab_ladislaus_postumus_heir
+# 		is_year = 1456
+# 	}
 
-	mean_time_to_happen = {
-		days = 60
-	}
+# 	mean_time_to_happen = {
+# 		days = 60
+# 	}
 	
-	option = {
-		name = btc_events.32a
+# 	option = {
+# 		name = btc_events.32a
 
-		ai_chance = {
-			factor = 1
-		}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		HAB = {
-			if = {
-				limit = { senior_union_with = STY }
-				inherit = STY
-			}
-		}
-		HAB = {
-			if = {
-				limit = { senior_union_with = TIR }
-				inherit = TIR
-			}
-		}
-	}
+# 		HAB = {
+# 			if = {
+# 				limit = { senior_union_with = STY }
+# 				inherit = STY
+# 			}
+# 		}
+# 		HAB = {
+# 			if = {
+# 				limit = { senior_union_with = TIR }
+# 				inherit = TIR
+# 			}
+# 		}
+# 	}
 	
-	option = {
-		name = btc_events.32b
+# 	option = {
+# 		name = btc_events.32b
 
-		ai_chance = {
-			factor = 0
-		}
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 
-		add_imperial_influence = 20
-	}
-}
+# 		add_imperial_influence = 20
+# 	}
+# }
 
 # Island Development
 country_event = {
@@ -2083,243 +2083,243 @@ country_event = {
 }
 
 # Purchase of Masulipatnam
-country_event = {
-	id = btc_events.34
-	title = btc_events.34_t
-	desc = btc_events.34_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_events.34
+# 	title = btc_events.34_t
+# 	desc = btc_events.34_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		is_or_was_tag = {
-			tag = ENG
-		}
-		543 = {
-			has_discovered = ROOT
-		}
-	}
+# 	trigger = {
+# 		is_or_was_tag = {
+# 			tag = ENG
+# 		}
+# 		543 = {
+# 			has_discovered = ROOT
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 365
-	}
+# 	mean_time_to_happen = {
+# 		days = 365
+# 	}
 
-	option = {		# Broker a deal with the local ruler
-		name = btc_events.34a
+# 	option = {		# Broker a deal with the local ruler
+# 		name = btc_events.34a
 
-		ai_chance = {
-			factor = 1
-		}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		543 = { cede_province = ROOT }
-		add_claim = 543
-		add_core = 543
-		add_prestige = 10
-		if = {
-			limit = {
-				ai = no
-			}
-			add_years_of_income = -1
-		}
-		if = {
-			limit = {
-				ai = yes
-			}
-			543 = {
-				build_to_forcelimit = {
-					infantry = 0.6
-					cavalry = 0.2
-					artillery = 0.2
-				}
-			}	
-		}
-	}
+# 		543 = { cede_province = ROOT }
+# 		add_claim = 543
+# 		add_core = 543
+# 		add_prestige = 10
+# 		if = {
+# 			limit = {
+# 				ai = no
+# 			}
+# 			add_years_of_income = -1
+# 		}
+# 		if = {
+# 			limit = {
+# 				ai = yes
+# 			}
+# 			543 = {
+# 				build_to_forcelimit = {
+# 					infantry = 0.6
+# 					cavalry = 0.2
+# 					artillery = 0.2
+# 				}
+# 			}	
+# 		}
+# 	}
 
-	option = {		# Forcefully establish our presence
-		name = btc_events.34b
+# 	option = {		# Forcefully establish our presence
+# 		name = btc_events.34b
 
-		ai_chance = {
-			factor = 0
-		}
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 		
-		add_permanent_claim = 543
-		add_prestige = 10
-	}
-}
+# 		add_permanent_claim = 543
+# 		add_prestige = 10
+# 	}
+# }
 
 # Purchase of Chandernagore
-country_event = {
-	id = btc_events.35
-	title = btc_events.35_t
-	desc = btc_events.35_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_events.35
+# 	title = btc_events.35_t
+# 	desc = btc_events.35_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		is_or_was_tag = {
-			tag = FRA
-		}
-		561 = {
-			has_discovered = ROOT
-		}
-	}
+# 	trigger = {
+# 		is_or_was_tag = {
+# 			tag = FRA
+# 		}
+# 		561 = {
+# 			has_discovered = ROOT
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 365
-	}
+# 	mean_time_to_happen = {
+# 		days = 365
+# 	}
 
-	option = {		# Broker a deal with the local ruler
-		name = btc_events.35a
+# 	option = {		# Broker a deal with the local ruler
+# 		name = btc_events.35a
 
-		ai_chance = {
-			factor = 1
-		}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		561 = { cede_province = ROOT }
-		add_claim = 561
-		add_core = 561
-		add_prestige = 10
-		if = {
-			limit = {
-				ai = no
-			}
-			add_years_of_income = -1
-		}
-		if = {
-			limit = {
-				ai = yes
-			}
-			561 = {
-				build_to_forcelimit = {
-					infantry = 0.6
-					cavalry = 0.2
-					artillery = 0.2
-				}
-			}	
-		}
-	}
+# 		561 = { cede_province = ROOT }
+# 		add_claim = 561
+# 		add_core = 561
+# 		add_prestige = 10
+# 		if = {
+# 			limit = {
+# 				ai = no
+# 			}
+# 			add_years_of_income = -1
+# 		}
+# 		if = {
+# 			limit = {
+# 				ai = yes
+# 			}
+# 			561 = {
+# 				build_to_forcelimit = {
+# 					infantry = 0.6
+# 					cavalry = 0.2
+# 					artillery = 0.2
+# 				}
+# 			}	
+# 		}
+# 	}
 
-	option = {		# Forcefully establish our presence
-		name = btc_events.35b
+# 	option = {		# Forcefully establish our presence
+# 		name = btc_events.35b
 
-		ai_chance = {
-			factor = 0
-		}
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 		
-		add_permanent_claim = 561
-		add_prestige = 10
-	}
-}
+# 		add_permanent_claim = 561
+# 		add_prestige = 10
+# 	}
+# }
 
 # Purchase of Pulicat
-country_event = {
-	id = btc_events.36
-	title = btc_events.36_t
-	desc = btc_events.36_d
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = btc_events.36
+# 	title = btc_events.36_t
+# 	desc = btc_events.36_d
+# 	picture = SHIP_SAILING_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		tag = NED
-		539 = {
-			has_discovered = ROOT
-		}
-	}
+# 	trigger = {
+# 		tag = NED
+# 		539 = {
+# 			has_discovered = ROOT
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 365
-	}
+# 	mean_time_to_happen = {
+# 		days = 365
+# 	}
 
-	option = {		# Broker a deal with the local ruler
-		name = btc_events.36a
+# 	option = {		# Broker a deal with the local ruler
+# 		name = btc_events.36a
 
-		ai_chance = {
-			factor = 1
-		}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 
-		539 = { cede_province = ROOT }
-		add_claim = 539
-		add_core = 539
-		add_prestige = 10
-		if = {
-			limit = {
-				ai = no
-			}
-			add_years_of_income = -1
-		}
-		if = {
-			limit = {
-				ai = yes
-			}
-			539 = {
-				build_to_forcelimit = {
-					infantry = 0.6
-					cavalry = 0.2
-					artillery = 0.2
-				}
-			}	
-		}
-	}
+# 		539 = { cede_province = ROOT }
+# 		add_claim = 539
+# 		add_core = 539
+# 		add_prestige = 10
+# 		if = {
+# 			limit = {
+# 				ai = no
+# 			}
+# 			add_years_of_income = -1
+# 		}
+# 		if = {
+# 			limit = {
+# 				ai = yes
+# 			}
+# 			539 = {
+# 				build_to_forcelimit = {
+# 					infantry = 0.6
+# 					cavalry = 0.2
+# 					artillery = 0.2
+# 				}
+# 			}	
+# 		}
+# 	}
 
-	option = {		# Forcefully establish our presence
-		name = btc_events.36b
+# 	option = {		# Forcefully establish our presence
+# 		name = btc_events.36b
 
-		ai_chance = {
-			factor = 0
-		}
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 		
-		add_permanent_claim = 539
-		add_prestige = 10
-	}
-}
+# 		add_permanent_claim = 539
+# 		add_prestige = 10
+# 	}
+# }
 
 # Western Technology
-country_event = {
-	id = btc_events.37
-	title = btc_events.37_t
-	desc = btc_events.37_d
-	picture = FIREARMS_INCIDENT_eventPicture
+# country_event = {
+# 	id = btc_events.37
+# 	title = btc_events.37_t
+# 	desc = btc_events.37_d
+# 	picture = FIREARMS_INCIDENT_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		capital_scope = {
-			region = japan_region
-		}
-		OR = {
-			POR = {
-				has_opinion = {
-					who = ROOT
-					value = 100
-				}
-			}
-			NED = {
-				has_opinion = {
-					who = ROOT
-					value = 100
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		capital_scope = {
+# 			region = japan_region
+# 		}
+# 		OR = {
+# 			POR = {
+# 				has_opinion = {
+# 					who = ROOT
+# 					value = 100
+# 				}
+# 			}
+# 			NED = {
+# 				has_opinion = {
+# 					who = ROOT
+# 					value = 100
+# 				}
+# 			}
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		months = 12
-	}
+# 	mean_time_to_happen = {
+# 		months = 12
+# 	}
 
-	option = {
-		name = btc_events.37a
+# 	option = {
+# 		name = btc_events.37a
 
-		capital_scope = {
-			add_institution_embracement = {
-				which = new_world_i
-				value = 100
-			}			
-		}
-		set_country_flag = got_colonialism
-	}
-}
+# 		capital_scope = {
+# 			add_institution_embracement = {
+# 				which = new_world_i
+# 				value = 100
+# 			}			
+# 		}
+# 		set_country_flag = got_colonialism
+# 	}
+# }
 
 # Indian Overextension 1
 country_event = {
@@ -2439,143 +2439,143 @@ country_event = {
 }
 
 # Babur
-country_event = {
-	id = btc_events.42
-	title = btc_events.42_t
-	desc = btc_events.42_d
-	picture = CONQUEROR_eventPicture
+# country_event = {
+# 	id = btc_events.42
+# 	title = btc_events.42_t
+# 	desc = btc_events.42_d
+# 	picture = CONQUEROR_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		if = {
-			limit = { 
-				TIM = { exists = yes }
-			}
-			tag = TIM
-		}
-		else_if = {
-			limit = { 
-				TIM = { exists = no }
-				TRS = { exists = yes }
-			}
-			tag = TRS
-		}
-		else_if = {
-			limit = { 
-				TRS = { exists = no }
-				AFG = { exists = yes }
-			}
-			tag = AFG
-		}
-		is_year = 1500
-	}
+# 	trigger = {
+# 		if = {
+# 			limit = { 
+# 				TIM = { exists = yes }
+# 			}
+# 			tag = TIM
+# 		}
+# 		else_if = {
+# 			limit = { 
+# 				TIM = { exists = no }
+# 				TRS = { exists = yes }
+# 			}
+# 			tag = TRS
+# 		}
+# 		else_if = {
+# 			limit = { 
+# 				TRS = { exists = no }
+# 				AFG = { exists = yes }
+# 			}
+# 			tag = AFG
+# 		}
+# 		is_year = 1500
+# 	}
 
-	mean_time_to_happen = {
-		months = 6
-	}
+# 	mean_time_to_happen = {
+# 		months = 6
+# 	}
 
-	option = {
-		name = btc_events.42a
-		ai_chance = {
-			factor = 1
-		}
+# 	option = {
+# 		name = btc_events.42a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
 		
-		define_ruler = {
-			name = "Bâbur"
-			dynasty = "Timurid"
-			age = 18
-			adm = 5	
-			dip = 5	
-			mil = 6
-		}
-		hidden_effect = {
-			add_ruler_personality = legendary_conqueror_personality			
-		}
-		define_ruler_to_general = {
-			fire = 5
-			shock = 5
-			manuever = 3
-			siege = 1
-		}
-		set_country_flag = had_babur
-		khorasan_region = { 
-			limit = { 
-				NOT = { owned_by = ROOT } 
-				NOT = { is_core = ROOT } 
-			}
-			add_permanent_claim = ROOT 
-		}
-		hindusthan_region = { 
-			limit = { 
-				NOT = { owned_by = ROOT } 
-				NOT = { is_core = ROOT } 
-			}
-			add_permanent_claim = ROOT 
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					ai = yes
-				}
-				every_country = {
-					limit = {
-						NOT = { tag = ROOT }
-						ai = yes
-						capital_scope = {
-							region = khorasan_region
-						}						
-					}
-					country_event = {
-						id = btc_events.43
-						days = 180
-					}
-				}
-			}
-		}
-	}
+# 		define_ruler = {
+# 			name = "Bâbur"
+# 			dynasty = "Timurid"
+# 			age = 18
+# 			adm = 5	
+# 			dip = 5	
+# 			mil = 6
+# 		}
+# 		hidden_effect = {
+# 			add_ruler_personality = legendary_conqueror_personality			
+# 		}
+# 		define_ruler_to_general = {
+# 			fire = 5
+# 			shock = 5
+# 			manuever = 3
+# 			siege = 1
+# 		}
+# 		set_country_flag = had_babur
+# 		khorasan_region = { 
+# 			limit = { 
+# 				NOT = { owned_by = ROOT } 
+# 				NOT = { is_core = ROOT } 
+# 			}
+# 			add_permanent_claim = ROOT 
+# 		}
+# 		hindusthan_region = { 
+# 			limit = { 
+# 				NOT = { owned_by = ROOT } 
+# 				NOT = { is_core = ROOT } 
+# 			}
+# 			add_permanent_claim = ROOT 
+# 		}
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					ai = yes
+# 				}
+# 				every_country = {
+# 					limit = {
+# 						NOT = { tag = ROOT }
+# 						ai = yes
+# 						capital_scope = {
+# 							region = khorasan_region
+# 						}						
+# 					}
+# 					country_event = {
+# 						id = btc_events.43
+# 						days = 180
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = btc_events.42b
-		ai_chance = {
-			factor = 0
-		}
+# 	option = {
+# 		name = btc_events.42b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 
-		add_prestige = -10
-	}
-}
+# 		add_prestige = -10
+# 	}
+# }
 
 # Babur has risen (AI only)
-country_event = {
-	id = btc_events.43
-	title = btc_events.43_t
-	desc = btc_events.43_d
-	picture = CONQUEROR_eventPicture
+# country_event = {
+# 	id = btc_events.43
+# 	title = btc_events.43_t
+# 	desc = btc_events.43_d
+# 	picture = CONQUEROR_eventPicture
 
-	is_triggered_only = yes
-	major = yes
-	major_trigger = {
-		tag = TIM
-	}
+# 	is_triggered_only = yes
+# 	major = yes
+# 	major_trigger = {
+# 		tag = TIM
+# 	}
 
-	option = {
-		name = btc_events.43a
-		ai_chance = {
-			factor = 1
-		}
-		TIM = { vassalize = ROOT }
+# 	option = {
+# 		name = btc_events.43a
+# 		ai_chance = {
+# 			factor = 1
+# 		}
+# 		TIM = { vassalize = ROOT }
 
-	}
+# 	}
 
-	option = {
-		name = btc_events.43b
-		ai_chance = {
-			factor = 0
-		}
+# 	option = {
+# 		name = btc_events.43b
+# 		ai_chance = {
+# 			factor = 0
+# 		}
 
-		add_prestige = -10
-	}
-}
+# 		add_prestige = -10
+# 	}
+# }
 
 # Give Malaria
 country_event = {

@@ -237,6 +237,7 @@ indian_sultanate_reform = {
 	}
 }
 
+# BEYOND THE CAPE - samurai
 shogunate = {
 	icon = "shogunate"
 	allow_normal_conversion = yes
@@ -283,8 +284,8 @@ shogunate = {
 		diplomats = 1
 		envoy_travel_time = -0.25
 		max_absolutism = 5
-		amount_of_samurai = 10
-		has_samurai = yes
+		# amount_of_samurai = 10
+		# has_samurai = yes
 	}
 
 	custom_attributes = {
@@ -292,6 +293,7 @@ shogunate = {
 	}
 }
 
+# BEYOND THE CAPE - samurai
 daimyo = {
 	icon = "daimyo"
 	allow_normal_conversion = no
@@ -314,7 +316,7 @@ daimyo = {
 	modifiers = {
 		land_morale = 0.1
 		infantry_power = 0.1
-		amount_of_samurai = 4
+		# amount_of_samurai = 4
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -428,6 +430,7 @@ absolutist_france_reform = {
 	}
 }
 
+# BEYOND THE CAPE - samurai
 indep_daimyo = {
 	icon = "samurai"
 	allow_normal_conversion = no
@@ -462,7 +465,7 @@ indep_daimyo = {
 	modifiers = {
 		land_morale = 0.1
 		infantry_power = 0.1
-		amount_of_samurai = 5
+		# amount_of_samurai = 5
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -7035,6 +7038,7 @@ qng_grand_council_reform = {
 	}
 }
 
+# BEYOND THE CAPE - samurai
 absolute_shogunate_reform = {
 	icon = "absolute_shogunate_reform"
 	allow_normal_conversion = no
@@ -7060,10 +7064,11 @@ absolute_shogunate_reform = {
 		can_transfer_vassal_wargoal = yes
 		administrative_efficiency = 0.05
 		monarch_military_power = 1
-		allowed_samurai_fraction = 0.1
+		# allowed_samurai_fraction = 0.1
 	}
 }
 
+# BEYOND THE CAPE - samurai
 japanese_divine_empire = {
 	icon = "japanese_divine_empire"
 	allow_normal_conversion = no
@@ -7115,10 +7120,11 @@ japanese_divine_empire = {
 		no_stability_loss_on_monarch_death = yes 
 		all_estate_loyalty_equilibrium = 0.1
 		tolerance_own = 3 
-		allowed_samurai_fraction = 0.1
+		# allowed_samurai_fraction = 0.1
 	}
 }
 
+# BEYOND THE CAPE - samurai
 land_christian_sun_reform = {
 	icon = "land_christian_sun_reform"
 	allow_normal_conversion = no
@@ -7154,7 +7160,7 @@ land_christian_sun_reform = {
 		manpower_recovery_speed = 0.15
 		cb_on_religious_enemies = yes 
 		army_tradition = 1 
-		allowed_samurai_fraction = 0.1
+		# allowed_samurai_fraction = 0.1
 	}
 	
 	custom_attributes = {

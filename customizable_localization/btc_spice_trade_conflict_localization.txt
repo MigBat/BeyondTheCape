@@ -263,3 +263,33 @@ defined_text = {
 		}
 	}
 }
+
+defined_text = {
+	name = GetSpiceParticipationStatus
+	random = no
+	text = {
+		localisation_key = btc_joined_side
+		trigger = {
+			OR = {
+				has_country_flag = is_mam_ally
+				has_country_flag = is_por_ally
+			}
+		}
+	}
+	text = {
+		localisation_key = btc_is_subject_nation
+		trigger = {
+			is_free_or_tributary_trigger = no
+			NOT = { is_subject_of_type = trade_protectorate }
+		}
+	}
+	text = {
+		localisation_key = btc_is_leader
+		trigger = {
+			OR = {
+				tag = event_target:por_spice_trade
+				tag = event_target:mam_spice_trade	
+			}		
+		}
+	}
+}

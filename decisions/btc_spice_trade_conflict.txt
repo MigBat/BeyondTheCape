@@ -1,0 +1,168 @@
+country_decisions = {
+	join_portugal = {
+		potential = {
+			ai = yes
+			OR = {
+				is_free_or_tributary_trigger = yes
+				is_subject_of_type = trade_protectorate
+			}
+			event_target:por_spice_trade = {
+				any_owned_province = {
+					has_discovered = PREV
+				}
+			}
+			event_target:mam_spice_trade = {
+				any_owned_province = {
+					has_discovered = PREV
+				}
+			}
+			part_of_spice_trade_conflict = yes
+			has_saved_global_event_target = por_spice_trade
+			NOT = { tag = event_target:por_spice_trade }
+			NOT = { tag = event_target:mam_spice_trade }
+			NOT = { has_country_flag = is_mam_ally }
+			NOT = { has_country_flag = is_por_ally }
+			NOT = { has_saved_global_event_target = por_ally_24 }
+		}
+		allow = {
+			OR = {
+				has_opinion = {
+					who = event_target:por_spice_trade
+					value = 100
+				}
+				AND = {
+					has_opinion = {
+						who = event_target:por_spice_trade
+						value = 50
+					}
+					NOT = {
+						has_opinion = {
+							who = event_target:mam_spice_trade
+							value = 0
+						}
+					}
+				}
+				AND = {
+					NOT = {
+						has_opinion = {
+							who = event_target:mam_spice_trade
+							value = -19
+						}
+					}
+					has_opinion = {
+						who = event_target:por_spice_trade
+						value = 0
+					}
+				}
+			}
+		}
+		effect = {
+			add_historical_friend = event_target:por_spice_trade
+			event_target:por_spice_trade = {
+				add_historical_friend = ROOT
+			}
+			add_historical_rival = event_target:mam_spice_trade
+			event_target:mam_spice_trade = {
+				add_historical_rival = ROOT
+			}
+			set_por_supporter = yes
+			hidden_effect = {
+				REB = {
+					PREV = {
+						set_variable = {
+							which = monthly_mare_clausum_amount
+							which = PREV
+						}
+						set_variable = {
+							which = total_mare_clausum_amount
+							which = PREV
+						}
+					}
+				}			
+			}
+		}
+	}
+	join_mamluks = {
+		potential = {
+			ai = yes
+			OR = {
+				is_free_or_tributary_trigger = yes
+				is_subject_of_type = trade_protectorate
+			}
+			event_target:por_spice_trade = {
+				any_owned_province = {
+					has_discovered = PREV
+				}
+			}
+			event_target:mam_spice_trade = {
+				any_owned_province = {
+					has_discovered = PREV
+				}
+			}
+			part_of_spice_trade_conflict = yes
+			has_saved_global_event_target = mam_spice_trade
+			NOT = { tag = event_target:por_spice_trade }
+			NOT = { tag = event_target:mam_spice_trade }
+			NOT = { has_country_flag = is_mam_ally }
+			NOT = { has_country_flag = is_por_ally }
+			NOT = { has_saved_global_event_target = por_ally_24 }
+		}
+		allow = {
+			OR = {
+				has_opinion = {
+					who = event_target:mam_spice_trade
+					value = 100
+				}
+				AND = {
+					has_opinion = {
+						who = event_target:mam_spice_trade
+						value = 50
+					}
+					NOT = {
+						has_opinion = {
+							who = event_target:por_spice_trade
+							value = 0
+						}
+					}
+				}
+				AND = {
+					NOT = {
+						has_opinion = {
+							who = event_target:por_spice_trade
+							value = -19
+						}
+					}
+					has_opinion = {
+						who = event_target:mam_spice_trade
+						value = 0
+					}
+				}
+			}
+		}
+		effect = {
+			add_historical_friend = event_target:mam_spice_trade
+			event_target:mam_spice_trade = {
+				add_historical_friend = ROOT
+			}
+			add_historical_rival = event_target:por_spice_trade
+			event_target:por_spice_trade = {
+				add_historical_rival = ROOT
+			}
+			set_mam_supporter = yes
+			hidden_effect = {
+				REB = {
+					PREV = {
+						set_variable = {
+							which = monthly_mare_clausum_amount
+							which = PREV
+						}
+						set_variable = {
+							which = total_mare_clausum_amount
+							which = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}

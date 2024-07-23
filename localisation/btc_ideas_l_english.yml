@@ -10,11 +10,24 @@
  por_bandeirantes:0 "Encourage the Bandeirantes"
  por_bandeirantes_desc:0 "Some members of expeditions into the interior of the South American rainforests for slave raiding would stumble across finds of gold and other precious metals and stones. These rumors would encourage hardy souls to journey to our colonies."
  por_royal_absolutism:0 "Royal Absolutism"
- por_royal_absolutism_desc:0 "Since the Lord himself appeared and spoke to Dom Afonso Henriques, it has become self evidently clear that the Portuguese royal bloodline has been ordained by God to lead Portugal to greatness."
+ por_royal_absolutism_desc:0 "Since the Lord himself appeared and spoke to D. Afonso Henriques, it has become evidently clear that the Portuguese royal bloodline has been ordained by God to lead Portugal to greatness."
  por_cacadores:0 "Elite Caçadores"
  por_cacadores_desc:0 "Caçadores, or "Hunters", were elite regiments of light infantry. Trained in sharpshooting and assymetrical warfare and equiped in uniforms of natural colours, as opposed to the bright blue Portuguese regular uniforms, to properly camouflage with the landscape."
  por_casa_da_india:0 "Casa da Índia"
  por_casa_da_india_desc:0 "The Casa da Índia was a Portuguese state-run commercial organization. It regulated international trade and the Portuguese Empire's territories, colonies, and factories across Asia and Africa."
+
+ por_crusade: "10th Crusade"
+ por_crusade_desc: ""
+
+ por_forais: "Forais"
+ por_forais_desc: ""
+
+ por_lisboa_arsenal: "Mar da Palha"
+ por_lisboa_arsenal_desc: ""
+
+ por_renaissance: "Portuguese Renaissance"
+ por_renaissance_desc: ""
+
 # England #
  integrated_highland_regiments:0 "Integrated Highland Regiments"
  integrated_highland_regiments_desc:0 "The northern rabble may be simple in their ways, but one cannot deny their ferocity in the battlefield. If introduced to proper British discipline, they could prove to be a formidable force."

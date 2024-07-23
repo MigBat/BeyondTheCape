@@ -71,7 +71,12 @@ can_colonize_province = {
 								}
 							}
 						}
-						region = moluccas_region
+						if = {
+							limit = {
+								NOT = { has_country_flag = moluccas_por }
+							}
+							region = moluccas_region
+						}
 					}
 				}
 			}
@@ -103,7 +108,12 @@ can_colonize_province = {
 						area = pontal_area
 						area = goias_area
 						area = sao_paolo_area
-						region = moluccas_region
+						if = {
+							limit = {
+								NOT = { has_country_flag = moluccas_cas }
+							}
+							region = moluccas_region
+						}
 					}
 				}
 			}

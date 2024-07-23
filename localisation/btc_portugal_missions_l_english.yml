@@ -90,6 +90,9 @@
  btc_england_title: "English Alliance"
  btc_england_desc: "Relations between Portugal and England date back to 1147, when English and other European crusaders stopped to help our first King, Dom Afonso Henriques, in the conquest of Lisboa from the Moors. Since then, and especially during the interregnum of 1383-1385, the English have come to our aid against the Castilians, formalizing our alliance in 1373. In the treaty it reads 'perpetual friendships, unions, alliances and leagues of sincere affection'. We take these things seriously, and we need all the friends in this world we can get - there are few of them and far between..."
 
+ btc_cacadores_title: "Caçadores"
+ btc_cacadores_desc: ""
+
  btc_tordesillas_title: "Treaty of Tordesillas"
  btc_tordesillas_desc: ""
 
@@ -98,6 +101,7 @@
 
  btc_magellan_title: "The Moluccas Question"
  btc_magellan_desc: ""
+ moluccas_por_cas_tt: "If @POR §YPortugal§! completes a circumnavigation before @CAS §YCastile§! they will be able to colonize the Moluccas region. Otherwise, @CAS §YCastile§! will be able to colonize the Moluccas region"
 
  btc_iberia_title: ""
  btc_iberia_desc: ""
@@ -110,6 +114,7 @@
 
  btc_caribbean_title: "Isle of Seven Cities"
  btc_caribbean_desc: "Long ago, during the Muslim conquest of Hispania, seven Christian bishops led by the Archbishop of Porto embarked with their parishioners on ships and set sail westward to escape the Muslim conquerors. They stumbled upon an island, with sand of pure silver, and decided to settle there. Seven settlements were erected, each owned by one of the seven bishops. Now that we have the technology to cross oceans, we shall find this island, its people, and its riches."
+ random_seven_cities_tt: "§MA random island in the Caribbeans region will get:§!\nCulture becomes §YPortuguese§!\nReligion changes to §YCatholic§!\n§YBase Tax, Production§! and §YManpower§! increase by §Y2§!\n§YGold§! will now be produced\n§YPortugal§! gains a permanent claim\n§Y400§! colonists join a Frontier"
 
  btc_pirates_title: "Pirates of the Caribbean"
  btc_pirates_desc: ""
@@ -141,7 +146,7 @@
 
  btc_good_hope_title: "§OThe Cape of Torments§!"
  btc_good_hope_desc: ""
- por_navigator_flagship_mod_tt: "Unlocks the §YPortuguese Navigators§! flagship modification"
+ por_navigator_flagship_mod_tt: "Unlocks the §YPortuguese Navigators§! flagship modification\n§MThis allows your flagship to explore further away. Use it to reach India!§!"
 
  btc_cape_verde_title: "Cabo Verde Islands"
  btc_cape_verde_desc: ""
@@ -152,6 +157,7 @@
 
  btc_slaves_title: "Slave Workforce"
  btc_slaves_desc: ""
+ inner_angola_malaria_tt: "§MInner Angola area and Matamba area will not be affected by Malaria§!"
 
  btc_elmina_title: "São Jorge da Mina"
  btc_elmina_desc: ""
@@ -164,12 +170,14 @@
 
  btc_ethiopia_title: "Alliance with Ethiopia"
  btc_ethiopia_desc: ""
+ por_eth_alliance_tt: "§MThis modifier will be removed if the alliance with Ethiopia is broken§!"
 
  btc_zanzibar_title: "Zanzibar"
  btc_zanzibar_desc: ""
 
  btc_sofala_title: "East African Coast"
  btc_sofala_desc: ""
+ lower_zambezi_malaria_tt: "§MLower Zambezi area will not be affected by Malaria§!"
 
  btc_prazeiros_title: "Prazeiros"
  btc_prazeiros_desc: ""
@@ -186,6 +194,10 @@
  btc_siam_title: "Siamese Embassy"
  btc_siam_desc: ""
 
+ btc_vasco_da_gama_title: "Vasco da Gama"
+ btc_vasco_da_gama_desc: ""
+ cape_route_tt: "§MCan use the Cape Route§!"
+
  btc_india_title: "The Sea Route to India"
  btc_india_desc: ""
  btc_purchase_indian_province_tt: "Enables the §YPurchase Indian Province§! decision"
@@ -193,6 +205,7 @@
  btc_casa_india_title: "Casa da India"
  btc_casa_india_desc: ""
  btc_por_unlock_casa_india_tt: "Enables the §YEstablish the Casa da India§! decision"
+ albuquerque_ability_tt: "§MThis general has the unique ability of transferring ownership of certain occupied provinces to his country.\nThese provinces are §YZanzibar§!, §YAden§!, §YHormuz§!, §YGoa§! and §YMalacca§!§!\n§R§YAfonso de Albuquerque§! needs to be commanding the army that sieges down these provinces!§!"
 
  btc_aden_title: "Aden"
  btc_aden_desc: ""
@@ -200,9 +213,12 @@
  btc_lion_of_seas_title: "Lion of the Seas"
  btc_lion_of_seas_desc: ""
  albuquerque_leaves_tt: "Afonso de Albuquerque leaves his position as general"
+ divert_nile_tt: "§MUsing the §YTomb of Muhammad§! casus belli, siege down §O[384.GetName]§! to capture the remains of the Prophet. Additionally, to complete §YAlbuquerque§!'s ambitious plan to decimate §YEgypt§!, control §O[2321.GetName]§! and §O[360.GetName]§! to divert the course of the §YNile§! river"
 
  btc_mare_clausum_title: "Mare Clausum"
  btc_mare_clausum_desc: ""
+ add_cartaz_tt: "Every owned province with a Fortified Feitoria will get '§YCartaz§!' until the end of the game, giving the following effects:\nYearly Tax Income: §G+12.00§!¤"
+ enable_cartaz_tt: "§MEvery Fortified Feitoria will now issue a Cartaz§!"
 
  btc_malaca_title: "Malaca"
  btc_malaca_desc: ""
@@ -246,8 +262,20 @@
  btc_nagasaki_title: "A Base in Japan"
  btc_nagasali_desc: ""
 
- btc_circumnavigation_title: "Around the World"
- btc_circumnavigation_desc: ""
+ btc_sunda_title: "Luso-Sunda Treaty"
+ btc_sunda_desc: ""
+
+ btc_ambon_title: "Nutmeg Island"
+ btc_ambon_desc: ""
+
+ btc_australia_title: "Terra Australis"
+ btc_australia_desc: ""
+
+ btc_platypus_title: "An Unusual Paradox"
+ btc_platypus_desc: ""
+
+ btc_formosa_title: "Ilha Formosa"
+ btc_formosa_desc: ""
 
  btc_haidao_title: "Haidao"
  btc_haidao_desc: ""

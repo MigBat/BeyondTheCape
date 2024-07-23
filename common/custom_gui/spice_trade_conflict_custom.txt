@@ -1,13 +1,15 @@
 custom_window = {
 	name = spice_trade_conflict_click
 	potential = { 
-
+		has_global_flag = spice_trade_conflict_enabled
 	}
 }
 
 custom_button = {
 	name = spice_trade_conflict_open_button
-	potential = { }
+	potential = {
+		part_of_spice_trade_conflict = yes
+	}
 	trigger = { }
 	effect = {
 		if = {
@@ -225,23 +227,37 @@ custom_shield = {
 		NOT = { tag = event_target:mam_spice_trade }
 		NOT = { has_country_flag = is_mam_ally }
 		NOT = { has_country_flag = is_por_ally }
-		NOT = { has_saved_global_event_target = por_ally_24 }
+		OR = {
+			is_free_or_tributary_trigger = yes
+			is_subject_of_type = trade_protectorate
+		}
+		NOT = { has_saved_global_event_target = mam_ally_24 }
 	}
 	open_country = no
 	global_event_target = mam_spice_trade
 	tooltip = join_mamluks_tt
 	trigger = {}
 	effect = {
+		add_historical_friend = event_target:mam_spice_trade
+		event_target:mam_spice_trade = {
+			add_historical_friend = ROOT
+		}
+		add_historical_rival = event_target:por_spice_trade
+		event_target:por_spice_trade = {
+			add_historical_rival = ROOT
+		}
 		set_mam_supporter = yes
-		REB = {
-			PREV = {
-				set_variable = {
-					which = monthly_mare_clausum_amount
-					which = PREV
-				}
-				set_variable = {
-					which = total_mare_clausum_amount
-					which = PREV
+		hidden_effect = {
+			REB = {
+				PREV = {
+					set_variable = {
+						which = monthly_mare_clausum_amount
+						which = PREV
+					}
+					set_variable = {
+						which = total_mare_clausum_amount
+						which = PREV
+					}
 				}
 			}
 		}
@@ -256,6 +272,10 @@ custom_shield = {
 			tag = event_target:mam_spice_trade
 			has_country_flag = is_mam_ally
 			has_country_flag = is_por_ally
+			AND = {
+				is_free_or_tributary_trigger = no
+				NOT = { is_subject_of_type = trade_protectorate }
+			}
 			has_saved_global_event_target = mam_ally_24
 		}
 	}
@@ -274,6 +294,10 @@ custom_shield = {
 		NOT = { tag = event_target:mam_spice_trade }
 		NOT = { has_country_flag = is_mam_ally }
 		NOT = { has_country_flag = is_por_ally }
+		OR = {
+			is_free_or_tributary_trigger = yes
+			is_subject_of_type = trade_protectorate
+		}
 		NOT = { has_saved_global_event_target = por_ally_24 }
 	}
 	open_country = no
@@ -281,18 +305,28 @@ custom_shield = {
 	tooltip = join_portugal_tt
 	trigger = {}
 	effect = {
+		add_historical_friend = event_target:por_spice_trade
+		event_target:por_spice_trade = {
+			add_historical_friend = ROOT
+		}
+		add_historical_rival = event_target:mam_spice_trade
+		event_target:mam_spice_trade = {
+			add_historical_rival = ROOT
+		}
 		set_por_supporter = yes
-		REB = {
-			PREV = {
-				set_variable = {
-					which = monthly_mare_clausum_amount
-					which = PREV
+		hidden_effect = {
+			REB = {
+				PREV = {
+					set_variable = {
+						which = monthly_mare_clausum_amount
+						which = PREV
+					}
+					set_variable = {
+						which = total_mare_clausum_amount
+						which = PREV
+					}
 				}
-				set_variable = {
-					which = total_mare_clausum_amount
-					which = PREV
-				}
-			}
+			}			
 		}
 	}
 }
@@ -301,10 +335,18 @@ custom_shield = {
 	name = portugal_button
 	potential = {
 		OR = {
+			# Is Portugal or Mamluks
 			tag = event_target:por_spice_trade
 			tag = event_target:mam_spice_trade
+			# Is supporter of Portugal or Mamluks
 			has_country_flag = is_mam_ally
 			has_country_flag = is_por_ally
+			# Is a non-independent subject nation
+			AND = {
+				is_free_or_tributary_trigger = no
+				NOT = { is_subject_of_type = trade_protectorate }
+			}
+			# All supporter spots are filled
 			has_saved_global_event_target = mam_ally_24
 		}
 	}
@@ -339,6 +381,18 @@ custom_button = {
     potential = { has_global_flag = full_mare_clausum_flag }
     trigger = { tag = event_target:por_spice_trade }
     effect = {
+		hidden_effect = {
+			clr_global_flag = spice_trade_conflict_enabled
+			clr_country_flag = open_spice_trade_conflict_window_flag
+			every_country = {
+				limit = {
+					participates_in_spice_trade_conflict = yes
+				}
+				country_event = {
+					id = btc_spice_trade.11
+				}
+			}
+		}
 	}
 	tooltip = declare_mare_clausum_tt
 }
@@ -556,13 +610,36 @@ custom_button = {
     potential = { always = yes }
     trigger = { 
 		tag = event_target:mam_spice_trade 
-		has_country_flag = mam_get_supporters_objective_flag
-		has_country_flag = mam_win_battles_objective_flag
-		has_country_flag = mam_win_war_objective_flag
-		has_country_flag = mam_sink_ships_objective_flag
+		custom_trigger_tooltip = {
+			tooltip = mam_get_supporters_objective_tt
+			event_target:mam_spice_trade = { has_country_flag = mam_get_supporters_objective_flag }
+		}
+		custom_trigger_tooltip = {
+			tooltip = mam_win_battles_objective_tt
+			event_target:mam_spice_trade = { has_country_flag = mam_win_battles_objective_flag }
+		}
+		custom_trigger_tooltip = {
+			tooltip = mam_win_war_objective_tt
+			event_target:mam_spice_trade = { has_country_flag = mam_win_war_objective_flag }
+		}
+		custom_trigger_tooltip = {
+			tooltip = mam_sink_ships_objective_tt
+			event_target:mam_spice_trade = { has_country_flag = mam_sink_ships_objective_flag }
+		}
 	}
     effect = {
-		set_country_flag = test_flag
+		hidden_effect = {
+			clr_global_flag = spice_trade_conflict_enabled
+			clr_country_flag = open_spice_trade_conflict_window_flag
+			every_country = {
+				limit = {
+					participates_in_spice_trade_conflict = yes
+				}
+				country_event = {
+					id = btc_spice_trade.10
+				}
+			}
+		}
 	}
 	tooltip = defeat_portugal_tt
 }
@@ -1359,6 +1436,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_1
+	tooltip = mam_ally_1_tt
     open_country = yes
 }
 
@@ -1370,6 +1448,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_2
+	tooltip = mam_ally_2_tt
     open_country = yes
 }
 
@@ -1381,6 +1460,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_3
+	tooltip = mam_ally_3_tt
     open_country = yes
 }
 
@@ -1392,6 +1472,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_4
+	tooltip = mam_ally_4_tt
     open_country = yes
 }
 
@@ -1403,6 +1484,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_5
+	tooltip = mam_ally_5_tt
     open_country = yes
 }
 
@@ -1414,6 +1496,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_6
+	tooltip = mam_ally_6_tt
     open_country = yes
 }
 
@@ -1425,6 +1508,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_7
+	tooltip = mam_ally_7_tt
     open_country = yes
 }
 
@@ -1436,6 +1520,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_8
+	tooltip = mam_ally_8_tt
     open_country = yes
 }
 
@@ -1447,6 +1532,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_9
+	tooltip = mam_ally_9_tt
     open_country = yes
 }
 
@@ -1458,6 +1544,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_10
+	tooltip = mam_ally_10_tt
     open_country = yes
 }
 
@@ -1469,6 +1556,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_11
+	tooltip = mam_ally_11_tt
     open_country = yes
 }
 
@@ -1480,6 +1568,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_12
+	tooltip = mam_ally_12_tt
     open_country = yes
 }
 
@@ -1491,6 +1580,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_13
+	tooltip = mam_ally_13_tt
     open_country = yes
 }
 
@@ -1502,6 +1592,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_14
+	tooltip = mam_ally_14_tt
     open_country = yes
 }
 
@@ -1513,6 +1604,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_15
+	tooltip = mam_ally_15_tt
     open_country = yes
 }
 
@@ -1524,6 +1616,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_16
+	tooltip = mam_ally_16_tt
     open_country = yes
 }
 
@@ -1535,6 +1628,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_17
+	tooltip = mam_ally_17_tt
     open_country = yes
 }
 
@@ -1546,6 +1640,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_18
+	tooltip = mam_ally_18_tt
     open_country = yes
 }
 
@@ -1557,6 +1652,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_19
+	tooltip = mam_ally_19_tt
     open_country = yes
 }
 
@@ -1568,6 +1664,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_20
+	tooltip = mam_ally_20_tt
     open_country = yes
 }
 
@@ -1579,6 +1676,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_21
+	tooltip = mam_ally_21_tt
     open_country = yes
 }
 
@@ -1590,6 +1688,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_22
+	tooltip = mam_ally_22_tt
     open_country = yes
 }
 
@@ -1601,6 +1700,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_23
+	tooltip = mam_ally_23_tt
     open_country = yes
 }
 
@@ -1612,6 +1712,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = mam_ally_24
+	tooltip = mam_ally_24_tt
     open_country = yes
 }
 
@@ -1623,6 +1724,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_1
+	tooltip = por_ally_1_tt
     open_country = yes
 }
 
@@ -1634,6 +1736,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_2
+	tooltip = por_ally_2_tt
     open_country = yes
 }
 
@@ -1645,6 +1748,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_3
+	tooltip = por_ally_3_tt
     open_country = yes
 }
 
@@ -1656,6 +1760,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_4
+	tooltip = por_ally_4_tt
     open_country = yes
 }
 
@@ -1667,6 +1772,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_5
+	tooltip = por_ally_5_tt
     open_country = yes
 }
 
@@ -1678,6 +1784,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_6
+	tooltip = por_ally_6_tt
     open_country = yes
 }
 
@@ -1689,6 +1796,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_7
+	tooltip = por_ally_7_tt
     open_country = yes
 }
 
@@ -1700,6 +1808,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_8
+	tooltip = por_ally_8_tt
     open_country = yes
 }
 
@@ -1711,6 +1820,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_9
+	tooltip = por_ally_9_tt
     open_country = yes
 }
 
@@ -1722,6 +1832,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_10
+	tooltip = por_ally_10_tt
     open_country = yes
 }
 
@@ -1733,6 +1844,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_11
+	tooltip = por_ally_11_tt
     open_country = yes
 }
 
@@ -1744,6 +1856,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_12
+	tooltip = por_ally_12_tt
     open_country = yes
 }
 
@@ -1755,6 +1868,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_13
+	tooltip = por_ally_13_tt
     open_country = yes
 }
 
@@ -1766,6 +1880,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_14
+	tooltip = por_ally_14_tt
     open_country = yes
 }
 
@@ -1777,6 +1892,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_15
+	tooltip = por_ally_15_tt
     open_country = yes
 }
 
@@ -1788,6 +1904,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_16
+	tooltip = por_ally_16_tt
     open_country = yes
 }
 
@@ -1799,6 +1916,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_17
+	tooltip = por_ally_17_tt
     open_country = yes
 }
 
@@ -1810,6 +1928,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_18
+	tooltip = por_ally_18_tt
     open_country = yes
 }
 
@@ -1821,6 +1940,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_19
+	tooltip = por_ally_19_tt
     open_country = yes
 }
 
@@ -1832,6 +1952,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_20
+	tooltip = por_ally_20_tt
     open_country = yes
 }
 
@@ -1843,6 +1964,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_21
+	tooltip = por_ally_21_tt
     open_country = yes
 }
 
@@ -1854,6 +1976,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_22
+	tooltip = por_ally_22_tt
     open_country = yes
 }
 
@@ -1865,6 +1988,7 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_23
+	tooltip = por_ally_23_tt
     open_country = yes
 }
 
@@ -1876,5 +2000,6 @@ custom_shield = {
 	effect = {}
 	trigger = {}
     global_event_target = por_ally_24
+	tooltip = por_ally_24_tt
     open_country = yes
 }

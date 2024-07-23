@@ -281,20 +281,45 @@ btc_por_lisboa_silk = {
 	}
 }
 
+btc_por_fidalgos_infantry = {
+	category = 7
+	allow = {
+		has_parliament = yes
+		mission_completed = btc_ordenacoes
+		has_estate_privilege = estate_nobles_fidalgos
+		NOT = { has_country_flag = fidalgos_infantry_flag }
+	}
+	effect = {
+		custom_tooltip = fidalgos_infantry_tt
+		set_country_flag = fidalgos_infantry_flag
+	}
+	chance = {
+		factor = 2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
 btc_por_montantes = {
 	category = 7
 	allow = {
 		has_parliament = yes
 		mission_completed = btc_ordenacoes
 		has_estate_privilege = estate_nobles_fidalgos
+		has_country_flag = fidalgos_infantry_flag
 		NOT = { has_country_flag = montantes_flag }
 	}
 	effect = {
 		custom_tooltip = montantes_tt
 		set_country_flag = montantes_flag
+		add_country_modifier = {
+			name = montante_swords
+			duration = -1
+		}
 	}
 	chance = {
-		factor = 1
+		factor = 2
 	}
 	ai_will_do = {
 		factor = 1
@@ -334,7 +359,7 @@ btc_por_end_fidalgos = {
 		set_country_flag = can_remove_fidalgos_flag
 	}
 	chance = {
-		factor = 0.4
+		factor = 0.5
 	}
 	ai_will_do = {
 		factor = 0

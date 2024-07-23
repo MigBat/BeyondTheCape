@@ -63,7 +63,7 @@
  PROV_ADJ2127:0 "Uqturpan"
  
  south_dakota_area:2 "South Dakota"
- cape_of_storms_area: "Cape Route"
+ cape_of_storms_area: "Cape of Storms"
 
 # BTC #
 
@@ -86,6 +86,9 @@
  PROV2242:0 "Gorée"
  PROV1151:0 "Ndar"
  PROV4182:0 "Nagasaki"
+
+ PROV1600: "Cape Route"
+
 # Province Adjectives #
  PROV_ADJ1151:0 "Ndaran"
  PROV_ADJ2241:0 "Bissauan"
@@ -245,6 +248,58 @@
  HAVE_AT_LEAST_MAN_OF_WAR_THAN:0 "Have at least §Y$VALUE$§! Royal Ships.\n"
  MODIFIER_AMOUNT_OF_MAN_OF_WAR:0 "Royal Ship Force Limit"
  ONLY_MAN_OF_WAR_MODIFIER:0 "§YAffects only Royal Ships§!"
+
+ MUSKETEER_NAME:0 "$HOME$'s $NUM$$ORDER$ Caçador Regiment"
+ MODIFIER_ALLOWED_MUSKETEER_FRACTION:0 "Caçador Force Limit"
+ MODIFIER_LOCAL_HAS_MUSKETEER:0 "Province Allows Caçador Infantry"
+ MUSKETEER_FORCELIMIT:0 "We can recruit up to $LIMIT|Y$ §GCaçador§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our force-limit of $FL$:\n"
+ MUSKETEER_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Caçador Infantry here."
+ ADD_MUSKETEER_SUB_UNIT_EFFECT:0 "Get '§GCaçadores§!' $UNIT$ in $WHERE|Y$."
+ MUSKETEER_DESC:0 "Caçadores are elite light infantry units in the Portuguese armed forces, renowned for their proficiency in reconnaissance, skirmishing, and irregular warfare. Formed to complement regular infantry, they excel in mobility, stealth, and marksmanship. Trained to operate independently and adept at using the terrain to their advantage, Caçadores are skilled in ambushes, hit-and-run attacks, and gathering intelligence, making them a crucial component of Portugal's military strategy and leaving a lasting legacy in modern military tactics."
+ REGCAT_musketeer:0 "Caçador"
+ MUSKETEER_REGIMENT:0 "Caçador Regiment\n$EFFECT$"
+ HAVE_LESS_MUSKETEER_THAN:0 "Have less Caçador than §Y$VALUE$§!.\n"
+ HAVE_AT_LEAST_MUSKETEER_THAN:0 "Have at least §Y$VALUE$§! Caçador.\n"
+ MODIFIER_AMOUNT_OF_MUSKETEER:0 "Caçador Force Limit"
+ musketeers_modifier:0 "Caçadores Hired"
+ ONLY_MUSKETEER_MODIFIER:0 "§YAffects only Caçador Regiments§!"
+
+ SAMURAI_NAME:0 "$HOME$'s $NUM$$ORDER$ Fidalgo Regiment"
+ MODIFIER_ALLOWED_SAMURAI_FRACTION:0 "Fidalgo Force Limit"
+ MODIFIER_LOCAL_HAS_SAMURAI:0 "Province Allows Fidalgo Infantry"
+ SAMURAI_FORCELIMIT:0 "We can recruit up to $LIMIT|Y$ §GFidalgo§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our force-limit of $FL$:\n"
+ SAMURAI_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Fidalgo Infantry here."
+ ADD_SAMURAI_SUB_UNIT_EFFECT:0 "Get '§GFidalgo§!' $UNIT$ in $WHERE|Y$."
+ SAMURAI_DESC:0 "Fidalgos are nobles, clad head to toe in an expensive full set of armor, always at the top commanding positions and forming the spearhead of assaults. Their honor code values heroic personal deeds over tactics and the taking of booty and prizes over the achievement of strategic objectives, as well as an emphasis on hand-to-hand combat. No one is able to refuse an engagement, however rash, without accusations of cowardice. Only bravery of the most explicit kind will suffice."
+ REGCAT_samurai:0 "Fidalgo"
+ SAMURAI_REGIMENT:0 "Fidalgo Regiment\n$EFFECT$"
+ HAVE_LESS_SAMURAI_THAN:0 "Have less Fidalgos than §Y$VALUE$§!.\n"
+ samurai_modifier:0 "Fidalgos Hired"
+ HAVE_AT_LEAST_SAMURAI_THAN:0 "Have at least §Y$VALUE$§! Fidalgo.\n"
+ MODIFIER_AMOUNT_OF_SAMURAI:0 "Fidalgo Force Limit"
+ ONLY_SAMURAI_MODIFIER:0 "§YAffects only Fidalgo Regiments§!"
+
+ MODIFIER_HAS_MUSKETEER:0 "Country Allows Caçador Infantry"
+ MODIFIER_HAS_SAMURAI:0 "Country Allows Fidalgo Infantry"
+
+ HUSSARS_NAME:0 "$HOME$'s $NUM$$ORDER$ Ginete"
+ MODIFIER_HAS_HUSSARS:0 "Allows Ginetes"
+ HUSSARS_CANT_HAVE:0 "Your nation cannot raise Ginetes."
+ HUSSARS_DESC:1 "Ginetes are a highly mobile and agile light cavalry force, influenced by Berber cavalry tactics, used primarily during the medieval and Renaissance periods. Equipped with lighter armor, javelins, swords, and riding swift, smaller horses, they excel in hit-and-run tactics, skirmishing, and reconnaissance. Their role is to disrupt and harass enemy formations, provide support to heavier cavalry and infantry, and conduct scouting missions."
+ REGCAT_hussars:0 "Ginetes"
+ hussars_regiment:0 "Ginetes"
+ ADD_HUSSARS_SUB_UNIT_EFFECT:0 "Get '§GGinetes§!' $UNIT$ in $WHERE|Y$."
+ HUSSARS_REGIMENT:0 "Ginete Regiment\n$EFFECT$"
+ HAVE_LESS_HUSSARS_THAN:0 "Have less Ginete Regiments than $VALUE|Y$.\n"
+ HAVE_AT_LEAST_HUSSARS_THAN:0 "Have at least $VALUE|Y$ Ginete Regiments.\n"
+ MODIFIER_AMOUNT_OF_HUSSARS:0 "Possible Ginetes"
+ MODIFIER_LOCAL_AMOUNT_OF_HUSSARS:0 "Possible Ginetes from development"
+ MODIFIER_CAN_RECRUIT_HUSSARS:0 "May recruit §YGinetes§!"
+ HUSSARS_REGIMENT_TYPE:0 "Ginete"
+ STATE_HUSSARS_CREATED_REGIMENTS:0 "This will cost $MILAMOUNT|Y$ £mil£, and $NUM|Y$ Ginetes will spawn in $PROV|Y$.\nDo you want to create a Ginete regiment?"
+ HUSSARS_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so you cannot recruit Ginete Regiments here."
+ MODIFIER_HUSSARS_COST:0 "Ginete Regiment Cost"
+
 # Special Unit Related #
  desc_spa_employ_galleon_modifier:0 "Full-Rigged ships are a key new development in shipbuilding engineering, becoming the workhorse of our Navy."
  improved_man_of_war_acts:0 "Royal Ship Acts"

@@ -256,7 +256,7 @@ no_adjacent_controlled = {
 }
 
 provincial_tax_income = {
-	regiment_recruit_speed = -0.02
+	# regiment_recruit_speed = -0.02
 	local_great_project_upgrade_time = -0.01
 	local_build_time = -0.01
 	local_institution_spread = 0.02
@@ -265,6 +265,8 @@ provincial_tax_income = {
 provincial_production_size = {
 	trade_goods_size = 0.2
 	ship_recruit_speed = -0.01
+	# BTC #
+	local_ship_repair = 0.02
 }
 
 knowledge_sharing = {
@@ -278,6 +280,9 @@ cardinals_spread_institution = {
 
 manpower = {
 	garrison_growth = 0.01					#1% increase from manpower.
+	# BTC from tax #
+	regiment_recruit_speed = -0.02
+	local_garrison_size = 0.02
 }
 
 province_razed = {
@@ -2112,10 +2117,9 @@ cawa_regiment = {
 	reinforce_speed = 0.5
 }
 
+# BEYOND THE CAPE - ginetes
 hussars_regiment = {
-	cavalry_shock = 1
-	morale_damage = 0.5
-	reinforce_speed = -0.5
+	cavalry_fire = 1
 }
 
 marine_regiment = {
@@ -2139,14 +2143,17 @@ tercio_regiment = {
 	shock_damage_received = -0.3
 }
 
+# BEYOND THE CAPE - caçadores
 musketeer_regiment = {
-	fire_damage = 0.15
+	infantry_fire = 0.5
 }
 
+# BEYOND THE CAPE - fidalgos
 samurai_regiment = {
-	discipline = 0.05
-	morale_damage_received = -0.1
-	reinforce_cost_modifier = 0.5
+	infantry_shock = 1
+	morale_damage_received = -1
+	reinforce_cost_modifier = 1
+	reinforce_speed = -0.5
 }
 
 qizilbash_regiment = {

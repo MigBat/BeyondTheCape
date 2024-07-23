@@ -44,7 +44,8 @@ persian_gulf_area = { #(+Makran)
 }
 
 arabian_sea_area = {
-	1331 1333 1337 1338 1339 1340 1446 1451 1452 1615 4346
+	1331 1333 1337 1338 1446 1451 1452 1615 4346
+	# 1339 1340
 }
 
 andaman_sea_area = {
@@ -60,7 +61,9 @@ eastern_indian_ocean_area = {
 }
 
 western_indian_ocean_area = {
- 	1450 1453 1454 1455 1616 1617 1618 1619 1620 1621 1625 1626 1627 1628 1629 1630
+ 	1450 1453 1454 1455 1617 1618 1619 1620 1621 1625 1626 1627 1628 1629 1630
+	1340
+	#  1616
 }
 
 south_indian_ocean_area = {
@@ -169,7 +172,15 @@ gulf_of_guinea_sea_area = {
 }
 
 cape_of_storms_area = {
-	1459 1460 1586 1600 1603 1604
+	1459 1460
+}
+
+atlantic_cape_route_area = {
+	1586 1600 1603 #1604
+}
+
+indian_cape_route_area = {
+	1616 1339
 }
 
 skeleton_coast_area = {
@@ -209,7 +220,8 @@ celtic_sea_area = {
 }
 
 west_african_coast_sea_area = {
-	1413 1467 1468 1469 1470 1471 1472 1578 1579 1597
+	1467 1468 1469 1470 1471 1472
+	# 1578 1413 1579 1597
 }
 
 south_atlantic_area = {
@@ -254,6 +266,10 @@ bojador_shoals_area = {
 
 south_atlantic_depths_area = {
 	1585 1601 1602
+}
+
+north_atlantic_depths_area = {
+	1578 1413 1579 1597
 }
 
 #Lakes:

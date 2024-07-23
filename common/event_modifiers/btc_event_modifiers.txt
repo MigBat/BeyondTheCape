@@ -72,6 +72,10 @@ foreign_feitoria = {
 	picture = "prov_modifier_foreign_feitoria"
 }
 
+cartaz = {
+	global_tax_income = 12
+}
+
 por_english_alliance = {
 	drill_gain_modifier = 0.25
 	army_tradition = 0.25
@@ -113,27 +117,6 @@ capital_5 = {
 }
 capital_6 = {
 	monthly_portuguese_saudade = -0.3
-}
-
-feitoria = {
-	province_trade_power_value = 2
-	local_governing_cost = 0.25
-	local_ship_repair = 0.1
-	picture = "prov_modifier_feitoria"
-}
-
-fortified_feitoria = {
-	province_trade_power_value = 2
-	local_ship_repair = 0.2
-	local_defensiveness = 0.15
-	local_governing_cost = 0.5
-	fort_level = 1
-	picture = "prov_modifier_fortified_feitoria"
-}
-
-foreign_feitoria = {
-	tax_income = 6
-	picture = "prov_modifier_foreign_feitoria"
 }
 
 estate_slavers_monopoly_of_slaves_mod = {
@@ -705,8 +688,7 @@ por_adopting_tercos = {
 }
 
 por_improved_tercos = {
-	fire_damage = 0.1
-	morale_damage = 0.1
+	discipline = 0.05
 	is_tercio_modifier = yes
 }
 
@@ -715,7 +697,7 @@ jogo_do_pau = {
 }
 
 ginetes = {
-	cavalry_fire = 1
+	can_recruit_hussars = yes
 }
 
 casa_da_guine = {
@@ -727,5 +709,108 @@ explored_coast = {
 }
 
 duke_of_braganca = {
-	min_local_autonomy = 20
+	global_autonomy = 0.2
+}
+
+por_cacadores = {
+	has_musketeer = yes
+	allowed_musketeer_fraction = 0.1
+}
+
+legacy_of_francis_xavier = {
+	papal_influence = 2
+}
+
+disable_ship_capture = {
+	capture_ship_chance = -1000
+}
+
+malaria = {
+	local_production_efficiency = -0.9
+	local_tax_modifier = -0.9
+	province_trade_power_value = 0.001
+	local_development_cost_modifier = 2
+	local_colonial_growth = -150
+	local_colony_cost_modifier = 1
+	picture = "malaria"
+}
+
+island_development = {
+	local_development_cost_modifier = 0.75
+	picture = "island_pic"
+}
+
+no_settlers = {
+	global_colonial_growth = -50
+	colonist_placement_chance = -0.1
+	colony_cost_modifier = 0.5
+}
+
+very_low_settlers = {
+	global_colonial_growth = -25
+	colonist_placement_chance = -0.05
+}
+
+low_settlers = {
+	global_colonial_growth = -10
+}
+
+some_settlers = {
+	global_colonial_growth = 10
+	colonist_placement_chance = 0.05
+}
+
+many_settlers = {
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.1
+}
+
+monumental_good = {
+	no_stability_loss_on_monarch_death = yes
+	ship_recruit_speed = -0.5
+	all_estate_possible_privileges = 1
+	governing_capacity_modifier = 0.25
+	max_absolutism = 50
+	picture = "btc_monument_pic"
+}
+
+nile_diverted = {
+	local_monthly_devastation = 2
+}
+
+waiting_for_nile_divert = {
+
+}
+
+waiting_for_nile_restoration = {
+	
+}
+
+montante_swords = {
+	morale_damage = 0.5
+	is_samurai_modifier = yes	
+}
+
+mam_win_spice_trade_conflict = {
+	trade_efficiency = 0.25
+	improve_relation_modifier = 0.5
+}
+
+por_win_spice_trade_conflict = {
+	trade_efficiency = 0.25	
+	diplomatic_reputation = 2
+}
+
+mam_lose_spice_trade_conflict = {
+	trade_efficiency = -0.25
+	improve_relation_modifier = -0.5
+}
+
+por_lose_spice_trade_conflict = {
+	trade_efficiency = -0.25	
+	diplomatic_reputation = -2
+}
+
+ven_mam_forcelimit = {
+	naval_forcelimit = 200
 }

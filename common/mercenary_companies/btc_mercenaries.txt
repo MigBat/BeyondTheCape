@@ -1,5 +1,5 @@
 merc_english_longbowmen = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.05
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 231
 	cost_modifier = 0.25
@@ -29,7 +29,7 @@ merc_english_longbowmen = {
 }
 
 merc_british_redcoats = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.05
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 231
 	cost_modifier = 0.25
@@ -59,7 +59,7 @@ merc_british_redcoats = {
 }
 
 merc_colonial_ordenancas = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.05
 	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 1096
 	cost_modifier = 0.1
@@ -77,12 +77,13 @@ merc_colonial_ordenancas = {
 }
 
 merc_knights_of_christ = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.04
     home_province = 4787
 	cost_modifier = 0.25
 	cavalry_weight = 1
 	min_size = 4 
-	max_size = 8
+	max_size = 20
+	manpower_pool = 50
 	no_additional_manpower_from_max_size = yes
 	counts_towards_force_limit = no
 	sprites = { christ_order_sprite_pack }
@@ -110,12 +111,13 @@ merc_knights_of_christ = {
 }
 
 merc_knights_of_avis = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.04
     home_province = 4150
 	cost_modifier = 0.25
 	cavalry_weight = 1
 	min_size = 4 
-	max_size = 8
+	max_size = 20
+	manpower_pool = 50
 	no_additional_manpower_from_max_size = yes
 	counts_towards_force_limit = no
 	sprites = { avis_order_sprite_pack }
@@ -143,12 +145,13 @@ merc_knights_of_avis = {
 }
 
 merc_knights_of_calatrava = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.04
     home_province = 2754
 	cost_modifier = 0.25
 	cavalry_weight = 1
 	min_size = 4 
-	max_size = 8
+	max_size = 20
+	manpower_pool = 50
 	no_additional_manpower_from_max_size = yes
 	counts_towards_force_limit = no
 	sprites = { calatrava_order_sprite_pack }
@@ -176,12 +179,13 @@ merc_knights_of_calatrava = {
 }
 
 merc_knights_of_santiago = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.04
     home_province = 2751
 	cost_modifier = 0.25
 	cavalry_weight = 1
 	min_size = 4 
-	max_size = 8
+	max_size = 20
+	manpower_pool = 50
 	no_additional_manpower_from_max_size = yes
 	counts_towards_force_limit = no
 	sprites = { santiago_order_sprite_pack }
@@ -209,12 +213,13 @@ merc_knights_of_santiago = {
 }
 
 merc_knights_of_montesa = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.04
     home_province = 4549
 	cost_modifier = 0.25
 	cavalry_weight = 1
 	min_size = 4 
-	max_size = 8
+	max_size = 20
+	manpower_pool = 50
 	no_additional_manpower_from_max_size = yes
 	counts_towards_force_limit = no
 	sprites = { montesa_order_sprite_pack }
@@ -242,12 +247,13 @@ merc_knights_of_montesa = {
 }
 
 merc_knights_of_alcantara = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.04
     home_province = 4788
 	cost_modifier = 0.25
 	cavalry_weight = 1
 	min_size = 4 
-	max_size = 8
+	max_size = 20
+	manpower_pool = 50
 	no_additional_manpower_from_max_size = yes
 	counts_towards_force_limit = no
 	sprites = { alcantara_order_sprite_pack }
@@ -275,12 +281,13 @@ merc_knights_of_alcantara = {
 }
 
 merc_knights_of_san_juan = {
-	regiments_per_development = 0.03
+	regiments_per_development = 0.04
     home_province = 126
 	cost_modifier = 0.25
 	cavalry_weight = 1
 	min_size = 4 
-	max_size = 8
+	max_size = 20
+	manpower_pool = 50
 	no_additional_manpower_from_max_size = yes
 	counts_towards_force_limit = no
 	sprites = { san_juan_order_sprite_pack }

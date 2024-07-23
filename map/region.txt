@@ -1450,14 +1450,14 @@ west_african_sea_region = {
 	areas = {
 		west_african_coast_sea_area
 		gulf_of_guinea_sea_area
-		# skeleton_coast_area
+		skeleton_coast_area
 	}
 }
 
 west_indian_ocean_region = {
 	areas = {
 		western_indian_ocean_area
-		swahili_coast_sea_area
+		# swahili_coast_sea_area
 	}
 }
 
@@ -1549,12 +1549,21 @@ atlantic_south_america_region = {
 south_atlantic_region = {
 	areas = {
 		south_atlantic_area
-		cape_of_storms_area
-		skeleton_coast_area
+		# cape_of_storms_area
+		# skeleton_coast_area
 	}
 }
 
 # BTC #
+
+cape_route_region = {
+	areas = {
+		atlantic_cape_route_area
+		indian_cape_route_area
+		cape_of_storms_area
+		swahili_coast_sea_area
+	}
+}
 
 greenland_icecaps_region = {
 	areas = {
@@ -1571,5 +1580,11 @@ bojador_shoals_region = {
 south_atlantic_depths_region = {
 	areas = {
 		south_atlantic_depths_area
+	}
+}
+
+north_atlantic_depths_region = {
+	areas = {
+		north_atlantic_depths_area
 	}
 }

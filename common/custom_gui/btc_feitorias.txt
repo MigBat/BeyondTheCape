@@ -143,6 +143,15 @@ custom_button = {
 			name = fortified_feitoria
 			duration = -1
 		}
+		if = {
+			limit = {
+				owner = { mission_completed = btc_mare_clausum }
+			}
+			add_province_modifier = {
+				name = cartaz
+				duration = -1
+			}
+		}
 		FROM = { 
 			if = {
 				limit = {

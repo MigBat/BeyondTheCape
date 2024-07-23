@@ -93,8 +93,14 @@
  canton_area:0 "Canton"
  greenland_icecaps_area:0 "Greenland Icecaps"
  bojador_shoals_area:0 "Bojador Shoals"
- south_atlantic_depths_area:0 "South Atlantic Depths"
+ south_atlantic_depths_area: "South Atlantic Depths"
+ north_atlantic_depths_area: "North Atlantic Depths"
+ atlantic_cape_route_area: "Atlantic Cape Route"
+ indian_cape_route_area: "Indian Cape Route"
+ 
 # REGIONS #
  greenland_icecaps_region:0 "Greenland Icecaps"
  bojador_shoals_region:0 "Bojador Shoals"
- south_atlantic_depths_region:0 "South Atlantic Depths"
+ south_atlantic_depths_region: "South Atlantic Depths"
+ north_atlantic_depths_region: "North Atlantic Depths"
+ cape_route_region: "Cape Route"

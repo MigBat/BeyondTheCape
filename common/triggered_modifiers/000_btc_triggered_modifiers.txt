@@ -35,3 +35,28 @@ ottoman_silk_road_monopoly = {
 
 	trade_efficiency = -0.05	
 }
+
+decentralized_indian_state = {
+	potential = {
+		technology_group = indian
+		NOT = {
+			OR = {
+				tag = HIN
+				tag = BHA
+				tag = MUG
+				tag = DEC
+				tag = MAR
+				tag = RJP
+				tag = NAG
+			}
+		}
+	}
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 35
+		}
+	}
+	
+	global_unrest = 8
+}
