@@ -7,9 +7,6 @@ on_startup = {
 	POR = { country_event = { id = btc_por.180 } }
 	MOR = { country_event = { id = btc_events.2 } }
 	GRA = { country_event = { id = btc_events.2 } }
-	### SPICE TRADE CONFLICT ###
-	POR = { save_global_event_target_as = por_spice_trade }
-	MAM = { save_global_event_target_as = mam_spice_trade }
 }
 
 on_monthly_pulse = {

@@ -814,3 +814,12 @@ por_lose_spice_trade_conflict = {
 ven_mam_forcelimit = {
 	naval_forcelimit = 200
 }
+
+por_eth_support = {
+	military_tactics = 0.25
+	technology_cost = -0.1
+}
+
+eth_por_support = {
+	global_manpower_modifier = 0.1
+}

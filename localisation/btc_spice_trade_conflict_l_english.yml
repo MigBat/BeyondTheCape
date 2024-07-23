@@ -129,10 +129,21 @@
  btc_spice_trade.20a: "Support [mam_spice_trade.GetName]"
  btc_spice_trade.20b: "We shouldn't get involved"
 
- btc_spice_trade.20.t: "Portugal Seeks an Alliance"
- btc_spice_trade.20.d: ""
- btc_spice_trade.20a: "Support [por_spice_trade.GetName]"
- btc_spice_trade.20b: "We shouldn't get involved"
+ btc_spice_trade.21.t: "Portugal Seeks an Alliance"
+ btc_spice_trade.21.d: ""
+ btc_spice_trade.21a: "Support [por_spice_trade.GetName]"
+ btc_spice_trade.21b: "We shouldn't get involved"
+
+ btc_spice_trade.22.t: "A Portuguese Delegation"
+ btc_spice_trade.22.d: ""
+ btc_spice_trade.22a: "Support [por_spice_trade.GetName]"
+ btc_spice_trade.22b: "We shouldn't get involved"
+
+ btc_spice_trade.23.t: "Portugal is Growing Too Powerful"
+ btc_spice_trade.23.d: ""
+ btc_spice_trade.23a: "Enough is Enough!"
+ btc_spice_trade.23b: "Support [mam_spice_trade.GetName]"
+ btc_spice_trade.23c: "We shouldn't get involved"
 
  mam_ally_1_tt: "[mam_ally_1.GetName]"
  mam_ally_2_tt: "[mam_ally_2.GetName]"

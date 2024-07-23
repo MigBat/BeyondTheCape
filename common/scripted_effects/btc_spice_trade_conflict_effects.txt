@@ -1010,558 +1010,6 @@ own_mam_alliance_points_calc_malacca = {
 	}
 }
 
-next_por_ally = {
-	if = {
-		limit = {
-			tag = event_target:por_spice_trade
-			has_saved_global_event_target = por_ally_1
-		}
-		event_target:por_ally_1 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_1
-			has_saved_global_event_target = por_ally_2
-		}
-		event_target:por_ally_2 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_2
-			has_saved_global_event_target = por_ally_3
-		}
-		event_target:por_ally_3 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_3
-			has_saved_global_event_target = por_ally_4
-		}
-		event_target:por_ally_4 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_4
-			has_saved_global_event_target = por_ally_5
-		}
-		event_target:por_ally_5 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_5
-			has_saved_global_event_target = por_ally_6
-		}
-		event_target:por_ally_6 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_6
-			has_saved_global_event_target = por_ally_7
-		}
-		event_target:por_ally_7 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_7
-			has_saved_global_event_target = por_ally_8
-		}
-		event_target:por_ally_8 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_8
-			has_saved_global_event_target = por_ally_9
-		}
-		event_target:por_ally_9 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_9
-			has_saved_global_event_target = por_ally_10
-		}
-		event_target:por_ally_10 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_10
-			has_saved_global_event_target = por_ally_11
-		}
-		event_target:por_ally_11 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_11
-			has_saved_global_event_target = por_ally_12
-		}
-		event_target:por_ally_12 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_12
-			has_saved_global_event_target = por_ally_13
-		}
-		event_target:por_ally_13 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_13
-			has_saved_global_event_target = por_ally_14
-		}
-		event_target:por_ally_14 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_14
-			has_saved_global_event_target = por_ally_15
-		}
-		event_target:por_ally_15 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_15
-			has_saved_global_event_target = por_ally_16
-		}
-		event_target:por_ally_16 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_16
-			has_saved_global_event_target = por_ally_17
-		}
-		event_target:por_ally_17 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_17
-			has_saved_global_event_target = por_ally_18
-		}
-		event_target:por_ally_18 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_18
-			has_saved_global_event_target = por_ally_19
-		}
-		event_target:por_ally_19 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_19
-			has_saved_global_event_target = por_ally_20
-		}
-		event_target:por_ally_20 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_20
-			has_saved_global_event_target = por_ally_21
-		}
-		event_target:por_ally_21 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_21
-			has_saved_global_event_target = por_ally_22
-		}
-		event_target:por_ally_22 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_22
-			has_saved_global_event_target = por_ally_23
-		}
-		event_target:por_ally_23 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_23
-			has_saved_global_event_target = por_ally_24
-		}
-		event_target:por_ally_24 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:por_ally_24
-		}
-		set_global_flag = all_por_ally_calc
-	}
-	else = {
-		set_global_flag = all_por_ally_calc
-	}
-}
-
-next_mam_ally = {
-	if = {
-		limit = {
-			tag = event_target:mam_spice_trade
-			has_saved_global_event_target = mam_ally_1
-		}
-		event_target:mam_ally_1 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_1
-			has_saved_global_event_target = mam_ally_2
-		}
-		event_target:mam_ally_2 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_2
-			has_saved_global_event_target = mam_ally_3
-		}
-		event_target:mam_ally_3 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_3
-			has_saved_global_event_target = mam_ally_4
-		}
-		event_target:mam_ally_4 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_4
-			has_saved_global_event_target = mam_ally_5
-		}
-		event_target:mam_ally_5 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_5
-			has_saved_global_event_target = mam_ally_6
-		}
-		event_target:mam_ally_6 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_6
-			has_saved_global_event_target = mam_ally_7
-		}
-		event_target:mam_ally_7 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_7
-			has_saved_global_event_target = mam_ally_8
-		}
-		event_target:mam_ally_8 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_8
-			has_saved_global_event_target = mam_ally_9
-		}
-		event_target:mam_ally_9 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_9
-			has_saved_global_event_target = mam_ally_10
-		}
-		event_target:mam_ally_10 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_10
-			has_saved_global_event_target = mam_ally_11
-		}
-		event_target:mam_ally_11 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_11
-			has_saved_global_event_target = mam_ally_12
-		}
-		event_target:mam_ally_12 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_12
-			has_saved_global_event_target = mam_ally_13
-		}
-		event_target:mam_ally_13 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_13
-			has_saved_global_event_target = mam_ally_14
-		}
-		event_target:mam_ally_14 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_14
-			has_saved_global_event_target = mam_ally_15
-		}
-		event_target:mam_ally_15 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_15
-			has_saved_global_event_target = mam_ally_16
-		}
-		event_target:mam_ally_16 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_16
-			has_saved_global_event_target = mam_ally_17
-		}
-		event_target:mam_ally_17 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_17
-			has_saved_global_event_target = mam_ally_18
-		}
-		event_target:mam_ally_18 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_18
-			has_saved_global_event_target = mam_ally_19
-		}
-		event_target:mam_ally_19 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_19
-			has_saved_global_event_target = mam_ally_20
-		}
-		event_target:mam_ally_20 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_20
-			has_saved_global_event_target = mam_ally_21
-		}
-		event_target:mam_ally_21 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_21
-			has_saved_global_event_target = mam_ally_22
-		}
-		event_target:mam_ally_22 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_22
-			has_saved_global_event_target = mam_ally_23
-		}
-		event_target:mam_ally_23 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_23
-			has_saved_global_event_target = mam_ally_24
-		}
-		event_target:mam_ally_24 = {
-			country_event = {
-				id = btc_spice_trade.2
-			}
-		}
-	}
-	if = {
-		limit = {
-			tag = event_target:mam_ally_24
-		}
-		set_global_flag = all_mam_ally_calc
-	}
-	else = {
-		set_global_flag = all_mam_ally_calc
-	}
-}
-
 set_government_power_variable = {
 	hidden_effect = { set_variable = { which = mare_clausum_copy which = $variable$ } }
 
@@ -2514,6 +1962,7 @@ btc_spice_trade_clear_stuff = {
 		remove_historical_friend = event_target:mam_ally_23
 		remove_historical_friend = event_target:mam_ally_24
 
+		remove_historical_rival = event_target:por_spice_trade
 		remove_historical_rival = event_target:por_ally_1
 		remove_historical_rival = event_target:por_ally_2
 		remove_historical_rival = event_target:por_ally_3
@@ -2543,6 +1992,8 @@ btc_spice_trade_clear_stuff = {
 		limit = {
 			tag = event_target:por_spice_trade
 		}	
+		remove_country_modifier = eth_por_support
+
 		remove_historical_friend = event_target:por_ally_1
 		remove_historical_friend = event_target:por_ally_2
 		remove_historical_friend = event_target:por_ally_3
@@ -2568,6 +2019,7 @@ btc_spice_trade_clear_stuff = {
 		remove_historical_friend = event_target:por_ally_23
 		remove_historical_friend = event_target:por_ally_24
 
+		remove_historical_rival = event_target:mam_spice_trade
 		remove_historical_rival = event_target:mam_ally_1
 		remove_historical_rival = event_target:mam_ally_2
 		remove_historical_rival = event_target:mam_ally_3
@@ -2605,8 +2057,152 @@ btc_spice_trade_clear_stuff = {
 		limit = {
 			has_country_flag = is_por_ally
 		}
+		remove_country_modifier = por_eth_support
+
 		remove_historical_friend = event_target:por_spice_trade
 
 		remove_historical_rival = event_target:mam_spice_trade
+	}
+}
+
+btc_clear_mam_stuff = {
+	remove_historical_friend = event_target:mam_ally_1
+	remove_historical_friend = event_target:mam_ally_2
+	remove_historical_friend = event_target:mam_ally_3
+	remove_historical_friend = event_target:mam_ally_4
+	remove_historical_friend = event_target:mam_ally_5
+	remove_historical_friend = event_target:mam_ally_6
+	remove_historical_friend = event_target:mam_ally_7
+	remove_historical_friend = event_target:mam_ally_8
+	remove_historical_friend = event_target:mam_ally_9
+	remove_historical_friend = event_target:mam_ally_10
+	remove_historical_friend = event_target:mam_ally_11
+	remove_historical_friend = event_target:mam_ally_12
+	remove_historical_friend = event_target:mam_ally_13
+	remove_historical_friend = event_target:mam_ally_14
+	remove_historical_friend = event_target:mam_ally_15
+	remove_historical_friend = event_target:mam_ally_16
+	remove_historical_friend = event_target:mam_ally_17
+	remove_historical_friend = event_target:mam_ally_18
+	remove_historical_friend = event_target:mam_ally_19
+	remove_historical_friend = event_target:mam_ally_20
+	remove_historical_friend = event_target:mam_ally_21
+	remove_historical_friend = event_target:mam_ally_22
+	remove_historical_friend = event_target:mam_ally_23
+	remove_historical_friend = event_target:mam_ally_24
+
+	remove_historical_rival = event_target:por_spice_trade
+	remove_historical_rival = event_target:por_ally_1
+	remove_historical_rival = event_target:por_ally_2
+	remove_historical_rival = event_target:por_ally_3
+	remove_historical_rival = event_target:por_ally_4
+	remove_historical_rival = event_target:por_ally_5
+	remove_historical_rival = event_target:por_ally_6
+	remove_historical_rival = event_target:por_ally_7
+	remove_historical_rival = event_target:por_ally_8
+	remove_historical_rival = event_target:por_ally_9
+	remove_historical_rival = event_target:por_ally_10
+	remove_historical_rival = event_target:por_ally_11
+	remove_historical_rival = event_target:por_ally_12
+	remove_historical_rival = event_target:por_ally_13
+	remove_historical_rival = event_target:por_ally_14
+	remove_historical_rival = event_target:por_ally_15
+	remove_historical_rival = event_target:por_ally_16
+	remove_historical_rival = event_target:por_ally_17
+	remove_historical_rival = event_target:por_ally_18
+	remove_historical_rival = event_target:por_ally_19
+	remove_historical_rival = event_target:por_ally_20
+	remove_historical_rival = event_target:por_ally_21
+	remove_historical_rival = event_target:por_ally_22
+	remove_historical_rival = event_target:por_ally_23
+	remove_historical_rival = event_target:por_ally_24
+
+	event_target:por_spice_trade = {
+		remove_historical_rival = event_target:mam_spice_trade
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = is_mam_ally
+		}
+		remove_historical_friend = event_target:mam_spice_trade
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = is_por_ally
+		}
+		remove_historical_rival = event_target:mam_spice_trade
+	}
+}
+
+btc_add_mam_stuff = {
+	add_historical_friend = event_target:mam_ally_1
+	add_historical_friend = event_target:mam_ally_2
+	add_historical_friend = event_target:mam_ally_3
+	add_historical_friend = event_target:mam_ally_4
+	add_historical_friend = event_target:mam_ally_5
+	add_historical_friend = event_target:mam_ally_6
+	add_historical_friend = event_target:mam_ally_7
+	add_historical_friend = event_target:mam_ally_8
+	add_historical_friend = event_target:mam_ally_9
+	add_historical_friend = event_target:mam_ally_10
+	add_historical_friend = event_target:mam_ally_11
+	add_historical_friend = event_target:mam_ally_12
+	add_historical_friend = event_target:mam_ally_13
+	add_historical_friend = event_target:mam_ally_14
+	add_historical_friend = event_target:mam_ally_15
+	add_historical_friend = event_target:mam_ally_16
+	add_historical_friend = event_target:mam_ally_17
+	add_historical_friend = event_target:mam_ally_18
+	add_historical_friend = event_target:mam_ally_19
+	add_historical_friend = event_target:mam_ally_20
+	add_historical_friend = event_target:mam_ally_21
+	add_historical_friend = event_target:mam_ally_22
+	add_historical_friend = event_target:mam_ally_23
+	add_historical_friend = event_target:mam_ally_24
+
+	add_historical_rival = event_target:por_spice_trade
+	add_historical_rival = event_target:por_ally_1
+	add_historical_rival = event_target:por_ally_2
+	add_historical_rival = event_target:por_ally_3
+	add_historical_rival = event_target:por_ally_4
+	add_historical_rival = event_target:por_ally_5
+	add_historical_rival = event_target:por_ally_6
+	add_historical_rival = event_target:por_ally_7
+	add_historical_rival = event_target:por_ally_8
+	add_historical_rival = event_target:por_ally_9
+	add_historical_rival = event_target:por_ally_10
+	add_historical_rival = event_target:por_ally_11
+	add_historical_rival = event_target:por_ally_12
+	add_historical_rival = event_target:por_ally_13
+	add_historical_rival = event_target:por_ally_14
+	add_historical_rival = event_target:por_ally_15
+	add_historical_rival = event_target:por_ally_16
+	add_historical_rival = event_target:por_ally_17
+	add_historical_rival = event_target:por_ally_18
+	add_historical_rival = event_target:por_ally_19
+	add_historical_rival = event_target:por_ally_20
+	add_historical_rival = event_target:por_ally_21
+	add_historical_rival = event_target:por_ally_22
+	add_historical_rival = event_target:por_ally_23
+	add_historical_rival = event_target:por_ally_24
+
+	event_target:por_spice_trade = {
+		add_historical_rival = event_target:mam_spice_trade
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = is_mam_ally
+		}
+		add_historical_friend = event_target:mam_spice_trade
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = is_por_ally
+		}
+		add_historical_rival = event_target:mam_spice_trade
 	}
 }
