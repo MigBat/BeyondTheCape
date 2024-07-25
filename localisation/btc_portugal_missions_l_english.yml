@@ -68,6 +68,7 @@
 
  btc_morocco_title: "Dealing with Morocco"
  btc_morocco_desc: "For long have the Portuguese Cortes asked the King to consolidate Portuguese presence in Morocco, exacerbated by the vulnerability of our coasts from mediterranean expeditions by the Ottomans and Mamluks, who dispute the Indian trade with us. We are not ready to fight on two fronts. But now someone appears at our doorstep. Abdallah Mohammed, a pretender to the Moroccan throne, requests assistance in recovering it from his uncle. This presents a unique opportunity for us. We must act, and fast!"
+ morocco_todo_tt: "TODO"
 
  btc_christ_title: "Order of Christ"
  btc_christ_desc: "When the Knights Templar were disbanded by the pope in 1312 and consequently persecuted, our King Dinis I refused to do so, being grateful to their aid during the Reconquista and consequent reconstruction of the country. In Portugal, the Knights Templar found a safe haven, rebranding themselves as the Order of Christ. Prince Henry is the current grandmaster of the order. He intends to avenge the disaster of Tangiers in 1437, and the order is ready to help us build up our fleet for a second incursion into North Africa."
@@ -79,7 +80,7 @@
  btc_castile_title: "The Castilian Succession"
  btc_castile_desc: "An unexpected opportunity has revealed itself. Castile is currently embroiled in a succession crisis, and one of the claimants, Joanna, has proposed to [Root.Monarch.GetTitle] [Root.Monarch.GetName], aiming to rule Castile together. Her rival, Isabella, has gained the support of the Crown of Aragon. If we are to intervene, we must be prepared for an uphill war, with immense rewards if we are to succeed."
  btc_ccw_ended: "The §YCastilian Civil War§! disaster has ended, or the year is §Y1500§!"
- unlock_ccw_missions_tt: "§MUnlocks new missions based on the outcome of the civil war§!"
+ unlock_ccw_missions_tt: "§MUnlocks new missions based on the outcome of the civil war§! (Currently only Treaty of Alcáçovas branch exists)"
 
  btc_terco_title: "Portuguese Terços"
  btc_terco_desc: "A new military unit organization is starting to take shape in Spain, set to revolutionize modern warfare. They call it the 'Tercio'. It is making small waves still, meaning other countries have not yet noticed the potential it brings. Our geographic positioning, as well as our intel on our neighbours, puts us in prime position to adopt and adapt these units to our army. Naturally, we shall call them the 'Terços'."
@@ -136,6 +137,7 @@
  btc_arguin_title: "§OFeitoria de Arguim§!"
  btc_arguin_desc: ""
  btc_arguin_slavers_tt: "Enables the §YSlavers§! estate"
+ unlock_pt_missions_tt: "§MUnlocks more Portuguese missions"
 
  btc_west_africa_title: "Chart Guinea Coast"
  btc_west_africa_desc: ""
@@ -218,7 +220,7 @@
  btc_mare_clausum_title: "Mare Clausum"
  btc_mare_clausum_desc: ""
  add_cartaz_tt: "Every owned province with a Fortified Feitoria will get '§YCartaz§!' until the end of the game, giving the following effects:\nYearly Tax Income: §G+12.00§!¤"
- enable_cartaz_tt: "§MEvery Fortified Feitoria will now issue a Cartaz§!"
+ enable_cartaz_tt: "§MEvery new Fortified Feitoria will now issue a Cartaz§!"
 
  btc_malaca_title: "Malaca"
  btc_malaca_desc: ""
@@ -249,6 +251,8 @@
 
  btc_sino_japan_title: "Sino-Japanese Trade"
  btc_sino_japan_desc: ""
+ china_japan_like_portugal_tt: "The §YEmperor of China§! and §YShogun of Japan§! both have §Y150§! opinion of us"
+ japan_china_cot_tt: "Every owned §YCenter of Trade§! in §YCanton§! and §YNippon§! trade nodes will be upgraded by §Y1§! level§!"
 
  btc_spice_title: "§OThe Spice Islands§!"
  btc_spice_desc: ""
@@ -260,7 +264,8 @@
  btc_japan_desc: ""
 
  btc_nagasaki_title: "A Base in Japan"
- btc_nagasali_desc: ""
+ btc_nagasaki_desc: ""
+ has_jesuits_tt: "The Jesuit Holy Order has been formed"
 
  btc_sunda_title: "Luso-Sunda Treaty"
  btc_sunda_desc: ""
@@ -279,6 +284,7 @@
 
  btc_haidao_title: "Haidao"
  btc_haidao_desc: ""
+ taiwan_chinaware_tt: "§MEvery owned province in Taiwan area will produce Chinaware§!"
 
  btc_xavier_africa_title: "East Africa Mission"
  btc_xavier_africa_desc: ""

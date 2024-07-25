@@ -51,7 +51,7 @@ country_event = {
 			}			
 		}
 
-		set_country_flag = isabel_of_coimbra
+		set_country_flag = isabel_de_coimbra
 		custom_tooltip = isabel_de_coimbra_tt
 	}
 

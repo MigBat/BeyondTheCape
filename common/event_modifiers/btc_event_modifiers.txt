@@ -823,3 +823,11 @@ por_eth_support = {
 eth_por_support = {
 	global_manpower_modifier = 0.1
 }
+
+por_hormuz_strait_protect = {
+	trade_steering = 0.25
+}
+
+home_of_nutmeg = {
+	trade_goods_size = 5
+}

@@ -5117,10 +5117,10 @@ estate_action_GRANT_NEW_WORLD_CHARTER_BURGHERS = {
 	#	influence = 15
 	#	duration = 3650
 	#}
-	create_leader_scaling_with_tradition = {
-		leader = explorer
-		type = navy
-	}
+	# create_leader_scaling_with_tradition = {
+	# 	leader = explorer
+	# 	type = navy
+	# }
 }
 estate_action_COMISSION_MERCHANT_SHIPS_FOR_WAR_BURGHERS = {
 	#add_estate_loyalty = {

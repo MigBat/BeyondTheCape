@@ -5855,3 +5855,48 @@ country_event = {
 		}
 	}		
 }
+
+country_event = {
+	id = btc_por.189
+	title = btc_por.189_t
+	desc = btc_por.189_d
+	picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
+
+	major = yes
+	major_trigger = {
+		tag = FROM
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = btc_por.189a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		event_target:bassein_prov = {
+			cede_province = FROM
+			add_core = FROM
+		}
+		FROM = {
+			create_guarantee = ROOT	
+			add_opinion = {
+				who = ROOT
+				modifier = bassein_treaty	# 50 relations
+			}
+		}
+	}		
+	
+	option = {
+		name = btc_por.189b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		event_target:bassein_prov = {
+			add_permanent_claim = FROM
+		}
+	}	
+}

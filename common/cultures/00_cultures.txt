@@ -7184,7 +7184,8 @@ malay = {
 		}
 	}
 	sundanese = {
-		primary = MAJ
+		# BTC balance
+		primary = SUN
 		dynasty_names = {
 			Banten Demak Surabaya Cirebon Samprangan
 		}

@@ -1371,7 +1371,7 @@ shuffle_participants_por = {
     }
     if = {
         limit = { $scope$ = { tag = event_target:por_ally_9 } }
-        clear_global_event_target = por_ally_
+        clear_global_event_target = por_ally_9
         shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
         shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
         shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }

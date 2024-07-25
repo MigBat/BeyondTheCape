@@ -910,6 +910,7 @@ country_event = {
 	hidden = yes
 	trigger = {
 		tag = event_target:mam_spice_trade
+		has_global_flag = started_spice_trade_conflict_flag
 		had_global_flag = {
 			flag = started_spice_trade_conflict_flag
 			days = 18250
@@ -930,6 +931,55 @@ country_event = {
 			country_event = {
 				id = btc_spice_trade.10
 			}
+		}
+	}
+}
+
+country_event = {
+	id = btc_spice_trade.9
+	title = btc_spice_trade.9.t
+	desc = btc_spice_trade.9.d
+	picture = FORT_eventPicture
+
+	major = yes
+	major_trigger = {
+		part_of_spice_trade_conflict = yes
+	}
+
+	fire_only_once = yes
+	trigger = {
+		358 = {	# Alexandria
+			most_province_trade_power = {
+				tag = root
+			}
+		}
+		NOT = { tag = event_target:mam_spice_trade }
+		NOT = { tag = event_target:por_spice_trade }
+		NOT = { has_country_flag = is_por_ally }
+		has_global_flag = started_spice_trade_conflict_flag
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_spice_trade.9a
+
+		custom_tooltip = we_become_mam_spice_trade_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = is_mam_ally
+				}
+				shuffle_participants_mam = { scope = ROOT }
+			}
+			event_target:mam_spice_trade = {
+				btc_clear_mam_stuff = yes
+			}
+			clear_global_event_target = mam_spice_trade
+			ROOT = { save_global_event_target_as = mam_spice_trade }
+			btc_add_mam_stuff = yes			
 		}
 	}
 }
@@ -1144,29 +1194,32 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
-		add_historical_friend = event_target:mam_spice_trade
-		event_target:mam_spice_trade = {
-			add_historical_friend = ROOT
-		}
-		add_historical_rival = event_target:por_spice_trade
-		event_target:por_spice_trade = {
-			add_historical_rival = ROOT
-		}
-		set_mam_supporter = yes
+
+		custom_tooltip = join_mamluk_side_tt
 		hidden_effect = {
-			REB = {
-				PREV = {
-					set_variable = {
-						which = monthly_mare_clausum_amount
-						which = PREV
-					}
-					set_variable = {
-						which = total_mare_clausum_amount
-						which = PREV
+			add_historical_friend = event_target:mam_spice_trade
+			event_target:mam_spice_trade = {
+				add_historical_friend = ROOT
+			}
+			add_historical_rival = event_target:por_spice_trade
+			event_target:por_spice_trade = {
+				add_historical_rival = ROOT
+			}
+			set_mam_supporter = yes
+			hidden_effect = {
+				REB = {
+					PREV = {
+						set_variable = {
+							which = monthly_mare_clausum_amount
+							which = PREV
+						}
+						set_variable = {
+							which = total_mare_clausum_amount
+							which = PREV
+						}
 					}
 				}
-			}
+			}			
 		}
 
 		event_target:mam_spice_trade = {
@@ -1238,29 +1291,32 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
-		add_historical_friend = event_target:por_spice_trade
-		event_target:por_spice_trade = {
-			add_historical_friend = ROOT
-		}
-		add_historical_rival = event_target:mam_spice_trade
-		event_target:mam_spice_trade = {
-			add_historical_rival = ROOT
-		}
-		set_por_supporter = yes
+
+		custom_tooltip = join_portugal_side_tt
 		hidden_effect = {
-			REB = {
-				PREV = {
-					set_variable = {
-						which = monthly_mare_clausum_amount
-						which = PREV
-					}
-					set_variable = {
-						which = total_mare_clausum_amount
-						which = PREV
+			add_historical_friend = event_target:por_spice_trade
+			event_target:por_spice_trade = {
+				add_historical_friend = ROOT
+			}
+			add_historical_rival = event_target:mam_spice_trade
+			event_target:mam_spice_trade = {
+				add_historical_rival = ROOT
+			}
+			set_por_supporter = yes
+			hidden_effect = {
+				REB = {
+					PREV = {
+						set_variable = {
+							which = monthly_mare_clausum_amount
+							which = PREV
+						}
+						set_variable = {
+							which = total_mare_clausum_amount
+							which = PREV
+						}
 					}
 				}
-			}
+			}			
 		}
 	}
 
@@ -1326,33 +1382,36 @@ country_event = {
 				duration = -1
 			}			
 		}
-		if = {
-			limit = {
-				NOT = { has_country_flag = is_por_ally }
-			}
-			add_historical_friend = event_target:por_spice_trade
-			event_target:por_spice_trade = {
-				add_historical_friend = ROOT
-			}
-			add_historical_rival = event_target:mam_spice_trade
-			event_target:mam_spice_trade = {
-				add_historical_rival = ROOT
-			}
-			set_por_supporter = yes
-			hidden_effect = {
-				REB = {
-					PREV = {
-						set_variable = {
-							which = monthly_mare_clausum_amount
-							which = PREV
-						}
-						set_variable = {
-							which = total_mare_clausum_amount
-							which = PREV
+		custom_tooltip = join_portugal_side_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = is_por_ally }
+				}
+				add_historical_friend = event_target:por_spice_trade
+				event_target:por_spice_trade = {
+					add_historical_friend = ROOT
+				}
+				add_historical_rival = event_target:mam_spice_trade
+				event_target:mam_spice_trade = {
+					add_historical_rival = ROOT
+				}
+				set_por_supporter = yes
+				hidden_effect = {
+					REB = {
+						PREV = {
+							set_variable = {
+								which = monthly_mare_clausum_amount
+								which = PREV
+							}
+							set_variable = {
+								which = total_mare_clausum_amount
+								which = PREV
+							}
 						}
 					}
 				}
-			}
+			}			
 		}
 	}
 
@@ -1414,28 +1473,33 @@ country_event = {
 			}
 		}
 
-		btc_clear_mam_stuff = yes
-		clear_global_event_target = mam_spice_trade
-		ROOT = { save_global_event_target_as = mam_spice_trade }
-		btc_add_mam_stuff = yes
-		
+		custom_tooltip = we_become_mam_spice_trade_tt
 		create_subject = {
 			who = event_target:mam_spice_trade
 			subject_type = eyalet
 		}
 		hidden_effect = {
-			REB = {
-				PREV = {
-					set_variable = {
-						which = monthly_mare_clausum_amount
-						which = PREV
-					}
-					set_variable = {
-						which = total_mare_clausum_amount
-						which = PREV
+			event_target:mam_spice_trade = {
+				btc_clear_mam_stuff = yes
+			}
+			clear_global_event_target = mam_spice_trade
+			ROOT = { save_global_event_target_as = mam_spice_trade }
+			btc_add_mam_stuff = yes
+			
+			hidden_effect = {
+				REB = {
+					PREV = {
+						set_variable = {
+							which = monthly_mare_clausum_amount
+							which = PREV
+						}
+						set_variable = {
+							which = total_mare_clausum_amount
+							which = PREV
+						}
 					}
 				}
-			}
+			}			
 		}
 	}
 
@@ -1451,26 +1515,29 @@ country_event = {
 				ai = no
 			}
 		}
-		
-		add_historical_friend = event_target:mam_spice_trade
-		event_target:mam_spice_trade = {
-			add_historical_friend = ROOT
-		}
-		add_historical_rival = event_target:por_spice_trade
-		event_target:por_spice_trade = {
-			add_historical_rival = ROOT
-		}
-		set_mam_supporter = yes	
-		hidden_effect = {
-			REB = {
-				PREV = {
-					set_variable = {
-						which = monthly_mare_clausum_amount
-						which = PREV
-					}
-					set_variable = {
-						which = total_mare_clausum_amount
-						which = PREV
+
+		custom_tooltip = join_mamluk_side_tt
+		hidden_effect = {		
+			add_historical_friend = event_target:mam_spice_trade
+			event_target:mam_spice_trade = {
+				add_historical_friend = ROOT
+			}
+			add_historical_rival = event_target:por_spice_trade
+			event_target:por_spice_trade = {
+				add_historical_rival = ROOT
+			}
+			set_mam_supporter = yes	
+			hidden_effect = {
+				REB = {
+					PREV = {
+						set_variable = {
+							which = monthly_mare_clausum_amount
+							which = PREV
+						}
+						set_variable = {
+							which = total_mare_clausum_amount
+							which = PREV
+						}
 					}
 				}
 			}
@@ -1509,7 +1576,7 @@ country_event = {
 		hidden_effect = {
 			ROOT = { save_global_event_target_as = por_spice_trade}
 			358 = {	# Alexandria
-				strongest_trade_power = {
+				most_province_trade_power = {
 					save_global_event_target_as = mam_spice_trade
 				}
 			}

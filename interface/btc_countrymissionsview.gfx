@@ -259,4 +259,9 @@ spriteTypes = {
 		name = "mission_vasco_da_gama"
 		texturefile = "gfx/interface/missions/mission_vasco_da_gama.dds"
 	}
+
+	spriteType = {
+		name = "mission_nutmeg"
+		texturefile = "gfx/interface/missions/mission_nutmeg.dds"
+	}
 }
