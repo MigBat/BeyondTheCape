@@ -48,6 +48,22 @@ castilian_civil_war = {
 			has_any_disaster = yes
 			is_lesser_in_union = yes
 			NOT = { government = monarchy }
+			ARA = {
+				OR = {
+					is_free_or_tributary_trigger = no
+					has_regency = yes
+					is_female = yes
+					NOT = { government = monarchy }
+				}
+			}
+			POR = {
+				OR = {
+					is_free_or_tributary_trigger = no
+					has_regency = yes
+					is_female = yes
+					NOT = { government = monarchy }
+				}
+			}
 		}
 	}
 	
