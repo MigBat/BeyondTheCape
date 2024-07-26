@@ -29,3 +29,27 @@ cb_get_mohamed = {
 
 	war_goal = superiority_crusade
 }
+
+cb_naval_superiority = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		OR = {
+			exploration_ideas = 7
+			maritime_ideas = 7
+			naval_ideas = 7
+		}
+	}
+
+	prerequisites = {
+		FROM = { 
+			NOT = { is_subject_of = ROOT }
+			any_owned_province = {
+				has_port = yes
+				is_claim = ROOT
+			}
+		}
+	}
+
+	war_goal = naval_war
+}

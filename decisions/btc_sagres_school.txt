@@ -33,9 +33,9 @@ country_decisions = {
 				has_province_modifier = por_sagres 
 			}
 			NOT = { has_country_flag = had_escobar }
+			has_idea_group = exploration_ideas
 		}
 		allow = {
-			has_idea_group = exploration_ideas
 		}
 		effect = {
 			define_explorer = {
@@ -57,12 +57,12 @@ country_decisions = {
 				has_province_modifier = por_sagres 
 			}
 			NOT = { has_country_flag = had_cao }
-		}
-		allow = {
 			2258 = {
 				owned_by = ROOT
 				is_city = yes
 			}
+		}
+		allow = {
 		}
 		effect = {
 			define_explorer = {
@@ -84,9 +84,9 @@ country_decisions = {
 				has_province_modifier = por_sagres 
 			}
 			NOT = { has_country_flag = had_dias }
+			dip_tech = 8
 		}
 		allow = {
-			dip_tech = 8
 		}
 		effect = {
 			country_event = {

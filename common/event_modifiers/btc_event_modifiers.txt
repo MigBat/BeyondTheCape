@@ -709,7 +709,7 @@ explored_coast = {
 }
 
 duke_of_braganca = {
-	global_autonomy = 0.2
+	global_autonomy = 0.1
 }
 
 por_cacadores = {

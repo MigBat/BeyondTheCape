@@ -14,6 +14,7 @@ portuguese_monarchy_reform = {
 		unrest_catholic_provinces = -1
 		all_estate_loyalty_equilibrium = 0.05
 		all_estate_influence_modifier = 0.05
+		parliament_effect_duration = -5
 	}
 	conditional = {
 		allow = {

@@ -335,6 +335,30 @@ on_new_monarch = {
 			id = portuguese_regency.101
 		}
 	}
+	if = {
+		limit = {
+			tag = CYP
+			has_ruler = "Charlotte"
+			dynasty = "de Lusignan"
+			POR = { has_country_flag = braganca_plot }
+		}
+		define_consort = {
+			name = "João"
+			dynasty = "de Avis"
+			country_of_origin = POR
+			culture = portugese
+			religion = catholic
+			male = yes
+			birth_date = 1431.1.1
+		}
+		set_consort_flag = john_antioch
+		POR = {
+			clr_country_flag = braganca_plot
+			country_event = {
+				id = portuguese_regency.102
+			}
+		}
+	}
 }
 
 on_abandon_colony = {

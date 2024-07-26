@@ -10071,7 +10071,7 @@ PAT_ideas = {
 		spy_offence = 0.2
 	}
 	lian_dao_qian_band = {
-		privateer_efficiency = 0.125
+		privateer_efficiency = 0.025
 		capture_ship_chance = 0.1
 	}
 	pat_entrepot = {

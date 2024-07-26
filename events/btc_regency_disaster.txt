@@ -40,6 +40,10 @@ country_event = {
 		has_regency = yes
 	}
 
+	immediate = {
+		custom_tooltip = show_afonso_alignment_tt
+	}
+
 	# daughter of pedro
 	option = {
 		name = portuguese_regency.2a
@@ -52,7 +56,7 @@ country_event = {
 		}
 
 		set_country_flag = isabel_de_coimbra
-		custom_tooltip = isabel_de_coimbra_tt
+		custom_tooltip = braganca_offended_tt
 	}
 
 	# daughter of afonso
@@ -67,7 +71,7 @@ country_event = {
 		}
 
 		set_country_flag = beatriz_de_braganca
-		custom_tooltip = beatriz_de_braganca_tt
+		custom_tooltip = braganca_pleased_tt
 	}
 }
 
@@ -85,6 +89,10 @@ country_event = {
 		has_regency = yes
 	}
 
+	immediate = {
+		custom_tooltip = show_afonso_alignment_tt
+	}
+
 	# poison her
 	option = {
 		name = portuguese_regency.3a
@@ -100,6 +108,7 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 10
 		}
+		custom_tooltip = braganca_offended_tt
 	}
 
 	# welcome her
@@ -131,6 +140,7 @@ country_event = {
 			culture = aragonese
 			age = 45
 		}
+		custom_tooltip = braganca_pleased_tt
 	}
 }
 
@@ -148,6 +158,10 @@ country_event = {
 		has_regency = yes
 	}
 
+	immediate = {
+		custom_tooltip = show_afonso_alignment_tt
+	}
+
 	# grant pedros sons
 	option = {
 		name = portuguese_regency.4a
@@ -163,6 +177,7 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 10
 		}
+		custom_tooltip = braganca_offended_tt
 	}
 
 	# grant afonsos sons
@@ -181,6 +196,7 @@ country_event = {
 			influence = 10
 			duration = 7300
 		}
+		custom_tooltip = braganca_pleased_tt
 	}
 }
 
@@ -195,6 +211,10 @@ country_event = {
 
 	trigger = {
 		has_regency = yes
+	}
+
+	immediate = {
+		custom_tooltip = show_afonso_alignment_tt
 	}
 
 	# Develop Coimbra
@@ -213,6 +233,7 @@ country_event = {
 			1 = { add_dip_power = 50 }
 			1 = { add_mil_power = 50 }
 		}
+		custom_tooltip = braganca_offended_tt
 	}
 
 	# Develop Bragança
@@ -233,6 +254,65 @@ country_event = {
 				1 = { add_base_manpower = 1 }
 			}
 		}
+		custom_tooltip = braganca_pleased_tt
+	}
+}
+
+# Develop province 2
+country_event = {
+	id = portuguese_regency.6
+	title = portuguese_regency.6_t
+	desc = portuguese_regency.6_d
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_regency = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					culture = portugese
+				}
+				save_event_target_as = event6_prov
+			}
+		}
+		custom_tooltip = show_afonso_alignment_tt
+	}
+
+	option = {
+		name = portuguese_regency.6a
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = 1
+			}			
+		}
+
+		event_target:event6_prov = {
+			add_prosperity = 5
+		}
+		custom_tooltip = braganca_offended_tt
+	}
+
+	option = {
+		name = portuguese_regency.6b
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = -1
+			}			
+		}
+
+		event_target:event6_prov = {
+			add_local_autonomy = 10
+		}
+		custom_tooltip = braganca_pleased_tt
 	}
 }
 
@@ -358,6 +438,7 @@ country_event = {
 		} 
 		add_ruler_personality = strict_personality
 		remove_ruler_personality = expansionist_personality
+		custom_tooltip = children_of_pedro_tt
 	}
 
 	option = {
@@ -423,6 +504,95 @@ country_event = {
 	option = {
 		name = portuguese_regency.101b
 
-		add_treasury = 100
+		add_years_of_income = 2
+	}
+}
+
+# John of Antioch
+country_event = {
+	id = portuguese_regency.102
+	title = portuguese_regency.102_t
+	desc = portuguese_regency.102_d
+	picture = THREE_HEIRS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = portuguese_regency.102a
+
+		custom_tooltip = john_antioch_tt
+	}
+}
+
+# Cyprus March (POR)
+country_event = {
+	id = portuguese_regency.103
+	title = portuguese_regency.103_t
+	desc = portuguese_regency.103_d
+	picture = CRUSADER_HORDE_eventPicture
+
+	trigger = {
+		tag = POR
+		CYP = {
+			has_consort_flag = john_antioch
+			has_opinion = {
+				who = ROOT
+				value = 100
+			}
+		}
+	}
+
+	option = {
+		name = portuguese_regency.103a
+		
+		CYP = {
+			country_event = {
+				id = portuguese_regency.104
+				days = 3
+			}
+		}
+	}
+
+	option = {
+		name = portuguese_regency.103b
+		
+		create_guarantee = CYP
+	}
+}
+
+# Cyprus March (CYP)
+country_event = {
+	id = portuguese_regency.104
+	title = portuguese_regency.104_t
+	desc = portuguese_regency.104_d
+	picture = DIPLOMAT_INTERROGATION_eventPicture
+
+	major = yes
+	major_trigger = {
+		tag = POR
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = portuguese_regency.104a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		FROM = {
+			create_subject = {
+				who = ROOT
+				subject_type = march
+			}
+		}
+	}
+
+	option = {
+		name = portuguese_regency.104b
+
+		ai_chance = {
+			factor = 0
+		}
 	}
 }

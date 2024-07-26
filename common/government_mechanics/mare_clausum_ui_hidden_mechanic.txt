@@ -32,7 +32,7 @@ mare_clausum_ui_hidden_mechanic = {
 				start_value = 0
 				end_value = 19
 				modifier = {
-					privateer_efficiency = 0.25
+					privateer_efficiency = 0.05
 				}
 			}
 			range_modifier = {

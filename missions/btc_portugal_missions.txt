@@ -144,6 +144,9 @@ btc_por_sagres1 = {
 		provinces_to_highlight = { }		
 		trigger = { 
 			adm_power = 100
+			any_owned_province = {
+				has_province_modifier = feitoria
+			}
 		}	
 		effect = {
 			add_adm_power = -100
@@ -189,6 +192,7 @@ btc_por_sagres2 = {
 		provinces_to_highlight = { }		
 		trigger = { 
 			mil_power = 100
+			mil_tech = 6
 		}	
 		effect = {
 			add_mil_power = -100
@@ -237,6 +241,7 @@ btc_por_sagres3 = {
 		provinces_to_highlight = { }		
 		trigger = { 
 			dip_power = 100
+			light_ship_fraction = 0.5
 		}	
 		effect = { 
 			add_dip_power = -100
@@ -288,6 +293,7 @@ btc_por_sagres4 = {
 		trigger = { 
 			mil_power = 100
 			dip_power = 150
+			dip_tech = 6
 		}	
 		effect = {
 			add_mil_power = -100
@@ -321,6 +327,7 @@ btc_por_sagres5 = {
 		trigger = {	
 			dip_power = 50
 			mil_power = 100
+			dip_tech = 7
 		}	
 		effect = {
 			add_dip_power = -50
@@ -1067,7 +1074,7 @@ btc_por_africa1 = {
 		}	
 		effect = {
 			define_admiral = {
-				name = "Bartolomeu Portugu?s"
+				name = "Bartolomeu PortuguÍs"
 				shock = 2
 				fire = 2
 				manuever = 4
@@ -1103,7 +1110,7 @@ btc_por_africa2 = {
 			discover_province = 1584
 			discover_province = 1597
 			define_explorer = {
-				name = "Pedro √Ålvares Cabral"
+				name = "Pedro ¡lvares Cabral"
 				shock = 2
 				fire = 2
 				manuever = 4
@@ -1221,6 +1228,7 @@ btc_por_africa3 = {
 					power = 20
 					key = por_kongo_slavers
 				}
+				discover_country = ROOT
 			}
 		}
 	}
@@ -1886,7 +1894,7 @@ btc_por_india3 = {
 				add_permanent_claim = ROOT
 			}
 			define_admiral = {
-				name = "Trist?o da Cunha"
+				name = "Trist„o da Cunha"
 				shock = 6
 				fire = 3
 				manuever = 4

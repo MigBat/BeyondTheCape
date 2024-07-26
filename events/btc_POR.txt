@@ -3297,14 +3297,53 @@ country_event = {
 			}
 		}
 
-		event_target:owner_of_jerusalem = {
-			379 = { cede_province = FROM }
+		if = {
+			limit = {
+				event_target:owner_of_jerusalem = {
+					religion = catholic
+				}
+				379 = {
+					NOT = { religion = catholic }
+				}
+			}
+			379 = { change_religion = catholic }
 		}
-		event_target:owner_of_gaza = {
-			364 = { cede_province = FROM }
+		else = {
+			event_target:owner_of_jerusalem = {
+				379 = { cede_province = FROM }
+			}
 		}
-		event_target:owner_of_jaffa = {
-			1854 = { cede_province = FROM }
+		if = {
+			limit = {
+				event_target:owner_of_gaza = {
+					religion = catholic
+				}
+				364 = {
+					NOT = { religion = catholic }
+				}
+			}
+			364 = { change_religion = catholic }
+		}
+		else = {
+			event_target:owner_of_gaza = {
+				364 = { cede_province = FROM }
+			}			
+		}
+		if = {
+			limit = {
+				event_target:owner_of_jaffa = {
+					religion = catholic
+				}
+				1854 = {
+					NOT = { religion = catholic }
+				}
+			}
+			1854 = { change_religion = catholic }
+		}
+		else = {
+			event_target:owner_of_jaffa = {
+				1854 = { cede_province = FROM }
+			}			
 		}
 
 		ROOT = {

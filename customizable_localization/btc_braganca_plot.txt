@@ -1,0 +1,24 @@
+defined_text = {
+	name = GetAfonsoAlignment
+	random = no
+	text = {
+		localisation_key = btc_afonso_pleased
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = afonso_alignment
+					value = 0
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = btc_afonso_displeased
+		trigger = {
+			check_variable = {
+				which = afonso_alignment
+				value = 0
+			}
+		}
+	}
+}
