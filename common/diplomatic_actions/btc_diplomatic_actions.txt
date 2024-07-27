@@ -69,17 +69,38 @@ callaction = {
 	condition = {
 		tooltip = ccw_callaction_tt
 		potential = {
-			CAS = {
-				has_disaster = castilian_civil_war
-			}
-			ROOT = {
-				OR = {
-					tag = ARA
-					tag = CAS
-					tag = POR
+			has_country_flag = at_war
+		}
+		allow = { always = no }
+	}
+}
+
+declarewar = {
+	condition = {
+		tooltip = GRAND_CRUSADE_NO_OTHER_WAR
+		potential = { }
+		allow = {
+			NOT = {
+				is_in_war = {
+					attacker_leader = ROOT
+					casus_belli = cb_grand_crusade
 				}
 			}
 		}
-		allow = { always = no }
+	}
+	effect = {
+		if = {
+			limit = {
+				has_global_flag = grand_crusades_enabled
+				has_country_flag = grand_crusader_war_monger_flag
+				is_in_war = {
+					attacker_leader = ROOT
+					casus_belli = cb_grand_crusade
+				}
+			}
+			FROM = {
+				save_global_event_target_as = grand_crusade_target
+			}
+		}
 	}
 }

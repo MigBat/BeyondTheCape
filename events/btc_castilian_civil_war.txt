@@ -337,8 +337,6 @@ country_event = {
 			who = CAS
 			casus_belli = cb_castilian_civil_war
 		}
-		set_country_flag = at_war
-		CAS = { set_country_flag = at_war }
 		if = {
 			limit = { 
 				ARA = { has_consort_flag = isabella }
@@ -348,6 +346,8 @@ country_event = {
 				set_country_flag = at_war
 			}
 		}
+		set_country_flag = at_war
+		CAS = { set_country_flag = at_war }
 
 		FRA = {
 			country_event = { id = castilian_civil_war.10 days = 90 } # Support Portugal in the war
@@ -440,8 +440,6 @@ country_event = {
 			join_all_defensive_wars_of = CAS
 		}
 
-		set_country_flag = at_war
-		CAS = { set_country_flag = at_war }
 		if = {
 			limit = { 
 				POR = { has_consort_flag = joanna }
@@ -451,6 +449,8 @@ country_event = {
 				set_country_flag = at_war
 			}
 		}
+		set_country_flag = at_war
+		CAS = { set_country_flag = at_war }
 
 		if = {
 			limit = {

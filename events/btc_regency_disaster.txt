@@ -294,7 +294,7 @@ country_event = {
 		}
 
 		event_target:event6_prov = {
-			add_prosperity = 5
+			add_prosperity = 10
 		}
 		custom_tooltip = braganca_offended_tt
 	}
@@ -361,6 +361,13 @@ country_event = {
 				should_take_capital = yes
 			}
 		}
+
+		232 = {
+			add_province_modifier = {
+				name = duke_of_braganca_bad
+				duration = -1
+			}
+		}
 		set_country_flag = braganca_plot
 	}
 
@@ -379,7 +386,7 @@ country_event = {
 
 		232 = {
 			add_province_modifier = {
-				name = duke_of_braganca
+				name = duke_of_braganca_worse
 				duration = -1
 			}
 		}
@@ -490,7 +497,18 @@ country_event = {
 		name = portuguese_regency.101a
 
 		232 = {
-			remove_province_modifier = duke_of_braganca
+			if = {
+				limit = {
+					has_province_modifier = duke_of_braganca_bad
+				}
+				remove_province_modifier = duke_of_braganca_bad
+			}
+			if = {
+				limit = {
+					has_province_modifier = duke_of_braganca_worse
+				}
+				remove_province_modifier = duke_of_braganca_worse
+			}
 			spawn_rebels = {
 				type = noble_rebels
 				win = yes
@@ -516,6 +534,7 @@ country_event = {
 	picture = THREE_HEIRS_eventPicture
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = portuguese_regency.102a
@@ -530,6 +549,8 @@ country_event = {
 	title = portuguese_regency.103_t
 	desc = portuguese_regency.103_d
 	picture = CRUSADER_HORDE_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		tag = POR
@@ -572,6 +593,7 @@ country_event = {
 		tag = POR
 	}
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = portuguese_regency.104a

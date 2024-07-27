@@ -13,3 +13,20 @@
  PEACE_po_ccw_union:0 "Union With Castile"
  CB_ALLOWED_po_ccw_union:0 "Union With Castile"
  po_ccw_union_desc:0 "Our crowns shall be united in this Iberian wedding."
+
+ superiority_grand_crusade: "Show these infidel dogs superiority"
+ superiority_grand_crusade_desc: "War goal is to show them superiority by winning battles."
+ ALL_EUROPEAN_OR_HOLY_PROVINCES: "All European, Aleppo, Syrian or Palestine provinces."
+ GRAND_CRUSADE_WAR_NAME: "$ORDER$$FIRST$ Grand $CRUSADE_NAME$ against $SECOND_NAME$"
+
+ cb_grand_crusade: "Grand Crusade"
+ cb_grand_crusade_desc: "They are accursed yet powerful infidels, and a threat to the Christian world!\n§YCatholic and the enemy's brethren of faith can join their respected side mid this war.§!\n§RCannot declare other wars while using this casus belli.§!"
+
+ enable_grand_crusade_tt: "Enables the §YGrand Crusade§! casus belli against all §YHeathen§! nations which have at least §Y300§! total development.\nThis casus belli enables a decision for every independent §YCatholic§! nation to join the Grand Crusade.\n\nTo join the Grand Crusade the Catholic nation must fulfil the following conditions:\nHas at least §Y100§! opinion of us or vice versa\nIs NOT allied with the §YGrand Crusade Target§! target\nHas NOT a truce with the §YGrand Crusade Target§!\nIs not at war\nDid NOT complete the §YHumanist§! idea group\n\n§RNations of the religion group of the §YGrand Crusade Target§! can join the defender's side.§!"
+
+ join_the_grand_crusade_title: "Join the Grand Crusade!"
+ join_the_grand_crusade_desc: "The knights of the [grand_crusader_war_monger.GetName] have launched their Grand Crusade against the infidels of the [grand_crusade_target.GetAdjective] [grand_crusade_target.GovernmentName]. As fellow Catholics it is our holy right and duty to join these knights in order to free the Holy Land!"
+ join_the_grand_crusade_tt: "We will join the §Y[grand_crusader_war_monger.GetAdjective]§! side of the §YGrand Crusade!"
+ defend_the_grand_crusade_target_title: "Defend our Brethren!"
+ defend_the_grand_crusade_target_desc: "Our brethren of the [grand_crusade_target.GetAdjective] [grand_crusade_target.GovernmentName] is under attack by these dogs of the [grand_crusader_war_monger.GetName]! As fellow [grand_crusade_target.Religion.GetGroupName]s it is our duty to aid them!"
+ defend_the_grand_crusade_target_tt: "We will join the §Y[grand_crusade_target.GetAdjective]§! side of the §YGrand Crusade!"

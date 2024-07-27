@@ -307,7 +307,7 @@
  kor_turtle_ships_desc:1 "Our shipbuilders have devised a plan for a new type of heavily armored warship. Taking inspiration from the strong plating on the sides and a covered roof to protect the crew from missile fire, they are calling it the turtle ship. The fearsome appearance of this new warship and the strength of its defenses will ensure that the naval superiority Korea requires to be defensible is never lost!"
  desc_kor_turtle_fleets:0 "The turtle ship was a type of large warship used by the Korean navy during the Japanese Invasions of Korea (1592–1598), during which it played a key role in preventing the Japanese from attaining naval superiority, ultimately forcing them to retreat. Their name derives from the ship's protections, with a covered roof shaped vaguely like the shell of a turtle.\n\nIt is sometimes claimed that these were the first iron clad warships, but in point of fact it is not known whether versions were ever built with iron plating."
 # Age Bonus #
- ab_portugal_professional_navy:0 "Portuguese Professional Navy"
+ ab_portugal_professional_navy:0 "Portuguese Special Forces"
 # QFTNW #
  HINT_TERRAINCOGNITA_QFTNW_WARN:0 "§R- You need the Quest for the New World modifier to explore across the oceans.§!"
  RECRUIT_NO_IDEA:0 "You need the '§YQuest for the New World§!' modifier to recruit explorers and conquistadors."

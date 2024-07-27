@@ -1931,6 +1931,7 @@ shuffle_participants_mam = {
 }
 
 btc_spice_trade_clear_stuff = {
+	clr_global_flag = started_spice_trade_conflict_flag
 	if = {
 		limit = {
 			tag = event_target:mam_spice_trade

@@ -53,3 +53,30 @@ cb_naval_superiority = {
 
 	war_goal = naval_war
 }
+
+# Grand Crusade
+cb_grand_crusade = {
+	valid_for_subject = no
+	holy_war = yes
+
+	prerequisites = {
+		religion = catholic
+		has_country_flag = can_declare_grand_crusade_wars
+		FROM = { 
+			total_development = 300
+			any_owned_province = {
+				OR = {
+					area = palestine_area
+					area = syria_area
+					area = aleppo_area
+					continent = europe
+				}
+			}
+		}
+		NOT = { religion_group = FROM }
+		NOT = {	has_matching_religion = FROM }
+		is_revolutionary = no
+	}
+
+	war_goal = superiority_grand_crusade
+}

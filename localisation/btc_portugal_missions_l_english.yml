@@ -214,6 +214,8 @@
 
  btc_lion_of_seas_title: "Lion of the Seas"
  btc_lion_of_seas_desc: ""
+ unlock_legacy_of_albuquerque_reform_tt: "Unlock the '§YLegacy of Albuquerque§!' government reform."
+ mechanic_enable_grand_crusade_yes: "Enables the §YGrand Crusade§! casus belli against all §YHeathen§! nations which have at least §Y300§! total development.\nThis casus belli enables a decision for every independent §YCatholic§! nation to join the Grand Crusade.\n\nTo join the Grand Crusade the Catholic nation must fulfil the following conditions:\nHas at least §Y100§! opinion of us or vice versa\nIs NOT allied with the §YGrand Crusade Target§! target\nHas NOT a truce with the §YGrand Crusade Target§!\nIs not at war\nDid NOT complete the §YHumanist§! idea group\n\n§RNations of the religion group of the §YGrand Crusade Target§! can join the defender's side.§!"
  albuquerque_leaves_tt: "Afonso de Albuquerque leaves his position as general"
  divert_nile_tt: "§MUsing the §YTomb of Muhammad§! casus belli, siege down §O[384.GetName]§! to capture the remains of the Prophet. Additionally, to complete §YAlbuquerque§!'s ambitious plan to decimate §YEgypt§!, control §O[2321.GetName]§! and §O[360.GetName]§! to divert the course of the §YNile§! river"
 

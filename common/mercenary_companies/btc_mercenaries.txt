@@ -78,6 +78,7 @@ merc_colonial_ordenancas = {
 
 merc_knights_of_christ = {
 	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 4787
 	cost_modifier = 0.25
 	cavalry_weight = 1
@@ -112,6 +113,7 @@ merc_knights_of_christ = {
 
 merc_knights_of_avis = {
 	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 4150
 	cost_modifier = 0.25
 	cavalry_weight = 1
@@ -146,6 +148,7 @@ merc_knights_of_avis = {
 
 merc_knights_of_calatrava = {
 	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 2754
 	cost_modifier = 0.25
 	cavalry_weight = 1
@@ -180,6 +183,7 @@ merc_knights_of_calatrava = {
 
 merc_knights_of_santiago = {
 	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 2751
 	cost_modifier = 0.25
 	cavalry_weight = 1
@@ -214,6 +218,7 @@ merc_knights_of_santiago = {
 
 merc_knights_of_montesa = {
 	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 4549
 	cost_modifier = 0.25
 	cavalry_weight = 1
@@ -248,6 +253,7 @@ merc_knights_of_montesa = {
 
 merc_knights_of_alcantara = {
 	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 4788
 	cost_modifier = 0.25
 	cavalry_weight = 1
@@ -282,6 +288,7 @@ merc_knights_of_alcantara = {
 
 merc_knights_of_san_juan = {
 	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     home_province = 126
 	cost_modifier = 0.25
 	cavalry_weight = 1

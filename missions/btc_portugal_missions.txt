@@ -327,7 +327,6 @@ btc_por_sagres5 = {
 		trigger = {	
 			dip_power = 50
 			mil_power = 100
-			dip_tech = 7
 		}	
 		effect = {
 			add_dip_power = -50
@@ -347,6 +346,7 @@ btc_por_sagres5 = {
 		trigger = { 
 			dip_power = 100
 			mil_power = 150
+			dip_tech = 6
 		}	
 		effect = {
 			add_dip_power = -100
@@ -1953,6 +1953,10 @@ btc_por_india3 = {
 		provinces_to_highlight = { }		
 		trigger = {	}	
 		effect = {
+			change_government_reform_progress = 50
+			unlock_government_reform = {
+				government_reform = legacy_of_albuquerque_reform
+			}
 			if = {
 				limit = {
 					has_leader = "Afonso de Albuquerque"

@@ -328,7 +328,10 @@ on_new_monarch = {
 		limit = {
 			232 = {
 				owned_by = ROOT
-				has_province_modifier = duke_of_braganca
+				OR = {
+					has_province_modifier = duke_of_braganca_bad
+					has_province_modifier = duke_of_braganca_worse
+				}
 			}
 		}
 		country_event = {

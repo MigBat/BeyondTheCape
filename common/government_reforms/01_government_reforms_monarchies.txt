@@ -7203,6 +7203,8 @@ system_of_councils_reform = {
 			AND = { 
 				religion_group = christian 
 				culture_group = iberian 
+				# BEYOND THE CAPE
+				NOT = { culture = portugese }
 			}
 		}
 	}

@@ -40,3 +40,23 @@ portuguese_monarchy_reform = {
 		factor = 1
 	}
 }
+
+legacy_of_albuquerque_reform = {
+	icon = "legacy_of_albuquerque"
+	potential = {
+		has_unlocked_government_reform = { government_reform = legacy_of_albuquerque_reform }
+	}
+	trigger = {
+	}
+	modifiers = {
+		reverse_relation_with_same_religion = 15
+		reverse_relation_with_heathen_religion = -30
+	}
+	custom_attributes = {
+		enable_grand_crusade = yes
+		pp_on_heathen_wars = yes
+	}
+	ai = {
+		factor = 3
+	}
+}

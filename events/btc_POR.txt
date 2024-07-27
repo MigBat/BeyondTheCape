@@ -3246,6 +3246,7 @@ country_event = {
 					save_event_target_as = owner_of_medina
 				}
 			}
+			root = { save_event_target_as = took_muhammad_country }
 		}
 		event_target:owner_of_medina = {
 			country_event = {
@@ -3346,7 +3347,7 @@ country_event = {
 			}			
 		}
 
-		ROOT = {
+		FROM = {
 			country_event = {
 				id = btc_por.147
 				days = 1
@@ -3360,6 +3361,11 @@ country_event = {
 
 		ai_chance = {
 			factor = 9
+		}
+
+		reverse_add_aggressive_expansion = {
+			who = event_target:took_muhammad_country
+			value = 100
 		}
 
 		add_stability = -1
@@ -3376,30 +3382,13 @@ country_event = {
 				is_subject = no
 				# total_own_and_non_tributary_subject_development = 100
 				NOT = { tag = event_target:owner_of_medina }
-				NOT = { war_with = POR }
+				# NOT = { war_with = POR }
 			}
 			country_event = {
 				id = btc_por.149
 				days = 3
 			}
 		}
-		# every_country = {
-		# 	limit = {
-		# 		OR = {
-		# 			AND = {
-		# 				religion_group = christian
-		# 				is_subject = no
-		# 				total_own_and_non_tributary_subject_development = 150
-		# 				NOT = { is_or_was_tag = { tag = POR } }
-		# 			}
-		# 			tag = PAP
-		# 		}
-		# 	}
-		# 	country_event = {
-		# 		id = btc_por.150
-		# 		days = 3
-		# 	}
-		# }
 	}
 }
 
@@ -3474,17 +3463,20 @@ country_event = {
 		name = btc_por.149a
 
 		ai_chance = {
-			factor = 1
+			factor = 0.75
 		}
 
-		join_all_defensive_wars_of = event_target:owner_of_medina
+		reverse_add_aggressive_expansion = {
+			who = event_target:took_muhammad_country
+			value = 100
+		}
 	}
 
 	option = {	# Unforgivable... but we won't join
 		name = btc_por.149b
 
 		ai_chance = {
-			factor = 0
+			factor = 0.25
 		}
 
 		add_stability = -1

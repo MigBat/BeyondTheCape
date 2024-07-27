@@ -1,0 +1,7 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_legacy_of_albuquerque"
+		texturefile = "gfx//interface//government_reform_icons//legacy_of_albuquerque.dds"
+	}
+}		

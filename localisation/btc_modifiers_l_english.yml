@@ -484,8 +484,10 @@
  casa_da_guine: "Casa da Guiné"
  desc_casa_da_guine: ""
 
- duke_of_braganca: "House Bragança"
- desc_duke_of_braganca: ""
+ duke_of_braganca_bad: "House Bragança"
+ desc_duke_of_braganca_bad: ""
+ duke_of_braganca_worse: "House Bragança"
+ desc_duke_of_braganca_worse: ""
 
  por_cacadores: "Caçadores"
  desc_por_cacadores: ""

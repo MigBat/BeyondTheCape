@@ -708,8 +708,12 @@ explored_coast = {
 	# had recent explore coast event
 }
 
-duke_of_braganca = {
+duke_of_braganca_bad = {
 	global_autonomy = 0.1
+}
+
+duke_of_braganca_worse = {
+	global_autonomy = 0.2
 }
 
 por_cacadores = {
