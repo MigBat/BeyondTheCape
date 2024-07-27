@@ -4,14 +4,22 @@ country_event = {
 	id = btc_dukkala_raids.1
 	title = btc_dukkala_raids.1.t
 	desc = btc_dukkala_raids.1.d
-	picture = BURGHER_ESTATE_UPSET_eventPicture
+	picture = HORDE_ON_HORSEBACK_eventPicture
 	
 	trigger = {
 		has_country_flag = btc_dukkala_raids_on_flag
 		NOT = { has_country_flag = btc_recent_raid }
-		MOR = {
-			any_owned_province = {
-				is_looted = no
+		OR = {
+			MOR = {
+				any_owned_province = {
+					is_looted = no
+				}
+			}
+			any_country = {
+				is_subject_of = MOR
+				any_owned_province = {
+					is_looted = no
+				}
 			}
 		}
 	}
@@ -26,8 +34,15 @@ country_event = {
 		add_manpower = -1
 		set_country_flag = btc_recent_raid
 
-		tooltip = {
-			custom_tooltip = btc_party_goes_raiding_tt
+		custom_tooltip = btc_party_goes_raiding_tt
+		hidden_effect = {
+			random_province = {
+				limit = {
+					country_or_non_sovereign_subject_holds = MOR
+					is_looted = no
+				}
+				save_event_target_as = morocco_raiding_province
+			}
 			random_list = {
 				50 = { 
 					country_event = {
@@ -50,27 +65,17 @@ country_event = {
 	id = btc_dukkala_raids.2
 	title = btc_dukkala_raids.2.t
 	desc = btc_dukkala_raids.2.d
-	picture = BURGHER_ESTATE_UPSET_eventPicture
+	picture = HORDE_ON_HORSEBACK_eventPicture
 	
 	is_triggered_only = yes
-	trigger = {
-		any_owned_province = {
-			is_looted = no
-		}
-	}
 	
 	option = {
 		name = btc_dukkala_raids.2.a	
 
-		MOR = {
-			random_owned_province = {
-				limit = {
-					is_looted = no
-				}
-				remove_loot = {
-					who = ROOT
-					amount = 1000
-				}
+		event_target:morocco_raiding_province = {
+			remove_loot = {
+				who = ROOT
+				amount = 1000
 			}
 		}
 		clr_country_flag = btc_recent_raid
@@ -81,15 +86,17 @@ country_event = {
 	id = btc_dukkala_raids.3
 	title = btc_dukkala_raids.3.t
 	desc = btc_dukkala_raids.3.d
-	picture = BURGHER_ESTATE_UPSET_eventPicture
+	picture = IMPALED_SOLDIERS_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = btc_dukkala_raids.3.a	
 		
-		MOR = {
-			add_prestige = 5
+		event_target:morocco_raiding_province = {
+			owner = {
+				add_prestige = 5
+			}
 		}
 		clr_country_flag = btc_recent_raid
 	}

@@ -1092,15 +1092,35 @@ country_event = {
 	option = {	# These are all subjects of Portugal
 		name = btc_por.100d
 
-		add_stability = -1
+		add_stability = -2
 		add_legitimacy = -20
 		add_estate_loyalty = {
 			estate = estate_church
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = -10
+			loyalty = -15
+		}
+		add_country_modifier = {	# -1 tolerance heathens, -0.25 month innovative, +0.2 interest rate
+			name = diverse_society
+			duration = 7300
+		}
+		random_owned_province = {
+			limit = {
+				area = extremadura_area
+				religion = catholic
+				is_capital = no
+			}
+			change_religion = jewish
+		}
+		random_owned_province = {
+			limit = {
+				area = alentejo_area
+				religion = catholic
+				is_capital = no
+			}
+			change_religion = sunni
 		}
 	}
 }
@@ -2954,9 +2974,9 @@ country_event = {
 			dynasty = ROOT
 			age = 0
 			culture = portugese
-			adm = 0
-			dip = 0
-			mil = 0
+			# adm = 0
+			# dip = 0
+			# mil = 0
 			claim = 100
 		}
 		set_heir_flag = miguel_da_paz
@@ -3363,7 +3383,7 @@ country_event = {
 			factor = 9
 		}
 
-		reverse_add_aggressive_expansion = {
+		add_aggressive_expansion = {
 			who = event_target:took_muhammad_country
 			value = 100
 		}
@@ -3466,7 +3486,7 @@ country_event = {
 			factor = 0.75
 		}
 
-		reverse_add_aggressive_expansion = {
+		add_aggressive_expansion = {
 			who = event_target:took_muhammad_country
 			value = 100
 		}
@@ -3700,7 +3720,7 @@ country_event = {
 	id = btc_por.154
 	title = btc_por.154_t
 	desc = btc_por.154_d
-	picture = CENTRAL_AFRICAN_PORTUGUESE_eventPicture
+	picture = PRESTOR_JOHN_eventPicture
 
 	trigger = {
 		has_country_flag = pero_covilha
@@ -4432,7 +4452,60 @@ province_event = {
 					name = padrao_raised
 					duration = -1
 				}
-				add_permanent_claim = FROM
+				if = {
+					limit = {
+						is_empty = yes
+						if = {
+							limit = {
+								FROM = { has_country_flag = tordesillas_por }
+							}
+							OR = {
+								NOT = { 
+									AND = {
+										continent = north_america 
+										NOT = { 
+											OR = {
+												area = newfoundland_area
+												area = labrador_area
+											}
+										}
+									}
+								}
+								NOT = {
+									AND = {
+										continent = south_america
+										NOT = {
+											OR = {
+												area = maranhao_area
+												area = piaui_area
+												area = ceara_area
+												area = sao_francisco_area
+												area = pernambuco_area
+												area = bahia_area
+												area = diamantina_area
+												area = minas_gerais_area
+												area = rio_de_janeiro_area
+												area = grao_para_area
+												area = pontal_area
+												area = goias_area
+												area = sao_paolo_area
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					add_permanent_claim = FROM
+				}
+				else = {
+					owner = {
+						add_opinion = {
+							who = FROM
+							modifier = raised_padrao
+						}
+					}
+				}
 				FROM = {
 					add_government_power = {
 						mechanic_type = portuguese_saudade_mechanic
@@ -4452,7 +4525,60 @@ province_event = {
 					name = padrao_raised
 					duration = -1
 				}
-				add_permanent_claim = FROM
+				if = {
+					limit = {
+						is_empty = yes
+						if = {
+							limit = {
+								FROM = { has_country_flag = tordesillas_por }
+							}
+							OR = {
+								NOT = { 
+									AND = {
+										continent = north_america 
+										NOT = { 
+											OR = {
+												area = newfoundland_area
+												area = labrador_area
+											}
+										}
+									}
+								}
+								NOT = {
+									AND = {
+										continent = south_america
+										NOT = {
+											OR = {
+												area = maranhao_area
+												area = piaui_area
+												area = ceara_area
+												area = sao_francisco_area
+												area = pernambuco_area
+												area = bahia_area
+												area = diamantina_area
+												area = minas_gerais_area
+												area = rio_de_janeiro_area
+												area = grao_para_area
+												area = pontal_area
+												area = goias_area
+												area = sao_paolo_area
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					add_permanent_claim = FROM
+				}
+				else = {
+					owner = {
+						add_opinion = {
+							who = FROM
+							modifier = raised_padrao
+						}
+					}
+				}
 				FROM = {
 					add_government_power = {
 						mechanic_type = portuguese_saudade_mechanic
@@ -4472,7 +4598,60 @@ province_event = {
 					name = padrao_raised
 					duration = -1
 				}
-				add_permanent_claim = FROM
+				if = {
+					limit = {
+						is_empty = yes
+						if = {
+							limit = {
+								FROM = { has_country_flag = tordesillas_por }
+							}
+							OR = {
+								NOT = { 
+									AND = {
+										continent = north_america 
+										NOT = { 
+											OR = {
+												area = newfoundland_area
+												area = labrador_area
+											}
+										}
+									}
+								}
+								NOT = {
+									AND = {
+										continent = south_america
+										NOT = {
+											OR = {
+												area = maranhao_area
+												area = piaui_area
+												area = ceara_area
+												area = sao_francisco_area
+												area = pernambuco_area
+												area = bahia_area
+												area = diamantina_area
+												area = minas_gerais_area
+												area = rio_de_janeiro_area
+												area = grao_para_area
+												area = pontal_area
+												area = goias_area
+												area = sao_paolo_area
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					add_permanent_claim = FROM
+				}
+				else = {
+					owner = {
+						add_opinion = {
+							who = FROM
+							modifier = raised_padrao
+						}
+					}
+				}
 				FROM = {
 					add_government_power = {
 						mechanic_type = portuguese_saudade_mechanic

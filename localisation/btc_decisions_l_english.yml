@@ -93,3 +93,10 @@
  divert_nile_desc: ""
  restore_nile: "Restore Nile"
  restore_nile_desc: ""
+
+ enable_dukkala_raids_title: "Enable Morocco Raiding Parties"
+ enable_dukkala_raids_desc: ""
+ btc_dukkala_raids_tt: "Raiding parties will occasionally be sent to loot Moroccan provinces"
+ disable_dukkala_raids_title: "Disable Morocco Raiding Parties"
+ disable_dukkala_raids_desc: ""
+ btc_dukkala_raids_off_tt: "No more raiding parties will be sent to loot Moroccan provinces"

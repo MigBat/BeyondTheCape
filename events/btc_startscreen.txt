@@ -1,0 +1,668 @@
+namespace = btc_startscreen
+normal_or_historical_nations = yes
+
+# Beyond the Cape tutorial #
+country_event = {
+	id = btc_startscreen.1
+	title = btc_startscreen.1_t
+	desc = btc_startscreen.1_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# Portugal
+		name = btc_startscreen.1a
+
+		country_event = {
+			id = btc_startscreen.2
+		}
+	}
+
+	# option = {	# Other Countries
+	# 	name = btc_startscreen.1b
+
+	# 	country_event = {
+	# 		id = btc_startscreen.3
+	# 	}
+	# }
+
+	option = {	# Exploration
+		name = btc_startscreen.1c
+
+		country_event = {
+			id = btc_startscreen.4
+		}
+	}
+
+	option = {	# Castilian civil war
+		name = btc_startscreen.1d
+
+		country_event = {
+			id = btc_startscreen.5
+		}
+	}
+
+	option = {	# Other Additions
+		name = btc_startscreen.1e
+
+		country_event = {
+			id = btc_startscreen.6
+		}
+	}
+
+	option = {	# I've got it, let me play!
+		name = btc_startscreen.1f
+
+		set_country_flag = tutorial_done
+	}
+}
+
+# Portugal tutorial #
+country_event = {
+	id = btc_startscreen.2
+	title = btc_startscreen.2_t
+	desc = btc_startscreen.2_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# Government
+		name = btc_startscreen.2a
+
+		country_event = {
+			id = btc_startscreen.21
+		}
+	}
+
+	option = {	# Disaster
+		name = btc_startscreen.2b
+
+		country_event = {
+			id = btc_startscreen.22
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.2c
+
+		country_event = {
+			id = btc_startscreen.1
+		}
+	}
+}
+
+# Portuguese Government #
+country_event = {
+	id = btc_startscreen.21
+	title = btc_startscreen.21_t
+	desc = btc_startscreen.21_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.21a
+
+		country_event = {
+			id = btc_startscreen.2
+		}
+	}
+}
+
+# Overextended Empire Disaster #
+country_event = {
+	id = btc_startscreen.22
+	title = btc_startscreen.22_t
+	desc = btc_startscreen.22_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.22a
+
+		country_event = {
+			id = btc_startscreen.2
+		}
+	}
+}
+
+# Other Countries #
+country_event = {
+	id = btc_startscreen.3
+	title = btc_startscreen.3_t
+	desc = btc_startscreen.3_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# Iberia
+		name = btc_startscreen.3a
+
+		country_event = {
+			id = btc_startscreen.31
+		}
+	}
+
+	option = {	# Low Countries
+		name = btc_startscreen.3b
+
+		country_event = {
+			id = btc_startscreen.32
+		}
+	}
+
+	option = {	# British Isles
+		name = btc_startscreen.3d
+
+		country_event = {
+			id = btc_startscreen.33
+		}
+	}
+
+	option = {	# Asia
+		name = btc_startscreen.3e
+
+		country_event = {
+			id = btc_startscreen.34
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.3c
+
+		country_event = {
+			id = btc_startscreen.1
+		}
+	}
+}
+
+# Iberia #
+country_event = {
+	id = btc_startscreen.31
+	title = btc_startscreen.31_t
+	desc = btc_startscreen.31_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.31a
+
+		country_event = {
+			id = btc_startscreen.3
+		}
+	}
+}
+
+# Low Countries #
+country_event = {
+	id = btc_startscreen.32
+	title = btc_startscreen.32_t
+	desc = btc_startscreen.32_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.32a
+
+		country_event = {
+			id = btc_startscreen.3
+		}
+	}
+}
+
+# British Isles #
+country_event = {
+	id = btc_startscreen.33
+	title = btc_startscreen.33_t
+	desc = btc_startscreen.33_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.33a
+
+		country_event = {
+			id = btc_startscreen.3
+		}
+	}
+}
+
+# Asia #
+country_event = {
+	id = btc_startscreen.34
+	title = btc_startscreen.34_t
+	desc = btc_startscreen.34_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# India
+		name = btc_startscreen.34a
+
+		country_event = {
+			id = btc_startscreen.341
+		}
+	}
+
+	option = {	# China
+		name = btc_startscreen.34b
+
+		country_event = {
+			id = btc_startscreen.342
+		}
+	}
+
+	option = {	# Japan
+		name = btc_startscreen.34c
+
+		country_event = {
+			id = btc_startscreen.343
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.34d
+
+		country_event = {
+			id = btc_startscreen.3
+		}
+	}
+}
+
+# India #
+country_event = {
+	id = btc_startscreen.341
+	title = btc_startscreen.341_t
+	desc = btc_startscreen.341_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.341a
+
+		country_event = {
+			id = btc_startscreen.34
+		}
+	}
+}
+
+# China #
+country_event = {
+	id = btc_startscreen.342
+	title = btc_startscreen.342_t
+	desc = btc_startscreen.342_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.342a
+
+		country_event = {
+			id = btc_startscreen.34
+		}
+	}
+}
+
+# Japan #
+country_event = {
+	id = btc_startscreen.343
+	title = btc_startscreen.343_t
+	desc = btc_startscreen.343_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.343a
+
+		country_event = {
+			id = btc_startscreen.34
+		}
+	}
+}
+
+# Exploration tutorial #
+country_event = {
+	id = btc_startscreen.4
+	title = btc_startscreen.4_t
+	desc = btc_startscreen.4_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# settler pool
+		name = btc_startscreen.4a
+
+		country_event = {
+			id = btc_startscreen.41
+		}
+	}
+
+	option = {	# settler pool
+		name = btc_startscreen.4c
+
+		country_event = {
+			id = btc_startscreen.42
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.4b
+
+		country_event = {
+			id = btc_startscreen.1
+		}
+	}
+}
+
+# Settler Pool tutorial #
+country_event = {
+	id = btc_startscreen.41
+	title = btc_startscreen.41_t
+	desc = btc_startscreen.41_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.41a
+
+		country_event = {
+			id = btc_startscreen.4
+		}
+	}
+}
+
+# The Seven Cities of Gold #
+country_event = {
+	id = btc_startscreen.42
+	title = btc_startscreen.42_t
+	desc = btc_startscreen.42_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.42a
+
+		country_event = {
+			id = btc_startscreen.4
+		}
+	}
+}
+
+# Castilian Civil War tutorial #
+country_event = {
+	id = btc_startscreen.5
+	title = btc_startscreen.5_t
+	desc = btc_startscreen.5_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# as Castile
+		name = btc_startscreen.5a
+
+		country_event = {
+			id = btc_startscreen.51
+		}
+	}
+
+	option = {	# as Portugal
+		name = btc_startscreen.5b
+
+		country_event = {
+			id = btc_startscreen.52
+		}
+	}
+
+	option = {	# as Aragon
+		name = btc_startscreen.5c
+
+		country_event = {
+			id = btc_startscreen.53
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.5d
+
+		country_event = {
+			id = btc_startscreen.1
+		}
+	}
+}
+
+# Castile tutorial #
+country_event = {
+	id = btc_startscreen.51
+	title = btc_startscreen.51_t
+	desc = btc_startscreen.51_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.51a
+
+		country_event = {
+			id = btc_startscreen.5
+		}
+	}
+}
+
+# Portugal tutorial #
+country_event = {
+	id = btc_startscreen.52
+	title = btc_startscreen.52_t
+	desc = btc_startscreen.52_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.52a
+
+		country_event = {
+			id = btc_startscreen.5
+		}
+	}
+}
+
+# Aragon tutorial #
+country_event = {
+	id = btc_startscreen.53
+	title = btc_startscreen.53_t
+	desc = btc_startscreen.53_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.53a
+
+		country_event = {
+			id = btc_startscreen.5
+		}
+	}
+}
+
+# More Stuff #
+country_event = {
+	id = btc_startscreen.6
+	title = btc_startscreen.6_t
+	desc = btc_startscreen.6_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# Sound Tolls
+		name = btc_startscreen.6a
+
+		country_event = {
+			id = btc_startscreen.61
+		}
+	}
+
+	option = {	# Buildings, Development and Corruption
+		name = btc_startscreen.6b
+
+		country_event = {
+			id = btc_startscreen.62
+		}
+	}
+
+	option = {	# War, Devastation and Attrition
+		name = btc_startscreen.6c
+
+		country_event = {
+			id = btc_startscreen.63
+		}
+	}
+
+	option = {	# Military Access and Casus Belli
+		name = btc_startscreen.6d
+
+		country_event = {
+			id = btc_startscreen.64
+		}
+	}
+
+	option = {	# Institutions
+		name = btc_startscreen.6e
+
+		country_event = {
+			id = btc_startscreen.65
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.6f
+
+		country_event = {
+			id = btc_startscreen.1
+		}
+	}
+}
+
+# Sound Tolls tutorial #
+country_event = {
+	id = btc_startscreen.61
+	title = btc_startscreen.61_t
+	desc = btc_startscreen.61_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.61a
+
+		country_event = {
+			id = btc_startscreen.6
+		}
+	}
+}
+
+# Buildings, Development and Corruption tutorial #
+country_event = {
+	id = btc_startscreen.62
+	title = btc_startscreen.62_t
+	desc = btc_startscreen.62_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.62a
+
+		country_event = {
+			id = btc_startscreen.6
+		}
+	}
+}
+
+# War, Devastation and Attrition tutorial #
+country_event = {
+	id = btc_startscreen.63
+	title = btc_startscreen.63_t
+	desc = btc_startscreen.63_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.63a
+
+		country_event = {
+			id = btc_startscreen.6
+		}
+	}
+}
+
+# Military Access and Casus Belli tutorial #
+country_event = {
+	id = btc_startscreen.64
+	title = btc_startscreen.64_t
+	desc = btc_startscreen.64_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.64a
+
+		country_event = {
+			id = btc_startscreen.6
+		}
+	}
+}
+
+# Institutions tutorial #
+country_event = {
+	id = btc_startscreen.65
+	title = btc_startscreen.65_t
+	desc = btc_startscreen.65_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.65a
+
+		country_event = {
+			id = btc_startscreen.651
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.65b
+
+		country_event = {
+			id = btc_startscreen.6
+		}
+	}
+}
+
+# Potential Hegemons #
+country_event = {
+	id = btc_startscreen.651
+	title = btc_startscreen.651_t
+	desc = btc_startscreen.651_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.651a
+
+		country_event = {
+			id = btc_startscreen.65
+		}
+	}
+}

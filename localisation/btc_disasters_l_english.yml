@@ -101,12 +101,21 @@
  territory_provinces_3.6_times_state_provinces:0 "We have over 3.6 times the number of territories compared to state provinces"
  territory_provinces_3.8_times_state_provinces:0 "We have over 3.8 times the number of territories compared to state provinces"
  territory_provinces_4_times_state_provinces:0 "We have over 4 times the number of territories compared to state provinces"
+ cdi_development_2_times_portugal: "[CDI.GetName] has over 2 times our total development"
+ cdi_development_2.2_times_portugal: "[CDI.GetName] has over 2.2 times our total development"
+ cdi_development_2.4_times_portugal: "[CDI.GetName] has over 2.4 times our total development"
+ cdi_development_2.6_times_portugal: "[CDI.GetName] has over 2.6 times our total development"
+ cdi_development_2.8_times_portugal: "[CDI.GetName] has over 2.8 times our total development"
+ cdi_development_3_times_portugal: "[CDI.GetName] has over 3 times our total development"
  btc_overseas.1_t:0 "Start of the Overextended Empire Disaster"
  btc_overseas.1_d:0 "Decades of reckless expansion overseas has resulted in having significantly more territory outside mainland Portugal than in it. We cannot efficiently administrate our empire when we are so short of people, and see ourselves forced to employ locals to keep businesses running, at the expense of potential capital to be gained."
  btc_overseas.1a:0 "We should've seen this coming..."
  btc_overseas.2_t:0 "End of the Overextended Empire Disaster"
  btc_overseas.2_d:0 "We have finally managed to sort things out. Normal overseas administrative functions should resume shortly, and we can begin to rebuild what was lost. The storm has passed!"
  btc_overseas.2a:0 "We won't make the same mistake twice."
+
+ overseas_dominance_mod: "Overextended Empire"
+ desc_overseas_dominance_mod: ""
 
 ### Portuguese Regency ###
 

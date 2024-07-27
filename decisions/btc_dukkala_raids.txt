@@ -3,7 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			mission_completed = btc_buffer_zone
-			NOT = { has_country_flag = btc_dukkala_raids_flag }
+			NOT = { has_country_flag = btc_dukkala_raids_on_flag }
 		}
 		allow = {
 		}
@@ -16,13 +16,13 @@ country_decisions = {
 		major = yes
 		potential = {
 			mission_completed = btc_buffer_zone
-			has_country_flag = btc_dukkala_raids_flag
+			has_country_flag = btc_dukkala_raids_on_flag
 		}
 		allow = {
 		}
 		effect = {
 			custom_tooltip = btc_dukkala_raids_off_tt
-			clr_country_flag = btc_dukkala_raids_flag
+			clr_country_flag = btc_dukkala_raids_on_flag
 		}
 	}
 }

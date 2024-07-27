@@ -145,6 +145,8 @@
  desc_anti_islamic_society:0 "We have expelled the Mouriscos"
  anti_semitic_society:0 "Anti-Semitic Society"
  desc_anti_semitic_society:0 "We have expelled the Jews"
+ diverse_society: "Diverse Society"
+ desc_diverse_society: "We have accepted the Mouriscos and the Jews"
  respected_merchants:0 "Respected Merchants"
  desc_respected_merchants:0 "We have seen to the interests of our merchants"
  aggressive_mercantilism:0 "Aggressive Mercantilism"
@@ -413,6 +415,7 @@
  built_feitoria:0 "Built a Feitoria in our lands"
  monumental_good:0 "Monumental City"
  desc_monumental_good:0 "An awe-inspiring city."
+ raised_padrao: "Raised a Padrão in our lands"
 # Venice #
  btc_ven_ten_emergency_government:0 "Emergency Government"
  desc_btc_ven_ten_emergency_government:0 "Council of the Ten's emergency government."

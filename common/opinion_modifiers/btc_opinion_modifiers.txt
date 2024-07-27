@@ -47,3 +47,8 @@ bassein_treaty = {
 	opinion = 50
 	yearly_decay = 1
 }
+
+raised_padrao = {
+	opinion = 10
+	yearly_decay = 0
+}
