@@ -60,3 +60,39 @@ legacy_of_albuquerque_reform = {
 		factor = 3
 	}
 }
+
+ordennancas_reform = {
+	icon = "ordenancas"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		NOT = { religion_group = muslim }
+		OR = {
+			primary_culture = portugese
+			primary_culture = brazilian
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = ordennancas_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		land_forcelimit_modifier = -0.1
+		garrison_size = 0.25
+		garrison_damage = 0.5
+		global_garrison_growth = 0.2
+		hostile_attrition = 2
+	}
+	custom_attributes = {
+		can_raise_manpower_from_home_region = yes
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
