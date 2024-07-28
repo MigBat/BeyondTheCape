@@ -1388,16 +1388,16 @@ new_world_i = {
 		}
 		is_in_capital_area = yes
 		owner = { 
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = had_columbus_tt
-					has_country_flag = had_columbus
-				}
-				custom_trigger_tooltip = {
-					tooltip = has_exporation_idea_tt
-					has_any_exploration_idea = yes
-				}
-			}
+			# OR = {
+			# 	custom_trigger_tooltip = {
+			# 		tooltip = had_columbus_tt
+			# 		has_country_flag = had_columbus
+			# 	}
+			# 	custom_trigger_tooltip = {
+			# 		tooltip = has_exporation_idea_tt
+			# 		has_any_exploration_idea = yes
+			# 	}
+			# }
 			custom_trigger_tooltip = {
 				tooltip = has_discovered_new_world_tt
 				OR = {
@@ -1442,9 +1442,9 @@ new_world_i = {
 	can_embrace = {
 		owner = {
 			OR = {
-				hidden_trigger = {
-					has_country_flag = got_colonialism				
-				}
+				# hidden_trigger = {
+				# 	has_country_flag = got_colonialism				
+				# }
 				any_owned_province = {
 					new_world_i = 100
 				}
