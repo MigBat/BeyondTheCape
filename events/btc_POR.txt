@@ -1108,7 +1108,7 @@ country_event = {
 		}
 		random_owned_province = {
 			limit = {
-				area = extremadura_area
+				area = estremadura_area
 				religion = catholic
 				is_capital = no
 			}

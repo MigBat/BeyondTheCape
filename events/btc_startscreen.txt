@@ -82,6 +82,15 @@ country_event = {
 		}
 	}
 
+	option = {	# Historical Run
+		name = btc_startscreen.2d
+		highlight = yes
+
+		country_event = {
+			id = btc_startscreen.23
+		}
+	}
+
 	option = {	# go back
 		name = btc_startscreen.2c
 
@@ -120,6 +129,84 @@ country_event = {
 
 	option = {	# go back
 		name = btc_startscreen.22a
+
+		country_event = {
+			id = btc_startscreen.2
+		}
+	}
+}
+
+# Historical Run #
+country_event = {
+	id = btc_startscreen.23
+	title = btc_startscreen.23_t
+	desc = btc_startscreen.23_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# First things first
+		name = btc_startscreen.23a
+
+		country_event = {
+			id = btc_startscreen.231
+		}
+	}
+
+	option = {	# Cape of Torments
+		name = btc_startscreen.23b
+
+		country_event = {
+			id = btc_startscreen.232
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.23c
+
+		country_event = {
+			id = btc_startscreen.2
+		}
+	}
+}
+
+# First Things First #
+country_event = {
+	id = btc_startscreen.231
+	title = btc_startscreen.231_t
+	desc = btc_startscreen.231_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# Cape of Torments
+		name = btc_startscreen.231a
+
+		country_event = {
+			id = btc_startscreen.232
+		}
+	}
+
+	option = {	# go back
+		name = btc_startscreen.231b
+
+		country_event = {
+			id = btc_startscreen.2
+		}
+	}
+}
+
+# Cape of Torments #
+country_event = {
+	id = btc_startscreen.232
+	title = btc_startscreen.232_t
+	desc = btc_startscreen.232_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.232a
 
 		country_event = {
 			id = btc_startscreen.2

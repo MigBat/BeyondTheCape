@@ -12,6 +12,7 @@
  btc_startscreen.2_d:0 "As the main focus of this mod, Portugal has been completely overhauled, aiming to portray the country as historically accurate as possible while at the same time making sure that it is not overpowered in comparison to other countries.\n\nChanges to the country include:\n\n- New provinces.\n- New ideas.\n- New mission tree.\n- Hundreds of new events.\n- Unique holy orders.\n- New special units.\n- New government mechanics.\n- And more!\n\nClick the options below for more specific information about what you can expect while playing as Portugal."
  btc_startscreen.2a:0 "Portuguese Government"
  btc_startscreen.2b:0 "Overextended Empire Disaster"
+ btc_startscreen.2d: "Historical Run"
  btc_startscreen.2c:0 "Go back"
 
  btc_startscreen.21_t:0 "Portuguese Government"
@@ -21,6 +22,21 @@
  btc_startscreen.22_t:0 "Overextended Empire Disaster"
  btc_startscreen.22_d:0 "This disaster is triggered from the Saudade mechanic (read the Portuguese Government tutorial section before you read this).\n\nWhen you have 100 Saudade and at least 3 times as many territories as there are state provinces in your country, or your commercial enterprise subject Casa da India has over 2 times your total development, this disaster will start ticking. When it happens, you get a variety of maluses to your overall production capabilities, reinforcement abilities and colonisation efforts. The aim of this disaster is to represent the difficulties associated with managing a large overseas empire as a small nation.\n\nWhile the disaster is active, you will get -1 monthly Saudade, and when you have less than 50 Saudade this disaster will end. Bear in mind that this is a repeatable disaster, so if the trigger conditions are met again it will happen once more."
  btc_startscreen.22a:0 "Go back"
+
+ btc_startscreen.23_t: "Historical Run"
+ btc_startscreen.23_d: "While designing this mod, I wanted to properly represent Portugal's achievement of reaching India by 1498. Although this is possible in vanilla EU4, it does not represent how they did it historically. It was not satisfactory enough for me, so a big part of design was making sure that all pieces align perfectly to reach this goal as historically accurate as the game allows.\n\nYou can try and figure out for yourself how this is done by playing the mod normally, or you can keep on reading to know exactly what you need to do. This tutorial will show you how to get to India as Portugal by colonizing only historical provinces."
+ btc_startscreen.23a: "First things first"
+ btc_startscreen.23b: "Cape of Torments"
+ btc_startscreen.23c: "Go back"
+
+ btc_startscreen.231_t: "First Things First"
+ btc_startscreen.231_d: "Before you unpause, start off by hiring Henrique o Navegador as your diplomatic advisor, then grant the Burghers Naval School Rights privilege to the Burghers. This will allow you to complete the mission Sagres School of Navigation.\n\nAs you can see, this has unlocked new missions for you to complete. These are innovations researched at Sagres School. For the purposes of this tutorial, we need to complete the Ocean Currents mission, which will give you +25% colonial range. It's not hard to unlock, all you need is some diplomatic power and for at least 50% of your ships to be light ships.\n\nNext up, you need to unlock exploration ideas. Make sure to unlock at least 3 ideas from there, as the 1st idea will give you +50% colonial range and the 3rd will unlock your 1st national idea which gives +25% colonial range.\n\nAnother very important thing to do is to choose the 1st option of The Silk Road Crisis event. This event will happen after you have exploration ideas, and the 1st option will give you +25% colonial range. Also make sure to always have a navigator as your advisor, as they give +20% colonial range. As long as you own the Algarve province with the Sagres School modifier, you can always hire a navigator.\n\nWith all this, you will have +120% colonial range, and that is all you will need. Keep following the middle branch of the mission tree. We will talk about the Cape of Torments mission next."
+ btc_startscreen.231a: "Cape of Torments"
+ btc_startscreen.231b: "Go back"
+
+ btc_startscreen.232_t: "Cape of Torments"
+ btc_startscreen.232_d: "If you followed all the steps in the previous section, you will have successfully colonized Arguin and Cape Coast, both via mission. Also, you will have +120% colonial range (It is possible to get an additional +10%, but it is not required for the purposes of this tutorial). You will have noticed that, despite all this, you are unable to reach the southern tip of Africa, the Cape of Torments. You could always slowly colonize south in order to get some range to reach the cape, but it's not going to make getting to India any faster. So instead concentrate your colonial efforts in Cape Verde and the São Tomé islands in order to complete your missions.\n\nYou are unable to reach Cape of Torments because you do not have diplomatic tech 8, which gives +60 colonial range. You need to research it. Once you do, and you complete the mission, you'll notice that you have unlocked a unique flagship modification called Portuguese Navigators. This gives your flagship increased exploration range (not colonial range). Now is the time to build your flagship with this modification, place it in a fleet with 2 other light ships and explore the Cape Route region which is now available to you.\n\nCongratulations! You have successfully reached India by sea, replicating the original journey made by Vasco da Gama. Now the Portuguese Empire will start to bloom."
+ btc_startscreen.232a: "Go back"
 
  btc_startscreen.3_t:0 "Other Countries"
  btc_startscreen.3_d:0 "The scope of the mod encompasses the coloniser nations. As such, you will see more nations picking exploration ideas and contesting the Caribbeans. Some countries however, we felt required some extra flavour. Check them below."

@@ -71,7 +71,14 @@ callaction = {
 		potential = {
 			has_country_flag = at_war
 		}
-		allow = { always = no }
+		allow = { 
+			FROM = {
+				OR = {
+					tag = POR
+					tag = ARA
+				}
+			}
+		}
 	}
 }
 

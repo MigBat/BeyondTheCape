@@ -1,12 +1,15 @@
 country_decisions = {
 	purchase_indian_province = {
+		major = yes
 		potential = {
 			ai = no
 			mission_completed = btc_india
 			NOT = { has_global_flag = btc_deal_accepted_flag }
-			NOT = { has_country_flag = btc_looking_for_deal_flag }
 		}
 		allow = {
+			hidden_trigger = {
+				NOT = { has_country_flag = btc_looking_for_deal_flag }
+			}
 		}
 		effect = {
 			add_treasury = -200

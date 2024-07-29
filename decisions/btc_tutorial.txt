@@ -1,5 +1,6 @@
 country_decisions = {
 	show_tutorial_decision = {
+		major = yes
 		potential = { 
 			ai = no
 		}

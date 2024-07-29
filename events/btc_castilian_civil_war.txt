@@ -333,6 +333,8 @@ country_event = {
 			female = yes
 		}
 
+		set_country_flag = at_war
+		CAS = { set_country_flag = at_war }
 		declare_war_with_cb = {
 			who = CAS
 			casus_belli = cb_castilian_civil_war
@@ -346,8 +348,6 @@ country_event = {
 				set_country_flag = at_war
 			}
 		}
-		set_country_flag = at_war
-		CAS = { set_country_flag = at_war }
 
 		FRA = {
 			country_event = { id = castilian_civil_war.10 days = 90 } # Support Portugal in the war
@@ -428,6 +428,8 @@ country_event = {
 			female = yes
 		}
 
+		set_country_flag = at_war
+		CAS = { set_country_flag = at_war }
 		declare_war_with_cb = {
 			who = CAS
 			casus_belli = cb_castilian_civil_war
@@ -449,8 +451,6 @@ country_event = {
 				set_country_flag = at_war
 			}
 		}
-		set_country_flag = at_war
-		CAS = { set_country_flag = at_war }
 
 		if = {
 			limit = {
