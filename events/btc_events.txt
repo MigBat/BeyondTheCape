@@ -820,8 +820,10 @@ country_event = {
 	picture = mission_placeholder
 
 	hidden = yes
-
 	is_triggered_only = yes
+	trigger = {
+		num_of_colonists = 1
+	}
 
 	immediate = {
 

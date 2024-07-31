@@ -69,6 +69,7 @@ fortified_feitoria = {
 
 foreign_feitoria = {
 	tax_income = 6
+	province_trade_power_value = 0.01
 	picture = "prov_modifier_foreign_feitoria"
 }
 
@@ -856,4 +857,8 @@ overseas_dominance_mod = {
 	manpower_recovery_speed = -0.5
 	reinforce_speed = -0.5
 	production_efficiency = -0.3
+}
+
+btc_low_health = {
+	monarch_lifespan = -0.5
 }

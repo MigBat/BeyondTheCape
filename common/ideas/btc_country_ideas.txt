@@ -57,8 +57,8 @@ POR_ideas = {
 
 CDI_ideas = {
 	start = {
-		ship_trade_power_modifier = 0.2
-		fort_maintenance_modifier = -0.1
+		no_religion_penalty = yes
+		global_autonomy = -0.05
 	}
 
 	bonus = {
@@ -74,7 +74,7 @@ CDI_ideas = {
 		improve_relation_modifier = 0.1
 	}
 	cdi_2 = {
-		light_ship_power = 0.1
+		ship_trade_power_modifier = 0.2
 	}
 	cdi_3 = {
 		prestige_decay = -0.01

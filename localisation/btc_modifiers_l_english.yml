@@ -542,3 +542,6 @@
  desc_home_of_nutmeg: "Nutmeg does not exist anywhere else in the world. This island is extremely valuable."
 
  btc_portugal_privateers: "Portuguese Pirates"
+
+ btc_low_health: "Monarch Bad Health"
+ desc_btc_low_health: "Our monarch is in bad shape, he's not expected to rule for long."

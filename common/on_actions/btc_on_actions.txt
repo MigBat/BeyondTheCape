@@ -150,6 +150,18 @@ on_conquest = {
 		}
 		remove_province_modifier = malaria
 	}
+	if = {
+		limit = {
+			has_province_modifier = feitoria
+		}
+		remove_province_modifier = feitoria
+	}
+	if = {
+		limit = {
+			has_province_modifier = fortified_feitoria
+		}
+		remove_province_modifier = fortified_feitoria
+	}
 }
 
 on_war_won = {
@@ -341,6 +353,13 @@ on_new_monarch = {
 	if = {
 		limit = {
 			tag = CYP
+			NOT = { has_ruler_flag = is_jean_lusignan_flag }
+		}
+		remove_country_modifier = btc_low_health
+	}
+	if = {
+		limit = {
+			tag = CYP
 			has_ruler = "Charlotte"
 			dynasty = "de Lusignan"
 			POR = { has_country_flag = braganca_plot }
@@ -370,6 +389,21 @@ on_abandon_colony = {
 			has_province_modifier = malaria
 		}
 		remove_province_modifier = malaria
+	}
+}
+
+on_colony_finished = {
+	if = {
+		limit = {
+			owner = {
+				is_or_was_tag = { tag = POR }
+			}
+			has_province_modifier = padrao_raised
+		}
+		# remove_province_modifier = padrao_raised
+		province_event = {
+			id = btc_por.168
+		}
 	}
 }
 

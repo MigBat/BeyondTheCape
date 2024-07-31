@@ -954,6 +954,26 @@ country_event = {
 				tag = root
 			}
 		}
+		any_owned_province = {
+			has_port = yes
+			OR = {
+				area = gulf_of_arabia_area
+				region = arabia_region
+				region = horn_of_africa_region
+			}
+		}
+		event_target:mam_spice_trade = {
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					OR = {
+						area = gulf_of_arabia_area
+						region = arabia_region
+						region = horn_of_africa_region
+					}
+				}
+			}
+		}
 		NOT = { tag = event_target:mam_spice_trade }
 		NOT = { tag = event_target:por_spice_trade }
 		NOT = { has_country_flag = is_por_ally }

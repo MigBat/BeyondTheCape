@@ -4507,11 +4507,11 @@ province_event = {
 					}
 				}
 				FROM = {
-					add_government_power = {
-						mechanic_type = portuguese_saudade_mechanic
-						power_type = portuguese_saudade
-						value = 1
-					}
+					# add_government_power = {
+					# 	mechanic_type = portuguese_saudade_mechanic
+					# 	power_type = portuguese_saudade
+					# 	value = 1
+					# }
 					clr_country_flag = padrao_chance_1
 					clr_country_flag = padrao_chance_2
 					clr_country_flag = padrao_chance_3
@@ -4580,11 +4580,11 @@ province_event = {
 					}
 				}
 				FROM = {
-					add_government_power = {
-						mechanic_type = portuguese_saudade_mechanic
-						power_type = portuguese_saudade
-						value = 1
-					}
+					# add_government_power = {
+					# 	mechanic_type = portuguese_saudade_mechanic
+					# 	power_type = portuguese_saudade
+					# 	value = 1
+					# }
 					clr_country_flag = padrao_chance_1
 					clr_country_flag = padrao_chance_2
 					clr_country_flag = padrao_chance_3
@@ -4653,11 +4653,11 @@ province_event = {
 					}
 				}
 				FROM = {
-					add_government_power = {
-						mechanic_type = portuguese_saudade_mechanic
-						power_type = portuguese_saudade
-						value = 1
-					}
+					# add_government_power = {
+					# 	mechanic_type = portuguese_saudade_mechanic
+					# 	power_type = portuguese_saudade
+					# 	value = 1
+					# }
 					clr_country_flag = padrao_chance_1
 					clr_country_flag = padrao_chance_2
 					clr_country_flag = padrao_chance_3

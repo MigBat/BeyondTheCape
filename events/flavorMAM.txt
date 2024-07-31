@@ -504,101 +504,101 @@ country_event = {
 }
 
 # Portugese - Mamluk - Trade Conflict
-country_event = {
-	id = flavor_mam.15
-	title = flavor_mam.15.t
-	desc = flavor_mam.15.d
-	picture = MERCHANTS_TALKING_eventPicture
+# country_event = {
+# 	id = flavor_mam.15
+# 	title = flavor_mam.15.t
+# 	desc = flavor_mam.15.d
+# 	picture = MERCHANTS_TALKING_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		tag = MAM
-		is_year = 1490
+# 	trigger = {
+# 		tag = MAM
+# 		is_year = 1490
 
-		exists = POR
-		manpower_percentage = 0.5
-		owns = 2315
-		4346 = {				#Gulf of Aden
-			is_strongest_trade_power = POR
-		}
+# 		exists = POR
+# 		manpower_percentage = 0.5
+# 		owns = 2315
+# 		4346 = {				#Gulf of Aden
+# 			is_strongest_trade_power = POR
+# 		}
 		
-		NOT = { num_of_light_ship = POR }	# we have to have less lightships.
-	}
+# 		NOT = { num_of_light_ship = POR }	# we have to have less lightships.
+# 	}
 	
-	mean_time_to_happen = {
-		months = 3
-	}
+# 	mean_time_to_happen = {
+# 		months = 3
+# 	}
 	
-	option = {
-		ai_chance = { factor = 90 }
-		name = flavor_mam.15.a
-		set_country_flag = MAM_POR_conflict
-		if = {
-			limit = {
-				manpower_percentage = 0.5
-			}
-			add_manpower = -40
+# 	option = {
+# 		ai_chance = { factor = 90 }
+# 		name = flavor_mam.15.a
+# 		set_country_flag = MAM_POR_conflict
+# 		if = {
+# 			limit = {
+# 				manpower_percentage = 0.5
+# 			}
+# 			add_manpower = -40
 			
-			2315 = {
-				add_unit_construction = {
-					type = light_ship
-					amount = 20
-					speed = 0.1
-					cost = 0
-				}
-			}
-		}
-		POR = {
-			add_opinion = {
-				who = root
-				modifier = mam_por_confronted
-			}	
+# 			2315 = {
+# 				add_unit_construction = {
+# 					type = light_ship
+# 					amount = 20
+# 					speed = 0.1
+# 					cost = 0
+# 				}
+# 			}
+# 		}
+# 		POR = {
+# 			add_opinion = {
+# 				who = root
+# 				modifier = mam_por_confronted
+# 			}	
 			
-			country_event = { 
-				id = flavor_mam.16
-				days = 2
-				random = 4
-				tooltip = flavor_mam.15.16
-			}
+# 			country_event = { 
+# 				id = flavor_mam.16
+# 				days = 2
+# 				random = 4
+# 				tooltip = flavor_mam.15.16
+# 			}
 				
-		}
+# 		}
 		
 		
-	}
-	option = {
-		name = flavor_mam.15.b
-		add_prestige = -25
-		4346 = {
-			add_trade_modifier = {
-				who = root
-				duration = 3650
-				power = -5
-				key = surrender_the_trade
-			}
-		}
-	}
-}
+# 	}
+# 	option = {
+# 		name = flavor_mam.15.b
+# 		add_prestige = -25
+# 		4346 = {
+# 			add_trade_modifier = {
+# 				who = root
+# 				duration = 3650
+# 				power = -5
+# 				key = surrender_the_trade
+# 			}
+# 		}
+# 	}
+# }
 
-# POR gets a cb!
-country_event = {
-	id = flavor_mam.16
-	title = flavor_mam.16.t
-	desc = flavor_mam.16.d
-	picture = MERCHANTS_TALKING_eventPicture
+# # POR gets a cb!
+# country_event = {
+# 	id = flavor_mam.16
+# 	title = flavor_mam.16.t
+# 	desc = flavor_mam.16.d
+# 	picture = MERCHANTS_TALKING_eventPicture
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = {	
-		name = flavor_mam.16.a
-		add_navy_tradition = 5
-		add_casus_belli = {	
-			target = MAM
-			type = cb_trade_war_triggered
-			months = 36
-		}		
-	}
-}
+# 	option = {	
+# 		name = flavor_mam.16.a
+# 		add_navy_tradition = 5
+# 		add_casus_belli = {	
+# 			target = MAM
+# 			type = cb_trade_war_triggered
+# 			months = 36
+# 		}		
+# 	}
+# }
 
 # The anti-ottoman coalition of Shah Ismail
 country_event = {

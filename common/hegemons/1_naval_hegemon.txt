@@ -24,8 +24,8 @@ naval_hegemon = {
 		else_if = {
 			limit = { is_reformation_nav_hegemon = yes current_age = age_of_reformation }
 			OR = {
-				num_of_heavy_ship = 10
-				num_of_galley = 20
+				num_of_heavy_ship = 15
+				num_of_galley = 30
 			}
 			if = {
 				limit = {
@@ -43,8 +43,8 @@ naval_hegemon = {
 		else_if = {
 			limit = { is_absolutism_nav_hegemon = yes current_age = age_of_absolutism }
 			OR = {
-				num_of_heavy_ship = 10
-				num_of_galley = 20
+				num_of_heavy_ship = 20
+				num_of_galley = 40
 			}
 			if = {
 				limit = {
@@ -62,8 +62,8 @@ naval_hegemon = {
 		else_if = {
 			limit = { is_revolutions_nav_hegemon = yes current_age = age_of_revolutions }
 			OR = {
-				num_of_heavy_ship = 10
-				num_of_galley = 20
+				num_of_heavy_ship = 25
+				num_of_galley = 50
 			}
 			if = {
 				limit = {

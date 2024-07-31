@@ -30,7 +30,7 @@ ottoman_silk_road_monopoly = {
 				}
 			}
 		}
-		any_country = { NOT = { has_country_modifier = east_indian_trade_route }}
+		NOT = { any_country = { has_country_modifier = east_indian_trade_route } }
 	}
 
 	trade_efficiency = -0.05	

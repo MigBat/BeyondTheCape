@@ -41,6 +41,11 @@ fixed_capital = 321 # Cannot move capital away from this province & no power cos
 		dip = 2
 		mil = 2
 	}
+	set_ruler_flag = is_jean_lusignan_flag
+	add_country_modifier = {
+		name = btc_low_health
+		duration = -1
+	}
 }
 
 1444.6.28 = {

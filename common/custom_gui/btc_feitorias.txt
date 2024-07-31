@@ -48,7 +48,7 @@ custom_button = {
 		}
 	}
 	effect = {
-		add_province_modifier = {
+		add_permanent_province_modifier = {
 			name = feitoria
 			duration = -1
 		}
@@ -139,7 +139,7 @@ custom_button = {
 	}
 	effect = {
 		remove_province_modifier = feitoria
-		add_province_modifier = {
+		add_permanent_province_modifier = {
 			name = fortified_feitoria
 			duration = -1
 		}

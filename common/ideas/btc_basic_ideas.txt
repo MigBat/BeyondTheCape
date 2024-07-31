@@ -4,6 +4,7 @@ exploration_ideas = {	# Beyond the Cape rework
 
 	bonus = {
 		cb_on_primitives = yes
+		monthly_portuguese_saudade = 0.075
 	}
 
 	overseas_exploration = {
