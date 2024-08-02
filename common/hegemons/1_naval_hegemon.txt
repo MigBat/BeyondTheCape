@@ -147,7 +147,8 @@ naval_hegemon = {
 	}
 	
 	max = {
-		backrow_artillery_damage = 0.20
+		# backrow_artillery_damage = 0.20
+		max_flagships = 2
 	}
 	
 }

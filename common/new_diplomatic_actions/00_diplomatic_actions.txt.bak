@@ -1025,6 +1025,7 @@ offer_protectorate = {
 		}
 	}
 
+	# Beyond the Cape - balance #
 	ai_acceptance = {
         add_entry = {
             name = DIPLO_OPPINION
@@ -1066,7 +1067,7 @@ offer_protectorate = {
 			#1 rep = 3
 			multiply_variable = {
 				which = ai_value
-				value = 3
+				value = 2
 			}
 		}
 		add_entry = {
@@ -1079,7 +1080,7 @@ offer_protectorate = {
 			#4 dev = -1
 			multiply_variable = {
 				which = ai_value
-				value = -0.25
+				value = -0.33
 			}
 		}
 		add_entry = {

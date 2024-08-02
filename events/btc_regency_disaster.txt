@@ -70,6 +70,17 @@ country_event = {
 			}			
 		}
 
+		random_owned_province = {
+			limit = {
+				NOT = { has_province_modifier = duke_of_braganca_lands }
+				is_capital = no
+			}
+			add_province_modifier = {
+				name = duke_of_braganca_lands
+				duration = -1
+			}
+		}
+
 		set_country_flag = beatriz_de_braganca
 		custom_tooltip = braganca_pleased_tt
 	}
@@ -140,6 +151,17 @@ country_event = {
 			culture = aragonese
 			age = 45
 		}
+
+		random_owned_province = {
+			limit = {
+				NOT = { has_province_modifier = duke_of_braganca_lands }
+				is_capital = no
+			}
+			add_province_modifier = {
+				name = duke_of_braganca_lands
+				duration = -1
+			}
+		}
 		custom_tooltip = braganca_pleased_tt
 	}
 }
@@ -195,6 +217,17 @@ country_event = {
 			estate = estate_nobles
 			influence = 10
 			duration = 7300
+		}
+
+		random_owned_province = {
+			limit = {
+				NOT = { has_province_modifier = duke_of_braganca_lands }
+				is_capital = no
+			}
+			add_province_modifier = {
+				name = duke_of_braganca_lands
+				duration = -1
+			}
 		}
 		custom_tooltip = braganca_pleased_tt
 	}
@@ -252,6 +285,17 @@ country_event = {
 				1 = { add_base_tax = 1 }
 				1 = { add_base_production = 1 }
 				1 = { add_base_manpower = 1 }
+			}
+		}
+
+		random_owned_province = {
+			limit = {
+				NOT = { has_province_modifier = duke_of_braganca_lands }
+				is_capital = no
+			}
+			add_province_modifier = {
+				name = duke_of_braganca_lands
+				duration = -1
 			}
 		}
 		custom_tooltip = braganca_pleased_tt
@@ -312,6 +356,17 @@ country_event = {
 		event_target:event6_prov = {
 			add_local_autonomy = 10
 		}
+
+		random_owned_province = {
+			limit = {
+				NOT = { has_province_modifier = duke_of_braganca_lands }
+				is_capital = no
+			}
+			add_province_modifier = {
+				name = duke_of_braganca_lands
+				duration = -1
+			}
+		}
 		custom_tooltip = braganca_pleased_tt
 	}
 }
@@ -362,11 +417,9 @@ country_event = {
 			}
 		}
 
-		232 = {
-			add_province_modifier = {
-				name = duke_of_braganca_bad
-				duration = -1
-			}
+		add_country_modifier = {
+			name = duke_of_braganca_bad
+			duration = -1
 		}
 		set_country_flag = braganca_plot
 	}
@@ -383,13 +436,7 @@ country_event = {
 				}
 			}
 		}
-
-		232 = {
-			add_province_modifier = {
-				name = duke_of_braganca_worse
-				duration = -1
-			}
-		}
+		add_stability = 1
 		set_country_flag = braganca_appeased
 	}
 }
@@ -496,19 +543,26 @@ country_event = {
 	option = {
 		name = portuguese_regency.101a
 
+		if = {
+			limit = {
+				has_country_modifier = duke_of_braganca_bad
+			}
+			remove_country_modifier = duke_of_braganca_bad
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					has_province_modifier = duke_of_braganca_lands
+				}
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = duke_of_braganca_lands
+				}
+				remove_province_modifier = duke_of_braganca_lands
+			}
+		}
 		232 = {
-			if = {
-				limit = {
-					has_province_modifier = duke_of_braganca_bad
-				}
-				remove_province_modifier = duke_of_braganca_bad
-			}
-			if = {
-				limit = {
-					has_province_modifier = duke_of_braganca_worse
-				}
-				remove_province_modifier = duke_of_braganca_worse
-			}
 			spawn_rebels = {
 				type = noble_rebels
 				win = yes

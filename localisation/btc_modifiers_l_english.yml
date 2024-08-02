@@ -449,6 +449,9 @@
  port_wine_storage: "Port Wine Cellars"
  desc_port_wine_storage: "Barrels of port come down the Douro river in rabelo boats, docking at Porto. Here the barrels are stored in cellars, aged, and brought to market ready for export."
 
+ wine_doc_region: "Região Demarcada"
+ desc_wine_doc_region: ""
+
  elvas_fort: "Elvas Fortification"
  desc_elvas_fort: ""
 
@@ -487,10 +490,12 @@
  casa_da_guine: "Casa da Guiné"
  desc_casa_da_guine: ""
 
- duke_of_braganca_bad: "House Bragança"
+ duke_of_braganca_bad: "House Bragança Dominance"
  desc_duke_of_braganca_bad: ""
  duke_of_braganca_worse: "House Bragança"
  desc_duke_of_braganca_worse: ""
+ duke_of_braganca_lands: "House Bragança Land"
+ desc_duke_of_braganca_lands: ""
 
  por_cacadores: "Caçadores"
  desc_por_cacadores: ""
@@ -545,3 +550,12 @@
 
  btc_low_health: "Monarch Bad Health"
  desc_btc_low_health: "Our monarch is in bad shape, he's not expected to rule for long."
+
+ btc_organ_guns: "Organ Guns"
+ desc_btc_organ_guns: ""
+
+ btc_new_ideas: "New Ideas"
+ desc_btc_new_ideas: ""
+
+ btc_old_ideas: "Old Ideas"
+ desc_btc_old_ideas: ""

@@ -5,16 +5,31 @@ country_decisions = {
 			ai = no
 			mission_completed = btc_india
 			NOT = { has_global_flag = btc_deal_accepted_flag }
+			NOT = { any_owned_province = { superregion = india_superregion } }
 		}
 		allow = {
+			treasury = 200
 			hidden_trigger = {
 				NOT = { has_country_flag = btc_looking_for_deal_flag }
 			}
 		}
 		effect = {
-			add_treasury = -200
-			custom_tooltip = btc_looking_for_deal_tt
-			set_country_flag = btc_looking_for_deal_flag
+			hidden_effect = {
+				set_variable = {
+					which = sale_rejected_times
+					value = 0
+				}
+				set_country_flag = btc_looking_for_deal_flag
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = btc_looking_for_deal_flag }
+				}
+				custom_tooltip = btc_looking_for_deal_tt
+			}
+			else = {
+				custom_tooltip = btc_looking_for_deal_2_tt
+			}
 		}
 	}
 	establish_casa_india = {
@@ -36,10 +51,11 @@ country_decisions = {
 				set_country_flag = established_casa_india_flag
 				every_owned_province = {
 					limit = {
-						 superregion = india_superregion
+						superregion = india_superregion
 					}
 					cede_province = CDI
 					add_core = CDI
+					set_local_autonomy = 0
 				}
 				every_province = {
 					limit = {
@@ -123,6 +139,7 @@ country_decisions = {
 					}
 					cede_province = CDI
 					add_core = CDI
+					set_local_autonomy = 0
 				}
 				every_province = {
 					limit = {
@@ -172,6 +189,7 @@ country_decisions = {
 					}
 					cede_province = CDI
 					add_core = CDI
+					set_local_autonomy = 0
 				}
 				every_province = {
 					limit = {
@@ -393,6 +411,7 @@ country_decisions = {
 					}
 					cede_province = CDI
 					add_core = CDI
+					set_local_autonomy = 0
 				}
 				every_province = {
 					limit = {
@@ -442,6 +461,7 @@ country_decisions = {
 					}
 					cede_province = CDI
 					add_core = CDI
+					set_local_autonomy = 0
 				}
 				every_province = {
 					limit = {
@@ -490,6 +510,7 @@ country_decisions = {
 					}
 					cede_province = CDI
 					add_core = CDI
+					set_local_autonomy = 0
 				}
 				every_province = {
 					limit = {
@@ -539,6 +560,7 @@ country_decisions = {
 					}
 					cede_province = CDI
 					add_core = CDI
+					set_local_autonomy = 0
 				}
 				every_province = {
 					limit = {
@@ -588,6 +610,7 @@ country_decisions = {
 					}
 					cede_province = CDI
 					add_core = CDI
+					set_local_autonomy = 0
 				}
 				every_province = {
 					limit = {

@@ -168,7 +168,7 @@ btc_por_inquisition = {
 		add_stability = 1
 		add_country_modifier = {
 			name = narrowminded_modifier
-			duration = 3650
+			duration = 7300
 		}
 		set_country_flag = had_inquisition_flag
 	}

@@ -176,26 +176,26 @@ on_war_won = {
 }
 
 on_siege_won_country = {
-	if = {
-		limit = {
-			ROOT = {
-				NOT = { has_country_flag = took_mohamed }
-			}
-			is_in_war = {
-				attacker_leader = ROOT
-				casus_belli = cb_get_mohamed
-			}
-			FROM = {
-				province_id = 384
-			}
-		}
-		ROOT = {
-			country_event = {
-				id = btc_por.145
-			}
-			set_country_flag = took_mohamed
-		}
-	}	
+	# if = {
+	# 	limit = {
+	# 		ROOT = {
+	# 			NOT = { has_country_flag = took_mohamed }
+	# 		}
+	# 		is_in_war = {
+	# 			attacker_leader = ROOT
+	# 			casus_belli = cb_albuquerque_plan
+	# 		}
+	# 		FROM = {
+	# 			province_id = 384
+	# 		}
+	# 	}
+	# 	ROOT = {
+	# 		country_event = {
+	# 			id = btc_por.145
+	# 		}
+	# 		set_country_flag = took_mohamed
+	# 	}
+	# }	
 	if = {
 		limit = {
 			FROM = {
@@ -237,6 +237,21 @@ on_explore_coast = {
 	}
 }
 
+on_war_ended = {
+	if = {
+		limit = {
+			ROOT = { has_country_modifier = crusading_spirit }
+		}
+		ROOT = { remove_country_modifier = crusading_spirit }
+	}	
+	if = {
+		limit = {
+			FROM = { has_country_modifier = crusading_spirit }
+		}
+		FROM = { remove_country_modifier = crusading_spirit }
+	}	
+}
+
 on_battle_won_country = {
 	if = {
 		limit = {
@@ -263,6 +278,41 @@ on_monarch_death = {
 			NOT = { has_ruler_flag = miguel_da_paz }
 		}
 		country_event = { id = btc_por.138 }
+	}
+	if = {
+		limit = {
+			has_country_modifier = crusading_spirit
+		}
+		remove_country_modifier = crusading_spirit
+		white_peace = MOR
+		if = {
+			limit = {
+				SPA = { exists = yes is_subject = no }
+			}
+			SPA = {
+				country_event = { id = flavor_spa.3162 }
+			}	
+		}
+		else_if = {
+			limit = {
+				CAS = { exists = yes is_subject = no }
+			}
+			CAS = {
+				country_event = { id = flavor_spa.3162 }
+			}	
+		}
+		else = {
+			random_country = {
+				limit = {
+					marriage_with = ROOT
+					is_subject = no
+				}
+				save_event_target_as = portugal_pu_target
+			}
+			event_target:portugal_pu_target = {
+				country_event = { id = flavor_spa.3162 }
+			}	
+		}
 	}
 }
 
@@ -338,13 +388,19 @@ on_new_monarch = {
 	}
 	if = {
 		limit = {
-			232 = {
-				owned_by = ROOT
-				OR = {
-					has_province_modifier = duke_of_braganca_bad
-					has_province_modifier = duke_of_braganca_worse
-				}
+			NOT = { has_disaster = portuguese_regency }
+			any_owned_province = {
+				has_province_modifier = duke_of_braganca_lands
 			}
+		}
+		country_event = {
+			id = portuguese_regency.101
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_disaster = portuguese_regency }
+			has_country_modifier = duke_of_braganca_bad
 		}
 		country_event = {
 			id = portuguese_regency.101

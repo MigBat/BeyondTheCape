@@ -76,6 +76,9 @@ callaction = {
 				OR = {
 					tag = POR
 					tag = ARA
+					is_subject_of = POR
+					is_subject_of = ARA
+					is_subject_of = CAS
 				}
 			}
 		}

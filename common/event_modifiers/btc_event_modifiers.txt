@@ -359,6 +359,7 @@ crusading_spirit = {
 	global_regiment_recruit_speed = -0.15
 	manpower_in_true_faith_provinces = 0.05
 	heir_chance = -0.85	
+	monarch_lifespan = -0.75
 }
 
 decadent_fervor = {
@@ -626,11 +627,15 @@ padrao_real = {
 }
 
 port_wine_production = {
-	trade_goods_size = 5
+	trade_goods_size = 2
 }
 
 port_wine_storage = {
-	province_trade_power_value = 5
+	province_trade_power_value = 10
+}
+
+wine_doc_region = {
+	trade_value_modifier = 1
 }
 
 por_sagres = {
@@ -727,6 +732,10 @@ duke_of_braganca_bad = {
 
 duke_of_braganca_worse = {
 	global_autonomy = 0.2
+}
+
+duke_of_braganca_lands = {
+	local_autonomy = 0.2
 }
 
 por_cacadores = {
@@ -861,4 +870,19 @@ overseas_dominance_mod = {
 
 btc_low_health = {
 	monarch_lifespan = -0.5
+}
+
+btc_organ_guns = {
+	backrow_artillery_damage = 0.15
+}
+
+btc_new_ideas = {
+	idea_cost = -0.1
+	technology_cost = -0.05
+	global_unrest = 2
+}
+
+btc_old_ideas = {
+	tolerance_own = 2
+	global_missionary_strength = 0.03
 }

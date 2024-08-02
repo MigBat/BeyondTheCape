@@ -1421,92 +1421,92 @@ country_event = {
 
 # Crusade against Infidels in Africa #
 
-country_event = {
-	id = btc_por.107
-	title = btc_por.107_t
-	desc = btc_por.107_d
-	picture = RELIGIOUS_WARS_eventPicture
+# country_event = {
+# 	id = btc_por.107
+# 	title = btc_por.107_t
+# 	desc = btc_por.107_d
+# 	picture = RELIGIOUS_WARS_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	is_triggered_only = yes	# TODO MISSION TREE
+# 	is_triggered_only = yes	# TODO MISSION TREE
 
-	# trigger = {
-	# 	is_or_was_tag = { tag = POR }
-	# 	is_subject = no
-	# 	is_at_war = no
-	# 	OR = {
-	# 		is_year = 1565
-	# 		has_country_modifier = lusiadas
-	# 	}
-	# 	religion = catholic
-	# 	MOR = {
-	# 		exists = yes
-	# 		religion_group = muslim
-	# 		is_free_or_tributary_trigger = yes
-	# 		NOT = { war_with = ROOT }
-	# 		NOT = { truce_with = ROOT }
-	# 		NOT = { alliance_with = ROOT }
-	# 	}
-	# }
+# 	# trigger = {
+# 	# 	is_or_was_tag = { tag = POR }
+# 	# 	is_subject = no
+# 	# 	is_at_war = no
+# 	# 	OR = {
+# 	# 		is_year = 1565
+# 	# 		has_country_modifier = lusiadas
+# 	# 	}
+# 	# 	religion = catholic
+# 	# 	MOR = {
+# 	# 		exists = yes
+# 	# 		religion_group = muslim
+# 	# 		is_free_or_tributary_trigger = yes
+# 	# 		NOT = { war_with = ROOT }
+# 	# 		NOT = { truce_with = ROOT }
+# 	# 		NOT = { alliance_with = ROOT }
+# 	# 	}
+# 	# }
 
-	# mean_time_to_happen = {
-	# 	months = 60
-	# 	modifier = {
-	# 		factor = 0.01
-	# 		has_country_modifier = lusiadas
-	# 	}
-	# }
+# 	# mean_time_to_happen = {
+# 	# 	months = 60
+# 	# 	modifier = {
+# 	# 		factor = 0.01
+# 	# 		has_country_modifier = lusiadas
+# 	# 	}
+# 	# }
 
-	option = {	# By the grace of God!
-		name = btc_por.107a
+# 	option = {	# By the grace of God!
+# 		name = btc_por.107a
 
-		add_papal_influence = 10
+# 		add_papal_influence = 10
 
-		declare_war_with_cb = {
-			casus_belli = cb_war_of_three_kings
-			who = MOR
-		}
-		set_country_flag = war_of_three_kings
-		MOR = { set_country_flag = war_of_three_kings }
+# 		declare_war_with_cb = {
+# 			casus_belli = cb_war_of_three_kings
+# 			who = MOR
+# 		}
+# 		set_country_flag = war_of_three_kings
+# 		MOR = { set_country_flag = war_of_three_kings }
 
-		add_estate_influence_modifier = {
-			estate = estate_church
-			influence = 10
-			duration = 60
-		}
-		add_estate_influence_modifier = {
-			estate = estate_nobles
-			influence = 10
-			duration = 60
-		}
+# 		add_estate_influence_modifier = {
+# 			estate = estate_church
+# 			influence = 10
+# 			duration = 60
+# 		}
+# 		add_estate_influence_modifier = {
+# 			estate = estate_nobles
+# 			influence = 10
+# 			duration = 60
+# 		}
 		
-		convert_ruler_to_general = 70
-		convert_female_ruler_to_general = 60
-		convert_heir_to_general = 50
-		convert_female_heir_to_general = 40
+# 		convert_ruler_to_general = 70
+# 		convert_female_ruler_to_general = 60
+# 		convert_heir_to_general = 50
+# 		convert_female_heir_to_general = 40
 
-		add_ruler_modifier = {
-			name = crusading_spirit	# -10% regiment cost, -15% recruiting time, -85% heir chance
-			duration = -1
-		}
-	}
+# 		add_ruler_modifier = {
+# 			name = crusading_spirit	# -10% regiment cost, -15% recruiting time, -85% heir chance
+# 			duration = -1
+# 		}
+# 	}
 
-	option = {	# Crusades are a thing of the past
-		name = btc_por.107b
+# 	option = {	# Crusades are a thing of the past
+# 		name = btc_por.107b
 
-		add_power_projection = {
-			type = mission_rewards_power_projection
-			amount = -10
-		}
-		add_legitimacy = -5
+# 		add_power_projection = {
+# 			type = mission_rewards_power_projection
+# 			amount = -10
+# 		}
+# 		add_legitimacy = -5
 
-		add_country_modifier = {
-			name = decadent_fervor	# -5% morale, -5% clergy loyalty equilibrium
-			duration = 5475
-		}
-	}
-}
+# 		add_country_modifier = {
+# 			name = decadent_fervor	# -5% morale, -5% clergy loyalty equilibrium
+# 			duration = 5475
+# 		}
+# 	}
+# }
 
 # Casa da India can't cover its expenses #
 
@@ -2408,7 +2408,6 @@ country_event = {
 }
 
 # Portuguese purchase of Goa?? (owner) #
-# TODO localization
 country_event = {
 	id = btc_por.127
 	title = btc_por.127_t
@@ -2484,11 +2483,26 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { NOT = { has_global_flag = btc_deal_accepted_flag } }
+				hidden_effect = {
+					change_variable = {
+						which = sale_rejected_times
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
 	option = { 
 		name = btc_por.128a 
 		trigger = {
 			has_global_flag = btc_deal_accepted_flag
 		}
+		add_treasury = -200
 	}
 
 	option = { 
@@ -2497,6 +2511,24 @@ country_event = {
 			NOT = { has_global_flag = btc_deal_accepted_flag }
 		}
 		custom_tooltip = keep_looking_tt
+	}
+
+	option = { 
+		name = btc_por.128c
+		trigger = {
+			check_variable = {
+				which = sale_rejected_times
+				value = 3
+			}
+		}
+		every_province = {
+			limit = {
+				superregion = india_superregion
+				has_province_modifier = foreign_feitoria
+			}
+			add_claim = ROOT
+		}
+		custom_tooltip = keep_looking_2_tt
 	}
 }
 
@@ -3242,7 +3274,6 @@ country_event = {
 	picture = MOSQUE_eventPicture
 
 	is_triggered_only = yes
-	major = yes
 
 	option = {	# We've done it
 		name = btc_por.145a
@@ -3933,212 +3964,212 @@ country_event = {
 
 # Luis de Camões #
 
-country_event = {
-	id = btc_por.156
-	title = btc_por.156_t
-	desc = btc_por.156_d
-	picture = btc_camoes_picture
+# country_event = {
+# 	id = btc_por.156
+# 	title = btc_por.156_t
+# 	desc = btc_por.156_d
+# 	picture = btc_camoes_picture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		is_or_was_tag = { tag = POR }
-		1851 = {	# Coimbra
-			owned_by = root
-			has_building = university
-		}
-		227 = {		# Lisboa
-			owned_by = root
-		}
-		1751 = {	# Ceuta
-			owned_by = root
-		}
-		2030 = {	# Goa
-			owned_by = root
-		}
-		2999 = {	# Hormuz
-			owned_by = root
-		}
-		668 = {		# Macau
-			owned_by = root
-		}
-		596 = {		# Malaca
-			owned_by = root
-		}
-		1186 = {	# Sofala
-			owned_by = root
-		}
-	}
+# 	trigger = {
+# 		is_or_was_tag = { tag = POR }
+# 		1851 = {	# Coimbra
+# 			owned_by = root
+# 			has_building = university
+# 		}
+# 		227 = {		# Lisboa
+# 			owned_by = root
+# 		}
+# 		1751 = {	# Ceuta
+# 			owned_by = root
+# 		}
+# 		2030 = {	# Goa
+# 			owned_by = root
+# 		}
+# 		2999 = {	# Hormuz
+# 			owned_by = root
+# 		}
+# 		668 = {		# Macau
+# 			owned_by = root
+# 		}
+# 		596 = {		# Malaca
+# 			owned_by = root
+# 		}
+# 		1186 = {	# Sofala
+# 			owned_by = root
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 18250
-	}
+# 	mean_time_to_happen = {
+# 		days = 18250
+# 	}
 
-	option = {	# As armas e os barões assinalados
-		name = btc_por.156a
+# 	option = {	# As armas e os barões assinalados
+# 		name = btc_por.156a
 
-		hidden_effect = {
-			country_event = {
-				id = btc_por.157
-				days = 180
-			}
-		}
-	}
-}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = btc_por.157
+# 				days = 180
+# 			}
+# 		}
+# 	}
+# }
 
-# A Bohemian Lifestyle #
+# # A Bohemian Lifestyle #
 
-country_event = {
-	id = btc_por.157
-	title = btc_por.157_t
-	desc = btc_por.157_d
-	picture = btc_camoes_eye_picture
+# country_event = {
+# 	id = btc_por.157
+# 	title = btc_por.157_t
+# 	desc = btc_por.157_d
+# 	picture = btc_camoes_eye_picture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Que da ocidental praia Lusitana
-		name = btc_por.157a
+# 	option = {	# Que da ocidental praia Lusitana
+# 		name = btc_por.157a
 
-		hidden_effect = {
-			country_event = {
-				id = btc_por.158
-				days = 180
-			}
-		}
-	}
-}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = btc_por.158
+# 				days = 180
+# 			}
+# 		}
+# 	}
+# }
 
-# The Borges Incident #
+# # The Borges Incident #
 
-country_event = {
-	id = btc_por.158
-	title = btc_por.158_t
-	desc = btc_por.158_d
-	picture = btc_camoes_borges_picture
+# country_event = {
+# 	id = btc_por.158
+# 	title = btc_por.158_t
+# 	desc = btc_por.158_d
+# 	picture = btc_camoes_borges_picture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Por mares nunca de antes navegados
-		name = btc_por.158a
+# 	option = {	# Por mares nunca de antes navegados
+# 		name = btc_por.158a
 
-		hidden_effect = {
-			country_event = {
-				id = btc_por.159
-				days = 180
-			}
-		}
-	}
-}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = btc_por.159
+# 				days = 180
+# 			}
+# 		}
+# 	}
+# }
 
-# Journey to the East #
+# # Journey to the East #
 
-country_event = {
-	id = btc_por.159
-	title = btc_por.159_t
-	desc = btc_por.159_d
-	picture = btc_camoes_goa_picture
+# country_event = {
+# 	id = btc_por.159
+# 	title = btc_por.159_t
+# 	desc = btc_por.159_d
+# 	picture = btc_camoes_goa_picture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Passaram ainda além da Taprobana
-		name = btc_por.159a
+# 	option = {	# Passaram ainda além da Taprobana
+# 		name = btc_por.159a
 
-		hidden_effect = {
-			country_event = {
-				id = btc_por.160
-				days = 180
-			}
-		}
-	}
-}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = btc_por.160
+# 				days = 180
+# 			}
+# 		}
+# 	}
+# }
 
-# The Cave in Macau #
+# # The Cave in Macau #
 
-country_event = {
-	id = btc_por.160
-	title = btc_por.160_t
-	desc = btc_por.160_d
-	picture = btc_camoes_macau_picture
+# country_event = {
+# 	id = btc_por.160
+# 	title = btc_por.160_t
+# 	desc = btc_por.160_d
+# 	picture = btc_camoes_macau_picture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Em perigos e guerras esforçados
-		name = btc_por.160a
+# 	option = {	# Em perigos e guerras esforçados
+# 		name = btc_por.160a
 
-		hidden_effect = {
-			country_event = {
-				id = btc_por.161
-				days = 180
-			}
-		}
-	}
-}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = btc_por.161
+# 				days = 180
+# 			}
+# 		}
+# 	}
+# }
 
-# Shipwrecked #
+# # Shipwrecked #
 
-country_event = {
-	id = btc_por.161
-	title = btc_por.161_t
-	desc = btc_por.161_d
-	picture = btc_camoes_shipwreck_picture
+# country_event = {
+# 	id = btc_por.161
+# 	title = btc_por.161_t
+# 	desc = btc_por.161_d
+# 	picture = btc_camoes_shipwreck_picture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Mais do que prometia a força humana
-		name = btc_por.161a
+# 	option = {	# Mais do que prometia a força humana
+# 		name = btc_por.161a
 
-		hidden_effect = {
-			country_event = {
-				id = btc_por.162
-				days = 180
-			}
-		}
-	}
-}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = btc_por.162
+# 				days = 180
+# 			}
+# 		}
+# 	}
+# }
 
-# Poverty in Sofala #
+# # Poverty in Sofala #
 
-country_event = {
-	id = btc_por.162
-	title = btc_por.162_t
-	desc = btc_por.162_d
-	picture = btc_camoes_lusiadas_picture
+# country_event = {
+# 	id = btc_por.162
+# 	title = btc_por.162_t
+# 	desc = btc_por.162_d
+# 	picture = btc_camoes_lusiadas_picture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# E entre gente remota edificaram
-		name = btc_por.162a
+# 	option = {	# E entre gente remota edificaram
+# 		name = btc_por.162a
 
-		hidden_effect = {
-			country_event = {
-				id = btc_por.163
-				days = 180
-			}
-		}
-	}
-}
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = btc_por.163
+# 				days = 180
+# 			}
+# 		}
+# 	}
+# }
 
-# Os Lusíadas #
+# # Os Lusíadas #
 
-country_event = {
-	id = btc_por.163
-	title = btc_por.163_t
-	desc = btc_por.163_d
-	picture = btc_camoes_sebastiao_picture
+# country_event = {
+# 	id = btc_por.163
+# 	title = btc_por.163_t
+# 	desc = btc_por.163_d
+# 	picture = btc_camoes_sebastiao_picture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {	# Novo Reino, que tanto sublimaram
-		name = btc_por.163a
+# 	option = {	# Novo Reino, que tanto sublimaram
+# 		name = btc_por.163a
 
-		add_country_modifier = {
-			name = lusiadas
-			duration = -1
-		}
-		add_ruler_personality = bold_fighter_personality
-		add_ruler_personality = zealot_personality
-	}
-}
+# 		add_country_modifier = {
+# 			name = lusiadas
+# 			duration = -1
+# 		}
+# 		add_ruler_personality = bold_fighter_personality
+# 		add_ruler_personality = zealot_personality
+# 	}
+# }
 
 # Change Portugal Colour
 
@@ -5988,7 +6019,6 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		controls = 2321
 		controls = 360
 	}
 	
@@ -6107,6 +6137,222 @@ country_event = {
 
 		event_target:bassein_prov = {
 			add_permanent_claim = FROM
+		}
+	}	
+}
+
+country_event = {
+	id = btc_por.190
+	title = btc_por.190_t
+	desc = btc_por.190_d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = CDI
+		overlord = { NOT = { has_leader = "Afonso de Albuquerque" } } 
+		is_subject_of_type = commercial_enterprise
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = btc_por.190a
+
+		define_ruler = {
+			name = "Afonso de Albuquerque"
+			dynasty = "de Albuquerque"
+			adm = 4
+			dip = 5
+			mil = 6
+			age = 50
+		}
+	}		
+}
+
+country_event = {
+	id = btc_por.191
+	title = btc_por.191_t
+	desc = btc_por.191_d
+	picture = CRUSADER_HORDE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			MOR = {
+				if = {
+					limit = {
+						any_owned_province = {
+							is_capital = no
+							has_port = yes
+							region = maghreb_region
+							is_core = FEZ
+						}
+					}
+					random_owned_province = {
+						limit = {
+							is_capital = no
+							has_port = yes
+							region = maghreb_region	
+							is_core = FEZ					
+						}
+						save_event_target_as = release_fez_province
+					}
+				}
+				else_if = {
+					limit = {
+						any_owned_province = {
+							is_capital = no
+							has_port = yes
+							region = maghreb_region
+						}
+					}
+					random_owned_province = {
+						limit = {
+							is_capital = no
+							has_port = yes
+							region = maghreb_region						
+						}
+						save_event_target_as = release_fez_province
+					}
+				}
+				else = {
+					random_owned_province = {
+						limit = {
+							is_capital = no
+						}
+						save_event_target_as = release_fez_province
+					}
+				}
+			}
+		}
+	}
+	
+	option = {	# Support him as our ally
+		name = btc_por.191a	
+		
+		custom_tooltip = btc_fez_ally_tt
+		hidden_effect = {
+			event_target:release_fez_province = {
+				cede_province = FEZ
+				add_core = FEZ
+				change_religion = ROOT
+			}
+			every_province = {
+				limit = {
+				   has_discovered = MOR
+				}
+				discover_country = FEZ
+			}
+			create_alliance = FEZ
+			add_historical_friend = FEZ
+			FEZ = {
+				add_historical_friend = ROOT
+				change_government = monarchy
+				add_government_reform = barbary_sultanate_reform
+				change_religion = ROOT
+				change_primary_culture = moroccan
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_treasury = 200
+				set_prestige_to_zero = yes
+				add_legitimacy = 100
+				change_technology_group = muslim
+				define_ruler = {
+					name = "Abu Abdallah"
+					dynasty = "Saadi"
+					DIP = 3
+					ADM = 2
+					MIL = 4
+				}
+			}
+			MOR = {
+				every_owned_province = {
+					add_permanent_claim = FEZ
+				}
+			}
+			set_country_flag = war_morocco_fez_ally		
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_sebastiao_crusade
+			who = MOR
+		}
+		FEZ = {
+			join_all_offensive_wars_of = ROOT
+		}
+	}		
+	
+	option = {	# Support him as our vassal
+		name = btc_por.191b
+		
+		custom_tooltip = btc_fez_march_tt
+		hidden_effect = {
+			event_target:release_fez_province = {
+				cede_province = FEZ
+				add_core = FEZ
+				change_religion = ROOT
+			}
+			every_province = {
+				limit = {
+				   has_discovered = MOR
+				}
+				discover_country = FEZ
+			}
+			create_subject = {
+				subject_type = march
+				who = FEZ
+			}
+			FEZ = {
+				change_government = monarchy
+				add_government_reform = barbary_sultanate_reform
+				change_religion = ROOT
+				change_primary_culture = moroccan
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_treasury = 200
+				set_prestige_to_zero = yes
+				add_legitimacy = 100
+				change_technology_group = muslim
+				define_ruler = {
+					name = "Abu Abdallah"
+					dynasty = "Saadi"
+					DIP = 3
+					ADM = 2
+					MIL = 4
+				}
+			}
+			MOR = {
+				every_owned_province = {
+					add_permanent_claim = FEZ
+				}
+			}
+			set_country_flag = war_morocco_fez_march		
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_sebastiao_crusade
+			who = MOR
+		}
+	}	
+	
+	option = {	# Morocco is ours alone
+		name = btc_por.191c
+
+		custom_tooltip = btc_all_morocco_claim
+		hidden_effect = {
+			MOR = {
+				every_owned_province = {
+					add_permanent_claim = ROOT
+				}
+			}
+			set_country_flag = war_morocco_alone
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_conquest
+			who = MOR
 		}
 	}	
 }

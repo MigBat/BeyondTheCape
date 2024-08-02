@@ -43,8 +43,9 @@
 ###
 
  purchase_indian_province_title: "Purchase Indian Province"
- purchase_indian_province_desc: ""
+ purchase_indian_province_desc: "You will set aside 200 ducats in order to purchase a province from an Indian nation. Build a foreign feitoria in their lands and they will let you know if they accept or reject the offer."
  btc_looking_for_deal_tt: "We will look to purchase a province in India in which we have a §YForeign Feitoria§!"
+ btc_looking_for_deal_2_tt: "Build a §YForeign Feitoria§! in any province in India. When you do so, the province owner will let you know if they accept to sell the province to you for the 200 ducats you set aside."
  establish_casa_india_title:0 "Establish the Casa da India"
  establish_casa_india_desc:0 "Instead of directly governing our lands in the Orient, let us establish the Casa da India to govern it for us."
  btc_por_establish_casa_india:0 "We will establish the §Y[CDI.GetName]§! as our §YCommercial Enterprise§!."
@@ -89,10 +90,12 @@
  bartolomeu_dias_title: "Bartolomeu Dias"
  bartolomeu_dias_desc: ""
 
- divert_nile: "Divert Nile"
+ divert_nile_title: "Divert Nile"
  divert_nile_desc: ""
- restore_nile: "Restore Nile"
+ restore_nile_title: "Restore Nile"
  restore_nile_desc: ""
+ ransom_mohamed_title: "Ransom the Prophet Muhammad"
+ ransom_mohamed_desc: ""
 
  enable_dukkala_raids_title: "Enable Morocco Raiding Parties"
  enable_dukkala_raids_desc: ""

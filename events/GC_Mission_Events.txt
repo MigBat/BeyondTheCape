@@ -101,7 +101,6 @@ country_event = {
 	desc = more_flavor_por.1.d
 	picture = PORTUGUESE_MERCHANTS_eventPicture
 
-	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
@@ -110,12 +109,10 @@ country_event = {
 
 		trigger = {
 			668 = {
-				has_province_modifier = foreign_feitoria
-				NOT = { owned_by = FROM }
+				owned_by = ROOT
 			}
 			4975 = {
-				NOT = { has_province_modifier = foreign_feitoria }
-				NOT = { owned_by = FROM }
+				NOT = { owned_by = ROOT }
 			}
 		}	
 
@@ -127,10 +124,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
+			set_global_flag = macau_flag
 			FROM = {
 				country_event = { id = more_flavor_por.2 }
 			}
-			set_global_flag = macau_flag
 		}
 	}
 
@@ -140,12 +137,10 @@ country_event = {
 
 		trigger = {
 			4975 = {
-				has_province_modifier = foreign_feitoria
-				NOT = { owned_by = FROM }
+				owned_by = ROOT
 			}
 			668 = {
-				NOT = { has_province_modifier = foreign_feitoria }
-				NOT = { owned_by = FROM }
+				NOT = { owned_by = ROOT }
 			}
 		}
 
@@ -157,10 +152,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
+			set_global_flag = tamao_flag
 			FROM = {
 				country_event = { id = more_flavor_por.2 }
 			}
-			set_global_flag = tamao_flag
 		}
 	}
 
@@ -170,32 +165,74 @@ country_event = {
 
 		trigger = {
 			4975 = {
-				has_province_modifier = foreign_feitoria
-				NOT = { owned_by = FROM }
+				owned_by = ROOT
 			}
 			668 = {
-				has_province_modifier = foreign_feitoria
-				NOT = { owned_by = FROM }
+				owned_by = ROOT
 			}
 		}
 
-		add_years_of_income = 1
-		tooltip = {
-			668 = {
-				cede_province = FROM
-				add_core = FROM
+		if = {
+			limit = {
+				4975 = { has_province_modifier = foreign_feitoria }
+				668 = { NOT = { has_province_modifier = foreign_feitoria } }
 			}
-			4975 = {
-				cede_province = FROM
-				add_core = FROM
+			add_years_of_income = 1
+			tooltip = {
+				4975 = {
+					cede_province = FROM
+					add_core = FROM
+				}
+			}
+			hidden_effect = {
+				set_global_flag = tamao_flag
+				FROM = {
+					country_event = { id = more_flavor_por.2 }
+				}
 			}
 		}
-		hidden_effect = {
-			FROM = {
-				country_event = { id = more_flavor_por.2 }
+		if = {
+			limit = {
+				668 = { has_province_modifier = foreign_feitoria }
+				4975 = { NOT = { has_province_modifier = foreign_feitoria } }
 			}
-			set_global_flag = macau_flag
-			set_global_flag = tamao_flag
+			add_years_of_income = 1
+			tooltip = {
+				668 = {
+					cede_province = FROM
+					add_core = FROM
+				}
+			}
+			hidden_effect = {
+				set_global_flag = macau_flag
+				FROM = {
+					country_event = { id = more_flavor_por.2 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				4975 = { has_province_modifier = foreign_feitoria }
+				668 = { has_province_modifier = foreign_feitoria }
+			}
+			add_years_of_income = 2
+			tooltip = {
+				668 = {
+					cede_province = FROM
+					add_core = FROM
+				}
+				4975 = {
+					cede_province = FROM
+					add_core = FROM
+				}
+			}
+			hidden_effect = {
+				set_global_flag = macau_flag
+				set_global_flag = tamao_flag
+				FROM = {
+					country_event = { id = more_flavor_por.2 }
+				}
+			}
 		}
 	}
 
@@ -287,18 +324,6 @@ country_event = {
 
 	option = {
 		name = more_flavor_por.EVTOPTA3
-		# trigger = {
-		# 	NOT = {
-		# 		AND = {
-		# 			has_dlc = "Mandate of Heaven"
-		# 			religion = shinto
-		# 			isolationism = 4
-		# 		}
-		# 	}
-		# 	4182 = {
-		# 		is_capital = no
-		# 	}
-		# }
 		ai_chance = { factor = 1 }
 		tooltip = {
 			4182 = {

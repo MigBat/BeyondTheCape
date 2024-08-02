@@ -1017,45 +1017,28 @@ country_event = {
 }
 
 # The Portuguese Crown
+# BEYOND THE CAPE rework #
 country_event = {
 	id = flavor_spa.3162	
 	title = "flavor_spa.EVTNAME3162"
-	desc = "flavor_spa.EVTDESC3162"
+	desc = flavor_spa.btc_desc
 	picture = COURT_eventPicture
 
+	major = yes
+	major_trigger = {
+		tag = POR
+	}
 	fire_only_once = yes
-
-	trigger = {
-		tag = SPA
-		marriage_with = POR
-		is_subject = no
-		POR = {
-			exists = yes
-			ai = yes
-			was_player = no
-			is_subject = no
-			has_regency = yes
-			religion = ROOT
-			NOT = { is_rival = SPA }
-			has_opinion = { who = ROOT value = 150 }
-		}
-		is_year = 1550
-		NOT = { is_year = 1650 }
-	}
-
-	mean_time_to_happen = {
-		months = 2000
-	}
-	
+	is_triggered_only = yes	
 
 	option = {		# One King, Two Kingdoms
 		name = "flavor_spa.EVTOPTB3162"
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 1 }
 		create_union = POR
 	}
 	option = {		# The extra burden is not worth it
 		name = "flavor_spa.EVTOPTC3162"
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 		add_prestige = 1
 	}
 }

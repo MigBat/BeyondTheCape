@@ -91,6 +91,15 @@ country_event = {
 		}
 	}
 
+	option = {	# Afonso de Albuquerque
+		name = btc_startscreen.2e
+		highlight = yes
+
+		country_event = {
+			id = btc_startscreen.24
+		}
+	}
+
 	option = {	# go back
 		name = btc_startscreen.2c
 
@@ -207,6 +216,24 @@ country_event = {
 
 	option = {	# go back
 		name = btc_startscreen.232a
+
+		country_event = {
+			id = btc_startscreen.2
+		}
+	}
+}
+
+# Afonso de Albuquerque #
+country_event = {
+	id = btc_startscreen.24
+	title = btc_startscreen.24_t
+	desc = btc_startscreen.24_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.24a
 
 		country_event = {
 			id = btc_startscreen.2

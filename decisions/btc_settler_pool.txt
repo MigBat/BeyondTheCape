@@ -17,4 +17,39 @@ country_decisions = {
 			}
 		}
 	}
+	portuguese_focus_decision = {
+		color = { 125 35 47 }
+		major = yes
+		potential = {
+			has_government_mechanic = portuguese_saudade_mechanic
+			ai = no
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = saudade_tt
+				has_government_mechanic = portuguese_saudade_mechanic
+			}
+			NOT = { has_country_modifier = homeland_focus }
+			NOT = { has_country_modifier = overseas_focus }
+			num_of_completed_idea_groups_by_category = {
+				type = adm
+				amount = 1
+			}
+			num_of_completed_idea_groups_by_category = {
+				type = dip
+				amount = 1
+			}
+			num_of_completed_idea_groups_by_category = {
+				type = mil
+				amount = 1
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = btc_por.131
+			}
+		}
+	}
 }

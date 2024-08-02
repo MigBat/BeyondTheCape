@@ -5,9 +5,13 @@ wg_castilian_civil_war = {
 		badboy_factor = 1
 		prestige_factor = 1
 		peace_cost_factor = 1
+
+		required_treaty_to_take_provinces = {
+			po_ccw_alcacovas
+		}
 		
 		allowed_provinces = {
-			always = no
+			is_permanent_claim = ROOT
 		}
 		allowed_provinces_are_eligible = yes
 
@@ -17,7 +21,7 @@ wg_castilian_civil_war = {
 			po_concede_defeat
 			po_gold
 		}
-		prov_desc = NO_PROVS
+		# prov_desc = NO_PROVS
 	}
 	
 	defender = 	{
@@ -120,4 +124,68 @@ superiority_grand_crusade = {
 	}	
 	
 	war_name = GRAND_CRUSADE_WAR_NAME	
+}
+
+wg_albuquerque_plan = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 2
+		prestige_factor = 2
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			always = yes
+		}
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_return_cores
+			po_demand_provinces
+		}
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = "Afonso de Albuquerque Crusade"
+}
+
+wg_sebastiao_crusade = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			controlled_by = FEZ
+		}
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_demand_provinces
+			po_sebastiao_crusade
+		}
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = "Portuguese Crusade Against Morocco"
 }

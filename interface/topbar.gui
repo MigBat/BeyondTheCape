@@ -554,7 +554,7 @@ guiTypes = {
 		backGround=""
 		position = { x = -327 y = -210 }
 		size = { x = 100 y = 100 }
-		moveable = 0
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""

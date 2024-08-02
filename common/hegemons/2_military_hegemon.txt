@@ -113,7 +113,7 @@ military_hegemon = {
 	scale = {
 		movement_speed = 0.1
 		land_attrition = -0.2
-		global_unrest = -3
+		mercenary_discipline = 0.10
 	}
 	
 	max = {

@@ -68,7 +68,7 @@
 
  btc_morocco_title: "Dealing with Morocco"
  btc_morocco_desc: "For long have the Portuguese Cortes asked the King to consolidate Portuguese presence in Morocco, exacerbated by the vulnerability of our coasts from mediterranean expeditions by the Ottomans and Mamluks, who dispute the Indian trade with us. We are not ready to fight on two fronts. But now someone appears at our doorstep. Abdallah Mohammed, a pretender to the Moroccan throne, requests assistance in recovering it from his uncle. This presents a unique opportunity for us. We must act, and fast!"
- morocco_todo_tt: "TODO"
+ morocco_perma_claims_tt: "We get permanent claims on all provinces with §YMoroccan§! culture"
 
  btc_christ_title: "Order of Christ"
  btc_christ_desc: "When the Knights Templar were disbanded by the pope in 1312 and consequently persecuted, our King Dinis I refused to do so, being grateful to their aid during the Reconquista and consequent reconstruction of the country. In Portugal, the Knights Templar found a safe haven, rebranding themselves as the Order of Christ. Prince Henry is the current grandmaster of the order. He intends to avenge the disaster of Tangiers in 1437, and the order is ready to help us build up our fleet for a second incursion into North Africa."
@@ -212,7 +212,7 @@
  btc_aden_title: "Aden"
  btc_aden_desc: ""
 
- btc_lion_of_seas_title: "Lion of the Seas"
+ btc_lion_of_seas_title: "§OLion of the Seas§!"
  btc_lion_of_seas_desc: ""
  unlock_legacy_of_albuquerque_reform_tt: "Unlock the '§YLegacy of Albuquerque§!' government reform."
  mechanic_enable_grand_crusade_yes: "Enables the §YGrand Crusade§! casus belli against all §YHeathen§! nations which have at least §Y300§! total development.\nThis casus belli enables a decision for every independent §YCatholic§! nation to join the Grand Crusade.\n\nTo join the Grand Crusade the Catholic nation must fulfil the following conditions:\nHas at least §Y100§! opinion of us or vice versa\nIs NOT allied with the §YGrand Crusade Target§! target\nHas NOT a truce with the §YGrand Crusade Target§!\nIs not at war\nDid NOT complete the §YHumanist§! idea group\n\n§RNations of the religion group of the §YGrand Crusade Target§! can join the defender's side.§!"
@@ -267,13 +267,18 @@
 
  btc_nagasaki_title: "A Base in Japan"
  btc_nagasaki_desc: ""
- has_jesuits_tt: "The Jesuit Holy Order has been formed"
+
+ btc_korea_title: "Organ Guns"
+ btc_korea_desc: ""
 
  btc_sunda_title: "Luso-Sunda Treaty"
  btc_sunda_desc: ""
 
  btc_ambon_title: "Nutmeg Island"
  btc_ambon_desc: ""
+
+ btc_camoes_title: "§OOs Lusiadas§!"
+ btc_camoes_desc: ""
 
  btc_australia_title: "Terra Australis"
  btc_australia_desc: ""
@@ -288,13 +293,16 @@
  btc_haidao_desc: ""
  taiwan_chinaware_tt: "§MEvery owned province in Taiwan area will produce Chinaware§!"
 
+ btc_jesuits_title: "Jesuits in Portugal"
+ btc_jesuits_desc: ""
+
  btc_xavier_africa_title: "East Africa Mission"
  btc_xavier_africa_desc: ""
 
  btc_xavier_india_title: "India Mission"
  btc_xavier_india_desc: ""
 
- btc_societa_jesu_title: "The Society of Jesus"
+ btc_societa_jesu_title: "§OThe Society of Jesus§!"
  btc_societa_jesu_desc: ""
 
  btc_xavier_indonesia_title: "Indonesia Mission"
@@ -326,3 +334,11 @@
 
  btc_pena_title: "Palácio da Pena"
  btc_pena_desc: ""
+
+ btc_port_title: "Wine Monopolies"
+ btc_port_desc: ""
+
+ btc_damiao_title: "The European Wave"
+ btc_damiao_desc: ""
+ btc_damiao_reward_tt: "If we have a §YPhilosopher§! advisor employed:"
+ btc_simao_reward_tt: "If we have an §YInquisitor§! advisor employed:"

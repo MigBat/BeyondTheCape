@@ -23,7 +23,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					is_capital = no
-					has_building = fort_15th
+					# has_building = fort_15th
 				}
 				set_province_flag = cas_civil_war_start
 			}

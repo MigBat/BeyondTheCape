@@ -403,4 +403,5 @@
  inland_ocean:0 "Shallow Sea"
  GALLEY_BONUS_NOT_INLAND_SEA_NO_MALUS_DESC:0 "This is NOT a shallow sea or a coastal sea and galleys will not get a damage bonus here."
  TUT_BAS_CHAPTER03_PAGE06_TEXT:1 "Heavy Ships are large warships that excel in combat. Light Ships are faster ships that are mainly used to protect your trade, but are also useful for exploration. Galleys are cheaper warships that should be used in shallow seas. Lastly there are also transport ships to ferry your troops over water.§W"
-# Events #
+
+ TREASURE_FLEET_TOOLTIP:0 "The next treasure fleet from $COUNTRY$ will arrive in §Y$DATE$§!. We estimate it will bring us gold, silver and spices worth §Y$NUM$§!."

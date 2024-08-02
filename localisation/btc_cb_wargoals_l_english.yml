@@ -30,3 +30,17 @@
  defend_the_grand_crusade_target_title: "Defend our Brethren!"
  defend_the_grand_crusade_target_desc: "Our brethren of the [grand_crusade_target.GetAdjective] [grand_crusade_target.GovernmentName] is under attack by these dogs of the [grand_crusader_war_monger.GetName]! As fellow [grand_crusade_target.Religion.GetGroupName]s it is our duty to aid them!"
  defend_the_grand_crusade_target_tt: "We will join the §Y[grand_crusade_target.GetAdjective]§! side of the §YGrand Crusade!"
+
+ cb_albuquerque_plan: "Afonso de Albuquerque Crusade"
+ cb_albuquerque_plan_desc: "Afonso de Albuquerque, the Lion of the Seas, harbors extreme hatred towards all of Islam. He has devised two unfathomable plans that are sure to bring the Islamic world to its knees - take the body of their holy Prophet Muhammad and demand the Holy Land be freed, and divert the course of the sacred Nile river to bring devastation to Egypt."
+ wg_albuquerque_plan: "Take the Prophet and divert the Nile"
+ wg_albuquerque_plan_desc: "Siege down and control Medina to steal the body of the Prophet. Siege down and control Qus to unlock a decision to divert the Nile."
+
+ cb_sebastiao_crusade: "Portuguese Crusade Against Morocco"
+ cb_sebastiao_crusade_desc: ""
+ wg_sebastiao_crusade: "Give control of Morocco to Fez"
+ wg_sebastiao_crusade_desc: ""
+ po_sebastiao_crusade: "Reinstate the rightful ruler of Morocco"
+ po_sebastiao_crusade_desc: "Fez integrates Morocco"
+ sebastiao_crusade_tt: "Fez will integrate Morocco"
+ PEACE_po_sebastiao_crusade: "End Moroccan Civil War"
