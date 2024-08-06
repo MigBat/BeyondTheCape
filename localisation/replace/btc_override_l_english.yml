@@ -299,6 +299,7 @@
  STATE_HUSSARS_CREATED_REGIMENTS:0 "This will cost $MILAMOUNT|Y$ £mil£, and $NUM|Y$ Ginetes will spawn in $PROV|Y$.\nDo you want to create a Ginete regiment?"
  HUSSARS_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so you cannot recruit Ginete Regiments here."
  MODIFIER_HUSSARS_COST:0 "Ginete Regiment Cost"
+ ONLY_HUSSARS_MODIFIER:0 "§YAffects only Ginete Regiments§!"
 
 # Special Unit Related #
  desc_spa_employ_galleon_modifier:0 "Full-Rigged ships are a key new development in shipbuilding engineering, becoming the workhorse of our Navy."

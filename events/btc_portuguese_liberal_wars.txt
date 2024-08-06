@@ -1,0 +1,87 @@
+namespace = portuguese_liberalism
+
+# Start event
+country_event = {
+	id = portuguese_liberalism.1
+	title = portuguese_liberalism.1_t
+	desc = portuguese_liberalism.1_d
+	picture = MONARCH_CHILD_WITH_REGENT_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = had_portuguese_liberal_wars_disaster
+		add_stability = -2
+
+		custom_tooltip = iberian_provinces_rebel_tt
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					region = iberia_region
+					is_island = no
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					friend = BRZ
+					size = 2
+					leader = "Maria"
+					leader_dynasty = "de Bragança"
+					female = yes
+				}
+				set_province_flag = maria_rebel_province
+			}
+			every_owned_province = {
+				limit = {
+					region = iberia_region
+					is_island = no
+					NOT = { has_province_flag = maria_rebel_province }
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 1
+				}
+			}			
+		}
+	}
+
+	option = {
+		name = portuguese_liberalism.1a
+		
+	}
+}
+
+country_event = {
+	id = portuguese_liberalism.10
+	title = portuguese_liberalism.10_t
+	desc = portuguese_liberalism.10_d
+	picture = MONARCH_CHILD_WITH_REGENT_eventPicture	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_disaster_progress = {
+			disaster = portuguese_liberalism
+			value = 90
+		}
+	}
+
+	option = {
+		name = portuguese_liberalism.10a
+		
+	}
+}
+
+country_event = {
+	id = portuguese_liberalism.100
+	title = portuguese_liberalism.100_t
+	desc = portuguese_liberalism.100_d
+	picture = MONARCH_CHILD_WITH_REGENT_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = portuguese_liberalism.100a
+	}
+}

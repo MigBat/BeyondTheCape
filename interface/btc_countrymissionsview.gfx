@@ -216,6 +216,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "mission_besteiros"
+		texturefile = "gfx/interface/missions/mission_besteiros.dds"
+	}
+
+	spriteType = {
 		name = "mission_adamastor"
 		texturefile = "gfx/interface/missions/mission_adamastor.dds"
 	}
@@ -263,5 +268,25 @@ spriteTypes = {
 	spriteType = {
 		name = "mission_nutmeg"
 		texturefile = "gfx/interface/missions/mission_nutmeg.dds"
+	}
+
+	spriteType = {
+		name = "mission_independence"
+		texturefile = "gfx/interface/missions/mission_independence.dds"
+	}
+
+	spriteType = {
+		name = "mission_organ_guns"
+		texturefile = "gfx/interface/missions/mission_organ_guns.dds"
+	}
+
+	spriteType = {
+		name = "mission_magnanimous"
+		texturefile = "gfx/interface/missions/mission_magnanimous.dds"
+	}
+
+	spriteType = {
+		name = "mission_brazil"
+		texturefile = "gfx/interface/missions/mission_brazil.dds"
 	}
 }

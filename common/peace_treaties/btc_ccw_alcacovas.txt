@@ -24,10 +24,13 @@ po_ccw_alcacovas = {
 		always = yes
 	}
 	is_allowed = { # Defaults to equivalent of "always = yes"
-		ROOT = { 
-			tag = POR
-			offensive_war_with = CAS
-			has_country_flag = at_war 
+		custom_trigger_tooltip = {
+			tooltip = po_ccw_alcacovas_tt
+			ROOT = { 
+				tag = POR
+				offensive_war_with = CAS
+				has_country_flag = at_war 
+			}
 		}
 	}
 	effect = { # Defaults to empty effect (which makes error log entry but is safe)

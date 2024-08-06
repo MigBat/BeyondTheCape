@@ -1,0 +1,63 @@
+portuguese_liberalism = {
+	potential = {
+		NOT = { has_country_flag = had_portuguese_liberal_wars_disaster }
+		mission_completed = btc_brazil_pu
+		uses_doom = no
+		is_free_or_tributary_trigger = yes
+		normal_or_historical_nations = yes
+		tag = POR
+	}
+	
+	can_start = {
+		has_any_disaster = no
+	}
+	
+	can_stop = { 
+		has_any_disaster = yes
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			is_bankrupt = yes
+		} 
+		modifier = {
+			factor = 0.5
+			absolutism = 25
+			NOT = { absolutism = 50 }
+		} 
+		modifier = {
+			factor = 1.0
+			absolutism = 50
+			NOT = { absolutism = 75 }
+		} 
+		modifier = {
+			factor = 2.0
+			absolutism = 75
+		} 
+		modifier = {
+			factor = 1
+			war_exhaustion = 5
+		}
+	}
+	
+	can_end = {
+		is_at_war = no
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { num_of_rebel_armies = 1 }
+	}
+
+	modifier = {
+		global_unrest = 10
+		legitimacy = -2
+	}
+
+	on_start = portuguese_liberalism.1
+	on_end = portuguese_liberalism.100
+
+	on_monthly = {
+		events = {
+			portuguese_liberalism.10
+		}
+	}
+}

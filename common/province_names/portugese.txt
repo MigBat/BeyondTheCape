@@ -1044,7 +1044,7 @@
 2626 = "Toluca"
 2627 = "Ziuatão"
 4572 = "Malinale" #Adaptation of the nahualt "Malinalli". 
-2645 = "telólotle" #Adaptation of the nahualt "telólotl".
+2645 = "Telólotle" #Adaptation of the nahualt "telólotl".
 848 = "Santiago da Penha"
 853 = "Lavadeiras" #Tlapacoyan means in nahualt "Place where clothes are washed", so I adapted the term to the portuguese synonym.
 4571 = "Tlacopão"
@@ -1528,7 +1528,7 @@
 506 = "Multã"
 4509 = "Depal Pur" #Ancient name of the province.
 2078 = "Banu"
-4510 = "chorcote" #Adaptation of "Shorkot".
+4510 = "Chorcote" #Adaptation of "Shorkot".
 4511 = "Bera"
 2076 = "Sialcote"
 507 = "Laore"

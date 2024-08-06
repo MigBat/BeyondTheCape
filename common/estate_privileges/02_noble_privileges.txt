@@ -5017,23 +5017,26 @@ estate_nobles_fidalgos = {
 			has_country_flag = can_remove_fidalgos_flag
 		}
 	}
+	modifier_by_land_ownership = {
+		allowed_samurai_fraction = 1
+	}
 	penalties = {
 		land_forcelimit_modifier = -0.3
 	}
 	benefits = { 
 		leader_land_shock = 2
 		leader_naval_shock = 2
-		capture_ship_chance = 0.33
+		has_samurai = yes
 	}    
-	conditional_modifier = {
-		trigger = {
-			has_country_flag = fidalgos_infantry_flag
-		}
-		modifier = {
-			has_samurai = yes
-			allowed_samurai_fraction = 0.1		
-		}
-	}  
+	# conditional_modifier = {
+	# 	trigger = {
+	# 		has_country_flag = fidalgos_infantry_flag
+	# 	}
+	# 	modifier = {
+	# 		has_samurai = yes
+	# 		allowed_samurai_fraction = 0.1		
+	# 	}
+	# }  
 	conditional_modifier = {
 		trigger = {
 			has_country_flag = montantes_flag

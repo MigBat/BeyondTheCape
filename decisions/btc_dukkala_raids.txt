@@ -4,8 +4,10 @@ country_decisions = {
 		potential = {
 			mission_completed = btc_buffer_zone
 			NOT = { has_country_flag = btc_dukkala_raids_on_flag }
+			MOR = { exists = yes }
 		}
 		allow = {
+			NOT = { alliance_with = MOR }
 		}
 		effect = {
 			custom_tooltip = btc_dukkala_raids_tt

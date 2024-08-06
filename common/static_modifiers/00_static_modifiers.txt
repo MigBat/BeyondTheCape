@@ -255,17 +255,17 @@ no_adjacent_controlled = {
 	local_colonial_growth = -5
 }
 
+# BTC #
 provincial_tax_income = {
-	# regiment_recruit_speed = -0.02
-	local_great_project_upgrade_time = -0.01
-	local_build_time = -0.01
 	local_institution_spread = 0.02
+	local_autonomy = -0.002
+	trade_value_modifier = 0.05
 }
 
+# BTC #
 provincial_production_size = {
 	trade_goods_size = 0.2
 	ship_recruit_speed = -0.01
-	# BTC #
 	local_ship_repair = 0.02
 }
 
@@ -278,9 +278,9 @@ cardinals_spread_institution = {
 	institution_growth = 6
 }
 
+# BTC #
 manpower = {
-	garrison_growth = 0.01					#1% increase from manpower.
-	# BTC from tax #
+	garrison_growth = 0.01
 	regiment_recruit_speed = -0.02
 	local_garrison_size = 0.02
 }
@@ -302,6 +302,8 @@ development = {
 	local_amount_of_carolean = 0.1
 	local_amount_of_hussars = 0.01
 	local_build_cost = 0.02
+	local_great_project_upgrade_time = -0.005
+	local_build_time = -0.005
 }
 
 development_scaled = {

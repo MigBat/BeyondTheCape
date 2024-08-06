@@ -3,7 +3,7 @@ exploration_ideas = {	# Beyond the Cape rework
 	important = yes
 
 	bonus = {
-		cb_on_primitives = yes
+		cb_on_overseas = yes
 		monthly_portuguese_saudade = 0.075
 	}
 
@@ -30,7 +30,7 @@ exploration_ideas = {	# Beyond the Cape rework
 	}
 	global_empire = {
 		naval_forcelimit_modifier = 0.25
-		treasure_fleet_income = 0.25
+		min_autonomy_in_territories = -0.1
 	}
 
 	ai_will_do = {
@@ -183,6 +183,89 @@ exploration_ideas = {	# Beyond the Cape rework
 				tag = ENG
 				tag = FRA
 				tag = KUR
+			}
+		}
+	}
+}
+
+expansion_ideas = {
+	category = ADM
+	important = yes
+
+	bonus = {
+		treasure_fleet_income = 0.25
+		monthly_portuguese_saudade = 0.075
+	}
+
+	additional_colonists = {
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	additional_merchants = {
+		merchants = 1
+	}
+	faster_colonists = {
+		global_colonial_growth = 20
+	}
+	vice_roys  = {
+		global_tariffs = 0.10
+ 		envoy_travel_time = -0.20
+ 	}
+	additional_diplomats = {
+		diplomats = 1
+		reduced_liberty_desire_on_other_continent = 5
+	}
+	general_colonization_law  = {
+		colonists = 1
+		colonist_placement_chance = 0.05
+		effect = { remove_temporary_colonist = yes }
+	}
+	competetive_merchants  = {
+		global_trade_power = 0.2
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 10
+			OR = {
+				has_idea_group = exploration_ideas
+				is_colonial_nation = yes
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = CAS
+				tag = POR
+				tag = SPA
+			}
+		}
+		modifier = {
+			factor = 10
+			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
+			tag = RUS
+			num_of_cities = 20
+			any_owned_province = {
+				has_empty_adjacent_province = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_idea_group = exploration_ideas }
+			NOT = { is_colonial_nation = yes }
+			NOT = {
+				any_owned_province = {
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
 			}
 		}
 	}

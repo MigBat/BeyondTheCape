@@ -467,6 +467,9 @@
  ginetes: "Ginetes"
  desc_ginetes: ""
 
+ besteiro_ginetes: "Besteiros"
+ desc_besteiro_ginetes: ""
+
  ocean_currents: "Study of Currents"
  desc_ocean_currents: ""
 
@@ -559,3 +562,6 @@
 
  btc_old_ideas: "Old Ideas"
  desc_btc_old_ideas: ""
+
+ btc_spain_union: "Iberian Union"
+ desc_btc_spain_union: ""

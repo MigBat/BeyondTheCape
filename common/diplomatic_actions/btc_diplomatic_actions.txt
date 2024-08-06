@@ -85,6 +85,22 @@ callaction = {
 	}
 }
 
+requestpeace = {
+	condition = {
+		tooltip = ccw_requestpeace_tt
+		potential = {
+			OR = {
+				tag = POR
+				tag = ARA
+			}
+			has_country_flag = at_war
+		}
+		allow = { 
+			FROM = { tag = CAS }
+		}
+	}
+}
+
 declarewar = {
 	condition = {
 		tooltip = GRAND_CRUSADE_NO_OTHER_WAR

@@ -14,6 +14,9 @@
  CB_ALLOWED_po_ccw_union:0 "Union With Castile"
  po_ccw_union_desc:0 "Our crowns shall be united in this Iberian wedding."
 
+ po_ccw_union_tt: "Is the attacker in Castilian Civil War"
+ po_ccw_alcacovas_tt: "Is Portugal and the attacker in Castilian CIvil War"
+
  superiority_grand_crusade: "Show these infidel dogs superiority"
  superiority_grand_crusade_desc: "War goal is to show them superiority by winning battles."
  ALL_EUROPEAN_OR_HOLY_PROVINCES: "All European, Aleppo, Syrian or Palestine provinces."

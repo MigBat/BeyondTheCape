@@ -101,3 +101,28 @@ country_event = {
 		clr_country_flag = btc_recent_raid
 	}
 }
+
+country_event = {
+	id = btc_dukkala_raids.4
+	title = btc_dukkala_raids.4.t
+	desc = btc_dukkala_raids.4.d
+	picture = IMPALED_SOLDIERS_eventPicture
+	
+	hidden = yes	
+	trigger = {
+		has_country_flag = btc_dukkala_raids_on_flag
+		OR = {
+			MOR = { exists = no }
+			alliance_with = MOR
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_dukkala_raids.4.a	
+
+		clr_country_flag = btc_dukkala_raids_on_flag
+	}
+}

@@ -59,6 +59,12 @@
  btc_ginetes_title: "Ginetes"
  btc_ginetes_desc: "During the Reconquista, in response to Moorish light cavalry, Iberian armies have developed the ginete. These light horsemen wear leather armor and are armed with armor-piercing javelins. They could be very effective in our efforts against the Moroccans in North Africa."
 
+ btc_besteiros_title: "Besteiros"
+ btc_besteiros_desc: ""
+
+ btc_independence_title: "Regain our Independence"
+ btc_independence_desc: ""
+
  btc_tangier_title: "Revenge of the Infante"
  btc_tangier_desc: "Our failed siege of Tangiers in 1437 is still very much an open wound for our veterans, especially Prince Henry who led the expeditionary force himself. His brother, Prince Ferdinand, was held captive for six years until he ultimately perished in a Moroccan prison in Fez. We have learned from the mistakes of the past, and must now ready ourselves for another attempt at conquering the important city."
 
@@ -80,7 +86,7 @@
  btc_castile_title: "The Castilian Succession"
  btc_castile_desc: "An unexpected opportunity has revealed itself. Castile is currently embroiled in a succession crisis, and one of the claimants, Joanna, has proposed to [Root.Monarch.GetTitle] [Root.Monarch.GetName], aiming to rule Castile together. Her rival, Isabella, has gained the support of the Crown of Aragon. If we are to intervene, we must be prepared for an uphill war, with immense rewards if we are to succeed."
  btc_ccw_ended: "The §YCastilian Civil War§! disaster has ended, or the year is §Y1500§!"
- unlock_ccw_missions_tt: "§MUnlocks new missions based on the outcome of the civil war§! (Currently only Treaty of Alcáçovas branch exists)"
+ unlock_ccw_missions_tt: "§MUnlocks new missions based on the outcome of the Castilian Civil War§! (Currently only Treaty of Alcáçovas branch exists)"
 
  btc_terco_title: "Portuguese Terços"
  btc_terco_desc: "A new military unit organization is starting to take shape in Spain, set to revolutionize modern warfare. They call it the 'Tercio'. It is making small waves still, meaning other countries have not yet noticed the potential it brings. Our geographic positioning, as well as our intel on our neighbours, puts us in prime position to adopt and adapt these units to our army. Naturally, we shall call them the 'Terços'."
@@ -280,6 +286,10 @@
  btc_camoes_title: "§OOs Lusiadas§!"
  btc_camoes_desc: ""
 
+ btc_magnanimous_title: "The Magnanimous"
+ btc_magnanimous_desc: ""
+ had_court_and_country_tt: "Has had §YCourt and Country§! disaster"
+
  btc_australia_title: "Terra Australis"
  btc_australia_desc: ""
 
@@ -342,3 +352,9 @@
  btc_damiao_desc: ""
  btc_damiao_reward_tt: "If we have a §YPhilosopher§! advisor employed:"
  btc_simao_reward_tt: "If we have an §YInquisitor§! advisor employed:"
+
+ btc_liberalism_title: "Rise of Liberalism"
+ btc_liberalism_desc: ""
+
+ btc_brazil_pu_title: "Kingdom of Brazil"
+ btc_brazil_pu_desc: ""

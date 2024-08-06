@@ -1035,6 +1035,18 @@ country_event = {
 		name = "flavor_spa.EVTOPTB3162"
 		ai_chance = { factor = 1 }
 		create_union = POR
+		hidden_effect = {
+			POR = {
+				add_country_modifier = {
+					name = btc_spain_union
+					duration = -1
+				}
+				hidden_effect = {
+					set_country_flag = unlock_missions_independence
+					swap_non_generic_missions = yes
+				}
+			}
+		}
 	}
 	option = {		# The extra burden is not worth it
 		name = "flavor_spa.EVTOPTC3162"

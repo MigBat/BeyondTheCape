@@ -690,8 +690,8 @@ btc_pirate_hunt = {
 }
 
 elvas_fort = {
-	local_defensiveness = 0.25
-	garrison_size = 0.2
+	local_defensiveness = 0.5
+	local_fort_maintenance_modifier = -0.75
 }
 
 por_tercos = {
@@ -716,6 +716,11 @@ jogo_do_pau = {
 
 ginetes = {
 	can_recruit_hussars = yes
+}
+
+besteiro_ginetes = {
+	fire_damage = 0.15
+	is_hussars_modifier = yes
 }
 
 casa_da_guine = {
@@ -885,4 +890,8 @@ btc_new_ideas = {
 btc_old_ideas = {
 	tolerance_own = 2
 	global_missionary_strength = 0.03
+}
+
+btc_spain_union = {
+	can_not_declare_war = yes
 }

@@ -281,25 +281,25 @@ btc_por_lisboa_silk = {
 	}
 }
 
-btc_por_fidalgos_infantry = {
-	category = 7
-	allow = {
-		has_parliament = yes
-		mission_completed = btc_ordenacoes
-		has_estate_privilege = estate_nobles_fidalgos
-		NOT = { has_country_flag = fidalgos_infantry_flag }
-	}
-	effect = {
-		custom_tooltip = fidalgos_infantry_tt
-		set_country_flag = fidalgos_infantry_flag
-	}
-	chance = {
-		factor = 2
-	}
-	ai_will_do = {
-		factor = 1
-	}
-}
+# btc_por_fidalgos_infantry = {
+# 	category = 7
+# 	allow = {
+# 		has_parliament = yes
+# 		mission_completed = btc_ordenacoes
+# 		has_estate_privilege = estate_nobles_fidalgos
+# 		NOT = { has_country_flag = fidalgos_infantry_flag }
+# 	}
+# 	effect = {
+# 		custom_tooltip = fidalgos_infantry_tt
+# 		set_country_flag = fidalgos_infantry_flag
+# 	}
+# 	chance = {
+# 		factor = 2
+# 	}
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# }
 
 btc_por_montantes = {
 	category = 7
@@ -307,7 +307,7 @@ btc_por_montantes = {
 		has_parliament = yes
 		mission_completed = btc_ordenacoes
 		has_estate_privilege = estate_nobles_fidalgos
-		has_country_flag = fidalgos_infantry_flag
+		# has_country_flag = fidalgos_infantry_flag
 		NOT = { has_country_flag = montantes_flag }
 	}
 	effect = {
@@ -339,7 +339,7 @@ btc_por_reformed_fidalgos = {
 		set_country_flag = reformed_fidalgos_flag
 	}
 	chance = {
-		factor = 0.1
+		factor = 0.5
 	}
 	ai_will_do = {
 		factor = 1
@@ -357,9 +357,14 @@ btc_por_end_fidalgos = {
 	effect = {
 		custom_tooltip = can_remove_fidalgos_cortes_tt
 		set_country_flag = can_remove_fidalgos_flag
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -100
+		}
+		add_stability = -2
 	}
 	chance = {
-		factor = 0.5
+		factor = 1
 	}
 	ai_will_do = {
 		factor = 0
