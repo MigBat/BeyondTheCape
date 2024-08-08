@@ -567,6 +567,9 @@
  btc_spain_union: "Iberian Union"
  desc_btc_spain_union: ""
 
+ btc_shipbuilding_time: "Reduced Shipbuilding Time"
+ desc_btc_shipbuilding_time: ""
+
  btc_shipbuilding_capacity: "Increased Shipbuilding Capacity"
  desc_btc_shipbuilding_capacity: ""
 

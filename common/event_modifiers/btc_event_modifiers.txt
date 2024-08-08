@@ -690,7 +690,7 @@ btc_pirate_hunt = {
 }
 
 elvas_fort = {
-	local_defensiveness = 0.5
+	local_defensiveness = 0.25
 	local_fort_maintenance_modifier = -0.75
 }
 
@@ -894,6 +894,11 @@ btc_old_ideas = {
 
 btc_spain_union = {
 	can_not_declare_war = yes
+}
+
+btc_shipbuilding_time = {
+	ship_recruit_speed = -0.5
+	global_ship_cost = -0.5
 }
 
 btc_shipbuilding_capacity = {

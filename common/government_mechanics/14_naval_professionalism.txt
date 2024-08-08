@@ -21,41 +21,53 @@ naval_professionalism_mechanic = {
 	}
 	
 	interactions = {
-		boost_naval_professionalism = {
+		boost_ship_building_time = {
 			icon = GFX_naval_professionalism_button_1
 			trigger = {
-				dip_power_cost = 50
-				not = {
-					has_government_power = {
-						mechanic_type = naval_professionalism_mechanic
-						power_type = naval_professionalism
-						value = 100
-					}
+                NOT = { has_country_modifier = btc_shipbuilding_time }
+			}
+			effect = {
+				add_country_modifier = {
+					name = btc_shipbuilding_time
+					duration = 3650
 				}
 			}
-			effect = { 
-				dip_power_cost = 50
-				add_government_power = {
-					mechanic_type = naval_professionalism_mechanic
-					power_type = naval_professionalism
-					value = 10
-				}
-			}
-			cooldown_years = 0
 			ai_chance = {
 				factor = 0
-				modifier = {
-					factor = 10
-					not = {
-						has_government_power = {
-							mechanic_type = naval_professionalism_mechanic
-							power_type = naval_professionalism
-							value = 90
-						}
-					}
-					mil_power = 500
-				}
 			}
+			# trigger = {
+			# 	dip_power_cost = 50
+			# 	not = {
+			# 		has_government_power = {
+			# 			mechanic_type = naval_professionalism_mechanic
+			# 			power_type = naval_professionalism
+			# 			value = 100
+			# 		}
+			# 	}
+			# }
+			# effect = { 
+			# 	dip_power_cost = 50
+			# 	add_government_power = {
+			# 		mechanic_type = naval_professionalism_mechanic
+			# 		power_type = naval_professionalism
+			# 		value = 10
+			# 	}
+			# }
+			# cooldown_years = 0
+			# ai_chance = {
+			# 	factor = 0
+			# 	modifier = {
+			# 		factor = 10
+			# 		not = {
+			# 			has_government_power = {
+			# 				mechanic_type = naval_professionalism_mechanic
+			# 				power_type = naval_professionalism
+			# 				value = 90
+			# 			}
+			# 		}
+			# 		mil_power = 500
+			# 	}
+			# }
 		}
 		boost_shipbuilding_capacity = {
 			icon = GFX_naval_professionalism_button_2

@@ -68,11 +68,10 @@
  zaragoza_crown_of_aragon_reform:0 "Reformed Crown of Aragon"
  zaragoza_crown_of_aragon_reform_desc:0 "The Aragonese crown controls various kingdoms in the mediterranean, each having their own law and cultural differences, all under one King."
  
- #Venetian government
- VEN_parliament_name:0 "Maggior Consiglio"
- mechanic_improved_ten_council_yes:0 "§YCouncil of the Ten Government decision§! will be replaced with §YImproved Council of the Ten Government decision§!."
- btc_ven_improve_the_council_of_the_ten_reform:0 "Improved Council of the Ten"
- btc_ven_improve_the_council_of_the_ten_reform_desc:0 "By increasing the power of the §YCouncil of the Ten§! we can increase our efficiency, and assure our nation's survival."
+#  VEN_parliament_name:0 "Maggior Consiglio"
+#  mechanic_improved_ten_council_yes:0 "§YCouncil of the Ten Government decision§! will be replaced with §YImproved Council of the Ten Government decision§!."
+#  btc_ven_improve_the_council_of_the_ten_reform:0 "Improved Council of the Ten"
+#  btc_ven_improve_the_council_of_the_ten_reform_desc:0 "By increasing the power of the §YCouncil of the Ten§! we can increase our efficiency, and assure our nation's survival."
 
  legacy_of_albuquerque_reform: "Legacy of Albuquerque"
  legacy_of_albuquerque_reform_desc: "Can't get any more Chad than this."
@@ -84,8 +83,8 @@
  portuguese_empire_reform: "Portuguese Empire"
  portuguese_empire_reform_desc: ""
 
- boost_naval_professionalism: "Boost Naval Professionalism"
- boost_naval_professionalism_desc: ""
+ boost_ship_building_time: "Boost Ship Construction"
+ boost_ship_building_time_desc: ""
  boost_shipbuilding_capacity: "Increase Shipbuilding Capacity"
  boost_shipbuilding_capacity_desc: ""
  boost_sailor_recruitment: "Spread Navy Propaganda"

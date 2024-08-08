@@ -436,8 +436,8 @@ btc_por_sagres3 = {
 		position = 2
 		provinces_to_highlight = { }		
 		trigger = {	
-			1471 = { light_ships_in_province = 1 }
-			1476 = { light_ships_in_province = 1 }
+			1471 = { light_ships_in_province = ROOT }
+			1476 = { light_ships_in_province = ROOT }
 		}	
 		effect = {
 			add_country_modifier = {
@@ -1160,9 +1160,41 @@ btc_por_navy5a = {
 		position = 7
 		provinces_to_highlight = { }		
 		trigger = {
-			OR = {
-				marriage_with = ARA
-				marriage_with = CAS
+			if = {
+				limit = {
+					CAS = { exists = yes is_free_or_tributary_trigger = yes }
+				}
+				OR = {
+					marriage_with = CAS
+					OR = {
+						is_rival = CAS
+						CAS = { is_rival = ROOT }
+					}
+				}
+			}
+			if = {
+				limit = {
+					ARA = { exists = yes is_free_or_tributary_trigger = yes }
+				}
+				OR = {
+					marriage_with = ARA
+					OR = {
+						is_rival = ARA
+						ARA = { is_rival = ROOT }
+					}
+				}
+			}
+			if = {
+				limit = {
+					SPA = { exists = yes is_free_or_tributary_trigger = yes }
+				}
+				OR = {
+					marriage_with = SPA
+					OR = {
+						is_rival = SPA
+						SPA = { is_rival = ROOT }
+					}
+				}
 			}
 			has_consort = yes
 		}	

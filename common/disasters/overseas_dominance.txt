@@ -12,6 +12,7 @@ overseas_dominance = {
 			value = 100
 		}
 		OR = {
+			# more territories than states
 			variable_arithmetic_trigger = {
 				custom_tooltip = territory_provinces_3_times_state_provinces
 				export_to_variable = {
@@ -25,6 +26,7 @@ overseas_dominance = {
 				multiply_variable = { which = numOfStateProvinces value = 3 }
 				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
 			}
+			# casa da india double development than portugal
 			if = {
 				limit = {
 					CDI = {
@@ -43,7 +45,7 @@ overseas_dominance = {
 						who = CDI
 					}
 					multiply_variable = {
-						which = casaIndiaDevelopment
+						which = portugalDevelopment
 						value = 2
 					}
 					check_variable = {
@@ -180,7 +182,7 @@ overseas_dominance = {
 					who = CDI
 				}
 				multiply_variable = {
-					which = casaIndiaDevelopment
+					which = portugalDevelopment
 					value = 2
 				}
 				check_variable = {
@@ -203,7 +205,7 @@ overseas_dominance = {
 					who = CDI
 				}
 				multiply_variable = {
-					which = casaIndiaDevelopment
+					which = portugalDevelopment
 					value = 2.2
 				}
 				check_variable = {
@@ -226,7 +228,7 @@ overseas_dominance = {
 					who = CDI
 				}
 				multiply_variable = {
-					which = casaIndiaDevelopment
+					which = portugalDevelopment
 					value = 2.4
 				}
 				check_variable = {
@@ -249,7 +251,7 @@ overseas_dominance = {
 					who = CDI
 				}
 				multiply_variable = {
-					which = casaIndiaDevelopment
+					which = portugalDevelopment
 					value = 2.6
 				}
 				check_variable = {
@@ -272,7 +274,7 @@ overseas_dominance = {
 					who = CDI
 				}
 				multiply_variable = {
-					which = casaIndiaDevelopment
+					which = portugalDevelopment
 					value = 2.8
 				}
 				check_variable = {
@@ -295,7 +297,7 @@ overseas_dominance = {
 					who = CDI
 				}
 				multiply_variable = {
-					which = casaIndiaDevelopment
+					which = portugalDevelopment
 					value = 3
 				}
 				check_variable = {
