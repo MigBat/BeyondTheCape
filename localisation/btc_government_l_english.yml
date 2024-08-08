@@ -74,5 +74,19 @@
  btc_ven_improve_the_council_of_the_ten_reform:0 "Improved Council of the Ten"
  btc_ven_improve_the_council_of_the_ten_reform_desc:0 "By increasing the power of the §YCouncil of the Ten§! we can increase our efficiency, and assure our nation's survival."
 
- legacy_of_albuquerque_reform:0 "Legacy of Albuquerque"
- legacy_of_albuquerque_reform_desc:0 "Can't get any more Chad than this."
+ legacy_of_albuquerque_reform: "Legacy of Albuquerque"
+ legacy_of_albuquerque_reform_desc: "Can't get any more Chad than this."
+
+ portugal_liberal_reform: "Portuguese Liberal Monarchy"
+ portugal_liberal_reform_desc: ""
+ portugal_absolutist_reform: "Portuguese Absolutist Monarchy"
+ portugal_absolutist_reform_desc: ""
+ portuguese_empire_reform: "Portuguese Empire"
+ portuguese_empire_reform_desc: ""
+
+ boost_naval_professionalism: "Boost Naval Professionalism"
+ boost_naval_professionalism_desc: ""
+ boost_shipbuilding_capacity: "Increase Shipbuilding Capacity"
+ boost_shipbuilding_capacity_desc: ""
+ boost_sailor_recruitment: "Spread Navy Propaganda"
+ boost_sailor_recruitment_desc: ""

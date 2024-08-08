@@ -4,4 +4,16 @@ spriteTypes = {
 		name = "government_reform_legacy_of_albuquerque"
 		texturefile = "gfx//interface//government_reform_icons//legacy_of_albuquerque.dds"
 	}
+	spriteType = {
+		name = "government_reform_portugal_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//portugal_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_portugal_absolutism"
+		texturefile = "gfx//interface//government_reform_icons//portugal_absolutism.dds"
+	}
+	spriteType = {
+		name = "government_reform_portugal_liberalism"
+		texturefile = "gfx//interface//government_reform_icons//portugal_liberalism.dds"
+	}
 }		

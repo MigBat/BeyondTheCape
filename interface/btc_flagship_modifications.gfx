@@ -27,7 +27,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_flagship_portuguese_botafogo"
-		texturefile = "gfx//interface//portugueuse_botafogo.tga"
+		texturefile = "gfx//interface//portuguese_botafogo.tga"
 		loadType = "INGAME"
 	}
 }

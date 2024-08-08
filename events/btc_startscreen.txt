@@ -74,11 +74,19 @@ country_event = {
 		}
 	}
 
-	option = {	# Disaster
+	option = {	# Overextended Empire Disaster
 		name = btc_startscreen.2b
 
 		country_event = {
 			id = btc_startscreen.22
+		}
+	}
+
+	option = {	# Liberal Wars Disaster
+		name = btc_startscreen.2f
+
+		country_event = {
+			id = btc_startscreen.25
 		}
 	}
 
@@ -138,6 +146,24 @@ country_event = {
 
 	option = {	# go back
 		name = btc_startscreen.22a
+
+		country_event = {
+			id = btc_startscreen.2
+		}
+	}
+}
+
+# Liberal Wars Disaster #
+country_event = {
+	id = btc_startscreen.25
+	title = btc_startscreen.25_t
+	desc = btc_startscreen.25_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.25a
 
 		country_event = {
 			id = btc_startscreen.2

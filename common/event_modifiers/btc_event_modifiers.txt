@@ -590,7 +590,7 @@ por_upgraded_caravels = {
 }
 
 por_galleons = {
-	allowed_galleon_fraction = 0.1
+	allowed_galleon_fraction = 0.2
 	has_galleon = yes
 }
 
@@ -894,4 +894,13 @@ btc_old_ideas = {
 
 btc_spain_union = {
 	can_not_declare_war = yes
+}
+
+btc_shipbuilding_capacity = {
+	naval_forcelimit_modifier = 0.5
+}
+
+btc_navy_propaganda = {
+	global_sailors_modifier = 0.5
+	allowed_marine_fraction = 0.5
 }

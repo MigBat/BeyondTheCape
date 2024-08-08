@@ -406,3 +406,5 @@
  TUT_BAS_CHAPTER03_PAGE06_TEXT:1 "Heavy Ships are large warships that excel in combat. Light Ships are faster ships that are mainly used to protect your trade, but are also useful for exploration. Galleys are cheaper warships that should be used in shallow seas. Lastly there are also transport ships to ferry your troops over water.§W"
 
  TREASURE_FLEET_TOOLTIP:0 "The next treasure fleet from $COUNTRY$ will arrive in §Y$DATE$§!. We estimate it will bring us gold, silver and spices worth §Y$NUM$§!."
+
+ por_flee_to_brazil_desc:0 "Portugal is in danger! The monarch and the court must make haste across the sea before our enemies descend upon us once more. Though it will be painful to leave Portugal behind, we shall surely revive its glory in Brazil."

@@ -863,6 +863,7 @@ regency_council = {
 
 trade_efficiency = {
 	allowed_voc_indiamen_fraction = 0.1		#At 100% Trade Efficiency you get 10% available VOC Indiamen
+	monthly_naval_professionalism = 0.5
 }
 
 production_efficiency = {
@@ -914,6 +915,8 @@ navy_tradition = {
 	vaisyas_loyalty_modifier = 0.05
 	allowed_geobukseon_fraction = 0.5
 	allowed_galleass_fraction = 0.5
+	# BTC #
+	monthly_naval_professionalism = 1
 }
 
 positive_piety = { #As of 1.23 Legalism

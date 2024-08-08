@@ -183,3 +183,33 @@
  portuguese_regency.104_d: "We have received a delegation from Portugal, the home country of our King-consort João. They propose we become a march under them, as they consider us too weak to survive on our own and achieve the ambition of reclaiming the Holy Land. They are not entirely wrong, although hearing it like that is not very pleasant. Still, we do need to protect our people. What shall we do?"
  portuguese_regency.104a: "We accept"
  portuguese_regency.104b: "We refuse"
+
+# Portugal Liberal Wars #
+
+ portuguese_liberalism: "Liberal Wars"
+ portuguese_liberalism_desc: ""
+
+ portuguese_liberalism.1_t: "Brazil Declares Independence"
+ portuguese_liberalism.1_d: "Pedro has decided to abdicate as ruler of Portugal and instead chooses to reign over Brazil, declaring the independence of the former colony. He has named his daughter Maria as the next ruler of Portugal. Until she comes of age, the regency will be given to Pedro's younger brother Miguel.\n\nHowever, there is division in the court as to the legitimacy of such move, and the loss of Brazil as an importance source of revenue is massively damaging to Portugal. Not only that, but both Pedro and Maria follow liberal values, vastly contrasting with the absolutists of the country. Many would not welcome such a radical change of values."
+ portuguese_liberalism.1a: "Uncertain times..."
+
+ portuguese_liberalism.2_t: "Miguel Declares Himself King"
+ portuguese_liberalism.2_d: "With support from the estates that refuse to accept liberal values, Miguel has taken over the throne of Portugal. He claims that since Pedro abdicated his claim to the throne of Portugal, he no longer has a right to name a successor, and thus the claim falls to the next in line which would be Miguel himself.\n\nMaria's supporters have risen all over the country, with violent conflicts erupting between the liberals and absolutists. Maria has also sent an envoy to Brazil informing of the situation and asking for aid. We can except Pedro to mount an offensive any day now."
+ iberian_provinces_rebel_tt: "Pretender rebels will spawn in every owned province of Portuguese culture that is not an island."
+ portuguese_liberalism.2a: "Absolutism will prevail!"
+
+ portuguese_liberalism.3_t: "Brazil Declares War"
+ portuguese_liberalism.3_d: "As expected, Pedro has come to defend his daughter's claim to the Portuguese throne. We are now at war with our former colony of Brazil. This presents an opportunity to reintegrate them into our realm. Let's make this count."
+ portuguese_liberalism.3a: "To arms!"
+
+ btc_miguel_outcome: "Miguel has been acclaimed the King of Portugal, while Pedro remains King in Brazil. Maria also returns to Brazil with her father, being named the heir to the new country. With this outcome, Portugal remains an absolutist country, more so than ever!"
+ btc_miguel_brazil_outcome: "Miguel has been acclaimed the King of Portugal and Brazil. Pedro and his descendents have been exiled from the country for perpetuity. With this outcome, Portugal remains an absolutist country, more so than ever!"
+ btc_pedro_outcome: "Pedro has been acclaimed the king of Portugal and Brazil. Miguel and his descendents have been exiled from the country for perpetuity. With this outcome, Portugal turns a new page in their history, as they embrace more liberal values."
+ btc_maria_outcome: "Maria has been acclaimed the Queen of Portugal, while Pedro remains King in Brazil. Miguel and his descendents have been exiled from the country for perpetuity. With this outcome, Portugal turns a new page in their history, as they embrace more liberal values."
+
+ portuguese_liberalism.100_t: "End of the Liberal Wars"
+ portuguese_liberalism.100_d: "With the war over, the outcome has been decided. [Root.GetLiberalWarsOutcome]"
+ portuguese_liberalism.100a: "Long Live the King!"
+ portuguese_liberalism.100b: "Long Live the King!"
+ portuguese_liberalism.100c: "Long Live the King!"
+ portuguese_liberalism.100d: "Long Live the Queen!"

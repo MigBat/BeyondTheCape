@@ -6357,1115 +6357,998 @@ country_event = {
 	}	
 }
 
-# Choose Miguel education 0-5
-country_event = {
-	id = btc_por.192
-	title = btc_por.192_t
-	desc = btc_por.192_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-		heir_age = 0
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.193
-			days = 365
-		}
-	}
-
-	option = {	# Portugal
-		name = btc_por.192a
-
-		set_country_flag = miguel_0_portugal
-		change_heir_dip = 1
-	}
-
-	option = {	# Castile
-		name = btc_por.192b
-
-		set_country_flag = miguel_0_castile
-		change_heir_adm = 1
-	}
-
-	option = {	# Aragon
-		name = btc_por.192c
-
-		set_country_flag = miguel_0_aragon
-		change_heir_mil = 1
-	}
-}
-
-country_event = {
-	id = btc_por.193
-	title = btc_por.193_t
-	desc = btc_por.193_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.194
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.193a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_0_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_1
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.193b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_0_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.194
-	title = btc_por.194_t
-	desc = btc_por.194_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.195
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.194a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_0_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_2
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.194b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_0_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.195
-	title = btc_por.195_t
-	desc = btc_por.195_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.196
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.195a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_0_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_3
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.195b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_0_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.196
-	title = btc_por.196_t
-	desc = btc_por.195_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.197
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.196a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_0_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_4
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.196b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_0_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_0_aragon
-			}
-		}
-	}
-}
-
-# Choose Miguel education 5-10
-country_event = {
-	id = btc_por.197
-	title = btc_por.197_t
-	desc = btc_por.197_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.198
-			days = 365
-		}
-	}
-
-	option = {	# Portugal
-		name = btc_por.197a
-		trigger = {
-			NOT = { has_country_flag = miguel_0_portugal }
-		}
-
-		set_country_flag = miguel_5_portugal
-		change_heir_dip = 1
-	}
-
-	option = {	# Castile
-		name = btc_por.197b
-		trigger = {
-			NOT = { has_country_flag = miguel_0_castile }
-		}
-
-		set_country_flag = miguel_5_castile
-		change_heir_adm = 1
-	}
-
-	option = {	# Aragon
-		name = btc_por.197c
-		trigger = {
-			NOT = { has_country_flag = miguel_0_aragon }
-		}
-
-		set_country_flag = miguel_5_aragon
-		change_heir_mil = 1
-	}
-}
-
-country_event = {
-	id = btc_por.198
-	title = btc_por.198_t
-	desc = btc_por.198_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.199
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.198a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_5_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_6
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.198b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_5_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.199
-	title = btc_por.199_t
-	desc = btc_por.199_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.200
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.199a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_5_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_7
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.199b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_5_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.200
-	title = btc_por.200_t
-	desc = btc_por.200_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.201
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.200a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_5_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_8
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.200b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_5_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.201
-	title = btc_por.201_t
-	desc = btc_por.201_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.202
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.201a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_5_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_9
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.201b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_5_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_5_aragon
-			}
-		}
-	}
-}
-
-# Choose Miguel education 10-15
-country_event = {
-	id = btc_por.202
-	title = btc_por.202_t
-	desc = btc_por.202_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.203
-			days = 365
-		}
-	}
-
-	option = {	# Portugal
-		name = btc_por.202a
-		trigger = {
-			NOT = { has_country_flag = miguel_0_portugal }
-			NOT = { has_country_flag = miguel_5_portugal }
-		}
-
-		set_country_flag = miguel_10_portugal
-		change_heir_dip = 1
-	}
-
-	option = {	# Castile
-		name = btc_por.202b
-		trigger = {
-			NOT = { has_country_flag = miguel_0_castile }
-			NOT = { has_country_flag = miguel_5_castile }
-		}
-
-		set_country_flag = miguel_10_castile
-		change_heir_adm = 1
-	}
-
-	option = {	# Aragon
-		name = btc_por.202c
-		trigger = {
-			NOT = { has_country_flag = miguel_0_aragon }
-			NOT = { has_country_flag = miguel_5_aragon }
-		}
-
-		set_country_flag = miguel_10_aragon
-		change_heir_mil = 1
-	}
-}
-
-country_event = {
-	id = btc_por.203
-	title = btc_por.203_t
-	desc = btc_por.203_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.204
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.203a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_10_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_11
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.203b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_10_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.204
-	title = btc_por.204_t
-	desc = btc_por.204_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.205
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.204a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_10_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_12
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.204b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_10_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.205
-	title = btc_por.205_t
-	desc = btc_por.205_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-
-	after = {
-		country_event = {
-			id = btc_por.206
-			days = 365
-		}
-	}
-
-	option = {
-		name = btc_por.205a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_10_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_13
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.205b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_10_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.207
-	title = btc_por.207_t
-	desc = btc_por.207_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-		OR = {
-			has_heir_flag = miguel_da_paz
-			has_ruler_flag = miguel_da_paz
-		}
-	}
-
-	option = {
-		name = btc_por.207a
-
-		if = {
-			limit = {
-				has_country_flag = miguel_10_portugal
-			}
-			change_heir_dip = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_castile
-			}
-			change_heir_adm = 1
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_aragon
-			}
-			change_heir_mil = 1
-		}
-		set_country_flag = miguel_14
-		custom_tooltip = miguel_death_chance_tt
-	}
-
-	option = {
-		name = btc_por.207b
-
-		if = {
-			limit = {
-				has_country_flag = miguel_10_portugal
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_castile
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = miguel_10_aragon
-			}
-		}
-	}
-}
-
-country_event = {
-	id = btc_por.208
-	title = btc_por.208_t
-	desc = btc_por.208_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	fire_only_once = yes
-	trigger = {
-		has_heir_flag = miguel_da_paz
-	}
-	mean_time_to_happen = {
-		months = 1000
-
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_1
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_2
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_3
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_4
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_6
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_7
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_8
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_9
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_11
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_12
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_13
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = miguel_14
-		}
-	}
-
-	option = {
-		name = btc_por.208a
-
-		kill_heir = {}
-	}
-}
-
-# Brazil PU Mission
-country_event = {
-	id = btc_por.209
-	title = btc_por.209_t
-	desc = btc_por.209_d
-	picture = DEATH_OF_HEIR_eventPicture
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	immediate = {
-		hidden_effect = {
-			random_subject_country = {
-				limit = {
-					is_subject_of = ROOT
-					is_colonial_nation = yes
-					capital_scope = {
-						colonial_region = colonial_brazil
-					}
-				}
-				save_event_target_as = brazil_target
-			}
-			random_province = {
-				limit = {
-					is_capital_of = event_target:brazil_target
-				}
-				save_event_target_as = brazil_capital
-			}
-		}
-	}
-
-	option = {	# PU Brazil
-		name = btc_por.209a
-
-		set_country_flag = pu_brazil
-
-		event_target:brazil_target = { 
-			hidden_effect = {
-				grant_independence = yes					
-			}
-			change_tag = BRZ 
-			on_change_tag_effect = yes
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = { government_rank = 2 }
-					}
-					set_government_rank = 2
-				}				
-			}
-			if = {
-				limit = {
-					culture_group = iberian
-					NOT = { primary_culture = brazilian }
-				}
-				change_primary_culture = brazilian
-			}
-			colonial_brazil = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = BRZ
-			}
-			change_government = monarchy
-			hidden_effect = {
-				if = {
-					limit = { has_custom_ideas = no }
-					country_event = { id = ideagroups.1 } #Swap Ideas
-				}
-				add_government_reform = feudalism_reform
-				set_country_flag = changed_from_colonial_nation
-			}
-		}
-		create_union = BRZ
-		hidden_effect = {
-			BRZ = { add_historical_friend = ROOT }			
-		}
-	}
-
-	option = {	# CN Brazil
-		name = btc_por.209b
-
-		set_country_flag = cn_brazil
-
-		event_target:brazil_target = { 
-			add_liberty_desire = 100
-			hidden_effect = {
-				add_historical_rival = ROOT		
-			}
-		}
-	}
-
-	option = {	# Capital Rio
-		name = btc_por.209c
-
-		set_country_flag = capital_rio
-
-		set_country_flag = no_colonial_nations
-		inherit = event_target:brazil_target
-		if = {
-			limit = {
-				763 = {
-					owned_by = ROOT
-				}
-			}
-			763 = {
-				move_capital_effect = yes
-			}
-		}
-		else = {
-			event_target:brazil_capital = {
-				move_capital_effect = yes
-			}
-		}
-	}
-}
+# # Choose Miguel education 0-5
+# country_event = {
+# 	id = btc_por.192
+# 	title = btc_por.192_t
+# 	desc = btc_por.192_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 		heir_age = 0
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.193
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {	# Portugal
+# 		name = btc_por.192a
+
+# 		set_country_flag = miguel_0_portugal
+# 		change_heir_dip = 1
+# 	}
+
+# 	option = {	# Castile
+# 		name = btc_por.192b
+
+# 		set_country_flag = miguel_0_castile
+# 		change_heir_adm = 1
+# 	}
+
+# 	option = {	# Aragon
+# 		name = btc_por.192c
+
+# 		set_country_flag = miguel_0_aragon
+# 		change_heir_mil = 1
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.193
+# 	title = btc_por.193_t
+# 	desc = btc_por.193_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.194
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.193a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_1
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.193b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.194
+# 	title = btc_por.194_t
+# 	desc = btc_por.194_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.195
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.194a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_2
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.194b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.195
+# 	title = btc_por.195_t
+# 	desc = btc_por.195_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.196
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.195a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_3
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.195b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.196
+# 	title = btc_por.196_t
+# 	desc = btc_por.195_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.197
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.196a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_4
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.196b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_0_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# # Choose Miguel education 5-10
+# country_event = {
+# 	id = btc_por.197
+# 	title = btc_por.197_t
+# 	desc = btc_por.197_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.198
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {	# Portugal
+# 		name = btc_por.197a
+# 		trigger = {
+# 			NOT = { has_country_flag = miguel_0_portugal }
+# 		}
+
+# 		set_country_flag = miguel_5_portugal
+# 		change_heir_dip = 1
+# 	}
+
+# 	option = {	# Castile
+# 		name = btc_por.197b
+# 		trigger = {
+# 			NOT = { has_country_flag = miguel_0_castile }
+# 		}
+
+# 		set_country_flag = miguel_5_castile
+# 		change_heir_adm = 1
+# 	}
+
+# 	option = {	# Aragon
+# 		name = btc_por.197c
+# 		trigger = {
+# 			NOT = { has_country_flag = miguel_0_aragon }
+# 		}
+
+# 		set_country_flag = miguel_5_aragon
+# 		change_heir_mil = 1
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.198
+# 	title = btc_por.198_t
+# 	desc = btc_por.198_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.199
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.198a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_6
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.198b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.199
+# 	title = btc_por.199_t
+# 	desc = btc_por.199_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.200
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.199a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_7
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.199b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.200
+# 	title = btc_por.200_t
+# 	desc = btc_por.200_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.201
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.200a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_8
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.200b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.201
+# 	title = btc_por.201_t
+# 	desc = btc_por.201_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.202
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.201a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_9
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.201b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_5_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# # Choose Miguel education 10-15
+# country_event = {
+# 	id = btc_por.202
+# 	title = btc_por.202_t
+# 	desc = btc_por.202_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.203
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {	# Portugal
+# 		name = btc_por.202a
+# 		trigger = {
+# 			NOT = { has_country_flag = miguel_0_portugal }
+# 			NOT = { has_country_flag = miguel_5_portugal }
+# 		}
+
+# 		set_country_flag = miguel_10_portugal
+# 		change_heir_dip = 1
+# 	}
+
+# 	option = {	# Castile
+# 		name = btc_por.202b
+# 		trigger = {
+# 			NOT = { has_country_flag = miguel_0_castile }
+# 			NOT = { has_country_flag = miguel_5_castile }
+# 		}
+
+# 		set_country_flag = miguel_10_castile
+# 		change_heir_adm = 1
+# 	}
+
+# 	option = {	# Aragon
+# 		name = btc_por.202c
+# 		trigger = {
+# 			NOT = { has_country_flag = miguel_0_aragon }
+# 			NOT = { has_country_flag = miguel_5_aragon }
+# 		}
+
+# 		set_country_flag = miguel_10_aragon
+# 		change_heir_mil = 1
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.203
+# 	title = btc_por.203_t
+# 	desc = btc_por.203_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.204
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.203a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_11
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.203b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.204
+# 	title = btc_por.204_t
+# 	desc = btc_por.204_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.205
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.204a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_12
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.204b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.205
+# 	title = btc_por.205_t
+# 	desc = btc_por.205_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+
+# 	after = {
+# 		country_event = {
+# 			id = btc_por.206
+# 			days = 365
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.205a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_13
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.205b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.207
+# 	title = btc_por.207_t
+# 	desc = btc_por.207_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		OR = {
+# 			has_heir_flag = miguel_da_paz
+# 			has_ruler_flag = miguel_da_paz
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.207a
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_portugal
+# 			}
+# 			change_heir_dip = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_castile
+# 			}
+# 			change_heir_adm = 1
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_aragon
+# 			}
+# 			change_heir_mil = 1
+# 		}
+# 		set_country_flag = miguel_14
+# 		custom_tooltip = miguel_death_chance_tt
+# 	}
+
+# 	option = {
+# 		name = btc_por.207b
+
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_portugal
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_castile
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_country_flag = miguel_10_aragon
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = btc_por.208
+# 	title = btc_por.208_t
+# 	desc = btc_por.208_d
+# 	picture = DEATH_OF_HEIR_eventPicture
+
+# 	fire_only_once = yes
+# 	trigger = {
+# 		has_heir_flag = miguel_da_paz
+# 	}
+# 	mean_time_to_happen = {
+# 		months = 1000
+
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_1
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_2
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_3
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_4
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_6
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_7
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_8
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_9
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_11
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_12
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_13
+# 		}
+# 		modifier = {
+# 			factor = 0.8
+# 			has_country_flag = miguel_14
+# 		}
+# 	}
+
+# 	option = {
+# 		name = btc_por.208a
+
+# 		kill_heir = {}
+# 	}
+# }

@@ -2234,12 +2234,7 @@ btc_por_india3 = {
 			extend_golden_age = 120
 			remove_country_modifier = expensive_spices
 			remove_country_modifier = discovery_fervor
-			# if = {
-			# 	limit = {
-			# 		in_golden_age = yes
-			# 	}
-			# 	extend_golden_age = 120
-			# }
+			add_government_reform = portuguese_empire_reform	
 		}
 	}
 
@@ -2845,165 +2840,6 @@ btc_por_east1 = {
 		}
 	}
 
-	btc_formosa = {
-		icon = dutch_formosa
-		required_missions = { btc_china }
-		position = 20
-		provinces_to_highlight = { }		
-		trigger = {	
-			taiwan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}	
-		effect = {
-			738 = {
-				add_building_construction = {
-					building = shipyard
-					cost = 0
-				}
-			}
-		}
-	}
-
-	btc_haidao = {
-		icon = mission_pirate_fleet
-		required_missions = { btc_formosa }
-		position = 21
-		provinces_to_highlight = { }		
-		trigger = {
-			1371 = { privateer_power = { share = 20 country = ROOT } }
-			684 = { privateer_power = { share = 20 country = ROOT } }
-			4233 = { privateer_power = { share = 20 country = ROOT } }
-		}	
-		effect = {
-			change_price = {
-				trade_goods = chinaware
-				key = btc_portugal_privateers
-				value = 0.5
-				duration = 7300
-			}
-			custom_tooltip = taiwan_chinaware_tt
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						area = taiwan_area
-					}
-					change_trade_goods = chinaware
-				}
-			}
-			change_price = {
-				trade_goods = tea
-				key = btc_portugal_privateers
-				value = 0.5
-				duration = 7300
-			}
-			367 = {
-				change_trade_goods = tea
-			}
-		}
-	}
-}
-
-btc_por_jesuit1 = {
-	slot = 1
-	generic = no
-	ai = yes	
-	potential_on_load = {
-	}
-	potential = {
-		tag = POR
-		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_jesuit
-	}
-	has_country_shield = yes
-
-	btc_nagasaki = {
-		icon = secure_dejima
-		required_missions = { btc_societa_jesu btc_sino_japan }
-		position = 22
-		provinces_to_highlight = {
-			province_id = 4182
-		}		
-		trigger = {
-			1376 = {
-				trade_share = {
-					country = ROOT
-					share = 15
-				}
-			}
-			1020 = {
-				owner = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-			}
-			4182 = {
-				has_province_modifier = foreign_feitoria
-				owner = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-			}
-		}	
-		effect = {
-			custom_tooltip = nagasaki_tt
-			hidden_effect = {
-				4182 = {
-					owner = {
-						country_event = { id = more_flavor_por.3 }
-					}
-				}				
-			}
-		}
-	}
-}
-
-btc_por_east2 = {
-	slot = 2
-	generic = no
-	ai = yes	
-	potential_on_load = {
-	}
-	potential = {
-		tag = POR
-		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_spice
-	}
-	has_country_shield = yes
-
-	btc_tidore = {
-		icon = mission_market_place_with_asian_traders
-		required_missions = { btc_spice }
-		position = 19
-		provinces_to_highlight = { }		
-		trigger = {
-			OR = {
-				TID = {
-					OR = {
-						alliance_with = ROOT
-						is_subject_of = ROOT
-					}
-				}
-				TER = {
-					OR = {
-						alliance_with = ROOT
-						is_subject_of = ROOT
-					}
-				}
-			}
-		}	
-		effect = {
-			spice_islands_area = {
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
 	btc_macau = {
 		icon = mng_expand_bogue
 		required_missions = { btc_china }
@@ -3098,11 +2934,69 @@ btc_por_east2 = {
 			}
 		}
 	}
+}
+
+btc_por_jesuit1 = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+	potential = {
+		tag = POR
+		NOT = { map_setup = map_setup_random }
+		# has_country_flag = unlock_missions_jesuit
+	}
+	has_country_shield = yes
+
+	btc_nagasaki = {
+		icon = secure_dejima
+		required_missions = { btc_societa_jesu btc_macau }
+		position = 22
+		provinces_to_highlight = {
+			province_id = 4182
+		}		
+		trigger = {
+			1376 = {
+				trade_share = {
+					country = ROOT
+					share = 15
+				}
+			}
+			1020 = {
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+			4182 = {
+				has_province_modifier = foreign_feitoria
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}	
+		effect = {
+			custom_tooltip = nagasaki_tt
+			hidden_effect = {
+				4182 = {
+					owner = {
+						country_event = { id = more_flavor_por.3 }
+					}
+				}				
+			}
+		}
+	}
 
 	btc_sino_japan = {
 		icon = mng_form_depots
-		required_missions = { btc_macau btc_japan }
-		position = 21
+		required_missions = { btc_nagasaki }
+		position = 23
 		provinces_to_highlight = { }		
 		trigger = {
 			custom_trigger_tooltip = {
@@ -3137,6 +3031,107 @@ btc_por_east2 = {
 					}
 					add_center_of_trade_level = 1
 				}
+			}
+		}
+	}
+}
+
+btc_por_east2 = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+	potential = {
+		tag = POR
+		NOT = { map_setup = map_setup_random }
+		# has_country_flag = unlock_missions_spice
+	}
+	has_country_shield = yes
+
+	btc_tidore = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = { btc_spice }
+		position = 19
+		provinces_to_highlight = { }		
+		trigger = {
+			OR = {
+				TID = {
+					OR = {
+						alliance_with = ROOT
+						is_subject_of = ROOT
+					}
+				}
+				TER = {
+					OR = {
+						alliance_with = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}	
+		effect = {
+			spice_islands_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	btc_formosa = {
+		icon = dutch_formosa
+		required_missions = { btc_china }
+		position = 20
+		provinces_to_highlight = { }		
+		trigger = {	
+			taiwan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			738 = {
+				add_building_construction = {
+					building = shipyard
+					cost = 0
+				}
+			}
+		}
+	}
+
+	btc_haidao = {
+		icon = mission_pirate_fleet
+		required_missions = { btc_formosa }
+		position = 21
+		provinces_to_highlight = { }		
+		trigger = {
+			1371 = { privateer_power = { share = 20 country = ROOT } }
+			684 = { privateer_power = { share = 20 country = ROOT } }
+			4233 = { privateer_power = { share = 20 country = ROOT } }
+		}	
+		effect = {
+			change_price = {
+				trade_goods = chinaware
+				key = btc_portugal_privateers
+				value = 0.5
+				duration = 7300
+			}
+			custom_tooltip = taiwan_chinaware_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						area = taiwan_area
+					}
+					change_trade_goods = chinaware
+				}
+			}
+			change_price = {
+				trade_goods = tea
+				key = btc_portugal_privateers
+				value = 0.5
+				duration = 7300
+			}
+			367 = {
+				change_trade_goods = tea
 			}
 		}
 	}
@@ -3219,28 +3214,28 @@ btc_por_lusiad4 = {
 	}
 	has_country_shield = yes
 
-	btc_brazil_pu = {
-		icon = mission_brazil
-		required_missions = { btc_magnanimous }
-		position = 25
-		provinces_to_highlight = {
-		}
-		trigger = {
-			current_age = age_of_revolutions
-			has_institution = enlightenment
-			any_subject_country = {
-				is_colonial_nation = yes
-				capital_scope = {
-					colonial_region = colonial_brazil
-				}
-			}
-		}
-		effect = {
-			country_event = {
-				id = btc_por.209
-			}
-		}
-	}
+	# btc_brazil_pu = {
+	# 	icon = mission_brazil
+	# 	required_missions = { btc_magnanimous }
+	# 	position = 25
+	# 	provinces_to_highlight = {
+	# 	}
+	# 	trigger = {
+	# 		current_age = age_of_revolutions
+	# 		has_institution = enlightenment
+	# 		any_subject_country = {
+	# 			is_colonial_nation = yes
+	# 			capital_scope = {
+	# 				colonial_region = colonial_brazil
+	# 			}
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		country_event = {
+	# 			id = btc_por.209
+	# 		}
+	# 	}
+	# }
 }
 
 btc_por_east3 = {
@@ -3369,9 +3364,35 @@ btc_por_lusiad3 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			absolutism = 100
+			custom_trigger_tooltip = {
+				tooltip = had_portuguese_liberal_wars_disaster_tt
+				has_country_flag = had_portuguese_liberal_wars_disaster
+				has_any_disaster = no
+			}
 		}
 		effect = {
+			custom_tooltip = absolutist_portugal_tt
+			tooltip = {
+				add_government_reform = portugal_absolutist_reform	
+			}
+			custom_tooltip = liberal_portugal_tt
+			tooltip = {
+				add_government_reform = portugal_liberal_reform	
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = absolutist_portugal
+					}
+					add_government_reform = portugal_absolutist_reform	
+				}
+				if = {
+					limit = {
+						has_country_flag = liberal_portugal
+					}
+					add_government_reform = portugal_liberal_reform	
+				}
+			}
 		}
 	}
 }
@@ -3583,7 +3604,7 @@ btc_por_lusiad1 = {
 
 	btc_pena = {
 		icon = mission_pena_palace
-		required_missions = { mission_mafra_palace }
+		required_missions = { btc_mafra }
 		position = 26
 		provinces_to_highlight = { }		
 		trigger = {

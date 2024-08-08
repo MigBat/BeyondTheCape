@@ -129,6 +129,10 @@ monarchy = {
 				austrian_absolute_monarchy
 				merchant_aristocracy_reform
 				gothic_monarchy_reform
+				# BTC #
+				portugal_absolutist_reform
+				portugal_liberal_reform
+				portuguese_empire_reform
 			}
 		}
 		hereditary_vs_nobility = {

@@ -49,6 +49,7 @@
 # Ottoman Silk Road Monopoly #
  ottoman_silk_road_monopoly:0 "Ottoman Silk Road Monopoly"
  desc_ottoman_silk_road_monopoly:0 "By controlling both margins of the Sea of Marmara, the Ottomans have effectively established a monopoly on the important Silk Road, the main trade route between Asia and Europe. Consequently, they are charging european catholic nations extra ducats for these foreign goods."
+ no_country_has_east_india_tt: "No country has the §YEast India Trade Route§! triggered modifier"
 # Culture Clash #
  culture_clash:0 "Culture Clash"
  desc_culture_clash:0 "Too much of the core of our country is dominated by foreigners. This has caused general unhappiness and inefficiency throughout our realm."
@@ -565,3 +566,9 @@
 
  btc_spain_union: "Iberian Union"
  desc_btc_spain_union: ""
+
+ btc_shipbuilding_capacity: "Increased Shipbuilding Capacity"
+ desc_btc_shipbuilding_capacity: ""
+
+ btc_navy_propaganda: "Navy Propaganda"
+ desc_btc_navy_propaganda: ""

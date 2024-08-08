@@ -2695,3 +2695,25 @@ country_event = {
 		set_global_flag = jesuits_formed
 	}
 }
+
+country_event = {
+	id = btc_events.47
+	title = btc_events.47_t
+	desc = btc_events.47_d
+	picture = JESUIT_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		has_country_modifier = east_indian_trade_route
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_events.47a
+
+		set_global_flag = east_india_trade_route_flag
+	}
+}

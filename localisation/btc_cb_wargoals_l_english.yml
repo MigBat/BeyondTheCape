@@ -47,3 +47,19 @@
  po_sebastiao_crusade_desc: "Fez integrates Morocco"
  sebastiao_crusade_tt: "Fez will integrate Morocco"
  PEACE_po_sebastiao_crusade: "End Moroccan Civil War"
+
+ po_brazil_cn: "Make Brazil a colony again"
+ PEACE_po_brazil_cn: "Make Brazil a colony again"
+ po_brazil_cn_desc: "Brazil becomes a crown colony of Portugal"
+ po_brazil_cn_tt: "§YPortugal§!has the §YLiberal Wars§! disaster, and is a war with §YBrazil§!"
+ brazil_cn_tt: "Brazil becomes a crown colony of Portugal"
+
+ po_miguel_king: "Acclaim Miguel as ruler of Portugal"
+ PEACE_po_miguel_king: "Acclaim Miguel as ruler of Portugal"
+ po_miguel_king_desc: "Miguel remains the ruler of Portugal.\n\nIf this option is picked, we remain an Absolutist country.\nIf this option is not picked, we turn into a Liberal country."
+ po_miguel_king_tt: "§YPortugal§!has the §YLiberal Wars§! disaster, and is a war with §YBrazil§!"
+ miguel_king_tt: "Miguel remains the ruler of Portugal"
+
+ cb_portugal_civil_war: "Portuguese Liberal War"
+ cb_portugal_civil_war_desc: "This is not only a civil war, but also an ideology war. Miguel fights for his claim to the throne and for absolutism and the preservation of the traditionalist ways. Pedro fights for his daughter's claim to the throne and for liberalism and the independence of Brazil."
+ wg_portugal_civil_war: "Abolish Absolutism in Portugal"

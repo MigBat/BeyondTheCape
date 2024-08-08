@@ -9,6 +9,7 @@ ottoman_silk_road_monopoly = {
 		NOT = { tag = TUR }
 		NOT = { tag = VEN }
 		religion = catholic
+		NOT = { has_global_flag = east_india_trade_route_flag }
 	}
 
 	trigger = {
@@ -30,7 +31,10 @@ ottoman_silk_road_monopoly = {
 				}
 			}
 		}
-		NOT = { any_country = { has_country_modifier = east_indian_trade_route } }
+		custom_trigger_tooltip = {
+			tooltip = no_country_has_east_india_tt
+			NOT = { has_global_flag = east_india_trade_route_flag }
+		}
 	}
 
 	trade_efficiency = -0.05	

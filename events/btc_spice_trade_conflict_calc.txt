@@ -963,6 +963,7 @@ country_event = {
 			}
 		}
 		event_target:mam_spice_trade = {
+			NOT = { tag = TUR }
 			NOT = {
 				any_owned_province = {
 					has_port = yes

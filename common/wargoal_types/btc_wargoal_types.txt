@@ -189,3 +189,45 @@ wg_sebastiao_crusade = {
 
 	war_name = "Portuguese Crusade Against Morocco"
 }
+
+wg_portugal_civil_war = {
+	type = take_capital
+	
+	attacker = 	{
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			always = no
+		}
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_concede_defeat
+			po_gold
+		}
+		prov_desc = NO_PROVS
+	}
+	
+	defender = 	{
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			always = no
+		}
+		allowed_provinces_are_eligible = yes
+		
+		peace_options = {
+			po_miguel_king
+			po_brazil_cn
+			po_concede_defeat
+			po_gold
+		}
+		prov_desc = NO_PROVS
+	}
+	
+	war_name = "Portuguese Liberal War"
+}

@@ -1,8 +1,10 @@
 portuguese_monarchy_reform = {
-	icon = "portuguese_king"
-	allow_normal_conversion = yes
+	icon = "portugal_monarchy"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
 	potential = {
-		primary_culture = portugese
+		tag = POR
+		has_reform = portuguese_monarchy_reform
 	}
 	nation_designer_trigger = {
 		primary_culture = portugese
@@ -30,8 +32,130 @@ portuguese_monarchy_reform = {
 			has_dlc = "Domination"
 		}
 		government_abilities = {
+			naval_professionalism_mechanic
+		}
+	}
+	custom_attributes = {
+		can_establish_feitorias = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+portuguese_empire_reform = {
+	icon = "portuguese_king"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		tag = POR
+		has_reform = portuguese_empire_reform
+	}
+	nation_designer_trigger = {
+		primary_culture = portugese
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		naval_forcelimit_modifier = 0.2
+		unrest_catholic_provinces = -1
+		all_estate_loyalty_equilibrium = 0.05
+		all_estate_influence_modifier = 0.05
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		government_abilities = {
 			portuguese_saudade_mechanic
 		}
+	}
+	custom_attributes = {
+		can_establish_feitorias = yes
+		centralize_state_development = yes 
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+portugal_absolutist_reform = {
+	icon = "portugal_absolutism"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		tag = POR
+		has_reform = portugal_absolutist_reform
+	}
+	nation_designer_trigger = {
+		primary_culture = portugese
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		all_estate_influence_modifier = -0.1
+		max_absolutism = 10
+		can_revoke_parliament_seats = yes
+		num_of_parliament_issues = -2
+		parliament_effect_duration = 10
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		can_establish_feitorias = yes
+		centralize_state_development = yes 
+		can_force_issue_through = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+portugal_liberal_reform = {
+	icon = "portugal_liberalism"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		tag = POR
+		has_reform = portugal_liberal_reform
+	}
+	nation_designer_trigger = {
+		primary_culture = portugese
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		land_morale = 0.1
+		naval_morale = 0.1
+		years_of_nationalism = -10
+		global_unrest = -2
+		max_absolutism = -50
+		yearly_absolutism = -2
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
 	}
 	custom_attributes = {
 		can_establish_feitorias = yes
