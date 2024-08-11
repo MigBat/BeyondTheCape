@@ -83,6 +83,17 @@ callaction = {
 			}
 		}
 	}
+	condition = {
+		tooltip = plw_callaction_tt
+		potential = {
+			has_country_flag = plw_at_war
+		}
+		allow = { 
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+	}
 }
 
 requestpeace = {

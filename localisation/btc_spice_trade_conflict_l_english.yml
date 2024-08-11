@@ -15,6 +15,7 @@
  btc_joined_side: "You have already joined a side"
  btc_is_subject_nation: "You are a non-independent subject nation"
  btc_is_leader: "You are the leader of a side"
+ btc_no_discover_leaders: "You haven't discovered both sides' leaders"
 
  monthly_mare_clausum_amount: "Monthly Mare Clausum"
  total_mare_clausum_amount: "Total Mare Clausum"

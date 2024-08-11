@@ -292,4 +292,25 @@ defined_text = {
 			}		
 		}
 	}
+	text = {
+		localisation_key = btc_no_discover_leaders
+		trigger = {
+			OR = {
+				NOT = {
+					event_target:por_spice_trade = {
+						any_owned_province = {
+							has_discovered = ROOT
+						}
+					}
+				}
+				NOT = {
+					event_target:mam_spice_trade = {
+						any_owned_province = {
+							has_discovered = ROOT
+						}
+					}
+				}
+			}		
+		}
+	}
 }

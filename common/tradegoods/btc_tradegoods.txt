@@ -3,8 +3,8 @@ goldspices = {
 	modifier = {
 	}
 	province = {
-		local_monthly_devastation = -0.1
-		trade_goods_size_modifier = -1
+		local_gold_depletion_chance_modifier = -1
+		trade_goods_size_modifier = 1
 	}
 	chance = {
 		factor = 0

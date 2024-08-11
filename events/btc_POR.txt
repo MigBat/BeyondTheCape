@@ -2502,7 +2502,6 @@ country_event = {
 		trigger = {
 			has_global_flag = btc_deal_accepted_flag
 		}
-		add_treasury = -200
 	}
 
 	option = { 

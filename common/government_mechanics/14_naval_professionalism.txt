@@ -14,7 +14,7 @@ naval_professionalism_mechanic = {
 					global_ship_trade_power = 0.25
 					disengagement_chance = 0.25
 					number_of_cannons_modifier = 0.2
-					monthly_naval_professionalism = -1
+					# monthly_naval_professionalism = -1
 				}
 			}
 		}
@@ -23,6 +23,8 @@ naval_professionalism_mechanic = {
 	interactions = {
 		boost_ship_building_time = {
 			icon = GFX_naval_professionalism_button_1
+			cost_type = naval_professionalism
+			cost = 50
 			trigger = {
                 NOT = { has_country_modifier = btc_shipbuilding_time }
 			}

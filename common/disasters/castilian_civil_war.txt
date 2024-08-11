@@ -29,12 +29,14 @@ castilian_civil_war = {
 		}
 		is_lesser_in_union = no
 		ARA = {
+			NOT = { truce_with = ROOT }
 			is_free_or_tributary_trigger = yes
 			has_regency = no
 			is_female = no
 			government = monarchy
 		}
 		POR = {
+			NOT = { truce_with = ROOT }
 			is_free_or_tributary_trigger = yes
 			has_regency = no
 			is_female = no
@@ -50,6 +52,7 @@ castilian_civil_war = {
 			NOT = { government = monarchy }
 			ARA = {
 				OR = {
+					truce_with = ROOT
 					is_free_or_tributary_trigger = no
 					has_regency = yes
 					is_female = yes
@@ -58,6 +61,7 @@ castilian_civil_war = {
 			}
 			POR = {
 				OR = {
+					truce_with = ROOT
 					is_free_or_tributary_trigger = no
 					has_regency = yes
 					is_female = yes

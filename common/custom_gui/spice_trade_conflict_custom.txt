@@ -232,6 +232,16 @@ custom_shield = {
 			is_subject_of_type = trade_protectorate
 		}
 		NOT = { has_saved_global_event_target = mam_ally_24 }
+		event_target:por_spice_trade = {
+			any_owned_province = {
+				has_discovered = ROOT
+			}
+		}
+		event_target:mam_spice_trade = {
+			any_owned_province = {
+				has_discovered = ROOT
+			}
+		}
 	}
 	open_country = no
 	global_event_target = mam_spice_trade
@@ -277,6 +287,20 @@ custom_shield = {
 				NOT = { is_subject_of_type = trade_protectorate }
 			}
 			has_saved_global_event_target = mam_ally_24
+			NOT = {
+				event_target:por_spice_trade = {
+					any_owned_province = {
+						has_discovered = ROOT
+					}
+				}
+			}
+			NOT = {
+				event_target:mam_spice_trade = {
+					any_owned_province = {
+						has_discovered = ROOT
+					}
+				}
+			}
 		}
 	}
 	open_country = yes
@@ -299,6 +323,16 @@ custom_shield = {
 			is_subject_of_type = trade_protectorate
 		}
 		NOT = { has_saved_global_event_target = por_ally_24 }
+		event_target:por_spice_trade = {
+			any_owned_province = {
+				has_discovered = ROOT
+			}
+		}
+		event_target:mam_spice_trade = {
+			any_owned_province = {
+				has_discovered = ROOT
+			}
+		}
 	}
 	open_country = no
 	global_event_target = por_spice_trade
@@ -348,6 +382,21 @@ custom_shield = {
 			}
 			# All supporter spots are filled
 			has_saved_global_event_target = mam_ally_24
+			# Has not discovered either Portugal or Mamluks
+			NOT = {
+				event_target:por_spice_trade = {
+					any_owned_province = {
+						has_discovered = ROOT
+					}
+				}
+			}
+			NOT = {
+				event_target:mam_spice_trade = {
+					any_owned_province = {
+						has_discovered = ROOT
+					}
+				}
+			}
 		}
 	}
 	open_country = yes

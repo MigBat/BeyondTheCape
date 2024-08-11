@@ -34,7 +34,7 @@ exploration_ideas = {	# Beyond the Cape rework
 	}
 
 	ai_will_do = {
-		factor = 0.75
+		factor = 1
 		modifier = {
 			factor = 0
 			is_colonial_nation = yes
@@ -109,6 +109,7 @@ exploration_ideas = {	# Beyond the Cape rework
 			factor = 0.1
 			NOT = { has_institution = renaissance }
 			NOT = { tag = POR }
+			NOT = { tag = CAS }
 		}
 		modifier = {
 			factor = 0.1
@@ -138,10 +139,6 @@ exploration_ideas = {	# Beyond the Cape rework
 			tag = ARA
 		}
 		modifier = {
-			factor = 0.1
-			tag = PRO
-		}
-		modifier = {
 			factor = 0
 			NOT = { adm_tech = 6 }
 			NOT = { tag = POR }
@@ -157,19 +154,19 @@ exploration_ideas = {	# Beyond the Cape rework
 			technology_group = high_american
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.0
 			num_of_ports = 5
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.0
 			num_of_ports = 10
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.0
 			num_of_ports = 15
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.0
 			num_of_ports = 20
 		}
 		modifier = {

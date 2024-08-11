@@ -692,8 +692,8 @@ btc_por_independence1 = {
 				}
 				hidden_effect = {
 					define_ruler = {
-						name = "João"
-						dynasty = "de Bragança"
+						name = "Joï¿½o"
+						dynasty = "de Braganï¿½a"
 						adm = 3
 						dip = 4
 						mil = 5
@@ -1087,6 +1087,7 @@ btc_por_navy5 = {
 					who = ROOT
 					modifier = anglo_portuguese_alliance
 				}
+				add_historical_friend = ROOT
 			}
 			ROOT = {
 				add_trust = {
@@ -1097,6 +1098,7 @@ btc_por_navy5 = {
 					who = ENG
 					modifier = anglo_portuguese_alliance
 				}
+				add_historical_friend = ENG
 			}
 			add_country_modifier = {
 				name = por_english_alliance
@@ -1239,46 +1241,86 @@ btc_por_navy5a = {
 	}
 }
 
-# btc_por_navy5b = {
-# 	slot = 5
-# 	generic = no
-# 	ai = yes	
-# 	potential_on_load = {
-# 	}
-# 	potential = {
-# 		tag = POR
-# 		has_country_flag = unlock_iberian_missions
-# 		NOT = { map_setup = map_setup_random }
-# 	}
-# 	has_country_shield = yes
+btc_por_navy5b = {
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+	potential = {
+		tag = POR
+		has_country_flag = unlock_iberian_missions
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 
-# 	btc_integrate_cas = {
-# 		icon = mission_henry_the_navigator
-# 		required_missions = { btc_castile }
-# 		position = 6
-# 		provinces_to_highlight = { }		
-# 		trigger = { }	
-# 		effect = { }
-# 	}
+	btc_royal_authority = {
+		icon = dreams_of_grandeur
+		required_missions = { btc_castile }
+		position = 6
+		provinces_to_highlight = { }		
+		trigger = {
+			NOT = { 
+				estate_influence = {
+					estate = estate_nobles
+					influence = 40
+				}
+			}
+			OR = {
+				crown_land_share = 40
+				estate_loyalty = {
+					estate = estate_nobles 
+					loyalty = 60 
+				}
+			}
+		}		
+		effect = {
+			add_historical_friend = CAS
+			CAS = { add_historical_friend = ROOT }
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				target = ARA
+				months = 240
+			}
+		}
+	}
 
-# 	btc_aragon = {
-# 		icon = mission_henry_the_navigator
-# 		required_missions = { btc_castile }
-# 		position = 7
-# 		provinces_to_highlight = { }		
-# 		trigger = { }	
-# 		effect = { }
-# 	}
+	btc_aragon = {
+		icon = king_of_aragon
+		required_missions = { btc_royal_authority }
+		position = 7
+		provinces_to_highlight = { }		
+		trigger = {
+			if = {
+				limit = {
+					ARA = { exists = yes }
+				}
+				ARA = { is_subject_of = ROOT }
+			}
+		}	
+		effect = {
+			iberia_region = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 
-# 	btc_italy = {
-# 		icon = mission_henry_the_navigator
-# 		required_missions = { btc_castile }
-# 		position = 8
-# 		provinces_to_highlight = { }		
-# 		trigger = { }	
-# 		effect = { }
-# 	}
-# }
+	btc_iberia = {
+		icon = mission_union_with_portugal
+		required_missions = { btc_aragon }
+		position = 8
+		provinces_to_highlight = { }		
+		trigger = {
+			iberia_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}	
+		effect = {
+			override_country_name = IBERIA_STRING
+		}
+	}
+}
 
 # btc_por_navy5c = {
 # 	slot = 5
@@ -1411,7 +1453,7 @@ btc_por_africa1 = {
 		}	
 		effect = {
 			define_admiral = {
-				name = "Bartolomeu Português"
+				name = "Bartolomeu PortuguÃªs"
 				shock = 2
 				fire = 2
 				manuever = 4
@@ -1447,7 +1489,7 @@ btc_por_africa2 = {
 			discover_province = 1584
 			discover_province = 1597
 			define_explorer = {
-				name = "Pedro Álvares Cabral"
+				name = "Pedro ï¿½lvares Cabral"
 				shock = 2
 				fire = 2
 				manuever = 4
@@ -2223,6 +2265,7 @@ btc_por_india3 = {
 		provinces_to_highlight = { }		
 		trigger = {
 			has_flagship = yes
+			
 		}	
 		effect = {
 			define_explorer = {
@@ -2295,7 +2338,7 @@ btc_por_india3 = {
 				add_permanent_claim = ROOT
 			}
 			define_admiral = {
-				name = "Tristão da Cunha"
+				name = "TristÃ£o da Cunha"
 				shock = 6
 				fire = 3
 				manuever = 4
@@ -3330,7 +3373,7 @@ btc_por_east3 = {
 		effect = {
 			define_advisor = {
 				type = artist
-				name = "Luis Vaz de Camões"
+				name = "Luis Vaz de Camï¿½es"
 				skill = 3
 				age = 45
 				location = 1851

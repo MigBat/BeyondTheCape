@@ -8,12 +8,12 @@ country_decisions = {
 			}
 			event_target:por_spice_trade = {
 				any_owned_province = {
-					has_discovered = PREV
+					has_discovered = ROOT
 				}
 			}
 			event_target:mam_spice_trade = {
 				any_owned_province = {
-					has_discovered = PREV
+					has_discovered = ROOT
 				}
 			}
 			part_of_spice_trade_conflict = yes
@@ -91,12 +91,12 @@ country_decisions = {
 			}
 			event_target:por_spice_trade = {
 				any_owned_province = {
-					has_discovered = PREV
+					has_discovered = ROOT
 				}
 			}
 			event_target:mam_spice_trade = {
 				any_owned_province = {
-					has_discovered = PREV
+					has_discovered = ROOT
 				}
 			}
 			part_of_spice_trade_conflict = yes

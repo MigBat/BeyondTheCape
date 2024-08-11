@@ -197,7 +197,7 @@ age_of_discovery = {
 			}
 			modifier = {
 				special_unit_forcelimit = 1.0
-				number_of_cannons_modifier = 0.2
+				special_unit_cost_modifier = -0.5
 			}
 			ai_will_do = {
 				factor = 100

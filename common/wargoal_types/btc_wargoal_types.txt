@@ -5,10 +5,6 @@ wg_castilian_civil_war = {
 		badboy_factor = 1
 		prestige_factor = 1
 		peace_cost_factor = 1
-
-		required_treaty_to_take_provinces = {
-			po_ccw_alcacovas
-		}
 		
 		allowed_provinces = {
 			is_permanent_claim = ROOT
@@ -20,6 +16,7 @@ wg_castilian_civil_war = {
 			po_ccw_alcacovas
 			po_concede_defeat
 			po_gold
+			po_demand_provinces
 		}
 		# prov_desc = NO_PROVS
 	}

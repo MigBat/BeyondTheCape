@@ -570,8 +570,36 @@
  btc_shipbuilding_time: "Reduced Shipbuilding Time"
  desc_btc_shipbuilding_time: ""
 
- btc_shipbuilding_capacity: "Increased Shipbuilding Capacity"
+ btc_shipbuilding_capacity: "Increased Fleet Capacity"
  desc_btc_shipbuilding_capacity: ""
 
  btc_navy_propaganda: "Navy Propaganda"
  desc_btc_navy_propaganda: ""
+
+ btc_royal_authority_restored_modifier: "Royal Authority"
+ desc_btc_royal_authority_restored_modifier:0 "The royal authority has finally been restored."
+
+ gs_treasure_fleet_1: "A Few Spices Sent to Armada"
+ desc_gs_treasure_fleet_1: ""
+ gs_treasure_fleet_2: "Some Spices Sent to Armada"
+ desc_gs_treasure_fleet_2: ""
+ gs_treasure_fleet_3: "Several Spices Sent to Armada"
+ desc_gs_treasure_fleet_3: ""
+ gs_treasure_fleet_4: "Numerous Spices Sent to Armada"
+ desc_gs_treasure_fleet_4: ""
+ gs_treasure_fleet_5: "Many Spices Sent to Armada"
+ desc_gs_treasure_fleet_5: ""
+
+ s_treasure_fleet_1: "A Few Spices Sent to Armada"
+ desc_s_treasure_fleet_1: ""
+ s_treasure_fleet_2: "Some Spices Sent to Armada"
+ desc_s_treasure_fleet_2: ""
+ s_treasure_fleet_3: "Several Spices Sent to Armada"
+ desc_s_treasure_fleet_3: ""
+ s_treasure_fleet_4: "Numerous Spices Sent to Armada"
+ desc_s_treasure_fleet_4: ""
+ s_treasure_fleet_5: "Many Spices Sent to Armada"
+ desc_s_treasure_fleet_5: ""
+
+ no_declare_war_ccw: "Castilian Civil War Ongoing"
+ desc_no_declare_war_ccw: ""

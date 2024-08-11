@@ -111,7 +111,7 @@ estate_slavers_monopoly_of_slaves = {
 estate_slavers_raid_coasts = {
 	icon = raid_coast_privilege
 	max_absolutism = -10
-	influence = 0.2
+	influence = 0.1
 	is_valid = {
 	}
 	can_select = {
@@ -360,7 +360,7 @@ estate_slavers_gold_mine_slaves = {
 estate_slavers_slaves_to_europe = {
 	icon = prosperity_privilege
 	max_absolutism = -5
-	influence = 0.1
+	influence = 0.05
 	loyalty = 0.05
 	is_valid = {
 	}
@@ -396,7 +396,7 @@ estate_slavers_slaves_to_europe = {
 estate_slavers_grow_colonies = {
 	icon = privilege_grant_new_world_charter
 	max_absolutism = -5
-	influence = 0.1
+	influence = 0.05
 	loyalty = 0.05
 	is_valid = {
 	}
@@ -430,7 +430,7 @@ estate_slavers_grow_colonies = {
 estate_slavers_feitoria_defenses = {
 	icon = privilege_fort
 	max_absolutism = -5
-	influence = 0.1
+	influence = 0.05
 	is_valid = {
 		any_owned_province = {
 			has_province_modifier = fortified_feitoria
@@ -488,7 +488,7 @@ estate_slavers_feitoria_defenses = {
 estate_slavers_settler_pool = {
 	icon = privilege_singular_cult
 	max_absolutism = -5
-	influence = 0.1
+	influence = 0.05
 	is_valid = {
 		num_of_colonists = 1
 	}
@@ -530,7 +530,7 @@ estate_slavers_settler_pool = {
 estate_slavers_build_time = {
 	icon = privilege_multiple_professions
 	max_absolutism = -5
-	influence = 0.1
+	influence = 0.05
 	is_valid = {
 	}
 	can_select = {
@@ -566,7 +566,7 @@ estate_slavers_build_time = {
 estate_slavers_galleys = {
 	icon = privilege_galley
 	max_absolutism = -5
-	influence = 0.1
+	influence = 0.05
 	is_valid = {
 	}
 	can_select = {

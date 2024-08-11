@@ -95,6 +95,7 @@ portuguese_liberalism = {
 	modifier = {
 		global_unrest = 10
 		legitimacy = -2
+		can_not_declare_war = yes
 	}
 
 	on_start = portuguese_liberalism.1

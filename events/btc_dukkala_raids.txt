@@ -8,6 +8,7 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = btc_dukkala_raids_on_flag
+		manpower = 1
 		NOT = { has_country_flag = btc_recent_raid }
 		OR = {
 			MOR = {

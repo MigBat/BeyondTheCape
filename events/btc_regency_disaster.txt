@@ -338,7 +338,7 @@ country_event = {
 		}
 
 		event_target:event6_prov = {
-			add_prosperity = 10
+			add_prosperity = 100
 		}
 		custom_tooltip = braganca_offended_tt
 	}
@@ -411,7 +411,7 @@ country_event = {
 				type = noble_rebels
 				size = 1
 				win = yes
-				leader = "Pedro"
+				leader = "Infante Pedro"
 				leader_dynasty = "de Avis"
 				should_take_capital = yes
 			}

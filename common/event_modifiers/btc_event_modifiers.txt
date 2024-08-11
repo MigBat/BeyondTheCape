@@ -897,7 +897,7 @@ btc_spain_union = {
 }
 
 btc_shipbuilding_time = {
-	ship_recruit_speed = -0.5
+	global_ship_recruit_speed = -0.5
 	global_ship_cost = -0.5
 }
 
@@ -908,4 +908,48 @@ btc_shipbuilding_capacity = {
 btc_navy_propaganda = {
 	global_sailors_modifier = 0.5
 	allowed_marine_fraction = 0.5
+}
+
+gs_treasure_fleet_1 = {
+	treasure_fleet_income = 0.1
+}
+
+gs_treasure_fleet_2 = {
+	treasure_fleet_income = 0.2
+}
+
+gs_treasure_fleet_3 = {
+	treasure_fleet_income = 0.3
+}
+
+gs_treasure_fleet_4 = {
+	treasure_fleet_income = 0.4
+}
+
+gs_treasure_fleet_5 = {
+	treasure_fleet_income = 0.5
+}
+
+s_treasure_fleet_1 = {
+	trade_goods_size_modifier = -0.1
+}
+
+s_treasure_fleet_2 = {
+	trade_goods_size_modifier = -0.2
+}
+
+s_treasure_fleet_3 = {
+	trade_goods_size_modifier = -0.3
+}
+
+s_treasure_fleet_4 = {
+	trade_goods_size_modifier = -0.4
+}
+
+s_treasure_fleet_5 = {
+	trade_goods_size_modifier = -0.5
+}
+
+no_declare_war_ccw = {
+	can_not_declare_war = yes
 }

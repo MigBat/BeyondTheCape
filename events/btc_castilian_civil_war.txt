@@ -63,6 +63,23 @@ country_event = {
 			}
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			POR = {
+				add_country_modifier = {
+					name = no_declare_war_ccw
+					duration = -1
+				}
+			}
+			ARA = {
+				add_country_modifier = {
+					name = no_declare_war_ccw
+					duration = -1
+				}
+			}			
+		}
+	}
 	
 	option = {		# Support Joanna
 		name = "castilian_civil_war.1a"
@@ -230,6 +247,7 @@ country_event = {
 			factor = 10
 		}
 
+		hidden_effect = { remove_country_modifier = no_declare_war_ccw }
 		add_prestige = -10
 
 		CAS = {
@@ -300,6 +318,7 @@ country_event = {
 			factor = 0
 		}
 
+		hidden_effect = { remove_country_modifier = no_declare_war_ccw }
 		add_prestige = -10
 
 		CAS = {
@@ -690,6 +709,8 @@ country_event = {
 		on_non_estate_disaster_end = yes
 		hidden_effect = {
 			set_country_flag = spa_cas_ended_civil_war_flag
+			POR = { remove_country_modifier = no_declare_war_ccw }
+			ARA = { remove_country_modifier = no_declare_war_ccw }
 		}
 	}
 

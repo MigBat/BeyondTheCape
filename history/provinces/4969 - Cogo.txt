@@ -1,6 +1,6 @@
 #4969 - Cogo
 
-culture = yorumba
+culture = sawabantu
 religion = shamanism #Fetishism
 capital = "Cogo"
 trade_goods = unknown

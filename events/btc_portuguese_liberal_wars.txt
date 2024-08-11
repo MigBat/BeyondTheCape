@@ -84,6 +84,7 @@ country_event = {
 				define_ruler = {
 					name = "Pedro"
 					dynasty = "de Bragança"
+					age = 30
 				}
 			}
 		}
@@ -148,12 +149,14 @@ country_event = {
 				define_ruler = {
 					name = "Pedro"
 					dynasty = "de Bragança"
+					age = 30
 				}
 			}
 		}
 		define_ruler = {
 			name = "Miguel"
 			dynasty = "de Bragança"
+			age = 30
 		}
 	}
 }
@@ -227,7 +230,9 @@ country_event = {
 	fire_only_once = yes
 
 	immediate = {
+		set_country_flag = plw_at_war
 		BRZ = {
+			set_country_flag = plw_at_war
 			declare_war_with_cb = {
 				casus_belli = cb_portugal_civil_war
 				who = ROOT
@@ -264,10 +269,13 @@ country_event = {
 		define_ruler = {
 			name = "Pedro"
 			dynasty = "de Bragança"
+			age = 30
 		}
 		define_heir = {
 			name = "Maria"
 			dynasty = "de Bragança"
+			age = 15
+			female = yes
 		}
 	}
 }
@@ -281,11 +289,17 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
+	immediate = {
+		clr_country_flag = plw_at_war
+		BRZ = { clr_country_flag = plw_at_war }
+	}
+
 	option = {	# Miguel King
 		name = portuguese_liberalism.100a
 		trigger = {
 			has_country_flag = got_miguel_king
 			NOT = { has_country_flag = got_brazil_cn }
+			NOT = { has_country_flag = por_civil_war_rebels_won }
 		}
 		set_country_flag = absolutist_portugal
 	}
@@ -295,6 +309,7 @@ country_event = {
 		trigger = {
 			has_country_flag = got_brazil_cn
 			NOT = { has_country_flag = got_miguel_king }
+			NOT = { has_country_flag = por_civil_war_rebels_won }
 		}
 		set_country_flag = liberal_portugal
 		
@@ -302,6 +317,7 @@ country_event = {
 		define_ruler = {
 			name = "Pedro"
 			dynasty = "de Bragança"
+			age = 30
 		}
 	}
 
@@ -310,6 +326,7 @@ country_event = {
 		trigger = {
 			has_country_flag = got_miguel_king
 			has_country_flag = got_brazil_cn
+			NOT = { has_country_flag = por_civil_war_rebels_won }
 		}
 		set_country_flag = absolutist_portugal
 	}
@@ -317,8 +334,13 @@ country_event = {
 	option = {	# None of the above
 		name = portuguese_liberalism.100d
 		trigger = {
-			NOT = { has_country_flag = got_miguel_king }
-			NOT = { has_country_flag = got_brazil_cn }
+			OR = {
+				AND = {
+					NOT = { has_country_flag = got_miguel_king }
+					NOT = { has_country_flag = got_brazil_cn }
+				}
+				has_country_flag = por_civil_war_rebels_won
+			}
 		}
 		set_country_flag = liberal_portugal
 
@@ -326,10 +348,19 @@ country_event = {
 		define_ruler = {
 			name = "Maria"
 			dynasty = "de Bragança"
+			age = 15
 			female = yes
 		}
-		create_alliance = BRZ
-		add_historical_friend = BRZ
-		BRZ = { add_historical_friend = ROOT }
+		if = {
+			limit = {
+				BRZ = {
+					exists = yes
+					is_subject = no
+				}
+			}
+			create_alliance = BRZ
+			add_historical_friend = BRZ
+			BRZ = { add_historical_friend = ROOT }
+		}
 	}
 }

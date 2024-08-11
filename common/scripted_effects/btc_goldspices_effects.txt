@@ -1,0 +1,25 @@
+check_next_spice_provinces = {
+	if = {
+		limit = {
+			any_owned_province = {
+				trade_goods = spices
+				NOT = { has_province_flag = calculated_spice_production }
+			}
+		}
+		random_owned_province = {
+			limit = {
+				trade_goods = spices
+				NOT = { has_province_flag = calculated_spice_production }
+			}
+			set_province_flag = calculated_spice_production
+			export_to_variable = {
+				which = spice_base_production
+				value = trigger_value:base_production
+			}
+		}
+		change_variable = {
+			which = total_spice_base_production
+			which = spice_base_production
+		}
+	}
+}

@@ -86,7 +86,7 @@
  btc_castile_title: "The Castilian Succession"
  btc_castile_desc: "An unexpected opportunity has revealed itself. Castile is currently embroiled in a succession crisis, and one of the claimants, Joanna, has proposed to [Root.Monarch.GetTitle] [Root.Monarch.GetName], aiming to rule Castile together. Her rival, Isabella, has gained the support of the Crown of Aragon. If we are to intervene, we must be prepared for an uphill war, with immense rewards if we are to succeed."
  btc_ccw_ended: "The §YCastilian Civil War§! disaster has ended, or the year is §Y1500§!"
- unlock_ccw_missions_tt: "§MUnlocks new missions based on the outcome of the Castilian Civil War§! (Currently only Treaty of Alcáçovas branch exists)"
+ unlock_ccw_missions_tt: "§MUnlocks new missions based on the outcome of the Castilian Civil War§! (Currently only Treaty of Alcáçovas and Castilian Union branches exist)"
 
  btc_terco_title: "Portuguese Terços"
  btc_terco_desc: "A new military unit organization is starting to take shape in Spain, set to revolutionize modern warfare. They call it the 'Tercio'. It is making small waves still, meaning other countries have not yet noticed the potential it brings. Our geographic positioning, as well as our intel on our neighbours, puts us in prime position to adopt and adapt these units to our army. Naturally, we shall call them the 'Terços'."
@@ -109,12 +109,6 @@
  btc_magellan_title: "The Moluccas Question"
  btc_magellan_desc: ""
  moluccas_por_cas_tt: "If @POR §YPortugal§! completes a circumnavigation before @CAS §YCastile§! they will be able to colonize the Moluccas region. Otherwise, @CAS §YCastile§! will be able to colonize the Moluccas region"
-
- btc_iberia_title: ""
- btc_iberia_desc: ""
-
- btc_diplomacy_title: ""
- btc_diplomacy_desc: ""
 
  btc_labrador_title: "Terra Nova do Bacalhau"
  btc_labrador_desc: "We have received reports from João Vaz, of the Corte-Real family, that he discovered new lands to the west. In a joint venture with German and Danish sailors, they uncovered an island some 700 leagues northwest of Portugal, which he named 'Terra do Bacalhau' due to the unusual amount of codfish spotted in the area. We should send an expedition there at once and add this island to our maps."
@@ -358,3 +352,17 @@
  had_portuguese_liberal_wars_disaster_tt: "Has concluded the §YLiberal Wars§! disaster"
  absolutist_portugal_tt: "If §YPortugal§! chose the Absolutist path:"
  liberal_portugal_tt: "\nIf §YPortugal§! chose the Liberal path:"
+ 
+ IBERIA_STRING: "Iberia"
+ IBERIA_STRING_ADJ: "Iberian"
+ REV_IBERIA_STRING: "Revolutionary Iberia"
+ REV_IBERIA_STRING_ADJ: "Iberian"
+
+ btc_royal_authority_title: "Reinforce Royal Authority"
+ btc_royal_authority_desc: ""
+ 
+ btc_aragon_title: "The Crown of Aragon"
+ btc_aragon_desc: ""
+
+ btc_iberia_title: "Unite Iberia"
+ btc_iberia_desc: ""

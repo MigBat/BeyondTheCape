@@ -14,6 +14,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			add_treasury = -200
 			hidden_effect = {
 				set_variable = {
 					which = sale_rejected_times
@@ -53,6 +54,7 @@ country_decisions = {
 					limit = {
 						superregion = india_superregion
 					}
+					remove_core = ROOT
 					cede_province = CDI
 					add_core = CDI
 					set_local_autonomy = 0
@@ -137,6 +139,7 @@ country_decisions = {
 					limit = {
 						superregion = india_superregion
 					}
+					remove_core = ROOT
 					cede_province = CDI
 					add_core = CDI
 					set_local_autonomy = 0
@@ -187,6 +190,7 @@ country_decisions = {
 					limit = {
 						superregion = east_indies_superregion
 					}
+					remove_core = ROOT
 					cede_province = CDI
 					add_core = CDI
 					set_local_autonomy = 0
@@ -409,6 +413,7 @@ country_decisions = {
 					limit = {
 						region = arabia_region
 					}
+					remove_core = ROOT
 					cede_province = CDI
 					add_core = CDI
 					set_local_autonomy = 0
@@ -459,6 +464,7 @@ country_decisions = {
 					limit = {
 						region = horn_of_africa_region
 					}
+					remove_core = ROOT
 					cede_province = CDI
 					add_core = CDI
 					set_local_autonomy = 0
@@ -508,6 +514,7 @@ country_decisions = {
 					limit = {
 						superregion = persia_superregion
 					}
+					remove_core = ROOT
 					cede_province = CDI
 					add_core = CDI
 					set_local_autonomy = 0
@@ -558,6 +565,7 @@ country_decisions = {
 					limit = {
 						superregion = china_superregion
 					}
+					remove_core = ROOT
 					cede_province = CDI
 					add_core = CDI
 					set_local_autonomy = 0
@@ -608,6 +616,7 @@ country_decisions = {
 					limit = {
 						superregion = far_east_superregion
 					}
+					remove_core = ROOT
 					cede_province = CDI
 					add_core = CDI
 					set_local_autonomy = 0

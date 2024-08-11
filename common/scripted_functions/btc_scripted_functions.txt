@@ -315,3 +315,11 @@ can_colonize_province = {
 	# 	}
 	# }
 }
+
+can_improve_production = {
+	condition = {
+		tooltip = no_goldspice_base_production_tt
+		potential = { trade_goods = goldspices }
+		allow = { always = no }
+	}
+}
