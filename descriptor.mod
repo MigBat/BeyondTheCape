@@ -1,5 +1,5 @@
 name="btc2"
-supported_version="v1.37.2.0"
+supported_version="v1.37.5.0"
 version="1"
 tags={
 	"Historical"

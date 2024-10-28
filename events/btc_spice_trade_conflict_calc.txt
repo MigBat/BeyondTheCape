@@ -1647,7 +1647,26 @@ country_event = {
 			ROOT = { save_global_event_target_as = por_spice_trade}
 			358 = {	# Alexandria
 				most_province_trade_power = {
-					save_global_event_target_as = mam_spice_trade
+					if = {
+						limit = {
+							NOT = { tag = event_target:por_spice_trade }
+						}
+						save_global_event_target_as = mam_spice_trade
+					}
+					else_if = {
+						limit = {
+							MAM = { exists = yes }
+						}
+						MAM = { save_global_event_target_as = mam_spice_trade }
+					}
+					else = {
+						random_country = {
+							limit = {
+								home_trade_node = 358
+							}
+							save_global_event_target_as = mam_spice_trade
+						}
+					}
 				}
 			}
 			add_historical_rival = event_target:mam_spice_trade

@@ -2668,7 +2668,7 @@ province_is_or_accepts_religion = {
 }
 # Beyond the Cape exploration
 has_not_any_exploration_ideas = {
-	NOT = { has_modifier = quest_for_the_new_world }
+	NOT = { has_country_modifier = quest_for_the_new_world }
 	NOT = { has_idea = call_of_our_forefathers }
 	NOT = { has_idea = tonga_oceanic_empire }
 	NOT = { has_idea = samoa_trade }
@@ -2679,7 +2679,7 @@ has_not_any_exploration_ideas = {
 # Beyond the Cape exploration
 has_any_exploration_idea = {
 	OR = {
-		has_modifier = quest_for_the_new_world
+		has_country_modifier = quest_for_the_new_world
 		has_idea = call_of_our_forefathers
 		has_idea = tonga_oceanic_empire
 		has_idea = samoa_trade

@@ -555,13 +555,13 @@ island_fort = {
 }
 
 black_swords = {
-	shock_damage = 0.15
+	shock_damage = 0.1
 	assault_fort_ability = 0.25
 	is_marine_modifier = yes 
 }
 
 espingardas = {
-	fire_damage = 0.15
+	fire_damage = 0.1
 	assault_fort_ability = 0.25
 	is_marine_modifier = yes 
 }
@@ -590,7 +590,7 @@ por_upgraded_caravels = {
 }
 
 por_galleons = {
-	allowed_galleon_fraction = 0.2
+	allowed_galleon_fraction = 0.1
 	has_galleon = yes
 }
 
@@ -732,7 +732,7 @@ explored_coast = {
 }
 
 duke_of_braganca_bad = {
-	global_autonomy = 0.1
+	global_autonomy = 0.15
 }
 
 duke_of_braganca_worse = {

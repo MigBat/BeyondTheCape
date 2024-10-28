@@ -70,6 +70,7 @@ country_event = {
 			}			
 		}
 
+		add_years_of_income = 0.25
 		random_owned_province = {
 			limit = {
 				NOT = { has_province_modifier = duke_of_braganca_lands }
@@ -152,6 +153,7 @@ country_event = {
 			age = 45
 		}
 
+		add_years_of_income = 0.25
 		random_owned_province = {
 			limit = {
 				NOT = { has_province_modifier = duke_of_braganca_lands }
@@ -219,6 +221,7 @@ country_event = {
 			duration = 7300
 		}
 
+		add_years_of_income = 0.25
 		random_owned_province = {
 			limit = {
 				NOT = { has_province_modifier = duke_of_braganca_lands }
@@ -288,6 +291,7 @@ country_event = {
 			}
 		}
 
+		add_years_of_income = 0.25
 		random_owned_province = {
 			limit = {
 				NOT = { has_province_modifier = duke_of_braganca_lands }
@@ -357,6 +361,7 @@ country_event = {
 			add_local_autonomy = 10
 		}
 
+		add_years_of_income = 0.25
 		random_owned_province = {
 			limit = {
 				NOT = { has_province_modifier = duke_of_braganca_lands }

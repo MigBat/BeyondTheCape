@@ -46,6 +46,7 @@ parliamentary_reform = {
 		is_revolutionary = no
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		NOT = { has_government_attribute = english_parliament }
+		NOT = { tag = POR }
 		NOT = { #has a special "senate" themed reform
 			OR = {
 				tag = BYZ

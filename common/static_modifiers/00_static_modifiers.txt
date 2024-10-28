@@ -915,7 +915,7 @@ navy_tradition = {
 	allowed_geobukseon_fraction = 0.5
 	allowed_galleass_fraction = 0.5
 	# BTC #
-	monthly_naval_professionalism = 4
+	monthly_naval_professionalism = 2
 }
 
 positive_piety = { #As of 1.23 Legalism
@@ -2157,7 +2157,8 @@ samurai_regiment = {
 	infantry_shock = 1
 	morale_damage_received = -1
 	reinforce_cost_modifier = 1
-	reinforce_speed = -0.5
+	reinforce_speed = -0.8
+	special_unit_cost_modifier = 0.75
 }
 
 qizilbash_regiment = {

@@ -196,16 +196,31 @@ on_siege_won_country = {
 	# 		}
 	# 		set_country_flag = took_mohamed
 	# 	}
-	# }	
+	# } 
 	if = {
 		limit = {
 			FROM = {
 				OR = {
-					province_id = 1201
-					province_id = 2999
-					province_id = 388
-					province_id = 2030
-					province_id = 596
+					AND = {
+						province_id = 1201
+						1201 = { NOT = { country_or_subject_holds = ROOT }}
+					}
+					AND = {
+						province_id = 2999
+						2999 = { NOT = { country_or_subject_holds = ROOT }}
+					}
+					AND = {
+						province_id = 388
+						388 = { NOT = { country_or_subject_holds = ROOT }}
+					}
+					AND = {
+						province_id = 2030
+						2030 = { NOT = { country_or_subject_holds = ROOT }}
+					}
+					AND = {
+						province_id = 596
+						596 = { NOT = { country_or_subject_holds = ROOT }}
+					}
 				}
 			}
 			any_army = {

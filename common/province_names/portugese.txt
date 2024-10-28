@@ -236,7 +236,7 @@
 1114 = "Cabo Roxo" #Seems to be the nearest one of gabu, might be changed later.
 4963 = "Costa da Pimenta"
 1119 = "Costa do Grão"
-2258 = "S?o Jorge da Mina"
+2258 = "São Jorge da Mina"
 4964 = "Costa dos Escravos"
 1141 = "Forte de São João Baptista de Ajudá"
 2290 = "Jebu"

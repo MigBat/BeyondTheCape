@@ -221,10 +221,6 @@ country_event = {
 		trigger = { has_estate_privilege = estate_maratha_monopoly_of_metals }
 		desc = monopoly_privileges.5.d.maratha
 	}
-	desc = {
-		trigger = { has_estate_privilege = estate_peasants_monopoly_of_metals }
-		desc = monopoly_privileges.5.d.peasants
-	}
 	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 
 	is_triggered_only = yes
@@ -233,7 +229,6 @@ country_event = {
 		remove_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_metals }
 		remove_estate_monopoly_modifier = { privilege = estate_rajput_monopoly_of_metals }
 		remove_estate_monopoly_modifier = { privilege = estate_maratha_monopoly_of_metals }
-		remove_estate_monopoly_modifier = { privilege = estate_peasants_monopoly_of_metals }
 	}
 	
 	option = {
@@ -241,7 +236,6 @@ country_event = {
 		reapply_estate_privilege = { privilege = estate_nobles_monopoly_of_metals }
 		reapply_estate_privilege = { privilege = estate_rajput_monopoly_of_metals }
 		reapply_estate_privilege = { privilege = estate_maratha_monopoly_of_metals }
-		reapply_estate_privilege = { privilege = estate_peasants_monopoly_of_metals }
 	}
 	option = {
 		name = monopoly_privileges.1.b
@@ -258,7 +252,6 @@ country_event = {
 				apply_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_metals }
 				apply_estate_monopoly_modifier = { privilege = estate_rajput_monopoly_of_metals }
 				apply_estate_monopoly_modifier = { privilege = estate_maratha_monopoly_of_metals }
-				apply_estate_monopoly_modifier = { privilege = estate_peasants_monopoly_of_metals }
 			}
 		#}
 	}
@@ -280,10 +273,6 @@ country_event = {
 		trigger = { has_estate_privilege = estate_maratha_monopoly_of_livestock }
 		desc = monopoly_privileges.6.d.maratha
 	}
-	desc = {
-		trigger = { has_estate_privilege = estate_peasants_monopoly_of_livestock }
-		desc = monopoly_privileges.6.d.peasants
-	}
 	picture = FARMING_eventPicture
 
 	is_triggered_only = yes
@@ -292,7 +281,6 @@ country_event = {
 		remove_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_livestock }
 		remove_estate_monopoly_modifier = { privilege = estate_rajput_monopoly_of_livestock }
 		remove_estate_monopoly_modifier = { privilege = estate_maratha_monopoly_of_livestock }
-		remove_estate_monopoly_modifier = { privilege = estate_peasants_monopoly_of_livestock }
 	}
 	
 	option = {
@@ -300,7 +288,6 @@ country_event = {
 		reapply_estate_privilege = { privilege = estate_nobles_monopoly_of_livestock }
 		reapply_estate_privilege = { privilege = estate_rajput_monopoly_of_livestock }
 		reapply_estate_privilege = { privilege = estate_maratha_monopoly_of_livestock }
-		reapply_estate_privilege = { privilege = estate_peasants_monopoly_of_livestock }
 	}
 	option = {
 		name = monopoly_privileges.1.b
@@ -314,7 +301,6 @@ country_event = {
 				apply_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_livestock }
 				apply_estate_monopoly_modifier = { privilege = estate_rajput_monopoly_of_livestock }
 				apply_estate_monopoly_modifier = { privilege = estate_maratha_monopoly_of_livestock }
-				apply_estate_monopoly_modifier = { privilege = estate_peasants_monopoly_of_livestock }
 			}
 		}
 	}

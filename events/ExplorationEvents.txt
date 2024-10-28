@@ -838,18 +838,6 @@ country_event = {
 				duration = -1 
 			}
 		}
-		# Beyond the Cape missions
-		hidden_effect = {
-			if = {
-				limit = { 
-					NOT = { tag = POR }
-					POR = { 
-						NOT = { mission_completed = btc_circumnavigation }
-					}
-				}
-				POR = { complete_mission = btc_circumnavigation }
-			}
-		}
 	}
 }
 

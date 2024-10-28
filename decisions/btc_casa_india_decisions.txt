@@ -55,9 +55,8 @@ country_decisions = {
 						superregion = india_superregion
 					}
 					remove_core = ROOT
+					remove_claim = ROOT
 					cede_province = CDI
-					add_core = CDI
-					set_local_autonomy = 0
 				}
 				every_province = {
 					limit = {
@@ -140,9 +139,9 @@ country_decisions = {
 						superregion = india_superregion
 					}
 					remove_core = ROOT
+					remove_claim = ROOT
 					cede_province = CDI
-					add_core = CDI
-					set_local_autonomy = 0
+					add_permanent_claim = CDI
 				}
 				every_province = {
 					limit = {
@@ -191,9 +190,9 @@ country_decisions = {
 						superregion = east_indies_superregion
 					}
 					remove_core = ROOT
+					remove_claim = ROOT
 					cede_province = CDI
-					add_core = CDI
-					set_local_autonomy = 0
+					add_permanent_claim = CDI
 				}
 				every_province = {
 					limit = {
@@ -414,9 +413,9 @@ country_decisions = {
 						region = arabia_region
 					}
 					remove_core = ROOT
+					remove_claim = ROOT
 					cede_province = CDI
-					add_core = CDI
-					set_local_autonomy = 0
+					add_permanent_claim = CDI
 				}
 				every_province = {
 					limit = {
@@ -465,9 +464,9 @@ country_decisions = {
 						region = horn_of_africa_region
 					}
 					remove_core = ROOT
+					remove_claim = ROOT
 					cede_province = CDI
-					add_core = CDI
-					set_local_autonomy = 0
+					add_permanent_claim = CDI
 				}
 				every_province = {
 					limit = {
@@ -515,9 +514,9 @@ country_decisions = {
 						superregion = persia_superregion
 					}
 					remove_core = ROOT
+					remove_claim = ROOT
 					cede_province = CDI
-					add_core = CDI
-					set_local_autonomy = 0
+					add_permanent_claim = CDI
 				}
 				every_province = {
 					limit = {
@@ -566,9 +565,9 @@ country_decisions = {
 						superregion = china_superregion
 					}
 					remove_core = ROOT
+					remove_claim = ROOT
 					cede_province = CDI
-					add_core = CDI
-					set_local_autonomy = 0
+					add_permanent_claim = CDI
 				}
 				every_province = {
 					limit = {
@@ -617,9 +616,9 @@ country_decisions = {
 						superregion = far_east_superregion
 					}
 					remove_core = ROOT
+					remove_claim = ROOT
 					cede_province = CDI
-					add_core = CDI
-					set_local_autonomy = 0
+					add_permanent_claim = CDI
 				}
 				every_province = {
 					limit = {

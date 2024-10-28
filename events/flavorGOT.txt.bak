@@ -645,8 +645,8 @@ country_event = {
 			set_government_rank = 2
 		}
 		change_tag = DAN
-		swap_non_generic_missions = yes
 		on_change_tag_effect = yes
+		swap_non_generic_missions = yes
 		if = {
 			limit = { NOT = { has_idea_group = DAN_ideas } }
 			country_event = {

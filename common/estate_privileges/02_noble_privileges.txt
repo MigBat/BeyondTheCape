@@ -5017,15 +5017,13 @@ estate_nobles_fidalgos = {
 			has_country_flag = can_remove_fidalgos_flag
 		}
 	}
-	modifier_by_land_ownership = {
-		allowed_samurai_fraction = 1
-	}
 	penalties = {
 		land_forcelimit_modifier = -0.3
 	}
 	benefits = { 
 		leader_land_shock = 2
 		leader_naval_shock = 2
+		allowed_samurai_fraction = 0.1
 		has_samurai = yes
 	}    
 	# conditional_modifier = {

@@ -133,27 +133,27 @@ btc_por_padrao_real = {
 	}
 }
 
-btc_por_jews_and_moriscos = {
-	category = 7
-	allow = {
-		has_parliament = yes
-		mission_completed = btc_ordenacoes
-		mission_completed = btc_castile
-		NOT = { has_country_flag = jews_moriscos_flag }
-	}
-	effect = {
-		country_event = {
-			id = btc_por.100
-		}
-		set_country_flag = jews_moriscos_flag
-	}
-	chance = {
-		factor = 2
-	}
-	ai_will_do = {
-		factor = 1
-	}
-}
+# btc_por_jews_and_moriscos = {
+# 	category = 7
+# 	allow = {
+# 		has_parliament = yes
+# 		mission_completed = btc_ordenacoes
+# 		mission_completed = btc_castile
+# 		NOT = { has_country_flag = jews_moriscos_flag }
+# 	}
+# 	effect = {
+# 		country_event = {
+# 			id = btc_por.100
+# 		}
+# 		set_country_flag = jews_moriscos_flag
+# 	}
+# 	chance = {
+# 		factor = 2
+# 	}
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# }
 
 btc_por_inquisition = {
 	category = 7

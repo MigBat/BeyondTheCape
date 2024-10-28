@@ -177,7 +177,6 @@ country_decisions = {
 				}
 				set_country_flag = formed_jerusalem
 				swap_non_generic_missions = yes
-				update_mission_previews = yes
 			}
 			if = {
 				limit = {
