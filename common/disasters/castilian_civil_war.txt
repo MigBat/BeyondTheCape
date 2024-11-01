@@ -24,7 +24,7 @@ castilian_civil_war = {
 		}
 		OR = {
 			has_regency = yes
-			NOT = { heir_claim = 80 }
+			NOT = { heir_claim = 90 }
 			has_female_heir = yes
 		}
 		is_lesser_in_union = no

@@ -5011,11 +5011,18 @@ estate_nobles_fidalgos = {
 	max_absolutism = -10
 	# loyalty = 0.1      
 	influence  = 0.2      
+	is_valid = {
+		is_or_was_tag = { tag = POR }
+		NOT = { has_country_flag = revoked_fidalgos_flag }
+	}
  	can_revoke = {
 		custom_trigger_tooltip = {
 			tooltip = can_remove_fidalgos_tt
 			has_country_flag = can_remove_fidalgos_flag
 		}
+	}
+	on_revoked = {
+		set_country_flag = revoked_fidalgos_flag
 	}
 	penalties = {
 		land_forcelimit_modifier = -0.3

@@ -57,6 +57,7 @@ country_decisions = {
 					remove_core = ROOT
 					remove_claim = ROOT
 					cede_province = CDI
+					add_core = CDI
 				}
 				every_province = {
 					limit = {

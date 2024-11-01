@@ -897,7 +897,7 @@ army_tradition = {
 	qizilbash_loyalty_modifier = 0.05
 	ghulams_loyalty_modifier = 0.05
 	allowed_tercio_fraction = 0.1
-	allowed_samurai_fraction = 0.1
+	# allowed_samurai_fraction = 0.1
 }
 
 navy_tradition = {
@@ -1439,7 +1439,7 @@ high_army_professionalism = {
 	shock_damage = 0.1
 	siege_ability = 0.2
 	drill_decay_modifier = -0.5
-	allowed_samurai_fraction = 0.1
+	# allowed_samurai_fraction = 0.1
 }
 
 streltsy_modifier = {
@@ -2157,8 +2157,7 @@ samurai_regiment = {
 	infantry_shock = 1
 	morale_damage_received = -1
 	reinforce_cost_modifier = 1
-	reinforce_speed = -0.8
-	special_unit_cost_modifier = 0.75
+	reinforce_speed = -0.5
 }
 
 qizilbash_regiment = {

@@ -603,3 +603,6 @@
 
  no_declare_war_ccw: "Castilian Civil War Ongoing"
  desc_no_declare_war_ccw: ""
+
+ prepare_for_india: "An Army for India"
+ desc_prepare_for_india: "With our possessions now encompassing two oceans, there is an increased need for a second permanent army to be present in the Indian Ocean."

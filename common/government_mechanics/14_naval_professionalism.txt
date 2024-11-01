@@ -14,7 +14,7 @@ naval_professionalism_mechanic = {
 					global_ship_trade_power = 0.25
 					disengagement_chance = 0.25
 					number_of_cannons_modifier = 0.2
-					monthly_naval_professionalism = -1
+					# monthly_naval_professionalism = -1
 				}
 			}
 		}

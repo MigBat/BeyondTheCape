@@ -1,8 +1,9 @@
 name="btc2"
-supported_version="v1.37.5.0"
 version="1"
 tags={
 	"Historical"
 }
 picture="thumbnail.png"
 replace_path="gfx/loadingscreens"
+supported_version="v1.37.5.0"
+remote_file_id="2966858781"

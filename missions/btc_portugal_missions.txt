@@ -693,8 +693,8 @@ btc_por_independence1 = {
 				}
 				hidden_effect = {
 					define_ruler = {
-						name = "Joï¿½o"
-						dynasty = "de Braganï¿½a"
+						name = "João"
+						dynasty = "de Bragança"
 						adm = 3
 						dip = 4
 						mil = 5
@@ -1454,7 +1454,7 @@ btc_por_africa1 = {
 		}	
 		effect = {
 			define_admiral = {
-				name = "Bartolomeu PortuguÃªs"
+				name = "Bartolomeu Português"
 				shock = 2
 				fire = 2
 				manuever = 4
@@ -1490,7 +1490,7 @@ btc_por_africa2 = {
 			discover_province = 1584
 			discover_province = 1597
 			define_explorer = {
-				name = "Pedro ï¿½lvares Cabral"
+				name = "Pedro Álvares Cabral"
 				shock = 2
 				fire = 2
 				manuever = 4
@@ -1778,6 +1778,11 @@ btc_por_africa5 = {
 				}
 				treasury = 200
 			}
+			any_subject_country = {
+				any_owned_province = {
+					trade_goods = goldspices
+				}
+			}
 		}
 		effect = {
 			if = {
@@ -1971,6 +1976,14 @@ btc_por_india1 = {
 				}
 				add_historical_friend = MLI
 				MLI = { add_historical_friend = ROOT }
+				hidden_effect = {
+					every_province = {
+						limit = {
+						   is_capital_of = ROOT
+						}
+						discover_country = MLI
+					  }					
+				}
 			}
 			else_if = {
 				limit = {
@@ -1980,6 +1993,14 @@ btc_por_india1 = {
 				}
 				add_historical_friend = MBA
 				MBA = { add_historical_friend = ROOT }
+				hidden_effect = {
+					every_province = {
+						limit = {
+						   is_capital_of = ROOT
+						}
+						discover_country = MBA
+					  }					
+				}
 			}
 			else_if = {
 				limit = {
@@ -1989,6 +2010,14 @@ btc_por_india1 = {
 				}
 				add_historical_friend = PTE
 				PTE = { add_historical_friend = ROOT }
+				hidden_effect = {
+					every_province = {
+						limit = {
+						   is_capital_of = ROOT
+						}
+						discover_country = PTE
+					  }					
+				}
 			}
 			1201 = {
 				add_permanent_claim = ROOT
@@ -2285,7 +2314,6 @@ btc_por_india3 = {
 		provinces_to_highlight = { }		
 		trigger = {
 			has_flagship = yes
-			
 		}	
 		effect = {
 			define_explorer = {
@@ -2329,7 +2357,10 @@ btc_por_india3 = {
 			extend_golden_age = 120
 			remove_country_modifier = expensive_spices
 			remove_country_modifier = discovery_fervor
-			add_government_reform = portuguese_empire_reform	
+			add_country_modifier = {
+				name = prepare_for_india
+				duration = 7300
+			}
 		}
 	}
 
@@ -2342,6 +2373,7 @@ btc_por_india3 = {
 			any_owned_province = {
 				superregion = india_superregion
 			}
+			num_of_marines = 15
 		}	
 		effect = {
 			custom_tooltip = btc_por_unlock_casa_india_tt
@@ -2358,7 +2390,7 @@ btc_por_india3 = {
 				add_permanent_claim = ROOT
 			}
 			define_admiral = {
-				name = "TristÃ£o da Cunha"
+				name = "Tristão da Cunha"
 				shock = 6
 				fire = 3
 				manuever = 4
@@ -2372,6 +2404,7 @@ btc_por_india3 = {
 				siege = 6
 				trait = lion_of_the_seas_personality
 			}
+			add_government_reform = portuguese_empire_reform	
 			# custom_tooltip = albuquerque_ability_tt
 			hidden_effect = {
 				country_event = {
@@ -3393,7 +3426,7 @@ btc_por_east3 = {
 		effect = {
 			define_advisor = {
 				type = artist
-				name = "Luis Vaz de Camï¿½es"
+				name = "Luis Vaz de Camões"
 				skill = 3
 				age = 45
 				location = 1851

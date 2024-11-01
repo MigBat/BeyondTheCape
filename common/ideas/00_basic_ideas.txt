@@ -1633,7 +1633,7 @@ naval_ideas = {
 	}
 
 	bonus = {
-		global_naval_barrage_cost = -1
+		global_naval_barrage_cost = -0.5
 		disengagement_chance = 0.15
 		monthly_portuguese_saudade = 0.05
 	}

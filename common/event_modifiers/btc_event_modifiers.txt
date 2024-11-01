@@ -874,7 +874,7 @@ overseas_dominance_mod = {
 }
 
 btc_low_health = {
-	monarch_lifespan = -0.5
+	monarch_lifespan = -0.75
 }
 
 btc_organ_guns = {
@@ -952,4 +952,8 @@ s_treasure_fleet_5 = {
 
 no_declare_war_ccw = {
 	can_not_declare_war = yes
+}
+
+prepare_for_india = {
+	land_forcelimit = 10
 }
