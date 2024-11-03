@@ -889,3 +889,6 @@
  btc_dukkala_raids.3.a: "We mourn them."
 
  flavor_spa.btc_desc: "The King of Portugal has disappeared in Morocco. THe succession is weak and heavily disputed. [ROOT.Monarch.GetTitle] [ROOT.Monarch.GetName] has support from many in the portuguese court. All he has to do is ride towards Lisboa and he will be accepted as King of Portugal."
+
+ btc_inheritance.1.a: "We have strong ties with Portugal."
+ marry_portugal_tt: "We will fall under a §YPersonal Union§! with §YPortugal§!."

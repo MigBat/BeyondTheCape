@@ -6,6 +6,7 @@ country_decisions = {
 			mission_completed = btc_india
 			NOT = { has_global_flag = btc_deal_accepted_flag }
 			NOT = { any_owned_province = { superregion = india_superregion } }
+			NOT = { has_country_flag = established_casa_india_flag }
 		}
 		allow = {
 			treasury = 200
@@ -126,9 +127,17 @@ country_decisions = {
 			}
 		}
 		allow = {
-			num_of_owned_provinces_with = {
-				superregion = india_superregion
-				value = 1
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = india_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = india_superregion
+					is_core = POR
+					value = 1
+				}
 			}
 		}
 		effect = {
@@ -138,6 +147,17 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						superregion = india_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = india_superregion
+						range = CDI
 					}
 					remove_core = ROOT
 					remove_claim = ROOT
@@ -177,9 +197,17 @@ country_decisions = {
 			}
 		}
 		allow = {
-			num_of_owned_provinces_with = {
-				superregion = east_indies_superregion
-				value = 1
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = east_indies_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = east_indies_superregion
+					is_core = POR
+					value = 1
+				}
 			}
 		}
 		effect = {
@@ -189,6 +217,17 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						superregion = east_indies_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = east_indies_superregion
+						range = CDI
 					}
 					remove_core = ROOT
 					remove_claim = ROOT
@@ -400,9 +439,17 @@ country_decisions = {
 			}
 		}
 		allow = {
-			num_of_owned_provinces_with = {
-				region = arabia_region
-				value = 1
+			OR = {
+				num_of_owned_provinces_with = {
+					region = arabia_region
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					region = arabia_region
+					is_core = POR
+					value = 1
+				}
 			}
 		}
 		effect = {
@@ -412,6 +459,17 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						region = arabia_region
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						region = arabia_region
+						range = CDI
 					}
 					remove_core = ROOT
 					remove_claim = ROOT
@@ -451,9 +509,17 @@ country_decisions = {
 			}
 		}
 		allow = {
-			num_of_owned_provinces_with = {
-				region = horn_of_africa_region
-				value = 1
+			OR = {
+				num_of_owned_provinces_with = {
+					region = horn_of_africa_region
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					region = horn_of_africa_region
+					is_core = POR
+					value = 1
+				}
 			}
 		}
 		effect = {
@@ -463,6 +529,17 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						region = horn_of_africa_region
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						region = horn_of_africa_region
+						range = CDI
 					}
 					remove_core = ROOT
 					remove_claim = ROOT
@@ -501,9 +578,17 @@ country_decisions = {
 			}
 		}
 		allow = {
-			num_of_owned_provinces_with = {
-				superregion = persia_superregion
-				value = 1
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = persia_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = persia_superregion
+					is_core = POR
+					value = 1
+				}
 			}
 		}
 		effect = {
@@ -513,6 +598,17 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						superregion = persia_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						range = CDI
 					}
 					remove_core = ROOT
 					remove_claim = ROOT
@@ -552,9 +648,17 @@ country_decisions = {
 			}
 		}
 		allow = {
-			num_of_owned_provinces_with = {
-				superregion = china_superregion
-				value = 1
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = china_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = china_superregion
+					is_core = POR
+					value = 1
+				}
 			}
 		}
 		effect = {
@@ -564,6 +668,17 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						superregion = china_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = china_superregion
+						range = CDI
 					}
 					remove_core = ROOT
 					remove_claim = ROOT
@@ -603,9 +718,17 @@ country_decisions = {
 			}
 		}
 		allow = {
-			num_of_owned_provinces_with = {
-				superregion = far_east_superregion
-				value = 1
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = far_east_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = far_east_superregion
+					is_core = POR
+					value = 1
+				}
 			}
 		}
 		effect = {
@@ -615,6 +738,17 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						superregion = far_east_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = far_east_superregion
+						range = CDI
 					}
 					remove_core = ROOT
 					remove_claim = ROOT

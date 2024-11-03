@@ -174,7 +174,7 @@
  portuguese_regency.102a: "An interesting development..."
  john_antioch_tt: "§MIf we get high enough relations §Y(100)§! with @CYP Cyprus, perhaps we can strike some sort of arrangement with them. Of course, João needs to be alive for this to happen...§!"
 
- portuguese_regency.103_t: "The Crusader King(dom)"
+ portuguese_regency.103_t: "The Crusader Kingdom"
  portuguese_regency.103_d: "Our efforts have paid off and João, King-consort of Cyprus, has put the matter of his father's death to rest, for the greater good of the realm. Many meetings have been had between him and our diplomats at Cyprus, and knowing full well that their Kingdom is at risk, they have come forth with two proposals. It is up to us now to decide how we shall support Cyprus."
  portuguese_regency.103a: "Suggest they become our march"
  portuguese_regency.103b: "Guarantee their independence"
@@ -183,6 +183,23 @@
  portuguese_regency.104_d: "We have received a delegation from Portugal, the home country of our King-consort João. They propose we become a march under them, as they consider us too weak to survive on our own and achieve the ambition of reclaiming the Holy Land. They are not entirely wrong, although hearing it like that is not very pleasant. Still, we do need to protect our people. What shall we do?"
  portuguese_regency.104a: "We accept"
  portuguese_regency.104b: "We refuse"
+
+ portuguese_regency.105_t: "Order of the Golden Fleece Knighthood"
+ portuguese_regency.105_d: "News have arrived of João of Coimbra, son of Infante Pedro, the late regent and traitor to the Crown.\n\nIt seems he's been making a name for himself since leaving Portugal, under the wing of Queen Isabel of Burgundy. He is considered one of the King's most trusted men, being armed knight and participating in numerous military campaigns. And now he is being awarded knighthood in the prestigious Order of the Golden Fleece.\n\nThis could be an opportunity to show our support. However, taking into consideration his father's actions, maybe this is not the most prudent course of action."
+ portuguese_regency.105a: "Congratulate him"
+ portuguese_regency.105b: "He's the son of a traitor"
+ john_antioch_supported_tt: "João is grateful for our support"
+
+ portuguese_regency.106_t: "The Archbishop of Lisbon"
+ portuguese_regency.106_d: "News have arrived of Jaime of Coimbra, son of Infante Pedro, the late regent and traitor to the Crown.\n\nEver since his exile in Burgundy he's become a scholar and a religious man, rising to the position of Bishop of Arras. His aunt Isabel of Burgundy arranged for him to travel to Rome, where he got an audience with the Pope. It seems he was touched upon hearing Jaime's story, and has thus appointed him Archbishop of Lisboa.\n\nGiven our previous grievances, this might not be in our best interests to allow. Then again, a friendship with the Pope is not lightly thrown aside."
+ portuguese_regency.106a: "Welcome him"
+ portuguese_regency.106b: "Send this traitor back to Rome"
+
+ portuguese_regency.107_t: "The Burgundian Marriage"
+ portuguese_regency.107_d: "News have arrived of Beatriz of Coimbra, daughter of Infante Pedro, the late regent and traitor to the Crown.\n\nAfter her exile in Burgundy, she was taken care for by the Queen Isabel de Avis, who has arranged for her to marry the Lord of Ravenstein, nephew of the King of Burgundy. Despite our treatment of her father, we have been sent a wedding invitation.\n\nWe have more important things than to attend the wedding of a traitor's daughter. But then again, we never know what the future holds. This marriage may be the start of something big..."
+ portuguese_regency.107a: "This could prove advantageous for us"
+ portuguese_regency.107b: "Her blood is tainted"
+ beatriz_ravenstein_supported_tt: "The Burgundian court is impressed with us"
 
 # Portugal Liberal Wars #
 

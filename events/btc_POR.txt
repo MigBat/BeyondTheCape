@@ -2531,6 +2531,7 @@ country_event = {
 	option = { 
 		name = btc_por.128c
 		trigger = {
+			NOT = { has_global_flag = btc_deal_accepted_flag }
 			check_variable = {
 				which = sale_rejected_times
 				value = 3

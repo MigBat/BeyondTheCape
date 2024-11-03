@@ -251,6 +251,97 @@ on_explore_coast = {
 		25 = { set_country_flag = padrao_chance_1 }
 		50 = {}
 	}
+	random_events = {
+		100000 = seven_cities_events.2	# Fountain of youth start
+		100000 = btc_seven_cities.4
+		100000 = btc_seven_cities.5
+		100000 = btc_seven_cities.6
+		100000 = seven_cities_events.203
+		100000 = seven_cities_events.204
+		100000 = seven_cities_events.205
+	}
+}
+
+on_conquistador_empty = {
+	random_events = {
+		100000 = seven_cities_events.1
+		100000 = seven_cities_events.3
+		100000 = seven_cities_events.4
+		100000 = seven_cities_events.5
+		100000 = seven_cities_events.6
+		100000 = seven_cities_events.7
+		100000 = seven_cities_events.8
+
+		100000 = btc_seven_cities.1
+		100000 = btc_seven_cities.2
+		100000 = btc_seven_cities.3
+		100000 = btc_seven_cities.7
+		100000 = btc_seven_cities.8
+		100000 = btc_seven_cities.9
+		100000 = btc_seven_cities.10
+		100000 = btc_seven_cities.11
+		100000 = btc_seven_cities.12
+		100000 = btc_seven_cities.13
+		100000 = btc_seven_cities.14
+		100000 = btc_seven_cities.15
+		100000 = btc_seven_cities.16
+		100000 = btc_seven_cities.17
+		100000 = btc_seven_cities.18
+		100000 = btc_seven_cities.19
+		100000 = btc_seven_cities.20
+		100000 = btc_seven_cities.21
+		100000 = btc_seven_cities.22
+		100000 = btc_seven_cities.23
+		100000 = btc_seven_cities.24
+
+		10 = seven_cities_events.100
+		10 = seven_cities_events.101
+		10 = seven_cities_events.102
+		10 = seven_cities_events.103
+		10 = seven_cities_events.104
+		10 = seven_cities_events.105
+
+		100000 = seven_cities_events.200
+		100000 = seven_cities_events.201
+		100000 = seven_cities_events.202
+		100000 = seven_cities_events.206
+		100000 = seven_cities_events.207
+		100000 = seven_cities_events.208
+		100000 = seven_cities_events.209
+		100000 = seven_cities_events.210
+		100000 = seven_cities_events.211
+		100000 = seven_cities_events.212
+		100000 = seven_cities_events.213
+		100000 = seven_cities_events.214
+		100000 = seven_cities_events.215
+		100000 = seven_cities_events.216
+		100000 = seven_cities_events.217
+		100000 = seven_cities_events.218
+		100000 = seven_cities_events.219
+		100000 = seven_cities_events.220
+		100000 = seven_cities_events.221
+		100000 = seven_cities_events.222
+		100000 = seven_cities_events.223
+
+		10 = seven_cities_events.302
+		10 = seven_cities_events.303
+		10 = seven_cities_events.308
+		10 = seven_cities_events.309
+
+		10 = seven_cities_events.400
+		10 = seven_cities_events.401
+		10 = seven_cities_events.402
+		10 = seven_cities_events.405
+		10 = seven_cities_events.406
+		10 = seven_cities_events.407
+		10 = seven_cities_events.408
+		10 = seven_cities_events.409
+		10 = seven_cities_events.410
+		10 = seven_cities_events.413
+		10 = seven_cities_events.414
+
+		1000 = 0
+	}
 }
 
 on_war_ended = {
@@ -434,7 +525,7 @@ on_new_monarch = {
 			tag = CYP
 			has_ruler = "Charlotte"
 			dynasty = "de Lusignan"
-			POR = { has_country_flag = braganca_plot }
+			POR = { has_country_flag = john_antioch_supported }
 		}
 		define_consort = {
 			name = "João"

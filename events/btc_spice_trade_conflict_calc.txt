@@ -1630,17 +1630,18 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 
 	fire_only_once = yes
-	trigger = {
-		tag = POR
-		any_province = {
-			superregion = india_superregion
-			country_or_non_sovereign_subject_holds = POR
-		}
-	}
+	is_triggered_only = yes
+	# trigger = {
+	# 	tag = POR
+	# 	any_province = {
+	# 		superregion = india_superregion
+	# 		country_or_non_sovereign_subject_holds = POR
+	# 	}
+	# }
 
-	mean_time_to_happen = {
-		days = 1
-	}
+	# mean_time_to_happen = {
+	# 	days = 1
+	# }
 
 	immediate = {
 		hidden_effect = {

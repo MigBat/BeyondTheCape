@@ -52,3 +52,8 @@ raised_padrao = {
 	opinion = 10
 	yearly_decay = 0
 }
+
+revoked_tordesillas = {
+	opinion = -200
+	yearly_decay = 2
+}

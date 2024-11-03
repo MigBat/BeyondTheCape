@@ -2165,7 +2165,7 @@ btc_por_india2 = {
 		trigger = {
 			227 = {
 				owned_by = ROOT
-				development = 20
+				development = 30
 			}
 			if = {
 				limit = {
@@ -2409,7 +2409,11 @@ btc_por_india3 = {
 			hidden_effect = {
 				country_event = {
 					id = btc_startscreen.24
-				}				
+				}	
+				country_event = {
+					id = btc_spice_trade.100
+					days = 30
+				}	
 			}
 		} 
 	}
@@ -2536,7 +2540,7 @@ btc_por_india4 = {
 					limit = {
 						owner = { ai = no }
 					}
-					num_of_times_expanded_infrastructure = 1
+					num_of_times_expanded_infrastructure = 2
 				}
 			}
 			if = {
