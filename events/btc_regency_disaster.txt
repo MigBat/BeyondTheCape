@@ -409,7 +409,7 @@ country_event = {
 		}
 
 		kill_leader = {
-			type = "�lvaro Vaz de Almada"
+			type = "Álvaro Vaz de Almada"
 		}
 		1851 = {
 			spawn_rebels = {
@@ -478,7 +478,7 @@ country_event = {
 		define_advisor = {
 			type = commandant
 			skill = 2
-			name = "Afonso de Bragan�a"
+			name = "Afonso de Bragança"
 			location = 232
 			cost_multiplier = 0.25
 			age = 70
@@ -520,7 +520,7 @@ country_event = {
 		define_advisor = {
 			type = commandant
 			skill = 2
-			name = "Afonso de Bragan�a"
+			name = "Afonso de Bragança"
 			location = 232
 			cost_multiplier = 0.25
 			age = 71

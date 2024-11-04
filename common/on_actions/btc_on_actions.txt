@@ -482,7 +482,7 @@ on_new_monarch = {
 			}
 			define_consort = {
 				name = "Beatriz"
-				dynasty = "de BraganÁa"
+				dynasty = "de Bragan√ßa"
 				female = yes
 				country_of_origin = ROOT
 				age = 15
@@ -528,7 +528,7 @@ on_new_monarch = {
 			POR = { has_country_flag = john_antioch_supported }
 		}
 		define_consort = {
-			name = "Jo„o"
+			name = "Jo√£o"
 			dynasty = "de Avis"
 			country_of_origin = POR
 			culture = portugese
@@ -599,6 +599,42 @@ on_colony_established = {
 		add_province_modifier = {
 			name = malaria
 			duration = -1
+		}
+	}
+	# remove dev from state primary culture province and give to colony. only for non-minority expel
+	if = {
+		limit = {
+			ROOT = { province_getting_expelled_minority = no }
+		}
+		FROM = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					culture = FROM
+					base_tax = 2
+				}
+				add_base_tax = -1
+			}
+		}
+		FROM = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					culture = FROM
+					base_production = 2
+				}
+				add_base_production = -1
+			}
+		}
+		FROM = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					culture = FROM
+					base_manpower = 2
+				}
+				add_base_manpower = -1
+			}
 		}
 	}
 }

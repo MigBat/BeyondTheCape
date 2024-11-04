@@ -1836,12 +1836,13 @@ native_policy_coexist = {
 
 native_policy_trade = {
 	colony_development_boost = 1
+	global_colonial_growth = -25
+	colonist_placement_chance = -0.05
 }
 
 native_policy_hostile = {	
 	native_uprising_chance = 0.5
 	native_assimilation = 0.5
-	global_colonial_growth = 15
 	colonist_placement_chance = 0.05
 	expel_minorities_cost = -0.5
 }

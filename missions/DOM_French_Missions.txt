@@ -3290,7 +3290,7 @@ french_missions_3_normal_continued = {
 		}
 		effect = {
 			1272 = { change_province_name = "La Manche" }
-			1269 = { change_province_name = "Basse-C�te" }
+			1269 = { change_province_name = "Basse-Côte" }
 			add_country_modifier = {
 				name = fra_channel_dominance_modifier
 				duration = -1 
