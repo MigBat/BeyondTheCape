@@ -5756,95 +5756,6 @@ province_event = {
 # 	}
 # }
 
-# country_event = { #Ferdinand Magellan
-# 	id = btc_por.179
-# 	title = flavor_spa.199.t
-# 	desc = flavor_spa.199.d
-# 	picture = HARBOUR_eventPicture
-
-# 	fire_only_once = yes 
-
-# 	trigger = {
-# 		is_or_was_tag = { tag = POR } 
-# 		is_subject = no
-# 		NOT = { has_country_flag = had_magellan_event_flag }
-# 		full_idea_group = exploration_ideas
-# 		is_year = 1517
-# 	}
-
-# 	mean_time_to_happen = {
-# 		days = 30
-# 	}
-	
-# 	immediate = {
-# 		set_country_flag = had_magellan_event_flag
-# 	}
-	
-# 	option = {
-# 		name = flavor_spa.199.b
-
-# 		ai_chance = { factor = 9 }
-# 		add_prestige_or_monarch_power = { amount = 5 } 
-# 		set_country_flag = turned_down_magellan
-# 	}
-	
-# 	option = { 
-# 		name = flavor_spa.199.a
-
-# 		trigger = {
-# 			NOT = {
-# 				moluccas_region = {
-# 					has_discovered = ROOT
-# 				}
-# 			}
-# 		}
-# 		add_country_modifier = {
-# 			name = legacy_of_magellan
-# 			duration = -1
-# 		}
-# 		ai_chance = { factor = 1 }
-# 		define_explorer = {
-# 			name = "Fernão de Magalhães"
-# 			fire = 4 
-# 			shock = 4 
-# 			manuever = 6
-# 			siege = 1
-# 			trait = great_explorer_personality
-# 		}
-# 		set_country_flag = por_no_flagship_mod
-# 		if = {
-# 			limit = {
-# 				227 = {
-# 					owned_by = ROOT
-# 				}
-# 			}
-# 			227 = {
-# 				create_flagship = {
-# 					type = heavy_ship
-# 					name = "Vitória"
-# 				}
-# 			}
-# 		}
-# 		else = {
-# 			random_owned_province = {
-# 				limit = {
-# 					has_port = yes
-# 				}
-# 				create_flagship = {
-# 					type = heavy_ship
-# 					name = "Vitória"
-# 				}
-# 			}
-# 		}
-# 		clr_country_flag = por_no_flagship_mod	
-# 		if = {
-# 			limit = { has_dlc = "Rule Britannia" }
-# 			change_innovativeness = 2
-# 		}
-# 		else = { add_adm_power = 25 add_dip_power = 25 }
-# 	}			
-# }
-
 country_event = {
 	id = btc_por.180
 	title = btc_por.180_t
@@ -5871,33 +5782,129 @@ country_event = {
 	}			
 }
 
-# Lisbon Massacre
-# country_event = {
-# 	id = btc_por.181
-# 	title = btc_por.181_t
-# 	desc = btc_por.181_d
-# 	picture = PROTESTANT_RELIGIOUS_TENSIONS_eventPicture
+# Columbus Plan (portugal lose ccw)
+country_event = {
+	id = btc_por.181
+	title = btc_por.181_t
+	desc = btc_por.181_d
+	picture = SHIP_SAILING_eventPicture
 
-# 	fire_only_once = yes
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		is_free_or_tributary_trigger = yes
+		CAS = { has_country_flag = spa_cas_ended_civil_war_flag }
+		NOT = { has_country_flag = signed_alcacovas_treaty }
+		NOT = { has_country_flag = won_ccw }
+	}
 
-# 	trigger = {
-# 		is_or_was_tag = { tag = POR }
-# 		is_year = 1495
-# 	}
-
-# 	mean_time_to_happen = {
-# 		months = 24
-# 	}
+	mean_time_to_happen = {
+		months = 24
+	}
 	
-# 	option = { 
-# 		name = btc_por.181a
+	option = { # Hire him
+		name = btc_por.181a
+		trigger = {
+			NOT = { 1460 = { has_discovered = root } }
+		}
+		ai_chance = {
+			factor = 0
+		}
 
-# 		set_country_flag = lisbon_massacre_flag
-# 		227 = {
-# 			add_unrest = 5
-# 		}
-# 	}			
-# }
+		add_treasury = -1
+		hidden_effect = {
+			country_event = { id = btc_por.179 days = 365 }
+		}
+		custom_tooltip = columbus_voyage_tt
+	}	
+	
+	option = { # We've got it all figured out
+		name = btc_por.181b
+		ai_chance = {
+			factor = 1
+		}
+
+		hidden_effect = {
+			CAS = { country_event = { id = btc_por.1811 days = 180 }}
+		}
+	}			
+}
+
+# Columbus Plan (CAS)
+country_event = {
+	id = btc_por.1811
+	title = btc_por.1811_t
+	desc = btc_por.1811_d
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # Hire him
+		name = btc_por.1811a
+		ai_chance = {
+			factor = 1
+		}
+
+		add_treasury = -1
+		hidden_effect = {
+			country_event = { id = btc_por.179 days = 365 }
+		}
+		custom_tooltip = columbus_voyage_tt
+	}	
+	
+	option = { # We've got it all figured out
+		name = btc_por.1811b
+		ai_chance = {
+			factor = 0
+		}
+	}			
+}
+
+country_event = {
+	id = btc_por.179
+	title = btc_por.179_t
+	desc = btc_por.179_d
+	picture = HARBOUR_eventPicture
+
+	fire_only_once = yes 
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = btc_por.179a
+
+		custom_tooltip = discover_caribbean_tt
+		hidden_effect = {
+			discover_province = 1524
+		}
+		add_prestige = 20
+
+		if = {
+			limit = {
+				tag = POR
+			}
+			define_explorer = {
+				name = "Cristóvão Colombo"
+				fire = 2
+				shock = 2
+				manuever = 6
+				siege = 0
+				trait = great_explorer_personality
+			}
+		}
+		else = {
+			define_explorer = {
+				name = "NAME_CRISTOBAL_COLON"
+				fire = 2
+				shock = 2
+				manuever = 6
+				siege = 0
+				trait = great_explorer_personality
+			}
+		}
+	}		
+}
 
 # Columbus's ruse
 country_event = {

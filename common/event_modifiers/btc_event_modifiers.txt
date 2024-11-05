@@ -639,6 +639,7 @@ wine_doc_region = {
 }
 
 por_sagres = {
+	free_navy_leader_pool = 2
 	dip_tech_cost_modifier = -0.05
 	navy_tradition = 0.25
 }

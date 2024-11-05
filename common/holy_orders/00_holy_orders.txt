@@ -740,6 +740,7 @@ san_juan_order = {
 			}
 			has_country_flag = enable_holy_orders_flag 
 			has_country_flag = spa_enable_san_juan_holy_order_flag
+            owns_or_subject_of = 126
 		}
     }
     color = { 188 192 242 }

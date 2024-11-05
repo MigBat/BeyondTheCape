@@ -14,6 +14,7 @@
  patroonschap_system:0 "The Patroonschap system prevents you from colonising here."
  iberia_colonise_restriction:0 "There are better provinces for us to colonise."
  not_iberia_colonise_restriction:0 "There are better provinces for us to colonise."
+ russia_colonise_restriction:0 "We should focus our efforts in Alaska."
  one_siberian_frontier:0 "You can only have one colony at a time."
  cape_restrict:0 "You need Diplomatic tech 17 to colonise here."
  NO_OVERSEAS_STATE:0 "Overseas provinces cannot be stated."

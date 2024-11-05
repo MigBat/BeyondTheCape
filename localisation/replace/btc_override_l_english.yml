@@ -408,3 +408,17 @@
  TREASURE_FLEET_TOOLTIP:0 "The next treasure fleet from $COUNTRY$ will arrive in §Y$DATE$§!. We estimate it will bring us gold, silver and spices worth §Y$NUM$§!."
 
  por_flee_to_brazil_desc:0 "Portugal is in danger! The monarch and the court must make haste across the sea before our enemies descend upon us once more. Though it will be painful to leave Portugal behind, we shall surely revive its glory in Brazil."
+
+# Holy orders #
+
+ calatrava_order_desc:0 "The Military Order of Calatrava was founded in Castile in the 12th century to fight against the Almohad Caliphate, as a military branch of the Cistercian monks.\n\n§MPlace this order in the province of §YLa Mancha§! to receive unique bonuses.§!"
+
+ avis_order_desc:0 "The Military Order of Avis was founded in Portugal in the 12th century, helping the country establish itself as independent and giving its name to the ruling dynasty in the 15th century.\n\n§MPlace this order in the province of §YÉvora§! to receive unique bonuses.§!"
+
+ montesa_order_desc:0 "The Military Order of Montesa was founded after the Aragonese branch of the Knights Templar, being directly sponsored by the kings of Aragon.\n\n§MPlace this order in the province of §YXátiva§! to receive unique bonuses.§!"
+
+ santiago_order_desc:0 "The Order of Santiago was founded in the kingdom of León in the 12th century, but has its headquarters in Uclés in Castile and is the most widespread Iberian military order as it is dedicated to Saint James, Patron of Spain.\n\n§MPlace this order in the province of §YCuenca§! to receive unique bonuses.§!"
+
+ san_juan_order_desc:0 "The Order of Saint John, better known as the Knights Hospitallers, is a military order that focuses its activities in the Eastern Mediterranean, although its houses extend throughout Western Europe.\n\n§MPlace this order in the province of §YMalta§! to receive unique bonuses.§!"
+
+ alcantara_order_desc:0 "The Order of Alcántara was founded in the kingdom of León in the 12th century in a town that served as a border outpost with Portugal and the Almohad Caliphate.\n\n§MPlace this order in the province of §YPlasencia§! to receive unique bonuses.§!"

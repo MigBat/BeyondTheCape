@@ -244,6 +244,34 @@ can_colonize_province = {
 		}
 	}
 	condition = {
+		tooltip = "russia_colonise_restriction"
+		potential = { 
+			NOT = { 
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					colonial_region = colonial_alaska
+				}
+			}
+			FROM = {
+				ai = yes
+				tag = RUS
+			}
+		}
+		allow = { 
+			NOT = { 
+				OR = {
+					colonial_region = colonial_mexico
+					colonial_region = colonial_brazil
+					colonial_region = colonial_la_plata 
+					colonial_region = colonial_peru 
+					colonial_region = colonial_canada
+					colonial_region = colonial_eastern_america 
+					colonial_region = colonial_louisiana
+				}
+			}
+		}
+	}
+	condition = {
 		tooltip = "colonial_region_restriction"
 		potential = {
 			FROM = {

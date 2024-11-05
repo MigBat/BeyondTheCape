@@ -311,7 +311,12 @@ btc_por_sagres_start = {
 				}
 				dip_power = 100
 			}
-			has_estate_privilege = estate_burghers_naval_school_right
+			if = {
+				limit = {
+					ai = no
+				}
+				has_estate_privilege = estate_burghers_naval_school_right
+			}
 			230 = { owned_by = ROOT }
 		}
 		effect = {
@@ -585,7 +590,12 @@ btc_por_navy1 = {
 			alentejo_area = {
 				holy_order = avis_order
 			}
-			army_size_percentage = 1
+			if = {
+				limit = {
+					ai = no
+				}
+				army_size_percentage = 1
+			}
 		}	
 		effect = {		
 			# custom_tooltip = unlock_avis_knights
@@ -725,18 +735,40 @@ btc_por_navy2 = {
 		position = 4
 		provinces_to_highlight = { }		
 		trigger = {
-			OR = {
-				230 = { 
-					OR = {
-						has_building = coastal_defence 
-						has_building = naval_battery
+			if = {
+				limit = {
+					ai = no
+				}
+				OR = {
+					230 = { 
+						OR = {
+							has_building = coastal_defence 
+							has_building = naval_battery
+						}
+					}
+					1751 = { 
+						OR = {
+							has_building = coastal_defence 
+							has_building = naval_battery
+						}
 					}
 				}
-				1751 = { 
-					OR = {
-						has_building = coastal_defence 
-						has_building = naval_battery
+			}
+			else = {
+				OR = {
+					230 = { 
+						OR = {
+							has_building = coastal_defence 
+							has_building = naval_battery
+						}
 					}
+					1751 = { 
+						OR = {
+							has_building = coastal_defence 
+							has_building = naval_battery
+						}
+					}
+					owns = 334
 				}
 			}
 		}	
@@ -899,7 +931,12 @@ btc_por_navy3 = {
 			estremadura_area = {
 				holy_order = christ_order
 			}
-			navy_size_percentage = 1
+			if = {
+				limit = {
+					ai = no
+				}
+				navy_size_percentage = 1
+			}
 		}
 		effect = {
 			# custom_tooltip = unlock_christ_knights
@@ -919,9 +956,14 @@ btc_por_navy3 = {
 		trigger = {
 			1111 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				OR = {
-					has_province_modifier = feitoria
-					has_province_modifier = fortified_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					OR = {
+						has_province_modifier = feitoria
+						has_province_modifier = fortified_feitoria
+					}
 				}
 			}
 		}	
@@ -959,8 +1001,25 @@ btc_por_navy4 = {
 		position = 4
 		provinces_to_highlight = { }		
 		trigger = {
-			4150 = {
-				has_fort_building_trigger = yes
+			if = {
+				limit = {
+					ai = no
+				}
+				4150 = {
+					has_fort_building_trigger = yes
+				}
+			}
+			else = {
+				OR = {
+					4150 = {
+						has_fort_building_trigger = yes
+					}
+					CAS = { has_country_flag = spa_cas_ended_civil_war_flag }
+					AND = {
+						is_year = 1500
+						CAS = { NOT = { has_disaster = castilian_civil_war } }
+					}
+				}
 			}
 		}	
 		effect = {
@@ -1079,11 +1138,33 @@ btc_por_navy5 = {
 		position = 4
 		provinces_to_highlight = { }		
 		trigger = {
-			alliance_with = ENG
-			marriage_with = ENG
-			reverse_has_opinion = {
-				who = ENG
-				value = 200
+			if = {
+				limit = {
+					ai = no
+				}
+				alliance_with = ENG
+				marriage_with = ENG
+				reverse_has_opinion = {
+					who = ENG
+					value = 200
+				}
+			}
+			else = {
+				OR = {
+					AND = {
+						alliance_with = ENG
+						marriage_with = ENG
+						reverse_has_opinion = {
+							who = ENG
+							value = 200
+						}
+					}
+					CAS = { has_country_flag = spa_cas_ended_civil_war_flag }
+					AND = {
+						is_year = 1500
+						CAS = { NOT = { has_disaster = castilian_civil_war } }
+					}
+				}
 			}
 		}	
 		effect = {
@@ -1441,9 +1522,9 @@ btc_por_africa1 = {
 					add_permanent_claim = FROM
 					save_event_target_as = por_carib_island
 				}
-				create_colony_mission_reward = {
-					province = event_target:por_carib_island
-				}
+				# create_colony_mission_reward = {
+				# 	province = event_target:por_carib_island
+				# }
 			}
 		}
 	}
@@ -1604,7 +1685,15 @@ btc_por_africa3 = {
 		trigger = {
 			any_province = {
 				area = coastal_kongo
-				has_province_modifier = foreign_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					has_province_modifier = foreign_feitoria
+				}
+				else = {
+					has_discovered = ROOT
+				}
 			}
 		}	
 		effect = { 
@@ -1817,7 +1906,12 @@ btc_por_africa5 = {
 		trigger = {
 			2258 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_province_modifier = fortified_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					has_province_modifier = fortified_feitoria
+				}
 			}
 		}	
 		effect = {
@@ -2043,9 +2137,14 @@ btc_por_india1 = {
 		trigger = {
 			1201 = { 
 				country_or_non_sovereign_subject_holds = ROOT
-				OR = {
-					has_province_modifier = feitoria
-					has_province_modifier = fortified_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					OR = {
+						has_province_modifier = feitoria
+						has_province_modifier = fortified_feitoria
+					}
 				}
 			}
 		}	
@@ -2207,9 +2306,14 @@ btc_por_india2 = {
 		trigger = {
 			2999 = { 
 				country_or_non_sovereign_subject_holds = ROOT
-				OR = {
-					has_province_modifier = feitoria
-					has_province_modifier = fortified_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					OR = {
+						has_province_modifier = feitoria
+						has_province_modifier = fortified_feitoria
+					}
 				}
 			}
 		}	
@@ -2247,9 +2351,14 @@ btc_por_india2 = {
 		trigger = {	
 			400 = { 
 				country_or_non_sovereign_subject_holds = ROOT
-				OR = {
-					has_province_modifier = feitoria
-					has_province_modifier = fortified_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					OR = {
+						has_province_modifier = feitoria
+						has_province_modifier = fortified_feitoria
+					}
 				}
 			}
 			395 = { 
@@ -2436,9 +2545,14 @@ btc_por_india3 = {
 		trigger = {
 			388 = { 
 				country_or_non_sovereign_subject_holds = ROOT
-				OR = {
-					has_province_modifier = feitoria
-					has_province_modifier = fortified_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					OR = {
+						has_province_modifier = feitoria
+						has_province_modifier = fortified_feitoria
+					}
 				}
 			}
 		}	
@@ -2583,9 +2697,14 @@ btc_por_india4 = {
 		trigger = {
 			596 = { 
 				country_or_non_sovereign_subject_holds = ROOT
-				OR = {
-					has_province_modifier = feitoria
-					has_province_modifier = fortified_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					OR = {
+						has_province_modifier = feitoria
+						has_province_modifier = fortified_feitoria
+					}
 				}
 			}
 		}	
@@ -2615,8 +2734,14 @@ btc_por_india4 = {
 		}		
 		trigger = {
 			596 = {
-				has_fort_building_trigger = yes
-				has_province_modifier = fortified_feitoria
+				owned_by = ROOT
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					has_fort_building_trigger = yes
+					has_province_modifier = fortified_feitoria
+				}
 			}
 		}	
 		effect = {
@@ -2647,9 +2772,14 @@ btc_por_india4 = {
 		trigger = {
 			568 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				OR = {
-					has_province_modifier = feitoria
-					has_province_modifier = fortified_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					OR = {
+						has_province_modifier = feitoria
+						has_province_modifier = fortified_feitoria
+					}
 				}
 			}
 		}	
@@ -2764,9 +2894,14 @@ btc_por_india5 = {
 		trigger = {
 			2030 = { 
 				country_or_non_sovereign_subject_holds = ROOT 
-				OR = {
-					has_province_modifier = feitoria
-					has_province_modifier = fortified_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					OR = {
+						has_province_modifier = feitoria
+						has_province_modifier = fortified_feitoria
+					}
 				}
 			}
 		}	
@@ -2830,31 +2965,56 @@ btc_por_india5 = {
 			4455 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
-					has_province_modifier = foreign_feitoria
+					if = {
+						limit = {
+							ROOT = { ai = no }
+						}
+						has_province_modifier = foreign_feitoria
+					}
 				}
 			}
 			4430 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
-					has_province_modifier = foreign_feitoria
+					if = {
+						limit = {
+							ROOT = { ai = no }
+						}
+						has_province_modifier = foreign_feitoria
+					}
 				}
 			}
 			529 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
-					has_province_modifier = foreign_feitoria
+					if = {
+						limit = {
+							ROOT = { ai = no }
+						}
+						has_province_modifier = foreign_feitoria
+					}
 				}
 			}
 			2089 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
-					has_province_modifier = foreign_feitoria
+					if = {
+						limit = {
+							ROOT = { ai = no }
+						}
+						has_province_modifier = foreign_feitoria
+					}
 				}
 			}
 			4980 = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
-					has_province_modifier = foreign_feitoria
+					if = {
+						limit = {
+							ROOT = { ai = no }
+						}
+						has_province_modifier = foreign_feitoria
+					}
 				}
 			}
 		}	
@@ -3001,13 +3161,23 @@ btc_por_east1 = {
 				668 = {
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
-						has_province_modifier = foreign_feitoria
+						if = {
+							limit = {
+								ROOT = { ai = no }
+							}
+							has_province_modifier = foreign_feitoria
+						}
 					}
 				}
 				4975 = {
 					OR = {
 						country_or_non_sovereign_subject_holds = ROOT
+					if = {
+						limit = {
+							ROOT = { ai = no }
+						}
 						has_province_modifier = foreign_feitoria
+					}
 					}
 				}
 			}
@@ -3028,12 +3198,22 @@ btc_por_east1 = {
 				if = {
 					limit = {
 						668 = {
-							has_province_modifier = foreign_feitoria
+							if = {
+								limit = {
+									ROOT = { ai = no }
+								}
+								has_province_modifier = foreign_feitoria
+							}
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
 							owned_by = event_target:hongkong_owner
 						}
 						4975 = {
-							has_province_modifier = foreign_feitoria
+							if = {
+								limit = {
+									ROOT = { ai = no }
+								}
+								has_province_modifier = foreign_feitoria
+							}
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
 							owned_by = event_target:macau_owner
 						}
@@ -3047,7 +3227,12 @@ btc_por_east1 = {
 				else_if = {
 					limit = {
 						668 = {
-							has_province_modifier = foreign_feitoria
+							if = {
+								limit = {
+									ROOT = { ai = no }
+								}
+								has_province_modifier = foreign_feitoria
+							}
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
 						}
 					}
@@ -3060,7 +3245,12 @@ btc_por_east1 = {
 				else_if = {
 					limit = {
 						4975 = {
-							has_province_modifier = foreign_feitoria
+							if = {
+								limit = {
+									ROOT = { ai = no }
+								}
+								has_province_modifier = foreign_feitoria
+							}
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
 						}
 					}
@@ -3111,7 +3301,12 @@ btc_por_jesuit1 = {
 				}
 			}
 			4182 = {
-				has_province_modifier = foreign_feitoria
+				if = {
+					limit = {
+						ROOT = { ai = no }
+					}
+					has_province_modifier = foreign_feitoria
+				}
 				owner = {
 					has_opinion = {
 						who = ROOT
