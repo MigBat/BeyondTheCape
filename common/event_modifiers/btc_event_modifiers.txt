@@ -358,8 +358,8 @@ decrepid_trade_infrastructure = {
 crusading_spirit = {
 	global_regiment_recruit_speed = -0.15
 	manpower_in_true_faith_provinces = 0.05
-	heir_chance = -0.85	
-	monarch_lifespan = -0.75
+	heir_chance = -1
+	monarch_lifespan = -0.85
 }
 
 decadent_fervor = {
@@ -736,11 +736,11 @@ duke_of_braganca_bad = {
 }
 
 duke_of_braganca_worse = {
-	global_autonomy = 0.2
+	global_autonomy = 0.25
 }
 
 duke_of_braganca_lands = {
-	local_autonomy = 0.2
+	local_autonomy = 0.15
 }
 
 por_cacadores = {

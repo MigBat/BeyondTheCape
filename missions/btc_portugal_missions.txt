@@ -853,6 +853,14 @@ btc_por_navy2 = {
 						name = crusading_spirit
 						duration = -1
 					}				
+					MOR = {
+						every_owned_province = {
+							limit = {
+								has_province_modifier = resist_reconquista
+							}
+							remove_province_modifier = resist_reconquista
+						}
+					}
 				}
 			}
 			else = {
@@ -1148,7 +1156,6 @@ btc_por_navy5a = {
 		provinces_to_highlight = { }		
 		trigger = {
 			mission_completed = btc_good_hope
-			brazil_region = { has_discovered = ROOT }
 		}	
 		effect = { 
 			country_event = {

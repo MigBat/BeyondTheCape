@@ -204,6 +204,23 @@ can_colonize_province = {
 		}
 	}
 	condition = {
+		tooltip = "iberia_colonise_restriction"
+		potential = { 
+			NOT = { is_year = 1550 }
+			FROM = {
+				ai = yes
+				capital_scope = {
+					region = iberia_region
+				}
+			}
+		}
+		allow = { 
+			NOT = { 
+				trade_company_region = trade_company_labrador
+			}
+		}
+	}
+	condition = {
 		tooltip = "not_iberia_colonise_restriction"
 		potential = { 
 			NOT = { is_year = 1650 }

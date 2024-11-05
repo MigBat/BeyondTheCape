@@ -39,8 +39,11 @@ portuguese_regency = {
 			50 = portuguese_regency.2
 			50 = portuguese_regency.3
 			50 = portuguese_regency.4
-			25 = portuguese_regency.5
-			25 = portuguese_regency.6
+			20 = portuguese_regency.5
+			20 = portuguese_regency.6
+			25 = portuguese_regency.7
+			25 = portuguese_regency.8
+			25 = portuguese_regency.9
 			150 = 0	
 		}
 	}

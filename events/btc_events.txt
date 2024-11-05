@@ -48,7 +48,7 @@ country_event = {
 		every_owned_province = {
 			add_permanent_province_modifier = {
 				name = resist_reconquista
-				duration = 18250
+				duration = -1
 			}
 		}
 	}

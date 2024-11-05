@@ -55,7 +55,14 @@ country_event = {
 			}			
 		}
 
+		add_years_of_income = -0.1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+
 		set_country_flag = isabel_de_coimbra
+		custom_tooltip = isabel_de_coimbra_tt
 		custom_tooltip = braganca_offended_tt
 	}
 
@@ -70,19 +77,25 @@ country_event = {
 			}			
 		}
 
-		add_years_of_income = 0.25
-		random_owned_province = {
-			limit = {
-				NOT = { has_province_modifier = duke_of_braganca_lands }
-				is_capital = no
-			}
-			add_province_modifier = {
-				name = duke_of_braganca_lands
-				duration = -1
-			}
+		add_years_of_income = 0.2
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = 10
+			duration = 1460
 		}
+		# random_owned_province = {
+		# 	limit = {
+		# 		NOT = { has_province_modifier = duke_of_braganca_lands }
+		# 		is_capital = no
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = duke_of_braganca_lands
+		# 		duration = -1
+		# 	}
+		# }
 
 		set_country_flag = beatriz_de_braganca
+		custom_tooltip = beatriz_de_braganca_tt
 		custom_tooltip = braganca_pleased_tt
 	}
 }
@@ -116,9 +129,10 @@ country_event = {
 			}			
 		}
 
+		add_years_of_income = -0.1
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = 10
+			loyalty = -5
 		}
 		custom_tooltip = braganca_offended_tt
 	}
@@ -134,15 +148,6 @@ country_event = {
 			}			
 		}
 
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -10
-		}
-		add_estate_influence_modifier = {
-			estate = estate_nobles
-			influence = -10
-			duration = 7300
-		}
 		define_advisor = {
 			type = diplomat
 			skill = 2
@@ -153,17 +158,22 @@ country_event = {
 			age = 45
 		}
 
-		add_years_of_income = 0.25
-		random_owned_province = {
-			limit = {
-				NOT = { has_province_modifier = duke_of_braganca_lands }
-				is_capital = no
-			}
-			add_province_modifier = {
-				name = duke_of_braganca_lands
-				duration = -1
-			}
+		add_years_of_income = 0.2
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = 10
+			duration = 1460
 		}
+		# random_owned_province = {
+		# 	limit = {
+		# 		NOT = { has_province_modifier = duke_of_braganca_lands }
+		# 		is_capital = no
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = duke_of_braganca_lands
+		# 		duration = -1
+		# 	}
+		# }
 		custom_tooltip = braganca_pleased_tt
 	}
 }
@@ -197,9 +207,10 @@ country_event = {
 			}			
 		}
 
+		add_years_of_income = -0.1
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = 10
+			loyalty = -5
 		}
 		custom_tooltip = braganca_offended_tt
 	}
@@ -215,23 +226,22 @@ country_event = {
 			}			
 		}
 		
+		add_years_of_income = 0.2
 		add_estate_influence_modifier = {
 			estate = estate_nobles
 			influence = 10
-			duration = 7300
+			duration = 1460
 		}
-
-		add_years_of_income = 0.25
-		random_owned_province = {
-			limit = {
-				NOT = { has_province_modifier = duke_of_braganca_lands }
-				is_capital = no
-			}
-			add_province_modifier = {
-				name = duke_of_braganca_lands
-				duration = -1
-			}
-		}
+		# random_owned_province = {
+		# 	limit = {
+		# 		NOT = { has_province_modifier = duke_of_braganca_lands }
+		# 		is_capital = no
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = duke_of_braganca_lands
+		# 		duration = -1
+		# 	}
+		# }
 		custom_tooltip = braganca_pleased_tt
 	}
 }
@@ -253,7 +263,7 @@ country_event = {
 		custom_tooltip = show_afonso_alignment_tt
 	}
 
-	# Develop Coimbra
+	# Save Up
 	option = {
 		name = portuguese_regency.5a
 
@@ -269,10 +279,15 @@ country_event = {
 			1 = { add_dip_power = 50 }
 			1 = { add_mil_power = 50 }
 		}
+		add_years_of_income = -0.1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
 		custom_tooltip = braganca_offended_tt
 	}
 
-	# Develop BraganÔøΩa
+	# Develop BraganÁa
 	option = {
 		name = portuguese_regency.5b
 
@@ -291,17 +306,22 @@ country_event = {
 			}
 		}
 
-		add_years_of_income = 0.25
-		random_owned_province = {
-			limit = {
-				NOT = { has_province_modifier = duke_of_braganca_lands }
-				is_capital = no
-			}
-			add_province_modifier = {
-				name = duke_of_braganca_lands
-				duration = -1
-			}
+		add_years_of_income = 0.2
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = 10
+			duration = 1460
 		}
+		# random_owned_province = {
+		# 	limit = {
+		# 		NOT = { has_province_modifier = duke_of_braganca_lands }
+		# 		is_capital = no
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = duke_of_braganca_lands
+		# 		duration = -1
+		# 	}
+		# }
 		custom_tooltip = braganca_pleased_tt
 	}
 }
@@ -344,6 +364,11 @@ country_event = {
 		event_target:event6_prov = {
 			add_prosperity = 100
 		}
+		add_years_of_income = -0.1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
 		custom_tooltip = braganca_offended_tt
 	}
 
@@ -357,22 +382,233 @@ country_event = {
 			}			
 		}
 
-		event_target:event6_prov = {
-			add_local_autonomy = 10
+		add_years_of_income = 0.2
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = 10
+			duration = 1460
+		}
+		# random_owned_province = {
+		# 	limit = {
+		# 		NOT = { has_province_modifier = duke_of_braganca_lands }
+		# 		is_capital = no
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = duke_of_braganca_lands
+		# 		duration = -1
+		# 	}
+		# }
+		custom_tooltip = braganca_pleased_tt
+	}
+}
+
+# Assassination 1
+country_event = {
+	id = portuguese_regency.7
+	title = portuguese_regency.7_t
+	desc = portuguese_regency.7_d
+	picture = ASSASSINATION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_regency = yes
+	}
+
+	option = {	# do it
+		name = portuguese_regency.7a
+
+		hidden_effect = {
+			set_variable = {
+				which = assassination_points
+				value = 1
+			}
+		}
+		add_years_of_income = -0.5
+		set_country_flag = assassination_attempt_flag
+		custom_tooltip = assassination_plan_start
+	}
+
+	option = {	# dont do it
+		name = portuguese_regency.7b
+	}
+}
+
+# Assassination 2
+country_event = {
+	id = portuguese_regency.8
+	title = portuguese_regency.8_t
+	desc = portuguese_regency.8_d
+	picture = ASSASSINATION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_regency = yes
+		has_country_flag = assassination_attempt_flag
+	}
+
+	option = {
+		name = portuguese_regency.8a
+
+		hidden_effect = {
+			change_variable = {
+				which = assassination_points
+				value = 1
+			}			
+		}
+		add_dip_power = -100 
+		custom_tooltip = assassination_chance_increase
+	}
+
+	option = {
+		name = portuguese_regency.8b
+	}
+}
+
+# Assassination 3
+country_event = {
+	id = portuguese_regency.9
+	title = portuguese_regency.9_t
+	desc = portuguese_regency.9_d
+	picture = ASSASSINATION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_regency = yes
+		has_country_flag = assassination_attempt_flag
+	}
+
+	option = {
+		name = portuguese_regency.9a
+
+		hidden_effect = {
+			change_variable = {
+				which = assassination_points
+				value = 1
+			}			
+		}
+		custom_tooltip = remove_5_crown_land_share
+		hidden_effect = {
+			change_estate_land_share = {
+			   estate = all
+			   share = 10
+		    }
+		}
+	}
+
+	option = {
+		name = portuguese_regency.9b
+	}
+}
+
+# Assassination attempt
+country_event = {
+	id = portuguese_regency.11
+	title = portuguese_regency.11_t
+	desc = portuguese_regency.11_d
+	picture = ASSASSINATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_regency = yes
+		has_country_flag = assassination_attempt_flag
+		is_year = 1446
+		is_month = 11
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				30 = {
+					trigger = {
+						check_variable = {
+							which = assassination_points
+							value = 1
+						}
+						NOT = {
+							check_variable = {
+								which = assassination_points
+								value = 2
+							}
+						}					
+					}
+					set_country_flag = killed_duke_braganca
+				}
+				50 = {
+					trigger = {
+						check_variable = {
+							which = assassination_points
+							value = 2
+						}
+						NOT = {
+							check_variable = {
+								which = assassination_points
+								value = 3
+							}
+						}					
+					}
+					set_country_flag = killed_duke_braganca
+				}
+				70 = {
+					trigger = {
+						check_variable = {
+							which = assassination_points
+							value = 3
+						}
+						NOT = {
+							check_variable = {
+								which = assassination_points
+								value = 4
+							}
+						}					
+					}
+					set_country_flag = killed_duke_braganca
+				}
+				100 = { }
+			}			
+		}
+	}
+
+	option = {
+		name = portuguese_regency.11a
+
+		trigger = {
+			has_country_flag = killed_duke_braganca
 		}
 
-		add_years_of_income = 0.25
-		random_owned_province = {
-			limit = {
-				NOT = { has_province_modifier = duke_of_braganca_lands }
-				is_capital = no
-			}
-			add_province_modifier = {
-				name = duke_of_braganca_lands
-				duration = -1
-			}
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = -50
+			}			
 		}
-		custom_tooltip = braganca_pleased_tt
+		custom_tooltip = killed_duke_braganca_tt
+	}
+
+	option = {
+		name = portuguese_regency.11b
+
+		trigger = {
+			NOT = { has_country_flag = killed_duke_braganca }
+		}
+
+		hidden_effect = {
+			change_variable = {
+				which = afonso_alignment
+				value = 50
+			}			
+		}
+		custom_tooltip = not_killed_duke_braganca_tt
 	}
 }
 
@@ -383,21 +619,38 @@ country_event = {
 	desc = {
 		trigger = {
 			check_variable = { which = afonso_alignment value = 0 }
+			NOT = { has_country_flag = assassination_attempt_flag }
 		}
 		desc = portuguese_regency.10_d1
 	}
 	desc = {
 		trigger = {
 			NOT = { check_variable = { which = afonso_alignment value = 0 } }
+			NOT = { has_country_flag = assassination_attempt_flag }
 		}
 		desc = portuguese_regency.10_d2
+	}
+	# Assassination
+	desc = {
+		trigger = {	# failed
+			check_variable = { which = afonso_alignment value = 0 }
+			has_country_flag = assassination_attempt_flag
+		}
+		desc = portuguese_regency.10_d3
+	}
+	desc = {
+		trigger = {	#suceeded
+			NOT = { check_variable = { which = afonso_alignment value = 0 } }
+			has_country_flag = assassination_attempt_flag
+		}
+		desc = portuguese_regency.10_d4
 	}
 	picture = KINGS_CHOICE_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	# BraganÔøΩa plots
+	# BraganÁa plots
 	option = {
 		name = portuguese_regency.10a
 
@@ -409,7 +662,7 @@ country_event = {
 		}
 
 		kill_leader = {
-			type = "√Ålvaro Vaz de Almada"
+			type = "¡lvaro Vaz de Almada"
 		}
 		1851 = {
 			spawn_rebels = {
@@ -422,14 +675,25 @@ country_event = {
 			}
 		}
 
-		add_country_modifier = {
-			name = duke_of_braganca_bad
-			duration = -1
+		if = {
+			limit = {
+				has_country_flag = assassination_attempt_flag
+			}
+			add_country_modifier = {
+				name = duke_of_braganca_worse
+				duration = -1
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = duke_of_braganca_bad
+				duration = -1
+			}
 		}
 		set_country_flag = braganca_plot
 	}
 
-	# BraganÔøΩa appeased
+	# BraganÁa appeased
 	option = {
 		name = portuguese_regency.10b
 
@@ -442,6 +706,20 @@ country_event = {
 			}
 		}
 		add_stability = 1
+		if = {
+			limit = {
+				has_country_flag = assassination_attempt_flag
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 30
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				influence = -50
+				duration = 1460
+			}
+		}
 		set_country_flag = braganca_appeased
 	}
 }
@@ -478,7 +756,7 @@ country_event = {
 		define_advisor = {
 			type = commandant
 			skill = 2
-			name = "Afonso de Bragan√ßa"
+			name = "Afonso de BraganÁa"
 			location = 232
 			cost_multiplier = 0.25
 			age = 70
@@ -509,6 +787,19 @@ country_event = {
 
 		add_stability = 1
 
+		if = {
+			limit = {
+				NOT = { has_country_flag = assassination_attempt_flag }
+			}
+			define_advisor = {
+				type = commandant
+				skill = 2
+				name = "Afonso de BraganÁa"
+				location = 232
+				cost_multiplier = 0.25
+				age = 71
+			}
+		}
 		define_advisor = {
 			type = treasurer
 			skill = 2
@@ -516,14 +807,6 @@ country_event = {
 			location = 1851
 			cost_multiplier = 0.25
 			age = 57
-		}
-		define_advisor = {
-			type = commandant
-			skill = 2
-			name = "Afonso de Bragan√ßa"
-			location = 232
-			cost_multiplier = 0.25
-			age = 71
 		}
 		change_ruler_stat = {
 			type = dip
@@ -536,7 +819,7 @@ country_event = {
 	}
 }
 
-# New King house braganÔøΩa fate
+# New King house braganÁa fate
 country_event = {
 	id = portuguese_regency.101
 	title = portuguese_regency.101_t
