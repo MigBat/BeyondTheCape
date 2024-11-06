@@ -38,6 +38,7 @@ country_event = {
 
 	trigger = {
 		has_regency = yes
+		NOT = { is_year = 1447 }
 	}
 
 	immediate = {
@@ -112,6 +113,7 @@ country_event = {
 
 	trigger = {
 		has_regency = yes
+		NOT = { is_year = 1447 }
 	}
 
 	immediate = {
@@ -190,6 +192,7 @@ country_event = {
 
 	trigger = {
 		has_regency = yes
+		NOT = { is_year = 1447 }
 	}
 
 	immediate = {
@@ -257,6 +260,7 @@ country_event = {
 
 	trigger = {
 		has_regency = yes
+		NOT = { is_year = 1447 }
 	}
 
 	immediate = {
@@ -337,6 +341,7 @@ country_event = {
 
 	trigger = {
 		has_regency = yes
+		NOT = { is_year = 1447 }
 	}
 
 	immediate = {
@@ -873,11 +878,11 @@ country_event = {
 	id = portuguese_regency.105
 	title = portuguese_regency.105_t
 	desc = portuguese_regency.105_d
-	picture = THREE_HEIRS_eventPicture
+	picture = CONQUEST_eventPicture
 
 	fire_only_once = yes
 	trigger = { has_country_flag = braganca_plot NOT = { has_country_flag = john_antioch_happened }}
-	mean_time_to_happen = { days = 1825 }
+	mean_time_to_happen = { days = 3650 }
  
 	option = {	# Congratulate him
 		name = portuguese_regency.105a
@@ -906,11 +911,11 @@ country_event = {
 	id = portuguese_regency.106
 	title = portuguese_regency.106_t
 	desc = portuguese_regency.106_d
-	picture = THREE_HEIRS_eventPicture
+	picture = PRAYING_eventPicture
 
 	fire_only_once = yes
 	trigger = { has_country_flag = braganca_plot NOT = { has_country_flag = john_antioch_happened }}
-	mean_time_to_happen = { days = 1825 }
+	mean_time_to_happen = { days = 3650 }
 
 	option = {	# Welcome him
 		name = portuguese_regency.106a
@@ -946,11 +951,11 @@ country_event = {
 	id = portuguese_regency.107
 	title = portuguese_regency.107_t
 	desc = portuguese_regency.107_d
-	picture = THREE_HEIRS_eventPicture
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
 
 	fire_only_once = yes
 	trigger = { has_country_flag = braganca_plot NOT = { has_country_flag = john_antioch_happened }}
-	mean_time_to_happen = { days = 1825 }
+	mean_time_to_happen = { days = 3650 }
 
 	option = {	# This could prove advantageous for us
 		name = portuguese_regency.107a
