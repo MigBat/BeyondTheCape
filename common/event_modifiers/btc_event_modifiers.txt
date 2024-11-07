@@ -102,22 +102,22 @@ low_saudade_3 = {
 }
 
 capital_1 = {
-	monthly_portuguese_saudade = -0.05
+	monthly_portuguese_saudade = -0.025
 }
 capital_2 = {
-	monthly_portuguese_saudade = -0.1
+	monthly_portuguese_saudade = -0.05
 }
 capital_3 = {
-	monthly_portuguese_saudade = -0.15
+	monthly_portuguese_saudade = -0.075
 }
 capital_4 = {
-	monthly_portuguese_saudade = -0.2
+	monthly_portuguese_saudade = -0.1
 }
 capital_5 = {
-	monthly_portuguese_saudade = -0.25
+	monthly_portuguese_saudade = -0.125
 }
 capital_6 = {
-	monthly_portuguese_saudade = -0.3
+	monthly_portuguese_saudade = -0.15
 }
 
 estate_slavers_monopoly_of_slaves_mod = {
@@ -768,7 +768,7 @@ malaria = {
 }
 
 island_development = {
-	local_development_cost_modifier = 0.75
+	local_development_cost_modifier = 1
 	picture = "island_pic"
 }
 
@@ -799,7 +799,7 @@ many_settlers = {
 
 monumental_good = {
 	no_stability_loss_on_monarch_death = yes
-	ship_recruit_speed = -0.5
+	global_ship_recruit_speed = -0.5
 	all_estate_possible_privileges = 1
 	governing_capacity_modifier = 0.25
 	max_absolutism = 50

@@ -15,11 +15,12 @@ portuguese_saudade_mechanic = {
 				modifier = {
 					global_sailors_modifier = 0.25
 					manpower_in_own_culture_provinces = -0.25
-					reduced_liberty_desire_on_same_continent = -20
+					reduced_liberty_desire_on_same_continent = -25
 					global_foreign_trade_power = 0.15
 					allowed_marine_fraction = 0.15
 					land_forcelimit_modifier = -0.2
 					range = 1
+					monthly_portuguese_saudade = -0.2
 				}
 			}
 
@@ -27,7 +28,10 @@ portuguese_saudade_mechanic = {
 				modifier = {
 					allowed_tercio_fraction = 0.3
 					global_colonial_growth = 60
-					reduced_liberty_desire_on_other_continent = -20
+					reduced_liberty_desire_on_other_continent = -25
+					treasure_fleet_income = -0.5
+					trade_steering = -0.25
+					global_tariffs = -0.25
 				}
 			}
 		}

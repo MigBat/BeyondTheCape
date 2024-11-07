@@ -88,13 +88,13 @@ btc_por_monumental = {
 						}
 					}
 				}
-				custom_trigger_tooltip = {
-					tooltip = monumental3_tt
-					has_country_flag = lisbon_earthquake_happened
-					227 = {
-						NOT = {
-							has_province_modifier = massive_earthquake
-						}
+			}
+			custom_trigger_tooltip = {
+				tooltip = monumental3_tt
+				has_country_flag = lisbon_earthquake_happened
+				227 = {
+					NOT = {
+						has_province_modifier = massive_earthquake
 					}
 				}
 			}
@@ -587,14 +587,14 @@ btc_por_navy1 = {
 		position = 4
 		provinces_to_highlight = { }		
 		trigger = {
-			alentejo_area = {
-				holy_order = avis_order
-			}
+			army_size_percentage = 1
 			if = {
 				limit = {
 					ai = no
 				}
-				army_size_percentage = 1
+				alentejo_area = {
+					holy_order = avis_order
+				}
 			}
 		}	
 		effect = {		
@@ -928,14 +928,14 @@ btc_por_navy3 = {
 		position = 4
 		provinces_to_highlight = { }		
 		trigger = {
-			estremadura_area = {
-				holy_order = christ_order
-			}
+			navy_size_percentage = 1
 			if = {
 				limit = {
 					ai = no
 				}
-				navy_size_percentage = 1
+				estremadura_area = {
+					holy_order = christ_order
+				}
 			}
 		}
 		effect = {

@@ -882,7 +882,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = { has_country_flag = braganca_plot NOT = { has_country_flag = john_antioch_happened }}
-	mean_time_to_happen = { days = 3650 }
+	mean_time_to_happen = { days = 2500 }
  
 	option = {	# Congratulate him
 		name = portuguese_regency.105a
@@ -915,7 +915,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = { has_country_flag = braganca_plot NOT = { has_country_flag = john_antioch_happened }}
-	mean_time_to_happen = { days = 3650 }
+	mean_time_to_happen = { days = 2500 }
 
 	option = {	# Welcome him
 		name = portuguese_regency.106a
@@ -955,7 +955,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = { has_country_flag = braganca_plot NOT = { has_country_flag = john_antioch_happened }}
-	mean_time_to_happen = { days = 3650 }
+	mean_time_to_happen = { days = 2500 }
 
 	option = {	# This could prove advantageous for us
 		name = portuguese_regency.107a

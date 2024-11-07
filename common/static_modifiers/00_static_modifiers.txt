@@ -105,7 +105,8 @@ city = {
 	allowed_num_of_buildings = 2
 	local_sailors_modifier = 0.25
 	garrison_growth = 0.05
-	allowed_num_of_manufactories = 1
+	# BTC #
+	allowed_num_of_manufactories = 0
 }
 
 port = {
@@ -307,7 +308,7 @@ development = {
 }
 
 development_scaled = {
-	local_development_cost = 0.05
+	local_development_cost = 0.075
 }
 
 capital_city = {
@@ -644,7 +645,8 @@ ai_nation = {
 	diplomats = 1 							# ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
 	free_leader_pool = 1					# ai needs to have enough pool for 1 general & 1 admiral
 	sailors_recovery_speed = 0.25
-	colony_cost_modifier = -0.5
+	colony_cost_modifier = -0.9
+	global_allowed_num_of_manufactories = 1
 }
 
 
@@ -2311,7 +2313,7 @@ expanded_infrastructure = {
 	local_governing_cost_increase = 15
 	local_governing_cost = 0.1
 	local_great_project_upgrade_cost = -0.05
-	local_friendly_movement_speed = 0.05
+	local_friendly_movement_speed = 0.1
 }
 
 centralize_state = {
