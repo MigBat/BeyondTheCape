@@ -1521,6 +1521,7 @@ btc_por_africa1 = {
 					change_trade_goods = gold
 					add_permanent_claim = FROM
 					save_event_target_as = por_carib_island
+					set_province_flag = isle_seven_cities_flag
 				}
 				# create_colony_mission_reward = {
 				# 	province = event_target:por_carib_island

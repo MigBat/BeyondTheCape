@@ -2343,17 +2343,18 @@ got_pirate_slot_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				greek_islands_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 				add_permanent_claim_province = {
 					province = 2954
 				}
 				add_permanent_claim_province = {
 					province = 112
-				}
-				add_permanent_claim_province = {
-					province = 163
-				}
-				add_permanent_claim_province = {
-					province = 321
 				}
 				add_permanent_claim_province = {
 					province = 4698

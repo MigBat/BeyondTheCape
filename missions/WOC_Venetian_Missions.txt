@@ -2710,10 +2710,28 @@ venice_missions_slot_5 = {
 				if = {
 					limit = {
 						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-							owner = {
-								NOT = { is_in_trade_league_with = ROOT }
+							AND = {
+								is_permanent_claim = ROOT
+								is_core = ROOT
+								owner = {
+									NOT = { is_in_trade_league_with = ROOT }
+								}
+							}
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			4973 = {
+				if = {
+					limit = {
+						NOT = {
+							AND = {
+								is_permanent_claim = ROOT
+								is_core = ROOT
+								owner = {
+									NOT = { is_in_trade_league_with = ROOT }
+								}
 							}
 						}
 					}
@@ -2737,7 +2755,10 @@ venice_missions_slot_5 = {
 		required_missions = { wof_ven_reclaim_the_aegean }
 		
 		provinces_to_highlight = {
-			province_id = 321
+			OR = {
+				province_id = 321
+				province_id = 4973
+			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				owner = {
@@ -2747,6 +2768,12 @@ venice_missions_slot_5 = {
 		}
 		trigger = {
 			321 = {
+				OR = {
+					owner = { is_in_trade_league_with = ROOT }
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			4973 = {
 				OR = {
 					owner = { is_in_trade_league_with = ROOT }
 					country_or_non_sovereign_subject_holds = ROOT

@@ -48,6 +48,7 @@ can_colonize_province = {
 								OR = {
 									area = newfoundland_area
 									area = labrador_area
+									has_province_flag = isle_seven_cities_flag
 								}
 							}
 						}

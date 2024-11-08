@@ -938,7 +938,10 @@ country_event = {
 		is_year = 1550
 		OR = {
 			has_country_modifier = ven_expanded_council
-			163 = { owned_by = TUR }
+			AND = {
+				163 = { owned_by = TUR }
+				4974 = { owned_by = TUR }
+			}
 		}
 		has_government_attribute = is_merchant_republic
 	}

@@ -308,7 +308,7 @@ development = {
 }
 
 development_scaled = {
-	local_development_cost = 0.075
+	local_development_cost = 0.06
 }
 
 capital_city = {

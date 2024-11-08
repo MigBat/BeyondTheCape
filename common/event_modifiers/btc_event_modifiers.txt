@@ -865,7 +865,7 @@ home_of_nutmeg = {
 }
 
 reduced_saudade = {
-	monthly_portuguese_saudade = -0.5
+	monthly_portuguese_saudade = -0.2
 }
 
 overseas_dominance_mod = {

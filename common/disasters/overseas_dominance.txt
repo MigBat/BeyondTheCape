@@ -9,7 +9,7 @@ overseas_dominance = {
 		has_government_power = {
 			mechanic_type = portuguese_saudade_mechanic 
 			power_type = portuguese_saudade 
-			value = 100
+			value = 0
 		}
 		OR = {
 			# more territories than states
@@ -26,7 +26,7 @@ overseas_dominance = {
 				multiply_variable = { which = numOfStateProvinces value = 3 }
 				check_variable = { which = numOfTerritoryProvinces which = numOfStateProvinces }
 			}
-			# casa da india double development than portugal
+			# casa da india more development than portugal
 			if = {
 				limit = {
 					CDI = {
@@ -44,10 +44,10 @@ overseas_dominance = {
 						value = trigger_value:total_development
 						who = CDI
 					}
-					multiply_variable = {
-						which = portugalDevelopment
-						value = 2
-					}
+					# multiply_variable = {
+					# 	which = portugalDevelopment
+					# 	value = 2
+					# }
 					check_variable = {
 						which = casaIndiaDevelopment
 						which = portugalDevelopment
@@ -57,15 +57,112 @@ overseas_dominance = {
 		}
 	}
 	can_stop = {
+		# NOT = {
+		# 	has_government_power = {
+		# 		mechanic_type = portuguese_saudade_mechanic 
+		# 		power_type = portuguese_saudade 
+		# 		value = 50
+		# 	}
+		# }
 		NOT = {
-			has_government_power = {
-				mechanic_type = portuguese_saudade_mechanic 
-				power_type = portuguese_saudade 
-				value = 50
+			check_variable = {
+				which = casaIndiaDevelopment
+				which = portugalDevelopment
+			}
+		}
+		NOT = {
+			check_variable = { 
+				which = numOfTerritoryProvinces 
+				which = numOfStateProvinces 
 			}
 		}
 	}
 	progress = {
+		modifier = {
+			factor = -1
+			custom_trigger_tooltip = {
+				tooltip = less_than_10_saudade
+				NOT = {
+					has_government_power = {
+						mechanic_type = portuguese_saudade_mechanic 
+						power_type = portuguese_saudade 
+						value = 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -0.8
+			custom_trigger_tooltip = {
+				tooltip = between_10_and_20_saudade
+				has_government_power = {
+					mechanic_type = portuguese_saudade_mechanic 
+					power_type = portuguese_saudade 
+					value = 10
+				}
+				NOT = {
+					has_government_power = {
+						mechanic_type = portuguese_saudade_mechanic 
+						power_type = portuguese_saudade 
+						value = 20
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -0.6
+			custom_trigger_tooltip = {
+				tooltip = between_20_and_30_saudade
+				has_government_power = {
+					mechanic_type = portuguese_saudade_mechanic 
+					power_type = portuguese_saudade 
+					value = 20
+				}
+				NOT = {
+					has_government_power = {
+						mechanic_type = portuguese_saudade_mechanic 
+						power_type = portuguese_saudade 
+						value = 30
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -0.4
+			custom_trigger_tooltip = {
+				tooltip = between_30_and_40_saudade
+				has_government_power = {
+					mechanic_type = portuguese_saudade_mechanic 
+					power_type = portuguese_saudade 
+					value = 30
+				}
+				NOT = {
+					has_government_power = {
+						mechanic_type = portuguese_saudade_mechanic 
+						power_type = portuguese_saudade 
+						value = 40
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -0.2
+			custom_trigger_tooltip = {
+				tooltip = between_40_and_50_saudade
+				has_government_power = {
+					mechanic_type = portuguese_saudade_mechanic 
+					power_type = portuguese_saudade 
+					value = 40
+				}
+				NOT = {
+					has_government_power = {
+						mechanic_type = portuguese_saudade_mechanic 
+						power_type = portuguese_saudade 
+						value = 50
+					}
+				}
+			}
+		}
 		modifier = {
 			factor = 1
 			variable_arithmetic_trigger = {
@@ -171,6 +268,121 @@ overseas_dominance = {
 		modifier = {
 			factor = 1
 			variable_arithmetic_trigger = {
+				custom_tooltip = cdi_development_1_times_portugal
+				export_to_variable = {
+					which = portugalDevelopment
+					value = trigger_value:total_development
+				}
+				export_to_variable = {
+					which = casaIndiaDevelopment
+					value = trigger_value:total_development
+					who = CDI
+				}
+				# multiply_variable = {
+				# 	which = portugalDevelopment
+				# 	value = 2
+				# }
+				check_variable = {
+					which = casaIndiaDevelopment
+					which = portugalDevelopment
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
+				custom_tooltip = cdi_development_1.2_times_portugal
+				export_to_variable = {
+					which = portugalDevelopment
+					value = trigger_value:total_development
+				}
+				export_to_variable = {
+					which = casaIndiaDevelopment
+					value = trigger_value:total_development
+					who = CDI
+				}
+				multiply_variable = {
+					which = portugalDevelopment
+					value = 1.2
+				}
+				check_variable = {
+					which = casaIndiaDevelopment
+					which = portugalDevelopment
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
+				custom_tooltip = cdi_development_1.4_times_portugal
+				export_to_variable = {
+					which = portugalDevelopment
+					value = trigger_value:total_development
+				}
+				export_to_variable = {
+					which = casaIndiaDevelopment
+					value = trigger_value:total_development
+					who = CDI
+				}
+				multiply_variable = {
+					which = portugalDevelopment
+					value = 1.4
+				}
+				check_variable = {
+					which = casaIndiaDevelopment
+					which = portugalDevelopment
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
+				custom_tooltip = cdi_development_1.6_times_portugal
+				export_to_variable = {
+					which = portugalDevelopment
+					value = trigger_value:total_development
+				}
+				export_to_variable = {
+					which = casaIndiaDevelopment
+					value = trigger_value:total_development
+					who = CDI
+				}
+				multiply_variable = {
+					which = portugalDevelopment
+					value = 1.6
+				}
+				check_variable = {
+					which = casaIndiaDevelopment
+					which = portugalDevelopment
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
+				custom_tooltip = cdi_development_1.8_times_portugal
+				export_to_variable = {
+					which = portugalDevelopment
+					value = trigger_value:total_development
+				}
+				export_to_variable = {
+					which = casaIndiaDevelopment
+					value = trigger_value:total_development
+					who = CDI
+				}
+				multiply_variable = {
+					which = portugalDevelopment
+					value = 1.8
+				}
+				check_variable = {
+					which = casaIndiaDevelopment
+					which = portugalDevelopment
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			variable_arithmetic_trigger = {
 				custom_tooltip = cdi_development_2_times_portugal
 				export_to_variable = {
 					which = portugalDevelopment
@@ -191,128 +403,20 @@ overseas_dominance = {
 				}
 			}
 		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = cdi_development_2.2_times_portugal
-				export_to_variable = {
-					which = portugalDevelopment
-					value = trigger_value:total_development
-				}
-				export_to_variable = {
-					which = casaIndiaDevelopment
-					value = trigger_value:total_development
-					who = CDI
-				}
-				multiply_variable = {
-					which = portugalDevelopment
-					value = 2.2
-				}
-				check_variable = {
-					which = casaIndiaDevelopment
-					which = portugalDevelopment
-				}
-			}
-		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = cdi_development_2.4_times_portugal
-				export_to_variable = {
-					which = portugalDevelopment
-					value = trigger_value:total_development
-				}
-				export_to_variable = {
-					which = casaIndiaDevelopment
-					value = trigger_value:total_development
-					who = CDI
-				}
-				multiply_variable = {
-					which = portugalDevelopment
-					value = 2.4
-				}
-				check_variable = {
-					which = casaIndiaDevelopment
-					which = portugalDevelopment
-				}
-			}
-		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = cdi_development_2.6_times_portugal
-				export_to_variable = {
-					which = portugalDevelopment
-					value = trigger_value:total_development
-				}
-				export_to_variable = {
-					which = casaIndiaDevelopment
-					value = trigger_value:total_development
-					who = CDI
-				}
-				multiply_variable = {
-					which = portugalDevelopment
-					value = 2.6
-				}
-				check_variable = {
-					which = casaIndiaDevelopment
-					which = portugalDevelopment
-				}
-			}
-		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = cdi_development_2.8_times_portugal
-				export_to_variable = {
-					which = portugalDevelopment
-					value = trigger_value:total_development
-				}
-				export_to_variable = {
-					which = casaIndiaDevelopment
-					value = trigger_value:total_development
-					who = CDI
-				}
-				multiply_variable = {
-					which = portugalDevelopment
-					value = 2.8
-				}
-				check_variable = {
-					which = casaIndiaDevelopment
-					which = portugalDevelopment
-				}
-			}
-		}
-		modifier = {
-			factor = 1
-			variable_arithmetic_trigger = {
-				custom_tooltip = cdi_development_3_times_portugal
-				export_to_variable = {
-					which = portugalDevelopment
-					value = trigger_value:total_development
-				}
-				export_to_variable = {
-					which = casaIndiaDevelopment
-					value = trigger_value:total_development
-					who = CDI
-				}
-				multiply_variable = {
-					which = portugalDevelopment
-					value = 3
-				}
-				check_variable = {
-					which = casaIndiaDevelopment
-					which = portugalDevelopment
-				}
-			}
-		}
 	}
 	can_end = {
-		NOT = {
-			has_government_power = {
-				mechanic_type = portuguese_saudade_mechanic 
-				power_type = portuguese_saudade 
-				value = 50
+		# NOT = {
+		# 	has_government_power = {
+		# 		mechanic_type = portuguese_saudade_mechanic 
+		# 		power_type = portuguese_saudade 
+		# 		value = 50
+		# 	}
+		# }
+		custom_trigger_tooltip = {
+			tooltip = overextended_empire_disaster_2_years
+			had_country_flag = {
+				flag = overextended_empire_flag
+				days = 730
 			}
 		}
 	}

@@ -12,6 +12,7 @@ country_event = {
 	option = {
 		name = btc_overseas.1a
 		add_stability = -1
+		set_country_flag = overextended_empire_flag
 
 		if = {
 			limit = {
@@ -44,6 +45,7 @@ country_event = {
 			name = reduced_saudade
 			duration = 365
 		}
+		clr_country_flag = overextended_empire_flag
 
 		if = {
 			limit = {

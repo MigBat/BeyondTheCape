@@ -1475,6 +1475,7 @@ gbr_row_3 = {
 					region = france_region
 					owned_by = ROOT
 					NOT = { province_id = 87 }
+					NOT = { province_id = 4953 }
 				}
 				owned_by = FRA
 			}
@@ -1491,6 +1492,7 @@ gbr_row_3 = {
 					NOT = {
 						any_owned_province = {
 							NOT = { province_id = 87 }
+							NOT = { province_id = 4953 }
 							region = france_region
 						}
 					}
@@ -1602,15 +1604,20 @@ gbr_row_3 = {
 			}
 		
 			126 = { add_permanent_claim = ROOT }
-			163 = { add_permanent_claim = ROOT }
-			321 = { add_permanent_claim = ROOT }
 			4559 = { add_permanent_claim = ROOT }
-			corsica_sardinia_area = { 
+			greek_islands_area = { 
 				limit = {
-					NOT = { is_core = EIC }
-					NOT = { is_permanent_claim = EIC }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = ROOT 
+				add_permanent_claim = ROOT
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT				
 			}
 		}
 		ai_weight = {
@@ -2545,9 +2552,8 @@ gbr_row_4 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 126
-				province_id = 163
-				province_id = 321
 				province_id = 4559
+				area = greek_islands_area
 				area = corsica_sardinia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -2555,9 +2561,11 @@ gbr_row_4 = {
 		trigger = {
 			not_in_mission_preview_mode = { key = GBR }
 			owns_or_non_sovereign_subject_of = 126
-			owns_or_non_sovereign_subject_of = 163
-			owns_or_non_sovereign_subject_of = 321
 			owns_or_non_sovereign_subject_of = 4559
+			greek_islands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			corsica_sardinia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -2590,6 +2598,9 @@ gbr_row_4 = {
 				}
 				add_permanent_claim_province = {
 					province = 163
+				}
+				add_permanent_claim_province = {
+					province = 4974
 				}
 				add_permanent_claim_province = {
 					province = 142

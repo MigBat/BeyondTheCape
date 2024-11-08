@@ -115,7 +115,8 @@
 
  btc_caribbean_title: "Isle of Seven Cities"
  btc_caribbean_desc: "Long ago, during the Muslim conquest of Hispania, seven Christian bishops led by the Archbishop of Porto embarked with their parishioners on ships and set sail westward to escape the Muslim conquerors. They stumbled upon an island, with sand of pure silver, and decided to settle there. Seven settlements were erected, each owned by one of the seven bishops. Now that we have the technology to cross oceans, we shall find this island, its people, and its riches."
- random_seven_cities_tt: "§MA random island in the Caribbeans region will get:§!\nCulture becomes §YPortuguese§!\nReligion changes to §YCatholic§!\n§YBase Tax, Production§! and §YManpower§! increase by §Y2§!\n§YGold§! will now be produced\n§YPortugal§! gains a permanent claim\n§Y400§! colonists join a Frontier"
+ random_seven_cities_tt: "§MA random island in the Caribbeans region will get:§!\nCulture becomes §YPortuguese§!\nReligion changes to §YCatholic§!\n§YBase Tax, Production§! and §YManpower§! increase by §Y2§!\n§YGold§! will now be produced\n§YPortugal§! gains a permanent claim"
+#\n§Y400§! colonists join a Frontier
 
  btc_pirates_title: "Pirates of the Caribbean"
  btc_pirates_desc: ""

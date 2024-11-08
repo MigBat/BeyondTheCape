@@ -105,6 +105,7 @@ country_event = {
 		exists = CYP
 		CYP = { 
 			owns = 321
+			owns = 4973
 			is_subject = no 
 			is_at_war = no
 			government = monarchy
@@ -254,6 +255,7 @@ country_event = {
 	option = {	
 		name = flavor_mam.7.a
 		add_claim = 321
+		add_claim = 4973
 	}
 }
 
