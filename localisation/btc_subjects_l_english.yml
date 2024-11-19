@@ -10,3 +10,10 @@
 
  voivode_subject:0 "Voivode Subject"
  desc_voivode_subject:0 "This country is a voivode."
+
+ conqueror_party: "Conqueror Party"
+ conqueror_party_long_desc: "A party led by a charismatic leader with big ambitions."
+ conqueror_party_is_our: "$NAME|Y$ is a Conqueror Party of ours"
+ conqueror_party_title: "Conqueror Party"
+ conqueror_party_title_plural: "Conqueror Parties"
+ is_conqueror_party: "Is Conqueror Party"

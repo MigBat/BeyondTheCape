@@ -7375,3 +7375,42 @@ country_event = {
 # 		kill_heir = {}
 # 	}
 # }
+
+country_event = {
+	id = btc_por.299
+	title = btc_por.299_t
+	desc = btc_por.299_d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = btc_por.299a
+		
+		kill_leader = { type = "Afonso de Albuquerque" }
+	}
+}
+
+country_event = {
+	id = btc_por.300
+	title = btc_por.300_t
+	desc = btc_por.300_d
+	picture = CONQUISTADORS_eventPicture
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			ABQ = {
+				every_owned_province = {
+					remove_core = ABQ
+					cede_province = previous_owner
+				}
+			}
+		}
+	}
+
+	option = {
+		name = btc_por.300a
+	}
+}

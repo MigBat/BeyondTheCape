@@ -1,0 +1,17 @@
+conqueror_party = {
+	rank = {
+		1 = CONQUEROR_PARTY
+	}
+	
+	ruler_male = {
+		1 = CONQUEROR
+	}
+	
+	ruler_female = {
+		1 = CONQUEROR
+	}
+
+	trigger = {
+		has_reform = conqueror_party_gov
+	}
+}

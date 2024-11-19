@@ -16,4 +16,8 @@ spriteTypes = {
 		name = "government_reform_portugal_liberalism"
 		texturefile = "gfx//interface//government_reform_icons//portugal_liberalism.dds"
 	}
+	spriteType = {
+		name = "government_reform_conqueror_party"
+		texturefile = "gfx//interface//government_reform_icons//conqueror_party.dds"
+	}
 }		

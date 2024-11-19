@@ -137,6 +137,7 @@
 
  btc_arguin_title: "§OFeitoria de Arguim§!"
  btc_arguin_desc: ""
+ feitoria_tutorial_tt: "§MTo establish a §YFeitoria§!, click on an eligible province and press the §YFeitoria§! button, just under the §YAutonomy§! section.\nBy hovering over it you will see the requirements and costs.§!"
  btc_arguin_slavers_tt: "Enables the §YSlavers§! estate"
  unlock_pt_missions_tt: "§MUnlocks more Portuguese missions"
 
@@ -203,7 +204,7 @@
 
  btc_india_title: "The Sea Route to India"
  btc_india_desc: ""
- btc_purchase_indian_province_tt: "Enables the §YPurchase Indian Province§! decision"
+ btc_purchase_indian_province_tt: "Enables the §YImpress Kochin§! decision"
 
  btc_casa_india_title: "Casa da India"
  btc_casa_india_desc: ""

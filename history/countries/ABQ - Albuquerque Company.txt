@@ -1,0 +1,8 @@
+government = tribal
+add_government_reform = conqueror_party_gov
+mercantilism = 15
+government_rank = 1
+technology_group = western
+primary_culture = portugese
+religion = catholic
+capital = 2315 #Suez

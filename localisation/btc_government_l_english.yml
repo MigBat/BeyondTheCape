@@ -76,6 +76,12 @@
  legacy_of_albuquerque_reform: "Legacy of Albuquerque"
  legacy_of_albuquerque_reform_desc: "Can't get any more Chad than this."
 
+ conqueror_party_gov: "Conqueror Party"
+ conqueror_party_gov_desc: "A party led by a charismatic leader with big ambitions."
+
+ CONQUEROR_PARTY: "Conqueror Party"
+ CONQUEROR: "Conqueror"
+
  portugal_liberal_reform: "Portuguese Liberal Monarchy"
  portugal_liberal_reform_desc: ""
  portugal_absolutist_reform: "Portuguese Absolutist Monarchy"

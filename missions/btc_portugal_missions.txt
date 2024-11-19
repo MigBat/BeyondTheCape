@@ -966,6 +966,9 @@ btc_por_navy3 = {
 					}
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = feitoria_tutorial_tt
+			}
 		}	
 		effect = {
 			custom_tooltip = btc_arguin_slavers_tt
@@ -2474,10 +2477,10 @@ btc_por_india3 = {
 			extend_golden_age = 120
 			remove_country_modifier = expensive_spices
 			remove_country_modifier = discovery_fervor
-			add_country_modifier = {
-				name = prepare_for_india
-				duration = 7300
-			}
+			# add_country_modifier = {
+			# 	name = prepare_for_india
+			# 	duration = 7300
+			# }
 		}
 	}
 
@@ -2487,10 +2490,10 @@ btc_por_india3 = {
 		position = 14
 		provinces_to_highlight = { }		
 		trigger = {
-			any_owned_province = {
-				superregion = india_superregion
-			}
-			num_of_marines = 15
+			# any_owned_province = {
+			# 	superregion = india_superregion
+			# }
+			# num_of_marines = 15
 		}	
 		effect = {
 			custom_tooltip = btc_por_unlock_casa_india_tt

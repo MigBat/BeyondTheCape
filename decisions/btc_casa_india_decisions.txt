@@ -4,34 +4,58 @@ country_decisions = {
 		potential = {
 			ai = no
 			mission_completed = btc_india
-			NOT = { has_global_flag = btc_deal_accepted_flag }
+			# NOT = { has_global_flag = btc_deal_accepted_flag }
 			NOT = { any_owned_province = { superregion = india_superregion } }
-			NOT = { has_country_flag = established_casa_india_flag }
+			NOT = { has_country_flag = got_kochin }
 		}
 		allow = {
-			treasury = 200
-			hidden_trigger = {
-				NOT = { has_country_flag = btc_looking_for_deal_flag }
+			# treasury = 200
+			# hidden_trigger = {
+			# 	NOT = { has_country_flag = btc_looking_for_deal_flag }
+			# }
+			535 = {
+				has_province_modifier = foreign_feitoria
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+			1340 = {
+				heavy_ships_in_province = 3
 			}
 		}
 		effect = {
-			add_treasury = -200
 			hidden_effect = {
-				set_variable = {
-					which = sale_rejected_times
-					value = 0
+				set_country_flag = got_kochin				
+			}
+			535 = {
+				cede_province = POR
+				add_core = POR
+				remove_province_modifier = foreign_feitoria
+				add_province_modifier = {
+					name = feitoria
+					duration = -1
 				}
-				set_country_flag = btc_looking_for_deal_flag
 			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = btc_looking_for_deal_flag }
-				}
-				custom_tooltip = btc_looking_for_deal_tt
-			}
-			else = {
-				custom_tooltip = btc_looking_for_deal_2_tt
-			}
+			# add_treasury = -200
+			# hidden_effect = {
+			# 	set_variable = {
+			# 		which = sale_rejected_times
+			# 		value = 0
+			# 	}
+			# 	set_country_flag = btc_looking_for_deal_flag
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { has_country_flag = btc_looking_for_deal_flag }
+			# 	}
+			# 	custom_tooltip = btc_looking_for_deal_tt
+			# }
+			# else = {
+			# 	custom_tooltip = btc_looking_for_deal_2_tt
+			# }
 		}
 	}
 	establish_casa_india = {

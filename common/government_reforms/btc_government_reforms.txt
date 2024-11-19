@@ -220,3 +220,27 @@ ordennancas_reform = {
 		factor = 1000
 	}
 }
+
+conqueror_party_gov = {
+	icon = "conqueror_party"
+	potential = {
+		is_subject_of_type = conqueror_party
+	}
+	fixed_rank = 1
+	queen = no
+	heir = no
+	royal_marriage = no
+	nomad = yes
+	raze_province = yes
+	lock_level_when_selected = yes
+	modifiers = {
+		reverse_relation_with_same_religion = 15
+		reverse_relation_with_heathen_religion = -30
+	}
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+	ai = {
+		factor = 10
+	}
+}

@@ -1,0 +1,16 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_icon_conqueror"
+		texturefile = "gfx//interface//icon_conqueror.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplomacy_lead_conqueror"
+		texturefile = "gfx//interface//icon_lead_conqueror.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_weak_conqueror"
+		texturefile = "gfx//interface//icon_weak_conqueror.dds"
+	}
+}

@@ -20,6 +20,7 @@ cb_albuquerque_plan = {
 	valid_for_subject = no
 
 	prerequisites_self = {
+		tag = POR
 		has_leader = "Afonso de Albuquerque"
 	}
 

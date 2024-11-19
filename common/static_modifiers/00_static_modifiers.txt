@@ -1429,19 +1429,23 @@ absolutism = {
 	core_decay_on_your_own = -0.5
 	monthly_ottoman_decadence = -0.5
 	yearly_corruption = 0.2
+	yearly_army_professionalism = 0.05
 }
 
+# BTC #
 low_army_professionalism = {
-	mercenary_cost = -0.15
-	mercenary_manpower = 0.15
+	mercenary_cost = -0.75
+	mercenary_manpower = 0.25
+	global_regiment_cost = 1
+	global_manpower_modifier = -0.5
 }
 
+# BTC #
 high_army_professionalism = {
 	fire_damage = 0.1
 	shock_damage = 0.1
 	siege_ability = 0.2
 	drill_decay_modifier = -0.5
-	# allowed_samurai_fraction = 0.1
 }
 
 streltsy_modifier = {
@@ -1702,7 +1706,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.01
+	yearly_army_professionalism = 0.005
 }
 
 ##################################################################################################

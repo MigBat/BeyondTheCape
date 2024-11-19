@@ -1,1 +1,3 @@
 CDI = "countries/CDI.txt"
+ABQ = "countries/ABQ.txt"
+AFO = "countries/AFO.txt"

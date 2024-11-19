@@ -223,6 +223,7 @@ on_siege_won_country = {
 					}
 				}
 			}
+			tag = POR
 			any_army = {
 				general_with_name = "Afonso de Albuquerque"
 				location = {
@@ -239,6 +240,17 @@ on_siege_won_country = {
 		FROM = {
 			cede_province = ROOT
 			add_devastation = 50
+		}
+	}
+	if = {
+		limit = {
+			has_reform = conqueror_party_gov
+			FROM = {
+				is_permanent_claim = ROOT
+			}
+		}
+		FROM = {
+			cede_province = ROOT
 		}
 	}
 }
@@ -419,6 +431,49 @@ on_monarch_death = {
 			event_target:portugal_pu_target = {
 				country_event = { id = flavor_spa.3162 }
 			}	
+		}
+	}
+	if = {
+		limit = {
+			has_reform = conqueror_party_gov
+			ai = no
+		}
+		if = {
+			limit = {
+				tag = ABQ
+				POR = { exists = yes }
+			}
+			switch_tag = POR
+			POR = { country_event = { id = btc_por.300 days = 1 }}
+		}
+	}
+	if = {
+		limit = {
+			tag = AFO
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { culture = old_egyptian }
+			}
+			if = {
+				limit = { any_core_country = { exists = no } }
+				random_core_country = {
+					limit = {
+						NOT = { tag = AFO }
+						exists = no
+					}
+					AFO = { release = PREV }
+				}
+			}
+			else = {
+				random_core_country = {
+					limit = {
+						NOT = { tag = AFO }
+					}
+					save_event_target_as = egypt_original_owner
+				}
+				cede_province = event_target:egypt_original_owner
+			}
 		}
 	}
 }
@@ -723,5 +778,15 @@ on_annexed = {
 		}
 		shuffle_participants_por = { scope = FROM }
 		FROM = { clr_country_flag = is_por_ally }
+	}
+}
+
+on_province_culture_converted = {
+	if = {
+		limit = { culture = old_egyptian }
+		every_core_country = {
+			limit = { NOT = { primary_culture = old_egyptian }}
+			remove_core = ROOT
+		}
 	}
 }

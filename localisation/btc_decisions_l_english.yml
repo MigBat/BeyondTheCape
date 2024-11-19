@@ -42,8 +42,8 @@
 
 ###
 
- purchase_indian_province_title: "Purchase Indian Province"
- purchase_indian_province_desc: "You will set aside 200 ducats in order to purchase a province from an Indian nation. Build a foreign feitoria in their lands and they will let you know if they accept or reject the offer."
+ purchase_indian_province_title: "Impress Kochin"
+ purchase_indian_province_desc: "Build a foreign feitoria in Kochin, befriend them and finally establish a naval presence in the area. They will be impressed by your power and will consider joining your empire."
  btc_looking_for_deal_tt: "We will look to purchase a province in India in which we have a §YForeign Feitoria§!"
  btc_looking_for_deal_2_tt: "Build a §YForeign Feitoria§! in any province in India. When you do so, the province owner will let you know if they accept to sell the province to you for the 200 ducats you set aside."
  establish_casa_india_title:0 "Establish the Casa da India"
@@ -105,3 +105,10 @@
  btc_dukkala_raids_off_tt: "No more raiding parties will be sent to loot Moroccan provinces"
 
  europe_great_power_war: "We are at war with a Great Power with a capital in Europe"
+
+ establish_albuquerque_conqueror_party_title: "The Albuquerque Company"
+ establish_albuquerque_conqueror_party_desc: ""
+ conqueror_party_warning_tt: "§RWARNING: This is an §MAlternate History§! scenario that will completely change your playthrough.§!"
+
+ become_pharaoh_title: "Become Pharaoh"
+ become_pharaoh_desc: ""

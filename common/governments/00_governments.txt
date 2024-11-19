@@ -1067,6 +1067,8 @@ tribal = {
 				#1.36
 				#Turkomen
 				turkoman_ottoman_institutions
+				# BTC #
+				conqueror_party_gov
 			}
 		}
 		tribal_cultural_values = {

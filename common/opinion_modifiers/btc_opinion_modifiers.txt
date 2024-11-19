@@ -57,3 +57,7 @@ revoked_tordesillas = {
 	opinion = -200
 	yearly_decay = 2
 }
+
+is_conqueror_party = {
+	opinion = 50
+}
