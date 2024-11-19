@@ -18,19 +18,19 @@ country_event = {
 		}
 	}
 
-	# option = {	# Other Countries
-	# 	name = btc_startscreen.1b
-
-	# 	country_event = {
-	# 		id = btc_startscreen.3
-	# 	}
-	# }
-
 	option = {	# Exploration
 		name = btc_startscreen.1c
 
 		country_event = {
 			id = btc_startscreen.4
+		}
+	}
+
+	option = {	# The Spice Trade
+		name = btc_startscreen.1b
+
+		country_event = {
+			id = btc_startscreen.3
 		}
 	}
 
@@ -267,7 +267,7 @@ country_event = {
 	}
 }
 
-# Other Countries #
+# The Spice Trade #
 country_event = {
 	id = btc_startscreen.3
 	title = btc_startscreen.3_t
@@ -276,7 +276,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# Iberia
+	option = {	# Gold Spices
 		name = btc_startscreen.3a
 
 		country_event = {
@@ -284,7 +284,7 @@ country_event = {
 		}
 	}
 
-	option = {	# Low Countries
+	option = {	# Spice Trade Conflict
 		name = btc_startscreen.3b
 
 		country_event = {
@@ -292,21 +292,21 @@ country_event = {
 		}
 	}
 
-	option = {	# British Isles
-		name = btc_startscreen.3d
+	# option = {	# British Isles
+	# 	name = btc_startscreen.3d
 
-		country_event = {
-			id = btc_startscreen.33
-		}
-	}
+	# 	country_event = {
+	# 		id = btc_startscreen.33
+	# 	}
+	# }
 
-	option = {	# Asia
-		name = btc_startscreen.3e
+	# option = {	# Asia
+	# 	name = btc_startscreen.3e
 
-		country_event = {
-			id = btc_startscreen.34
-		}
-	}
+	# 	country_event = {
+	# 		id = btc_startscreen.34
+	# 	}
+	# }
 
 	option = {	# go back
 		name = btc_startscreen.3c
@@ -317,7 +317,7 @@ country_event = {
 	}
 }
 
-# Iberia #
+# Gold Spices #
 country_event = {
 	id = btc_startscreen.31
 	title = btc_startscreen.31_t
@@ -335,7 +335,7 @@ country_event = {
 	}
 }
 
-# Low Countries #
+# Spice Trade Conflict #
 country_event = {
 	id = btc_startscreen.32
 	title = btc_startscreen.32_t

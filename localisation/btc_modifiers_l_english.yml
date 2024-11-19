@@ -608,3 +608,10 @@
  desc_prepare_for_india: "With our possessions now encompassing two oceans, there is an increased need for a second permanent army to be present in the Indian Ocean."
 
  is_conqueror_party: "Conqueror Party"
+
+ muslim_naval_fl: "Muslim Naval Forcelimit Increase"
+ desc_muslim_naval_fl: ""
+ indian_land_fl: "Indian Land Forcelimit Increase"
+ desc_indian_land_fl: ""
+ nomad_land_fl: "Nomadic Land Forcelimit Increase"
+ desc_nomad_land_fl: ""

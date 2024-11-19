@@ -422,3 +422,13 @@
  san_juan_order_desc:0 "The Order of Saint John, better known as the Knights Hospitallers, is a military order that focuses its activities in the Eastern Mediterranean, although its houses extend throughout Western Europe.\n\n§MPlace this order in the province of §YMalta§! to receive unique bonuses.§!"
 
  alcantara_order_desc:0 "The Order of Alcántara was founded in the kingdom of León in the 12th century in a town that served as a border outpost with Portugal and the Almohad Caliphate.\n\n§MPlace this order in the province of §YPlasencia§! to receive unique bonuses.§!"
+
+# Difficulty #
+
+#  CN_VERY_EASY:0 "Harder ($VAL$)"
+#  difficulty_very_easy_player:0 "Player (Harder)"
+#  difficulty_very_easy_ai:0 "AI (Harder)"
+#  VERY_EASY:0 "Harder"
+#  very_easy:0 "Harder"
+#  very_easy_player:0 "Harder Difficulty"
+#  very_easy_ai:0 "Harder Difficulty"

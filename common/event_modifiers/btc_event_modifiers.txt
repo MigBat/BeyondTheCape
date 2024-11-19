@@ -958,3 +958,15 @@ no_declare_war_ccw = {
 prepare_for_india = {
 	land_forcelimit = 10
 }
+
+muslim_naval_fl = {
+	naval_forcelimit_modifier = 0.2
+}
+
+indian_land_fl = {
+	land_forcelimit_modifier = 0.2
+}
+
+nomad_land_fl = {
+	land_forcelimit_modifier = 0.25
+}

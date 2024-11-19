@@ -164,5 +164,37 @@ country_event = {	# add/remove province modifiers
 		1182 = {
 			center_of_trade = 1
 		}
+
+		# Tech Groups Extra Forcelimit
+		every_country = {
+			limit = {
+				technology_group = muslim
+				ai = yes
+			}
+			add_country_modifier = {
+				name = muslim_naval_fl
+				duration = -1
+			}
+		}
+		every_country = {
+			limit = {
+				technology_group = indian
+				ai = yes
+			}
+			add_country_modifier = {
+				name = indian_land_fl
+				duration = -1
+			}
+		}
+		every_country = {
+			limit = {
+				technology_group = nomad_group
+				ai = yes
+			}
+			add_country_modifier = {
+				name = nomad_land_fl
+				duration = -1
+			}
+		}
 	}
 }

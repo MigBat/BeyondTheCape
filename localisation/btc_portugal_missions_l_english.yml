@@ -137,7 +137,7 @@
 
  btc_arguin_title: "§OFeitoria de Arguim§!"
  btc_arguin_desc: ""
- feitoria_tutorial_tt: "§MTo establish a §YFeitoria§!, click on an eligible province and press the §YFeitoria§! button, just under the §YAutonomy§! section.\nBy hovering over it you will see the requirements and costs.§!"
+ feitoria_tutorial_tt: "§MTo establish a §YFeitoria§!, click on an eligible province and press the §JFeitoria Button§!, just under the §YAutonomy§! section.\nBy hovering over it you will see the requirements and costs.§!"
  btc_arguin_slavers_tt: "Enables the §YSlavers§! estate"
  unlock_pt_missions_tt: "§MUnlocks more Portuguese missions"
 
@@ -161,6 +161,7 @@
 
  btc_slaves_title: "Slave Workforce"
  btc_slaves_desc: ""
+ sao_tome_sugar_tt: "Sao Tome area gets §Y'Mass Slave Plantations'§! until the end of the game, giving the following effects:\nLocal Unrest: §R+10.00§!\nLocal Goods Produced: §G+2.00§!"
  inner_angola_malaria_tt: "§MInner Angola area and Matamba area will not be affected by Malaria§!"
 
  btc_elmina_title: "São Jorge da Mina"
@@ -174,6 +175,7 @@
 
  btc_ethiopia_title: "Alliance with Ethiopia"
  btc_ethiopia_desc: ""
+ get_cawa_tt: "§YPortugal§!: Get 6 '§GCawa§!' §YInfantry§! in §Y[1099.GetName]§!."
  por_eth_alliance_tt: "§MThis modifier will be removed if the alliance with Ethiopia is broken§!"
 
  btc_zanzibar_title: "Zanzibar"
