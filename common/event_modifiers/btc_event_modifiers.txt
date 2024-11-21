@@ -970,3 +970,31 @@ indian_land_fl = {
 nomad_land_fl = {
 	land_forcelimit_modifier = 0.25
 }
+
+miguel_fire = {
+	leader_land_fire = 1
+}
+
+miguel_shock = {
+	leader_land_shock = 1
+}
+
+miguel_relations = {
+	improve_relation_modifier = 0.15
+}
+
+miguel_spy = {
+	spy_offence = 0.15
+}
+
+miguel_kind = {
+	war_exhaustion = -0.05
+}
+
+miguel_scholar = {
+	technology_cost = -0.05
+}
+
+miguel_navy = {
+	heavy_ship_power = 0.05
+}

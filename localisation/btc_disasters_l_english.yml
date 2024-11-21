@@ -215,7 +215,7 @@
  portuguese_regency.7_d: "The Duke of Bragança has ever been a thorn in our side. This whole situation is getting out of hand, and it seem like no matter what we do he will always get the upper hand. It would be so much better if he were out of the picture...\n\nBut killing a man with his power and reputation is sure to draw attention to us, so if we are to do this it needs to be done right. We must make a decision now, shall we go through with it?"
  portuguese_regency.7a: "It must be done."
  portuguese_regency.7b: "We will not resort to such tactics."
- assassination_plan_start: "§BWe will start planning the assassination of the Duke of Bragança.§!\n\n§RWARNING: There is a high chance we will be caught. Proceed at your own risk.§!"
+ assassination_plan_start: "§OWe will start planning the assassination of the Duke of Bragança.§!\n\n§RWARNING: There is a high chance we will be caught. Proceed at your own risk.§!"
 
  portuguese_regency.8_t: "Gathering Collaborators"
  portuguese_regency.8_d: "For an assassination attempt of this magnitude, every little detail matters. We have agents studying the Duke's moves and providing weekly reports. But we are notoriously understaffed. It would be preferable if we could secure the allegiance of those close to the Duke, but it would come at a price..."

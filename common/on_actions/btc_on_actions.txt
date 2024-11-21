@@ -537,7 +537,7 @@ on_new_monarch = {
 			}
 			define_consort = {
 				name = "Beatriz"
-				dynasty = "de Bragan√ßa"
+				dynasty = "de BraganÁa"
 				female = yes
 				country_of_origin = ROOT
 				age = 15
@@ -583,7 +583,7 @@ on_new_monarch = {
 			POR = { has_country_flag = john_antioch_supported }
 		}
 		define_consort = {
-			name = "Jo√£o"
+			name = "Jo„o"
 			dynasty = "de Avis"
 			country_of_origin = POR
 			culture = portugese
@@ -597,6 +597,76 @@ on_new_monarch = {
 			country_event = {
 				id = portuguese_regency.102
 			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = miguel_fire_flag
+		}
+		clr_country_flag = miguel_fire_flag
+		add_ruler_modifier = {
+			name = miguel_fire
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = miguel_shock_flag
+		}
+		clr_country_flag = miguel_shock_flag
+		add_ruler_modifier = {
+			name = miguel_shock
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = miguel_relations_flag
+		}
+		clr_country_flag = miguel_relations_flag
+		add_ruler_modifier = {
+			name = miguel_relations
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = miguel_spy_flag
+		}
+		clr_country_flag = miguel_spy_flag
+		add_ruler_modifier = {
+			name = miguel_spy
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = miguel_kind_flag
+		}
+		clr_country_flag = miguel_kind_flag
+		add_ruler_modifier = {
+			name = miguel_kind
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = miguel_scholar_flag
+		}
+		clr_country_flag = miguel_scholar_flag
+		add_ruler_modifier = {
+			name = miguel_scholar
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = miguel_navy_flag
+		}
+		clr_country_flag = miguel_navy_flag
+		add_ruler_modifier = {
+			name = miguel_navy
+			duration = -1
 		}
 	}
 }
