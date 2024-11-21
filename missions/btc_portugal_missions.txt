@@ -1466,7 +1466,7 @@ btc_por_africa1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_arguin
+		has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1566,7 +1566,7 @@ btc_por_africa2 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_arguin
+		has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1660,7 +1660,7 @@ btc_por_africa3 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_arguin
+		has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1749,7 +1749,7 @@ btc_por_africa4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_arguin
+		has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1860,7 +1860,7 @@ btc_por_africa5 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_arguin
+		has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1966,7 +1966,7 @@ btc_por_india1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_good_hope
+		has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -2268,7 +2268,7 @@ btc_por_india2 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_good_hope
+		has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -2428,7 +2428,7 @@ btc_por_india3 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_good_hope
+		has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -2650,7 +2650,7 @@ btc_por_india4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_good_hope
+		has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -2814,7 +2814,7 @@ btc_por_india5 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_good_hope
+		has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -3131,7 +3131,7 @@ btc_por_east1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_spice
+		has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -3286,7 +3286,7 @@ btc_por_jesuit1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_jesuit
+		has_country_flag = unlock_missions_jesuit
 	}
 	has_country_shield = yes
 
@@ -3391,7 +3391,7 @@ btc_por_east2 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_spice
+		has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -3492,7 +3492,7 @@ btc_por_jesuit2 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_jesuit
+		has_country_flag = unlock_missions_jesuit
 	}
 	has_country_shield = yes
 
@@ -3556,7 +3556,7 @@ btc_por_lusiad4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_lusiad
+		has_country_flag = unlock_missions_lusiad
 	}
 	has_country_shield = yes
 
@@ -3593,7 +3593,7 @@ btc_por_east3 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_spice
+		has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -3676,7 +3676,7 @@ btc_por_lusiad3 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_lusiad
+		has_country_flag = unlock_missions_lusiad
 	}
 	has_country_shield = yes
 
@@ -3752,7 +3752,7 @@ btc_por_east4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_spice
+		has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -3859,7 +3859,7 @@ btc_por_jesuit4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_jesuit
+		has_country_flag = unlock_missions_jesuit
 	}
 	has_country_shield = yes
 
@@ -3911,7 +3911,7 @@ btc_por_lusiad1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_lusiad
+		has_country_flag = unlock_missions_lusiad
 	}
 	has_country_shield = yes
 
@@ -3990,7 +3990,7 @@ btc_por_east5 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_spice
+		has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -4075,7 +4075,7 @@ btc_por_jesuit5 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		# has_country_flag = unlock_missions_jesuit
+		has_country_flag = unlock_missions_jesuit
 	}
 	has_country_shield = yes
 

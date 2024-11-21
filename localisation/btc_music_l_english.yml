@@ -2,6 +2,7 @@
 
  CHANNEL_music_btc_music:0 "* Portuguese Music *"
  CHANNEL_music_halcyon_reign:0 "* Halcyon Reign *"
+ CHANNEL_music_eu3_music:0 "* Europa Universalis 3 Music *"
 
 # Portugal #
  autumninbraganca:0 "Brigantine Autumn"
@@ -31,3 +32,27 @@
  beyondthecape:0 "04 Beyond the Cape"
  lasthorizon:0 "05 Last Horizon"
  thevoyage:0 "06 The Voyage"
+
+# EU3 #
+ battleofdamascus:0 "Battle of Damascus"
+ chooseyourpath:0 "Choose Your Path"
+ cityofjerusalem:0 "City of Jerusalem"
+ conquistador_maintheme:0 "Conquistador"
+ einekleinecourtmusik:0 "Eine Kleine Court Musik"
+ emperoroftheselands:0 "Emperor of These Lands"
+ highlandwanderer:0 "Highland Wanderer"
+ mareatlanticum:0 "Mare Atlanticum"
+ mood_asongformerchants:0 "A Song for Merchants"
+ mood_discovernewland:0 "Discover New Land"
+ mood_landofglory:0 "Land of Glory"
+ mood_nightoverourempire:0 "Night Over Your Empire"
+ parabellum:0 "Parabellum"
+ prologue_europauniversalis:0 "Prologue"
+ somewhere:0 "Somewhere"
+ swashbucklingprivateers:0 "Swashbuckling Privateers"
+ travelsouth:0 "Travel South"
+ war_acrucevictoria:0 "A Cruce Victoria"
+ war_eastvswest:0 "East vs West"
+ war_toconstantinople:0 "To Constantinople"
+
+ 

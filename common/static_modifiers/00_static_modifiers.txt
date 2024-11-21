@@ -81,6 +81,7 @@ difficulty_hard_ai = {
 	build_cost = -0.25
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.3
+	reduced_liberty_desire = 10
 }
 
 difficulty_very_hard_ai = {
@@ -101,6 +102,7 @@ difficulty_very_hard_ai = {
 	build_cost = -0.25
 	ae_impact = -0.33
 	missionary_maintenance_cost = -0.3
+	reduced_liberty_desire = 20
 }
 
 

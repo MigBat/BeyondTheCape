@@ -860,3 +860,16 @@ on_province_culture_converted = {
 		}
 	}
 }
+
+on_marine_raised = {
+	if = {
+		limit = {
+			has_government_mechanic = naval_professionalism_mechanic
+		}
+		add_government_power = {
+			mechanic_type = naval_professionalism_mechanic
+			power_type = naval_professionalism
+			value = 1
+		}
+	}
+}
