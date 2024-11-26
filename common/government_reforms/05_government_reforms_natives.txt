@@ -47,6 +47,7 @@ native_basic_reform = {
 		allow = { }
 		government_abilities = {
 			mare_clausum_ui_hidden_mechanic
+			settler_pool_ui_hidden_mechanics
 		}
 	}
 }

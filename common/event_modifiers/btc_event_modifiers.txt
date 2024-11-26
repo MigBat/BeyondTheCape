@@ -582,9 +582,7 @@ por_caravels = {
 por_upgraded_caravels = {
 	number_of_cannons_modifier = 0.75
 	hull_size_modifier = 0.75
-	sailor_maintenance_modifer = 1
 	engagement_cost = 1
-	naval_maintenance_modifier = 0.5
 	light_ship_cost = 0.25
 	is_caravel_modifier = yes
 }
@@ -997,4 +995,27 @@ miguel_scholar = {
 
 miguel_navy = {
 	heavy_ship_power = 0.05
+}
+
+brazilwood_center = {
+	trade_goods_size = 2
+}
+
+brazil_colonial_expansion = {
+	global_colonial_growth = 50
+	colonist_placement_chance = 0.05
+}
+
+jesuit_production = {
+	production_efficiency = 0.1
+}
+
+brazil_gold = {
+	trade_goods_size = 2
+	local_gold_depletion_chance_modifier = -0.5
+	local_development_cost_modifier = -0.25
+}
+
+brazil_diamonds = {
+	trade_goods_size = 2
 }

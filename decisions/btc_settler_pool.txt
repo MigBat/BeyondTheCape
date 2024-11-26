@@ -1,55 +1,55 @@
-country_decisions = {
-	colonial_pool = {
-		color = { 55 160 255 }
-		potential = {
-			ai = no
-			num_of_colonists = 1
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = settler_pool_tt
-				num_of_colonists = 1
-			}
-		}
-		effect = {
-			country_event = {
-				id = btc_events.16
-			}
-		}
-	}
-	portuguese_focus_decision = {
-		color = { 125 35 47 }
-		major = yes
-		potential = {
-			has_government_mechanic = portuguese_saudade_mechanic
-			ai = no
-		}
+# country_decisions = {
+# 	colonial_pool = {
+# 		color = { 55 160 255 }
+# 		potential = {
+# 			ai = no
+# 			num_of_colonists = 1
+# 		}
+# 		allow = {
+# 			custom_trigger_tooltip = {
+# 				tooltip = settler_pool_tt
+# 				num_of_colonists = 1
+# 			}
+# 		}
+# 		effect = {
+# 			country_event = {
+# 				id = btc_events.16
+# 			}
+# 		}
+# 	}
+# 	portuguese_focus_decision = {
+# 		color = { 125 35 47 }
+# 		major = yes
+# 		potential = {
+# 			has_government_mechanic = portuguese_saudade_mechanic
+# 			ai = no
+# 		}
 
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = saudade_tt
-				has_government_mechanic = portuguese_saudade_mechanic
-			}
-			NOT = { has_country_modifier = homeland_focus }
-			NOT = { has_country_modifier = overseas_focus }
-			num_of_completed_idea_groups_by_category = {
-				type = adm
-				amount = 1
-			}
-			num_of_completed_idea_groups_by_category = {
-				type = dip
-				amount = 1
-			}
-			num_of_completed_idea_groups_by_category = {
-				type = mil
-				amount = 1
-			}
-		}
+# 		allow = {
+# 			custom_trigger_tooltip = {
+# 				tooltip = saudade_tt
+# 				has_government_mechanic = portuguese_saudade_mechanic
+# 			}
+# 			NOT = { has_country_modifier = homeland_focus }
+# 			NOT = { has_country_modifier = overseas_focus }
+# 			num_of_completed_idea_groups_by_category = {
+# 				type = adm
+# 				amount = 1
+# 			}
+# 			num_of_completed_idea_groups_by_category = {
+# 				type = dip
+# 				amount = 1
+# 			}
+# 			num_of_completed_idea_groups_by_category = {
+# 				type = mil
+# 				amount = 1
+# 			}
+# 		}
 
-		effect = {
-			country_event = {
-				id = btc_por.131
-			}
-		}
-	}
-}
+# 		effect = {
+# 			country_event = {
+# 				id = btc_por.131
+# 			}
+# 		}
+# 	}
+# }

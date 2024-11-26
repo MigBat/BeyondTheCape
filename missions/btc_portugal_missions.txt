@@ -216,10 +216,13 @@ btc_por_wine = {
 			}
 		}
 		trigger = {
-			231 = { owned_by = ROOT has_province_modifier = port_wine_storage }
+			custom_trigger_tooltip = {
+				tooltip = methuen_tt
+				231 = { has_province_modifier = port_wine_storage }
+			}
+			231 = { owned_by = ROOT num_of_times_expanded_infrastructure = 2 }
 			232 = { owned_by = ROOT has_building = counting_house }
 			228 = { owned_by = ROOT has_building = counting_house }
-			num_of_times_used_transfer_development = 1
 		}
 		effect = {
 			232 = {
@@ -340,7 +343,6 @@ btc_por_sagres1 = {
 	}
 	potential = {
 		tag = POR
-		230 = { has_province_modifier = por_sagres }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -383,7 +385,6 @@ btc_por_sagres2 = {
 	}
 	potential = {
 		tag = POR
-		230 = { has_province_modifier = por_sagres }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -430,7 +431,6 @@ btc_por_sagres3 = {
 	}
 	potential = {
 		tag = POR
-		230 = { has_province_modifier = por_sagres }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -478,7 +478,6 @@ btc_por_sagres4 = {
 	}
 	potential = {
 		tag = POR
-		230 = { has_province_modifier = por_sagres }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -525,7 +524,6 @@ btc_por_sagres5 = {
 	}
 	potential = {
 		tag = POR
-		230 = { has_province_modifier = por_sagres }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -592,8 +590,11 @@ btc_por_navy1 = {
 				limit = {
 					ai = no
 				}
-				alentejo_area = {
-					holy_order = avis_order
+				custom_trigger_tooltip = {
+					tooltip = avis_tt
+					alentejo_area = {
+						holy_order = avis_order
+					}
 				}
 			}
 		}	
@@ -671,7 +672,7 @@ btc_por_independence1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_independence
+		# has_country_flag = unlock_missions_independence
 	}
 	has_country_shield = yes
 
@@ -876,6 +877,7 @@ btc_por_navy2 = {
 				country_event = {
 					id = btc_por.191
 				}
+				custom_tooltip = remove_resist_reconquista_tt
 				hidden_effect = {
 					convert_ruler_to_general = 70
 					convert_female_ruler_to_general = 60
@@ -885,13 +887,11 @@ btc_por_navy2 = {
 						name = crusading_spirit
 						duration = -1
 					}				
-					MOR = {
-						every_owned_province = {
-							limit = {
-								has_province_modifier = resist_reconquista
-							}
-							remove_province_modifier = resist_reconquista
+					every_province = {
+						limit = {
+							has_province_modifier = resist_reconquista
 						}
+						remove_province_modifier = resist_reconquista
 					}
 				}
 			}
@@ -933,16 +933,17 @@ btc_por_navy3 = {
 				limit = {
 					ai = no
 				}
-				estremadura_area = {
-					holy_order = christ_order
+				custom_trigger_tooltip = {
+					tooltip = christ_tt
+					estremadura_area = {
+						holy_order = christ_order
+					}
 				}
 			}
 		}
 		effect = {
 			# custom_tooltip = unlock_christ_knights
-			create_colony_mission_reward = {
-				province = 1111
-			}
+			1111 = { add_siberian_construction = 400 }
 		}
 	}
 
@@ -978,7 +979,7 @@ btc_por_navy3 = {
 				change_religion = root
 			}
 			hidden_effect = {
-				set_country_flag = unlock_missions_arguin
+				# # set_country_flag = unlock_missions_arguin
 				swap_non_generic_missions = yes
 			}
 			custom_tooltip = unlock_pt_missions_tt
@@ -1207,8 +1208,6 @@ btc_por_navy5 = {
 		position = 5
 		provinces_to_highlight = { }		
 		trigger = {
-			NOT = { current_age = age_of_discovery }
-			NOT = { current_age = age_of_reformation }
 			army_professionalism = 1
 		}	
 		effect = {
@@ -1466,7 +1465,7 @@ btc_por_africa1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_arguin
+		# # has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1566,7 +1565,7 @@ btc_por_africa2 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_arguin
+		# # has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1600,13 +1599,32 @@ btc_por_africa2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				colonial_region = colonial_brazil
-				is_city = yes
+			custom_trigger_tooltip = {
+				tooltip = has_colonial_brazil_tt
+				any_subject_country = {
+					OR = {
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
+					}
+					owns = 756
+				}
 			}
 		}	
 		effect = {
+			custom_tooltip = colony_capital_bahia
+			hidden_effect = {
+				random_subject_country = {
+					limit = {
+						is_subject_of_type = colony
+						capital_scope = {
+							colonial_region = colonial_brazil
+						}					
+					}
+					set_capital = 756
+				}				
+			}
 			custom_tooltip = brazilian_custom_ideas_tt
 		}
 	}
@@ -1660,7 +1678,7 @@ btc_por_africa3 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_arguin
+		# # has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1675,9 +1693,7 @@ btc_por_africa3 = {
 			}
 		}	
 		effect = {
-			create_colony_mission_reward = {
-				province = 2258
-			}
+			2258 = { add_siberian_construction = 400 }
 		}
 	}
 
@@ -1701,15 +1717,12 @@ btc_por_africa3 = {
 			}
 		}	
 		effect = { 
-			4097 = {
+			1466 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 7300
 					power = 20
 					key = por_kongo_slavers
-				}
-				hidden_effect = {
-					discover_country = ROOT					
 				}
 			}
 		}
@@ -1732,7 +1745,7 @@ btc_por_africa3 = {
 				change_province_name = "Cape of Good Hope"	
 			}
 			hidden_effect = {
-				set_country_flag = unlock_missions_good_hope
+				# # set_country_flag = unlock_missions_good_hope
 				swap_non_generic_missions = yes
 			}
 			custom_tooltip = unlock_pt_missions_tt
@@ -1749,7 +1762,7 @@ btc_por_africa4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_arguin
+		# # has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1860,7 +1873,7 @@ btc_por_africa5 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_arguin
+		# has_country_flag = unlock_missions_arguin
 	}
 	has_country_shield = yes
 
@@ -1966,7 +1979,7 @@ btc_por_india1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_good_hope
+		# has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -2268,7 +2281,7 @@ btc_por_india2 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_good_hope
+		# has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -2428,7 +2441,7 @@ btc_por_india3 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_good_hope
+		# has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -2471,7 +2484,8 @@ btc_por_india3 = {
 				malabar_area = {
 					has_discovered = ROOT					
 				}
-				1339 = {
+				cape_route_region = {
+					type = all
 					has_discovered = ROOT
 				}
 			}
@@ -2601,7 +2615,12 @@ btc_por_india3 = {
 		required_missions = { btc_lion_of_seas }
 		position = 17
 		provinces_to_highlight = { }		
-		trigger = {	}	
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = spice_trade_conflict_resolved_tt
+				has_country_modifier = por_win_spice_trade_conflict
+			}
+		}	
 		effect = {
 			extend_golden_age = 120
 			custom_tooltip = add_cartaz_tt
@@ -2633,7 +2652,7 @@ btc_por_india3 = {
 		effect = {
 			add_prestige = 20
 			hidden_effect = {
-				set_country_flag = unlock_missions_spice
+				# set_country_flag = unlock_missions_spice
 				swap_non_generic_missions = yes
 			}
 			custom_tooltip = unlock_pt_missions_tt
@@ -2650,7 +2669,7 @@ btc_por_india4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_good_hope
+		# has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -2814,7 +2833,7 @@ btc_por_india5 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_good_hope
+		# has_country_flag = unlock_missions_good_hope
 	}
 	has_country_shield = yes
 
@@ -3131,7 +3150,7 @@ btc_por_east1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_spice
+		# has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -3286,7 +3305,7 @@ btc_por_jesuit1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_jesuit
+		# has_country_flag = unlock_missions_jesuit
 	}
 	has_country_shield = yes
 
@@ -3391,7 +3410,7 @@ btc_por_east2 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_spice
+		# has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -3492,7 +3511,7 @@ btc_por_jesuit2 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_jesuit
+		# has_country_flag = unlock_missions_jesuit
 	}
 	has_country_shield = yes
 
@@ -3556,7 +3575,7 @@ btc_por_lusiad4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_lusiad
+		# has_country_flag = unlock_missions_lusiad
 	}
 	has_country_shield = yes
 
@@ -3593,7 +3612,7 @@ btc_por_east3 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_spice
+		# has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -3637,8 +3656,11 @@ btc_por_east3 = {
 		provinces_to_highlight = {
 		}		
 		trigger = {
-			1851 = { 
-				has_province_modifier = coimbra_university
+			custom_trigger_tooltip = {
+				tooltip = camoes_tt
+				1851 = { 
+					has_province_modifier = coimbra_university
+				}
 			}
 		}	
 		effect = {
@@ -3659,7 +3681,7 @@ btc_por_east3 = {
 			add_ruler_personality = bold_fighter_personality
 			add_ruler_personality = zealot_personality
 			hidden_effect = {
-				set_country_flag = unlock_missions_lusiad
+				# set_country_flag = unlock_missions_lusiad
 				swap_non_generic_missions = yes
 			}
 			custom_tooltip = unlock_pt_missions_tt
@@ -3676,7 +3698,7 @@ btc_por_lusiad3 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_lusiad
+		# has_country_flag = unlock_missions_lusiad
 	}
 	has_country_shield = yes
 
@@ -3752,7 +3774,7 @@ btc_por_east4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_spice
+		# has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -3859,7 +3881,7 @@ btc_por_jesuit4 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_jesuit
+		# has_country_flag = unlock_missions_jesuit
 	}
 	has_country_shield = yes
 
@@ -3911,7 +3933,7 @@ btc_por_lusiad1 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_lusiad
+		# has_country_flag = unlock_missions_lusiad
 	}
 	has_country_shield = yes
 
@@ -3990,7 +4012,7 @@ btc_por_east5 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_spice
+		# has_country_flag = unlock_missions_spice
 	}
 	has_country_shield = yes
 
@@ -4058,7 +4080,7 @@ btc_por_east5 = {
 				id = btc_events.46
 			}
 			hidden_effect = {
-				set_country_flag = unlock_missions_jesuit
+				# set_country_flag = unlock_missions_jesuit
 				swap_non_generic_missions = yes
 			}
 			custom_tooltip = unlock_pt_missions_tt
@@ -4075,7 +4097,7 @@ btc_por_jesuit5 = {
 	potential = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = unlock_missions_jesuit
+		# has_country_flag = unlock_missions_jesuit
 	}
 	has_country_shield = yes
 

@@ -878,6 +878,11 @@
  btc_por.208_d: "Dark clouds gather over the court as dreadful news arrives: Miguel has been found dead. The circumstances are shrouded in mystery. The official explanation speaks of a tragic accident, but whispers in the corridors tell a different story. Could it have been an unfortunate mishap, a sinister plot, or even the machinations of those envious of the royal line? Without clear evidence, the realm is left in mourning and suspicion, while the stability of the crown hangs in the balance."
  btc_por.208a: "Where did we go wrong?"
 
+ btc_por.210_t: "Miguel's Ascension"
+ btc_por.210_d: "Miguel is of ruling age. Given everything that is at stake, it would perhaps be advantageous to abdicate in his favour and remain by his side while he rules as King of Portugal, Castile and Aragon."
+ btc_por.210a: "Abdicate"
+ btc_por.210b: "He is not ready"
+
 #####################
 
  btc_por.209_t: "The Rights of Brazil"
@@ -886,8 +891,6 @@
  btc_por.209b: "They have enough rights as it is"
  btc_por.209c: "Move the Court to Brazil"
 
- macau_tamao_tt: "§MWe will attempt to purchase Macau or Hong Kong§!"
- nagasaki_tt: "§MWe will attempt to purchase Nagasaki§!"
  more_flavor_por.1.t: "A Portuguese Base in China"
  more_flavor_por.1.d: "Smuggling and piracy are a perpetual annoyance in the Guangzhou Bay, but the increased presence of [From.GetName] merchant and naval vessels in the South China Sea has done much to combat this unlawful activity. Seeking to leverage this to their advantage, representatives of the Portuguese government have requested permission to settle in the Guangzhou coast to establish a trading community. They are willing to pay handsomely in silver for the privilege."
  more_flavor_por.1a: "Allow them sovereignty over Macau."

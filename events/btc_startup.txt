@@ -33,6 +33,30 @@ country_event = {	# add/remove province modifiers
 				}
 			}
 		}
+		648 = {	# Halmahera
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		649 = {	# Ternate
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		655 = {	# Palawan
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		4356 = {	# Taytay
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
 		
 		# Strait Engagement Width
 		every_province = {

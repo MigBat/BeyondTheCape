@@ -1,8 +1,9 @@
 on_startup = {
 	set_global_flag = beyond_the_cape
 	events = {
+		btc_startscreen.1
 		btc_startup.1
-		btc_remove_natives.1
+		# btc_remove_natives.1
 	}
 	POR = { country_event = { id = btc_por.180 } }
 	MOR = { country_event = { id = btc_events.2 } }
@@ -13,10 +14,11 @@ on_monthly_pulse = {
 	events = {
 		btc_saudade.1	#Monthly saudade calculation
 		btc_saudade.2	#Monthly capital saudade calculation
-		btc_events.14	#Monthly settler pool calculation
+		# btc_events.14	#Monthly settler pool calculation
 		btc_spice_trade.1
 		btc_spice_trade.102
 		btc_goldspices.3
+		btc_settler_pool.1	#Monthly settler pool calculation
 	}
 }
 
@@ -96,6 +98,7 @@ on_conquest = {
 		}
 		FROM = { swap_non_generic_missions = yes }
 	}
+	# malaria
 	if = {
 		limit = {
 			NOT = { has_province_modifier = malaria }
@@ -164,6 +167,111 @@ on_conquest = {
 		remove_province_modifier = fortified_feitoria
 	}
 }
+
+# on_province_owner_change = {
+# 	# settler pool send colonist
+# 	if = {
+# 		limit = {
+# 			is_colony = yes
+# 			NOT = { has_province_flag = removed_settlers_flag }
+# 		}
+# 		set_province_flag = removed_settlers_flag
+# 	}
+# 	# remove dev from state primary culture province and give to colony. only for non-minority expel
+# 	if = {
+# 		limit = {
+# 			is_colony = yes
+# 			province_getting_expelled_minority = no
+# 		}
+# 		owner = {
+# 			random_owned_province = {
+# 				limit = {
+# 					is_state = yes
+# 					culture = FROM
+# 					base_tax = 2
+# 				}
+# 				add_base_tax = -1
+# 			}
+# 		}
+# 		owner = {
+# 			random_owned_province = {
+# 				limit = {
+# 					is_state = yes
+# 					culture = FROM
+# 					base_production = 2
+# 				}
+# 				add_base_production = -1
+# 			}
+# 		}
+# 		owner = {
+# 			random_owned_province = {
+# 				limit = {
+# 					is_state = yes
+# 					culture = FROM
+# 					base_manpower = 2
+# 				}
+# 				add_base_manpower = -1
+# 			}
+# 		}
+# 	}
+# 	# give malaria
+# 	if = {
+# 		limit = {
+# 			NOT = { has_province_modifier = malaria }
+# 			has_port = no
+# 			continent = africa
+# 			NOT = {
+# 				OR = {
+# 					region = maghreb_region
+# 					region = egypt_region
+# 					region = guinea_region
+# 					region = south_africa_region
+# 					# Madagascar
+# 					area = sakalava_area
+# 					area = betsimasaraka_area
+# 					area = southern_madagascar
+# 					area = madagascar_highlands_area
+# 					if = {
+# 						limit = {
+# 							NOT = { mission_completed = btc_slaves }
+# 						}
+# 						area = inner_angola_area
+# 						area = matamba_area
+# 					}
+# 					if = {
+# 						limit = {
+# 							NOT = { mission_completed = btc_sofala }
+# 						}
+# 						area = lower_zambezi_area
+# 					}
+# 				}
+# 			}
+# 			owner = {
+# 				capital_scope = {
+# 					NOT = {
+# 						continent = africa
+# 					}
+# 				}
+# 			}
+# 		}
+# 		add_province_modifier = {
+# 			name = malaria
+# 			duration = -1
+# 		}
+# 	}
+# 	# remove malaria
+# 	if = {
+# 		limit = {
+# 			has_province_modifier = malaria
+# 			owner = {
+# 				capital_scope = {
+# 					continent = africa
+# 				}
+# 			}
+# 		}
+# 		remove_province_modifier = malaria
+# 	}
+# }
 
 on_war_won = {
 	if = {
@@ -678,6 +786,12 @@ on_abandon_colony = {
 		}
 		remove_province_modifier = malaria
 	}
+	if = {
+		limit = {
+			has_province_flag = removed_settlers_flag
+		}
+		clr_province_flag = removed_settlers_flag
+	}
 }
 
 on_colony_finished = {
@@ -696,6 +810,24 @@ on_colony_finished = {
 }
 
 on_colony_established = {
+	# settler pool send colonist
+	FROM = {
+		country_event = {
+			id = btc_settler_pool.2
+		}
+	}
+	# remove dev from state primary culture province and give to colony. only for non-minority expel
+	if = {
+		limit = {
+			province_getting_expelled_minority = no
+		}
+		FROM = {
+			country_event = {
+				id = btc_settler_pool.3
+			}
+		}
+	}
+	# give malaria
 	if = {
 		limit = {
 			FROM = {
@@ -711,84 +843,23 @@ on_colony_established = {
 					region = egypt_region
 					region = guinea_region
 					region = south_africa_region
-					area = lower_zambezi_area	# mozambique
-					area = inner_angola_area	# angola
 					# Madagascar
 					area = sakalava_area
 					area = betsimasaraka_area
 					area = southern_madagascar
 					area = madagascar_highlands_area
-				}
-			}
-		}
-		add_province_modifier = {
-			name = malaria
-			duration = -1
-		}
-	}
-	# remove dev from state primary culture province and give to colony. only for non-minority expel
-	if = {
-		limit = {
-			ROOT = { province_getting_expelled_minority = no }
-		}
-		FROM = {
-			random_owned_province = {
-				limit = {
-					is_state = yes
-					culture = FROM
-					base_tax = 2
-				}
-				add_base_tax = -1
-			}
-		}
-		FROM = {
-			random_owned_province = {
-				limit = {
-					is_state = yes
-					culture = FROM
-					base_production = 2
-				}
-				add_base_production = -1
-			}
-		}
-		FROM = {
-			random_owned_province = {
-				limit = {
-					is_state = yes
-					culture = FROM
-					base_manpower = 2
-				}
-				add_base_manpower = -1
-			}
-		}
-	}
-}
-
-on_province_owner_change = {
-	if = {
-		limit = {
-			NOT = { has_province_modifier = malaria }
-			has_port = no
-			continent = africa
-			NOT = {
-				OR = {
-					region = maghreb_region
-					region = egypt_region
-					region = guinea_region
-					region = south_africa_region
-					area = lower_zambezi_area	# mozambique
-					area = inner_angola_area	# angola
-					# Madagascar
-					area = sakalava_area
-					area = betsimasaraka_area
-					area = southern_madagascar
-					area = madagascar_highlands_area
-				}
-			}
-			owner = {
-				capital_scope = {
-					NOT = {
-						continent = africa
+					if = {
+						limit = {
+							NOT = { mission_completed = btc_slaves }
+						}
+						area = inner_angola_area
+						area = matamba_area
+					}
+					if = {
+						limit = {
+							NOT = { mission_completed = btc_sofala }
+						}
+						area = lower_zambezi_area
 					}
 				}
 			}
@@ -797,17 +868,6 @@ on_province_owner_change = {
 			name = malaria
 			duration = -1
 		}
-	}
-	if = {
-		limit = {
-			has_province_modifier = malaria
-			owner = {
-				capital_scope = {
-					continent = africa
-				}
-			}
-		}
-		remove_province_modifier = malaria
 	}
 }
 

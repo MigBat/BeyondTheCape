@@ -208,7 +208,11 @@ btc_por_methuen = {
 		has_parliament = yes
 		mission_completed = btc_ordenacoes
 		current_age = age_of_absolutism
-		alliance_with = ENG
+		OR = {
+			alliance_with = ENG
+			alliance_with = GBR
+			alliance_with = AVE
+		}
 		228 = {
 			NOT = { has_province_modifier = port_wine_production }
 		}

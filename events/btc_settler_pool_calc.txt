@@ -1,0 +1,267 @@
+namespace = btc_settler_pool
+normal_or_historical_nations = yes
+
+country_event = {
+	id = btc_settler_pool.1
+	title = btc_settler_pool.1_t
+	desc = btc_settler_pool.1_d
+	picture = JESUIT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		num_of_colonists = 1
+	}
+
+	option = {
+		name = btc_settler_pool.1a
+
+		set_variable = {
+			which = monthly_settler_pool_amount
+			value = 0
+		}
+		# initial setup
+		if = {
+			limit = {
+				NOT = { has_country_flag = settler_pool_active }
+			}
+			set_country_flag = settler_pool_active
+
+			set_variable = {
+				which = total_settler_pool_amount
+				value = 60	# x50 = 3000
+			}
+
+			# show on localisation
+			set_variable = {
+				which = real_total_settler_pool_amount
+				value = 3000
+			}
+		}
+		# monthly settler pool calculation
+		else = {
+			# country development
+			export_to_variable = {
+				variable_name = country_development
+				value = total_development
+			}
+			divide_variable = {
+				which = country_development
+				value = 100
+			}
+			change_variable = {
+				which = monthly_settler_pool_amount
+				which = country_development
+			}
+			# number of colonies
+			export_to_variable = {
+				which = number_of_colonies
+				value = trigger_value:num_of_colonies
+			}
+			subtract_variable = {
+				which = monthly_settler_pool_amount
+				which = number_of_colonies
+			}
+			# show on localisation
+			set_variable = {
+				which = real_monthly_settler_pool_amount
+				which = monthly_settler_pool_amount
+			}
+			multiply_variable = {
+				which = real_monthly_settler_pool_amount
+				value = 50
+			}
+			round_variable = {
+				which = real_monthly_settler_pool_amount
+				value = -1	# round down
+			}
+		}
+		# add to total settler pool
+		change_variable = {
+			which = total_settler_pool_amount
+			which = monthly_settler_pool_amount
+		}
+		# remove 1000 settlers on new colony
+		# if = {
+		# 	limit = {
+		# 		any_owned_province = {
+		# 			has_province_flag = removed_settlers_flag
+		# 		}
+		# 	}
+		# 	subtract_variable = {
+		# 		which = total_settler_pool_amount
+		# 		value = 20	# equals 1000 settlers
+		# 	}
+		# 	random_owned_province = {
+		# 		limit = {
+		# 			has_province_flag = removed_settlers_flag
+		# 		}
+		# 		clr_province_flag = removed_settlers_flag
+		# 	}
+		# }
+		# get max and min
+		if = {
+			limit = {
+				check_variable = {
+					which = total_settler_pool_amount
+					value = 100
+				}
+			}
+			set_variable = {
+				which = total_settler_pool_amount
+				value = 100
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = total_settler_pool_amount
+						value = 0
+					}
+				}
+			}
+			set_variable = {
+				which = total_settler_pool_amount
+				value = 0
+			}
+		}
+		# show on localisation
+		set_variable = {
+			which = real_total_settler_pool_amount
+			which = total_settler_pool_amount
+		}
+		multiply_variable = {
+			which = real_total_settler_pool_amount
+			value = 50
+		}
+		round_variable = {
+			which = real_total_settler_pool_amount
+			value = -1	# round down
+		}
+
+		# show on UI
+		set_government_power = {
+			mechanic_type = settler_pool_ui_hidden_mechanics
+			power_type = settler_pool_bar_hidden
+			value = 0
+		}
+		set_government_power_variable = {
+			mechanic_name = settler_pool_ui_hidden_mechanics
+			power_name = settler_pool_bar_hidden
+			variable = total_settler_pool_amount
+		}
+		check_settler_pool_effects = yes
+	}
+}
+
+country_event = {
+	id = btc_settler_pool.2
+	title = btc_settler_pool.2_t
+	desc = btc_settler_pool.2_d
+	picture = JESUIT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btc_settler_pool.2a
+
+		subtract_variable = {
+			which = total_settler_pool_amount
+			value = 20	# equals 1000 settlers
+		}
+		# get max and min
+		if = {
+			limit = {
+				check_variable = {
+					which = total_settler_pool_amount
+					value = 100
+				}
+			}
+			set_variable = {
+				which = total_settler_pool_amount
+				value = 100
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = total_settler_pool_amount
+						value = 0
+					}
+				}
+			}
+			set_variable = {
+				which = total_settler_pool_amount
+				value = 0
+			}
+		}
+		# show on localisation
+		set_variable = {
+			which = real_total_settler_pool_amount
+			which = total_settler_pool_amount
+		}
+		multiply_variable = {
+			which = real_total_settler_pool_amount
+			value = 50
+		}
+		round_variable = {
+			which = real_total_settler_pool_amount
+			value = -1	# round down
+		}
+
+		# show on UI
+		set_government_power = {
+			mechanic_type = settler_pool_ui_hidden_mechanics
+			power_type = settler_pool_bar_hidden
+			value = 0
+		}
+		set_government_power_variable = {
+			mechanic_name = settler_pool_ui_hidden_mechanics
+			power_name = settler_pool_bar_hidden
+			variable = total_settler_pool_amount
+		}
+		check_settler_pool_effects = yes
+	}
+}
+
+country_event = {
+	id = btc_settler_pool.3
+	title = btc_settler_pool.3_t
+	desc = btc_settler_pool.3_d
+	picture = JESUIT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = btc_settler_pool.3a
+		
+		random_owned_province = {
+			limit = {
+				is_state = yes
+				culture = ROOT
+				base_tax = 2
+			}
+			add_base_tax = -1
+		}
+		random_owned_province = {
+			limit = {
+				is_state = yes
+				culture = ROOT
+				base_production = 2
+			}
+			add_base_production = -1
+		}
+		random_owned_province = {
+			limit = {
+				is_state = yes
+				culture = ROOT
+				base_manpower = 2
+			}
+			add_base_manpower = -1
+		}
+	}
+}

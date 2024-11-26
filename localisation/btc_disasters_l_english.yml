@@ -133,8 +133,8 @@
  portuguese_regency.1a: "For the sake of Portugal."
 
  show_afonso_alignment_tt: "[Root.GetAfonsoAlignment]"
- btc_afonso_pleased: "The Duke of Bragança is currently pleased with the privileges given so far."
- btc_afonso_displeased: "The Duke of Bragança is currently displeased with the privileges given so far."
+ btc_afonso_pleased: "The Duke of Bragança is currently PLEASED with the privileges given so far."
+ btc_afonso_displeased: "The Duke of Bragança is currently DISPLEASED with the privileges given so far."
 
  portuguese_regency.2_t: "The Future Consort"
  portuguese_regency.2_d: "Assuring the dynasty's survival is of paramount importance, and for that a proper consort must be selected. This is also a great opportunity to form important political alliances, or consolidate one's power within the realm. This is exactly what Afonso, Duke of Bragança, had in mind when he suggested to Infante Pedro that the young King marry one of his granddaughters. However, Infante Pedro has a daughter of his own, the same age as young Afonso..."

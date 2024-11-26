@@ -547,6 +547,88 @@ guiTypes = {
 		}
 
 	########### BEYOND THE CAPE ###########
+
+	# Settler Pool #
+
+	windowType = {
+		name = "settler_pool_click"
+		scripted = yes
+		backGround=""
+		position = { x = 15 y = 18 }
+		size = { x = 100 y = 100 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		orientation = "UPPER_LEFT"
+		
+		guiButtonType = {
+			name = "settler_pool_button_open"
+			scripted = yes
+			position = { x = 0 y = 0 }
+			spriteType  = "GFX_settler_pool_button_open"
+		}
+	}
+
+	windowType = {
+		name = "settler_pool_window"
+		scripted = yes
+		backGround=""
+		position = { x = 150 y = -20 }
+		size = { x=750 y=750 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		iconType = {
+			name ="settler_pool_bg"
+			scripted = yes
+			spriteType = "GFX_settler_pool_bg"
+			position = { x= -21 y = 17 }
+		}
+
+		instantTextBoxType = {
+			name = "settler_pool_label"
+			scripted = yes
+			position = { x = -200 y = 20 }
+			format = centre
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}
+			text = "Settler Pool"
+			maxWidth = 584
+			maxHeight = 32
+		}
+
+		iconType = {
+			name ="settler_pool_progress_bar"
+			spriteType = "GFX_single_government_power_bar"
+			position = { x= 55 y = 46 }
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+		}
+
+		iconType = {
+			name ="settler_pool_progress_frame"
+			spriteType = "GFX_settler_pool_progress_frame"
+			position = { x= 42 y = 43 }
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+		}
+
+		iconType = {
+			name ="settler_pool_modifiers"
+			scripted = yes
+			spriteType = "GFX_settler_pool_modifiers"
+			position = { x= -3 y = 27 }
+		}
+	}
+
+	# Spice Trade Conflict #
 	
 	windowType = {
 		name = "spice_trade_conflict_click"

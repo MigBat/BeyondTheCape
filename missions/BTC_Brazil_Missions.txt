@@ -1,0 +1,378 @@
+btc_brazil_2 = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			is_subject_of_type = colony
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+			tag = BRZ
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_brz_wood = {
+		icon = mission_ordenacoes
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = bahia_area
+					has_port = yes
+				}
+				AND = {
+					area = rio_de_janeiro_area
+					has_port = yes
+				}
+			}
+			NOT = { owned_by = ROOT }
+		}		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = coastal_bahia_tt
+				760 = { owned_by = ROOT }
+				757 = { owned_by = ROOT }
+			}
+			custom_trigger_tooltip = {
+				tooltip = coastal_rio_tt
+				rio_de_janeiro_area = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+		}	
+		effect = {
+			bahia_area = {
+				limit = {
+					NOT = { province_id = 756 }
+				}
+				change_trade_goods = tropical_wood
+			}
+			rio_de_janeiro_area = {
+				change_trade_goods = tropical_wood
+			}
+			756 = {
+				change_trade_goods = dyes
+				add_province_modifier = {
+					name = brazilwood_center
+					duration = -1
+				}
+			}
+		}
+	}
+
+	btc_brz_cotton = {
+		icon = mission_ordenacoes
+		required_missions = { btc_brz_capitanias }
+		position = 3
+		provinces_to_highlight = {
+			area = maranhao_area
+			NOT = { owned_by = ROOT }
+		}		
+		trigger = {
+			maranhao_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}	
+		effect = {
+			maranhao_area = {
+				change_trade_goods = cotton
+			}
+		}
+	}
+
+	btc_brz_coffee = {
+		icon = mission_ordenacoes
+		required_missions = { btc_brz_gold }
+		position = 5
+		provinces_to_highlight = {
+			area = sao_paolo_area
+			NOT = { owned_by = ROOT }
+		}		
+		trigger = {
+			sao_paolo_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}	
+		effect = {
+			sao_paolo_area = {
+				change_trade_goods = coffee
+			}
+		}
+	}
+}
+
+btc_brazil_3 = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			is_subject_of_type = colony
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+			tag = BRZ
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_brz_capitanias = {
+		icon = mission_ordenacoes
+		required_missions = { btc_brz_wood btc_brz_sugar }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = piaui_area
+					has_port = yes
+				}
+				AND = {
+					area = maranhao_area
+					has_port = yes
+				}
+				AND = {
+					area = sao_paolo_area
+					has_port = yes
+				}
+			}
+			NOT = { owned_by = ROOT }
+		}		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = coastal_piaui_tt
+				2886 = { owned_by = ROOT }
+			}
+			custom_trigger_tooltip = {
+				tooltip = coastal_maranhao_tt
+				749 = { owned_by = ROOT }
+				2927 = { owned_by = ROOT }
+			}
+			custom_trigger_tooltip = {
+				tooltip = coastal_paulo_tt
+				769 = { owned_by = ROOT }
+				766 = { owned_by = ROOT }
+			}
+		}	
+		effect = {
+			add_country_modifier = {
+				name = brazil_colonial_expansion
+				duration = 9125
+			}
+		}
+	}
+
+	btc_brz_jesuit = {
+		icon = mission_ordenacoes
+		required_missions = { }
+		position = 3
+		provinces_to_highlight = { }		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = brz_jesuits_tt
+				num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+					holy_order = jesuit_order
+					colonial_region = colonial_brazil
+					value = 7
+				}
+			}
+		}	
+		effect = {
+			add_country_modifier = {
+				name = jesuit_production
+				duration = -1
+			}
+		}
+	}
+
+	btc_brz_gold = {
+		icon = mission_ordenacoes
+		required_missions = { btc_brz_cotton btc_brz_jesuit btc_brz_north }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 2899
+			NOT = { owned_by = ROOT }
+		}		
+		trigger = {
+			2899 = {
+				owned_by = ROOT
+			}
+		}	
+		effect = {
+			minas_gerais_area = {
+				change_trade_goods = gold
+			}
+			2899 = {
+				add_permanent_province_modifier = {
+					name = brazil_gold
+				}
+			}
+		}
+	}
+
+	btc_brz_riches = {
+		icon = mission_ordenacoes
+		required_missions = { btc_brz_coffee btc_brz_diamonds }
+		position = 6
+		provinces_to_highlight = {
+			region = brazil_region
+			NOT = { owned_by = ROOT }
+		}		
+		trigger = {
+			brazil_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}	
+		effect = {
+		}
+	}
+}
+
+btc_brazil_4 = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+	potential = {
+		OR = {
+			is_subject_of_type = colony
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+			tag = BRZ
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	btc_brz_sugar = {
+		icon = mission_ordenacoes
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = pernambuco_area
+				area = ceara_area
+			}
+			has_port = yes
+			NOT = { owned_by = ROOT }
+		}		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = coastal_pernambuco_tt
+				2912 = { owned_by = ROOT }
+				2921 = { owned_by = ROOT }
+				755 = { owned_by = ROOT }
+				754 = { owned_by = ROOT }
+			}
+			custom_trigger_tooltip = {
+				tooltip = coastal_ceara_tt
+				753 = { owned_by = ROOT }
+				751 = { owned_by = ROOT }
+			}
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				overlord = {
+					brazil_region = {
+						type = all
+						has_discovered = ROOT
+					}				
+				}
+			}
+			else = {
+				brazil_region = {
+					has_discovered = ROOT
+				}
+			}
+		}	
+		effect = {
+			pernambuco_area = {
+				change_trade_goods = sugar
+			}
+			ceara_area = {
+				change_trade_goods = sugar
+			}
+			piaui_area = {
+				change_trade_goods = sugar
+			}
+			sao_francisco_area = {
+				change_trade_goods = sugar
+			}
+		}
+	}
+
+	btc_brz_north = {
+		icon = mission_ordenacoes
+		required_missions = { btc_brz_capitanias }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = piaui_area
+				area = ceara_area
+				area = pernambuco_area
+				area = sao_francisco_area
+			}
+			NOT = { owned_by = ROOT }
+		}		
+		trigger = {
+			piaui_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ceara_area = {
+				type = all
+				owned_by = ROOT
+			}
+			pernambuco_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sao_francisco_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}	
+		effect = {
+		}
+	}
+
+	btc_brz_diamonds = {
+		icon = mission_ordenacoes
+		required_missions = { btc_brz_gold }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 759
+			NOT = { owned_by = ROOT }
+		}		
+		trigger = {
+			759 = {
+				owned_by = ROOT
+			}
+		}	
+		effect = {
+			diamantina_area = {
+				change_trade_goods = gems
+			}
+			759 = {
+				add_permanent_province_modifier = {
+					name = brazil_diamonds
+				}
+			}
+		}
+	}
+}

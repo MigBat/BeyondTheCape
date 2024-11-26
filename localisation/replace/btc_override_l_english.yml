@@ -390,6 +390,7 @@
  resist_the_english_desc:0 "Scotland has been subjugated by the cruel rule of the English in the past, never again shall a proud sctosman shine the boots of a pompous English overlord."
  comets:0 "Scottish Enlightenment"
  comets_desc:0 "Sharing the humanist and rational outlook of the Western Enlightenment of the same time period, the thinkers of the Scottish Enlightenment asserted the importance of human reason combined with a rejection of any authority that could not be justified by reason."
+ general_colonization_law_desc:0 "By adopting a law allowing free movement of foreign people to our colonies we'll be sure to lure a wider range of future settlers.\nAllows colonization of inland provinces"
 # Modifiers #
  quest_for_the_new_world:0 "Quest for the New World"
  desc_quest_for_the_new_world:0 "We have developed the technology required to explore the uncharted deep waters of the ocean."

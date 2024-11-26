@@ -1,0 +1,10 @@
+﻿l_english:
+
+ settler_pool_label: "Settler Pool"
+ settler_pool_amount_tt: "Number of Settlers: §Y[Root.real_total_settler_pool_amount.GetValue]§!\nMonthly Settler Increase: §Y[Root.real_monthly_settler_pool_amount.GetValue]§!\n====================\nPer 100 total development: §G+50§! monthly settlers\nPer active colony: §R-50§! monthly settlers\nWhen colony is established: §R-1000§! settlers"
+ settler_pool_modifiers_tt: "Active Modifiers:\n\nGlobal Settler Increase: §G+[Root.settler_pool_colonial_growth.GetValue]§!\nColony Cost Modifier: §R+[Root.settler_pool_colony_cost.GetValue]%§!"
+ settler_pool_bar_hidden: "Settler Pool"
+ settler_pool_bar_hidden_desc: ""
+ monthly_settler_pool_bar_hidden: "Monthly Settlers"
+ settler_pool_bar_hidden_gain_modifier: "Settlers Gain Modifier"
+ settler_pool_button_tt: "Settler Pool\n============\nTotal Settlers: [Root.real_total_settler_pool_amount.GetValue]/5000"

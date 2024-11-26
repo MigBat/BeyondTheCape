@@ -178,3 +178,42 @@
 
 # Mamluks #
  allow_suez_transportation_tt:0 "Allows transportation of ships to and from §Y[4316.GetName]§! and §Y[2315.GetName]§!."
+
+# Brazil #
+ btc_brz_wood_title: "Brazilwood Cycle"
+ btc_brz_wood_desc: ""
+ coastal_bahia_tt: "Own all coastal provinces in §YBahia§! area"
+ coastal_rio_tt: "Own all coastal provinces in §YRio de Janeiro§! area"
+
+ btc_brz_cotton_title: "Cotton Cycle"
+ btc_brz_cotton_desc: ""
+
+ btc_brz_coffee_title: "Coffee Cycle"
+ btc_brz_coffee_desc: ""
+
+ btc_brz_capitanias_title: "Capitanias"
+ btc_brz_capitanias_desc: ""
+ coastal_piaui_tt: "Own all coastal provinces in §YPiaiu§! area"
+ coastal_maranhao_tt: "Own all coastal provinces in §YMaranhao§! area"
+ coastal_paulo_tt: "Own all coastal provinces in §YSao Paulo§! area"
+
+ btc_brz_jesuit_title: "Jesuit Missions"
+ btc_brz_jesuit_desc: ""
+ brz_jesuits_tt: "§Y7§! states in §YColonial Brazil§! owned by you have been assigned to the §YJesuit§! Holy Order."
+
+ btc_brz_gold_title: "Gold Cycle"
+ btc_brz_gold_desc: ""
+
+ btc_brz_riches_title: "Welcome to the Jungle"
+ btc_brz_riches_desc: ""
+
+ btc_brz_sugar_title: "Sugar Cycle"
+ btc_brz_sugar_desc: ""
+ coastal_pernambuco_tt: "Own all coastal provinces in §YPernambuco§! area"
+ coastal_ceara_tt: "Own all coastal provinces in §YCeara§! area"
+
+ btc_brz_north_title: "Northern Repartition"
+ btc_brz_north_desc: ""
+
+ btc_brz_diamonds_title: "Diamond Demarcation"
+ btc_brz_diamonds_desc: ""

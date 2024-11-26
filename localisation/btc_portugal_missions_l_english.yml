@@ -19,7 +19,7 @@
 
  btc_sagres_school_title: "§OSagres School of Navigation§!"
  btc_sagres_school_desc: "Prince Henry 'the Navigator' has been a key figure in Portugal's maritime expansion ever since the failed expedition to Tangiers. He's recently concluded overseeing the colonization of the Azores islands and now wishes to focus on charting the african coast. For this endeavour, he has gathered the best navigators and map-makers of the country at his villa in the town of Sagres in the Algarve province. Here, the Sagres School of Navigation was founded."
- btc_sagres_school_tt: "§MUnlocks unique researchable technologies for as long as Portugal owns the Algarve province."
+ btc_sagres_school_tt: "§MUnlocks unique portuguese technologies§!"
 
  btc_mariner_astrolabe_title: "Mariner's Astrolabe"
  btc_mariner_astrolabe_desc: "A lost sailor is a dead sailor. When in the middle of uncharted waters, the mariner must be equipped with precise equipment that allows him to know exactly where he is at any time. Planispheric astrolabes have proven useless in rough water and in heavy winds, dangers we are sure to face. However, by making a few modifications to this device, and adding an alidade to measure vertical angles, one is able to determine the latitude of a ship at sea by measuring the sun's declination or the meridian altitude of a star of known declination."
@@ -52,6 +52,7 @@
  btc_avis_title: "Order of Aviz"
  btc_avis_desc: "Present in Portugal since the time of our first King, the Order of Aviz is a proud chivalrous military order, giving its name to our current dynasty. They were vital during the Reconquista, and continue to be so in our recent african incursions - the conquest of Ceuta in 1415 being the latest high, and the defeat at Tangiers in 1437 the most recent low. We must lift the spirit of our knights, as our work in Morocco is not yet done."
  unlock_avis_knights: "Unlocks the §OKnights of Avis§! mercenary company"
+ avis_tt: "§YOrder of Avis§! Holy Order established in §YAlentejo§!"
 
  btc_jogo_do_pau_title: "Jogo do Pau"
  btc_jogo_do_pau_desc: "An old portuguese martial art, it uses a staff as a weapon, mainly by our poor peasant foot soldiers who can't afford a better weapon. Our commanders have noticed the ability and effectiveness of these soldiers in combat, and have come forth with a proposal to teach Jogo do Pau to all of our infantry to give them an edge in combat, and a surprise factor to their foes who most likely have never seen these techniques before."
@@ -75,10 +76,13 @@
  btc_morocco_title: "Dealing with Morocco"
  btc_morocco_desc: "For long have the Portuguese Cortes asked the King to consolidate Portuguese presence in Morocco, exacerbated by the vulnerability of our coasts from mediterranean expeditions by the Ottomans and Mamluks, who dispute the Indian trade with us. We are not ready to fight on two fronts. But now someone appears at our doorstep. Abdallah Mohammed, a pretender to the Moroccan throne, requests assistance in recovering it from his uncle. This presents a unique opportunity for us. We must act, and fast!"
  morocco_perma_claims_tt: "We get permanent claims on all provinces with §YMoroccan§! culture"
+ remove_resist_reconquista_tt: "The §YResist Reconquista§! modifier is removed from all provinces"
 
  btc_christ_title: "Order of Christ"
  btc_christ_desc: "When the Knights Templar were disbanded by the pope in 1312 and consequently persecuted, our King Dinis I refused to do so, being grateful to their aid during the Reconquista and consequent reconstruction of the country. In Portugal, the Knights Templar found a safe haven, rebranding themselves as the Order of Christ. Prince Henry is the current grandmaster of the order. He intends to avenge the disaster of Tangiers in 1437, and the order is ready to help us build up our fleet for a second incursion into North Africa."
  unlock_christ_knights: "Unlocks the §OKnights of Christ§! mercenary company"
+ christ_tt: "§YOrder of Christ§! Holy Order established in §YEstremadura§!"
+ arguin_frontier_tt: "Creates a "
 
  btc_forts_title: "Defending our Borders"
  btc_forts_desc: "Relations with Castile have always been tense, and as such it seems too suspicious that no conflict has erupted ever since 1385, when our King João I assured Portuguese independence. These slow years at our border towns have made the garrisons there lazy and unprepared for potential surprises. We must spurn them up and get them working on rebuilding our fortifications, starting with the one at Elvas, in the province of Évora."
@@ -130,6 +134,8 @@
 
  btc_settle_title: "Terra de Vera Cruz"
  btc_settle_desc: ""
+ has_colonial_brazil_tt: "Has a colonial subject in §YBrazil§! owning [756.GetName]"
+ colony_capital_bahia: "Our colonial subject in §YBrazil§! will have its capital in [756.GetName]"
  brazilian_custom_ideas_tt: "Our colonial nation subject in the §YBrazil§! colonial region will get new missions.(TODO)"
 
  btc_triangle_trade_title: "Triangle Trade"
@@ -225,6 +231,7 @@
 
  btc_mare_clausum_title: "Mare Clausum"
  btc_mare_clausum_desc: ""
+ spice_trade_conflict_resolved_tt: "Portugal has won the §YSpice Trade Conflict§!"
  add_cartaz_tt: "Every owned province with a Fortified Feitoria will get '§YCartaz§!' until the end of the game, giving the following effects:\nYearly Tax Income: §G+12.00§!¤"
  enable_cartaz_tt: "§MEvery new Fortified Feitoria will now issue a Cartaz§!"
 
@@ -254,6 +261,7 @@
 
  btc_macau_title: "Cantonese Commerce"
  btc_macau_desc: ""
+ macau_tamao_tt: "We will attempt to purchase §Y[668.GetName]§! or §Y[4975.GetName]§!"
 
  btc_sino_japan_title: "Sino-Japanese Trade"
  btc_sino_japan_desc: ""
@@ -271,6 +279,7 @@
 
  btc_nagasaki_title: "A Base in Japan"
  btc_nagasaki_desc: ""
+ nagasaki_tt: "We will attempt to purchase §Y[4182.GetName]§!"
 
  btc_korea_title: "Organ Guns"
  btc_korea_desc: ""
@@ -283,6 +292,7 @@
 
  btc_camoes_title: "§OOs Lusiadas§!"
  btc_camoes_desc: ""
+ camoes_tt: "Move the §YStudium Generale§! through the §JCortes§!\n(Requires owning [227.GetName] and [1851.GetName] in the §YAge of Reformation§!)"
 
  btc_magnanimous_title: "The Magnanimous"
  btc_magnanimous_desc: ""
@@ -345,6 +355,7 @@
 
  btc_port_title: "Wine Monopolies"
  btc_port_desc: ""
+ methuen_tt: "Sign the §YMethuen Treaty§! through the §JCortes§!\n(Requires an alliance with the English @ENG@GBR@AVE in the §YAge of Absolutism§!)"
 
  btc_damiao_title: "The European Wave"
  btc_damiao_desc: ""

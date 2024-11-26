@@ -316,9 +316,7 @@ can_colonize_province = {
 			FROM = {
 				NOT = {
 					OR = {
-						is_colonial_nation = yes
-						is_former_colonial_nation = yes
-						expansion_ideas = 1
+						expansion_ideas = 6
 						has_idea = siberian_frontier
 					}
 				}

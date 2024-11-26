@@ -9,6 +9,9 @@ country_event = {
 	picture = tutorial_picture
 
 	is_triggered_only = yes
+	trigger = {
+		ai = no
+	}
 
 	option = {	# Portugal
 		name = btc_startscreen.1a
@@ -54,6 +57,11 @@ country_event = {
 		name = btc_startscreen.1f
 
 		set_country_flag = tutorial_done
+		hidden_effect = {
+			country_event = {
+				id = btc_remove_natives.1
+			}
+		}
 	}
 }
 
@@ -74,7 +82,7 @@ country_event = {
 		}
 	}
 
-	option = {	# Overextended Empire Disaster
+	option = {	# Disasters
 		name = btc_startscreen.2b
 
 		country_event = {
@@ -82,13 +90,13 @@ country_event = {
 		}
 	}
 
-	option = {	# Liberal Wars Disaster
-		name = btc_startscreen.2f
+	# option = {	# Liberal Wars Disaster
+	# 	name = btc_startscreen.2f
 
-		country_event = {
-			id = btc_startscreen.25
-		}
-	}
+	# 	country_event = {
+	# 		id = btc_startscreen.25
+	# 	}
+	# }
 
 	option = {	# Historical Run
 		name = btc_startscreen.2d
@@ -117,7 +125,7 @@ country_event = {
 	}
 }
 
-# Portuguese Government #
+# Government #
 country_event = {
 	id = btc_startscreen.21
 	title = btc_startscreen.21_t
@@ -125,6 +133,30 @@ country_event = {
 	picture = tutorial_picture
 
 	is_triggered_only = yes
+
+	option = {	# Monarchy
+		name = btc_startscreen.21b
+
+		country_event = {
+			id = btc_startscreen.211
+		}
+	}
+
+	option = {	# Empire
+		name = btc_startscreen.21c
+
+		country_event = {
+			id = btc_startscreen.212
+		}
+	}
+
+	option = {	# Absolutist/Liberal
+		name = btc_startscreen.21d
+
+		country_event = {
+			id = btc_startscreen.213
+		}
+	}
 
 	option = {	# go back
 		name = btc_startscreen.21a
@@ -135,7 +167,61 @@ country_event = {
 	}
 }
 
-# Overextended Empire Disaster #
+# Portuguese Monarchy #
+country_event = {
+	id = btc_startscreen.211
+	title = btc_startscreen.211_t
+	desc = btc_startscreen.211_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.211a
+
+		country_event = {
+			id = btc_startscreen.21
+		}
+	}
+}
+
+# Portuguese Empire #
+country_event = {
+	id = btc_startscreen.212
+	title = btc_startscreen.212_t
+	desc = btc_startscreen.212_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.212a
+
+		country_event = {
+			id = btc_startscreen.21
+		}
+	}
+}
+
+# Absolutist and Liberal Monarchy #
+country_event = {
+	id = btc_startscreen.213
+	title = btc_startscreen.213_t
+	desc = btc_startscreen.213_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.213a
+
+		country_event = {
+			id = btc_startscreen.21
+		}
+	}
+}
+
+# Disasters #
 country_event = {
 	id = btc_startscreen.22
 	title = btc_startscreen.22_t
@@ -143,6 +229,30 @@ country_event = {
 	picture = tutorial_picture
 
 	is_triggered_only = yes
+
+	option = {	# Bragança Plot
+		name = btc_startscreen.22b
+
+		country_event = {
+			id = btc_startscreen.221
+		}
+	}
+
+	option = {	# Overextended Empire
+		name = btc_startscreen.22c
+
+		country_event = {
+			id = btc_startscreen.222
+		}
+	}
+
+	option = {	# Liberal Wars
+		name = btc_startscreen.22d
+
+		country_event = {
+			id = btc_startscreen.223
+		}
+	}
 
 	option = {	# go back
 		name = btc_startscreen.22a
@@ -153,20 +263,56 @@ country_event = {
 	}
 }
 
-# Liberal Wars Disaster #
+# Bragança Plot #
 country_event = {
-	id = btc_startscreen.25
-	title = btc_startscreen.25_t
-	desc = btc_startscreen.25_d
+	id = btc_startscreen.221
+	title = btc_startscreen.221_t
+	desc = btc_startscreen.221_d
 	picture = tutorial_picture
 
 	is_triggered_only = yes
 
 	option = {	# go back
-		name = btc_startscreen.25a
+		name = btc_startscreen.221a
 
 		country_event = {
-			id = btc_startscreen.2
+			id = btc_startscreen.22
+		}
+	}
+}
+
+# Overextended Empire #
+country_event = {
+	id = btc_startscreen.222
+	title = btc_startscreen.222_t
+	desc = btc_startscreen.222_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.222a
+
+		country_event = {
+			id = btc_startscreen.22
+		}
+	}
+}
+
+# Liberal Wars Disaster #
+country_event = {
+	id = btc_startscreen.223
+	title = btc_startscreen.223_t
+	desc = btc_startscreen.223_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.223a
+
+		country_event = {
+			id = btc_startscreen.22
 		}
 	}
 }
@@ -682,6 +828,14 @@ country_event = {
 		}
 	}
 
+	option = {	# Professionalism
+		name = btc_startscreen.6g
+
+		country_event = {
+			id = btc_startscreen.66
+		}
+	}
+
 	option = {	# go back
 		name = btc_startscreen.6f
 
@@ -782,6 +936,24 @@ country_event = {
 
 	option = {	# go back
 		name = btc_startscreen.65b
+
+		country_event = {
+			id = btc_startscreen.6
+		}
+	}
+}
+
+# Professionalism tutorial #
+country_event = {
+	id = btc_startscreen.66
+	title = btc_startscreen.66_t
+	desc = btc_startscreen.66_d
+	picture = tutorial_picture
+
+	is_triggered_only = yes
+
+	option = {	# go back
+		name = btc_startscreen.66a
 
 		country_event = {
 			id = btc_startscreen.6

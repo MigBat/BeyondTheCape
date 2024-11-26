@@ -1,17 +1,12 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
-6;12;sea;1258;-1;-1;-1;-1;Sk�ne-Sjaelland
 14;4149;sea;1258;-1;-1;-1;-1;Fyn-Kolding
-14;1983;sea;1258;-1;-1;-1;-1;Fyn-Lolland
 12;1983;sea;1258;-1;-1;-1;-1;Sjaelland-Lolland
-123;124;sea;1307;-1;-1;-1;-1;Calabria-Messina
 151;316;sea;1320;-1;-1;-1;-1;Thrace-Bithynia
 911;945;sea;1662;-1;-1;-1;-1;Menominee-Michigan
 142;144;sea;1311;-1;-1;-1;-1;Janina-Corfu
 4699;1773;sea;1312;-1;-1;-1;-1;Janina-Achaea
 4779;2296;sea;1320;-1;-1;-1;-1;Gallipoli-Biga
 4364;4110;sea;1283;-1;-1;-1;-1;Inner Hebrides-Sutherland
-4110;369;sea;1282;-1;-1;-1;-1;Sutherland-Orkney
-97;100;sea;1269;-1;-1;-1;-1;Holland-Friesland
 96;1865;sea;1269;-1;-1;-1;-1;Zeeland-Gent
 1017;1818;sea;1390;-1;-1;-1;-1;Suo-Chikuzen
 4186;1825;sea;1390;-1;-1;-1;-1;Aki-Iyo
@@ -25,9 +20,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 536;2100;sea;1340;-1;-1;-1;-1;Madurai-Vanni
 628;2692;sea;1355;-1;-1;-1;-1;Surabaya-Madura
 627;631;sea;1355;-1;-1;-1;-1;Blambangan-Bali
-2700;4351;sea;1397;-1;-1;-1;-1;Cebu-Panay
-4353;654;sea;1397;-1;-1;-1;-1;Leyte-Samar
-2678;622;sea;1361;-1;-1;-1;-1;Banka-Palembang
 4815;597;sea;1361;-1;-1;-1;-1;Singapura-Johor
 2929;2890;sea;1529;-1;-1;-1;-1;Para-Marajo
 748;2890;sea;1529;-1;-1;-1;-1;Belem-Marajo
@@ -37,7 +29,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 431;2999;sea;1334;-1;-1;-1;-1;Mogostan-Hormuz
 146;3003;sea;1319;-1;-1;-1;-1;Athens - Euboea
 31;4152;lake;4139;-1;-1;-1;-1;Savolax - Kuusamo
-4351;4352;sea;1397;-1;-1;-1;-1;Buglas-Cebu
 4699;4698;sea;1312;-1;-1;-1;-1;Arta-Cephalonia
 4745;47;sea;1257;-1;-1;-1;-1;Rugen-Stralsund
 2994;48;sea;1257;-1;-1;-1;-1;Wolgast-Kolberg
@@ -55,4 +46,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4954;965;sea;1500;-1;-1;-1;-1;BTC
 1820;4184;sea;1390;-1;-1;-1;-1;BTC
 4980;529;sea;1338;-1;-1;-1;-1;BTC
+235;238;sea;1270;-1;-1;-1;-1;BTC
+4364;252;sea;1283;-1;-1;-1;-1;BTC
+4364;4363;sea;1284;-1;-1;-1;-1;BTC
+12;6;sea;1258;-1;-1;-1;-1;BTC
+123;124;sea;1307;-1;-1;-1;-1;BTC
 -1;-1;;-1;-1;-1;-1;-1;-1

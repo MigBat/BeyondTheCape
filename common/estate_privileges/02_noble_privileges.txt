@@ -5009,8 +5009,7 @@ estate_nobles_austrian_nobility_privileges = {
 estate_nobles_fidalgos = {
 	icon = privilege_fidalgos
 	max_absolutism = -10
-	# loyalty = 0.1      
-	influence  = 0.2      
+	influence  = 0.1   
 	is_valid = {
 		is_or_was_tag = { tag = POR }
 		NOT = { has_country_flag = revoked_fidalgos_flag }

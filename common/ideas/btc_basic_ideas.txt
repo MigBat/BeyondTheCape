@@ -196,6 +196,7 @@ expansion_ideas = {
 
 	additional_colonists = {
 		colonists = 1
+		colonist_placement_chance = 0.05
 		effect = { remove_temporary_colonist = yes }
 	}
 	additional_merchants = {
@@ -214,7 +215,6 @@ expansion_ideas = {
 	}
 	general_colonization_law  = {
 		colonists = 1
-		colonist_placement_chance = 0.05
 		effect = { remove_temporary_colonist = yes }
 	}
 	competetive_merchants  = {
@@ -224,17 +224,18 @@ expansion_ideas = {
 	ai_will_do = {
 		factor = 0.5
 		modifier = {
-			factor = 10
-			OR = {
-				has_idea_group = exploration_ideas
-				is_colonial_nation = yes
-			}
+			factor = 100
+			is_colonial_nation = yes
+		}
+		modifier = {
+			factor = 5
+			has_idea_group = exploration_ideas
+			has_subject_of_type = colony
 		}
 		modifier = {
 			factor = 5
 			OR = {
 				tag = CAS
-				tag = POR
 				tag = SPA
 			}
 		}
@@ -260,9 +261,11 @@ expansion_ideas = {
 		modifier = {
 			factor = 0.1
 			NOT = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = muslim
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = muslim
+				}
 			}
 		}
 	}

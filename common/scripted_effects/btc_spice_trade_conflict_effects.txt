@@ -1011,7 +1011,7 @@ own_mam_alliance_points_calc_malacca = {
 }
 
 set_government_power_variable = {
-	hidden_effect = { set_variable = { which = mare_clausum_copy which = $variable$ } }
+	hidden_effect = { set_variable = { which = power_copy which = $variable$ } }
 
 	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 83886.08 }
 	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 41943.04 }
@@ -1042,9 +1042,9 @@ set_government_power_variable = {
 add_government_power_variable = {
 	if = {
 		limit = {
-			check_variable = { which = mare_clausum_copy value = $num$ }
+			check_variable = { which = power_copy value = $num$ }
 		}
-		hidden_effect = { subtract_variable = { which = mare_clausum_copy value = $num$ } }
+		hidden_effect = { subtract_variable = { which = power_copy value = $num$ } }
 		add_government_power = {
 			mechanic_type = $mechanic_name$
 			power_type = $power_name$
