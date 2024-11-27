@@ -1,7 +1,7 @@
 custom_window = {
 	name = settler_pool_click
 	potential = { 
-		# num_of_colonists = 1
+		num_of_colonists = 1
 	}
 }
 

@@ -120,68 +120,6 @@ can_colonize_province = {
 			}
 		}
 	}
-	# condition = {
-	# 	tooltip = "zaragoza_portugal"
-	# 	potential = {
-	# 		FROM = {
-	# 			has_country_flag = zaragoza_por
-	# 		}
-	# 	}
-	# 	allow = {
-	# 		ROOT = {
-	# 			NOT = {
-	# 				OR = {
-	# 					AND = {
-	# 						continent = north_america
-	# 						NOT = { 
-	# 							OR = {
-	# 								area = newfoundland_area
-	# 								area = labrador_area
-	# 							}
-	# 						}
-	# 					}
-	# 					AND = {
-	# 						continent = south_america
-	# 						NOT = {
-	# 							region = brazil_region
-	# 						}
-	# 					}
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# condition = {
-	# 	tooltip = "zaragoza_castile"
-	# 	potential = {
-	# 		FROM = {
-	# 			has_country_flag = zaragoza_cas
-	# 		}
-	# 	}
-	# 	allow = {
-	# 		ROOT = {
-	# 			NOT = {
-	# 				OR = {
-	# 					continent = africa
-	# 					AND = {
-	# 						continent = asia
-	# 						NOT = {
-	# 							OR = {
-	# 								area = luzon_area
-	# 								area = southern_luzon_area
-	# 								area = visayas_area
-	# 								area = mindanao_area
-	# 								area = west_mindanao_area
-	# 								area = palawan_area
-	# 							}
-	# 						}
-	# 					}
-	# 					region = brazil_region
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
 	condition = {
 		tooltip = "iberia_colonise_restriction"
 		potential = { 

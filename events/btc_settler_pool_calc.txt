@@ -81,24 +81,6 @@ country_event = {
 			which = total_settler_pool_amount
 			which = monthly_settler_pool_amount
 		}
-		# remove 1000 settlers on new colony
-		# if = {
-		# 	limit = {
-		# 		any_owned_province = {
-		# 			has_province_flag = removed_settlers_flag
-		# 		}
-		# 	}
-		# 	subtract_variable = {
-		# 		which = total_settler_pool_amount
-		# 		value = 20	# equals 1000 settlers
-		# 	}
-		# 	random_owned_province = {
-		# 		limit = {
-		# 			has_province_flag = removed_settlers_flag
-		# 		}
-		# 		clr_province_flag = removed_settlers_flag
-		# 	}
-		# }
 		# get max and min
 		if = {
 			limit = {

@@ -1,6 +1,6 @@
 settler_pool_ui_hidden_mechanics = {
 	available = {
-		# num_of_colonists = 1
+		always = yes
 	}
 
 	powers = {
@@ -10,6 +10,9 @@ settler_pool_ui_hidden_mechanics = {
 			min = 0
 			base_monthly_growth = 0
 			scaled_modifier = {
+				trigger = {
+					num_of_colonists = 1
+				}
 				start_value = 60
 				end_value = 100
 				modifier = {
@@ -17,6 +20,9 @@ settler_pool_ui_hidden_mechanics = {
 				}
 			}
 			reverse_scaled_modifier = {
+				trigger = {
+					num_of_colonists = 1
+				}
 				start_value = 0
 				end_value = 80
 				modifier = {
@@ -24,6 +30,9 @@ settler_pool_ui_hidden_mechanics = {
 				}
 			}
 			range_modifier = {
+				trigger = {
+					num_of_colonists = 1
+				}
 				start_value = 0
 				end_value = 20
 				modifier = { 
