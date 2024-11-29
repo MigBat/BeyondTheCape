@@ -63,6 +63,20 @@ sharemap = {
 		}
 		allow = { always = no }
 	}
+	condition = {
+		tooltip = low_trust_tt
+		potential = {
+			FROM = {
+				NOT = {
+					trust = {
+						who = ROOT
+						value = 80
+					}
+				}
+			}
+		}
+		allow = { always = no }
+	}
 }
 
 callaction = {

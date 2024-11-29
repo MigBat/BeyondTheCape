@@ -1,0 +1,74 @@
+defined_text = {
+	name = GetColonialGrowth
+	random = no
+	text = {
+		localisation_key = btc_colonial_growth_active
+		trigger = {
+			check_variable = {
+				which = total_settler_pool_amount
+				value = 60
+			}
+		}
+	}
+	text = {
+		localisation_key = btc_colonial_growth_inactive
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = total_settler_pool_amount
+					value = 60
+				}
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetNoColonist
+	random = no
+	text = {
+		localisation_key = btc_no_colonist_active
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = total_settler_pool_amount
+					value = 21
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = btc_no_colonist_inactive
+		trigger = {
+			check_variable = {
+				which = total_settler_pool_amount
+				value = 21
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetColonyCost
+	random = no
+	text = {
+		localisation_key = btc_colony_cost_active
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = total_settler_pool_amount
+					value = 81
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = btc_colony_cost_inactive
+		trigger = {
+			check_variable = {
+				which = total_settler_pool_amount
+				value = 81
+			}
+		}
+	}
+}

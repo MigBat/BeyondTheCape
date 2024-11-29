@@ -1,6 +1,6 @@
 check_settler_pool_effects = {
 
-	# settler pool colonial growth bonus
+	# settler pool colonial growth
 	set_variable = {
 		which = settler_pool_colonial_growth
 		which = total_settler_pool_amount
@@ -25,6 +25,45 @@ check_settler_pool_effects = {
 		set_variable = {
 			which = settler_pool_colonial_growth
 			value = 0
+		}
+	}
+	# settler pool colonist placement chance
+	set_variable = {
+		which = settler_pool_placement_chance
+		which = total_settler_pool_amount
+	}
+	multiply_variable = {
+		which = settler_pool_placement_chance
+		value = -0.5
+	}
+	change_variable = {
+		which = settler_pool_placement_chance
+		value = 10
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = settler_pool_placement_chance
+					value = 0
+				}
+			}
+		}
+		set_variable = {
+			which = settler_pool_placement_chance
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = settler_pool_placement_chance
+				value = 20
+			}
+		}
+		set_variable = {
+			which = settler_pool_placement_chance
+			value = 20
 		}
 	}
 	# settler pool colony cost penalty

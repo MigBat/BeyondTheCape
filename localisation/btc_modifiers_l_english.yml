@@ -10,6 +10,8 @@
  improved_man_of_war:0 "Improved Royal Ship Act"
  resist_reconquista:0 "Resist Reconquista"
  desc_resist_reconquista:0 "We will double our efforts to keep the christians at bay."
+ less_resist_reconquista: "Weak Resist Reconquista"
+ desc_less_resist_reconquista: "Our efforts to keep the christians at bay have been reduced, but we still stand strong!"
  gibraltar_sound:0 "Gibraltar Sound"
  desc_gibraltar_sound:0 "We own both margins of the Straits of Gibraltar, and thus we control the passage of vessels to and from the Mediterranean Sea."
  oresund_sound:0 "Denmark Sound"

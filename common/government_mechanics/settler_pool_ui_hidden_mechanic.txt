@@ -29,6 +29,16 @@ settler_pool_ui_hidden_mechanics = {
 					colony_cost_modifier = 1
 				}
 			}
+			reverse_scaled_modifier = {
+				trigger = {
+					num_of_colonists = 1
+				}
+				start_value = 0
+				end_value = 20
+				modifier = {
+					colonist_placement_chance = -0.1
+				}
+			}
 			range_modifier = {
 				trigger = {
 					num_of_colonists = 1

@@ -98,8 +98,8 @@
  PROV_ADJ163:0 "East Cretan"
  PROV_ADJ4182:0 "Nagasaker"
 # Native Policies #
- native_policy_coexist:0 "Native Cooperation Policy"
- native_policy_coexist_desc:0 "We will foster good relationships with the natives. This will eliminate chances of uprisings happening, as well as possible claims on native land owned by other colonizers."
+ native_policy_coexist: "Native Cooperation Policy"
+ native_policy_coexist_desc: "We will foster good relationships with the natives. This will eliminate chances of uprisings happening, as well as possible claims on native land owned by other colonizers.\n\n§YAllows colonization of inland provinces§!"
  native_policy_trade:0 "Settler Colonialism Policy"
  native_policy_trade_desc:0 "We will send our own people to the colonies. This will allow them to have more development once they become cities."
  native_policy_hostile:0 "Slave-based Policy"

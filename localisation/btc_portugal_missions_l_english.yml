@@ -76,7 +76,7 @@
  btc_morocco_title: "Dealing with Morocco"
  btc_morocco_desc: "For long have the Portuguese Cortes asked the King to consolidate Portuguese presence in Morocco, exacerbated by the vulnerability of our coasts from mediterranean expeditions by the Ottomans and Mamluks, who dispute the Indian trade with us. We are not ready to fight on two fronts. But now someone appears at our doorstep. Abdallah Mohammed, a pretender to the Moroccan throne, requests assistance in recovering it from his uncle. This presents a unique opportunity for us. We must act, and fast!"
  morocco_perma_claims_tt: "We get permanent claims on all provinces with §YMoroccan§! culture"
- remove_resist_reconquista_tt: "The §YResist Reconquista§! modifier is removed from all provinces"
+ remove_resist_reconquista_tt: "The §YResist Reconquista§! and §YWeak Resist Reconquista§! modifiers are removed from all provinces"
 
  btc_christ_title: "Order of Christ"
  btc_christ_desc: "When the Knights Templar were disbanded by the pope in 1312 and consequently persecuted, our King Dinis I refused to do so, being grateful to their aid during the Reconquista and consequent reconstruction of the country. In Portugal, the Knights Templar found a safe haven, rebranding themselves as the Order of Christ. Prince Henry is the current grandmaster of the order. He intends to avenge the disaster of Tangiers in 1437, and the order is ready to help us build up our fleet for a second incursion into North Africa."
@@ -135,8 +135,7 @@
  btc_settle_title: "Terra de Vera Cruz"
  btc_settle_desc: ""
  has_colonial_brazil_tt: "Has a colonial subject in §YBrazil§! owning [756.GetName]"
- colony_capital_bahia: "Our colonial subject in §YBrazil§! will have its capital in [756.GetName]"
- brazilian_custom_ideas_tt: "Our colonial nation subject in the §YBrazil§! colonial region will get new missions.(TODO)"
+ colony_capital_bahia: "Our colonial subject in §YBrazil§! will have its capital in [756.GetName] and get new missions."
 
  btc_triangle_trade_title: "Triangle Trade"
  btc_triangle_trade_desc: ""

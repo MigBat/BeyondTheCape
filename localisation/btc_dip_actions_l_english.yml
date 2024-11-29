@@ -10,6 +10,7 @@
  no_colonialism_tt:0 "Colonialism cannot be embraced."
  no_industrialization_tt:0 "Industrialization cannot be embraced."
  is_colonizer_tt:0 "They are a coloniser nation."
+ low_trust_tt: "You do not have 80 trust."
  ccw_callaction_tt:0 "Cannot call allies during the Castilian Civil War."
  ccw_requestpeace_tt: "Cannot separate peace during Castilian Civil War."
  plw_callaction_tt: "Cannot call allies during them Liberal Wars."

@@ -256,6 +256,7 @@ can_colonize_province = {
 					OR = {
 						expansion_ideas = 6
 						has_idea = siberian_frontier
+						native_policy = native_policy_coexist
 					}
 				}
 			}

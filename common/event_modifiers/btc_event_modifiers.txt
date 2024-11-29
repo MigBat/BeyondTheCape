@@ -598,8 +598,15 @@ por_upgraded_galleons = {
 }
 
 resist_reconquista = {
-	local_warscore_cost_modifier = 2
+	local_warscore_cost_modifier = 10
 	local_core_creation = 1
+	local_missionary_strength = -0.05
+	local_religious_unity_contribution = 1
+}
+
+less_resist_reconquista = {
+	local_warscore_cost_modifier = 2
+	local_core_creation = 0.5
 	local_missionary_strength = -0.02
 }
 

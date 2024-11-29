@@ -1846,20 +1846,22 @@ invasion_nation = {
 ########################################
 
 native_policy_coexist = {
+	# can colonize non-coastal provinces #
 	native_uprising_chance = -1.0
+	native_assimilation = 0.5
 	idea_claim_colonies = yes
 }
 
 native_policy_trade = {
-	colony_development_boost = 1
-	global_colonial_growth = -25
-	colonist_placement_chance = -0.05
+	# colony_development_boost = 1
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.05
 }
 
 native_policy_hostile = {	
 	native_uprising_chance = 0.5
-	native_assimilation = 0.5
-	colonist_placement_chance = 0.05
+	native_assimilation = 1.0
+	envoy_travel_time = -0.25
 	expel_minorities_cost = -0.5
 }
 

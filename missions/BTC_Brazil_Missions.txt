@@ -6,9 +6,14 @@ btc_brazil_2 = {
 	}
 	potential = {
 		OR = {
-			is_subject_of_type = colony
-			capital_scope = {
-				colonial_region = colonial_brazil
+			AND = {
+				is_subject_of_type = colony
+				capital_scope = {
+					colonial_region = colonial_brazil
+				}
+				overlord = {
+					mission_completed = btc_settle
+				}
 			}
 			tag = BRZ
 		}
@@ -17,7 +22,7 @@ btc_brazil_2 = {
 	has_country_shield = yes
 
 	btc_brz_wood = {
-		icon = mission_ordenacoes
+		icon = mission_brazil
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -68,7 +73,7 @@ btc_brazil_2 = {
 	}
 
 	btc_brz_cotton = {
-		icon = mission_ordenacoes
+		icon = mission_brazil
 		required_missions = { btc_brz_capitanias }
 		position = 3
 		provinces_to_highlight = {
@@ -89,7 +94,7 @@ btc_brazil_2 = {
 	}
 
 	btc_brz_coffee = {
-		icon = mission_ordenacoes
+		icon = mission_brazil
 		required_missions = { btc_brz_gold }
 		position = 5
 		provinces_to_highlight = {
@@ -118,9 +123,14 @@ btc_brazil_3 = {
 	}
 	potential = {
 		OR = {
-			is_subject_of_type = colony
-			capital_scope = {
-				colonial_region = colonial_brazil
+			AND = {
+				is_subject_of_type = colony
+				capital_scope = {
+					colonial_region = colonial_brazil
+				}
+				overlord = {
+					mission_completed = btc_settle
+				}
 			}
 			tag = BRZ
 		}
@@ -129,7 +139,7 @@ btc_brazil_3 = {
 	has_country_shield = yes
 
 	btc_brz_capitanias = {
-		icon = mission_ordenacoes
+		icon = mission_brazil
 		required_missions = { btc_brz_wood btc_brz_sugar }
 		position = 2
 		provinces_to_highlight = {
@@ -174,7 +184,7 @@ btc_brazil_3 = {
 	}
 
 	btc_brz_jesuit = {
-		icon = mission_ordenacoes
+		icon = mission_brazil
 		required_missions = { }
 		position = 3
 		provinces_to_highlight = { }		
@@ -197,7 +207,7 @@ btc_brazil_3 = {
 	}
 
 	btc_brz_gold = {
-		icon = mission_ordenacoes
+		icon = mission_brazil
 		required_missions = { btc_brz_cotton btc_brz_jesuit btc_brz_north }
 		position = 4
 		provinces_to_highlight = {
@@ -250,9 +260,14 @@ btc_brazil_4 = {
 	}
 	potential = {
 		OR = {
-			is_subject_of_type = colony
-			capital_scope = {
-				colonial_region = colonial_brazil
+			AND = {
+				is_subject_of_type = colony
+				capital_scope = {
+					colonial_region = colonial_brazil
+				}
+				overlord = {
+					mission_completed = btc_settle
+				}
 			}
 			tag = BRZ
 		}
@@ -261,7 +276,7 @@ btc_brazil_4 = {
 	has_country_shield = yes
 
 	btc_brz_sugar = {
-		icon = mission_ordenacoes
+		icon = mission_brazil
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -319,7 +334,7 @@ btc_brazil_4 = {
 	}
 
 	btc_brz_north = {
-		icon = mission_ordenacoes
+		icon = mission_brazil
 		required_missions = { btc_brz_capitanias }
 		position = 3
 		provinces_to_highlight = {
@@ -365,7 +380,7 @@ btc_brazil_4 = {
 	}
 
 	btc_brz_diamonds = {
-		icon = mission_ordenacoes
+		icon = mission_brazil
 		required_missions = { btc_brz_gold }
 		position = 5
 		provinces_to_highlight = {

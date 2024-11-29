@@ -365,10 +365,10 @@ btc_por_end_fidalgos = {
 			estate = estate_nobles
 			loyalty = -100
 		}
-		add_stability = -2
+		add_stability = -6
 	}
 	chance = {
-		factor = 1
+		factor = 2
 	}
 	ai_will_do = {
 		factor = 0

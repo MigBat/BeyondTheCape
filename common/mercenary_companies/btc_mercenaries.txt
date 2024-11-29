@@ -73,6 +73,7 @@ merc_colonial_ordenancas = {
 	}
     modifier = {
 		transport_attrition = -1
+		infantry_power = -0.15
     }
 }
 
