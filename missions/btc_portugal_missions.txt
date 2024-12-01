@@ -343,6 +343,7 @@ btc_por_sagres1 = {
 	}
 	potential = {
 		tag = POR
+		mission_completed = btc_sagres_school
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -385,6 +386,7 @@ btc_por_sagres2 = {
 	}
 	potential = {
 		tag = POR
+		mission_completed = btc_sagres_school
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -431,6 +433,7 @@ btc_por_sagres3 = {
 	}
 	potential = {
 		tag = POR
+		mission_completed = btc_sagres_school
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -478,6 +481,7 @@ btc_por_sagres4 = {
 	}
 	potential = {
 		tag = POR
+		mission_completed = btc_sagres_school
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -524,6 +528,7 @@ btc_por_sagres5 = {
 	}
 	potential = {
 		tag = POR
+		mission_completed = btc_sagres_school
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1637,6 +1642,7 @@ btc_por_africa2 = {
 						}					
 					}
 					set_capital = 756
+					swap_non_generic_missions = yes
 				}				
 			}
 		}

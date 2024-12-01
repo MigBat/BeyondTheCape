@@ -7,7 +7,12 @@ btc_brazil_2 = {
 	potential = {
 		OR = {
 			AND = {
-				is_subject_of_type = colony
+				OR = {
+					is_subject_of_type = colony
+					is_subject_of_type = crown_colony
+					is_subject_of_type = self_governing_colony
+					is_subject_of_type = private_enterprise
+				}
 				capital_scope = {
 					colonial_region = colonial_brazil
 				}
@@ -124,7 +129,12 @@ btc_brazil_3 = {
 	potential = {
 		OR = {
 			AND = {
-				is_subject_of_type = colony
+				OR = {
+					is_subject_of_type = colony
+					is_subject_of_type = crown_colony
+					is_subject_of_type = self_governing_colony
+					is_subject_of_type = private_enterprise
+				}
 				capital_scope = {
 					colonial_region = colonial_brazil
 				}
@@ -261,7 +271,12 @@ btc_brazil_4 = {
 	potential = {
 		OR = {
 			AND = {
-				is_subject_of_type = colony
+				OR = {
+					is_subject_of_type = colony
+					is_subject_of_type = crown_colony
+					is_subject_of_type = self_governing_colony
+					is_subject_of_type = private_enterprise
+				}
 				capital_scope = {
 					colonial_region = colonial_brazil
 				}

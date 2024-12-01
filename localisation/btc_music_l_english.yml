@@ -3,6 +3,7 @@
  CHANNEL_music_btc_music:0 "* Portuguese Music *"
  CHANNEL_music_halcyon_reign:0 "* Halcyon Reign *"
  CHANNEL_music_eu3_music:0 "* Europa Universalis 3 Music *"
+ CHANNEL_music_civ_music:0 "* Civilization Music *"
 
 # Portugal #
  autumninbraganca:0 "Brigantine Autumn"
@@ -55,4 +56,22 @@
  war_eastvswest:0 "East vs West"
  war_toconstantinople:0 "To Constantinople"
 
- 
+# Civilization #
+
+ branca: "Branca"
+ ceifeira: "Ceifeira"
+ domafonso: "Dom Afonso"
+ domjoao: "Dom João"
+ dommanuel: "Dom Manuel"
+ saudadesdecoimbra: "Saudades de Coimbra"
+ magoasdecoimbra: "Mágoas de Coimbra"
+ fadocorrido: "Fado Corrido"
+ fadohilario: "Fado Hilário"
+ fadomouraria: "Fado Mouraria"
+ malhaovelho: "Malhão Velho"
+ earlyfadomenor: "Early Fado Menor"
+ fadomenor: "Fado Menor"
+ latefadomenor: "Late Fado Menor"
+ tardesemlindoia: "Tardes em Lindoia"
+ ternasaudade: "Terna Saudade"
+ ticoticonofuba: "Tico Tico no Fubá"

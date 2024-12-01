@@ -1,0 +1,231 @@
+song = {
+	name = "ceifeira"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+	}
+}
+song = {
+	name = "domafonso"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 0
+			is_year = 1500
+		}
+	}
+}
+song = {
+	name = "domjoao"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1500 }
+		}
+		modifier = {
+			factor = 0
+			is_year = 1550
+		}
+	}
+}
+song = {
+	name = "dommanuel"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1550 }
+		}
+	}
+}
+song = {
+	name = "earlyfadomenor"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 0
+			is_year = 1500
+		}
+	}
+}
+song = {
+	name = "fadomenor"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1500 }
+		}
+		modifier = {
+			factor = 0
+			is_year = 1600
+		}
+	}
+}
+song = {
+	name = "latefadomenor"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1700 }
+		}
+	}
+}
+song = {
+	name = "saudadesdecoimbra"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "magoasdecoimbra"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+	}
+}
+song = {
+	name = "fadocorrido"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+	}
+}
+song = {
+	name = "fadohilario"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+	}
+}
+song = {
+	name = "fadomouraria"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+	}
+}
+song = {
+	name = "malhaovelho"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+	}
+}
+song = {
+	name = "branca"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			owns_or_subject_of = 756
+		}
+	}
+}
+song = {
+	name = "tardesemlindoia"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			owns_or_subject_of = 756
+		}
+	}
+}
+song = {
+	name = "ternasaudade"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			owns_or_subject_of = 756
+		}
+	}
+}
+song = {
+	name = "ticoticonofuba"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			owns_or_subject_of = 756
+		}
+	}
+}

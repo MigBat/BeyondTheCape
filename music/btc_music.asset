@@ -10,18 +10,10 @@ music = {
 	name = "edgeoftheworld"
 	file = "edgeoftheworld.ogg"
 }
-# music = {
-# 	name = "fandango"
-# 	file = "fandango.ogg"
-# }
 music = {
 	name = "greenpines"
 	file = "greenpines.ogg"
 }
-# music = {
-# 	name = "highervalor"
-# 	file = "highervalor.ogg"
-# }
 music = {
  	name = "enchantedmoura"
  	file = "enchantedmoura.ogg"
@@ -54,10 +46,6 @@ music = {
  	name = "nymphsofthetagus"
  	file = "nymphsofthetagus.ogg"
 }
-# music = {
-#  	name = "greenyears"
-#  	file = "greenyears.ogg"
-# }
 music = {
  	name = "songofrain"
  	file = "songofrain.ogg"

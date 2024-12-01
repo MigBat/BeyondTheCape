@@ -17,65 +17,6 @@ song = {
 		}
 	}
 }
-# song = {
-# 	name = "fandango"
-	
-# 	chance = {
-# 		modifier = {
-# 			factor = 0.5
-# 			current_age = age_of_discovery
-# 		}
-# 		modifier = {
-# 			factor = 1.25
-# 			current_age = age_of_absolutism
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			is_at_war = yes
-# 		}
-# 		modifier = {
-# 			factor = 3
-# 			culture = portuguese
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			NOT = { culture = portuguese }
-# 		}
-# 	}
-# }
-# song = {
-# 	name = "highervalor"
-	
-# 	chance = {
-# 		modifier = {
-# 			factor = 1.5
-# 			current_age = age_of_absolutism
-# 		}
-# 		modifier = {
-# 			factor = 1.50
-# 			num_of_colonists = 1
-# 		}
-# 		modifier = {
-# 			factor = 1.50
-# 			is_at_war = yes
-# 		}
-# 		modifier = {
-# 			factor = 3
-# 			culture = portuguese
-# 		}
-# 		modifier = {
-# 			factor = 2
-# 			culture = galician
-# 		}
-# 		modifier = {
-# 			factor = 0
-# 			OR = { 
-# 				NOT = { culture = portuguese }
-# 				NOT = { culture = galician }
-# 			}
-# 		}
-# 	}
-# }
 song = {
 	name = "edgeoftheworld"
 	
@@ -319,47 +260,6 @@ song = {
 		}
  	}		
 }
-# song = {
-#  	name = "greenyears"
-	
-#  	chance = {
-#  		modifier = {
-#  			factor = 0.25
-#  			is_at_war = yes
-#  		}
-# 		modifier = {
-# 			factor = 0.50
-# 			current_age = age_of_discovery
-# 		}
-# 		modifier = {
-# 			factor = 0.75
-# 			current_age = age_of_reformation
-# 		}
-# 		modifier = {
-# 			factor = 1.25
-# 			current_age = age_of_absolutism
-# 		}
-# 		modifier = {
-# 			factor = 1.75
-# 			current_age = age_of_revolutions
-# 		}
-# 		modifier = {
-#  			factor = 2
-# 			culture = portuguese
-# 		}
-# 		modifier = {
-# 			factor = 1
-# 			culture = galician
-# 		}
-# 		modifier = {
-# 			factor = 0
-#  			OR = { 
-#  				NOT = { culture = portuguese }
-#  				NOT = { culture = galician }
-#  			}
-#  		}
-#  	}		
-# }
 song = {
  	name = "songofrain"
 	
