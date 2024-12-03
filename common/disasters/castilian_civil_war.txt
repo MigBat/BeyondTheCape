@@ -20,12 +20,13 @@ castilian_civil_war = {
 		custom_trigger_tooltip = {
 			tooltip = enrique_doesnt_exist_tt
 			NOT = { has_heir_flag = is_enrique_flag }
-			NOT = { has_ruler_flag = is_enrique_flag }
+			# NOT = { has_ruler_flag = is_enrique_flag }
 		}
 		OR = {
 			has_regency = yes
-			NOT = { heir_claim = 90 }
+			NOT = { heir_claim = 100 }
 			has_female_heir = yes
+			has_heir = no
 		}
 		is_lesser_in_union = no
 		ARA = {

@@ -1,7 +1,7 @@
 ﻿l_english:
 
 # Castilian Civil War #
- enrique_doesnt_exist_tt:0 "Enrique is neither heir or ruler."
+ enrique_doesnt_exist_tt:0 "Enrique is not the heir."
  castilian_civil_war.1_t:0 "Castilian Civil War"
  castilian_civil_war.1_d:0 "Two claimants to the throne have come forward, Joanna and Isabella. They are married to the kings of Portugal and Aragon respectively. The Kingdom's nobles are divided, yet these are the only viable candidates to the throne. This places us in a precarious position, and we can be sure that Portugal and Aragon will take full advantage of it. But first, we must make our choice."
  castilian_civil_war.1a:0 "Support Joanna"
@@ -221,7 +221,7 @@
  portuguese_regency.8_d: "For an assassination attempt of this magnitude, every little detail matters. We have agents studying the Duke's moves and providing weekly reports. But we are notoriously understaffed. It would be preferable if we could secure the allegiance of those close to the Duke, but it would come at a price..."
  portuguese_regency.8a: "Promise them titles and tithes."
  portuguese_regency.8b: "We can't risk them reporting back to the Duke."
- assassination_chance_increase: "§BThe assassination success chance increases.§!"
+ assassination_chance_increase: "§MThe assassination success chance increases.§!"
 
  portuguese_regency.9_t: "Securing Alliances"
  portuguese_regency.9_d: "We've made contact with important people within our estates. They are able to pull the strings required for certain convenient events to come to pass in our plan to be rid of the Duke. Of course, there are certain demands we must comply with."

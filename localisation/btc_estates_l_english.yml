@@ -76,7 +76,7 @@
  estate_slavers_grow_colonies:0 "Develop New Colonies"
  estate_slavers_grow_colonies_desc:0 "Not everyone wishes to depart the comfort of their home country to sail across the Atlantic and settle there. In these circumstances, it would be best to look at other sources of labour, cheaper and more abundant."
 
- estate_slavers_feitoria_defenses_tt:0 "Every province owned by [Root.GetName] with a §YFeitoria§! gains:\nGarrison Growth: §G+25%§!\nFort Level: §+1§!"
+ estate_slavers_feitoria_defenses_tt: "Every province owned by [Root.GetName] with a §YFortified Feitoria§! gains:\nGarrison Growth: §G+25%§!\nGarrison Size: §G+10%§!"
  estate_slavers_feitoria_defenses:0 "Bolster Feitoria Garrisons"
  estate_slavers_feitoria_defenses_desc:0 "We don't have enough manpower to properly replenish the garrisons of our feitorias. We could send properly trained slaves to protect these important trade posts."
  slave_garrison:0 "Slave Garrison"

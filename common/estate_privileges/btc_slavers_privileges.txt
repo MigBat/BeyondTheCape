@@ -111,7 +111,7 @@ estate_slavers_monopoly_of_slaves = {
 estate_slavers_raid_coasts = {
 	icon = raid_coast_privilege
 	max_absolutism = -10
-	influence = 0.1
+	influence = 0.2
 	is_valid = {
 	}
 	can_select = {

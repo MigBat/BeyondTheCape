@@ -58,6 +58,14 @@ country_event = {
 					remove_building = fort_15th
 				}
 			}
+			# change trade goods to unknown
+			every_province = {
+				limit = {
+					is_empty = yes
+					NOT = { trade_goods = unknown }
+				}
+				change_trade_goods = unknown
+			}
 		}
 	}
 
@@ -89,6 +97,14 @@ country_event = {
 					remove_building = fort_15th
 				}
 			}
+			# change trade goods to unknown
+			every_province = {
+				limit = {
+					is_empty = yes
+					NOT = { trade_goods = unknown }
+				}
+				change_trade_goods = unknown
+			}
 		}
 	}
 
@@ -110,6 +126,14 @@ country_event = {
 					limit = { has_building = fort_15th }
 					remove_building = fort_15th
 				}
+			}
+			# change trade goods to unknown
+			every_province = {
+				limit = {
+					is_empty = yes
+					NOT = { trade_goods = unknown }
+				}
+				change_trade_goods = unknown
 			}
 		}
 	}

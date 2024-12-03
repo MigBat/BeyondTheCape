@@ -117,14 +117,14 @@ on_conquest = {
 					area = madagascar_highlands_area
 					if = {
 						limit = {
-							NOT = { mission_completed = btc_slaves }
+							mission_completed = btc_slaves
 						}
 						area = inner_angola_area
 						area = matamba_area
 					}
 					if = {
 						limit = {
-							NOT = { mission_completed = btc_sofala }
+							mission_completed = btc_sofala
 						}
 						area = lower_zambezi_area
 					}
@@ -168,111 +168,6 @@ on_conquest = {
 	}
 }
 
-# on_province_owner_change = {
-# 	# settler pool send colonist
-# 	if = {
-# 		limit = {
-# 			is_colony = yes
-# 			NOT = { has_province_flag = removed_settlers_flag }
-# 		}
-# 		set_province_flag = removed_settlers_flag
-# 	}
-# 	# remove dev from state primary culture province and give to colony. only for non-minority expel
-# 	if = {
-# 		limit = {
-# 			is_colony = yes
-# 			province_getting_expelled_minority = no
-# 		}
-# 		owner = {
-# 			random_owned_province = {
-# 				limit = {
-# 					is_state = yes
-# 					culture = FROM
-# 					base_tax = 2
-# 				}
-# 				add_base_tax = -1
-# 			}
-# 		}
-# 		owner = {
-# 			random_owned_province = {
-# 				limit = {
-# 					is_state = yes
-# 					culture = FROM
-# 					base_production = 2
-# 				}
-# 				add_base_production = -1
-# 			}
-# 		}
-# 		owner = {
-# 			random_owned_province = {
-# 				limit = {
-# 					is_state = yes
-# 					culture = FROM
-# 					base_manpower = 2
-# 				}
-# 				add_base_manpower = -1
-# 			}
-# 		}
-# 	}
-# 	# give malaria
-# 	if = {
-# 		limit = {
-# 			NOT = { has_province_modifier = malaria }
-# 			has_port = no
-# 			continent = africa
-# 			NOT = {
-# 				OR = {
-# 					region = maghreb_region
-# 					region = egypt_region
-# 					region = guinea_region
-# 					region = south_africa_region
-# 					# Madagascar
-# 					area = sakalava_area
-# 					area = betsimasaraka_area
-# 					area = southern_madagascar
-# 					area = madagascar_highlands_area
-# 					if = {
-# 						limit = {
-# 							NOT = { mission_completed = btc_slaves }
-# 						}
-# 						area = inner_angola_area
-# 						area = matamba_area
-# 					}
-# 					if = {
-# 						limit = {
-# 							NOT = { mission_completed = btc_sofala }
-# 						}
-# 						area = lower_zambezi_area
-# 					}
-# 				}
-# 			}
-# 			owner = {
-# 				capital_scope = {
-# 					NOT = {
-# 						continent = africa
-# 					}
-# 				}
-# 			}
-# 		}
-# 		add_province_modifier = {
-# 			name = malaria
-# 			duration = -1
-# 		}
-# 	}
-# 	# remove malaria
-# 	if = {
-# 		limit = {
-# 			has_province_modifier = malaria
-# 			owner = {
-# 				capital_scope = {
-# 					continent = africa
-# 				}
-# 			}
-# 		}
-# 		remove_province_modifier = malaria
-# 	}
-# }
-
 on_war_won = {
 	if = {
 		limit = {
@@ -285,26 +180,6 @@ on_war_won = {
 }
 
 on_siege_won_country = {
-	# if = {
-	# 	limit = {
-	# 		ROOT = {
-	# 			NOT = { has_country_flag = took_mohamed }
-	# 		}
-	# 		is_in_war = {
-	# 			attacker_leader = ROOT
-	# 			casus_belli = cb_albuquerque_plan
-	# 		}
-	# 		FROM = {
-	# 			province_id = 384
-	# 		}
-	# 	}
-	# 	ROOT = {
-	# 		country_event = {
-	# 			id = btc_por.145
-	# 		}
-	# 		set_country_flag = took_mohamed
-	# 	}
-	# } 
 	if = {
 		limit = {
 			FROM = {
@@ -841,7 +716,6 @@ on_colony_established = {
 				OR = {
 					region = maghreb_region
 					region = egypt_region
-					# region = guinea_region
 					region = south_africa_region
 					# Madagascar
 					area = sakalava_area
@@ -850,14 +724,14 @@ on_colony_established = {
 					area = madagascar_highlands_area
 					if = {
 						limit = {
-							NOT = { mission_completed = btc_slaves }
+							mission_completed = btc_slaves
 						}
 						area = inner_angola_area
 						area = matamba_area
 					}
 					if = {
 						limit = {
-							NOT = { mission_completed = btc_sofala }
+							mission_completed = btc_sofala
 						}
 						area = lower_zambezi_area
 					}

@@ -330,7 +330,10 @@ btc_por_sagres_start = {
 				}
 			}
 			custom_tooltip = btc_sagres_school_tt
-			hidden_effect = { swap_non_generic_missions = yes }
+			hidden_effect = { 
+				set_country_flag = unlock_missions_sagres
+				swap_non_generic_missions = yes
+			}
 		}
 	}
 }
@@ -343,7 +346,7 @@ btc_por_sagres1 = {
 	}
 	potential = {
 		tag = POR
-		mission_completed = btc_sagres_school
+		has_country_flag = unlock_missions_sagres
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -386,7 +389,7 @@ btc_por_sagres2 = {
 	}
 	potential = {
 		tag = POR
-		mission_completed = btc_sagres_school
+		has_country_flag = unlock_missions_sagres
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -433,7 +436,7 @@ btc_por_sagres3 = {
 	}
 	potential = {
 		tag = POR
-		mission_completed = btc_sagres_school
+		has_country_flag = unlock_missions_sagres
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -481,7 +484,7 @@ btc_por_sagres4 = {
 	}
 	potential = {
 		tag = POR
-		mission_completed = btc_sagres_school
+		has_country_flag = unlock_missions_sagres
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -528,7 +531,7 @@ btc_por_sagres5 = {
 	}
 	potential = {
 		tag = POR
-		mission_completed = btc_sagres_school
+		has_country_flag = unlock_missions_sagres
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -605,9 +608,17 @@ btc_por_navy1 = {
 		}	
 		effect = {		
 			macaronesia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT 
 			}	
 			tangier_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT 
 				remove_province_modifier = resist_reconquista
 				add_permanent_province_modifier = {
@@ -1621,12 +1632,7 @@ btc_por_africa2 = {
 			custom_trigger_tooltip = {
 				tooltip = has_colonial_brazil_tt
 				any_subject_country = {
-					OR = {
-						is_subject_of_type = colony
-						is_subject_of_type = crown_colony
-						is_subject_of_type = private_enterprise
-						is_subject_of_type = self_governing_colony
-					}
+					is_colonial_nation_of = ROOT
 					owns = 756
 				}
 			}
@@ -1636,10 +1642,7 @@ btc_por_africa2 = {
 			hidden_effect = {
 				random_subject_country = {
 					limit = {
-						is_subject_of_type = colony
-						capital_scope = {
-							colonial_region = colonial_brazil
-						}					
+						is_colonial_nation_of = ROOT					
 					}
 					set_capital = 756
 					swap_non_generic_missions = yes
