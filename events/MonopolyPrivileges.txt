@@ -482,12 +482,12 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		remove_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_slaves }
+		remove_estate_monopoly_modifier = { privilege = estate_slavers_monopoly_of_slaves }
 	}
 	
 	option = {
 		name = monopoly_privileges.1.a
-		reapply_estate_privilege = { privilege = estate_church_monopoly_of_slaves }
+		reapply_estate_privilege = { privilege = estate_slavers_monopoly_of_slaves }
 	}
 	option = {
 		name = monopoly_privileges.1.b
@@ -498,7 +498,7 @@ country_event = {
 				limit = {
 					trade_goods = slaves
 				}
-				apply_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_slaves }
+				apply_estate_monopoly_modifier = { privilege = estate_slavers_monopoly_of_slaves }
 			}
 		}
 	}

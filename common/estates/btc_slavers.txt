@@ -24,20 +24,12 @@ estate_slavers = {
 			}
 			mission_completed = btc_arguin
 		}
-		OR = {
-			any_owned_province = {
-				OR = {
-					trade_goods = slaves
-					AND = {
-						region = guinea_region
-						region = kongo_region
-					}
-				}
-			}
-			1466 = {	# Ivory Coast
-				trade_share = {
-					country = ROOT
-					share = 10
+		any_owned_province = {
+			OR = {
+				trade_goods = slaves
+				AND = {
+					region = guinea_region
+					region = kongo_region
 				}
 			}
 		}

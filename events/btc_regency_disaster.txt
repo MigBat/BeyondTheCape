@@ -870,6 +870,12 @@ country_event = {
 		name = portuguese_regency.101b
 
 		add_years_of_income = 2
+		every_owned_province = {
+			limit = {
+				has_province_modifier = duke_of_braganca_lands
+			}
+			add_local_autonomy = 10
+		}
 	}
 }
 
