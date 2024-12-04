@@ -1098,6 +1098,24 @@ btc_por_navy4 = {
 					}
 					set_country_flag = unlock_iberian_missions
 				}
+				else_if = {
+					limit = {
+						OR = {
+							CAS = { senior_union_with = ARA }
+							ARA = { senior_union_with = CAS }
+						}
+					}
+					set_country_flag = unlock_alcacovas_missions
+				}
+				else_if = {
+					limit = { 
+						OR = {
+							senior_union_with = CAS
+							CAS = { senior_union_with = ROOT }
+						}
+					}
+					set_country_flag = unlock_iberian_missions
+				}
 				else = {
 					set_country_flag = unlock_isolation_missions
 				}		
