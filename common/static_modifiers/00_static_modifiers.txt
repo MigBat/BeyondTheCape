@@ -318,7 +318,7 @@ development = {
 }
 
 development_scaled = {
-	local_development_cost = 0.06
+	local_development_cost = 0.08
 }
 
 capital_city = {
@@ -2274,7 +2274,7 @@ mobilized_new_order_regiments = {
 ########################################
 
 expand_administation_modifier = {
-	expand_administration_cost = 0.20
+	expand_administration_cost = 0.50
 	governing_capacity = 20
 }
 

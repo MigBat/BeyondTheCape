@@ -1595,10 +1595,10 @@ gbr_row_3 = {
 			create_explorer = {
 				tradition = 50
 			}
-			add_country_modifier = {
-				name = gbr_exploration_spirit
-				duration = 9125
-			}
+			# add_country_modifier = {
+			# 	name = gbr_exploration_spirit
+			# 	duration = 9125
+			# }
 			unlock_issue = {
 				issue = act_of_exploration
 			}

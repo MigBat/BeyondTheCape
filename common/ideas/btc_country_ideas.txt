@@ -30,7 +30,7 @@ POR_ideas = {
 		prestige_decay = -0.01
 	}
 	por_india_armadas = {
-		treasure_fleet_income = 0.25
+		treasure_fleet_income = 0.1
 		artillery_fire = 1
 	}
 	por_crusade = {

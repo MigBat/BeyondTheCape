@@ -19,6 +19,7 @@ on_monthly_pulse = {
 		btc_spice_trade.102
 		btc_goldspices.3
 		btc_settler_pool.1	#Monthly settler pool calculation
+		btc_events.17	# privateer opinion malus
 	}
 }
 

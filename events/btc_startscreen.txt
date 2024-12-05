@@ -11,6 +11,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		ai = no
+		NOT = { has_country_flag = tutorial_done }
 	}
 
 	option = {	# Portugal

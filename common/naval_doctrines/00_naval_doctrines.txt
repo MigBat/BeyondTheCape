@@ -143,7 +143,7 @@ grand_armada = {
 	country_modifier = {
 		allowed_marine_fraction = 0.25
 		leader_naval_manuever = 1
-		treasure_fleet_income = 0.5
+		treasure_fleet_income = 0.2
 	}
 	effect = {}
 	removed_effect = {}
@@ -538,7 +538,7 @@ chinese_treasure_fleet = {
 	country_modifier = {
 		trade_range_modifier = 0.25
 		range = 0.25
-		treasure_fleet_income = 0.25
+		treasure_fleet_income = 0.1
 	}
 	effect = {}
 	removed_effect = {}

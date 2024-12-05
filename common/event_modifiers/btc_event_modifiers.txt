@@ -393,7 +393,7 @@ damage_control = {
 }
 
 reliance_on_brazilian_gold = {
-	treasure_fleet_income = 0.25
+	treasure_fleet_income = 0.1
 	monthly_gold_inflation_modifier = 0.15
 }
 

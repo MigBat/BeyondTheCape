@@ -190,7 +190,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
-		treasure_fleet_income = 0.25
+		treasure_fleet_income = 0.1
 		monthly_portuguese_saudade = 0.075
 	}
 

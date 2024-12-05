@@ -9610,7 +9610,7 @@ el_escorial = {
 			global_autonomy = -0.05
 			governing_capacity_modifier = 0.1
 			global_tariffs = 0.2
-			treasure_fleet_income = 0.2
+			treasure_fleet_income = 0.15
 		}
 
 		#what effects happen when this tier is achieved

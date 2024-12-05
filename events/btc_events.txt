@@ -1156,146 +1156,38 @@ country_event = {
 	}
 }
 
-# Land Sighted!
-# country_event = {
-# 	id = btc_events.17
-# 	title = btc_events.17_t
-# 	desc = btc_events.17_d
-# 	picture = EP_ISLAND_eventPicture
+# Privateer Opinion Malus
+country_event = {
+	id = btc_events.17
+	title = btc_events.17_t
+	desc = btc_events.17_d
+	picture = EP_ISLAND_eventPicture
 
-# 	is_triggered_only = yes
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		has_privateers = yes
+	}
 
-# 	option = {
-# 		name = btc_events.17a
+	option = {
+		name = btc_events.17a
 
-# 		trigger = {
-# 			tag = CAS
-# 		}
-
-# 		hidden_effect = {
-# 			POR = {
-# 				country_event = {
-# 					id = btc_events.18
-# 					days = 30
-# 				}
-# 			}
-# 		}
-
-# 		add_prestige = 10
-# 		define_explorer = {
-# 			name = "Cristóbal Colón"
-# 			fire = 2
-# 			shock = 2
-# 			manuever = 6
-# 			siege = 0
-# 			trait = great_explorer_personality
-# 		}
-# 		set_country_flag = cas_no_flagship_mod
-# 		if = {
-# 			limit = {
-# 				227 = {
-# 					owned_by = ROOT
-# 				}
-# 			}
-# 			227 = {
-# 				create_flagship = {
-# 					type = heavy_ship
-# 					name = "Santa María"
-# 				}
-# 			}
-# 		}
-# 		else = {
-# 			random_owned_province = {
-# 				limit = {
-# 					has_port = yes
-# 				}
-# 				create_flagship = {
-# 					type = heavy_ship
-# 					name = "Santa María"
-# 				}
-# 			}
-# 		}
-# 		clr_country_flag = cas_no_flagship_mod	
-# 		add_country_modifier = {
-# 			name = legacy_of_columbus
-# 			duration = -1
-# 		}
-# 		hidden_effect = {
-# 			discover_province = 1578
-# 			discover_province = 1580
-# 			discover_province = 1583
-# 			discover_province = 1575
-# 			discover_province = 1526
-# 			discover_province = 1524	
-# 			discover_province = 2659
-# 		}		
-# 		add_country_modifier = {
-# 			name = discovered_caribbean
-# 			duration = 5475
-# 		}
-# 	}
-
-# 	option = {
-# 		name = btc_events.17b
-
-# 		trigger = {
-# 			tag = POR
-# 		}
-
-# 		add_prestige = 10
-# 		define_explorer = {
-# 			name = "Cristóvão Colombo"
-# 			fire = 2
-# 			shock = 2
-# 			manuever = 6
-# 			siege = 0
-# 			trait = great_explorer_personality
-# 		}
-# 		set_country_flag = por_no_flagship_mod
-# 		if = {
-# 			limit = {
-# 				224 = {
-# 					owned_by = ROOT
-# 				}
-# 			}
-# 			224 = {
-# 				create_flagship = {
-# 					type = heavy_ship
-# 					name = "Santa Maria"
-# 				}
-# 			}
-# 		}
-# 		else = {
-# 			random_owned_province = {
-# 				limit = {
-# 					has_port = yes
-# 				}
-# 				create_flagship = {
-# 					type = heavy_ship
-# 					name = "Santa Maria"
-# 				}
-# 			}
-# 		}
-# 		clr_country_flag = por_no_flagship_mod	
-# 		add_country_modifier = {
-# 			name = legacy_of_columbus
-# 			duration = -1
-# 		}
-# 		hidden_effect = {
-# 			discover_province = 1578
-# 			discover_province = 1580
-# 			discover_province = 1583
-# 			discover_province = 1575
-# 			discover_province = 1526
-# 			discover_province = 1524	
-# 			discover_province = 2659		
-# 		}
-# 		add_country_modifier = {
-# 			name = discovered_caribbean
-# 			duration = 5475
-# 		}
-# 	}
-# }
+		random_trade_node = {
+			limit = {
+				privateer_power = {
+					country = ROOT
+					share = 1
+				}
+			}
+			every_trade_node_member_country = {
+				add_opinion = {
+					who = ROOT
+					modifier = pirated_us
+				}
+			}
+		}
+	}
+}
 
 # The Treaty of Tordesillas (POR)
 # country_event = {

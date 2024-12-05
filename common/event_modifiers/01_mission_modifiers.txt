@@ -1095,7 +1095,7 @@ nor_holder_of_the_kalmar_union = {	#Permanent
 
 nor_domination_of_the_new_world = {	#Permanent
 	global_tariffs = 0.25
-	treasure_fleet_income = 0.25
+	treasure_fleet_income = 0.1
 	global_trade_power = 0.1
 }
 
@@ -1279,7 +1279,7 @@ sca_nor_search_for_gold = {
 }
 
 sca_nor_treasure_fleet = {	#Permanent
-	treasure_fleet_income = 0.35
+	treasure_fleet_income = 0.15
 	global_tax_income = 60
 }
 
@@ -9825,7 +9825,7 @@ spa_reformed_tercio_modifier = {
 }
 
 spa_powerful_trade_ships_modifier = {
-	treasure_fleet_income = 1 
+	treasure_fleet_income = 0.25
 	global_ship_trade_power = 0.35
 	trade_efficiency = 0.05
 }

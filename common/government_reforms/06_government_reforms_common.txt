@@ -294,7 +294,7 @@ council_of_the_indies_reform = {
 	}
 	modifiers = {
 		reduced_liberty_desire_on_other_continent = 5
-		treasure_fleet_income = 0.25
+		treasure_fleet_income = 0.1
 		global_trade_power = 0.05
 	}
 	ai = {

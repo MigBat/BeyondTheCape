@@ -48,7 +48,7 @@ enlarge_the_gold_fleet = {
 	}
 
 	modifier_overlord = {
-		treasure_fleet_income = 0.1
+		treasure_fleet_income = 0.05
 	}
 
 	modifier_subject = {

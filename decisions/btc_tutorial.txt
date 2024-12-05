@@ -8,6 +8,9 @@ country_decisions = {
 		allow = { }
 
 		effect = {
+			hidden_effect = {
+				clr_country_flag = tutorial_done
+			}
 			country_event = {
 				id = btc_startscreen.1
 			}
