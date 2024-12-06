@@ -35,6 +35,7 @@ marketplace = {
 		province_trade_power_modifier = 0.5
 		local_development_cost = -0.025
 		local_build_cost = 0.1
+		local_governing_cost = 0.1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -88,6 +89,7 @@ workshop = {
 		local_production_efficiency = 0.5
 		local_development_cost = -0.025
 		local_build_cost = 0.1
+		local_governing_cost = 0.1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -122,6 +124,7 @@ temple = {
 		local_missionary_strength = 0.01
 		local_development_cost = -0.025
 		local_build_cost = 0.1
+		local_governing_cost = 0.1
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -268,6 +271,7 @@ barracks = {
 		local_manpower_modifier = 0.5
 		local_development_cost = -0.025
 		local_build_cost = 0.1
+		local_governing_cost = 0.1
 	}
 	on_built = {
 		if = {
@@ -394,6 +398,7 @@ shipyard = {
 		local_has_galleass = yes
 		local_development_cost = -0.025
 		local_build_cost = 0.1
+		local_governing_cost = 0.1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -754,6 +759,7 @@ dock = {
 		local_has_galleass = yes
 		local_development_cost = -0.05
 		local_build_cost = 0.1
+		local_governing_cost = 0.1
 	}
 	
 	on_built = {
@@ -852,6 +858,7 @@ regimental_camp = {
 		local_regiment_cost = -0.15
 		local_development_cost = -0.05
 		local_build_cost = 0.1
+		local_governing_cost = 0.1
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -1146,6 +1153,7 @@ cathedral = {
 		local_unrest = -2
 		local_development_cost = -0.075
 		local_build_cost = 0.2
+		local_governing_cost = 0.2
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -1291,6 +1299,7 @@ university = {
 		local_development_cost = -0.075
 		local_institution_spread = 0.5
 		local_build_cost = 0.2
+		local_governing_cost = 0.2
 	}
 
 	on_built = {
@@ -1387,6 +1396,7 @@ trade_depot = {
 		province_trade_power_modifier = 1
 		local_development_cost = -0.075
 		local_build_cost = 0.2
+		local_governing_cost = 0.2
 	}
 
 	on_built = {
@@ -1430,6 +1440,7 @@ grand_shipyard = {
 		local_has_galleass = yes
 		local_development_cost = -0.075
 		local_build_cost = 0.2
+		local_governing_cost = 0.2
 	}
 
 	on_built = {
@@ -1501,6 +1512,7 @@ training_fields = {
 		local_manpower_modifier = 1
 		local_development_cost = -0.075
 		local_build_cost = 0.2
+		local_governing_cost = 0.2
 	}
 	
 	on_built = {
@@ -1755,6 +1767,7 @@ stock_exchange = {
 		province_trade_power_modifier = 1.25
 		local_development_cost = -0.1
 		local_build_cost = 0.3
+		local_governing_cost = 0.3
 	}
 
 	on_built = {
@@ -1814,6 +1827,7 @@ counting_house = {
 		local_production_efficiency = 1
 		local_development_cost = -0.1
 		local_build_cost = 0.2
+		local_governing_cost = 0.2
 	}
 
 	on_built = {
@@ -1970,6 +1984,7 @@ drydock = {
 		local_has_galleass = yes
 		local_development_cost = -0.1
 		local_build_cost = 0.2
+		local_governing_cost = 0.2
 	}
 	
 	on_built = {
@@ -2054,6 +2069,7 @@ conscription_center = {
 		local_regiment_cost = -0.3
 		local_development_cost = -0.1
 		local_build_cost = 0.2
+		local_governing_cost = 0.2
 	}
 	on_built = {
 		add_development_from_upgrading_or_building = {
@@ -2293,6 +2309,7 @@ manufactory = {
 		trade_goods_size_modifier = 0.4
 		local_development_cost = -0.1
 		local_build_cost = 0.3
+		local_governing_cost = 0.3
 	}
 }
 
@@ -2635,6 +2652,7 @@ furnace = {
 		global_trade_goods_size_modifier = 0.05 #National Bonus
 		local_development_cost = -0.1
 		local_build_cost = 0.3
+		local_governing_cost = 0.3
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -2746,6 +2764,7 @@ soldier_households = {
 		local_manpower = 0.75
 		local_development_cost = -0.1
 		local_build_cost = 0.3
+		local_governing_cost = 0.3
 	}
 	bonus_modifier = {
 		local_manpower = 0.75
@@ -2823,6 +2842,7 @@ impressment_offices = {
 		local_ship_cost = -0.05
 		local_development_cost = -0.1
 		local_build_cost = 0.3
+		local_governing_cost = 0.3
 	}
 	bonus_modifier = {
 		local_sailors = 250

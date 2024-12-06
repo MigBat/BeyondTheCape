@@ -207,9 +207,9 @@ ordennancas_reform = {
 	}
 	modifiers = {
 		land_forcelimit_modifier = -0.1
-		garrison_size = 0.25
+		garrison_size = 0.2
 		garrison_damage = 0.5
-		global_garrison_growth = 0.2
+		global_garrison_growth = 0.1
 		hostile_attrition = 2
 	}
 	custom_attributes = {

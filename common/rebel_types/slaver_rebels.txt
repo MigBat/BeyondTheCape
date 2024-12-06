@@ -36,12 +36,8 @@ slaver_rebels = {
 		modifier = {
 			factor = 0
 			owner = {
-				NOT = { has_estate = estate_janissaries }
+				NOT = { has_estate = estate_slavers }
 			}
-		}
-		modifier = {
-			factor = 0
-			has_owner_religion = yes
 		}
 		modifier = {
 			factor = 5
@@ -50,8 +46,26 @@ slaver_rebels = {
 			}
 		}
 		modifier = {
-			factor = 0.01
+			factor = 2
 			is_overseas = yes
+		}
+		modifier = {
+			factor = 2.0
+			owner = {
+				estate_territory = {
+					estate = estate_slavers
+					territory = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = {
+				estate_territory = {
+					estate = estate_slavers
+					territory = 30
+				}
+			}
 		}
 	}
  
@@ -88,9 +102,9 @@ slaver_rebels = {
 		add_local_autonomy = 10
 		owner = {
 			if = {
-				limit = { has_estate = estate_janissaries }
+				limit = { has_estate = estate_slavers }
 				change_estate_land_share = {
-					estate = estate_janissaries
+					estate = estate_slavers
 					share = 1
 					province = ROOT
 				}
@@ -109,7 +123,7 @@ slaver_rebels = {
 	}
 	
 	# Localisation for their demands
-	demands_description = janissary_rebels_demands
+	demands_description = slaver_rebels_demands
 	
 	# Country Scope	
 	demands_enforced_effect = {
@@ -122,16 +136,16 @@ slaver_rebels = {
 		}
 		if = {
 			limit = {
-				has_estate = estate_janissaries
+				has_estate = estate_slavers
 				NOT = {
 					has_estate_influence_modifier = {
-						estate = estate_janissaries
+						estate = estate_slavers
 						modifier = EST_VAL_NOBLES_EXTORTED_RIGHTS
 					}
 				}
 			}
 			add_estate_influence_modifier = {
-				estate = estate_janissaries
+				estate = estate_slavers
 				desc = EST_VAL_NOBLES_EXTORTED_RIGHTS
 				influence = 15
 				duration = 5475
@@ -157,13 +171,11 @@ slaver_rebels = {
 			end_disaster = court_and_country
 		}
 		if = {
-			limit = { has_estate = estate_janissaries }
+			limit = { has_estate = estate_slavers }
 			change_estate_land_share = {
-				estate = estate_janissaries
-				share = 100
+				estate = estate_slavers
+				share = 10
 			}
 		}
-		add_absolutism = -20
-		kill_ruler = yes
 	}
 }

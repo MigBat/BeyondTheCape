@@ -53,7 +53,7 @@ quivira_location = {
 
 feitoria = {
 	province_trade_power_value = 2
-	local_governing_cost = 0.25
+	local_governing_cost = 0.15
 	local_ship_repair = 0.1
 	picture = "prov_modifier_feitoria"
 }
@@ -62,7 +62,7 @@ fortified_feitoria = {
 	province_trade_power_value = 2
 	local_ship_repair = 0.2
 	local_defensiveness = 0.15
-	local_governing_cost = 0.5
+	local_governing_cost = 0.3
 	fort_level = 1
 	picture = "prov_modifier_fortified_feitoria"
 }
@@ -135,7 +135,7 @@ estate_slavers_gold_mining = {
 }
 
 slave_garrison = {
-	garrison_growth = 0.25
+	garrison_growth = 0.15
 	local_garrison_size = 0.1
 }
 
@@ -277,7 +277,7 @@ aggressive_mercantilism = {
 	privateer_efficiency = 0.05
 	blockade_efficiency = 0.2
 	embargo_efficiency = 0.15
-	trade_efficiency = -0.1
+	# trade_efficiency = -0.1
 }
 
 ribeira_palace_mod = {

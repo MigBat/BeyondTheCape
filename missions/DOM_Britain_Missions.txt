@@ -4311,7 +4311,7 @@ gbr_ave_row_1 = {
 						share = 40
 					}
 				}
-				1269 = {
+				236 = {
 					highest_value_trade_node = yes
 					trade_share = {
 						country = ROOT
@@ -4320,7 +4320,7 @@ gbr_ave_row_1 = {
 				}
 			}
 			else = {
-				1269 = {
+				236 = {
 					highest_value_trade_node = yes
 					trade_share = {
 						country = ROOT
