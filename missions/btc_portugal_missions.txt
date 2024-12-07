@@ -1663,6 +1663,7 @@ btc_por_africa2 = {
 						is_colonial_nation_of = ROOT					
 					}
 					set_capital = 756
+					set_country_flag = portugal_unlocked_missions_flag
 					swap_non_generic_missions = yes
 				}				
 			}

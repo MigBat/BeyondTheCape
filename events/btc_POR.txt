@@ -1626,7 +1626,9 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = POR }
-		south_america_superregion = {
+		num_of_provinces_owned_or_owned_by_subjects_with = {
+			value = 3
+			superregion = south_america_superregion
 			OR = {
 				owned_by = ROOT
 				owned_by_subject_of = ROOT

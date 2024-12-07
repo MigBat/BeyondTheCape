@@ -202,3 +202,23 @@ participates_in_spice_trade_conflict = {
 		has_country_flag = is_por_ally
 	}
 }
+
+has_any_building_gov_cost = {
+	OR = {
+		has_province_modifier = building_gov_cost_1
+		has_province_modifier = building_gov_cost_2
+		has_province_modifier = building_gov_cost_3
+		has_province_modifier = building_gov_cost_4
+		has_province_modifier = building_gov_cost_5
+		has_province_modifier = building_gov_cost_6
+		has_province_modifier = building_gov_cost_7
+		has_province_modifier = building_gov_cost_8
+		has_province_modifier = building_gov_cost_9
+		has_province_modifier = building_gov_cost_10
+		has_province_modifier = building_gov_cost_11
+		has_province_modifier = building_gov_cost_12
+		has_province_modifier = building_gov_cost_13
+		has_province_modifier = building_gov_cost_14
+		has_province_modifier = building_gov_cost_15
+	}
+}

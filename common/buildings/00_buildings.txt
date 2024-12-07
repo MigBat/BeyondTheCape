@@ -33,11 +33,13 @@ marketplace = {
 
 	modifier = {
 		province_trade_power_modifier = 0.5
-		local_development_cost = -0.025
+		local_development_cost = -0.02
 		local_build_cost = 0.1
-		local_governing_cost = 0.1
 	}
 	on_built = {
+		set_province_flag = marketplace_flag
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = marketplace
 			type = production
@@ -54,6 +56,9 @@ marketplace = {
 		}
 	}
 	on_destroyed = {
+		clr_province_flag = marketplace_flag
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = marketplace
 			type = production
@@ -87,11 +92,13 @@ workshop = {
 	time = 12
 	modifier = {
 		local_production_efficiency = 0.5
-		local_development_cost = -0.025
+		local_development_cost = -0.02
 		local_build_cost = 0.1
-		local_governing_cost = 0.1
 	}
 	on_built = {
+		set_province_flag = workshop_flag
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = workshop
 			type = production
@@ -99,6 +106,9 @@ workshop = {
 		}
 	}
 	on_destroyed = {
+		clr_province_flag = workshop_flag
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = workshop
 			type = production
@@ -122,11 +132,13 @@ temple = {
 		local_tax_modifier = 0.4
 		local_unrest = -0.5
 		local_missionary_strength = 0.01
-		local_development_cost = -0.025
+		local_development_cost = -0.02
 		local_build_cost = 0.1
-		local_governing_cost = 0.1
 	}
 	on_built = {
+		set_province_flag = temple_flag
+		add_local_governing_cost = yes
+
 		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_building = {
@@ -201,6 +213,9 @@ temple = {
 		}
 	}
 	on_destroyed = {
+		clr_province_flag = temple_flag
+		remove_local_governing_cost = yes
+		
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
 		remove_development_from_building = {
 			building = temple
@@ -269,11 +284,13 @@ barracks = {
 	time = 12
 	modifier = {
 		local_manpower_modifier = 0.5
-		local_development_cost = -0.025
+		local_development_cost = -0.02
 		local_build_cost = 0.1
-		local_governing_cost = 0.1
 	}
 	on_built = {
+		set_province_flag = barracks_flag
+		add_local_governing_cost = yes
+
 		if = {
 			limit = {
 				FROM = {
@@ -317,6 +334,9 @@ barracks = {
 		}
 	}
 	on_destroyed = {
+		clr_province_flag = barracks_flag
+		remove_local_governing_cost = yes
+		
 		if = {
 			limit = {
 				FROM = {
@@ -356,29 +376,6 @@ barracks = {
 	on_obsolete = {
 	}
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.005
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.005
-#			}
-#		}
-#	}
-
 	ai_will_do = {
 		factor = 1
 	}
@@ -396,11 +393,13 @@ shipyard = {
 		local_ship_repair = 0.25
 		local_has_man_of_war = yes
 		local_has_galleass = yes
-		local_development_cost = -0.025
+		local_development_cost = -0.02
 		local_build_cost = 0.1
-		local_governing_cost = 0.1
 	}
 	on_built = {
+		set_province_flag = shipyard_flag
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = shipyard
 			type = production
@@ -408,6 +407,9 @@ shipyard = {
 		}
 	}
 	on_destroyed = {
+		clr_province_flag = shipyard_flag
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = shipyard
 			type = production
@@ -657,7 +659,7 @@ courthouse = {
 		local_autonomy = -0.1
 		local_governing_cost = -0.25
 		allowed_num_of_buildings = 1
-		local_development_cost = -0.05
+		local_development_cost = -0.04
 		local_build_cost = 0.1
 	}
 	on_built = {
@@ -757,12 +759,14 @@ dock = {
 		local_sailors_modifier = 0.5
 		local_has_man_of_war = yes
 		local_has_galleass = yes
-		local_development_cost = -0.05
+		local_development_cost = -0.04
 		local_build_cost = 0.1
-		local_governing_cost = 0.1
 	}
 	
 	on_built = {
+		set_province_flag = dock_flag
+		add_local_governing_cost = yes
+
 		if = {
 			limit = {
 				FROM = {
@@ -781,6 +785,9 @@ dock = {
 	}
 	
 	on_destroyed = {
+		clr_province_flag = dock_flag
+		remove_local_governing_cost = yes
+		
 		if = {
 			limit = {
 				FROM = {
@@ -856,34 +863,14 @@ regimental_camp = {
 		land_forcelimit = 0.5
 		regiment_recruit_speed = -0.2
 		local_regiment_cost = -0.15
-		local_development_cost = -0.05
+		local_development_cost = -0.04
 		local_build_cost = 0.1
-		local_governing_cost = 0.1
 	}
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.005
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.005
-#			}
-#		}
-#	}
 	on_built = {
+		set_province_flag = regimental_camp_flag
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = regimental_camp
 			type = manpower
@@ -916,7 +903,11 @@ regimental_camp = {
 			}
 		}
 	}
+
 	on_destroyed = {
+		clr_province_flag = regimental_camp_flag
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = regimental_camp
 			type = manpower
@@ -1151,11 +1142,12 @@ cathedral = {
 		local_missionary_strength = 0.03
 		local_tax_modifier = 0.8
 		local_unrest = -2
-		local_development_cost = -0.075
+		local_development_cost = -0.06
 		local_build_cost = 0.2
-		local_governing_cost = 0.2
 	}
 	on_built = {
+		add_local_governing_cost = yes
+
 		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_upgrading_or_building = {
@@ -1227,6 +1219,15 @@ cathedral = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		if = {
+			limit = {
+				has_province_flag = temple_flag
+			}
+			clr_province_flag = temple_flag
+			remove_local_governing_cost = yes
+		}
+
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
 		remove_development_from_building = {
 			building = cathedral
@@ -1296,13 +1297,14 @@ university = {
 	cost = 300
 	time = 12
 	modifier = {
-		local_development_cost = -0.075
+		local_development_cost = -0.06
 		local_institution_spread = 0.5
 		local_build_cost = 0.2
-		local_governing_cost = 0.2
 	}
 
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = university
 			type = tax
@@ -1310,6 +1312,8 @@ university = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = university
 			type = tax
@@ -1394,12 +1398,14 @@ trade_depot = {
 
 	modifier = {
 		province_trade_power_modifier = 1
-		local_development_cost = -0.075
+		local_development_cost = -0.06
 		local_build_cost = 0.2
-		local_governing_cost = 0.2
 	}
 
 	on_built = {
+		set_province_flag = trade_depot_flag
+		add_local_governing_cost = yes
+
 		add_development_from_upgrading_or_building = {
 			building = trade_depot
 			obsolete_building = marketplace
@@ -1409,6 +1415,15 @@ trade_depot = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		if = {
+			limit = {
+				has_province_flag = marketplace_flag
+			}
+			clr_province_flag = marketplace_flag
+			remove_local_governing_cost = yes
+		}
+		
 		remove_development_from_building = {
 			building = trade_depot
 			type = production
@@ -1438,12 +1453,13 @@ grand_shipyard = {
 		local_ship_repair = 0.50
 		local_has_man_of_war = yes
 		local_has_galleass = yes
-		local_development_cost = -0.075
+		local_development_cost = -0.06
 		local_build_cost = 0.2
-		local_governing_cost = 0.2
 	}
 
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_upgrading_or_building = {
 			building = grand_shipyard
 			obsolete_building = shipyard
@@ -1453,6 +1469,15 @@ grand_shipyard = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		if = {
+			limit = {
+				has_province_flag = shipyard_flag
+			}
+			clr_province_flag = shipyard_flag
+			remove_local_governing_cost = yes
+		}
+		
 		remove_development_from_building = {
 			building = grand_shipyard
 			type = production
@@ -1485,37 +1510,15 @@ training_fields = {
 
 	make_obsolete = barracks
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.02
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.01
-#			}
-#		}
-#	}
-
 	modifier = {
 		local_manpower_modifier = 1
-		local_development_cost = -0.075
+		local_development_cost = -0.06
 		local_build_cost = 0.2
-		local_governing_cost = 0.2
 	}
 	
 	on_built = {
+		add_local_governing_cost = yes
+
 		if = {
 			limit = {
 				FROM = {
@@ -1561,6 +1564,15 @@ training_fields = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		if = {
+			limit = {
+				has_province_flag = barracks_flag
+			}
+			clr_province_flag = barracks_flag
+			remove_local_governing_cost = yes
+		}
+
 		if = {
 			limit = {
 				FROM = {
@@ -1765,12 +1777,13 @@ stock_exchange = {
 
 	modifier = {
 		province_trade_power_modifier = 1.25
-		local_development_cost = -0.1
+		local_development_cost = -0.08
 		local_build_cost = 0.3
-		local_governing_cost = 0.3
 	}
 
 	on_built = {
+		add_local_governing_cost = yes
+
 		if = {
 			limit = {
 				has_province_flag = built_dev_trade_depot
@@ -1804,6 +1817,22 @@ stock_exchange = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		if = {
+			limit = {
+				has_province_flag = trade_depot_flag
+			}
+			clr_province_flag = trade_depot_flag
+			remove_local_governing_cost = yes
+		}
+		if = {
+			limit = {
+				has_province_flag = marketplace_flag
+			}
+			clr_province_flag = marketplace_flag
+			remove_local_governing_cost = yes
+		}
+		
 		remove_development_from_building = {
 			building = stock_exchange
 			type = production
@@ -1825,12 +1854,13 @@ counting_house = {
 	make_obsolete = workshop
 	modifier = {
 		local_production_efficiency = 1
-		local_development_cost = -0.1
+		local_development_cost = -0.08
 		local_build_cost = 0.2
-		local_governing_cost = 0.2
 	}
 
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_upgrading_or_building = {
 			building = counting_house
 			obsolete_building = workshop
@@ -1840,6 +1870,15 @@ counting_house = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		if = {
+			limit = {
+				has_province_flag = workshop_flag
+			}
+			clr_province_flag = workshop_flag
+			remove_local_governing_cost = yes
+		}
+		
 		remove_development_from_building = {
 			building = counting_house
 			type = production
@@ -1870,7 +1909,7 @@ town_hall = {
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
 		allowed_num_of_buildings = 1
-		local_development_cost = -0.1
+		local_development_cost = -0.08
 		local_build_cost = 0.2
 	}
 
@@ -1982,12 +2021,13 @@ drydock = {
 		local_sailors_modifier = 1.0
 		local_has_man_of_war = yes
 		local_has_galleass = yes
-		local_development_cost = -0.1
+		local_development_cost = -0.08
 		local_build_cost = 0.2
-		local_governing_cost = 0.2
 	}
 	
 	on_built = {
+		add_local_governing_cost = yes
+
 		if = {
 			limit = {
 				FROM = {
@@ -2008,6 +2048,15 @@ drydock = {
 	}
 	
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		if = {
+			limit = {
+				has_province_flag = dock_flag
+			}
+			clr_province_flag = dock_flag
+			remove_local_governing_cost = yes
+		}
+		
 		if = {
 			limit = {
 				FROM = {
@@ -2040,38 +2089,16 @@ conscription_center = {
 
 	make_obsolete = regimental_camp
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.02
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.01
-#			}
-#		}
-#	}
-
 	modifier = {
 		land_forcelimit = 1
 		regiment_recruit_speed = -0.4
 		local_regiment_cost = -0.3
-		local_development_cost = -0.1
+		local_development_cost = -0.08
 		local_build_cost = 0.2
-		local_governing_cost = 0.2
 	}
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_upgrading_or_building = {
 			building = conscription_center
 			obsolete_building = regimental_camp
@@ -2107,6 +2134,15 @@ conscription_center = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		if = {
+			limit = {
+				has_province_flag = regimental_camp_flag
+			}
+			clr_province_flag = regimental_camp_flag
+			remove_local_governing_cost = yes
+		}
+		
 		remove_development_from_building = {
 			building = conscription_center
 			type = manpower
@@ -2309,7 +2345,6 @@ manufactory = {
 		trade_goods_size_modifier = 0.4
 		local_development_cost = -0.1
 		local_build_cost = 0.3
-		local_governing_cost = 0.3
 	}
 }
 
@@ -2323,6 +2358,8 @@ wharf = {
 	}
 	onmap = yes
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2336,6 +2373,8 @@ wharf = {
 		
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = manufactory
 			type = production
@@ -2387,6 +2426,8 @@ weapons = {
 	}
 	onmap = yes
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2399,6 +2440,8 @@ weapons = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = manufactory
 			type = production
@@ -2427,6 +2470,8 @@ textile = {
 	}
 	onmap = yes
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2439,6 +2484,8 @@ textile = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = manufactory
 			type = production
@@ -2469,6 +2516,8 @@ plantations = {
 	}
 	onmap = yes
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2481,6 +2530,8 @@ plantations = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = manufactory
 			type = production
@@ -2512,6 +2563,8 @@ tradecompany = {
 	}
 	onmap = yes
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2524,6 +2577,8 @@ tradecompany = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = manufactory
 			type = production
@@ -2551,6 +2606,8 @@ farm_estate = {
 	}
 	onmap = yes
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2571,6 +2628,8 @@ farm_estate = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = manufactory 
 			type = production 
@@ -2608,6 +2667,8 @@ mills = {
 	}
 	onmap = yes
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2620,6 +2681,8 @@ mills = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = manufactory
 			type = production
@@ -2652,11 +2715,12 @@ furnace = {
 		global_trade_goods_size_modifier = 0.05 #National Bonus
 		local_development_cost = -0.1
 		local_build_cost = 0.3
-		local_governing_cost = 0.3
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2664,6 +2728,8 @@ furnace = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = manufactory
 			type = production
@@ -2764,7 +2830,6 @@ soldier_households = {
 		local_manpower = 0.75
 		local_development_cost = -0.1
 		local_build_cost = 0.3
-		local_governing_cost = 0.3
 	}
 	bonus_modifier = {
 		local_manpower = 0.75
@@ -2772,6 +2837,8 @@ soldier_households = {
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = manufactory
 			type = production
@@ -2795,6 +2862,8 @@ soldier_households = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = manufactory
 			type = production
@@ -2842,7 +2911,6 @@ impressment_offices = {
 		local_ship_cost = -0.05
 		local_development_cost = -0.1
 		local_build_cost = 0.3
-		local_governing_cost = 0.3
 	}
 	bonus_modifier = {
 		local_sailors = 250
@@ -2852,6 +2920,8 @@ impressment_offices = {
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
+		add_local_governing_cost = yes
+
 		add_development_from_building = {
 			building = impressment_offices
 			type = manpower
@@ -2864,6 +2934,8 @@ impressment_offices = {
 		}
 	}
 	on_destroyed = {
+		remove_local_governing_cost = yes
+		
 		remove_development_from_building = {
 			building = impressment_offices
 			type = manpower

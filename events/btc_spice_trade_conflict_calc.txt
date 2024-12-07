@@ -1210,6 +1210,25 @@ country_event = {
 		days = 1
 	}
 
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					event_target:mam_spice_trade = { 
+						ai = yes
+						NOT = { truce_with = event_target:por_spice_trade }
+					}
+				}
+				event_target:mam_spice_trade = {
+					declare_war_with_cb = {
+						casus_belli = cb_trade_war
+						who = event_target:por_spice_trade
+					}
+				}
+			}
+		}
+	}
+
 	option = {
 		name = btc_spice_trade.20a
 
@@ -1315,6 +1334,25 @@ country_event = {
 		}
 	}
 
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					event_target:mam_spice_trade = { 
+						ai = yes
+						NOT = { truce_with = event_target:por_spice_trade }
+					}
+				}
+				event_target:mam_spice_trade = {
+					declare_war_with_cb = {
+						casus_belli = cb_trade_war
+						who = event_target:por_spice_trade
+					}
+				}
+			}
+		}
+	}
+
 	option = {
 		name = btc_spice_trade.21a
 
@@ -1409,6 +1447,25 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					event_target:mam_spice_trade = { 
+						ai = yes
+						NOT = { truce_with = event_target:por_spice_trade }
+					}
+				}
+				event_target:mam_spice_trade = {
+					declare_war_with_cb = {
+						casus_belli = cb_trade_war
+						who = event_target:por_spice_trade
+					}
+				}
+			}
+		}
 	}
 
 	option = {
@@ -1512,6 +1569,25 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					event_target:mam_spice_trade = { 
+						ai = yes
+						NOT = { truce_with = event_target:por_spice_trade }
+					}
+				}
+				event_target:mam_spice_trade = {
+					declare_war_with_cb = {
+						casus_belli = cb_trade_war
+						who = event_target:por_spice_trade
+					}
+				}
+			}
+		}
 	}
 
 	option = {

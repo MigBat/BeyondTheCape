@@ -11,9 +11,7 @@ btc_brazil_2 = {
 				capital_scope = {
 					colonial_region = colonial_brazil
 				}
-				overlord = {
-					mission_completed = btc_settle
-				}
+				has_country_flag = portugal_unlocked_missions_flag
 			}
 			tag = BRZ
 		}
@@ -128,9 +126,7 @@ btc_brazil_3 = {
 				capital_scope = {
 					colonial_region = colonial_brazil
 				}
-				overlord = {
-					mission_completed = btc_settle
-				}
+				has_country_flag = portugal_unlocked_missions_flag
 			}
 			tag = BRZ
 		}
@@ -265,9 +261,7 @@ btc_brazil_4 = {
 				capital_scope = {
 					colonial_region = colonial_brazil
 				}
-				overlord = {
-					mission_completed = btc_settle
-				}
+				has_country_flag = portugal_unlocked_missions_flag
 			}
 			tag = BRZ
 		}

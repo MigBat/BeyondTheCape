@@ -83,22 +83,22 @@ por_english_alliance = {
 }
 
 high_saudade_1 = {
-	monthly_portuguese_saudade = 0.05
-}
-high_saudade_2 = {
 	monthly_portuguese_saudade = 0.1
 }
+high_saudade_2 = {
+	monthly_portuguese_saudade = 0.2
+}
 high_saudade_3 = {
-	monthly_portuguese_saudade = 0.15
+	monthly_portuguese_saudade = 0.3
 }
 low_saudade_1 = {
-	monthly_portuguese_saudade = -0.05
-}
-low_saudade_2 = {
 	monthly_portuguese_saudade = -0.1
 }
+low_saudade_2 = {
+	monthly_portuguese_saudade = -0.2
+}
 low_saudade_3 = {
-	monthly_portuguese_saudade = -0.15
+	monthly_portuguese_saudade = -0.3
 }
 
 capital_1 = {
@@ -1025,4 +1025,52 @@ brazil_gold = {
 
 brazil_diamonds = {
 	trade_goods_size = 2
+}
+
+building_gov_cost_1 = {
+    local_governing_cost = 0.1
+}
+
+building_gov_cost_2 = { 
+    local_governing_cost = 0.2 
+}
+
+building_gov_cost_3 = { 
+    local_governing_cost = 0.3 
+}
+
+building_gov_cost_4 = { 
+    local_governing_cost = 0.4 
+}
+
+building_gov_cost_5 = { 
+    local_governing_cost = 0.5 
+}
+
+building_gov_cost_6 = { 
+    local_governing_cost = 0.6 
+}
+
+building_gov_cost_7 = { 
+    local_governing_cost = 0.7 
+}
+
+building_gov_cost_8 = { 
+    local_governing_cost = 0.8 
+}
+
+building_gov_cost_9 = { 
+    local_governing_cost = 0.9 
+}
+
+building_gov_cost_10 = { 
+    local_governing_cost = 1.0 
+}
+
+building_gov_cost_11 = { 
+    local_governing_cost = 1.1 
+}
+
+building_gov_cost_12 = { 
+    local_governing_cost = 1.2 
 }

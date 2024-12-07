@@ -228,6 +228,10 @@ expansion_ideas = {
 			is_colonial_nation = yes
 		}
 		modifier = {
+			factor = 0
+			is_subject_of_type = commercial_enterprise
+		}
+		modifier = {
 			factor = 5
 			has_idea_group = exploration_ideas
 			has_subject_of_type = colony

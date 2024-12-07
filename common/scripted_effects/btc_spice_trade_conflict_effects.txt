@@ -1937,6 +1937,11 @@ btc_spice_trade_clear_stuff = {
 			tag = event_target:mam_spice_trade
 		}
 		remove_country_modifier = ven_mam_forcelimit
+		remove_country_modifier = zanzibar_node_bonus_mam
+		remove_country_modifier = aden_node_bonus_mam
+		remove_country_modifier = hormuz_node_bonus_mam
+		remove_country_modifier = coromandel_node_bonus_mam
+		remove_country_modifier = malacca_node_bonus_mam
 		
 		remove_historical_friend = event_target:mam_ally_1
 		remove_historical_friend = event_target:mam_ally_2
@@ -1994,6 +1999,11 @@ btc_spice_trade_clear_stuff = {
 			tag = event_target:por_spice_trade
 		}	
 		remove_country_modifier = eth_por_support
+		remove_country_modifier = zanzibar_node_bonus_por
+		remove_country_modifier = aden_node_bonus_por
+		remove_country_modifier = hormuz_node_bonus_por
+		remove_country_modifier = coromandel_node_bonus_por
+		remove_country_modifier = malacca_node_bonus_por
 
 		remove_historical_friend = event_target:por_ally_1
 		remove_historical_friend = event_target:por_ally_2
@@ -2067,6 +2077,13 @@ btc_spice_trade_clear_stuff = {
 }
 
 btc_clear_mam_stuff = {
+	remove_country_modifier = ven_mam_forcelimit
+	remove_country_modifier = zanzibar_node_bonus_mam
+	remove_country_modifier = aden_node_bonus_mam
+	remove_country_modifier = hormuz_node_bonus_mam
+	remove_country_modifier = coromandel_node_bonus_mam
+	remove_country_modifier = malacca_node_bonus_mam
+
 	remove_historical_friend = event_target:mam_ally_1
 	remove_historical_friend = event_target:mam_ally_2
 	remove_historical_friend = event_target:mam_ally_3
@@ -2138,6 +2155,11 @@ btc_clear_mam_stuff = {
 }
 
 btc_add_mam_stuff = {
+	add_country_modifier = {
+		name = ven_mam_forcelimit
+		duration = -1
+	}
+
 	add_historical_friend = event_target:mam_ally_1
 	add_historical_friend = event_target:mam_ally_2
 	add_historical_friend = event_target:mam_ally_3
