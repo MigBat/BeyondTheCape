@@ -57,6 +57,18 @@ country_event = {	# add/remove province modifiers
 				duration = -1
 			}
 		}
+		1242 = {	# Viti Levu
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		4937 = {	# Lau
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
 		
 		# Strait Engagement Width
 		every_province = {

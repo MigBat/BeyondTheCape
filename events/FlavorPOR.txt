@@ -620,103 +620,70 @@ country_event = {
 }
 
 # Christopher Columbus	
-# country_event = {
-# 	id = flavor_por.1
-# 	title = "flavor_por.EVTNAME1"
-# 	desc = "flavor_por.EVTDESC1"
-# 	picture = SHIP_SAILING_eventPicture
+country_event = {
+	id = flavor_por.1
+	title = "flavor_por.EVTNAME1"
+	desc = "flavor_por.EVTDESC1"
+	picture = SHIP_SAILING_eventPicture
 	
+	fire_only_once = yes
 	
-# 	fire_only_once = yes
-	
-# 	trigger = {
-# 		tag = POR
-# 		exploration_ideas = 2
-# 		NOT = { has_global_flag = columbus_happened }
-# 		is_year = 1470
-# 		OR = {
-# 			NOT = {
-# 				north_america = {
-# 					has_discovered = ROOT
-# 				}
-# 			}
-# 			NOT = {
-# 				south_america = {
-# 					has_discovered = ROOT
-# 				}
-# 			}
-# 		}
-# 	}
+	trigger = {
+		tag = POR
+		CAS = { has_country_flag = spa_cas_ended_civil_war_flag }
+		NOT = { has_country_flag = signed_alcacovas_treaty }
+		NOT = { has_global_flag = columbus_happened }
+		OR = {
+			is_year = 1492
+			CAS = { dip_tech = 8 }
+		}
+	}
 
-# 	mean_time_to_happen = {
-# 		months = 1
-# 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	
-	
-# 	option = {		# Reject his proposal
-# 		name = "flavor_por.EVTOPTA1"
-# 		ai_chance = { factor = 75 }
-# 		set_country_flag = turned_down_columbus
-# 		if = {
-# 			limit = {
-# 				exists = SPA
-# 				SPA = { has_country_modifier = quest_for_the_new_world }
-# 			}
-# 			SPA = {
-# 				country_event = { id = flavor_spa.1 days = 10 }
-# 			}
-# 		}
-# 		if = {
-# 			limit = {
-# 				NOT = { exists = SPA }
-# 				exists = CAS
-# 				CAS = { has_country_modifier = quest_for_the_new_world }
-# 			}
-# 			CAS = {
-# 				country_event = { id = flavor_spa.1 days = 10 }
-# 			}
-# 		}
-# 		if = {
-# 			limit = {
-# 				OR = {
-# 					AND = {
-# 						NOT = { exists = SPA }
-# 						NOT = { exists = CAS }
-# 					}
-# 					AND = {
-# 						CAS = { NOT = { has_country_modifier = quest_for_the_new_world } }
-# 						SPA = { NOT = { has_country_modifier = quest_for_the_new_world } }
-# 					}
-# 				}
-# 				any_known_country = {
-# 					has_country_modifier = quest_for_the_new_world
-# 					religion = catholic
-# 				}
-# 			}
-# 			random_known_country = {
-# 				limit = {
-# 					NOT = { has_country_flag = turned_down_columbus }
-# 					religion = catholic
-# 					has_country_modifier = quest_for_the_new_world
-# 				}
-# 				country_event = { id = flavor_spa.1 }
-# 			}
-# 		}
-# 	}
-# 	option = {		# Hire Columbus
-# 		name = "flavor_por.EVTOPTB1"
-# 		ai_chance = { factor = 25 }
-# 		set_global_flag = columbus_happened
-# 		add_years_of_income = -0.10
-# 		define_explorer = {
-# 			name = "Cristóvão Colombo"
-# 			fire = 2
-# 			shock = 2
-# 			manuever = 6
-# 			siege = 0
-# 		}
-# 	}
-# }
+	option = {		# Reject his proposal
+		name = "flavor_por.EVTOPTA1"
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				exists = SPA
+			}
+			SPA = {
+				country_event = { id = flavor_spa.1 days = 10 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = SPA }
+				exists = CAS
+			}
+			CAS = {
+				country_event = { id = flavor_spa.1 days = 10 }
+			}
+		}
+	}
+
+	option = {		# Hire Columbus
+		name = "flavor_por.EVTOPTB1"
+		ai_chance = { factor = 0 }
+		trigger = {
+			NOT = { dip_tech = 8 }
+			CAS = { NOT = { dip_tech = 8 } }
+		}
+
+		set_global_flag = columbus_happened
+		add_years_of_income = -0.10
+		define_explorer = {
+			name = "Cristóvão Colombo"
+			fire = 2
+			shock = 2
+			manuever = 6
+			siege = 0
+		}
+	}
+}
 
 # Atlantic Slave Trade
 # country_event = {

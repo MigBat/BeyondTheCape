@@ -123,8 +123,6 @@ castilian_civil_war = {
 	
 	modifier = {
 		global_unrest = 7
-		# land_forcelimit_modifier = -0.5
-		# global_manpower_modifier = -0.5
 		can_not_declare_war = yes
 	}	
 	
