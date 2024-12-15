@@ -235,7 +235,7 @@
  portuguese_regency.11b: "Guards! Detain this man!"
  not_killed_duke_braganca_tt: "The Duke of Bragança returns before you manage to make your exit. The guards bound you and torture you for what seems like an eternity. Finally, unable to take any more pushishment, you reveal the entire plan. They then force the poison down your throat."
 
- remove_5_crown_land_share: "§Y[Root.GetName]§! loses §R5§! crown land ownership."
+ remove_10_crown_land_share: "§Y[Root.GetName]§! loses §R10§! crown land ownership."
 
 # Portugal Liberal Wars #
 

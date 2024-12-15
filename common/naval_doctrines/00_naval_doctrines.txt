@@ -646,7 +646,7 @@ mamluk_galley_doctrine = {
 		galley_power = 0.15
 		galley_cost = -0.25
 	}
-	effect = {} #TODO link with naval professionalism ?
+	effect = {}
 	removed_effect = {}
 	
 	button_gfx = 30
@@ -662,7 +662,7 @@ mamluk_light_doctrine = {
 		global_ship_trade_power = 0.15
 		light_ship_cost = -0.25
 	}
-	effect = {} #TODO link with naval professionalism ?
+	effect = {}
 	removed_effect = {}
 	
 	button_gfx = 30
@@ -678,7 +678,7 @@ mamluk_warships_doctrine = {
 		heavy_ship_power = 0.1
 		global_naval_engagement_modifier = 0.1
 	}
-	effect = {} #TODO link with naval professionalism ?
+	effect = {}
 	removed_effect = {}
 	
 	button_gfx = 30
@@ -695,7 +695,7 @@ mamluk_transports_doctrine = {
 		allowed_marine_fraction = 0.1
 		movement_speed_in_fleet_modifier = 1
 	}
-	effect = {} #TODO link with naval professionalism ?
+	effect = {}
 	removed_effect = {}
 	
 	button_gfx = 30

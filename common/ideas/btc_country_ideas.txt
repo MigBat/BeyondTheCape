@@ -208,3 +208,86 @@ AFO_ideas = {
 		advisor_pool = 1
 	}
 }
+
+SCO_Ideas = {
+	start = {
+		leader_land_shock = 1
+		own_territory_dice_roll_bonus = 1
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.05
+	}
+	
+	trigger = {
+		tag = SCO
+	}
+	free = yes
+	
+	break_the_black_douglas = {
+		global_unrest = -1
+	}
+	modernised_royal_scots_navy = {
+		global_ship_cost = -0.1
+	}
+	reign_in_the_clans = {
+		global_manpower_modifier = 0.2
+	}
+	comets = {
+		stability_cost_modifier = -0.10
+	}
+	royal_revenue = {
+		global_tax_modifier = 0.1
+	}
+	basilikon_doron = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1	#For completion's sake
+		horde_unity = 1
+	}
+	act_of_revocation = {
+		ae_impact = -0.15
+	}
+}
+
+NOR_ideas = {
+	start = {
+		global_sailors_modifier = 0.25
+		ship_durability = 0.10
+	}
+	
+	bonus = {
+		trade_steering = 0.20
+	}
+	
+	trigger = {
+		tag = NOR
+	}
+	free = yes
+	
+	call_of_our_forefathers = {
+		range = 0.33
+		# may_explore = yes
+	}
+	pioneer_spirit = {
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	natural_seamanship = {
+		naval_morale = 0.20		
+	}
+	nor_shipbuilding = {
+		global_ship_cost = -0.1
+	}
+	seize_the_opportunity = {
+ 		global_trade_power = 0.1
+	}
+	nor_fishing = {
+		production_efficiency = 0.1
+	}
+	write_new_sagas = {
+		prestige = 1
+		discipline = 0.025
+	}
+}

@@ -4131,7 +4131,19 @@ estate_nobles_MAY_arm_nobles_with_obsidian_blades = {
 	influence = 0.05
 	loyalty = 0.1
 	is_valid = {
-		technology_group = mesoamerican
+		OR = {
+			technology_group = mesoamerican
+			AND = {
+				technology_group = high_american
+				OR = {
+					was_tag = MAY
+					tag = MAY
+					has_country_flag = unlock_aztec_missions_flag
+					was_tag = AZT
+					tag = AZT
+				}
+			}
+		}
 	}
 	benefits = {
 		infantry_cost = -0.05

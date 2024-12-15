@@ -5,39 +5,45 @@ estate_slavers = {
 
 	# If true, country will get estate
 	trigger = {
-		OR = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				OR = {
-					superregion = north_america_superregion
-					superregion = central_america_superregion
-					superregion = south_america_superregion
-				}
-				OR = {
-					trade_goods = cocoa
-					trade_goods = coffee
-					trade_goods = cotton
-					trade_goods = sugar
-					trade_goods = tea
-					trade_goods = tobacco
-				}
-			}
-			mission_completed = btc_arguin
-		}
-		any_owned_province = {
-			OR = {
-				trade_goods = slaves
-				AND = {
-					region = guinea_region
-					region = kongo_region
-				}
-			}
-		}
+		NOT = { has_reform = conqueror_party_gov }
 		capital_scope = {
 			continent = europe
 		}
 		num_of_ports = 1
 		NOT = { has_country_modifier = the_abolish_slavery_act }
+		OR = {
+			mission_completed = btc_arguin
+			mission_completed = gc_cas_spa_west_africa2
+			AND = {
+				OR = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						OR = {
+							superregion = north_america_superregion
+							superregion = central_america_superregion
+							superregion = south_america_superregion
+						}
+						OR = {
+							trade_goods = cocoa
+							trade_goods = coffee
+							trade_goods = cotton
+							trade_goods = sugar
+							trade_goods = tea
+							trade_goods = tobacco
+						}
+					}
+				}
+				any_owned_province = {
+					OR = {
+						trade_goods = slaves
+						AND = {
+							region = guinea_region
+							region = kongo_region
+						}
+					}
+				}
+			}
+		}
 	}
 
 	# These scale with loyalty & power

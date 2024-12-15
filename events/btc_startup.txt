@@ -232,5 +232,31 @@ country_event = {	# add/remove province modifiers
 				duration = -1
 			}
 		}
+
+		# Resist Reconquista #
+		MOR = {
+			every_owned_province = {
+				add_permanent_province_modifier = {
+					name = resist_reconquista
+					duration = -1
+				}
+			}
+			every_subject_country = {
+				every_owned_province = {
+					add_permanent_province_modifier = {
+						name = resist_reconquista
+						duration = -1
+					}
+				}
+			}
+		}
+		GRA = {
+			every_owned_province = {
+				add_permanent_province_modifier = {
+					name = resist_reconquista
+					duration = -1
+				}
+			}
+		}
 	}
 }

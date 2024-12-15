@@ -62,6 +62,7 @@
  PROV2127:0 "Uqturpan"
  PROV_ADJ2127:0 "Uqturpan"
  PROV4156: "Western Caucasus"
+ PROV1802: "The Amazon"
  
  south_dakota_area:2 "South Dakota"
  cape_of_storms_area: "Cape of Storms"
@@ -166,6 +167,8 @@
  miss_colonize_west_africa:0 "§Y[Root.GetName]§! owns at least one fully colonized province in the West Africa Coast area."
  gbr_end_the_french_conflict_at:0 "Does not own any province other than §Y[87.GetName]§! and §Y[4953.GetName]§! in the region §YFrance§!"
  por_japan_mission_tooltip:0 "If [Root.GetName] has good relations with the owner of §YNagasaki§!, the §YPortuguese Nagasaki§! event happens\nElse Gain §G3.00§! Mercantilism"
+
+ fortified_florida_tooltip:0 "Every province owned by §Y[Root.GetName]§! or their subjects in the §YFlorida§!, §YWest Florida§! or §YEast Florida§! areas with a Fort Level of at least §Y3§! gets §YFortified Florida§! for §Y20§! years giving the following effects:\nLocal Defensiveness §G+20%§!"
 # Monuments #
  belem_tower:0 "Belém Tower"
 # Special Units #

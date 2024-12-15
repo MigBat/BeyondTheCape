@@ -4,6 +4,7 @@ overseas_dominance = {
 		has_dlc = "Domination"
 		normal_or_historical_nations = yes
 		has_government_mechanic = portuguese_saudade_mechanic
+		NOT = { has_country_modifier = reduced_saudade }
 	}
 	can_start = {
 		has_government_power = {
@@ -57,13 +58,6 @@ overseas_dominance = {
 		}
 	}
 	can_stop = {
-		# NOT = {
-		# 	has_government_power = {
-		# 		mechanic_type = portuguese_saudade_mechanic 
-		# 		power_type = portuguese_saudade 
-		# 		value = 50
-		# 	}
-		# }
 		NOT = {
 			check_variable = {
 				which = casaIndiaDevelopment
@@ -405,13 +399,6 @@ overseas_dominance = {
 		}
 	}
 	can_end = {
-		# NOT = {
-		# 	has_government_power = {
-		# 		mechanic_type = portuguese_saudade_mechanic 
-		# 		power_type = portuguese_saudade 
-		# 		value = 50
-		# 	}
-		# }
 		custom_trigger_tooltip = {
 			tooltip = overextended_empire_disaster_2_years
 			had_country_flag = {

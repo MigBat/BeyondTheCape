@@ -442,6 +442,7 @@ fort_15th = {
 	modifier = {
 		fort_level = 2
 	}
+
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		if = {

@@ -774,6 +774,9 @@ nor_conquest_mission_slot = {
 				marine_infantry = ROOT
 				marine_infantry = ROOT
 			}
+			create_explorer = {
+				tradition = 100
+			}
 			add_country_modifier = {
 				name = nor_sailors_of_norway
 				duration = 9125

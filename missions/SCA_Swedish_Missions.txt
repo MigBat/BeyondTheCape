@@ -494,7 +494,8 @@ swe_scandinavian_colonialism_mission_slot = {
 		position = 10
 		required_missions = {  }
 		provinces_to_highlight = {
-			province_id = 23
+			# province_id = 23
+			province_id = 4163
 			OR = {
 				NOT = { light_ships_in_province = 3 }
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -502,8 +503,10 @@ swe_scandinavian_colonialism_mission_slot = {
 		}
 		trigger = {
 			is_subject = no
-			owns_or_non_sovereign_subject_of = 23
-			23 = { light_ships_in_province = 3 }
+			# owns_or_non_sovereign_subject_of = 23
+			# 23 = { light_ships_in_province = 3 }
+			owns_or_non_sovereign_subject_of = 4163
+			4163 = { light_ships_in_province = 3 }
 		}
 		effect = {
 			create_explorer = {

@@ -1592,9 +1592,9 @@ gbr_row_3 = {
 		}	
 		effect = {
 			add_navy_tradition = 10
-			create_explorer = {
-				tradition = 50
-			}
+			# create_explorer = {
+			# 	tradition = 50
+			# }
 			# add_country_modifier = {
 			# 	name = gbr_exploration_spirit
 			# 	duration = 9125

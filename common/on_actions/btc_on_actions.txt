@@ -6,8 +6,8 @@ on_startup = {
 		# btc_remove_natives.1
 	}
 	POR = { country_event = { id = btc_por.180 } }
-	MOR = { country_event = { id = btc_events.2 } }
-	GRA = { country_event = { id = btc_events.2 } }
+	# MOR = { country_event = { id = btc_events.2 } }
+	# GRA = { country_event = { id = btc_events.2 } }
 }
 
 on_monthly_pulse = {
@@ -91,13 +91,6 @@ on_conquest = {
 			name = estate_slavers_plantation_production
 			duration = -1
 		}
-	}
-	if = {
-		limit = {
-			province_id = 230
-			FROM = { tag =  POR }
-		}
-		FROM = { swap_non_generic_missions = yes }
 	}
 	# malaria
 	if = {

@@ -2672,6 +2672,83 @@ dom_cas_missions_3_c = {
 		}
 	}
 	
+	gc_cas_spa_hispaniola2 = {
+		icon = mission_claim_hispaniola
+		required_missions = { gc_cas_spa_caribbean_colony2 }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = hispaniola_area
+						area = dominica_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+
+				}
+				province_id = 490
+			}
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Rights of Man"
+				}
+				490 = {
+					country_or_non_sovereign_subject_holds = ROOT
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+				
+				}
+			}
+			else = {
+				490 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				OR = {
+					area = hispaniola_area
+					area = dominica_area
+				}
+				is_city = yes
+			}
+		}
+		effect = {
+			define_conquistador = {
+				shock = 5
+				fire = 5
+				manuever = 6
+				siege = 1
+				name = "Hernán Cortés"
+			}
+			490 = {
+				add_base_production = 3
+				if = {
+					limit = {
+						NOT = {
+							trade_goods = sugar
+						}
+					}
+					change_trade_goods = sugar
+				}
+			}
+			
+			central_america_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
 	gc_cas_spa_mayans2 = {
 		icon = mission_mayan_conquest
 		required_missions = { gc_cas_spa_hispaniola2 }
@@ -3410,6 +3487,52 @@ dom_cas_missions_4_c = {
 					name = por_first_circumnavigation_modifier
 					duration = -1 
 				}
+				mindanao_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				west_mindanao_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				visayas_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				palawan_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				luzon_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				southern_luzon_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				hidden_effect = {
+					set_country_flag = unlock_missions_moluccas
+					swap_non_generic_missions = yes
+				}
 			}
 			else = {
 				add_country_modifier = {
@@ -3419,80 +3542,139 @@ dom_cas_missions_4_c = {
 			}
 		}
 	}
+}
+
+dom_cas_missions_4_e = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = { 
+			tag = CAS 
+			tag = SPA 
+		}
+		has_country_flag = unlock_missions_moluccas
+	}
+	has_country_shield = yes
 	
-	gc_cas_spa_hispaniola2 = {
-		icon = mission_claim_hispaniola
-		required_missions = { gc_cas_spa_caribbean_colony2 }
+	gc_cas_spa_conquer_philippines2 = {
+		icon = mission_las_islas_filipinas
+		required_missions = { dom_castile_circumnavigation }
 		position = 10
 		provinces_to_highlight = {
 			OR = {
-				AND = {
-					OR = {
-						area = hispaniola_area
-						area = dominica_area
-					}
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-
-				}
-				province_id = 490
+				area = mindanao_area
+				area = west_mindanao_area
+				area = visayas_area
+				area = palawan_area
+				area = luzon_area
+				area = southern_luzon_area
 			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
+		}
+		trigger = {
+			southern_luzon_area = {
+				type = all
+				owned_by = ROOT
+			}
+			luzon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mindanao_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_mindanao_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			visayas_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			palawan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			224 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			224 = { change_trade_goods = cloves add_base_production = 3 } 
+			southern_luzon_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				change_religion = ROOT
+			}
+			luzon_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				change_religion = ROOT
+			}
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+					656 = {
+						NOT = {
+							province_has_center_of_trade_of_level = 2
+						}
+					}
+				}
+				656 = {
+					add_center_of_trade_level = 1
+				}
+			}
+		}
+	}
+}
+
+dom_cas_missions_4_d = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Domination"
+		OR = { 
+			tag = CAS 
+			tag = SPA 
+		}
+		
+	}
+	has_country_shield = yes
+
+	gc_cas_spa_west_africa2 = {
+		icon = mission_west_african_ports
+		required_missions = { gc_cas_spa_hispaniola2 gc_cas_spa_havana2 }
+		position = 11
+		provinces_to_highlight = {
+			province_id = 1466
 		}
 
 		trigger = {
-			if = {
-				limit = {
-					has_dlc = "Rights of Man"
+			1466 = {
+				trade_share = {
+					country = ROOT
+					share = 20
 				}
-				490 = {
-					country_or_non_sovereign_subject_holds = ROOT
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					}
-				
-				}
-			}
-			else = {
-				490 = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				OR = {
-					area = hispaniola_area
-					area = dominica_area
-				}
-				is_city = yes
 			}
 		}
 		effect = {
-			define_conquistador = {
-				shock = 5
-				fire = 5
-				manuever = 6
-				siege = 1
-				name = "Hernán Cortés"
-			}
-			490 = {
-				add_base_production = 3
-				if = {
-					limit = {
-						NOT = {
-							trade_goods = sugar
-						}
-					}
-					change_trade_goods = sugar
-				}
-			}
+			custom_tooltip = btc_arguin_slavers_tt
+			add_mercantilism = 2
 			
-			central_america_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			add_country_modifier = {
+				name = spa_invest_in_west_africa_modifier
+				duration = 9125 
 			}
 		}
 	}
@@ -3564,6 +3746,22 @@ dom_cas_missions_4_c = {
 					}
 				}
 			}
+			florida_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
+			north_florida_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
 			west_florida_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -3572,7 +3770,7 @@ dom_cas_missions_4_c = {
 				}
 				add_permanent_claim = ROOT
 			}
-			california_area = {
+			california_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -3580,7 +3778,7 @@ dom_cas_missions_4_c = {
 				}
 				add_permanent_claim = ROOT
 			}
-			mississippi_area = {
+			rio_grande_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -3598,7 +3796,8 @@ dom_cas_missions_4_c = {
 
 		provinces_to_highlight = {
 			OR = {
-				region = southeast_america_region
+				area = florida_area
+				area = north_florida_area
 				area = west_florida_area
 			}
 			OR = {
@@ -3612,10 +3811,23 @@ dom_cas_missions_4_c = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 3
 				OR = {
-					region = southeast_america_region
+					area = florida_area
+					area = north_florida_area
 					area = west_florida_area
 				}
 				fort_level = 3
+			}
+			florida_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_florida_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_florida_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -4261,170 +4473,64 @@ dom_cas_missions_5_c = {
 	}
 	has_country_shield = yes
 	
-	gc_cas_spa_west_africa2 = {
-		icon = mission_west_african_ports
-		required_missions = {  }
-		position = 7
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					region = guinea_region
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				province_id = 1466
-			}
-			has_discovered = ROOT
-		}
-
-		trigger = {
-			guinea_region = {
-				owned_by = ROOT
-			}
-			1466 = {
-				is_strongest_trade_power = ROOT
-			}
-		}
-		effect = {
-			add_mercantilism = 2
-			
-			add_country_modifier = {
-				name = spa_invest_in_west_africa_modifier
-				duration = 9125 
-			}
-		}
-	}
-	
-	gc_cas_spa_discover_spice_islands2 = {
-		icon = mission_sail_to_the_east_indies
-		required_missions = { gc_cas_spa_west_africa2 gc_cas_spa_plus_ultra2 }
-		position = 8
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cas_spice_islands_tooltip
-				moluccas_region = {
-					type = all
-					has_discovered = ROOT
-				}
-			}
-		}
-		effect = {
-			mindanao_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			west_mindanao_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			visayas_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			palawan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			luzon_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			southern_luzon_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	gc_cas_spa_conquer_philippines2 = {
-		icon = mission_las_islas_filipinas
-		required_missions = { gc_cas_spa_discover_spice_islands2 }
-		position = 9
-		provinces_to_highlight = {
-			OR = {
-				area = mindanao_area
-				area = west_mindanao_area
-				area = visayas_area
-				area = palawan_area
-				area = luzon_area
-				area = southern_luzon_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			has_discovered = ROOT
-		}
-		trigger = {
-			southern_luzon_area = {
-				type = all
-				owned_by = ROOT
-			}
-			luzon_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			mindanao_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			west_mindanao_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			visayas_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			palawan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			224 = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		effect = {
-			224 = { change_trade_goods = cloves add_base_production = 3 } 
-			southern_luzon_area = {
-				limit = {
-					owned_by = ROOT
-				}
-				change_religion = ROOT
-			}
-			luzon_area = {
-				limit = {
-					owned_by = ROOT
-				}
-				change_religion = ROOT
-			}
-			if = {
-				limit = {
-					has_dlc = "Dharma"
-					656 = {
-						NOT = {
-							province_has_center_of_trade_of_level = 2
-						}
-					}
-				}
-				656 = {
-					add_center_of_trade_level = 1
-				}
-			}
-		}
-	}
+	# gc_cas_spa_discover_spice_islands2 = {
+	# 	icon = mission_sail_to_the_east_indies
+	# 	required_missions = { gc_cas_spa_west_africa2 gc_cas_spa_plus_ultra2 }
+	# 	position = 8
+	# 	trigger = {
+	# 		custom_trigger_tooltip = {
+	# 			tooltip = cas_spice_islands_tooltip
+	# 			moluccas_region = {
+	# 				type = all
+	# 				has_discovered = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		mindanao_area = {
+	# 			limit = {
+	# 				NOT = { is_core = ROOT }
+	# 				NOT = { is_permanent_claim = ROOT }
+	# 			}
+	# 			add_permanent_claim = ROOT
+	# 		}
+	# 		west_mindanao_area = {
+	# 			limit = {
+	# 				NOT = { is_core = ROOT }
+	# 				NOT = { is_permanent_claim = ROOT }
+	# 			}
+	# 			add_permanent_claim = ROOT
+	# 		}
+	# 		visayas_area = {
+	# 			limit = {
+	# 				NOT = { is_core = ROOT }
+	# 				NOT = { is_permanent_claim = ROOT }
+	# 			}
+	# 			add_permanent_claim = ROOT
+	# 		}
+	# 		palawan_area = {
+	# 			limit = {
+	# 				NOT = { is_core = ROOT }
+	# 				NOT = { is_permanent_claim = ROOT }
+	# 			}
+	# 			add_permanent_claim = ROOT
+	# 		}
+	# 		luzon_area = {
+	# 			limit = {
+	# 				NOT = { is_core = ROOT }
+	# 				NOT = { is_permanent_claim = ROOT }
+	# 			}
+	# 			add_permanent_claim = ROOT
+	# 		}
+	# 		southern_luzon_area = {
+	# 			limit = {
+	# 				NOT = { is_core = ROOT }
+	# 				NOT = { is_permanent_claim = ROOT }
+	# 			}
+	# 			add_permanent_claim = ROOT
+	# 		}
+	# 	}
+	# }
 	
 	gc_cas_spa_havana2 = {
 		icon = mission_found_havana

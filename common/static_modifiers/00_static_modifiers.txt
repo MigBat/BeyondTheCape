@@ -657,8 +657,10 @@ ai_nation = {
 	sailors_recovery_speed = 0.25
 	colony_cost_modifier = -0.9
 	global_allowed_num_of_manufactories = 1
+	# BTC AI anti-low professionalism
+	land_maintenance_modifier = -0.25
+	global_manpower_modifier = 0.25
 }
-
 
 
 war_taxes = {

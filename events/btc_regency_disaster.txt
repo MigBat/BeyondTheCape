@@ -497,7 +497,7 @@ country_event = {
 				value = 1
 			}			
 		}
-		custom_tooltip = remove_5_crown_land_share
+		custom_tooltip = remove_10_crown_land_share
 		hidden_effect = {
 			change_estate_land_share = {
 			   estate = all

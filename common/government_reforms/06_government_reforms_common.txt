@@ -5160,7 +5160,6 @@ seven_provinces_reform = {
 				add_province_modifier = {
 					name = ned_seven_provinces_organization_positive_modifier
 					duration = -1
-					hidden = yes
 				}
 			}
 			every_owned_province = {
@@ -5171,7 +5170,6 @@ seven_provinces_reform = {
 				add_province_modifier = {
 					name = ned_seven_provinces_organization_negative_modifier
 					duration = -1
-					hidden = yes
 				}
 			}
 		}

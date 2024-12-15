@@ -9439,6 +9439,12 @@ el_escorial = {
 
 	#can we build it?
 	build_trigger = {
+		if = {
+			limit = {
+				has_province_flag = sun_permanently_destroyed_el_escorial
+			}
+			always = no
+		}
 		OR = {
 			AND = {
 				culture_group = iberian
