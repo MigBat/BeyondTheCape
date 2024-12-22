@@ -2,7 +2,7 @@ song = {
 	name = "ceifeira"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -13,7 +13,7 @@ song = {
 	name = "domafonso"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -28,7 +28,7 @@ song = {
 	name = "domjoao"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -47,7 +47,7 @@ song = {
 	name = "dommanuel"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -62,7 +62,7 @@ song = {
 	name = "earlyfadomenor"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -77,7 +77,7 @@ song = {
 	name = "fadomenor"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -96,7 +96,7 @@ song = {
 	name = "latefadomenor"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -111,7 +111,7 @@ song = {
 	name = "saudadesdecoimbra"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -126,7 +126,7 @@ song = {
 	name = "magoasdecoimbra"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -145,7 +145,7 @@ song = {
 	name = "fadocorrido"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -156,7 +156,7 @@ song = {
 	name = "fadohilario"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -167,7 +167,7 @@ song = {
 	name = "fadomouraria"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -178,7 +178,7 @@ song = {
 	name = "malhaovelho"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			primary_culture = portugese
@@ -189,7 +189,7 @@ song = {
 	name = "branca"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			owns_or_subject_of = 756
@@ -200,7 +200,7 @@ song = {
 	name = "tardesemlindoia"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			owns_or_subject_of = 756
@@ -211,7 +211,7 @@ song = {
 	name = "ternasaudade"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			owns_or_subject_of = 756
@@ -222,7 +222,7 @@ song = {
 	name = "ticoticonofuba"
 	
 	chance = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 1.5
 			owns_or_subject_of = 756

@@ -26,13 +26,13 @@ dom_cas_missions_1 = {
 		# free mission
 
 		trigger = {
-			army_size_percentage = 1
-			navy_size_percentage = 1
-			num_of_generals = 1
 			if = {
 				limit = {
 					ai = no
 				}
+				army_size_percentage = 1
+				navy_size_percentage = 1
+				num_of_generals = 1
 				custom_trigger_tooltip = {
 					tooltip = calatrava_tt
 					toledo_area = {
@@ -52,6 +52,10 @@ dom_cas_missions_1 = {
 					}
 				}
 			}
+			else = {
+				army_size_percentage = 0.7
+				navy_size_percentage = 0.7
+			}
 		}
 
 		effect = {
@@ -66,10 +70,10 @@ dom_cas_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 				remove_province_modifier = resist_reconquista
-				add_permanent_province_modifier = {
-					name = less_resist_reconquista
-					duration = -1
-				}
+				# add_permanent_province_modifier = {
+				# 	name = less_resist_reconquista
+				# 	duration = -1
+				# }
 			}
 			210 = {
 				if = {

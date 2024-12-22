@@ -2,7 +2,7 @@ song = {
 	name = "autumninbraganca"
 	
 	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			is_at_war = yes
@@ -21,7 +21,7 @@ song = {
 	name = "edgeoftheworld"
 	
 	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			is_at_war = yes
@@ -40,7 +40,7 @@ song = {
 	name = "greenpines"
 	
 	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			current_age = age_of_absolutism
@@ -67,6 +67,7 @@ song = {
 	name = "inlisbon"
 	
 	chance = {
+		factor = 1.5
 		modifier = {
 			factor = 0
 			current_age = age_of_absolutism
@@ -89,7 +90,7 @@ song = {
 	name = "saudade"
 	
 	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			is_at_war = yes
@@ -112,7 +113,7 @@ song = {
 	name = "lakesofazores"
 	
 	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			is_at_war = yes
@@ -131,7 +132,7 @@ song = {
 	name = "windsfromspain"
 	
 	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			current_age = age_of_discovery
@@ -150,7 +151,7 @@ song = {
 	name = "carracksarrive"
 	
 	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 1.5
 			is_at_war = yes
@@ -173,7 +174,7 @@ song = {
 	name = "cliffsofgalicia"
 	
 	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 2
 			primary_culture = portugese
@@ -188,7 +189,7 @@ song = {
  	name = "enchantedmoura"
 	
  	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
  			factor = 2
 			primary_culture = portugese
@@ -203,7 +204,7 @@ song = {
  	name = "indietribulationis"
 	
  	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			current_age = age_of_absolutism
@@ -226,7 +227,7 @@ song = {
  	name = "memoriadanoite"
 	
  	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			is_at_war = yes
@@ -245,7 +246,7 @@ song = {
  	name = "nymphsofthetagus"
 	
  	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			is_at_war = yes
@@ -264,7 +265,7 @@ song = {
  	name = "songofrain"
 	
  	chance = {
-		factor = 1
+		factor = 1.5
 		modifier = {
 			factor = 0
 			is_at_war = yes
@@ -283,7 +284,7 @@ song = {
  	name = "throughmistandfoliage"
 	
  	chance = {
-		factor = 1
+		factor = 1.5
  		modifier = {
  			factor = 1.5
  			is_at_war = yes

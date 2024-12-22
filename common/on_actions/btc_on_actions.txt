@@ -98,11 +98,17 @@ on_conquest = {
 			NOT = { has_province_modifier = malaria }
 			has_port = no
 			continent = africa
+			owner = {
+				capital_scope = {
+					NOT = {
+						continent = africa
+					}
+				}
+			}
 			NOT = {
 				OR = {
 					region = maghreb_region
 					region = egypt_region
-					# region = guinea_region
 					region = south_africa_region
 					# Madagascar
 					area = sakalava_area
@@ -121,13 +127,6 @@ on_conquest = {
 							mission_completed = btc_sofala
 						}
 						area = lower_zambezi_area
-					}
-				}
-			}
-			owner = {
-				capital_scope = {
-					NOT = {
-						continent = africa
 					}
 				}
 			}

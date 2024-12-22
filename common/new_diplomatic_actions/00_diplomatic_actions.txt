@@ -891,12 +891,26 @@ offer_protectorate = {
 		FROM = { is_subject = no }
 	}
 	is_allowed = {
-		FROM = {
-			NOT = {
-				num_subjects_of_type_with_liberty_desire = {
-					type = trade_protectorate
-					liberty_desire = 0
-					value = 11
+		if = {
+			limit = {
+				FROM = {
+					num_subjects_of_type_with_liberty_desire = {
+						type = trade_protectorate
+						liberty_desire = 0
+						value = 10
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = HAS_10_PROTECTORATES_TT
+				FROM = {
+					NOT = {
+						num_subjects_of_type_with_liberty_desire = {
+							type = trade_protectorate
+							liberty_desire = 0
+							value = 10
+						}
+					}
 				}
 			}
 		}

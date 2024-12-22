@@ -3437,7 +3437,7 @@ south_appalachia_area = { #3
 }
 
 west_florida_area = { #5
-    921 922 923 2530 2533
+    922 923 2533
 }
 
 mississippi_area = { #4
@@ -3493,7 +3493,7 @@ wisconsin_area = { #4
 }
 
 lower_louisiana_area = { # 3
-    893 2014 2516
+    893 2014 2516 921 2530
 }
 
 upper_louisiana_area = { #4

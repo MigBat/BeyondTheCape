@@ -5,6 +5,7 @@ portuguese_regency = {
 		is_free_or_tributary_trigger = yes
 		normal_or_historical_nations = yes
 		tag = POR
+		ai = no
 	}
 	
 	can_start = {

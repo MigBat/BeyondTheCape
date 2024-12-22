@@ -40,7 +40,7 @@
  PROV4978:0 "Abyan"
  PROV4979:0 "Saga"
  PROV4980:0 "Mumbai"
- PROV3190: "Leiria"
+ PROV3190: "Labrador"
 
  PROV3004: "Gulf of Boothia"
  PROV3005: "Coronation Gulf"
@@ -168,3 +168,9 @@
  south_atlantic_depths_region: "South Atlantic Depths"
  north_atlantic_depths_region: "North Atlantic Depths"
  cape_route_region: "Cape Route"
+
+# COLONIAL REGIONS #
+ colonial_acadia: "Colonial Acadia"
+ colonial_hudson_bay: "Colonial Hudson Bay"
+ colonial_florida: "Colonial Florida"
+ colonial_chile: "Colonial Chile"

@@ -924,7 +924,9 @@ country_event = {
 
 	option = {
 		name = btc_spice_trade.8a
-
+		
+		clr_global_flag = spice_trade_conflict_enabled
+		clr_country_flag = open_spice_trade_conflict_window_flag
 		every_country = {
 			limit = {
 				participates_in_spice_trade_conflict = yes
@@ -1178,6 +1180,77 @@ country_event = {
 		add_country_modifier = {
 			name = mam_lose_spice_trade_conflict
 			duration = 18250
+		}
+	}
+}
+
+country_event = {
+	id = btc_spice_trade.12
+	title = btc_spice_trade.12.t
+	desc = btc_spice_trade.12.d
+	picture = FORT_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+	trigger = { 
+		ai = yes
+		tag = event_target:mam_spice_trade 
+		event_target:mam_spice_trade = { has_country_flag = mam_get_supporters_objective_flag }
+		event_target:mam_spice_trade = { has_country_flag = mam_win_battles_objective_flag }
+		event_target:mam_spice_trade = { has_country_flag = mam_win_war_objective_flag }
+		event_target:mam_spice_trade = { has_country_flag = mam_sink_ships_objective_flag }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_spice_trade.12a
+		
+		clr_global_flag = spice_trade_conflict_enabled
+		clr_country_flag = open_spice_trade_conflict_window_flag
+		every_country = {
+			limit = {
+				participates_in_spice_trade_conflict = yes
+			}
+			country_event = {
+				id = btc_spice_trade.10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = btc_spice_trade.13
+	title = btc_spice_trade.13.t
+	desc = btc_spice_trade.13.d
+	picture = FORT_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+	trigger = { 
+		ai = yes
+		tag = event_target:por_spice_trade
+		has_global_flag = full_mare_clausum_flag
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_spice_trade.12a
+		
+		clr_global_flag = spice_trade_conflict_enabled
+		clr_country_flag = open_spice_trade_conflict_window_flag
+		every_country = {
+			limit = {
+				participates_in_spice_trade_conflict = yes
+			}
+			country_event = {
+				id = btc_spice_trade.11
+			}
 		}
 	}
 }

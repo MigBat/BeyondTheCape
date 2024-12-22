@@ -844,6 +844,12 @@ country_event = {
 		}
 		if = {
 			limit = {
+				has_country_modifier = duke_of_braganca_worse
+			}
+			remove_country_modifier = duke_of_braganca_worse
+		}
+		if = {
+			limit = {
 				any_owned_province = {
 					has_province_modifier = duke_of_braganca_lands
 				}
@@ -871,9 +877,6 @@ country_event = {
 
 		add_years_of_income = 2
 		every_owned_province = {
-			limit = {
-				has_province_modifier = duke_of_braganca_lands
-			}
 			add_local_autonomy = 10
 		}
 	}

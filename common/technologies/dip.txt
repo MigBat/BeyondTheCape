@@ -188,7 +188,7 @@ technology = { #The Flute
 	
 	trade_efficiency		= 	0.02
 	trade_range				=	20
-	global_colonial_growth  = 	10
+	global_colonial_growth  = 	20
 	enable = flute
 	enable = war_galley
 
@@ -277,7 +277,7 @@ technology = { #The Galleon
 	
 	naval_maintenance		= 	0.1
 	range					=	50
-	global_colonial_growth  = 	10
+	global_colonial_growth  = 	20
 	
 	enable = galleon
 	enable = early_frigate
@@ -451,7 +451,7 @@ technology = { #Heavy Frigates
 		enlightenment = 0.8
 	}
 	
-	global_colonial_growth  = 	10
+	global_colonial_growth  = 	30
 	range					=	150
 	allow_client_states = yes		
 
@@ -519,7 +519,7 @@ technology = { #The Eastindiaman
 	}
 	
 	range					=	200
-	global_colonial_growth  = 	10
+	global_colonial_growth  = 	30
 	num_accepted_cultures = 1
 	
 	enable = eastindiaman
@@ -638,5 +638,5 @@ technology = { #The Gold Standard
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
-	global_colonial_growth  = 	10
+	global_colonial_growth  = 	50
 }

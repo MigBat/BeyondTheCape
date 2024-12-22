@@ -889,7 +889,7 @@ trade_refusal = {
 
 mercantilism = {
 	global_prov_trade_power_modifier = 2.0
-	global_trade_goods_size_modifier = 1.0
+	# global_trade_goods_size_modifier = 1.0
 	burghers_loyalty_modifier = 0.1
 	vaisyas_loyalty_modifier = 0.1
 	embargo_efficiency = 1
@@ -1441,7 +1441,7 @@ absolutism = {
 	core_decay_on_your_own = -0.5
 	monthly_ottoman_decadence = -0.5
 	yearly_corruption = 0.2
-	yearly_army_professionalism = 0.03
+	yearly_army_professionalism = 0.015
 }
 
 # BTC #

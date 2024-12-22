@@ -98,6 +98,14 @@ callaction = {
 		}
 	}
 	condition = {
+		tooltip = ccw2_callaction_tt
+		potential = { }
+		allow = { 
+			NOT = { has_country_flag = had_cas_civil_war }
+			NOT = { has_country_modifier = no_declare_war_ccw }
+		}
+	}
+	condition = {
 		tooltip = plw_callaction_tt
 		potential = {
 			has_country_flag = plw_at_war

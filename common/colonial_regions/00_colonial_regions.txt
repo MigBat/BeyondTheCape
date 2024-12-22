@@ -216,10 +216,10 @@ colonial_alaska = {
 	}
 }
 
-# Canada
-colonial_canada = {
+# Acadie (Acadia)
+colonial_acadia = {
 	color = { 20 50 210 }
-
+	
 	# Random New World
 	tax_income = 1
 	native_size = 4
@@ -227,23 +227,16 @@ colonial_canada = {
 	native_hostileness = 4
 
 	trade_goods = {
-		fur = 20
-		fish = 10
+		fish = 20
 		naval_supplies = 3
-		grain = 1
+		grain = 10
+		fur = 5
 	}
-
+	
 	culture = {
-		inuit = 10
-		cree = 10
-		nakota = 2
-		cheyenne = 2
-		anishinabe = 2
-		huron = 2
-		iroquois = 2
-		mahican = 2
 		abenaki = 2
-		mikmaq = 2
+		mikmaq = 4
+		maliseet = 4	
 	}
 
 	religion = {
@@ -251,16 +244,12 @@ colonial_canada = {
 	}
 
 	provinces = {
-		1010 1008 1009 1011 1006 1005 1004 1007 1002 1003 1000 999 998 1001 992 991 989 988 987
-		993 990 994 986 985 984 995 996 983 982 1813 2004 2005 2012 2015 2016 2017 2018
-		2511 2568 2569 2570 2571 2572 2576 2577 2578 2579 2580 2581 2582 2583 2584 2585 2586 2587 2588
-		2589 2590 2591 2592 2593 2594 2595 2596 2597 2598 2599 2600 2601 2602 2603 2670 2671
-		4890 4891 4892 4893 4894 4895 4896 4897 4902 4919 4920
-		# BTC #
-		# 981 980 2573 997 2575 2574
+		983 985 2572 # Upper Acadia
+		982 984 2568 2569 4891 # Lower Acadia
+		2570 2571 4896 # St Johns Valley
+		971 2566 2567 # Eastern Maine (lost to GB in 1763)
 	}
 
-	# Specific
 	names = {
 		trigger = {
 			OR = {
@@ -269,6 +258,41 @@ colonial_canada = {
 			}
 		}
 		name = "COLONIAL_CANADA_Acadia"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			OR = {
+				owns = 57
+				is_core = 57
+				tag = BRU
+			}
+		}
+		name = "COLONIAL_CANADA_Neu_Braunschweig"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+			SCO = {
+				exists = no
+			}
+			any_owned_province = {
+				OR = {
+					area = highlands_area
+					area = lowlands_area
+				}
+			}
+		}
+		name = "COLONIAL_CANADA_Nova_Scotia"
+	}
+	names = {
+		trigger = {
+			tag = SCO
+		}
+		name = "COLONIAL_CANADA_Nova_Scotia"
 	}
 	names = {
 		trigger = {
@@ -286,6 +310,128 @@ colonial_canada = {
 		}
 		name = "COLONIAL_CANADA_Nouvelle_Ecosse"
 	}
+	names = {
+		name = "COLONIAL_CANADA_Nova_Scotia"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Acadia"
+	}
+
+}
+
+# Hudson Bay/Rupert's Land
+colonial_hudson_bay = {
+	color = { 200 100 100 }
+	
+	# Random New World
+	tax_income = 1
+	native_size = 4
+	native_ferocity = 1
+	native_hostileness = 4
+	trade_goods = {
+		fur = 40
+		naval_supplies = 10
+		salt = 10
+		grain = 5
+	}
+	culture = {
+		inuit = 10
+		cree = 10
+		nakota = 2
+		cheyenne = 2
+		anishinabe = 2
+	}
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		998 999 1000 1003 1004 # James Bay
+		1005 1006 1009 2592 2594 # Hudson Bay
+		1008 1010 1011 2593 4919 # Manitoba
+		2005 2596 2598 4920 # Assiniboia
+		1813 2595 2597 # Saskatchewan
+		2004 2017 2018 2602 # Alberta
+		2599 2600 2601 2603 # Athabasca (will later be moved into NWT colonial region)
+		2016 2511 4902 # Red River of the North (moved from Louisiana)
+	}
+
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_CANADA_Ruperts_Land"
+	}
+	names = {
+		trigger = {
+			owns = 1010			# Manitoba
+		}
+		name = "PROV1010"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Borealia"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Hudson_Bay"
+	}
+}
+
+# Canada
+colonial_canada = {
+	color = { 180 50 50 }
+
+	# Random New World
+	tax_income = 1
+	native_size = 4
+	native_ferocity = 1
+	native_hostileness = 4
+
+	trade_goods = {
+		fur = 20
+		fish = 10
+		naval_supplies = 3
+		grain = 1
+	}
+
+	culture = {
+		anishinabe = 2
+		huron = 2
+		iroquois = 2
+		mahican = 2
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		996 2576 2577 2578 2579 # Cote Nord
+		986 994 995 2582 2583 # Quebec
+		990 2012 2580 4893 # Trois-Rivieres
+		993 2584 4895 # Lower Canada
+		992 2581 4894 # Laurentia
+		4890 4892 4897 # Ottawa Valley
+		988 989 2585 2670 # Huronia
+		987 2586 2587 # Upper Canada
+		991 1001 1007 2015 2671 # Upper Ontario
+		1002 2588 2589 2590 2591 # Abitibi
+		# Added from Colonial Eastern America:
+		958 959 960 4872 # Iroquoisia
+		954 2555 4875 # Alleghenies
+		946 947 948 2525 4907 # Ohio
+		944 945 2521 2522 # Michigan
+		942 943 2523 2524 4922 # Indiana
+		2519 2520 4904 # Southern Illinois
+		915 916 917 4903 # Illinois
+		912 913 914 4899 # Wisconsin
+		910 911 2517 2518 4898 # Lake Superior
+	}
+
+	# Specific
+	
 	names = {
 		trigger = {
 			OR = {
@@ -325,17 +471,6 @@ colonial_canada = {
 			primary_culture = polish
 		}
 		name = "COLONIAL_CANADA_Polnocne"
-	}
-	names = {
-		trigger = {
-			culture_group = germanic
-			OR = {
-				owns = 57
-				is_core = 57
-				tag = BRU
-			}
-		}
-		name = "COLONIAL_CANADA_Neu_Braunschweig"
 	}
 	names = {
 		trigger = {
@@ -389,31 +524,13 @@ colonial_canada = {
 				tag = ENG
 			}
 		}
-		name = "COLONIAL_CANADA_Laurentia"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-			SCO = {
-				exists = no
-			}
-			any_owned_province = {
-				OR = {
-					area = highlands_area
-					area = lowlands_area
-				}
-			}
-		}
-		name = "COLONIAL_CANADA_Nova_Scotia"
+		name = "COLONIAL_CANADA_Canada"
 	}
 	names = {
 		trigger = {
 			tag = POR
 		}
-		name = "COLONIAL_CANADA_Lavrador"
+		name = "COLONIAL_CANADA_Lorencia"
 	}
 	# names = {
 	# 	trigger = {
@@ -432,12 +549,6 @@ colonial_canada = {
 			}
 		}
 		name = "COLONIAL_CANADA_Lorencia"
-	}
-	names = {
-		trigger = {
-			tag = SCO
-		}
-		name = "COLONIAL_CANADA_Nova_Scotia"
 	}
 	names = {
 		trigger = {
@@ -524,13 +635,13 @@ colonial_canada = {
 	}
 	# Generic
 	names = {
+		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
+	}
+	names = {
 		name = "COLONIAL_CANADA_Root_Culture_GetName_Canada"
 	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
 	}
 	# names = {
 	# 	name = "COLONIAL_CANADA_Newfoundland"
@@ -539,29 +650,9 @@ colonial_canada = {
 	# 	name = "COLONIAL_CANADA_Labrador"
 	# }
 	names = {
-		name = "COLONIAL_CANADA_Nova_Scotia"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Acadia"
-	}
-	names = {
 		name = "COLONIAL_CANADA_Laurentia"
 	}
-	names = {
-		name = "COLONIAL_CANADA_Borealia"
-	}
-	names = {
-		trigger = {
-			owns = 1010			# Manitoba
-		}
-		name = "PROV1010"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Hudson_Bay"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Ruperts_Land"
-	}
+	
 }
 
 # Eastern America
@@ -605,18 +696,26 @@ colonial_eastern_america = {
 	}
 
 	provinces = {
-		929 931 932 933 935 936 937 938 949 950 951 952 953 954 955 956 957 958 962 963 965
-		966 967 968 970 971 926 927 928 930 923 924 922 934 939 941 940 948 947 946 959 960 961
-		964 969 925 2010 2011 2013 2023 2525 2526 2527 2531 2532 2533 2534 2535 2536 2537 2538
-		2539 2540 2541 2542 2543 2544 2545 2546 2547 2548 2549 2550 2551 2552 2553 2554 2555 2556
-		2557 2558 2559 2560 2561 2562 2563 2564 2565 2566 2567 2639
-		4626 4625
-		4871 4872 4873 4874 4875 4876 4877 4878 4879 4880 4881 4882 4883 4888 4889 4907 4912 4913 4921
-		4887 918 
-		919 2528 920 4884 2529
-		921 2530
-		944 945 2521 2522 942 943 2523 2524 4922 2519 2520 4904 915 916 917 4903 912 913 914 4899 911 4898 2518 2517 910 #Moved over from vanilla Louisiana CR				
-		4954									  
+		2013 2565 4873 # Maine
+		970 2562 2564 # New Hampshire
+		969 2563 4871 # Lake Champlain
+		966 968 2561 4874 # Massachusetts
+		967 2010 2560 # Connecticut
+		961 963 964 2559 4912 # Hudson Valley
+		965 2558 2639 4954 # New York
+		956 957 962 2023 # Delaware Valley
+		955 2556 2557 4876 # Westsylvania
+		953 2553 2554 # Maryland
+		951 2551 4889 # Vandalia
+		949 2011 2548 2552 # Great Valley
+		950 952 2549 2550 4877 # Virginia
+		937 938 2546 2547 # North Carolina
+		2544 2545 4878 # Piedmont Plateau
+		935 936 2527 4879 # Overmountain
+		933 2541 4882 # South Carolina Piedmont
+		932 2542 2543 # South Carolina
+		929 2537 2538 2539 4880 # Georgia
+		930 931 2540 4881 # Upper Georgia
 	}
 
 	# Specific
@@ -641,24 +740,6 @@ colonial_eastern_america = {
 			owns = 90			# Vlaanderen
 		}
 		name = "COLONIAL_EASTERN_AMERICA_Nouvelle_Flandre"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = FRA
-				culture_group = french
-			}
-		}
-		name = "COLONIAL_EASTERN_AMERICA_Floride"
-	}
-	names = {
-		trigger = {
-			OR = {
-				primary_culture = castillian
-				primary_culture = aragonese
-			}
-		}
-		name = "COLONIAL_EASTERN_AMERICA_Florida"
 	}
 	names = {
 		trigger = {
@@ -829,9 +910,6 @@ colonial_eastern_america = {
 		name = "COLONIAL_REGION_New_Root_GetName"
 	}
 	names = {
-		name = "COLONIAL_EASTERN_AMERICA_Florida"
-	}
-	names = {
 		trigger = {
 			owns = 968
 		}
@@ -872,6 +950,60 @@ colonial_eastern_america = {
 	}
 }
 
+colonial_florida = {
+	color = { 255 140 25 }
+	
+	tax_income = 1
+	native_size = 10
+	native_ferocity = 4
+	native_hostileness = 8
+
+	trade_goods = {
+		fish = 10
+		tobacco = 20
+		cotton = 20
+		salt = 8
+		grain = 4
+	}
+	
+	culture = {
+		yamasee = 10
+		creek = 2
+		arawak = 1
+	}
+	
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		922 923 2533 # West Florida
+		927 928 2534 # East Florida
+		926 2535 2536 4625 4626 # Florida
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Floride"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = castillian
+				primary_culture = aragonese
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Florida"
+	}
+	names = {
+		name = "COLONIAL_EASTERN_AMERICA_Florida"
+	}
+}
+
 # Louisiana
 colonial_louisiana = {
 	color = { 33 87 161 }
@@ -907,12 +1039,24 @@ colonial_louisiana = {
 	}
 
 	provinces = {
-		893 894 895 897 899 900 896 909 906 898 901 903
-		907 908 905 904 902 1809 2006 2007 2008 2009 2014
-		2501 2502 2503 2504 2505 2507 2508 2509 2510 2512 2513 2514 2515 2516 2625 2672
-									
-		4885 4886 4900 4901 4905 4906 4908 4914 4915 4916 4917 4918 4923
-		889 890 891 892
+		941 2526 4888 # Kentucky
+		940 4887 4921 # Western Kentucky
+		900 902 2514 4906 # Upper Louisiana
+		905 2513 4900 4905 # Iowa
+		904 908 2512 4901 # Minnesota
+		906 909 2510 4918 # North Dakota
+		2006 2501 2502 2503 4917 # Upper Missouri
+		1809 2504 2505 # Badlands
+		907 2007 2008 4916 # South Dakota
+		901 903 2009 2508 4915 # Central Plains
+		890 898 2672 4914 # Kansas 
+		891 892 896 4908 # Southern Plains
+		899 2509 2515 4886 # Ozarks
+		894 895 897 4885 4923 # Arkansas
+		893 2014 2516 921 2530 # Louisiana
+		919 920 2528 2529 4884 # Mississippi
+		924 925 2531 2532 4883 # Alabama
+		918 934 939 4913 # Tennessee
 	}
 
 	# Specific
@@ -1359,6 +1503,7 @@ colonial_mexico = {
 	}
 
 	provinces = {
+		889 2507 2625 # High Plains
 		863 864 859 860 861 855 856 858 857 854 851 853 849 850 848 847 844
 		852 846 845 843 842 841 840 839 882 885 881 880 884 888
 		883 886 887 2495 2496 2497 2498 2499 2500 2614 2615 2617 2618 2619
@@ -1955,6 +2100,7 @@ colonial_peru = {
 	}
 
 #	# Specific
+
 	names = {
 		trigger = {
 			culture_group = french
@@ -2168,6 +2314,45 @@ colonial_peru = {
 	}
 }
 
+# Chile
+colonial_chile = {
+	color = { 255 235 205 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 1
+
+	trade_goods = {
+		fish = 2
+		gold = 2
+		cocoa = 2
+		copper = 2
+		naval_supplies = 2
+	}
+
+	culture = {
+		mapuche = 10
+	}
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		792 793 796 2840 2841 #North Chile
+		784 787 2862 #Central Chile
+		783 2873 2874 #South Chile
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_Chile"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
 # La Plata
 colonial_la_plata = {
 	color = { 101 102 163 }
@@ -2203,12 +2388,13 @@ colonial_la_plata = {
 		791 794 2836 2837 2839 2842 #tucuman
 		790 2854 2878 #Chaco
 		772 773 2850 2851 2852 #Banda Oriental
-		783 784 787 792 793 796 2840 2841 2862 2873 2874 #Chile
+		# 783 784 787 792 793 796 2840 2841 2862 2873 2874 #Chile
 		775 776 799 2882 2883 #Paraguay
 		800 801 2834 #Beni
 		803 2832 2833 #Moxos
 		2835 2838 2941 2942 #Upper Peru
 		795 797 2940 2946 #Potosi
+		1095 2025 #Falkands
 	}
 
 	# Specific
@@ -2407,19 +2593,6 @@ colonial_la_plata = {
 			}
 		}
 		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_Paraguay"
-	}
-	names = {
-		trigger = {
-			# Amùlioration la Plùiade
-			any_owned_province = {
-				OR = {
-					area = southern_chile_area
-					area = central_chile_area
-					area = northern_chile_area
-				}
-			}
-		}
-		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_Chile"
 	}
 	names = {
 		name = "COLONIAL_LA_PLATA_Argentina"
