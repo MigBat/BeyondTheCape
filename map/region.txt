@@ -520,6 +520,8 @@ horn_of_africa_region = {
 		damot_area
 		aussa_area
 		shewa_area
+		# BTC #
+		jubba_area
 	}
 }
 
@@ -538,9 +540,12 @@ east_africa_region = {
 		sakalava_area
 		southern_madagascar
 		uticulo_makuana_area
-		jubba_area
 		shire_area
 		mombasa_area
+		# BTC #
+		zimbabwe_area
+		quelimane_area
+		butua_area
 	}
 	monsoon = {
 		00.11.01
@@ -621,9 +626,6 @@ south_africa_region = {
 	areas = {
 		south_african_plateau_area
 		cape_of_good_hope_area
-		zimbabwe_area
-		quelimane_area
-		butua_area
 		limpopo_area
 		transvaal_area
 	}

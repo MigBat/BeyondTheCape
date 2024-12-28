@@ -15,3 +15,5 @@
  btc_no_colonist_inactive: ""
  btc_colony_cost_active: "Colony Cost Modifier: §R+[Root.settler_pool_colony_cost.GetValue]%§!"
  btc_colony_cost_inactive: ""
+
+ CAN_NOT_BUILD_COLONIES: "Settler Pool too low"

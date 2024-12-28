@@ -5798,6 +5798,7 @@ country_event = {
 		CAS = { has_country_flag = spa_cas_ended_civil_war_flag }
 		NOT = { has_country_flag = signed_alcacovas_treaty }
 		NOT = { has_country_flag = won_ccw }
+		NOT = { has_country_flag = unlock_alcacovas_missions }
 	}
 
 	mean_time_to_happen = {
@@ -5921,11 +5922,19 @@ country_event = {
 	option = { # send to castile
 		name = btc_por.182a
 
+		ai_chance = {
+			factor = 1
+		}
+
 		CAS = { country_event = { id = btc_por.183 } }
 	}			
 	
 	option = { # make him explorer
 		name = btc_por.182b
+
+		ai_chance = {
+			factor = 0
+		}
 
 		define_explorer = {
 			name = "Cristóvão Colombo"

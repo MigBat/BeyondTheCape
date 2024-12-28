@@ -400,11 +400,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_regency = yes
-				is_at_war = yes
-			}
 		}
 
 		define_consort = {
@@ -444,7 +439,7 @@ country_event = {
 		name = "castilian_civil_war.8b"
 
 		ai_chance = {
-			factor = 1
+			factor = 0
 		}
 
 		add_prestige = -10
@@ -495,11 +490,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_regency = yes
-				is_at_war = yes
-			}
 		}
 		
 		define_consort = {
@@ -554,7 +544,7 @@ country_event = {
 		name = "castilian_civil_war.9b"
 
 		ai_chance = {
-			factor = 1
+			factor = 0
 		}
 
 		add_prestige = -10

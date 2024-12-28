@@ -258,17 +258,7 @@ mali_colonization_slot = {
 			owns_core_province = 1114
 		}
 		effect = {
-			1114 = {
-				if = {
-					limit = { 
-						NOT = { province_has_center_of_trade_of_level = 2 }
-					}
-					add_center_of_trade_level = 1
-				}
-				else = {
-					add_base_production = 2
-				}
-			}
+			1114 = { center_of_trade = 1 }
 		}
 		ai_weight = {
 			factor = 0	#AI Mali should not colonize
@@ -413,7 +403,12 @@ mali_trade_slot = {
 		required_missions = { mal_fighting_musa }
 		position = 2
 		provinces_to_highlight = {
-			area = jolof_area
+			OR = {
+				province_id = 1112
+				province_id = 1113
+				province_id = 1116
+				province_id = 2239
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -426,10 +421,10 @@ mali_trade_slot = {
 					is_subject_of = ROOT
 				}
 			}
-			jolof_area = {
-				country_or_non_sovereign_subject_holds = ROOT
-				type = all
-			}
+			owns_or_non_sovereign_subject_of = 1112
+			owns_or_non_sovereign_subject_of = 1113
+			owns_or_non_sovereign_subject_of = 1116
+			owns_or_non_sovereign_subject_of = 2239
 		}
 		effect = {
 			mal_add_disaster_stability = yes
