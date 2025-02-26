@@ -17,7 +17,7 @@ btc_monument_texel = {
 	}
 	
 	btc_reede_van_texel = {
-		icon = 
+		icon = mission_reede_van_texel
 		position = 1
 		required_missions = {
 		}
@@ -46,13 +46,26 @@ btc_monument_texel = {
 						was_tag = HOL
 					}
 				}
-				country_event = {
-					id = btc_NED_mission.1
+				hidden_effect = {
+					set_country_flag = has_reede_van_texel
+					set_country_flag = is_reede_van_texel
+				}
+				4981 = {
+					add_great_project = {
+						type = reede_van_texel
+						instant = yes
+					}
 				}
 			}
 			else = {
-				country_event = {
-					id = btc_NED_mission.2
+				hidden_effect ={
+					set_country_flag = has_reede_van_texel
+				}
+				4981 = {
+					add_great_project = {
+						type = reede_van_texel
+						instant = yes
+					}
 				}
 			}
 		}
@@ -77,7 +90,7 @@ btc_monument_zwin = {
 	}
 	
 	btc_zwin = {
-		icon = 
+		icon = mission_zwin
 		position = 1
 		required_missions = {
 		}
@@ -87,10 +100,11 @@ btc_monument_zwin = {
 			90 = {
 				owned_by = ROOT
 				num_of_times_improved_by_owner = 6
-				base_production = 8
+				base_production = 10
 				is_prosperous = yes
 			}
-			production_income_percentage = 0.5
+			production_income_percentage = 0.25
+			trade_income_percentage = 0.50
 		}
 		effect = {
 			if = {
@@ -98,13 +112,22 @@ btc_monument_zwin = {
 					tag = FLA
 					was_tag = FLA
 				}
-				country_event = {
-					id = btc_NED_mission.3
+				hidden_effect = {
+					set_country_flag = has_zwin
+					set_country_flag = is_zwin
+				}
+				add_great_project_tier = {
+					type = zwin
+					tier = 1
 				}
 			}
 			else = {
-				country_event = {
-					id = btc_NED_mission.4
+				hidden_effect = {
+					set_country_flag = has_zwin
+				}
+				add_great_project_tier = {
+					type = zwin
+					tier = 1
 				}
 			}
 		}
@@ -129,7 +152,7 @@ btc_monument_grand_place = {
 	}
 	
 	btc_grand_place = {
-		icon = 
+		icon = mission_grand_place
 		position = 1
 		required_missions = {
 		}
@@ -156,13 +179,22 @@ btc_monument_grand_place = {
 					tag = BRB
 					was_tag = BRB
 				}
-				country_event = {
-					btc_NED_mission.5
+				hidden_effect = {
+					set_country_flag = has_grand_place
+					set_country_flag = is_grand_place
+				}
+				add_great_project_tier = {
+					type = grand_place
+					tier = 1
 				}
 			}
 			else = {
-				country_event = {
-					btc_NED_mission.6
+				hidden_effect = {
+					set_country_flag = has_grand_place
+				}
+				add_great_project_tier = {
+					type = grand_place
+					tier = 1
 				}
 			}
 		}
@@ -185,7 +217,7 @@ btc_monument_binnenhof = {
 		}
 	}
 	btc_ridderzaal = {
-		icon = 
+		icon = mission_binnenhof
 		position = 1
 		required_missions = {
 		}
@@ -201,12 +233,18 @@ btc_monument_binnenhof = {
 				higher_development_than = 134
 				higher_development_than = 183
 			}
-			#Add in dip req 
+			current_size_of_parliament = 7
 		}
 		effect = {
-			country_event = {
-				id = btc_NED_mission.7
+			4383 = {
+				add_great_project = {
+					type = binnenhof
+					instant = yes
+				}
 			}
+			add_prestige = 25
 		}
 	}
 }
+
+### Holland Missions ###

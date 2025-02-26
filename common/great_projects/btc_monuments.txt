@@ -2123,11 +2123,8 @@ zwin = {
 		}
 		conditional_modifier = {
 			trigger = { 
-				custom_trigger_tooltip = {
-					tooltip = 
-					owner = {
-						has_country_flag = is_zwin
-					}
+				owner = {
+					has_country_flag = is_zwin
 				}
 			}
 			modifier = { 
@@ -2152,6 +2149,7 @@ reede_van_texel = {
 	starting_tier = 0
 	type = monument
 	build_trigger = {
+		has_country_flag = has_reede_van_texel
 	}
 	on_built = {
 		
@@ -2244,11 +2242,8 @@ reede_van_texel = {
 		}
 		conditional_modifier = {
 			trigger = { 
-				custom_trigger_tooltip = {
-					tooltip = 
-					owner = {
-						has_country_flag = is_reede_van_texel
-					}
+				owner = {
+					has_country_flag = is_reede_van_texel
 				}
 			}
 			modifier = { 
@@ -2363,11 +2358,8 @@ grand_place = {
 		}
 		conditional_modifier = {
 			trigger = { 
-				custom_trigger_tooltip = {
-					tooltip = 
-					owner = {
-						has_country_flag = is_grand_place
-					}
+				owner = {
+					has_country_flag = is_grand_place
 				}
 			}
 			modifier = { 
