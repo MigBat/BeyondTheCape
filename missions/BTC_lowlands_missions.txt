@@ -216,7 +216,7 @@ btc_monument_binnenhof = {
 			tag = NED
 		}
 	}
-	btc_ridderzaal = {
+	btc_binnenhof = {
 		icon = mission_binnenhof
 		position = 1
 		required_missions = {

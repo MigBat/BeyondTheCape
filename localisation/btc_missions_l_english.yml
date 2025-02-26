@@ -102,15 +102,14 @@
  gbr_seize_guinea_title:0 "Seize Guinea"
  gbr_seize_guinea_desc:0 "Other countries have already started looking for the sea route to India and we cannot lag behind. The first step is reaching the sourthern cape of Africa. To do so we need an African base of operations from which to launch our exploration fleets. The Guinean coast will do just fine."
 # Netherlands #
- discover_portugal_tt:0 "We will discover all provinces owned by §YPortugal§!."
- wic_claims_on_portugal:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YGuinea§! region owned by §YPortugal§!."
- voc_claims_on_portugal:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YEast Indies§! super region owned by §YPortugal§!."
- emp_ned_invest_in_the_rich_trade_title:1 "Invest in the Rich Trades"
- emp_ned_invest_in_the_rich_trade_desc:0 "There's richer commerce out there for us to become part of. The Portuguese are avid traders and explorers and they keep their secrets safe and hidden. Who knows what riches they know of? If we establish a commercial presence in their markets, our merchants will surely learn of new opportunities."
- btc_ned_mare_liberum_title:0 "Mare Liberum"
- btc_ned_mare_liberum_desc:0 "Grotius formulated the new principle that the sea was international territory and all nations were free to use it for seafaring trade. The disputation was directed towards the Portuguese Mare clausum policy and their claim of monopoly on the East Indian Trade."
- btc_ned_patroonschap_title:0 "The Patroonschap"
- btc_ned_patroonschap_desc:0 "Patroonschappen are entities with local government and land ownership, responsible to the director-general of the colony. Although they could intervene formally, in practice directors-general have little influence over the Patroonschap."
+ btc_reede_van_texel_title:0 "Reede van Texel"
+ btc_reede_van_texel_desc:0 "The Reede van Texel was a roadstead off the Dutch island of Texel. From the fifteenth to the beginning of the nineteenth century it was important for shipping from the entire Zuiderzee area. At the roadstead ships waited for a favourable wind to sail out, or they took on provisions and water. The roadstead also functioned as a transhipment point for ships that had too great a depth for the Zuiderzee when fully loaded. And later as the docking location of the Dutch fleet."
+ btc_zwin_title:0 "'T Zwin"
+ btc_zwin_desc:0 "The Zwin inlet was formed originally by a storm surge that broke through the Flemish coast in 1134, creating a tidal channel that reached fifteenth kilometers inland. The new waterway offered access to the sea to the inland city of Bruges, which consequently rose to become one of the formost medieval post cities of Europe."
+ btc_grand_place_title:0 "Grand Place"
+ btc_grand_place_desc:0 "The Grand Place is the central square of Bressels. It is surrounded by opulent guildhalls and two larger edifices; the city's town hall and the bread house. From the 14th century onwards would mark the rise in importance of local merchants and tradesmen relative to the nobility. As he was short on money, the Duke gradually transferred parts of his control rights over trade and mills to the local authorities, prompting them to build edifices worthy of their new status."
+ btc_binnenhof_title:0 "Binnenhof"
+ btc_binnenhof_desc:0 "The Binnenhof is a castle in the centre of The Hague. It hosts the States General and houses the rulers of $COUNTRY$."
 # Aragon #
 
  ara_win_war_tt:0 "If we §YEnforce Isabella's Claim§!, or the year is §Y1500§!, we will get the following rewards:"
