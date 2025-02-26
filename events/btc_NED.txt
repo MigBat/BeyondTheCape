@@ -1,0 +1,91 @@
+## Monuments ##
+
+# reede van texel #
+
+country_event = {
+	id = btc_NED_mission.1
+	title = btc_NED_mission.1.t
+	desc = btc_NED_mission.1.d
+	picture = great_building_picture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_reede_van_texel
+		}
+	}
+	
+	option = {
+		name = btc_NED_mission.3.1
+		add_prestige = 25
+		set_country_flag = is_reede_van_texel
+	}
+}
+
+country_event = {
+	id = btc_NED_mission.2
+	title = btc_NED_mission.2.t
+	desc = btc_NED_mission.2.d
+	picture = great_building_picture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_reede_van_texel
+		}
+	}
+	
+	option = {
+		name = btc_NED_mission.3.1
+		add_prestige = 25
+	}
+}
+
+# zwin #
+
+country_event = {
+	id = btc_NED_mission.3
+	title = btc_NED_mission.3.t
+	desc = btc_NED_mission.3.d
+	picture = great_building_picture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_zwin
+		}
+	}
+	
+	option = {
+		name = btc_NED_mission.3.1
+		add_prestige = 25
+		set_country_flag = is_zwin
+	}
+}
+
+country_event = {
+	id = btc_NED_mission.4
+	title = btc_NED_mission.4.t
+	desc = btc_NED_mission.4.d
+	picture = great_building_picture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_zwin
+		}
+	}
+	
+	option = {
+		name = btc_NED_mission.3.1
+		add_prestige = 25
+	}
+}

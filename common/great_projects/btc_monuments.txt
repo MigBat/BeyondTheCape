@@ -2017,3 +2017,365 @@ quivira = {
 		}
 	}
 }
+
+zwin = {
+	start = 90 #Brugge
+	date = 1444.01.01
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 2
+	type = monument
+	build_trigger = {
+	}
+	on_built = {	
+	}
+	on_destroyed = {	 
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = dutch
+			culture = flemish
+		}
+	}
+	can_upgrade_trigger = {
+		has_country_flag = has_zwin
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			province_trade_power_value = 15
+		}
+		area_modifier = {
+			trade_value = 0.5
+			trade_goods_size = 0.75
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			province_trade_power_value = 20
+		}
+		area_modifier = {
+			trade_value = 1
+			trade_goods_size = 1.5
+			local_ship_repair = 0.25
+			blockade_force_required = 1
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			province_trade_power_value = 25
+		}
+		area_modifier = {
+			trade_value = 2
+			trade_goods_size = 2
+			local_ship_repair = 0.5
+			blockade_force_required = 1
+			hostile_disembark_speed = 1.5
+		}
+		country_modifiers = {
+			production_efficiency = 0.10
+		}
+		conditional_modifier = {
+			trigger = { 
+				custom_trigger_tooltip = {
+					tooltip = 
+					owner = {
+						has_country_flag = is_zwin
+					}
+				}
+			}
+			modifier = { 
+				development_cost_modifier = -0.05
+				build_cost = -0.25
+				state_governing_cost = -0.1
+				global_ship_trade_power = 0.5
+			}
+		}
+		on_upgraded = {
+			change_trade_goods = silk
+		}
+	}
+}
+
+reede_van_texel = {
+	start = 4981 #west friesland
+	date = 1500.01.01
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		 
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = dutch
+			culture = flemish
+		}
+	}
+	can_upgrade_trigger = {
+		has_country_flag = has_reede_van_texel
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+			
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			
+		}
+		conditional_modifier = {
+			trigger = { 
+				custom_trigger_tooltip = {
+					tooltip = 
+					owner = {
+						has_country_flag = is_reede_van_texel
+					}
+				}
+			}
+			modifier = { 
+				
+			}
+		}
+		on_upgraded = {
+			
+		}
+	}
+}
+
+grand_place = {
+	start = 92 #Brabant
+	date = 1444.01.01
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		 
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = dutch
+			culture = flemish
+			culture = wallonian
+		}
+	}
+	can_upgrade_trigger = {
+		has_country_flag = has_grand_place
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+			
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			
+		}
+		conditional_modifier = {
+			trigger = { 
+				custom_trigger_tooltip = {
+					tooltip = 
+					owner = {
+						has_country_flag = is_grand_place
+					}
+				}
+			}
+			modifier = { 
+				
+			}
+		}
+		on_upgraded = {
+			
+		}
+	}
+}

@@ -1,0 +1,212 @@
+### Monument Missions ###
+btc_monument_texel = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential_on_load = {
+	}
+	
+	potential = {
+		OR = {
+			tag = HOL
+			tag = BNL
+			tag = NED
+		}
+	}
+	
+	btc_reede_van_texel = {
+		icon = 
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+		}
+		trigger = {
+			4981 = {
+				owned_by = ROOT
+				OR = {
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+			}
+			navy_size_percentage = 0.75
+			heavy_ship_fraction = 0.15
+		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						tag = HOL
+						was_tag = HOL
+					}
+				}
+				country_event = {
+					id = btc_NED_mission.1
+				}
+			}
+			else = {
+				country_event = {
+					id = btc_NED_mission.2
+				}
+			}
+		}
+	}
+}
+
+btc_monument_zwin = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential_on_load = {
+	}
+	
+	potential = {
+		OR = {
+			tag = FLA
+			tag = BNL
+			tag = NED
+		}
+	}
+	
+	btc_zwin = {
+		icon = 
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+		}
+		trigger = {
+			90 = {
+				owned_by = ROOT
+				num_of_times_improved_by_owner = 6
+				base_production = 8
+				is_prosperous = yes
+			}
+			production_income_percentage = 0.5
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = FLA
+					was_tag = FLA
+				}
+				country_event = {
+					id = btc_NED_mission.3
+				}
+			}
+			else = {
+				country_event = {
+					id = btc_NED_mission.4
+				}
+			}
+		}
+	}
+}
+
+btc_monument_grand_place = {
+	slot = 4
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	
+	potential_on_load = {
+	}
+	
+	potential = {
+		OR = {
+			tag = BRB
+			tag = BNL
+			tag = NED
+		}
+	}
+	
+	btc_grand_place = {
+		icon = 
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+		}
+		trigger = {
+			92 = {
+				owned_by = ROOT
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+			}
+			diplomatic_reputation = 3
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = BRB
+					was_tag = BRB
+				}
+				country_event = {
+					btc_NED_mission.5
+				}
+			}
+			else = {
+				country_event = {
+					btc_NED_mission.6
+				}
+			}
+		}
+	}
+}
+
+btc_monument_binnenhof = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential_on_load = {
+	}
+	
+	potential = {
+		OR = {
+			tag = BNL
+			tag = NED
+		}
+	}
+	btc_ridderzaal = {
+		icon = 
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+		}
+		trigger = {
+			4383 = {
+				owned_by = ROOT
+				has_building = town_hall
+				higher_development_than = 97
+				higher_development_than = 1744
+				higher_development_than = 236
+				higher_development_than = 134
+				higher_development_than = 183
+			}
+			#Add in dip req 
+		}
+		effect = {
+			country_event = {
+				id = btc_NED_mission.7
+			}
+		}
+	}
+}
