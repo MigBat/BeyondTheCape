@@ -22,6 +22,7 @@ btc_monument_texel = {
 		required_missions = {
 		}
 		provinces_highlight = {
+			province_id = 4981
 		}
 		trigger = {
 			4981 = {
@@ -95,6 +96,7 @@ btc_monument_zwin = {
 		required_missions = {
 		}
 		provinces_highlight = {
+			province_id = 90
 		}
 		trigger = {
 			90 = {
@@ -141,6 +143,7 @@ btc_monument_grand_place = {
 	has_country_shield = yes
 	
 	potential_on_load = {
+
 	}
 	
 	potential = {
@@ -157,6 +160,7 @@ btc_monument_grand_place = {
 		required_missions = {
 		}
 		provinces_highlight = {
+			province_id = 92
 		}
 		trigger = {
 			92 = {
@@ -222,6 +226,7 @@ btc_monument_binnenhof = {
 		required_missions = {
 		}
 		provinces_highlight = {
+			province_id = 4383
 		}
 		trigger = {
 			4383 = {
