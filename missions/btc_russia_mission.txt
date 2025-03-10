@@ -1,0 +1,2541 @@
+### Muscovy missions ###
+
+btc_boyars_and_nobility = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_boyars_and_nobility = {
+		icon = mission_boyars_and_nobility
+		required_missions = { }
+		position = 1		
+		trigger = {
+			estate_loyalty = {
+    			estate = estate_nobles
+    			loyalty = 50
+			}
+		has_country_flag = succession_crisis_settled_flag
+		}	
+		effect = {
+		custom_tooltip = btc_boyars_and_nobility_tt
+		}
+	}
+}
+
+btc_settle_the_succession_crisis = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+    
+    btc_settle_the_succession_crisis = {
+		icon = mission_settle_the_succession_crisis
+		required_missions = { }
+		position = 1 		
+		trigger = {
+		has_country_flag = succession_crisis_settled_flag
+		}
+		effect = {	
+		novgorod_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+				}
+			add_russian_claim = yes
+		}		
+		beloozero_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+			add_russian_claim = yes
+		}
+		pomor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+			add_russian_claim = yes
+		}
+		north_karelia = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+			add_russian_claim = yes
+		}
+		arkhangelsk_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+			add_russian_claim = yes
+		}
+		if = {
+				limit = {
+					4148 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				4148 = {
+					add_permanent_claim = ROOT
+				}
+		}
+		if = {
+				limit = {
+					1777 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				1777 = {
+					add_permanent_claim = ROOT
+				}
+		}
+		if = {
+				limit = {
+					33 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				33 = {
+					add_permanent_claim = ROOT
+				}
+		}
+		if = {
+				limit = {
+					34 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				34 = {
+					add_permanent_claim = ROOT
+				}
+		}
+		if = {
+				limit = {
+					1961 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				1961 = {
+					add_permanent_claim = ROOT
+				}
+		}
+		}
+	}
+}
+
+btc_consolidate_russian_principalities = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+    
+    btc_consolidate_russian_principalities = {
+		icon = mission_consolidate_russian_principalities
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 294
+				province_id = 308
+				province_id = 300
+				province_id = 1778
+				province_id = 4147
+				province_id = 312
+				province_id = 301
+				province_id = 4116
+				province_id = 274
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 		
+		trigger = {
+        # integrate minors
+			294 = {
+				owned_by = ROOT
+			}
+
+		    308 = {
+				owned_by = ROOT
+			}
+
+			300 = {
+				owned_by = ROOT
+			}
+
+			1778 = {
+				owned_by = ROOT
+			}
+
+			4147 = {
+				owned_by = ROOT
+			}
+
+			312 = {
+				owned_by = ROOT
+			}
+
+			301 = {
+				owned_by = ROOT
+			}
+
+			4116 = {
+				owned_by = ROOT
+			}
+
+			274 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {	
+        # dip rep/integration speed to annex remaining vassals
+
+			add_country_modifier = {
+				name = "russian_integration"
+				duration = 5475
+			}
+
+			# development boosts from old russian missions
+			294 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+
+			308 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+
+			300 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+
+			1778 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+}
+
+btc_break_the_tatar_yoke = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_break_the_tatar_yoke = {
+		icon = mission_break_the_tatar_yoke
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 466
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }	
+		}	
+		trigger = {
+		OR = {
+				AND = {
+					NOT = { has_country_modifier = the_tatar_yoke }
+					owns_or_non_sovereign_subject_of = 466
+				}
+				AND = {
+					controls = 466
+					466 = {
+						owner = {
+							NOT = {
+								war_score_against = {
+									who = ROOT
+									value = -50
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = the_tatar_yoke
+				}
+				country_event = {
+					id = flavor_mos.11
+				}
+			}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 50
+			}
+			add_adm_power = 50
+			add_mil_power = 50
+		}
+	}	
+}
+
+btc_secure_novgorod = {
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_secure_novgorod = {
+		icon = mission_secure_novgorod
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = novgorod_area
+				area = beloozero_area
+				area = pomor_area
+				area = north_karelia
+				area = arkhangelsk_area
+				province_id = 4148
+				province_id = 1777
+				province_id = 33
+				province_id = 34
+				province_id = 1961
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}		
+		trigger = {
+		has_country_flag = succession_crisis_settled_flag
+
+		owns = 310
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = novgorod_area
+					area = beloozero_area
+					area = pomor_area
+					area = north_karelia
+					area = arkhangelsk_area
+					province_id = 4148
+					province_id = 1777
+					province_id = 33
+					province_id = 34
+					province_id = 1961
+				}
+				value = 15
+			}
+		}	
+		effect = {
+		add_accepted_culture = novgorodian
+		country_event = {
+		id = flavor_rus.101
+		}
+		russia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		estonia_ingria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+		livonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+		curonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_russian_claim = yes
+			}
+		310 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+				name = rus_developed_trade_post_novgorod
+				duration = -1
+				}
+			}
+		}
+	}
+}
+
+### Early Tsardom missions ###
+
+btc_unify_russian_tsardom = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_unify_russian_tsardom = {
+		icon = mission_unify_russian_tsardom
+		required_missions = { 
+			btc_secure_novgorod
+			btc_break_the_tatar_yoke
+			btc_consolidate_russian_principalities
+			btc_settle_the_succession_crisis
+		 }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				OR = {
+				province_id = 295
+				province_id = 310
+				}
+				OR = {
+				province_id = 394
+				province_id = 308
+				}
+				OR = {
+				province_id = 301
+				province_id = 293
+				}
+				OR = {
+				province_id = 306
+				province_id = 307
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 		
+		trigger = {
+			is_year = 1500
+			NOT = { exists = RUS }
+			development_in_provinces = {
+					value = 500
+				}
+			OR = {
+				legitimacy = 90
+				ruler_total_stats = {
+					amount = 12
+				}
+			}
+
+			owns_core_province = 295			# Moskva
+			owns_core_province = 310			# Novgorod
+			OR = {
+				owns_core_province = 294		# Tver
+				owns_core_province = 308		# Yaroslavl	
+			}
+			OR = {
+				owns_core_province = 301		# Ryazan
+				owns_core_province = 293		# Smolensk
+			}
+			OR = {
+				owns_core_province = 306		# Nijni-Novgorod
+				owns_core_province = 307		# Vladimir	
+			}
+		}	
+		effect = {
+			change_tag = RUS
+			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
+			if = {
+						limit = { NOT = { government = monarchy } }
+						change_government = monarchy
+					}
+				add_government_reform = tsardom
+
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_russia_flag
+			add_prestige = 25
+		}
+	}
+}
+
+btc_ratify_sudebnik = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_ratify_sudebnik = {
+		icon = mission_ratify_sudebnik
+		required_missions = { 
+			btc_boyars_and_nobility
+			btc_unify_russian_tsardom
+		 }
+		position = 4		
+		trigger = {
+			stability = 1
+			overextension_percentage = 0
+			monthly_adm = 10
+			num_of_estate_agendas_completed = {
+				estate = estate_nobles 
+				value = 1 
+			}
+		}	
+		effect = {
+			# to be decided
+		}
+	}
+}
+
+btc_address_the_serfdom = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_address_the_serfdom = {
+		icon = mission_address_the_serfdom
+		required_missions = { 
+			btc_boyars_and_nobility
+			btc_unify_russian_tsardom
+		 }
+		position = 4		
+		trigger = {
+			core_percentage = 1
+			OR = { 
+				has_estate_privilege = estate_nobles_early_serfdom
+				has_estate_privilege = estate_nobles_increased_peasant_freedom
+			}
+			num_of_estate_agendas_completed = {
+				estate = estate_burghers
+				value = 1 
+			}
+		}	
+		effect = {
+			custom_tooltip = " "
+			enable_branching_mission_review = {
+				key = MOS
+			}
+			custom_tooltip = " "
+			add_country_modifier = {
+					name = choosing_economic_development_type
+					duration = 9125
+				}
+			if = {
+    			limit = {
+        		has_estate_privilege = estate_nobles_early_serfdom
+    			}
+   			 	set_country_flag = extensive_economic_development
+			}
+			
+			if = {
+    			limit = {
+        		has_estate_privilege = estate_nobles_increased_peasant_freedom
+    			}
+   			 	set_country_flag = intensive_economic_development
+			}
+		}
+	}
+}
+
+btc_assemble_streltsy = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_assemble_streltsy = {
+		icon = mission_assemble_streltsy
+		required_missions = { 
+			btc_unify_russian_tsardom
+		 }
+		position = 4		
+		trigger = {
+			army_size_percentage = 0.8
+			army_tradition = 30
+			employed_advisor = {
+				category = MIL
+			}
+		}	
+		effect = {
+			country_event_with_insight = {
+				id = flavor_rus.130
+				insight_tooltip = rus_the_streltsy_at
+			}
+		}
+	}
+}
+
+btc_mestnichestvo_question = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+ 	btc_mestnichestvo_question = {
+		icon = mission_mestnichestvo_question
+		required_missions = { 
+			btc_ratify_sudebnik
+			btc_address_the_serfdom
+		 }
+		position = 5		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+			NOT = { 
+				estate_influence = {
+					estate = estate_nobles
+					influence = 70
+				}
+				estate_territory = {
+					estate = estate_nobles
+					territory = 50
+				}
+			}
+		}	
+		effect = {
+			# add the effect regarding Mestnichestvo privilege
+			}
+	}
+}
+
+btc_instate_oprichnina = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_instate_oprichnina = {
+		icon = mission_instate_oprichnina
+		required_missions = { 
+			btc_mestnichestvo_question
+		 }
+		position = 6		
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_establish_administrative_system = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_establish_administrative_system = {
+		icon = mission_establish_administrative_system
+		required_missions = { 
+			btc_ratify_sudebnik
+			btc_address_the_serfdom
+		 }
+		position = 5		
+		trigger = {
+			average_autonomy_above_min = 33
+			OR = { 
+				crown_land_share = 25 
+				adm = 4
+			}
+			courthouse = 15
+			employed_advisor = {
+				category = ADM
+			}
+		}	
+		effect = {
+			change_estate_land_share = {
+   				estate = all
+    			share = -5
+			}
+				country_event = {
+					id = flavor_rus.124
+				}
+		}
+	}
+}
+
+btc_create_zemsky_sobor = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_create_zemsky_sobor = {
+		icon = mission_create_zemsky_sobor
+		required_missions = { 
+			btc_establish_administrative_system
+		 }
+		position = 6		
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+### Late Tsardom missions ###
+
+btc_weather_the_troubles = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_weather_the_troubles = {
+		icon = mission_weather_the_troubles
+		required_missions = { 
+		}
+		position = 7		
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_the_future_of_tsardom = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_the_future_of_tsardom = {
+		icon = mission_the_future_of_tsardom
+		required_missions = { 
+			btc_weather_the_troubles
+			btc_create_zemsky_sobor
+			btc_instate_oprichnina
+			btc_support_regional_specialization
+
+		}
+		position = 8		
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_revitalize_russian_economy = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_revitalize_russian_economy = {
+		icon = mission_revitalize_russian_economy
+		required_missions = { 
+			btc_weather_the_troubles
+		}
+		position = 8		
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_abolish_mestnichestvo = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_abolish_mestnichestvo = {
+		icon = mission_abolish_mestnichestvo
+		required_missions = { 
+			btc_the_future_of_tsardom
+			btc_revitalize_russian_economy
+		}
+		position = 9	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_establish_new_order_regiments = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_establish_new_order_regiments = {
+		icon = mission_establish_new_order_regiments
+		required_missions = { 
+			btc_the_future_of_tsardom
+		}
+		position = 9	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_sobornoye_ulozheniye = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_sobornoye_ulozheniye = {
+		icon = mission_sobornoye_ulozheniye
+		required_missions = { 
+			btc_the_future_of_tsardom
+			btc_grain_supplies_to_the_frontier
+		}
+		position = 9	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_fate_of_zemsky_sobor = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_fate_of_zemsky_sobor = {
+		icon = mission_fate_of_zemsky_sobor
+		required_missions = { 
+			btc_abolish_mestnichestvo
+		}
+		position = 10	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_the_great_embassy_results = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_the_great_embassy_results = {
+		icon = mission_the_great_embassy_results
+		required_missions = { 
+			btc_fate_of_zemsky_sobor
+		}
+		position = 11	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_westenrize_the_court = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_westenrize_the_court = {
+		icon = mission_westenrize_the_court
+		required_missions = { 
+			btc_the_great_embassy_results
+		}
+		position = 12	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_form_the_senate_and_synod = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_form_the_senate_and_synod = {
+		icon = mission_form_the_senate_and_synod
+		required_missions = { 
+			btc_westenrize_the_court
+		}
+		position = 13	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_army_and_navy_reform = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_army_and_navy_reform = {
+		icon = mission_army_and_navy_reform
+		required_missions = { 
+			btc_the_great_embassy_results
+			btc_establish_new_order_regiments
+		}
+		position = 12	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_table_of_ranks = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_table_of_ranks = {
+		icon = mission_table_of_ranks
+		required_missions = { 
+			btc_army_and_navy_reform
+		}
+		position = 13	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_fate_of_the_peasantry = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_fate_of_the_peasantry = {
+		icon = mission_fate_of_the_peasantry
+		required_missions = { 
+			btc_the_great_embassy_results
+			btc_sobornoye_ulozheniye
+		}
+		position = 12
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+### Early Imperial missions ###
+
+btc_imperial_ambitions = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_imperial_ambitions = {
+		icon = mission_imperial_ambitions
+		required_missions = { 
+			btc_table_of_ranks
+			btc_form_the_senate_and_synod
+			btc_fate_of_the_peasantry
+		}
+		position = 14	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_settle_the_battle_of_palaces = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_settle_the_battle_of_palaces = {
+		icon = mission_settle_the_battle_of_palaces
+		required_missions = { 
+		}
+		position = 14	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_found_st_petersburg = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_found_st_petersburg = {
+		icon = mission_found_st_petersburg
+		required_missions = { 
+			btc_imperial_ambitions
+		}
+		position = 15	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_provincial_reform = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_provincial_reform = {
+		icon = mission_provincial_reform
+		required_missions = { 
+			btc_found_st_petersburg
+		}
+		position = 16	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_create_military_schools = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_create_military_schools = {
+		icon = mission_create_military_schools
+		required_missions = { 
+			btc_imperial_ambitions
+		}
+		position = 15	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_education_reforms = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_education_reforms = {
+		icon = mission_education_reforms
+		required_missions = { 
+			btc_imperial_ambitions
+			btc_found_state_manufactories
+		}
+		position = 15	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_establish_the_baltic_fleet = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_establish_the_baltic_fleet = {
+		icon = mission_establish_the_baltic_fleet
+		required_missions = { 
+			btc_found_st_petersburg
+			btc_create_military_schools
+		}
+		position = 16	
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+### Late Imperial missions ###
+
+btc_an_enlightened_absolutism = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_an_enlightened_absolutism = {
+		icon = mission_an_enlightened_absolutism
+		required_missions = { 
+			btc_provincial_reform
+			btc_establish_the_baltic_fleet
+			btc_olonets_artillery_plant
+		}
+		position = 17
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_fight_back_the_revolution = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_fight_back_the_revolution = {
+		icon = mission_fight_back_the_revolution
+		required_missions = { }
+		position = 17
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_crack_down_on_the_revolutionaries = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_crack_down_on_the_revolutionaries = {
+		icon = mission_crack_down_on_the_revolutionaries
+		required_missions = { 
+			btc_an_enlightened_absolutism
+			btc_fight_back_the_revolution
+		}
+		position = 18
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_loyalist_volunteer_corps = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_loyalist_volunteer_corps = {
+		icon = mission_loyalist_volunteer_corps
+		required_missions = { 
+			btc_an_enlightened_absolutism
+			btc_fight_back_the_revolution
+		}
+		position = 18
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_discredit_the_revolution = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_discredit_the_revolution = {
+		icon = mission_discredit_the_revolution
+		required_missions = { 
+			btc_discredit_the_revolution
+			btc_loyalist_volunteer_corps
+		}
+		position = 19
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_i_am_the_state = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_i_am_the_state = {
+		icon = mission_i_am_the_state
+		required_missions = { 
+			btc_discredit_the_revolution
+		}
+		position = 20
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_join_anti-revolutionary_coalition = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_join_anti-revolutionary_coalition = {
+		icon = mission_join_anti-revolutionary_coalition
+		required_missions = { 
+			btc_loyalist_volunteer_corps
+		}
+		position = 19
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+
+btc_policeman_of_europe = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_policeman_of_europe = {
+		icon = mission_policeman_of_europe
+		required_missions = { 
+			btc_join_anti-revolutionary_coalition
+			btc_discredit_the_revolution
+		}
+		position = 20
+		trigger = {
+		# to be decided
+		}	
+		effect = {
+		# to be decided
+		}
+	}
+}
+### Economy missions ###
+
+btc_develop_agriculture = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_develop_agriculture = { 
+		icon = mission_develop_agriculture
+		required_missions = { 
+			btc_address_the_serfdom 
+		}
+		position = 5
+		trigger = { 
+			# to be decided
+			}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_formalize_vodka_monopoly = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_formalize_vodka_monopoly = { 
+		icon = mission_formalize_vodka_monopoly
+		required_missions = { 
+			btc_develop_agriculture
+		}
+		position = 6
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_support_regional_specialization = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_support_regional_specialization = { 
+		icon = mission_formalize_vodka_monopoly
+		required_missions = {
+			btc_formalize_vodka_monopoly
+		}
+		position = 7
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_grain_supplies_to_the_frontier = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_grain_supplies_to_the_frontier = { 
+		icon = mission_grain_supplies_to_the_frontier
+		required_missions = {
+			btc_support_regional_specialization 
+		}
+		position = 8
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_found_state_manufactories = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_found_state_manufactories = { 
+		icon = mission_found_state_manufactories
+		required_missions = { 
+			btc_fate_of_the_peasantry
+			btc_incorporate_siberian_lands
+		}
+		position = 14
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_tula_arms_manufactories  = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_tula_arms_manufactories = { 
+		icon = mission_tula_arms_manufactories
+		required_missions = { 
+			btc_found_state_manufactories
+			btc_imperial_ambitions
+		}
+		position = 16
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_olonets_artillery_plant = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_olonets_artillery_plant = { 
+		icon = mission_olonets_artillery_plant
+		required_missions = { 
+			btc_create_military_schools
+			btc_education_reforms
+			btc_tula_arms_manufactories
+		}
+		position = 17
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+### Siberian missions ###
+
+btc_secure_our_eastern_borders = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+	btc_secure_our_eastern_borders = { 
+		icon = mission_secure_our_eastern_borders
+		required_missions = {	
+		}
+		position = 3
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_control_astrakhani_trade = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_control_astrakhani_trade = { 
+		icon = mission_control_astrakhani_trade
+		required_missions = { }
+		position = 3
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_expand_into_central_asia = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_expand_into_central_asia = { 
+		icon = mission_expand_into_central_asia
+		required_missions = {
+			btc_control_astrakhani_trade
+			btc_secure_our_eastern_borders
+		}
+		position = 4
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_aftermath_of_ermaks_expedition = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_aftermath_of_ermaks_expedition = { 
+		icon = mission_aftermath_of_ermaks_expedition
+		required_missions = {
+			btc_secure_our_eastern_borders
+		}
+		position = 4
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_beyond_the_urals = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_beyond_the_urals = { 
+		icon = mission_beyond_the_urals
+		required_missions = {
+			btc_aftermath_of_ermaks_expedition
+		}
+		position = 5
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_settle_ob_river = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_settle_ob_river = { 
+		icon = mission_settle_ob_river
+		required_missions = {
+			btc_beyond_the_urals
+		}
+		position = 6
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_establish_ostrogs = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_establish_ostrogs = { 
+		icon = mission_establish_ostrogs
+		required_missions = {
+			btc_beyond_the_urals
+			btc_develop_agriculture
+		}
+		position = 6
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_riches_of_siberia = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_riches_of_siberia = { 
+		icon = mission_riches_of_siberia
+		required_missions = {
+			btc_establish_ostrogs
+			btc_formalize_vodka_monopoly
+		}
+		position = 7
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_reach_baikal = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_reach_baikal = { 
+		icon = mission_reach_baikal
+		required_missions = {
+			btc_settle_ob_river
+		}
+		position = 7
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_the_uncharted_far_east = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_the_uncharted_far_east = { 
+		icon = mission_the_uncharted_far_east
+		required_missions = {
+			btc_reach_baikal
+		}
+		position = 8
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_incorporate_siberian_lands = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_incorporate_siberian_lands = { 
+		icon = mission_incorporate_siberian_lands
+		required_missions = {
+			btc_riches_of_siberia
+			btc_reach_baikal
+		}
+		position = 8
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_ventures_to_the_americas = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_ventures_to_the_americas = { 
+		icon = mission_ventures_to_the_americas
+		required_missions = {
+			btc_the_uncharted_far_east
+		}
+		position = 8
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_establish_eastern_trade_centres = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_establish_eastern_trade_centres = { 
+		icon = mission_establish_eastern_trade_centres
+		required_missions = {
+			btc_the_uncharted_far_east
+			btc_incorporate_siberian_lands
+		}
+		position = 8
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_import_chinese_goods = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_import_chinese_goods = { 
+		icon = mission_import_chinese_goods
+		required_missions = {
+			btc_establish_eastern_trade_centres
+		}
+		position = 9
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_settle_alaska_and_california = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_settle_alaska_and_california = { 
+		icon = mission_settle_alaska_and_california
+		required_missions = {
+			btc_ventures_to_the_americas
+		}
+		position = 9
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_russo_american_company = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_russo_american_company = { 
+		icon = mission_russo_american_company
+		required_missions = {
+			btc_settle_alaska_and_california
+			btc_import_chinese_goods
+		}
+		position = 10
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_subsidize_american_trade = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_subsidize_american_trade = { 
+		icon = mission_subsidize_american_trade
+		required_missions = {
+			btc_russo_american_company
+		}
+		position = 11
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_project_zheltorossiya = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_project_zheltorossiya = { 
+		icon = mission_project_zheltorossiya
+		required_missions = {
+			btc_settle_alaska_and_california
+		}
+		position = 9
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
+
+btc_east_indies_presence = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+	btc_east_indies_presence = { 
+		icon = mission_east_indies_presence
+		required_missions = {
+			btc_project_zheltorossiya
+		}
+		position = 10
+		trigger = { 
+			# to be decided
+		}
+		effect = { 
+			# to be decided
+		}
+	}	
+}
