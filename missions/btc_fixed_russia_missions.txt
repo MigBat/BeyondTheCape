@@ -1,0 +1,789 @@
+### SLOT 1 ###
+
+btc_russia11 = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia111 = {
+		icon =
+		required_missions = {}
+		position = 1		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia112 = {
+		icon =
+		required_missions = {}
+		position = 3		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia113 = {
+		icon =
+		required_missions = {}
+		position = 4		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia114 = {
+		icon =
+		required_missions = {}
+		position = 5		
+		trigger = {}	
+		effect = {}
+	}
+}
+
+btc_russia12 = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia121 = {
+		icon =
+		required_missions = {}
+		position = 6		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia122 = {
+		icon =
+		required_missions = {}
+		position = 7		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia123 = {
+		icon =
+		required_missions = {}
+		position = 8		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia124 = {
+		icon =
+		required_missions = {}
+		position = 9		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia125 = {
+		icon =
+		required_missions = {}
+		position = 10		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia126 = {
+		icon =
+		required_missions = {}
+		position = 11		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia127 = {
+		icon =
+		required_missions = {}
+		position = 12		
+		trigger = {}	
+		effect = {}
+	}
+}
+
+btc_russia13 = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia131 = {
+		icon =
+		required_missions = {}
+		position = 14	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia132 = {
+		icon =
+		required_missions = {}
+		position = 15		
+		trigger = {}	
+		effect = {}
+	}
+}
+
+btc_russia14 = {
+	slot = 1
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia141 = {
+		icon =
+		required_missions = {}
+		position = 16	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia142 = {
+		icon =
+		required_missions = {}
+		position = 17		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia143 = {
+		icon =
+		required_missions = {}
+		position = 18	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia144 = {
+		icon =
+		required_missions = {}
+		position = 19		
+		trigger = {}	
+		effect = {}
+	}
+}
+
+### SLOT 2 ###
+
+btc_russia21 = {
+	slot = 2
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia211 = {
+		icon =
+		required_missions = {}
+		position = 1		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia212 = {
+		icon =
+		required_missions = {}
+		position = 2		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia213 = {
+		icon =
+		required_missions = {}
+		position = 3		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia214 = {
+		icon =
+		required_missions = {}
+		position = 4
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia215 = {
+		icon =
+		required_missions = {}
+		position = 5		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia216 = {
+		icon =
+		required_missions = {}
+		position = 7	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia217 = {
+		icon =
+		required_missions = {}
+		position = 8	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia218 = {
+		icon =
+		required_missions = {}
+		position = 11		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia219 = {
+		icon =
+		required_missions = {}
+		position = 12		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia2110 = {
+		icon =
+		required_missions = {}
+		position = 13		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia2111 = {
+		icon =
+		required_missions = {}
+		position = 14		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia2112 = {
+		icon =
+		required_missions = {}
+		position = 15		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia2113 = {
+		icon =
+		required_missions = {}
+		position = 16		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia2114 = {
+		icon =
+		required_missions = {}
+		position = 17		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia2115 = {
+		icon =
+		required_missions = {}
+		position = 18		
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia2116 = {
+		icon =
+		required_missions = {}
+		position = 19		
+		trigger = {}	
+		effect = {}
+	}
+}
+
+### SLOT 3 ###
+
+btc_russia31 = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia311 = {
+		icon =
+		required_missions = {}
+		position = 1		
+		trigger = {}	
+		effect = {}
+	}
+}
+
+btc_russia32 = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia321 = {
+		icon =
+		required_missions = {}
+		position = 3	
+		trigger = {}	
+		effect = {}
+	}
+}
+
+btc_russia33 = {
+	slot = 3
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia331 = {
+		icon =
+		required_missions = {}
+		position = 4	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia332 = {
+		icon =
+		required_missions = {}
+		position = 5	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia333 = {
+		icon =
+		required_missions = {}
+		position = 6	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia334 = {
+		icon =
+		required_missions = {}
+		position = 7	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia335 = {
+		icon =
+		required_missions = {}
+		position = 8	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia336 = {
+		icon =
+		required_missions = {}
+		position = 11	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia337 = {
+		icon =
+		required_missions = {}
+		position = 12	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia338 = {
+		icon =
+		required_missions = {}
+		position = 14	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia339 = {
+		icon =
+		required_missions = {}
+		position = 15	
+		trigger = {}	
+		effect = {}
+	}
+}
+
+### SLOT 4 ###
+
+btc_russia41 = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia411 = {
+		icon =
+		required_missions = {}
+		position = 1
+		trigger = {}	
+		effect = {}
+	}
+}
+
+btc_russia42 = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia421 = {
+		icon =
+		required_missions = {}
+		position = 2	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia422 = {
+		icon =
+		required_missions = {}
+		position = 3	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia423 = {
+		icon =
+		required_missions = {}
+		position = 4	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia424 = {
+		icon =
+		required_missions = {}
+		position = 5	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia425 = {
+		icon =
+		required_missions = {}
+		position = 6	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia426 = {
+		icon =
+		required_missions = {}
+		position = 7	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia427 = {
+		icon =
+		required_missions = {}
+		position = 8	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia428 = {
+		icon =
+		required_missions = {}
+		position = 9	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia429 = {
+		icon =
+		required_missions = {}
+		position = 10	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia4210 = {
+		icon =
+		required_missions = {}
+		position = 11	
+		trigger = {}	
+		effect = {}
+	}
+}
+
+btc_russia43 = {
+	slot = 4
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia431 = {
+		icon =
+		required_missions = {}
+		position = 14
+		trigger = {}	
+		effect = {}
+	}
+}
+
+### SLOT 5 ###
+
+btc_russia51 = {
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia511 = {
+		icon =
+		required_missions = {}
+		position = 1	
+		trigger = {}	
+		effect = {}
+	}
+}
+
+btc_russia52 = {
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia521 = {
+		icon =
+		required_missions = {}
+		position = 2	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia522 = {
+		icon =
+		required_missions = {}
+		position = 3	
+		trigger = {}	
+		effect = {}
+	}
+}
+
+btc_russia53 = {
+	slot = 5
+	generic = no
+	ai = yes	
+	potential_on_load = {
+	}
+    potential = {
+		OR = {
+			tag = MOS
+			AND = {
+				was_tag = MOS
+				tag = RUS
+			}
+		}
+    }
+    has_country_shield = yes
+
+    btc_russia531 = {
+		icon =
+		required_missions = {}
+		position = 5	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia532 = {
+		icon =
+		required_missions = {}
+		position = 6	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia533 = {
+		icon =
+		required_missions = {}
+		position = 7	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia534 = {
+		icon =
+		required_missions = {}
+		position = 8	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia535 = {
+		icon =
+		required_missions = {}
+		position = 9	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia536 = {
+		icon =
+		required_missions = {}
+		position = 10	
+		trigger = {}	
+		effect = {}
+	}
+
+    btc_russia537 = {
+		icon =
+		required_missions = {}
+		position = 11	
+		trigger = {}	
+		effect = {}
+	}
+}
