@@ -1,0 +1,60 @@
+country_event = {
+    id = BTC_NED_navy.1
+    title = BTC_NED_navy.1.t
+    desc = BTC_NED_navy.1.d
+    picture = 
+    fire_only_once = yes
+    hidden = yes
+    is_triggered_only = yes
+    option = {
+        name = BTC_NED_navy.1a
+        4981 = {
+            add_unit_construction = {
+			    amount = 5
+			    type = heavy_ship
+			    speed = 0.25
+			    cost = 0
+			}
+        }
+    }
+}
+
+country_event = {
+    id = BTC_texel_of_war
+    title = BTC_texel_of_war.t
+    desc = BTC_texel_of_war.d
+    picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = BTC_texel_of_war.a
+        trigger = {
+            OR = {
+                alliance_with = ENG
+                alliance_with = GBR
+                overlord_of = ENG
+                overlord_of = GBR
+            }
+        }
+        4981 = {
+            add_province_modifier = {
+                name = ned_man_o_war_modifier
+                 duration = -1
+            }
+        }
+    }
+    option = {
+        name = BTC_texel_of_war.b
+        trigger = {
+            NOT = {
+                OR = {
+                    alliance_with = ENG
+                    alliance_with = GBR
+                    overlord_of = ENG
+                    overlord_of = GBR
+                }
+            }
+        }
+        prestige = 25
+    }
+}

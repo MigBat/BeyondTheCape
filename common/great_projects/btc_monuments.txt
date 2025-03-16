@@ -2122,9 +2122,12 @@ zwin = {
 			production_efficiency = 0.10
 		}
 		conditional_modifier = {
-			trigger = { 
-				owner = {
-					has_country_flag = is_zwin
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = BTC_NED_zwin_mission
+					owner = {
+						has_country_flag = is_zwin
+					}
 				}
 			}
 			modifier = { 
@@ -2194,10 +2197,12 @@ reede_van_texel = {
 			factor = 1000
 		}
 		province_modifiers = {
-			
+			local_ship_repair = 0.25
+			ship_recruit_speed = -0.25
+			local_sailors_modifier = 0.5
 		}
 		area_modifier = {
-			
+			block_slave_raid = yes
 		}
 		country_modifiers = {
 		}
@@ -2212,16 +2217,22 @@ reede_van_texel = {
 			factor = 2500
 		}
 		province_modifiers = {
-			
+			local_own_coast_naval_combat_bonus = 1
+			hostile_fleet_attrition = 2
+			hostile_disembark_speed = 0.25
 		}
 		area_modifier = {
-			
+			local_ship_repair = 0.25
+			ship_recruit_speed = -0.25
+			local_sailors_modifier = 0.5
 		}
 		country_modifiers = {
-			
+			block_slave_raid = yes
 		}
 		on_upgraded = {
-			
+			country_event = {
+				id = BTC_NED_navy.1
+			}
 		}
 	}
 	tier_3 = {
@@ -2232,26 +2243,44 @@ reede_van_texel = {
 			factor = 5000
 		}
 		province_modifiers = {
-			
+			local_own_coast_naval_combat_bonus = 1
+			hostile_fleet_attrition = 5
+			hostile_disembark_speed = 0.5
 		}
 		area_modifier = {
-			
+			local_ship_repair = 0.5
+			ship_recruit_speed = -0.5
+			local_sailors_modifier = 0.75
 		}
 		country_modifiers = {
-			
+			block_slave_raid = yes
+			max_flagships = 1
 		}
 		conditional_modifier = {
-			trigger = { 
-				owner = {
-					has_country_flag = is_reede_van_texel
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = BTC_NED_reede_van_texel_mission
+					owner = {
+						has_country_flag = is_reede_van_texel
+					}
 				}
 			}
 			modifier = { 
-				
+				4981 = {
+					fort_level = 1
+					local_defensiveness = 0.25
+					local_garrison_size = 1
+					local_assault_fort_ability = -0.75
+				}
+				heavy_ship_power = 0.25
+				naval_forcelimit_modifier = 0.25
 			}
 		}
 		on_upgraded = {
-			
+			country_event = {
+				id = BTC_texel_of_war
+				tooltip = BTC_texel_of_war.tt
+			}
 		}
 	}
 }
@@ -2357,9 +2386,12 @@ grand_place = {
 			
 		}
 		conditional_modifier = {
-			trigger = { 
-				owner = {
-					has_country_flag = is_grand_place
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = BTC_NED_grand_place_mission
+					owner = {
+						has_country_flag = is_grand_place
+					}
 				}
 			}
 			modifier = { 
