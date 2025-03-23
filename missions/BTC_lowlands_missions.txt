@@ -51,22 +51,18 @@ btc_monument_texel = {
 					set_country_flag = has_reede_van_texel
 					set_country_flag = is_reede_van_texel
 				}
-				4981 = {
-					add_great_project = {
-						type = reede_van_texel
-						instant = yes
-					}
+				country_event = {
+					id = BTC_NED_mission_event.1
+					tooltip = BTC_NED_mission_event.1.tt
 				}
 			}
 			else = {
 				hidden_effect ={
 					set_country_flag = has_reede_van_texel
 				}
-				4981 = {
-					add_great_project = {
-						type = reede_van_texel
-						instant = yes
-					}
+				country_event = {
+					id = BTC_NED_mission_event.1
+					tooltip = BTC_NED_mission_event.1.tt
 				}
 			}
 		}
@@ -206,7 +202,7 @@ btc_monument_grand_place = {
 }
 
 btc_monument_binnenhof = {
-	slot = 5
+	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -242,14 +238,18 @@ btc_monument_binnenhof = {
 		}
 		effect = {
 			4383 = {
-				add_great_project = {
+				add_great_project_tier = {
 					type = binnenhof
-					instant = yes
+					tier = 1
 				}
 			}
 			add_prestige = 25
 		}
 	}
+}
+
+btc_monument_luxembourg_fortress = {
+	#yet to make 
 }
 
 ### Holland Missions ###

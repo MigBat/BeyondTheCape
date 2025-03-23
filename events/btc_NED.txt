@@ -2,7 +2,7 @@ country_event = {
     id = BTC_NED_navy.1
     title = BTC_NED_navy.1.t
     desc = BTC_NED_navy.1.d
-    picture = 
+    picture = btc_flying_dutchman_picture
     fire_only_once = yes
     hidden = yes
     is_triggered_only = yes
@@ -16,6 +16,7 @@ country_event = {
 			    cost = 0
 			}
         }
+        ai_chance = { factor = 1 }
     }
 }
 
@@ -23,7 +24,7 @@ country_event = {
     id = BTC_texel_of_war
     title = BTC_texel_of_war.t
     desc = BTC_texel_of_war.d
-    picture = 
+    picture = btc_flying_dutchman_picture
     fire_only_once = yes
     is_triggered_only = yes
     option = {
@@ -56,5 +57,47 @@ country_event = {
             }
         }
         prestige = 25
+    }
+}
+
+country_event = {
+    id = BTC_NED_mission_event.1
+    title = BTC_NED_mission_event.1.t 
+    desc = BTC_NED_mission_event.1.d 
+    picture = btc_flying_dutchman_picture
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = BTC_NED_mission_event.1a
+        4981 = {
+			add_great_project_tier = {
+			type = reede_van_texel
+			tier = 1
+			}
+		}
+        add_treasury = -1500
+        ai_chance = { factor = 1 }
+    }
+    option = {
+        name = BTC_NED_mission_event.1b
+        4981 = {
+			add_great_project_tier = {
+			type = reede_van_texel
+			tier = 2
+			}
+		}
+        add_treasury = -3000
+        ai_chance = { factor = 2 }
+    }
+    option = {
+        name = BTC_NED_mission_event.1c
+        4981 = {
+			add_great_project_tier = {
+			type = reede_van_texel
+			tier = 3
+			}
+		}
+        add_treasury = -5500
+        ai_chance = { factor = 1 }
     }
 }
