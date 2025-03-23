@@ -760,6 +760,7 @@ dock = {
 		local_sailors_modifier = 0.5
 		local_has_man_of_war = yes
 		local_has_galleass = yes
+		local_has_voc_indiamen = yes
 		local_development_cost = -0.04
 		local_build_cost = 0.1
 	}
@@ -2022,6 +2023,7 @@ drydock = {
 		local_sailors_modifier = 1.0
 		local_has_man_of_war = yes
 		local_has_galleass = yes
+		local_has_voc_indiamen = yes
 		local_development_cost = -0.08
 		local_build_cost = 0.2
 	}

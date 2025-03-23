@@ -17,3 +17,10 @@
  conqueror_party_title: "Conqueror Party"
  conqueror_party_title_plural: "Conqueror Parties"
  is_conqueror_party: "Is Conqueror Party"
+ 
+ stadhouder_subject:0 "Stadhouder union"
+ stadhouder_subject_long_desc:0 "A lowlands nation mainly focussed towards trade and uniting the lowlands."
+ stadhouder_subject_is_our:0 "$NAME|Y$ is a loose personal union of ours"
+ stadhouder_subject_title:0 "Stadhouder union"
+ stadhouder_subject_title_plural:0 "Stadhouder unions"
+ is_stadhouder_subject:0 "Is Stadhouder union"

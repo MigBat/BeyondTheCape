@@ -13,4 +13,19 @@ spriteTypes = {
 		name = "GFX_diplomacy_weak_conqueror"
 		texturefile = "gfx//interface//icon_weak_conqueror.dds"
 	}
+
+	spriteType = {
+		name = "GFX_diplomacy_stadhouder_subject"
+		texturefile = "gfx//interface//icon_stadhouder_subject.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplomacy_weak_stadhouder"
+		texturefile = "gfx//interface//icon_am_stadhouder_subject.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplomacy_lead_stadhouder"
+		texturefile = "gfx//interface//icon_lead_stadhouder_subject.dds"
+	}
 }

@@ -16,3 +16,17 @@
  city_of_caesars:0 "City of the Caesars"
 
  has_monumental_best:0 "Obtained the best reward from §YMonumental City§! mission"
+ 
+ zwin:0 "'T Zwin"
+ zwin_desc:0 "'T Zwin is the primary sea inlet that has made trade flourish in the cities of Brugge, Damme and Sluis. This natural waterway is primarily used for trade ships. Due to the contant silting of the inlet it is expensive to maintain but vital for the local trade communities."
+ reede_van_texel:0 "Reede van Texel"
+ reede_van_texel_desc:0 "The Reede van Texel was a roadstead off the Dutch island of Texel. At the roadstead ships waited for a favourable wind to sail out. The Reede van Texel was the primary dock for the Dutch navy."
+ grand_place:0 "Grand Place"
+ grand_place_desc:0 "The Grand Place is the central square of Bressels. It housed markets, flower carpets and large gatherings. It is surrounded by guildhalls, the townhall and the bread house."
+ binnenhof:0 "Binnenhof"
+ binnenhof_desc:0 "The Binnenhof is a castle in the centre of The Hague. It hosts the States General and houses the rulers of $COUNTRY$. It is the oldest still in use parliament building in the world."
+ fortress_of_luxembourg:0 "Fortress Luxembourg"
+ fortress_of_luxembourg_desc:0 "The Fortress of Luxembourg takes pride in the flattering historical epithet of the Gibraltar of the North as a result of its impregnability. This fortress city that has been building since roman times is the strongest and most defensible fortress in the world. And if fully supplied and garrisoned it can withstand a siege of multiple decades."
+ BTC_NED_zwin_mission:0 "Has restored 'T Zwin to it's former glory as Flanders."
+ BTC_NED_reede_van_texel_mission:0 "Has build the Reede van Texel up to it's maximum potential as Holland."
+ BTC_NED_grand_place_mission:0 "Made the Grand Place prosper as Brabant."

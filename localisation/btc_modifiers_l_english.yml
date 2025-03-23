@@ -610,6 +610,7 @@
  desc_prepare_for_india: "With our possessions now encompassing two oceans, there is an increased need for a second permanent army to be present in the Indian Ocean."
 
  is_conqueror_party: "Conqueror Party"
+ is_stadhouder_subject:0 "Stadhouder union"
 
  muslim_naval_fl: "Muslim Naval Forcelimit Increase"
  desc_muslim_naval_fl: ""
