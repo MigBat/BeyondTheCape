@@ -307,38 +307,38 @@ country_event = {
 
 # Christopher Columbus	
 # Beyond the Cape exploration
-country_event = {
-	id = flavor_spa.1
-	title = "flavor_spa.EVTNAME1"
-	desc = "flavor_spa.EVTDESC1"
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = flavor_spa.1
+# 	title = "flavor_spa.EVTNAME1"
+# 	desc = "flavor_spa.EVTDESC1"
+# 	picture = SHIP_SAILING_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	trigger = {
-		NOT = { has_global_flag = columbus_happened }
-	}
+# 	trigger = {
+# 		NOT = { has_global_flag = columbus_happened }
+# 	}
 
-	option = {		# Reject his proposal
-		name = "flavor_spa.EVTOPTA1"
-		ai_chance = { factor = 0 }
-	}
+# 	option = {		# Reject his proposal
+# 		name = "flavor_spa.EVTOPTA1"
+# 		ai_chance = { factor = 0 }
+# 	}
 
-	option = {		# Hire Columbus
-		name = "flavor_spa.EVTOPTB1"
-		ai_chance = { factor = 1 }
+# 	option = {		# Hire Columbus
+# 		name = "flavor_spa.EVTOPTB1"
+# 		ai_chance = { factor = 1 }
 
-		add_years_of_income = -0.25
-		set_global_flag = columbus_happened
-		define_explorer = {
-			name = "Cristóbal Colón"
-			fire = 2
-			shock = 2
-			manuever = 6
-			siege = 0
-		}
-	}
-}
+# 		add_years_of_income = -0.25
+# 		set_global_flag = columbus_happened
+# 		define_explorer = {
+# 			name = "Cristóbal Colón"
+# 			fire = 2
+# 			shock = 2
+# 			manuever = 6
+# 			siege = 0
+# 		}
+# 	}
+# }
 
 # Discovery of the New World!
 country_event = {

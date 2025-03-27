@@ -1,0 +1,349 @@
+##Common##
+
+#Advisors#
+
+advisors give saudade
+
+#Ages#
+
+age unlock requirements modified
+countries with unique age abilities get extra modifier
+
+#Bookmarks#
+
+removed vanilla bookmarks
+added beyond the cape bookmark
+
+#Buildings#
+
+most buildings reduce province development cost, increase province construction cost and increase province governing cost
+temples and cathedrals reduce unrest and increases missionary strength
+coastal defences and naval batteries increase hostile fleet attrition, local defensiveness and do not occupy a building slot. if built on an island it gets the island fort modifier (fort level +1). if destroyed the island loses said modifier.
+regimental camps and conscription centers provide less forcelimit, increase regiment recruit speed and decrease regiment cost
+universities provide less local development cost and increase local institution spread
+manufactories cost doubled, static trade goods size decreased but increased trade goods size modifier
+ramparts increase local hostile attrition and local defensiveness
+
+#CB Types#
+
+added following cbs: castilian civil war, albuquerque plan, naval superiority, grand crusade, sebastiao crusade, portugal civil war
+
+#Centers of Trade#
+
+cots further reduce local development cost
+cots upgrade cost doubled
+
+#Colonial Regions#
+
+caribbean colonial region no longer exists
+adjustments to provinces belonging to colonial regions
+adding unique colonial nation names depending on the overlord
+
+#Countries#
+
+added albuquerque company, afonsine kingdom, casa da india
+changes to ai castile, england, muscovy, netherlands and portugal idea groups picked
+portugal changed map colour and monarch name chance
+
+#Country Tags#
+
+added cdi, abq, afo
+
+#Cultures#
+
+portuguese culture provinces can train fidalgos
+sundanese culture primary nation is sunda rather than majapahit
+
+#Custom GUI#
+
+added button for feitoria, fortified feitoria and foreign feitoria province modifiers
+added button to enable/disable ships to cross between mediterranean and red sea through suez
+added settler pool ui
+added spice trade conflict ui
+
+#Defines#
+
+added defines for tot map projection
+new age starts 60 months after triggers fulfilled
+cannot vassalize countries with more than 200 development
+number of great powers increased to 10
+revanchism monthly decay is 0.4
+steal maps costs 70 spy network
+at least 25 years until you can integrate a vassal
+knowledge sharing institution growth monthly is 0.2
+knowledge sharing cost percent monthly is 20%
+charter company base cost is 10000 ducats
+charter company minimum cost is 10000 ducats
+minimum trade power to get cb against privateering country is 1%
+disinherit prestige hit is -33
+max heir claim is 90
+can no longer boost institution by developing provinces
+100% chance of event triggering when exploring coast
+advisors will live longer
+can accept culture at 10 development
+costs 100 mana to reduce war exhaustion
+costs 50 mana to remove accepted culture
+costs 50 mana to establish siberian frontier
+annex or integrate gives 10 prestige
+100 years for province spread within same tech group
+150 years for province spread within same religious group
+200 years for country to lose core in culture group province
+60 months base core time
+2% liberty desire for each percent in tariffs
+increased trade wind strength
+will not use colonizer religion on colony completion with colonist
+trade steering will not generate magic money
+pirates have no additional trade power
+treasure fleet inflation doubled
+60 months average for general to get skill when drilling
+150 men per manopower
++1 galley dice malus at high sea
+enabled cavalry breakthrough
+1 warscore per month when wargoal fulfilled
+max wargoal score is 50
+max warscore from battles is 50
+0.75 galley combat width
+1825 days to build flagship
+double sea exploration speed
+ai that has been promised land require that the enemy is pressed further if they think it is possible
+all ai rulers can offer condottieri
+condottieri can be offered to non-neighbours
+ai can hire non-infantry mercenaries
+ai will develop provinces more
+once ai has told all their friends about how mean a player is, they will refuse to hire condottieri for cash 5 years
+ai will develop accepted culture provinces more
+ai will develop same culture group provinces more
+ai does more naval invasions
+ai will invade with more troops
+ai fort maintenance cheat enabled
+ai aggressiveness increased
+ai will complete missions quicker
+ai will have less percentage of transports in their fleets
+ai will invest more in colonies
+government reform cost increase by 50 each time
+expand administration cost increase by 50 each time
+
+#Diplomatic Actions#
+
+military access cannot be asked to non-ally countries you do not border, except within hre
+military access cannot be asked to non-ally countries allied to your enemy
+cannot share maps if country is colonizer
+cannot share maps if trust is not at least 80
+cannot call allies to war if participating in castilian civil war or portuguese liberal wars
+cannot separate peace if participating in castilian civil war
+cannot declare war if currently in war with grand crusade cb
+
+#Disasters#
+
+completely overhauled castilian civil war disaster
+added disaster for slavers estate
+added overextended empire, portuguese liberal wars, bragança plot disasters to portugal
+
+#Estate Agendas#
+
+added agendas to slavers estate
+
+#Estate Crown Land#
+
+added slavers disaster
+
+#Estate Privileges#
+
+removed hussar special unit bonuses to poland, replaced with cavalry shock
+added fidalgos privilege to portugal
+added privileges to slavers estate
+
+#Estates#
+
+countries with conqueror party government reform get no estates
+added slavers estate
+
+#Estates Preload#
+
+added slavers estate modifier definitions
+
+#Event Modifiers#
+
+reduced value of privateer modifiers
+reduced value of treasure fleet income modifiers
+removed hussar special unit modifiers
+removed musketeer special unit modifiers
+removes samurai special unit modifiers
+added unique beyond the cape modifiers
+
+#Flagship Modifications#
+
+portuguese navigators unlocked by mission
+added portuguese botafogo modification unlocked by mission
+portuguese bombardier decreased barrage cost in fleet
+reduced privateer efficiency in spare jolly roger modification
+
+#Government Mechanics#
+
+added naval professionalism mechanic for portuguese monarchy government reform
+added saudade mechanic for portuguese empire government reform
+added mare clausum mechanic for spice trade conflict
+added settler pool mechanic for colonizer countries
+
+#Government Names#
+
+added names for conqueror party leaders
+
+#Government Reforms#
+
+reduced privateer efficiency modifiers
+added hidden government ability for all government to have access to spice trade conflict and to settler pool
+removed samurai special unit modifiers
+portugal cannot have system of councils government reform
+commercial enterprise rulers become admirals
+portugal cannot have parliamentary government reform
+reduced treasure fleet income modifiers
+removed musketeer special unit modifiers
+modified portuguese monarchy government reform
+added portuguese empire government reform
+added portuguese absolutism government reform
+added portuguese liberalism government reform
+added legacy of albuquerque government reform
+modified ordenanças government reform
+added conqueror party government reform
+
+#Governments#
+
+added the above-mentioned portuguese unique government reforms and conqueror party government reform
+
+#Great Projects#
+
+reduced treasure fleet income modifiers
+reduced privateer efficiency modifiers
+added batalha monastery, jeronimos monastery, ribeira palace, mafra convent, santiago cathedral, pena palace
+modified fuerte del morro, belem tower
+added el dorado, fountain of youth, cibola, city of caesars, sierra de la plata, norumbega, saguenay, quivira
+
+#Hegemons#
+
+added potential hegemons of each type for each age for some countries, which have lower requirements to trigger hegemony
+
+#Holy Orders#
+
+jesuit order unlocked by mission and double development cost decrease effect
+augustinians order half institution growth effect
+added order of christ holy order
+doubled order of avis holy order local hostile attrition
+san juan order can be unlocked if country owns malta
+santiago order double local manpower modifier
+
+#Ideas#
+
+every idea bonus gives a modifier to saudade
+reduced privateer efficiency modifiers
+naval ideas bonus global naval barrage cost now -50%
+hussar special unit modifiers removed
+samurai special unit modifiers removed
+exploration idea group reworked, no longer allows exploring open seas
+expansion idea group reworked
+portugal ideas completely overhauled
+added casa da india ideas
+castilian ideas reworked
+added conqueror party ideas
+added afonsine kingdom ideas
+scottish ideas reworked
+norwegian ideas reworked
+
+#Institutions#
+
+renaissance spawned at game start
+requirements for institution spawn and spread reworked
+institution order of appearance changed
+
+#Leader Personalities#
+
+added lion of the seas personality
+
+#Mercenary Companies#
+
+added english longbowmen, british redcoats, colonial ordenanças, knights of christ, knights of avis, knights of calatrava, knights of santiago, knights of montesa, knights of alcantara, knights of san juan
+
+#Naval Doctrines#
+
+reduced treasure fleet income modifiers
+reduced privateer efficiency modifiers
+increase marine fraction of portuguese marines doctrine
+added ship power propagation in dutch trade fleet doctrine
+
+#New Diplomatic Actions#
+
+can establish trade protectorates with portugal mission tree
+maximum 10 trade protectorates per country
+
+#On Actions#
+
+setup initial btc modifiers
+monthly hidden calculation events for btc content
+spawn slavers estate rebels on revoke estate land if loyalty under 40
+added slavers estate modifier changes on province conquest
+adding/removing malaria modifier on province conquest
+adding/removing feitoria modifier on province conquest
+clear flags on ccw war won
+add special actions on siege won for afonso de albuquerque general and conqueror party countries
+added events on explore coast for setting padroes and for fountain of youth
+added events on explore with conquistador for seven cities of gold
+remove modifiers on war end
+add counter on battle won for country in spice trade conflict
+add on monarch death flag for miguel da paz, crusading spirit, conqueror parties, afonsine kingdom flavor
+add on new monarch flag for miguel da paz, pope events and bragança plot outcomes
+malaria removed on abandon colony
+padrao event fire on colony finished with padrao there
+on colony established remove settlers from settler pool, give malaria in non coastal african provinces
+on circumnavigation add flags for portugal and castile to decide who colonizes moluccas
+on annexed shuffle spice trade conflict participants
+on province culture converted check afonsine kingdom culture
+on marine raised increase naval professionalism
+
+#Opinion Modifiers#
+
+reduce hegemon opinion penalty
+added btc unique opinion modifiers
+
+#Parliament Issues#
+
+england can no longer explore open sea tiles from parliament issue
+added unique issues for portuguese parliament
+
+#Peace Treaties#
+
+unique peace treaties for alcacovas, castilian union, miguel da paz, sebastiao crusade and portugal liberal wars
+
+#Policies#
+
+reduced privateer efficiency modifiers
+
+#Power Projection#
+
+adjusted great powers power projection
+added sources of power projection by warning rival and guaranteeing neighbour of rival
+allying to hegemon penalties are less harsh
+
+#Prices#
+
+added gold spice price
+
+#Province Names#
+
+added province names in portuguese
+
+#Province Triggered Modifiers#
+
+added province triggered modifiers for sounds, holy order headquarters, and suez moving ships mechanic
+
+#Rebel Types#
+
+added pretender rebels for portugals liberal wars disaster
+added slavers estate slaver rebels
+
+#Scripted Effects#
+
+added slavers estate effects
+burghers new world charter no longer provides explorer
+added effects for buildings increasing governing costs, to enable grand crusade, choosing padrao province, suez moving ships, settler pool and spice trade conflict
+
+#Scripted Functions#

@@ -5799,6 +5799,7 @@ country_event = {
 		NOT = { has_country_flag = signed_alcacovas_treaty }
 		NOT = { has_country_flag = won_ccw }
 		NOT = { has_country_flag = unlock_alcacovas_missions }
+		is_year = 1492
 	}
 
 	mean_time_to_happen = {

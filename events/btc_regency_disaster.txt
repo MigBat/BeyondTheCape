@@ -78,11 +78,11 @@ country_event = {
 			}			
 		}
 
-		add_years_of_income = 0.2
+		add_years_of_income = 0.5
 		add_estate_influence_modifier = {
 			estate = estate_nobles
-			influence = 10
-			duration = 1460
+			influence = 15
+			duration = 2000
 		}
 		# random_owned_province = {
 		# 	limit = {
@@ -160,11 +160,11 @@ country_event = {
 			age = 45
 		}
 
-		add_years_of_income = 0.2
+		add_years_of_income = 0.5
 		add_estate_influence_modifier = {
 			estate = estate_nobles
-			influence = 10
-			duration = 1460
+			influence = 15
+			duration = 2000
 		}
 		# random_owned_province = {
 		# 	limit = {
@@ -228,12 +228,12 @@ country_event = {
 				value = -1
 			}			
 		}
-		
-		add_years_of_income = 0.2
+
+		add_years_of_income = 0.5
 		add_estate_influence_modifier = {
 			estate = estate_nobles
-			influence = 10
-			duration = 1460
+			influence = 15
+			duration = 2000
 		}
 		# random_owned_province = {
 		# 	limit = {
@@ -314,7 +314,7 @@ country_event = {
 		add_estate_influence_modifier = {
 			estate = estate_nobles
 			influence = 10
-			duration = 1460
+			duration = 2000
 		}
 		# random_owned_province = {
 		# 	limit = {
@@ -391,7 +391,7 @@ country_event = {
 		add_estate_influence_modifier = {
 			estate = estate_nobles
 			influence = 10
-			duration = 1460
+			duration = 2000
 		}
 		# random_owned_province = {
 		# 	limit = {

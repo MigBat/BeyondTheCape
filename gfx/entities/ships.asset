@@ -280,7 +280,7 @@ entity = {
 
 entity = {
 	name = "caravela_de_armada"
-	pdxmesh = "caravel"
+	pdxmesh = "caravel2"
 	state = { name = "idle" 		animation = "idle" }
 	state = { name = "walk" 		animation = "walk" }
 	state = { name = "retreat" 		animation = "walk" }
@@ -339,7 +339,7 @@ entity = {
 
 entity = {
 	name = "early_caravel"
-	pdxmesh = "barque"
+	pdxmesh = "barque2"
 	state = { name = "idle" 		animation = "idle" }
 	state = { name = "walk" 		animation = "walk" }
 	state = { name = "retreat" 		animation = "walk" }

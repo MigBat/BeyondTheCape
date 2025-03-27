@@ -620,70 +620,70 @@ country_event = {
 }
 
 # Christopher Columbus	
-country_event = {
-	id = flavor_por.1
-	title = "flavor_por.EVTNAME1"
-	desc = "flavor_por.EVTDESC1"
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = flavor_por.1
+# 	title = "flavor_por.EVTNAME1"
+# 	desc = "flavor_por.EVTDESC1"
+# 	picture = SHIP_SAILING_eventPicture
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		tag = POR
-		CAS = { has_country_flag = spa_cas_ended_civil_war_flag }
-		NOT = { has_country_flag = signed_alcacovas_treaty }
-		NOT = { has_global_flag = columbus_happened }
-		OR = {
-			is_year = 1492
-			CAS = { dip_tech = 8 }
-		}
-	}
+# 	trigger = {
+# 		tag = POR
+# 		CAS = { has_country_flag = spa_cas_ended_civil_war_flag }
+# 		NOT = { has_country_flag = signed_alcacovas_treaty }
+# 		NOT = { has_global_flag = columbus_happened }
+# 		OR = {
+# 			is_year = 1492
+# 			CAS = { dip_tech = 8 }
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 	
-	option = {		# Reject his proposal
-		name = "flavor_por.EVTOPTA1"
-		ai_chance = { factor = 1 }
-		if = {
-			limit = {
-				exists = SPA
-			}
-			SPA = {
-				country_event = { id = flavor_spa.1 days = 10 }
-			}
-		}
-		if = {
-			limit = {
-				NOT = { exists = SPA }
-				exists = CAS
-			}
-			CAS = {
-				country_event = { id = flavor_spa.1 days = 10 }
-			}
-		}
-	}
+# 	option = {		# Reject his proposal
+# 		name = "flavor_por.EVTOPTA1"
+# 		ai_chance = { factor = 1 }
+# 		if = {
+# 			limit = {
+# 				exists = SPA
+# 			}
+# 			SPA = {
+# 				country_event = { id = flavor_spa.1 days = 10 }
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				NOT = { exists = SPA }
+# 				exists = CAS
+# 			}
+# 			CAS = {
+# 				country_event = { id = flavor_spa.1 days = 10 }
+# 			}
+# 		}
+# 	}
 
-	option = {		# Hire Columbus
-		name = "flavor_por.EVTOPTB1"
-		ai_chance = { factor = 0 }
-		trigger = {
-			NOT = { dip_tech = 8 }
-			CAS = { NOT = { dip_tech = 8 } }
-		}
+# 	option = {		# Hire Columbus
+# 		name = "flavor_por.EVTOPTB1"
+# 		ai_chance = { factor = 0 }
+# 		trigger = {
+# 			NOT = { dip_tech = 8 }
+# 			CAS = { NOT = { dip_tech = 8 } }
+# 		}
 
-		set_global_flag = columbus_happened
-		add_years_of_income = -0.10
-		define_explorer = {
-			name = "Cristóvão Colombo"
-			fire = 2
-			shock = 2
-			manuever = 6
-			siege = 0
-		}
-	}
-}
+# 		set_global_flag = columbus_happened
+# 		add_years_of_income = -0.10
+# 		define_explorer = {
+# 			name = "Cristóvão Colombo"
+# 			fire = 2
+# 			shock = 2
+# 			manuever = 6
+# 			siege = 0
+# 		}
+# 	}
+# }
 
 # Atlantic Slave Trade
 # country_event = {
