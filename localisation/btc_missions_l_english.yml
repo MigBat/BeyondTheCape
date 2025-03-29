@@ -110,6 +110,8 @@
  btc_grand_place_desc:0 "The Grand Place is the central square of Bressels. It is surrounded by opulent guildhalls and two larger edifices; the city's town hall and the bread house. From the 14th century onwards would mark the rise in importance of local merchants and tradesmen relative to the nobility. As he was short on money, the Duke gradually transferred parts of his control rights over trade and mills to the local authorities, prompting them to build edifices worthy of their new status."
  btc_binnenhof_title:0 "Binnenhof"
  btc_binnenhof_desc:0 "The Binnenhof is a castle in the centre of The Hague. It hosts the States General and houses the rulers of $COUNTRY$."
+ btc_luxembourg_fortress_title:0 "Luxembourg fortress"
+ btc_luxembourg_fortress_desc:0 "Building up the Gibraltar of the north is of fital importance."
 # Aragon #
 
  ara_win_war_tt:0 "If we §YEnforce Isabella's Claim§!, or the year is §Y1500§!, we will get the following rewards:"

@@ -249,7 +249,64 @@ btc_monument_binnenhof = {
 }
 
 btc_monument_luxembourg_fortress = {
-	#yet to make 
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential_on_load = {
+	}
+
+	potential = {
+		AND = {
+			OR = {
+				tag = HOL
+				tag = BRB
+				tag = FLA
+				tag = NED
+				tag = BNL
+			}
+			owns_core_province = 94
+		}
+	}
+	btc_luxembourg_fortress = {
+		icon = mission_luxembourg_fortress
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+			province_id = 94
+		}
+		trigger = {
+			OR = {
+				AND = {
+					current_age = age_of_reformation
+					94 = {
+						fort_level = 5
+					}
+				}
+				AND = {
+					current_age = age_of_absolutism
+					94 = {
+						fort_level = 9
+					}
+				}
+				AND = {
+					current_age = age_of_revolutions
+					94 = {
+						fort_level = 13
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = btc_low_countries_fort_buff
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
 }
 
 ### Holland Missions ###

@@ -343,6 +343,9 @@
  desc_negotiating_with_corsairs:0 "Striking a benefitial bargain with the French corsairs"
  portuguese_resilience:0 "Portuguese Resilience"
  desc_portuguese_resilience:0 "These are proud and stubborn people. They won't allow their land to be taken without a proper fight."
+# Dutch missions #
+ btc_low_countries_fort_buff:0 "National fortification"
+ desc_btc_low_countries_fort_buff:0 "After the valiant efforts in luxembourg the rest of the country is more protected then ever."
 # Seven Cities #
  el_dorado_location:0 "El Dorado Location"
  desc_el_dorado_location:0 "El Dorado is located somewhere in this province"

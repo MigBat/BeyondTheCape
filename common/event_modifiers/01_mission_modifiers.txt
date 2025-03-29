@@ -12800,10 +12800,10 @@ ned_empowered_staatse_leger = {
 	discipline = 0.025
 }
 
-ned_low_countries_fort_buff = {
-	local_development_cost = -0.05
-	local_production_efficiency = 0.1
-	local_defensiveness = 0.1
+btc_low_countries_fort_buff = {
+	defensiveness = 0.20
+	garrison_size = 0.10
+	global_supply_limit_modifier = 0.10
 }
 
 ned_low_countries_fort_buff_buffed = {

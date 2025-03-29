@@ -309,4 +309,9 @@ spriteTypes = {
 		name = "mission_reede_van_texel"
 		texturefile = "gfx/interface/missions/mission_reede_van_texel.dds"
 	}
+
+	spriteType = {
+		name = "mission_luxembourg_fortress"
+		texturefile = "gfx/interface/missions/mission_luxembourg_fortress.dds"
+	}
 }
