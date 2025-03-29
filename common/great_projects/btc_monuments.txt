@@ -2035,12 +2035,20 @@ zwin = {
 	}
 	can_use_modifiers_trigger = {
 		OR = {
-			accepted_culture = dutch
-			accepted_culture = flemish
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 	can_upgrade_trigger = {
-		has_country_flag = has_zwin
+		ROOT = {
+			has_country_flag = has_zwin
+		}
 	}
 	keep_trigger = {
 	}
@@ -2151,7 +2159,9 @@ reede_van_texel = {
 	starting_tier = 0
 	type = monument
 	build_trigger = {
-		has_country_flag = has_reede_van_texel
+		ROOT = {
+			has_country_flag = has_reede_van_texel
+		}
 	}
 	on_built = {
 		
@@ -2161,8 +2171,18 @@ reede_van_texel = {
 	}
 	can_use_modifiers_trigger = {
 		OR = {
-			accepted_culture = dutch
-			accepted_culture = flemish
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = wallonian
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 	can_upgrade_trigger = {
@@ -2285,11 +2305,9 @@ grand_place = {
 	build_cost = 0
 	time = { months = 0	}
 	can_be_moved = no
-	move_days_per_unit_distance = 1
 	starting_tier = 1
 	type = monument
 	build_trigger = {
-		has_country_flag = has_grand_place
 	}
 	on_built = {
 		
@@ -2299,13 +2317,24 @@ grand_place = {
 	}
 	can_use_modifiers_trigger = {
 		OR = {
-			accepted_culture = dutch
-			accepted_culture = flemish
-			accepted_culture = wallonian
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = wallonian
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 	can_upgrade_trigger = {
-		has_country_flag = has_grand_place
+		ROOT = {
+			has_country_flag = has_grand_place
+		}
 	}
 	keep_trigger = {
 	}
@@ -2414,6 +2443,142 @@ grand_place = {
 	}
 }
 
+fortress_of_luxembourg = {
+	start = 94
+	date = 963.01.01
+	build_cost = 0
+	time = { months = 0 }
+	can_be_moved = no
+	starting_tier = 2
+	type = monument
+	build_trigger = {
+	}
+	on_built = {
+
+	}
+	on_destroyed = {
+
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = wallonian
+				province_is_or_accepts_culture = yes
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		OR = {
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = wallonian
+				province_is_or_accepts_culture = yes
+			}
+		}
+	}
+	keep_trigger = {
+
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			fort_level = 1
+			local_garrison_size = 0.10
+		}
+		area_modifier = {
+			local_defensiveness = 0.25
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			fort_level = 3
+			local_garrison_size = 0.25
+		}
+		area_modifier = {
+			local_defensiveness = 0.35
+			local_hostile_attrition = 1
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 15000
+		}
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			fort_level = 5
+			local_garrison_size = 0.5
+		}
+		area_modifier = {
+			local_defensiveness = 0.5
+			local_hostile_attrition = 3
+		}
+		country_modifiers = {
+			defensiveness = 0.5
+		}
+		on_upgraded = {
+		}
+	}
+}
+
 binnenhof = {
 	start = 4383 #Den Haag
 	date = 1444.01.01
@@ -2423,10 +2588,6 @@ binnenhof = {
 	starting_tier = 0
 	type = monument
 	build_trigger = {
-		OR = {
-			tag = BNL
-			tag = NED
-		}
 	}
 	on_built = {
 		
@@ -2441,7 +2602,10 @@ binnenhof = {
 		}
 	}
 	can_upgrade_trigger = {
-		always = no
+		OR = {
+			tag = BNL
+			tag = NED
+		}
 	}
 	keep_trigger = {
 	}
@@ -2540,129 +2704,6 @@ binnenhof = {
 		}
 		on_upgraded = {
 			
-		}
-	}
-}
-
-fortress_of_luxembourg = {
-	start = 94
-	date = 963.1.1 #earlier, but this is when it sorta became important
-	build_cost = 0
-	time = { months = 0 }
-	can_be_moved = no
-	starting_tier = 2
-	type = monument
-	build_trigger = {
-		OR = {
-			accepted_culture = dutch
-			accepted_culture = flemish
-			accepted_culture = wallonian
-		}
-	}
-	on_built = {
-
-	}
-	on_destroyed = {
-
-	}
-	can_use_modifiers_trigger = {
-		OR = {
-			accepted_culture = dutch
-			accepted_culture = flemish
-			accepted_culture = wallonian
-		}
-	}
-	can_upgrade_trigger = {
-		OR = {
-			accepted_culture = dutch
-			accepted_culture = flemish
-			accepted_culture = wallonian
-		}
-	}
-	keep_trigger = {
-
-	}
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-			
-		}
-		area_modifier = {
-			
-		}
-		country_modifiers = {
-			
-		}
-		on_upgraded = {
-		}
-	}
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-			fort_level = 1
-			local_garrison_size = 0.10
-		}
-		area_modifier = {
-			local_defensiveness = 0.25
-		}
-		country_modifiers = {
-			
-		}
-		on_upgraded = {
-		}
-	}
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-			local_defender_dice_roll_bonus = 1
-			fort_level = 3
-			local_garrison_size = 0.25
-		}
-		area_modifier = {
-			local_defensiveness = 0.35
-			local_hostile_attrition = 1
-		}
-		country_modifiers = {
-			
-		}
-		on_upgraded = {
-		}
-	}
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-			local_defender_dice_roll_bonus = 1
-			fort_level = 5
-			local_garrison_size = 0.5
-		}
-		area_modifier = {
-			local_defensiveness = 0.5
-			local_hostile_attrition = 3
-		}
-		country_modifiers = {
-			defensiveness = 0.5
-		}
-		on_upgraded = {
 		}
 	}
 }

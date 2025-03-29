@@ -258,15 +258,12 @@ btc_monument_luxembourg_fortress = {
 	}
 
 	potential = {
-		AND = {
-			OR = {
-				tag = HOL
-				tag = BRB
-				tag = FLA
-				tag = NED
-				tag = BNL
-			}
-			owns_core_province = 94
+		OR = {
+			tag = HOL
+			tag = BRB
+			tag = FLA
+			tag = NED
+			tag = BNL
 		}
 	}
 	btc_luxembourg_fortress = {
@@ -300,10 +297,8 @@ btc_monument_luxembourg_fortress = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = btc_low_countries_fort_buff
-				duration = -1
-				hidden = yes
+			country_event = {
+				id = BTC_NED_mission_event.2
 			}
 		}
 	}

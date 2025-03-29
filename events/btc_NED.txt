@@ -101,3 +101,20 @@ country_event = {
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = {
+    id = BTC_NED_mission_event.2
+    title = BTC_NED_mission_event.2.t 
+    desc = BTC_NED_mission_event.2.d 
+    picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = BTC_NED_mission_event.2a
+        add_country_modifier = {
+			name = btc_low_countries_fort_buff
+			duration = -1
+			hidden = yes
+		}
+    }
+}
