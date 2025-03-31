@@ -1,4 +1,4 @@
-name="btc2"
+name="Beyond the Cape"
 version="1"
 tags={
 	"Historical"
