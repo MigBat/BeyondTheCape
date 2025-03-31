@@ -1,0 +1,262 @@
+namespace = btc_startup
+normal_or_historical_nations = yes
+
+country_event = {	# add/remove province modifiers
+	id = btc_startup.1
+	title = btc_startup.1.t
+	desc = btc_startup.1.desc
+	picture = FORT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = btc_startup.a
+
+		# Island Development
+		every_province = {
+			if = {
+				limit = {
+					is_island = yes
+					# NOT = { 
+					# 	OR = {
+					# 		province_has_center_of_trade_of_level = 1 
+					# 		province_has_center_of_trade_of_level = 2
+					# 		province_has_center_of_trade_of_level = 3 
+					# 	}
+					# }
+				}
+				add_permanent_province_modifier = {
+					name = island_development
+					duration = -1
+				}
+			}
+		}
+		648 = {	# Halmahera
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		649 = {	# Ternate
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		655 = {	# Palawan
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		4356 = {	# Taytay
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		1242 = {	# Viti Levu
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		4937 = {	# Lau
+			add_permanent_province_modifier = {
+				name = island_development
+				duration = -1
+			}
+		}
+		
+		# Strait Engagement Width
+		every_province = {
+			limit = {
+				strait_engagement_width_province = yes
+			}
+			add_permanent_province_modifier = {
+				name = strait_engagement_width
+				duration = -1
+			}
+		}
+
+		# Oresund Sound
+		every_province = {
+			limit = {
+				oresund_sound_province = yes
+			}
+			add_province_triggered_modifier = oresund_sound
+		}
+
+		# Bosphoros Sound
+		every_province = {
+			limit = {
+				bosphoros_sound_province = yes
+			}
+			add_province_triggered_modifier = bosphorus_sound
+		}
+		
+		# Gibraltar Sound
+		every_province = {
+			limit = {
+				gibraltar_sound_province = yes
+			}
+			add_province_triggered_modifier = gibraltar_sound
+		}
+
+		# Arab Sound
+		every_province = {
+			limit = {
+				arab_sound_province = yes
+			}
+			add_province_triggered_modifier = arab_sound
+		}
+
+		# Persian Sound
+		every_province = {
+			limit = {
+				persian_sound_province = yes
+			}
+			add_province_triggered_modifier = persian_sound
+		}
+
+		# Singapore Sound
+		every_province = {
+			limit = {
+				singapore_sound_province = yes
+			}
+			add_province_triggered_modifier = singapore_sound
+		}
+
+		# Prestigious Academy
+		every_province = {
+			limit = {
+				prestigious_academy_province = yes
+			}
+			add_permanent_province_modifier = {
+				name = prestigious_academy
+				duration = -1
+			}
+		}
+
+		# Holy Order Headquarters
+		126 = {
+			add_province_triggered_modifier = san_juan_order_headquarters
+		}
+		2751 = {
+			add_province_triggered_modifier = santiago_order_headquarters
+		}
+		2754 = {
+			add_province_triggered_modifier = calatrava_order_headquarters
+		}
+		4150 = {
+			add_province_triggered_modifier = avis_order_headquarters
+		}
+		4549 = {
+			add_province_triggered_modifier = montesa_order_headquarters
+		}
+		4787 = {
+			add_province_triggered_modifier = christ_order_headquarters
+		}
+		4788 = {
+			add_province_triggered_modifier = alcantara_order_headquarters
+		}
+
+		# Fix Estuaries and CoT
+		956 = {
+			remove_province_modifier = delaware_estuary_modifier
+		}
+		957 = {
+			add_permanent_province_modifier = {
+				name = delaware_estuary_modifier
+				duration = -1
+			}
+		}
+		1113 = {
+			remove_province_modifier = senegal_estuary_modifier
+		}
+		1151 = {
+			add_permanent_province_modifier = {
+				name = senegal_estuary_modifier
+				duration = -1
+			}
+		}
+		1147 = {
+			remove_province_modifier = niger_estuary_modifier
+		}
+		2294 = {
+			add_permanent_province_modifier = {
+				name = niger_estuary_modifier
+				duration = -1
+			}
+		}
+		1114 = {
+			add_center_of_trade_level = -1
+		}
+		1177 = {
+			add_center_of_trade_level = -1
+		}
+		1182 = {
+			center_of_trade = 1
+		}
+
+		# Tech Groups Extra Forcelimit
+		every_country = {
+			limit = {
+				technology_group = muslim
+				ai = yes
+			}
+			add_country_modifier = {
+				name = muslim_naval_fl
+				duration = -1
+			}
+		}
+		every_country = {
+			limit = {
+				technology_group = indian
+				ai = yes
+			}
+			add_country_modifier = {
+				name = indian_land_fl
+				duration = -1
+			}
+		}
+		every_country = {
+			limit = {
+				technology_group = nomad_group
+				ai = yes
+			}
+			add_country_modifier = {
+				name = nomad_land_fl
+				duration = -1
+			}
+		}
+
+		# Resist Reconquista #
+		MOR = {
+			every_owned_province = {
+				add_permanent_province_modifier = {
+					name = resist_reconquista
+					duration = -1
+				}
+			}
+			every_subject_country = {
+				every_owned_province = {
+					add_permanent_province_modifier = {
+						name = resist_reconquista
+						duration = -1
+					}
+				}
+			}
+		}
+		GRA = {
+			every_owned_province = {
+				add_permanent_province_modifier = {
+					name = resist_reconquista
+					duration = -1
+				}
+			}
+		}
+	}
+}

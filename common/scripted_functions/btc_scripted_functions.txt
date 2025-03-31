@@ -1,0 +1,318 @@
+can_make_state = {
+	condition = {
+		tooltip = "NO_OVERSEAS_STATE"
+		potential = {
+			ROOT = {
+				is_overseas = yes
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_colonize_province = {
+	condition = {
+		tooltip = "alcacovas_treaty"
+		potential = {
+			FROM = {
+				has_country_flag = alcacovas_treaty
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						continent = south_america
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "tordesillas_portugal"
+		potential = {
+			FROM = {
+				has_country_flag = tordesillas_por
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							continent = north_america							
+							NOT = { 
+								OR = {
+									area = newfoundland_area
+									area = labrador_area
+									has_province_flag = isle_seven_cities_flag
+								}
+							}
+						}
+						AND = {
+							continent = south_america
+							NOT = {
+								OR = {
+									area = maranhao_area
+									area = piaui_area
+									area = ceara_area
+									area = sao_francisco_area
+									area = pernambuco_area
+									area = bahia_area
+									area = diamantina_area
+									area = minas_gerais_area
+									area = rio_de_janeiro_area
+									area = grao_para_area
+									area = pontal_area
+									area = goias_area
+									area = sao_paolo_area
+								}
+							}
+						}
+						if = {
+							limit = {
+								FROM = { NOT = { has_country_flag = moluccas_por }}
+							}
+							region = moluccas_region
+						}
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "tordesillas_castile"
+		potential = {
+			FROM = {
+				has_country_flag = tordesillas_cas
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					OR = {
+						continent = africa
+						AND = {
+							continent = asia
+							if = {
+								limit = {
+									FROM = { NOT = { has_country_flag = moluccas_cas }}
+								}
+								region = moluccas_region
+							}
+						}
+						area = maranhao_area
+						area = piaui_area
+						area = ceara_area
+						area = sao_francisco_area
+						area = pernambuco_area
+						area = bahia_area
+						area = diamantina_area
+						area = minas_gerais_area
+						area = rio_de_janeiro_area
+						area = grao_para_area
+						area = pontal_area
+						area = goias_area
+						area = sao_paolo_area
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "iberia_colonise_restriction"
+		potential = { 
+			NOT = { is_year = 1650 }
+			FROM = {
+				ai = yes
+				capital_scope = {
+					region = iberia_region
+				}
+			}
+		}
+		allow = { 
+			NOT = { 
+				OR = {
+					colonial_region = colonial_canada
+					colonial_region = colonial_eastern_america 
+					colonial_region = colonial_louisiana
+					colonial_region = colonial_alaska
+					colonial_region = colonial_acadia
+					colonial_region = colonial_hudson_bay
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "iberia_colonise_restriction"
+		potential = { 
+			NOT = { is_year = 1550 }
+			FROM = {
+				ai = yes
+				capital_scope = {
+					region = iberia_region
+				}
+			}
+		}
+		allow = { 
+			NOT = { 
+				trade_company_region = trade_company_labrador
+			}
+		}
+	}
+	condition = {
+		tooltip = "not_iberia_colonise_restriction"
+		potential = { 
+			NOT = { is_year = 1650 }
+			FROM = {
+				ai = yes
+				capital_scope = {
+					continent = europe
+					NOT = { region = iberia_region }
+				}
+			}
+		}
+		allow = { 
+			NOT = { 
+				OR = {
+					colonial_region = colonial_mexico
+					colonial_region = colonial_brazil
+					colonial_region = colonial_la_plata 
+					colonial_region = colonial_peru
+					colonial_region = colonial_chile
+					colonial_region = colonial_florida
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "russia_colonise_restriction"
+		potential = { 
+			NOT = { 
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					colonial_region = colonial_alaska
+				}
+			}
+			FROM = {
+				ai = yes
+				tag = RUS
+			}
+		}
+		allow = { 
+			NOT = { 
+				OR = {
+					colonial_region = colonial_mexico
+					colonial_region = colonial_brazil
+					colonial_region = colonial_la_plata 
+					colonial_region = colonial_peru 
+					colonial_region = colonial_canada
+					colonial_region = colonial_eastern_america 
+					colonial_region = colonial_louisiana
+					colonial_region = colonial_acadia
+					colonial_region = colonial_hudson_bay
+					colonial_region = colonial_chile
+					colonial_region = colonial_florida
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "colonial_region_restriction"
+		potential = {
+			FROM = {
+				is_colonial_nation = yes
+			}
+		}
+		allow = {
+			FROM = {
+				capital_scope = {
+					colonial_region = ROOT
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "subject_colonial_region_restriction"
+		potential = {
+			FROM = {
+				is_subject = yes
+				is_colonial_nation = no
+			}
+		}
+		allow = {
+			NOT = {
+				FROM = {
+					overlord = {
+						any_subject_country = {
+							is_colonial_nation = yes
+							capital_scope = {
+								colonial_region = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "limit_colonize_interior"
+		potential = {
+			FROM = {
+				NOT = {
+					OR = {
+						expansion_ideas = 6
+						has_idea = siberian_frontier
+						native_policy = native_policy_coexist
+					}
+				}
+			}
+		}
+		allow = {
+			ROOT = {
+				has_port = yes
+			}
+		}
+	}
+	# condition = {
+	# 	tooltip = "limit_colonize_border_province"
+	# 	potential = {
+	# 		FROM = {
+	# 			has_idea = siberian_frontier
+	# 			NOT = { has_country_modifier = rus_new_world_colonization }
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		ROOT = {
+	# 			is_in_capital_area = yes
+	# 		}
+	# 	}
+	# }
+	# condition = {
+	# 	tooltip = "limit_colonize_alaska"
+	# 	potential = {
+	# 		FROM = {
+	# 			has_country_modifier = rus_new_world_colonization
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		ROOT = {
+	# 			OR = {	
+	# 				colonial_region = colonial_alaska
+	# 				is_in_capital_area = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+}
+
+can_improve_production = {
+	condition = {
+		tooltip = no_goldspice_base_production_tt
+		potential = { trade_goods = goldspices }
+		allow = { NOT = { base_production = 5 }}
+	}
+}

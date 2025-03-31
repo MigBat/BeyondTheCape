@@ -1,0 +1,293 @@
+POR_ideas = {
+	start = {
+		heavy_ship_power = 0.1
+		morale_damage = 0.15
+	}
+
+	bonus = {
+		global_tariffs = 0.20
+	}
+
+	trigger = {
+		tag = POR
+	}
+	free = yes		#will be added at load.
+
+	legacy_of_the_navigator = {
+		range = 0.25
+		transport_attrition = -0.2
+	}
+	por_forais = {
+		global_tax_modifier = 0.1
+		defensiveness = 0.25
+	}
+	por_lisboa_arsenal = {
+		max_flagships = 1
+		global_ship_recruit_speed = -0.25
+	}
+	por_renaissance = {
+		institution_spread_from_true_faith = 0.25
+		prestige_decay = -0.01
+	}
+	por_india_armadas = {
+		treasure_fleet_income = 0.1
+		artillery_fire = 1
+	}
+	por_crusade = {
+		extra_manpower_at_religious_war = yes
+	}
+	por_royal_absolutism = {
+		max_absolutism = 10
+		yearly_absolutism = 0.5
+	}
+	# por_casa_da_india = {
+	# 	global_trade_power = 0.1
+	# }
+	# por_bandeirantes = {
+	# 	global_colonial_growth = 15
+	# }
+	# por_feitoria_system = {
+	# 	trade_steering = 0.1
+	# 	defensiveness = 0.15
+	# }
+	# por_cacadores = {
+	# 	fire_damage_received = -0.2
+	# }
+}
+
+CDI_ideas = {
+	start = {
+		no_religion_penalty = yes
+		global_autonomy = -0.05
+	}
+
+	bonus = {
+		state_governing_cost = -0.2
+	}
+
+	trigger = {
+		tag = CDI
+	}
+	free = yes
+
+	cdi_1 = {
+		improve_relation_modifier = 0.1
+	}
+	cdi_2 = {
+		ship_trade_power_modifier = 0.2
+	}
+	cdi_3 = {
+		prestige_decay = -0.01
+	}
+	cdi_4 = {
+		global_missionary_strength = 0.01
+	}
+	cdi_5 = {
+		trade_efficiency = 0.1
+	}
+	cdi_6 = {
+		center_of_trade_upgrade_cost = -0.1
+	}
+	cdi_7 = {
+		global_tax_modifier = 0.15
+	}
+}
+
+CAS_ideas = {
+	start = {
+		land_morale = 0.15
+		own_territory_dice_roll_bonus = 1
+	}
+	bonus = {
+		global_colonial_growth = 25
+	}
+	trigger = {
+		tag = CAS
+	}
+	free = yes		#will be added at load.
+	the_reconquista = {
+		army_tradition_decay = -0.01
+	}
+	spanish_inquisition = {
+		global_missionary_strength = 0.02
+		missionaries = 1
+	}
+	cabildos = {
+		production_efficiency = 0.1
+	}
+	inter_caetera = {
+		idea_claim_colonies = yes
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	infantas = {
+		diplomatic_reputation = 1
+		heir_chance = 0.33
+	}
+	salamanca_scholars = {
+		global_institution_spread = 0.1
+		reform_progress_growth = 0.1
+	}
+	nueva_planta = {
+		global_autonomy = -0.05
+	}
+}
+
+conqueror_party_ideas = {
+	start = {
+		military_tactics = 0.25
+		core_creation = -0.5
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		has_reform = conqueror_party_gov
+	}
+	free = yes
+		
+	conq_1 = {
+		drill_gain_modifier = 0.5
+	}
+	conq_2 = {	
+		drill_gain_modifier = 0.5
+	}
+	conq_3 = {
+		drill_gain_modifier = 0.5
+	}
+	conq_4 = {
+		yearly_army_professionalism = 0.01
+	}	
+	conq_5 = {
+		yearly_army_professionalism = 0.01
+	}
+	conq_6 = {
+		yearly_army_professionalism = 0.01
+	}	
+	conq_7 = {
+		yearly_army_professionalism = 0.01
+	}
+}
+
+AFO_ideas = {
+	start = {
+		military_tactics = 0.25
+		core_creation = -0.75
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = AFO
+	}
+	free = yes
+		
+	AFO_1 = {
+		manpower_recovery_speed = 1
+	}
+	AFO_2 = {	
+		ignore_coring_distance = yes
+	}
+	AFO_3 = {
+		defensiveness = 0.15
+	}
+	AFO_4 = {
+		production_efficiency = 0.1
+	}	
+	AFO_5 = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	AFO_6 = {
+		merc_maintenance_modifier = -0.15
+	}	
+	AFO_7 = {
+		advisor_pool = 1
+	}
+}
+
+SCO_Ideas = {
+	start = {
+		leader_land_shock = 1
+		own_territory_dice_roll_bonus = 1
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.05
+	}
+	
+	trigger = {
+		tag = SCO
+	}
+	free = yes
+	
+	break_the_black_douglas = {
+		global_unrest = -1
+	}
+	modernised_royal_scots_navy = {
+		global_ship_cost = -0.1
+	}
+	reign_in_the_clans = {
+		global_manpower_modifier = 0.2
+	}
+	comets = {
+		stability_cost_modifier = -0.10
+	}
+	royal_revenue = {
+		global_tax_modifier = 0.1
+	}
+	basilikon_doron = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1	#For completion's sake
+		horde_unity = 1
+	}
+	act_of_revocation = {
+		ae_impact = -0.15
+	}
+}
+
+NOR_ideas = {
+	start = {
+		global_sailors_modifier = 0.25
+		ship_durability = 0.10
+	}
+	
+	bonus = {
+		trade_steering = 0.20
+	}
+	
+	trigger = {
+		tag = NOR
+	}
+	free = yes
+	
+	call_of_our_forefathers = {
+		range = 0.33
+		# may_explore = yes
+	}
+	pioneer_spirit = {
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	natural_seamanship = {
+		naval_morale = 0.20		
+	}
+	nor_shipbuilding = {
+		global_ship_cost = -0.1
+	}
+	seize_the_opportunity = {
+ 		global_trade_power = 0.1
+	}
+	nor_fishing = {
+		production_efficiency = 0.1
+	}
+	write_new_sagas = {
+		prestige = 1
+		discipline = 0.025
+	}
+}

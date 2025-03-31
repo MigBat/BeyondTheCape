@@ -1,0 +1,124 @@
+economic_hegemon = {
+	allow = {
+		is_great_power = yes
+		# Discovery Potential
+		if = {
+			limit = { is_discovery_eco_hegemon = yes current_age = age_of_discovery }
+			monthly_income = 50
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_discovery_eco_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_income_discovery_eco_hegemon = yes
+			}
+		}
+		# Reformation Potential
+		else_if = {
+			limit = { is_reformation_eco_hegemon = yes current_age = age_of_reformation }
+			monthly_income = 100
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_reformation_eco_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_income_reformation_eco_hegemon = yes
+			}
+		}
+		# Absolutism Potential
+		else_if = {
+			limit = { is_absolutism_eco_hegemon = yes current_age = age_of_absolutism }
+			monthly_income = 150
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_absolutism_eco_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_income_absolutism_eco_hegemon = yes
+			}
+		}
+		# Revolutions Potential
+		else_if = {
+			limit = { is_revolutions_eco_hegemon = yes current_age = age_of_revolutions }
+			monthly_income = 200
+			if = {
+				limit = {
+					any_country = {
+						NOT = { tag = ROOT }
+						exists = yes
+						is_revolutions_eco_hegemon = yes
+						is_great_power = yes
+					}
+				}
+				most_income_revolutions_eco_hegemon = yes
+			}
+		}
+		# Discovery EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_discovery }
+			monthly_income = 75
+			NOT = { any_other_great_power = { monthly_income = root } }
+		}
+		# Reformation EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_reformation }
+			monthly_income = 125
+			NOT = { any_other_great_power = { monthly_income = root } }
+		}
+		# Absolutism EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_absolutism }
+			monthly_income = 175
+			NOT = { any_other_great_power = { monthly_income = root } }
+		}
+		# Revolutions EOC
+		else_if = {
+			limit = { is_emperor_of_china = yes current_age = age_of_revolutions }
+			monthly_income = 225
+			NOT = { any_other_great_power = { monthly_income = root } }
+		}
+		# Halve Requirements
+		else_if = {
+			limit = { has_country_flag = halve_hegemony_requirements }
+			monthly_income = 250
+			NOT = { any_other_great_power = { monthly_income = root } }
+		}
+		# Normal Great Power
+		else = {
+			monthly_income = 500
+			NOT = { any_other_great_power = { monthly_income = root } }
+		}
+		NOT = { has_country_modifier = lost_hegemony }
+	}
+	
+	base = {
+		war_exhaustion = -0.1
+		development_cost_modifier = -0.05
+		mercenary_manpower = 1.0
+	}
+	
+	# At max 100% tickup.
+	scale = {
+		global_unrest = -3
+		global_trade_goods_size_modifier = 0.25
+		min_autonomy_in_territories = -0.20
+	}
+	
+	max = {
+		governing_capacity_modifier = 0.20
+	}
+	#effect = {} # When a country picks the hegemon
+	#removed_effect = {} # When a country loses the hegemon
+}

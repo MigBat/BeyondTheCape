@@ -1,0 +1,794 @@
+country_decisions = {
+	purchase_indian_province = {
+		major = yes
+		potential = {
+			ai = no
+			mission_completed = btc_india
+			# NOT = { has_global_flag = btc_deal_accepted_flag }
+			NOT = { any_owned_province = { superregion = india_superregion } }
+			NOT = { has_country_flag = got_kochin }
+		}
+		allow = {
+			# treasury = 200
+			# hidden_trigger = {
+			# 	NOT = { has_country_flag = btc_looking_for_deal_flag }
+			# }
+			535 = {
+				has_province_modifier = foreign_feitoria
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+			1340 = {
+				heavy_ships_in_province = 3
+			}
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = got_kochin				
+			}
+			535 = {
+				cede_province = POR
+				add_core = POR
+				remove_province_modifier = foreign_feitoria
+				add_province_modifier = {
+					name = feitoria
+					duration = -1
+				}
+			}
+			# add_treasury = -200
+			# hidden_effect = {
+			# 	set_variable = {
+			# 		which = sale_rejected_times
+			# 		value = 0
+			# 	}
+			# 	set_country_flag = btc_looking_for_deal_flag
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { has_country_flag = btc_looking_for_deal_flag }
+			# 	}
+			# 	custom_tooltip = btc_looking_for_deal_tt
+			# }
+			# else = {
+			# 	custom_tooltip = btc_looking_for_deal_2_tt
+			# }
+		}
+	}
+	establish_casa_india = {
+		major = yes
+		potential = {
+			tag = POR
+			NOT = { has_country_flag = established_casa_india_flag }
+			mission_completed = btc_casa_india
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				superregion = india_superregion
+				value = 1
+			}
+		}
+		effect = {
+			custom_tooltip = btc_por_establish_casa_india
+			hidden_effect = {
+				set_country_flag = established_casa_india_flag
+				every_owned_province = {
+					limit = {
+						superregion = india_superregion
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_province = {
+					limit = {
+					   has_discovered = ROOT
+					}
+					discover_country = CDI
+			  	}
+				create_subject = {
+					subject_type = commercial_enterprise
+					subject = CDI
+				}
+				CDI = {
+					change_government = republic
+					add_government_reform = trade_company_government
+					change_religion = ROOT
+					change_primary_culture = ROOT
+					add_adm_power = 100
+					add_dip_power = 100
+					add_mil_power = 100
+					add_treasury = 200
+					set_prestige_to_zero = yes
+					add_republican_tradition = 100
+					# swap_free_idea_group = yes
+					adopt_technology_group_from_target = { target = root }
+					define_ruler = {
+						name = "Francisco de Almeida"
+						dynasty = "de Almeida"
+						DIP = 4
+						ADM = 4
+						MIL = 5
+					}
+				}
+				india_superregion = { 
+					limit = { 	
+						NOT = { is_core = CDI } 
+						NOT = { country_or_non_sovereign_subject_holds = CDI }
+						NOT = { owned_by = CDI } 
+						has_port = yes
+					}
+					add_permanent_claim = CDI 
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	expand_casa_india_india = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			CDI = {
+				is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+			}
+			NOT = {
+				india_superregion = {
+					type = all
+					owned_by = CDI
+				}
+			}
+			num_of_owned_provinces_with = {
+				superregion = india_superregion
+				value = 1
+			}
+		}
+		allow = {
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = india_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = india_superregion
+					is_core = POR
+					value = 1
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = btc_por_cede_provinces_to_casa_india_india
+			hidden_effect = {
+				set_country_flag = established_casa_india_flag
+				every_owned_province = {
+					limit = {
+						superregion = india_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = india_superregion
+						range = CDI
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_permanent_claim = CDI
+				}
+				every_province = {
+					limit = {
+					   has_discovered = ROOT
+					}
+					discover_country = CDI
+			  	}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	expand_casa_india_indonesia = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			CDI = {
+				is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+			}
+			NOT = {
+				east_indies_superregion = {
+					type = all
+					owned_by = CDI
+				}
+			}
+			num_of_owned_provinces_with = {
+				superregion = east_indies_superregion
+				value = 1
+			}
+		}
+		allow = {
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = east_indies_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = east_indies_superregion
+					is_core = POR
+					value = 1
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = btc_por_cede_provinces_to_casa_india_indonesia
+			hidden_effect = {
+				set_country_flag = established_casa_india_flag
+				every_owned_province = {
+					limit = {
+						superregion = east_indies_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = east_indies_superregion
+						range = CDI
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_permanent_claim = CDI
+				}
+				every_province = {
+					limit = {
+					   has_discovered = ROOT
+					}
+					discover_country = CDI
+			  	}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# expand_casa_india_guinea = {
+	# 	major = yes
+	# 	potential = {
+	# 		ai = no
+	# 		tag = POR
+	# 		CDI = {
+	# 			is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+	# 		}
+	# 		NOT = {
+	# 			guinea_region = {
+	# 				type = all
+	# 				owned_by = CDI
+	# 			}
+	# 		}
+	# 		num_of_owned_provinces_with = {
+	# 			region = guinea_region
+	# 			value = 1
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		num_of_owned_provinces_with = {
+	# 			region = guinea_region
+	# 			value = 1
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		custom_tooltip = btc_por_cede_provinces_to_casa_india_guinea
+	# 		hidden_effect = {
+	# 			set_country_flag = established_casa_india_flag
+	# 			every_owned_province = {
+	# 				limit = {
+	# 					region = guinea_region
+	# 				}
+	# 				cede_province = CDI
+	# 				add_core = CDI
+	# 			}
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	
+	# expand_casa_india_kongo = {
+	# 	major = yes
+	# 	potential = {
+	# 		ai = no
+	# 		tag = POR
+	# 		CDI = {
+	# 			is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+	# 		}
+	# 		NOT = {
+	# 			kongo_region = {
+	# 				type = all
+	# 				owned_by = CDI
+	# 			}
+	# 		}
+	# 		num_of_owned_provinces_with = {
+	# 			region = kongo_region
+	# 			value = 1
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		num_of_owned_provinces_with = {
+	# 			region = kongo_region
+	# 			value = 1
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		custom_tooltip = btc_por_cede_provinces_to_casa_india_kongo
+	# 		hidden_effect = {
+	# 			set_country_flag = established_casa_india_flag
+	# 			every_owned_province = {
+	# 				limit = {
+	# 					region = kongo_region
+	# 				}
+	# 				cede_province = CDI
+	# 				add_core = CDI
+	# 			}
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	
+	# expand_casa_india_south_africa = {
+	# 	major = yes
+	# 	potential = {
+	# 		ai = no
+	# 		tag = POR
+	# 		CDI = {
+	# 			is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+	# 		}
+	# 		NOT = {
+	# 			south_africa_region = {
+	# 				type = all
+	# 				owned_by = CDI
+	# 			}
+	# 		}
+	# 		num_of_owned_provinces_with = {
+	# 			region = south_africa_region
+	# 			value = 1
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		num_of_owned_provinces_with = {
+	# 			region = south_africa_region
+	# 			value = 1
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		custom_tooltip = btc_por_cede_provinces_to_casa_india_south_africa
+	# 		hidden_effect = {
+	# 			set_country_flag = established_casa_india_flag
+	# 			every_owned_province = {
+	# 				limit = {
+	# 					region = south_africa_region
+	# 				}
+	# 				cede_province = CDI
+	# 				add_core = CDI
+	# 			}
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	
+	# expand_casa_india_east_africa = {
+	# 	major = yes
+	# 	potential = {
+	# 		ai = no
+	# 		tag = POR
+	# 		CDI = {
+	# 			is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+	# 		}
+	# 		NOT = {
+	# 			east_africa_region = {
+	# 				type = all
+	# 				owned_by = CDI
+	# 			}
+	# 		}
+	# 		num_of_owned_provinces_with = {
+	# 			region = east_africa_region
+	# 			value = 1
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		num_of_owned_provinces_with = {
+	# 			region = east_africa_region
+	# 			value = 1
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		custom_tooltip = btc_por_cede_provinces_to_casa_india_east_africa
+	# 		hidden_effect = {
+	# 			set_country_flag = established_casa_india_flag
+	# 			every_owned_province = {
+	# 				limit = {
+	# 					region = east_africa_region
+	# 				}
+	# 				cede_province = CDI
+	# 				add_core = CDI
+	# 			}
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	
+	expand_casa_india_arabia = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			CDI = {
+				is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+			}
+			NOT = {
+				arabia_region = {
+					type = all
+					owned_by = CDI
+				}
+			}
+			num_of_owned_provinces_with = {
+				region = arabia_region
+				value = 1
+			}
+		}
+		allow = {
+			OR = {
+				num_of_owned_provinces_with = {
+					region = arabia_region
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					region = arabia_region
+					is_core = POR
+					value = 1
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = btc_por_cede_provinces_to_casa_india_arabia
+			hidden_effect = {
+				set_country_flag = established_casa_india_flag
+				every_owned_province = {
+					limit = {
+						region = arabia_region
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						region = arabia_region
+						range = CDI
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_permanent_claim = CDI
+				}
+				every_province = {
+					limit = {
+					   has_discovered = ROOT
+					}
+					discover_country = CDI
+			  	}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	expand_casa_india_horn = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			CDI = {
+				is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+			}
+			NOT = {
+				horn_of_africa_region = {
+					type = all
+					owned_by = CDI
+				}
+			}
+			num_of_owned_provinces_with = {
+				region = horn_of_africa_region
+				value = 1
+			}
+		}
+		allow = {
+			OR = {
+				num_of_owned_provinces_with = {
+					region = horn_of_africa_region
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					region = horn_of_africa_region
+					is_core = POR
+					value = 1
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = btc_por_cede_provinces_to_casa_india_horn
+			hidden_effect = {
+				set_country_flag = established_casa_india_flag
+				every_owned_province = {
+					limit = {
+						region = horn_of_africa_region
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						region = horn_of_africa_region
+						range = CDI
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_permanent_claim = CDI
+				}
+				every_province = {
+					limit = {
+					   has_discovered = ROOT
+					}
+					discover_country = CDI
+			  	}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	expand_casa_india_persia = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			CDI = {
+				is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+			}
+			NOT = {
+				persia_superregion = {
+					type = all
+					owned_by = CDI
+				}
+			}
+			num_of_owned_provinces_with = {
+				superregion = persia_superregion
+				value = 1
+			}
+		}
+		allow = {
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = persia_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = persia_superregion
+					is_core = POR
+					value = 1
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = btc_por_cede_provinces_to_casa_india_persia
+			hidden_effect = {
+				set_country_flag = established_casa_india_flag
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = persia_superregion
+						range = CDI
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_permanent_claim = CDI
+				}
+				every_province = {
+					limit = {
+					   has_discovered = ROOT
+					}
+					discover_country = CDI
+			  	}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	expand_casa_india_china = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			CDI = {
+				is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+			}
+			NOT = {
+				china_superregion = {
+					type = all
+					owned_by = CDI
+				}
+			}
+			num_of_owned_provinces_with = {
+				superregion = china_superregion
+				value = 1
+			}
+		}
+		allow = {
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = china_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = china_superregion
+					is_core = POR
+					value = 1
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = btc_por_cede_provinces_to_casa_india_china
+			hidden_effect = {
+				set_country_flag = established_casa_india_flag
+				every_owned_province = {
+					limit = {
+						superregion = china_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = china_superregion
+						range = CDI
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_permanent_claim = CDI
+				}
+				every_province = {
+					limit = {
+					   has_discovered = ROOT
+					}
+					discover_country = CDI
+			  	}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	expand_casa_india_far_east = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			CDI = {
+				is_subject_of_type_with_overlord = { who = ROOT type = commercial_enterprise }
+			}
+			NOT = {
+				far_east_superregion = {
+					type = all
+					owned_by = CDI
+				}
+			}
+			num_of_owned_provinces_with = {
+				superregion = far_east_superregion
+				value = 1
+			}
+		}
+		allow = {
+			OR = {
+				num_of_owned_provinces_with = {
+					superregion = far_east_superregion
+					range = CDI
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					superregion = far_east_superregion
+					is_core = POR
+					value = 1
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = btc_por_cede_provinces_to_casa_india_far_east
+			hidden_effect = {
+				set_country_flag = established_casa_india_flag
+				every_owned_province = {
+					limit = {
+						superregion = far_east_superregion
+						is_core = ROOT
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_core = CDI
+				}
+				every_owned_province = {
+					limit = {
+						superregion = far_east_superregion
+						range = CDI
+					}
+					remove_core = ROOT
+					remove_claim = ROOT
+					cede_province = CDI
+					add_permanent_claim = CDI
+				}
+				every_province = {
+					limit = {
+					   has_discovered = ROOT
+					}
+					discover_country = CDI
+			  	}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

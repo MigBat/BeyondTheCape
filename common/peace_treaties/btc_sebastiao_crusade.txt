@@ -1,0 +1,35 @@
+po_sebastiao_crusade = {
+	category = 6
+	warscore_cost = {
+		no_provinces = 100
+	}
+	power_projection = humiliated_rival
+	requires_is_allowed = yes
+	is_allowed = {
+		ROOT = { 
+			tag = POR
+			offensive_war_with = MOR
+			OR = {
+				has_country_flag = war_morocco_fez_ally
+				has_country_flag = war_morocco_fez_march
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = sebastiao_crusade_tt
+		hidden_effect = {
+			MOR = {
+				every_owned_province = {
+					cede_province = FEZ
+					add_core = FEZ
+				}	
+			}		
+		}
+	}
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value
+			value = 1
+		}
+	}
+}

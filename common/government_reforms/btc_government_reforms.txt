@@ -1,0 +1,246 @@
+portuguese_monarchy_reform = {
+	icon = "portugal_monarchy"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		tag = POR
+		has_reform = portuguese_monarchy_reform
+	}
+	nation_designer_trigger = {
+		primary_culture = portugese
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		naval_forcelimit_modifier = 0.2
+		unrest_catholic_provinces = -1
+		# all_estate_loyalty_equilibrium = 0.05
+		# all_estate_influence_modifier = 0.05
+		parliament_effect_duration = -5
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		government_abilities = {
+			naval_professionalism_mechanic
+		}
+	}
+	custom_attributes = {
+		can_establish_feitorias = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+portuguese_empire_reform = {
+	icon = "portuguese_king"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		tag = POR
+		has_reform = portuguese_empire_reform
+	}
+	nation_designer_trigger = {
+		primary_culture = portugese
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		naval_forcelimit_modifier = 0.2
+		unrest_catholic_provinces = -1
+		all_estate_loyalty_equilibrium = 0.05
+		all_estate_influence_modifier = 0.05
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Domination"
+		}
+		government_abilities = {
+			portuguese_saudade_mechanic
+		}
+	}
+	custom_attributes = {
+		can_establish_feitorias = yes
+		centralize_state_development = yes 
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+portugal_absolutist_reform = {
+	icon = "portugal_absolutism"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		tag = POR
+		has_reform = portugal_absolutist_reform
+	}
+	nation_designer_trigger = {
+		primary_culture = portugese
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		all_estate_influence_modifier = -0.1
+		max_absolutism = 10
+		can_revoke_parliament_seats = yes
+		num_of_parliament_issues = -2
+		parliament_effect_duration = 10
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		can_establish_feitorias = yes
+		centralize_state_development = yes 
+		can_force_issue_through = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+portugal_liberal_reform = {
+	icon = "portugal_liberalism"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		tag = POR
+		has_reform = portugal_liberal_reform
+	}
+	nation_designer_trigger = {
+		primary_culture = portugese
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		land_morale = 0.1
+		naval_morale = 0.1
+		years_of_nationalism = -10
+		global_unrest = -2
+		max_absolutism = -50
+		yearly_absolutism = -2
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		can_establish_feitorias = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+legacy_of_albuquerque_reform = {
+	icon = "legacy_of_albuquerque"
+	potential = {
+		has_unlocked_government_reform = { government_reform = legacy_of_albuquerque_reform }
+	}
+	trigger = {
+	}
+	modifiers = {
+		reverse_relation_with_same_religion = 15
+		reverse_relation_with_heathen_religion = -30
+	}
+	custom_attributes = {
+		enable_grand_crusade = yes
+		pp_on_heathen_wars = yes
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+ordennancas_reform = {
+	icon = "ordenancas"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		NOT = { religion_group = muslim }
+		OR = {
+			primary_culture = portugese
+			primary_culture = brazilian
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = ordennancas_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		land_forcelimit_modifier = -0.1
+		garrison_size = 0.2
+		garrison_damage = 0.5
+		global_garrison_growth = 0.1
+		hostile_attrition = 2
+	}
+	custom_attributes = {
+		can_raise_manpower_from_home_region = yes
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+conqueror_party_gov = {
+	icon = "conqueror_party"
+	potential = {
+		is_subject_of_type = conqueror_party
+	}
+	fixed_rank = 1
+	queen = no
+	heir = no
+	royal_marriage = no
+	nomad = yes
+	raze_province = yes
+	lock_level_when_selected = yes
+	modifiers = {
+		reverse_relation_with_same_religion = 15
+		reverse_relation_with_heathen_religion = -30
+	}
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+	ai = {
+		factor = 10
+	}
+}

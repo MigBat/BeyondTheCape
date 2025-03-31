@@ -1,0 +1,99 @@
+
+
+gibraltar_sound = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			owns = 226
+			owns = 1751
+		}
+	}
+
+	province_trade_power_value = 5
+}
+
+oresund_sound = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			owns = 6
+			owns = 12
+			owns = 1983
+			owns = 14
+			owns =  4149
+			owns = 4142
+		}
+	}
+
+	province_trade_power_value = 5
+}
+
+bosphorus_sound = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			owns = 151
+			owns = 4779
+			owns = 2296
+			owns = 317
+			owns = 316
+		}
+	}
+
+	province_trade_power_value = 5
+}
+
+arab_sound = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			owns = 1215
+			owns = 387
+		}
+	}
+	
+	province_trade_power_value = 5
+}
+
+persian_sound = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			owns = 398
+			owns = 2999
+		}
+	}
+	
+	province_trade_power_value = 5
+}
+
+singapore_sound = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			owns = 620
+			owns = 597
+			owns = 4815
+		}
+	}
+	
+	province_trade_power_value = 5
+}

@@ -1,0 +1,100 @@
+country_decisions = {
+	revoke_tordesillas = {
+		potential = {
+			ai = no
+			OR = {
+				has_country_flag = tordesillas_por
+				has_country_flag = tordesillas_cas
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = revoke_tordesillas_tt
+			}
+		}
+		effect = {
+			custom_tooltip = tordesillas_revoked_tt
+			hidden_effect = {
+				POR = {
+					clr_country_flag = tordesillas_por
+				}
+				CAS = {
+					clr_country_flag = tordesillas_cas
+				}
+				SPA = {
+					clr_country_flag = tordesillas_cas
+				}
+			}
+			if = {
+				limit = {
+					POR = {
+						exists = yes
+					}
+					OR = {
+						CAS = {
+							exists = yes
+						}
+						SPA = {
+							exists = yes
+						}
+					}
+				}
+				add_stability = -2
+				PAP = {
+					add_opinion = {
+						who = ROOT
+						modifier = revoked_tordesillas
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_or_was_tag = {
+							tag = POR
+						}
+					}
+					exists = CAS
+				}
+				CAS = {
+					add_opinion = {
+						who = ROOT
+						modifier = revoked_tordesillas
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_or_was_tag = {
+							tag = POR
+						}
+					}
+					exists = SPA
+				}
+				SPA = {
+					add_opinion = {
+						who = ROOT
+						modifier = revoked_tordesillas
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_or_was_tag = {
+							tag = CAS
+						}
+					}
+					exists = POR
+				}
+				POR = {
+					add_opinion = {
+						who = ROOT
+						modifier = revoked_tordesillas
+					}
+				}
+			}
+		}
+	}
+}

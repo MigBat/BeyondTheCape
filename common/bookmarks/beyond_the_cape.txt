@@ -1,0 +1,20 @@
+bookmark =
+{
+	name = "BEYOND_THE_CAPE"
+	desc = "BEYOND_THE_CAPE_DESC"
+	date = 1444.11.11
+	
+	center = 227
+	default = yes
+	
+	country = POR
+	country = CAS
+	country = ENG
+	country = FRA
+	country = HOL
+	country = NOR
+	country = DAN
+	country = SWE
+	
+	easy_country = POR
+}

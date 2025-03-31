@@ -1,0 +1,305 @@
+song = {
+	name = "autumninbraganca"
+	
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+	}
+}
+song = {
+	name = "edgeoftheworld"
+	
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+	}
+}
+song = {
+	name = "greenpines"
+	
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+	}
+}
+song = {
+	name = "inlisbon"
+	
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 1.5
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+	}
+}
+song = {
+	name = "saudade"
+	
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { manpower_percentage = 0.15 }
+		}
+		modifier = {
+			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+	}
+}
+song = {
+	name = "lakesofazores"
+	
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}	
+	}
+}
+song = {
+	name = "windsfromspain"
+	
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			current_age = age_of_discovery
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_reformation
+		}
+		modifier = {
+			factor = 2
+			primary_culture = portugese
+		}	
+	}
+}
+song = {
+	name = "carracksarrive"
+	
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+		modifier = {
+			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+	}	
+}
+song = {
+	name = "cliffsofgalicia"
+	
+	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+	}	
+}
+song = {
+ 	name = "enchantedmoura"
+	
+ 	chance = {
+		factor = 1.5
+		modifier = {
+ 			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+ 	}		
+}
+song = {
+ 	name = "indietribulationis"
+	
+ 	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions
+		}
+		modifier = {
+ 			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+ 	}		
+}
+song = {
+ 	name = "memoriadanoite"
+	
+ 	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+ 			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+ 	}		
+}
+song = {
+ 	name = "nymphsofthetagus"
+	
+ 	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+ 			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+ 	}		
+}
+song = {
+ 	name = "songofrain"
+	
+ 	chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+ 			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+ 	}		
+}
+song = {
+ 	name = "throughmistandfoliage"
+	
+ 	chance = {
+		factor = 1.5
+ 		modifier = {
+ 			factor = 1.5
+ 			is_at_war = yes
+ 		}
+		 modifier = {
+			factor = 0
+			is_at_war = no
+		 }
+		modifier = {
+ 			factor = 2
+			primary_culture = portugese
+		}
+		modifier = {
+			factor = 2
+			primary_culture = galician
+		}
+ 	}		
+}

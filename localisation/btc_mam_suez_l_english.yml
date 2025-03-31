@@ -1,0 +1,6 @@
+﻿l_english:
+
+ btc_enable_move_ships_title:0 "Start moving ships\n\nHeavy ship cost: 2 ducats\nLight ship cost: 1 ducat\nGalley ship cost: 1 ducat\nTransport ship cost: 1 ducat"
+ btc_disable_move_ships_title:0 "Stop moving ships\n\nHeavy ship cost: 2 ducats\nLight ship cost: 1 ducat\nGalley ship cost: 1 ducat\nTransport ship cost: 1 ducat"
+
+ province_has_ships_tt:0 "There's at least one ship docked here."

@@ -1,0 +1,34 @@
+dlc042_por_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = portugese
+			primary_culture = brazilian
+		}
+	}
+
+	continents = {
+		europe
+	}
+
+	sprite_infantry = {
+		0 = POR_NEW_INFANTRY_1
+		1 = POR_NEW_INFANTRY_2
+		2 = POR_NEW_INFANTRY_3
+		3 = POR_NEW_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = POR_NEW_CAVALRY_1
+		1 = POR_NEW_CAVALRY_2
+		2 = POR_NEW_CAVALRY_3
+		3 = POR_NEW_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = POR_NEW_ARTILLERY_1
+		1 = POR_NEW_ARTILLERY_2
+		2 = POR_NEW_ARTILLERY_3
+		3 = POR_NEW_ARTILLERY_4
+	}
+}

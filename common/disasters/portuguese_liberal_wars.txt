@@ -1,0 +1,109 @@
+portuguese_liberalism = {
+	potential = {
+		current_age = age_of_revolutions
+		NOT = { has_country_flag = had_portuguese_liberal_wars_disaster }
+		uses_doom = no
+		is_free_or_tributary_trigger = yes
+		normal_or_historical_nations = yes
+		tag = POR
+		OR = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = colonial_brazil
+				}
+			}
+			any_owned_province = {
+				colonial_region = colonial_brazil
+			}
+		}
+		OR = {
+			revolution_target_exists = yes
+			has_global_flag = no_more_revolutions_ever
+		}
+	}
+	
+	can_start = {
+		has_any_disaster = no
+		is_at_war = no
+	}
+	
+	can_stop = { 
+		has_any_disaster = yes
+		is_at_war = yes
+	}
+	
+	progress = {
+		modifier = {
+			factor = 0.1
+			absolutism = 25
+			NOT = { absolutism = 50 }
+		} 
+		modifier = {
+			factor = 0.2
+			absolutism = 50
+			NOT = { absolutism = 75 }
+		} 
+		modifier = {
+			factor = 0.1
+			unrest = 1
+			NOT = { unrest = 2 }
+		} 
+		modifier = {
+			factor = 0.2
+			unrest = 2
+			NOT = { unrest = 3 }
+		} 
+		modifier = {
+			factor = 0.3
+			unrest = 3
+			NOT = { unrest = 4 }
+		} 
+		modifier = {
+			factor = 0.4
+			unrest = 4
+			NOT = { unrest = 5 }
+		} 
+		modifier = {
+			factor = 0.5
+			unrest = 5
+		} 
+		modifier = {
+			factor = 0.3
+			absolutism = 75
+		} 
+		modifier = {
+			factor = 0.4
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 0.5
+			is_bankrupt = yes
+		} 
+	}
+	
+	can_end = {
+		is_at_war = no
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { num_of_rebel_armies = 1 }
+		custom_trigger_tooltip = {
+			tooltip = brazil_declared_war_tt
+			has_country_flag = brazil_declared_war
+		}
+	}
+
+	modifier = {
+		global_unrest = 10
+		legitimacy = -2
+		can_not_declare_war = yes
+	}
+
+	on_start = portuguese_liberalism.1
+	on_end = portuguese_liberalism.100
+
+	on_monthly = {
+		events = {
+			portuguese_liberalism.10
+		}
+	}
+}

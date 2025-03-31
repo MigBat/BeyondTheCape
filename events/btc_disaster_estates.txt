@@ -1,0 +1,46 @@
+namespace = btc_estate_disasters
+
+# The Slavers take control
+country_event = {
+	id = btc_estate_disasters.1
+	title = btc_estate_disasters.1.t
+	desc = btc_estate_disasters.1.d
+	picture = BURGHER_ESTATE_UPSET_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = slavers_estate_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = btc_estate_disasters.1.a	
+		add_stability = -1
+		custom_tooltip = btc_estate_disasters.1.a.tt
+	}
+}
+
+# Slavers brought to heel
+country_event = {
+	id = btc_estate_disasters.2
+	title = btc_estate_disasters.2.t
+	desc = btc_estate_disasters.2.d
+	picture = BURGHER_ESTATE_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+	
+	option = {
+		name = btc_estate_disasters.2.a
+	}
+}

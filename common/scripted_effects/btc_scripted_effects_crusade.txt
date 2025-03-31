@@ -1,0 +1,9 @@
+enable_grand_crusade = {
+	custom_tooltip = enable_grand_crusade_tt
+	set_country_flag = can_declare_grand_crusade_wars
+	hidden_effect = {
+		save_global_event_target_as = grand_crusader_war_monger
+		set_global_flag = grand_crusades_enabled
+		set_country_flag = grand_crusader_war_monger_flag
+	}
+}

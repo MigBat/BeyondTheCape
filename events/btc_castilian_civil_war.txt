@@ -1,0 +1,820 @@
+namespace = castilian_civil_war
+
+# Civil War in Castile
+country_event = {
+	id = castilian_civil_war.1
+	title = "castilian_civil_war.1_t"
+	desc = "castilian_civil_war.1_d"
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_country_flag = had_cas_civil_war
+		add_stability = -2
+
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					has_building = fort_15th
+				}
+				set_province_flag = cas_civil_war_start
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					NOT = { has_province_flag = cas_civil_war_start } 
+				}
+				set_province_flag = cas_civil_war_start_2
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					NOT = { has_province_flag = cas_civil_war_start } 
+					NOT = { has_province_flag = cas_civil_war_start_2 } 
+				}
+				set_province_flag = cas_civil_war_start_3
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					NOT = { has_province_flag = cas_civil_war_start } 
+					NOT = { has_province_flag = cas_civil_war_start_2 } 
+					NOT = { has_province_flag = cas_civil_war_start_3 } 
+				}
+				set_province_flag = cas_civil_war_2
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					NOT = { has_province_flag = cas_civil_war_start } 
+					NOT = { has_province_flag = cas_civil_war_start_2 } 
+					NOT = { has_province_flag = cas_civil_war_start_3 } 
+					NOT = { has_province_flag = cas_civil_war_2 } 
+				}
+				set_province_flag = cas_civil_war_3
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			POR = {
+				add_country_modifier = {
+					name = no_declare_war_ccw
+					duration = -1
+				}
+			}
+			ARA = {
+				add_country_modifier = {
+					name = no_declare_war_ccw
+					duration = -1
+				}
+			}			
+		}
+	}
+	
+	option = {		# Support Joanna
+		name = "castilian_civil_war.1a"
+
+		set_country_flag = civil_war_in_castile
+
+		ai_chance = {
+			factor = 0
+		}
+
+		POR = {
+			country_event = { id = castilian_civil_war.2 days = 30 }
+		}
+		set_country_flag = side_with_portugal
+
+		random_owned_province = {
+			limit = {
+				has_province_flag = cas_civil_war_start
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				friend = ARA
+				size = 1
+				win = yes
+			}
+			clr_province_flag = cas_civil_war_start
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = cas_civil_war_start_2
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				friend = ARA
+				size = 1
+				win = yes
+			}
+			clr_province_flag = cas_civil_war_start_2
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = cas_civil_war_start_3
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				friend = ARA
+				size = 1
+				win = yes
+			}
+			clr_province_flag = cas_civil_war_start_3
+		}
+	}
+
+	option = {		# Support Isabella
+		name = "castilian_civil_war.1b"
+
+		set_country_flag = civil_war_in_castile
+
+		ai_chance = {
+			factor = 1
+		}
+
+		ARA = {
+			country_event = { id = castilian_civil_war.3 days = 30 }
+		}
+		set_country_flag = side_with_aragon
+
+		random_owned_province = {
+			limit = {
+				has_province_flag = cas_civil_war_start
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				friend = POR
+				size = 1
+				win = yes
+			}
+			clr_province_flag = cas_civil_war_start
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = cas_civil_war_start_2
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				friend = POR
+				size = 1
+				win = yes
+			}
+			clr_province_flag = cas_civil_war_start_2
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = cas_civil_war_start_3
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				friend = POR
+				size = 1
+				win = yes
+			}
+			clr_province_flag = cas_civil_war_start_3
+		}
+	}
+}
+
+# Castile supports Joanna's claim (POR)
+country_event = {
+	id = castilian_civil_war.2
+	title = "castilian_civil_war.2_t"
+	desc = "castilian_civil_war.2_d"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Press the claim
+		name = "castilian_civil_war.2a"
+
+		trigger = {
+			NOT = { has_regency = yes }
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+
+		create_alliance = CAS
+		create_marriage = CAS
+		remove_rival = CAS
+		add_historical_friend = CAS
+		add_trust = {
+			who = CAS
+			value = 30
+		}
+		CAS = { 
+			remove_rival = ROOT
+			add_historical_friend = ROOT
+			add_trust = {
+				who = ROOT
+				value = 30
+			}
+		}
+		define_consort = {
+			country_of_origin = CAS
+			name = "Joanna"
+			dynasty = "de Trastámara"
+			age = 15
+			culture = castillian
+			adm = 5
+			dip = 5
+			mil = 4
+			female = yes
+		}
+		set_consort_flag = joanna
+
+		ARA = {
+			country_event = { id = castilian_civil_war.9 days = 30 } # Contest Joanna's claim
+		}
+	}
+
+	option = { # Disregard the claim
+		name = "castilian_civil_war.2b"
+
+		ai_chance = {
+			factor = 10
+		}
+
+		hidden_effect = { remove_country_modifier = no_declare_war_ccw }
+		add_prestige = -10
+
+		CAS = {
+			country_event = { id = castilian_civil_war.5 days = 15 } # Joanna de Castile
+		}
+	}
+}
+
+# Castile supports Isabella's claim (ARA)
+country_event = {
+	id = castilian_civil_war.3
+	title = "castilian_civil_war.3_t"
+	desc = "castilian_civil_war.3_d"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Press the claim
+		name = "castilian_civil_war.3a"
+
+		trigger = {
+			NOT = { has_regency = yes }
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+		
+		create_alliance = CAS
+		create_marriage = CAS
+		remove_rival = CAS
+		add_historical_friend = CAS
+		add_trust = {
+			who = CAS
+			value = 30
+		}
+		CAS = { 
+			remove_rival = ROOT
+			add_historical_friend = ROOT 
+			add_trust = {
+				who = ROOT
+				value = 30
+			}
+		}
+		
+		define_consort = {
+			country_of_origin = CAS
+			name = "Isabella"
+			dynasty = "de Trastámara"
+			age = 24
+			culture = castillian
+			adm = 5
+			dip = 6
+			mil = 3
+			female = yes
+		}
+		set_consort_flag = isabella
+
+		POR = {
+			country_event = { id = castilian_civil_war.8 days = 30 } # Contest Isabella's claim
+		}
+	}
+
+	option = { # Disregard the claim
+		name = "castilian_civil_war.3b"
+
+		ai_chance = {
+			factor = 0
+		}
+
+		hidden_effect = { remove_country_modifier = no_declare_war_ccw }
+		add_prestige = -10
+
+		CAS = {
+			country_event = { id = castilian_civil_war.7 days = 15 } # Isabella de Castile
+		}
+	}
+}
+
+# Joanna de Castile
+country_event = {
+	id = castilian_civil_war.5
+	title = "castilian_civil_war.5_t"
+	desc = "castilian_civil_war.5_d"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # A new Queen!
+		name = "castilian_civil_war.5a"
+
+		define_ruler = {
+			name = "Joanna"
+			dynasty = "de Trastámara"
+			age = 15
+			culture = castillian
+			adm = 5
+			dip = 5
+			mil = 4
+			claim = 50
+			female = yes
+		}
+
+		ARA = {
+			country_event = { id = castilian_civil_war.9 days = 30 } # Contest Joanna's claim
+		}
+	}
+}
+
+# Isabella de Castile
+country_event = {
+	id = castilian_civil_war.7
+	title = "castilian_civil_war.7_t"
+	desc = "castilian_civil_war.7_d"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # A new Queen!
+		name = "castilian_civil_war.7a"
+		define_ruler = {
+			name = "Isabella"
+			dynasty = "de Trastámara"
+			age = 24
+			culture = castillian
+			adm = 5
+			dip = 6
+			mil = 3
+			claim = 50
+			female = yes
+		}
+
+		POR = {
+			country_event = { id = castilian_civil_war.8 days = 30 } # Contest Isabella's claim
+		}
+	}
+}
+
+# Contest Isabella's claim (POR)
+country_event = {
+	id = castilian_civil_war.8
+	title = "castilian_civil_war.8_t"
+	desc = "castilian_civil_war.8_d"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # We will fight for Joanna's right
+		name = "castilian_civil_war.8a"
+
+		ai_chance = {
+			factor = 1
+		}
+
+		define_consort = {
+			country_of_origin = CAS
+			name = "Joanna"
+			dynasty = "de Trastámara"
+			age = 15
+			culture = castillian
+			adm = 5
+			dip = 5
+			mil = 4
+			female = yes
+		}
+
+		set_country_flag = at_war
+		CAS = { set_country_flag = at_war }
+		declare_war_with_cb = {
+			who = CAS
+			casus_belli = cb_castilian_civil_war
+		}
+		if = {
+			limit = { 
+				ARA = { has_consort_flag = isabella }
+			}
+			ARA = { 
+				join_all_defensive_wars_of = CAS
+				set_country_flag = at_war
+			}
+		}
+
+		FRA = {
+			country_event = { id = castilian_civil_war.10 days = 90 } # Support Portugal in the war
+		}
+	}
+
+	option = { # Avoid involvement
+		name = "castilian_civil_war.8b"
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
+		
+		CAS = {
+			set_country_flag = no_contest
+			random_owned_province = {
+				limit = {
+					has_province_flag = cas_civil_war_2
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					friend = POR
+					size = 3
+					leader = "Joanna"
+					leader_dynasty = "de Trastámara"
+					female = yes
+					win = yes
+				}
+				clr_province_flag = cas_civil_war_2
+			}
+			random_owned_province = {
+				limit = {
+					has_province_flag = cas_civil_war_3
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+					win = yes
+				}
+				clr_province_flag = cas_civil_war_3
+			}
+		}
+	}
+}
+
+# Contest Joanna's claim (ARA)
+country_event = {
+	id = castilian_civil_war.9
+	title = "castilian_civil_war.9_t"
+	desc = "castilian_civil_war.9_d"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # We will fight for Isabella's right
+		name = "castilian_civil_war.9a"
+
+		ai_chance = {
+			factor = 1
+		}
+		
+		define_consort = {
+			country_of_origin = CAS
+			name = "Isabella"
+			dynasty = "de Trastámara"
+			age = 24
+			culture = castillian
+			adm = 5
+			dip = 6
+			mil = 3
+			female = yes
+		}
+
+		set_country_flag = at_war
+		CAS = { set_country_flag = at_war }
+		declare_war_with_cb = {
+			who = CAS
+			casus_belli = cb_castilian_civil_war
+		}		
+
+		if = {
+			limit = { 
+				POR = { has_consort_flag = joanna }
+			}
+			join_all_defensive_wars_of = CAS
+		}
+
+		if = {
+			limit = { 
+				POR = { has_consort_flag = joanna }
+			}
+			POR = { 
+				join_all_defensive_wars_of = CAS
+				set_country_flag = at_war
+			}
+		}
+
+		if = {
+			limit = {
+				POR = {
+					has_consort_flag = joanna
+				}
+			}
+			FRA = {
+				country_event = { id = castilian_civil_war.10 days = 90 } # Support Portugal in the war
+			}
+		}
+	}
+
+	option = { # Avoid involvement
+		name = "castilian_civil_war.9b"
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
+
+		CAS = {
+			set_country_flag = no_contest
+			random_owned_province = {
+				limit = {
+					has_province_flag = cas_civil_war_2
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					friend = ARA
+					size = 3
+					leader = "Isabella"
+					leader_dynasty = "de Trastámara"
+					female = yes
+					win = yes
+				}
+				clr_province_flag = cas_civil_war_2
+			}
+			random_owned_province = {
+				limit = {
+					has_province_flag = cas_civil_war_3
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+					win = yes
+				}
+				clr_province_flag = cas_civil_war_3
+			}
+		}
+	}
+}
+
+# Support Portugal in the war (FRA)
+
+country_event = {
+	id = castilian_civil_war.10
+	title = "castilian_civil_war.10_t"
+	desc = "castilian_civil_war.10_d"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # We will support Portugal
+		name = "castilian_civil_war.10a"
+
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0
+				war_with = POR
+			}
+		}
+
+		add_manpower = -10
+		add_years_of_income = -0.2
+		add_permanent_claim = 197
+
+		POR = {
+			country_event = { id = castilian_civil_war.11 days = 20 } # Support from France
+		}
+	}
+
+	option = { # Avoid involvement
+		name = "castilian_civil_war.10b"
+
+		ai_chance = {
+			factor = 0.1
+		}
+
+		add_prestige = -10
+	}
+}
+
+# Support from France (POR)
+
+country_event = {
+	id = castilian_civil_war.11
+	title = "castilian_civil_war.11_t"
+	desc = "castilian_civil_war.11_d"
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # We can fight better now
+		name = "castilian_civil_war.11a"
+
+		ai_chance = {
+			factor = 1
+		}
+
+		add_manpower = 10
+
+		define_general = {
+			name = "Alain d'Albret"
+			shock = 5
+			fire = 2
+			manuever = 2
+			siege = 0
+		}
+
+		FRA = {
+			add_opinion = {
+				who = POR
+				modifier = supported_us # 50 relation
+			}
+		}
+	}
+
+	option = { # We can plan better now
+		name = "castilian_civil_war.11b"
+
+		ai_chance = {
+			factor = 1
+		}
+
+		add_manpower = 10
+
+		define_advisor = {
+			name = "Alain d'Albret"
+			type = army_reformer
+			skill = 2
+			culture = cosmopolitan_french
+			religion = catholic
+			cost_multiplier = 0.5
+		}
+
+		FRA = {
+			add_opinion = {
+				who = POR
+				modifier = supported_us # 50 relation
+			}
+		}
+	}
+}
+
+# End of Castilian Civil War
+country_event = {
+	id = castilian_civil_war.100
+	title = "castilian_civil_war.100_t"
+	desc = "castilian_civil_war.100_d"
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		on_non_estate_disaster_end = yes
+		hidden_effect = {
+			set_country_flag = spa_cas_ended_civil_war_flag
+			POR = { remove_country_modifier = no_declare_war_ccw }
+			ARA = { remove_country_modifier = no_declare_war_ccw }
+		}
+	}
+
+	option = {
+		name = "castilian_civil_war.100a" # Castile Wins War
+
+		trigger = { 
+			CAS = { 
+				OR = {
+					AND = {
+						has_country_flag = side_with_portugal
+						NOT = {
+							OR = {
+								junior_union_with = ARA
+								senior_union_with = ARA
+							}
+						}
+					}
+					AND = {
+						has_country_flag = side_with_aragon
+						NOT = {
+							OR = {
+								junior_union_with = POR
+								senior_union_with = POR
+							}
+						}
+					}
+					AND = {
+						has_country_flag = no_contest
+						NOT = { has_country_flag = cas_civil_war_rebels_won }
+						is_free_or_tributary_trigger = yes
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				has_country_flag = side_with_portugal
+				POR = { has_consort_flag = joanna }
+			}
+			if = {
+				limit = {
+					ai = yes
+					POR = { ai = no }
+				}
+				POR = { create_union = CAS }
+			}
+			else = {
+				create_union = POR
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = side_with_aragon
+				ARA = { has_consort_flag = isabella }
+			}
+			if = {
+				limit = {
+					ai = yes
+					ARA = { ai = no }
+				}
+				ARA = { create_union = CAS }
+			}
+			else = {
+				create_union = ARA
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = no_contest
+				AND = {
+					POR = {
+						NOT = { has_consort_flag = joanna }
+					}
+					ARA = {
+						NOT = { has_consort_flag = isabella }
+					}
+				}
+			}
+			add_prestige = 20
+		}
+		add_stability = 1
+	}
+
+	option = {
+		name = "castilian_civil_war.100b" # Castile Loses War
+
+		trigger = { 
+			CAS = {
+				OR = {
+					AND = {
+						has_country_flag = side_with_aragon
+						OR = {
+							junior_union_with = POR
+							senior_union_with = POR
+						}
+					}
+					AND = {
+						has_country_flag = side_with_portugal
+						OR = {
+							junior_union_with = ARA
+							senior_union_with = ARA
+						}
+					}
+					AND = {
+						has_country_flag = no_contest
+						has_country_flag = cas_civil_war_rebels_won
+						is_free_or_tributary_trigger = yes
+					}
+				}
+			}
+		}
+		
+		add_stability = -1		
+	}
+}

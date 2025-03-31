@@ -1,0 +1,132 @@
+#Castilian Civil War
+#A mix of the civil wars with outside intervention and noble families siding against the crown between 1419 and 1479.
+
+castilian_civil_war = {
+	potential = {
+		NOT = { is_year = 1500 }
+		tag = CAS
+		NOT = { has_country_flag = had_cas_civil_war }
+		is_free_or_tributary_trigger = yes
+		exists = ARA
+		exists = POR
+		government = monarchy
+		normal_or_historical_nations = yes
+		uses_doom = no
+	}
+
+	can_start = {
+		is_at_war = no
+		has_any_disaster = no
+		custom_trigger_tooltip = {
+			tooltip = enrique_doesnt_exist_tt
+			NOT = { has_heir_flag = is_enrique_flag }
+			NOT = { has_ruler_flag = is_enrique_flag }
+		}
+		OR = {
+			has_regency = yes
+			NOT = { heir_claim = 100 }
+			has_female_heir = yes
+			has_heir = no
+		}
+		is_lesser_in_union = no
+		ARA = {
+			NOT = { truce_with = ROOT }
+			is_free_or_tributary_trigger = yes
+			has_regency = no
+			is_female = no
+			government = monarchy
+		}
+		POR = {
+			NOT = { truce_with = ROOT }
+			is_free_or_tributary_trigger = yes
+			has_regency = no
+			is_female = no
+			government = monarchy
+		}
+	}
+	
+	can_stop = {
+		OR = {
+			is_at_war = yes
+			has_any_disaster = yes
+			is_lesser_in_union = yes
+			NOT = { government = monarchy }
+			ARA = {
+				OR = {
+					truce_with = ROOT
+					is_free_or_tributary_trigger = no
+					has_regency = yes
+					is_female = yes
+					NOT = { government = monarchy }
+				}
+			}
+			POR = {
+				OR = {
+					truce_with = ROOT
+					is_free_or_tributary_trigger = no
+					has_regency = yes
+					is_female = yes
+					NOT = { government = monarchy }
+				}
+			}
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 2
+			NOT = { legitimacy = 100 }
+		}
+		modifier = {
+			factor = 1
+			has_heir = no
+		}
+		modifier = {
+			factor = 3
+			NOT = { months_of_ruling = 120 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { ADM = 3 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { DIP = 3 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { MIL = 3 }
+		}	
+		modifier = {
+			factor = -0.5
+			stability = 3
+		}
+	}
+
+	can_end = {
+		hidden_trigger = { has_country_flag = civil_war_in_castile }
+		custom_trigger_tooltip = {
+			tooltip = cas_civil_war_end_tt
+			OR = {
+				NOT = { has_country_flag = at_war }
+				has_country_flag = no_contest
+				has_country_flag = cas_civil_war_rebels_won
+			}
+		}
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { num_of_rebel_armies = 1 }
+	}
+	
+	modifier = {
+		global_unrest = 7
+		can_not_declare_war = yes
+	}	
+	
+	on_start = castilian_civil_war.1
+	on_end = castilian_civil_war.100
+}
+

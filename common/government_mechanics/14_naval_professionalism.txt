@@ -1,0 +1,75 @@
+naval_professionalism_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 15
+	available = {
+		has_dlc = "Domination"
+	}
+
+	powers = {
+		naval_professionalism = {
+			max = 100
+			base_monthly_growth = 0
+			scaled_modifier = {
+				modifier = {
+					global_ship_trade_power = 0.25
+					disengagement_chance = 0.25
+					number_of_cannons_modifier = 0.2
+				}
+			}
+		}
+	}
+	
+	interactions = {
+		boost_ship_building_time = {
+			icon = GFX_naval_professionalism_button_1
+			cost_type = naval_professionalism
+			cost = 50
+			trigger = {
+                NOT = { has_country_modifier = btc_shipbuilding_time }
+			}
+			effect = {
+				add_country_modifier = {
+					name = btc_shipbuilding_time
+					duration = 3650
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+		boost_shipbuilding_capacity = {
+			icon = GFX_naval_professionalism_button_2
+			cost_type = naval_professionalism
+			cost = 50
+			trigger = {
+                NOT = { has_country_modifier = btc_shipbuilding_capacity }
+			}
+			effect = {
+				add_country_modifier = {
+					name = btc_shipbuilding_capacity
+					duration = 3650
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+		boost_sailor_recruitment = {
+			icon = GFX_naval_professionalism_button_3
+			cost_type = naval_professionalism
+			cost = 50
+			trigger = {
+                NOT = { has_country_modifier = btc_navy_propaganda }
+			}
+			effect = {
+				add_country_modifier = {
+					name = btc_navy_propaganda
+					duration = 3650
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+}

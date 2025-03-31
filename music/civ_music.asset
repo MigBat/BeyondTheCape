@@ -1,0 +1,68 @@
+music = {
+	name = "ceifeira"
+	file = "ceifeira.ogg"
+}
+music = {
+	name = "domafonso"
+	file = "domafonso.ogg"
+}
+music = {
+	name = "domjoao"
+	file = "domjoao.ogg"
+}
+music = {
+	name = "dommanuel"
+	file = "dommanuel.ogg"
+}
+music = {
+	name = "saudadesdecoimbra"
+	file = "saudadesdecoimbra.ogg"
+}
+music = {
+	name = "magoasdecoimbra"
+	file = "magoasdecoimbra.ogg"
+}
+music = {
+	name = "fadocorrido"
+	file = "fadocorrido.ogg"
+}
+music = {
+	name = "fadohilario"
+	file = "fadohilario.ogg"
+}
+music = {
+	name = "fadomouraria"
+	file = "fadomouraria.ogg"
+}
+music = {
+	name = "malhaovelho"
+	file = "malhaovelho.ogg"
+}
+music = {
+	name = "earlyfadomenor"
+	file = "earlyfadomenor.ogg"
+}
+music = {
+	name = "fadomenor"
+	file = "fadomenor.ogg"
+}
+music = {
+	name = "latefadomenor"
+	file = "latefadomenor.ogg"
+}
+music = {
+	name = "branca"
+	file = "branca.ogg"
+}
+music = {
+	name = "tardesemlindoia"
+	file = "tardesemlindoia.ogg"
+}
+music = {
+	name = "ternasaudade"
+	file = "ternasaudade.ogg"
+}
+music = {
+	name = "ticoticonofuba"
+	file = "ticoticonofuba.ogg"
+}

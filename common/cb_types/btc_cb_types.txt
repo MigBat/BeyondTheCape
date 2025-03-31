@@ -1,0 +1,116 @@
+cb_castilian_civil_war = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+
+	attacker_disabled_po = {
+		# po_demand_provinces
+		po_revoke_cores
+		po_return_cores
+		po_release_vassals
+		po_release_annexed
+		po_annul_treaties
+		po_become_vassal
+	}
+
+	war_goal = wg_castilian_civil_war
+}
+
+cb_albuquerque_plan = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		tag = POR
+		has_leader = "Afonso de Albuquerque"
+	}
+
+	prerequisites = {
+		OR = {
+			384 = {
+				owned_by = FROM
+			}
+			360 = {
+				owned_by = FROM
+			}
+		}
+	}
+
+	war_goal = wg_albuquerque_plan
+}
+
+cb_naval_superiority = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		OR = {
+			exploration_ideas = 7
+			maritime_ideas = 7
+			naval_ideas = 7
+		}
+	}
+
+	prerequisites = {
+		FROM = { 
+			NOT = { is_subject_of = ROOT }
+			any_owned_province = {
+				has_port = yes
+				is_claim = ROOT
+			}
+		}
+	}
+
+	war_goal = naval_war
+}
+
+# Grand Crusade
+cb_grand_crusade = {
+	valid_for_subject = no
+	holy_war = yes
+
+	prerequisites = {
+		religion = catholic
+		has_country_flag = can_declare_grand_crusade_wars
+		FROM = { 
+			total_development = 300
+			any_owned_province = {
+				OR = {
+					area = palestine_area
+					area = syria_area
+					area = aleppo_area
+					continent = europe
+				}
+			}
+		}
+		NOT = { religion_group = FROM }
+		NOT = {	has_matching_religion = FROM }
+		is_revolutionary = no
+	}
+
+	war_goal = superiority_grand_crusade
+}
+
+cb_sebastiao_crusade = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+
+	war_goal = wg_sebastiao_crusade
+}
+
+cb_portugal_civil_war = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_return_cores
+		po_release_vassals
+		po_release_annexed
+		po_annul_treaties
+		po_become_vassal
+	}
+
+	war_goal = wg_portugal_civil_war
+}

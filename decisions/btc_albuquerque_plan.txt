@@ -1,0 +1,226 @@
+country_decisions = {
+	establish_albuquerque_conqueror_party = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			has_leader = "Afonso de Albuquerque"
+		}
+		allow = {
+			any_province = {
+				region = egypt_region
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			hidden_effect = {
+				random_province = {
+					limit = {
+						region = egypt_region
+						controlled_by = ROOT
+					}
+					cede_province = ABQ
+					add_core = ABQ
+				}
+				every_province = {
+					limit = {
+					   has_discovered = ROOT
+					}
+					discover_country = ABQ
+				}
+				create_subject = {
+					subject_type = conqueror_party
+					subject = ABQ
+				}
+				ABQ = {
+					change_government = tribal
+					add_government_reform = conqueror_party_gov
+					change_religion = ROOT
+					change_primary_culture = ROOT
+					add_adm_power = 100
+					add_dip_power = 100
+					add_mil_power = 100
+					add_treasury = 200
+					set_prestige_to_zero = yes
+					add_horde_unity = 100
+					add_army_professionalism = 0.2
+					# swap_free_idea_group = yes
+					adopt_technology_group_from_target = { target = root }
+					define_ruler = {
+						name = "Afonso"
+						dynasty = "de Albuquerque"
+						age = 50
+						DIP = 5
+						ADM = 5
+						MIL = 6
+					}
+					define_ruler_to_general = {
+						fire = 4
+						shock = 8
+						manuever = 6
+						siege = 6
+						trait = lion_of_the_seas_personality
+					}
+					join_all_defensive_wars_of = ROOT
+					join_all_offensive_wars_of = ROOT
+				}
+				egypt_region = {
+					add_permanent_claim = ABQ
+				}
+			}
+			switch_tag = ABQ
+			custom_tooltip = conqueror_party_warning_tt
+			hidden_effect = {
+				POR = { country_event = { id = btc_por.299 days = 1 } }
+			}
+		}
+	}
+
+	become_pharaoh = {
+		major = yes
+		color = { 204 102 0 }
+		potential = {
+			ai = no
+			tag = ABQ
+		}
+		allow = {
+			is_at_war = no
+			2315 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			361 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			358 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			362 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			363 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			2316 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			4316 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			change_tag = AFO
+			grant_independence = yes
+			hidden_effect = {
+				swap_free_idea_group = yes
+				swap_non_generic_missions = yes
+				change_government = monarchy
+				add_government_reform = autocracy_reform
+				change_primary_culture = old_egyptian	
+				set_government_rank = 2
+				2315 = {
+					every_core_country = {
+						remove_core = 2315
+					}
+					change_culture = old_egyptian
+					change_province_name = "Afonsinia"
+					rename_capital = "Afonsinia"
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 4
+				}			
+				egypt_region = {
+					add_core = ROOT
+				}	
+			}
+			set_capital = 2315
+		}
+	}
+
+	divert_nile = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			NOT = { has_country_modifier = waiting_for_nile_divert }	
+			has_leader = "Afonso de Albuquerque"
+		}
+		allow = {
+			is_in_war = {
+				attacker_leader = ROOT
+				casus_belli = cb_albuquerque_plan
+			}
+			360 = { controlled_by = ROOT }
+			manpower = 10
+		}
+		effect = {
+			hidden_effect = {
+				country_event = {
+					id = btc_por.187
+					days = 365
+				}				
+			}
+			add_manpower = -10
+			add_country_modifier = {
+				hidden = yes
+				name = waiting_for_nile_divert
+				duration = 400
+			}
+		}
+	}
+
+	restore_nile = {
+		major = yes
+		potential = {
+			any_owned_province = {
+				has_province_modifier = nile_diverted
+			}
+			NOT = { has_country_modifier = waiting_for_nile_restoration }		
+		}
+		allow = {
+			360 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			country_event = {
+				id = btc_por.188
+				days = 365
+			}
+			add_country_modifier = {
+				hidden = yes
+				name = waiting_for_nile_restoration
+				duration = 400
+			}
+		}
+	}
+	
+	ransom_mohamed = {
+		major = yes
+		potential = {
+			ai = no
+			tag = POR
+			NOT = { has_country_flag = took_mohamed }
+			has_leader = "Afonso de Albuquerque"
+		}
+		allow = {
+			is_in_war = {
+				attacker_leader = ROOT
+				casus_belli = cb_albuquerque_plan
+			}
+			384 = { controlled_by = ROOT }
+		}
+		effect = {
+			country_event = {
+				id = btc_por.145
+			}
+			hidden_effect = {
+				set_country_flag = took_mohamed
+			}
+		}
+	}
+}

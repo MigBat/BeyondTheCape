@@ -1,0 +1,276 @@
+exploration_ideas = {	# Beyond the Cape rework
+	category = DIP
+	important = yes
+
+	bonus = {
+		cb_on_overseas = yes
+		monthly_portuguese_saudade = 0.075
+	}
+
+	overseas_exploration = {
+		range = 0.5
+	}
+	colonial_ventures = {
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	land_of_opportunity = {
+		global_colonial_growth = 10
+	}
+	experienced_sailors	= {
+		naval_attrition = -0.1
+		transport_attrition = -0.1
+	}
+	free_colonies = {
+		colonist_placement_chance = 0.1
+	}
+	factories = {
+		trade_company_governing_cost = -0.1
+		trade_company_investment_cost = -0.1
+	}
+	global_empire = {
+		naval_forcelimit_modifier = 0.25
+		min_autonomy_in_territories = -0.1
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_colonial_nation = yes
+		}
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			is_subject = yes
+		}		
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			current_age = age_of_revolutions #too late
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					sea_zone = {
+						NOT = { area = eastern_mediterrenean_area }
+					}
+				}
+			}
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				} 
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					sea_zone = {
+						OR = {
+							NOT = { region = mediterrenean_region }
+							province_id = 1293 #Gibraltar
+							province_id = 1294 #Almeria
+						}
+						NOT = { area = red_sea_area }
+						NOT = { area = baltic_area }
+					}
+				}
+			}
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				} 
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { num_of_ports = 3 }
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_institution = renaissance }
+			NOT = { tag = POR }
+			NOT = { tag = CAS }
+		}
+		modifier = {
+			factor = 0.1
+			capital_scope = {
+				NOT = {
+					OR = {
+						region = france_region
+						region = iberia_region
+						region = british_isles_region
+						region = low_countries_region
+					}
+				}
+			}
+			NOT = { technology_group = high_american }
+		}
+		modifier = {
+			factor = 10
+			capital_scope = {
+				region = france_region
+				region = iberia_region
+				region = british_isles_region
+				region = low_countries_region
+			}
+		}
+		modifier = {
+			factor = 0.1
+			tag = ARA
+		}
+		modifier = {
+			factor = 0
+			NOT = { adm_tech = 6 }
+			NOT = { tag = POR }
+		}
+		modifier = {
+			factor = 0
+			NOT = { adm_tech = 9 }
+			NOT = { tag = POR }
+			NOT = { tag = CAS }
+		}
+		modifier = {
+			factor = 10
+			technology_group = high_american
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 15
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 20
+		}
+		modifier = {
+			factor = 1000
+			OR = {
+				tag = POR
+				tag = CAS
+				tag = SPA
+				tag = GBR
+				tag = NED
+				tag = ENG
+				tag = FRA
+				tag = KUR
+			}
+		}
+	}
+}
+
+expansion_ideas = {
+	category = ADM
+	important = yes
+
+	bonus = {
+		treasure_fleet_income = 0.1
+		monthly_portuguese_saudade = 0.075
+	}
+
+	additional_colonists = {
+		colonists = 1
+		colonist_placement_chance = 0.05
+		effect = { remove_temporary_colonist = yes }
+	}
+	additional_merchants = {
+		merchants = 1
+	}
+	faster_colonists = {
+		global_colonial_growth = 20
+	}
+	vice_roys  = {
+		global_tariffs = 0.10
+ 		envoy_travel_time = -0.20
+ 	}
+	additional_diplomats = {
+		diplomats = 1
+		reduced_liberty_desire_on_other_continent = 5
+	}
+	general_colonization_law  = {
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	competetive_merchants  = {
+		global_trade_power = 0.2
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 100
+			is_colonial_nation = yes
+		}
+		modifier = {
+			factor = 0
+			is_subject_of_type = commercial_enterprise
+		}
+		modifier = {
+			factor = 5
+			has_idea_group = exploration_ideas
+			has_subject_of_type = colony
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = CAS
+				tag = SPA
+			}
+		}
+		modifier = {
+			factor = 10
+			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
+			tag = RUS
+			num_of_cities = 20
+			any_owned_province = {
+				has_empty_adjacent_province = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_idea_group = exploration_ideas }
+			NOT = { is_colonial_nation = yes }
+			NOT = {
+				any_owned_province = {
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = muslim
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+guiTypes = {
+	windowType = {
+		name = "mare_clausum_ui_gov_mech"
+		size = { x = 0 y = 0 }
+		moveable = 0
+
+		# Frame
+		iconType = {
+			name = "mare_clausum_bar_hidden_frame"
+			spriteType = "GFX_mare_clausum_ui_hidden_progressbar"
+			position = { x = 0 y = -1000 }
+			alwaystransparent = yes
+		}
+	}
+}

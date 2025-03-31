@@ -1,0 +1,1076 @@
+quest_for_the_new_world = {
+	may_explore = yes
+}
+
+prestigious_academy = {
+	institution_growth = 3
+	picture = "btc_academy_pic"
+}
+
+strait_engagement_width = {
+	local_naval_engagement_modifier = -0.5
+}
+
+el_dorado_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+fountain_of_youth_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+cibola_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+norumbega_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+saguenay_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+sierra_de_la_plata_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+city_of_caesars_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+quivira_location = {
+	province_trade_power_value = 0.02
+	picture = "cityofgold"
+}
+
+feitoria = {
+	province_trade_power_value = 2
+	local_governing_cost = 0.15
+	local_ship_repair = 0.1
+	picture = "prov_modifier_feitoria"
+}
+
+fortified_feitoria = {
+	province_trade_power_value = 2
+	local_ship_repair = 0.2
+	local_defensiveness = 0.15
+	local_governing_cost = 0.3
+	fort_level = 1
+	picture = "prov_modifier_fortified_feitoria"
+}
+
+foreign_feitoria = {
+	tax_income = 6
+	province_trade_power_value = 0.01
+	picture = "prov_modifier_foreign_feitoria"
+}
+
+cartaz = {
+	global_tax_income = 12
+}
+
+por_english_alliance = {
+	drill_gain_modifier = 0.25
+	army_tradition = 0.25
+}
+
+high_saudade_1 = {
+	monthly_portuguese_saudade = 0.1
+}
+high_saudade_2 = {
+	monthly_portuguese_saudade = 0.2
+}
+high_saudade_3 = {
+	monthly_portuguese_saudade = 0.3
+}
+low_saudade_1 = {
+	monthly_portuguese_saudade = -0.1
+}
+low_saudade_2 = {
+	monthly_portuguese_saudade = -0.2
+}
+low_saudade_3 = {
+	monthly_portuguese_saudade = -0.3
+}
+
+capital_1 = {
+	monthly_portuguese_saudade = -0.025
+}
+capital_2 = {
+	monthly_portuguese_saudade = -0.05
+}
+capital_3 = {
+	monthly_portuguese_saudade = -0.075
+}
+capital_4 = {
+	monthly_portuguese_saudade = -0.1
+}
+capital_5 = {
+	monthly_portuguese_saudade = -0.125
+}
+capital_6 = {
+	monthly_portuguese_saudade = -0.15
+}
+
+estate_slavers_monopoly_of_slaves_mod = {
+	local_production_efficiency = -10
+}
+
+estate_slavers_plantation_production = {
+	trade_goods_size = 1
+	local_unrest = 2
+}
+
+estate_slavers_gold_mining = {
+	trade_goods_size = 1
+	local_unrest = 2
+}
+
+slave_garrison = {
+	garrison_growth = 0.15
+	local_garrison_size = 0.1
+}
+
+slavers_conflict_within_city = {
+	local_unrest = 8
+}
+
+slavers_thankful_guilds = {
+	local_unrest = -2
+	trade_goods_size = 0.5
+}
+
+slaver_administration = {
+	cannons_for_hunting_pirates_in_fleet = 1
+	yearly_corruption = -0.02
+}
+
+slavers_addressing_social_banditry = {
+	local_autonomy = 0.5
+	local_production_efficiency = -0.66
+}
+
+slavers_social_banditry_modifier = {
+	province_trade_power_modifier = -0.33
+}
+
+growing_slave_trade = {
+	global_tax_income = 10
+}
+
+slaves_for_colonists = {
+	native_uprising_chance = 0.5
+}
+
+slave_builders = {
+	build_time = -0.2
+}
+
+slave_oarsmen = {
+	galley_cost = -0.5
+}
+
+massive_earthquake = {
+	trade_goods_size_modifier = -0.25
+	local_manpower_modifier = -0.66
+	local_development_cost_modifier = 1
+	local_build_cost = 1
+	local_monthly_devastation = 1
+}
+
+mourning_the_dead = {
+	local_unrest = -1
+}
+
+reconstruction_efforts = {
+	local_unrest = 2
+	local_tax_modifier = 0.15
+}
+
+relocated_capital = {
+	local_unrest = 5
+}
+
+show_of_force = {
+	local_unrest = 5
+}
+
+recovery_efforts = {
+	local_monthly_devastation = -1
+}
+
+increased_recovery_efforts = {
+	local_monthly_devastation = -2
+}
+
+building_new_capital = {
+	local_unrest = 2
+}
+
+rebuilding_lisbon = {
+	local_unrest = -1
+}
+
+demolishing_baixa = {
+	local_unrest = 1
+}
+
+modern_city = {
+	development_cost_modifier = -0.3
+}
+
+from_the_ashes = {
+	prestige = 1
+}
+
+modern_streets = {
+	development_cost_modifier = -0.1
+}
+
+baixa_pombalina = {
+	development_cost_modifier = -0.2
+}
+
+anti_islamic_society = {
+	tolerance_of_heathens_capacity = -1
+	innovativeness_gain = -0.25
+	adm_tech_cost_modifier = 0.05
+	development_cost = 0.05
+	improve_relation_modifier = -0.1
+	global_unrest = -1
+}
+
+anti_semitic_society = {
+	tolerance_of_heathens_capacity = -1
+	innovativeness_gain = -0.25
+	interest = 0.5
+	development_cost = 0.05
+	improve_relation_modifier = -0.1
+	global_unrest = -1
+}
+
+diverse_society = {
+	tolerance_of_heathens_capacity = 1
+	innovativeness_gain = 0.25
+	interest = -0.5
+	adm_tech_cost_modifier = -0.05
+	development_cost = -0.05
+	improve_relation_modifier = 0.1
+	global_unrest = 2
+}
+
+respected_merchants = {
+	placed_merchant_power = 2
+	global_foreign_trade_power = 0.05
+	diplomatic_reputation = 0.5
+}
+
+aggressive_mercantilism = {
+	privateer_efficiency = 0.05
+	blockade_efficiency = 0.2
+	embargo_efficiency = 0.15
+	# trade_efficiency = -0.1
+}
+
+ribeira_palace_mod = {
+	reform_progress_growth = 0.1
+	legitimacy = 0.1
+	picture = "ribeira"
+}
+
+mafra_convent_mod = {
+	prestige_decay = -0.01
+	yearly_absolutism = 0.5
+	picture = "mafra"
+}
+
+pena_palace_mod = {
+	stability_cost_modifier = -0.1
+	governing_capacity = 50
+	picture = "pena"
+}
+
+tower_of_belem_mod = {
+	prestige = 0.1
+	hostile_fleet_attrition = 5
+	picture = "belem"
+}
+
+jeronimos_monastery_mod = {
+	church_loyalty_modifier = 0.05
+	naval_morale = 0.05
+	picture = "jeronimos"
+}
+
+atlantic_slave_trade = {
+	global_tariffs = 0.15
+	global_trade_power = 0.05
+	global_colonial_growth = 10
+	innovativeness_gain = -0.2
+	adm_tech_cost_modifier = 0.1
+	production_efficiency = -0.1
+}
+
+regulated_slave_trade = {
+	global_tariffs = -0.15
+	global_trade_power = -0.05
+	global_colonial_growth = -10
+	yearly_corruption = -0.05
+}
+
+weak_control = {
+	yearly_corruption = 0.3
+}
+
+strong_feitorias = {
+	land_forcelimit_modifier = -0.1
+	garrison_size = 0.25
+	defensiveness = 0.1
+}
+
+patrol_fleets = {
+	allowed_marine_fraction = -0.05
+	light_ship_cost = -0.05
+	light_ship_power = 0.1
+}
+
+overstretched_empire = {
+	global_unrest = 1
+	trade_steering = -0.1
+}
+
+collapse_of_european_trade = {
+	global_trade_power = -0.15
+}
+
+decrepid_trade_infrastructure = {
+	trade_efficiency = -0.05
+}
+
+crusading_spirit = {
+	global_regiment_recruit_speed = -0.15
+	manpower_in_true_faith_provinces = 0.05
+	heir_chance = -1
+	monarch_lifespan = -0.85
+}
+
+decadent_fervor = {
+	land_morale = -0.05
+	church_loyalty_modifier = -0.05
+}
+
+inefficient_indian_trade = {
+	trade_efficiency = -0.15
+	yearly_corruption = 0.1
+}
+
+privatization_of_the_indian_trade = {
+	global_trade_power = -0.25
+	treasure_fleet_income = -0.5
+}
+
+war_of_survival = {
+	own_territory_dice_roll_bonus = 1
+	land_morale = 0.05
+	defensiveness = 0.3
+	war_exhaustion = 0.02
+	global_monthly_devastation = 0.1
+	global_autonomy = 0.1
+	yearly_corruption = 0.5
+}
+
+damage_control = {
+	global_monthly_devastation = -0.1
+	land_maintenance_modifier = -0.1
+}
+
+reliance_on_brazilian_gold = {
+	treasure_fleet_income = 0.1
+	monthly_gold_inflation_modifier = 0.15
+}
+
+lavish_court_life = {
+	advisor_cost = 0.2
+	advisor_pool = 1
+}
+
+ostentatious_public_works = {
+	build_cost = 0.2
+}
+
+impressive_embassies  = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.25
+}
+
+port_wine = {
+	trade_goods_size = 2
+}
+
+trade_deficit = {
+	global_trade_power = -0.15
+}
+
+intelectual_persecution = {
+	global_institution_spread = -0.3
+	technology_cost = 0.1
+}
+
+jesuit_intelectual_domination = {
+	yearly_corruption = 0.1
+	yearly_absolutism = -0.5
+	prestige_decay = 0.01
+	church_influence_modifier = 0.2
+}
+
+slaver_economy = {
+	global_tariffs = 0.3
+	adm_tech_cost_modifier = 0.15
+	production_efficiency = -0.15
+}
+
+colonial_slave_trade = {
+	global_tariffs = 0.3
+	adm_tech_cost_modifier = 0.05
+	production_efficiency = -0.05
+}
+
+production_innovation = {
+	adm_tech_cost_modifier = -0.05
+	global_institution_spread = 0.15
+	production_efficiency = 0.05
+}
+
+decadent_society = {
+	all_power_cost = 0.1
+	stability_cost_modifier = 0.5
+	army_tradition_decay = 0.01
+}
+
+conservative_policies = {
+	innovativeness_gain = -0.2
+}
+
+stand_and_fight = {
+	own_territory_dice_roll_bonus = 1
+	defensiveness = 0.2
+	regiment_recruit_speed = -0.2
+	recover_army_morale_speed = 0.2
+}
+
+exiled_royal_family = {
+	legitimacy = -1
+	reduced_liberty_desire = -20
+}
+
+colonial_unrest = {
+	reduced_liberty_desire = -35
+}
+
+emancipated_colonies = {
+	global_tariffs = -0.75
+}
+
+coimbra_university = {
+	global_institution_spread = 0.1
+}
+
+homeland_focus = {
+	monthly_portuguese_saudade = -1
+}
+
+overseas_focus = {
+	monthly_portuguese_saudade = 1
+}
+
+slave_plantations = {
+	trade_goods_size = 1
+	local_unrest = 5
+}
+
+mass_slave_plantations = {
+	trade_goods_size = 2
+	local_unrest = 10
+}
+
+proudly_alone = {
+	stability_cost_modifier = -0.1
+}
+
+gave_hanno = {
+	papal_influence = 1
+}
+
+kept_hanno = {
+	prestige = 0.5
+	legitimacy = 0.25
+}
+
+kept_ganda = {
+	prestige = 0.5
+	legitimacy = 0.25
+}
+
+gave_ganda = {
+	papal_influence = 1
+}
+
+pinhal_leiria = {
+	naval_maintenance_modifier = -0.1
+}
+
+discovery_fervor = {
+	global_sailors_modifier = 0.1
+	global_manpower_modifier = -0.1
+	range = 0.25
+	core_creation = 0.5
+}
+
+expensive_spices = {
+	trade_efficiency = -0.05
+}
+
+lusiadas = {
+	prestige_decay = -0.01
+	navy_tradition_decay = -0.01
+	army_tradition_decay = -0.01
+}
+
+padrao_raised = {
+	# padrao was raised
+	province_trade_power_value = 0.01
+	picture = "padrao"
+}
+
+island_fort = {
+	fort_level = 1
+}
+
+black_swords = {
+	shock_damage = 0.1
+	assault_fort_ability = 0.25
+	is_marine_modifier = yes 
+}
+
+espingardas = {
+	fire_damage = 0.1
+	assault_fort_ability = 0.25
+	is_marine_modifier = yes 
+}
+
+mariners_astrolabe = {
+	movement_speed_in_fleet_modifier = 1
+}
+
+ocean_currents = {
+	range = 0.25
+}
+
+por_caravels = {
+	allowed_caravel_fraction = 0.2
+	has_caravel = yes
+}
+
+por_upgraded_caravels = {
+	number_of_cannons_modifier = 0.75
+	hull_size_modifier = 0.75
+	engagement_cost = 1
+	light_ship_cost = 0.25
+	is_caravel_modifier = yes
+}
+
+por_galleons = {
+	allowed_galleon_fraction = 0.1
+	has_galleon = yes
+}
+
+por_upgraded_galleons = {
+	can_transport_units = yes
+	is_galleon_modifier = yes
+}
+
+resist_reconquista = {
+	local_warscore_cost_modifier = 10
+	local_core_creation = 1
+	local_missionary_strength = -0.05
+	local_religious_unity_contribution = 1
+}
+
+less_resist_reconquista = {
+	local_warscore_cost_modifier = 2
+	local_core_creation = 0.5
+	local_missionary_strength = -0.02
+}
+
+dev_decreased_recently = {
+	local_monthly_devastation = -0.01
+}
+
+dev_increased_recently = {
+	local_prosperity_growth = 0.01
+}
+
+madeira_sugar = {
+	trade_goods_size = 2
+}
+
+btc_cruzado = {
+	interest = -0.5
+	inflation_reduction = 0.15
+}
+
+padrao_real = {
+	global_spy_defence = 0.5
+}
+
+port_wine_production = {
+	trade_goods_size = 2
+}
+
+port_wine_storage = {
+	province_trade_power_value = 10
+}
+
+wine_doc_region = {
+	trade_value_modifier = 1
+}
+
+por_sagres = {
+	free_navy_leader_pool = 2
+	dip_tech_cost_modifier = -0.05
+	navy_tradition = 0.25
+}
+
+zanzibar_node_bonus_por = {
+	may_perform_slave_raid = yes
+	coast_raid_range = 2
+}
+
+aden_node_bonus_por = {
+	trade_steering = 0.25
+}
+
+hormuz_node_bonus_por = {
+	defensiveness = 0.5
+}
+
+coromandel_node_bonus_por = {
+	army_tradition = 0.5
+}
+
+malacca_node_bonus_por = {
+	navy_tradition = 0.5
+}
+
+zanzibar_node_bonus_mam = {
+	trade_range_modifier = 0.5
+}
+
+aden_node_bonus_mam = {
+	land_morale = 0.1
+}
+
+hormuz_node_bonus_mam = {
+	tolerance_own = 1
+}
+
+coromandel_node_bonus_mam = {
+	tolerance_heathen = 1
+	tolerance_heretic = 1
+}
+
+malacca_node_bonus_mam = {
+	technology_cost = -0.1
+}
+
+btc_pirate_hunt = {
+	block_slave_raid = yes
+}
+
+elvas_fort = {
+	local_defensiveness = 0.25
+	local_fort_maintenance_modifier = -0.75
+}
+
+por_tercos = {
+	allowed_tercio_fraction = 0.15
+	has_tercio = yes
+}
+
+por_adopting_tercos = {
+	reinforce_speed = -0.2
+	morale_damage_received = 0.05
+	is_tercio_modifier = yes
+}
+
+por_improved_tercos = {
+	discipline = 0.05
+	is_tercio_modifier = yes
+}
+
+jogo_do_pau = {
+	infantry_shock = 0.25
+}
+
+ginetes = {
+	can_recruit_hussars = yes
+}
+
+besteiro_ginetes = {
+	fire_damage = 0.15
+	is_hussars_modifier = yes
+}
+
+casa_da_guine = {
+	trade_company_investment_cost = -0.2
+}
+
+explored_coast = {
+	# had recent explore coast event
+}
+
+duke_of_braganca_bad = {
+	global_autonomy = 0.15
+}
+
+duke_of_braganca_worse = {
+	global_autonomy = 0.25
+}
+
+duke_of_braganca_lands = {
+	local_autonomy = 0.15
+}
+
+por_cacadores = {
+	has_musketeer = yes
+	allowed_musketeer_fraction = 0.1
+}
+
+legacy_of_francis_xavier = {
+	papal_influence = 2
+}
+
+disable_ship_capture = {
+	capture_ship_chance = -1000
+}
+
+malaria = {
+	local_production_efficiency = -0.9
+	local_tax_modifier = -0.9
+	province_trade_power_value = 0.001
+	local_development_cost_modifier = 2
+	local_colonial_growth = -150
+	local_colony_cost_modifier = 1
+	picture = "malaria"
+}
+
+island_development = {
+	local_development_cost_modifier = 1
+	picture = "island_pic"
+}
+
+no_settlers = {
+	global_colonial_growth = -50
+	colonist_placement_chance = -0.1
+	colony_cost_modifier = 0.5
+}
+
+very_low_settlers = {
+	global_colonial_growth = -25
+	colonist_placement_chance = -0.05
+}
+
+low_settlers = {
+	global_colonial_growth = -10
+}
+
+some_settlers = {
+	global_colonial_growth = 10
+	colonist_placement_chance = 0.05
+}
+
+many_settlers = {
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.1
+}
+
+monumental_good = {
+	no_stability_loss_on_monarch_death = yes
+	global_ship_recruit_speed = -0.5
+	all_estate_possible_privileges = 1
+	governing_capacity_modifier = 0.25
+	max_absolutism = 50
+	picture = "btc_monument_pic"
+}
+
+nile_diverted = {
+	local_monthly_devastation = 2
+}
+
+waiting_for_nile_divert = {
+
+}
+
+waiting_for_nile_restoration = {
+	
+}
+
+montante_swords = {
+	morale_damage = 0.5
+	is_samurai_modifier = yes	
+}
+
+mam_win_spice_trade_conflict = {
+	trade_efficiency = 0.25
+	improve_relation_modifier = 0.5
+}
+
+por_win_spice_trade_conflict = {
+	trade_efficiency = 0.25	
+	diplomatic_reputation = 2
+}
+
+mam_lose_spice_trade_conflict = {
+	trade_efficiency = -0.25
+	improve_relation_modifier = -0.5
+}
+
+por_lose_spice_trade_conflict = {
+	trade_efficiency = -0.25	
+	diplomatic_reputation = -2
+}
+
+ven_mam_forcelimit = {
+	naval_forcelimit = 200
+}
+
+por_eth_support = {
+	military_tactics = 0.25
+	technology_cost = -0.1
+}
+
+eth_por_support = {
+	global_manpower_modifier = 0.1
+}
+
+por_hormuz_strait_protect = {
+	trade_steering = 0.25
+}
+
+home_of_nutmeg = {
+	trade_goods_size = 5
+}
+
+reduced_saudade = {
+	monthly_portuguese_saudade = -0.2
+}
+
+overseas_dominance_mod = {
+	manpower_recovery_speed = -0.5
+	reinforce_speed = -0.5
+	production_efficiency = -0.3
+}
+
+btc_low_health = {
+	monarch_lifespan = -0.75
+}
+
+btc_organ_guns = {
+	backrow_artillery_damage = 0.15
+}
+
+btc_new_ideas = {
+	idea_cost = -0.1
+	technology_cost = -0.05
+	global_unrest = 2
+}
+
+btc_old_ideas = {
+	tolerance_own = 2
+	global_missionary_strength = 0.03
+}
+
+btc_spain_union = {
+	can_not_declare_war = yes
+}
+
+btc_shipbuilding_time = {
+	global_ship_recruit_speed = -0.5
+	global_ship_cost = -0.5
+}
+
+btc_shipbuilding_capacity = {
+	naval_forcelimit_modifier = 0.5
+}
+
+btc_navy_propaganda = {
+	global_sailors_modifier = 0.5
+	allowed_marine_fraction = 0.5
+}
+
+gs_treasure_fleet_1 = {
+	treasure_fleet_income = 0.1
+}
+
+gs_treasure_fleet_2 = {
+	treasure_fleet_income = 0.2
+}
+
+gs_treasure_fleet_3 = {
+	treasure_fleet_income = 0.3
+}
+
+gs_treasure_fleet_4 = {
+	treasure_fleet_income = 0.4
+}
+
+gs_treasure_fleet_5 = {
+	treasure_fleet_income = 0.5
+}
+
+s_treasure_fleet_1 = {
+	trade_goods_size_modifier = -0.1
+}
+
+s_treasure_fleet_2 = {
+	trade_goods_size_modifier = -0.2
+}
+
+s_treasure_fleet_3 = {
+	trade_goods_size_modifier = -0.3
+}
+
+s_treasure_fleet_4 = {
+	trade_goods_size_modifier = -0.4
+}
+
+s_treasure_fleet_5 = {
+	trade_goods_size_modifier = -0.5
+}
+
+no_declare_war_ccw = {
+	can_not_declare_war = yes
+}
+
+prepare_for_india = {
+	land_forcelimit = 10
+}
+
+muslim_naval_fl = {
+	naval_forcelimit_modifier = 0.2
+}
+
+indian_land_fl = {
+	land_forcelimit_modifier = 0.2
+}
+
+nomad_land_fl = {
+	land_forcelimit_modifier = 0.25
+}
+
+miguel_fire = {
+	leader_land_fire = 1
+}
+
+miguel_shock = {
+	leader_land_shock = 1
+}
+
+miguel_relations = {
+	improve_relation_modifier = 0.15
+}
+
+miguel_spy = {
+	spy_offence = 0.15
+}
+
+miguel_kind = {
+	war_exhaustion = -0.05
+}
+
+miguel_scholar = {
+	technology_cost = -0.05
+}
+
+miguel_navy = {
+	heavy_ship_power = 0.05
+}
+
+brazilwood_center = {
+	trade_goods_size = 2
+}
+
+brazil_colonial_expansion = {
+	global_colonial_growth = 50
+	colonist_placement_chance = 0.05
+}
+
+jesuit_production = {
+	production_efficiency = 0.1
+}
+
+brazil_gold = {
+	trade_goods_size = 2
+	local_gold_depletion_chance_modifier = -0.5
+	local_development_cost_modifier = -0.25
+}
+
+brazil_diamonds = {
+	trade_goods_size = 2
+}
+
+building_gov_cost_1 = {
+    local_governing_cost = 0.1
+}
+
+building_gov_cost_2 = { 
+    local_governing_cost = 0.2 
+}
+
+building_gov_cost_3 = { 
+    local_governing_cost = 0.3 
+}
+
+building_gov_cost_4 = { 
+    local_governing_cost = 0.4 
+}
+
+building_gov_cost_5 = { 
+    local_governing_cost = 0.5 
+}
+
+building_gov_cost_6 = { 
+    local_governing_cost = 0.6 
+}
+
+building_gov_cost_7 = { 
+    local_governing_cost = 0.7 
+}
+
+building_gov_cost_8 = { 
+    local_governing_cost = 0.8 
+}
+
+building_gov_cost_9 = { 
+    local_governing_cost = 0.9 
+}
+
+building_gov_cost_10 = { 
+    local_governing_cost = 1.0 
+}
+
+building_gov_cost_11 = { 
+    local_governing_cost = 1.1 
+}
+
+building_gov_cost_12 = { 
+    local_governing_cost = 1.2 
+}

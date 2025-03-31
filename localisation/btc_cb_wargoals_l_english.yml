@@ -1,0 +1,65 @@
+﻿l_english:
+
+ cb_naval_superiority:0 "Naval War"
+ cb_naval_superiority_desc:0 "Our naval power will be respected."
+ naval_war:0 "Naval Superiority"
+ naval_war_desc:0 "Our navy is superior."
+ NAVAL_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ Naval War"
+ po_ccw_alcacovas:0 "Sign the Treaty of Alcáçovas"
+ PEACE_po_ccw_alcacovas:0 "Sign the Treaty of Alcáçovas"
+ CB_ALLOWED_po_ccw_alcacovas:0 "Sign the Treaty of Alcáçovas"
+ po_ccw_alcacovas_desc:0 "We shall have hegemony in the Atlantic Ocean. Castile will be unable to colonize african provinces."
+ po_ccw_union:0 "Union With Castile"
+ PEACE_po_ccw_union:0 "Union With Castile"
+ CB_ALLOWED_po_ccw_union:0 "Union With Castile"
+ po_ccw_union_desc:0 "Our crowns shall be united in this Iberian wedding."
+
+ po_ccw_union_tt: "Is the attacker in Castilian Civil War"
+ po_ccw_alcacovas_tt: "Is Portugal and the attacker in Castilian CIvil War"
+
+ superiority_grand_crusade: "Show these infidel dogs superiority"
+ superiority_grand_crusade_desc: "War goal is to show them superiority by winning battles."
+ ALL_EUROPEAN_OR_HOLY_PROVINCES: "All European, Aleppo, Syrian or Palestine provinces."
+ GRAND_CRUSADE_WAR_NAME: "$ORDER$$FIRST$ Grand $CRUSADE_NAME$ against $SECOND_NAME$"
+
+ cb_grand_crusade: "Grand Crusade"
+ cb_grand_crusade_desc: "They are accursed yet powerful infidels, and a threat to the Christian world!\n§YCatholic and the enemy's brethren of faith can join their respected side mid this war.§!\n§RCannot declare other wars while using this casus belli.§!"
+
+ enable_grand_crusade_tt: "Enables the §YGrand Crusade§! casus belli against all §YHeathen§! nations which have at least §Y300§! total development.\nThis casus belli enables a decision for every independent §YCatholic§! nation to join the Grand Crusade.\n\nTo join the Grand Crusade the Catholic nation must fulfil the following conditions:\nHas at least §Y100§! opinion of us or vice versa\nIs NOT allied with the §YGrand Crusade Target§! target\nHas NOT a truce with the §YGrand Crusade Target§!\nIs not at war\nDid NOT complete the §YHumanist§! idea group\n\n§RNations of the religion group of the §YGrand Crusade Target§! can join the defender's side.§!"
+
+ join_the_grand_crusade_title: "Join the Grand Crusade!"
+ join_the_grand_crusade_desc: "The knights of the [grand_crusader_war_monger.GetName] have launched their Grand Crusade against the infidels of the [grand_crusade_target.GetAdjective] [grand_crusade_target.GovernmentName]. As fellow Catholics it is our holy right and duty to join these knights in order to free the Holy Land!"
+ join_the_grand_crusade_tt: "We will join the §Y[grand_crusader_war_monger.GetAdjective]§! side of the §YGrand Crusade!"
+ defend_the_grand_crusade_target_title: "Defend our Brethren!"
+ defend_the_grand_crusade_target_desc: "Our brethren of the [grand_crusade_target.GetAdjective] [grand_crusade_target.GovernmentName] is under attack by these dogs of the [grand_crusader_war_monger.GetName]! As fellow [grand_crusade_target.Religion.GetGroupName]s it is our duty to aid them!"
+ defend_the_grand_crusade_target_tt: "We will join the §Y[grand_crusade_target.GetAdjective]§! side of the §YGrand Crusade!"
+
+ cb_albuquerque_plan: "Afonso de Albuquerque Crusade"
+ cb_albuquerque_plan_desc: "Afonso de Albuquerque, the Lion of the Seas, harbors extreme hatred towards all of Islam. He has devised two unfathomable plans that are sure to bring the Islamic world to its knees - take the body of their holy Prophet Muhammad and demand the Holy Land be freed, and divert the course of the sacred Nile river to bring devastation to Egypt."
+ wg_albuquerque_plan: "Take the Prophet and divert the Nile"
+ wg_albuquerque_plan_desc: "Siege down and control Medina to steal the body of the Prophet. Siege down and control Qus to unlock a decision to divert the Nile."
+
+ cb_sebastiao_crusade: "Portuguese Crusade Against Morocco"
+ cb_sebastiao_crusade_desc: ""
+ wg_sebastiao_crusade: "Give control of Morocco to Fez"
+ wg_sebastiao_crusade_desc: ""
+ po_sebastiao_crusade: "Reinstate the rightful ruler of Morocco"
+ po_sebastiao_crusade_desc: "Fez integrates Morocco"
+ sebastiao_crusade_tt: "Fez will integrate Morocco"
+ PEACE_po_sebastiao_crusade: "End Moroccan Civil War"
+
+ po_brazil_cn: "Make Brazil a colony again"
+ PEACE_po_brazil_cn: "Make Brazil a colony again"
+ po_brazil_cn_desc: "Brazil becomes a crown colony of Portugal"
+ po_brazil_cn_tt: "§YPortugal§!has the §YLiberal Wars§! disaster, and is a war with §YBrazil§!"
+ brazil_cn_tt: "Brazil becomes a crown colony of Portugal"
+
+ po_miguel_king: "Acclaim Miguel as ruler of Portugal"
+ PEACE_po_miguel_king: "Acclaim Miguel as ruler of Portugal"
+ po_miguel_king_desc: "Miguel remains the ruler of Portugal.\n\nIf this option is picked, we remain an Absolutist country.\nIf this option is not picked, we turn into a Liberal country."
+ po_miguel_king_tt: "§YPortugal§!has the §YLiberal Wars§! disaster, and is a war with §YBrazil§!"
+ miguel_king_tt: "Miguel remains the ruler of Portugal"
+
+ cb_portugal_civil_war: "Portuguese Liberal War"
+ cb_portugal_civil_war_desc: "This is not only a civil war, but also an ideology war. Miguel fights for his claim to the throne and for absolutism and the preservation of the traditionalist ways. Pedro fights for his daughter's claim to the throne and for liberalism and the independence of Brazil."
+ wg_portugal_civil_war: "Abolish Absolutism in Portugal"

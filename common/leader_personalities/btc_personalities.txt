@@ -1,0 +1,8 @@
+lion_of_the_seas_personality = {
+	allow = {
+		always = no
+	}
+	discipline = 0.05
+	military_tactics = 0.1
+	prestige_from_land = 1
+}

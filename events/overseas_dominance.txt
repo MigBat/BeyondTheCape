@@ -1,0 +1,61 @@
+### Overseas Dominance ###
+namespace = btc_overseas
+
+#Start of the Overseas Dominance
+country_event = {
+	id = btc_overseas.1
+	title = btc_overseas.1_t
+	desc = btc_overseas.1_d
+	picture = BAD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = btc_overseas.1a
+		add_stability = -1
+		set_country_flag = overextended_empire_flag
+
+		if = {
+			limit = {
+				CDI = {
+					is_subject_of = ROOT
+				}
+			}
+			CDI = {
+				add_country_modifier = {
+					name = overseas_dominance_mod
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#End of the Overseas Dominance
+country_event = {
+	id = btc_overseas.2
+	title = btc_overseas.2_t
+	desc = btc_overseas.2_d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = btc_overseas.2a
+		
+		add_country_modifier = {
+			name = reduced_saudade
+			duration = 365
+		}
+		clr_country_flag = overextended_empire_flag
+
+		if = {
+			limit = {
+				CDI = {
+					has_country_modifier = overseas_dominance_mod
+				}
+			}
+			CDI = {
+				remove_country_modifier = overseas_dominance_mod
+			}
+		}
+	}
+}

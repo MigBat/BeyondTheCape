@@ -1,0 +1,382 @@
+﻿l_english:
+ btc_ordenacoes_title: "Ordenações Reais"
+ btc_ordenacoes_desc: "Our young King will soon take up his father's throne, closely guarded by his uncle, the Duke of Coimbra. For the growth and development of Portugal, a set of laws must be drafted and collected in a single document so future generations can follow them. These are the Royal Ordinances. However, the Cortes must approve them first."
+ btc_ordenacoes_tt: "Enables unique §JPortuguese Cortes issues§!."
+
+ btc_padroes_title: "Padrões"
+ btc_padroes_desc: "As our explorers map the african continent, it is important to mark our presence in these newly found lands. For this purpose, large stone pillars shall be placed on the coastline so that everyone knows the Portuguese were there. They shall also serve as a guide for explorers to know they are on the right path."
+ btc_padrao_tt: "Gives §YExplorers§! the ability to place a §YPadrão§! in discovered coastal provinces.\n\nWhen a §YPadrão§! is raised, you get a permanent claim on the province it is raised in if it is uncolonized. Otherwise, you get +10 opinion with the owner.\n\nWhen you fully colonize a province with a §YPadrão§!, you can choose the §YTrade Good§! it produces.\n\n§MThe chance of a Padrão being placed increases as more provinces are discovered. Once it is placed, the placement chance resets. You can see placed Padrões in the trade mapmode.§!"
+
+ btc_fortified_feitorias_title: "Fortified Feitorias"
+ btc_fortified_feitorias_desc: "Our feitorias are allowing us to gain a foothold on the Guinea trade. This success however does not come without its risks. The rich goods that pass through our feitorias are a prime target for thieves, pirates and especially invading forces. We should have our best engineers design fortifications around our feitorias."
+ btc_fortified_feitorias_tt: "Enables §YFeitorias§! to be upgraded to §YFortified Feitorias§!."
+
+ btc_black_sword_title: "Naval Black Sword"
+ btc_black_sword_desc: "It is not enough that we improve our ships to bear the wrath of the ocean. The crew should also be well prepared for any eventuality. By arming them with swords painted in black, we prevent reflected light from betraying their presence on ships, as well as to mitigate corrosion caused by salt water. The protective rings are shaped in such a way that they can simultaneously guard the bearer's fingers, trap an opponent's blade, and are sharp enough to be used as extra blades in close combat."
+
+ btc_espingardas_title: "Espingardas"
+ btc_espingardas_desc: ""
+
+ btc_sagres_school_title: "§OSagres School of Navigation§!"
+ btc_sagres_school_desc: "Prince Henry 'the Navigator' has been a key figure in Portugal's maritime expansion ever since the failed expedition to Tangiers. He's recently concluded overseeing the colonization of the Azores islands and now wishes to focus on charting the african coast. For this endeavour, he has gathered the best navigators and map-makers of the country at his villa in the town of Sagres in the Algarve province. Here, the Sagres School of Navigation was founded."
+ btc_sagres_school_tt: "§MUnlocks unique portuguese technologies§!"
+
+ btc_mariner_astrolabe_title: "Mariner's Astrolabe"
+ btc_mariner_astrolabe_desc: "A lost sailor is a dead sailor. When in the middle of uncharted waters, the mariner must be equipped with precise equipment that allows him to know exactly where he is at any time. Planispheric astrolabes have proven useless in rough water and in heavy winds, dangers we are sure to face. However, by making a few modifications to this device, and adding an alidade to measure vertical angles, one is able to determine the latitude of a ship at sea by measuring the sun's declination or the meridian altitude of a star of known declination."
+
+ btc_currents_title: "Ocean Currents"
+ btc_currents_desc: ""
+
+ btc_caravel_title: "Armada Ships"
+ btc_caravel_desc: "Our development of the Caravel ship has proven to be a success, allowing a vessel to sail windward with their lateen sails. This is but a rudimentary design though, with much to be improved. If we are to dominate commerce along the shores of Africa, we need fast and maneuverable ships to protect our trading vessels, along with a sturdy build of the finest wood to endure long exploration voyages in the unpredictability of the ocean."
+
+ btc_square_rigged_title: "War Caravels"
+ btc_square_rigged_desc: ""
+
+ btc_illustrious_title: "End of the Illustrious"
+ btc_illustrious_desc: "The five sons of the late King João I were all distinguished men: Duarte became King, and died of heartbreak, such was the love for his brothers. Pedro is the current Regent of the realm, overseeing the education of the young King, his nephew. Henrique is the Grandmaster of the Order of Christ, and at the forefront of nautical innovation. João was the Constable of the country. Fernando, Grandmaster of the Order of Aviz, became a martyr after his untimely death in Moroccan custody after being taken prisoner in the failed siege of Tangiers in 1437. Of these only Pedro and Henrique remain, and their presence in court seems to be coming to an end as Afonso, Duke of Bragança and one of the wealthiest men in Portugal and Europe, has been turning the King against their uncles."
+ braganca_plot_ended_tt: "The King has chosen his side in §YThe Bragança Plot§!"
+ end_portuguese_regency_tt: "§YThe Bragança Plot§! disaster ends"
+
+ btc_nau_title: "Full-Rigged Ships"
+ btc_nau_desc: "Our Carracks and Naus are the pinnacle of naval military innovation, and we should see to it that we remain at the top if we are to build an empire. If we reinforce the hull with different types of high-quality wood, it will have higher all-around resistance to the elements, as well as cannonball fire and ramming. By reorganizing the compartments in each deck, we can free up space for extra cannons and increase the ship's firepower."
+
+ btc_transport_nau_title: "Floating Fortresses"
+ btc_transport_nau_desc: ""
+ por_ship_cannons_tt: "Unlocks the §YPortuguese Botafogo§! flagship modification"
+
+ btc_coastal_fort_title: "Berber Piracy"
+ btc_coastal_fort_desc: "We have finished our own Reconquista 200 years ago and since then we have kept our borders safe from any enemy intrusion. Our land borders, that is. Moroccan and Berber pirates are not an uncommon sight, as they prey on any vessel they come across in their privateering expeditions, even making landfall and ransacking our coastal settlements before returning to their ships. This cannot be allowed to continue."
+ btc_pirate_hunt_tt: "Every owned coastal province in §YIberia§! and §YMaghreb§! regions will be protected from coastal raids for §Y20§! years."
+
+ btc_avis_title: "Order of Aviz"
+ btc_avis_desc: "Present in Portugal since the time of our first King, the Order of Aviz is a proud chivalrous military order, giving its name to our current dynasty. They were vital during the Reconquista, and continue to be so in our recent african incursions - the conquest of Ceuta in 1415 being the latest high, and the defeat at Tangiers in 1437 the most recent low. We must lift the spirit of our knights, as our work in Morocco is not yet done."
+ unlock_avis_knights: "Unlocks the §OKnights of Avis§! mercenary company"
+ avis_tt: "§YOrder of Avis§! Holy Order established in §YAlentejo§!"
+
+ btc_jogo_do_pau_title: "Jogo do Pau"
+ btc_jogo_do_pau_desc: "An old portuguese martial art, it uses a staff as a weapon, mainly by our poor peasant foot soldiers who can't afford a better weapon. Our commanders have noticed the ability and effectiveness of these soldiers in combat, and have come forth with a proposal to teach Jogo do Pau to all of our infantry to give them an edge in combat, and a surprise factor to their foes who most likely have never seen these techniques before."
+
+ btc_ginetes_title: "Ginetes"
+ btc_ginetes_desc: "During the Reconquista, in response to Moorish light cavalry, Iberian armies have developed the ginete. These light horsemen wear leather armor and are armed with armor-piercing javelins. They could be very effective in our efforts against the Moroccans in North Africa."
+
+ btc_besteiros_title: "Besteiros"
+ btc_besteiros_desc: ""
+
+ btc_independence_title: "Regain our Independence"
+ btc_independence_desc: ""
+
+ btc_tangier_title: "Revenge of the Infante"
+ btc_tangier_desc: "Our failed siege of Tangiers in 1437 is still very much an open wound for our veterans, especially Prince Henry who led the expeditionary force himself. His brother, Prince Ferdinand, was held captive for six years until he ultimately perished in a Moroccan prison in Fez. We have learned from the mistakes of the past, and must now ready ourselves for another attempt at conquering the important city."
+
+ btc_buffer_zone_title: "Protectorate of Dukkala"
+ btc_buffer_zone_desc: "With Tangiers now secure at last, we must not lose momentum. There are more targets in the Moroccan coast that are ripe for the taking now that their forces are in disarray. Diogo de Azambuja, known for his exploits in the Gold Coast, means to take the port city of Safi and establish a buffer zone around it, from which future incursions towards Morocco can take place."
+ enable_dukkala_raids_tt: "Enables §YMorocco Raiding Parties§! decision."
+
+ btc_morocco_title: "Dealing with Morocco"
+ btc_morocco_desc: "For long have the Portuguese Cortes asked the King to consolidate Portuguese presence in Morocco, exacerbated by the vulnerability of our coasts from mediterranean expeditions by the Ottomans and Mamluks, who dispute the Indian trade with us. We are not ready to fight on two fronts. But now someone appears at our doorstep. Abdallah Mohammed, a pretender to the Moroccan throne, requests assistance in recovering it from his uncle. This presents a unique opportunity for us. We must act, and fast!"
+ morocco_perma_claims_tt: "We get permanent claims on all provinces with §YMoroccan§! culture"
+ remove_resist_reconquista_tt: "The §YResist Reconquista§! and §YWeak Resist Reconquista§! modifiers are removed from all provinces"
+
+ btc_christ_title: "Order of Christ"
+ btc_christ_desc: "When the Knights Templar were disbanded by the pope in 1312 and consequently persecuted, our King Dinis I refused to do so, being grateful to their aid during the Reconquista and consequent reconstruction of the country. In Portugal, the Knights Templar found a safe haven, rebranding themselves as the Order of Christ. Prince Henry is the current grandmaster of the order. He intends to avenge the disaster of Tangiers in 1437, and the order is ready to help us build up our fleet for a second incursion into North Africa."
+ unlock_christ_knights: "Unlocks the §OKnights of Christ§! mercenary company"
+ christ_tt: "§YOrder of Christ§! Holy Order established in §YEstremadura§!"
+ arguin_frontier_tt: "Creates a "
+
+ btc_forts_title: "Defending our Borders"
+ btc_forts_desc: "Relations with Castile have always been tense, and as such it seems too suspicious that no conflict has erupted ever since 1385, when our King João I assured Portuguese independence. These slow years at our border towns have made the garrisons there lazy and unprepared for potential surprises. We must spurn them up and get them working on rebuilding our fortifications, starting with the one at Elvas, in the province of Évora."
+
+ btc_castile_title: "The Castilian Succession"
+ btc_castile_desc: "An unexpected opportunity has revealed itself. Castile is currently embroiled in a succession crisis, and one of the claimants, Joanna, has proposed to [Root.Monarch.GetTitle] [Root.Monarch.GetName], aiming to rule Castile together. Her rival, Isabella, has gained the support of the Crown of Aragon. If we are to intervene, we must be prepared for an uphill war, with immense rewards if we are to succeed."
+ btc_ccw_ended: "The §YCastilian Civil War§! disaster has ended, or the year is §Y1500§!"
+ unlock_ccw_missions_tt: "§MUnlocks new missions based on the outcome of the Castilian Civil War§! (Currently only Treaty of Alcáçovas and Castilian Union branches exist)"
+
+ btc_terco_title: "Portuguese Terços"
+ btc_terco_desc: "A new military unit organization is starting to take shape in Spain, set to revolutionize modern warfare. They call it the 'Tercio'. It is making small waves still, meaning other countries have not yet noticed the potential it brings. Our geographic positioning, as well as our intel on our neighbours, puts us in prime position to adopt and adapt these units to our army. Naturally, we shall call them the 'Terços'."
+
+ btc_improved_terco_title: "Advanced Terço Tactics"
+ btc_improved_terco_desc: "Our Terços have had a positive impact on the battlefield for us, gaining more experience and insight with each battle. We have been able to pinpoint the strengths and weaknesses on our units, and soon our military commanders will be ready to make appropriate adjustments to our tactics."
+
+ btc_england_title: "English Alliance"
+ btc_england_desc: "Relations between Portugal and England date back to 1147, when English and other European crusaders stopped to help our first King, Dom Afonso Henriques, in the conquest of Lisboa from the Moors. Since then, and especially during the interregnum of 1383-1385, the English have come to our aid against the Castilians, formalizing our alliance in 1373. In the treaty it reads 'perpetual friendships, unions, alliances and leagues of sincere affection'. We take these things seriously, and we need all the friends in this world we can get - there are few of them and far between..."
+
+ btc_cacadores_title: "Caçadores"
+ btc_cacadores_desc: ""
+
+ btc_tordesillas_title: "Treaty of Tordesillas"
+ btc_tordesillas_desc: ""
+
+ btc_miguel_title: "Miguel da Paz"
+ btc_miguel_desc: ""
+
+ btc_magellan_title: "The Moluccas Question"
+ btc_magellan_desc: ""
+ moluccas_por_cas_tt: "If @POR §YPortugal§! completes a circumnavigation before @CAS §YCastile§! they will be able to colonize the Moluccas region. Otherwise, @CAS §YCastile§! will be able to colonize the Moluccas region"
+
+ btc_labrador_title: "Terra Nova do Bacalhau"
+ btc_labrador_desc: "We have received reports from João Vaz, of the Corte-Real family, that he discovered new lands to the west. In a joint venture with German and Danish sailors, they uncovered an island some 700 leagues northwest of Portugal, which he named 'Terra do Bacalhau' due to the unusual amount of codfish spotted in the area. We should send an expedition there at once and add this island to our maps."
+
+ btc_caribbean_title: "Isle of Seven Cities"
+ btc_caribbean_desc: "Long ago, during the Muslim conquest of Hispania, seven Christian bishops led by the Archbishop of Porto embarked with their parishioners on ships and set sail westward to escape the Muslim conquerors. They stumbled upon an island, with sand of pure silver, and decided to settle there. Seven settlements were erected, each owned by one of the seven bishops. Now that we have the technology to cross oceans, we shall find this island, its people, and its riches."
+ random_seven_cities_tt: "§MA random island in the Caribbeans region will get:§!\nCulture becomes §YPortuguese§!\nReligion changes to §YCatholic§!\n§YBase Tax, Production§! and §YManpower§! increase by §Y2§!\n§YGold§! will now be produced\n§YPortugal§! gains a permanent claim"
+#\n§Y400§! colonists join a Frontier
+
+ btc_pirates_title: "Pirates of the Caribbean"
+ btc_pirates_desc: ""
+
+ btc_malindi_title: "Unlikely Friends"
+ btc_malindi_desc: "We have finally entered the Indian Ocean, but caution is of the essence. The population here is undoubtedly Muslim, who have been taught to resent Christians. Reports say that further up the east african coast there are rich trade cities, each vying for supremacy over the region. We can use this to our advantage by forming an alliance with a state here, which shall be a safe haven to our ships and crew in these hostile waters."
+ btc_protectorates_tt: "Can establish §YTrade Protectorates§!"
+
+ btc_brazil_title: "Uncharted Waters"
+ btc_brazil_desc: ""
+
+ btc_settle_title: "Terra de Vera Cruz"
+ btc_settle_desc: ""
+ has_colonial_brazil_tt: "Has a colonial subject in §YBrazil§! owning [756.GetName]"
+ colony_capital_bahia: "Our colonial subject in §YBrazil§! will have its capital in [756.GetName] and get new missions."
+
+ btc_triangle_trade_title: "Triangle Trade"
+ btc_triangle_trade_desc: ""
+
+ btc_arguin_title: "§OFeitoria de Arguim§!"
+ btc_arguin_desc: ""
+ feitoria_tutorial_tt: "§MTo establish a §YFeitoria§!, click on an eligible province and press the §JFeitoria Button§!, just under the §YAutonomy§! section.\nBy hovering over it you will see the requirements and costs.§!"
+ btc_arguin_slavers_tt: "Enables the §YSlavers§! estate"
+ unlock_pt_missions_tt: "§MUnlocks more Portuguese missions"
+
+ btc_west_africa_title: "Chart Guinea Coast"
+ btc_west_africa_desc: ""
+
+ btc_kongo_title: "Uncover the Kongo"
+ btc_kongo_desc: ""
+ por_kongo_slavers: "Portuguese Slavers"
+
+ btc_good_hope_title: "§OThe Cape of Torments§!"
+ btc_good_hope_desc: ""
+ por_navigator_flagship_mod_tt: "Unlocks the §YPortuguese Navigators§! flagship modification\n§MThis allows your flagship to explore further away. Use it to reach India!§!"
+
+ btc_cape_verde_title: "Cabo Verde Islands"
+ btc_cape_verde_desc: ""
+ unlock_colonial_ordenancas_tt: "Unlocks the §YColonial Ordenanças§! mercenary company"
+
+ btc_sao_tome_title: "Sugar of São Tomé"
+ btc_sao_tome_desc: ""
+
+ btc_slaves_title: "Slave Workforce"
+ btc_slaves_desc: ""
+ sao_tome_sugar_tt: "Sao Tome area gets §Y'Mass Slave Plantations'§! until the end of the game, giving the following effects:\nLocal Unrest: §R+10.00§!\nLocal Goods Produced: §G+2.00§!"
+ inner_angola_malaria_tt: "§MInner Angola area and Matamba area will not be affected by Malaria§!"
+
+ btc_elmina_title: "São Jorge da Mina"
+ btc_elmina_desc: ""
+
+ btc_gold_coast_title: "Guinea Trade"
+ btc_gold_coast_desc: ""
+
+ btc_prester_john_title: "The Search for Prester John"
+ btc_prester_john_desc: ""
+
+ btc_ethiopia_title: "Alliance with Ethiopia"
+ btc_ethiopia_desc: ""
+ get_cawa_tt: "§YPortugal§!: Get 6 '§GCawa§!' §YInfantry§! in §Y[1099.GetName]§!."
+ por_eth_alliance_tt: "§MThis modifier will be removed if the alliance with Ethiopia is broken§!"
+
+ btc_zanzibar_title: "Zanzibar"
+ btc_zanzibar_desc: ""
+
+ btc_sofala_title: "East African Coast"
+ btc_sofala_desc: ""
+ lower_zambezi_malaria_tt: "§MLower Zambezi area will not be affected by Malaria§!"
+
+ btc_prazeiros_title: "Prazeiros"
+ btc_prazeiros_desc: ""
+
+ btc_socotra_title: "Red Sea Trade"
+ btc_socotra_desc: ""
+
+ btc_hormuz_title: "Hormuz"
+ btc_hormuz_desc: ""
+
+ btc_bahrain_title: "Protecting the Strait"
+ btc_bahrain_desc: ""
+
+ btc_siam_title: "Siamese Embassy"
+ btc_siam_desc: ""
+
+ btc_vasco_da_gama_title: "Vasco da Gama"
+ btc_vasco_da_gama_desc: ""
+ cape_route_tt: "§MCan use the Cape Route§!"
+
+ btc_india_title: "The Sea Route to India"
+ btc_india_desc: ""
+ btc_purchase_indian_province_tt: "Enables the §YImpress Kochin§! decision"
+
+ btc_casa_india_title: "Casa da India"
+ btc_casa_india_desc: ""
+ btc_por_unlock_casa_india_tt: "Enables the §YEstablish the Casa da India§! decision"
+ albuquerque_ability_tt: "§MThis general has the unique ability of transferring ownership of certain occupied provinces to his country.\nThese provinces are §YZanzibar§!, §YAden§!, §YHormuz§!, §YGoa§! and §YMalacca§!§!\n§R§YAfonso de Albuquerque§! needs to be commanding the army that sieges down these provinces!§!"
+
+ btc_aden_title: "Aden"
+ btc_aden_desc: ""
+
+ btc_lion_of_seas_title: "§OLion of the Seas§!"
+ btc_lion_of_seas_desc: ""
+ unlock_legacy_of_albuquerque_reform_tt: "Unlock the '§YLegacy of Albuquerque§!' government reform."
+ mechanic_enable_grand_crusade_yes: "Enables the §YGrand Crusade§! casus belli against all §YHeathen§! nations which have at least §Y300§! total development.\nThis casus belli enables a decision for every independent §YCatholic§! nation to join the Grand Crusade.\n\nTo join the Grand Crusade the Catholic nation must fulfil the following conditions:\nHas at least §Y100§! opinion of us or vice versa\nIs NOT allied with the §YGrand Crusade Target§! target\nHas NOT a truce with the §YGrand Crusade Target§!\nIs not at war\nDid NOT complete the §YHumanist§! idea group\n\n§RNations of the religion group of the §YGrand Crusade Target§! can join the defender's side.§!"
+ albuquerque_leaves_tt: "Afonso de Albuquerque leaves his position as general"
+ divert_nile_tt: "§MUsing the §YTomb of Muhammad§! casus belli, siege down §O[384.GetName]§! to capture the remains of the Prophet. Additionally, to complete §YAlbuquerque§!'s ambitious plan to decimate §YEgypt§!, control §O[2321.GetName]§! and §O[360.GetName]§! to divert the course of the §YNile§! river"
+
+ btc_mare_clausum_title: "Mare Clausum"
+ btc_mare_clausum_desc: ""
+ spice_trade_conflict_resolved_tt: "Portugal has won the §YSpice Trade Conflict§!"
+ add_cartaz_tt: "Every owned province with a Fortified Feitoria will get '§YCartaz§!' until the end of the game, giving the following effects:\nYearly Tax Income: §G+12.00§!¤"
+ enable_cartaz_tt: "§MEvery new Fortified Feitoria will now issue a Cartaz§!"
+
+ btc_malaca_title: "Malaca"
+ btc_malaca_desc: ""
+
+ btc_famosa_title: "A Famosa"
+ btc_famosa_desc: ""
+
+ btc_chittagong_title: "Presence in Bengal"
+ btc_chittagong_desc: ""
+
+ btc_goa_title: "Goa"
+ btc_goa_desc: ""
+
+ btc_ceylon_title: "Taprobana"
+ btc_ceylon_desc: ""
+
+ btc_bombay_title: "Treaty of Bassein"
+ btc_bombay_desc: ""
+
+ btc_nutmeg_title: "Cravo da India"
+ btc_nutmeg_desc: ""
+
+ btc_tidore_title: "Maluku Relations"
+ btc_tidore_desc: ""
+
+ btc_macau_title: "Cantonese Commerce"
+ btc_macau_desc: ""
+ macau_tamao_tt: "We will attempt to purchase §Y[668.GetName]§! or §Y[4975.GetName]§!"
+
+ btc_sino_japan_title: "Sino-Japanese Trade"
+ btc_sino_japan_desc: ""
+ china_japan_like_portugal_tt: "The §YEmperor of China§! and §YShogun of Japan§! both have §Y150§! opinion of us"
+ japan_china_cot_tt: "Every owned §YCenter of Trade§! in §YCanton§! and §YNippon§! trade nodes will be upgraded by §Y1§! level§!"
+
+ btc_spice_title: "§OThe Spice Islands§!"
+ btc_spice_desc: ""
+
+ btc_china_title: "Contacting China"
+ btc_china_desc: ""
+
+ btc_japan_title: "Unveiling Nippon"
+ btc_japan_desc: ""
+
+ btc_nagasaki_title: "A Base in Japan"
+ btc_nagasaki_desc: ""
+ nagasaki_tt: "We will attempt to purchase §Y[4182.GetName]§!"
+
+ btc_korea_title: "Organ Guns"
+ btc_korea_desc: ""
+
+ btc_sunda_title: "Luso-Sunda Treaty"
+ btc_sunda_desc: ""
+
+ btc_ambon_title: "Nutmeg Island"
+ btc_ambon_desc: ""
+
+ btc_camoes_title: "§OOs Lusiadas§!"
+ btc_camoes_desc: ""
+ camoes_tt: "Move the §YStudium Generale§! through the §JCortes§!\n(Requires owning [227.GetName] and [1851.GetName] in the §YAge of Reformation§!)"
+
+ btc_magnanimous_title: "The Magnanimous"
+ btc_magnanimous_desc: ""
+ had_court_and_country_tt: "Has had §YCourt and Country§! disaster"
+
+ btc_australia_title: "Terra Australis"
+ btc_australia_desc: ""
+
+ btc_platypus_title: "An Unusual Paradox"
+ btc_platypus_desc: ""
+
+ btc_formosa_title: "Ilha Formosa"
+ btc_formosa_desc: ""
+
+ btc_haidao_title: "Haidao"
+ btc_haidao_desc: ""
+ taiwan_chinaware_tt: "§MEvery owned province in Taiwan area will produce Chinaware§!"
+
+ btc_jesuits_title: "Jesuits in Portugal"
+ btc_jesuits_desc: ""
+
+ btc_xavier_africa_title: "East Africa Mission"
+ btc_xavier_africa_desc: ""
+
+ btc_xavier_india_title: "India Mission"
+ btc_xavier_india_desc: ""
+
+ btc_societa_jesu_title: "§OThe Society of Jesus§!"
+ btc_societa_jesu_desc: ""
+
+ btc_xavier_indonesia_title: "Indonesia Mission"
+ btc_xavier_indonesia_desc: ""
+
+ btc_xavier_title: "Saint Francis Xavier"
+ btc_xavier_desc: ""
+
+ btc_xavier_china_title: "China Mission"
+ btc_xavier_china_desc: ""
+
+ btc_xavier_japan_title: "Japan Mission"
+ btc_xavier_japan_desc: ""
+
+ btc_ribeira_title: "Paço da Ribeira"
+ btc_ribeira_desc: ""
+
+ btc_jeronimos_title: "Mosteiros dos Jerónimos"
+ btc_jeronimos_desc: ""
+
+ btc_belem_title: "Torre de Belém"
+ btc_belem_desc: ""
+
+ btc_monumental_title: "A Monumental City"
+ btc_monumental_desc: ""
+
+ btc_mafra_title: "Convento de Mafra"
+ btc_mafra_desc: ""
+
+ btc_pena_title: "Palácio da Pena"
+ btc_pena_desc: ""
+
+ btc_port_title: "Wine Monopolies"
+ btc_port_desc: ""
+ methuen_tt: "Sign the §YMethuen Treaty§! through the §JCortes§!\n(Requires an alliance with the English @ENG@GBR@AVE in the §YAge of Absolutism§!)"
+
+ btc_damiao_title: "The European Wave"
+ btc_damiao_desc: ""
+ btc_damiao_reward_tt: "If we have a §YPhilosopher§! advisor employed:"
+ btc_simao_reward_tt: "If we have an §YInquisitor§! advisor employed:"
+
+ btc_liberalism_title: "Rise of Liberalism"
+ btc_liberalism_desc: ""
+ had_portuguese_liberal_wars_disaster_tt: "Has concluded the §YLiberal Wars§! disaster"
+ absolutist_portugal_tt: "If §YPortugal§! chose the Absolutist path:"
+ liberal_portugal_tt: "\nIf §YPortugal§! chose the Liberal path:"
+ 
+ IBERIA_STRING: "Iberia"
+ IBERIA_STRING_ADJ: "Iberian"
+ REV_IBERIA_STRING: "Revolutionary Iberia"
+ REV_IBERIA_STRING_ADJ: "Iberian"
+
+ btc_royal_authority_title: "Reinforce Royal Authority"
+ btc_royal_authority_desc: ""
+ 
+ btc_aragon_title: "The Crown of Aragon"
+ btc_aragon_desc: ""
+
+ btc_iberia_title: "Unite Iberia"
+ btc_iberia_desc: ""

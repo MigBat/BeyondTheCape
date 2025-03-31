@@ -1,0 +1,54 @@
+settler_pool_ui_hidden_mechanics = {
+	available = {
+		always = yes
+	}
+
+	powers = {
+		settler_pool_bar_hidden = {
+			gui = settler_pool_ui_gov_mech
+			max = 100
+			min = 0
+			base_monthly_growth = 0
+			scaled_modifier = {
+				trigger = {
+					num_of_colonists = 1
+				}
+				start_value = 60
+				end_value = 100
+				modifier = {
+					global_colonial_growth = 50
+				}
+			}
+			reverse_scaled_modifier = {
+				trigger = {
+					num_of_colonists = 1
+				}
+				start_value = 0
+				end_value = 80
+				modifier = {
+					colony_cost_modifier = 1
+				}
+			}
+			reverse_scaled_modifier = {
+				trigger = {
+					num_of_colonists = 1
+				}
+				start_value = 0
+				end_value = 20
+				modifier = {
+					colonist_placement_chance = -0.1
+				}
+			}
+			range_modifier = {
+				trigger = {
+					num_of_colonists = 1
+				}
+				start_value = 0
+				end_value = 20
+				modifier = { 
+					can_not_build_colonies = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,366 @@
+namespace = portuguese_liberalism
+
+# Start event (Brazil independence)
+country_event = {
+	id = portuguese_liberalism.1
+	title = portuguese_liberalism.1_t
+	desc = portuguese_liberalism.1_d
+	picture = USA_CONSTITUTION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = had_portuguese_liberal_wars_disaster
+		add_stability = -2
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = portuguese_liberalism.2
+				days = 60
+			}
+		}
+	}
+
+	option = {
+		name = portuguese_liberalism.1a
+
+		if = {
+			limit = {
+				any_subject_country = {
+					is_colonial_nation = yes
+					capital_scope = {
+						colonial_region = colonial_brazil
+					}
+				}
+			}
+			random_subject_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_colonial_nation = yes
+					capital_scope = {
+						colonial_region = colonial_brazil
+					}
+				}
+				save_event_target_as = brazil_target
+			}
+
+			event_target:brazil_target = { 
+				grant_independence = yes	
+				change_tag = BRZ 
+				on_change_tag_effect = yes
+				hidden_effect = {
+					if = {
+						limit = {
+							NOT = { government_rank = 2 }
+						}
+						set_government_rank = 2
+					}				
+				}
+				if = {
+					limit = {
+						culture_group = iberian
+						NOT = { primary_culture = brazilian }
+					}
+					change_primary_culture = brazilian
+				}
+				colonial_brazil = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = BRZ
+				}
+				change_government = monarchy
+				hidden_effect = {
+					if = {
+						limit = { has_custom_ideas = no }
+						country_event = { id = ideagroups.1 } #Swap Ideas
+					}
+					add_government_reform = feudalism_reform
+					set_country_flag = changed_from_colonial_nation
+				}
+				define_ruler = {
+					name = "Pedro"
+					dynasty = "de Bragança"
+					age = 30
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_province = {
+					colonial_region = colonial_brazil
+				}
+			}
+			if = {
+				limit = {
+					227 = { owned_by = ROOT } 
+				}
+				227 = { move_capital_effect = yes }
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = iberia_region
+						culture = portugese
+					}
+					save_event_target_as = new_capital
+					event_target:new_capital = { move_capital_effect = yes }
+				}
+			}
+			every_owned_province = {
+				limit = {
+					colonial_region = colonial_brazil
+				}
+				cede_province = BRZ
+				add_core = BRZ
+			}
+			every_province = {
+				limit = {
+				   has_discovered = ROOT
+				}
+				discover_country = BRZ
+			}
+			BRZ = {
+				change_government = monarchy
+				hidden_effect = {
+					if = {
+						limit = { has_custom_ideas = no }
+						country_event = { id = ideagroups.1 } #Swap Ideas
+					}
+					add_government_reform = feudalism_reform
+					set_country_flag = changed_from_colonial_nation
+				}
+				colonial_brazil = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = BRZ
+				}
+				if = {
+					limit = {
+						culture_group = iberian
+						NOT = { primary_culture = brazilian }
+					}
+					change_primary_culture = brazilian
+				}
+				define_ruler = {
+					name = "Pedro"
+					dynasty = "de Bragança"
+					age = 30
+				}
+			}
+		}
+		define_ruler = {
+			name = "Miguel"
+			dynasty = "de Bragança"
+			age = 30
+		}
+	}
+}
+
+# Miguel controls country, Maria revolts
+country_event = {
+	id = portuguese_liberalism.2
+	title = portuguese_liberalism.2_t
+	desc = portuguese_liberalism.2_d
+	picture = FAILED_REVOLUTION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		custom_tooltip = iberian_provinces_rebel_tt
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					culture = portugese
+					is_island = no
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					friend = BRZ
+					size = 2
+					leader = "Maria"
+					leader_dynasty = "de Bragança"
+					female = yes
+				}
+				set_province_flag = maria_rebel_province
+			}
+			every_owned_province = {
+				limit = {
+					culture = portugese
+					is_island = no
+					NOT = { has_province_flag = maria_rebel_province }
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 1
+				}
+			}			
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = portuguese_liberalism.3
+				days = 180
+			}
+		}
+	}
+
+	option = {
+		name = portuguese_liberalism.2a		
+		
+		exile_heir_as = maria_braganca
+	}
+}
+
+# Brazil joins Maria side
+country_event = {
+	id = portuguese_liberalism.3
+	title = portuguese_liberalism.3_t
+	desc = portuguese_liberalism.3_d
+	picture = USA_CONGRESS_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = plw_at_war
+		BRZ = {
+			set_country_flag = plw_at_war
+			declare_war_with_cb = {
+				casus_belli = cb_portugal_civil_war
+				who = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = portuguese_liberalism.3a		
+
+		set_country_flag = brazil_declared_war
+	}
+}
+
+country_event = {
+	id = portuguese_liberalism.10
+	title = portuguese_liberalism.10_t
+	desc = portuguese_liberalism.10_d
+	picture = NEW_HEIR_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_disaster_progress = {
+			disaster = portuguese_liberalism
+			value = 95
+		}
+	}
+	hidden = yes
+
+	option = {
+		name = portuguese_liberalism.10a		
+
+		define_ruler = {
+			name = "Pedro"
+			dynasty = "de Bragança"
+			age = 30
+		}
+		define_heir = {
+			name = "Maria"
+			dynasty = "de Bragança"
+			age = 15
+			female = yes
+		}
+	}
+}
+
+country_event = {
+	id = portuguese_liberalism.100
+	title = portuguese_liberalism.100_t
+	desc = portuguese_liberalism.100_d
+	picture = USA_CONGRESS_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		clr_country_flag = plw_at_war
+		BRZ = { clr_country_flag = plw_at_war }
+	}
+
+	option = {	# Miguel King
+		name = portuguese_liberalism.100a
+		trigger = {
+			has_country_flag = got_miguel_king
+			NOT = { has_country_flag = got_brazil_cn }
+			NOT = { has_country_flag = por_civil_war_rebels_won }
+		}
+		set_country_flag = absolutist_portugal
+	}
+
+	option = {	# Brazil CN
+		name = portuguese_liberalism.100b
+		trigger = {
+			has_country_flag = got_brazil_cn
+			NOT = { has_country_flag = got_miguel_king }
+			NOT = { has_country_flag = por_civil_war_rebels_won }
+		}
+		set_country_flag = liberal_portugal
+		
+		remove_country_modifier = the_absolutism
+		define_ruler = {
+			name = "Pedro"
+			dynasty = "de Bragança"
+			age = 30
+		}
+	}
+
+	option = {	# Miguel King and Brazil CN
+		name = portuguese_liberalism.100c
+		trigger = {
+			has_country_flag = got_miguel_king
+			has_country_flag = got_brazil_cn
+			NOT = { has_country_flag = por_civil_war_rebels_won }
+		}
+		set_country_flag = absolutist_portugal
+	}
+
+	option = {	# None of the above
+		name = portuguese_liberalism.100d
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { has_country_flag = got_miguel_king }
+					NOT = { has_country_flag = got_brazil_cn }
+				}
+				has_country_flag = por_civil_war_rebels_won
+			}
+		}
+		set_country_flag = liberal_portugal
+
+		remove_country_modifier = the_absolutism
+		define_ruler = {
+			name = "Maria"
+			dynasty = "de Bragança"
+			age = 15
+			female = yes
+		}
+		if = {
+			limit = {
+				BRZ = {
+					exists = yes
+					is_subject = no
+				}
+			}
+			create_alliance = BRZ
+			add_historical_friend = BRZ
+			BRZ = { add_historical_friend = ROOT }
+		}
+	}
+}

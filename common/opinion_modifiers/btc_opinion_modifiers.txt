@@ -1,0 +1,63 @@
+built_feitoria = {
+	opinion = 10
+	yearly_decay = 0
+}
+
+supported_us = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+gifted_hanno = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+didnt_gift_hanno = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+didnt_gift_ganda = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+gifted_ganda = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+stole_mohamed = {
+	opinion = -1000
+	yearly_decay = 1
+}
+
+pero_da_covilha_stays = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+pero_da_covilha_taken = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+bassein_treaty = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+raised_padrao = {
+	opinion = 10
+	yearly_decay = 0
+}
+
+revoked_tordesillas = {
+	opinion = -200
+	yearly_decay = 2
+}
+
+is_conqueror_party = {
+	opinion = 50
+}

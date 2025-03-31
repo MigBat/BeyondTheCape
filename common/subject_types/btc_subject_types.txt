@@ -1,0 +1,22 @@
+conqueror_party = {
+	copy_from = tributary_state
+	
+	# Graphics:
+	sprite = GFX_icon_conqueror
+	diplomacy_overlord_sprite = GFX_diplomacy_lead_conqueror
+	diplomacy_subject_sprite = GFX_diplomacy_weak_conqueror
+
+	# Properties:
+	is_voluntary = no
+	overlord_can_attack = no
+	base_liberty_desire = -100
+	can_send_tribute = no
+	can_have_subjects_of_other_types = no
+	overlord_protects_external = no
+	counts_for_borders = yes
+	trust_on_start = 100
+	uses_military_focus = yes
+	
+	overlord_opinion_modifier = is_conqueror_party
+	subject_opinion_modifier = is_conqueror_party
+}

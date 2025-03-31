@@ -1,0 +1,66 @@
+###########################################
+# BEYOND THE CAPE - Ottoman Silk Road Monopoly
+###########################################
+ottoman_silk_road_monopoly = {
+	potential = {
+		capital_scope = {
+			continent = europe
+		}
+		NOT = { tag = TUR }
+		NOT = { tag = VEN }
+		religion = catholic
+		NOT = { has_global_flag = east_india_trade_route_flag }
+	}
+
+	trigger = {
+		OR = {
+			AND = {
+				151 = {
+					owned_by = TUR
+				}
+				316 = {
+					owned_by = TUR
+				}
+			}
+			AND = {
+				4779 = {
+					owned_by = TUR
+				}
+				2296 = {
+					owned_by = TUR
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = no_country_has_east_india_tt
+			NOT = { has_global_flag = east_india_trade_route_flag }
+		}
+	}
+
+	trade_efficiency = -0.05	
+}
+
+decentralized_indian_state = {
+	potential = {
+		technology_group = indian
+		NOT = {
+			OR = {
+				tag = HIN
+				tag = BHA
+				tag = MUG
+				tag = DEC
+				tag = MAR
+				tag = RJP
+				tag = NAG
+			}
+		}
+	}
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 35
+		}
+	}
+	
+	global_unrest = 8
+}

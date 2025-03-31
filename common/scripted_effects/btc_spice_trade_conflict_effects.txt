@@ -1,0 +1,2231 @@
+set_mam_supporter = {
+	if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_1 }
+		}
+		save_global_event_target_as = mam_ally_1
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_2 }
+		}
+		save_global_event_target_as = mam_ally_2
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_3 }
+		}
+		save_global_event_target_as = mam_ally_3
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_4 }
+		}
+		save_global_event_target_as = mam_ally_4
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_5 }
+		}
+		save_global_event_target_as = mam_ally_5
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_6 }
+		}
+		save_global_event_target_as = mam_ally_6
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_7 }
+		}
+		save_global_event_target_as = mam_ally_7
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_8 }
+		}
+		save_global_event_target_as = mam_ally_8
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_9 }
+		}
+		save_global_event_target_as = mam_ally_9
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_10 }
+		}
+		save_global_event_target_as = mam_ally_10
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_11 }
+		}
+		save_global_event_target_as = mam_ally_11
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_12 }
+		}
+		save_global_event_target_as = mam_ally_12
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_13 }
+		}
+		save_global_event_target_as = mam_ally_13
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_14 }
+		}
+		save_global_event_target_as = mam_ally_14
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_15 }
+		}
+		save_global_event_target_as = mam_ally_15
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_16 }
+		}
+		save_global_event_target_as = mam_ally_16
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_17 }
+		}
+		save_global_event_target_as = mam_ally_17
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_18 }
+		}
+		save_global_event_target_as = mam_ally_18
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_19 }
+		}
+		save_global_event_target_as = mam_ally_19
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_20 }
+		}
+		save_global_event_target_as = mam_ally_20
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_21 }
+		}
+		save_global_event_target_as = mam_ally_21
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_22 }
+		}
+		save_global_event_target_as = mam_ally_22
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_23 }
+		}
+		save_global_event_target_as = mam_ally_23
+		set_country_flag = is_mam_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = mam_ally_24 }
+		}
+		save_global_event_target_as = mam_ally_24
+		set_country_flag = is_mam_ally
+	}
+}
+
+set_por_supporter = {
+	if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_1 }
+		}
+		save_global_event_target_as = por_ally_1
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_2 }
+		}
+		save_global_event_target_as = por_ally_2
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_3 }
+		}
+		save_global_event_target_as = por_ally_3
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_4 }
+		}
+		save_global_event_target_as = por_ally_4
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_5 }
+		}
+		save_global_event_target_as = por_ally_5
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_6 }
+		}
+		save_global_event_target_as = por_ally_6
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_7 }
+		}
+		save_global_event_target_as = por_ally_7
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_8 }
+		}
+		save_global_event_target_as = por_ally_8
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_9 }
+		}
+		save_global_event_target_as = por_ally_9
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_10 }
+		}
+		save_global_event_target_as = por_ally_10
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_11 }
+		}
+		save_global_event_target_as = por_ally_11
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_12 }
+		}
+		save_global_event_target_as = por_ally_12
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_13 }
+		}
+		save_global_event_target_as = por_ally_13
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_14 }
+		}
+		save_global_event_target_as = por_ally_14
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_15 }
+		}
+		save_global_event_target_as = por_ally_15
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_16 }
+		}
+		save_global_event_target_as = por_ally_16
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_17 }
+		}
+		save_global_event_target_as = por_ally_17
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_18 }
+		}
+		save_global_event_target_as = por_ally_18
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_19 }
+		}
+		save_global_event_target_as = por_ally_19
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_20 }
+		}
+		save_global_event_target_as = por_ally_20
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_21 }
+		}
+		save_global_event_target_as = por_ally_21
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_22 }
+		}
+		save_global_event_target_as = por_ally_22
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_23 }
+		}
+		save_global_event_target_as = por_ally_23
+		set_country_flag = is_por_ally
+	}
+	else_if = {
+		limit = {
+			NOT = { has_saved_global_event_target = por_ally_24 }
+		}
+		save_global_event_target_as = por_ally_24
+		set_country_flag = is_por_ally
+	}
+}
+
+own_por_alliance_points_calc_zanzibar = {
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_por_alliance_points_calc_aden = {
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_por_alliance_points_calc_hormuz = {
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_por_alliance_points_calc_coromandel = {
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_por_alliance_points_calc_malacca = {
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_por_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_por_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_zanzibar = {
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = zanzibar_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_aden = {
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = aden_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_hormuz = {
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1334 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = hormuz_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_coromandel = {
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = coromandel_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+own_mam_alliance_points_calc_malacca = {
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		REB = {
+			change_variable = {
+				which = malacca_mam_alliance_points
+				value = 1
+			}
+		}
+	}
+}
+
+set_government_power_variable = {
+	hidden_effect = { set_variable = { which = power_copy which = $variable$ } }
+
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 83886.08 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 41943.04 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 20971.52 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 10485.76 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 5242.88 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 2621.44 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 1310.72 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 655.36 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 327.68 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 163.84 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 81.92 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 40.96 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 20.48 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 10.24 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 5.12 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 2.56 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 1.28 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.64 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.32 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.16 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.08 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.04 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.02 }
+	add_government_power_variable = { mechanic_name = $mechanic_name$ power_name = $power_name$ num = 0.01 }
+}
+
+add_government_power_variable = {
+	if = {
+		limit = {
+			check_variable = { which = power_copy value = $num$ }
+		}
+		hidden_effect = { subtract_variable = { which = power_copy value = $num$ } }
+		add_government_power = {
+			mechanic_type = $mechanic_name$
+			power_type = $power_name$
+			value = +$num$
+		}
+	}
+}
+
+check_mare_clausum_modifiers = {
+
+	set_variable = {
+		which = mare_clausum_por_dip_rep
+		which = total_mare_clausum_amount
+	}
+	divide_variable = {
+		which = mare_clausum_por_dip_rep
+		value = 100
+	}
+	multiply_variable = {
+		which = mare_clausum_por_dip_rep
+		value = 2
+	}
+
+	set_variable = {
+		which = mare_clausum_por_priv_eff
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_por_ship_prop
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_por_bloc_eff
+		value = 50
+	}
+	set_variable = {
+		which = mare_clausum_por_light_ca
+		value = 50
+	}
+	set_variable = {
+		which = mare_clausum_por_cot_cost
+		value = 25	# NEGATIVE
+	}
+	set_variable = {
+		which = mare_clausum_por_asslt_fort
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_por_siege_bloc
+		value = 1
+	}
+	set_variable = {
+		which = mare_clausum_por_ship_spd
+		value = 1
+	}
+	set_variable = {
+		which = mare_clausum_por_merch_pwr
+		value = 50
+	}
+
+	set_variable = {
+		which = mare_clausum_mam_imprv_rel
+		value = 100
+	}
+	subtract_variable = {
+		which = mare_clausum_mam_imprv_rel
+		which = total_mare_clausum_amount
+	}
+	multiply_variable = {
+		which = mare_clausum_mam_imprv_rel
+		value = 50
+	}
+	divide_variable = {
+		which = mare_clausum_mam_imprv_rel
+		value = 100
+	}
+
+	set_variable = {
+		which = mare_clausum_mam_global_dvst
+		value = 0.25	# NEGATIVE
+	}
+	set_variable = {
+		which = mare_clausum_mam_hunt_pirates
+		value = 100
+	}
+	set_variable = {
+		which = mare_clausum_mam_own_coast
+		value = 1
+	}
+	set_variable = {
+		which = mare_clausum_mam_eng_width
+		value = 20
+	}
+	set_variable = {
+		which = mare_clausum_mam_trade_pwr
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_mam_garr_size
+		value = 25
+	}
+	set_variable = {
+		which = mare_clausum_mam_garr_grwth
+		value = 66
+	}
+	set_variable = {
+		which = mare_clausum_mam_naval_fl
+		value = 50
+	}
+	set_variable = {
+		which = mare_clausum_mam_galley_ca
+		value = 25
+	}
+}
+
+shuffle_set_participant_por = {
+    if = {
+        limit = { has_saved_global_event_target = por_$target_ally$ }
+        event_target:por_$target_ally$ = {
+            save_global_event_target_as = por_$empty_slot$
+            clear_global_event_target = por_$target_ally$
+        }
+    } 
+}
+
+shuffle_set_participant_mam = {
+    if = {
+        limit = { has_saved_global_event_target = mam_$target_ally$ }
+        event_target:mam_$target_ally$ = {
+            save_global_event_target_as = mam_$empty_slot$
+            clear_global_event_target = mam_$target_ally$
+        }
+    } 
+}
+
+shuffle_participants_por = {
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_1 } }
+        clear_global_event_target = por_ally_1
+        shuffle_set_participant_por = { target_ally = ally_2 empty_slot = ally_1 }
+        shuffle_set_participant_por = { target_ally = ally_3 empty_slot = ally_2 }
+        shuffle_set_participant_por = { target_ally = ally_4 empty_slot = ally_3 }
+        shuffle_set_participant_por = { target_ally = ally_5 empty_slot = ally_4 }
+        shuffle_set_participant_por = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_por = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_por = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_por = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_2 } }
+        clear_global_event_target = por_ally_2
+        shuffle_set_participant_por = { target_ally = ally_3 empty_slot = ally_2 }
+        shuffle_set_participant_por = { target_ally = ally_4 empty_slot = ally_3 }
+        shuffle_set_participant_por = { target_ally = ally_5 empty_slot = ally_4 }
+        shuffle_set_participant_por = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_por = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_por = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_por = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_3 } }
+        clear_global_event_target = por_ally_3
+        shuffle_set_participant_por = { target_ally = ally_4 empty_slot = ally_3 }
+        shuffle_set_participant_por = { target_ally = ally_5 empty_slot = ally_4 }
+        shuffle_set_participant_por = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_por = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_por = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_por = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_4 } }
+        clear_global_event_target = por_ally_4
+        shuffle_set_participant_por = { target_ally = ally_5 empty_slot = ally_4 }
+        shuffle_set_participant_por = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_por = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_por = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_por = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_5 } }
+        clear_global_event_target = por_ally_5
+        shuffle_set_participant_por = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_por = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_por = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_por = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_6 } }
+        clear_global_event_target = por_ally_6
+        shuffle_set_participant_por = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_por = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_por = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_7 } }
+        clear_global_event_target = por_ally_7
+        shuffle_set_participant_por = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_por = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_8 } }
+        clear_global_event_target = por_ally_8
+        shuffle_set_participant_por = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_9 } }
+        clear_global_event_target = por_ally_9
+        shuffle_set_participant_por = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_10 } }
+        clear_global_event_target = por_ally_10
+        shuffle_set_participant_por = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_11 } }
+        clear_global_event_target = por_ally_11
+        shuffle_set_participant_por = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_12 } }
+        clear_global_event_target = por_ally_12
+        shuffle_set_participant_por = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_13 } }
+        clear_global_event_target = por_ally_13
+        shuffle_set_participant_por = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_14 } }
+        clear_global_event_target = por_ally_14
+        shuffle_set_participant_por = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_15 } }
+        clear_global_event_target = por_ally_15
+        shuffle_set_participant_por = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_16 } }
+        clear_global_event_target = por_ally_16
+        shuffle_set_participant_por = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_17 } }
+        clear_global_event_target = por_ally_17
+        shuffle_set_participant_por = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_18 } }
+        clear_global_event_target = por_ally_18
+        shuffle_set_participant_por = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_19 } }
+        clear_global_event_target = por_ally_19
+        shuffle_set_participant_por = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_20 } }
+        clear_global_event_target = por_ally_20
+        shuffle_set_participant_por = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_21 } }
+        clear_global_event_target = por_ally_21
+        shuffle_set_participant_por = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_22 } }
+        clear_global_event_target = por_ally_22
+        shuffle_set_participant_por = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_23 } }
+        clear_global_event_target = por_ally_23
+        shuffle_set_participant_por = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:por_ally_24 } }
+        clear_global_event_target = por_ally_24
+    }
+}
+
+shuffle_participants_mam = {
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_1 } }
+        clear_global_event_target = mam_ally_1
+        shuffle_set_participant_mam = { target_ally = ally_2 empty_slot = ally_1 }
+        shuffle_set_participant_mam = { target_ally = ally_3 empty_slot = ally_2 }
+        shuffle_set_participant_mam = { target_ally = ally_4 empty_slot = ally_3 }
+        shuffle_set_participant_mam = { target_ally = ally_5 empty_slot = ally_4 }
+        shuffle_set_participant_mam = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_mam = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_mam = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_mam = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_mam = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_2 } }
+        clear_global_event_target = mam_ally_2
+        shuffle_set_participant_mam = { target_ally = ally_3 empty_slot = ally_2 }
+        shuffle_set_participant_mam = { target_ally = ally_4 empty_slot = ally_3 }
+        shuffle_set_participant_mam = { target_ally = ally_5 empty_slot = ally_4 }
+        shuffle_set_participant_mam = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_mam = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_mam = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_mam = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_mam = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_3 } }
+        clear_global_event_target = mam_ally_3
+        shuffle_set_participant_mam = { target_ally = ally_4 empty_slot = ally_3 }
+        shuffle_set_participant_mam = { target_ally = ally_5 empty_slot = ally_4 }
+        shuffle_set_participant_mam = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_mam = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_mam = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_mam = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_mam = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_4 } }
+        clear_global_event_target = mam_ally_4
+        shuffle_set_participant_mam = { target_ally = ally_5 empty_slot = ally_4 }
+        shuffle_set_participant_mam = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_mam = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_mam = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_mam = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_mam = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_5 } }
+        clear_global_event_target = mam_ally_5
+        shuffle_set_participant_mam = { target_ally = ally_6 empty_slot = ally_5 }
+        shuffle_set_participant_mam = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_mam = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_mam = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_mam = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_6 } }
+        clear_global_event_target = mam_ally_6
+        shuffle_set_participant_mam = { target_ally = ally_7 empty_slot = ally_6 }
+        shuffle_set_participant_mam = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_mam = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_mam = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_7 } }
+        clear_global_event_target = mam_ally_7
+        shuffle_set_participant_mam = { target_ally = ally_8 empty_slot = ally_7 }
+        shuffle_set_participant_mam = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_mam = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_8 } }
+        clear_global_event_target = mam_ally_8
+        shuffle_set_participant_mam = { target_ally = ally_9 empty_slot = ally_8 }
+        shuffle_set_participant_mam = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_9 } }
+        clear_global_event_target = mam_ally_9
+        shuffle_set_participant_mam = { target_ally = ally_10 empty_slot = ally_9 }
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_10 } }
+        clear_global_event_target = mam_ally_10
+        shuffle_set_participant_mam = { target_ally = ally_11 empty_slot = ally_10 }
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_11 } }
+        clear_global_event_target = mam_ally_11
+        shuffle_set_participant_mam = { target_ally = ally_12 empty_slot = ally_11 }
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_12 } }
+        clear_global_event_target = mam_ally_12
+        shuffle_set_participant_mam = { target_ally = ally_13 empty_slot = ally_12 }
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_13 } }
+        clear_global_event_target = mam_ally_13
+        shuffle_set_participant_mam = { target_ally = ally_14 empty_slot = ally_13 }
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_14 } }
+        clear_global_event_target = mam_ally_14
+        shuffle_set_participant_mam = { target_ally = ally_15 empty_slot = ally_14 }
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_15 } }
+        clear_global_event_target = mam_ally_15
+        shuffle_set_participant_mam = { target_ally = ally_16 empty_slot = ally_15 }
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_16 } }
+        clear_global_event_target = mam_ally_16
+        shuffle_set_participant_mam = { target_ally = ally_17 empty_slot = ally_16 }
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_17 } }
+        clear_global_event_target = mam_ally_17
+        shuffle_set_participant_mam = { target_ally = ally_18 empty_slot = ally_17 }
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_18 } }
+        clear_global_event_target = mam_ally_18
+        shuffle_set_participant_mam = { target_ally = ally_19 empty_slot = ally_18 }
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_19 } }
+        clear_global_event_target = mam_ally_19
+        shuffle_set_participant_mam = { target_ally = ally_20 empty_slot = ally_19 }
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_20 } }
+        clear_global_event_target = mam_ally_20
+        shuffle_set_participant_mam = { target_ally = ally_21 empty_slot = ally_20 }
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_21 } }
+        clear_global_event_target = mam_ally_21
+        shuffle_set_participant_mam = { target_ally = ally_22 empty_slot = ally_21 }
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_22 } }
+        clear_global_event_target = mam_ally_22
+        shuffle_set_participant_mam = { target_ally = ally_23 empty_slot = ally_22 }
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_23 } }
+        clear_global_event_target = mam_ally_23
+        shuffle_set_participant_mam = { target_ally = ally_24 empty_slot = ally_23 }
+    }
+    if = {
+        limit = { $scope$ = { tag = event_target:mam_ally_24 } }
+        clear_global_event_target = mam_ally_24
+    }
+}
+
+btc_spice_trade_clear_stuff = {
+	clr_global_flag = started_spice_trade_conflict_flag
+	if = {
+		limit = {
+			tag = event_target:mam_spice_trade
+		}
+		remove_country_modifier = ven_mam_forcelimit
+		remove_country_modifier = zanzibar_node_bonus_mam
+		remove_country_modifier = aden_node_bonus_mam
+		remove_country_modifier = hormuz_node_bonus_mam
+		remove_country_modifier = coromandel_node_bonus_mam
+		remove_country_modifier = malacca_node_bonus_mam
+		
+		remove_historical_friend = event_target:mam_ally_1
+		remove_historical_friend = event_target:mam_ally_2
+		remove_historical_friend = event_target:mam_ally_3
+		remove_historical_friend = event_target:mam_ally_4
+		remove_historical_friend = event_target:mam_ally_5
+		remove_historical_friend = event_target:mam_ally_6
+		remove_historical_friend = event_target:mam_ally_7
+		remove_historical_friend = event_target:mam_ally_8
+		remove_historical_friend = event_target:mam_ally_9
+		remove_historical_friend = event_target:mam_ally_10
+		remove_historical_friend = event_target:mam_ally_11
+		remove_historical_friend = event_target:mam_ally_12
+		remove_historical_friend = event_target:mam_ally_13
+		remove_historical_friend = event_target:mam_ally_14
+		remove_historical_friend = event_target:mam_ally_15
+		remove_historical_friend = event_target:mam_ally_16
+		remove_historical_friend = event_target:mam_ally_17
+		remove_historical_friend = event_target:mam_ally_18
+		remove_historical_friend = event_target:mam_ally_19
+		remove_historical_friend = event_target:mam_ally_20
+		remove_historical_friend = event_target:mam_ally_21
+		remove_historical_friend = event_target:mam_ally_22
+		remove_historical_friend = event_target:mam_ally_23
+		remove_historical_friend = event_target:mam_ally_24
+
+		remove_historical_rival = event_target:por_spice_trade
+		remove_historical_rival = event_target:por_ally_1
+		remove_historical_rival = event_target:por_ally_2
+		remove_historical_rival = event_target:por_ally_3
+		remove_historical_rival = event_target:por_ally_4
+		remove_historical_rival = event_target:por_ally_5
+		remove_historical_rival = event_target:por_ally_6
+		remove_historical_rival = event_target:por_ally_7
+		remove_historical_rival = event_target:por_ally_8
+		remove_historical_rival = event_target:por_ally_9
+		remove_historical_rival = event_target:por_ally_10
+		remove_historical_rival = event_target:por_ally_11
+		remove_historical_rival = event_target:por_ally_12
+		remove_historical_rival = event_target:por_ally_13
+		remove_historical_rival = event_target:por_ally_14
+		remove_historical_rival = event_target:por_ally_15
+		remove_historical_rival = event_target:por_ally_16
+		remove_historical_rival = event_target:por_ally_17
+		remove_historical_rival = event_target:por_ally_18
+		remove_historical_rival = event_target:por_ally_19
+		remove_historical_rival = event_target:por_ally_20
+		remove_historical_rival = event_target:por_ally_21
+		remove_historical_rival = event_target:por_ally_22
+		remove_historical_rival = event_target:por_ally_23
+		remove_historical_rival = event_target:por_ally_24
+	}			
+	if = {
+		limit = {
+			tag = event_target:por_spice_trade
+		}	
+		remove_country_modifier = eth_por_support
+		remove_country_modifier = zanzibar_node_bonus_por
+		remove_country_modifier = aden_node_bonus_por
+		remove_country_modifier = hormuz_node_bonus_por
+		remove_country_modifier = coromandel_node_bonus_por
+		remove_country_modifier = malacca_node_bonus_por
+
+		remove_historical_friend = event_target:por_ally_1
+		remove_historical_friend = event_target:por_ally_2
+		remove_historical_friend = event_target:por_ally_3
+		remove_historical_friend = event_target:por_ally_4
+		remove_historical_friend = event_target:por_ally_5
+		remove_historical_friend = event_target:por_ally_6
+		remove_historical_friend = event_target:por_ally_7
+		remove_historical_friend = event_target:por_ally_8
+		remove_historical_friend = event_target:por_ally_9
+		remove_historical_friend = event_target:por_ally_10
+		remove_historical_friend = event_target:por_ally_11
+		remove_historical_friend = event_target:por_ally_12
+		remove_historical_friend = event_target:por_ally_13
+		remove_historical_friend = event_target:por_ally_14
+		remove_historical_friend = event_target:por_ally_15
+		remove_historical_friend = event_target:por_ally_16
+		remove_historical_friend = event_target:por_ally_17
+		remove_historical_friend = event_target:por_ally_18
+		remove_historical_friend = event_target:por_ally_19
+		remove_historical_friend = event_target:por_ally_20
+		remove_historical_friend = event_target:por_ally_21
+		remove_historical_friend = event_target:por_ally_22
+		remove_historical_friend = event_target:por_ally_23
+		remove_historical_friend = event_target:por_ally_24
+
+		remove_historical_rival = event_target:mam_spice_trade
+		remove_historical_rival = event_target:mam_ally_1
+		remove_historical_rival = event_target:mam_ally_2
+		remove_historical_rival = event_target:mam_ally_3
+		remove_historical_rival = event_target:mam_ally_4
+		remove_historical_rival = event_target:mam_ally_5
+		remove_historical_rival = event_target:mam_ally_6
+		remove_historical_rival = event_target:mam_ally_7
+		remove_historical_rival = event_target:mam_ally_8
+		remove_historical_rival = event_target:mam_ally_9
+		remove_historical_rival = event_target:mam_ally_10
+		remove_historical_rival = event_target:mam_ally_11
+		remove_historical_rival = event_target:mam_ally_12
+		remove_historical_rival = event_target:mam_ally_13
+		remove_historical_rival = event_target:mam_ally_14
+		remove_historical_rival = event_target:mam_ally_15
+		remove_historical_rival = event_target:mam_ally_16
+		remove_historical_rival = event_target:mam_ally_17
+		remove_historical_rival = event_target:mam_ally_18
+		remove_historical_rival = event_target:mam_ally_19
+		remove_historical_rival = event_target:mam_ally_20
+		remove_historical_rival = event_target:mam_ally_21
+		remove_historical_rival = event_target:mam_ally_22
+		remove_historical_rival = event_target:mam_ally_23
+		remove_historical_rival = event_target:mam_ally_24
+	}			
+	if = {
+		limit = {
+			has_country_flag = is_mam_ally
+		}
+		remove_historical_friend = event_target:mam_spice_trade
+		
+		remove_historical_rival = event_target:por_spice_trade
+	}		
+	if = {
+		limit = {
+			has_country_flag = is_por_ally
+		}
+		remove_country_modifier = por_eth_support
+
+		remove_historical_friend = event_target:por_spice_trade
+
+		remove_historical_rival = event_target:mam_spice_trade
+	}
+}
+
+btc_clear_mam_stuff = {
+	remove_country_modifier = ven_mam_forcelimit
+	remove_country_modifier = zanzibar_node_bonus_mam
+	remove_country_modifier = aden_node_bonus_mam
+	remove_country_modifier = hormuz_node_bonus_mam
+	remove_country_modifier = coromandel_node_bonus_mam
+	remove_country_modifier = malacca_node_bonus_mam
+
+	remove_historical_friend = event_target:mam_ally_1
+	remove_historical_friend = event_target:mam_ally_2
+	remove_historical_friend = event_target:mam_ally_3
+	remove_historical_friend = event_target:mam_ally_4
+	remove_historical_friend = event_target:mam_ally_5
+	remove_historical_friend = event_target:mam_ally_6
+	remove_historical_friend = event_target:mam_ally_7
+	remove_historical_friend = event_target:mam_ally_8
+	remove_historical_friend = event_target:mam_ally_9
+	remove_historical_friend = event_target:mam_ally_10
+	remove_historical_friend = event_target:mam_ally_11
+	remove_historical_friend = event_target:mam_ally_12
+	remove_historical_friend = event_target:mam_ally_13
+	remove_historical_friend = event_target:mam_ally_14
+	remove_historical_friend = event_target:mam_ally_15
+	remove_historical_friend = event_target:mam_ally_16
+	remove_historical_friend = event_target:mam_ally_17
+	remove_historical_friend = event_target:mam_ally_18
+	remove_historical_friend = event_target:mam_ally_19
+	remove_historical_friend = event_target:mam_ally_20
+	remove_historical_friend = event_target:mam_ally_21
+	remove_historical_friend = event_target:mam_ally_22
+	remove_historical_friend = event_target:mam_ally_23
+	remove_historical_friend = event_target:mam_ally_24
+
+	remove_historical_rival = event_target:por_spice_trade
+	remove_historical_rival = event_target:por_ally_1
+	remove_historical_rival = event_target:por_ally_2
+	remove_historical_rival = event_target:por_ally_3
+	remove_historical_rival = event_target:por_ally_4
+	remove_historical_rival = event_target:por_ally_5
+	remove_historical_rival = event_target:por_ally_6
+	remove_historical_rival = event_target:por_ally_7
+	remove_historical_rival = event_target:por_ally_8
+	remove_historical_rival = event_target:por_ally_9
+	remove_historical_rival = event_target:por_ally_10
+	remove_historical_rival = event_target:por_ally_11
+	remove_historical_rival = event_target:por_ally_12
+	remove_historical_rival = event_target:por_ally_13
+	remove_historical_rival = event_target:por_ally_14
+	remove_historical_rival = event_target:por_ally_15
+	remove_historical_rival = event_target:por_ally_16
+	remove_historical_rival = event_target:por_ally_17
+	remove_historical_rival = event_target:por_ally_18
+	remove_historical_rival = event_target:por_ally_19
+	remove_historical_rival = event_target:por_ally_20
+	remove_historical_rival = event_target:por_ally_21
+	remove_historical_rival = event_target:por_ally_22
+	remove_historical_rival = event_target:por_ally_23
+	remove_historical_rival = event_target:por_ally_24
+
+	event_target:por_spice_trade = {
+		remove_historical_rival = event_target:mam_spice_trade
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = is_mam_ally
+		}
+		remove_historical_friend = event_target:mam_spice_trade
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = is_por_ally
+		}
+		remove_historical_rival = event_target:mam_spice_trade
+	}
+}
+
+btc_add_mam_stuff = {
+	add_country_modifier = {
+		name = ven_mam_forcelimit
+		duration = -1
+	}
+
+	add_historical_friend = event_target:mam_ally_1
+	add_historical_friend = event_target:mam_ally_2
+	add_historical_friend = event_target:mam_ally_3
+	add_historical_friend = event_target:mam_ally_4
+	add_historical_friend = event_target:mam_ally_5
+	add_historical_friend = event_target:mam_ally_6
+	add_historical_friend = event_target:mam_ally_7
+	add_historical_friend = event_target:mam_ally_8
+	add_historical_friend = event_target:mam_ally_9
+	add_historical_friend = event_target:mam_ally_10
+	add_historical_friend = event_target:mam_ally_11
+	add_historical_friend = event_target:mam_ally_12
+	add_historical_friend = event_target:mam_ally_13
+	add_historical_friend = event_target:mam_ally_14
+	add_historical_friend = event_target:mam_ally_15
+	add_historical_friend = event_target:mam_ally_16
+	add_historical_friend = event_target:mam_ally_17
+	add_historical_friend = event_target:mam_ally_18
+	add_historical_friend = event_target:mam_ally_19
+	add_historical_friend = event_target:mam_ally_20
+	add_historical_friend = event_target:mam_ally_21
+	add_historical_friend = event_target:mam_ally_22
+	add_historical_friend = event_target:mam_ally_23
+	add_historical_friend = event_target:mam_ally_24
+
+	add_historical_rival = event_target:por_spice_trade
+	add_historical_rival = event_target:por_ally_1
+	add_historical_rival = event_target:por_ally_2
+	add_historical_rival = event_target:por_ally_3
+	add_historical_rival = event_target:por_ally_4
+	add_historical_rival = event_target:por_ally_5
+	add_historical_rival = event_target:por_ally_6
+	add_historical_rival = event_target:por_ally_7
+	add_historical_rival = event_target:por_ally_8
+	add_historical_rival = event_target:por_ally_9
+	add_historical_rival = event_target:por_ally_10
+	add_historical_rival = event_target:por_ally_11
+	add_historical_rival = event_target:por_ally_12
+	add_historical_rival = event_target:por_ally_13
+	add_historical_rival = event_target:por_ally_14
+	add_historical_rival = event_target:por_ally_15
+	add_historical_rival = event_target:por_ally_16
+	add_historical_rival = event_target:por_ally_17
+	add_historical_rival = event_target:por_ally_18
+	add_historical_rival = event_target:por_ally_19
+	add_historical_rival = event_target:por_ally_20
+	add_historical_rival = event_target:por_ally_21
+	add_historical_rival = event_target:por_ally_22
+	add_historical_rival = event_target:por_ally_23
+	add_historical_rival = event_target:por_ally_24
+
+	event_target:por_spice_trade = {
+		add_historical_rival = event_target:mam_spice_trade
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = is_mam_ally
+		}
+		add_historical_friend = event_target:mam_spice_trade
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = is_por_ally
+		}
+		add_historical_rival = event_target:mam_spice_trade
+	}
+}

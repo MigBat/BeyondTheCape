@@ -1,0 +1,4 @@
+goldspices = {
+	base_price = 0
+	goldtype = yes
+}

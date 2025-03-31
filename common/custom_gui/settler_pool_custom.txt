@@ -1,0 +1,56 @@
+custom_window = {
+	name = settler_pool_click
+	potential = { 
+		num_of_colonists = 1
+	}
+}
+
+custom_button = {
+	name = settler_pool_button_open
+	potential = { }
+	trigger = { }
+	effect = {
+		if = {
+			limit = {
+				has_country_flag = open_settler_pool_window_flag
+			}
+			clr_country_flag = open_settler_pool_window_flag
+		}
+		else = {
+			set_country_flag = open_settler_pool_window_flag
+		}
+	}
+	tooltip = settler_pool_button_tt
+}
+
+###
+
+custom_window = {
+	name = settler_pool_window
+	potential = {
+		has_country_flag = open_settler_pool_window_flag
+	}
+}
+
+custom_text_box = {
+	name = settler_pool_label
+	potential = { always = yes }
+}
+
+custom_icon = {
+	name = settler_pool_progress_bar
+	potential = { always = yes }
+	frame_variable = total_settler_pool_amount
+	tooltip = settler_pool_amount_tt
+}
+
+custom_icon = {
+	name = settler_pool_progress_frame
+	potential = { always = yes }
+}
+
+custom_icon = {
+	name = settler_pool_modifiers
+	potential = { always = yes }
+	tooltip = settler_pool_modifiers_tt
+}

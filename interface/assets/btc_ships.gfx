@@ -1,0 +1,57 @@
+objectTypes = {
+
+			
+	###########################################################################
+	############												###############
+	############                    Light ships                 ###############
+	############												###############
+	###########################################################################
+	
+		
+	pdxmesh = {
+		name = "barque2"
+		file = "gfx\models\ships\barque2.mesh"
+
+		animation = { id = "idle"	type = "barque_idle" }
+		animation = { id = "walk"	type = "barque_walk" }
+		animation = { id = "attack"	type = "barque_attack"}
+		scale = 1.5
+	}
+
+	pdxmesh = {
+		name = "caravel2"
+		file = "gfx\models\ships\caravel2.mesh"
+
+		animation = { id = "idle"	type = "caravel_idle" }
+		animation = { id = "walk"	type = "caravel_walk" }
+		animation = { id = "attack"	type = "caravel_attack"}
+		scale = 1.5
+	}
+	
+	###########################################################################
+	############												###############
+	############                     Big Ships                  ###############
+	############												###############
+	###########################################################################
+
+	pdxmesh = {
+		name = "early_carrack2"
+		file = "gfx\models\ships\early_carrack2.mesh"
+
+		animation = { id = "idle"	type = "early_carrack_idle" }
+		animation = { id = "walk"	type = "early_carrack_walk" }
+		animation = { id = "attack"	type = "early_carrack_attack"}
+		scale = 1.3
+	}	
+	
+	pdxmesh = {
+		name = "carrack2"
+		file = "gfx\models\ships\carrack2.mesh"
+
+		animation = { id = "idle"	type = "carrack_idle" }
+		animation = { id = "walk"	type = "carrack_walk" }
+		animation = { id = "attack"	type = "carrack_attack"}
+
+		scale = 1.5
+	}		
+}

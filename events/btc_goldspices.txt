@@ -1,0 +1,337 @@
+namespace = btc_goldspices
+
+country_event = {
+	id = btc_goldspices.1
+	title = btc_goldspices.1.t
+	desc = btc_goldspices.1.d
+	picture = BURGHER_ESTATE_eventPicture
+
+	trigger = {
+		is_subject_of_type = commercial_enterprise
+		any_owned_province = { trade_goods = spices }
+		NOT = { any_owned_province = { trade_goods = goldspices } }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+
+	option = {
+		name = btc_goldspices.1.a
+		
+		random_owned_province = {
+			limit = {
+				trade_goods = spices
+			}
+			change_trade_goods = goldspices
+			set_base_production = 5
+		}
+	}
+}
+
+country_event = {
+	id = btc_goldspices.2
+	title = btc_goldspices.2.t
+	desc = btc_goldspices.2.d
+	picture = BURGHER_ESTATE_eventPicture
+
+	trigger = {
+		NOT = { is_subject_of_type = commercial_enterprise }
+		any_owned_province = {
+			trade_goods = goldspices
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	hidden = yes
+
+	option = {
+		name = btc_goldspices.2.a
+		
+		every_owned_province = {
+			limit = {
+				trade_goods = goldspices
+			}
+			change_trade_goods = spices
+		}
+	}
+}
+
+country_event = {
+	id = btc_goldspices.3
+	title = btc_goldspices.3.t
+	desc = btc_goldspices.3.d
+	picture = BURGHER_ESTATE_eventPicture
+
+	is_triggered_only = yes
+	trigger = {
+		is_subject_of_type = commercial_enterprise
+		any_owned_province = { trade_goods = goldspices }
+		any_owned_province = { trade_goods = spices }
+	}
+	hidden = yes
+
+	immediate = {
+		set_variable = {
+			which = spice_base_production
+			value = 0
+		}
+		every_owned_province = {
+			limit = {
+				trade_goods = spices
+			}
+			export_to_variable = {
+				which = spice_base_production
+				value = trigger_value:base_production
+			}
+			ROOT = {
+				change_variable = {
+					which = spice_base_production
+					which = PREV
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "[Root.spice_base_production.GetValue]"
+		
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = spice_base_production
+						value = 10
+					}
+				}
+			}
+			overlord = {
+				remove_country_modifier = gs_treasure_fleet_1
+				remove_country_modifier = gs_treasure_fleet_2
+				remove_country_modifier = gs_treasure_fleet_3
+				remove_country_modifier = gs_treasure_fleet_4
+				remove_country_modifier = gs_treasure_fleet_5
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = spices
+				}
+				remove_province_modifier = s_treasure_fleet_1
+				remove_province_modifier = s_treasure_fleet_2
+				remove_province_modifier = s_treasure_fleet_3
+				remove_province_modifier = s_treasure_fleet_4
+				remove_province_modifier = s_treasure_fleet_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = spice_base_production
+					value = 10
+				}
+				NOT = {
+					check_variable = {
+						which = spice_base_production
+						value = 20
+					}
+				}
+			}
+			overlord = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = gs_treasure_fleet_1 }
+					}
+					add_country_modifier = {
+						name = gs_treasure_fleet_1
+						duration = -1
+					}
+					remove_country_modifier = gs_treasure_fleet_2
+					remove_country_modifier = gs_treasure_fleet_3
+					remove_country_modifier = gs_treasure_fleet_4
+					remove_country_modifier = gs_treasure_fleet_5
+				}
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = spices
+					NOT = { has_province_modifier = s_treasure_fleet_1 }
+				}
+				add_province_modifier = {
+					name = s_treasure_fleet_1
+					duration = -1
+				}
+				remove_province_modifier = s_treasure_fleet_2
+				remove_province_modifier = s_treasure_fleet_3
+				remove_province_modifier = s_treasure_fleet_4
+				remove_province_modifier = s_treasure_fleet_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = spice_base_production
+					value = 20
+				}
+				NOT = {
+					check_variable = {
+						which = spice_base_production
+						value = 30
+					}
+				}
+			}
+			overlord = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = gs_treasure_fleet_2 }
+					}
+					add_country_modifier = {
+						name = gs_treasure_fleet_2
+						duration = -1
+					}
+					remove_country_modifier = gs_treasure_fleet_1
+					remove_country_modifier = gs_treasure_fleet_3
+					remove_country_modifier = gs_treasure_fleet_4
+					remove_country_modifier = gs_treasure_fleet_5
+				}
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = spices
+					NOT = { has_province_modifier = gs_treasure_fleet_2 }
+				}
+				add_province_modifier = {
+					name = s_treasure_fleet_2
+					duration = -1
+				}
+				remove_province_modifier = s_treasure_fleet_1
+				remove_province_modifier = s_treasure_fleet_3
+				remove_province_modifier = s_treasure_fleet_4
+				remove_province_modifier = s_treasure_fleet_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = spice_base_production
+					value = 30
+				}
+				NOT = {
+					check_variable = {
+						which = spice_base_production
+						value = 40
+					}
+				}
+			}
+			overlord = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = gs_treasure_fleet_3 }
+					}
+					add_country_modifier = {
+						name = gs_treasure_fleet_3
+						duration = -1
+					}
+					remove_country_modifier = gs_treasure_fleet_2
+					remove_country_modifier = gs_treasure_fleet_1
+					remove_country_modifier = gs_treasure_fleet_4
+					remove_country_modifier = gs_treasure_fleet_5
+				}
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = spices
+					NOT = { has_province_modifier = gs_treasure_fleet_3 }
+				}
+				add_province_modifier = {
+					name = s_treasure_fleet_3
+					duration = -1
+				}
+				remove_province_modifier = s_treasure_fleet_2
+				remove_province_modifier = s_treasure_fleet_1
+				remove_province_modifier = s_treasure_fleet_4
+				remove_province_modifier = s_treasure_fleet_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = spice_base_production
+					value = 40
+				}
+				NOT = {
+					check_variable = {
+						which = spice_base_production
+						value = 50
+					}
+				}
+			}
+			overlord = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = gs_treasure_fleet_4 }
+					}
+					add_country_modifier = {
+						name = gs_treasure_fleet_4
+						duration = -1
+					}
+					remove_country_modifier = gs_treasure_fleet_2
+					remove_country_modifier = gs_treasure_fleet_3
+					remove_country_modifier = gs_treasure_fleet_1
+					remove_country_modifier = gs_treasure_fleet_5
+				}
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = spices
+					NOT = { has_province_modifier = gs_treasure_fleet_4 }
+				}
+				add_province_modifier = {
+					name = s_treasure_fleet_4
+					duration = -1
+				}
+				remove_province_modifier = s_treasure_fleet_2
+				remove_province_modifier = s_treasure_fleet_3
+				remove_province_modifier = s_treasure_fleet_1
+				remove_province_modifier = s_treasure_fleet_5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = spice_base_production
+					value = 50
+				}
+			}
+			overlord = {
+				if = {
+					limit = {
+						NOT = { has_country_modifier = gs_treasure_fleet_5 }
+					}
+					add_country_modifier = {
+						name = gs_treasure_fleet_5
+						duration = -1
+					}
+					remove_country_modifier = gs_treasure_fleet_2
+					remove_country_modifier = gs_treasure_fleet_3
+					remove_country_modifier = gs_treasure_fleet_4
+					remove_country_modifier = gs_treasure_fleet_1
+				}
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = spices
+					NOT = { has_province_modifier = gs_treasure_fleet_5 }
+				}
+				add_province_modifier = {
+					name = s_treasure_fleet_5
+					duration = -1
+				}
+				remove_province_modifier = s_treasure_fleet_2
+				remove_province_modifier = s_treasure_fleet_3
+				remove_province_modifier = s_treasure_fleet_4
+				remove_province_modifier = s_treasure_fleet_1
+			}
+		}
+	}
+}

@@ -1,0 +1,130 @@
+estate_slavers = {
+	icon = 16
+
+	color = { 95 41 29}
+
+	# If true, country will get estate
+	trigger = {
+		NOT = { has_reform = conqueror_party_gov }
+		capital_scope = {
+			continent = europe
+		}
+		num_of_ports = 1
+		NOT = { has_country_modifier = the_abolish_slavery_act }
+		OR = {
+			mission_completed = btc_arguin
+			mission_completed = gc_cas_spa_west_africa2
+			AND = {
+				OR = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						OR = {
+							superregion = north_america_superregion
+							superregion = central_america_superregion
+							superregion = south_america_superregion
+						}
+						OR = {
+							trade_goods = cocoa
+							trade_goods = coffee
+							trade_goods = cotton
+							trade_goods = sugar
+							trade_goods = tea
+							trade_goods = tobacco
+						}
+					}
+				}
+				any_owned_province = {
+					OR = {
+						trade_goods = slaves
+						AND = {
+							region = guinea_region
+							region = kongo_region
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		global_ship_trade_power = 0.2
+		sailor_maintenance_modifer = -0.2
+		reduced_liberty_desire_on_other_continent = 15
+	}
+	country_modifier_neutral = {
+		global_ship_trade_power = 0.2
+	}	
+	country_modifier_angry = {
+		global_ship_trade_power = -0.2
+		sailor_maintenance_modifer = 0.2
+		reduced_liberty_desire_on_other_continent = -15
+		global_unrest = 2
+	}
+
+	land_ownership_modifier = {
+		slavers_loyalty_modifier = 0.2
+	}
+
+	province_independence_weight = {
+		factor = 0.1
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+
+	# Loyalty modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+
+	privileges = {
+		estate_slavers_monopoly_of_slaves
+		estate_slavers_boost_production_in_colony
+		estate_slavers_gold_mine_slaves
+		estate_slavers_slaves_to_europe
+		estate_slavers_raid_coasts
+		estate_slavers_grow_colonies
+		estate_slavers_feitoria_defenses
+		estate_slavers_settler_pool
+		estate_slavers_build_time
+		estate_slavers_galleys
+	}
+
+	agendas = {
+		estate_slavers_build_trade_building_in_y
+		estate_slavers_build_port_building_in_y
+		estate_slavers_build_production_building_in_y
+		estate_slavers_build_manufactory_in_y
+		estate_slavers_slave_trade
+		estate_slavers_protect_against_piracy
+		estate_slavers_hire_advisor
+		estate_slavers_fire_advisor
+	}
+	influence_from_dev_modifier = 1.0
+}

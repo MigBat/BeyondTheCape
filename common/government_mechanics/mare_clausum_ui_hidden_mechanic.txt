@@ -1,0 +1,191 @@
+mare_clausum_ui_hidden_mechanic = {
+	available = {
+		always = yes
+	}
+
+	powers = {
+		mare_clausum_bar_hidden = {
+			gui = mare_clausum_ui_gov_mech
+			max = 100
+			min = 0
+			base_monthly_growth = 0
+			# Portugal scaled
+			scaled_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+				}
+				modifier = {
+					diplomatic_reputation = 2
+				}
+			}
+			# Portugal ranges
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+				}
+				start_value = 0
+				end_value = 19
+				modifier = {
+					privateer_efficiency = 0.05
+				}
+			}
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+				}
+				start_value = 20
+				end_value = 39
+				modifier = {
+					ship_power_propagation = 0.25
+					assault_fort_ability = 0.25
+				}
+			}
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+				}
+				start_value = 40
+				end_value = 59
+				modifier = {
+					blockade_efficiency = 0.5
+					assault_fort_ability = 0.25
+					siege_blockade_progress = 1
+				}
+			}
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+				}
+				start_value = 60
+				end_value = 79
+				modifier = {
+					light_ship_power = 0.5
+					assault_fort_ability = 0.25
+					siege_blockade_progress = 1
+					movement_speed_in_fleet_modifier = 1
+				}
+			}
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:por_spice_trade
+						has_country_flag = is_por_ally
+					}
+				}
+				start_value = 80
+				end_value = 100
+				modifier = {
+					center_of_trade_upgrade_cost = -0.25
+					assault_fort_ability = 0.25
+					siege_blockade_progress = 1
+					movement_speed_in_fleet_modifier = 1
+					placed_merchant_power_modifier = 0.5
+				}
+			}
+
+			# Mamluks reverse scaled
+			reverse_scaled_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+				}
+				modifier = {
+					improve_relation_modifier = 0.5
+				}
+			}
+			# Mamluks ranges
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+				}
+				start_value = 0
+				end_value = 19
+				modifier = {
+					global_monthly_devastation = -0.25
+				}
+			}
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+				}
+				start_value = 20
+				end_value = 39
+				modifier = {
+					cannons_for_hunting_pirates_in_fleet = 1
+					garrison_size = 0.25
+				}
+			}
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+				}
+				start_value = 40
+				end_value = 59
+				modifier = {
+					own_coast_naval_combat_bonus = 1
+					garrison_size = 0.25
+					global_garrison_growth = 0.66
+				}
+			}
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+				}
+				start_value = 60
+				end_value = 79
+				modifier = {
+					global_naval_engagement_modifier = 0.2
+					garrison_size = 0.25
+					global_garrison_growth = 0.66
+					naval_forcelimit_modifier = 0.5
+				}
+			}
+			range_modifier = {
+				trigger = {
+					OR = {
+						tag = event_target:mam_spice_trade
+						has_country_flag = is_mam_ally
+					}
+				}
+				start_value = 80
+				end_value = 100
+				modifier = {
+					global_trade_power = 0.25
+					garrison_size = 0.25
+					global_garrison_growth = 0.66
+					naval_forcelimit_modifier = 0.5
+					galley_power = 0.25
+				}
+			}
+		}
+	}
+}

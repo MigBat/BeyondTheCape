@@ -1,0 +1,292 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "mission_black_carrack_sword"
+		texturefile = "gfx/interface/missions/mission_black_carrack_sword.dds"
+	}
+
+	spriteType = {
+		name = "mission_coimbra_university"
+		texturefile = "gfx/interface/missions/mission_coimbra_university.dds"
+	}
+
+	spriteType = {
+		name = "mission_henry_the_navigator"
+		texturefile = "gfx/interface/missions/mission_henry_the_navigator.dds"
+	}
+
+	spriteType = {
+		name = "mission_fernao_lopes"
+		texturefile = "gfx/interface/missions/mission_fernao_lopes.dds"
+	}
+
+	spriteType = {
+		name = "mission_pedro_coimbra"
+		texturefile = "gfx/interface/missions/mission_pedro_coimbra.dds"
+	}
+
+	spriteType = {
+		name = "mission_camoes"
+		texturefile = "gfx/interface/missions/mission_camoes.dds"
+	}
+
+	spriteType = {
+		name = "mission_monumental_city"
+		texturefile = "gfx/interface/missions/mission_monumental_city.dds"
+	}
+
+	spriteType = {
+		name = "mission_pena_palace"
+		texturefile = "gfx/interface/missions/mission_pena_palace.dds"
+	}
+
+	spriteType = {
+		name = "mission_societas_jesu"
+		texturefile = "gfx/interface/missions/mission_societas_jesu.dds"
+	}
+
+	spriteType = {
+		name = "mission_inquisition"
+		texturefile = "gfx/interface/missions/mission_inquisition.dds"
+	}
+
+	spriteType = {
+		name = "mission_jews_and_moriscos"
+		texturefile = "gfx/interface/missions/mission_jews_and_moriscos.dds"
+	}
+
+	spriteType = {
+		name = "mission_francis_xavier"
+		texturefile = "gfx/interface/missions/mission_francis_xavier.dds"
+	}
+
+	spriteType = {
+		name = "mission_madeira_sugar"
+		texturefile = "gfx/interface/missions/mission_madeira_sugar.dds"
+	}
+
+	spriteType = {
+		name = "mission_mafra_palace"
+		texturefile = "gfx/interface/missions/mission_mafra_palace.dds"
+	}
+
+	spriteType = {
+		name = "mission_mariners_astrolabe"
+		texturefile = "gfx/interface/missions/mission_mariners_astrolabe.dds"
+	}
+
+	spriteType = {
+		name = "mission_order_of_aviz"
+		texturefile = "gfx/interface/missions/mission_order_of_aviz.dds"
+	}
+
+	spriteType = {
+		name = "mission_order_of_christ"
+		texturefile = "gfx/interface/missions/mission_order_of_christ.dds"
+	}
+
+	spriteType = {
+		name = "mission_ramo_grande"
+		texturefile = "gfx/interface/missions/mission_ramo_grande.dds"
+	}
+
+	spriteType = {
+		name = "mission_ribeira_palace"
+		texturefile = "gfx/interface/missions/mission_ribeira_palace.dds"
+	}
+
+	spriteType = {
+		name = "mission_tower_of_belem"
+		texturefile = "gfx/interface/missions/mission_tower_of_belem.dds"
+	}
+
+	spriteType = {
+		name = "mission_jeronimos_monastery"
+		texturefile = "gfx/interface/missions/mission_jeronimos_monastery.dds"
+	}
+
+	spriteType = {
+		name = "mission_albuquerque"
+		texturefile = "gfx/interface/missions/mission_albuquerque.dds"
+	}
+
+	spriteType = {
+		name = "mission_sagres_school"
+		texturefile = "gfx/interface/missions/mission_sagres_school.dds"
+	}
+
+	spriteType = {
+		name = "mission_illustrious_generation"
+		texturefile = "gfx/interface/missions/mission_illustrious_generation.dds"
+	}
+
+	spriteType = {
+		name = "mission_ordenacoes"
+		texturefile = "gfx/interface/missions/mission_ordenacoes.dds"
+	}
+
+	spriteType = {
+		name = "mission_tangiers"
+		texturefile = "gfx/interface/missions/mission_tangiers.dds"
+	}
+
+	spriteType = {
+		name = "mission_dukkala"
+		texturefile = "gfx/interface/missions/mission_dukkala.dds"
+	}
+
+	spriteType = {
+		name = "mission_alcacer_quibir"
+		texturefile = "gfx/interface/missions/mission_alcacer_quibir.dds"
+	}
+
+	spriteType = {
+		name = "mission_padrao"
+		texturefile = "gfx/interface/missions/mission_padrao.dds"
+	}
+
+	spriteType = {
+		name = "mission_mariner_astrolabe"
+		texturefile = "gfx/interface/missions/mission_mariner_astrolabe.dds"
+	}
+
+	spriteType = {
+		name = "mission_armada"
+		texturefile = "gfx/interface/missions/mission_armada.dds"
+	}
+
+	spriteType = {
+		name = "mission_full_rigged"
+		texturefile = "gfx/interface/missions/mission_full_rigged.dds"
+	}
+
+	spriteType = {
+		name = "mission_fort_build"
+		texturefile = "gfx/interface/missions/mission_fort_build.dds"
+	}
+
+	spriteType = {
+		name = "mission_sao_tome"
+		texturefile = "gfx/interface/missions/mission_sao_tome.dds"
+	}
+
+	spriteType = {
+		name = "mission_slaves"
+		texturefile = "gfx/interface/missions/mission_slaves.dds"
+	}
+
+	spriteType = {
+		name = "mission_vasco_gama"
+		texturefile = "gfx/interface/missions/mission_vasco_gama.dds"
+	}
+
+	spriteType = {
+		name = "mission_elmina"
+		texturefile = "gfx/interface/missions/mission_elmina.dds"
+	}
+
+	spriteType = {
+		name = "mission_fort_feitoria"
+		texturefile = "gfx/interface/missions/mission_fort_feitoria.dds"
+	}
+
+	spriteType = {
+		name = "mission_transport_nau"
+		texturefile = "gfx/interface/missions/mission_transport_nau.dds"
+	}
+
+	spriteType = {
+		name = "mission_square_rigged"
+		texturefile = "gfx/interface/missions/mission_square_rigged.dds"
+	}
+
+	spriteType = {
+		name = "mission_espingardas"
+		texturefile = "gfx/interface/missions/mission_espingardas.dds"
+	}
+
+	spriteType = {
+		name = "mission_jogo_do_pau"
+		texturefile = "gfx/interface/missions/mission_jogo_do_pau.dds"
+	}
+
+	spriteType = {
+		name = "mission_ginetes"
+		texturefile = "gfx/interface/missions/mission_ginetes.dds"
+	}
+
+	spriteType = {
+		name = "mission_besteiros"
+		texturefile = "gfx/interface/missions/mission_besteiros.dds"
+	}
+
+	spriteType = {
+		name = "mission_adamastor"
+		texturefile = "gfx/interface/missions/mission_adamastor.dds"
+	}
+
+	spriteType = {
+		name = "mission_socotra"
+		texturefile = "gfx/interface/missions/mission_socotra.dds"
+	}
+
+	spriteType = {
+		name = "mission_magellan"
+		texturefile = "gfx/interface/missions/mission_magellan.dds"
+	}
+
+	spriteType = {
+		name = "mission_columbus"
+		texturefile = "gfx/interface/missions/mission_columbus.dds"
+	}
+
+	spriteType = {
+		name = "mission_miguel"
+		texturefile = "gfx/interface/missions/mission_miguel.dds"
+	}
+
+	spriteType = {
+		name = "mission_cacadores"
+		texturefile = "gfx/interface/missions/mission_cacadores.dds"
+	}
+
+	spriteType = {
+		name = "mission_paradox"
+		texturefile = "gfx/interface/missions/mission_paradox.dds"
+	}
+
+	spriteType = {
+		name = "mission_australia"
+		texturefile = "gfx/interface/missions/mission_australia.dds"
+	}
+
+	spriteType = {
+		name = "mission_vasco_da_gama"
+		texturefile = "gfx/interface/missions/mission_vasco_da_gama.dds"
+	}
+
+	spriteType = {
+		name = "mission_nutmeg"
+		texturefile = "gfx/interface/missions/mission_nutmeg.dds"
+	}
+
+	spriteType = {
+		name = "mission_independence"
+		texturefile = "gfx/interface/missions/mission_independence.dds"
+	}
+
+	spriteType = {
+		name = "mission_organ_guns"
+		texturefile = "gfx/interface/missions/mission_organ_guns.dds"
+	}
+
+	spriteType = {
+		name = "mission_magnanimous"
+		texturefile = "gfx/interface/missions/mission_magnanimous.dds"
+	}
+
+	spriteType = {
+		name = "mission_brazil"
+		texturefile = "gfx/interface/missions/mission_brazil.dds"
+	}
+}

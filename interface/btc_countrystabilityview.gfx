@@ -1,0 +1,30 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_disaster_estate_slavers_disaster"
+		texturefile = "gfx//interface//disasters//estate_slavers_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_disaster_overseas_dominance"
+		texturefile = "gfx//interface//disasters//overseas_dominance.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+  	}
+	
+	spriteType = {
+		name = "GFX_disaster_portuguese_regency"
+		texturefile = "gfx//interface//disasters//portuguese_regency.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_disaster_portuguese_liberalism"
+		texturefile = "gfx//interface//disasters//portuguese_liberalism.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

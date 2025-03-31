@@ -1,0 +1,35 @@
+portuguese_saudade_mechanic = {
+	available = {
+		has_dlc = "Domination"
+	}
+
+	powers = {
+		portuguese_saudade = {
+			gui = portuguese_saudade_gov_mech
+			max = 100
+			reset_on_new_ruler = no
+			
+			scaled_modifier = {	# at 100 saudade
+				modifier = {
+					global_sailors_modifier = 0.25
+					manpower_in_own_culture_provinces = -0.25
+					reduced_liberty_desire_on_same_continent = -25
+					global_foreign_trade_power = 0.15
+					allowed_marine_fraction = 0.15
+					monthly_portuguese_saudade = -0.2
+				}
+			}
+
+			reverse_scaled_modifier = {	# at 0 saudade
+				modifier = {
+					allowed_tercio_fraction = 0.3
+					global_colonial_growth = 60
+					reduced_liberty_desire_on_other_continent = -25
+					treasure_fleet_income = -0.5
+					trade_steering = -0.25
+					global_tariffs = -0.25
+				}
+			}
+		}
+	}
+}

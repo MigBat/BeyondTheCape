@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ab_portugal_professional_navy"
+		texturefile = "gfx/interface/ages/ab_portugal_professional_navy.dds"
+	}	
+}

@@ -1,0 +1,14 @@
+on_colony_finished_effect = {
+	if = {
+		limit = {
+			owner = {
+				is_or_was_tag = { tag = POR }
+			}
+			has_province_modifier = padrao_raised
+		}
+		remove_province_modifier = padrao_raised
+		province_event = {
+			id = btc_por.168
+		}
+	}
+}

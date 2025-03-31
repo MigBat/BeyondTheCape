@@ -1,0 +1,145 @@
+namespace = btc_remove_natives
+country_event = {
+	id = btc_remove_natives.1
+	title = btc_remove_natives.1.title
+	desc = btc_remove_natives.1.desc
+	picture = NATIVES_eventPicture
+
+	is_triggered_only = yes
+	trigger = { ai = no NOT = { has_global_flag = native_event_done }}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = native_event_done
+		}
+	}
+
+	option = {
+		name = btc_remove_natives.1.a		
+		custom_tooltip = btc_remove_natives.1.a_tt
+		hidden_effect = {
+			south_america = {
+				limit = {
+					owner = {
+						government = native
+					}
+				}
+				cede_province = ---
+				every_owned_province = {
+					limit = { has_building = fort_15th }
+					remove_building = fort_15th
+				}
+			}
+			north_america = {
+				limit = {
+					owner = {
+						government = native
+					}
+				}
+				cede_province = ---
+				every_owned_province = {
+					limit = { has_building = fort_15th }
+					remove_building = fort_15th
+				}
+			}
+			oceania = {
+				limit = {
+					owner = {
+						OR = {
+							government = native
+							technology_group = polynesian_tech
+						}
+					}
+				}
+				cede_province = ---
+				every_owned_province = {
+					limit = { has_building = fort_15th }
+					remove_building = fort_15th
+				}
+			}
+			# change trade goods to unknown
+			every_province = {
+				limit = {
+					is_empty = yes
+					NOT = { trade_goods = unknown }
+				}
+				change_trade_goods = unknown
+			}
+		}
+	}
+
+	option = {
+		name = btc_remove_natives.1.b		
+		custom_tooltip = btc_remove_natives.1.b_tt
+		hidden_effect = {
+			south_america = {
+				limit = {
+					owner = {
+						government = native
+					}
+				}
+				cede_province = ---
+				every_owned_province = {
+					limit = { has_building = fort_15th }
+					remove_building = fort_15th
+				}
+			}
+			north_america = {
+				limit = {
+					owner = {
+						government = native
+					}
+				}
+				cede_province = ---
+				every_owned_province = {
+					limit = { has_building = fort_15th }
+					remove_building = fort_15th
+				}
+			}
+			# change trade goods to unknown
+			every_province = {
+				limit = {
+					is_empty = yes
+					NOT = { trade_goods = unknown }
+				}
+				change_trade_goods = unknown
+			}
+		}
+	}
+
+	option = {
+		name = btc_remove_natives.1.c
+		custom_tooltip = btc_remove_natives.1.c_tt
+		hidden_effect = {
+			oceania = {
+				limit = {
+					owner = {
+						OR = {
+							government = native
+							technology_group = polynesian_tech
+						}
+					}
+				}
+				cede_province = ---
+				every_owned_province = {
+					limit = { has_building = fort_15th }
+					remove_building = fort_15th
+				}
+			}
+			# change trade goods to unknown
+			every_province = {
+				limit = {
+					is_empty = yes
+					NOT = { trade_goods = unknown }
+				}
+				change_trade_goods = unknown
+			}
+		}
+	}
+
+	option = {
+		name = btc_remove_natives.1.d
+		custom_tooltip = btc_remove_natives.1.d_tt	
+	}
+}

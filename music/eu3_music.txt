@@ -1,0 +1,180 @@
+song = {
+	name = "battleofdamascus"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "chooseyourpath"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "cityofjerusalem"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "conquistador_maintheme"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "einekleinecourtmusik"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "emperoroftheselands"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "highlandwanderer"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "mareatlanticum"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "mood_asongformerchants"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "mood_discovernewland"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "mood_landofglory"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "mood_nightoverourempire"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "parabellum"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "prologue_europauniversalis"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "somewhere"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "swashbucklingprivateers"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "travelsouth"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "war_acrucevictoria"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "war_eastvswest"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}
+song = {
+	name = "war_toconstantinople"
+	
+	chance = {
+		modifier = {
+			factor = 1.5
+		}		
+	}
+}

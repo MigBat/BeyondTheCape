@@ -1,0 +1,96 @@
+#Great Salt Lake
+lake = {
+	triangle_strip = { 997 1829 984 1867 1016 1833 1020 1880 }
+	height = 22
+}
+
+#Lake Chapala
+lake = {
+	triangle_strip = { 1155 1451 1158 1459 1170 1448 1172 1458 }
+	height = 22
+}
+
+#Lake Van/Lake Urmia
+lake = {
+	triangle_strip = { 3744 1800 3757 1818 3804 1770 3819 1792 }
+	height = 22
+}
+
+#Tana Lake
+lake = {
+	triangle_strip = { 3650 1299 3654 1313 3662 1295 3667 1312 }
+	height = 22
+}
+
+#Kivu
+lake = {
+	triangle_strip = { 3506 1044 3509 1067 3518 1050 3519 1064 }
+	height = 22
+}
+
+
+#Yellowstone Lake
+lake = {
+	triangle_strip = { 1027 1920 1031 1929 1037 1917 1040 1922 }
+	height = 23
+}
+
+#Lake Tahoe
+lake = {
+	triangle_strip = { 857 1810 859 1820 864 1808 866 1817 }
+	height = 23
+}
+
+#Lake Texcoco
+lake = {
+	triangle_strip = { 1230 1435 1231 1449 1241 1434 1241 1444 }
+	height = 23
+}
+
+#Lake Sevan
+lake = {
+	triangle_strip = { 3792 1839 3795 1849 3806 1828 3810 1839 }
+	height = 23
+}
+
+#Qinghai Lake
+lake = {
+	triangle_strip = { 4764 1765 4768 1780 4786 1760 4789 1775 }
+	height = 24
+}
+
+#Lake Titicaca
+lake = {
+	triangle_strip = { 1748 805 1753 824 1770 789 1781 803 }
+	height = 25
+}
+
+#Lake Poopo
+lake = {
+	triangle_strip = { 1797 745 1798 769 1808 744 1807 770 }
+	height = 25
+}
+
+#Lake Ayakum 1
+lake = {
+	triangle_strip = { 4576 1781 4578 1789 4590 1779 4592 1787 }
+	height = 25
+}
+
+#Ngoring Lake
+lake = {
+	triangle_strip = { 4718 1728 4720 1736 4736 1727 4738 1736 }
+	height = 25
+}
+
+#Lake Ayakum 2
+lake = {
+	triangle_strip = { 4609 1741 4610 1750 4620 1741 4621 1749 }
+	height = 26
+}
+
+#Tibetan Lakes
+lake = {
+	triangle_strip = { 4429 1645 4459 1684 4615 1606 4619 1680 }
+	height = 26
+}

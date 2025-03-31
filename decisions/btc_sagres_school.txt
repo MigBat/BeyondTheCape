@@ -1,0 +1,135 @@
+country_decisions = {
+	hire_navigator = {
+		potential = {
+			mission_completed = btc_sagres_school
+			230 = { 
+				owned_by = ROOT
+				has_province_modifier = por_sagres 
+			}
+		}
+		allow = {
+			NOT = { has_advisor_type_in_pool = navigator }
+			NOT = { employed_advisor = { type = navigator } }
+			has_estate_privilege = estate_burghers_naval_school_right
+			navy_tradition = 10
+		}
+		effect = {
+			define_advisor = {
+				type = navigator
+				skill = 1
+				discount = yes
+				location = 230
+			}
+			add_navy_tradition = -10
+		}
+	}
+
+	pero_escobar = {
+		color = { 255 215 0 }
+		potential = {
+			mission_completed = btc_sagres_school
+			230 = { 
+				owned_by = ROOT
+				has_province_modifier = por_sagres 
+			}
+			NOT = { has_country_flag = had_escobar }
+			has_idea_group = exploration_ideas
+		}
+		allow = {
+		}
+		effect = {
+			define_explorer = {
+				name = "Pero Escobar"
+				shock = 2
+				fire = 1
+				manuever = 4
+			}
+			set_country_flag = had_escobar
+		}
+	}
+
+	diogo_cao = {
+		color = { 255 215 0 }
+		potential = {
+			mission_completed = btc_sagres_school
+			230 = { 
+				owned_by = ROOT
+				has_province_modifier = por_sagres 
+			}
+			NOT = { has_country_flag = had_cao }
+			2258 = {
+				owned_by = ROOT
+				is_city = yes
+			}
+		}
+		allow = {
+		}
+		effect = {
+			define_explorer = {
+				name = "Diogo Cão"
+				shock = 2
+				fire = 2
+				manuever = 4
+			}
+			set_country_flag = had_cao
+		}
+	}
+
+	bartolomeu_dias = {
+		color = { 255 215 0 }
+		potential = {
+			mission_completed = btc_sagres_school
+			230 = { 
+				owned_by = ROOT
+				has_province_modifier = por_sagres 
+			}
+			NOT = { has_country_flag = had_dias }
+			dip_tech = 8
+		}
+		allow = {
+		}
+		effect = {
+			country_event = {
+				id = btc_por.152	# Pedro Covilha
+			}
+			define_explorer = {
+				name = "Bartolomeu Dias"
+				shock = 2
+				fire = 2
+				manuever = 5
+			}
+			set_country_flag = had_dias
+		}
+	}
+
+	# Disable Ship Capture #
+	btc_disable_ship_capture = {
+		potential = {
+			ai = no
+			NOT = { has_country_modifier = disable_ship_capture }
+		}
+		allow = {
+			NOT = { has_country_modifier = disable_ship_capture }
+		}
+		effect = {
+			add_country_modifier = {
+				name = disable_ship_capture
+				duration = -1
+			}
+		}
+	}
+
+	# Enable Ship Capture #
+	btc_enable_ship_capture = {
+		potential = {
+			ai = no
+			has_country_modifier = disable_ship_capture
+		}
+		allow = {
+			has_country_modifier = disable_ship_capture
+		}
+		effect = {
+			remove_country_modifier = disable_ship_capture
+		}
+	}
+}

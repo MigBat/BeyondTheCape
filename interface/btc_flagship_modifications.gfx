@@ -1,0 +1,33 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_flagship_portuguese_mass_load_cannons"
+		texturefile = "gfx//interface//portuguese_mass_load_cannons.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_flagship_spanish_hull_sheating"
+		texturefile = "gfx//interface//spanish_hull_sheating.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_flagship_spanish_improved_crows_nest"
+		texturefile = "gfx//interface//spanish_improved_crows_nest.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_flagship_spanish_navigators"
+		texturefile = "gfx//interface//spanish_navigators.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_flagship_flying_dutchman_mod"
+		texturefile = "gfx//interface//flying_dutchman_mod.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_flagship_portuguese_botafogo"
+		texturefile = "gfx//interface//portuguese_botafogo.tga"
+		loadType = "INGAME"
+	}
+}

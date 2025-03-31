@@ -1,0 +1,13 @@
+﻿l_english:
+
+ btc_remove_natives.1.title: "Remove Tribes"
+ btc_remove_natives.1.desc: "Choose if you want to remove tribes from the game. Aztec, Inca and Mayan civilizations are not affected by this.\n\n§BThe game will lag for a few seconds while the tribe tags are deleted§!"
+ btc_remove_natives.1.a: "Remove New World and Oceania tribes."
+ btc_remove_natives.1.a_tt: "New World and Oceania tribes will be removed from the game."
+ btc_remove_natives.1.b: "Remove New World tribes."
+ btc_remove_natives.1.b_tt: "North America and South America tribes will be removed from the game."
+ btc_remove_natives.1.c: "Remove Oceania tribes."
+ btc_remove_natives.1.c_tt: "Australia and Polynesia tribes will be removed from the game."
+ btc_remove_natives.1.d: "Keep them."
+ btc_remove_natives.1.d_tt: "The tribes will remain in the game."
+ 

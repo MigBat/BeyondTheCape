@@ -1,0 +1,37 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_settler_pool_button_open"
+		texturefile = "gfx/interface/settler_pool/settler_pool_button_open.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_settler_pool_bg"
+		texturefile = "gfx/interface/settler_pool/settler_pool_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_settler_pool_progress_bar"
+		texturefile = "gfx/interface/settler_pool/settler_pool_progress_bar.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_settler_pool_progress_frame"
+		texturefile = "gfx/interface/settler_pool/settler_pool_progress_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_settler_pool_modifiers"
+		texturefile = "gfx/interface/settler_pool/settler_pool_modifiers.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

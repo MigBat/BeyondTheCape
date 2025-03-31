@@ -1,0 +1,129 @@
+namespace = btc_dukkala_raids
+
+country_event = {
+	id = btc_dukkala_raids.1
+	title = btc_dukkala_raids.1.t
+	desc = btc_dukkala_raids.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	trigger = {
+		has_country_flag = btc_dukkala_raids_on_flag
+		manpower = 1
+		NOT = { has_country_flag = btc_recent_raid }
+		OR = {
+			MOR = {
+				any_owned_province = {
+					is_looted = no
+				}
+			}
+			any_country = {
+				is_subject_of = MOR
+				any_owned_province = {
+					is_looted = no
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	option = {
+		name = btc_dukkala_raids.1.a	
+		
+		add_manpower = -1
+		set_country_flag = btc_recent_raid
+
+		custom_tooltip = btc_party_goes_raiding_tt
+		hidden_effect = {
+			random_province = {
+				limit = {
+					country_or_non_sovereign_subject_holds = MOR
+					is_looted = no
+				}
+				save_event_target_as = morocco_raiding_province
+			}
+			random_list = {
+				50 = { 
+					country_event = {
+						id = btc_dukkala_raids.2	# SUCCESS
+						days = 90
+					} 
+				}
+				50 = { 
+					country_event = {
+						id = btc_dukkala_raids.3	# FAILURE
+						days = 90
+					} 
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = btc_dukkala_raids.2
+	title = btc_dukkala_raids.2.t
+	desc = btc_dukkala_raids.2.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = btc_dukkala_raids.2.a	
+
+		event_target:morocco_raiding_province = {
+			remove_loot = {
+				who = ROOT
+				amount = 1000
+			}
+		}
+		clr_country_flag = btc_recent_raid
+	}
+}
+
+country_event = {
+	id = btc_dukkala_raids.3
+	title = btc_dukkala_raids.3.t
+	desc = btc_dukkala_raids.3.d
+	picture = IMPALED_SOLDIERS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = btc_dukkala_raids.3.a	
+		
+		event_target:morocco_raiding_province = {
+			owner = {
+				add_prestige = 5
+			}
+		}
+		clr_country_flag = btc_recent_raid
+	}
+}
+
+country_event = {
+	id = btc_dukkala_raids.4
+	title = btc_dukkala_raids.4.t
+	desc = btc_dukkala_raids.4.d
+	picture = IMPALED_SOLDIERS_eventPicture
+	
+	hidden = yes	
+	trigger = {
+		has_country_flag = btc_dukkala_raids_on_flag
+		OR = {
+			MOR = { exists = no }
+			alliance_with = MOR
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = btc_dukkala_raids.4.a	
+
+		clr_country_flag = btc_dukkala_raids_on_flag
+	}
+}

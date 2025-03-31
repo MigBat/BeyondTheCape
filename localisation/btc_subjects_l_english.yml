@@ -1,0 +1,19 @@
+﻿l_english:
+
+ voivode:0 "Voivode"
+ voivode_title:0 "Voivode"
+ voivode_title_plural:0 "Voivodes"
+ voivode_is_our:0 "§Y$NAME$§! is our Voivode."
+ voivode_long_desc:0 "A Voivode receives similar bonuses to an appanage, but without the increased liberty desire in exchance for reduced land forcelimit.\n"
+ voivode_no_overlord_dow:0 "You cannot declare war on your own Voivode."
+ voivode_overlord_title:0 "Overlord"
+
+ voivode_subject:0 "Voivode Subject"
+ desc_voivode_subject:0 "This country is a voivode."
+
+ conqueror_party: "Conqueror Party"
+ conqueror_party_long_desc: "A party led by a charismatic leader with big ambitions."
+ conqueror_party_is_our: "$NAME|Y$ is a Conqueror Party of ours"
+ conqueror_party_title: "Conqueror Party"
+ conqueror_party_title_plural: "Conqueror Parties"
+ is_conqueror_party: "Is Conqueror Party"
