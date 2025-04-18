@@ -225,7 +225,7 @@ country_event = {
 		define_consort = {
 			country_of_origin = CAS
 			name = "Joanna"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 15
 			culture = castillian
 			adm = 5
@@ -296,7 +296,7 @@ country_event = {
 		define_consort = {
 			country_of_origin = CAS
 			name = "Isabella"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 24
 			culture = castillian
 			adm = 5
@@ -341,7 +341,7 @@ country_event = {
 
 		define_ruler = {
 			name = "Joanna"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 15
 			culture = castillian
 			adm = 5
@@ -370,7 +370,7 @@ country_event = {
 		name = "castilian_civil_war.7a"
 		define_ruler = {
 			name = "Isabella"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 24
 			culture = castillian
 			adm = 5
@@ -405,7 +405,7 @@ country_event = {
 		define_consort = {
 			country_of_origin = CAS
 			name = "Joanna"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 15
 			culture = castillian
 			adm = 5
@@ -455,7 +455,7 @@ country_event = {
 					friend = POR
 					size = 3
 					leader = "Joanna"
-					leader_dynasty = "de Trastámara"
+					leader_dynasty = "de Trastï¿½mara"
 					female = yes
 					win = yes
 				}
@@ -495,7 +495,7 @@ country_event = {
 		define_consort = {
 			country_of_origin = CAS
 			name = "Isabella"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			age = 24
 			culture = castillian
 			adm = 5
@@ -560,7 +560,7 @@ country_event = {
 					friend = ARA
 					size = 3
 					leader = "Isabella"
-					leader_dynasty = "de Trastámara"
+					leader_dynasty = "de Trastï¿½mara"
 					female = yes
 					win = yes
 				}
@@ -699,8 +699,9 @@ country_event = {
 		on_non_estate_disaster_end = yes
 		hidden_effect = {
 			set_country_flag = spa_cas_ended_civil_war_flag
-			POR = { remove_country_modifier = no_declare_war_ccw }
-			ARA = { remove_country_modifier = no_declare_war_ccw }
+			clr_country_flag = at_war
+			POR = { remove_country_modifier = no_declare_war_ccw clr_country_flag = at_war }
+			ARA = { remove_country_modifier = no_declare_war_ccw clr_country_flag = at_war }			
 		}
 	}
 
