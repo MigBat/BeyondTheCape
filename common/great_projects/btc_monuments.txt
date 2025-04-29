@@ -2017,3 +2017,693 @@ quivira = {
 		}
 	}
 }
+
+zwin = {
+	start = 90 #Brugge
+	date = 1444.01.01
+	build_cost = 0
+	time = { months = 0	}
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 2
+	type = monument
+	build_trigger = {
+	}
+	on_built = {	
+	}
+	on_destroyed = {	 
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		ROOT = {
+			has_country_flag = has_zwin
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			province_trade_power_value = 10
+		}
+		area_modifier = {
+			trade_value = 0.5
+			trade_goods_size = 0.75
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			province_trade_power_value = 20
+		}
+		area_modifier = {
+			trade_value = 1
+			trade_goods_size = 1.5
+			blockade_force_required = 1
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			province_trade_power_value = 25
+		}
+		area_modifier = {
+			trade_value = 2
+			trade_goods_size = 2
+			blockade_force_required = 1
+		}
+		country_modifiers = {
+			production_efficiency = 0.10
+		}
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = BTC_NED_zwin_mission
+					owner = {
+						has_country_flag = is_zwin
+					}
+				}
+			}
+			modifier = { 
+				development_cost_modifier = -0.05
+				build_cost = -0.25
+				state_governing_cost = -0.1
+				global_ship_trade_power = 0.5
+			}
+		}
+		on_upgraded = {
+			change_trade_goods = silk
+		}
+	}
+}
+
+reede_van_texel = {
+	start = 4981 #west friesland
+	date = 1444.01.01
+	build_cost = 0
+	time = { months = 0	}
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		ROOT = {
+			has_country_flag = has_reede_van_texel
+		}
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		 
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = wallonian
+				province_is_or_accepts_culture = yes
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		always = no
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_ship_repair = 0.25
+			ship_recruit_speed = -0.25
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_own_coast_naval_combat_bonus = 1
+			hostile_fleet_attrition = 2
+			block_slave_raid = yes
+		}
+		area_modifier = {
+			local_ship_repair = 0.25
+			ship_recruit_speed = -0.25
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+			country_event = {
+				id = BTC_NED_navy.1
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_own_coast_naval_combat_bonus = 1
+			hostile_fleet_attrition = 5
+			hostile_disembark_speed = 0.25
+			block_slave_raid = yes
+		}
+		area_modifier = {
+			local_ship_repair = 0.5
+			ship_recruit_speed = -0.5
+		}
+		country_modifiers = {
+			max_flagships = 1
+		}
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = BTC_NED_reede_van_texel_mission
+					owner = {
+						has_country_flag = is_reede_van_texel
+					}
+				}
+			}
+			modifier = { 
+				4981 = {
+					fort_level = 1
+					local_defensiveness = 0.25
+					local_garrison_size = 1
+					local_assault_fort_ability = -0.75
+				}
+				heavy_ship_power = 0.25
+				naval_forcelimit_modifier = 0.25
+			}
+		}
+		on_upgraded = {
+			country_event = {
+				id = BTC_texel_of_war
+				tooltip = BTC_texel_of_war.tt
+			}
+		}
+	}
+}
+
+grand_place = {
+	start = 92 #Brabant
+	date = 1444.01.01
+	build_cost = 0
+	time = { months = 0	}
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		 
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = wallonian
+				province_is_or_accepts_culture = yes
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		ROOT = {
+			has_country_flag = has_grand_place
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_production_efficiency = 0.1
+			local_tax_modifier = 0.1
+			province_trade_power_modifier = 0.1
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			global_prosperity_growth = 0.025
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_production_efficiency = 0.25
+			local_tax_modifier = 0.25
+			province_trade_power_modifier = 0.25
+		}
+		area_modifier = {
+			allowed_num_of_buildings = 1
+		}
+		country_modifiers = {
+			improve_relation_modifier = 0.25
+			global_prosperity_growth = 0.05
+		}
+		on_upgraded = {
+			
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_production_efficiency = 0.5
+			local_tax_modifier = 0.5
+			province_trade_power_modifier = 0.5
+		}
+		area_modifier = {
+			allowed_num_of_buildings = 1
+			allowed_num_of_manufactories = 1
+		}
+		country_modifiers = {
+			improve_relation_modifier = 0.40
+			inflation_action_cost = -0.25
+			global_prosperity_growth = 0.1
+		}
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = BTC_NED_grand_place_mission
+					owner = {
+						has_country_flag = is_grand_place
+					}
+				}
+			}
+			modifier = { 
+				ae_impact = -0.25
+				stability_cost_to_declare_war = -1
+				cb_on_government_enemies = yes
+				envoy_travel_time = -0.5
+			}
+		}
+		on_upgraded = {
+			
+		}
+	}
+}
+
+fortress_of_luxembourg = {
+	start = 94
+	date = 963.01.01
+	build_cost = 0
+	time = { months = 0 }
+	can_be_moved = no
+	starting_tier = 2
+	type = monument
+	build_trigger = {
+	}
+	on_built = {
+
+	}
+	on_destroyed = {
+
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = wallonian
+				province_is_or_accepts_culture = yes
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		OR = {
+			AND = {
+				culture = dutch
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = flemish
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture = wallonian
+				province_is_or_accepts_culture = yes
+			}
+		}
+	}
+	keep_trigger = {
+
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			fort_level = 1
+			local_garrison_size = 0.10
+		}
+		area_modifier = {
+			local_defensiveness = 0.25
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			fort_level = 3
+			local_garrison_size = 0.25
+		}
+		area_modifier = {
+			local_defensiveness = 0.35
+			local_hostile_attrition = 1
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 15000
+		}
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			fort_level = 5
+			local_garrison_size = 0.5
+		}
+		area_modifier = {
+			local_defensiveness = 0.5
+			local_hostile_attrition = 3
+		}
+		country_modifiers = {
+			defensiveness = 0.5
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+binnenhof = {
+	start = 4383 #Den Haag
+	date = 1444.01.01
+	build_cost = 0
+	time = { months = 0	}
+	can_be_moved = no
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		 
+	}
+	can_use_modifiers_trigger = {
+		OR = {
+			tag = BNL
+			tag = NED
+		}
+	}
+	can_upgrade_trigger = {
+		OR = {
+			tag = BNL
+			tag = NED
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			all_estate_influence_modifier = 0.5
+			all_estate_loyalty_equilibrium = -0.25
+			all_estate_possible_privileges = -1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			institution_growth = 0.5
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			diplomatic_reputation = 1
+			transfer_trade_power_reasons = 5
+			parliament_effect_duration = 1
+			all_estate_influence_modifier = 0.25
+			all_estate_loyalty_equilibrium = -0.10
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			institution_growth = 1
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			diplomatic_reputation = 2
+			transfer_trade_power_reasons = 15
+			advisor_cost = -0.15
+			parliament_effect_duration = 2
+			all_estate_influence_modifier = 0.10
+			all_estate_possible_privileges = 1
+		}
+		on_upgraded = {
+			
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			
+		}
+		area_modifier = {
+			institution_growth = 1
+		}
+		country_modifiers = {
+			diplomatic_reputation = 3
+			transfer_trade_power_reasons = 30
+			advisor_cost = -0.25
+			parliament_effect_duration = 3
+			all_estate_loyalty_equilibrium = 0.25
+			all_estate_possible_privileges = 2
+		}
+		conditional_modifier = {
+			# add factions support here
+		}
+		on_upgraded = {
+			
+		}
+	}
+}

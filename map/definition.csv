@@ -3010,7 +3010,7 @@ province;red;green;blue;x;x
 3009;194;110;220;Unused6;
 3010;195;110;220;Unused7;
 3011;196;110;220;Unused8;
-3012;197;110;220;Unused9;
+3012;197;110;220;Zuiderzee;x
 3013;199;110;220;Unused10;
 3014;200;110;220;Unused11;
 3015;201;110;220;Unused12;
@@ -4979,3 +4979,4 @@ province;red;green;blue;x;x
 4978;157;158;204;Abyan;x
 4979;206;238;204;Saga;x
 4980;82;103;98;Mumbai;x
+4981;251;0;80;West Friesland;x

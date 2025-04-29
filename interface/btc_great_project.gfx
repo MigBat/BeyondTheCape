@@ -64,4 +64,29 @@ spriteTypes = {
 		name = "GFX_great_project_sierra_de_la_plata"	
 		texturefile = "gfx//interface//great_projects//great_project_sierra_de_la_plata.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_great_project_zwin"	
+		texturefile = "gfx//interface//great_projects//great_project_zwin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_reede_van_texel"	
+		texturefile = "gfx//interface//great_projects//great_project_reede_van_texel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_grand_place"	
+		texturefile = "gfx//interface//great_projects//great_project_grand_place.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_binnenhof"	
+		texturefile = "gfx//interface//great_projects//great_project_binnenhof.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_fortress_of_luxemburg"	
+		texturefile = "gfx//interface//great_projects//great_project_fortress_of_luxemburg.dds"
+	}
 }

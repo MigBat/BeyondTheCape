@@ -1,0 +1,307 @@
+### Monument Missions ###
+btc_monument_texel = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential_on_load = {
+	}
+	
+	potential = {
+		OR = {
+			tag = HOL
+			tag = BNL
+			tag = NED
+		}
+	}
+	
+	btc_reede_van_texel = {
+		icon = mission_reede_van_texel
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+			province_id = 4981
+		}
+		trigger = {
+			4981 = {
+				owned_by = ROOT
+				OR = {
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+			}
+			navy_size_percentage = 0.75
+			heavy_ship_fraction = 0.15
+		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						tag = HOL
+						was_tag = HOL
+					}
+				}
+				hidden_effect = {
+					set_country_flag = has_reede_van_texel
+					set_country_flag = is_reede_van_texel
+				}
+				country_event = {
+					id = BTC_NED_mission_event.1
+					tooltip = BTC_NED_mission_event.1.tt
+				}
+			}
+			else = {
+				hidden_effect ={
+					set_country_flag = has_reede_van_texel
+				}
+				country_event = {
+					id = BTC_NED_mission_event.1
+					tooltip = BTC_NED_mission_event.1.tt
+				}
+			}
+		}
+	}
+}
+
+btc_monument_zwin = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential_on_load = {
+	}
+	
+	potential = {
+		OR = {
+			tag = FLA
+			tag = BNL
+			tag = NED
+		}
+	}
+	
+	btc_zwin = {
+		icon = mission_zwin
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+			province_id = 90
+		}
+		trigger = {
+			90 = {
+				owned_by = ROOT
+				num_of_times_improved_by_owner = 6
+				base_production = 10
+				is_prosperous = yes
+			}
+			production_income_percentage = 0.25
+			trade_income_percentage = 0.50
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = FLA
+					was_tag = FLA
+				}
+				hidden_effect = {
+					set_country_flag = has_zwin
+					set_country_flag = is_zwin
+				}
+				add_great_project_tier = {
+					type = zwin
+					tier = 1
+				}
+			}
+			else = {
+				hidden_effect = {
+					set_country_flag = has_zwin
+				}
+				add_great_project_tier = {
+					type = zwin
+					tier = 1
+				}
+			}
+		}
+	}
+}
+
+btc_monument_grand_place = {
+	slot = 4
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	
+	potential_on_load = {
+
+	}
+	
+	potential = {
+		OR = {
+			tag = BRB
+			tag = BNL
+			tag = NED
+		}
+	}
+	
+	btc_grand_place = {
+		icon = mission_grand_place
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+			province_id = 92
+		}
+		trigger = {
+			92 = {
+				owned_by = ROOT
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+			}
+			diplomatic_reputation = 3
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = BRB
+					was_tag = BRB
+				}
+				hidden_effect = {
+					set_country_flag = has_grand_place
+					set_country_flag = is_grand_place
+				}
+				add_great_project_tier = {
+					type = grand_place
+					tier = 1
+				}
+			}
+			else = {
+				hidden_effect = {
+					set_country_flag = has_grand_place
+				}
+				add_great_project_tier = {
+					type = grand_place
+					tier = 1
+				}
+			}
+		}
+	}
+}
+
+btc_monument_binnenhof = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential_on_load = {
+	}
+	
+	potential = {
+		OR = {
+			tag = BNL
+			tag = NED
+		}
+	}
+	btc_binnenhof = {
+		icon = mission_binnenhof
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+			province_id = 4383
+		}
+		trigger = {
+			4383 = {
+				owned_by = ROOT
+				has_building = town_hall
+				higher_development_than = 97
+				higher_development_than = 1744
+				higher_development_than = 236
+				higher_development_than = 134
+				higher_development_than = 183
+			}
+			current_size_of_parliament = 7
+		}
+		effect = {
+			4383 = {
+				add_great_project_tier = {
+					type = binnenhof
+					tier = 1
+				}
+			}
+			add_prestige = 25
+		}
+	}
+}
+
+btc_monument_luxembourg_fortress = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential_on_load = {
+	}
+
+	potential = {
+		OR = {
+			tag = HOL
+			tag = BRB
+			tag = FLA
+			tag = NED
+			tag = BNL
+		}
+	}
+	btc_luxembourg_fortress = {
+		icon = mission_luxembourg_fortress
+		position = 1
+		required_missions = {
+		}
+		provinces_highlight = {
+			province_id = 94
+		}
+		trigger = {
+			OR = {
+				AND = {
+					current_age = age_of_reformation
+					94 = {
+						fort_level = 5
+					}
+				}
+				AND = {
+					current_age = age_of_absolutism
+					94 = {
+						fort_level = 9
+					}
+				}
+				AND = {
+					current_age = age_of_revolutions
+					94 = {
+						fort_level = 13
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = BTC_NED_mission_event.2
+			}
+		}
+	}
+}
+
+### Holland Missions ###

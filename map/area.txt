@@ -24,7 +24,7 @@ kattegat_area = { #Kattegat, Skagerrak, Sound and Belts
 }
 
 north_sea_area = {
-	1266 1268 1269 1270 1279 1280 1281 1282 1975
+	1266 1268 1269 1270 1279 1280 1281 1282 1975 3012
 }
 
 norwegian_sea_area = { #Norwegian Sea
@@ -398,7 +398,7 @@ wallonia_area = { #4
 }
 
 holland_area = { #4
-	96 97 98 4383
+	96 97 98 4383 4981
 }
 
 flanders_area = { #3

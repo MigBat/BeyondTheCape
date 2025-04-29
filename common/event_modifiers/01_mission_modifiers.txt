@@ -12772,7 +12772,7 @@ ned_conquest_of_england = {
 }
 
 ned_man_o_war_modifier = {
-	has_man_of_war = yes
+	local_has_man_of_war = yes
 	allowed_man_of_war_fraction = 0.1
 }
 
@@ -12800,10 +12800,10 @@ ned_empowered_staatse_leger = {
 	discipline = 0.025
 }
 
-ned_low_countries_fort_buff = {
-	local_development_cost = -0.05
-	local_production_efficiency = 0.1
-	local_defensiveness = 0.1
+btc_low_countries_fort_buff = {
+	defensiveness = 0.20
+	garrison_size = 0.10
+	global_supply_limit_modifier = 0.10
 }
 
 ned_low_countries_fort_buff_buffed = {
@@ -12858,16 +12858,16 @@ ned_black_devils_modifier = {
 }
 
 ned_maximize_cargo_space = {
-	number_of_cannons_modifier = -0.25
-	ship_trade_power_modifier = 0.5
+	number_of_cannons_modifier = -0.2
+	ship_trade_power_modifier = 0.8
 	is_voc_indiamen_modifier = yes
 }
 
 ned_diversify_fluyts = {
-	number_of_cannons_modifier = 0.1
-	ship_trade_power_modifier = -0.3
-	hull_size_modifier = 0.15
-	global_ship_cost = 0.3
+	number_of_cannons_modifier = 0.3
+	ship_trade_power_modifier = -0.7
+	hull_size_modifier = 0.2
+	global_ship_cost = 0.5
 	is_voc_indiamen_modifier = yes
 }
 

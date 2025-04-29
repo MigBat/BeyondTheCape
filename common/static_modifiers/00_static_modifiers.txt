@@ -122,7 +122,6 @@ city = {
 port = {
 	local_institution_spread = 0.10
 	local_has_geobukseon = yes
-	local_has_voc_indiamen = yes
 }
 
 in_state = {
@@ -876,7 +875,7 @@ regency_council = {
 }
 
 trade_efficiency = {
-	allowed_voc_indiamen_fraction = 0.1		#At 100% Trade Efficiency you get 10% available VOC Indiamen
+	allowed_voc_indiamen_fraction = 0.2		#At 100% Trade Efficiency you get 20% available VOC Indiamen
 }
 
 production_efficiency = {
@@ -2220,6 +2219,8 @@ caravel_ship = {
 voc_indiamen_ship = {
 	ship_trade_power_modifier = 0.2
 	can_transport_units = yes
+	number_of_cannons_modifier = 0.2
+	hull_size_modifier = -0.2
 }
 
 

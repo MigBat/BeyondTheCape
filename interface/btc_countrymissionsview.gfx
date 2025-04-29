@@ -289,4 +289,29 @@ spriteTypes = {
 		name = "mission_brazil"
 		texturefile = "gfx/interface/missions/mission_brazil.dds"
 	}
+
+	spriteType = {
+		name = "mission_grand_place"
+		texturefile = "gfx/interface/missions/mission_grand_place.dds"
+	}
+
+	spriteType = {
+		name = "mission_binnenhof"
+		texturefile = "gfx/interface/missions/mission_binnenhof.dds"
+	}
+
+	spriteType = {
+		name = "mission_zwin"
+		texturefile = "gfx/interface/missions/mission_zwin.dds"
+	}
+
+	spriteType = {
+		name = "mission_reede_van_texel"
+		texturefile = "gfx/interface/missions/mission_reede_van_texel.dds"
+	}
+
+	spriteType = {
+		name = "mission_luxembourg_fortress"
+		texturefile = "gfx/interface/missions/mission_luxembourg_fortress.dds"
+	}
 }
