@@ -1446,10 +1446,10 @@ absolutism = {
 
 # BTC #
 low_army_professionalism = {
-	mercenary_cost = -0.5
-	mercenary_manpower = 0.5
-	land_maintenance_modifier = 0.5
-	global_manpower_modifier = -0.5
+	mercenary_cost = -0.25
+	mercenary_manpower = 0.25
+	land_maintenance_modifier = 0.25
+	global_manpower_modifier = -0.25
 }
 
 # BTC #
